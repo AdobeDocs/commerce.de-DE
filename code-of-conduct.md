@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0d0c3c1cb2d0af48352afbe2028966331f0bb8ae
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -9,8 +9,7 @@ ht-degree: 0%
 
 ## Unser Versprechen
 
-Im Interesse der Förderung eines offenen und einladenden Umfelds haben wir
-Mitwirkende und Projektbetreuer verpflichten sich, an unserem Projekt teilzunehmen.
+Im Interesse der Förderung einer offenen und einladenden Umgebung verpflichten sich die Mitwirkenden und Betreuer, an unserem Projekt teilzunehmen.
 Unsere Community ist eine belästigungsfreie Erfahrung für jeden, unabhängig von Alter, Körper
 Größe, Behinderung, ethnische Zugehörigkeit, Geschlechtsidentität und Ausdruck, Erfahrungsstand,
 Nationalität, persönliches Auftreten, Rasse, Religion oder sexuelle Identität und
@@ -29,8 +28,7 @@ Einschließen:
 
 Beispiele für inakzeptables Verhalten von Teilnehmern:
 
-* Verwendung sexualisierter Sprache oder Symbolik und unerwünschte sexuelle Annäherung oder
-Vorschüsse
+* Verwendung sexualisierter Sprache oder Symbolik und unerwünschte sexuelle Annäherung oder Avancen
 * Trollen, beleidigende/abfällige Kommentare und persönliche oder politische Angriffe
 * Öffentliche oder private Belästigung
 * Veröffentlichen von privaten Informationen anderer Personen, z. B. physische oder elektronische
@@ -54,7 +52,7 @@ Bedrohlich, beleidigend oder schädlich.
 
 Dieser Verhaltenskodex findet sowohl in Projektbereichen als auch in öffentlichen Bereichen Anwendung
 Wenn ein Kontakt das Projekt oder seine Community repräsentiert. Beispiele für
-Ein Projekt oder eine Community repräsentieren, indem eine offizielle Projekt-E-Mail verwendet wird
+Darstellen eines Projekts oder einer Community Include mithilfe einer offiziellen Projekt-E-Mail
 Anschrift, Posten über ein offizielles Social-Media-Konto oder Benennung
 Vertreter bei einer Online- oder Offline-Veranstaltung. Die Darstellung eines Projekts kann
 von den Projektverantwortlichen genauer definiert und erläutert.
@@ -63,9 +61,9 @@ von den Projektverantwortlichen genauer definiert und erläutert.
 
 Beleidigendes, belästigendes oder anderweitig inakzeptables Verhalten kann sein
 Meldung durch Kontaktaufnahme mit dem Projektteam unter Grp-opensourceoffice@adobe.com. Alle
-Beschwerden werden geprüft und untersucht und führen zu einer Antwort, die
+Beschwerden werden geprüft und untersucht und führen zu einer Reaktion, die
 für notwendig und den Umständen angemessen erachtet wird. Das Projektteam ist
-verpflichtet, die Vertraulichkeit des Melders eines Vorfalls zu wahren.
+Er ist verpflichtet, die Vertraulichkeit des Melders eines Vorfalls zu wahren.
 Weitere Details zu bestimmten Durchsetzungsrichtlinien können separat veröffentlicht werden.
 
 Projektverantwortliche, die den Verhaltenskodex nicht ordnungsgemäß befolgen oder durchsetzen
@@ -74,5 +72,5 @@ Mitglieder der Projektleitung.
 
 ## Attribution
 
-Dieser Verhaltenskodex wurde basierend auf dem [Contributor Covenant](https://contributor-covenant.org), Version 1.4,
-Verfügbar unter [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Dieser Verhaltenskodex wurde basierend auf dem [Contributor Covenant](https://www.contributor-covenant.org/), Version 1.4,
+Verfügbar unter [https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/).

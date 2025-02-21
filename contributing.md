@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0d0c3c1cb2d0af48352afbe2028966331f0bb8ae
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '273'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ Im Folgenden finden Sie eine Reihe von Richtlinien, die beim Mitwirken an diesem
 ## Verhaltenskodex
 
 Dieses Projekt unterliegt dem [Verhaltenskodex](code-of-conduct.md) von Adobe. Durch die Teilnahme
-Von Ihnen wird erwartet, dass Sie diesen Kodex einhalten. Bitte melden Sie inakzeptables Verhalten an
+Von Ihnen wird erwartet, dass Sie diesen Kodex einhalten. Inakzeptables Verhalten melden an
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Dokumentation zum Contributor Guide
@@ -23,22 +23,21 @@ Siehe das [Handbuch für Mitwirkende](https://experienceleague.adobe.com/docs/co
 
 ## Haben Sie eine Frage?
 
-Melden Sie zunächst ein Problem. Die vorhandenen Verantwortlichen für dieses Projekt arbeiten daran, Folgendes zu erreichen
-Konsens über die Projektausrichtung und Problemlösungen in Problem-Threads
-(falls zutreffend)
+Melden Sie zunächst ein Problem. Die bereits an diesem Projekt beteiligten Personen haben folgende Ziele
+Konsens über die Projektausrichtung und Problemlösungen innerhalb von Problem-Threads, sofern zutreffend.
 
 ## Lizenzvereinbarung für Mitarbeiter
 
 Alle Drittanbieter-Beiträge zu diesem Projekt müssen von einem unterzeichneten Mitwirkenden begleitet werden
-Lizenzvereinbarung. Dadurch erhält Adobe die Erlaubnis, Ihre Beiträge zu verteilen
-als Teil des Projekts. [Unterschreiben Sie unsere Lizenzvereinbarung für Mitwirkende](http://opensource.adobe.com/cla.html). Sie
-Sie müssen nur einmal eine Adobe-Lizenzvereinbarung für Mitarbeiter einreichen. Wenn Sie also bereits eine einreichen,
+Lizenzvereinbarung. Dadurch erhält Adobe die Berechtigung, Ihre Beiträge zu verteilen
+als Teil des Projekts. [Unterschreiben Sie unsere Lizenzvereinbarung für Mitwirkende](https://opensource.adobe.com/cla.html). Sie
+Sie müssen nur einmal eine Adobe-CLA senden. Wenn Sie zuvor einen gesendet haben,
 Du bist gut zu gehen!
 
 ## Code-Überprüfungen
 
 Alle Einreichungen sollten in Form von Pull-Anfragen erfolgen und müssen überprüft werden
-durch Projektverantwortliche. Lesen [ Dokumentation zu Pull Requests von GitHub](https://help.github.com/de/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
+Von den Projektbeitragenden. Lesen [ Dokumentation zu Pull Requests von GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 Weitere Informationen zum Senden von Pull-Anforderungen finden Sie unter.
 
 <!--
@@ -50,11 +49,11 @@ submitting a pull request!
 
 Wir lieben Beiträge von unserer Community! Wenn Sie einen Schritt über die Rolle als Mitwirkender hinausgehen möchten
 Und um ein Verantwortlicher mit uneingeschränktem Schreibzugriff und Mitsprache am Projekt zu werden, müssen Sie
-Sie werden zum Projekt eingeladen. Die vorhandenen Verantwortlichen verwenden eine interne Nominierung
+Sie werden zum Projekt eingeladen. Die vorhandenen Beitragenden verwenden eine interne Nominierung
 Prozess, der vor Einladungen einen Konsens erreichen muss (Schweigen bedeutet Zustimmung)
 werden ausgegeben. Wenn Sie glauben, dass Sie qualifiziert sind und stärker involviert werden möchten,
-Wenden Sie sich an bestehende Verantwortliche, um darüber zu sprechen.
+Sie können sich gerne an bestehende Mitwirkende wenden, um ein Gespräch darüber zu führen.
 
 ## Sicherheitsprobleme
 
-Sicherheitsprobleme sollten nicht in dieser Problemverfolgung gemeldet werden. Stattdessen [ein Problem an unsere Sicherheitsfachleute gesendet](https://helpx.adobe.com/security/alertus.html)
+Wenn Sie ein Sicherheitsproblem melden möchten, [ Sie ein Problem an unsere Sicherheitsfachleute](https://helpx.adobe.com/security/alertus.html).
