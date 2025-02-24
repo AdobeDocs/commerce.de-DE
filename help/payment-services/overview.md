@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie  [!DNL Payment Services]  schlüsselfertige, 
 role: User
 level: Intermediate
 feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 95d86654ad185b2c37a59777a29f6de1b0091ad7
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,6 @@ Unabhängig davon, ob es sich um ein kleines Unternehmen, einen Mitbewerber oder
 * Selbstständig innerhalb des Admins
 
 ## Funktionen
-
->[!NOTE]
->
->Einige der hier erwähnten Funktionen sind möglicherweise noch nicht für die GA-Version (General Availability) verfügbar.
 
 [!DNL Payment Services] ist Ihre zentrale Anlaufstelle für den Online-Checkout (von der Abwicklung und Rückerstattung bis zur Bezahlung). Es bietet leistungsstarke Tools, die Ihnen den Einblick und die Kontrolle geben, die erforderlich sind, um das beste Erlebnis für Ihre Käufer zu erstellen.
 
