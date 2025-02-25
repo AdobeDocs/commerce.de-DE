@@ -1,7 +1,8 @@
 ---
 title: Synonyme hinzufügen
 description: Fügen Sie  [!DNL Live Search]  hinzu, um die Reaktion auf Suchanfragen zu verbessern.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
@@ -30,7 +31,6 @@ Befolgen Sie die Anweisungen für den [Typ des Synonyms](synonyms-type.md) den S
 1. Akzeptieren Sie die standardmäßige **bidirektionale** Option.
 
    ![Zwei-Wege-Synonym hinzufügen](assets/synonym-add-two-way.png)
-
 
 1. Geben Sie den **Keyword**-Begriff oder die zuzuordnende Phrase ein.
 1. Geben Sie **Begriffe**Erweiterung) ein, die Sie als Synonyme für das Keyword hinzufügen möchten. Trennen Sie mehrere Begriffe durch Kommas.
