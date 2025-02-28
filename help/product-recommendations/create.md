@@ -1,9 +1,10 @@
 ---
 title: Neue Empfehlung erstellen
 description: Erfahren Sie, wie Sie eine Produktempfehlungseinheit erstellen.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
+source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1511'
 ht-degree: 0%
 
 ---
@@ -81,6 +82,10 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
    * **Als Entwurf speichern**, um die Empfehlungseinheit später zu bearbeiten. Sie können den Seitentyp oder Empfehlungstyp für eine Empfehlungseinheit in einem Entwurfsstatus nicht ändern.
 
    * **Aktivieren**, um die Empfehlungseinheit in Ihrer Storefront zu aktivieren.
+
+>[!IMPORTANT]
+>
+>Einige Browser blockieren möglicherweise wichtige Skripte, die verhindern, dass Produktempfehlungen erwartungsgemäß funktionieren.
 
 ## Bereitschaftsindikatoren
 

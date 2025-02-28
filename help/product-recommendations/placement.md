@@ -1,9 +1,10 @@
 ---
 title: Platzierung und Beschriftungen
 description: Erfahren Sie, wo Sie Empfehlungen auf verschiedenen Seiten Ihrer Site platzieren und Vorschläge für häufig verwendete Beschriftungen für jeden Empfehlungstyp machen können.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 0576add8-50dd-4aac-91f5-38b7d85b751f
+source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -51,8 +52,8 @@ _Empfehlung am Anfang der Suchergebnisse_
 
 In der folgenden Tabelle sind die Storefront-Seiten aufgeführt, auf denen Sie Empfehlungen und die zulässigen Empfehlungstypen für jede Seite platzieren können.
 
-| Seite | Platzierungsempfehlungen |
-|---|---|
+| Seite | Platzierungsempfehlungen | Typen |
+|---|---|---|
 | Startseite | Oben im Hauptinhalt<br> unten im Hauptinhalt (Standard) | Am häufigsten angezeigt<br>Am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Empfohlen für Sie<br>Trend |
 | Kategorie | Oben im Hauptinhalt<br> unten im Hauptinhalt (Standard) | Am häufigsten angezeigt<br>Am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Empfohlen für Sie<br>Trend |
 | Produktdetails | Am Ende des Hauptinhalts (Standard) | Am häufigsten angezeigt<br>am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>angezeigt, angezeigt, <br>, gekauft, gekauft, <br>, gekauft, <br>Ähnliches<br>Trending<br> |
