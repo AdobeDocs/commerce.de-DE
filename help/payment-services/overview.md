@@ -4,9 +4,10 @@ description: Erfahren Sie, wie Sie  [!DNL Payment Services]  schlüsselfertige, 
 role: User
 level: Intermediate
 feature: Payments, Checkout
-source-git-commit: 95d86654ad185b2c37a59777a29f6de1b0091ad7
+exl-id: 1d41f86a-f874-48df-9173-9cf9f07e6d79
+source-git-commit: 62b708f79ac011ef33b37f67384df7c94571ced2
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -51,6 +52,12 @@ Payment Services bietet [Express-Checkout-Funktionen](../payment-services/paymen
 
 Siehe [Lebenszyklusrichtlinie](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) und die [[!DNL Payment Services] Versionshinweise](release-notes.md) für weitere Informationen zu Versionen und Versionen.
 
+### Welche [!DNL Payment Services] ist die richtige für Sie?
+
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
+
+Siehe [Verbinden](connect.md) für weitere Informationen zum Einrichten der [!DNL Payment Services].
+
 ### Akzeptierte Kreditkarten und Währungen
 
 [!DNL Payment Services] akzeptiert die Währungen der Länder [in denen es verfügbar ist](#availability). Siehe [Währungskonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) für weitere Informationen.
@@ -71,9 +78,3 @@ Das Onboarding und die Einrichtung von [!DNL Payment Services] sind in nur wenig
 1. Aktivieren Sie [!DNL Payment Services] im Live-Modus , um mit der Verarbeitung von Live-Zahlungen zu beginnen.
 
 Die vollständigen Anweisungen und den Start des Onboarding-Prozesses finden Sie unter [Onboard [!DNL Payment Services]](onboard.md).
-
-## [!DNL Payment Services] Demo
-
-In diesem Video erfahren Sie mehr über [!DNL Payment Services]:
-
->[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)
