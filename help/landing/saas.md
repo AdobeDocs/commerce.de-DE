@@ -3,9 +3,10 @@ title: Commerce Services-Connector
 description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source-Instanz mithilfe von Produktions- und Sandbox-API-Schlüsseln in Services integrieren.
 feature: Services, Saas
 role: Admin, User
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 1aa6ba8b-be39-496e-b83d-a4a7db9f5dd8
+source-git-commit: 5e2c32b66407585317e22649184337e2aace9bad
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -96,6 +97,8 @@ Bei Adobe Commerce Cloud Pro-Projekten mit mehreren Staging-Umgebungen können S
 - [Senden einer Support-Anfrage](https://experienceleague.adobe.com/home?support-tab=home#support) , um den zusätzlichen Testdatenbereich anzufordern und die geschäftliche Begründung für den zusätzlichen Datenbereich anzugeben. Diese Anfrage muss genehmigt werden.
 
 Magento Open Source-Kunden, die Adobe Payment Services verwenden, können auch einen zusätzlichen Datenspeicher anfordern. Wenden Sie sich an das Zahlungs-Team, um die zusätzlichen Datenräume zu genehmigen, bevor Sie eine [Support-Anfrage](https://experienceleague.adobe.com/home?support-tab=home#support) einreichen, um den Testdatenraum anzufordern.
+
+Kunden, die mehrere Cloud-Projekte oder lokale (Live-/Produktions-)Installationen besitzen, können auch zusätzliche Produktions- und Testdatenbereiche für jedes Projekt oder jede Instanz anfordern, indem sie [eine Support-Anfrage stellen](https://experienceleague.adobe.com/home?support-tab=home#support).
 
 ### SaaS-Projekt auswählen oder erstellen {#createsaasenv}
 
