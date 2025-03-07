@@ -2,9 +2,10 @@
 title: Überprüfen von Protokollen und Fehlerbehebung
 description: Erfahren Sie, wie Sie  [!DNL data export]  Fehler mithilfe der Protokolle „data-export“ und „saas-export“ beheben können.
 feature: Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d022756f-6e75-4c2a-9601-31958698dc43
+source-git-commit: 22c74c12ddfccdb4e6c4e02c3a15557e1020d5ef
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Protokolle sind im `var/log` auf dem Commerce-Anwendungsserver verfügbar.
 
 | Protokollname | Dateiname | Beschreibung |
 |-----------------| ----------| -------------|
-| SaaS-Datenexportprotokoll | `commerce-data-export.log` | Enthält Informationen zu Datenexportaktivitäten wie Entitätsereignissen und vollständigen Resynchronisierungs-Triggern.  Jeder Protokolldatensatz hat eine bestimmte Struktur und enthält Informationen zu Feed, Vorgang, Status, verstrichener Zeit, Prozess-ID und dem Aufrufer. |
+| SaaS-Datenexportprotokoll | `commerce-data-export.log` | Stellt Informationen zu Datenexportaktivitäten bereit, z. B. zu Entitätsereignissen und vollständigen Resynchronisierungs-Triggern.  Jeder Protokolldatensatz hat eine bestimmte Struktur und enthält Informationen zu Feed, Vorgang, Status, verstrichener Zeit, Prozess-ID und dem Aufrufer. |
 | SaaS-Datenexport-Fehlerprotokoll | `data-export-errors.log` | Stellt Fehlermeldungen und Stacktraces für Fehler bereit, die während des Datensynchronisierungsprozesses auftreten. |
 | SaaS-Exportprotokoll | `saas-export.log` | Stellt Informationen zu den Daten bereit, die an Commerce SaaS-Services gesendet werden. |
 | SaaS-Exportfehlerprotokoll | `saas-export-errors.log` | Enthält Informationen zu Fehlern, die beim Senden von Daten an Commerce SaaS-Services auftreten. |
@@ -36,8 +37,8 @@ Jeder Protokolldatensatz weist die folgende Struktur auf.
    "feed": "<feed name>",
    "operation": "<executed operation>",
    "status": "<status of operation>",
-   "elapsed": "<time elaspsed from script run>",
-   "pid": "<proccess id who executed `operation`>",
+   "elapsed": "<time elapsed from script run>",
+   "pid": "<process id that executed `operation`>",
    "caller": "<who called this `operation`>"
 } [] []
 ```
@@ -50,10 +51,10 @@ In der folgenden Tabelle werden die Vorgangstypen beschrieben, die in den Protok
 
 | Bedienung | Beschreibung | Beispiel für einen Aufrufer |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| Vollständige Synchronisierung | Bei der vollständigen Synchronisierung werden alle Daten für einen bestimmten Feed erfasst und an das SaaS gesendet. | `bin/magento saas:resync --feed=products` |
-| Teilweise Neuindizierung | Die partielle Synchronisierung erfasst und sendet Daten nur für aktualisierte Entitäten in einem bestimmten Feed an SaaS. Dieses Protokoll ist nur vorhanden, wenn aktualisierte Entitäten vorhanden sind. | `bin/magento cron:run --group=index` |
-| Fehlgeschlagene Elemente wiederholen | Sendet Elemente für einen bestimmten Feed erneut an SaaS, wenn der vorherige Synchronisierungsvorgang aufgrund eines Commerce-Anwendungs- oder Server-Fehlers fehlgeschlagen ist. Dieses Protokoll ist nur vorhanden, wenn fehlgeschlagene Elemente vorhanden sind. | `bin/magento cron:run --group=saas_data_exporter` (beliebige &quot;*_data_Exporter“-Cron-Gruppe) |
-| Vollständige Synchronisierung (veraltet) | Vollständige Synchronisierung für einen Feed im alten Exportmodus. | `bin/magento saas:resync --feed=categories` |
+| Vollständige Synchronisierung | Sammelt alle Daten für einen bestimmten Feed und sendet sie an die SaaS. | `bin/magento saas:resync --feed=products` |
+| Teilweise Neuindizierung | Sammelt nur aktualisierte Entitäten in einem bestimmten Feed und sendet Daten an SaaS. Dieses Protokoll ist nur vorhanden, wenn aktualisierte Entitäten vorhanden sind. | `bin/magento cron:run --group=index` |
+| Fehlgeschlagene Elemente wiederholen | Elemente für einen bestimmten Feed erneut an SaaS senden, wenn der vorherige Synchronisierungsvorgang aufgrund eines Commerce-Anwendungs- oder Server-Fehlers fehlgeschlagen ist. Dieses Protokoll ist nur vorhanden, wenn fehlgeschlagene Elemente vorhanden sind. | `bin/magento cron:run --group=saas_data_exporter` (beliebige &quot;*_data_Exporter“-Cron-Gruppe) |
+| Vollständige Synchronisierung (veraltet) | Erfasst alle Daten für einen bestimmten Feed im alten Exportmodus und sendet sie an SaaS. | `bin/magento saas:resync --feed=categories` |
 | Partielle Neuindizierung (veraltet) | Sendet aktualisierte Entitäten für einen bestimmten Feed im alten Exportmodus an SaaS. Dieses Protokoll ist nur vorhanden, wenn aktualisierte Entitäten vorhanden sind. | `bin/magento cron:run --group=index` |
 | Teilweise Synchronisierung (veraltet) | Sendet aktualisierte Entitäten für einen bestimmten Feed im alten Exportmodus an SaaS. Dieses Protokoll ist nur vorhanden, wenn aktualisierte Entitäten vorhanden sind. | `bin/magento cron:run --group=saas_data_exporter` (beliebige &quot;*_data_Exporter“-Cron-Gruppe) |
 
@@ -123,12 +124,12 @@ In diesem Beispiel wird eine Regel hinzugefügt, mit der Sie New Relic-Protokoll
 
 ## Fehlerbehebung
 
-Wenn Daten in Commerce Services fehlen oder falsch sind, überprüfen Sie die Protokolle, um festzustellen, ob während der Synchronisierung von der Adobe Commerce-Instanz zur Commerce Service-Plattform ein Problem aufgetreten ist. Verwenden Sie bei Bedarf die erweiterte Protokollierung, um den Protokollen zusätzliche Informationen zur Fehlerbehebung hinzuzufügen.
+Wenn Daten in Commerce Services fehlen oder falsch sind, überprüfen Sie die Protokolle auf Meldungen zu Fehlern, die während der Synchronisierung von Adobe Commerce mit der Commerce Services-Plattform aufgetreten sind. Verwenden Sie bei Bedarf die erweiterte Protokollierung, um den Protokollen zusätzliche Informationen zur Fehlerbehebung hinzuzufügen.
 
-- commerce-data-export-errors.log - Wenn während der Erfassungsphase ein Fehler aufgetreten ist
-- saas-export-errors.log - wenn während der Sendephase ein Fehler aufgetreten ist
+- Das Datenexportfehlerprotokoll (`commerce-data-export-errors.log`) erfasst Fehler, die während der Erfassungsphase auftreten.
+- Das SaaS-Exportfehlerprotokoll (`saas-export-errors.log`) erfasst Fehler, die während der Übertragungsphase auftreten.
 
-Wenn Sie Fehler sehen, die nicht mit der Konfiguration oder Erweiterungen von Drittanbietern in Zusammenhang stehen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) mit so vielen Informationen wie möglich.
+Wenn Sie Fehler sehen, die nicht mit der Konfiguration oder Erweiterungen von Drittanbietern in Zusammenhang stehen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) mit so vielen Informationen wie möglich.
 
 ### Beheben von Katalogsynchronisierungsproblemen {#resolvesync}
 
@@ -143,26 +144,19 @@ Beim Trigger einer erneuten Synchronisierung von Daten kann es bis zu einer Stun
 
 #### Synchronisierung läuft nicht
 
-Wenn die Synchronisierung nicht nach einem Zeitplan ausgeführt wird oder nichts synchronisiert wird, lesen Sie diesen [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html)Artikel.
+Wenn die Synchronisierung nicht nach einem Zeitplan ausgeführt wird oder nichts synchronisiert wird, lesen Sie diesen [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)Artikel.
 
 #### Synchronisierung fehlgeschlagen
 
-Wenn der Status der Katalogsynchronisierung &quot;**&quot; lautet** senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Wenn der Status der Katalogsynchronisierung &quot;**&quot; lautet** senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Erweiterte Protokollierung
 
-Für zusätzliche Protokollinformationen können Sie Umgebungsvariablen verwenden, um Protokolle um zusätzliche Daten für Tracking und Fehlerbehebung zu erweitern.
-
-Im `var/log/` befinden sich zwei Protokolldateien:
-
-- commerce-data-export-errors.log - Wenn während der Erfassungsphase ein Fehler aufgetreten ist
-- saas-export-errors.log - wenn während der Sendephase ein Fehler aufgetreten ist
-
-Sie können Umgebungsvariablen verwenden, um Protokolle um zusätzliche Daten für Tracking und Fehlerbehebung zu erweitern.
+Verwenden Sie Umgebungsvariablen, um Protokolle mit zusätzlichen Daten für Tracking und Fehlerbehebung zu erweitern. Fügen Sie die Umgebungsvariable der Befehlszeile hinzu, wenn Sie Datenexport-CLI-Befehle ausführen, wie in den folgenden Beispielen gezeigt.
 
 ### Überprüfen der Feed-Payload
 
-Schließen Sie die Feed-Payload in das SaaS-Exportprotokoll ein, indem Sie die Umgebungsvariable `EXPORTER_EXTENDED_LOG=1` hinzufügen, wenn Sie den Feed neu synchronisieren.
+Schließen Sie die Feed-Payload in das SaaS-Exportprotokoll ein, indem Sie die `EXPORTER_EXTENDED_LOG=1` Umgebungsvariable hinzufügen, wenn Sie den Feed neu synchronisieren.
 
 ```shell script
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
