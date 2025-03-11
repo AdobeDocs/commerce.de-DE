@@ -2,7 +2,8 @@
 title: Ereignisse [!DNL Live Search]
 description: Erfahren Sie, wie Ereignisse Daten für  [!DNL Live Search] erfassen.
 feature: Services, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: a9f4f254-d8ff-46f1-8deb-a75b90d70d52
+source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 0%
@@ -18,7 +19,7 @@ In dieser Tabelle werden die von [!DNL Live Search] verwendeten Ereignisse [Rang
 | Rangfolgestrategie | -Events | Seite |
 | --- | --- | --- |
 | Am häufigsten angezeigt | `page-view`<br>`product-view` | Produktdetailseite |
-| Am häufigsten gekauft | `page-view`<br>`complete-checkout` | Warenkorb/Checkout |
+| Am häufigsten gekauft | `page-view`<br>`place-order` | Warenkorb/Checkout |
 | Am häufigsten zum Warenkorb hinzugefügt | `page-view`<br>`add-to-cart` | Produktdetailseite<br>Produktlistenseite<br>Warenkorb<br>Wunschliste |
 | hat dieses angezeigt, hat Folgendes angezeigt | `page-view`<br>`product-view` | Produktdetailseite |
 
