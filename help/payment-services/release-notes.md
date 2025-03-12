@@ -2,13 +2,13 @@
 title: '[!DNL Payment Services] Versionshinweise'
 description: Informationen zu allen Versionen finden  [!DNL Payment Services]  in den Versionshinweisen .
 feature: Payments, Release Notes
-source-git-commit: 313d69a7f791153fd56a1492f9012776cea1f3df
+exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
+source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
 workflow-type: tm+mt
-source-wordcount: '3392'
+source-wordcount: '3644'
 ht-degree: 0%
 
 ---
-
 
 # Versionshinweise
 
@@ -89,6 +89,33 @@ _28. Juni 2021_
 ![Neu](../assets/new.svg)<!-- Issue PAY-2761 --> Sie können jetzt die Daten anpassen, die im Bericht [Zahlungsstatus bestellen](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns) und im Bericht [Auszahlungen](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns) angezeigt werden, indem Sie Spalten mithilfe des Steuerelements Spalteneinstellungen ein- oder ausblenden.
 
 +++
+
+## v2.11.0
+
+_13. März 2025_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+
+![Neu](../assets/new.svg)<!-- PAY-5938 --> Jetzt ermöglicht [!DNL Payment Services] Händlern die Verwaltung von Zahlungseinstellungen, um die Flexibilität in ihrem Unternehmen zu maximieren. Diese Version verbessert die Möglichkeit, [mehrere PayPal-Konten](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/settings#use-multiple-paypal-accounts) für die Regionen und Marken anzuhängen, die ein Händler unterstützt. Unser Vertriebsteam kann einen Onboarding-Link bereitstellen, um Ihre Website einzurichten und Ansichtsumfänge zu speichern.
+
+![Neu](../assets/new.svg)<!-- PAY-5968 --> Jetzt aktualisiert [!DNL Payment Services] die Admin-Konfiguration mit den Werten **PayPal-Händler-ID** und **PayPal-Händler-Status**. Diese Werte bieten Händlern eine bessere Übersicht über ihren PayPal-Kontostatus.
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-5816 --> Die Funktionalität der normalen Reihenfolge in [!DNL Payment Services] wurde wiederhergestellt, indem ein Problem behoben wurde, das bei allen Auftragsplatzierungen mit Version 2.9.0 zu Fehlern führte.
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-5825 --> Es wurde ein Problem behoben, bei dem der Mini-Warenkorb &quot;Apple Pay“ eine falsche geschätzte Gesamtsummen-URL für angemeldete Kunden verwendete. Jetzt stellt [!DNL Payment Services] genaue Gesamtberechnungen sicher.
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-5826 --> Die Zuverlässigkeit der Bestellverwaltung wurde verbessert, indem ein Problem behoben wurde, das beim Ändern des Angebotsstatus in &quot;`inactive`&quot; einen HTTP 500-Fehler verursachte.
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-5849 --> Es wurde ein Problem behoben, bei dem `LineItemProvider` Ausnahmen für Dezimalzahlen unter 1 gab. Jetzt bietet [!DNL Payment Services] eine bessere Unterstützung für Teilmengen.
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-5868 --> Es wurde ein Fehler bei der Gutscheinkarte beim Checkout behoben. [!DNL Payment Services] stellt nun während eines Checkout-Prozesses genaue Werte sicher.
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-5911 --> Fehler bei der Sendungserstellung bei Bestellungen, die mit nicht [!DNL Payment Services] Online-Zahlungsmethoden aufgegeben wurden, wodurch die Zuverlässigkeit insgesamt verbessert wurde.
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-5954 --> [!DNL Payment Services] bietet jetzt ein reibungsloseres Checkout-Erlebnis, indem ein Problem behoben wird, bei dem Apple Pay keine Bestellung aufgab, wenn eine andere Kreditkarte in der Brieftasche ausgewählt wurde.
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-5971 --> [!DNL Payment Services] leitet Kunden nicht mehr zur Bestellüberprüfungsseite weiter, wenn Apple Pay fehlschlägt, wodurch unnötige Checkout-Unterbrechungen vermieden werden.
 
 ## v2.10.3
 
