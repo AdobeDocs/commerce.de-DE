@@ -4,9 +4,9 @@ description: Die neuesten Versionsinformationen für  [!DNL Data Export Extensio
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: e30210e6aac469929e4767e3747bd819bc10b9f4
+source-git-commit: 14231826dba842edb908005ea43b1893a324c68f
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,12 @@ Zu den Aktualisierungen gehören:
 
 ## Version 103.3.21
 
-![Korrektur](../assets/new.svg) Es wurde eine Funktion hinzugefügt, um `product`-, `productOverrides`- und `productAttributes`-Feeds basierend auf einer bestimmten Liste von Produkt-SKUs teilweise zu synchronisieren. Verwenden Sie die neue Funktion, indem Sie dem `bin/magento saas:resync --feed=<FEED_NAME>` CLI-Befehl die Option `--by-ids` hinzufügen. <!--MDEE-606-->
+![Korrektur](../assets/new.svg) Es wurde eine Funktion hinzugefügt, um `products`-, `productOverrides`- und `productAttributes`-Feeds basierend auf einer bestimmten Liste von Produkt-SKUs teilweise zu synchronisieren. Verwenden Sie die neue Funktion, indem Sie dem Befehl CLI neu synchronisieren die Option `--by-ids` hinzufügen: <!--MDEE-606-->
+
+```shell
+bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
+```
+
 ![Beheben](../assets/fix.svg) Reduzierte potenzielle Kompatibilitätsprobleme mit PHP 8.4, indem veraltete Funktionen adressiert wurden. <!--MDEE-1002-->
 
 ## Version 103.3.20
