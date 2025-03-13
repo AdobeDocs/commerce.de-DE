@@ -4,9 +4,10 @@ description: Nach der Installation können Sie  [!DNL Payment Services]  Admin i
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: a4da36e2-4316-42d5-ae30-cf078f440444
+source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -34,6 +35,7 @@ Sie können [!DNL Payment Services] für Ihren Store und Ihre _[!UICONTROL Merch
    >
    > Wenn Sie Ihre Datenspeicher-ID im Commerce Services-Connector ändern müssen, müssen Sie Ihre [!DNL Payment Services]-ID zurücksetzen. Klicken Sie **Zahlungsdienste-ID zurücksetzen**, um Ihre Sandbox- oder Produktions-IDs zurückzusetzen. Wenn Sie Ihre [!DNL Payment Services] IDs zurücksetzen, müssen Sie sich erneut anmelden.
 
+1. Ihre **[!UICONTROL PayPal Merchant ID]**- und **[!UICONTROL PayPal Merchant Status]** werden automatisch von PayPal bereitgestellt, sobald Sie das [!DNL Payment Services]-Dashboard zum ersten Mal aufrufen.
 1. Fügen Sie für **Soft-Deskriptor** (benutzerdefinierte Werte, die auf Bankauszügen von Kundentransaktionen angezeigt werden, um Geschäfte/Marken/Kataloge voneinander abzugrenzen) Ihren benutzerdefinierten Text (bis zu 22 Zeichen) in das Textfeld ein und ersetzen Sie `Soft descriptor` oder den vorhandenen Wert.
 1. Klicken Sie auf **[!UICONTROL Save Config]** , um Ihre Änderungen zu speichern.
 1. Navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Cache Management]** und klicken Sie dann auf **[!UICONTROL Flush Cache]** , um alle ungültigen Caches zu aktualisieren.
@@ -48,6 +50,8 @@ Sie können [!DNL Payment Services] für Ihren Store und Ihre _[!UICONTROL Merch
 | [!UICONTROL Method] | Shop-Ansicht | Legen Sie die Methode oder Umgebung für Ihren Store fest. Optionen: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | Shop-Ansicht | Ihre Sandbox-Händler-ID, die beim Sandbox-Onboarding automatisch generiert wird. |
 | [!UICONTROL Payment Services Production ID] | Shop-Ansicht | Ihre Produktions-Händler-ID, die beim Onboarding in der Produktion (live) automatisch generiert wird. |
+| [!UICONTROL PayPal Merchant ID] | Shop-Ansicht | Ihre eindeutige PayPal-Händlerkonto-ID, die beim Erstellen Ihres PayPal-Kontos generiert wird. |
+| [!UICONTROL PayPal Merchant Status] | Shop-Ansicht | Status Ihrer PayPal-Händler-ID. |
 | [!UICONTROL Soft Descriptor] | Website- oder Store-Ansicht | Fügen Sie Ihren Websites und Store-Ansichten einen Soft-Deskriptor hinzu, um Kundentransaktionen Informationen hinzuzufügen, die Marken, Stores oder Produktlinien abgrenzen. |
 
 ## [!UICONTROL Credit Card Fields]

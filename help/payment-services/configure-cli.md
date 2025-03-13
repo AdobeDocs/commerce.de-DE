@@ -4,9 +4,10 @@ description: Nach der Installation können Sie  [!DNL Payment Services]  über d
 role: Admin, Developer
 level: Intermediate
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: bb59bd49-6ecd-4ef1-a6b9-e1e93db04bf6
+source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -88,6 +89,32 @@ bin/magento cron:run --group payment_services_data_export
 ```
 
 Weitere Informationen zur Neuindizierung und Indizierung finden Sie unter [Verwalten der ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)&quot; in der Entwicklerdokumentation.
+
+## Konfigurieren des Umfangs über CLI
+
+[!DNL Payment Services] können Händler ([ PayPal-Konten) ](settings.md#use-multiple-paypal-accounts). Jetzt können Sie die Bereiche für diese Konten über die CLI ändern.
+
+Um den Bereich auf die `website` zu setzen, führen Sie Folgendes aus:
+
+```bash
+bin/magento config:set payment/payment_services/mba_scoping_level website
+```
+
+Um den Bereich auf die `store` zu setzen, verwenden Sie:
+
+```bash
+bin/magento config:set payment/payment_services/mba_scoping_level store
+```
+
+>[!TIP]
+>
+> Wenn Sie den Umfang auf die Store-Ebene ändern möchten, wenden Sie sich an Ihren [!DNL Payment Services].
+
+Leeren Sie den Cache nach der Änderung des Umfangs, um die Änderungen anzuzeigen:
+
+```bash
+bin/magento cache:clean:payment_services_merchant_scopes
+```
 
 ## Konfigurieren der L2/L3-Verarbeitung
 
