@@ -3,9 +3,9 @@ title: '[!DNL Payment Services] Versionshinweise'
 description: Informationen zu allen Versionen finden  [!DNL Payment Services]  in den Versionshinweisen .
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
+source-git-commit: 0098e5bab2ea72f9abd7c846d49d5ee4d523ad73
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3681'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,14 @@ _28. Juni 2021_
 ![Neu](../assets/new.svg)<!-- Issue PAY-2761 --> Sie können jetzt die Daten anpassen, die im Bericht [Zahlungsstatus bestellen](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns) und im Bericht [Auszahlungen](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns) angezeigt werden, indem Sie Spalten mithilfe des Steuerelements Spalteneinstellungen ein- oder ausblenden.
 
 +++
+
+## v2.11.1
+
+_14. März 2025_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-5849 --> Es wurde ein Problem behoben, das [Zeilenelemente](line-items.md) während des Auscheckens betraf. Jetzt hat [!DNL Payment Services] die Zuverlässigkeit des Checkout-Prozesses für **Zeilenelemente“**. Wenn ein ähnliches Problem auftritt, wenden Sie sich an Ihren [!DNL Payment Services] Vertriebsmitarbeiter.
 
 ## v2.11.0
 
