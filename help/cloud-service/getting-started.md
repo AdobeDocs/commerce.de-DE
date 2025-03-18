@@ -1,0 +1,112 @@
+---
+title: Erste Schritte mit Adobe Commerce as a Cloud Service
+description: Erfahren Sie mehr über die ersten Schritte mit Adobe Commerce as a Cloud Service.
+role: Admin, Developer, User
+source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 0%
+
+---
+
+
+# Erste Schritte
+
+Adobe Commerce as a Cloud Service bietet die meisten vorkonfigurierten Konfigurationen. Nach Abschluss einiger grundlegender Einrichtungsprozesse ist Ihr Store in kürzester Zeit betriebsbereit. Dieses Handbuch führt Sie durch die Erstellung und Arbeit mit einer -Instanz.
+
+Klicken Sie auf die folgenden Registerkarten, um allgemeine Workflow-Übersichten für die folgenden Benutzertypen anzuzeigen:
+
+* Administratoren
+* Händler
+* Entwickler
+
+>[!BEGINTABS]
+
+>[!TAB Administrator- und Händler-Workflow]
+
+Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Administratoren und Händler auf Adobe Commerce as a Cloud Service-Instanzen zugreifen und diese verwalten. Weitere Informationen zu Administrator-Workflows finden ](https://helpx.adobe.com/enterprise/admin-guide.html) im Handbuch zu Adobe Admin Console [.
+
+![Adobe Commerce as a Cloud Service-Händlerflussdiagramm](./assets/merchant-flow.svg){zoomable="yes"}
+
+>[!TAB Entwickler-Workflow]
+
+Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Entwicklerinnen und Entwickler Integrationen für Adobe Commerce as a Cloud Service mit App Builder erstellen. Weitere Informationen finden Sie in [ API](https://developer.adobe.com/commerce/services/cloud/)Dokumentation.
+
+![Entwicklerflussdiagramm für Adobe Commerce as a Cloud Service](./assets/developer-flow.svg){zoomable="yes"}
+
+>[!ENDTABS]
+
+## Instanz erstellen
+
+Adobe Commerce as a Cloud Service-Instanzen verwenden ein kreditbasiertes System. Sie können mehrere Instanzen erstellen, aber jede Instanz erfordert eine relative Menge an Credits. Die Höhe des Guthabens hängt zunächst von Ihrem Abonnement ab.
+
+1. Melden Sie sich bei Ihrem [Adobe Experience Cloud](https://experience-stage.adobe.com/)-Konto an.
+
+1. Klicken Sie unter [!UICONTROL Quick access] auf [!UICONTROL **Commerce**], um die [!UICONTROL Commerce Cloud Manager] zu öffnen.
+
+   Das [!UICONTROL Commerce Cloud Manager] zeigt eine Liste der Adobe Commerce as a Cloud Service-Instanzen an, die in Ihrer Adobe IMS-Organisation verfügbar sind.
+
+1. Klicken [!UICONTROL **oben rechts**] Bildschirm auf „Instanz hinzufügen“.
+
+   ![Instanz erstellen](./assets/create-instance.png){width="50%" align="center" zoomable="yes"}
+
+1. Wählen Sie [!UICONTROL **Commerce as a Cloud Service**].
+
+1. Geben Sie **Name** und **Beschreibung** für Ihre Instanz ein.
+
+1. Wählen Sie die Region aus, in der Ihre Instanz gehostet werden soll.
+
+   >[!NOTE]
+   >
+   >Nachdem Sie Ihre Instanz erstellt haben, können Sie die Region nicht mehr ändern.
+
+1. Wählen Sie den [!UICONTROL **Umgebungstyp**] für Ihre Instanz aus. Sie können zwischen den folgenden Optionen wählen:
+
+   * [!UICONTROL **Sandbox**] - Ideal für Design- und Testzwecke. Sie sollten Ihre Adobe Commerce as a Cloud Service-Journey mit der Sandbox-Umgebung starten.
+   * [!UICONTROL **Produktion**] - Für Live-Stores und kundenorientierte Websites.
+
+   >[!NOTE]
+   >
+   >Sandbox-Instanzen sind derzeit auf die Region Nordamerika beschränkt.
+
+1. _(Optional)_ Wenn Sie Beispielproduktdaten für Test- und Lernzwecke einbeziehen möchten, wählen Sie [!UICONTROL **Adobe Store**] aus der Dropdown-Liste [!UICONTROL **Testdaten**] aus.
+
+   Sie können diese Option überspringen, aber Ihre Storefront hat in diesem Fall keine Produkte. Sie müssen [Ihren Katalog importieren), ](#import-your-catalog) das vollständige Storefront-Erlebnis zu sehen.
+
+1. Klicken Sie [!UICONTROL **Instanz hinzufügen**].
+
+## Zugriff auf eine Instanz
+
+Nachdem Sie eine Instanz erstellt haben, können Sie über die [!UICONTROL Commerce Cloud Manager] darauf zugreifen.
+
+1. Melden Sie sich bei Ihrem [Adobe Experience Cloud](https://experience.adobe.com/)-Konto an.
+
+1. Klicken Sie unter [!UICONTROL Quick access] auf [!UICONTROL **Commerce**], um die [!UICONTROL Commerce Cloud Manager] zu öffnen.
+
+   Die [!UICONTROL Commerce Cloud Manager] zeigt eine Liste der Instanzen an, die in Ihrer Adobe IMS-Organisation verfügbar sind.
+
+1. Um die [!UICONTROL Commerce Admin] für eine Instanz zu öffnen, klicken Sie auf den Instanznamen.
+
+>[!TIP]
+>
+>Um Informationen zu Ihrer -Instanz, einschließlich der REST- und GraphQL-Endpunkte und der Admin-URL, anzuzeigen, klicken Sie auf das Informationssymbol neben dem Instanznamen.
+
+## Importieren des Katalogs
+
+Standardmäßig enthalten Adobe Commerce as a Cloud Service-Instanzen keine Produktdaten. Sie haben die Möglichkeit, beim Erstellen einer Instanz zu Test- und Lernzwecken Beispielproduktdaten einzubeziehen, bevor Sie Ihren eigenen Katalog importieren.
+
+Es gibt zwei Möglichkeiten, Ihren Katalog in Adobe Commerce as a Cloud Service zu importieren:
+
+* [**Commerce Admin**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Eine benutzerfreundliche Oberfläche, über die Sie Ihre Katalogdaten mit wenigen Klicks importieren können.
+* [**JSON-API importieren**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - Eine REST-API, mit der Sie Ihre Katalogdaten programmgesteuert importieren können.
+
+<!-- TODO
+
+- Add guidance about how to choose which method to use
+- Add guidance for new vs existing customers (cross-reference OR and _include file for migration content)
+
+-->
+
+## Einrichten der Storefront
+
+Nachdem Sie eine -Instanz erstellt haben, können Sie mit dem [ Ihrer Edge Delivery Services-](storefront.md) für die Commerce-Storefront fortfahren.
