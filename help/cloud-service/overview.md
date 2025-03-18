@@ -3,13 +3,13 @@ title: Übersicht über Adobe Commerce as a Cloud Service
 description: Lernen Sie die wichtigsten Funktionen und Vorteile von Adobe Commerce as a Cloud Service kennen.
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
-source-git-commit: 0a112b1dab0113eb910e2ecdcca21e7e2814e761
+exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
+source-git-commit: 27d08ed9c01923f2144b071ed7418a399b3126eb
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1593'
 ht-degree: 0%
 
 ---
-
 
 # Übersicht über Adobe Commerce as a Cloud Service
 
@@ -83,10 +83,13 @@ Adobe bietet die folgenden Entwickler-Tools zum Erstellen von Integrationen und 
 
 ## Commerce Foundation
 
-Commerce Foundation bietet eine sichere automatisierte Hosting-Plattform und Self-Service-Funktionen für die Verwaltung Ihrer Commerce-Anwendung in einer Cloud-nativen Umgebung. Zu den wichtigsten Funktionen gehören:
+Commerce Foundation bietet eine sichere automatisierte Hosting-Plattform und Self-Service-Funktionen für die Verwaltung Ihrer Commerce-Anwendung in einer Cloud-nativen Umgebung.
+
+Zu den wichtigsten Funktionen gehören:
 
 - Vereinfachtes Onboarding
 - Nahtlose Upgrades
+- Integrationen von Drittanbietern
 
 ### Vereinfachtes Onboarding
 
@@ -103,6 +106,10 @@ Der typische Upgrade-Prozess für Adobe Commerce in Cloud umfasste das Erstellen
 >[!NOTE]
 >
 >Adobe garantiert Abwärtskompatibilität für alle Updates. Das bedeutet, dass Aktualisierungen, die angewendet werden, nicht die vorhandenen Funktionen oder Anpassungen beeinträchtigen, die dem Modell der &quot;[-First-Erweiterbarkeit](https://developer.adobe.com/commerce/extensibility/) entsprechen.
+
+### Integrationen von Drittanbietern
+
+Entwicklerinnen und Entwickler können umfassende [GraphQL- und REST-](https://developer.adobe.com/commerce/services/cloud/guides/) verwenden, um Commerce Foundation mit Drittanbietersystemen zu integrieren und Commerce-Funktionen zu erweitern.
 
 ## Experience Cloud-Integration
 
