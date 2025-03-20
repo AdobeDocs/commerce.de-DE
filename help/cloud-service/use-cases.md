@@ -1,18 +1,20 @@
 ---
 title: Anwendungsbeispiele
-description: Erfahren Sie, wie Sie mit Adobe Commerce as a Cloud Service praktische Anwendungsfälle und unterstützte Geschäftsszenarien umsetzen können.
+description: Erfahren Sie, wie Sie mit praktische Anwendungsfälle und unterstützte Geschäftsszenarien durchführen können [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
 
-
 # Anwendungsbeispiele
 
-Die folgenden Anwendungsfälle zeigen die Kernfunktionen und Geschäftsszenarien, die von Adobe Commerce as a Cloud Service unterstützt werden und es Ihnen ermöglichen, die Entwicklung zu beschleunigen und wirkungsvolle Erlebnisse zu starten.
+{{accs-early-access}}
+
+Die folgenden Anwendungsfälle zeigen die Kernfunktionen und Geschäftsszenarien, die von [!DNL Adobe Commerce as a Cloud Service] unterstützt werden und es Ihnen ermöglichen, die Entwicklung zu beschleunigen und wirkungsvolle Erlebnisse zu starten.
 
 Wenn Probleme auftreten, finden Sie im Abschnitt [Fehlerbehebung](#troubleshooting) Anleitungen.
 

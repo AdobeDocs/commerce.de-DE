@@ -1,18 +1,20 @@
 ---
 title: Geteilte Verantwortung
-description: Erfahren Sie mehr über die Sicherheitsaufgaben der einzelnen an Ihrem Adobe Commerce as a Cloud Service-Projekt beteiligten Parteien.
+description: Erfahren Sie mehr über die Sicherheitsaufgaben der einzelnen an Ihrem Projekt  [!DNL Adobe Commerce as a Cloud Service]  Parteien.
 role: Admin, Architect, Leader
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
-
 # Gemeinsames Verantwortungs-, Sicherheits- und Betriebsmodell
 
-Adobe Commerce as a Cloud Service ist ein On-Demand-Service, der sich auf ein Sicherheits- und Betriebsmodell mit gemeinsamer Verantwortung stützt. Diese Zuständigkeiten teilen sich Adobe und seine Kunden. Jede Partei ist für die Sicherung und den Betrieb des Adobe Commerce-Programms verantwortlich.
+{{accs-early-access}}
+
+[!DNL Adobe Commerce as a Cloud Service] ist ein On-Demand-Service, der sich auf ein Sicherheits- und Betriebsmodell mit gemeinsamer Verantwortung stützt. Diese Zuständigkeiten teilen sich Adobe und seine Kunden. Jede Partei ist für die Sicherung und den Betrieb des Adobe Commerce-Programms verantwortlich.
 
 >[!BEGINSHADEBOX]
 
@@ -33,8 +35,8 @@ Die folgenden Zusammenfassungstabellen verwenden das RACI-Modell, um die gemeins
 | Definieren von Backend-CDN-WAF-Regeln | RA | |
 | Bereitstellen von Backend-Plattform-WAF-Regeln | RA | |
 | Bereitstellen von Backend-CDN-WAF-Regeln | RA | |
-| Beheben von Hauptfehlern in Adobe Commerce as a Cloud Service | RA | I |
-| Adobe Commerce as a Cloud Service-Infrastruktur-Patches veröffentlichen | RA | |
+| Beheben von Kernfehlern in [!DNL Adobe Commerce as a Cloud Service] | RA | I |
+| Patches für die [!DNL Adobe Commerce as a Cloud Service]-Infrastruktur veröffentlichen | RA | |
 | Skalierung (Infrastruktur) | RA | |
 | Skalierung (Hauptanwendung) | RA | |
 | Integrieren externer Anwendungen | | RA |

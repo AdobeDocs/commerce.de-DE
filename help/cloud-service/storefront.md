@@ -1,16 +1,18 @@
 ---
 title: Einrichten der Storefront
-description: Erfahren Sie, wie Sie das Strukturvorlagen-Tool ausführen, um Ihre Adobe Commerce as a Cloud Service-Storefront einzurichten.
+description: Erfahren Sie, wie Sie das Tool für Strukturvorlagen ausführen, um Ihre Storefront  [!DNL Adobe Commerce as a Cloud Service] .
 role: Developer
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
-
 # Einrichten der Storefront
+
+{{accs-early-access}}
 
 Die folgenden Schritte zeigen, wie Sie mit dem Befehl `aio commerce init` Ihre Adobe Commerce-Storefront mit Edge Delivery schnell einrichten können. Dieser Prozess richtet Folgendes ein:
 
