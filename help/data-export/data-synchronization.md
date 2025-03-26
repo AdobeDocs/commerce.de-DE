@@ -3,9 +3,9 @@ title: Synchronisieren von Daten mit dem SaaS-Datenexport
 description: Erfahren Sie, wie  [!DNL SaaS Data Export]  Daten zwischen Adobe Commerce-Instanzen und verbundenen SaaS-Services erfasst und synchronisiert.
 role: Admin, Developer
 exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
-source-git-commit: 55c433f36b122813e8fc9136a7efbb869246b7f5
+source-git-commit: 291babe5dbdabb7d626ae744335b94e44ba6a6f5
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ Zu den Hauptkomponenten des SaaS-Datenexportflusses gehören:
 - SaaS-Datenexportmodule, die die Daten für Feeds aus Adobe Commerce erfassen, Feed-Elemente zusammenstellen, auf Aktualisierungen warten und den Feed-Status beibehalten.
 - SaaS exportieren Module, die Daten exportieren, Routing konfigurieren und die Feeds an verbundene Services veröffentlichen.
 - Der Adobe Commerce-Service verwaltet den Datenaufnahmeprozess, um eingehende Feeds zu validieren und Aktualisierungen für verbundene Services beizubehalten.
+
+>[HINWEIS!]
+>
+>Um eine reibungslose Planung sicherzustellen und Unterbrechungen im Site-Betrieb zu vermeiden, empfiehlt Adobe, das Datenvolumen und die Synchronisierungszeit zu schätzen, bevor Sie eine Daten-Feed-Synchronisierung starten. Diese Schätzung ist wichtig bei der Planung von anfänglichen Synchronisationen oder umfangreichen Katalogaktualisierungen, z. B. Massenpreisänderungen. Weitere Informationen finden Sie unter [Schätzen des Datenvolumens und der Übertragungszeit für die Datensynchronisation](estimate-data-volume-sync-time.md)
 
 ## Synchronisationsmodi
 
