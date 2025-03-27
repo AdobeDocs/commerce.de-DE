@@ -3,9 +3,9 @@ title: Einrichten der Storefront
 description: Erfahren Sie, wie Sie das Tool für Strukturvorlagen ausführen, um Ihre Storefront  [!DNL Adobe Commerce as a Cloud Service] .
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: 7f7a674b856090bd02752a9e2ad29475b2b56fcf
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -102,13 +102,11 @@ Wenn Sie den folgenden Befehl ausführen, wird eine Strukturvorlage für Ihre Co
 
 1. Geben Sie den Namen des Repositorys ein, das Sie erstellen möchten.
 
-1. Wählen Sie die Vorlage aus, die verwendet werden soll, z. B. `adobe-commerce/adobe-demo-store`.
-
 1. Wählen Sie eine der folgenden Optionen aus:
 
-   * **Demoinstanz von Adobe verwenden (Standard-Endpunkte)** - Verwenden Sie die Beispiel-Commerce-Instanz von Adobe.
+   * **Verwenden des Demo-Adobe Commerce-Mandanten** - Verwenden eines Demo-Mandanten.
       * Wenn Sie diese Option auswählen, werden Sie aufgefordert, den AEM Code Sync-Bot in einem Browserfenster zu installieren. Sie müssen das von Ihnen erstellte Repository angeben und den Bot autorisieren. Kehren Sie zur CLI zurück und geben Sie `y` ein, um die Installation des AEM Code Sync-Bots zu bestätigen.
-   * **Verfügbare API auswählen (Mesh -> SaaS)** - Wählen Sie eine vorhandene Commerce-Instanz in der ausgewählten Organisation aus.
+   * **Verfügbaren Adobe Commerce-Mandanten auswählen** - Wählen Sie einen bestehenden Commerce-Mandanten in der ausgewählten Organisation aus.
       * Wenn Sie diese Option auswählen, müssen Sie das Projekt und den Arbeitsbereich auswählen, um ein Netz in zu erstellen.
 
    >[!NOTE]
