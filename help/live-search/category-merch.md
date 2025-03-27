@@ -2,9 +2,10 @@
 title: Kategorie-Merchandising
 description: Verwenden  [!DNL Live Search]  Kategorie-Merchandising für ein schnelleres Einkaufserlebnis.
 gourl: ls_catalog_merchandising
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
+source-git-commit: e5e5443e0bdb12e4774856336157067b4ff6eb7c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -140,3 +141,7 @@ So fügen Sie ein Ereignis manuell hinzu:
 1. Klicken Sie unter Manuelle Rangfolge auf das **Ereignis auswählen** und wählen Sie ein Ereignis aus, das ausgeführt werden soll, wenn die entsprechenden Bedingungen erfüllt sind.
 1. Geben Sie den Namen des Produkts ein, auf das Sie Einfluss haben möchten. Produkte werden bei der Eingabe vorgeschlagen.
 1. Wählen Sie für mehrere Ereignisse alle anderen Ereignisse aus, die Sie bei Erfüllung der Bedingungen als Trigger festlegen möchten.
+
+>[!NOTE]
+>
+>Regeln werden angewendet, wenn eine bestimmte Kategorie in der Storefront geöffnet wird und eine Regel für diese Kategorie vorhanden ist. Für Kategorie-Merchandising-Regeln lautet die standardmäßige Sortierreihenfolge „Sortieren nach: Position“. Wenn ein Käufer die Sortierreihenfolge ändert, werden alle ausgeblendeten, angehefteten und vergrabenen Produkte nicht mehr sortiert.

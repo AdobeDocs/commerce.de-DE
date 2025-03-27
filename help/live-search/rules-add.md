@@ -1,9 +1,10 @@
 ---
 title: Regeln hinzufügen
 description: Erfahren Sie, wie Sie Merchandising-Suchregeln erstellen.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
+source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1650'
 ht-degree: 0%
 
 ---
@@ -151,6 +152,10 @@ Die hier eingegebenen Informationen werden im Bedienfeld [Regeldetails](rules-wo
    Die Regel wird der Liste im Arbeitsbereich *Regeln* hinzugefügt.
 
 1. Obwohl aktive Regeln sofort in Kraft treten, müssen Sie möglicherweise bis zu 15 Minuten warten, bis die zwischengespeicherten Abfrageergebnisse in der Storefront aktualisiert werden.
+
+>[!NOTE]
+>
+>Regeln und manuell sortierte Produkte werden auf die Suchergebnisse angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sodass sie etwa nach Name oder Preis sortiert wird, sind Regeln und manuelle Rankings nicht mehr wirksam.
 
 ## Feldbeschreibungen
 

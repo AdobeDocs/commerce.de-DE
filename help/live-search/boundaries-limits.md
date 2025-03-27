@@ -3,9 +3,9 @@ title: Grenzen und Beschränkungen
 description: Erfahren Sie mehr über die Grenzen und Einschränkungen von  [!DNL Live Search] , um sicherzustellen, dass es den Anforderungen Ihres Unternehmens entspricht.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -54,12 +54,12 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 - Die maximale Anzahl von Ergebnissen pro Seite beträgt 500.
 - Es ist nicht möglich, Ergebnisse mithilfe eines Attributs vom Typ Datum zu filtern.
 
-## Regeln
+## Merchandising suchen
 
 - Die maximale Anzahl von Merchandising-[ (Regeln](rules.md) pro Store-Ansicht ist 50.
-- Kategorie-Merchandising kann eine Regel pro Kategorie aufweisen.
 - Die maximale Anzahl von Bedingungen pro Regel ist 10.
 - Die maximale Anzahl von Ereignissen pro Regel ist 25.
+- Regeln und manuell sortierte Produkte werden auf die Suchergebnisse angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sodass sie etwa nach Name oder Preis sortiert wird, sind Regeln und manuelle Rankings nicht mehr wirksam.
 - Um unvorhersehbare Ergebnisse in paginierten Antworten zu vermeiden, sollte die Anzahl der angehefteten Produkte die angeforderte Seitengröße nicht überschreiten.
 
 ## Synonyme
@@ -68,9 +68,10 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 
 ## Kategorie-Merchandising
 
-- Für jede Shop-Ansicht kann eine Regel pro Kategorie erstellt werden. Jede Regel kann Folgendes enthalten:
-   - Bis zu zehn Bedingungen
-   - Bis zu 25 Ereignisse
+- Sie können für jede Shop-Ansicht eine Regel pro Kategorie erstellen.
+- Die maximale Anzahl von Bedingungen pro Regel ist 10.
+- Die maximale Anzahl von Ereignissen pro Regel ist 25.
+- Regeln werden angewendet, wenn eine bestimmte Kategorie in der Storefront geöffnet wird und eine Regel für diese Kategorie vorhanden ist. Für Kategorie-Merchandising-Regeln lautet die standardmäßige Sortierreihenfolge „Sortieren nach: Position“. Wenn ein Käufer die Sortierreihenfolge ändert, werden alle ausgeblendeten, angehefteten und vergrabenen Produkte nicht mehr sortiert.
 
 ## B2B- und Kategorieberechtigungen
 
