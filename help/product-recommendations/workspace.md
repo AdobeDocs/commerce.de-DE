@@ -1,9 +1,10 @@
 ---
 title: '[!DNL Product Recommendations] Workspace'
 description: Erfahren Sie, wie Sie die Leistung von Produktempfehlungen konfigurieren, verwalten und überwachen.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
+source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -18,6 +19,19 @@ Der Arbeitsbereich [!DNL Product Recommendations] zeigt eine Liste der zuvor kon
 
 ![Recommendations-Arbeitsbereich](assets/workspace.png)
 _Recommendations Workspace_
+
+## Datenerfassung
+
+Um sicherzustellen, dass jeder Funktionsbereich im Arbeitsbereich die richtigen Daten enthält, müssen Sie die Datenerfassung basierend auf der ausgewählten Storefront-Implementierung konfigurieren:
+
+1. Luma - Die Datenerfassung ist vorkonfiguriert verfügbar.
+1. Headless - Die Datenerfassung muss je nach Storefront-Implementierung manuell konfiguriert werden.
+
+Wenn Sie eine Headless-Storefront verwenden, finden Sie in der folgenden Dokumentation weitere Informationen zu den erforderlichen Ereignissen, die Sie hinzufügen müssen:
+
+- [Erforderliche Ereignisse](events.md) für das Produktempfehlungs-Dashboard.
+- [Storefront Events Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/), der als Voraussetzung hinzugefügt werden muss.
+- [Beispiele](https://github.com/adobe/commerce-events/tree/main/examples) der Ereignisstruktur.
 
 ## Festlegen des Umfangs
 

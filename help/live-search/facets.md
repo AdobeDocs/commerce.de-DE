@@ -1,9 +1,10 @@
 ---
 title: Facetten
 description: '[!DNL Live Search] Facetten verwenden mehrere Dimensionen von Attributwerten als Suchkriterien.'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
+source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -15,6 +16,8 @@ Facettierung ist eine Methode zur Hochleistungsfilterung, bei der mehrere Dimens
 [!DNL Live Search] verwendet die `productSearch`-Abfrage, die Facetten- und andere Daten zurückgibt, die spezifisch für [!DNL Live Search] sind. Code-Beispiele finden Sie ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) der Entwicklerdokumentation unter [`productSearch` Abfrage .
 
 ![Gefilterte Suchergebnisse](assets/storefront-search-results-run.png)
+
+Innerhalb einer Facette können Käufer mehrere Optionen auswählen, z. B. „Einfach“ und „eng“ unter „Stil“ und die Suchergebnisse werden aktualisiert, um nur diese Stile anzuzeigen. Wenn ein Käufer über Facetten hinweg Optionen auswählt, z. B. „Standard“ unter „Stil“ und „Indoor“ unter „Klima“, werden die Suchergebnisse aktualisiert, um diesen ausgewählten Stil und dieses ausgewählte Klima anzuzeigen.
 
 Jede definierte Facette kann als URL-Parameter verwendet werden. Die Ergebnisse werden anhand der Parameterwerte `http://yourstore.com?brand=acme&color=red` gefiltert.
 
