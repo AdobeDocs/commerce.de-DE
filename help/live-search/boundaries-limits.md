@@ -3,9 +3,9 @@ title: Grenzen und Beschränkungen
 description: Erfahren Sie mehr über die Grenzen und Einschränkungen von  [!DNL Live Search] , um sicherzustellen, dass es den Anforderungen Ihres Unternehmens entspricht.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
+source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1036'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 
 - Produkte werden nicht angezeigt, wenn sie nicht zu einem freigegebenen Standardkatalog hinzugefügt werden.
 - So beschränken Sie Kundengruppen mithilfe von [Kategorieberechtigungen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions):
-   - Produkte müssen der Stammkategorie zugewiesen werden.
+   - Produkte müssen der Stammkategorie zugewiesen werden. (**Hinweis:** Sie können diese Einschränkung entfernen, indem Sie die SaaS-Datenexporterweiterung auf Version 103.4.0 oder höher aktualisieren. Siehe [Verwalten der Datenexporterweiterung](../data-export/manage-extension.md).
    - Die Kundengruppe „Nicht angemeldet“ muss über „Erlauben“-Browserberechtigungen verfügen.
    - Um Produkte auf die Kundengruppe „Nicht angemeldet“ zu beschränken, gehen Sie zu jeder Kategorie und legen Sie die Berechtigungen für jede [Kundengruppe“ ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - Vorkonfigurierte Unterstützung für B2B mit dem PLP-Widget auf PWA Studio wird derzeit nicht unterstützt. Sie können jedoch [die API verwenden](install.md#pwa-support) um diese Funktion zu implementieren.
