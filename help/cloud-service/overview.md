@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die wichtigsten Funktionen und Vorteile von
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: 25a0d658776ea95fcae07f6390abeeb559642613
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Zu den wichtigsten Funktionen gehören:
 
 ### Vereinfachtes Onboarding
 
-Starten Sie Sandbox- und Produktionsinstanzen in Minutenschnelle mit dem Commerce Cloud Manager Self-Service-Bereitstellungsportal. Alles, was Sie benötigen, einschließlich Merchandising Services, Commerce Storefront und App Builder, wird automatisch konfiguriert und in Ihre Instanzen integriert.
+Starten Sie Sandbox- und Produktionsinstanzen in Minutenschnelle mit dem [!UICONTROL Commerce Cloud Manager] Self-Service-Bereitstellungsportal. Alles, was Sie benötigen, einschließlich Merchandising Services, einer Headless-Commerce-Instanz und App Builder, wird automatisch konfiguriert und in Ihre Instanzen integriert.
 
 Unter [Erste Schritte](getting-started.md) erfahren Sie, wie Sie Commerce-Instanzen erstellen und verwalten.
 
