@@ -3,9 +3,9 @@ title: Anwendungsbeispiele
 description: Erfahren Sie, wie Sie mit praktische Anwendungsfälle und unterstützte Geschäftsszenarien durchführen können [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: d5935f4d080c3be1f51bf8916575a3b2f357ee22
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1305'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Inhalte direkt in der Storefront erstellen, bearbeiten und veröffentlichen.
 
 1. Öffnen Sie die [Storefront](./storefront.md) die Sie in den Voraussetzungen erstellt haben.
 
-1. Dokumenterstellung öffnen. Navigieren Sie zu `https://da.live/#/<GitHub User Name>/<Repository Name>/main/da/index.md`.
+1. Öffnen Sie Storefront Builder. Navigieren Sie zu `https://da.live/#/<GitHub User Name>/<Repository Name>/main/da/index.md`.
 
 1. Öffnen Sie die Seite [!UICONTROL **Index**].
 
@@ -110,7 +110,7 @@ Mit der Funktion für kontextuelle Experimente von Adobe Commerce können Sie Ex
 
 * Installieren Sie die Erweiterung [AEM Sidekick](https://www.aem.live/docs/sidekick)
 
-1. Wählen Sie in der Dokumenterstellungsansicht Ihrer Storefront Ihre Indexseite aus und klicken Sie auf [!UICONTROL **Kopieren**].
+1. Wählen Sie in Storefront Builder Ihre Indexseite aus und klicken Sie auf [!UICONTROL **Kopieren**].
 
 1. Erstellen Sie [!UICONTROL **Ordner**] Experimente“ unter dem Hauptordner, indem Sie auf die Schaltfläche [!UICONTROL **Neu**] klicken und [!UICONTROL **Ordner**] auswählen.
 
