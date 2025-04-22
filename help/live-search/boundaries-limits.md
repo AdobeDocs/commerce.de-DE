@@ -3,9 +3,9 @@ title: Grenzen und Beschränkungen
 description: Erfahren Sie mehr über die Grenzen und Einschränkungen von  [!DNL Live Search] , um sicherzustellen, dass es den Anforderungen Ihres Unternehmens entspricht.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
+source-git-commit: eaea7d847be04956299a80ba3bccd90be527c482
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 - [Preisstufe](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) wird im [!DNL Live Search] Feld und im Widget „Produktlistenseite“ nicht unterstützt.
 - Die Produktpreise beinhalten keine Mehrwertsteuer (MwSt.).
 - Die Inhaltssuche (CMS-Seiten und -Blöcke) wird nicht unterstützt.
-- Es gibt eine Grenze von 10.000 Produkten, die paginiert werden können. Dieser Grenzwert kann zwar erhöht werden, aber er kann sich auf die Leistung auswirken. Stellen Sie sicher, dass Sie aussagekräftige Möglichkeiten zum Filtern von Produkten bereitstellen, falls eine Kategorie oder ein Suchergebnis über eine große Anzahl von Produkten verfügt, sodass Käufer keine tiefe Paginierung verwenden müssen.
+- Die maximale Anzahl von Ergebnissen, die paginiert werden können, beträgt 10.000. Um sicherzustellen, dass Käufer keine tiefe Paginierung verwenden müssen, wenn eine Kategorie oder ein Suchergebnis eine große Anzahl von Produkten enthält, bieten Sie aussagekräftige Möglichkeiten, Produkte zu filtern.
 - Es gibt eine feste Grenze von 1 MB pro Attribut, einschließlich Beschreibung und benutzerdefinierten Attributen.
 - Der Suchadapter unterstützt keine Produktattribute, die mit einem benutzerdefinierten Quellmodell erstellt und als Facetten verwendet werden. Um diese Funktion zu unterstützen, müssen Sie das Widget [Produktlistenseite“ ](plp-styling.md).
 - Benutzerdefinierte Produkttypen werden nicht unterstützt.

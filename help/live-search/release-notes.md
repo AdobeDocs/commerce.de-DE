@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Versionshinweise'
 description: Die neuesten Versionsinformationen für  [!DNL Live Search]  von Adobe Commerce.
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
+source-git-commit: 5c34bf61ee441ef20a680a4f071308d17379f49d
 workflow-type: tm+mt
-source-wordcount: '2229'
+source-wordcount: '2399'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Zu den Aktualisierungen gehören:
 ## Gehostete Service-Aktualisierungen
 
 Diese Hinweise beschreiben Aktualisierungen, die außerhalb einer versionierten Version veröffentlicht wurden, oder Verbesserungen am gehosteten Service.
+
+_21. April 2025_
+
+![Korrigieren](../assets/fix.svg) Es wurde ein Problem mit dem Bereichsfilter für Preise behoben, sodass Produkte, die gleich dem oberen Bereich sind, nicht in den Ergebnissen enthalten sind. Diese Änderung entspricht der Definition der Preisbereiche für Facetten.
 
 _3. April 2025_
 
@@ -82,7 +86,7 @@ _27. Oktober 2023_
 
 _11. März 2025_
 
-[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Fix](../assets/fix.svg) [!DNL Live Search] unterstützt jetzt PHP 8.4 für Installationen mit Adobe Commerce 2.4.8-beta2.
 ![Beheben](../assets/fix.svg) Es wurde ein Problem behoben, bei dem der Suchadapter nicht mit `psr/http-message:2.0` kompatibel war.
@@ -91,7 +95,7 @@ _11. März 2025_
 
 _13. Februar 2025_
 
-[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Beheben](../assets/fix.svg) Es wurde ein Problem behoben, bei dem auf der Seite mit den Bestelldetails die Bestellnummer, das Datum und die Schaltfläche &quot;**[!UICONTROL Reorder]**&quot; fehlte.
 
@@ -99,7 +103,7 @@ _13. Februar 2025_
 
 _6. Januar 2025_
 
-[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, das zu einem Fehler bei der `categoryList` GraphQL-Abfrage in Adobe Commerce Version 2.4.5 und früher führte.
 
@@ -107,7 +111,7 @@ _6. Januar 2025_
 
 _31. Juli 2024_
 
-[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Beheben](../assets/fix.svg) Es wurde ein Problem behoben, bei dem bestimmte Skripte nicht auf der Kaufbestätigungsseite geladen wurden.
 ![Beheben](../assets/fix.svg) Es wurde eine Abhängigkeitsversion in der `composer.json`-Datei behoben.
@@ -116,7 +120,7 @@ _31. Juli 2024_
 
 _31. Mai 2024_
 
-[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Neu](../assets/new.svg) Die Live Search-Erweiterung wurde aktualisiert, um PLP-Widgets der Version 2.0.0 zu verwenden.
 
@@ -124,7 +128,7 @@ _31. Mai 2024_
 
 _16. Mai 2024_
 
-[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ### Updates
 
@@ -134,7 +138,7 @@ _16. Mai 2024_
 
 _19. März 2024_
 
-[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ### Neue Funktionen
 
@@ -145,7 +149,7 @@ _19. März 2024_
 
 _22. Februar 2024_
 
-[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ### Neue Funktionen
 
@@ -161,7 +165,7 @@ _22. Februar 2024_
 
 _13. November 2023_
 
-[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ### Neue Funktionen
 
@@ -192,7 +196,7 @@ Testen Sie nach dem Upgrade die aktualisierte Konfiguration in QA oder Staging, 
 
 _15. September 2023_
 
-[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Neu](../assets/new.svg) Die Registerkarte „Merchandising für neue Kategorien“ wurde hinzugefügt. Benutzer können jetzt intelligente und manuelle Rankings (Pin, Boost, Bury, Hide) pro Kategorie hinzufügen
 ![Neu](../assets/new.svg) Benutzer können eine einzelne Kategorieregel mit intelligenter oder manueller Rangfolge hinzufügen
@@ -221,7 +225,7 @@ _15. September 2023_
 
 _1. September 2023_
 
-[!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type="Informative" tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 #### Updates
 
@@ -231,7 +235,7 @@ _1. September 2023_
 
 _7. August 2023_
 
-[!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type="Informative" tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 #### Neue Funktionen
 
@@ -260,7 +264,7 @@ Die Verwendung des Widgets Live Search Product Listing Page führt dazu, dass Go
 
 _14. März 2023_
 
-[!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type="Informative" tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 #### Neue Funktionen
 
@@ -301,7 +305,7 @@ Es wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor Sie zur Produ
 
 ### [!DNL Live Search] 2.0.5
 
-[!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type="Informative" tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Beheben](../assets/fix.svg) - Die Live Search würde einen Fehler auslösen, wenn SDK-Ressourcen aufgrund von Netzwerkproblemen nicht verfügbar waren. Dieser Fehler wurde behoben.
 
@@ -311,7 +315,7 @@ Es wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor Sie zur Produ
 
 ### [!DNL Live Search] 2.0.4
 
-[!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type="Informative" tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Neu](../assets/new.svg) Die Live-Suche unterstützt jetzt die Filterung nach der Einstellung „Nicht vorrätige Produkte anzeigen“ in der Admin-Liste. Wenn „Nicht vorrätige Produkte anzeigen“ auf „false“ gesetzt ist, wird `inStock = true` zum Filter hinzugefügt.
 ![Korrigieren](../assets/fix.svg) Um die Leistung zu verbessern, wurde der Block „Vorschläge“ aus dem Live Search-Popup entfernt. Die Daten werden weiterhin über GraphQL weitergeleitet, falls Sie die Funktion ersetzen möchten.
@@ -325,7 +329,7 @@ Benutzern wird empfohlen, ein Upgrade durchzuführen und Tests durchzuführen, b
 
 ### [!DNL Live Search] 2.0.3
 
-[!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type="Informative" tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Neu](../assets/new.svg) Die Live Search unterstützt jetzt B2B-Funktionen, indem Kategorieberechtigungen, freigegebene Kataloge und kundengruppenspezifische Preise berücksichtigt werden.
 
@@ -335,7 +339,7 @@ Benutzern wird empfohlen, ein Upgrade durchzuführen und Tests durchzuführen, b
 
 ### [!DNL Live Search] 2.0
 
-[!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type="Informative" tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 Vorhandene [!DNL Live Search] müssen auf [!DNL Live Search] 2.0.0 aktualisiert werden, um die folgenden neuen Funktionen, Fehlerbehebungen und Verbesserungen nutzen zu können:
 
@@ -350,7 +354,7 @@ Vorhandene [!DNL Live Search] müssen auf [!DNL Live Search] 2.0.0 aktualisiert 
 
 ### [!DNL Live Search] 1.3.1
 
-[!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type="Informative" tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
 ![Beheben](../assets/fix.svg) [Benutzerdefiniertes Preisattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) gibt keinen Fehler mehr zurück, wenn es als „Facette[ konfiguriert ](facets-add.md).
 ![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, das dazu führte, dass ein Fehler auftrat, wenn [Währungssymbol](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`) verfügbar war.
@@ -358,7 +362,7 @@ Vorhandene [!DNL Live Search] müssen auf [!DNL Live Search] 2.0.0 aktualisiert 
 
 ### [!DNL Live Search] 1.3.0
 
-[!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type="Informative" tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
 ![ Reporting](../assets/new.svg)Dashboard [Neu](performance.md)Performance) bietet Einblicke in Suchbegriffe, die Kundinnen und Kunden verwenden.
 ![Neu](../assets/new.svg) [!DNL Live Search] [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) bietet Zugriff auf eine gemeinsame Datenschicht mit Services zur Ereignisveröffentlichung und -abonnement sowie Metriken.
@@ -369,7 +373,7 @@ Vorhandene [!DNL Live Search] müssen auf [!DNL Live Search] 2.0.0 aktualisiert 
 
 ### [!DNL Live Search] 1.2.0
 
-[!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type="Informative" tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
 ![Neu](../assets/new.svg) zeigt [[!DNL Storefront popover]](storefront-popover.md) vorgeschlagene Produkte und Miniaturbilder der besten Suchergebnisse an, wenn Käufer Abfragen in das Suchfeld eingeben.
 ![Neu](../assets/new.svg) Commerce *Admin*-Sitzung bleibt während längerer Zeiträume ohne Tastaturaktivität geöffnet
@@ -382,7 +386,7 @@ Vorhandene [!DNL Live Search] müssen auf [!DNL Live Search] 2.0.0 aktualisiert 
 
 ### [!DNL Live Search] 1.1.0
 
-[!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
+[!BADGE Unterstützt]{type="Informative" tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
 ![Bug](../assets/bug.svg) Der [!DNL Live Search]-Service unterstützt nur die [Basiswährung](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration) der Adobe Commerce-Installation.
 ![Bug](../assets/bug.svg) Beim Hinzufügen einer Facette wird der Feed „Produktattribute“ nicht korrekt aktualisiert, wenn auf &quot;`Update on Save`&quot; gesetzt ist. Um dieses Problem zu vermeiden, navigieren Sie zu [Indexverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) und setzen Sie den Feed „Produktattribute“ auf `Update by Schedule`.
