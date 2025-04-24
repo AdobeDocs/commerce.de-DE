@@ -5,13 +5,13 @@ feature: Paas, Saas
 recommendations: noDisplay, noCatalog
 hide: true
 hidefromtoc: true
-source-git-commit: 1e73f4dd45114cfdcd2fef87ae0d9b2504214c6b
+exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
+source-git-commit: 79d1b862c5cc307daf93f93c03f1993dbd45aa09
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce-Produktlösungen
 
@@ -39,13 +39,9 @@ In der folgenden Tabelle sind die Badges aufgeführt, die in der Adobe Commerce-
 
 Dieses Badge identifiziert die Dokumentation nur für [Adobe Commerce as a Cloud Service](../cloud-service/overview.md) und [Adobe Commerce Optimizer](../optimizer/overview.md) Projekte. Diese Projekte werden auf einer Cloud-nativen, vollständig verwalteten Software-as-a-Service (SaaS)-Lösung gehostet, bei der Adobe für die meisten betrieblichen Aspekte verantwortlich ist - wie kontinuierliche Updates, Sicherheitsüberwachung und Skalierbarkeit -, sodass sich Kunden auf den Handel statt auf die Infrastruktur konzentrieren können.
 
-#### [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."}
+#### [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 
-Dieses Badge kennzeichnet nur Dokumentationen zu [Adobe Commerce in Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)-Projekten. Diese Projekte werden auf einer Cloud-nativen, vollständig verwalteten Platform-as-a-Service-Lösung (PaaS) mit allen Kernfunktionen von Adobe Commerce in einer vorab bereitgestellten Umgebung gehostet.
-
->[!NOTE]
->
->Sofern nicht anders angegeben, umfasst dies auch On-Premise-Projekte.
+Dieses Badge kennzeichnet nur Dokumentationen zu [Adobe Commerce in ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) Cloud und lokalen Projekten. Adobe Commerce on Cloud-Projekte werden auf einer Cloud-nativen, vollständig verwalteten Platform-as-a-Service (PaaS)-Lösung gehostet, die alle Kernfunktionen von Adobe Commerce in einer vorab bereitgestellten Umgebung enthält. Lokale Projekte werden auf kundenverwalteter Infrastruktur gehostet.
 
 ### Regeln
 
