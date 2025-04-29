@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die wichtigsten Funktionen und Vorteile von
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: 25a0d658776ea95fcae07f6390abeeb559642613
+source-git-commit: 4cd5847eee52ff43e2fae27080a5971ceb939875
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1475'
 ht-degree: 0%
 
 ---
@@ -148,6 +148,5 @@ Die [Admin-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/comme
 | [Inhalts-Staging](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) | [Katalog-Service](../catalog-service/overview.md) | Fahrplan | Ein Katalogverwaltungstool, das mit Adobe Experience Platform verbunden ist und die Verwaltung großer Kataloge ermöglicht. |
 | [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview) | [Commerce-Storefront](https://www.aem.live/) | Verfügbar | Eine einfache CMS, mit der Benutzende Dokumente und Website-Inhalte mithilfe der dokumentbasierten Inhaltserstellung einfach erstellen und verwalten können. Alternativ dazu steht ein universeller Editor zur Verfügung, der ein erweitertes Content-Management und eine plattformübergreifende Anpassung ermöglicht. |
 | [Zahlungen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | [Payment Services für Adobe Commerce](../payment-services/overview.md) | Verfügbar | Ein integrierter Zahlungsdienst, der sichere und effiziente Transaktionen ermöglicht. |
-| [Freigegebener Katalog](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) | [Preisindizierungs-Service](../price-index/price-indexing.md) | Fahrplan | Analysiert Preisdaten und schlägt optimale Preisstrategien für Produkte basierend auf verschiedenen Faktoren vor. |
 | [URL-Neuschreibungen](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce-Storefront](https://www.aem.live/) | Verfügbar | Eine einfache CMS, mit der Benutzende Dokumente und Website-Inhalte mithilfe der dokumentbasierten Inhaltserstellung einfach erstellen und verwalten können. Alternativ dazu steht ein universeller Editor zur Verfügung, der ein erweitertes Content-Management und eine plattformübergreifende Anpassung ermöglicht. |
 | [Visual Merchandiser](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Katalog-Service](../catalog-service/overview.md) | Fahrplan | Ein Katalogverwaltungstool, das mit Adobe Experience Platform verbunden ist und die Verwaltung großer Kataloge ermöglicht. |
