@@ -3,9 +3,9 @@ title: '[!DNL Payment Services] Versionshinweise'
 description: Informationen zu allen Versionen finden  [!DNL Payment Services]  in den Versionshinweisen .
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 359143c4f48ff911d6dbe9105f364615525fab8c
+source-git-commit: eb2e99dc3a0dbe1e27524c554886a57a4c8a1c30
 workflow-type: tm+mt
-source-wordcount: '3971'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Weitere Informationen zu kommenden Versionen, zum Produkt-Support und dazu, welc
 In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschrieben, die außerhalb der regulären Funktionsversionen für den gehosteten Service stattfanden und veröffentlicht wurden.
 
 +++Gehostete Service-Updates
+
+_25. April 2025_
+
+![Neues Problem](../assets/new.svg)<!-- Issue PAY-6051 --> Jetzt zeigt [!DNL Payment Services] Dashboard sowohl die aktuelle Erweiterungsversion als auch die Dashboard-Version an.
 
 _30. August 2024_
 
