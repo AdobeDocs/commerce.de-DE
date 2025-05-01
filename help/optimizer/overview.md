@@ -4,14 +4,18 @@ description: Erfahren Sie, wie Sie mit  [!DNL Adobe Commerce Optimizer]  eine sc
 hide: true
 recommendations: noCatalog
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 67a9d89a6f50818cdef0108c66e6c8dcb76bb29c
+source-git-commit: 425c801a852de566120504563e256b0351df588e
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
 
 # Was ist [!DNL Adobe Commerce Optimizer]?
+
+>[!NOTE]
+>
+>In dieser Dokumentation wird ein Produkt beschrieben, das sich in der Entwicklung für den frühzeitigen Zugriff befindet und nicht alle für die allgemeine Verfügbarkeit vorgesehenen Funktionen enthält.
 
 [!DNL Adobe Commerce Optimizer] verbessert Ihr E-Commerce-Erlebnis mit einer leistungsstarken Storefront, die organischen Traffic, Kundeninteraktion und Umsatz steigert.
 
@@ -39,7 +43,7 @@ Sehen Sie sich das folgende Video an, um einen allgemeinen Überblick über [!DN
 
 - Händler, die ihr bestehendes Backend-Commerce-System beibehalten und nur Storefront-Erlebnisse transformieren möchten.
 - Unternehmen, in denen ein Drittanbietersystem den Warenkorb- und Checkout-Lebenszyklus verwaltet.
-- AEM-Kunden, die derzeit keine Adobe Commerce verwenden und eine einfache Möglichkeit zur Verwaltung ihres Produktkatalogs suchen.
+- AEM-Kunden, die einen einfachen Weg suchen, ihren Produktkatalog über eine Commerce-Engine eines Drittanbieters zu verwalten.
 
 ## Schneller Überblick
 
@@ -49,7 +53,7 @@ Beim ersten Starten von [!DNL Adobe Commerce Optimizer] wird Folgendes angezeigt
 >
 >Dieses Bild ist ein Beispiel dafür, wie [!DNL Adobe Commerce Optimizer] aussehen könnte, und kann sich ändern.
 
-![[!DNL Adobe Commerce Optimizer] Benutzeroberfläche](assets/user-interface.png)
+![[!DNL Adobe Commerce Optimizer] Benutzeroberfläche](./assets/user-interface.png)
 
 >[!BEGINTABS]
 
@@ -84,9 +88,9 @@ Sehen Sie sich wertvolle Einblicke in die Verfügbarkeit von Produktdaten für I
 
 Zu den wichtigsten Funktionen gehören:
 
-- **Erfassung von Katalogen von Drittanbietern** - Aufnahme von Katalogdaten aus beliebigen Drittanbieterquellen (PIM, ERP usw.). Ihre Katalogdaten werden direkt in die Merchandising-Services-Ebene aufgenommen, die eine SaaS-Komponente namens Merchandising Services powered by Channels and Policies (Kanäle und Richtlinien) ist.
-- **Merchandising-Services, die auf Kanälen und Richtlinien basieren** - Diese Lösung ist das Grundelement der [!DNL Adobe Commerce Optimizer]. Merchandising Services powered by Channels and Policies ist ein hochgradig skalierbares, flexibles Katalogdatenmodell, das Anwendungsfälle für mehrere Marken, mehrere Geschäftseinheiten und mehrere Sprachen ermöglicht. Diese Merchandising-Services bieten Bausteine, mit denen Händler Kataloge im benötigten Umfang erstellen und verwalten können. Innerhalb von [!DNL Adobe Commerce Optimizer] können Sie Ihren Katalog verwalten, indem Sie Kanäle und Richtlinien erstellen, die Ihre Geschäftsziele am besten definieren. Darüber hinaus kann der Merchandiser personalisierte Erlebnisse bereitstellen, um den Traffic und die Interaktion mithilfe von Produkterkennung&#x200B;, Produktempfehlungen &#x200B; intelligentem Merchandising zu steigern. Erfahren Sie mehr über [Merchandising-Services, die auf Kanälen und Richtlinien basieren](https://experienceleague.adobe.com/en/docs/commerce/merchandising-services/overview).
-- **Erfolgsmetriken** - Bietet Echtzeiteinblicke in die Leistung Ihrer Commerce-Initiativen. Sie können vor und nach den Ergebnissen bestimmter KPIs anzeigen, die Auswirkungen von Änderungen auswerten und optimieren, um bessere Ergebnisse zu erzielen.
+- **Erfassung von Katalogen von Drittanbietern** - Aufnahme von Katalogdaten aus beliebigen Drittanbieterquellen (z. B. Commerce-Katalog, PIM, ERP usw.). Ihre Katalogdaten werden direkt in die Merchandising-Services-Ebene aufgenommen, die eine SaaS-Komponente namens Merchandising Services powered by Channels and Policies (Kanäle und Richtlinien) ist.
+- **Merchandising-Services, die auf Kanälen und Richtlinien basieren** - Diese Lösung ist das Grundelement der [!DNL Adobe Commerce Optimizer]. Merchandising Services powered by Channels and Policies ist ein hochgradig skalierbares, flexibles Katalogdatenmodell, das Anwendungsfälle für mehrere Marken, mehrere Geschäftseinheiten und mehrere Sprachen ermöglicht. Diese Merchandising-Services bieten Bausteine, mit denen Händler Kataloge im benötigten Umfang erstellen und verwalten können. Innerhalb von [!DNL Adobe Commerce Optimizer] können Sie Ihren Katalog verwalten, indem Sie Kanäle und Richtlinien erstellen, die Ihre Geschäftsziele am besten definieren. Darüber hinaus kann der Merchandiser personalisierte Erlebnisse bereitstellen, um den Traffic und die Interaktion mithilfe von Produkterkennung&#x200B;, Produktempfehlungen &#x200B; intelligentem Merchandising zu steigern. Erfahren Sie mehr über [Merchandising-Services, die auf Kanälen und Richtlinien basieren](./merchandising/overview.md).
+- **Vorher-Nachher-Metriken (PDF)** Bietet Echtzeiteinblicke in die Leistung Ihrer Commerce-Initiativen. Sie können vor und nach den Ergebnissen bestimmter KPIs anzeigen, die Auswirkungen von Änderungen auswerten und optimieren, um bessere Ergebnisse zu erzielen. Die Ergebnisse werden in einer PDF bereitgestellt.
 - **Commerce-Storefront mit Edge Delivery** - Mit der Bereitstellung von Edge können Sie Ihre Site schnell mit vordefinierten Storefront-Komponenten mit integrierten Commerce-Funktionen starten, einschließlich Produktlistenseiten, Produktdetailseiten, Warenkorb und Checkout.
 - **Warenkorb und Checkout von Drittanbietern** - Verwenden Sie API Mesh und App Builder, um eine Integration mit Warenkorb- und Checkout-Systemen von Drittanbietern durchzuführen.
 
@@ -94,4 +98,4 @@ Zu den wichtigsten Funktionen gehören:
 
 Das folgende Diagramm beschreibt die grundlegende Architektur von [!DNL Adobe Commerce Optimizer], von der Katalogdatenerfassung über die Beziehung zwischen Merchandising-Services, Ihrer Storefront und der Integration mit einem Warenkorb- und Checkout-Prozess von Drittanbietern.
 
-![[!DNL Adobe Commerce Optimizer] Architektur](assets/architecture.png)
+![[!DNL Adobe Commerce Optimizer] Architektur](./assets/architecture.png)
