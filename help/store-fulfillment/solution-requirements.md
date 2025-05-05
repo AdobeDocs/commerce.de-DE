@@ -26,9 +26,9 @@ Lesen Sie vor der Installation oder dem Upgrade die Versionshinweise und Adobe C
 
 - [Versionshinweise zur Store-Erfüllung](release-notes.md)
 
-- [Versionshinweise zu Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) in den *Versionsinformationen zu Adobe Commerce*.
+- [Versionshinweise zu Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html?lang=de) in den *Versionsinformationen zu Adobe Commerce*.
 
-- [Adobe Commerce-Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) im *Adobe Commerce-Installationshandbuch*.
+- [Adobe Commerce-Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) im *Adobe Commerce-Installationshandbuch*.
 
 
 ## Store Assist-App-Anforderungen

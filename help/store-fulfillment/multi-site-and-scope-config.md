@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Konfiguration mehrerer Websites und Bereiche
 
-Sie können den [Umfang](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) für einige Elemente festlegen, um mehrere Websites, Stores und Store-Ansichten aufzunehmen:
+Sie können den [Umfang](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) für einige Elemente festlegen, um mehrere Websites, Stores und Store-Ansichten aufzunehmen:
 
-- [Stock verwalten](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) pro Umfang
+- [Stock verwalten](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/stocks/stocks-manage) pro Umfang
 
 - [!DNL Delivery Methods] pro Umfang verwalten
 

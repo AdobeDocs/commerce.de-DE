@@ -24,7 +24,7 @@ Mit Merchandising-Services haben Sie folgende Möglichkeiten:
 - Entfesseln Sie die Syndikation von Katalogen und stellen Sie die richtigen Inhalte bereit, indem Sie Ihren Produktkatalog so gestalten, dass er Ihr Geschäft widerspiegelt, einschließlich Produkte, Kunden, Preise und Vertrieb.
 - Schnelles Aufnehmen und Aktualisieren von Katalogdaten und schnelle Bereitstellung der Aktualisierungen für die Storefront für Ihre Promotions und Kampagnenanforderungen.
 - Erzielen Sie perfekte Lighthouse-Werte mit einsatzbereiten, blitzschnellen Benutzeroberflächenkomponenten auf Basis von Edge Delivery Services für nahtloses Produktbrowsen und Empfehlungen.
-- Nutzen Sie eine moderne zusammensetzbare Architektur mit der Erweiterbarkeitsarchitektur von Adobe ([App Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development)), um Produktdaten zu importieren und Headless-Commerce-Storefronts mit der Adobe-API [Mesh) ](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh).
+- Nutzen Sie eine moderne zusammensetzbare Architektur mit der Erweiterbarkeitsarchitektur von Adobe ([App Builder](https://experienceleague.adobe.com/de/playlists/commerce-get-started-app-builder-development)), um Produktdaten zu importieren und Headless-Commerce-Storefronts mit der Adobe-API [Mesh) ](https://experienceleague.adobe.com/de/playlists/commerce-get-started-app-builder-and-api-mesh).
 
 >[!INFO]
 >

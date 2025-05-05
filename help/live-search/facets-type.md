@@ -34,7 +34,7 @@ Im Gegensatz dazu werden [Headless](https://developer.adobe.com/commerce/php/arc
 
 ### Facettenbeschriftungen
 
-Bei [!DNL Commerce] Storefronts wird die Facettenbeschriftung durch die [*Attributeigenschaften*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) bestimmt. Für Stores mit mehreren Ansichten können zusätzliche Beschriftungen unter *Verwalten von Beschriftungen* definiert werden. Bei Headless-Implementierungen werden Beschriftungen aus dem [Facettenarbeitsbereich“ ](faceting-workspace.md).
+Bei [!DNL Commerce] Storefronts wird die Facettenbeschriftung durch die [*Attributeigenschaften*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=de) bestimmt. Für Stores mit mehreren Ansichten können zusätzliche Beschriftungen unter *Verwalten von Beschriftungen* definiert werden. Bei Headless-Implementierungen werden Beschriftungen aus dem [Facettenarbeitsbereich“ ](faceting-workspace.md).
 
 ### Sortiertyp
 

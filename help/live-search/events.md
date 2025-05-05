@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Ereignisse [!DNL Live Search]
 
-[!DNL Live Search] nutzt Ereignisse, um Suchalgorithmen wie „Am häufigsten angezeigt“ und „Angezeigt dies, Angezeigt das“ zu unterstützen. Während das [Commerce-Beispiel-Luma](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme)-Design das Eventing vorkonfiguriert bekommt, müssen Headless- und andere benutzerdefinierte Implementierungen das Eventing für ihre eigenen Anforderungen implementieren.
+[!DNL Live Search] nutzt Ereignisse, um Suchalgorithmen wie „Am häufigsten angezeigt“ und „Angezeigt dies, Angezeigt das“ zu unterstützen. Während das [Commerce-Beispiel-Luma](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/design/themes/themes#the-default-theme)-Design das Eventing vorkonfiguriert bekommt, müssen Headless- und andere benutzerdefinierte Implementierungen das Eventing für ihre eigenen Anforderungen implementieren.
 
 In dieser Tabelle werden die von [!DNL Live Search] verwendeten Ereignisse [Rangfolgestrategien](rules-add.md#intelligent-ranking).
 
@@ -68,4 +68,4 @@ mse.publish.searchRequestSent("search-bar");
 
 >[!NOTE]
 >
->Wenn [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) aktiviert ist, erfasst Adobe Commerce keine Verhaltensdaten, bis der Käufer der Verwendung von Cookies zustimmt. Wenn der Cookie-Einschränkungsmodus deaktiviert ist, erfasst Adobe Commerce standardmäßig Verhaltensdaten.
+>Wenn [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=de) aktiviert ist, erfasst Adobe Commerce keine Verhaltensdaten, bis der Käufer der Verwendung von Cookies zustimmt. Wenn der Cookie-Einschränkungsmodus deaktiviert ist, erfasst Adobe Commerce standardmäßig Verhaltensdaten.

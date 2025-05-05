@@ -105,7 +105,7 @@ Erkennen, wann eine ausstehende Erfassungstransaktion in einen `Completed` einge
 
 Um sicherzustellen, dass dieser Prozess erwartungsgemäß funktioniert, müssen Händler einen neuen Cron-Auftrag konfigurieren. Sobald der Auftrag so konfiguriert ist, dass er automatisch ausgeführt wird, werden keine weiteren Eingriffe vom Händler erwartet.
 
-Siehe [Konfigurieren von Cron-Aufträgen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Nach der Konfiguration wird der neue Auftrag alle 30 Minuten ausgeführt, um Aktualisierungen für Bestellungen abzurufen, die sich im Status `Payment Review` befinden.
+Siehe [Konfigurieren von Cron-Aufträgen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=de). Nach der Konfiguration wird der neue Auftrag alle 30 Minuten ausgeführt, um Aktualisierungen für Bestellungen abzurufen, die sich im Status `Payment Review` befinden.
 
 Händler können den aktualisierten Zahlungsstatus über die Berichtsansicht „Bestellzahlungsstatus“ überprüfen.
 
@@ -113,11 +113,11 @@ Händler können den aktualisierten Zahlungsstatus über die Berichtsansicht „
 
 [!DNL Payment Services] verwendet Bestelldaten und kombiniert sie mit aggregierten Zahlungsdaten aus anderen Quellen (einschließlich PayPal), um aussagekräftige und hochnützliche Berichte zu erstellen.
 
-Bestelldaten werden exportiert und im Zahlungsdienst gespeichert. Wenn Sie [Bestellstatus ändern oder hinzufügen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) oder [eine Store-Ansicht ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [Store](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information) oder den Website-Namen bearbeiten, werden diese Daten mit Zahlungsdaten kombiniert und der Bericht „Status der Bestellzahlung“ wird mit den kombinierten Informationen ausgefüllt.
+Bestelldaten werden exportiert und im Zahlungsdienst gespeichert. Wenn Sie [Bestellstatus ändern oder hinzufügen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) oder [eine Store-Ansicht ](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [Store](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/store-details#store-information) oder den Website-Namen bearbeiten, werden diese Daten mit Zahlungsdaten kombiniert und der Bericht „Status der Bestellzahlung“ wird mit den kombinierten Informationen ausgefüllt.
 
 Dieser Prozess umfasst zwei Schritte:
 
-1. Der Index wird entweder `ON SAVE` (jedes Mal, wenn Bestellinformationen oder Speicherinformationen geändert werden) oder `BY SCHEDULE` (nach einem vorkonfigurierten Cron-Zeitplan) geändert, je nachdem, wie er in [Indexverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) im Admin konfiguriert ist.
+1. Der Index wird entweder `ON SAVE` (jedes Mal, wenn Bestellinformationen oder Speicherinformationen geändert werden) oder `BY SCHEDULE` (nach einem vorkonfigurierten Cron-Zeitplan) geändert, je nachdem, wie er in [Indexverwaltung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/index-management) im Admin konfiguriert ist.
 
    Standardmäßig erfolgt die Datenindizierung `ON SAVE`, d. h. wenn sich etwas in der Bestellung, im Bestellstatus, in der Store-Ansicht, im Store oder auf der Website ändert, erfolgt die Neuindizierung sofort.
 
@@ -133,7 +133,7 @@ Die einzigen Daten, die zu Berichtszwecken exportiert und sortiert werden, sind 
 
 Obwohl die Neuindizierung standardmäßig im `ON SAVE` erfolgt, wird empfohlen, die Indizierung im `BY SCHEDULE`-Modus durchzuführen. Der `BY SCHEDULE`-Index wird nach einem Cron-Zeitplan von einer Minute ausgeführt, und alle geänderten Daten werden innerhalb von zwei Minuten nach einer Datenänderung in Ihrem Bestellstatusbericht angezeigt. Diese geplante Neuindizierung hilft Ihnen, die Belastung Ihres Geschäfts zu reduzieren, insbesondere wenn Sie eine große Menge an eingehenden Bestellungen haben, da sie nach einem Zeitplan erfolgt (nicht bei jeder Bestellung).
 
-Sie können den Indexmodus - `ON SAVE` oder `BY SCHEDULE` - [ Admin ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+Sie können den Indexmodus - `ON SAVE` oder `BY SCHEDULE` - [ Admin ](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 
 Informationen zum Konfigurieren des Datenexports finden Sie unter [Befehlszeilenkonfiguration](configure-cli.md#configure-data-export).
 
@@ -244,10 +244,10 @@ Die Berichte zum Status der Bestellzahlung enthalten die folgenden Informationen
 
 | Spalte | Beschreibung |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce-Auftrags-ID<br> <br>Um zugehörige [Bestellinformationen) anzuzeigen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} klicken Sie auf die ID. |
+| [!UICONTROL Order ID] | Commerce-Auftrags-ID<br> <br>Um zugehörige [Bestellinformationen) anzuzeigen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} klicken Sie auf die ID. |
 | [!UICONTROL Order Date] | Zeitstempel des Bestelldatums |
 | [!UICONTROL Authorized Date] | Datum/Zeitstempel der Zahlungsermächtigung |
-| [!UICONTROL Order Status] | Aktuelle Commerce [Bestellstatus](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
+| [!UICONTROL Order Status] | Aktuelle Commerce [Bestellstatus](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
 | [!UICONTROL Invoiced] | Rechnungsstatus der Bestellung - *[!UICONTROL No]*, *[!UICONTROL Partial]* oder *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Versandstatus der Bestellung - *[!UICONTROL No]*, *[!UICONTROL Partial]* oder *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Gesamtbetrag der Bestellung |

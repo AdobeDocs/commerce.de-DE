@@ -37,4 +37,4 @@ ht-degree: 13%
    - [Überprüfen](verify.md)
    - [Customize](customize.md)
    - [Handhabung von Cookie-Einschränkungen](setting-cookie.md)
-- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=de)

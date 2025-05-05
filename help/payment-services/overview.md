@@ -34,7 +34,7 @@ Unabhängig davon, ob es sich um ein kleines Unternehmen, einen Mitbewerber oder
 * [**Zahlungsoptionen**](payments-options.md) - Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden (oder Multistore-Kunden) verfügbaren Methoden anzupassen.
 * **Finanzberichterstattung für das Cashflow-Management** - Synchronisieren Sie [Zahlungsdetails](order-payment-status.md) mit Bestellungen, um vollständige Transparenz über das verarbeitete Volumen, den Zahlungssaldo, [Auszahlungen](payouts.md) und detaillierte [Berichte auf Transaktionsebene](transactions.md) für die finanzielle Abstimmung und die maximale Sichtbarkeit der Transaktionen zu erhalten.
 * **Transparente Preisgestaltung** Die Preisgestaltung ist klar und im Voraus festgelegt. Was Sie sehen, ist das, was Sie erhalten.
-* **Effizientes Checkout-Erlebnis** - Entfernen Sie alle Hindernisse, die einem schnellen und einfachen Checkout im Weg stehen, und erstellen Sie treue Kunden mit [Card Vaulting](vaulting.md) und [Instant Purchase](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (standardmäßig für Adobe Commerce aktiviert).
+* **Effizientes Checkout-Erlebnis** - Entfernen Sie alle Hindernisse, die einem schnellen und einfachen Checkout im Weg stehen, und erstellen Sie treue Kunden mit [Card Vaulting](vaulting.md) und [Instant Purchase](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html?lang=de) (standardmäßig für Adobe Commerce aktiviert).
 
 ## Verfügbarkeit
 
@@ -50,7 +50,7 @@ Derzeit bietet [!DNL Payment Services] (über [Erweitertes Onboarding](../paymen
 
 Payment Services bietet [Express-Checkout-Funktionen](../payment-services/payments-options.md) (Untergruppe der Zahlungsoptionen) für andere [verfügbare Länder beim Onboarding](../payment-services/production.md#complete-merchant-onboarding).
 
-Siehe [Lebenszyklusrichtlinie](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) und die [[!DNL Payment Services] Versionshinweise](release-notes.md) für weitere Informationen zu Versionen und Versionen.
+Siehe [Lebenszyklusrichtlinie](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=de) und die [[!DNL Payment Services] Versionshinweise](release-notes.md) für weitere Informationen zu Versionen und Versionen.
 
 ### Welche [!DNL Payment Services] ist die richtige für Sie?
 
@@ -60,7 +60,7 @@ Siehe [Verbinden](connect.md) für weitere Informationen zum Einrichten der [!DN
 
 ### Akzeptierte Kreditkarten und Währungen
 
-[!DNL Payment Services] akzeptiert die Währungen der Länder [in denen es verfügbar ist](#availability). Siehe [Währungskonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) für weitere Informationen.
+[!DNL Payment Services] akzeptiert die Währungen der Länder [in denen es verfügbar ist](#availability). Siehe [Währungskonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=de) für weitere Informationen.
 
 Informationen zu den von PayPal unterstützten Währungen finden Sie unter [Dokumentation zu unterstützten Währungen](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
 

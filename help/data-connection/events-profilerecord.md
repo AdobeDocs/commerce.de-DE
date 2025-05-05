@@ -24,7 +24,7 @@ Im Folgenden werden die Daten beschrieben, die für einen Profildatensatz erfass
 
 | Feld | Beschreibung |
 |---|---|
-| `channel` | Enthält Informationen zur Datenquelle. Sowohl `_id` als auch `_type` enthalten [Werte mit Namespace](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces). |
+| `channel` | Enthält Informationen zur Datenquelle. Sowohl `_id` als auch `_type` enthalten [Werte mit Namespace](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/namespaces). |
 | `channel._id` | Die eindeutige Kennung des Kanals, z. B. `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifiziert die Quelle der Kanaldaten, z. B. `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | Enthält Informationen zum Kunden. |
@@ -59,6 +59,6 @@ Im Folgenden werden die Daten beschrieben, die für einen Profildatensatz erfass
 
 >[!NOTE]
 >
->Jeder Profildatensatz enthält auch das Feld [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) , das die vom System generierte Commerce-Kunden-ID als primäre Kennung für das Profil und eine E-Mail-ID enthält, die als sekundäre Kennung verwendet wird.
+>Jeder Profildatensatz enthält auch das Feld [`identityMap`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/profile/identitymap) , das die vom System generierte Commerce-Kunden-ID als primäre Kennung für das Profil und eine E-Mail-ID enthält, die als sekundäre Kennung verwendet wird.
 
 Erfahren Sie, wie [ein profildatensatzspezifisches Schema erstellen](profile-data.md) das die Daten aus Ihren Profildatensätzen aufnehmen kann.

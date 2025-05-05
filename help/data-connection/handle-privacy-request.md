@@ -16,21 +16,21 @@ Adobe Experience Platform Privacy Service bietet eine RESTful-API und eine Benut
 
 Weitere Informationen zu Privacy Service und zum Erstellen und Verwalten von Datenschutzanfragen finden Sie in der Dokumentation zu Adobe Experience Platform:
 
-* [Übersicht über Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/home)
-* [Verwalten von Datenschutzaufträgen in der Privacy Service-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide)
+* [Übersicht über Privacy Service](https://experienceleague.adobe.com/de/docs/experience-platform/privacy/home)
+* [Verwalten von Datenschutzaufträgen in der Privacy Service-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/privacy/ui/user-guide)
 
 ## Verwalten einzelner Datenschutzanfragen
 
 Sie können einzelne Anfragen zum Zugreifen auf und Löschen von Verbraucherdaten aus [!DNL Commerce] auf zwei Arten senden:
 
-* Über die **Privacy Service-Benutzeroberfläche**. Siehe die Dokumentation [hier](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide#_blank).
+* Über die **Privacy Service-Benutzeroberfläche**. Siehe die Dokumentation [hier](https://experienceleague.adobe.com/de/docs/experience-platform/privacy/ui/user-guide#_blank).
 * Über die **Privacy Service-API**. Siehe die Dokumentation [hier](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank) und API-Informationen [hier](https://developer.adobe.com/experience-platform-apis/#_blank).
 
 Privacy Service unterstützt zwei Arten von Anfragen: **Datenzugriff** und **Datenlöschung**.
 
 >[!NOTE]
 >
->Dieser Artikel konzentriert sich auf Datenschutzanfragen für [!DNL Commerce]. Wenn Sie Datenschutzanfragen für [Platform Data Lake](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy), [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy) oder [Identity Service) ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy), lesen Sie die entsprechenden Benutzerhandbücher. Beachten Sie, dass Lösch- und Zugriffsanfragen an jedes System einzeln gestellt werden müssen, da eine Datenschutzanfrage an Commerce keine Daten aus allen diesen Systemen entfernt.
+>Dieser Artikel konzentriert sich auf Datenschutzanfragen für [!DNL Commerce]. Wenn Sie Datenschutzanfragen für [Platform Data Lake](https://experienceleague.adobe.com/de/docs/experience-platform/catalog/privacy), [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/de/docs/experience-platform/profile/privacy) oder [Identity Service) ](https://experienceleague.adobe.com/de/docs/experience-platform/identity/privacy), lesen Sie die entsprechenden Benutzerhandbücher. Beachten Sie, dass Lösch- und Zugriffsanfragen an jedes System einzeln gestellt werden müssen, da eine Datenschutzanfrage an Commerce keine Daten aus allen diesen Systemen entfernt.
 
 ## Datenzugriff
 
@@ -38,7 +38,7 @@ Geben **für &quot;**&quot; &quot;Commerce (Personalization)“ über die Benutz
 
 ## Löschen von Daten
 
-Bei Löschanfragen löscht Privacy Service [!DNL Commerce] in Commerce SaaS-Services gespeicherten Daten zu Marketing-Zwecken. Das bedeutet, dass Profile und Bestellungen von betroffenen Personen nicht mehr zur Verwendung in Kampagnen und Kunden-Journey an Adobe-Marketing-Anwendungen gesendet werden. Privacy Service löscht jedoch keine Daten in der [!DNL Commerce]-Anwendung, da diese für Transaktionsanforderungen von Händlern erforderlich sein können. Händler sind für alle Datenlöschungs-/-zugriffsanfragen im [!DNL Commerce] verantwortlich. Weitere Informationen finden [ unter „Gemeinsame Verantwortung](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)Sicherheits- und Betriebsmodell“
+Bei Löschanfragen löscht Privacy Service [!DNL Commerce] in Commerce SaaS-Services gespeicherten Daten zu Marketing-Zwecken. Das bedeutet, dass Profile und Bestellungen von betroffenen Personen nicht mehr zur Verwendung in Kampagnen und Kunden-Journey an Adobe-Marketing-Anwendungen gesendet werden. Privacy Service löscht jedoch keine Daten in der [!DNL Commerce]-Anwendung, da diese für Transaktionsanforderungen von Händlern erforderlich sein können. Händler sind für alle Datenlöschungs-/-zugriffsanfragen im [!DNL Commerce] verantwortlich. Weitere Informationen finden [ unter „Gemeinsame Verantwortung](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility)Sicherheits- und Betriebsmodell“
 
 [!DNL Commerce] werden Händler über Löschanfragen informieren, indem sie ihnen Informationen über betroffene Personen senden, die das Löschen bestimmter Daten verlangen.
 
@@ -63,8 +63,8 @@ Stellen Sie **„Löschanfragen** sicher, dass das Kontrollkästchen &quot;Comme
 
 Um Zugriffs- und Löschanfragen über die Datenschutz-API zu senden, müssen Sie sich authentifizieren und die Berechtigungen für Privacy Service verwalten:
 
-* [Authentifizierung und Zugriff auf die Privacy Service-API](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/getting-started)
-* [Berechtigungen für Privacy Service verwalten](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/permissions)
+* [Authentifizierung und Zugriff auf die Privacy Service-API](https://experienceleague.adobe.com/de/docs/experience-platform/privacy/api/getting-started)
+* [Berechtigungen für Privacy Service verwalten](https://experienceleague.adobe.com/de/docs/experience-platform/privacy/permissions)
 
 **Erforderliche Kopfzeilen**
 

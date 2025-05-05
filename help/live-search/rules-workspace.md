@@ -22,7 +22,7 @@ Der *Merchandising durchsuchen*-Arbeitsbereich listet die aktuelle Auswahl von R
 
 ## Festlegen des Umfangs
 
-Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, legen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) fest, für die Ihre Regeln gelten.
+Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, legen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings) fest, für die Ihre Regeln gelten.
 
 ## Spalten ein-/ausblenden
 

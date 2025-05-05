@@ -142,7 +142,7 @@ So **Sie Zahlungen mit Ihrem vorhandenen Kreditkartenanbieter _und_ PayPal-Zahlu
 1. Stellen Sie sicher, dass sich Ihr Store [im Produktionsmodus) ](settings.md#enable-payment-services).
 1. [Konfigurieren Sie die gewünschten PayPal-Zahlungsschaltflächen](settings.md#payment-buttons).
 1. Deaktivieren __ die Option **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** im Abschnitt _[!UICONTROL Payment buttons]_.
-1. Deaktivieren __ die Option **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** im Abschnitt _[!UICONTROL Credit card fields]_&#x200B;und verwenden Sie Ihr [vorhandenes Kreditkartenkonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+1. Deaktivieren __ die Option **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** im Abschnitt _[!UICONTROL Credit card fields]_&#x200B;und verwenden Sie Ihr [vorhandenes Kreditkartenkonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=de#payments).
 
 ## Neuberechnung der Bestellung
 

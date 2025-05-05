@@ -644,4 +644,4 @@ Bereitstellung und Tests hängen von Ihrer Infrastruktur und Ihren Möglichkeite
 
 >[!TIP]
 >
->Bereitstellungsrichtlinien, Checklisten und Best Practices für Adobe Commerce bei Cloud-Infrastrukturprojekten finden Sie unter [Bereitstellen Ihres Stores](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) in der Adobe Commerce Developer-Dokumentation.
+>Bereitstellungsrichtlinien, Checklisten und Best Practices für Adobe Commerce bei Cloud-Infrastrukturprojekten finden Sie unter [Bereitstellen Ihres Stores](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) in der Adobe Commerce Developer-Dokumentation.

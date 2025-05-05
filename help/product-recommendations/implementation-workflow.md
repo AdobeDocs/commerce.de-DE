@@ -28,7 +28,7 @@ Bei der Installation des `magento/product-recommendations module` aggregiert Ado
 
    Für die Bereitstellung von [!DNL Product Recommendations] sind zwei [Datenquellen](type.md) Kataloge und Verhaltensdaten erforderlich. Da die Produktion die einzige Umgebung ist, in der die Aktionen Ihrer Kunden erfasst und analysiert werden, können Sie so früh wie möglich mit der Datenerfassung in der Produktion beginnen. [Erfahren Sie](events.md) wie Adobe Sensei Modelle für maschinelles Lernen trainiert, die zu qualitativ hochwertigeren Empfehlungen führen. Wenn Sie mit der Erfassung von Verhaltensdaten in der Produktion beginnen, können Sie [Empfehlungen abrufen](verify.md) die auf diesen Produktionsdaten basieren, während Sie in Nicht-Produktionsumgebungen arbeiten. Anschließend können Sie mit verschiedenen Empfehlungen testen und experimentieren, die auf der Grundlage der in der Produktion erfassten echten Kundendaten berechnet werden.
 
-   Um die Datenerfassung für die Produktion bereitzustellen, müssen [ das [!DNL Product Recommendations]-Modul installieren ](install-configure.md) konfigurieren, indem Sie einen [API-Schlüssel](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) bereitstellen.
+   Um die Datenerfassung für die Produktion bereitzustellen, müssen [ das [!DNL Product Recommendations]-Modul installieren ](install-configure.md) konfigurieren, indem Sie einen [API-Schlüssel](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=de) bereitstellen.
 
    >[!TIP]
    >
@@ -42,7 +42,7 @@ Bei der Installation des `magento/product-recommendations module` aggregiert Ado
    >
    > Durch Anpassen der Vorlage können Sie Ihr Stylesheet angeben, überschreiben, wo eine Empfehlungseinheit auf einer Seite angezeigt wird usw.
 
-   Siehe [Anpassen](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html) in der Entwicklerdokumentation, um zu erfahren, wie Sie diesen Schritt durchführen.
+   Siehe [Anpassen](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html?lang=de) in der Entwicklerdokumentation, um zu erfahren, wie Sie diesen Schritt durchführen.
 
 1. **Testen von Recommendations in Ihrer produktionsfremden Umgebung**
 

@@ -35,4 +35,4 @@ ht-degree: 3%
 - Anwendungsfälle {#use-cases}
    - [Verwenden von Adobe Journey Optimizer zum Senden einer E-Mail zu einem Transaktionsabbruch](using-ajo.md)
    - [Erstellen einer Zielgruppe in Real-Time CDP mithilfe von Commerce-Ereignisdaten](create-audience.md)
-- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=de)

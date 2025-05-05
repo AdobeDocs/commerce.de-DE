@@ -16,7 +16,7 @@ Der Arbeitsbereich *Facettieren* listet alle derzeit verfügbaren Facetten auf u
 
 ## Festlegen des Umfangs
 
-Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, setzen Sie **Umfang** auf die [Store-](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings), für die Ihre Facetteneinstellungen gelten.
+Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, setzen Sie **Umfang** auf die [Store-](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings), für die Ihre Facetteneinstellungen gelten.
 
 ## Filtern der Liste
 

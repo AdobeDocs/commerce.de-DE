@@ -22,27 +22,27 @@ Die [!DNL Store Fulfillment] Lösung verwendet native Adobe Commerce Inventory m
 
 Mit diesen Konfigurationsänderungen können Sie drei Dinge erreichen:
 
-1. [Lager an Quelle übertragen](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/inventory-transfer), um das Lager aus dem Standardlager/der Standardquelle in das neue Lager/die neue Quelle zu verschieben.
+1. [Lager an Quelle übertragen](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/quantities/inventory-transfer), um das Lager aus dem Standardlager/der Standardquelle in das neue Lager/die neue Quelle zu verschieben.
 
-1. [Massenzuweisung von ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/bulk-assignment)), um die neuen Quellen für alle Ihre Produkte hinzuzufügen.
+1. [Massenzuweisung von ](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/quantities/bulk-assignment)), um die neuen Quellen für alle Ihre Produkte hinzuzufügen.
 
-1. [Massenaktualisierungen für Produktattribute abschließen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) um die `Allow Store Pickup`- und `Allow Home Delivery` zu vorhandenen Produkten hinzuzufügen. Wenn die Lösung installiert ist, haben die Attribute die optimalen *Standard*-Werte. Diese Attribute werden jedoch erst dann auf vorhandene Produkte angewendet, wenn Sie den Massenaktualisierungsprozess abgeschlossen haben.
+1. [Massenaktualisierungen für Produktattribute abschließen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) um die `Allow Store Pickup`- und `Allow Home Delivery` zu vorhandenen Produkten hinzuzufügen. Wenn die Lösung installiert ist, haben die Attribute die optimalen *Standard*-Werte. Diese Attribute werden jedoch erst dann auf vorhandene Produkte angewendet, wenn Sie den Massenaktualisierungsprozess abgeschlossen haben.
 
-Der Lagerbestand wird von der ausgewählten Quelle abgezogen (Einzelhandelsspeicherort oder E-Commerce-Warehouse). Quellen, die als E-Commerce-Warehouses verwendet werden, müssen demselben Lager wie der Abholort des Geschäfts zugeordnet werden und vor den Einzelhandelsstandorten priorisiert werden. Weitere Informationen finden Sie unter [Priorisieren von Quellen für einen Bestand](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
+Der Lagerbestand wird von der ausgewählten Quelle abgezogen (Einzelhandelsspeicherort oder E-Commerce-Warehouse). Quellen, die als E-Commerce-Warehouses verwendet werden, müssen demselben Lager wie der Abholort des Geschäfts zugeordnet werden und vor den Einzelhandelsstandorten priorisiert werden. Weitere Informationen finden Sie unter [Priorisieren von Quellen für einen Bestand](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
 
 Weitere Informationen zum Verwalten von Bestand, Lagern und Quellen finden Sie in der Adobe Commerce-Benutzerdokumentation:
 
-- [Verwalten von Inventar](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)
+- [Verwalten von Inventar](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/introduction)
 
-- [Lagermengen verwalten](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/quantities-manage)
+- [Lagermengen verwalten](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/quantities/quantities-manage)
 
-- [Verwalten von Lagern](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
+- [Verwalten von Lagern](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/stocks/stocks-manage)
 
-- [Verwalten von Quellen](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)
+- [Verwalten von Quellen](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/sources/sources-manage)
 
-- [Priorisieren von Quellen für einen Bestand](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
+- [Priorisieren von Quellen für einen Bestand](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
 
-- [Massenaktualisierungen für Produktattribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
+- [Massenaktualisierungen für Produktattribute](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
 
 
 >[!IMPORTANT]

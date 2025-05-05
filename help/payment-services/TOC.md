@@ -50,4 +50,4 @@ ht-degree: 3%
 - Sicherheits- und {#security-compliance}
    - [Sicherheit](security.md)
    - [Deutlicher Schutz vor Betrug](fraud-protection.md)
-- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=de)

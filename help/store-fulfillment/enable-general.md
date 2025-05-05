@@ -150,7 +150,7 @@ Da die Anwendungsprotokolldatei schnell wachsen kann, aktivieren Sie die Protoko
 
 >[!TIP]
 >
->Bitten Sie bei lokalen Adobe Commerce-Installationen Ihren Systemadministrator, eine Protokollrotation für die `var/log/walmart-bopis.log` einzurichten, um die Größe zu minimieren. Informationen zu lokalen Adobe Commerce-Installationen finden Sie [Protokollrotation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) im _Adobe Commerce-Installationshandbuch_. Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Protokolle anzeigen und verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Bitten Sie bei lokalen Adobe Commerce-Installationen Ihren Systemadministrator, eine Protokollrotation für die `var/log/walmart-bopis.log` einzurichten, um die Größe zu minimieren. Informationen zu lokalen Adobe Commerce-Installationen finden Sie [Protokollrotation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=de#server-settings) im _Adobe Commerce-Installationshandbuch_. Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Protokolle anzeigen und verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=de).
 
 <table>
 <thead>
@@ -355,7 +355,7 @@ Konfigurieren Sie diese Einstellungen über den Administrator, indem Sie <strong
 
 >[!NOTE]
 >
->Weitere Informationen zum Konfigurieren von Bereitstellungsoptionen im Geschäft finden Sie unter [In-Store](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) im _Adobe Commerce-Benutzerhandbuch_.
+>Weitere Informationen zum Konfigurieren von Bereitstellungsoptionen im Geschäft finden Sie unter [In-Store](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) im _Adobe Commerce-Benutzerhandbuch_.
 
 
 ### Konfiguration der Versandmethoden

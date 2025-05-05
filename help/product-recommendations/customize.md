@@ -112,7 +112,7 @@ Wenn Ihr Geschäft beispielsweise Bio-Produkte verkauft, können Sie ein benutze
 
 ![Abzeichen hinzufügen](assets/unit-custom.png)
 
-Um sicherzustellen, dass beim Rendern der Empfehlungseinheit auf der Seite ein benutzerdefiniertes Produktattribut verfügbar ist, legen Sie die `Used in Product Listing` Eigenschaft auf der Seite &quot;[&quot; ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) Admin auf `Yes` fest.
+Um sicherzustellen, dass beim Rendern der Empfehlungseinheit auf der Seite ein benutzerdefiniertes Produktattribut verfügbar ist, legen Sie die `Used in Product Listing` Eigenschaft auf der Seite &quot;[&quot; ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=de) Admin auf `Yes` fest.
 
 Wenn diese Eigenschaft festgelegt ist, enthält die JSON-Payload ein `attributes`-Objekt, das ein Array von Attributcodes und -werten enthält. Sie können dann einen benutzerdefinierten Storefront-Stil anwenden, der auf diesen Attributwerten basiert, z. B. das Hinzufügen spezieller visueller Behandlungen oder Abzeichen wie zuvor erwähnt.
 

@@ -131,9 +131,9 @@ Transaktionsberichte enthalten die folgenden Informationen.
 
 | Spalte | Beschreibung |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce-Auftrags-ID (enthält nur Werte für erfolgreiche Transaktionen und ist leer für zurückgewiesene Transaktionen)<br> <br>Um zugehörige [Bestellinformationen) anzuzeigen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} klicken Sie auf die ID. |
+| [!UICONTROL Order ID] | Commerce-Auftrags-ID (enthält nur Werte für erfolgreiche Transaktionen und ist leer für zurückgewiesene Transaktionen)<br> <br>Um zugehörige [Bestellinformationen) anzuzeigen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} klicken Sie auf die ID. |
 | [!UICONTROL PayPal Transaction ID] | Transaktions-ID vom Zahlungsdienstleister; enthält nur Werte für erfolgreiche Transaktionen und einen Bindestrich für abgelehnte Transaktionen. Sie können auf diese ID klicken, um auf die Seite mit den PayPal-Transaktionsdetails zuzugreifen. |
-| [!UICONTROL Customer ID] | Commerce-Kunden-ID einer Bestellung<br> <br>Weitere Informationen finden Sie [ Thema ](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}Kundeninformationen) . |
+| [!UICONTROL Customer ID] | Commerce-Kunden-ID einer Bestellung<br> <br>Weitere Informationen finden Sie [ Thema ](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}Kundeninformationen) . |
 | [!UICONTROL Transaction Date] | Zeitstempel des Transaktionsdatums |
 | [!UICONTROL Payment Method] | Art der Zahlung, die für die Transaktion verwendet wird, mit Informationen über Marke und Kartentyp. Siehe [Kartenarten](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) für weitere Informationen; verfügbar für Payment Services-Versionen 1.6.0 und höher |
 | [!UICONTROL Payment Detail] | Enthält zusätzliche Informationen zur Art der Zahlung, die für die Transaktion verwendet wird, sofern verfügbar. |

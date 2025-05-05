@@ -26,7 +26,7 @@ Sie können [Auszahlungstransaktionen](#download-transactions) im CSV-Dateiforma
 
 >[!NOTE]
 >
->Auszahlungsberichte zeigen nur Bestellungen an, die erfasst (Zahlungsaktion ist auf [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/production.html#set-payment-services-as-payment-method) eingestellt) - oder [ als `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) markiert sind.
+>Auszahlungsberichte zeigen nur Bestellungen an, die erfasst (Zahlungsaktion ist auf [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/production.html?lang=de#set-payment-services-as-payment-method) eingestellt) - oder [ als `Invoiced`](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) markiert sind.
 
 ## Datenvisualisierungsansicht für Auszahlungen
 
@@ -154,7 +154,7 @@ Auszahlungsberichte enthalten die folgenden Informationen.
 | [!UICONTROL Code] | Transaktionscode, der entweder „Guthaben“ (*CR*) oder „Soll“ (*DR*) angibt |
 | [!UICONTROL Reference ID] | Ursprüngliche Transaktions-ID, mit der dieses Ereignis verknüpft ist |
 | [!UICONTROL Invoice] | Rechnungskennung (eine pro Bestellung) der Transaktion |
-| [!UICONTROL Commerce order] | Commerce-Auftrags-ID <br> <br>Um zugehörige [Bestellinformationen) anzuzeigen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) klicken Sie auf die ID. |
+| [!UICONTROL Commerce order] | Commerce-Auftrags-ID <br> <br>Um zugehörige [Bestellinformationen) anzuzeigen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/orders) klicken Sie auf die ID. |
 | [!UICONTROL Commerce trans] | Commerce Transaktions-ID |
 | [!UICONTROL Pay method] | Kreditkartenart - *[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]* - und dazugehöriger Kartenanbieter (z. B *Visa* oder *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Transaktionsbetrag |

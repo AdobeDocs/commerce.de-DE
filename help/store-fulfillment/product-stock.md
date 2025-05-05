@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Lagerverwaltung für Produkte
 
-Als Händler können Sie Adobe Commerce [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Stock- und Quelloptionen verwenden. Darüber hinaus können Sie mit der Store Fulfillment-Lösung andere Optionen für die Verfügbarkeit von Inventaren steuern, die mit Ihrem Händlergeschäft verbunden sind.
+Als Händler können Sie Adobe Commerce [Inventory management](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/introduction) Stock- und Quelloptionen verwenden. Darüber hinaus können Sie mit der Store Fulfillment-Lösung andere Optionen für die Verfügbarkeit von Inventaren steuern, die mit Ihrem Händlergeschäft verbunden sind.
 
 - Heimlieferoption von Kaufhäusern
 

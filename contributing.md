@@ -19,7 +19,7 @@ Von Ihnen wird erwartet, dass Sie diesen Kodex einhalten. Inakzeptables Verhalte
 
 ## Dokumentation zum Contributor Guide
 
-Siehe das [Handbuch für Mitwirkende](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Siehe das [Handbuch für Mitwirkende](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
 
 ## Haben Sie eine Frage?
 
@@ -56,4 +56,4 @@ Sie können sich gerne an bestehende Mitwirkende wenden, um ein Gespräch darüb
 
 ## Sicherheitsprobleme
 
-Wenn Sie ein Sicherheitsproblem melden möchten, [ Sie ein Problem an unsere Sicherheitsfachleute](https://helpx.adobe.com/security/alertus.html).
+Wenn Sie ein Sicherheitsproblem melden möchten, [ Sie ein Problem an unsere Sicherheitsfachleute](https://helpx.adobe.com/de/security/alertus.html).

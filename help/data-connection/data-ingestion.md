@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Die [Datenverbindungserweiterung](overview.md) verbindet Ihre Commerce-Daten mit Experience Platform. Daten, die in Experience Platform verwendet werden können, sind in zwei Verhaltenstypen unterteilt: Zeitreihendaten, die zur Klasse **Erlebnisereignis** gehören, und Datensatzdaten, die zur Klasse **Individuelles Profil** gehören.
 
-Weitere Informationen über [Datenverhalten](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#data-behaviors) und [Klassen](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class) in Experience Platform.
+Weitere Informationen über [Datenverhalten](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de#data-behaviors) und [Klassen](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de#class) in Experience Platform.
 
 ## Zeitreihendaten
 

@@ -20,7 +20,7 @@ Produkteigenschaften (Metadaten) bestimmen:
 
 Der Umfang der Attributmetadaten ist `website/store/store view`.
 
-Mit der [!DNL Live Search]-API kann ein Client nach jedem Produktattribut sortieren, bei dem die Eigenschaft [Storefront](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) im Adobe Commerce Admin auf `Yes` gesetzt `Use in Search`. Wenn diese Option aktiviert ist, können `Search Weight` für das Attribut festgelegt werden.
+Mit der [!DNL Live Search]-API kann ein Client nach jedem Produktattribut sortieren, bei dem die Eigenschaft [Storefront](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/product-attributes) im Adobe Commerce Admin auf `Yes` gesetzt `Use in Search`. Wenn diese Option aktiviert ist, können `Search Weight` für das Attribut festgelegt werden.
 
 [!DNL Live Search] indiziert keine gelöschten Produkte oder Produkte, für die `Not Visible Individually` festgelegt ist.
 
@@ -32,7 +32,7 @@ Mit der [!DNL Live Search]-API kann ein Client nach jedem Produktattribut sortie
 
 Der Client ruft den Suchdienst von der Storefront auf, um (filterbare, sortierbare) Indexmetadaten abzurufen. Der Suchdienst kann nur durchsuchbare Produktattribute aufrufen, bei denen die Eigenschaft *Verwenden in der* Navigation) auf `Filterable (with results)` und *Verwenden für die Sortierung in der* auf `Yes` gesetzt ist.
 
-Um eine dynamische Abfrage zu erstellen, muss der Suchdienst wissen, welche Attribute durchsuchbar sind und welche ([) ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] berücksichtigt die Gewichtung der Adobe Commerce-Suche (1-10, wobei 10 die höchste Priorität hat). Die Liste der Daten, die mit dem Katalog-Service synchronisiert und freigegeben werden, finden Sie im Schema , das definiert ist in:
+Um eine dynamische Abfrage zu erstellen, muss der Suchdienst wissen, welche Attribute durchsuchbar sind und welche ([) ](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] berücksichtigt die Gewichtung der Adobe Commerce-Suche (1-10, wobei 10 die höchste Priorität hat). Die Liste der Daten, die mit dem Katalog-Service synchronisiert und freigegeben werden, finden Sie im Schema , das definiert ist in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
@@ -89,7 +89,7 @@ In der folgenden Tabelle werden die verschiedenen Änderungen und die ungefähre
 
 ## Client-Suche
 
-Mit der [!DNL Live Search]-API kann ein Client nach einem beliebigen sortierbaren Produktattribut sortieren, indem er die Eigenschaft [Storefront](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes), *Wird zum Sortieren in Produktlisten verwendet* auf `Yes` setzt. Je nach Design wird durch diese Einstellung das -Attribut als Option in das Paginierungssteuerelement [Sortieren nach](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation) auf Katalogseiten aufgenommen. Bis zu 200 Produktattribute können nach [!DNL Live Search] indiziert werden, wobei [Storefront-Eigenschaften](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) durchsuchbar und filterbar sind.
+Mit der [!DNL Live Search]-API kann ein Client nach einem beliebigen sortierbaren Produktattribut sortieren, indem er die Eigenschaft [Storefront](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/product-attributes), *Wird zum Sortieren in Produktlisten verwendet* auf `Yes` setzt. Je nach Design wird durch diese Einstellung das -Attribut als Option in das Paginierungssteuerelement [Sortieren nach](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/navigation/navigation) auf Katalogseiten aufgenommen. Bis zu 200 Produktattribute können nach [!DNL Live Search] indiziert werden, wobei [Storefront-Eigenschaften](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/product-attributes) durchsuchbar und filterbar sind.
 
 Die Index-Metadaten werden in der Indizierungs-Pipeline gespeichert und stehen dem Suchdienst zur Verfügung.
 

@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Store-Standort und Zuordnungseinrichtung
 
-Aktivieren Sie den Store-Standort und die Zuordnungsfunktionen für Store Fulfillment, indem Sie einen [Distanzanbieter](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) konfigurieren, um nach Einzelhandelsspeicherorten zu suchen.
+Aktivieren Sie den Store-Standort und die Zuordnungsfunktionen für Store Fulfillment, indem Sie einen [Distanzanbieter](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) konfigurieren, um nach Einzelhandelsspeicherorten zu suchen.
 
 **Anforderungen**
 
-Während des Konfigurationsprozesses geben Sie einen Google-API-Schlüssel für die Google Maps-Plattform an. Wenn Sie noch keinen haben, [ Sie einen über die Google Maps-Plattform ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
+Während des Konfigurationsprozesses geben Sie einen Google-API-Schlüssel für die Google Maps-Plattform an. Wenn Sie noch keinen haben, [ Sie einen über die Google Maps-Plattform ](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
 
 So konfigurieren Sie den Entfernungsanbieter:
 
