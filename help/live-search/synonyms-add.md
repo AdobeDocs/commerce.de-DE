@@ -33,7 +33,7 @@ Befolgen Sie die Anweisungen für den [Typ des Synonyms](synonyms-type.md) den S
    ![Zwei-Wege-Synonym hinzufügen](assets/synonym-add-two-way.png)
 
 1. Geben Sie den **Keyword**-Begriff oder die zuzuordnende Phrase ein.
-1. Geben Sie **Begriffe**Erweiterung) ein, die Sie als Synonyme für das Keyword hinzufügen möchten. Trennen Sie mehrere Begriffe durch Kommas.
+1. Geben Sie **Begriffe**&#x200B;Erweiterung) ein, die Sie als Synonyme für das Keyword hinzufügen möchten. Trennen Sie mehrere Begriffe durch Kommas.
 In diesem Beispiel lautet das Keyword, mit dem eine Übereinstimmung erzielt werden soll, „Hose“, und die Menge der Ausdehnungsbegriffe lautet „Hose, Hose“.
 
    ![Beispiel für ein Zwei-Wege-Synonym](assets/synonym-add-two-way-example.png)

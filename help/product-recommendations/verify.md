@@ -48,7 +48,7 @@ Installieren Sie die [Snowplow Analytics Debugger-Erweiterung für Chrome](https
 
 1. Wählen Sie in **Spalte** Ereignis“ **Strukturiertes Ereignis** aus.
 
-1. Scrollen Sie nach unten, bis Sie **Kontextdaten (_)_**. Suchen Sie im **Schema**nach der Storefront-Instanz.
+1. Scrollen Sie nach unten, bis Sie **Kontextdaten (_)_**. Suchen Sie im **Schema**&#x200B;nach der Storefront-Instanz.
 
 1. Stellen Sie sicher, dass [SaaS-Datenspeicher-ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) korrekt eingestellt ist.
 

@@ -73,7 +73,7 @@ Sie können in Admin nur dann Vault-Karten verwenden, wenn der Kunde sowohl übe
 So erstellen Sie in der Admin eine Bestellung für einen Kunden mit seiner Tresor-Kreditkarte:
 
 1. [Bestellung erstellen und Produkte hinzufügen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
-1. Wählen Sie _[!UICONTROL Payment & Shipping Information]_**[!UICONTROL Stored Cards]**als Zahlungsmethode aus.
+1. Wählen Sie _[!UICONTROL Payment & Shipping Information]_&#x200B;**[!UICONTROL Stored Cards]**&#x200B;als Zahlungsmethode aus.
 1. Wählen Sie die gewünschte Zahlungsmethode mit Vault-Kreditkarte aus.
 1. Nachdem Sie alle anderen erforderlichen Schritte für die Bestellung ausgeführt haben, [ Sie sie ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 

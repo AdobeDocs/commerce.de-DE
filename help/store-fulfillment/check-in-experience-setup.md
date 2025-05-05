@@ -1,6 +1,6 @@
 ---
 title: Einchecken des Erlebnisses
-description: Konfigurieren Sie die Autos- und Modellauswahl], die für Kunden von Randabholungen verfügbar ist, wenn sie das Formular für die Abholung ausfüllen.
+description: Konfigurieren Sie die Autos- und Modellauswahl&rbrack;, die für Kunden von Randabholungen verfügbar ist, wenn sie das Formular für die Abholung ausfüllen.
 role: Admin
 level: Intermediate
 source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1

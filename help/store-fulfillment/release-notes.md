@@ -50,9 +50,9 @@ Diese Version enthält die folgenden Aktualisierungen:
 
 ![Problem behoben](../assets/fix.svg) Installations-Updates:
 
-- <!-- WMTP-880--> Es wurde ein Fehler behoben, der dazu führte, dass bei der Installation der [!DNL Store Fulfillment]-Erweiterung ein falscher Website-Code zurückgegeben wurde.
+- &#x200B;<!-- WMTP-880--> Es wurde ein Fehler behoben, der dazu führte, dass bei der Installation der [!DNL Store Fulfillment]-Erweiterung ein falscher Website-Code zurückgegeben wurde.
 
-- <!-- WMTP-878--> Es wurde ein Problem für SKU-Ganzzahlen behoben, bei dem der Datentyp während der Installation in den String-Typ umgewandelt werden musste.
+- &#x200B;<!-- WMTP-878--> Es wurde ein Problem für SKU-Ganzzahlen behoben, bei dem der Datentyp während der Installation in den String-Typ umgewandelt werden musste.
 
 ![Problem behoben](../assets/fix.svg)<!-- WMTP-915--> Es wurde ein Fehler behoben, der durch einen fehlenden Fehler-Code beim Einchecken verursacht wurde.
 

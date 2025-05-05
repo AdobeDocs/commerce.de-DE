@@ -269,7 +269,7 @@ Der letzte Teil dieses Tutorials beinhaltet die Aktualisierung der Storefront, d
    - `ac-environment-id`: `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id`: `"west_coast_inc"`
 
-+++
+   +++
 
 1. Ersetzen Sie den `ac-channel-id` Wert durch die Celport-Kanal-ID, die Sie zuvor kopiert haben.
 1. Ersetzen Sie bei Bedarf den `ac-environment-id` durch die Mandanten-ID für Ihre [!DNL Adobe Commerce Optimizer]. Sie finden die ID in der Onboarding-E-Mail für das Early-Access-Programm oder indem Sie sich an Ihren Adobe-Kundenbetreuer wenden.

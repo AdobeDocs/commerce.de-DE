@@ -35,7 +35,7 @@ ht-degree: 3%
    - [Zahlungsoptionen](payments-options.md)
    - [Tresor mit Kreditkarte](vaulting.md)
    - [Checkout in [!DNL Payment Services]](checkout.md)
-   - {#manage} verwalten
+   - verwalten{#manage}
       - [Positionen für [!DNL Payment Services]](line-items.md)
       - [Erstattungen](refunds.md)
       - [Hohlräume](voids.md)

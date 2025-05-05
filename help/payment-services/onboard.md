@@ -39,7 +39,7 @@ Um [!DNL Payment Services] verwenden zu können, müssen alle abhängigen Module
 
 Die Dienste-Connector- und Dienste-ID-Module werden während der [ von automatisch  [!DNL Payment Services]](install.md).
 
-Nach Abschluss der Installation wird in den Konfigurationseinstellungen (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) ein neuer Abschnitt angezeigt, wenn Sie **[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**erweitern.
+Nach Abschluss der Installation wird in den Konfigurationseinstellungen (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) ein neuer Abschnitt angezeigt, wenn Sie **[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**&#x200B;erweitern.
 
 Informationen zum Erstellen oder Zugreifen auf API-Schlüssel finden Sie unter [API-Anmeldeinformationen](#obtain-api-credentials).
 
@@ -54,7 +54,7 @@ Informationen zum Erstellen oder Zugreifen auf API-Schlüssel finden Sie unter [
 1. [Umfassendes Onboarding von Händlern](production.md#complete-merchant-onboarding), um Live-Zahlungen für Ihre Commerce-Websites zu aktivieren.
 1. [Erhalten Sie Ihre  [!DNL Payment Services] -Händler-ID](production.md#configure-pricing-tier) und übergeben Sie sie an den Vertrieb, um die richtige Preisstufe zu konfigurieren.
 1. [Aktivieren [!DNL Payment Services] im Live-Modus](production.md#enable-live-payments), um mit der Verarbeitung von Live-Zahlungen zu beginnen.
-1. Testen Sie Zahlungen sowohl in [Sandbox](sandbox.md#test-in-sandbox-environment)- als auch [](production.md#test-in-production).
+1. Testen Sie Zahlungen sowohl in [Sandbox](sandbox.md#test-in-sandbox-environment)- als auch [&#128279;](production.md#test-in-production).
 
 >[!NOTE]
 >

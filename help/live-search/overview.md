@@ -26,7 +26,7 @@ Mit [!DNL Live Search] können Sie:
 
 ## Architektur
 
-Der Adobe Commerce-Teil der Architektur umfasst das Hosten der Suche *Admin*, das Synchronisieren von Katalogdaten und das Ausführen des Abfrage-Service. Nach der Installation und Konfiguration von [!DNL Live Search] beginnt Adobe Commerce mit der Freigabe von Such- und Katalogdaten für SaaS-Services. Jetzt können Admin-Benutzer Such-(Facetten[ ](facets.md), [Synonyme](synonyms.md) und Merchandising[Regeln einrichten, anpassen und ](category-merch.md).
+Der Adobe Commerce-Teil der Architektur umfasst das Hosten der Suche *Admin*, das Synchronisieren von Katalogdaten und das Ausführen des Abfrage-Service. Nach der Installation und Konfiguration von [!DNL Live Search] beginnt Adobe Commerce mit der Freigabe von Such- und Katalogdaten für SaaS-Services. Jetzt können Admin-Benutzer Such-(Facetten[&#128279;](facets.md), [Synonyme](synonyms.md) und Merchandising[Regeln einrichten, anpassen und ](category-merch.md).
 
 ![Live Search-Datenfluss](assets/ls-cs-data-flow.png)
 

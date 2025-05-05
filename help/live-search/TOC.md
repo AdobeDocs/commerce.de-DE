@@ -36,7 +36,7 @@ ht-degree: 11%
       - [Typen von Synonymen](synonyms-type.md)
       - [Synonyme hinzufügen](synonyms-add.md)
       - [Verwalten von Synonymen](synonyms-manage.md)
-   - Merchandising-{#rules} suchen
+   - Merchandising- suchen{#rules}
       - [Übersicht](rules.md)
       - [Workspace](rules-workspace.md)
       - [Regeln hinzufügen](rules-add.md)

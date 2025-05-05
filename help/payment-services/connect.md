@@ -65,7 +65,7 @@ Nachdem Sie Ihre Anmeldedaten erhalten haben, können Sie Ihr SaaS-Projekt und I
 
    Diese Option ist sichtbar, wenn Sie Commerce Services noch nicht für Ihr Konto konfiguriert haben.
 
-   Sie werden zum Konfigurationsbereich im Admin-Bereich, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**weitergeleitet, um Ihren Commerce Services-Connector zu konfigurieren.
+   Sie werden zum Konfigurationsbereich im Admin-Bereich, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**&#x200B;weitergeleitet, um Ihren Commerce Services-Connector zu konfigurieren.
 
 1. Gehen Sie zur Konfiguration Ihrer Commerce-Services wie unter [SaaS-Konfiguration“ ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html#saasenv).
 

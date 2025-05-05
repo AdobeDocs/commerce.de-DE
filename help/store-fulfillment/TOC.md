@@ -34,7 +34,7 @@ ht-degree: 8%
    - [Verwaltung von Produktbeständen](product-stock.md)
    - [Inventory management-Quellübertragung](inventory-stock-transfer.md)
    - [Mehrere Websites/Bereiche](multi-site-and-scope-config.md)
-- {#system-configuration} der Systemkonfiguration
+- der Systemkonfiguration{#system-configuration}
    - [Hintergrundprozesse](background-processes.md)
    - [Speicherort- und Zuordnungseinrichtung](store-location-map-provider-setup.md)
    - [Einchecken von Erlebnis-Setup](check-in-experience-setup.md)

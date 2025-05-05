@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Facettierung ist eine Methode zur Hochleistungsfilterung, bei der mehrere Dimensionen von Attributwerten als Suchkriterien verwendet werden. Die Facettensuche ist ähnlich, aber erheblich „intelligenter“ als die standardmäßige [Layered Navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). Die Liste der verfügbaren Filter wird durch die [filterbaren Attribute](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) der in den Suchergebnissen zurückgegebenen Produkte bestimmt.
 
-[!DNL Live Search] verwendet die `productSearch`-Abfrage, die Facetten- und andere Daten zurückgibt, die spezifisch für [!DNL Live Search] sind. Code-Beispiele finden Sie ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) der Entwicklerdokumentation unter [`productSearch` Abfrage .
+[!DNL Live Search] verwendet die `productSearch`-Abfrage, die Facetten- und andere Daten zurückgibt, die spezifisch für [!DNL Live Search] sind. Code-Beispiele finden Sie [&#128279;](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) der Entwicklerdokumentation unter `productSearch` Abfrage .
 
 ![Gefilterte Suchergebnisse](assets/storefront-search-results-run.png)
 

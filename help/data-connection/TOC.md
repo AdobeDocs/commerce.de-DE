@@ -25,7 +25,7 @@ ht-degree: 3%
    - [Aktualisieren des Profildatensatzschemas für die Commerce-Datenaufnahme](profile-data.md)
    - [Verbinden von Commerce-Daten mit Adobe Experience Platform](connect-data.md)
    - [Integrieren von Adobe Experience Platform Mobile SDK mit Commerce](mobile-sdk-epc.md)
-- {#event-forwarding} erfassen
+- erfassen{#event-forwarding}
    - [Verhaltensereignisse](events.md)
    - [Back-Office-Ereignisse](events-backoffice.md)
    - [Profileinträge](events-profilerecord.md)

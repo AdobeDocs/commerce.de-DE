@@ -49,7 +49,7 @@ Konsistenz mit der Verwendung der Terminologie in Ihrem Katalog Beachten Sie, da
 
 ## Synonymverhalten für mehrere Wörter
 
-Bei Synonymen mit mehreren Wörtern betrachtet Commerce das Synonym als eine Phrase. Wenn Sie beispielsweise ein Zwei-Wege-Synonym **Esszimmertisch** ![Zwei-Wege-Selektor](assets/btn-two-way.png) **** Küchentisch![Zwei-Wege-Selektor](assets/btn-two-way.png)**Esstisch** erstellen, durchsucht Commerce alle Felder, die auf Durchsuchbar eingestellt sind, nach **Esszimmertisch** oder **Küchentisch** oder **Esstisch**.
+Bei Synonymen mit mehreren Wörtern betrachtet Commerce das Synonym als eine Phrase. Wenn Sie beispielsweise ein Zwei-Wege-Synonym **Esszimmertisch** ![Zwei-Wege-Selektor](assets/btn-two-way.png) **&#x200B;**&#x200B;Küchentisch![Zwei-Wege-Selektor](assets/btn-two-way.png)**Esstisch** erstellen, durchsucht Commerce alle Felder, die auf Durchsuchbar eingestellt sind, nach **Esszimmertisch** oder **Küchentisch** oder **Esstisch**.
 
 Wenn kein Synonym erstellt wird und ein Käufer nach **Küchentabelle** sucht, sucht Commerce in den durchsuchbaren Feldern nach den Begriffen, auch über verschiedene Felder hinweg, z. B. **table** im Namensfeld und **küche** im Meta-Schlüsselwort.
 

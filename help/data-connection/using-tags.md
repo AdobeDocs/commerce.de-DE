@@ -27,7 +27,7 @@ So erfassen Sie Commerce-Ereignisdaten:
 
   >[!NOTE]
   >
-  > **** nicht[konfigurieren](connect-data.md) die Organisations-ID und die Datenstrom-ID.
+  > **&#x200B;**&#x200B;nicht[konfigurieren](connect-data.md) die Organisations-ID und die Datenstrom-ID.
 
 ## Zuordnen von Commerce-Storefront-Daten zu Adobe Experience Platform
 
