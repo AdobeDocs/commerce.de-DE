@@ -202,7 +202,7 @@ Commerce erfasst zwar bereits die historischen Bestelldaten, es gibt jedoch mehr
 
 Sehen Sie sich dieses Video an, um mehr über historische Bestellungen zu erfahren, und führen Sie dann die folgenden Schritte aus, um die historische Auftragssammlung zu implementieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
+>[!VIDEO](https://video.tv.adobe.com/v/3450236?captions=ger)
 
 #### Einrichten des Auftragssynchronisierungs-Service
 

@@ -44,7 +44,7 @@ Dieses Handbuch behandelt nicht die Kernfunktionen von [!DNL Adobe Commerce] und
 
 Wenn Sie Informationen benötigen oder Fragen haben, die nicht in diesem Handbuch behandelt werden, wenden Sie sich an Ihren [!DNL Payment Services] Vertriebsmitarbeiter oder verwenden Sie die Ressourcen, die in Ihrer [!DNL Payment Services] verfügbar sind:
 
->[!VIDEO](https://video.tv.adobe.com/v/3447836)
+>[!VIDEO](https://video.tv.adobe.com/v/3448236?captions=ger)
 
 Unter [Verfügbarkeit](overview.md#availability) können Sie überprüfen, welche [!DNL Payment Services] für Sie am besten geeignet ist.
 

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] basiert auf Commerce Services und wird als SaaS (Software as a Service) bereitgestellt. Sie verbinden Ihre Commerce-Instanz mithilfe eines API-Schlüssels und eines privaten Schlüssels und geben den Datenspeicher in der Konfiguration mithilfe des [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html) an. **Sie richten diese Verbindung nur einmal ein.**
 
->[!VIDEO](https://video.tv.adobe.com/v/3447835)
+>[!VIDEO](https://video.tv.adobe.com/v/3448026?captions=ger)
 
 >[!INFO]
 >
