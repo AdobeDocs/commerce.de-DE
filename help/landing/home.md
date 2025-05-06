@@ -103,7 +103,7 @@ Adobe bietet eine Sammlung von Commerce-Services, Integrations-Services und Date
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce Services Connector</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip=„Gilt für Adobe Commerce nur für Cloud-Projekte (Adobe-verwaltete PaaS-Infrastruktur) und lokale Projekte.“}
+         <strong>Commerce Services Connector</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip=„Gilt für Adobe Commerce nur für Cloud-Projekte (Adobe-verwaltete PaaS-Infrastruktur) und lokale Projekte.“}
          </a>
       </div>
       <p>
@@ -144,11 +144,11 @@ Adobe bietet eine Sammlung von Commerce-Services, Integrations-Services und Date
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="Überwachen der Datensynchronisation" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong>Daten-Management-Dashboard</strong>
          </a>
       </div>
