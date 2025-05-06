@@ -2,9 +2,10 @@
 title: Produkterkennung
 description: Product Discovery bietet ein schnelles, relevantes und intuitives Sucherlebnis.
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: b9429ccb-947b-462c-8b34-63fb53d015f6
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -37,3 +38,7 @@ Die Hauptseite **Produktsuche** enthält die folgenden Registerkarten:
 - [Synonyme](../../live-search/synonyms.md)
 - [Merchandising suchen](../../live-search/rules.md)
 - [Einstellungen](../../live-search/settings.md)
+
+## Einschränkung
+
+Für die Produkterkennung werden attributbasiertes Merchandising und Preiseinstellungen nicht unterstützt.

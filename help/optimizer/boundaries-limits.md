@@ -2,9 +2,10 @@
 title: Grenzen und Beschränkungen
 description: Erfahren Sie mehr über die Grenzen und Einschränkungen von  [!DNL Adobe Commerce Optimizer] , um sicherzustellen, dass es den Anforderungen Ihres Unternehmens entspricht.
 role: Admin, Developer
-source-git-commit: 45a43fe2ada206515c512a04aa6e9072e08844cc
+exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -28,10 +29,7 @@ Im Folgenden finden Sie Begrenzungen und Einschränkungen für Adobe Commerce Op
 
 ## Preise
 
-- Die maximale Anzahl von Preisbüchern beträgt 30.000. Die Anzahl der Preisbücher auf der Basisebene darf 100 nicht überschreiten und sollte der Regel folgen, bei der (die Anzahl der Preisbücher) x (die Anzahl der Kanäle) kleiner oder gleich 100 sein muss.
-- Die garantierte Feed-Aufnahmerate beträgt 5.000 Datensätze pro Minute.
-- Ein einzelner Preisnachweis darf nicht mehr als 10 Rabatte haben.
-- Die Basisanzahl der Preisaktualisierungen pro Tag beträgt 5.000.000.
+- Die maximale Anzahl von Preisbüchern beträgt 1.000.
 
 ## Suche und Storefront
 
@@ -53,6 +51,6 @@ Im Folgenden finden Sie Begrenzungen und Einschränkungen für Adobe Commerce Op
 - Für die Produkterkennung werden attributbasiertes Merchandising und Preiseinstellungen nicht unterstützt.
 - Für Empfehlungen:
 
-   - ACO unterstützt den _Recently Viewed_ Empfehlungstyp für EA
+   - [!DNL Adobe Commerce Optimizer] unterstützt den Empfehlungstyp _Kürzlich angezeigt_ für den frühzeitigen Zugriff.
    - Einschlüsse oder Ausschlüsse von Kategorien oder Attributen werden nicht unterstützt.
    - Sie können keine Vorschau von Recommendations in [!DNL Adobe Commerce Optimizer] anzeigen.

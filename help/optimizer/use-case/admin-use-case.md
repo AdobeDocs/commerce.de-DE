@@ -4,9 +4,10 @@ description: Erfahren Sie, wie Sie  [!DNL Adobe Commerce Optimizer]  verwenden, 
 hide: true
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1672'
 ht-degree: 0%
 
 ---
@@ -29,9 +30,9 @@ In diesem Anwendungsbeispiel arbeiten Sie mit Folgendem:
 
 1. [!DNL Adobe Commerce Optimizer]-Benutzeroberfläche : Richten Sie die erforderlichen Kanäle und Richtlinien ein, um die komplexe Einrichtung des Katalogbetriebs zu verwalten.
 
-1. Commerce-Storefront: Rendern Sie die Storefront mit den in [!DNL Adobe Commerce Optimizer] UI und den Commerce-Storefront-Konfigurationsdateien eingerichteten `fstab.yaml` Katalogdaten und `config.json`.
+1. Commerce-Storefront - Rendern Sie die Storefront mit den Katalogdaten, die in [!DNL Adobe Commerce Optimizer] Benutzeroberfläche eingerichtet sind, sowie den Konfigurationsdateien, `fstab.yaml` und `config.json` der Commerce-Storefront.
 
-### Das Wichtigste zum Mitnehmen
+### ‌Wichtige Erkenntnisse
 
 Am Ende dieses Artikels werden Sie:
 
@@ -39,13 +40,13 @@ Am Ende dieses Artikels werden Sie:
 - Erfahren Sie, wie das Katalogdatenmodell nahtlos mit plattformunabhängigen Storefront-Komponenten integriert wird, die von Adobe erstellt wurden.
 - Erfahren Sie, wie Sie Adobe Commerce Optimizer-Kanäle und -Richtlinien verwenden, um benutzerdefinierte Katalogansichten und Datenzugriffsfilter zu erstellen und die Daten an eine Adobe Commerce-Storefront mit Edge Delivery zu senden.
 
-## Unternehmen Szenario – Carvelo Automobile
+## Geschäftsszenario - Carvelo Automobile
 
-Carvelo Automobile ist ein fiktives Automobilkonglomerat mit einem komplexen operativen Aufbau.
+Carvelo Automobile ist ein fiktiver Automobilkonzern mit einem komplexen operativen Setup.
 
-![Carvelo Automobil](../assets/carvelo.png)
+![Carvelo Automobile](../assets/carvelo.png)
 
-In diesem Diagramm sehen Sie, dass Carvelo Automobilprodukte von drei Marken verkauft. Jede Werbetreibender ist eine andere untergeordnete Firma:
+In diesem Diagramm sehen Sie, dass Carvelo Automobilprodukte von drei Marken verkauft. Jede Marke ist ein anderes untergeordnetes Unternehmen:
 
 - Aurora (Elektrofahrzeuge)
 - Schraube (SUVs)
@@ -78,7 +79,7 @@ Carvelo will Teile über seine drei Marken (Aurora, Bolt und Cruz) über die ver
 Letztlich verfolgt Carvelo zwei Hauptziele:
 
 1. Pflegen Sie eine „globale“ Website, die alle SKUs aller drei Marken enthält.
-1. Geben Sie Händlern einen Pfad an, um ihre eigenen Storefronts einzurichten, die auf der eindeutigen SKU-Sichtbarkeit und den Preisen für jede SKU für jeden Händler basieren.
+1. Geben Sie Händlern einen Pfad an, um ihre eigenen Storefronts einzurichten, die auf der eindeutigen SKU-Sichtbarkeit und den Preisen für jede SKU für jeden Händler basieren. Und das alles bei Verwendung eines einzigen Basiskatalogs, wodurch die Duplizierung von Katalogen vermieden wird.
 
 >[!ENDSHADEBOX]
 
@@ -134,9 +135,9 @@ Mit [!DNL Adobe Commerce Optimizer] wird der Commerce Manager:
 1. Erstellen Sie einen neuen Kanal für die Celport-Storefront.
 
    Dieser Kanal verwendet Ihre neu erstellte Richtlinie *Celport-Teilekategorien* und die vorhandenen *East Coast Inc Brands*, um sicherzustellen, dass Celport nur die Marken Bolt und Cruz als Teil der Vereinbarung mit East Coast Inc. verkaufen kann. Der Celport-Kanal verwendet das `east_coast_inc` Preisbuch, um Produktpreispläne zu unterstützen, die mit den Lizenzvereinbarungen für Marken übereinstimmen.
-1. Aktualisieren Sie die Commerce-Storefront-Konfiguration, um Daten aus dem von Ihnen erstellten Celport-Kanal zu verwenden.
+1. Aktualisieren Sie die Konfiguration der Commerce-Storefront, um Daten aus dem von Ihnen erstellten Celport-Kanal zu verwenden.
 
-Am Ende dieses Abschnitts wird Celport einsatzbereit sein, um die Produkte von Carvelo zu verkaufen.
+Am Ende dieses Abschnitts wird Celport für den Verkauf der Carvelo-Produkte bereit sein.
 
 ### Erstellen einer Richtlinie
 
@@ -150,11 +151,11 @@ Erstellen wir eine neue Richtlinie mit dem Namen *Celport-Teilekategorien* um di
 
 1. Fügen Sie die erforderlichen Details hinzu:
 
-   **Name** = *Celport-Teilekategorien*
+   **name** = *Celport-Teilekategorien*
 
 1. Klicken Sie auf **[!UICONTROL Add Filter]**.
 
-   Ein Dialogfeld wird zum Hinzufügen von Filterdetails angezeigt.
+   Es wird ein Dialogfeld angezeigt, in dem Sie Filterdetails hinzufügen können.
 
 1. Fügen Sie die Filterdetails hinzu:
 
@@ -269,27 +270,29 @@ Der letzte Teil dieses Tutorials beinhaltet die Aktualisierung der Storefront, d
    - `ac-environment-id`: `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id`: `"west_coast_inc"`
 
-   +++
++++
 
 1. Ersetzen Sie den `ac-channel-id` Wert durch die Celport-Kanal-ID, die Sie zuvor kopiert haben.
-1. Ersetzen Sie bei Bedarf den `ac-environment-id` durch die Mandanten-ID für Ihre [!DNL Adobe Commerce Optimizer]. Sie finden die ID in der Onboarding-E-Mail für das Early-Access-Programm oder indem Sie sich an Ihren Adobe-Kundenbetreuer wenden.
+1. Ersetzen Sie den `ac-environment-id` Wert durch die Mandanten-ID für Ihre [!DNL Adobe Commerce Optimizer]. Sie finden die ID in der Onboarding-E-Mail für das Early-Access-Programm oder indem Sie sich an Ihren Adobe-Kundenbetreuer wenden.
 
-   Stellen Sie sicher, dass der `commerce-endpoint` dem GraphQL-Endpunkt für Ihre [!DNL Adobe Commerce Optimizer]-Instanz entspricht.
+   >[!IMPORTANT]
+   >
+   >Stellen Sie sicher, dass der `commerce-endpoint` dem GraphQL-Endpunkt für Ihre [!DNL Adobe Commerce Optimizer]-Instanz entspricht. Dies wird in Ihrer Begrüßungs-E-Mail bereitgestellt.
 
 1. Ersetzen Sie den `ac-price-book-id` durch `"east_coast_inc"`.
 1. Speichern Sie die Datei.
 
 Wenn Sie die Änderungen speichern, aktualisieren Sie die Katalogkonfiguration, um den Carvelo-Kanal zu verwenden, der so konfiguriert wurde, dass er nur Brems- und Federungsteile verkauft.
 
-1. Launch die Storefront, um den Celport-spezifischen Katalog Erlebnis zu Ansicht, der von Ihrer Storefront-Konfiguration erstellt wurde.
+1. Starten Sie die Storefront, um das Celport-spezifische Katalogerlebnis anzuzeigen, das von Ihrer Storefront-Konfiguration erstellt wurde.
 
-   1. Im Terminalfenster in Ihrer IDE Beginn Sie Ihre lokale Storefront-Vorschau.
+   1. Starten Sie im Terminal-Fenster in Ihrer IDE die Vorschau Ihrer lokalen Storefront.
 
       ```shell
       npm start
       ```
 
-   Der Browser öffnet sich für die lokale Entwicklung Vorschau unter `http://localhost:3000`.
+   Der Browser öffnet die Vorschau der lokalen Entwicklung unter `http://localhost:3000`.
 
    Wenn der Befehl fehlschlägt oder sich der Browser nicht öffnet, lesen Sie die [Anweisungen für die lokale Entwicklung](../storefront.md) im Thema „Storefront-Setup“.
 
@@ -297,15 +300,15 @@ Wenn Sie die Änderungen speichern, aktualisieren Sie die Katalogkonfiguration, 
 
       Die Storefront wird aktualisiert, um die Produktlistenseite mit den Bremsteilen anzuzeigen.
 
-   ![Bremsen Produktliste Seite](../assets/brakes-listing-page.png)
+   ![Produktlistenseite Bremsen](../assets/brakes-listing-page.png)
 
-   Klicken Sie auf ein Bremsteilbild, um die Produktdetails mit Preisinformationen zu Ansicht und notieren Sie sich die Produktpreisinformationen.
+   Klicken Sie auf ein Bild eines Bremsteils, um die Produktdetails mit Preisinformationen anzuzeigen und die Produktpreisinformationen zu beachten.
 
-1. Jetzt suchen für `tires`, was ein weiterer Teil Kategorie ist, der in den Anwendungsfalldaten auf Ihrem [!DNL Adobe Commerce Optimizer] Instanz verfügbar ist.
+1. Suchen Sie nun nach `tires`, was eine weitere Komponentenkategorie ist, die in den Anwendungsfalldaten auf Ihrer [!DNL Adobe Commerce Optimizer]-Instanz verfügbar ist.
 
    ![Storefront-Konfiguration mit falschen Kopfzeilen](../assets/storefront-configuration-with-incorrect-headers.png)
 
-   Beachten Sie, dass hier keine Ergebnisse zurückgegeben werden. Der Grund dafür ist, dass der Celport-Kanal so konfiguriert wurde, dass er nur Brems- und Federungsteile verkauft.
+   Es werden keine Ergebnisse zurückgegeben. Der Grund dafür ist, dass der Celport-Kanal so konfiguriert wurde, dass er nur Brems- und Federungsteile verkauft.
 
 1. Experimentieren Sie mit der Aktualisierung Ihrer Storefront-Konfigurationsdatei (`config.json`).
 
@@ -317,9 +320,9 @@ Wenn Sie die Änderungen speichern, aktualisieren Sie die Katalogkonfiguration, 
 
       Wenn Sie die Datei speichern, wird die Vorschau der lokalen Storefront automatisch aktualisiert.
 
-   1. Zeigen Sie eine Vorschau der Änderungen im Browser an, indem Sie die Suchfunktion verwenden, um Reifenteile zu finden .
+   1. Zeigen Sie eine Vorschau der Änderungen im Browser an, indem Sie die Suchfunktion verwenden, um Reifenteile zu finden.
 
-      Beachten Sie die verschiedenen verfügbaren Teiletypen und beachten Sie die Preise, die dem Kingsbluff-Kanal zugewiesen sind.
+      Beachten Sie die verschiedenen verfügbaren Teiletypen und die dem Kingsbluff-Kanal zugewiesenen Preise.
 
       Indem Sie die Kopfzeilenwerte in der Konfigurationsdatei der Storefront ändern und die aktualisierte Storefront untersuchen, können Sie sehen, wie einfach es ist, die Katalogansicht und die Datenfilter zu aktualisieren, um das Storefront-Erlebnis anzupassen.
 
@@ -327,6 +330,6 @@ Wenn Sie die Änderungen speichern, aktualisieren Sie die Katalogkonfiguration, 
 
 In diesem Tutorial haben Sie erfahren, wie [!DNL Adobe Commerce Optimizer] Ihnen dabei helfen können, Ihren Katalog so zu organisieren, dass er mit Ihrem Einzelhandelsgeschäft übereinstimmt, indem er einen einzigen Basiskatalog verwendet. Sie haben auch gelernt, wie Sie eine Storefront mit Edge Delivery Services einrichten.
 
-## Was Sie jetzt tun können
+## Wie geht es jetzt weiter?
 
-Informationen dazu, wie Sie die Produktsuche und Recommendations nutzen können, um die Shopping-Erlebnis für Ihre Kunden zu personalisieren, finden Sie in der [Merchandising](../merchandising/overview.md) Übersicht.
+Informationen dazu, wie Sie die Produkterkennung und Empfehlungen verwenden können, um das Einkaufserlebnis für Ihre Kunden zu personalisieren, finden Sie unter [Merchandising-Übersicht](../merchandising/overview.md).

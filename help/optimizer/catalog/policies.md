@@ -3,9 +3,10 @@ title: Richtlinien
 description: Erfahren Sie, wie Sie mit Richtlinien Daten innerhalb eines Kanals filtern können, um sicherzustellen, dass Daten an das richtige Ziel gesendet werden.
 hide: true
 recommendations: noCatalog
-source-git-commit: 425c801a852de566120504563e256b0351df588e
+exl-id: 05bbad1a-d612-41a4-9575-543f507089c3
+source-git-commit: a731d978aa180633431b0dd9dde5439c286461a2
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -32,12 +33,12 @@ Ein Filter besteht aus den folgenden Teilen:
 |---|---|---|
 | **Attribut** | Das für die Filterung verwendete Produktattribut. | `part_category` |
 | **Operator** | Die auf das Attribut angewendete Bedingung. | `IN`, `EQUALS`, `CONTAINS` |
-| **Wertquelle** | Gibt an, ob die Werte `STATIC` oder `TRIGGER` sind. | `STATIC` |
+| **Wertquelle** | Gibt an, ob die Werte `STATIC` oder `TRIGGER` sind. | `STATIC` [Weitere Informationen](#value-source-types) |
 | **Wert** | Die spezifischen Werte, die die Bedingung erfüllen. | `brakes, suspension` |
 
 ### Beispiel
 
-Ein Filter mit dem Attribut &quot;`part_category`&quot;, einem Operator &quot;`IN`&quot; und den Werten &quot;`brakes, suspension`&quot; stellt sicher, dass nur Produkte, die als Bremsen und Aufhängung kategorisiert sind, in die Richtlinie aufgenommen werden.
+Ein Filter mit dem Attribut `part_category`, einem Operator von `IN` und Werten `brakes, suspension` stellt sicher, dass nur Produkte mit einem `part_category` mit dem Wert `brake` oder `suspension` von der Richtlinie gefiltert und angezeigt werden.
 
 ### Quelltypen von Werten
 

@@ -3,9 +3,10 @@ title: Erste Schritte mit [!DNL Adobe Commerce Optimizer]
 description: Erfahren Sie mehr über die ersten Schritte mit [!DNL Adobe Commerce Optimizer].
 hide: true
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
+source-git-commit: ac79c8aa43ced017743fbef1f181b4eaf8e0a754
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Dieses Handbuch führt Sie durch die Erstellung und Arbeit mit einer [!DNL Adobe
 
 >[!TAB Administrator and merchant workflow]
 
-This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/de/enterprise/admin-guide.html) for more information about administrator workflows.
+This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/enterprise/admin-guide.html) for more information about administrator workflows.
 
 NEED DIAGRAM
 
@@ -50,6 +51,10 @@ Sobald die [!DNL Adobe Commerce Optimizer] Instanzen fertig sind, stellt Ihnen d
 | [!DNL Adobe Commerce Optimizer] Benutzeroberfläche | `https://experience.adobe.com/#/@commerceprojectbeacon/commerce-optimizer-studio?tenant=<tenantId>` | Greifen Sie auf die Commerce Optimizer-Benutzeroberfläche zu, um Ihren Katalog über:<br>1 zu verwalten. Merchandising-Regeln (Produkterkennung, Produktempfehlungen).<br>2. Katalogverwaltung (Erstellung von Kanälen und Richtlinien).<br>3. Data Insights (Anzeigen des Datenerfassungsstatus Ihres Katalogs). |
 | Storefront-APIs | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/graphql` | Greifen Sie auf die APIs zu, die zum Einrichten Ihrer Commerce-Storefront mit Edge Delivery Services erforderlich sind. |
 | APIs zur Katalogdatenaufnahme | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/v1/catalog/<entity>` | Greifen Sie auf die APIs zu, die zum Aufnehmen Ihrer Katalogdaten erforderlich sind. |
+
+>[!NOTE]
+>
+>Weitere Informationen zu den APIs[ die für die Storefront-Einrichtung und ](https://developer-stage.adobe.com/commerce/services/composable-catalog/) Katalogaufnahme erforderlich sind, finden Sie in der Entwicklerdokumentation .
 
 Als Teilnehmer mit frühzeitigem Zugriff erhalten Sie eine E-Mail mit einem sicheren Link, über den Sie sich zusammen mit Ihrem IMS-Token bei [!DNL Adobe Commerce Optimizer] anmelden oder API-Aufrufe ausführen können.
 
