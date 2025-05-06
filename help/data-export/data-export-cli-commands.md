@@ -16,7 +16,7 @@ Mit dem Befehl `saas:resync` im `magento/saas-export` können Sie die Datensynch
 Es wird von Adobe nicht empfohlen, den Befehl `saas:resync` regelmäßig zu verwenden. Typische Szenarien für die Verwendung des Befehls sind:
 
 - Erstsynchronisierung
-- Synchronisieren von Daten mit einem neuen Datenraum nach Änderung der [SaaS-Datenraum-ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
+- Synchronisieren von Daten mit einem neuen Datenraum nach Änderung der [SaaS-Datenraum-ID](https://experienceleague.adobe.com/de/docs/commerce-admin/config/services/saas)
 - Fehlerbehebung
 
 Überwachen von Synchronisierungsvorgängen in der `var/log/saas-export.log`.
