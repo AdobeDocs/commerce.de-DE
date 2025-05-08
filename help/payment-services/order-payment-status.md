@@ -144,18 +144,18 @@ In der Berichtsansicht zum Status der Bestellzahlung können Sie die Datenquelle
 
 ![Datenquellenauswahl](assets/datasource.png){width="300" zoomable="yes"}
 
-Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Ihre Stores anzeigen, die [!DNL Payment Services] im Produktionsmodus verwenden. Wenn_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Berichtsinformationen für den Sandbox-Modus angezeigt werden.
+Wenn _[!UICONTROL Live]_&#x200B;die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Ihre Stores anzeigen, die [!DNL Payment Services] im Produktionsmodus verwenden. Wenn&#x200B;_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Berichtsinformationen für den Sandbox-Modus angezeigt werden.
 
 Die Auswahl von Datenquellen funktioniert wie folgt:
 
-* Wenn Sie keine Stores haben, die [!DNL Payment Services] im Live-Modus verwenden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Sandbox]_eingestellt.
-* Wenn Sie über Stores (einen oder mehrere) verfügen, die [!DNL Payment Services] im Live-Modus verwenden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Live]_eingestellt.
+* Wenn Sie keine Stores haben, die [!DNL Payment Services] im Live-Modus verwenden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Sandbox]_&#x200B;eingestellt.
+* Wenn Sie über Stores (einen oder mehrere) verfügen, die [!DNL Payment Services] im Live-Modus verwenden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Live]_&#x200B;eingestellt.
 * Berichtsexporte berücksichtigen immer die Auswahl der Datenquelle.
 
 So wählen Sie die Datenquelle für Ihren [!UICONTROL Order Payment Status] aus:
 
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
-1. Klicken Sie auf den Filter _[!UICONTROL Data source]_und wählen Sie **[!UICONTROL Live]**oder **[!UICONTROL Sandbox]**aus.
+1. Klicken Sie auf den Filter _[!UICONTROL Data source]_&#x200B;und wählen Sie **[!UICONTROL Live]**&#x200B;oder **[!UICONTROL Sandbox]**&#x200B;aus.
 
    Die Berichtsergebnisse werden basierend auf der ausgewählten Datenquelle neu generiert.
 
@@ -175,7 +175,7 @@ In der Berichtsansicht zum Status der Bestellzahlung können Sie die anzuzeigend
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Klicken Sie auf die **[!UICONTROL Filter]**.
 1. Schalten Sie die _Zahlungsstatus_ ein, um Berichtsergebnisse nur für ausgewählte Zahlungsstatus anzuzeigen.
-1. Berichtsergebnisse innerhalb eines Bestellbetragsbereichs durch Eingabe eines _[!UICONTROL Min Order Amount]_oder _[!UICONTROL Max Order Amount_] anzeigen.
+1. Berichtsergebnisse innerhalb eines Bestellbetragsbereichs durch Eingabe eines _[!UICONTROL Min Order Amount]_&#x200B;oder _[!UICONTROL Max Order Amount_] anzeigen.
 1. Klicken Sie auf **[!UICONTROL Hide filters]** , um den Filter auszublenden.
 
 ### Spalten ein- und ausblenden
@@ -208,7 +208,7 @@ Die Spalte Erstattungsstatus zeigt den aktuellen Status für jede Erstattung an.
 
 ### Berichtsdaten aktualisieren
 
-Die Berichtsansicht zum Status der Bestellzahlung zeigt einen _[!UICONTROL Last updated]_Zeitstempel an, der das letzte Mal anzeigt, dass die Berichtsinformationen aktualisiert wurden. Standardmäßig werden die Berichtsdaten zum Status der Bestellzahlung alle drei Stunden automatisch aktualisiert.
+Die Berichtsansicht zum Status der Bestellzahlung zeigt einen _[!UICONTROL Last updated]_&#x200B;Zeitstempel an, der das letzte Mal anzeigt, dass die Berichtsinformationen aktualisiert wurden. Standardmäßig werden die Berichtsdaten zum Status der Bestellzahlung alle drei Stunden automatisch aktualisiert.
 
 Sie können auch manuell eine Aktualisierung der Berichtsdaten zum Status der Bestellzahlung erzwingen, um die aktuellsten Berichtsinformationen anzuzeigen.
 

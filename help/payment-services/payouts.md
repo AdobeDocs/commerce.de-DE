@@ -89,12 +89,12 @@ In der Berichtsansicht „Zahlungen“ können Sie die Datenquelle (**[!UICONTRO
 
 ![Datenquellenauswahl](assets/datasource.png){width="300" zoomable="yes"}
 
-Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Stores im Produktionsmodus anzeigen. Wenn_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie Berichtsinformationsspeicher im Sandbox-Modus sehen.
+Wenn _[!UICONTROL Live]_&#x200B;die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Stores im Produktionsmodus anzeigen. Wenn&#x200B;_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie Berichtsinformationsspeicher im Sandbox-Modus sehen.
 
 Die Auswahl von Datenquellen funktioniert wie folgt:
 
-* Wenn Sie keine Stores haben, die sich im Live-Modus befinden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Sandbox]_eingestellt.
-* Wenn Sie Stores (einen oder mehrere) im Live-Modus haben, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Live]_eingestellt.
+* Wenn Sie keine Stores haben, die sich im Live-Modus befinden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Sandbox]_&#x200B;eingestellt.
+* Wenn Sie Stores (einen oder mehrere) im Live-Modus haben, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Live]_&#x200B;eingestellt.
 * Berichtsexporte berücksichtigen immer die Auswahl der Datenquelle.
 
 So wählen Sie die Datenquelle für die Auswertung „Zahlungsstatus der Bestellung“ aus:

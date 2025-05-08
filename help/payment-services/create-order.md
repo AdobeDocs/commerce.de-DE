@@ -23,5 +23,5 @@ Sie können Zahlungsdienste mit „Einstellungen[[!DNL Payment Services]  an Ihr
 1. Erweitern Sie in der _Admin_-Seitenleiste **[!UICONTROL Sales]** und wählen Sie **[!UICONTROL Orders]**.
 1. Klicken Sie auf **[!UICONTROL Create New Order]**.
 1. Füllen Sie die Abschnitte wie für die Bestellung erforderlich aus (Details werden unter [Erstellen einer Bestellung](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"} beschrieben).
-1. Im _[!UICONTROL Payment Method]_Abschnitt sollten Sie Ihre [!DNL Payment Services] als Zahlungsmethode verwenden können.
+1. Im _[!UICONTROL Payment Method]_&#x200B;Abschnitt sollten Sie Ihre [!DNL Payment Services] als Zahlungsmethode verwenden können.
 1. Klicken Sie auf **[!UICONTROL Submit Order]**.

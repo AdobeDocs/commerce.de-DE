@@ -73,7 +73,7 @@ _25. Januar 2023_
 
 _12. September 2022_
 
-![Neu](../assets/new.svg)<!-- Issue PAY-3705 --> Die `increment_id` ist jetzt für die Abstimmung von Auszahlungen in externen ERP-Systemen verfügbar. Sie wird an die `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system) [`custom_id` _und_ übertragen, die sowohl im PayPal-Webhook als auch in den Details zur Händleraktivität für eine Auszahlung sichtbar sind.
+![Neu](../assets/new.svg)<!-- Issue PAY-3705 --> Die `increment_id` ist jetzt für die Abstimmung von Auszahlungen in externen ERP-Systemen verfügbar. Sie wird an die `invoice_id`[&#128279;](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system) `custom_id` _und_ übertragen, die sowohl im PayPal-Webhook als auch in den Details zur Händleraktivität für eine Auszahlung sichtbar sind.
 
 _31. August 2022_
 
