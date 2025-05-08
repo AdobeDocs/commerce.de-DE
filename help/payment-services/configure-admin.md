@@ -29,7 +29,7 @@ Sie können [!DNL Payment Services] für Ihren Store und Ihre _[!UICONTROL Merch
 1. Erweitern Sie im Abschnitt _[!UICONTROL [!DNL Payment Services]]_&#x200B;den Abschnitt&#x200B;_[!UICONTROL General Configuration]_ .
 1. Wählen **für &quot;**&quot; die Option `Yes` aus, um [!DNL Payment Services] für Ihren Store zu aktivieren.
 1. Legen Sie für **Methode** den Wert auf `Sandbox` fest, wenn Sie noch [!DNL Payment Services] für Ihren Store testen, oder auf `Production`, wenn Sie bereit sind, Live-Zahlungen zu aktivieren.
-1. Ihre **[!UICONTROL Payment Services Sandbox ID]**- und **[!UICONTROL Payment Services Production ID]** werden automatisch ausgefüllt, sobald Sie den [Commerce Services-Connector ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} und das [!DNL Payment Services]-Dashboard zum ersten Mal aufrufen. Führen Sie diese Schritte aus, um das Onboarding für Ihre Sandbox- und/oder Produktionsumgebung abzuschließen. Diese Werte verknüpfen Ihre SaaS-ID mit [!DNL Payment Services].
+1. Ihre **[!UICONTROL Payment Services Sandbox ID]**- und **[!UICONTROL Payment Services Production ID]** werden automatisch ausgefüllt, sobald Sie den [Commerce Services-Connector ](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} und das [!DNL Payment Services]-Dashboard zum ersten Mal aufrufen. Führen Sie diese Schritte aus, um das Onboarding für Ihre Sandbox- und/oder Produktionsumgebung abzuschließen. Diese Werte verknüpfen Ihre SaaS-ID mit [!DNL Payment Services].
 
    >[!WARNING]
    >
@@ -80,7 +80,7 @@ Weitere Informationen finden [ unter ](payments-options.md#paypal-smart-buttons)
 | Feld | Umfang | Beschreibung |
 |---|---|---|
 | [!UICONTROL Title] | Shop-Ansicht | Fügen Sie den Text hinzu, der während des Checkouts als Titel für diese Zahlungsoption in der Ansicht „Zahlungsmethode“ angezeigt werden soll. Optionen: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | Website | Die [Zahlungsaktion](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | Website | Die [Zahlungsaktion](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=de) für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | Shop-Ansicht | Die Sortierreihenfolge für die angegebene Zahlungsmethode auf der Kasse. `Numeric Only` |
 | [!UICONTROL Show on checkout page] | Website | Aktivieren oder Deaktivieren von Kreditkartenfeldern auf der Kasse. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | Shop-Ansicht | Aktivieren oder Deaktivieren [Kreditkarten-Vaulting](vaulting.md). Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -114,7 +114,7 @@ Weitere Informationen finden [ unter ](payments-options.md#apple-pay-button).
 | Feld | Umfang | Beschreibung |
 |---|---|---|
 | [!UICONTROL Title] | Shop-Ansicht | Fügen Sie den Text hinzu, der während des Checkouts als Titel für diese Zahlungsoption in der Ansicht „Zahlungsmethode“ angezeigt werden soll. Optionen: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | Website | Die [Zahlungsaktion](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | Website | Die [Zahlungsaktion](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=de) für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | Website | Aktivieren oder Deaktivieren von [!DNL Apple Pay] auf der Kaufbestätigungsseite. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Sort order] | Shop-Ansicht | Die Sortierreihenfolge für die angegebene Zahlungsmethode auf der Kasse. `Numeric Only` |
 | [!UICONTROL Show buttons on product detail page] | Shop-Ansicht | Aktivieren oder Deaktivieren von [!DNL Apple Pay] auf der Produktdetailseite. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -151,7 +151,7 @@ Weitere Informationen finden [ unter ](payments-options.md#google-pay-button).
 | Feld | Umfang | Beschreibung |
 |---|---|---|
 | [!UICONTROL Title] | Shop-Ansicht | Gibt die Textbeschriftung an, die für diese Zahlungsoption während des Checkouts in der Zahlungsmethodenansicht angezeigt wird. Optionen: `[!UICONTROL text field]` |
-| [!UICONTROL Payment Action] | Website | Die [Zahlungsaktion](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) für die angegebene Zahlungsmethode. Optionen: `[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
+| [!UICONTROL Payment Action] | Website | Die [Zahlungsaktion](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=de) für die angegebene Zahlungsmethode. Optionen: `[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
 | [!UICONTROL Show on checkout page] | Website | Aktivieren oder Deaktivieren von [!DNL Google Pay] auf der Kaufbestätigungsseite. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Sort order] | Shop-Ansicht | Die Sortierreihenfolge für die angegebene Zahlungsmethode auf der Kasse. `Numeric Only` |
 | [!UICONTROL Show buttons on product detail page] | Shop-Ansicht | Aktivieren oder Deaktivieren von [!DNL Google Pay] auf der Produktdetailseite. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -199,7 +199,7 @@ Sie können die Zahlungsoptionen der PayPal-Zahlungs-Buttons im Admin-Bereich ak
 | Feld | Umfang | Beschreibung |
 |---|---|---|
 | [!UICONTROL Title] | Shop-Ansicht | Fügen Sie den Text hinzu, der während des Checkouts als Titel für diese Zahlungsoption in der Ansicht Zahlungsmethode angezeigt werden soll. Optionen: Textfeld |
-| [!UICONTROL Payment Action] | Website | Die [Zahlungsaktion](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | Website | Die [Zahlungsaktion](https://experienceleague.adobe.com/de/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | Website | Aktivieren oder deaktivieren Sie die Pay-Later-Nachricht im Warenkorb, auf der Produktseite, im Mini-Warenkorb und während des Kaufvorgangs. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on checkout page] | Shop-Ansicht | Aktivieren oder Deaktivieren von [!DNL PayPal payment buttons] auf der Kaufbestätigungsseite. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on product detail page] | Shop-Ansicht | Aktivieren oder Deaktivieren von [!DNL PayPal payment buttons] auf der Produktdetailseite. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |

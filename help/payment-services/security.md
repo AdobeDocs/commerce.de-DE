@@ -3,7 +3,7 @@ title: Sicherheit und Compliance
 description: Überprüfen Sie die Sicherheits- und Compliance-Anforderungen für Ihre Site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html?lang=de
 source-git-commit: 9f7690ae325853b9b4a590b3d1cd538909a26462
 workflow-type: tm+mt
 source-wordcount: '571'
@@ -19,13 +19,13 @@ Die Sicherheit ist in [!DNL Payment Services] von größter Wichtigkeit, und es 
 
 [!DNL Adobe Commerce] und [!DNL Magento Open Source] unterstützen verschiedene Sicherheitsfunktionen.
 
-Siehe [Sicherheit](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"} im Core-Benutzerhandbuch, um die Best Practices für die Sicherheit zu überprüfen und zu erfahren, wie Sie Admin-Sitzungen und Anmeldeinformationen verwalten, CAPTCHA implementieren und Website-Einschränkungen verwalten.
+Siehe [Sicherheit](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security){target="_blank"} im Core-Benutzerhandbuch, um die Best Practices für die Sicherheit zu überprüfen und zu erfahren, wie Sie Admin-Sitzungen und Anmeldeinformationen verwalten, CAPTCHA implementieren und Website-Einschränkungen verwalten.
 
 ## PCI-Compliance
 
 Die Zahlungskartenbranche (Payment Card Industry, PCI) hat eine Reihe von Anforderungen für Unternehmen festgelegt, die Zahlungen per Kreditkarte über das Internet akzeptieren. Neben der Aufrechterhaltung einer sicheren Umgebung sind Händler, die mit Kreditkarteninformationen von Kunden umgehen, dafür verantwortlich, einige Standardrichtlinien zu erfüllen.
 
-Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} für PCI-Compliance .
+Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} für PCI-Compliance .
 
 Händler können einen [Selbstbewertungsfragebogen (SAQ) ausfüllen](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"} bei dem es sich um ein Selbstvalidierungstool zur Bewertung der Sicherheit von Karteninhaberdaten handelt.
 

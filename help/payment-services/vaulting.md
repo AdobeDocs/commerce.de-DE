@@ -32,7 +32,7 @@ Angemeldete Kunden können eine Zahlungsmethode im Dashboard „Mein Konto **wie
 
 1. Navigieren Sie im linken Navigationsbereich zu **[!UICONTROL Stored Payment Methods]** , um alle darin gespeicherten Zahlungsmethoden anzuzeigen.
 
-   Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) Zahlungsmethoden.
+   Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/payments/stored-payment-methods) Zahlungsmethoden.
 
 1. Der Kunde klickt auf **[!UICONTROL Add New Card]**, um eine neue Karte zu speichern.
 
@@ -73,10 +73,10 @@ Sie können in Admin nur dann Vault-Karten verwenden, wenn der Kunde sowohl übe
 
 So erstellen Sie in der Admin eine Bestellung für einen Kunden mit seiner Tresor-Kreditkarte:
 
-1. [Bestellung erstellen und Produkte hinzufügen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. [Bestellung erstellen und Produkte hinzufügen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=de).
 1. Wählen Sie _[!UICONTROL Payment & Shipping Information]_&#x200B;**[!UICONTROL Stored Cards]**&#x200B;als Zahlungsmethode aus.
 1. Wählen Sie die gewünschte Zahlungsmethode mit Vault-Kreditkarte aus.
-1. Nachdem Sie alle anderen erforderlichen Schritte für die Bestellung ausgeführt haben, [ Sie sie ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+1. Nachdem Sie alle anderen erforderlichen Schritte für die Bestellung ausgeführt haben, [ Sie sie ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=de#step-3%3A-submit-the-order).
 
    ![Verwenden Sie eine Vault-Kreditkarte in Admin für den Kunden](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 

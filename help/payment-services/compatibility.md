@@ -26,7 +26,7 @@ Um [!DNL Payment Services] zu verwenden, müssen Sie zunächst eine Verbindung m
 
    >[!TIP]
    >
-   > Weitere Informationen finden Sie in unserem Tutorial-Video [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) Adobe Commerce Services Connector.
+   > Weitere Informationen finden Sie in unserem Tutorial-Video [&#128279;](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) Adobe Commerce Services Connector.
 
 1. Wenn Sie Ihre Instanz bereits verbunden haben, navigieren Sie für die nächsten Schritte zur [Onboarding](onboard.md)-Seite.
 
@@ -96,13 +96,13 @@ Siehe [Verbinden](connect.md) für weitere Informationen zum Einrichten der [!DN
 
 >[!ENDTABS]
 
-Weitere Informationen zu Versionen [ Versionen ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) versionsspezifischen Versionen finden Sie auf den [[!DNL Payment Services] Lebenszyklusrichtlinie](release-notes.md) und den Versionshinweisen .
+Weitere Informationen zu Versionen [ Versionen ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=de) versionsspezifischen Versionen finden Sie auf den [[!DNL Payment Services] Lebenszyklusrichtlinie](release-notes.md) und den Versionshinweisen .
 
 Die vollständigen Anweisungen und den Start des Onboarding-Prozesses finden Sie unter [Erste Schritte mit [!DNL Payment Services]](onboard.md).
 
 ### Akzeptierte Kreditkarten und Währungen
 
-[!DNL Payment Services] akzeptiert die Währungen der Länder [in denen es verfügbar ist](#availability). Weitere Informationen [ Einrichten von ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) finden Sie unter „Währungskonfiguration“.
+[!DNL Payment Services] akzeptiert die Währungen der Länder [in denen es verfügbar ist](#availability). Weitere Informationen [ Einrichten von ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=de) finden Sie unter „Währungskonfiguration“.
 
 Weitere Informationen zu den Währungen und Zahlungsmethoden, die mit PayPal-Produkten und -Services verfügbar sind, finden Sie auf den folgenden Seiten:
 
