@@ -3,8 +3,9 @@ title: Startseite
 description: Einführung in die  [!DNL Payment Services] .
 role: Admin, User
 level: Intermediate
-feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
+feature: Payments, Checkout, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 2%

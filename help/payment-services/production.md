@@ -1,10 +1,11 @@
 ---
 title: Für  [!DNL Payment Services]  aktivieren
 description: Schließen Sie den Onboarding-Prozess ab, indem Sie  [!DNL Payment Services]  für die Produktion aktivieren.
-feature: Payments, Checkout, Configuration, Install
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
+feature: Payments, Checkout, Configuration, Install, Paas, Saas
+source-git-commit: 0f2e9c3a7d990a46bafc5f3b8a083436d42643b5
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -13,8 +14,8 @@ ht-degree: 0%
 
 Sie können den Service in die Produktion aufnehmen und den [Onboarding-Prozess](onboard.md) gemäß den Schritten in diesem Thema abschließen, nachdem Sie:
 
-* [Installieren](install.md) der Payment Services-Erweiterung
-* [Konfigurieren und Verbinden](connect.md) Ihrer Instanz
+* [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} [Installieren](install.md) der Payment Services-Erweiterung
+* [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} [Konfigurieren und Verbinden](connect.md) Ihrer Instanz
 * [Einrichten](sandbox.md) und [Testen](test-validate.md) Ihrer Sandbox
 
 ## [!DNL Payment Services] als Zahlungsmethode festlegen
@@ -26,10 +27,10 @@ Nachdem Sie [Commerce-Services konfiguriert](connect.md#configure-commerce-servi
 
    Diese Option ist sichtbar, wenn Sie [!DNL Payment Services] noch nicht als Zahlungsmethode für eine oder mehrere Ihrer Websites konfiguriert haben.
 
-   Sie gelangen in den Einstellungsbereich der Startansicht mit den entsprechenden erweiterten Optionen (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), wo Sie die [!DNL Payment Services] als [Zahlungsmethode“ ](https://experienceleague.adobe.com/de/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"} können.
+   Sie gelangen in den Einstellungsbereich der Startansicht mit den entsprechenden erweiterten Optionen (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), wo Sie die [!DNL Payment Services] als [Zahlungsmethode“ ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"} können.
 
-1. Legen Sie in _[!UICONTROL General Configuration]_&#x200B;**[!UICONTROL Enable]**&#x200B;auf `Yes` fest.
-1. Legen Sie **[!UICONTROL Payment Action]** sowohl für _[!UICONTROL Credit Card Fields]_&#x200B;als auch für&#x200B;_[!UICONTROL PayPal payment buttons]_ auf einen der folgenden Werte fest:
+1. Legen Sie in _[!UICONTROL General Configuration]_**[!UICONTROL Enable]**auf `Yes` fest.
+1. Legen Sie **[!UICONTROL Payment Action]** sowohl für _[!UICONTROL Credit Card Fields]_als auch für_[!UICONTROL PayPal payment buttons]_ auf einen der folgenden Werte fest:
 
    | Einstellung | Beschreibung |
    |---|---|
@@ -42,7 +43,7 @@ Nachdem Sie [Commerce-Services konfiguriert](connect.md#configure-commerce-servi
 
 1. Klicken Sie auf **[!UICONTROL Save]**.
 1. Klicken Sie auf **[!UICONTROL Go to Payment Services]** , um zur [!DNL Payment Services]-Startseite zurückzukehren.
-1. [Leeren Sie den Cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=de).
+1. [Leeren Sie den Cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
    Das Löschen sollte nach jeder Konfigurationsänderung erfolgen.
 
@@ -61,7 +62,7 @@ Payment Services bietet [**Erweiterte** (vollständig unterstützte) und **Stand
 
 1. Wählen _im Modal „Land_&quot; das Land aus, von dem aus Sie tätig sind.
 
-   Payment Services bietet vollständige Unterstützung für alle Zahlungsoptionen in [fünf ](../payment-services/overview.md#availability). Payment Services bietet Express Checkout-Funktionen (eine Untergruppe von Zahlungsoptionen) für alle anderen Länder, die in der Länderliste dargestellt sind.
+   Payment Services bietet vollständige Unterstützung für alle Zahlungsoptionen in [fünf ](../payment-services/introduction.md#availability). Payment Services bietet Express Checkout-Funktionen (eine Untergruppe von Zahlungsoptionen) für alle anderen Länder, die in der Länderliste dargestellt sind.
 
    Das Land, das Sie aus der Liste auswählen, bestimmt die Zahlungsoptionen, und der Onboarding-Ablauf - [Erweitert](#advanced-onboarding) (vollständig unterstützt) oder [Standard](#standard-onboarding) (Express-Checkout) - steht Ihnen zur Verfügung.
 
@@ -71,7 +72,7 @@ Payment Services bietet [**Erweiterte** (vollständig unterstützte) und **Stand
 
 ### Erweitertes Onboarding
 
-Dieser Onboarding-Fluss ist für Händler in ([ unterstützten Ländern) ](../payment-services/overview.md#availability).
+Dieser Onboarding-Fluss ist für Händler in ([ unterstützten Ländern) ](../payment-services/introduction.md#availability).
 
 Nachdem das Land ausgewählt wurde:
 
@@ -88,7 +89,7 @@ Nachdem das Land ausgewählt wurde:
 
 ### Standard-Onboarding
 
-Dieser standardmäßige Onboarding-Ablauf ist für Händler in Ländern verfügbar, für die [nur Express-Checkout-](../payment-services/overview.md#availability)) bereitgestellt wird.
+Dieser standardmäßige Onboarding-Ablauf ist für Händler in Ländern verfügbar, für die [nur Express-Checkout-](../payment-services/introduction.md#availability)) bereitgestellt wird.
 
 Nachdem das Land ausgewählt wurde:
 
@@ -154,9 +155,9 @@ Live-Zahlungen aktivieren:
 
 1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicken Sie auf der Startseite oben rechts auf der Seite auf **[!UICONTROL Settings]** . Siehe [Startseite](payments-home.md) für weitere Informationen.
-1. Legen Sie im Abschnitt _[!UICONTROL General Configuration]_&#x200B;**[!UICONTROL Payment mode]**&#x200B;auf `Production` fest.
+1. Legen Sie im Abschnitt _[!UICONTROL General Configuration]_**[!UICONTROL Payment mode]**auf `Production` fest.
 1. Klicken Sie auf **[!UICONTROL Save]**.
-1. [Leeren Sie den Cache](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
+1. [Leeren Sie den Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
    >[!IMPORTANT]
    >

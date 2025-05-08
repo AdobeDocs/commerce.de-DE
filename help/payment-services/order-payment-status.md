@@ -3,8 +3,9 @@ title: Bericht zum Status der Bestellzahlung
 description: Verwenden Sie den Bericht zum Zahlungsstatus von Bestellungen, um den Zahlungsstatus Ihrer Bestellungen einsehen und mögliche Probleme identifizieren zu können.
 role: User
 level: Intermediate
-feature: Payments, Checkout, Orders
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
+feature: Payments, Checkout, Orders, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Bericht zum Status der Bestellzahlung
 
-[!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen ein umfassendes Reporting, damit Sie einen klaren Überblick über die [Transaktionen](transactions.md) Bestellungen und Zahlungen Ihres Geschäfts erhalten.
+[!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen ein umfassendes Reporting, damit Sie einen klaren Überblick über die [Transaktionen](reporting.md) Bestellungen und Zahlungen Ihres Geschäfts erhalten.
 
 Es gibt zwei verfügbare Berichtsansichten zum Zahlungsstatus von Bestellungen, mit denen Sie den Zahlungsstatus Ihrer Bestellungen schnell anzeigen können:
 
@@ -105,7 +106,7 @@ Erkennen, wann eine ausstehende Erfassungstransaktion in einen `Completed` einge
 
 Um sicherzustellen, dass dieser Prozess erwartungsgemäß funktioniert, müssen Händler einen neuen Cron-Auftrag konfigurieren. Sobald der Auftrag so konfiguriert ist, dass er automatisch ausgeführt wird, werden keine weiteren Eingriffe vom Händler erwartet.
 
-Siehe [Konfigurieren von Cron-Aufträgen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=de). Nach der Konfiguration wird der neue Auftrag alle 30 Minuten ausgeführt, um Aktualisierungen für Bestellungen abzurufen, die sich im Status `Payment Review` befinden.
+Siehe [Konfigurieren von Cron-Aufträgen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Nach der Konfiguration wird der neue Auftrag alle 30 Minuten ausgeführt, um Aktualisierungen für Bestellungen abzurufen, die sich im Status `Payment Review` befinden.
 
 Händler können den aktualisierten Zahlungsstatus über die Berichtsansicht „Bestellzahlungsstatus“ überprüfen.
 
@@ -113,11 +114,11 @@ Händler können den aktualisierten Zahlungsstatus über die Berichtsansicht „
 
 [!DNL Payment Services] verwendet Bestelldaten und kombiniert sie mit aggregierten Zahlungsdaten aus anderen Quellen (einschließlich PayPal), um aussagekräftige und hochnützliche Berichte zu erstellen.
 
-Bestelldaten werden exportiert und im Zahlungsdienst gespeichert. Wenn Sie [Bestellstatus ändern oder hinzufügen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) oder [eine Store-Ansicht ](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [Store](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/store-details#store-information) oder den Website-Namen bearbeiten, werden diese Daten mit Zahlungsdaten kombiniert und der Bericht „Status der Bestellzahlung“ wird mit den kombinierten Informationen ausgefüllt.
+Bestelldaten werden exportiert und im Zahlungsdienst gespeichert. Wenn Sie [Bestellstatus ändern oder hinzufügen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) oder [eine Store-Ansicht ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [Store](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information) oder den Website-Namen bearbeiten, werden diese Daten mit Zahlungsdaten kombiniert und der Bericht „Status der Bestellzahlung“ wird mit den kombinierten Informationen ausgefüllt.
 
 Dieser Prozess umfasst zwei Schritte:
 
-1. Der Index wird entweder `ON SAVE` (jedes Mal, wenn Bestellinformationen oder Speicherinformationen geändert werden) oder `BY SCHEDULE` (nach einem vorkonfigurierten Cron-Zeitplan) geändert, je nachdem, wie er in [Indexverwaltung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/index-management) im Admin konfiguriert ist.
+1. Der Index wird entweder `ON SAVE` (jedes Mal, wenn Bestellinformationen oder Speicherinformationen geändert werden) oder `BY SCHEDULE` (nach einem vorkonfigurierten Cron-Zeitplan) geändert, je nachdem, wie er in [Indexverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) im Admin konfiguriert ist.
 
    Standardmäßig erfolgt die Datenindizierung `ON SAVE`, d. h. wenn sich etwas in der Bestellung, im Bestellstatus, in der Store-Ansicht, im Store oder auf der Website ändert, erfolgt die Neuindizierung sofort.
 
@@ -133,7 +134,7 @@ Die einzigen Daten, die zu Berichtszwecken exportiert und sortiert werden, sind 
 
 Obwohl die Neuindizierung standardmäßig im `ON SAVE` erfolgt, wird empfohlen, die Indizierung im `BY SCHEDULE`-Modus durchzuführen. Der `BY SCHEDULE`-Index wird nach einem Cron-Zeitplan von einer Minute ausgeführt, und alle geänderten Daten werden innerhalb von zwei Minuten nach einer Datenänderung in Ihrem Bestellstatusbericht angezeigt. Diese geplante Neuindizierung hilft Ihnen, die Belastung Ihres Geschäfts zu reduzieren, insbesondere wenn Sie eine große Menge an eingehenden Bestellungen haben, da sie nach einem Zeitplan erfolgt (nicht bei jeder Bestellung).
 
-Sie können den Indexmodus - `ON SAVE` oder `BY SCHEDULE` - [ Admin ](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+Sie können den Indexmodus - `ON SAVE` oder `BY SCHEDULE` - [ Admin ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 
 Informationen zum Konfigurieren des Datenexports finden Sie unter [Befehlszeilenkonfiguration](configure-cli.md#configure-data-export).
 
@@ -143,18 +144,18 @@ In der Berichtsansicht zum Status der Bestellzahlung können Sie die Datenquelle
 
 ![Datenquellenauswahl](assets/datasource.png){width="300" zoomable="yes"}
 
-Wenn _[!UICONTROL Live]_&#x200B;die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Ihre Stores anzeigen, die [!DNL Payment Services] im Produktionsmodus verwenden. Wenn&#x200B;_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Berichtsinformationen für den Sandbox-Modus angezeigt werden.
+Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Ihre Stores anzeigen, die [!DNL Payment Services] im Produktionsmodus verwenden. Wenn_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Berichtsinformationen für den Sandbox-Modus angezeigt werden.
 
 Die Auswahl von Datenquellen funktioniert wie folgt:
 
-* Wenn Sie keine Stores haben, die [!DNL Payment Services] im Live-Modus verwenden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Sandbox]_&#x200B;eingestellt.
-* Wenn Sie über Stores (einen oder mehrere) verfügen, die [!DNL Payment Services] im Live-Modus verwenden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Live]_&#x200B;eingestellt.
+* Wenn Sie keine Stores haben, die [!DNL Payment Services] im Live-Modus verwenden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Sandbox]_eingestellt.
+* Wenn Sie über Stores (einen oder mehrere) verfügen, die [!DNL Payment Services] im Live-Modus verwenden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Live]_eingestellt.
 * Berichtsexporte berücksichtigen immer die Auswahl der Datenquelle.
 
 So wählen Sie die Datenquelle für Ihren [!UICONTROL Order Payment Status] aus:
 
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
-1. Klicken Sie auf den Filter _[!UICONTROL Data source]_&#x200B;und wählen Sie **[!UICONTROL Live]**&#x200B;oder **[!UICONTROL Sandbox]**&#x200B;aus.
+1. Klicken Sie auf den Filter _[!UICONTROL Data source]_und wählen Sie **[!UICONTROL Live]**oder **[!UICONTROL Sandbox]**aus.
 
    Die Berichtsergebnisse werden basierend auf der ausgewählten Datenquelle neu generiert.
 
@@ -174,7 +175,7 @@ In der Berichtsansicht zum Status der Bestellzahlung können Sie die anzuzeigend
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Klicken Sie auf die **[!UICONTROL Filter]**.
 1. Schalten Sie die _Zahlungsstatus_ ein, um Berichtsergebnisse nur für ausgewählte Zahlungsstatus anzuzeigen.
-1. Berichtsergebnisse innerhalb eines Bestellbetragsbereichs durch Eingabe eines _[!UICONTROL Min Order Amount]_&#x200B;oder _[!UICONTROL Max Order Amount_] anzeigen.
+1. Berichtsergebnisse innerhalb eines Bestellbetragsbereichs durch Eingabe eines _[!UICONTROL Min Order Amount]_oder _[!UICONTROL Max Order Amount_] anzeigen.
 1. Klicken Sie auf **[!UICONTROL Hide filters]** , um den Filter auszublenden.
 
 ### Spalten ein- und ausblenden
@@ -207,7 +208,7 @@ Die Spalte Erstattungsstatus zeigt den aktuellen Status für jede Erstattung an.
 
 ### Berichtsdaten aktualisieren
 
-Die Berichtsansicht zum Status der Bestellzahlung zeigt einen _[!UICONTROL Last updated]_&#x200B;Zeitstempel an, der das letzte Mal anzeigt, dass die Berichtsinformationen aktualisiert wurden. Standardmäßig werden die Berichtsdaten zum Status der Bestellzahlung alle drei Stunden automatisch aktualisiert.
+Die Berichtsansicht zum Status der Bestellzahlung zeigt einen _[!UICONTROL Last updated]_Zeitstempel an, der das letzte Mal anzeigt, dass die Berichtsinformationen aktualisiert wurden. Standardmäßig werden die Berichtsdaten zum Status der Bestellzahlung alle drei Stunden automatisch aktualisiert.
 
 Sie können auch manuell eine Aktualisierung der Berichtsdaten zum Status der Bestellzahlung erzwingen, um die aktuellsten Berichtsinformationen anzuzeigen.
 
@@ -244,10 +245,10 @@ Die Berichte zum Status der Bestellzahlung enthalten die folgenden Informationen
 
 | Spalte | Beschreibung |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce-Auftrags-ID<br> <br>Um zugehörige [Bestellinformationen) anzuzeigen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} klicken Sie auf die ID. |
+| [!UICONTROL Order ID] | Commerce-Auftrags-ID<br> <br>Um zugehörige [Bestellinformationen) anzuzeigen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} klicken Sie auf die ID. |
 | [!UICONTROL Order Date] | Zeitstempel des Bestelldatums |
 | [!UICONTROL Authorized Date] | Datum/Zeitstempel der Zahlungsermächtigung |
-| [!UICONTROL Order Status] | Aktuelle Commerce [Bestellstatus](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
+| [!UICONTROL Order Status] | Aktuelle Commerce [Bestellstatus](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
 | [!UICONTROL Invoiced] | Rechnungsstatus der Bestellung - *[!UICONTROL No]*, *[!UICONTROL Partial]* oder *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Versandstatus der Bestellung - *[!UICONTROL No]*, *[!UICONTROL Partial]* oder *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Gesamtbetrag der Bestellung |

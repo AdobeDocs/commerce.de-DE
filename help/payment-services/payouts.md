@@ -3,8 +3,9 @@ title: Bericht zu Auszahlungen
 description: Verwenden Sie die Auswertung „Auszahlungen“ für vollständige Transparenz bezüglich des Zahlungsbetrags, des verarbeiteten Volumens und der detaillierten Berichterstellung auf Transaktionsebene zur finanziellen Abstimmung.
 role: User
 level: Intermediate
-feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
+feature: Payments, Checkout, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '1303'
 ht-degree: 0%
@@ -26,7 +27,7 @@ Sie können [Auszahlungstransaktionen](#download-transactions) im CSV-Dateiforma
 
 >[!NOTE]
 >
->Auszahlungsberichte zeigen nur Bestellungen an, die erfasst (Zahlungsaktion ist auf [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/production.html?lang=de#set-payment-services-as-payment-method) eingestellt) - oder [ als `Invoiced`](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) markiert sind.
+>Auszahlungsberichte zeigen nur Bestellungen an, die erfasst (Zahlungsaktion ist auf [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method) eingestellt) - oder [ als `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) markiert sind.
 
 ## Datenvisualisierungsansicht für Auszahlungen
 
@@ -88,12 +89,12 @@ In der Berichtsansicht „Zahlungen“ können Sie die Datenquelle (**[!UICONTRO
 
 ![Datenquellenauswahl](assets/datasource.png){width="300" zoomable="yes"}
 
-Wenn _[!UICONTROL Live]_&#x200B;die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Stores im Produktionsmodus anzeigen. Wenn&#x200B;_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie Berichtsinformationsspeicher im Sandbox-Modus sehen.
+Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Stores im Produktionsmodus anzeigen. Wenn_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie Berichtsinformationsspeicher im Sandbox-Modus sehen.
 
 Die Auswahl von Datenquellen funktioniert wie folgt:
 
-* Wenn Sie keine Stores haben, die sich im Live-Modus befinden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Sandbox]_&#x200B;eingestellt.
-* Wenn Sie Stores (einen oder mehrere) im Live-Modus haben, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Live]_&#x200B;eingestellt.
+* Wenn Sie keine Stores haben, die sich im Live-Modus befinden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Sandbox]_eingestellt.
+* Wenn Sie Stores (einen oder mehrere) im Live-Modus haben, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Live]_eingestellt.
 * Berichtsexporte berücksichtigen immer die Auswahl der Datenquelle.
 
 So wählen Sie die Datenquelle für die Auswertung „Zahlungsstatus der Bestellung“ aus:
@@ -154,7 +155,7 @@ Auszahlungsberichte enthalten die folgenden Informationen.
 | [!UICONTROL Code] | Transaktionscode, der entweder „Guthaben“ (*CR*) oder „Soll“ (*DR*) angibt |
 | [!UICONTROL Reference ID] | Ursprüngliche Transaktions-ID, mit der dieses Ereignis verknüpft ist |
 | [!UICONTROL Invoice] | Rechnungskennung (eine pro Bestellung) der Transaktion |
-| [!UICONTROL Commerce order] | Commerce-Auftrags-ID <br> <br>Um zugehörige [Bestellinformationen) anzuzeigen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/orders) klicken Sie auf die ID. |
+| [!UICONTROL Commerce order] | Commerce-Auftrags-ID <br> <br>Um zugehörige [Bestellinformationen) anzuzeigen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) klicken Sie auf die ID. |
 | [!UICONTROL Commerce trans] | Commerce Transaktions-ID |
 | [!UICONTROL Pay method] | Kreditkartenart - *[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]* - und dazugehöriger Kartenanbieter (z. B *Visa* oder *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Transaktionsbetrag |

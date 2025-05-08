@@ -1,11 +1,13 @@
 ---
 title: Installieren [!DNL Payment Services]
 description: Installieren Sie die Erweiterung Zahlungsdienste .
+exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
-feature: Payments, Checkout, Install, Upgrade
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Checkout, Install, Upgrade, Paas
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -16,13 +18,13 @@ Um mit Payment Services für [!DNL Adobe Commerce] und [!DNL Magento Open Source
 
 >[!INFO]
 >
-> Adobe Commerce Weitere Informationen finden [ in  [!DNL Payment Services]  Video „Konfigurieren für ](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services)&quot;.
+> Adobe Commerce Weitere Informationen finden [ in  [!DNL Payment Services]  Video „Konfigurieren für ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services)&quot;.
 
 Das Herunterladen und Installieren der [!DNL Payment Services]-Erweiterung für [!DNL Adobe Commerce] und [!DNL Magento Open Source] ist ein erforderlicher Schritt für die Verwendung von [!DNL Payment Services].
 
 ## Herunterladen der Erweiterung
 
-Sie müssen zuerst die Erweiterung von [Commerce Marketplace herunterladen](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html?lang=de) bevor Sie sie installieren können.
+Sie müssen zuerst die Erweiterung von [Commerce Marketplace herunterladen](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) bevor Sie sie installieren können.
 
 1. Navigieren Sie zur [Payment Services-Erweiterung in der Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
 1. Um die Bearbeitung und Version auszuwählen, schalten Sie **[!UICONTROL Edition]** um und **[!UICONTROL Your store version]** Sie Ihre bevorzugte Auswahl an.
@@ -41,9 +43,9 @@ Sie können die [!DNL Payment Services]-Erweiterung sowohl für [!DNL Adobe Comm
 
 Composer verwendet diese Schlüssel bei der ersten Installation von [!DNL Adobe Commerce] oder in Situationen, in denen die Composer-Schlüssel zuvor nicht in der `auth.json`-Datei gespeichert wurden.
 
-Weitere [ zum Abrufen von Composer-Schlüsseln finden ](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) unter „Abrufen von Authentifizierungsschlüsseln“.
+Weitere [ zum Abrufen von Composer-Schlüsseln finden ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) unter „Abrufen von Authentifizierungsschlüsseln“.
 
-Weitere Informationen dazu[ was vor dem Herunterladen und Installieren einer Erweiterung zu beachten ](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/extensions), finden Sie unter „Installieren einer Erweiterung“.
+Weitere Informationen dazu[ was vor dem Herunterladen und Installieren einer Erweiterung zu beachten ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions), finden Sie unter „Installieren einer Erweiterung“.
 
 ### [!DNL Adobe Commerce] zur Cloud-Infrastruktur
 
@@ -154,7 +156,7 @@ So sehen Sie, welche Composer-Schlüssel konfiguriert sind:
    cat /path/to/auth.json
    ```
 
-1. Siehe [Welche Schlüssel sind mit Ihrem Commerce-`MageID`](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) verknüpft?
+1. Siehe [Welche Schlüssel sind mit Ihrem Commerce-`MageID`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) verknüpft?
 
 ### Nicht genügend Speicher für PHP
 
@@ -164,7 +166,7 @@ Wenn der folgende Fehler darauf hinweist, dass nicht genügend Speicher für PHP
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-[Erhöhen Sie die Speicherbegrenzung](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit) für PHP in Ihrer Umgebung in `php.ini`.
+[Erhöhen Sie die Speicherbegrenzung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit) für PHP in Ihrer Umgebung in `php.ini`.
 
 Alternativ können Sie die Speicherbegrenzung mit diesem Befehl angeben: `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
 

@@ -3,8 +3,9 @@ title: Verfügbare Daten
 description: Finanzberichterstattungsdaten verwenden, um die Berichterstellung mit Nicht-Commerce-Systemen abzustimmen.
 role: User
 level: Intermediate
-feature: Payments, Checkout, Data Import/Export
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
+feature: Payments, Checkout, Data Import/Export, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
