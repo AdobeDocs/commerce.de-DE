@@ -199,7 +199,7 @@ Stellen Sie sich ein Szenario vor, in dem Sie den Hintergrund eines Produktbilds
 
 #### Hinzufügen des Bildes zu Commerce AEM Assets
 
-1. Wählen Sie im [Navigationsbereich](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) von AEM as a Cloud Service **Assets** > **Dateien** > **Commerce** und klicken Sie auf das Asset, das Sie im vorherigen Abschnitt erstellt haben.
+1. Wählen Sie im [Navigationsbereich](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) von AEM as a Cloud Service **Assets** > **Dateien** > **Commerce** und klicken Sie auf das Asset, das Sie im vorherigen Abschnitt erstellt haben.
 
    ![Commerce-Ordner](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -249,7 +249,7 @@ Adobe Commerces Generate Variations nutzt die generative KI zur Automatisierung 
 
 ### Text generieren
 
-1. Öffnen Sie Ihre Storefront-Site mit dem [universellen Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Öffnen Sie Ihre Storefront-Site mit dem [universellen Editor](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Wählen Sie den Textblock aus, den Sie bearbeiten möchten.
 
@@ -263,7 +263,7 @@ Adobe Commerces Generate Variations nutzt die generative KI zur Automatisierung 
 
 ### Erstellen von Inhalten und Bildern
 
-1. Öffnen Sie [Varianten generieren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Öffnen Sie [Varianten generieren](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Wählen Sie die Vorlage [!UICONTROL **Hero Banner**] aus.
 
