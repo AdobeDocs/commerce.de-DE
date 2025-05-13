@@ -1,16 +1,16 @@
 ---
-title: Anwendungsbeispiele
+title: Anwendungsszenarien
 description: Erfahren Sie, wie Sie mit praktische Anwendungsfälle und unterstützte Geschäftsszenarien durchführen können [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-source-git-commit: d5935f4d080c3be1f51bf8916575a3b2f357ee22
+source-git-commit: f01e9ae84830ab265c8b6557ec81e5594179fb10
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1306'
 ht-degree: 0%
 
 ---
 
-# Anwendungsbeispiele
+# Anwendungsszenarien
 
 {{accs-early-access}}
 
@@ -36,7 +36,7 @@ Dieser Workflow zeigt den Checkout-Prozess für einen Kunden, der ein Produkt in
 
 ### Zahlungsdienste aktivieren
 
-1. Navigieren Sie in Commerce Admin zu [!UICONTROL **Einstellungen**] > [!UICONTROL **Zahlungsmethoden**].
+1. Navigieren Sie in Commerce Admin zu [!UICONTROL **Stores**] > [!UICONTROL Settings] > [!UICONTROL **Configuration**] > [!UICONTROL **Zahlungsmethoden**].
 
 1. Geben [!UICONTROL **im Abschnitt „Allgemeine**]&quot; Ihre `Payment Services Sandbox ID` und `Payment Services Sandbox Key` ein. Sie können diese IDs abrufen, indem Sie die unter &quot;[-Onboarding“ beschriebenen Schritte ](../payment-services/sandbox.md#sandbox-onboarding)
 
@@ -199,7 +199,7 @@ Stellen Sie sich ein Szenario vor, in dem Sie den Hintergrund eines Produktbilds
 
 #### Hinzufügen des Bildes zu Commerce AEM Assets
 
-1. Wählen Sie im [Navigationsbereich](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) von AEM as a Cloud Service **Assets** > **Dateien** > **Commerce** und klicken Sie auf das Asset, das Sie im vorherigen Abschnitt erstellt haben.
+1. Wählen Sie im [Navigationsbereich](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) von AEM as a Cloud Service **Assets** > **Dateien** > **Commerce** und klicken Sie auf das Asset, das Sie im vorherigen Abschnitt erstellt haben.
 
    ![Commerce-Ordner](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -249,7 +249,7 @@ Adobe Commerces Generate Variations nutzt die generative KI zur Automatisierung 
 
 ### Text generieren
 
-1. Öffnen Sie Ihre Storefront-Site mit dem [universellen Editor](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Öffnen Sie Ihre Storefront-Site mit dem [universellen Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Wählen Sie den Textblock aus, den Sie bearbeiten möchten.
 
@@ -263,7 +263,7 @@ Adobe Commerces Generate Variations nutzt die generative KI zur Automatisierung 
 
 ### Erstellen von Inhalten und Bildern
 
-1. Öffnen Sie [Varianten generieren](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Öffnen Sie [Varianten generieren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Wählen Sie die Vorlage [!UICONTROL **Hero Banner**] aus.
 
