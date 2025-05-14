@@ -15,7 +15,7 @@ Sie können [!DNL Product Recommendations] entweder mit [PWA Studio](https://dev
 
 Benutzerdefinierte und Headless-Integratoren sollten diese Anweisungen für Luma und PWA als Implementierungsvorschlag heranziehen. Es gibt viele Möglichkeiten, Produktempfehlungen in Headless-Lösungen zu implementieren. Diese Dokumentation deckt nicht alle Szenarien ab. Integratoren müssen das Entwickeln, Entwerfen und Testen für ihre -Implementierungen abdecken.
 
-[!DNL Product Recommendations] benötigen [Verhaltens- und Katalogdaten](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html) um zu funktionieren. Der Synchronisierungsprozess für Katalogdaten bleibt in einer Headless-Implementierung unverändert, für die Erfassung von Verhaltensdaten sind jedoch Änderungen erforderlich.
+[!DNL Product Recommendations] benötigen [Verhaltens- und Katalogdaten](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=de) um zu funktionieren. Der Synchronisierungsprozess für Katalogdaten bleibt in einer Headless-Implementierung unverändert, für die Erfassung von Verhaltensdaten sind jedoch Änderungen erforderlich.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Sie können diese beiden Aktionen mit den verfügbaren SDKs ausführen, wie im f
 
 1. [Installieren](install-configure.md) Sie das [!DNL Product Recommendations].
 
-1. Installieren und verwenden Sie die [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) zum Auslösen der [Verhaltensereignisse](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html).
+1. Installieren und verwenden Sie die [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) zum Auslösen der [Verhaltensereignisse](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=de).
 
    Die minimal erforderlichen Ereignisse, um [!DNL Product Recommendations] Ergebnisse zurückzugeben:
 
