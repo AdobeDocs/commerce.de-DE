@@ -2,9 +2,10 @@
 title: Was ist [!DNL Live Search]?
 description: '[!DNL Live Search] von Adobe Commerce bietet ein schnelles, relevantes und intuitives Sucherlebnis.'
 recommendations: noCatalog
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
+source-git-commit: 29374c45f57e923666e255bfefadd9a1e736cfef
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ Mit [!DNL Live Search] können Sie:
 
 ## Architektur
 
-Der Adobe Commerce-Teil der Architektur umfasst das Hosten der Suche *Admin*, das Synchronisieren von Katalogdaten und das Ausführen des Abfrage-Service. Nach der Installation und Konfiguration von [!DNL Live Search] beginnt Adobe Commerce mit der Freigabe von Such- und Katalogdaten für SaaS-Services. Jetzt können Admin-Benutzer Such-(Facetten[&#128279;](facets.md), [Synonyme](synonyms.md) und Merchandising[Regeln einrichten, anpassen und ](category-merch.md).
+Der Adobe Commerce-Teil der Architektur umfasst das Hosten der Suche *Admin*, das Synchronisieren von Katalogdaten und das Ausführen des Abfrage-Service. Nach der Installation und Konfiguration von [!DNL Live Search] beginnt Adobe Commerce mit der Freigabe von Such- und Katalogdaten für SaaS-Services. Jetzt können Admin-Benutzer Such-(Facetten[ ](facets.md), [Synonyme](synonyms.md) und Merchandising[Regeln einrichten, anpassen und ](category-merch.md).
 
 ![Live Search-Datenfluss](assets/ls-cs-data-flow.png)
 
@@ -34,13 +35,13 @@ Der Adobe Commerce-Teil der Architektur umfasst das Hosten der Suche *Admin*, da
 
 Mit dem Fokus auf Geschwindigkeit, Relevanz und Benutzerfreundlichkeit ist [!DNL Live Search] ein Wendepunkt für Käufer und Händler gleichermaßen. Sehen Sie sich das folgende Video an und machen Sie dann einen kurzen Überblick über [!DNL Live Search] in der Storefront.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452578?learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-Ein ausführlicheres Video zur Verwendung und Konfiguration der Live-Suche finden Sie unter [Vollständige Demonstration zu [!DNL Live Search]](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
+Ein ausführlicheres Video zur Verwendung und Konfiguration der Live-Suche finden Sie unter [Vollständige Demonstration zu [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 
 ### Während der Eingabe suchen
 
-[!DNL Live Search] antwortet mit vorgeschlagenen Produkten und einer Miniaturansicht der wichtigsten Suchergebnisse in einem [Pop-up](storefront-popover.md) wenn Käufer Abfragen in das Feld [Suche](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search) eingeben. Die [ „Produktdetails](https://experienceleague.adobe.com/de/docs/commerce-admin/start/storefront/storefront) wird angezeigt, wenn Käufer auf ein empfohlenes oder vorgestelltes Produkt klicken. Ein _Alle anzeigen_ in der Fußzeile des Popups zeigt die Suchergebnisseite an.
+[!DNL Live Search] antwortet mit vorgeschlagenen Produkten und einer Miniaturansicht der wichtigsten Suchergebnisse in einem [Pop-up](storefront-popover.md) wenn Käufer Abfragen in das Feld [Suche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) eingeben. Die [ „Produktdetails](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) wird angezeigt, wenn Käufer auf ein empfohlenes oder vorgestelltes Produkt klicken. Ein _Alle anzeigen_ in der Fußzeile des Popups zeigt die Suchergebnisseite an.
 
 [!DNL Live Search] gibt Suchergebnisse für eine Abfrage mit zwei oder mehr Zeichen zurück. Bei einer Teilübereinstimmung beträgt die maximale Anzahl von Zeichen pro Wort 20. Die Anzahl der Zeichen in der Abfrage kann nicht konfiguriert werden. Das Popover enthält die `name`, `sku` und `category_ids`.
 
@@ -51,6 +52,18 @@ Ein ausführlicheres Video zur Verwendung und Konfiguration der Live-Suche finde
 Um alle Produkte aufzulisten, die von der Abfrage „Suche während der Eingabe“ zurückgegeben werden, klicken Sie _der Fußzeile des Popups auf_ Alle anzeigen“.
 
 ![Beispiel-Storefront - Preisfacetten](assets/storefront-view-all-search-results.png)
+
+### Wie [!DNL Live Search] mit Tippfehlern umgeht
+
+Wenn eine Suche durchgeführt wird, führt [!DNL Live Search] eine Nicht-Fuzzy-Suche durch, bei der keine Tippfehler berücksichtigt werden. Wenn keine Ergebnisse gefunden werden, führt [!DNL Live Search] eine zweite Fuzzy-Suche durch, bei der kleinere Tippfehler berücksichtigt werden. Die Fuzzy-Suche wird mit einem maximalen Bearbeitungsabstand von 1 ausgeführt. Diese Bearbeitungsentfernung verwendet das Konzept [Levenshtein-Entfernung](https://en.wikipedia.org/wiki/Levenshtein_distance) und ermöglicht drei Arten von Operationen:
+
+| Bedienung | Beschreibung | Beispiel |
+|---|---|---|
+| Einfügen | Zeichen hinzufügen. | „Cat“ -> „Cart“ |
+| Löschung | Ein Zeichen wird entfernt. | „Warenkorb“ -> „Katze“ |
+| Ersatz | Ein Zeichen durch ein anderes ersetzen. | „Warenkorb“ -> „Guss“ |
+
+Neben der Fuzzy-Suchlogik werden auch Transpositionen berücksichtigt, d.h. bei denen zwei benachbarte Zeichen in einem Wort vertauscht werden, z.B. „the“ anstelle von „the“. Beachten Sie, dass diese Bearbeitungsbeschränkungen pro Wort und nicht die Phrase als Ganzes gelten.
 
 ### Gefilterte Suche mit Facetten
 
@@ -68,7 +81,7 @@ Merchandising [Regeln](rules.md) gestalten das Einkaufserlebnis mit If-Then-Anwe
 
 ### Unterstützung für Suchbegriffe
 
-[!DNL Live Search] unterstützt Commerce [Suchbegriff-Umleitungen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-terms). Beispielsweise können Benutzer nach einem Begriff wie „Versandkosten“ suchen und direkt zur Seite „Versandkosten“ geleitet werden.
+[!DNL Live Search] unterstützt Commerce [Suchbegriff-Umleitungen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). Beispielsweise können Benutzer nach einem Begriff wie „Versandkosten“ suchen und direkt zur Seite „Versandkosten“ geleitet werden.
 
 ## Live Search-Komponenten
 
@@ -88,4 +101,4 @@ Der [!DNL Live Search] [Arbeitsbereich](workspace.md) ist der Bereich im Admin-B
 
 Wenn Sie an 90 aufeinander folgenden Tagen keine Suchanfrage für die Katalogdaten in Ihrer Testumgebung senden, werden die Katalogdaten in den Ruhezustand versetzt und es werden keine Daten für eine Suchanfrage zurückgegeben. Katalogdaten in Ihrer Produktionsumgebung sind von dieser Richtlinie nicht betroffen.
 
-Um die Katalogdaten in Ihrer Testumgebung erneut zu aktivieren, [ Sie „eine Support-Anfrage ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Live Search] erneut aktivieren“ und fügen Sie die Umgebungs-IDs hinzu. Die Katalogdaten in Ihrer Testumgebung sollten innerhalb weniger Stunden wiederhergestellt werden.
+Um die Katalogdaten in Ihrer Testumgebung erneut zu aktivieren, [ Sie „eine Support-Anfrage ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Live Search] erneut aktivieren“ und fügen Sie die Umgebungs-IDs hinzu. Die Katalogdaten in Ihrer Testumgebung sollten innerhalb weniger Stunden wiederhergestellt werden.

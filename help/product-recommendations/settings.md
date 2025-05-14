@@ -1,9 +1,10 @@
 ---
 title: Einstellungen
 description: Erfahren Sie, wie Sie die Quelle Ihrer  [!DNL Product Recommendations]  ändern und visuelle Empfehlungen aktivieren.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
+source-git-commit: c11e3fbc871600f413867e0c5c0b75ad705cf115
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ Staging-Aufträge werden mithilfe der Staging-`environmentId` aufgezeichnet. Die
 
 >[!NOTE]
 >
->Bei Verwendung von Produktempfehlungen über REST kann der `alternateEnvironmentId`-Parameter verwendet werden, um andere Datenräume anzugeben. Bei Verwendung von Produktempfehlungen über GraphQL ist dieser Parameter nicht verfügbar.
+>Bei Verwendung von Produktempfehlungen über REST kann der `alternateEnvironmentId`-Parameter verwendet werden, um andere Datenräume anzugeben. Bei Verwendung von Produktempfehlungen über [GraphQL](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) ist dieser Parameter nicht verfügbar.
 
 ## Quelle der Empfehlungen auswählen
 
