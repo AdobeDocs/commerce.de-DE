@@ -272,9 +272,9 @@ Diese Werte legen die Kanal-ID, das Gebietsschema und die Preisbuch-ID fest, um 
    }
    ```
 
-   Weitere Informationen finden Sie in der Dokumentation ](https://www.aem.live/docs/sidekick-library) Sidekick-Bibliothek [.
+   Weitere Informationen finden Sie in der Dokumentation [&#128279;](https://www.aem.live/docs/sidekick-library) Sidekick-Bibliothek .
 
-+++
+   +++
 
 1. Aktualisieren Sie die `url` mit den Werten für Ihr GitHub-Repository.
 
@@ -314,7 +314,7 @@ Diese Werte legen die Kanal-ID, das Gebietsschema und die Preisbuch-ID fest, um 
    }
    ```
 
-+++
+   +++
 
 1. Speichern Sie die Datei.
 
@@ -363,7 +363,7 @@ Verbinden Sie Ihr Repository mit dem Edge Delivery-Service, indem Sie die GitHub
 
 1. Öffnen Sie die Konfigurationsseite der [AEM Code Sync App](https://github.com/apps/aem-code-sync).
 
-1. Wählen Sie **Konfigurieren** und authentifizieren Sie sich dann bei dem **** oder **Konto**, das das von Ihnen erstellte Repository enthält.
+1. Wählen Sie **Konfigurieren** und authentifizieren Sie sich dann bei dem **&#x200B;**&#x200B;oder **Konto**, das das von Ihnen erstellte Repository enthält.
 
 1. Wählen Sie im Formular **Nur Repositorys auswählen** und wählen Sie dann das von Ihnen erstellte Repository aus.
 
