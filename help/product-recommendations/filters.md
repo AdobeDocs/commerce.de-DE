@@ -42,7 +42,7 @@ Die logischen Operatoren `AND` und `OR` werden verwendet, um mehrere Bedingungen
 
 ### Kategorie
 
-[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 
 Filtert Produkte nach ihrer Kategorie. Der Kategoriefilter verwendet direkte Kategoriezuweisungen und deren Unterkategorien. Wenn Sie beispielsweise eine Ausschlussbedingung für Kategorie `Gear` aktivieren, werden `Gear` zugewiesene Produkte und alle zugehörigen Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment` ausgeschlossen. Dasselbe gilt für einen Einschlussfilter für eine Kategorie. Wenn Sie beispielsweise eine Einschlussbedingung für Kategorie `Gear` aktivieren, werden `Gear` zugewiesene Produkte und alle zugehörigen Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment` einbezogen.
 
@@ -50,7 +50,7 @@ Das Feld Kategorie zeigt Kategorien an, die zur aktuellen Storeview gehören.
 
 >[!NOTE]
 >
->Für B2B-Händler entspricht der Kategoriefilter allen [kundenspezifischen Produktkategorien](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) die Sie konfiguriert haben.
+>Für B2B-Händler entspricht der Kategoriefilter allen [kundenspezifischen Produktkategorien](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=de) die Sie konfiguriert haben.
 
 Adobe Commerce empfiehlt die Verwendung der folgenden Kategoriefilterkonfiguration, wenn Sie Empfehlungen für Ihre Seitentypen bereitstellen:
 
@@ -72,23 +72,23 @@ Produktfilter geben an, welche Produkte für die Anzeige in Recommendations infr
 
 ### Typ
 
-[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 
 Ein Filter, der auf dem Produkttyp basiert, schließt alle Produkte eines bestimmten Typs ein oder aus. Zu den unterstützten Typen _einfach_, _konfigurierbar_, _virtuell_, _herunterladbar_ oder _Geschenkkarte_. _Bundle_, _grouped_ und benutzerdefinierte Produkttypen werden nicht unterstützt.
 
 ### Sichtbarkeit
 
-[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 
 Filtert Produkte nach Sichtbarkeit, z. B. _Katalog_, _Suche_ oder beides.
 
 ### Preis
 
-Ein auf dem Produktpreis basierender Filter verwendet den Endpreis, um den Vergleich durchzuführen. Der Endpreis beinhaltet alle Rabatte oder Sonderpreise, die anonymen Käufern zur Verfügung stehen. Für B2B-Händler entspricht der angezeigte Preis dem [kundenspezifischen Gruppenpreis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) den Sie konfiguriert haben.
+Ein auf dem Produktpreis basierender Filter verwendet den Endpreis, um den Vergleich durchzuführen. Der Endpreis beinhaltet alle Rabatte oder Sonderpreise, die anonymen Käufern zur Verfügung stehen. Für B2B-Händler entspricht der angezeigte Preis dem [kundenspezifischen Gruppenpreis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=de) den Sie konfiguriert haben.
 
 ### Bestandsstatus
 
 Die folgenden Ausschlussfilter können verwendet werden, um Produkte anhand des Lagerstatus herauszufiltern:
 
 - Nicht vorrätig - (Nur Ausschluss) Ausgeschlossen sind nicht vorrätige Produkte.
-- Niedrig auf Lager - (Nur Ausschlüsse) Ausgeschlossen sind Produkte, die niedrig auf Lager sind. Der niedrige Lagerstatus basiert auf dem Wert _Nur noch x Schwellenwert_ in der [Bestandskonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).
+- Niedrig auf Lager - (Nur Ausschlüsse) Ausgeschlossen sind Produkte, die niedrig auf Lager sind. Der niedrige Lagerstatus basiert auf dem Wert _Nur noch x Schwellenwert_ in der [Bestandskonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=de).
