@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die wichtigsten Funktionen und Vorteile von
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: 0e3820eab0fded58a1a99d8a805b2774968380fd
 workflow-type: tm+mt
 source-wordcount: '1452'
@@ -40,13 +40,13 @@ Dieses Diagramm zeigt den Datenfluss zwischen [!DNL Adobe Commerce as a Cloud Se
 
 ## Commerce-Storefront
 
-Verwenden Sie die [Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront) von Adobe, die von Edge Delivery Services unterstützt wird, um in Minutenschnelle umfassende Erlebnisse mit einfacher dokumentbasierter Bearbeitung oder visueller Bearbeitung mit Storefront Builder zu erstellen.
+Verwenden Sie die [Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront?lang=de) von Adobe, die von Edge Delivery Services unterstützt wird, um in Minutenschnelle umfassende Erlebnisse mit einfacher dokumentbasierter Bearbeitung oder visueller Bearbeitung mit Storefront Builder zu erstellen.
 
 Die Commerce-Storefront ist vollständig Headless mit einer entkoppelten Architektur, die alle Merchandising-Services und -Daten über eine GraphQL-API-Ebene bereitstellt. Diese Architektur ermöglicht es Teams, ihre Frontends unabhängig von der Commerce Foundation zu entwickeln, und bietet die Agilität, neue Touchpoints mit neuen Technologien zu erstellen und zu testen.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] unterstützt keine Luma-Storefronts. Wenn Sie von Adobe Commerce in der Cloud oder lokal migrieren, finden Sie unter [Vorhandene Storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) Anleitungen zum Übergang.
+>[!DNL Adobe Commerce as a Cloud Service] unterstützt keine Luma-Storefronts. Wenn Sie von Adobe Commerce in der Cloud oder lokal migrieren, finden Sie unter [Vorhandene Storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=de#existing-storefronts) Anleitungen zum Übergang.
 
 ## Merchandising- und Zahlungsdienste
 
@@ -61,7 +61,7 @@ Adobe bietet eine breite Palette intelligenter, zusammenstellbarer Merchandising
 
 Vereinfachen Sie das Asset-Management mit einem robusten DAM-System (Digital Asset Management), das zum Verwalten von Rich-Media-Inhalten mit Adobe Experience Manager integriert werden kann. Alternativ bietet das native Mini-DAM grundlegende Asset-Management-Tools zum Speichern und Verwalten digitaler Assets.
 
-Weitere Informationen [ Sie unter ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration)Asset-Management“.
+Weitere Informationen [ Sie unter ](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration)Asset-Management“.
 
 ## Entwicklerplattform
 
@@ -116,7 +116,7 @@ Entwicklerinnen und Entwickler können umfassende [GraphQL- und REST-](https://d
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 
@@ -140,14 +140,14 @@ In den folgenden Abschnitten finden Sie Informationen zu den Vorteilen, die [!DN
 
 ## Neue Funktionslösungen
 
-Die [Admin-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) ist die primäre Oberfläche für den Zugriff auf Funktionen zur Verwaltung von Backend-Store-Vorgängen, Inventar, Preisen, Promotions und Kundeninteraktionen. [!DNL Adobe Commerce as a Cloud Service] bietet jedoch einzigartige Lösungen, die einige der bekannten Funktionen ersetzen, die in Adobe Commerce in Cloud- und On-Premise-Projekten verfügbar sind. In der folgenden Tabelle werden die Funktionen und Ersatzlösungen beschrieben, die in [!DNL Adobe Commerce as a Cloud Service] verfügbar sind:
+Die [Admin-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/guide-overview) ist die primäre Oberfläche für den Zugriff auf Funktionen zur Verwaltung von Backend-Store-Vorgängen, Inventar, Preisen, Promotions und Kundeninteraktionen. [!DNL Adobe Commerce as a Cloud Service] bietet jedoch einzigartige Lösungen, die einige der bekannten Funktionen ersetzen, die in Adobe Commerce in Cloud- und On-Premise-Projekten verfügbar sind. In der folgenden Tabelle werden die Funktionen und Ersatzlösungen beschrieben, die in [!DNL Adobe Commerce as a Cloud Service] verfügbar sind:
 
 | Funktion | Lösung | Verfügbarkeit | Details |
 |---------|----------|--------------|--------|
-| [Digital Asset Management](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management) | [Produktvisualisierung](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) oder Mini-DAM | Verfügbar | Ein robustes DAM-System (Digital Asset Management), das für die Verwaltung von Rich-Media-Inhalten mit Adobe Experience Manager integriert ist. Alternativ bietet der Mini-DAM grundlegende Asset-Management-Tools zum Speichern und Verwalten digitaler Assets. |
-| [Content Management System (CMS)](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview) | [Commerce-Storefront](https://www.aem.live/) | Verfügbar | Eine einfache CMS, mit der Benutzende Dokumente und Website-Inhalte mithilfe der dokumentbasierten Inhaltserstellung einfach erstellen und verwalten können. Alternativ dazu steht ein universeller Editor zur Verfügung, der ein erweitertes Content-Management und eine plattformübergreifende Anpassung ermöglicht. |
-| [Inhalts-Staging](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) | [Katalog-Service](../catalog-service/overview.md) | Fahrplan | Ein Katalogverwaltungstool, das mit Adobe Experience Platform verbunden ist und die Verwaltung großer Kataloge ermöglicht. |
-| [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview) | [Commerce-Storefront](https://www.aem.live/) | Verfügbar | Eine einfache CMS, mit der Benutzende Dokumente und Website-Inhalte mithilfe der dokumentbasierten Inhaltserstellung einfach erstellen und verwalten können. Alternativ dazu steht ein universeller Editor zur Verfügung, der ein erweitertes Content-Management und eine plattformübergreifende Anpassung ermöglicht. |
-| [Zahlungen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | [Payment Services für Adobe Commerce](../payment-services/guide-overview.md) | Verfügbar | Ein integrierter Zahlungsdienst, der sichere und effiziente Transaktionen ermöglicht. |
-| [URL-Neuschreibungen](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce-Storefront](https://www.aem.live/) | Verfügbar | Eine einfache CMS, mit der Benutzende Dokumente und Website-Inhalte mithilfe der dokumentbasierten Inhaltserstellung einfach erstellen und verwalten können. Alternativ dazu steht ein universeller Editor zur Verfügung, der ein erweitertes Content-Management und eine plattformübergreifende Anpassung ermöglicht. |
-| [Visual Merchandiser](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Katalog-Service](../catalog-service/overview.md) | Fahrplan | Ein Katalogverwaltungstool, das mit Adobe Experience Platform verbunden ist und die Verwaltung großer Kataloge ermöglicht. |
+| [Digital Asset Management](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management) | [Produktvisualisierung](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) oder Mini-DAM | Verfügbar | Ein robustes DAM-System (Digital Asset Management), das für die Verwaltung von Rich-Media-Inhalten mit Adobe Experience Manager integriert ist. Alternativ bietet der Mini-DAM grundlegende Asset-Management-Tools zum Speichern und Verwalten digitaler Assets. |
+| [Content Management System (CMS)](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/guide-overview) | [Commerce-Storefront](https://www.aem.live/) | Verfügbar | Eine einfache CMS, mit der Benutzende Dokumente und Website-Inhalte mithilfe der dokumentbasierten Inhaltserstellung einfach erstellen und verwalten können. Alternativ dazu steht ein universeller Editor zur Verfügung, der ein erweitertes Content-Management und eine plattformübergreifende Anpassung ermöglicht. |
+| [Inhalts-Staging](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/staging/content-staging) | [Katalog-Service](../catalog-service/overview.md) | Fahrplan | Ein Katalogverwaltungstool, das mit Adobe Experience Platform verbunden ist und die Verwaltung großer Kataloge ermöglicht. |
+| [Page Builder](https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/guide-overview) | [Commerce-Storefront](https://www.aem.live/) | Verfügbar | Eine einfache CMS, mit der Benutzende Dokumente und Website-Inhalte mithilfe der dokumentbasierten Inhaltserstellung einfach erstellen und verwalten können. Alternativ dazu steht ein universeller Editor zur Verfügung, der ein erweitertes Content-Management und eine plattformübergreifende Anpassung ermöglicht. |
+| [Zahlungen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/payments/payments) | [Payment Services für Adobe Commerce](../payment-services/guide-overview.md) | Verfügbar | Ein integrierter Zahlungsdienst, der sichere und effiziente Transaktionen ermöglicht. |
+| [URL-Neuschreibungen](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce-Storefront](https://www.aem.live/) | Verfügbar | Eine einfache CMS, mit der Benutzende Dokumente und Website-Inhalte mithilfe der dokumentbasierten Inhaltserstellung einfach erstellen und verwalten können. Alternativ dazu steht ein universeller Editor zur Verfügung, der ein erweitertes Content-Management und eine plattformübergreifende Anpassung ermöglicht. |
+| [Visual Merchandiser](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Katalog-Service](../catalog-service/overview.md) | Fahrplan | Ein Katalogverwaltungstool, das mit Adobe Experience Platform verbunden ist und die Verwaltung großer Kataloge ermöglicht. |
