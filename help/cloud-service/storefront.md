@@ -3,9 +3,10 @@ title: Einrichten der Storefront
 description: Erfahren Sie, wie Sie das Tool für Strukturvorlagen ausführen, um Ihre Storefront  [!DNL Adobe Commerce as a Cloud Service] .
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-source-git-commit: 022e3474b8f2839d2501c46def21733a8d4ad9cc
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+source-git-commit: 72e1dca161c0e3b2898cd48eb3d17b5c50db7066
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '568'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 Die folgenden Schritte zeigen, wie Sie mit dem Befehl `aio commerce init` Ihre Adobe Commerce-Storefront mit Edge Delivery schnell einrichten können. Dieser Prozess richtet Folgendes ein:
 
-* [Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=de) - Eine leistungsstarke, skalierbare und sichere Storefront, die auf Adobes Edge Delivery Services basiert.
+* [Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) - Eine leistungsstarke, skalierbare und sichere Storefront, die auf Adobes Edge Delivery Services basiert.
 * [API Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/mesh/) - eine API-Plattform, mit der Entwickelnde mehrere Datenquellen zu einem einzigen GraphQL-Endpunkt kombinieren können. API Mesh orchestriert die Drittanbieter-API mit der Adobe-API über ein einziges Gateway. Eine Abfrage an den einzelnen GraphQL-Endpunkt kann Ergebnisse aus mehreren Quellen zurückgeben.
 * [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) - Eine Sammlung von Entwickler-Tools mit Zugriff auf APIs, Ereignisse, Laufzeitfunktionen und Plug-ins, mit denen Sie Projekte für Adobe-Programme erstellen können.
 * [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/) - Eine Server-lose Engine für die Bereitstellung von benutzerdefiniertem Code, der auf Ereignisse reagiert und Funktionen in der Cloud ausführt.
@@ -89,7 +90,7 @@ Bevor Sie den `aio commerce init`-Befehl ausführen, müssen Sie die folgenden V
 
 ## Ausführen des `aio commerce init` Befehls
 
-Wenn Sie den folgenden Befehl ausführen, wird eine Strukturvorlage für Ihre Commerce-Storefront erstellt. Dieses Gerüst bietet einen guten Ausgangspunkt für das Erstellen und Verstehen Ihrer Storefront. Weitere Informationen zum Arbeiten mit der Storefront finden Sie in der Dokumentation zur [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de).
+Wenn Sie den folgenden Befehl ausführen, wird eine Strukturvorlage für Ihre Commerce-Storefront erstellt. Dieses Gerüst bietet einen guten Ausgangspunkt für das Erstellen und Verstehen Ihrer Storefront. Weitere Informationen zum Arbeiten mit der Storefront finden Sie in der Dokumentation zur [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
 
 
 1. Führen Sie den `init` Befehl aus:
@@ -122,4 +123,4 @@ Wenn Sie den folgenden Befehl ausführen, wird eine Strukturvorlage für Ihre Co
    * Vorschau der Storefront: `https://main--<repo name>--<username or org>.aem.page/`
    * Lokal ausführen: `aio commerce:dev`
 
-Informationen zum Anpassen Ihrer Storefront finden Sie in der Dokumentation zur [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de).
+Informationen zum Anpassen Ihrer Storefront finden Sie in der Dokumentation zur [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).

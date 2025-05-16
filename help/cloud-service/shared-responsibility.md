@@ -3,9 +3,10 @@ title: Geteilte Verantwortung
 description: Erfahren Sie mehr über die Sicherheitsaufgaben der einzelnen an Ihrem Projekt  [!DNL Adobe Commerce as a Cloud Service]  Parteien.
 role: Admin, Architect, Leader
 exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+source-git-commit: 34057c1e55ff117ea7aab4407f31548ce826691b
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
