@@ -17,7 +17,7 @@ Mit dem Kategorie-Merchandising können Store-Besitzer [!DNL Live Search] intell
 
 Dieses Video ist eine Einführung in das Kategorie-Merchandising.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424617)
+>[!VIDEO](https://video.tv.adobe.com/v/3448860?captions=ger)
 
 Die Funktion ist im Administrator unter **Marketing** > SEO &amp; Search > **[!DNL Live Search]** > (Kategorie **Merchandising** verfügbar.
 
