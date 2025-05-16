@@ -4,7 +4,8 @@ description: Umfassende Informationen zu  [!DNL Product Recommendations]  für A
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 feature: Services, Recommendations
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 8df3ef2e-b00e-42d8-b92b-4fbdaaed9f8f
+source-git-commit: 8e3e71c7de56b367a73ab048fa13ba2cdeb55f41
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%
@@ -31,12 +32,12 @@ Dieses Handbuch behandelt nicht die Kernfunktionen von Adobe Commerce und Magent
 
 | Handbuch | Beschreibung |
 |------ | ----------- |
-| [Benutzerhandbuch für Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html?lang=de) | Händlerorientierte Dokumentation für Adobe Commerce und Magento Open Source |
+| [Benutzerhandbuch für Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Händlerorientierte Dokumentation für Adobe Commerce und Magento Open Source |
 | [Adobe Commerce 2.4-Entwicklerhandbuch](https://developer.adobe.com/commerce/docs) | Entwicklerorientierte Dokumentation zum Erstellen und Anpassen von Adobe Commerce oder Magento Open Source |
 
 ## Support
 
 Wenn Sie Informationen benötigen oder Fragen haben, die in diesem Handbuch nicht behandelt werden, verwenden Sie die folgenden Ressourcen:
 
-* [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-tickets){target="_blank"} - Siehe die [!DNL Product Recommendations] Artikel zur Fehlerbehebung.
-* [Support-](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket){target="_blank"}: Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
+* [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"} - Siehe die [!DNL Product Recommendations] Artikel zur Fehlerbehebung.
+* [Support-](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}: Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
