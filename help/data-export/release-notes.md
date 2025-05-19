@@ -4,9 +4,9 @@ description: Die neuesten Versionsinformationen für  [!DNL Data Export Extensio
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 5e5b3340f45b5db7a6a01ed1b89c42f6399f66b9
+source-git-commit: 1b3af0084d622d544cad5f144d3cd7bd8191814c
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,14 @@ Zu den Aktualisierungen gehören:
 >Die SaaS-Datenexporterweiterung ist eine Sammlung von Modulen, die automatisch mit der Live-Suche, Produktempfehlungen und dem Katalog-Service installiert werden. Sie können die auf Ihrem System installierte Version mit dem Composer überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Aktuelle Hauptversion
+
+## Version 103.4.4
+
+![Neu](../assets/new.svg) Es wurde eine Warnmeldung hinzugefügt, die angezeigt wird, wenn das `cleanup-feed`-Argument zum `saas:resync` CLI-Befehl hinzugefügt wird. Die Option `--cleanup-feed` sollte vorsichtig und nur in bestimmten Szenarien wie nach der Umgebungsbereinigung oder mit der Option `--dry-run` verwendet werden. Die Verwendung in anderen Fällen kann zu Datenverlust und Synchronisationsproblemen führen. <!--MDEE-1047-->
+![Beheben](../assets/fix.svg) Der `x-request-id` aus der Server-Antwort wurde hinzugefügt, um die Rückverfolgbarkeit zu verbessern. <!--MDEE-1041-->
+![Beheben](../assets/fix.svg) Es wurde ein Problem behoben, bei dem der Synchronisierungsstatus nicht für den gesamten Feed-Batch gespeichert wurde, was zu einer unnötigen Neusynchronisierung führte. <!--MDEE-1049-->
+![Beheben](../assets/fix.svg) Es wurde ein Problem behoben, bei dem alle Feeds im Feed-Batch während der Synchronisierung übersprungen wurden, wenn ein Feed einen Fehler enthielt. <!--MDEE-976-->
+![Korrigieren](../assets/fix.svg) Es wurde Unterstützung für Dimensionen im Kategorienberechtigungs-Indexer hinzugefügt. <!--MDEE-654-->
 
 ## Version 103.4.3
 
