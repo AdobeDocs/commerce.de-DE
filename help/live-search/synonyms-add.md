@@ -2,23 +2,23 @@
 title: Synonyme hinzufügen
 description: Fügen Sie  [!DNL Live Search]  hinzu, um die Reaktion auf Suchanfragen zu verbessern.
 exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+source-git-commit: 6dcfd0a54e6a6814b7f5708e0c221452b8af4537
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 # Synonyme hinzufügen
 
-Erhöhen Sie die Kundeninteraktion, indem Sie Ihre eigene kuratierte Liste [!DNL Live Search] Synonyme hinzufügen. [!DNL Live Search] können bis zu 200 Synonyme pro `Data Space ID` verwalten.
+Erhöhen Sie die Kundeninteraktion, indem Sie Ihre eigene kuratierte Liste [!DNL Live Search] Synonyme hinzufügen. [!DNL Live Search] können bis zu 200 Synonyme pro Shop-Ansicht verwalten.
 
 ![[!DNL Live Search] Synonyme](assets/synonym-workspace.png)
 
 ## Schritt 1: Synonym hinzufügen
 
 1. Gehen Sie im Admin zu **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Setzen Sie bei mehreren Stores **Bereich** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings), für die die Synonymeinstellungen gelten.
+1. Setzen Sie bei mehreren Stores **Bereich** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings), für die die Synonymeinstellungen gelten.
 1. Klicken Sie auf die **Synonyme**.
 1. Klicken Sie auf **Schaltfläche „Synonyme**&quot;.
 
@@ -33,7 +33,7 @@ Befolgen Sie die Anweisungen für den [Typ des Synonyms](synonyms-type.md) den S
    ![Zwei-Wege-Synonym hinzufügen](assets/synonym-add-two-way.png)
 
 1. Geben Sie den **Keyword**-Begriff oder die zuzuordnende Phrase ein.
-1. Geben Sie **Begriffe**&#x200B;Erweiterung) ein, die Sie als Synonyme für das Keyword hinzufügen möchten. Trennen Sie mehrere Begriffe durch Kommas.
+1. Geben Sie **Begriffe**Erweiterung) ein, die Sie als Synonyme für das Keyword hinzufügen möchten. Trennen Sie mehrere Begriffe durch Kommas.
 In diesem Beispiel lautet das Keyword, mit dem eine Übereinstimmung erzielt werden soll, „Hose“, und die Menge der Ausdehnungsbegriffe lautet „Hose, Hose“.
 
    ![Beispiel für ein Zwei-Wege-Synonym](assets/synonym-add-two-way-example.png)
