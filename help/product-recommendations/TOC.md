@@ -1,13 +1,12 @@
 ---
 user-guide-title: Handbuch zu [!DNL Product Recommendations]
 user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Verwendung von  [!DNL Product Recommendations]  von Adobe Commerce.
-breadcrumb-title: Handbuch zu [!DNL Product Recommendations]
 role: Admin
 feature: Services, Recommendations
-source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '58'
-ht-degree: 13%
+source-wordcount: '57'
+ht-degree: 12%
 
 ---
 
@@ -24,17 +23,17 @@ ht-degree: 13%
    - [Einstellungen](settings.md)
    - [Staging-Umgebung](staging-environment.md)
    - [Page Builder-Integration](page-builder.md)
-- [!DNL Product Recommendations] Admin {#admin}
+- [!DNL Product Recommendations] {#admin}
    - [Workspace](workspace.md)
    - [Erstellen](create.md)
    - [Bearbeiten](edit.md)
    - [Empfehlungstypen](type.md)
    - [Filter](filters.md)
    - [Platzierung und Beschriftungen](placement.md)
-- [!DNL Product Recommendations] Developer {#developer}
+- [!DNL Product Recommendations] {#developer}
    - [Übersicht](development-overview.md)
    - [Erfassen von Daten](events.md)
    - [Überprüfen](verify.md)
    - [Customize](customize.md)
    - [Handhabung von Cookie-Einschränkungen](setting-cookie.md)
-- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=de)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

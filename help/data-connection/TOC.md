@@ -1,14 +1,13 @@
 ---
 user-guide-title: '[!DNL Data Connection] für Adobe Commerce'
 user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Verwendung der  [!DNL Data Connection] -Erweiterung für Adobe Commerce.
-breadcrumb-title: '[!DNL Data Connection] für Adobe Commerce'
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
-source-git-commit: 98a7ea9ff7d741bd7333b44618e7287da9d66353
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '142'
 ht-degree: 2%
 
 ---
@@ -37,4 +36,4 @@ ht-degree: 2%
 - Anwendungsfälle {#use-cases}
    - [Verwenden von Adobe Journey Optimizer zum Senden einer E-Mail zu einem Transaktionsabbruch](using-ajo.md)
    - [Erstellen einer Zielgruppe in Real-Time CDP mithilfe von Commerce-Ereignisdaten](create-audience.md)
-- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=de)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

@@ -1,13 +1,12 @@
 ---
 user-guide-title: Handbuch zu [!DNL Live Search]
 user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Verwendung von  [!DNL Live Search]  von Adobe Commerce.
-breadcrumb-title: Handbuch zu [!DNL Live Search]
 role: Admin
 feature: Services, Search
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '76'
-ht-degree: 11%
+source-wordcount: '75'
+ht-degree: 10%
 
 ---
 
@@ -19,11 +18,11 @@ ht-degree: 11%
 - [Grenzen und Beschränkungen](boundaries-limits.md)
 - [Best Practices](best-practice.md)
 - [Versionshinweise](release-notes.md)
-- Storefront {#live-search-storefront}
+- Schaufenster {#live-search-storefront}
    - [Storefront-Widgets](storefront-widgets.md)
    - [Produktlistenseite](plp-styling.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
-- Admin {#live-search-admin}
+- Administrator {#live-search-admin}
    - [Leistung](performance.md)
    - Facetten {#facets}
       - [Übersicht](facets.md)
@@ -36,7 +35,7 @@ ht-degree: 11%
       - [Typen von Synonymen](synonyms-type.md)
       - [Synonyme hinzufügen](synonyms-add.md)
       - [Verwalten von Synonymen](synonyms-manage.md)
-   - Merchandising- suchen{#rules}
+   - Merchandising suchen {#rules}
       - [Übersicht](rules.md)
       - [Workspace](rules-workspace.md)
       - [Regeln hinzufügen](rules-add.md)
@@ -46,4 +45,4 @@ ht-degree: 11%
    - [GraphQL](graphql.md)
    - [Einstellungen](settings.md)
 - [-Events](events.md)
-- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=de)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
