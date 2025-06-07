@@ -59,7 +59,7 @@ Sie können ein Produktattribut aus Commerce Admin hinzufügen oder programmgest
 
 1. Fügen Sie das -Attribut einem nach Bedarf festgelegten Attributsatz hinzu.
 
-Siehe [Erstellen von Produktattributen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) im *Adobe Commerce-Administratorhandbuch*.
+Siehe [Erstellen von Produktattributen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) im *Adobe Commerce-Administratorhandbuch*.
 
 #### Programmgesteuertes Erstellen des Produktattributs
 
