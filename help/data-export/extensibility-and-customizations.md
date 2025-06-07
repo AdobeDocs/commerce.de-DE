@@ -2,9 +2,10 @@
 title: Erweitern und Anpassen von SaaS-Datenexport-Feed-Daten
 description: Erfahren Sie, wie Sie die Feed [!DNL SaaS Data Export] Daten erweitern und anpassen.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
+source-git-commit: ac6c690f87e3df2ac4997d80453028829be8e657
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,7 @@ Entwicklerinnen und Entwickler können Produktattribute hinzufügen, auf die üb
 
 ### Hinzufügen des Attributs zu Adobe Commerce
 
-Sie können ein Produktattribut aus Commerce Admin hinzufügen oder programmgesteuert ein benutzerdefiniertes PHP-Modul verwenden, um das Attribut zu definieren und Adobe Commerce zu aktualisieren. Dies ist die einfachste Methode zum Hinzufügen eines Produktattributs, da Sie das Attribut und alle erforderlichen Metadaten hinzufügen können. Das neue Attribut und seine Metadateneigenschaften werden bei der nächsten geplanten Synchronisierung automatisch in die SaaS-Services exportiert.
+Sie können ein Produktattribut aus Commerce Admin hinzufügen oder programmgesteuert ein benutzerdefiniertes PHP-Modul verwenden, um das Attribut zu definieren und Adobe Commerce zu aktualisieren. Das Hinzufügen des Attributs über die Commerce Admin ist die einfachste Methode, da Sie das Attribut und alle erforderlichen Metadaten gleichzeitig hinzufügen können. Das neue Attribut und seine Metadateneigenschaften werden bei der nächsten geplanten Synchronisierung automatisch in die SaaS-Services exportiert.
 
 #### Erstellen des Produktattributs über den Administrator
 
@@ -58,16 +59,16 @@ Sie können ein Produktattribut aus Commerce Admin hinzufügen oder programmgest
 
 1. Fügen Sie das -Attribut einem nach Bedarf festgelegten Attributsatz hinzu.
 
-Siehe [Erstellen von Produktattributen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) im *Adobe Commerce-Administratorhandbuch*.
+Siehe [Erstellen von Produktattributen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) im *Adobe Commerce-Administratorhandbuch*.
 
 #### Programmgesteuertes Erstellen des Produktattributs
 
 Fügen Sie ein Produktattribut programmgesteuert hinzu, indem Sie einen Daten-Patch erstellen, der die `DataPatchInterface` implementiert, und instanziieren Sie eine Kopie der `EavSetup Factory`-Klasse im Konstruktor, um die Attributoptionen zu konfigurieren.
 
-Wenn Sie die Attributoptionen definieren, sind alle Attributparameter außer `type`, `label` und `input` optional. Definieren Sie die folgenden zusätzlichen Optionen und alle anderen Optionen, die sich von den Standardeinstellungen unterscheiden.
+Wenn Sie die Attributoptionen definieren, sind alle Attributparameter außer `type`, `label` und `input` optional. Definieren Sie die folgenden zusätzlichen Parameter und alle anderen, die sich von den Standardeinstellungen unterscheiden.
 
-- Stellen Sie sicher, dass die Eigenschaft während der Datensynchronisation in die Storefront-Services exportiert wird, indem Sie `user_defined` = `1` festlegen
-- Um sicherzustellen, dass der Zugriff auf das Attribut in der Datenbankabfrage der Produktauflistung möglich ist, setzen Sie `used_in_product_listing` = `1`.
+- **`user_defined`=`1`** - Exportiert das Attribut während der Datensynchronisation in die Storefront-Services
+- **`used_in_product_listing`=`1`** - Gewährleisten Sie den Zugriff auf das Attribut in der Datenbankabfrage der Produktliste.
 
 Informationen zum Erstellen von Daten-Patches finden Sie [Daten- und Schema-Patches entwickeln](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) im *PHP-Entwicklerhandbuch*.
 
