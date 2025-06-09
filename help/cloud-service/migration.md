@@ -2,7 +2,7 @@
 title: Migrieren nach [!DNL Adobe Commerce as a Cloud Service]
 description: Erfahren Sie, wie Sie zu  [!DNL Adobe Commerce as a Cloud Service].
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Architect
 source-git-commit: 395def94181016b12a00ce675bb15ef6c8f10309
 workflow-type: tm+mt
@@ -70,7 +70,7 @@ Die Migration von Ihrer aktuellen Adobe Commerce-Instanz zu einer neuen [!DNL Ad
 
    * [Architektur von Adobe Commerce in Cloud Services](./overview.md)—Überprüfen Sie die Plattformarchitektur und die Unterschiede zu Ihrer aktuellen Adobe Commerce-Instanz.
    * [Adobe Commerce-Erweiterbarkeits-Framework](https://developer.adobe.com/commerce/extensibility/) - Ermitteln Sie, wie Sie Ihre aktuellen Anpassungen umstellen möchten.
-   * [Commerce Storefront powered by Edge Delivery](https://experienceleague.adobe.com/developer/commerce/storefront/) - Überprüfen Sie die empfohlene Storefront-Lösung.
+   * [Commerce Storefront powered by Edge Delivery](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de) - Überprüfen Sie die empfohlene Storefront-Lösung.
 
 1. Prüfen Sie Ihre Anpassungskompatibilität:
 
@@ -92,7 +92,7 @@ Die folgenden Schritte beschreiben den Entwicklungs- und Ausführungsprozess der
 
 1. Richten Sie eine der folgenden GraphQL-basierten Storefronts ein:
 
-   * [Erstellen einer Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
+   * [Erstellen einer Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=de)
    * [Verwenden Sie PWA Studio, um eine benutzerdefinierte GraphQL-basierte Storefront zu erstellen](https://developer.adobe.com/commerce/pwa-studio/)
 
 1. Migrieren Sie Ihre Daten aus Ihrer vorherigen Commerce-Instanz zu ACS:
