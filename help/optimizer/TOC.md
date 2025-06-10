@@ -5,33 +5,34 @@ hide: true
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
+source-git-commit: 06fc665062703422a3f9afde03cb7ffcc873ef4a
 workflow-type: tm+mt
-source-wordcount: '38'
-ht-degree: 18%
+source-wordcount: '40'
+ht-degree: 20%
 
 ---
 
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
-- [Übersicht](overview.md)
+- [Überblick](overview.md)
 - [Erste Schritte](get-started.md)
+- [Benutzerverwaltung](user-management.md)
 - [Grenzen und Einschränkungen](boundaries-limits.md)
 - Verkauf von Waren {#merchandising}
-   - [Übersicht](./merchandising/overview.md)
+   - [Überblick](./merchandising/overview.md)
    - [Produkterkennung](./merchandising/product-discovery.md)
    - [Recommendations](./merchandising/recommendations.md)
 - Katalog {#catalog}
-   - [Übersicht](./catalog/overview.md)
+   - [Überblick](./catalog/overview.md)
    - [Kanäle](./catalog/channels.md)
    - [Richtlinien](./catalog/policies.md)
 - Data Insights {#data-insights}
-   - [Übersicht](./data-insights/overview.md)
+   - [Überblick](./data-insights/overview.md)
    - [Datensynchronisation](./data-insights/data-sync.md)
    - [Eventing](./data-insights/eventing.md)
    - [Fehlerbehebung](./data-insights/troubleshooting.md)
 - [Schaufenster](storefront.md)
 - Anwendungsfall {#use-case}
-   - [Übersicht](./use-case/overview.md)
+   - [Überblick](./use-case/overview.md)
    - [End-to-End-Anwendungsfall für Storefront- und Katalogadministrator](./use-case/admin-use-case.md)
 
