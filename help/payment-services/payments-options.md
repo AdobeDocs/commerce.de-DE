@@ -3,9 +3,9 @@ title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 0d00ce6e5291b3753cb7e2ee9e8af262b2c8894f
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1209'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Mit [!DNL Adobe Commerce] und [!DNL Magento Open Source] [!DNL Payment Services] stehen Ihnen mehrere Zahlungsoptionen zur Verfügung.
 
-Sie können diese Zahlungsoptionen in &quot;[&quot; oder ](payments-home.md) [ Store-Konfiguration](configure-admin.md) konfigurieren (empfohlen für ältere Zahlungsoptionen oder eine Multi-Store-Einrichtung).
+Sie können diese Zahlungsoptionen in &quot;[&quot; oder ](payments-home.md)[ Store-Konfiguration](configure-admin.md) konfigurieren (empfohlen für ältere Zahlungsoptionen oder eine Multi-Store-Einrichtung).
 
 Es gibt verschiedene Verhaltensweisen für jede Zahlungsmethode, je nachdem, wo Sie sich im Checkout-Prozess befinden:
 
@@ -52,6 +52,10 @@ Mit [!DNL Apple Pay] können Händler ein sicheres, optimiertes Checkout-Erlebni
 ![Apple-Pay-Schaltfläche im Mini-Warenkorb](assets/applepay-button.png){width="500" zoomable="yes"}
 
 Wenn diese Option aktiviert ist, wird die Schaltfläche [!DNL Apple Pay] auf der Produktseite, im Mini-Warenkorb, im Warenkorb und in den Checkout-Ansichten angezeigt. Sie können [!DNL Apple Pay] in der Store-Konfiguration oder auf der Startseite der Erweiterung konfigurieren.
+
+>[!NOTE]
+>
+>  Das Apple Pay-Domain-Verifizierungszertifikat ist bereits im Payment Services-Code enthalten. Vergewissern Sie sich, dass der Pfad `/.well-known/apple-developer-merchantid-domain-association` einen Antwort-Code 200 zurückgibt. Apple Weitere [ zum **Apple Pay Domain-Verifizierungszertifikat finden Sie in der ](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file)Entwicklerdokumentation zu PayPal für die Integration mit**.
 
 Weitere Informationen finden [ unter ](settings.md#apple-pay).
 
@@ -130,7 +134,7 @@ So **Sie Zahlungen mit Ihrem vorhandenen Kreditkartenanbieter _und_ PayPal-Zahlu
 1. Stellen Sie sicher, dass sich Ihr Store [im Produktionsmodus) ](settings.md#enable-payment-services).
 1. [Konfigurieren Sie die gewünschten PayPal-Zahlungsschaltflächen](settings.md#payment-buttons).
 1. Deaktivieren __ die Option **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** im Abschnitt _[!UICONTROL Payment buttons]_.
-1. Deaktivieren __ die Option **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** im Abschnitt _[!UICONTROL Credit card fields]_&#x200B;und verwenden Sie Ihr [vorhandenes Kreditkartenkonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=de#payments).
+1. Deaktivieren __ die Option **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** im Abschnitt _[!UICONTROL Credit card fields]_und verwenden Sie Ihr [vorhandenes Kreditkartenkonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
 
 ## Checkout-Optionen
 
