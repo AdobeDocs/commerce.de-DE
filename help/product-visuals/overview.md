@@ -56,7 +56,7 @@ Um diese Integration nutzen zu können, müssen Unternehmen die folgenden Anford
 
 In diesem Video erfahren Sie, wie Adobe Commerce und AEM Assets zusammenarbeiten, um Inhalts-Workflows zu optimieren:
 
->[!VIDEO](https://video.tv.adobe.com/v/3447837)
+>[!VIDEO](https://video.tv.adobe.com/v/3447896?captions=ger)
 
 ## Nächste Schritte
 
