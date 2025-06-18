@@ -37,7 +37,7 @@ Verwenden Sie für die Ersteinrichtung die Standardregel *Übereinstimmung nach 
 
 ## Konfigurieren der Verbindung
 
-1. Rufen Sie die Projekt- und Umgebungs-ID der ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/quick-start)0}AEM Assets-Autorenumgebung ab.[
+1. Rufen Sie die Projekt- und Umgebungs-ID der [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/quick-start)0&rbrace;AEM Assets-Autorenumgebung ab.
 
    1. Öffnen Sie die AEM Cloud Manager und wählen Sie **[!UICONTROL Assets]** aus.
 
