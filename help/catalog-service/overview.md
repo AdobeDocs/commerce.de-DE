@@ -85,6 +85,6 @@ Der Katalog-Service sorgt für genaue Preisaktualisierungen und Berechnungen, in
 
 ## Implementierung
 
-[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 
 Für den Installationsprozess ist die Konfiguration des [Commerce Services-Connectors](../landing/saas.md) erforderlich. Sobald dies erreicht ist, besteht der nächste Schritt darin, dass ein Systemintegrator den Code der Storefront aktualisiert, um die [!DNL Catalog Service] Abfragen zu integrieren. Alle [!DNL Catalog Service] werden an das GraphQL-Gateway weitergeleitet. Die URL wird während des Onboarding-Prozesses bereitgestellt.
