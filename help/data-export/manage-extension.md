@@ -2,7 +2,8 @@
 title: '[!DNL Manage the Data Export extension]'
 description: Erfahren Sie, wie Sie  [!DNL Data Export]  Erweiterung aktualisieren und nicht erforderliche Datenexportdienste entfernen oder deaktivieren.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 94702995-d272-47b9-9560-198eee3250a6
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -20,7 +21,7 @@ as [Live Search](/help/live-search/overview.md), [Product Recommendations](/help
 
 Wenn Sie keines der installierten Commerce-Datenexportmodule benötigen, deaktivieren Sie es mit dem `magento:module:disable` CLI-Befehl.
 
-Beispielsweise gibt es eine [Kategorien-API](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) die die Kategorienberechtigungs-Feed-Daten intern verwendet. Wenn Sie diese API nicht verwenden, können Sie den Datenexport für den Berechtigungsfeed der Kategorien deaktivieren.
+Beispielsweise gibt es eine [Kategorien-API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) die die Kategorienberechtigungs-Feed-Daten intern verwendet. Wenn Sie diese API nicht verwenden, können Sie den Datenexport für den Berechtigungsfeed der Kategorien deaktivieren.
 
 ```shell script
 bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCategoryPermissions
@@ -38,4 +39,4 @@ Sie können jedes der installierten Commerce-Datenexportmodule mithilfe von Comp
    composer require magento/module-saas-price:103.3.1 --with-all-dependencies
    ```
 
-Wenn die Commerce-Instanz in der Cloud-Infrastruktur bereitgestellt wird, aktualisieren Sie die Erweiterung in Ihrem Cloud-Projektverzeichnis. Siehe [Upgrade einer Erweiterung](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) im Handbuch zu _Adobe Commerce in Cloud-Infrastrukturen_.
+Wenn die Commerce-Instanz in der Cloud-Infrastruktur bereitgestellt wird, aktualisieren Sie die Erweiterung in Ihrem Cloud-Projektverzeichnis. Siehe [Upgrade einer Erweiterung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) im Handbuch zu _Adobe Commerce in Cloud-Infrastrukturen_.

@@ -3,7 +3,7 @@ title: Erweitern und Anpassen von SaaS-Datenexport-Feed-Daten
 description: Erfahren Sie, wie Sie die Feed [!DNL SaaS Data Export] Daten erweitern und anpassen.
 role: Admin, Developer
 exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
-source-git-commit: ac6c690f87e3df2ac4997d80453028829be8e657
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Die [!DNL Commerce Data Export] bietet eine Möglichkeit, Daten aus der [!DNL Commerce]-Anwendung in Commerce-Services wie Live Search, Catalog Service und Product Recommendations zu exportieren. Bei Bedarf können Sie die Feed-Daten erweitern und anpassen, um zusätzliche Attributdaten einzuschließen, oder die erfassten Daten ändern.
 
-Nachdem Sie Attributdaten hinzugefügt haben, können Sie über das Feld [Attribute](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type) im GraphQL-Schema für den Storefront-Service darauf zugreifen.
+Nachdem Sie Attributdaten hinzugefügt haben, können Sie über das Feld [Attribute](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) im GraphQL-Schema für den Storefront-Service darauf zugreifen.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Fügen Sie die Attribute der `Magento\CatalogDataExporter\Model\Query\ProductAtt
 
 ## Hinzufügen von Produktattributen zu Adobe Commerce
 
-Entwicklerinnen und Entwickler können Produktattribute hinzufügen, auf die über das Feld [Produktattribute](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#output-fields) zugegriffen werden kann, indem sie eine der folgenden Methoden verwenden:
+Entwicklerinnen und Entwickler können Produktattribute hinzufügen, auf die über das Feld [Produktattribute](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#output-fields) zugegriffen werden kann, indem sie eine der folgenden Methoden verwenden:
 
 - Fügen Sie das -Attribut zu Adobe Commerce hinzu, um es in die `products`-Feed-Daten aufzunehmen, die an Commerce-Storefront-Services exportiert wurden.
 - Dynamisches Hinzufügen des Attributs während des Feed-Synchronisierungsprozesses mithilfe eines Plug-ins.
@@ -59,7 +59,7 @@ Sie können ein Produktattribut aus Commerce Admin hinzufügen oder programmgest
 
 1. Fügen Sie das -Attribut einem nach Bedarf festgelegten Attributsatz hinzu.
 
-Siehe [Erstellen von Produktattributen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) im *Adobe Commerce-Administratorhandbuch*.
+Siehe [Erstellen von Produktattributen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) im *Adobe Commerce-Administratorhandbuch*.
 
 #### Programmgesteuertes Erstellen des Produktattributs
 

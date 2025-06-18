@@ -2,7 +2,7 @@
 title: Einrichten der Live-Suche
 description: Der  [!DNL Live Search]  wird zum Konfigurieren, Verwalten und Überwachen der Suchleistung verwendet.
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
-source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
+source-git-commit: 54fbf7f65ee5e464a4b61a9df95fef7536f1cedb
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 0%
@@ -30,27 +30,27 @@ Wenn Sie eine Headless-Storefront verwenden, finden Sie in der folgenden Dokumen
 
 ### Healthcare-Kunden
 
-Wenn Sie Kundschaft im Gesundheitswesen sind und die [Data Services HIPAA-Erweiterung](../data-connection/hipaa-readiness.md#installation) installiert haben, die Teil der [Data Connection](../data-connection/overview.md)-Erweiterung ist, werden von [!DNL Live Search] verwendete Storefront-Ereignisdaten nicht mehr erfasst. Dies liegt daran, dass Storefront-Ereignisdaten Client-seitig generiert werden. Um weiterhin Storefront-Ereignisdaten zu erfassen und zu senden, aktivieren Sie die Ereigniserfassung für [!DNL Live Search] erneut. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/de/docs/commerce-admin/config/general/general#data-services)Allgemeine Konfiguration“.
+Wenn Sie Kundschaft im Gesundheitswesen sind und die [Data Services HIPAA-Erweiterung](../data-connection/hipaa-readiness.md#installation) installiert haben, die Teil der [Data Connection](../data-connection/overview.md)-Erweiterung ist, werden von [!DNL Live Search] verwendete Storefront-Ereignisdaten nicht mehr erfasst. Dies liegt daran, dass Storefront-Ereignisdaten Client-seitig generiert werden. Um weiterhin Storefront-Ereignisdaten zu erfassen und zu senden, aktivieren Sie die Ereigniserfassung für [!DNL Live Search] erneut. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)Allgemeine Konfiguration“.
 
 ## Festlegen des Umfangs
 
-Anfangs ist [Umfang](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings) aller [!DNL Live Search] auf `Default Store View` festgelegt. Wenn Ihre [!DNL Commerce] mehrere Store-Ansichten enthält, legen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de) fest, für die Ihre Facetteneinstellungen gelten.
+Anfangs ist [Umfang](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) aller [!DNL Live Search] auf `Default Store View` festgelegt. Wenn Ihre [!DNL Commerce] mehrere Store-Ansichten enthält, legen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) fest, für die Ihre Facetteneinstellungen gelten.
 
 ## Menüoptionen
 
 | Option | Beschreibung |
 |--- |--- |
-| [Leistung](performance.md) | Dashboard bietet Einblicke in die Leistung der Produktsuche. |
+| [Leistung](performance.md) | Das Dashboard ermöglicht insight die Suche nach Produkten. |
 | [facettiert](facets.md) | Leistungsstarke Filterung, die mehrere Dimensionen von Attributwerten verwendet, um Suchkriterien zu verfeinern. |
 | [Synonyme](synonyms.md) | Erweitern Sie die Reichweite der Suche, um Wörter einzuschließen, die Kunden möglicherweise verwenden, um Produkte zu finden, die sich von denen in Ihrem Katalog unterscheiden. |
 | [Merchandising suchen](rules.md) | Gestalten Sie das Sucherlebnis mit logischen Regeln, die den Trigger geplanter Aktionen festlegen. Produkte optimieren, vergraben, anheften oder ausblenden, um Suchergebnisse zu kalibrieren und so Ihre Geschäftsziele zu unterstützen. |
 | [Kategorie Merchandising](category-merch.md) | Wenden Sie Regeln und intelligentes Merchandising auf Kategorieebene an. |
-| [GraphQL](graphql.md) | Entwickler, die beim Administrator Ihres Stores angemeldet sind, können Abfragen mit tatsächlichen Katalogdaten erstellen und testen. Weitere Informationen finden Sie unter [Übersicht über GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) in der [!DNL Live Search] Entwicklerdokumentation. |
+| [GraphQL](graphql.md) | Entwickler, die beim Administrator Ihres Stores angemeldet sind, können Abfragen mit tatsächlichen Katalogdaten erstellen und testen. Weitere Informationen finden Sie unter [Übersicht über GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) in der [!DNL Live Search] Entwicklerdokumentation. |
 | [Einstellungen](settings.md) | Ermitteln Sie, wie die Facettenwerte des Preises nach Preisbereich in der Storefront gruppiert werden, und legen Sie die Indizierungssprache fest. |
 
 ## Festlegen von Attributen als durchsuchbar
 
-Um zielgerichtete Ergebnisse zu erzielen, überprüfen Sie den Satz [ (durchsuchbaren](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=de) (`searchable=true`) Produktattribute. Um Relevanz zu gewährleisten, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und knappen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langen Text enthalten, z. B. `description`. Dies kann, obwohl standardmäßig die Suche aktiviert ist, die Genauigkeit der Suchergebnisse verringern. Wenn eine Person beispielsweise nach „kurzen Hosen“ sucht und es Hemden mit einer Beschreibung gibt, die den Begriff „kurze Ärmel“ enthält, werden die Hemden in die Suchergebnisse aufgenommen.
+Um zielgerichtete Ergebnisse zu erzielen, überprüfen Sie den Satz [ (durchsuchbaren](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) Produktattribute. Um Relevanz zu gewährleisten, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und knappen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langen Text enthalten, z. B. `description`. Dies kann, obwohl standardmäßig die Suche aktiviert ist, die Genauigkeit der Suchergebnisse verringern. Wenn eine Person beispielsweise nach „kurzen Hosen“ sucht und es Hemden mit einer Beschreibung gibt, die den Begriff „kurze Ärmel“ enthält, werden die Hemden in die Suchergebnisse aufgenommen.
 
 Führen Sie die folgenden Schritte aus, damit Attribute durchsuchbar sein können:
 
@@ -60,7 +60,7 @@ Führen Sie die folgenden Schritte aus, damit Attribute durchsuchbar sein könne
 
    ![Workspace](assets/attribute-searchable.png)
 
-[!DNL Live Search] berücksichtigt auch die [Gewichtung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=de#weighted-search) eines Produktattributs, wie in Adobe Commerce festgelegt. Attribute mit einer höheren Gewichtung werden in den Suchergebnissen höher angezeigt.
+[!DNL Live Search] berücksichtigt auch die [Gewichtung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) eines Produktattributs, wie in Adobe Commerce festgelegt. Attribute mit einer höheren Gewichtung werden in den Suchergebnissen höher angezeigt.
 
 Die folgenden Attribute sind immer durchsuchbar:
 
@@ -105,4 +105,4 @@ Die Preise auf der Widget-Produktlistenseite und im Pop-up werden mithilfe der k
 
 ### Suchbegriffe
 
-[!DNL Live Search] unterstützt [Suchbegriff-](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=de)) für Implementierungen, bei denen Adobe Commerce das Routing übernimmt, wie z. B. auf Luma und anderen PHP-basierten Designs.
+[!DNL Live Search] unterstützt [Suchbegriff-](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html)) für Implementierungen, bei denen Adobe Commerce das Routing übernimmt, wie z. B. auf Luma und anderen PHP-basierten Designs.
