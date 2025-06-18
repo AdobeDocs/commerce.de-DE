@@ -4,10 +4,10 @@ user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Ve
 hide: true
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 94e4e6647442f223df3074c83c73ab4b5ec1e911
+source-git-commit: c820fa2995486027a1c048da21dc9db6f9cbb85c
 workflow-type: tm+mt
-source-wordcount: '27'
-ht-degree: 14%
+source-wordcount: '33'
+ht-degree: 12%
 
 ---
 
@@ -23,3 +23,4 @@ ht-degree: 14%
 - [Anwendungsszenarien](use-cases.md)
 - [Geteilte Verantwortung](shared-responsibility.md)
 - [Migration](migration.md)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
