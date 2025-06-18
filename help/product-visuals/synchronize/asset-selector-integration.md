@@ -22,7 +22,7 @@ Wenn die Integration **AEM Asset Selector** konfiguriert ist, können Marketing-
 
 >[!NOTE]
 >
-> Der AEM Asset-Wähler ist eine AEM Assets-Frontend-Komponente zur Integration von AEM Assets mit Authoring-Programmen. Weitere Informationen zu dieser Komponente finden Sie unter [Micro-Frontend-Asset](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}Auswahl im *AEM as a Cloud Service-Benutzerhandbuch*.
+> Der AEM Asset-Wähler ist eine AEM Assets-Frontend-Komponente zur Integration von AEM Assets mit Authoring-Programmen. Weitere Informationen zu dieser Komponente finden Sie unter [Micro-Frontend-Asset](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}Auswahl im *AEM as a Cloud Service-Benutzerhandbuch*.
 
 ## Die wichtigsten Vorteile
 

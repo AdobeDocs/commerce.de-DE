@@ -145,7 +145,7 @@ Nachdem Sie den [AEM-Asset-Selektor](synchronize/asset-selector-integration.md) 
 
 1. Klicken Sie auf **[!UICONTROL Save]** und fahren Sie fort.
 
-   Weitere Informationen zum Erstellen einer Kategorie finden Sie unter [Kategorieinhalt vervollständigen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) im **Handbuch zur Katalogverwaltung in Commerce**.
+   Weitere Informationen zum Erstellen einer Kategorie finden Sie unter [Kategorieinhalt vervollständigen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) im **Handbuch zur Katalogverwaltung in Commerce**.
 
 ## Aktualisieren von Assets
 
@@ -153,6 +153,6 @@ Nachdem Sie ein Asset in AEM Assets aktualisiert und genehmigt haben, werden die
 
 Weitere Informationen finden Sie in der folgenden Dokumentation zu AEM Assets.
 
-* [Erneute Verarbeitung digitaler Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [Erneute Verarbeitung digitaler Assets](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [Genehmigen eines Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Genehmigen eines Assets](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
