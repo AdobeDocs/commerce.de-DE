@@ -27,7 +27,7 @@ Klicken Sie auf die folgenden Registerkarten, um allgemeine Workflow-Übersichte
 
 >[!TAB Administrator- und Händler-Workflow]
 
-Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Administratoren und Händler auf [!DNL Adobe Commerce as a Cloud Service]-Instanzen zugreifen und diese verwalten. Weitere Informationen zu Administrator-Workflows finden ](https://helpx.adobe.com/enterprise/admin-guide.html) im Handbuch zu Adobe Admin Console [.
+Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Administratoren und Händler auf [!DNL Adobe Commerce as a Cloud Service]-Instanzen zugreifen und diese verwalten. Weitere Informationen zu Administrator-Workflows finden [&#128279;](https://helpx.adobe.com/enterprise/admin-guide.html) im Handbuch zu Adobe Admin Console .
 
 ![[!DNL Adobe Commerce as a Cloud Service] Handelsflussdiagramm](./assets/merchant-flow.svg){zoomable="yes"}
 
