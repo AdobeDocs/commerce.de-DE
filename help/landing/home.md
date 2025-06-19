@@ -133,7 +133,7 @@ Adobe bietet eine Sammlung von Commerce-Services, Integrations-Services und Date
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip=„Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und in lokalen Projekten.“}
+         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und in lokalen Projekten."}
          </a>
       </div>
       <p>
@@ -146,7 +146,7 @@ Adobe bietet eine Sammlung von Commerce-Services, Integrations-Services und Date
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce Services Connector</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip=„Gilt für Adobe Commerce nur für Cloud-Projekte (Adobe-verwaltete PaaS-Infrastruktur) und lokale Projekte.“}
+         <strong>Commerce Services Connector</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt für Adobe Commerce nur für Cloud-Projekte (Adobe-verwaltete PaaS-Infrastruktur) und lokale Projekte."}
          </a>
       </div>
       <p>
