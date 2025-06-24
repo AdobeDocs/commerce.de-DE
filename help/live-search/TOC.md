@@ -3,7 +3,7 @@ user-guide-title: Handbuch zu [!DNL Live Search]
 user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Verwendung von  [!DNL Live Search]  von Adobe Commerce.
 role: Admin
 feature: Services, Search
-source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
+source-git-commit: 36c4abbc15f3e9eaabfeb93ac24660461c8bad9c
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 10%
@@ -25,18 +25,18 @@ ht-degree: 10%
 - Administrator {#live-search-admin}
    - [Leistung](performance.md)
    - Facetten {#facets}
-      - [Übersicht](facets.md)
+      - [Überblick](facets.md)
       - [Workspace](faceting-workspace.md)
       - [Facettenarten](facets-type.md)
       - [Facetten hinzufügen](facets-add.md)
       - [Facetten verwalten](facets-manage.md)
    - Synonyme {#synonyms}
-      - [Übersicht](synonyms.md)
+      - [Überblick](synonyms.md)
       - [Typen von Synonymen](synonyms-type.md)
       - [Synonyme hinzufügen](synonyms-add.md)
       - [Verwalten von Synonymen](synonyms-manage.md)
    - Merchandising suchen {#rules}
-      - [Übersicht](rules.md)
+      - [Überblick](rules.md)
       - [Workspace](rules-workspace.md)
       - [Regeln hinzufügen](rules-add.md)
       - [Verwalten von Regeln](rules-manage.md)
@@ -45,4 +45,4 @@ ht-degree: 10%
    - [GraphQL](graphql.md)
    - [Einstellungen](settings.md)
 - [-Events](events.md)
-- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=de)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

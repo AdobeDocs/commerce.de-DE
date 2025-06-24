@@ -1,21 +1,16 @@
 ---
-title: '[!DNL Adobe Commerce Optimizer]'
-description: Erfahren Sie, wie Sie mit  [!DNL Adobe Commerce Optimizer]  eine schnelle, leistungsstarke Storefront mit einem skalierbaren Katalog bereitstellen können, mit dem Sie Ihr vorhandenes E-Commerce-Backend optimieren können, indem Sie den Traffic erhöhen und höhere Interaktion und Konversion fördern.
-hide: true
+title: Was ist Adobe Commerce Optimizer?
+description: Erfahren Sie mehr über  [!DNL Adobe Commerce Optimizer]  und seine wichtigsten Funktionen.
 recommendations: noCatalog
-exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 425c801a852de566120504563e256b0351df588e
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+source-git-commit: 7c407bfc2becfb0ba6babe5958bcb790c178f406
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
 
 # Was ist [!DNL Adobe Commerce Optimizer]?
-
->[!NOTE]
->
->In dieser Dokumentation wird ein Produkt beschrieben, das sich in der Entwicklung für den frühzeitigen Zugriff befindet und nicht alle für die allgemeine Verfügbarkeit vorgesehenen Funktionen enthält.
 
 [!DNL Adobe Commerce Optimizer] verbessert Ihr E-Commerce-Erlebnis mit einer leistungsstarken Storefront, die organischen Traffic, Kundeninteraktion und Umsatz steigert.
 
@@ -23,19 +18,13 @@ Mit [!DNL Adobe Commerce Optimizer] können Sie:
 
 - Erweitern und skalieren Sie Ihren Katalog, ohne den gesamten Commerce-Stack neu zu platzieren.
 - Nehmen Sie Katalogdaten aus einer beliebigen Quelle auf.
-- Definieren Sie Geschäftskanäle und Richtlinien.
+- Definieren Sie Geschäftskatalogansichten und Richtlinien.
 - Personalisierte Suche und Empfehlungen mit KI und ML erstellen.
 - Zeigen Sie wichtige Produktdatenverfügbarkeit an, einschließlich Synchronisierungsstatus und Storefront-Ereignisdaten für eine genaue Implementierung und Fehlerbehebung.
 
->[!BEGINSHADEBOX]
-
-Wenn Sie mehr über das [!DNL Adobe Commerce Optimizer] Early Access-Programm erfahren möchten, füllen Sie das [Early Access-Anfrage-Formular](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u) aus.
-
->[!ENDSHADEBOX]
-
 Sehen Sie sich das folgende Video an, um einen allgemeinen Überblick über [!DNL Adobe Commerce Optimizer] zu erhalten:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450472?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Wer profitiert am meisten von [!DNL Adobe Commerce Optimizer]?
 
@@ -49,38 +38,39 @@ Sehen Sie sich das folgende Video an, um einen allgemeinen Überblick über [!DN
 
 Beim ersten Starten von [!DNL Adobe Commerce Optimizer] wird Folgendes angezeigt:
 
->[!NOTE]
->
->Dieses Bild ist ein Beispiel dafür, wie [!DNL Adobe Commerce Optimizer] aussehen könnte, und kann sich ändern.
-
-![[!DNL Adobe Commerce Optimizer] Benutzeroberfläche](./assets/user-interface.png)
+![[!DNL Adobe Commerce Optimizer] Benutzeroberfläche](./assets/user-interface.png){zoomable="yes"}
 
 >[!BEGINTABS]
 
 >[!TAB Startseite]
 
-Vorschau auf Schlüsselmetriken und Aktivitäten für Ihren Store.
+Vorschau auf Schlüsselmetriken und Aktivitäten für Ihren Store. Die -Startseite enthält auch Schnelllinks zum Konfigurieren der Suche und zu Empfehlungen.
+
+>[!TAB Bericht zu Erfolgsmetriken]
+
+Diese Seite bietet einen Überblick über die wichtigsten Leistungsmetriken für Ihren Store. Das Ziel besteht darin, dass Sie die Ergebnisse der Implementierung von schnell verstehen [!DNL Adobe Commerce Optimizer] Ihnen und Ihrem Team helfen, Wachstumschancen zu erkennen und Bereiche für die Optimierung hervorzuheben.
+
+>[!TAB Suchleistung]
+
+Die *Suchleistung* liefert insight zu den Suchbegriffen, die Käufer verwenden. Die Informationen können verwendet werden, um Trends zu identifizieren, den Clickthrough zu erhöhen und die Konversionsrate zu verbessern.
 
 >[!TAB Merchandising]
 
-Erstellen Sie personalisierte Erlebnisse für Ihre Kunden durch Produkterkennung und Empfehlungen.
+Erstellen Sie personalisierte Erlebnisse für Ihre Kunden durch Produktentdeckung und Produktempfehlungen.
 
-- **Produktsuche** - Verbessert die Suchfunktion Ihrer Site, um ein nahtloses und effizientes Kundenerlebnis zu gewährleisten, das die Konversionsraten maximiert. Sie ermöglicht es Merchandisern, sicherzustellen, dass Käufer die richtigen Produkte zum richtigen Zeitpunkt erhalten.
 - **Recommendations** - Verwendet künstliche Intelligenz und Algorithmen des maschinellen Lernens, um eine umfassende Analyse aggregierter Besucherdaten durchzuführen. Wenn diese Daten mit Ihrem Katalog kombiniert werden, können Sie ein ansprechendes, relevantes und personalisiertes Erlebnis erhalten. Empfehlungen werden auf der Storefront als Einheiten mit Beschriftungen angezeigt, z. B. „Kunden, die dieses Produkt angesehen haben, haben es auch angesehen“. Sie können Recommendations direkt aus [!DNL Adobe Commerce Optimizer] erstellen, verwalten und bereitstellen.
+- **Merchandising-Regeln** - Verbessert die Suchfunktion Ihrer Site, um ein nahtloses und effizientes Kundenerlebnis zu gewährleisten, das die Konversionsraten maximiert. Sie ermöglicht es Merchandisern, sicherzustellen, dass Käufer die richtigen Produkte zum richtigen Zeitpunkt erhalten.
+- **Facets** - Verbessert die Suchfunktion Ihrer Site, um ein nahtloses und effizientes Kundenerlebnis zu gewährleisten, das die Konversionsraten maximiert. Sie ermöglicht es Merchandisern, sicherzustellen, dass Käufer die richtigen Produkte zum richtigen Zeitpunkt erhalten.
+- **Synonyme** - Verbessert die Suchfunktion Ihrer Site, um ein nahtloses und effizientes Kundenerlebnis zu gewährleisten, das die Konversionsraten maximiert. Sie ermöglicht es Merchandisern, sicherzustellen, dass Käufer die richtigen Produkte zum richtigen Zeitpunkt erhalten.
 
->[!TAB Katalog]
+>[!TAB Store-Setup]
 
-Kanäle und Richtlinien definieren. Der Katalog enthält nicht nur Ihre Produktdaten, sondern hilft Ihnen auch bei der Definition Ihrer Geschäftsstruktur.
+Definieren Sie Ihre Katalogansichten und Richtlinien. Der Katalog enthält nicht nur Ihre Produktdaten, sondern hilft Ihnen auch bei der Definition Ihrer Geschäftsstruktur. Außerdem können Sie wertvolle Einblicke in die Verfügbarkeit von Produktdaten für Ihre Storefront erhalten, um sicherzustellen, dass sie Ihren Käufern sofort angezeigt werden können.
 
-- **Kanäle** - Helfen Sie Ihnen, Ihre Einzelhandelsstruktur in aussagekräftigen Geschäftsgruppen zu definieren. Zum Beispiel Händler für die Automobilindustrie, Tochtergesellschaften für Mehrmarkenkonglomerate oder Produktionsstandorte für Zulieferer.
-- **Richtlinien** - Datenzugriffsfilter, die in Kanälen untergebracht sind. Richtlinien helfen sicherzustellen, dass der richtige Inhalt an das richtige Ziel gesendet wird. Zum Beispiel physische Ladengeschäfte, Marktplätze, Werbeleitungen (Google, Facebook, Instagram).
-
->[!TAB Dateneinblicke]
-
-Sehen Sie sich wertvolle Einblicke in die Verfügbarkeit von Produktdaten für Ihre Storefront an, um sicherzustellen, dass sie Ihren Kundinnen und Kunden sofort angezeigt werden können.
-
-- **Datensynchronisation**: Zeigt einen Überblick über den Synchronisationsstatus für Produktdaten an, die aus ihrer Datenquelle (PIM, ERP usw.) in [!DNL Adobe Commerce Optimizer] übertragen wurden. Diese Produktdaten werden auf den Registerkarten **[!UICONTROL Catalog Service]**, **[!UICONTROL Product Discovery]** und **[!UICONTROL Recommendations]** angezeigt.
-- **Eventing**: Zeigt Storefront-Ereignisdaten an, die die Produkterkennung und Empfehlungen unterstützen. Auf der **Eventing**-Seite kann der Händler überprüfen, ob er das Storefront-Eventing korrekt implementiert hat und ob Ereignisse erfolgreich erfasst werden. Händler können diese Seite verwenden, um potenzielle Probleme zu identifizieren und Schritte zum Beheben von Eventing-Problemen zu unternehmen.
+- **Katalogansichten** - Hilft Ihnen, Ihre Einzelhandelsstruktur in aussagekräftige Geschäftsgruppen zu definieren. Zum Beispiel Händler für die Automobilindustrie, Tochtergesellschaften für Mehrmarkenkonglomerate oder Produktionsstandorte für Zulieferer.
+- **Richtlinien** - Datenzugriffsfilter, die in Katalogansichten untergebracht sind. Richtlinien helfen sicherzustellen, dass der richtige Inhalt an das richtige Ziel gesendet wird. Zum Beispiel physische Ladengeschäfte, Marktplätze, Werbeleitungen (Google, Facebook, Instagram).
+- **Datensynchronisation**: Zeigt einen Überblick über den Synchronisationsstatus für Produktdaten an, die aus ihrer Datenquelle (PIM, ERP usw.) in [!DNL Adobe Commerce Optimizer] übertragen wurden. Diese Produktdaten werden auf den Registerkarten **[!UICONTROL Catalog Service]**, **[!UICONTROL Search]** und **[!UICONTROL Recommendations]** angezeigt.
+- **Ereignisse** - Zeigt Ereignisdaten für die Storefront an, die die Produkterkennung und Empfehlungen ermöglichen. Auf **Seite „Ereignisse** kann der Händler überprüfen, ob er das Storefront-Ereignis korrekt implementiert hat und ob Ereignisse erfolgreich erfasst werden. Händler können diese Seite verwenden, um potenzielle Probleme zu identifizieren und Schritte zum Beheben von Eventing-Problemen zu unternehmen.
 
 >[!ENDTABS]
 
@@ -88,9 +78,9 @@ Sehen Sie sich wertvolle Einblicke in die Verfügbarkeit von Produktdaten für I
 
 Zu den wichtigsten Funktionen gehören:
 
-- **Erfassung von Katalogen von Drittanbietern** - Aufnahme von Katalogdaten aus beliebigen Drittanbieterquellen (z. B. Commerce-Katalog, PIM, ERP usw.). Ihre Katalogdaten werden direkt in die Merchandising-Services-Ebene aufgenommen, die eine SaaS-Komponente namens Merchandising Services powered by Channels and Policies (Kanäle und Richtlinien) ist.
-- **Merchandising-Services, die auf Kanälen und Richtlinien basieren** - Diese Lösung ist das Grundelement der [!DNL Adobe Commerce Optimizer]. Merchandising Services powered by Channels and Policies ist ein hochgradig skalierbares, flexibles Katalogdatenmodell, das Anwendungsfälle für mehrere Marken, mehrere Geschäftseinheiten und mehrere Sprachen ermöglicht. Diese Merchandising-Services bieten Bausteine, mit denen Händler Kataloge im benötigten Umfang erstellen und verwalten können. Innerhalb von [!DNL Adobe Commerce Optimizer] können Sie Ihren Katalog verwalten, indem Sie Kanäle und Richtlinien erstellen, die Ihre Geschäftsziele am besten definieren. Darüber hinaus kann der Merchandiser personalisierte Erlebnisse bereitstellen, um den Traffic und die Interaktion mithilfe von Produkterkennung&#x200B;, Produktempfehlungen &#x200B; intelligentem Merchandising zu steigern. Erfahren Sie mehr über [Merchandising-Services, die auf Kanälen und Richtlinien basieren](./merchandising/overview.md).
-- **Vorher-Nachher-Metriken (PDF)** Bietet Echtzeiteinblicke in die Leistung Ihrer Commerce-Initiativen. Sie können vor und nach den Ergebnissen bestimmter KPIs anzeigen, die Auswirkungen von Änderungen auswerten und optimieren, um bessere Ergebnisse zu erzielen. Die Ergebnisse werden in einer PDF bereitgestellt.
+- **Erfassung von Katalogen von Drittanbietern** - Aufnahme von Katalogdaten aus beliebigen Drittanbieterquellen (z. B. Commerce-Katalog, PIM, ERP usw.). Ihre Katalogdaten werden direkt in die Merchandising-Services-Ebene aufgenommen, die eine SaaS-Komponente namens Merchandising-Services ist, die auf Katalogansichten und Richtlinien (Katalogansichten und Richtlinien) basiert.
+- **Merchandising-Services basierend auf Katalogansichten und Richtlinien** - Diese Lösung ist die grundlegende [!DNL Adobe Commerce Optimizer]. Merchandising Services, die auf Katalogansichten und Richtlinien basieren, ist ein hochgradig skalierbares, flexibles Katalogdatenmodell, das Anwendungsfälle für mehrere Marken, mehrere Geschäftseinheiten und mehrere Sprachen ermöglicht. Diese Merchandising-Services bieten Bausteine, mit denen Händler Kataloge im benötigten Umfang erstellen und verwalten können. In [!DNL Adobe Commerce Optimizer] können Sie Ihren Katalog verwalten, indem Sie Katalogansichten und Richtlinien erstellen, die Ihre Geschäftsziele am besten definieren. Darüber hinaus kann der Merchandiser personalisierte Erlebnisse bereitstellen, um den Traffic und die Interaktion mithilfe von Produkterkennung, Empfehlungen &#x200B; intelligentem Merchandising zu steigern.
+- **Vorher-Nachher**-Metriken: Bietet Echtzeiteinblicke in die Leistung Ihrer Commerce-Initiativen. Sie können vor und nach den Ergebnissen bestimmter KPIs anzeigen, die Auswirkungen von Änderungen auswerten und optimieren, um bessere Ergebnisse zu erzielen. Sie können die Ergebnisse in eine PDF exportieren.
 - **Commerce-Storefront mit Edge Delivery** - Mit der Bereitstellung von Edge können Sie Ihre Site schnell mit vordefinierten Storefront-Komponenten mit integrierten Commerce-Funktionen starten, einschließlich Produktlistenseiten, Produktdetailseiten, Warenkorb und Checkout.
 - **Warenkorb und Checkout von Drittanbietern** - Verwenden Sie API Mesh und App Builder, um eine Integration mit Warenkorb- und Checkout-Systemen von Drittanbietern durchzuführen.
 
