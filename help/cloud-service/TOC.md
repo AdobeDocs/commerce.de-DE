@@ -4,10 +4,10 @@ user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Ve
 hide: true
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: c820fa2995486027a1c048da21dc9db6f9cbb85c
+source-git-commit: 3f3d87585378d334d90c9dc1bdcb67a9cd00eff6
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 12%
+source-wordcount: '38'
+ht-degree: 13%
 
 ---
 
@@ -22,5 +22,7 @@ ht-degree: 12%
 - [Asset-Management](assets-management.md)
 - [Anwendungsszenarien](use-cases.md)
 - [Geteilte Verantwortung](shared-responsibility.md)
-- [Migration](migration.md)
-- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
+- Migration {#migration}
+   - [Überblick](migration/overview.md)
+   - [Tool für die Massendatenmigration](migration/bulk-data.md)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
