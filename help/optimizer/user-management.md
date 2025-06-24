@@ -44,7 +44,7 @@ Sie können Benutzer einer der folgenden Rollen zuweisen:
 
 >[!BEGINSHADEBOX „Voraussetzungen“]
 >
-Die folgende Bereitstellung ist für die Benutzerverwaltung erforderlich:
+>Die folgende Bereitstellung ist für die Benutzerverwaltung erforderlich:
 
 - Für [!DNL Adobe Commerce Optimizer] bereitgestellte IMS-Organisation
 - Ein Adobe Experience Cloud-Konto in derselben IMS-Organisation mit der System- oder Produktadministratorrolle

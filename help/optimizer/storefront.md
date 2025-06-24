@@ -215,9 +215,9 @@ Sie benötigen die folgenden Informationen, um den Textbausteincode der Storefro
    }
    ```
 
-   Weitere Informationen finden Sie in der Dokumentation ](https://www.aem.live/docs/sidekick-library) Sidekick-Bibliothek [.
+   Weitere Informationen finden Sie in der Dokumentation [&#128279;](https://www.aem.live/docs/sidekick-library) Sidekick-Bibliothek .
 
-+++
+   +++
 
 1. Aktualisieren Sie die `url` mit den Werten für Ihr GitHub-Repository.
 

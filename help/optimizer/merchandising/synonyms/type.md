@@ -29,7 +29,7 @@ Ein Einwegsynonym ist eine Teilmenge eines Keywords, jedoch mit einer spezifisch
 
 ## Synonymverhalten für mehrere Wörter
 
-Bei Synonymen mit mehreren Wörtern betrachtet [!DNL Adobe Commerce Optimizer] das Synonym als eine Phrase. Wenn Sie beispielsweise ein Zweiwegsynonym erstellen **Esszimmertisch** ![Zweiwegselektor](../../assets/btn-two-way.png) **** Küchentisch![Zweiwegselektor](../../assets/btn-two-way.png)**Esstisch**, dann [!DNL Adobe Commerce Optimizer] alle Felder durchsucht, die auf Durchsuchbar eingestellt sind, um das Auftreten von **Esszimmertisch** oder **Küchentisch** oder **Esstisch**.
+Bei Synonymen mit mehreren Wörtern betrachtet [!DNL Adobe Commerce Optimizer] das Synonym als eine Phrase. Wenn Sie beispielsweise ein Zweiwegsynonym erstellen **Esszimmertisch** ![Zweiwegselektor](../../assets/btn-two-way.png) **&#x200B;**&#x200B;Küchentisch![Zweiwegselektor](../../assets/btn-two-way.png)**Esstisch**, dann [!DNL Adobe Commerce Optimizer] alle Felder durchsucht, die auf Durchsuchbar eingestellt sind, um das Auftreten von **Esszimmertisch** oder **Küchentisch** oder **Esstisch**.
 
 Wenn kein Synonym erstellt wird und ein Käufer nach **Küchentabelle** sucht, sucht [!DNL Adobe Commerce Optimizer] in den durchsuchbaren Feldern nach den Begriffen, auch über verschiedene Felder hinweg, z. B. **table** im Namensfeld und **KÜCHE** im Meta-Schlüsselwort.
 
