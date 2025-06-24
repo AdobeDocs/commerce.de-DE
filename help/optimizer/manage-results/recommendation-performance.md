@@ -1,7 +1,7 @@
 ---
 title: Recommendations-Leistung
 description: Die Seite Recommendations-Performance zeigt insight die Leistung Ihrer Produktempfehlungen an.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
 workflow-type: tm+mt
 source-wordcount: '707'

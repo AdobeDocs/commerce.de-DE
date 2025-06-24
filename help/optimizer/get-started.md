@@ -3,7 +3,7 @@ title: Erste Schritte
 description: Erfahren Sie mehr über die ersten Schritte mit [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
 workflow-type: tm+mt
 source-wordcount: '753'
@@ -45,7 +45,7 @@ Jede Rolle spielt einen integralen Bestandteil beim erfolgreichen Onboarding und
 
 Administratoren sind für die Einrichtung von Instanzen, die Verwaltung von Benutzern, Gruppen und Berechtigungen für Ihre Organisation verantwortlich.
 
-- **[Zugriff auf die Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html)** - Verwalten von Adobe-Berechtigungen in der gesamten Organisation. Unter [Benutzerverwaltung](./user-management.md) erfahren Sie, wie Sie oder der Produktadministrator oder Systemadministrator Ihres Unternehmens Benutzer zum [!DNL Adobe Commerce Optimizer] Produkt hinzufügen können.
+- **[Zugriff auf die Adobe Admin Console](https://helpx.adobe.com/de/enterprise/admin-guide.html)** - Verwalten von Adobe-Berechtigungen in der gesamten Organisation. Unter [Benutzerverwaltung](./user-management.md) erfahren Sie, wie Sie oder der Produktadministrator oder Systemadministrator Ihres Unternehmens Benutzer zum [!DNL Adobe Commerce Optimizer] Produkt hinzufügen können.
 
 - **Instanz erstellen** - [!DNL Adobe Commerce Optimizer] Instanzen verwenden ein kreditbasiertes System. Sie können mehrere Sandbox- und Produktionsinstanzen erstellen, wobei jede Instanz eine entsprechende Gutschrift erfordert. Die Höhe des Guthabens hängt zunächst von Ihrem Abonnement ab. [Weitere Informationen](#create-an-instance).
 

@@ -1,7 +1,7 @@
 ---
 title: Bericht zu Erfolgsmetriken
 description: Die Berichtseite „Erfolgsmetriken“ stellt insight in die wichtigsten Leistungsmetriken für Ihren - [!DNL Adobe Commerce Optimizer]  bereit.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: b462980c12342ae2fe6d24272c56c6a9d9b21989
 workflow-type: tm+mt
 source-wordcount: '418'

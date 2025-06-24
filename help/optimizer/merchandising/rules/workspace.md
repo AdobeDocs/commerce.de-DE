@@ -1,7 +1,7 @@
 ---
 title: Merchandising-Regeln - Workspace
 description: Lernen Sie den Arbeitsbereich „Merchandising-Regeln“ kennen.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: 33a0903986cf581ece48616dad877db9516d9350
 workflow-type: tm+mt
 source-wordcount: '498'

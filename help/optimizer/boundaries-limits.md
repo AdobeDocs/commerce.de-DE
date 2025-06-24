@@ -2,7 +2,7 @@
 title: Grenzen und Beschränkungen
 description: Erfahren Sie mehr über die Grenzen und Beschränkungen für [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: 553490762ef10e43ccce1654acec59aeb83bb5f9
 workflow-type: tm+mt
 source-wordcount: '237'

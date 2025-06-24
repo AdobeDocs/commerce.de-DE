@@ -2,7 +2,7 @@
 title: Einrichten der Storefront
 description: Erfahren Sie, wie Sie Ihre Storefront  [!DNL Adobe Commerce Optimizer] .
 role: Developer
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: 3131cc27a25d1bf958071b973f1d4bf1a68be152
 workflow-type: tm+mt
 source-wordcount: '923'
@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # Einrichten der Storefront
 
-In diesem Tutorial erfahren Sie, wie Sie eine [Adobe Commerce-Storefront mit Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) einrichten und verwenden, um eine leistungsstarke, skalierbare und sichere Commerce-Storefront auf der Grundlage von Daten aus Ihrer [!DNL Adobe Commerce Optimizer]-Instanz zu erstellen.
+In diesem Tutorial erfahren Sie, wie Sie eine [Adobe Commerce-Storefront mit Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=de) einrichten und verwenden, um eine leistungsstarke, skalierbare und sichere Commerce-Storefront auf der Grundlage von Daten aus Ihrer [!DNL Adobe Commerce Optimizer]-Instanz zu erstellen.
 
 
 ## Voraussetzungen
 
 - Stellen Sie sicher, dass Sie über ein GitHub-Konto (github.com) verfügen, das Repositorys erstellen kann und für die lokale Entwicklung konfiguriert ist.
 
-- Erfahren Sie mehr über die Konzepte und den Workflow zur Entwicklung von Commerce-Storefronts mit Adobe Edge Delivery Services [ Sie in der Dokumentation ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) Adobe Commerce-Storefront .
+- Erfahren Sie mehr über die Konzepte und den Workflow zur Entwicklung von Commerce-Storefronts mit Adobe Edge Delivery Services [ Sie in der Dokumentation ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=de) Adobe Commerce-Storefront .
 - Einrichten der Entwicklungsumgebung
 
 
@@ -55,7 +55,7 @@ Installieren Sie Node Version Manager (NVM) und die erforderliche Node.js-Versio
 
 >[!TIP]
 >
->Zusätzliche Ressourcen zum Erweitern und Anpassen Ihrer [!DNL Adobe Commerce Optimizer]-Lösung sind über [App Builder für Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) und [API Mesh für Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh) verfügbar. Wenden Sie sich für Informationen zu Zugriff und Nutzung an Ihren Adobe-Kundenbetreuer.
+>Zusätzliche Ressourcen zum Erweitern und Anpassen Ihrer [!DNL Adobe Commerce Optimizer]-Lösung sind über [App Builder für Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) und [API Mesh für Adobe Developer App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh) verfügbar. Wenden Sie sich für Informationen zu Zugriff und Nutzung an Ihren Adobe-Kundenbetreuer.
 
 #### Installieren von Sidekick
 
@@ -63,7 +63,7 @@ Installieren Sie die Sidekick-Browser-Erweiterung, um Inhalte zu bearbeiten, in 
 
 ## Erstellen einer Storefront
 
-Die Storefront, die Sie für Ihr [!DNL Adobe Commerce Optimizer]-Projekt erstellen, verwendet eine angepasste Version des Textbausteins Adobe Commerce on Edge Delivery Services Storefront . Das Textbaustein ist ein Satz von Dateien und Ordnern, die einen Ausgangspunkt für die Entwicklung von Storefronts bieten. Dieser Einrichtungsprozess unterscheidet sich vom standardmäßigen Einrichtungsprozess für eine [Adobe Commerce in der Edge Delivery Services-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
+Die Storefront, die Sie für Ihr [!DNL Adobe Commerce Optimizer]-Projekt erstellen, verwendet eine angepasste Version des Textbausteins Adobe Commerce on Edge Delivery Services Storefront . Das Textbaustein ist ein Satz von Dateien und Ordnern, die einen Ausgangspunkt für die Entwicklung von Storefronts bieten. Dieser Einrichtungsprozess unterscheidet sich vom standardmäßigen Einrichtungsprozess für eine [Adobe Commerce in der Edge Delivery Services-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=de).
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ Sie benötigen die folgenden Informationen, um den Textbausteincode der Storefro
 
 1. Aktualisieren Sie den Bereitstellungspunkt in der StoreFront-Konfigurationsdatei so, dass er auf Ihre Inhalts-URL verweist.
 
-   1. Öffnen Sie die [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary) Konfigurationsdatei.
+   1. Öffnen Sie die [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=de#vocabulary) Konfigurationsdatei.
 
       ```yaml
       mountpoints:
