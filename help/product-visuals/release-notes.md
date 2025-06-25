@@ -20,7 +20,7 @@ Diese Versionshinweise beschreiben die erste Version von Product Visuals und umf
 
 Funktionsänderungen und -korrekturen, die außerhalb der regulären Funktionsveröffentlichungsversion veröffentlicht wurden, finden Sie in den Abschnitten _Gehostete Service-Updates_.
 
-Weitere Informationen zu kommenden Versionen, zum Produkt-Support und dazu, welche Adobe Commerce-Versionen die AEM Assets-Integrationserweiterung unterstützen, finden Sie unter Adobe Commerce [Versionsplan](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) und [Produktverfügbarkeit](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+Weitere Informationen zu kommenden Versionen, zum Produkt-Support und dazu, welche Adobe Commerce-Versionen die AEM Assets-Integrationserweiterung unterstützen, finden Sie unter Adobe Commerce [Versionsplan](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/schedule) und [Produktverfügbarkeit](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability).
 
 ## Gehostete Service-Aktualisierungen
 
@@ -48,7 +48,7 @@ _23. April 2025_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
 
-![Neues Problem](../assets/new.svg)<!-- Issue ACAP-955 --> Anstelle der AEM[Bereitstellungs-URL ](https://experienceleague.adobe.com/en/docs/commerce/product-visuals/get-started/setup-synchronization#optional-configure-the-custom-domain-url) jetzt eine benutzerdefinierte Domain-URL verwendet werden. Wenn ein Händler in seinem AEM **Dashboard einen** benutzerdefinierten Domain-Namen) festlegt, muss diese **benutzerdefinierte Domain-URL** in Commerce hinzugefügt werden.
+![Neues Problem](../assets/new.svg)<!-- Issue ACAP-955 --> Anstelle der AEM[Bereitstellungs-URL ](https://experienceleague.adobe.com/de/docs/commerce/product-visuals/get-started/setup-synchronization#optional-configure-the-custom-domain-url) jetzt eine benutzerdefinierte Domain-URL verwendet werden. Wenn ein Händler in seinem AEM **Dashboard einen** benutzerdefinierten Domain-Namen) festlegt, muss diese **benutzerdefinierte Domain-URL** in Commerce hinzugefügt werden.
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue ACAP-987 --> Verbesserte Gesamtprotokolle für AEM Assets-Synchronisierungsprozesse.
 
@@ -58,7 +58,7 @@ _12. März 2025_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
 
-![Neues Problem](../assets/new.svg)<!-- Issue ACAP-xx --> Der Assets-Selektor benötigt jetzt die [Assets-Selektor-IMS](https://experienceleague.adobe.com/en/docs/commerce/product-visuals/get-started/setup-synchronization)Client-ID, um die Zuordnung von AEM Assets-Bildern mit Produktkategorien und von Page Builder generierten Inhalten zu aktivieren.
+![Neues Problem](../assets/new.svg)<!-- Issue ACAP-xx --> Der Assets-Selektor benötigt jetzt die [Assets-Selektor-IMS](https://experienceleague.adobe.com/de/docs/commerce/product-visuals/get-started/setup-synchronization)Client-ID, um die Zuordnung von AEM Assets-Bildern mit Produktkategorien und von Page Builder generierten Inhalten zu aktivieren.
 
 ## v1.0.20
 
