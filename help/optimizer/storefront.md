@@ -224,9 +224,9 @@ Sie benötigen die folgenden Informationen, um den Textbausteincode der Storefro
    }
    ```
 
-   Weitere Informationen finden Sie in der Dokumentation ](https://www.aem.live/docs/sidekick-library) Sidekick-Bibliothek [.
+   Weitere Informationen finden Sie in der Dokumentation [&#128279;](https://www.aem.live/docs/sidekick-library) Sidekick-Bibliothek .
 
-+++
+   +++
 
 1. Aktualisieren Sie die `url` mit den Werten für Ihr GitHub-Repository.
 
@@ -266,7 +266,7 @@ Sie benötigen die folgenden Informationen, um den Textbausteincode der Storefro
    }
    ```
 
-+++
+   +++
 
 1. Speichern Sie die Datei.
 
@@ -315,7 +315,7 @@ Verbinden Sie Ihr Repository mit dem Edge Delivery-Service, indem Sie die GitHub
 
 1. Öffnen Sie die Konfigurationsseite der [AEM Code Sync App](https://github.com/apps/aem-code-sync).
 
-1. Wählen Sie **Konfigurieren** und authentifizieren Sie sich dann bei dem **** oder **Konto**, das das von Ihnen erstellte Repository enthält.
+1. Wählen Sie **Konfigurieren** und authentifizieren Sie sich dann bei dem **&#x200B;**&#x200B;oder **Konto**, das das von Ihnen erstellte Repository enthält.
 
 1. Wählen Sie im Formular **Nur Repositorys auswählen** und wählen Sie dann das von Ihnen erstellte Repository aus.
 
@@ -474,4 +474,4 @@ Siehe den [End-to-End-Anwendungsfall für Storefront- und ](./use-case/admin-use
 
 >[!MORELIKETHIS]
 >
-> Weitere Informationen zum Aktualisieren von Website-Inhalten und ](https://experienceleague.adobe.com/developer/commerce/storefront/) Integration mit Commerce-Frontend-Komponenten und Backend-Daten finden Sie in der Dokumentation zur [Adobe Commerce Storefront .
+> Weitere Informationen zum Aktualisieren von Website-Inhalten und [&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/) Integration mit Commerce-Frontend-Komponenten und Backend-Daten finden Sie in der Dokumentation zur Adobe Commerce Storefront .
