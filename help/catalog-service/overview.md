@@ -125,7 +125,7 @@ Der Katalog-Service sorgt für genaue Preisaktualisierungen und Berechnungen, in
 
 Der Implementierungsprozess umfasst Folgendes:
 
-1. [!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."} **[Installieren und Konfigurieren des Katalog-Service](installation.md)** - Installieren und konfigurieren Sie die Catalog-Service-Erweiterung und richten Sie die SaaS-Verbindung mithilfe der [!DNL Commerce Services Connector] ein.
+1. [!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."} **[Installieren und Konfigurieren des Katalog-Service](installation.md)** - Installieren und konfigurieren Sie die Catalog-Service-Erweiterung und richten Sie die SaaS-Verbindung mithilfe der [!DNL Commerce Services Connector] ein.
 2. **Storefront-Code aktualisieren**: Integrieren Sie GraphQL-Abfragen des Katalog-Services in Ihr Frontend.
 3. **Routing-Abfragen**: Alle Abfragen des Katalog-Services gehen über das GraphQL-Gateway (die URL wird beim Onboarding angegeben)
 4. **Überwachung und Fehlerbehebung bei der Datensynchronisation**: Überprüfen Sie die verbesserte Leistung und überwachen Sie die Ergebnisse.
