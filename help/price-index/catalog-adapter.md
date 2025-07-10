@@ -3,9 +3,10 @@ title: Catalog Adapter-Erweiterung
 description: Verwenden des Katalogadapters zum Rendern von Preisen aus Commerce Services
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: e42101fa-9c30-482c-a649-44dc35376abb
+source-git-commit: 74f6cb64724194651c4eeb538c0c69142b01ac5d
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ Sie können die Preisindizierung in der Commerce-Anwendung erneut aktivieren, in
 ## Anforderungen
 
 - Adobe Commerce 2.4.4+
-- Installieren Sie einen der folgenden Commerce-Services:
+- In Ihrer Adobe Commerce-Umgebung muss einer der folgenden Commerce-Services aktiviert und konfiguriert sein:
 
    - [Live Search](../live-search/install.md)
    - [Produkt Recommendations](../product-recommendations/install-configure.md)
@@ -55,7 +56,7 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Adapter] für eine Commerce Cl
 
    >[!NOTE]
    >
-   >Informationen zur lokalen Verwaltung von Commerce-Projektumgebungen finden Sie unter [Verwalten von Verzweigungen mit der CLI](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/cli-branches) im _Benutzerhandbuch für Adobe Commerce auf Cloud-Infrastruktur_.
+   >Informationen zur lokalen Verwaltung von Commerce-Projektumgebungen finden Sie unter [Verwalten von Verzweigungen mit der CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) im _Benutzerhandbuch für Adobe Commerce auf Cloud-Infrastruktur_.
 
 1. Checken Sie die Umgebungsverzweigung aus, um sie mithilfe der Adobe Commerce Cloud-CLI zu aktualisieren.
 
@@ -85,7 +86,7 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Adapter] für eine Commerce Cl
    git push origin <branch-name>
    ```
 
-   Durch Pushen der Aktualisierungen in die Cloud-Umgebung wird der [Commerce-Cloud-Bereitstellungsprozess](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/deploy/process) gestartet, um die Änderungen anzuwenden. Überprüfen Sie den Bereitstellungsstatus im [Bereitstellungsprotokoll](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   Durch Pushen der Aktualisierungen in die Cloud-Umgebung wird der [Commerce-Cloud-Bereitstellungsprozess](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) gestartet, um die Änderungen anzuwenden. Überprüfen Sie den Bereitstellungsstatus im [Bereitstellungsprotokoll](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB On-Premises]
 
@@ -166,4 +167,3 @@ Im Folgenden finden Sie einige gängige `[!DNL Catalog Adapter]`.
 - Keine Abhängigkeit vom standardmäßigen Adobe Commerce-Produktpreisindizierer
 
 1. Installieren Sie das `magento/module-price-indexer-disabler` aus dem [!DNL Catalog Adapter].
-
