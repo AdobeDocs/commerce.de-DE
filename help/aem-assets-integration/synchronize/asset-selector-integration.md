@@ -20,11 +20,11 @@ Wenn die Integration **AEM Asset Selector** konfiguriert ist, können Marketing-
 
 * Kategoriebilder können mühelos verwaltet werden, um sicherzustellen, dass sie den Richtlinien für Marken und Kampagnen entsprechen.
 * [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} Weisen Sie Assets für visuell ansprechende Inhalte direkt in Page Builder zu.
-* [!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} Weisen Sie Assets direkt in der von Edge Delivery Services unterstützten Commerce-Storefront zu, um Inhalte visuell anzureichern.
+* [!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} Weisen Sie Assets direkt in der von Edge Delivery Services unterstützten Commerce-Storefront zu, um Inhalte visuell anzureichern.
 
 >[!NOTE]
 >
-> Der AEM Asset-Wähler ist eine AEM Assets-Frontend-Komponente zur Integration von AEM Assets mit Authoring-Programmen. Weitere Informationen zu dieser Komponente finden Sie unter [Micro-Frontend-Asset](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}Auswahl im *AEM as a Cloud Service-Benutzerhandbuch*.
+> Der AEM Asset-Wähler ist eine AEM Assets-Frontend-Komponente zur Integration von AEM Assets mit Authoring-Programmen. Weitere Informationen zu dieser Komponente finden Sie unter [Micro-Frontend-Asset](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}Auswahl im *AEM as a Cloud Service-Benutzerhandbuch*.
 
 ## Die wichtigsten Vorteile
 
