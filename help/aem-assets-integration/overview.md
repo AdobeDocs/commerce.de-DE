@@ -68,7 +68,7 @@ Der Adobe Commerce-Benutzer, der die Integration konfiguriert, muss Zugriff auf 
 
 In diesem Video erfahren Sie, wie Adobe Commerce und AEM Assets zusammenarbeiten, um Inhalts-Workflows zu optimieren:
 
->[!VIDEO](https://video.tv.adobe.com/v/3447837)
+>[!VIDEO](https://video.tv.adobe.com/v/3447896?captions=ger)
 
 ## Nächste Schritte
 
