@@ -106,5 +106,5 @@ Im Folgenden finden Sie einen allgemeinen Überblick über die Verwendung des To
 >[!MORELIKETHIS]
 >
 > [Video-Demo zum Tool für den Massenimport](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
-> > [Tipps, Best Practices und Einschränkungen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> > [Hochladen oder Aufnehmen von Assets mithilfe von APIs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> &#x200B;> [Tipps, Best Practices und Einschränkungen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
+> &#x200B;> [Hochladen oder Aufnehmen von Assets mithilfe von APIs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
