@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: 526d15950fe77ac8c384d1fd670394695a824260
+source-git-commit: 525ad18961f46379360049b1bf49c18b208bf051
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -51,20 +51,17 @@ Adobe bietet eine Sammlung von Commerce-Services, Integrations-Services und Date
       </p>
    </td>
    <td valign="top">
-      <a href="../product-visuals/overview.md">
-      <img alt="Visuell" src="../assets/icons/images.svg" width="40">
+      <a href="../catalog-service/overview.md">
+      <img alt="Katalogdaten für verbundene Services" src="../assets/icons/DataBook.svg" width="40">
       </a>
       <div>
-         <a href="../product-visuals/overview.md">
-         <strong>Produktvisualisierung</strong>
+         <a href="../catalog-service/overview.md">
+         <strong>Katalog-Service</strong>
          </a>
       </div>
       <p>
-         <em>Vereinfachen Sie die Verwaltung digitaler Assets mithilfe eines Systems, das für die Verwaltung von Rich-Media-Inhalten mit Adobe Experience Manager integriert ist.</em>
+         <em>Bieten Sie Ihren Kunden ein optimiertes Produkterlebnis und steigern Sie gleichzeitig die Leistung, die Skalierbarkeit und die Konversionen.</em>
       </p>
-   </td>
-   <td valign="top">
-      <!-- Empty cell to maintain table structure -->
    </td>
 </tr>
 <tr style="border: 0;">
@@ -95,19 +92,6 @@ Adobe bietet eine Sammlung von Commerce-Services, Integrations-Services und Date
       </p>
    </td>
    <td valign="top">
-      <a href="../catalog-service/overview.md">
-      <img alt="Katalogdaten für verbundene Services" src="../assets/icons/DataBook.svg" width="40">
-      </a>
-      <div>
-         <a href="../catalog-service/overview.md">
-         <strong>Katalog-Service</strong>
-         </a>
-      </div>
-      <p>
-         <em>Bieten Sie Ihren Kunden ein optimiertes Produkterlebnis und steigern Sie gleichzeitig die Leistung, die Skalierbarkeit und die Konversionen.</em>
-      </p>
-   </td>
-   <td valign="top">
       <a href="../payment-services/guide-overview.md">
       <img alt="Kreditkartenzahlungen" src="../assets/icons/CreditCard.svg" width="40">
       </a>
@@ -133,7 +117,7 @@ Adobe bietet eine Sammlung von Commerce-Services, Integrations-Services und Date
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und in lokalen Projekten."}
+         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip=„Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und in lokalen Projekten.“}
          </a>
       </div>
       <p>
@@ -146,11 +130,24 @@ Adobe bietet eine Sammlung von Commerce-Services, Integrations-Services und Date
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce Services Connector</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt für Adobe Commerce nur für Cloud-Projekte (Adobe-verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+         <strong>Commerce Services Connector</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip=„Gilt für Adobe Commerce nur für Cloud-Projekte (Adobe-verwaltete PaaS-Infrastruktur) und lokale Projekte.“}
          </a>
       </div>
       <p>
          <em>Konfigurieren Sie die Authentifizierung, um eine sichere Kommunikation zwischen Adobe Commerce und Connected Services zu ermöglichen. Geben Sie für jede Umgebung die Datenspeicher-ID für den Commerce Services-Datenspeicher an.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../aem-assets-integration/overview.md">
+      <img alt="Visuell" src="../assets/icons/images.svg" width="40">
+      </a>
+      <div>
+          <a href="../aem-assets-integration/overview.md">
+         <strong>AEM Assets-Integration</strong>
+         </a>
+      </div>
+      <p>
+         <em>Vereinfachen Sie die Verwaltung digitaler Assets mithilfe eines Systems, das für die Verwaltung von Rich-Media-Inhalten mit Adobe Experience Manager integriert ist.</em>
       </p>
    </td>
 </tr>
@@ -187,11 +184,11 @@ Adobe bietet eine Sammlung von Commerce-Services, Integrations-Services und Date
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="Überwachen der Datensynchronisation" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong>Daten-Management-Dashboard</strong>
          </a>
       </div>
