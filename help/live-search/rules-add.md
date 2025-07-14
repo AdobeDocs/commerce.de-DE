@@ -2,9 +2,9 @@
 title: Regeln hinzufügen
 description: Erfahren Sie, wie Sie Merchandising-Suchregeln erstellen.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
+source-git-commit: 00c6d728b1bc425c873bdf46293085b8da242782
 workflow-type: tm+mt
-source-wordcount: '1650'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Um eine Regel zu erstellen, müssen Sie zunächst mit dem Regeleditor die Beding
 ## Regel hinzufügen
 
 1. Gehen Sie im Admin zu **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Legen Sie den **Bereich** fest, um die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings) zu identifizieren, für die die Regel gilt.
+1. Legen Sie den **Bereich** fest, um die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) zu identifizieren, für die die Regel gilt.
 1. Klicken Sie auf den **Merchandising suchen**-Arbeitsbereich.
 1. Klicken Sie **Regel hinzufügen**, um den Regeleditor zu starten.
 
@@ -42,7 +42,7 @@ Bedingungen sind die Voraussetzungen für den Trigger eines Ereignisses. Eine Re
 1. Wählen *unter „Regel erstellen* die **Bedingung** aus und befolgen Sie die Anweisungen, um die Anweisung abzuschließen.
 
    * Suchanfrage enthält : Geben Sie die Textzeichenfolge ein, die in der Abfrage des Erstkäufers enthalten sein muss. Die Einstellung Übereinstimmung bestimmt das Ausmaß, in dem die Abfrage des Käufers mit dem Katalog übereinstimmt. Optionen: <br /> Beliebig - Jeder Teil des Abfragetextes des Käufers kann mit der Bedingung übereinstimmen.<br />Alle - Die Abfrage des Käufers muss der Bedingung entsprechen.
-   * Suchabfrage ist - Geben Sie eine Textzeichenfolge ein, die genau mit der Abfrage des Erstkäufers übereinstimmt. Zum Beispiel: „Yogahose“. Regeln mit den `All` &quot;`Search query is`&quot; und „Übereinstimmung“ können nur eine Bedingung haben.
+   * Suchabfrage ist - Geben Sie eine Textzeichenfolge ein, die genau mit der Abfrage des Erstkäufers übereinstimmt. Zum Beispiel: „Yogahose“. Regeln mit den `Search query is` &quot;`All`&quot; und „Übereinstimmung“ können nur eine Bedingung haben.
    * Suchabfrage beginnt mit : Geben Sie ein Zeichen oder eine Zeichenfolge ein, die am Anfang der Abfrage des Erstkäufers stehen muss.
    * Suchabfrage endet mit : Geben Sie ein Zeichen oder eine Zeichenfolge ein, die am Ende der Abfrage des Erstkäufers stehen muss.
 
@@ -101,6 +101,10 @@ Wählen Sie den Strategietyp für die Regel aus. Das Fenster **Regel testen** ze
    1. Legen Sie auf der **Attributinformationen** > **Storefront-Eigenschaften** die Suchgewichtung auf kleiner oder gleich `5` fest.
 
       ![Produkt - Suchgewichtung](assets/set-search-weight.png)
+
+>[!NOTE]
+>
+>Das Sucherlebnis in der Storefront wird durch die Zusammenarbeit mehrerer Konfigurationen beeinflusst, z. B. Facetten, Synonyme und Merchandising-Regeln für Suche/Kategorie, was zu Ergebnissen führen kann, die sich von denen unterscheiden, die beim Testen einzelner Konfigurationen in Admin zu sehen sind. Während Admin-Tests bestimmte Konfigurationsbereiche isolieren, wendet die Storefront alle relevanten Konfigurationen zusammen an, was zu einer komplexeren und realistischeren Suchausgabe führt.
 
 ## Manuelle Rangfolge
 

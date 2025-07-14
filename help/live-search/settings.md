@@ -1,9 +1,10 @@
 ---
 title: Einstellungen
 description: Konfigurieren Sie die Einstellungen für den  [!DNL Live Search] .
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 6387a365-7e23-4023-95ac-27908164d81c
+source-git-commit: 70ff444afbe7ddf41e966e479e03975a02f4e10f
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Sie können die Anzahl der Preisbereichsgruppen und die Verteilung der Preiswert
 
 1. Gehen Sie im Admin zu **Marketing** > *SEO &amp; Search* > **[!DNL Live Search]**.
 1. Gehen Sie im **Einstellungen** unter *Preisfacettierung* wie folgt vor:
-   * Geben Sie die **Anzahl der** oder Preisgruppen ein, die verfügbar sein sollen. Es können bis zu 50 Preisgruppen definiert werden.
+   * Geben Sie die **Anzahl der** oder Preisgruppen ein, die verfügbar sein sollen. Mit [!DNL Live Search] 4.4.0 können bis zu 100 Preisgruppen definiert werden. Frühere Versionen erlaubten 50 Preisgruppen.
    * Geben Sie für jede Gruppe **Intervallwert** oder Preisbereich ein. Der maximale Wert ist 40.000.000.
 1. Klicken Sie **Speichern**.
 
@@ -34,7 +35,7 @@ Sie können die Anzahl der Preisbereichsgruppen und die Verteilung der Preiswert
 
 | Feld | Beschreibung |
 |--- |--- |
-| Anzahl der Auswahlen | Gibt die Anzahl der Preisbereichsgruppierungen an, die als Suchfilter in der Storefront verwendet werden können. Standardwert: 8, Höchstwert: 50 |
+| Anzahl der Auswahlen | Gibt die Anzahl der Preisbereichsgruppierungen an, die als Suchfilter in der Storefront verwendet werden können. Standardwert: 8, Höchstwert: 100 (ab [!DNL Live Search] 4.4.0) |
 | Intervallwert | Gibt das Preisintervall für jede Gruppe an. Beispiel: Bei fünf Auswahlen mit einem Intervallwert von 20 werden fünf Gruppierungen von 0-20, 20-40, 40-60, 60-80 und >80 erstellt. Standardwert: 5, Höchstwert: 40.000.000 |
 
 ## Sprache
