@@ -3,10 +3,10 @@ title: Erste Schritte mit [!DNL Adobe Commerce as a Cloud Service]
 description: Erfahren Sie mehr über die ersten Schritte mit [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: c608d9e82a892e40d362065c229b8d451ed3dbfb
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+source-git-commit: 81dd617b0a6460b8dcb01c0a21b696663b0ae493
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Klicken Sie auf die folgenden Registerkarten, um allgemeine Workflow-Übersichte
 
 >[!TAB Administrator- und Händler-Workflow]
 
-Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Administratoren und Händler auf [!DNL Adobe Commerce as a Cloud Service]-Instanzen zugreifen und diese verwalten. Weitere Informationen zu Administrator-Workflows finden [&#128279;](https://helpx.adobe.com/de/enterprise/admin-guide.html) im Handbuch zu Adobe Admin Console .
+Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Administratoren und Händler auf [!DNL Adobe Commerce as a Cloud Service]-Instanzen zugreifen und diese verwalten. Weitere Informationen zu Administrator-Workflows finden [ im Handbuch zu Adobe Admin Console ](https://helpx.adobe.com/enterprise/admin-guide.html).
 
 ![[!DNL Adobe Commerce as a Cloud Service] Handelsflussdiagramm](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -72,11 +72,8 @@ Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Entwickler Int
 
    >[!NOTE]
    >
-   >Sandbox-Instanzen sind derzeit auf die Region Nordamerika beschränkt.
-
-1. _(Optional)_ Wenn Sie Beispielproduktdaten für Test- und Lernzwecke einbeziehen möchten, wählen Sie [!UICONTROL **Adobe Store**] aus der Dropdown-Liste [!UICONTROL **Testdaten**] aus.
-
-   Sie können diese Option überspringen, aber Ihre Storefront hat in diesem Fall keine Produkte. Sie müssen [Ihren Katalog importieren), ](#import-your-catalog) das vollständige Storefront-Erlebnis zu sehen.
+   >* Sandbox-Instanzen sind derzeit auf die Region Nordamerika beschränkt.
+   >* Die Option zum Installieren von Beispieldaten ist derzeit nicht verfügbar.
 
 1. Klicken Sie [!UICONTROL **Instanz hinzufügen**].
 
@@ -102,7 +99,7 @@ Standardmäßig enthalten [!DNL Adobe Commerce as a Cloud Service] Instanzen kei
 
 Es gibt zwei Möglichkeiten, Ihren Katalog in [!DNL Adobe Commerce as a Cloud Service] zu importieren:
 
-* [**Commerce Admin**](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/import/data-import) - Eine benutzerfreundliche Oberfläche, über die Sie Ihre Katalogdaten mit wenigen Klicks importieren können.
+* [**Commerce Admin**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Eine benutzerfreundliche Oberfläche, über die Sie Ihre Katalogdaten mit wenigen Klicks importieren können.
 * [**JSON-API importieren**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - Eine REST-API, mit der Sie Ihre Katalogdaten programmgesteuert importieren können.
 
 <!-- TODO
