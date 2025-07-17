@@ -3,9 +3,9 @@ title: Erfassen von Daten
 description: Erfahren Sie, wie Ereignisse Daten für  [!DNL Product Recommendations] erfassen.
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
+source-git-commit: fe96b2922583c0fcb0fcadbdacead6267806f44b
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,11 @@ Der Ereignissammler für die [Adobe Commerce-Storefront](https://developer.adobe
 | `rec-click` | Der Käufer klickt in der Empfehlungseinheit auf ein Produkt. |
 | `view` | Wird gesendet, wenn die Empfehlungseinheit zu mindestens 50 % sichtbar wird, z. B. durch Scrollen auf der Seite nach unten. Wenn beispielsweise eine Empfehlungseinheit über zwei Zeilen verfügt, wird ein `view` gesendet, sobald eine Zeile plus ein Pixel der zweiten Zeile für den Erstkäufer sichtbar wird. Wenn der Erstkäufer die Seite mehrmals nach oben und unten scrollt, wird das `view` so oft gesendet, wie der Erstkäufer die gesamte Empfehlungseinheit erneut auf der Seite sieht. |
 
->[!NOTE]
->
->Metriken für Produktempfehlungen sind für Luma-Storefronts optimiert. Wenn Ihre Storefront mit PWA Studio implementiert ist, lesen Sie die [Dokumentation zu PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Wenn Sie eine benutzerdefinierte Frontend-Technologie wie React oder Vue JS verwenden, erfahren Sie, wie Sie [Produktempfehlungen in eine Headless-](headless.md) integrieren.
+Obwohl Produktempfehlungsmetriken für Luma-Storefronts optimiert sind, funktionieren sie auch mit anderen Storefront-Implementierungen:
+
+- [Edge Delivery-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/)
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
+- [Benutzerdefiniertes Frontend (React, Vue JS)](headless.md)
 
 #### Erforderliche Dashboard-Ereignisse
 
@@ -138,4 +140,4 @@ In dieser Tabelle werden die von den einzelnen Empfehlungstypen verwendeten Erei
 
 >[!NOTE]
 >
->Wenn [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=de) aktiviert ist, erfasst Adobe Commerce keine Verhaltensdaten, bis der Käufer der Verwendung von Cookies zustimmt. Wenn der Cookie-Einschränkungsmodus deaktiviert ist, erfasst Adobe Commerce standardmäßig Verhaltensdaten.
+>Wenn [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) aktiviert ist, erfasst Adobe Commerce keine Verhaltensdaten, bis der Käufer der Verwendung von Cookies zustimmt. Wenn der Cookie-Einschränkungsmodus deaktiviert ist, erfasst Adobe Commerce standardmäßig Verhaltensdaten.
