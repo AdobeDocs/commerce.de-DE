@@ -35,7 +35,7 @@ In diesem Abschnitt erfahren Sie, wie Sie die [!DNL Data Connection]-Erweiterung
 
 ### Hinzufügen von Details zum Service-Konto und zu den Anmeldedaten
 
-Wenn Sie (historische [) oder (Kundenprofildaten](#send-historical-order-data) [ erfassen und senden möchten](#send-customer-profile-data) müssen Sie Details zum Service-Konto und zu den Anmeldedaten hinzufügen. Wenn Sie die Erweiterung [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) konfigurieren, müssen Sie außerdem die folgenden Schritte ausführen.
+Wenn Sie (historische [) oder (Kundenprofildaten](#send-historical-order-data) [ erfassen und senden möchten](#send-customer-profile-data) müssen Sie Details zum Service-Konto und zu den Anmeldedaten hinzufügen. Wenn Sie die Erweiterung [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=de) konfigurieren, müssen Sie außerdem die folgenden Schritte ausführen.
 
 Wenn Sie nur Storefront- oder Back-Office-Daten erfassen und senden, können Sie zum Abschnitt [Allgemein](#general) wechseln.
 
@@ -43,12 +43,12 @@ Wenn Sie nur Storefront- oder Back-Office-Daten erfassen und senden, können Sie
 
 Erstellen Sie ein Projekt in der Adobe Developer Console, das Commerce authentifiziert, damit es Experience Platform-API-Aufrufe durchführen kann.
 
-Um das Projekt zu erstellen, führen Sie die Schritte aus, die im Tutorial [Authentifizieren und Zugreifen auf Experience Platform-APIs](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) beschrieben sind.
+Um das Projekt zu erstellen, führen Sie die Schritte aus, die im Tutorial [Authentifizieren und Zugreifen auf Experience Platform-APIs](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=de) beschrieben sind.
 
 Stellen Sie beim Durchlaufen des Tutorials sicher, dass Ihr Projekt Folgendes enthält:
 
-- Zugriff auf die folgenden [Produktprofile](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **Standardzugriff für alle Produktionsvorgänge** und **Standardzugriff für alle AEP**.
-- Die richtigen [Rollen und Berechtigungen sind ](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+- Zugriff auf die folgenden [Produktprofile](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=de#select-product-profiles): **Standardzugriff für alle Produktionsvorgänge** und **Standardzugriff für alle AEP**.
+- Die richtigen [Rollen und Berechtigungen sind ](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=de#assign-api-to-a-role).
 - Wenn Sie sich für die Verwendung von JSON Web Token (JWT) als Server-zu-Server-Authentifizierungsmethode entschieden haben, müssen Sie auch einen privaten Schlüssel hochladen.
 
 Als Ergebnis dieses Schritts wird eine Konfigurationsdatei erstellt, die Sie im nächsten Schritt verwenden.
@@ -87,7 +87,7 @@ Laden Sie die [Workspace-Konfigurationsdatei](https://developer.adobe.com/commer
 
 1. Legen Sie in **Dropdown** Bereich“ den Kontext auf &quot;**&quot;**.
 
-1. (Optional) Wenn Sie bereits eine [AEP Web SDK (Legierung)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) auf Ihrer Site bereitgestellt haben, aktivieren Sie das Kontrollkästchen und fügen Sie den Namen Ihrer AEP Web SDK hinzu. Andernfalls lassen Sie diese Felder leer und die [!DNL Data Connection]-Erweiterung stellt eine für Sie bereit.
+1. (Optional) Wenn Sie bereits eine [AEP Web SDK (Legierung)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de) auf Ihrer Site bereitgestellt haben, aktivieren Sie das Kontrollkästchen und fügen Sie den Namen Ihrer AEP Web SDK hinzu. Andernfalls lassen Sie diese Felder leer und die [!DNL Data Connection]-Erweiterung stellt eine für Sie bereit.
 
    >[!NOTE]
    >
@@ -117,9 +117,9 @@ Unter dem Thema „Ereignisse“ erfahren Sie mehr über [Storefront](events.md#
 
    >[!NOTE]
    >
-   >Wenn Sie **Backoffice-Ereignisse** auswählen, werden alle Backoffice-Daten an Experience Platform Edge gesendet. Wenn sich ein Käufer gegen die Datenerfassung entscheidet, müssen Sie die Datenschutzvoreinstellung des Käufers in der Experience Platform explizit festlegen. Dies unterscheidet sich von Storefront-Ereignissen, bei denen der Collector bereits das Einverständnis basierend auf den Voreinstellungen des Käufers verarbeitet. Erfahren [mehr](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) über das Festlegen der Datenschutzvoreinstellungen eines Käufers in der Experience Platform.
+   >Wenn Sie **Backoffice-Ereignisse** auswählen, werden alle Backoffice-Daten an Experience Platform Edge gesendet. Wenn sich ein Käufer gegen die Datenerfassung entscheidet, müssen Sie die Datenschutzvoreinstellung des Käufers in der Experience Platform explizit festlegen. Dies unterscheidet sich von Storefront-Ereignissen, bei denen der Collector bereits das Einverständnis basierend auf den Voreinstellungen des Käufers verarbeitet. Erfahren [mehr](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html?lang=de) über das Festlegen der Datenschutzvoreinstellungen eines Käufers in der Experience Platform.
 
-1. (Überspringen Sie diesen Schritt, wenn Sie Ihre eigene AEP Web SDK verwenden.) [Erstellen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create) einen Datenstrom in der Adobe Experience Platform oder wählen Sie einen vorhandenen Datenstrom aus, den Sie für die Erfassung verwenden möchten. Geben Sie diese Datenstrom-ID in das Feld **Datenstrom-ID** ein.
+1. (Überspringen Sie diesen Schritt, wenn Sie Ihre eigene AEP Web SDK verwenden.) [Erstellen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=de#create) einen Datenstrom in der Adobe Experience Platform oder wählen Sie einen vorhandenen Datenstrom aus, den Sie für die Erfassung verwenden möchten. Geben Sie diese Datenstrom-ID in das Feld **Datenstrom-ID** ein.
 
 1. Geben Sie die **Datensatz-ID** ein, die Ihre Commerce-Daten enthalten soll. So suchen Sie die Datensatz-ID:
 
@@ -127,7 +127,7 @@ Unter dem Thema „Ereignisse“ erfahren Sie mehr über [Storefront](events.md#
    1. Öffnen Sie den mit Ihrem Datenstrom verknüpften Datensatz.
    1. Zeigen Sie im rechten Bereich die Details zum Datensatz an. Kopieren Sie die Datensatz-ID.
 
-1. Um sicherzustellen, dass Backoffice-Ereignisdaten basierend auf einem Zeitplan gemäß einem [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)-Auftrag aktualisiert werden, müssen Sie den `Sales Orders Feed` auf `Update by Schedule` ändern.
+1. Um sicherzustellen, dass Backoffice-Ereignisdaten basierend auf einem Zeitplan gemäß einem [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=de)-Auftrag aktualisiert werden, müssen Sie den `Sales Orders Feed` auf `Update by Schedule` ändern.
 
    1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Index Management]**.
 
@@ -135,7 +135,7 @@ Unter dem Thema „Ereignisse“ erfahren Sie mehr über [Storefront](events.md#
 
    1. Legen Sie **[!UICONTROL Actions]** auf `Update by Schedule` fest.
 
-   1. Wenn Sie Backoffice-Daten zum ersten Mal aktivieren, führen Sie die folgenden Befehle aus, um eine Neuindizierung durchzuführen und eine Neusynchronisierung Trigger. Nachfolgende Neusynchronisierungen erfolgen automatisch, solange der [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)-Auftrag korrekt eingerichtet ist.
+   1. Wenn Sie Backoffice-Daten zum ersten Mal aktivieren, führen Sie die folgenden Befehle aus, um eine Neuindizierung durchzuführen und eine Neusynchronisierung Trigger. Nachfolgende Neusynchronisierungen erfolgen automatisch, solange der [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=de)-Auftrag korrekt eingerichtet ist.
 
       ```bash
       bin/magento index:reindex sales_order_data_exporter_v2
@@ -184,7 +184,7 @@ Es kann etwa 10 Minuten dauern, bis ein Profildatensatz in Real-Time CDP verfüg
 
 >[!TIP]
 >
->Wenn keine Profildaten in der Experience Platform angezeigt werden, finden Sie in der [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) Vorschläge zur Fehlerbehebung.
+>Wenn keine Profildaten in der Experience Platform angezeigt werden, finden Sie in der [Commerce KnowledgeBase](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) Vorschläge zur Fehlerbehebung.
 
 #### Feldbeschreibungen
 
@@ -211,7 +211,7 @@ Der Dienst zur Auftragssynchronisierung verwendet das [Message Queue Framework](
 
 1. Stellen Sie sicher, dass Sie [angegebene](#add-service-account-and-credential-details) Dienstkonto und Anmeldedaten haben.
 
-1. [Aktivieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ.
+1. [Aktivieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html?lang=de) RabbitMQ.
 
    >[!NOTE]
    >
@@ -228,7 +228,7 @@ Der Dienst zur Auftragssynchronisierung verwendet das [Message Queue Framework](
 
    >[!NOTE]
    >
-   >In der [Dokumentation zu Bereitstellungsvariablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) finden Sie Informationen zu allen verfügbaren Konfigurationsoptionen.
+   >In der [Dokumentation zu Bereitstellungsvariablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#cron_consumers_runner) finden Sie Informationen zu allen verfügbaren Konfigurationsoptionen.
 
 Wenn der Service für die Auftragssynchronisierung aktiviert ist, können Sie dann den historischen Datumsbereich für die Bestellung auf der **[!UICONTROL [!DNL Data Connection]]** angeben.
 
@@ -290,7 +290,7 @@ Erfahren Sie mehr über das [Einrichten benutzerdefinierter Attribute](custom-at
 
 ## Überprüfen, ob Ereignisdaten erfasst werden
 
-Um zu bestätigen, dass Daten aus Ihrem Commerce-Store erfasst werden, verwenden Sie den [Adobe Experience Platform-Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html), um Ihre Commerce-Site zu untersuchen. Nachdem Sie bestätigt haben, dass Daten erfasst werden, können Sie überprüfen, ob Ihre Storefront- und Backoffice-Ereignisdaten am Edge angezeigt werden, indem Sie eine Abfrage ausführen, die Daten aus dem von [ erstellten Datensatz ](overview.md#prerequisites).
+Um zu bestätigen, dass Daten aus Ihrem Commerce-Store erfasst werden, verwenden Sie den [Adobe Experience Platform-Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=de), um Ihre Commerce-Site zu untersuchen. Nachdem Sie bestätigt haben, dass Daten erfasst werden, können Sie überprüfen, ob Ihre Storefront- und Backoffice-Ereignisdaten am Edge angezeigt werden, indem Sie eine Abfrage ausführen, die Daten aus dem von [ erstellten Datensatz ](overview.md#prerequisites).
 
 1. Wählen **im** Navigationsbereich von Experience Platform „Abfragen“ aus und klicken Sie auf [!UICONTROL Create Query].
 
@@ -312,11 +312,11 @@ Um zu bestätigen, dass Daten aus Ihrem Commerce-Store erfasst werden, verwenden
 
 In diesem Beispiel werden Ereignisdaten aus den [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview) usw. angezeigt. In dieser Ansicht können Sie überprüfen, ob Ihre Commerce-Daten am Edge eingegangen sind.
 
-Wenn die Ergebnisse nicht Ihren Erwartungen entsprechen, öffnen Sie Ihren Datensatz und suchen Sie nach fehlgeschlagenen Batch-Importen. Weitere Informationen über [Fehlerbehebung bei Batch-Importen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+Wenn die Ergebnisse nicht Ihren Erwartungen entsprechen, öffnen Sie Ihren Datensatz und suchen Sie nach fehlgeschlagenen Batch-Importen. Weitere Informationen über [Fehlerbehebung bei Batch-Importen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html?lang=de).
 
 ### Überprüfen, ob Profildaten in der Experience Platform angezeigt werden
 
-Wenn keine Profildaten in der Experience Platform angezeigt werden, finden Sie in der [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) Vorschläge zur Fehlerbehebung.
+Wenn keine Profildaten in der Experience Platform angezeigt werden, finden Sie in der [Commerce KnowledgeBase](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) Vorschläge zur Fehlerbehebung.
 
 ## Nächste Schritte
 
