@@ -4,9 +4,9 @@ description: Die neuesten Versionsinformationen für  [!DNL Data Export Extensio
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 597cdd929f7abed24a68f1347a214b46664b1c75
+source-git-commit: 6876a5fbde2b3292cd788a50d104083cf51109ed
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Zu den Aktualisierungen gehören:
 >Die SaaS-Datenexporterweiterung ist eine Sammlung von Modulen, die automatisch mit der Live-Suche, Produktempfehlungen und dem Katalog-Service installiert werden. Sie können die auf Ihrem System installierte Version mit dem Composer überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Aktuelle Hauptversion
+
+## Version 103.4.7
+
+![Beheben](../assets/fix.svg) Veraltete Tabellen wurden entfernt, in denen Kategorieberechtigungen für Produkte gespeichert waren. <!--MDEE-1065-->
 
 ## Version 103.4.6
 
@@ -52,7 +56,7 @@ Zu den Aktualisierungen gehören:
 
 ## Version 103.4.2
 
-![Beheben](../assets/fix.svg) Es wurde die Möglichkeit hinzugefügt, beim Ausführen der Testresynchronisierung mithilfe des Befehls `saas:resync --dry-run` mit der Umgebungsvariablen `EXPORTER_EXTENDED_LOG=1` Entitäts-Payloads im `saas-export.log` zu erfassen. <!--MDEE-1023-->
+![Beheben](../assets/fix.svg) Es wurde die Möglichkeit hinzugefügt, beim Ausführen der Testresynchronisierung mithilfe des Befehls `saas-export.log` mit der Umgebungsvariablen `saas:resync --dry-run` Entitäts-Payloads im `EXPORTER_EXTENDED_LOG=1` zu erfassen. <!--MDEE-1023-->
 
 ## Version 103.4.1
 
@@ -152,7 +156,7 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 
 ## Version 103.3.4
 
-![Korrektur](../assets/fix.svg) Es wurde Unterstützung für die Datenübertragungs-Auditprotokollierung hinzugefügt, indem ein Mechanismus hinzugefügt wird, um jedes Mal, wenn Daten von der Commerce-Instanz an einen Commerce-Service-<!--MDEE-785--> übertragen werden, ein `data_sent_outside`-Ereignis zu senden
+![Korrektur](../assets/fix.svg) Es wurde Unterstützung für die Datenübertragungs-Auditprotokollierung hinzugefügt, indem ein Mechanismus hinzugefügt wird, um jedes Mal, wenn Daten von der Commerce-Instanz an einen Commerce-Service-`data_sent_outside` übertragen werden, ein <!--MDEE-785-->-Ereignis zu senden
 
 ## Version 103.3.3
 
