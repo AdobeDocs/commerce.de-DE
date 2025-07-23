@@ -2,10 +2,10 @@
 title: Installation
 description: Erfahren Sie, wie Sie installieren [!DNL Catalog Service]
 exl-id: 3f8492c3-f76d-49b7-a201-35deace36a1d
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
-source-git-commit: d07f36a71247a96bc2dd950867c2862205238d88
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+source-git-commit: 1cb6443e79e0e3d813550f9b619b3a0f641cd989
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Installieren Sie den Katalog-Service, um Produktdaten von einer Commerce-Instanz
 
 >[!NOTE]
 >
->Wenn Ihre Commerce-Instanz die Live Search oder Product Recommendations verwendet, wird der Katalog-Service automatisch installiert oder aktualisiert, sobald Sie diese Services integrieren oder aktualisieren. Weitere Informationen finden Sie in den Installationsanweisungen für [Live Search](https://experienceleague.adobe.com/de/docs/commerce/live-search/install) und [Product Recommendations](https://experienceleague.adobe.com/de/docs/commerce/product-recommendations/getting-started/install-configure).
+>Wenn Ihre Commerce-Instanz die Live Search oder Product Recommendations verwendet, wird der Katalog-Service automatisch installiert oder aktualisiert, sobald Sie diese Services integrieren oder aktualisieren. Weitere Informationen finden Sie in den Installationsanweisungen für [Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/install) und [Product Recommendations](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure).
 
 
 ## Systemanforderungen
@@ -41,7 +41,7 @@ Installieren Sie den Katalog-Service, um Produktdaten von einer Commerce-Instanz
 
 Alle Commerce-Testinstanzen verwenden den Sandbox-Endpunkt.
 
-Führen Sie alle Belastungstests für den Sandbox-Endpunkt durch. Senden Sie vor Beginn des Auslastungstests ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), damit das Services-Team den zusätzlichen Server-Traffic antizipieren kann.
+Führen Sie alle Belastungstests für den Sandbox-Endpunkt durch. Senden Sie vor Beginn des Auslastungstests ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), damit das Services-Team den zusätzlichen Server-Traffic antizipieren kann.
 
 ## Installation und Konfiguration
 
@@ -57,7 +57,7 @@ Um mit [!DNL Catalog Service] für Adobe Commerce zu beginnen, sind die folgende
 
 **Voraussetzung**
 
-- Greifen Sie auf [repo.magento.com](https://repo.magento.com) zu, um die Erweiterung zu installieren. Informationen zum Generieren von Schlüsseln und zum Abrufen der erforderlichen Berechtigungen finden Sie unter [Abrufen Ihrer Authentifizierungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Informationen zu Cloud-Installationen finden Sie im Handbuch [Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
+- Greifen Sie auf [repo.magento.com](https://repo.magento.com) zu, um die Erweiterung zu installieren. Informationen zum Generieren von Schlüsseln und zum Abrufen der erforderlichen Berechtigungen finden Sie unter [Abrufen Ihrer Authentifizierungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Informationen zu Cloud-Installationen finden Sie im Handbuch [Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
 - Zugriff auf die Befehlszeile des Adobe Commerce-Anwendungsservers.
 
@@ -75,7 +75,7 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Service] für eine Commerce Cl
 
    >[!NOTE]
    >
-   >Informationen zur lokalen Verwaltung von Commerce-Projektumgebungen finden Sie unter [Verwalten von Verzweigungen mit der CLI](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/cli-branches) im _Benutzerhandbuch für Adobe Commerce auf Cloud-Infrastruktur_.
+   >Informationen zur lokalen Verwaltung von Commerce-Projektumgebungen finden Sie unter [Verwalten von Verzweigungen mit der CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) im _Benutzerhandbuch für Adobe Commerce auf Cloud-Infrastruktur_.
 
 1. Checken Sie die Umgebungsverzweigung aus, um sie mithilfe der Adobe Commerce Cloud-CLI zu aktualisieren.
 
@@ -95,8 +95,6 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Service] für eine Commerce Cl
    composer update "magento/catalog-service"
    ```
 
-1. Code-Änderungen für `composer.json` und `composer.lock` übertragen und übertragen.
-
 1. Fügen Sie die Code-Änderungen für die `composer.json`- und `composer.lock`-Dateien hinzu, übertragen Sie sie und übertragen Sie sie in die Cloud-Umgebung.
 
    ```shell
@@ -105,7 +103,7 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Service] für eine Commerce Cl
    git push origin <branch-name>
    ```
 
-   Durch Pushen der Aktualisierungen in die Cloud-Umgebung wird der [Commerce-Cloud-Bereitstellungsprozess](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/deploy/process) gestartet, um die Änderungen anzuwenden. Überprüfen Sie den Bereitstellungsstatus im [Bereitstellungsprotokoll](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   Durch Pushen der Aktualisierungen in die Cloud-Umgebung wird der [Commerce-Cloud-Bereitstellungsprozess](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) gestartet, um die Änderungen anzuwenden. Überprüfen Sie den Bereitstellungsstatus im [Bereitstellungsprotokoll](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB On-Premises]
 
@@ -145,11 +143,11 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Service] für eine lokale Inst
 
 Führen Sie nach der Installation des [!DNL Catalog Service] die folgenden Schritte aus, um den Katalog-Service in Ihre Adobe Commerce-Instanz zu integrieren. Diese Integration ermöglicht die Datensynchronisation und Kommunikation zwischen der Commerce-Instanz, dem Katalog-Service und anderen unterstützenden Services. Die Datensynchronisation wird von der [SaaS-Datenexporterweiterung“ ](../data-export/overview.md).
 
-1. Richten Sie den [Commerce Services-Connector ein](https://experienceleague.adobe.com/de/docs/commerce/user-guides/integration-services/saas) indem Sie die API-Schlüssel angeben und einen SaaS-Datenspeicher auswählen.
+1. Richten Sie den [Commerce Services-Connector ein](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) indem Sie die API-Schlüssel angeben und einen SaaS-Datenspeicher auswählen.
 
    Die Einrichtung des Commerce Services-Connectors ist ein einmaliger Prozess, der zur Verwendung von Adobe Commerce-Services wie dem Katalog-Service, der Live-Suche und den Produktempfehlungen erforderlich ist. Wenn Sie den Connector bereits für einen anderen Dienst konfiguriert haben, überspringen Sie diesen Schritt.
 
-1. Führen Sie eine erste Datensynchronisation über das [Data Management Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-dashboard) durch.
+1. Führen Sie eine erste Datensynchronisation über das [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) durch.
 
    Die erste Synchronisierung kann je nach Kataloggröße einige Minuten bis Stunden dauern. Sie können den Synchronisierungsstatus über das Daten-Management-Dashboard überwachen. Nach der ersten Synchronisierung exportiert der Katalog laufend Produktdaten, um die Services auf dem neuesten Stand zu halten.
 
@@ -159,10 +157,10 @@ Führen Sie nach der Installation des [!DNL Catalog Service] die folgenden Schri
 
 So stellen Sie sicher, dass der Katalogexport ordnungsgemäß ausgeführt wird:
 
-- [Bestätigen Sie, dass Cron-Aufträge ausgeführt werden](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
-- Stellen Sie sicher, dass die Indexer vom [Admin](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/index-management) oder mithilfe des Commerce CLI-`bin/magento indexer:info` ausgeführt werden.
+- [Bestätigen Sie, dass Cron-Aufträge ausgeführt werden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- Stellen Sie sicher, dass die Indexer vom [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) oder mithilfe des Commerce CLI-`bin/magento indexer:info` ausgeführt werden.
 - Stellen Sie sicher, dass die `Catalog Attributes Feed, Product Feed, Product Overrides Feed`- und `Product Variant Feed`-Indexer auf `Update by Schedule` eingestellt sind.
 
 ### Überwachen und Fehlerbehebung bei der Datensynchronisation
 
-Vom Commerce-Administrator aus können Sie den Synchronisierungsprozess mithilfe des [Daten-Management-Dashboards“ ](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-dashboard). Verwenden Sie die [Commerce-CLI](../data-export/data-export-cli-commands.md#troubleshooting) und Protokolle, um den Prozess zu verwalten und Fehler zu beheben.
+Vom Commerce-Administrator aus können Sie den Synchronisierungsprozess mithilfe des [Daten-Management-Dashboards“ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Verwenden Sie die [Commerce-CLI](../data-export/data-export-cli-commands.md#troubleshooting) und Protokolle, um den Prozess zu verwalten und Fehler zu beheben.
