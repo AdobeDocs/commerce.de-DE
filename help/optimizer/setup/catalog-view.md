@@ -3,11 +3,11 @@ title: Katalogansicht
 description: Erfahren Sie, was Katalogansichten sind und wie Sie sie erstellen, um Ihren Produktkatalog nach Geschäftsstruktur, Richtlinien und Preisen zu organisieren.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: f67a5327b742338655b0f7ffa4076a174219f711
+source-git-commit: 2e47c770d204c9c7f959893704dd0ebcc6ac792a
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Bevor Sie eine Katalogansicht erstellen, stellen Sie sicher, dass Sie Folgendes 
 
 - [Erstellte Richtlinien](policies.md) um Produktfilter zu definieren
 
-- [Preislisten einrichten](pricebooks.md) für Preise
+- [Aufgenommene Preisbücher](pricebooks.md) für die Preisgestaltung
 
 1. Navigieren Sie im linken Menü zu _Store-Einrichtung_ und klicken Sie auf **[!UICONTROL Catalog views]**.
 
@@ -49,14 +49,16 @@ Bevor Sie eine Katalogansicht erstellen, stellen Sie sicher, dass Sie Folgendes 
 1. Konfigurieren Sie die Details der Katalogansicht:
 
    - **Name** - Geben Sie den Namen der Katalogansicht ein, z. B. `Celport`. &#x200B;
-   - **Katalogquellen** - Fügen Sie die Katalogquelle (Gebietsschema) hinzu, z. B. `en-US`. Drücken Sie **enter**.
+   - **Katalogquellen** - Wählen Sie die Katalogquelle (Gebietsschema) aus, z. B. `en-US`.
    - **Richtlinien** - Wählen Sie in der Dropdown-Liste die entsprechenden Richtlinien aus. Beispiel: „Marke“, „Modell“. &#x200B;Stellen Sie sicher, dass Sie bereits [eine Richtlinie erstellt haben](policies.md).
 
 1. Wählen Sie das Preisbuch aus, das mit der Katalogansicht verknüpft werden soll.
 
-1. Klicken Sie auf **[!UICONTROL Add]** , um die Katalogansicht mit dem verknüpften Preisbuch und den verknüpften Richtlinien zu erstellen.
+   - **Alle verfügbaren Preisverzeichnisse verwenden** - Mit dieser Option werden die Preisdaten aus allen verfügbaren Preisverzeichnissen abgerufen.
+   - **Nur ausgewählte Preisbücher zulassen** - Mit dieser Option wird das Dialogfeld **Zulässige Preisbücher hinzufügen** angezeigt, in dem Sie auswählen können, welches spezifische Preisbuch für die Katalogansicht verwendet werden soll.
+   - **Preise deaktivieren**-Diese Option ist derzeit nicht verfügbar.
 
-   Wenn die Schaltfläche **[!UICONTROL Add]** nicht aktiv ist, stellen Sie sicher, dass die Katalogquelle ordnungsgemäß hinzugefügt wird, indem Sie den Cursor in das Feld Katalogquellen einfügen und die **Eingabetaste** drücken. &#x200B;
+1. Klicken Sie auf **[!UICONTROL Add]** , um die Katalogansicht mit den verknüpften Preisbüchern und Richtlinien zu erstellen.
 
 Die Seite mit den Katalogansichten wird aktualisiert, um die neue Katalogansicht anzuzeigen&#x200B;
 
@@ -71,7 +73,7 @@ Katalogansichten sind Teil des Merchandising Services-Frameworks, das das in Ado
 ### Funktionsweise
 
 **1. Datenaufnahme**
-Katalogdaten aus PIM, ERP und anderen Systemen werden in das Merchandising Services-Framework aufgenommen. Jede SKU enthält Gebietsschema-Informationen und Produktattribute, die Katalogansichten, Richtlinien und Gebietsschemata zugeordnet sind. Weitere Informationen zur Datenaufnahme finden Sie unter [Entwicklerdokumentation](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+Katalogdaten aus PIM, ERP und anderen Systemen werden in das Merchandising Services-Framework aufgenommen. Jede SKU enthält Gebietsschema-Informationen und Produktattribute, die Katalogansichten, Richtlinien und Gebietsschemata zugeordnet sind. Weitere Informationen zur Datenaufnahme finden Sie unter [Entwicklerdokumentation](https://developer.adobe.com/commerce/services/optimizer/).
 
 **2. Unified Base Catalog**
 Die erfassten Daten erstellen einen einheitlichen Basiskatalog in der Katalog-Service-Datenpipeline. Durch diese zentrale Quelle werden Datenduplikate in allen Geschäftsbereichen vermieden.
@@ -80,7 +82,7 @@ Die erfassten Daten erstellen einen einheitlichen Basiskatalog in der Katalog-Se
 Mehrere Katalogansichten stellen verschiedene Geschäftseinheiten dar (z. B. „Texas Retail“, „Texas Retail Seasonal„). Gebietsschemata, Richtlinien und Preisverzeichnisse können aus Gründen der Flexibilität über Katalogansichten hinweg gemeinsam genutzt werden.
 
 **4. Multi-Channel-Versand**
-Die gefilterten Katalogdaten werden für verschiedene Ziele bereitgestellt, einschließlich Edge Delivery Services-Storefronts, Marktplätzen, Werbeplattformen und benutzerdefinierten Mikro-Storefronts. Weitere Informationen zur Bereitstellung von Katalogdaten finden Sie unter [Entwicklerdokumentation](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+Die gefilterten Katalogdaten werden für verschiedene Ziele bereitgestellt, einschließlich Edge Delivery Services-Storefronts, Marktplätzen, Werbeplattformen und benutzerdefinierten Mikro-Storefronts. Weitere Informationen zur Bereitstellung von Katalogdaten finden Sie unter [Entwicklerdokumentation](https://developer.adobe.com/commerce/services/optimizer/).
 
 ### Schlüsselkomponenten
 
@@ -126,4 +128,4 @@ Die gefilterten Katalogdaten werden für verschiedene Ziele bereitgestellt, eins
 
 >[!INFO]
 >
->Detaillierte Informationen zur Aufnahme und Bereitstellung von Katalogdaten finden Sie unter [Entwicklerdokumentation](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+>Detaillierte Informationen zur Aufnahme und Bereitstellung von Katalogdaten finden Sie unter [Entwicklerdokumentation](https://developer.adobe.com/commerce/services/optimizer/).

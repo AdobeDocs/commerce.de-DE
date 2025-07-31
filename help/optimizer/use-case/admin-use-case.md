@@ -3,10 +3,11 @@ title: End-to-End-Anwendungsfall für Storefront- und Katalogadministrator
 description: Erfahren Sie, wie Sie  [!DNL Adobe Commerce Optimizer]  verwenden, um Ihren Katalog mithilfe von Katalogansichten und Richtlinien zu verwalten, und wie Sie Ihre Storefront basierend auf Ihrer Katalogkonfiguration einrichten.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 474426ef1f99eed8d2c1b5d736332aaa666872fa
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
+source-git-commit: 5c745a8b6b3c289cb52ad7756ec521b0df96c053
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2158'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ Bevor Sie mit diesem Tutorial beginnen, stellen Sie sicher, dass Sie die folgend
 - **Benutzerberechtigungen**
    - Admin-Zugriff auf Adobe Admin Console
    - Siehe [Benutzerverwaltung](../user-management.md) für die Kontoeinrichtung
-   - Wenn Sie keinen Zugriff haben, wenden Sie sich an Ihren Adobe-Kundenbetreuer oder füllen Sie das [Early Access-Programm“ aus](https://experienceleague.adobe.com/go/aco-early-access-program)
+   - Wenn Sie keinen Zugriff haben, wenden Sie sich an den Adobe-Kundenbetreuer.
 
 - **Beispieldaten**
    - Carvelo Automobilkatalogdaten werden in Ihre Instanz geladen
@@ -46,7 +47,7 @@ Bevor Sie mit diesem Tutorial beginnen, stellen Sie sicher, dass Sie die folgend
 
 ## Fangen wir an
 
-In diesem Anwendungsbeispiel arbeiten Sie mit Folgendem:
+In diesem Anwendungsbeispiel verwenden Sie Folgendes:
 
 1. [!DNL Adobe Commerce Optimizer]-Benutzeroberfläche : Richten Sie Katalogansichten und Richtlinien ein, um die komplexe betriebliche Katalogeinrichtung für den Carvelo-Anwendungsfall zu verwalten.
 
@@ -54,7 +55,7 @@ In diesem Anwendungsbeispiel arbeiten Sie mit Folgendem:
 
 >[!NOTE]
 >
-> Erfahren Sie mehr über die Konfigurationsdateien für Storefronts, indem Sie das Thema [Erkunden des Textbausteins](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=de) in der Dokumentation zur Adobe Commerce Storefront lesen.
+> Erfahren Sie mehr über die Konfigurationsdateien für Storefronts, indem Sie das Thema [Erkunden des Textbausteins](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) in der Dokumentation zur Adobe Commerce Storefront lesen.
 
 ### ‌Wichtige Erkenntnisse
 
@@ -156,7 +157,7 @@ Mit [!DNL Adobe Commerce Optimizer] wird der Commerce Manager:
 1. Erstellen Sie eine neue Richtlinie mit dem Namen *Celport-Teilekategorien*, damit Celport nur Brems- und Federungsteile verkaufen kann.
 1. Erstellen Sie eine neue Katalogansicht für die Celport-Storefront.
 
-   Diese Katalogansicht verwendet Ihre neu erstellte Richtlinie *Celport-Teilekategorien* und die vorhandenen *East Coast Inc Brands*, um sicherzustellen, dass Celport nur die Marken Bolt und Cruz als Teil der Vereinbarung mit East Coast Inc. verkaufen kann. Die Celport-Katalogansicht verwendet das `east_coast_inc`-Preisbuch, um Produktpreispläne zu unterstützen, die mit Markenlizenzvereinbarungen übereinstimmen.
+   Diese Katalogansicht verwendet Ihre neu erstellte Richtlinie *Celport-Teilekategorien* und die vorhandenen *East Coast Inc Brands*, um sicherzustellen, dass Celport nur die Marken Bolt und Cruz als Teil der Vereinbarung mit East Coast Inc. verkaufen kann. Die Celport-Katalogansicht verwendet das `east_coast_inc` Preisbuch, um Produktpreispläne zu unterstützen, die mit den Lizenzvereinbarungen für Marken übereinstimmen.
 1. Aktualisieren Sie die Konfiguration der Commerce-Storefront, um Daten aus der von Ihnen erstellten Celport-Katalogansicht zu verwenden.
 
 Am Ende dieses Abschnitts wird Celport für den Verkauf der Carvelo-Produkte bereit sein.
@@ -228,17 +229,13 @@ Erstellen Sie eine neue Katalogansicht für den *Celport*-Händler und verknüpf
 1. Füllen Sie die Details der Katalogansicht aus:
 
    - **name** = *Celport*
-   - **Catalog sources** = *en-US* (Eingabe drücken)
+   - **Catalog sources** = *en-US*
    - **Richtlinien** (Dropdown verwenden) = *East Coast Inc Brands*; *Celport-Teilekategorien*; *Marke*; *Modell*                          
 1. Klicken Sie auf **[!UICONTROL Add]** , um die Katalogansicht zu erstellen.
 
    Die Seite mit den Katalogansichten wird aktualisiert, um die neue Katalogansicht anzuzeigen.
 
    ![Aktualisierte Liste der Katalogansichten](../assets/updated-catalog-view-list.png)
-
-   >[!NOTE]
-   >
-   >Wenn die Schaltfläche **[!UICONTROL Add]** nicht blau ist, stellen Sie sicher, dass die Katalogquelle ausgewählt ist, indem Sie den Cursor in den **[!UICONTROL Catalog sources]** Abschnitt platzieren und die Eingabetaste **.**.
 
 1. Rufen Sie die Celport-Katalogansichts-ID ab.
 
@@ -415,10 +412,6 @@ Wenn während dieses Tutorials Probleme auftreten, versuchen Sie die folgenden L
 
 - **Lösung:** Stellen Sie sicher, dass alle zugehörigen Richtlinien aktiviert und ordnungsgemäß konfiguriert sind
 
-**Problem:** Schaltfläche „Hinzufügen“ ist nicht blau
-
-- **Lösung:** Stellen Sie sicher, dass die Katalogquelle ausgewählt ist, indem Sie den Cursor in das Feld platzieren und die Eingabetaste drücken
-
 ### Storefront-Konfigurationsprobleme
 
 **Problem:** Storefront wird nicht geladen
@@ -427,7 +420,7 @@ Wenn während dieses Tutorials Probleme auftreten, versuchen Sie die folgenden L
 
 **Problem:** Keine Produkte angezeigt
 
-- **Lösung:** Überprüfen Sie, ob die Preisbuch-ID mit einer in Ihrer Adobe Commerce Optimizer-Instanz verfügbaren ID übereinstimmt.
+- **Lösung:** Überprüfen Sie, ob die Preisbuch-ID mit der in Ihrer Adobe Commerce Optimizer-Instanz verfügbaren ID übereinstimmt.
 
 **Problem:** Suche gibt keine Ergebnisse zurück
 
@@ -451,7 +444,5 @@ So erfahren Sie mehr über Adobe Commerce Optimizer:
 - Erkunden Sie [Merchandising-Funktionen](../merchandising/overview.md) um das Einkaufserlebnis zu personalisieren
 - Erfahren Sie mehr [erweiterte Richtlinienkonfigurationen](../setup/policies.md)
 - ([ Katalogansichten) ](../setup/catalog-view.md) andere Händler einrichten
-- Lesen Sie die [API-Dokumentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/) für die programmgesteuerte Katalogverwaltung
-- Erfahren Sie, wie Sie Dropdown-Komponenten für Ihre Edge Delivery Services-Storefront konfigurieren, um benutzerdefinierte Storefront-Erlebnisse für die Produkterkennung, Empfehlungen und andere Storefront-Funktionen zu erstellen. Siehe die [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=de)
-
-
+- Lesen Sie die [API-Dokumentation](https://developer.adobe.com/commerce/services/optimizer/) für die programmgesteuerte Katalogverwaltung
+- Erfahren Sie, wie Sie Dropdown-Komponenten für Ihre Edge Delivery Services-Storefront konfigurieren, um benutzerdefinierte Storefront-Erlebnisse für die Produkterkennung, Empfehlungen und andere Storefront-Funktionen zu erstellen. Siehe die [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
