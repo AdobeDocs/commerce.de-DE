@@ -3,11 +3,11 @@ title: Erste Schritte
 description: Erfahren Sie mehr über die ersten Schritte mit [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: f1861e890ec661d441b6f2c9b0c0cd54b4c20ece
+source-git-commit: f920cfe7cd433e85f343fefe1062a1972e5e5e5f
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,6 @@ Führen Sie die folgenden Schritte aus, um Ihre [!DNL Adobe Commerce Optimizer]-
 Nach dem Erstellen der Instanz:
 
 1. [Instanz verwalten](#manage-an-instance) über Commerce Cloud Manager.
-1. Richten Sie Katalogansichten und Richtlinien mithilfe des [Handbuchs für Katalogansichten](./setup/catalog-view.md) ein.
 1. Konfigurieren Sie den Benutzerzugriff mithilfe des [Benutzerhandbuchs für die ](./user-management.md)&quot;
 
 ### Schritt 3. Beispieldaten hinzufügen (optional)
@@ -146,15 +145,12 @@ Die Beispieldaten basieren auf dem [Carvelo-Geschäftsszenario](./use-case/admin
 
 1. Zugriff auf das GitHub-Repository:
    - Besuchen Sie das [Beispielkatalog-Datenaufnahme-Repository](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
-   - Befolgen Sie die Setup-Anweisungen in der README-Datei des Repositorys.
 
-2. Ausführen der Aufnahme:
-   - Verwenden Sie die bereitgestellten Skripte, um Beispieldaten in Ihre Adobe Commerce Optimizer-Staging-Umgebung zu laden.
-   - Stellen Sie sicher, dass die Daten auf der Seite [Datensynchronisierung](./setup/data-sync.md) angezeigt werden.
+1. Befolgen Sie die Setup-Anweisungen in der README-Datei des Repositorys.
 
-3. Bereinigung (optional):
-
-   Entfernen Sie die Beispieldaten mit dem `reset.js`-Skript aus dem Quell-Code des Beispiel-Daten-Laders.
+   - Konfigurieren und Ausführen der Datenaufnahme
+   - Konfigurieren von Katalogrichtlinien und -ansichten mithilfe der Beispieldaten
+   - Bereinigen von Beispieldaten (optional)
 
 ## Nächste Schritte
 
@@ -190,5 +186,5 @@ Nach Abschluss der Einrichtung:
 ### Hilfe erhalten
 
 - **Entwicklerressourcen**: [Entwicklerdokumentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **Storefront-Ressourcen**: [Dokumentation zur Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)
-- **Support**: [Adobe Commerce-Support-Ressourcen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/overview)
+- **Storefront-Ressourcen**: [Dokumentation zur Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Support**: [Adobe Commerce-Support-Ressourcen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
