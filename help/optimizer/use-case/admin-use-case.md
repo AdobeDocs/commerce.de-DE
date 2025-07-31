@@ -3,7 +3,7 @@ title: End-to-End-Anwendungsfall für Storefront- und Katalogadministrator
 description: Erfahren Sie, wie Sie  [!DNL Adobe Commerce Optimizer]  verwenden, um Ihren Katalog mithilfe von Katalogansichten und Richtlinien zu verwalten, und wie Sie Ihre Storefront basierend auf Ihrer Katalogkonfiguration einrichten.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
 source-git-commit: 5c745a8b6b3c289cb52ad7756ec521b0df96c053
 workflow-type: tm+mt
@@ -55,7 +55,7 @@ In diesem Anwendungsbeispiel verwenden Sie Folgendes:
 
 >[!NOTE]
 >
-> Erfahren Sie mehr über die Konfigurationsdateien für Storefronts, indem Sie das Thema [Erkunden des Textbausteins](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) in der Dokumentation zur Adobe Commerce Storefront lesen.
+> Erfahren Sie mehr über die Konfigurationsdateien für Storefronts, indem Sie das Thema [Erkunden des Textbausteins](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=de) in der Dokumentation zur Adobe Commerce Storefront lesen.
 
 ### ‌Wichtige Erkenntnisse
 
@@ -445,4 +445,4 @@ So erfahren Sie mehr über Adobe Commerce Optimizer:
 - Erfahren Sie mehr [erweiterte Richtlinienkonfigurationen](../setup/policies.md)
 - ([ Katalogansichten) ](../setup/catalog-view.md) andere Händler einrichten
 - Lesen Sie die [API-Dokumentation](https://developer.adobe.com/commerce/services/optimizer/) für die programmgesteuerte Katalogverwaltung
-- Erfahren Sie, wie Sie Dropdown-Komponenten für Ihre Edge Delivery Services-Storefront konfigurieren, um benutzerdefinierte Storefront-Erlebnisse für die Produkterkennung, Empfehlungen und andere Storefront-Funktionen zu erstellen. Siehe die [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
+- Erfahren Sie, wie Sie Dropdown-Komponenten für Ihre Edge Delivery Services-Storefront konfigurieren, um benutzerdefinierte Storefront-Erlebnisse für die Produkterkennung, Empfehlungen und andere Storefront-Funktionen zu erstellen. Siehe die [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=de)

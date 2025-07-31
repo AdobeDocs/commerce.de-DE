@@ -3,7 +3,7 @@ title: Erste Schritte
 description: Erfahren Sie mehr über die ersten Schritte mit [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
 source-git-commit: f1861e890ec661d441b6f2c9b0c0cd54b4c20ece
 workflow-type: tm+mt
@@ -190,5 +190,5 @@ Nach Abschluss der Einrichtung:
 ### Hilfe erhalten
 
 - **Entwicklerressourcen**: [Entwicklerdokumentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **Storefront-Ressourcen**: [Dokumentation zur Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
-- **Support**: [Adobe Commerce-Support-Ressourcen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
+- **Storefront-Ressourcen**: [Dokumentation zur Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)
+- **Support**: [Adobe Commerce-Support-Ressourcen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/overview)
