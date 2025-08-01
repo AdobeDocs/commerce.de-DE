@@ -3,7 +3,7 @@ title: Preisbücher
 description: Erfahren Sie, wie Sie Preislisten in  [!DNL Adobe Commerce Optimizer] verwalten.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
 source-git-commit: 502d8d21ff052f4ecb212176459b38ce51f85dfc
 workflow-type: tm+mt
