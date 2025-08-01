@@ -1,18 +1,18 @@
 ---
 title: Verbessern der SaaS-Datenexportleistung
-description: Erfahren Sie, wie Sie die SaaS-Datenexportleistung für Commerce Services mithilfe des Multithread-Datenexportmodus verbessern können.
+description: Erfahren Sie, wie Sie die SaaS-Datenexportleistung für Commerce Services mithilfe eines Multi-Thread-Datenexportmodus verbessern können.
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: 9b28da0bf861a266e9d679ba59470f46d9a89c1c
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
 
 # Verbessern der SaaS-Datenexportleistung
 
-**Multi-Thread-Datenexportmodus** Beschleunigt den Exportvorgang, indem Feed-Daten in Batches aufgeteilt und parallel verarbeitet werden.
+**Multi-Thread-Datenexportmodus** beschleunigt den Exportprozess, indem Feed-Daten in Batches aufgeteilt und gleichzeitig verarbeitet werden.
 
 Entwickler oder Systemintegratoren können die Leistung verbessern, indem sie den Multithread-Datenexportmodus anstelle des standardmäßigen Einzelthread-Modus verwenden. Im Single-Thread-Modus gibt es keine Parallelisierung des Feed-Übermittlungsprozesses. Darüber hinaus sind aufgrund der standardmäßig festgelegten Beschränkungen alle Clients auf die Verwendung nur eines Threads beschränkt. In den meisten Fällen ist keine Anpassung der Konfiguration erforderlich.
 
@@ -64,7 +64,7 @@ In der Befehlszeile angegebene Optionen überschreiben die in der `config.php` d
 
 Um alle Datenexportvorgänge mit Multithreading zu verarbeiten, können Systemintegratoren oder Entwickler die Anzahl der Threads und die Batch-Größe für jeden Feed in der Commerce-Anwendungskonfiguration ändern.
 
-Diese Änderungen können angewendet werden, indem benutzerdefinierte Werte zum [Systemabschnitt](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) der Konfigurationsdatei hinzugefügt werden, `app/etc/config.php`.
+Diese Änderungen können angewendet werden, indem benutzerdefinierte Werte zum [Systemabschnitt](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) der Konfigurationsdatei hinzugefügt werden, `app/etc/config.php`.
 
 **Beispiel: Multithreading für Produkte und Preise konfigurieren**
 
