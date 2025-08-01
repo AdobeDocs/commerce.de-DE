@@ -64,7 +64,7 @@ In der Befehlszeile angegebene Optionen überschreiben die in der `config.php` d
 
 Um alle Datenexportvorgänge mit Multithreading zu verarbeiten, können Systemintegratoren oder Entwickler die Anzahl der Threads und die Batch-Größe für jeden Feed in der Commerce-Anwendungskonfiguration ändern.
 
-Diese Änderungen können angewendet werden, indem benutzerdefinierte Werte zum [Systemabschnitt](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) der Konfigurationsdatei hinzugefügt werden, `app/etc/config.php`.
+Diese Änderungen können angewendet werden, indem benutzerdefinierte Werte zum [Systemabschnitt](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) der Konfigurationsdatei hinzugefügt werden, `app/etc/config.php`.
 
 **Beispiel: Multithreading für Produkte und Preise konfigurieren**
 
