@@ -1,10 +1,11 @@
 ---
 title: Facettenübersicht
 description: Erfahren Sie mehr über Facetten in  [!DNL Adobe Commerce Optimizer]  und wie sie die Suchergebnisse verbessern.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -29,12 +30,14 @@ Die Facettenaggregation wird wie folgt durchgeführt: Wenn die Storefront drei F
 
 ## Standard-Attributwerte
 
-Die folgenden [Produktattribute](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata) werden von [!DNL Adobe Commerce Optimizer] verwendet und sind standardmäßig aktiviert.
+Die folgenden Produktattribute werden von [!DNL Adobe Commerce Optimizer] verwendet und sind standardmäßig aktiviert.
 
 | Eigenschaft | Beschreibung | Attribut |
 |---|---|---|
 | sortierbar | Wird zum Sortieren in der Produktliste verwendet | `price` |
 | durchsuchbar | In Suche verwenden | `price` <br />`sku`<br />`name` |
+
+Weitere Informationen [ Produktattribute und ihre Eigenschaften finden Sie unter ](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)Datenaufnahme-Metadaten-API“.
 
 ## Standardmäßige Nicht-Systemattribut-Eigenschaften
 

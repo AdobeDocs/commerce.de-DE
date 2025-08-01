@@ -1,10 +1,11 @@
 ---
 title: Erstellen und Verwalten von Facetten
 description: Erfahren Sie, wie Sie in Facetten hinzufügen und verwalten [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+exl-id: d6b7ff1f-a9b8-4fb8-8bd3-b3596695045c
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -25,9 +26,9 @@ Jedes filterbare Produktattribut kann als Facette verwendet werden. Facetten hel
 
    Die Facette wird am unteren Rand der Liste *Dynamische Facetten* hinzugefügt und die Schaltfläche *Änderungen veröffentlichen* wird verfügbar.
 
-1. Wenn die Facette, die Sie hinzufügen möchten, nicht gefunden werden kann, stellen Sie sicher, dass [Produktattribut](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata) die folgende Gruppe aufweist:
+1. Wenn die hinzuzufügende Facette nicht gefunden werden kann, verwenden Sie die [Metadaten-API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata), um den `searchable` festzulegen:
 
-   - `searchable` = `Yes`
+   `"searchable": true`
 
    Die Facette wird in der Storefront verfügbar, wenn der Katalog das nächste Mal mit [!DNL Adobe Commerce Optimizer] synchronisiert wird. Wenn die Facette nach zwei Stunden nicht verfügbar ist, finden Sie weitere Informationen unter [Datensynchronisierung](../../setup/data-sync.md).
 

@@ -2,9 +2,10 @@
 title: Verbessern der SaaS-Datenexportleistung
 description: Erfahren Sie, wie Sie die SaaS-Datenexportleistung für Commerce Services mithilfe des Multithread-Datenexportmodus verbessern können.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
+source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Denken Sie daran, dass eine sorgfältige Planung, einschließlich der Schätzung
 
 >[!NOTE]
 >
->Adobe empfiehlt, bei der Verwendung der Verarbeitung mehrerer Threads Vorsicht walten zu lassen. Diese Funktion ist eine Funktion für den frühzeitigen Zugriff, die noch verbessert wird. Wenn Sie Multi-Threading für eine schnellere Leistung konfigurieren, können Sie die enthaltenen Trigger Adobe Commerce Services-Leitplanken verwenden, um einen Missbrauch des Systems bei der Datenaufnahme zu verhindern. Diese Leitplanken verhindern auch, dass Benutzer Synchronisierungsänderungen auslösen, die das System überlasten können. Wenn die Leitplanken ausgelöst werden, werden -Anfragen blockiert und das System gibt 429 Fehler zurück. Wenn diese Fehler auftreten, passen Sie Ihre Konfiguration an und senden Sie ein Support-Ticket, um Hilfe zu erhalten.
+>Adobe empfiehlt, bei der Verwendung der Verarbeitung mehrerer Threads Vorsicht walten zu lassen. Wenn Sie Multi-Threading für eine schnellere Leistung konfigurieren, können Sie die enthaltenen Trigger Adobe Commerce Services-Leitplanken verwenden, um einen Missbrauch des Systems bei der Datenaufnahme zu verhindern. Diese Leitplanken verhindern auch, dass Benutzer Synchronisierungsänderungen auslösen, die das System überlasten können. Wenn die Leitplanken ausgelöst werden, werden -Anfragen blockiert und das System gibt 429 Fehler zurück. Wenn diese Fehler auftreten, passen Sie Ihre Konfiguration an und senden Sie ein Support-Ticket, um Hilfe zu erhalten.
 
 ## Multithreading konfigurieren
 
@@ -63,7 +64,7 @@ In der Befehlszeile angegebene Optionen überschreiben die in der `config.php` d
 
 Um alle Datenexportvorgänge mit Multithreading zu verarbeiten, können Systemintegratoren oder Entwickler die Anzahl der Threads und die Batch-Größe für jeden Feed in der Commerce-Anwendungskonfiguration ändern.
 
-Diese Änderungen können angewendet werden, indem benutzerdefinierte Werte zum [Systemabschnitt](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) der Konfigurationsdatei hinzugefügt werden, `app/etc/config.php`.
+Diese Änderungen können angewendet werden, indem benutzerdefinierte Werte zum [Systemabschnitt](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) der Konfigurationsdatei hinzugefügt werden, `app/etc/config.php`.
 
 **Beispiel: Multithreading für Produkte und Preise konfigurieren**
 

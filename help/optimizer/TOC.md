@@ -4,7 +4,7 @@ user-guide-description: Dokumentation und Ressourcen für [!DNL Adobe Commerce O
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: d74665a7f321394c88acc243217aa2adbd290064
+source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 10%
@@ -57,4 +57,4 @@ ht-degree: 10%
 - [Einstellungen](settings.md)
 - Anwendungsfall {#use-case}
    - [End-to-End-Anwendungsfall für Storefront- und Katalogadministrator](./use-case/admin-use-case.md)
-- [Entwicklerhandbuch](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
+- [Entwicklerhandbuch](https://developer.adobe.com/commerce/services/optimizer/)
