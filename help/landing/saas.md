@@ -53,7 +53,7 @@ Darüber hinaus sind Lösungsintegratoren auch berechtigt, [!DNL Commerce Servic
 
 1. Melden Sie sich bei Ihrem [!DNL Commerce] Konto unter [https://account.magento.com](https://account.magento.com/customer/account/login){:target="_blank"} an.
 
-1. Wählen Sie auf der Registerkarte **** Magento **in der** die Option „API-Portal“ aus.
+1. Wählen Sie auf der Registerkarte **&#x200B;**&#x200B;Magento **in der** die Option „API-Portal“ aus.
 
 1. Wählen Sie im _Umgebung_ die Option **Produktion** oder **Sandbox**.
 
@@ -84,7 +84,7 @@ Darüber hinaus sind Lösungsintegratoren auch berechtigt, [!DNL Commerce Servic
 >[!WARNING]
 >
 > Verwenden Sie Ihren **Produktions-SaaS** Datenspeicher nur in Ihrer Produktions- [!DNL Commerce] -Installation, um Datenkollisionen zu vermeiden. Andernfalls riskieren Sie, die Daten Ihrer Produktions-Website mit Testdaten zu belasten, was zu Bereitstellungsverzögerungen führt. Beispielsweise könnten Ihre Produktionsproduktdaten versehentlich aus Staging-Daten wie Staging-URLs überschrieben werden.
-> > In diesem Fall können Sie [eine Support-Anfrage senden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) um eine Datenbereinigung anzufordern.
+> &#x200B;> In diesem Fall können Sie [eine Support-Anfrage senden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) um eine Datenbereinigung anzufordern.
 
 Wenn Sie LiveSearch-Konfigurationsfelder im Admin Panel nicht finden können, überprüfen Sie, ob Sie den richtigen SaaS-API-Schlüssel eingegeben haben.  Stellen Sie sicher, dass Sie beim Konfigurieren des Produktionsdatenspeichers den Produktions-SaaS-Schlüssel und beim Konfigurieren des Staging-Datenspeichers den Staging-Schlüssel hinzugefügt haben. Wenn Sie den falschen Schlüssel konfigurieren, sind SaaS-Services wie LiveSearch in der Adobe Commerce-Umgebung nicht verfügbar.
 
@@ -116,7 +116,7 @@ Um ein SaaS-Projekt auszuwählen oder zu erstellen, fordern Sie den [!DNL Commer
 
    Wenn der Abschnitt **[!UICONTROL Commerce Services Connector]** in der [!DNL Commerce] nicht angezeigt wird, installieren Sie die [!DNL Commerce] für Ihren gewünschten [[!DNL Commerce] Dienst](#availableservices). Vergewissern Sie sich außerdem, dass das `magento/module-services-id`-Paket installiert ist.
 
-1. Fügen Sie in den Abschnitten _[!UICONTROL Sandbox API Keys]_und_[!UICONTROL Production API Keys]_ Ihre Schlüsselwerte ein.
+1. Fügen Sie in den Abschnitten _[!UICONTROL Sandbox API Keys]_&#x200B;und&#x200B;_[!UICONTROL Production API Keys]_ Ihre Schlüsselwerte ein.
 
    - Private Schlüssel müssen `----BEGIN PRIVATE KEY---` am Anfang des Schlüssels und `----END PRIVATE KEY----` am Ende des Schlüssels enthalten.
    - Wenn Sie keine Kopie der tatsächlichen Schlüssel haben, fragen Sie den Kontoinhaber nach diesen Schlüsseln und schließen Sie die Werte an die Konfiguration an.
