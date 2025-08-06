@@ -4,9 +4,9 @@ description: Die neuesten Versionsinformationen für  [!DNL Data Export Extensio
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 6876a5fbde2b3292cd788a50d104083cf51109ed
+source-git-commit: d859da62f54cf9a86a57d34d5f74aae972dc99be
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ Zu den Aktualisierungen gehören:
 >Die SaaS-Datenexporterweiterung ist eine Sammlung von Modulen, die automatisch mit der Live-Suche, Produktempfehlungen und dem Katalog-Service installiert werden. Sie können die auf Ihrem System installierte Version mit dem Composer überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Aktuelle Hauptversion
+
+## Version 103.4.8
+
+![Neu](../assets/new.svg) Es wurden Stufenpreisinformationen zum Feed „Preise“ hinzugefügt. <!--MDEE-1070-->
+![Fehlerbehebung](../assets/fix.svg) Die Data Exporter-Erweiterung exportiert jetzt die Paketauswahlpreise für die Website korrekt, um sicherzustellen, dass die Storefront-Preise die genauen Werte basierend auf der Konfiguration „Katalogpreisbereich“ widerspiegeln.<!--MDEE-1115-->
+![Beheben](../assets/fix.svg) Zuvor wurden Produkte mit einem falschen `lowStock=true` synchronisiert, wenn Inventory management (Multi-Source-Inventory management) mit Schwellenwertkonfiguration verwendet wurde. Dieses Problem wurde behoben, um genaue Berichte über niedrige Lagerbestände sicherzustellen.<!--MDEE-1113-->
 
 ## Version 103.4.7
 
