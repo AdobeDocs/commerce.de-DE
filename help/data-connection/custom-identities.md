@@ -37,7 +37,7 @@ Bevor Sie benutzerdefinierte Identitätsattribute implementieren, stellen Sie Fo
 ## Schritt 1: Konfigurieren des Experience Platform-Schemas
 
 1. Melden Sie sich bei Adobe Experience Platform an und wählen Sie Ihr Commerce-Schema aus.
-1. [Hinzufügen benutzerdefinierter Identitätsfelder](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups) auf der Stammebene:
+1. [Hinzufügen benutzerdefinierter Identitätsfelder](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups) auf der Stammebene:
    - `hashedPID` (Zeichenfolge) - Primärer Identitäts-Hash
    - `hashedSID` (Zeichenfolge) - Sekundärer Identitäts-Hash
    - `primaryID` (Zeichenfolge) - Primärer Identitätsfeldname
