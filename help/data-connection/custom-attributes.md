@@ -1,18 +1,23 @@
 ---
-title: Hinzufügen benutzerdefinierter Bestellattribute
+title: Hinzufügen benutzerdefinierter Attribute zu Bestellungen
 description: Erfahren Sie, wie Sie Ihren Back-Office-Daten benutzerdefinierte Bestellattribute hinzufügen und diese Attribute an die Experience Platform senden.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
+source-git-commit: 5b1387e18e059c938aca600cc31951a3f5289e7e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '602'
 ht-degree: 2%
 
 ---
 
-# Hinzufügen benutzerdefinierter Bestellattribute
+# Hinzufügen benutzerdefinierter Attribute zu Bestellungen
 
 In diesem Artikel erfahren Sie, wie Sie Backoffice-Ereignissen benutzerdefinierte Attribute hinzufügen. Mit benutzerdefinierten Attributen können Sie umfangreiche Dateneinblicke erfassen, um die Analyse zu verbessern und weitere personalisierte Erlebnisse für Ihre Kunden zu erstellen.
+
+>[!NOTE]
+>
+>Erfahren Sie, wie [ Profile „benutzerdefinierte Identitäten ](custom-identities.md)&quot; können.
 
 Benutzerdefinierte Attribute werden auf zwei Ebenen unterstützt:
 
@@ -344,7 +349,7 @@ ComponentRegistrar::register(
 
 Um sicherzustellen, dass die neuen benutzerdefinierten Sortierattribute von Ihrem [!DNL Commerce] in Experience Platform aufgenommen werden können, müssen Sie das Schema erweitern, um diese benutzerdefinierten Felder einzuschließen.
 
-Informationen zum Erweitern eines vorhandenen XDM-Schemas um diese benutzerdefinierten Felder finden Sie im Artikel [Erstellen und Bearbeiten von Schemas in der Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) in der Experience Platform-Dokumentation. Das Feld Mandanten-ID wird dynamisch generiert. Die Feldstruktur sollte jedoch dem Beispiel in der Experience Platform-Dokumentation ähneln.
+Informationen zum Erweitern eines vorhandenen XDM-Schemas um diese benutzerdefinierten Felder finden Sie im Artikel [Erstellen und Bearbeiten von Schemas in der Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) in der Experience Platform-Dokumentation. Das Feld Mandanten-ID wird dynamisch generiert. Die Feldstruktur sollte jedoch dem Beispiel in der Experience Platform-Dokumentation ähneln.
 
 >[!IMPORTANT]
 >

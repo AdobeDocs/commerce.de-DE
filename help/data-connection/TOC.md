@@ -4,10 +4,10 @@ user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Ve
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
-source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+source-git-commit: d079ba51ede5272059fa6ac9d4176d484266ba21
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '139'
 ht-degree: 2%
 
 ---
@@ -21,19 +21,21 @@ ht-degree: 2%
 - [Versionshinweise](release-notes.md)
 - Grundlagen {#fundamentals}
    - [Installieren der  [!DNL Data Connection] -Erweiterung](install.md)
+   - [Verbindung mit Adobe Experience Platform herstellen](connect-data.md)
    - [Typen von Commerce-Daten](data-ingestion.md)
-   - [Aktualisieren von Zeitreihen-Ereignisschemata für die Datenaufnahme in Commerce](update-xdm.md)
-   - [Aktualisieren des Profildatensatzschemas für die Commerce-Datenaufnahme](profile-data.md)
-   - [Verbinden von Commerce-Daten mit Adobe Experience Platform](connect-data.md)
-   - [Integrieren von Adobe Experience Platform Mobile SDK mit Commerce](mobile-sdk-epc.md)
+   - [Zeitreihen-Ereignisschema aktualisieren](update-xdm.md)
+   - [Profildatensatzschema aktualisieren](profile-data.md)
+   - [Verwenden der Adobe Experience Platform Mobile SDK](mobile-sdk-epc.md)
 - Erfassen von Daten {#event-forwarding}
    - [Verhaltensereignisse](events.md)
    - [Back-Office-Ereignisse](events-backoffice.md)
    - [Profileinträge](events-profilerecord.md)
-   - [Hinzufügen benutzerdefinierter Bestellattribute](custom-attributes.md)
-   - [Benutzerspezifische Ereignisse](custom-events.md)
    - [Verwenden von Adobe Experience Platform-Tags](using-tags.md)
+- Anpassen der Datenerfassung {#customize-data}
+   - [Hinzufügen benutzerdefinierter Attribute zu Bestellungen](custom-attributes.md)
+   - [Hinzufügen benutzerdefinierter Attribute zu Profilen](custom-identities.md)
+   - [Benutzerdefinierte Ereignisse erstellen](custom-events.md)
 - Anwendungsfälle {#use-cases}
    - [Verwenden von Adobe Journey Optimizer zum Senden einer E-Mail zu einem Transaktionsabbruch](using-ajo.md)
    - [Erstellen einer Zielgruppe in Real-Time CDP mithilfe von Commerce-Ereignisdaten](create-audience.md)
-- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=de)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
