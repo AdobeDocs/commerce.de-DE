@@ -3,11 +3,11 @@ title: Katalogansicht
 description: Erfahren Sie, was Katalogansichten sind und wie Sie sie erstellen, um Ihren Produktkatalog nach Geschäftsstruktur, Richtlinien und Preisen zu organisieren.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 2e47c770d204c9c7f959893704dd0ebcc6ac792a
+source-git-commit: ff53f84b4ab7cfb219aae0e29cc35b23d0f6601b
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,43 @@ Bevor Sie eine Katalogansicht erstellen, stellen Sie sicher, dass Sie Folgendes 
 Die Seite mit den Katalogansichten wird aktualisiert, um die neue Katalogansicht anzuzeigen&#x200B;
 
 Nachdem Sie diese Schritte ausgeführt haben, ist die Katalogansicht jetzt so konfiguriert, dass Produkte und Preise basierend auf Ihren ausgewählten Quellen und Richtlinien angezeigt werden.
+
+## Katalogansicht verwalten
+
+Befolgen Sie diese Anweisungen, um die Eigenschaften vorhandener Katalogansichten zu aktualisieren oder anzuzeigen.
+
+### Katalogansicht bearbeiten
+
+1. Suchen Sie im Arbeitsbereich *Katalogansichten* die Katalogansicht in dem Raster, das Sie bearbeiten möchten, und klicken Sie auf **…**, um das Aktionsmenü zu öffnen.
+1. Klicken Sie **Bearbeiten**, um auf den Editor für die Katalogansicht zuzugreifen.
+1. Aktualisieren Sie den Namen, die Katalogquellen, Richtlinien und Preisbuchinformationen nach Bedarf.
+1. Speichern Sie die Änderungen.
+
+### Katalogansicht löschen
+
+1. Suchen Sie im Arbeitsbereich *Katalogansichten* die Katalogansicht in dem Raster, das Sie bearbeiten möchten, und klicken Sie auf **…**, um das Aktionsmenü zu öffnen.
+1. Klicken Sie **Löschen**.
+
+   Wenn das Bestätigungsdialogfeld angezeigt wird, klicken Sie auf **[!UICONTROL Delete]**.
+
+### Details anzeigen
+
+Diese Option bietet eine schnelle Möglichkeit, alle Parameter der Katalogansicht anzuzeigen, während Sie in der Tabelle *Katalogansichten* bleiben.
+
+Suchen Sie im Arbeitsbereich *Katalogansichten* die Katalogansicht in dem Raster, das Sie bearbeiten möchten, und klicken Sie auf das Symbol ![Informationen](../assets/info-icon.png).
+
+![Details zur Katalogansicht](../assets/catalog-view-details.png)
+
+Von hier aus können Sie Konfigurationsdetails der Katalogansicht sehen, z. B.:
+
+- Ansichts-ID
+- -Name
+- Katalogquellen
+- Richtlinien
+- Erstellt am
+- Data Modified
+
+Einige dieser Konfigurationseinstellungen werden benötigt, wenn Sie Ihre Storefront einrichten oder die Datenerfassungs-API verwenden.
 
 ## Überblick über die Architektur
 
