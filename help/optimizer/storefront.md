@@ -19,7 +19,7 @@ In diesem Tutorial finden Sie detaillierte Anweisungen zum Einrichten und Verwen
 >[!TIP]
 >
 >Beschleunigen Sie den Einrichtungsprozess der Storefront, indem Sie das Tool Site Creator verwenden, um Ihr Storefront-Code-Repository und die Dokumenterstellungsumgebung einzurichten
->>Automatisch. Anschließend können Sie diese Anweisungen verwenden, um zu verstehen, wie die Storefront erstellt wurde, und mehr über die Komponenten erfahren, die Ihnen zur Verfügung stehen.
+>&#x200B;>Automatisch. Anschließend können Sie diese Anweisungen verwenden, um zu verstehen, wie die Storefront erstellt wurde, und mehr über die Komponenten erfahren, die Ihnen zur Verfügung stehen.
 
 ## Voraussetzungen
 
@@ -281,7 +281,7 @@ Verbinden Sie Ihr Repository mit dem Edge Delivery-Service, indem Sie die GitHub
 
 1. Öffnen Sie die Konfigurationsseite der [AEM Code Sync App](https://github.com/apps/aem-code-sync).
 
-1. Wählen Sie **Konfigurieren** und authentifizieren Sie sich dann bei dem **** oder **Konto**, das das von Ihnen erstellte Repository enthält.
+1. Wählen Sie **Konfigurieren** und authentifizieren Sie sich dann bei dem **&#x200B;**&#x200B;oder **Konto**, das das von Ihnen erstellte Repository enthält.
 
 1. Wählen Sie im Formular **Nur Repositorys auswählen** und wählen Sie dann das von Ihnen erstellte Repository aus.
 
