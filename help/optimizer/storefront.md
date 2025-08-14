@@ -2,29 +2,30 @@
 title: Einrichten der Storefront
 description: Erfahren Sie, wie Sie Ihre Storefront  [!DNL Adobe Commerce Optimizer] .
 role: Developer
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: 7ff78711972cbd73fc75f7523d8ac734081dbe10
+source-git-commit: 475706df971e75091ee72e89d64088fa56aec4dd
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
 
 # Einrichten der Storefront
 
->[!NOTE]
+In diesem Tutorial finden Sie detaillierte Anweisungen zum Einrichten und Verwenden der [Adobe Commerce-Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/), um eine leistungsstarke, skalierbare und sichere Commerce-Storefront basierend auf Daten aus Ihrer [!DNL Adobe Commerce Optimizer]-Instanz zu erstellen.
+
+
+>[!TIP]
 >
->In dieser Dokumentation wird ein Produkt beschrieben, das sich in der Entwicklung für den frühzeitigen Zugriff befindet und nicht alle für die allgemeine Verfügbarkeit vorgesehenen Funktionen enthält.
-
-In diesem Tutorial erfahren Sie, wie Sie eine [Adobe Commerce-Storefront mit Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=de) einrichten und verwenden, um eine leistungsstarke, skalierbare und sichere Commerce-Storefront auf der Grundlage von Daten aus Ihrer [!DNL Adobe Commerce Optimizer]-Instanz zu erstellen.
-
+>Beschleunigen Sie den Einrichtungsprozess der Storefront, indem Sie das Tool Site Creator verwenden, um Ihr Storefront-Code-Repository und die Dokumenterstellungsumgebung einzurichten
+>>Automatisch. Anschließend können Sie diese Anweisungen verwenden, um zu verstehen, wie die Storefront erstellt wurde, und mehr über die Komponenten erfahren, die Ihnen zur Verfügung stehen.
 
 ## Voraussetzungen
 
 * Stellen Sie sicher, dass Sie über ein GitHub-Konto (github.com) verfügen, das Repositorys erstellen kann und für die lokale Entwicklung konfiguriert ist.
 
-* Erfahren Sie mehr über die Konzepte und den Workflow zur Entwicklung von Commerce-Storefronts mit Adobe Edge Delivery Services [ Sie in der Dokumentation ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=de) Adobe Commerce-Storefront .
+* Erfahren Sie mehr über die Konzepte und den Workflow zur Entwicklung von Commerce-Storefronts mit Adobe Edge Delivery Services [ Sie in der Dokumentation ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) Adobe Commerce-Storefront .
 * Einrichten der Entwicklungsumgebung
 
 
@@ -60,7 +61,7 @@ Installieren Sie Node Version Manager (NVM) und die erforderliche Node.js-Versio
 
 >[!TIP]
 >
->Zusätzliche Ressourcen zum Erweitern und Anpassen Ihrer [!DNL Adobe Commerce Optimizer]-Lösung sind über [App Builder für Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) und [API Mesh für Adobe Developer App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh) verfügbar. Wenden Sie sich für Informationen zu Zugriff und Nutzung an Ihren Adobe-Kundenbetreuer.
+>Zusätzliche Ressourcen zum Erweitern und Anpassen Ihrer [!DNL Adobe Commerce Optimizer]-Lösung sind über [App Builder für Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) und [API Mesh für Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh) verfügbar. Wenden Sie sich für Informationen zu Zugriff und Nutzung an Ihren Adobe-Kundenbetreuer.
 
 #### Installieren von Sidekick
 
@@ -68,7 +69,7 @@ Installieren Sie die Sidekick-Browser-Erweiterung, um Inhalte zu bearbeiten, in 
 
 ## Erstellen einer Storefront
 
-Die Storefront, die Sie für Ihr [!DNL Adobe Commerce Optimizer]-Projekt erstellen, verwendet eine angepasste Version des Textbausteins Adobe Commerce on Edge Delivery Services Storefront . Das Textbaustein ist ein Satz von Dateien und Ordnern, die einen Ausgangspunkt für die Entwicklung von Storefronts bieten. Dieser Einrichtungsprozess unterscheidet sich vom standardmäßigen Einrichtungsprozess für eine [Adobe Commerce in der Edge Delivery Services-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=de).
+Die Storefront, die Sie für Ihr [!DNL Adobe Commerce Optimizer]-Projekt erstellen, verwendet eine angepasste Version des Textbausteins Adobe Commerce on Edge Delivery Services Storefront . Das Textbaustein ist ein Satz von Dateien und Ordnern, die einen Ausgangspunkt für die Entwicklung von Storefronts bieten. Dieser Einrichtungsprozess unterscheidet sich vom standardmäßigen Einrichtungsprozess für eine [Adobe Commerce in der Edge Delivery Services-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
 >[!NOTE]
 >
@@ -107,7 +108,6 @@ Erstellen Sie mithilfe der Textbausteinvorlage von Edge Delivery Services und Ad
 1. Füllen Sie das Konfigurationsformular mit den folgenden Details aus:
 
    * **Repository-Vorlage** - `hlxsites/aem-boilerplate-commerce` (Standard).
-   * **Alle Verzweigungen einbeziehen** - Wählen Sie diese Option, um alle Verzweigungen einzubeziehen.
    * **Inhaber** - Ihr Unternehmen oder Konto (erforderlich).
    * **Repository-**: Ein eindeutiger Name für Ihr neues Repository (erforderlich).
    * **Beschreibung** - Eine kurze Beschreibung Ihres Repositorys (optional).
@@ -145,12 +145,6 @@ Sie benötigen die folgenden Informationen, um den Textbausteincode der Storefro
 
 1. Öffnen Sie das Repository in Ihrem Terminal oder in Ihrer IDE.
 
-1. Checken Sie die `aco` aus
-
-   ```bash
-   git checkout aco
-   ```
-
 1. Erstellen Sie die Konfigurationsdatei, indem Sie die `default-fstab.yaml` nach `fstab.yaml` kopieren.
 
    ```bash
@@ -159,7 +153,7 @@ Sie benötigen die folgenden Informationen, um den Textbausteincode der Storefro
 
 1. Aktualisieren Sie den Bereitstellungspunkt in der StoreFront-Konfigurationsdatei so, dass er auf Ihre Inhalts-URL verweist.
 
-   1. Öffnen Sie die [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=de#vocabulary) Konfigurationsdatei.
+   1. Öffnen Sie die [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary) Konfigurationsdatei.
 
       ```yaml
       mountpoints:
@@ -192,47 +186,39 @@ Sie benötigen die folgenden Informationen, um den Textbausteincode der Storefro
 >
 >Vergewissern Sie sich, dass Sie die [Sidekick-Erweiterung](https://www.aem.live/docs/sidekick#installation) in Ihrem Browser installiert haben.
 
-1. Öffnen Sie die `tools/sidekick/config.json`.
+1. Erstellen Sie eine neue `tools/sidekick`.
+
+   ```shell
+   mkdir tools/sidekick
+   ```
+
+1. Kopieren Sie die `demo-sidekick.json` Datei im Stammverzeichnis in das `tools/sidekick` Verzeichnis und benennen Sie sie in `config.json` um.
+
+   ```shell
+   cp demo-sidekick.json tools/sidekick/config.json
+   ```
+
+1. Passen Sie die Sidekick-Konfiguration für Ihre Site an.
+
+   Bearbeiten Sie im Verzeichnis `tools/sidekick/` Datei `config.json` .
 
    +++Sidekick-Konfigurationsdatei
 
    ```json
    {
-     "project": "Boilerplate",
-     "plugins": [
-       {
-         "id": "cif",
-         "title": "Commerce",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--{SITE}--{ORG}.aem.live/tools/picker/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       },
-       {
-         "id": "personalisation",
-         "title": "Personalisation",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--{SITE}--{ORG}.aem.live/tools/segments/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       }
-     ]
+     "project": "My Project",
+     "editUrlLabel": "Document Authoring",
+     "editUrlPattern": "https://da.live/edit#/{{org}}/{{site}}{{pathname}}"
    }
    ```
 
-   Weitere Informationen finden Sie in der Dokumentation [ Sidekick-Bibliothek ](https://www.aem.live/docs/sidekick-library).
-
-   +++
-
 1. Aktualisieren Sie die `url` mit den Werten für Ihr GitHub-Repository.
 
-   * Ersetzen Sie die `{ORG}` Zeichenfolge durch die Organisation oder den Benutzernamen für Ihr Repository.
+   * Ersetzen Sie die `{{ORG}}` Zeichenfolge durch die Organisation oder den Benutzernamen für Ihr Repository.
 
-   * Ersetzen Sie die `{SITE}` Zeichenfolge durch den Repository-Namen
+   * Ersetzen Sie die `{{SITE}}` Zeichenfolge durch den Repository-Namen.
+
+   * Die `pathname` wird vom System ausgefüllt.
 
    +++Beispiel einer aktualisierten Konfigurationsdatei
 
@@ -240,29 +226,9 @@ Sie benötigen die folgenden Informationen, um den Textbausteincode der Storefro
 
    ```json
    {
-     "project": "Boilerplate",
-     "plugins": [
-       {
-         "id": "cif",
-         "title": "Commerce",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/picker/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       },
-       {
-         "id": "personalisation",
-         "title": "Personalisation",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/segments/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       }
-     ]
+     "project": "My Project",
+     "editUrlLabel": "Document Authoring",
+     "editUrlPattern": "https://da.live/edit#/aco-storefront/early-adopter{{pathname}}"
    }
    ```
 
@@ -284,8 +250,8 @@ Um den benutzerdefinierten Textbausteincode für die Storefront zu verwenden, ü
 
    ```bash
    git status
-   On branch aco
-   Your branch is up to date with 'origin/aco'.
+   On branch main
+   Your branch is up to date with 'origin/main'.
    
    Changes to be committed:
     (use "git restore --staged <file>..." to unstage)
@@ -293,16 +259,16 @@ Um den benutzerdefinierten Textbausteincode für die Storefront zu verwenden, ü
         modified:   tools/sidekick/config.json
    ```
 
-1. Übergeben Sie die Änderungen an die `aco`.
+1. Übergeben Sie die Änderungen.
 
    ```bash
    git commit -m "Update storefront boilerplate for Adobe Commerce Optimizer"
    ```
 
-1. Überschreiben Sie das Textbaustein auf dem `main` Zweig mit den Änderungen auf dem `aco` Zweig.
+1. Übernehmen Sie Ihre Änderungen.
 
    ```bash
-   git push origin aco:main -f
+   git push
    ```
 
 ### Schritt 5: AEM Code Sync App hinzufügen
@@ -315,7 +281,7 @@ Verbinden Sie Ihr Repository mit dem Edge Delivery-Service, indem Sie die GitHub
 
 1. Öffnen Sie die Konfigurationsseite der [AEM Code Sync App](https://github.com/apps/aem-code-sync).
 
-1. Wählen Sie **Konfigurieren** und authentifizieren Sie sich dann bei dem **&#x200B;**&#x200B;oder **Konto**, das das von Ihnen erstellte Repository enthält.
+1. Wählen Sie **Konfigurieren** und authentifizieren Sie sich dann bei dem **** oder **Konto**, das das von Ihnen erstellte Repository enthält.
 
 1. Wählen Sie im Formular **Nur Repositorys auswählen** und wählen Sie dann das von Ihnen erstellte Repository aus.
 
@@ -327,7 +293,7 @@ Verbinden Sie Ihr Repository mit dem Edge Delivery-Service, indem Sie die GitHub
 
 Erstellen und initialisieren Sie Ihren Storefront-Inhalt in der auf `https://da.live` gehosteten Dokumentautorenumgebung mit dem Site Creator -Tool. Dieses Tool importiert den Beispielinhalt in die Dokumentautorenumgebung und schließt den Inhaltsvorschau- und Veröffentlichungsprozess für alle Dokumente im Beispielinhalt ab. Der Beispielinhalt umfasst die Seitenlayouts, Banner, Beschriftungen und andere Elemente, die in Ihre Storefront eingefügt werden.
 
-1. Öffnen Sie das [Tool Site Creator](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
+1. Öffnen Sie das Tool [Site-Erstellung](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)
 
 1. Konfigurieren des Repositorys:
 
@@ -474,4 +440,4 @@ Siehe den [End-to-End-Anwendungsfall für Storefront- und ](./use-case/admin-use
 
 >[!MORELIKETHIS]
 >
-> Weitere Informationen zum Aktualisieren von Website-Inhalten und [ Integration mit Commerce-Frontend-Komponenten und Backend-Daten finden Sie in der Dokumentation zur ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)Adobe Commerce Storefront .
+> Weitere Informationen zum Aktualisieren von Website-Inhalten und [ Integration mit Commerce-Frontend-Komponenten und Backend-Daten finden Sie in der Dokumentation zur ](https://experienceleague.adobe.com/developer/commerce/storefront/)Adobe Commerce Storefront .

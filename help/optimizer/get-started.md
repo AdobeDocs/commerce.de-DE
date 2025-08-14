@@ -3,11 +3,11 @@ title: Erste Schritte
 description: Erfahren Sie mehr über die ersten Schritte mit [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 87fbd979b0660af1bf3a8786eb1e1f5f79cea043
+source-git-commit: 5cb7dc4d2bd1b9bd43d4a858e4814ca803a49027
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,9 @@ Verwalten von Instanzen über Commerce Cloud Manager.
 Nach der Anmeldung zeigt das Dashboard alle in der Organisation verfügbaren Commerce-Produktinstanzen an.
 Die Spalte Produkt gibt an, für welche Commerce-Anwendung die Instanz bereitgestellt wird.
 
-Verwenden Sie die Filter- und Suchoptionen, um bestimmte Instanzen schnell zu finden. Sie können nach erstellten Daten, Region, Erstellt von, Produkttyp, Umgebung und Status suchen.
+![Instanzsuche und -filter](./assets/search-filter-instances.png){zoomable="yes"}
+
+Verwenden Sie die Filter- und Suchwerkzeuge, um bestimmte Instanzen schnell nach Erstellungsdatum, Region, Ersteller, Produkttyp, Umgebung oder Status zu finden.
 
 ### Zugriff auf die [!DNL Adobe Commerce Optimizer]
 
@@ -146,8 +148,11 @@ Beachten Sie die folgenden wichtigen Informationen:
 - **Commerce Optimizer-URL** für den Zugriff auf die [!DNL Adobe Commerce Optimizer]
 - **Instanz-ID** Die eindeutige Mandanten-ID, die die Instanz identifiziert
 
-Die Details zum Endpunkt und zur Instanz-ID sind erforderlich, um den API-Zugriff zu konfigurieren und ihn in Frontend-Anwendungen und Backend-Systeme zu integrieren.
-Wenn Sie keinen Zugriff auf die Details der Instanz haben, wenden Sie sich an den Administrator Ihres Unternehmens, um die Werte abzurufen.
+Wenn Sie Entwickler sind, benötigen Sie diese Details, um Ihre Entwicklungsumgebung einzurichten und eine Verbindung zu den [!DNL Adobe Commerce Optimizer]-APIs herzustellen.
+
+>[!NOTE]
+>
+>Um auf die Details der Instanz zugreifen zu können, müssen Sie in Ihrer Adobe IMS-Organisation über die erforderlichen Berechtigungen verfügen. Wenn die Details der Instanz nicht angezeigt werden oder Sie nicht auf die Anwendung zugreifen können, wenden Sie sich an den Administrator Ihrer Organisation.
 
 ### Instanznamen und Beschreibung bearbeiten
 
@@ -212,6 +217,6 @@ Nach Abschluss der Einrichtung:
 ### Hilfe erhalten
 
 - **Entwicklerressourcen**: [Entwicklerdokumentation](https://developer.adobe.com/commerce/services/optimizer/)
-- **Storefront-Ressourcen**: [Dokumentation zur Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)
-- **Tutorials**: [Commerce Optimizer-Tutorials](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Support**: [Adobe Commerce-Support-Ressourcen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/overview)
+- **Storefront-Ressourcen**: [Dokumentation zur Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Tutorials**: [Commerce Optimizer-Tutorials](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Support**: [Adobe Commerce-Support-Ressourcen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
