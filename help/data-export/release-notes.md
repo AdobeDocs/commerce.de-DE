@@ -4,9 +4,9 @@ description: Die neuesten Versionsinformationen für  [!DNL Data Export Extensio
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: d859da62f54cf9a86a57d34d5f74aae972dc99be
+source-git-commit: 0722458a67a945b13d2cb27d8848d58d909aea35
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ Zu den Aktualisierungen gehören:
 >Die SaaS-Datenexporterweiterung ist eine Sammlung von Modulen, die automatisch mit der Live-Suche, Produktempfehlungen und dem Katalog-Service installiert werden. Sie können die auf Ihrem System installierte Version mit dem Composer überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Aktuelle Hauptversion
+
+## Version 103.4.8
+
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem Produktpreis-Feeds nicht neu generiert wurden, wenn ein Produkt gelöscht oder die Produkt-SKU geändert wurde.<!--MDEE-1125-->
+![Korrektur](../assets/fix.svg) Die Verarbeitung von Produktaktualisierungen wurde verbessert, um sicherzustellen, dass Änderungen beim Aktualisieren eines neu erstellten Produkts mit derselben SKU wie ein zuvor gelöschtes Produkt korrekt widergespiegelt werden. Die Produktsynchronisierung verwendet jetzt korrekt aktualisierte Produkt-IDs, um einen korrekten und zuverlässigen Datenexport zu gewährleisten.<!--MDEE-1126-->
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem der Katalog-Service veraltete Variantendaten für konfigurierbare Produkte zurückgeben konnte, indem sichergestellt wurde, dass Produktaktualisierungsereignisse nach dem Löschen von Attributen veröffentlicht wurden.<!--MDEE-1127-->
 
 ## Version 103.4.8
 
