@@ -3,9 +3,9 @@ title: Für  [!DNL Payment Services]  aktivieren
 description: Schließen Sie den Onboarding-Prozess ab, indem Sie  [!DNL Payment Services]  für die Produktion aktivieren.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 0f2e9c3a7d990a46bafc5f3b8a083436d42643b5
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -27,10 +27,10 @@ Nachdem Sie [Commerce-Services konfiguriert](connect.md#configure-commerce-servi
 
    Diese Option ist sichtbar, wenn Sie [!DNL Payment Services] noch nicht als Zahlungsmethode für eine oder mehrere Ihrer Websites konfiguriert haben.
 
-   Sie gelangen in den Einstellungsbereich der Startansicht mit den entsprechenden erweiterten Optionen (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), wo Sie die [!DNL Payment Services] als [Zahlungsmethode“ ](https://experienceleague.adobe.com/de/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"} können.
+   Sie gelangen in den Einstellungsbereich der Startansicht mit den entsprechenden erweiterten Optionen (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), wo Sie die [!DNL Payment Services] als [Zahlungsmethode“ ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"} können.
 
-1. Legen Sie in _[!UICONTROL General Configuration]_&#x200B;**[!UICONTROL Enable]**&#x200B;auf `Yes` fest.
-1. Legen Sie **[!UICONTROL Payment Action]** sowohl für _[!UICONTROL Credit Card Fields]_&#x200B;als auch für&#x200B;_[!UICONTROL PayPal payment buttons]_ auf einen der folgenden Werte fest:
+1. Legen Sie in _[!UICONTROL General Configuration]_**[!UICONTROL Enable]**auf `Yes` fest.
+1. Legen Sie **[!UICONTROL Payment Action]** sowohl für _[!UICONTROL Credit Card Fields]_als auch für_[!UICONTROL PayPal payment buttons]_ auf einen der folgenden Werte fest:
 
    | Einstellung | Beschreibung |
    |---|---|
@@ -43,11 +43,11 @@ Nachdem Sie [Commerce-Services konfiguriert](connect.md#configure-commerce-servi
 
 1. Klicken Sie auf **[!UICONTROL Save]**.
 1. Klicken Sie auf **[!UICONTROL Go to Payment Services]** , um zur [!DNL Payment Services]-Startseite zurückzukehren.
-1. [Leeren Sie den Cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=de).
+1. [Leeren Sie den Cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
    Das Löschen sollte nach jeder Konfigurationsänderung erfolgen.
 
-Weitere Informationen [ Konfigurieren von Kreditkartenfeldern und PayPal](settings.md)Zahlungs-Buttons finden Sie unter „Konfigurieren von Zahlungsdiensten“.
+Weitere Informationen [ Konfigurieren  [!DNL Payment Services]](configure-admin.md) Kreditkartenfeldern und PayPal-Zahlungsschaltflächen finden Sie unter „Konfigurieren“.
 
 ## Umfassendes Onboarding von Händlern
 
@@ -155,9 +155,9 @@ Live-Zahlungen aktivieren:
 
 1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicken Sie auf der Startseite oben rechts auf der Seite auf **[!UICONTROL Settings]** . Siehe [Startseite](payments-home.md) für weitere Informationen.
-1. Legen Sie im Abschnitt _[!UICONTROL General Configuration]_&#x200B;**[!UICONTROL Payment mode]**&#x200B;auf `Production` fest.
+1. Legen Sie im Abschnitt _[!UICONTROL General Configuration]_**[!UICONTROL Payment mode]**auf `Production` fest.
 1. Klicken Sie auf **[!UICONTROL Save]**.
-1. [Leeren Sie den Cache](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
+1. [Leeren Sie den Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
    >[!IMPORTANT]
    >

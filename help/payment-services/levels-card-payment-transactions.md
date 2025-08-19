@@ -4,9 +4,9 @@ description: Kartenzahlungsverarbeitungs-Ebenen innerhalb  [!DNL Payment Service
 role: Admin
 feature: Payments, Paas, Saas
 exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Verarbeitung der Ebenen 2 und 3
 
 [!DNL Payment Services] bietet erweiterte Kartenverarbeitungsfunktionen, mit denen Händler ihre Zahlungsvorgänge optimieren und Interbankenentgelte senken können. Es stehen drei Ebenen der Kartenverarbeitung zur Verfügung, die jeweils unterschiedliche Anforderungen an Transaktionsdaten aufweisen.
+
+>[!CAUTION]
+>
+> [Fastlane](payments-options.md#fastlane-button) Bestellungen enthalten keine Daten der Stufe 2/Stufe 3, Zeileneinträge und Aufschlüsselung des Betrags.
 
 ## Datenanforderungen pro Verarbeitungsebene
 

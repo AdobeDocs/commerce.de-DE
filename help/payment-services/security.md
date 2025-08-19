@@ -3,10 +3,10 @@ title: Sicherheit und Compliance
 description: Überprüfen Sie die Sicherheits- und Compliance-Anforderungen für Ihre Site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html?lang=de
-source-git-commit: 9f7690ae325853b9b4a590b3d1cd538909a26462
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ Die Sicherheit ist in [!DNL Payment Services] von größter Wichtigkeit, und es 
 
 [!DNL Adobe Commerce] und [!DNL Magento Open Source] unterstützen verschiedene Sicherheitsfunktionen.
 
-Siehe [Sicherheit](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security){target="_blank"} im Core-Benutzerhandbuch, um die Best Practices für die Sicherheit zu überprüfen und zu erfahren, wie Sie Admin-Sitzungen und Anmeldeinformationen verwalten, CAPTCHA implementieren und Website-Einschränkungen verwalten.
+Siehe [Sicherheit](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"} im Core-Benutzerhandbuch, um die Best Practices für die Sicherheit zu überprüfen und zu erfahren, wie Sie Admin-Sitzungen und Anmeldeinformationen verwalten, CAPTCHA implementieren und Website-Einschränkungen verwalten.
 
 ## PCI-Compliance
 
 Die Zahlungskartenbranche (Payment Card Industry, PCI) hat eine Reihe von Anforderungen für Unternehmen festgelegt, die Zahlungen per Kreditkarte über das Internet akzeptieren. Neben der Aufrechterhaltung einer sicheren Umgebung sind Händler, die mit Kreditkarteninformationen von Kunden umgehen, dafür verantwortlich, einige Standardrichtlinien zu erfüllen.
 
-Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} für PCI-Compliance .
+Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} für PCI-Compliance .
 
 Händler können einen [Selbstbewertungsfragebogen (SAQ) ausfüllen](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"} bei dem es sich um ein Selbstvalidierungstool zur Bewertung der Sicherheit von Karteninhaberdaten handelt.
 
@@ -39,7 +39,7 @@ PCI 3-D Secure (3DS) ermöglicht die Authentifizierung des Käufers bei seinem K
 
 [!UICONTROL Payment Services] bietet 3DS-Funktionen, mit denen Händler die EU-Vorschriften einhalten und Kunden und Händler vor betrügerischen Aktivitäten in ihren Geschäften schützen können.
 
-Wenn Sie ein Händler in der EU oder Großbritannien sind, für den die 3DS-Konformität erforderlich ist, müssen Sie 3DS (standardmäßig `Off`) in [Einstellungen](settings.md#credit-card-fields) manuell aktivieren.
+Wenn Sie ein Händler in der EU oder Großbritannien sind, für den die 3DS-Konformität erforderlich ist, müssen Sie 3DS (standardmäßig `Off`) im [Konfigurationsadministrator](configure-admin.md#credit-card-fields) manuell aktivieren.
 
 >[!IMPORTANT]
 >
@@ -49,7 +49,7 @@ Bestellungen, die vom Händler-/Ladenpersonal für den Käufer aufgegeben werden
 
 >[!MORELIKETHIS]
 >
-> * Siehe [3DS in Einstellungen](settings.md#3ds) für weitere Informationen.
+> * Siehe [3DS in Einstellungen](configure-admin.md#3ds) für weitere Informationen.
 > * Weitere [ zu bestimmten Kreditkarten für 3DS-Tests finden Sie ](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/) der PayPal-Entwicklerdokumentation unter „Testkarten“.
 
 ### Kartengewölbe

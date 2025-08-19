@@ -3,7 +3,7 @@ title: Einrichten der Test-Sandbox
 description: Verwenden Sie ein PayPal-Sandbox-Konto, um  [!DNL Payment Services]  Testmodus zu verwenden.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -29,7 +29,7 @@ So schließen Sie das Sandbox-Onboarding ab:
       Wenn Sie während des PayPal-Onboarding-Prozesses ein PayPal-Sandbox-Konto erstellt haben, müssen Sie [Ihre Onboarding-Sandbox zurücksetzen](#reset-your-sandbox-account) da Sie sonst Ihre E-Mail nicht verifizieren können.
 
    1. Wählen Sie **[!UICONTROL Business]** als Kontotyp aus und klicken Sie auf **[!UICONTROL Create]**.
-   1. Klicken Sie im Abschnitt _[!UICONTROL Sandbox Accounts]_&#x200B;auf die drei Punkte in der Spalte&#x200B;_[!UICONTROL Manage accounts]_ für das von Ihnen erstellte Sandbox-Konto.
+   1. Klicken Sie im Abschnitt _[!UICONTROL Sandbox Accounts]_auf die drei Punkte in der Spalte_[!UICONTROL Manage accounts]_ für das von Ihnen erstellte Sandbox-Konto.
    1. Klicken Sie auf **[!UICONTROL View/edit account]**.
 
       ![PayPal - Sandbox-Konto anzeigen/bearbeiten](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -41,7 +41,7 @@ So schließen Sie das Sandbox-Onboarding ab:
 
    Diese Option ist sichtbar, wenn Sie das Sandbox-Onboarding für [!DNL Payment Services] noch nicht abgeschlossen haben.
 
-   Eine Sandbox-Händler-ID wird automatisch generiert und in [Einstellungen](settings.md) eingefügt. Diese ID darf nicht geändert werden.
+   Eine Sandbox-Händler-ID wird automatisch generiert und in [Einstellungen](configure-admin.md) eingefügt. Diese ID darf nicht geändert werden.
 
    Es wird ein PayPal-Fenster angezeigt, in dem Sie ein PayPal-Konto verbinden können, um mit der Annahme von Zahlungen zu beginnen.
 
