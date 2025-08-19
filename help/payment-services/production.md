@@ -27,7 +27,7 @@ Nachdem Sie [Commerce-Services konfiguriert](connect.md#configure-commerce-servi
 
    Diese Option ist sichtbar, wenn Sie [!DNL Payment Services] noch nicht als Zahlungsmethode für eine oder mehrere Ihrer Websites konfiguriert haben.
 
-   Sie gelangen in den Einstellungsbereich der Startansicht mit den entsprechenden erweiterten Optionen (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), wo Sie die [!DNL Payment Services] als [Zahlungsmethode“ ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"} können.
+   Sie gelangen in den Einstellungsbereich der Startansicht mit den entsprechenden erweiterten Optionen (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), wo Sie die [!DNL Payment Services] als [Zahlungsmethode“ ](https://experienceleague.adobe.com/de/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"} können.
 
 1. Legen Sie in _[!UICONTROL General Configuration]_&#x200B;**[!UICONTROL Enable]**&#x200B;auf `Yes` fest.
 1. Legen Sie **[!UICONTROL Payment Action]** sowohl für _[!UICONTROL Credit Card Fields]_&#x200B;als auch für&#x200B;_[!UICONTROL PayPal payment buttons]_ auf einen der folgenden Werte fest:
@@ -43,7 +43,7 @@ Nachdem Sie [Commerce-Services konfiguriert](connect.md#configure-commerce-servi
 
 1. Klicken Sie auf **[!UICONTROL Save]**.
 1. Klicken Sie auf **[!UICONTROL Go to Payment Services]** , um zur [!DNL Payment Services]-Startseite zurückzukehren.
-1. [Leeren Sie den Cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
+1. [Leeren Sie den Cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=de).
 
    Das Löschen sollte nach jeder Konfigurationsänderung erfolgen.
 
@@ -157,7 +157,7 @@ Live-Zahlungen aktivieren:
 1. Klicken Sie auf der Startseite oben rechts auf der Seite auf **[!UICONTROL Settings]** . Siehe [Startseite](payments-home.md) für weitere Informationen.
 1. Legen Sie im Abschnitt _[!UICONTROL General Configuration]_&#x200B;**[!UICONTROL Payment mode]**&#x200B;auf `Production` fest.
 1. Klicken Sie auf **[!UICONTROL Save]**.
-1. [Leeren Sie den Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
+1. [Leeren Sie den Cache](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
    >[!IMPORTANT]
    >
