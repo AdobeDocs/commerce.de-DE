@@ -3,11 +3,11 @@ title: End-to-End-Anwendungsfall für Storefront- und Katalogadministrator
 description: Erfahren Sie, wie Sie  [!DNL Adobe Commerce Optimizer]  verwenden, um Ihren Katalog mithilfe von Katalogansichten und Richtlinien zu verwalten, und wie Sie Ihre Storefront basierend auf Ihrer Katalogkonfiguration einrichten.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 1ab7ee5673f261b43db25caf0ad340a0fd9e3341
+source-git-commit: e5844cad1d666a81042db64e51e124e6444d19ac
 workflow-type: tm+mt
-source-wordcount: '2158'
+source-wordcount: '2179'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ In diesem Anwendungsbeispiel verwenden Sie Folgendes:
 
 >[!NOTE]
 >
-> Erfahren Sie mehr über die Konfigurationsdateien für Storefronts, indem Sie das Thema [Erkunden des Textbausteins](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=de) in der Dokumentation zur Adobe Commerce Storefront lesen.
+> Erfahren Sie mehr über die Konfigurationsdateien für Storefronts, indem Sie das Thema [Erkunden des Textbausteins](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) in der Dokumentation zur Adobe Commerce Storefront lesen.
 
 ### ‌Wichtige Erkenntnisse
 
@@ -185,11 +185,12 @@ Erstellen wir eine neue Richtlinie mit dem Namen *Celport-Teilekategorien* um di
    - **Attribut** = *part_category*
    - **Operator** = **IN**
    - **Wert Source** = **STATIC**
-   - **Wert** = *Bremsen*, *Aufhängung*
+   - **Wert** = *Bremsen*
+   - **Wert** = *Aussetzung*
 
    >[!IMPORTANT]
    >
-   >Stellen Sie sicher, dass der angegebene Attributname genau mit dem SKU-Attributnamen im Katalog übereinstimmt.
+   >Jeder Attributwert muss separat eingegeben werden. Drücken Sie nach der Eingabe eines Werts **Eingabetaste**, um ihn zur Filterkonfiguration hinzuzufügen. Geben Sie dann den nächsten Wert ein. Alle Werte müssen genau mit dem SKU-Attributnamen im Katalog übereinstimmen.
 
    Weitere Informationen über den Unterschied zwischen einer STATIC- und einer TRIGGER-Wertquelle finden Sie unter [Quelltypen von Werten](../setup/policies.md#value-source-types).
 
@@ -230,7 +231,8 @@ Erstellen Sie eine neue Katalogansicht für den *Celport*-Händler und verknüpf
 
    - **name** = *Celport*
    - **Catalog sources** = *en-US*
-   - **Richtlinien** (Dropdown verwenden) = *East Coast Inc Brands*; *Celport-Teilekategorien*; *Marke*; *Modell*                          
+   - **Richtlinien** (Dropdown verwenden) = *East Coast Inc Brands*; *Celport-Teilekategorien*; *Marke*; *Modell*
+                         
 1. Klicken Sie auf **[!UICONTROL Add]** , um die Katalogansicht zu erstellen.
 
    Die Seite mit den Katalogansichten wird aktualisiert, um die neue Katalogansicht anzuzeigen.
@@ -445,4 +447,4 @@ So erfahren Sie mehr über Adobe Commerce Optimizer:
 - Erfahren Sie mehr [erweiterte Richtlinienkonfigurationen](../setup/policies.md)
 - ([ Katalogansichten) ](../setup/catalog-view.md) andere Händler einrichten
 - Lesen Sie die [API-Dokumentation](https://developer.adobe.com/commerce/services/optimizer/) für die programmgesteuerte Katalogverwaltung
-- Erfahren Sie, wie Sie Dropdown-Komponenten für Ihre Edge Delivery Services-Storefront konfigurieren, um benutzerdefinierte Storefront-Erlebnisse für die Produkterkennung, Empfehlungen und andere Storefront-Funktionen zu erstellen. Siehe die [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=de)
+- Erfahren Sie, wie Sie Dropdown-Komponenten für Ihre Edge Delivery Services-Storefront konfigurieren, um benutzerdefinierte Storefront-Erlebnisse für die Produkterkennung, Empfehlungen und andere Storefront-Funktionen zu erstellen. Siehe die [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
