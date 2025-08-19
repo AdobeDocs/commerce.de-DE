@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Sie können [!DNL Payment Services] mit hilfreichen Einstellungen auf der [!DNL Payment Services]-Startseite an Ihre Anforderungen anpassen.
 
-Um [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] zu konfigurieren, klicken Sie auf **[!UICONTROL Settings]**. Diese Konfigurationsoptionen gelten nur für die Umgebung, die im Feld _[!UICONTROL Payment mode]_der Konfigurationsoptionen[_ Allgemein _festgelegt ](#configure-general-settings).
+Um [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] zu konfigurieren, klicken Sie auf **[!UICONTROL Settings]**. Diese Konfigurationsoptionen gelten nur für die Umgebung, die im Feld _[!UICONTROL Payment mode]_&#x200B;der Konfigurationsoptionen[_ Allgemein _festgelegt ](#configure-general-settings).
 
 Informationen zur Multi-Store- oder Legacy-Konfiguration finden Sie [Konfigurieren von in der Admin-](configure-admin.md)).
 
@@ -34,9 +34,9 @@ Sie können [!DNL Payment Services] für Ihre Website aktivieren und entweder Sa
 
    ![React-Einstellungsansicht](assets/react-settings-view.png){width="500" zoomable="yes"}
 
-   Der Abschnitt _[!UICONTROL General]_enthält Einstellungen, mit denen [!DNL Payment Services] als Zahlungsmethode aktiviert wird.
+   Der Abschnitt _[!UICONTROL General]_&#x200B;enthält Einstellungen, mit denen [!DNL Payment Services] als Zahlungsmethode aktiviert wird.
 
-1. Um [!DNL Payment Services] als Zahlungsmethode für Ihren Store zu aktivieren, schalten Sie im Abschnitt _[!UICONTROL General]_den **[!UICONTROL Enable Payment Services as payment method]**auf `Yes` um.
+1. Um [!DNL Payment Services] als Zahlungsmethode für Ihren Store zu aktivieren, schalten Sie im Abschnitt _[!UICONTROL General]_&#x200B;den **[!UICONTROL Enable Payment Services as payment method]**&#x200B;auf `Yes` um.
 
 1. Wenn Sie noch [!DNL Payment Services] für Ihren Store testen, setzen Sie **Zahlungsmodus** auf `Sandbox`. Wenn Sie bereit sind, Live-Zahlungen zu aktivieren, setzen Sie sie auf `Production`.
 
@@ -95,7 +95,7 @@ Nachdem Sie [!UICONTROL Payment Services] für Ihre Website aktiviert haben, kö
 
 ### Kreditkartenfelder
 
-Die _[!UICONTROL Credit Card Fields]_Einstellungen bieten eine einfache und sichere Checkout-Option für Kreditkarten- oder Debitkarten-Zahlungsmethoden.
+Die _[!UICONTROL Credit Card Fields]_&#x200B;Einstellungen bieten eine einfache und sichere Checkout-Option für Kreditkarten- oder Debitkarten-Zahlungsmethoden.
 
 Weitere Informationen finden [ unter ](payments-options.md#credit-card-fields).
 
@@ -207,8 +207,8 @@ Sie können die Zahlungsoptionen für PayPal-Zahlungsschaltflächen aktivieren u
 | [!UICONTROL Title] | Shop-Ansicht | Fügen Sie den Text hinzu, der während des Checkouts als Titel für diese Zahlungsoption in der Ansicht Zahlungsmethode angezeigt werden soll. Optionen: Textfeld |
 | [!UICONTROL Payment Action] | Website | Die [Zahlungsaktion](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | Shop-Ansicht | Die Sortierreihenfolge für die angegebene Zahlungsmethode auf der Kasse. `Numeric Only` |
-| [!UICONTROL Show PayPal buttons on checkout page] | Shop-Ansicht | Aktivieren oder Deaktivieren von [!DNL PayPal payment buttons] auf der Kaufbestätigungsseite. Optionen: [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons on product detail page] | Shop-Ansicht | Aktivieren oder Deaktivieren von [!DNL PayPal payment buttons] auf der Produktdetailseite. Optionen: [!UICONTROL  Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons on checkout page] | Shop-Ansicht | Aktivieren oder Deaktivieren von [!DNL PayPal payment buttons] auf der Kaufbestätigungsseite. Optionen: [!UICONTROL &#x200B; Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons on product detail page] | Shop-Ansicht | Aktivieren oder Deaktivieren von [!DNL PayPal payment buttons] auf der Produktdetailseite. Optionen: [!UICONTROL &#x200B; Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | Shop-Ansicht | Aktivieren oder deaktivieren Sie [!DNL PayPal payment buttons] in der Vorschau des Mini-Warenkorbs. Optionen: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal buttons on cart page] | Shop-Ansicht | Aktivieren oder Deaktivieren von [!DNL PayPal payment buttons] auf der Warenkorbseite. Optionen: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal Pay Later button] | Shop-Ansicht | Aktivieren oder deaktivieren Sie die Option „Später bezahlen“, wenn die Zahlungsschaltflächen angezeigt werden. Optionen: [!UICONTROL Off] / [!UICONTROL On] |
@@ -220,7 +220,7 @@ Sie können die Zahlungsoptionen für PayPal-Zahlungsschaltflächen aktivieren u
 
 ### Schaltflächenstil
 
-Sie können auch die _[!UICONTROL Button style]_Optionen der Zahlungs-Schaltflächen konfigurieren:
+Sie können auch die _[!UICONTROL Button style]_&#x200B;Optionen der Zahlungs-Schaltflächen konfigurieren:
 
 1. Um die **[!UICONTROL Layout]** zu ändern, wählen Sie `Vertical` oder `Horizontal` aus.
 

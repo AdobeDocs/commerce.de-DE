@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Deutlicher Schutz vor Betrug
 
-Mit der Erweiterung „Signifyd[!DNL Payment Services] können Sie den automatischen Schutz vor Betrug für [ ](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
+Mit der Erweiterung „Signifyd[!DNL Payment Services] können Sie den automatischen Schutz vor Betrug für [&#128279;](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
 
 Adobe Commerce unterstützt Signifyd-Versionen 5.4.0 und höher. [!DNL Payment Services] unterstützt Signifikante Flüsse vor und nach der Authentifizierung.
 
@@ -45,12 +45,12 @@ Da Signifyd einige Maßnahmen bei Ihren Bestellungen ergreift, ist es notwendig,
 
 Diese Konfigurationsoptionen sind nicht mit den Zahlungsdiensten und der Signified-Integration kompatibel:
 
-* Wenn [!DNL Payment Services] mit der `Authorize` Zahlungsaktion konfiguriert ist _und_ sich im `PostAuth` befindet, wobei die _[!UICONTROL Decline Guarantees]_Option auf **Gutschrift erstellen**gesetzt ist.
+* Wenn [!DNL Payment Services] mit der `Authorize` Zahlungsaktion konfiguriert ist _und_ sich im `PostAuth` befindet, wobei die _[!UICONTROL Decline Guarantees]_&#x200B;Option auf **Gutschrift erstellen**&#x200B;gesetzt ist.
 
   Grund: [!DNL Payment Services] erstellt eine Autorisierungstransaktion, die Signify dann zurückerstatten versucht.
 
 
-* [!DNL Payment Services] wird mit der `Authorize and Capture` Zahlungsaktion konfiguriert _und_ Signifyd befindet sich im `PostAuth`-Modus, wobei die _[!UICONTROL Decline Guarantees]_Option auf **Auftrag stornieren**.
+* [!DNL Payment Services] wird mit der `Authorize and Capture` Zahlungsaktion konfiguriert _und_ Signifyd befindet sich im `PostAuth`-Modus, wobei die _[!UICONTROL Decline Guarantees]_&#x200B;Option auf **Auftrag stornieren**.
 
   Grund: [!DNL Payment Services] erstellt eine Erfassungstransaktion, die Signifyd dann zu annullieren versucht.
 

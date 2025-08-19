@@ -29,8 +29,8 @@ Nachdem Sie [Commerce-Services konfiguriert](connect.md#configure-commerce-servi
 
    Sie gelangen in den Einstellungsbereich der Startansicht mit den entsprechenden erweiterten Optionen (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), wo Sie die [!DNL Payment Services] als [Zahlungsmethode“ ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"} können.
 
-1. Legen Sie in _[!UICONTROL General Configuration]_**[!UICONTROL Enable]**auf `Yes` fest.
-1. Legen Sie **[!UICONTROL Payment Action]** sowohl für _[!UICONTROL Credit Card Fields]_als auch für_[!UICONTROL PayPal payment buttons]_ auf einen der folgenden Werte fest:
+1. Legen Sie in _[!UICONTROL General Configuration]_&#x200B;**[!UICONTROL Enable]**&#x200B;auf `Yes` fest.
+1. Legen Sie **[!UICONTROL Payment Action]** sowohl für _[!UICONTROL Credit Card Fields]_&#x200B;als auch für&#x200B;_[!UICONTROL PayPal payment buttons]_ auf einen der folgenden Werte fest:
 
    | Einstellung | Beschreibung |
    |---|---|
@@ -155,7 +155,7 @@ Live-Zahlungen aktivieren:
 
 1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicken Sie auf der Startseite oben rechts auf der Seite auf **[!UICONTROL Settings]** . Siehe [Startseite](payments-home.md) für weitere Informationen.
-1. Legen Sie im Abschnitt _[!UICONTROL General Configuration]_**[!UICONTROL Payment mode]**auf `Production` fest.
+1. Legen Sie im Abschnitt _[!UICONTROL General Configuration]_&#x200B;**[!UICONTROL Payment mode]**&#x200B;auf `Production` fest.
 1. Klicken Sie auf **[!UICONTROL Save]**.
 1. [Leeren Sie den Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
