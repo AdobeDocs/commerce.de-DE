@@ -2,10 +2,10 @@
 title: Onboarding
 description: Erfahren Sie mehr über die Anforderungen und unterstützten Plattformen in [!DNL Product Recommendations].
 exl-id: 7b8a1117-b6d5-4e5d-bb97-09f76a024cbd
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
-source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Das Onboarding für [!DNL Product Recommendations] erfordert Zugriff auf die Bef
 - [Implementierungs-Workflow](implementation-workflow.md)
 - [Installieren und Konfigurieren](install-configure.md)
 - [Einstellungen](settings.md)
-- [Überprüfen](verify.md)
+- [Überprüfen](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)
 - [Staging-Umgebung](staging-environment.md)
 
 ## Anforderungen
@@ -39,7 +39,7 @@ Das Onboarding für [!DNL Product Recommendations] erfordert Zugriff auf die Bef
 
 [!DNL Product Recommendations] können einer Seite als Page Builder-Inhaltstyp hinzugefügt werden. Informationen zum Hinzufügen der Page Builder-Unterstützung zu Produktempfehlungen finden Sie unter [ und Konfigurieren](install-configure.md).
 
-Anweisungen [[!DNL Page Builder]  Hinzufügen von [!DNL Product Recommendations] zu [!DNL Page Builder] Inhalten finden Sie unter Integration](page-builder.md).
+Anweisungen [[!DNL Page Builder]  Hinzufügen von ](page-builder.md) zu [!DNL Product Recommendations] Inhalten finden Sie unter Integration[!DNL Page Builder].
 
 ### SaaS-Preisindizierung
 
@@ -47,7 +47,7 @@ Kunden mit Produktempfehlungen können die [SaaS-Preisindizierung](../price-inde
 
 ### B2B-Unterstützung {#b2bsupport}
 
-B2B-Storefronts erfordern häufig eine komplexe Logik, die die Sichtbarkeit und Preisgestaltung des Produkts für jeden Kunden oder jede Kundengruppe bestimmt. [!DNL Product Recommendations] jetzt [Unterstützung](release-notes.md) diese Funktion, indem [Kategorieberechtigungen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=de), [freigegebene Kataloge](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=de) und [kundengruppenspezifische Preise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=de). Wenn Sie beispielsweise bestimmte Kategorien aus Ihrem Einzelhandelskunden-Segment ausgeblendet haben, werden einem Käufer in diesem Segment keine Empfehlungen für Produkte in diesen Kategorien angezeigt. Wenn Sie einen freigegebenen Katalog für bestimmte Kundengruppen und Unternehmen definieren, sehen diese Kunden außerdem nur Empfehlungen für Produkte, auf die sie zugreifen können. Alle empfohlenen Produkte spiegeln den korrekten kundengruppenspezifischen Preis basierend auf der Kundengruppe jedes Käufers wider.
+B2B-Storefronts erfordern häufig eine komplexe Logik, die die Sichtbarkeit und Preisgestaltung des Produkts für jeden Kunden oder jede Kundengruppe bestimmt. [!DNL Product Recommendations] jetzt [Unterstützung](release-notes.md) diese Funktion, indem [Kategorieberechtigungen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [freigegebene Kataloge](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) und [kundengruppenspezifische Preise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Wenn Sie beispielsweise bestimmte Kategorien aus Ihrem Einzelhandelskunden-Segment ausgeblendet haben, werden einem Käufer in diesem Segment keine Empfehlungen für Produkte in diesen Kategorien angezeigt. Wenn Sie einen freigegebenen Katalog für bestimmte Kundengruppen und Unternehmen definieren, sehen diese Kunden außerdem nur Empfehlungen für Produkte, auf die sie zugreifen können. Alle empfohlenen Produkte spiegeln den korrekten kundengruppenspezifischen Preis basierend auf der Kundengruppe jedes Käufers wider.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: Einstellungen
 description: Erfahren Sie, wie Sie die Quelle Ihrer  [!DNL Product Recommendations]  ändern und visuelle Empfehlungen aktivieren.
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
+source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Staging-Aufträge werden mithilfe der Staging-`environmentId` aufgezeichnet. Die
 
 Um die Quelle der Produktempfehlungsdaten zu ändern, wählen Sie den SaaS-Datenbereich mit den Verhaltensdaten aus, die Sie verwenden möchten. Bevor Sie beginnen, stellen Sie Folgendes sicher:
 
-- Die Datenerfassung in der Storefront muss [konfiguriert und aktiviert](install-configure.md) für Ihre Produktionsumgebung konfiguriert und [überprüft](verify.md), dass Verhaltensdaten an Adobe Commerce gesendet werden.
+- Die Datenerfassung in der Storefront muss [konfiguriert und aktiviert](install-configure.md) für Ihre Produktionsumgebung konfiguriert und [überprüft](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/), dass Verhaltensdaten an Adobe Commerce gesendet werden.
 - Ihr Katalog für die Nicht-Produktionsumgebung sollte im Wesentlichen mit Ihrem Produktionskatalog identisch sein. Durch die Verwendung ähnlicher Kataloge wird sichergestellt, dass die zurückgegebenen Produktempfehlungseinheiten die in der Produktion verwendeten Kataloge genau nachahmen.
 
 1. Melden Sie sich beim Administrator Ihrer produktionsfremden Adobe Commerce-Umgebung an.
