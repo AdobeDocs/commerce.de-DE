@@ -54,7 +54,7 @@ In diesem Artikel erfahren Sie, wie Sie:
 Bevor Sie beginnen, stellen Sie Folgendes sicher:
 
 - Sie haben die Berechtigung zur Verwendung von Real-Time CDP. Wenn Sie sich nicht sicher sind, wenden Sie sich an Ihren Systemintegrator oder das Entwicklungs-Team, das Projekte und Umgebungen verwaltet.
-- Sie [ die ](install.md)-Erweiterung in [ ](connect-data.md) und [!DNL Data Connection] [!DNL Commerce] konfiguriert.
+- Sie [ die ](install.md)-Erweiterung in [&#128279;](connect-data.md) und [!DNL Data Connection] [!DNL Commerce] konfiguriert.
 - Sie [bestätigt](connect-data.md#confirm-that-event-data-is-collected) dass Ihre [!DNL Commerce] Ereignisdaten am Experience Platform Edge eintreffen.
 
 ### &#x200B;1. Erstellen einer Zielgruppe
