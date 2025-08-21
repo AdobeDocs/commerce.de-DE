@@ -3,9 +3,9 @@ title: Versionshinweise
 description: Die neuesten Versionsinformationen zur  [!DNL Data Connection]  von Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 43020e33ce57861cf586ace12a0832b24c23872d
+source-git-commit: 90fcaa2cdd7c869ceddaeea7525cac00a41d94c5
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1257'
 ht-degree: 1%
 
 ---
@@ -24,9 +24,9 @@ Diese Versionshinweise enthalten Aktualisierungen der [!DNL Data Connection]-Erw
 
 Informationen zu Funktionsänderungen und -korrekturen im Zusammenhang mit Erweiterungen, die von der [!DNL Data Connection]-Erweiterung verwendet werden, finden Sie unter **Unterstützte Service-Updates**.
 
-Unter [Kommende Versionen](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/schedule) erfahren Sie mehr über Versionspläne und Support.
+Unter [Kommende Versionen](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) erfahren Sie mehr über Versionspläne und Support.
 
-In der Entwicklerdokumentation erfahren [, welche Commerce-Versionen dieses Modul unterstützen](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability).
+In der Entwicklerdokumentation erfahren [, welche Commerce-Versionen dieses Modul unterstützen](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Unterstützte Service-Updates
 
@@ -46,12 +46,12 @@ _2. August 2024_
 
 _24. Januar 2024_
 
-![Neu](../assets/new.svg) - Die `data-services-b2b`-Erweiterung wurde aktualisiert und enthält jetzt ein neues Anforderungsereignis namens [deleteRequisitionList](events.md#deleterequisitionlist) für B2B-Händler.
+![Neu](../assets/new.svg) - Die `data-services-b2b`-Erweiterung wurde aktualisiert und enthält jetzt ein neues Anforderungsereignis namens `deleteRequisitionList` für B2B-Händler.
 
 _16. November 2023_
 
 ![Behebung](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem fälschlicherweise eine Fehlermeldung angezeigt wurde, wenn eine Bestellung mit mehreren Versandadressen aufgegeben wurde.
-![Beheben](../assets/fix.svg) - Es wurde ein Problem im [productPageView](events.md#productpageview)-Ereignis behoben, bei dem das `productListItems.priceTotal`-Ereignisfeld den Preis nicht konvertierte, nachdem die Währung in der Store-Ansicht gewechselt wurde.
+![Korrigieren](../assets/fix.svg) - Es wurde ein Problem im `productPageView` behoben, bei dem das Feld &quot;`productListItems.priceTotal`-Ereignis“ den Preis nicht konvertierte, nachdem die Währung in der Store-Ansicht gewechselt wurde.
 ![Korrigieren](../assets/fix.svg) - Es wurde ein Problem im Feld &quot;`productListItems`&quot; behoben, bei dem der Währungscode nicht aktualisiert wurde, als der Händler die Store-Ansicht wechselte.
 
 _10. Oktober 2023_
@@ -59,11 +59,11 @@ _10. Oktober 2023_
 ![Neu](../assets/new.svg) - Neues Bestellstatusereignis hinzugefügt: [Bestellung fakturiert](events-backoffice.md#orderinvoiced), [Bestellartikelrücksendung eingeleitet](events-backoffice.md#orderitemsreturninitiated) und [Bestellartikelrücksendung abgeschlossen](events-backoffice.md#orderitemreturncompleted).
 ![Beheben](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem Änderungen an der Währungskonfiguration nach der Aktualisierung des Caches nicht in den Ereignissen widergespiegelt wurden.
 ![Behebung](../assets/fix.svg) - Es wurde ein Fehler behoben, der auftrat, wenn die Bestellbestätigungsmeldung nicht angezeigt wurde, wenn die asynchrone Bestellplatzierung aktiviert war.
-![Neu](../assets/new.svg) - Zum Ereignis [addToRequisitionList](events.md#addtorequisitionlist) für einfache Produkte wurden auf der Kategorieansichtsseite Daten hinzugefügt.
-![Beheben](../assets/fix.svg) - Es wurde ein Problem in den `selectedOptions` im Ereignis [addToRequisitionList](events.md#addtorequisitionlist) behoben, bei dem Produkte von der Bestellbestätigungsseite hinzugefügt wurden.
-![Neu](../assets/new.svg) - Produktdaten zum Ereignis [addToRequisitionList](events.md#addtorequisitionlist) hinzugefügt, wenn Produkte von der Kategorieansichtsseite zur Anforderungsliste hinzugefügt werden.
-![Neu](../assets/new.svg) - Ereignis [addToRequisitionList](events.md#addtorequisitionlist) hinzugefügt, wenn konfigurierbare Produkte auf der Produktansichtsseite zur Anforderungsliste hinzugefügt werden.
-![Neu](../assets/new.svg) - Hinzugefügte [addToRequisitionList](events.md#addtorequisitionlist) und [removeFromRequisitionList](events.md#removefromrequisitionlist), wenn die Produktmenge aus einer Anforderungsliste erhöht und/oder verringert wird.
+![Neu](../assets/new.svg) - Es wurden Daten zu `addToRequisitionList` Ereignis für einfache Produkte auf der Kategorieansichtsseite hinzugefügt.
+![Beheben](../assets/fix.svg) - Es wurde ein Problem in den `selectedOptions` im `addToRequisitionList` behoben, das auftrat, wenn Produkte von der Bestellbestätigungsseite hinzugefügt wurden.
+![Neu](../assets/new.svg) - Produktdaten zu `addToRequisitionList` Ereignis hinzugefügt, wenn Produkte von der Kategorieansichtsseite zur Anforderungsliste hinzugefügt werden.
+![Neu](../assets/new.svg) - Ereignis `addToRequisitionList` hinzugefügt, wenn konfigurierbare Produkte auf der Seite Produktansicht zur Anforderungsliste hinzugefügt werden.
+![Neu](../assets/new.svg) - `addToRequisitionList` und `removeFromRequisitionList` Ereignisse hinzugefügt, wenn die Produktmenge aus einer Anforderungsliste erhöht und/oder verringert wird.
 
 _10. Juni 2023_
 
@@ -141,7 +141,7 @@ _5. Juni 2024_
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"} Adobe Commerce-Versionen 2.4.4 und höher
 
 ![Korrigieren](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem beim Initiieren einer [Verlaufssynchronisierung) das falsche ](connect-data.md#specify-order-history-date-range) verwendet wurde.
-![Beheben](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem [startCheckout](events.md#startcheckout)-Ereignis nicht in Adobe Commerce 2.4.7 gesendet wurde.
+![Beheben](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem das `startCheckout`-Ereignis in Adobe Commerce 2.4.7 nicht gesendet wurde.
 
 ## 3.1.1
 

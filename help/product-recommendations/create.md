@@ -2,9 +2,9 @@
 title: Neue Empfehlung erstellen
 description: Erfahren Sie, wie Sie eine Produktempfehlungseinheit erstellen.
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
-source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
 1. Wechseln Sie in der _Admin_-Seitenleiste zu **Marketing** > _Promotions_ > **Produktempfehlungen**, um den _Produktempfehlungen_ anzuzeigen.
 
-1. Geben Sie [ „Store-](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/websites-stores-views)&quot; an, in der die Empfehlungen angezeigt werden sollen.
+1. Geben Sie [ „Store-](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)&quot; an, in der die Empfehlungen angezeigt werden sollen.
 
    >[!NOTE]
    >
-   > Empfehlungseinheiten von Page Builder müssen in der standardmäßigen Store-Ansicht erstellt werden, können dann aber überall verwendet werden. Weitere Informationen zum Erstellen von Produktempfehlungen mit Page Builder finden Sie unter [Inhalt hinzufügen - Produktempfehlungen](https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/add-content/recommendations).
+   > Empfehlungseinheiten von Page Builder müssen in der standardmäßigen Store-Ansicht erstellt werden, können dann aber überall verwendet werden. Weitere Informationen zum Erstellen von Produktempfehlungen mit Page Builder finden Sie unter [Inhalt hinzufügen - Produktempfehlungen](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Klicken Sie **Empfehlung erstellen**.
 
@@ -38,14 +38,14 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
    >[!NOTE]
    >
-   > Produktempfehlungen werden auf der Warenkorbseite nicht unterstützt, wenn Ihr Store so konfiguriert ist, dass [die Warenkorbseite sofort nach dem Hinzufügen eines Produkts zum Warenkorb angezeigt wird](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > Produktempfehlungen werden auf der Warenkorbseite nicht unterstützt, wenn Ihr Store so konfiguriert ist, dass [die Warenkorbseite sofort nach dem Hinzufügen eines Produkts zum Warenkorb angezeigt wird](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Startseite
    * Kategorie
    * Produktdetails
    * Warenkorb
    * Bestätigung
-   * [Page Builder](https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Sie können bis zu fünf aktive Empfehlungseinheiten für jeden Seitentyp und bis zu 25 für Page Builder erstellen. Der Seitentyp wird ausgegraut, wenn das Limit erreicht ist.
 
@@ -172,7 +172,7 @@ Im Folgenden sind mögliche Gründe und Lösungen für häufige Bewertungen der 
 * **Statisch-basiert** - Niedrige Prozentsätze für diese Indikatoren können durch fehlende Katalogdaten für die anzeigbaren Produkte verursacht werden. Wenn sie niedriger sind als erwartet, kann dieses Problem durch eine vollständige Synchronisierung behoben werden.
 * **Dynamisch-basiert** - Niedrige Prozentsätze für dynamisch-basierte Indikatoren können durch Folgendes verursacht werden:
 
-   * Fehlende Felder in den erforderlichen [Storefront-Ereignissen](events.md) für die entsprechenden Empfehlungstypen (requestId, Produktkontext usw.)
+   * Fehlende Felder in den erforderlichen [Storefront-Ereignissen](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) für die entsprechenden Empfehlungstypen (requestId, Produktkontext usw.)
    * Geringer Traffic im Store, sodass das Volumen der Verhaltensereignisse, die wir erhalten, gering ist.
    * Die Vielfalt der Verhaltensereignisse der Storefront in verschiedenen Produkten in Ihrem Store ist gering. Wenn beispielsweise nur zehn Prozent Ihrer Produkte die meiste Zeit angesehen oder gekauft werden, sind die entsprechenden Bereitschaftsindikatoren niedrig.
 

@@ -3,16 +3,18 @@ title: Erfassen von Daten
 description: Erfahren Sie, wie Ereignisse Daten für  [!DNL Product Recommendations] erfassen.
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: fe96b2922583c0fcb0fcadbdacead6267806f44b
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
 
 # Erfassen von Daten
 
-Wenn Sie SaaS-basierte Adobe Commerce-Funktionen wie [[!DNL Product Recommendations]](install-configure.md) oder [[!DNL Live Search]](../live-search/install.md) installieren und konfigurieren, stellen die Module die Verhaltensdatenerfassung für Ihre Storefront bereit. Dieser Mechanismus erfasst anonymisierte Verhaltensdaten von Ihren Käufern und unterstützt [!DNL Product Recommendations]. Beispielsweise wird das `view` Ereignis verwendet, um den `Viewed this, viewed that` Empfehlungstyp zu berechnen, und das `place-order` Ereignis wird verwendet, um den `Bought this, bought that` Empfehlungstyp zu berechnen.
+Wenn Sie [[!DNL Product Recommendations]](install-configure.md) installieren und konfigurieren, stellt das Modul die Verhaltensdatenerfassung in Ihrer Storefront bereit. Dieser Mechanismus erfasst anonymisierte Verhaltensdaten von Ihren Käufern und unterstützt [!DNL Product Recommendations]. Beispielsweise wird das `view` Ereignis verwendet, um den `Viewed this, viewed that` Empfehlungstyp zu berechnen, und das `place-order` Ereignis wird verwendet, um den `Bought this, bought that` Empfehlungstyp zu berechnen.
+
+Weitere Informationen zu den Verhaltensdaten[ die von ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)-Ereignissen erfasst werden, finden Sie in der [!DNL Product Recommendations]Entwicklerdokumentation“.
 
 >[!NOTE]
 >
@@ -77,61 +79,6 @@ Bei unzureichender Erfassung von Eingabedaten greifen die folgenden Empfehlungst
 - `Conversion (view to purchase)`
 - `Conversion (view to cart)`
 
-### -Events
-
-Der Ereignissammler für die [Adobe Commerce-Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) listet alle Ereignisse auf, die in Ihrer Storefront bereitgestellt wurden. In dieser Liste gibt es eine Teilmenge von Ereignissen, die spezifisch für [!DNL Product Recommendations] sind. Diese Ereignisse erfassen Daten, wenn Käufer mit Empfehlungseinheiten in der Storefront interagieren, und ermöglichen es den Metriken, zu analysieren, wie gut Ihre Empfehlungen funktionieren.
-
-| Ereignis | Beschreibung |
-| --- | --- |
-| `impression-render` | Wird gesendet, wenn die Empfehlungseinheit auf der Seite dargestellt wird. Wenn eine Seite zwei Empfehlungseinheiten hat (gekauft, Ansicht), werden zwei `impression-render` gesendet. Dieses Ereignis wird verwendet, um die Metrik für Impressionen zu verfolgen. |
-| `rec-add-to-cart-click` | Der Käufer klickt auf die Schaltfläche **Zum Warenkorb hinzufügen** für einen Artikel in der Empfehlungseinheit. |
-| `rec-click` | Der Käufer klickt in der Empfehlungseinheit auf ein Produkt. |
-| `view` | Wird gesendet, wenn die Empfehlungseinheit zu mindestens 50 % sichtbar wird, z. B. durch Scrollen auf der Seite nach unten. Wenn beispielsweise eine Empfehlungseinheit über zwei Zeilen verfügt, wird ein `view` gesendet, sobald eine Zeile plus ein Pixel der zweiten Zeile für den Erstkäufer sichtbar wird. Wenn der Erstkäufer die Seite mehrmals nach oben und unten scrollt, wird das `view` so oft gesendet, wie der Erstkäufer die gesamte Empfehlungseinheit erneut auf der Seite sieht. |
-
-Obwohl Produktempfehlungsmetriken für Luma-Storefronts optimiert sind, funktionieren sie auch mit anderen Storefront-Implementierungen:
-
-- [Edge Delivery-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=de)
-- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
-- [Benutzerdefiniertes Frontend (React, Vue JS)](headless.md)
-
-#### Erforderliche Dashboard-Ereignisse
-
-Die folgenden Ereignisse sind erforderlich, um das (Dashboard[[!DNL Product Recommendations]  auszufüllen](workspace.md)
-
-| Dashboard-Spalte | -Events | Feld verbinden |
-| ---------------- | --------- | ----------- |
-| Impressionen | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | `unitId` |
-| Ansichten | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | `unitId` |
-| Klicks | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click` | `unitId` |
-| Einnahmen | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | `unitId`, `sku`, `parentSku` |
-| LT-Umsatz | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | `unitId`, `sku`, `parentSku` |
-| CTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
-| vCTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
-
-Die folgenden Ereignisse sind nicht spezifisch für Produktempfehlungen, sind jedoch erforderlich, damit Adobe Sensei Kundendaten korrekt interpretiert:
-
-- `view`
-- `add-to-cart`
-- `place-order`
-
-#### Empfehlungstyp
-
-In dieser Tabelle werden die von den einzelnen Empfehlungstypen verwendeten Ereignisse beschrieben.
-
-| Empfehlungstyp | -Events | Seite |
-| --- | --- | --- |
-| Am häufigsten angezeigt | `page-view`<br>`product-view` | Produktdetailseite |
-| Am häufigsten gekauft | `page-view`<br>`place-order` | Warenkorb/Checkout |
-| Am häufigsten zum Warenkorb hinzugefügt | `page-view`<br>`add-to-cart` | Produktdetailseite<br>Produktlistenseite<br>Warenkorb<br>Wunschliste |
-| hat dieses angezeigt, hat Folgendes angezeigt | `page-view`<br>`product-view` | Produktdetailseite |
-| Das hier angesehen, das gekauft | Produkt-Recs | `page-view`<br>`product-view` | Produktdetailseite/<br>/Checkout |
-| Das kaufte ich, das kaufte ich | Produkt-Recs | `page-view`<br>`product-view` | Produktdetailseite |
-| Trend | `page-view`<br>`product-view` | Produktdetailseite |
-| Konversion: Zum Kauf anzeigen | Produkt-Recs | `page-view`<br>`product-view` | Produktdetailseite |
-| Konversion: Zum Kauf anzeigen | Produkt-Recs | `page-view`<br>`place-order` | Warenkorb/Checkout |
-| Konversion: In Warenkorb anzeigen | Produkt-Recs | `page-view`<br>`product-view` | Produktdetailseite |
-| Konversion: In Warenkorb anzeigen | Produkt-Recs | `page-view`<br>`add-to-cart` | Produktdetailseite<br>Produktlistenseite.<br>.<br> |
-
 #### Einschränkungen
 
 - Anzeigenblocker und Datenschutzeinstellungen können verhindern, dass Ereignisse erfasst werden, und können dazu führen, dass die Interaktion und der Umsatz [Metriken](workspace.md#column-descriptions) nicht erfasst werden. Darüber hinaus werden einige Ereignisse möglicherweise nicht gesendet, weil der Käufer die Seite oder das Netzwerk verlassen hat.
@@ -140,4 +87,4 @@ In dieser Tabelle werden die von den einzelnen Empfehlungstypen verwendeten Erei
 
 >[!NOTE]
 >
->Wenn [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=de) aktiviert ist, erfasst Adobe Commerce keine Verhaltensdaten, bis der Käufer der Verwendung von Cookies zustimmt. Wenn der Cookie-Einschränkungsmodus deaktiviert ist, erfasst Adobe Commerce standardmäßig Verhaltensdaten.
+>Wenn [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) aktiviert ist, erfasst Adobe Commerce keine Verhaltensdaten, bis der Käufer der Verwendung von Cookies zustimmt. Wenn der Cookie-Einschränkungsmodus deaktiviert ist, erfasst Adobe Commerce standardmäßig Verhaltensdaten.

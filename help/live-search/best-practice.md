@@ -2,9 +2,10 @@
 title: Best Practices für [!DNL Live Search]
 description: Erfahren Sie mehr über die Best Practices für die Implementierung von  [!DNL Live Search]  in Ihrem Store.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2429'
 ht-degree: 0%
 
 ---
@@ -100,7 +101,7 @@ Empfohlene Anwendungsfälle zum Einrichten von Suchumleitungen:
 
 Testen Sie immer die Umleitungen der Suche, um sicherzustellen, dass sie ordnungsgemäß funktionieren und zu den relevantesten Seiten führen. Überwachen Sie kontinuierlich ihre Leistung und nehmen Sie bei Bedarf Anpassungen vor.
 
-Erfahren Sie, wie [Suchumleitungen verwalten](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-terms).
+Erfahren Sie, wie [Suchumleitungen verwalten](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms).
 
 ## Relevanz der Suchergebnisse verbessern
 
@@ -128,7 +129,7 @@ Es ist von entscheidender Bedeutung, eine gut durchdachte Standard-Suchregel fes
 - Produkte mit höheren Gewinnspannen leicht priorisieren, ohne die Relevanz zu beeinträchtigen.
 - Heben Sie Produkte hervor, die zum Verkauf stehen oder Teil von Sonderaktionen sind.
 - Legen Sie Suchregeln während der Promotion oder des Verkaufszeitraums automatisch fest, indem Sie den Datumsbereich während des Promotion-Zeitraums verwenden.
-- Passen Sie Suchergebnisse mithilfe von „Intelligent Ranking[ wie &quot;](rules-add.md#intelligent-ranking) für Sie empfohlen“, „Am häufigsten angezeigt“ usw. an das individuelle Kundenverhalten an. Um das Kundenverhalten anzupassen, müssen Sie sicherstellen, dass das Eventing korrekt implementiert ist. Für Händler in Luma ist das Eventing vorkonfiguriert verfügbar. Bei Headless- oder benutzerdefinierten Implementierungen müssen Sie [Ereignis implementieren](events.md) basierend auf Ihren spezifischen Anforderungen.
+- Passen Sie Suchergebnisse mithilfe von „Intelligent Ranking[ wie &quot;](rules-add.md#intelligent-ranking) für Sie empfohlen“, „Am häufigsten angezeigt“ usw. an das individuelle Kundenverhalten an. Um das Kundenverhalten anzupassen, müssen Sie sicherstellen, dass das Eventing korrekt implementiert ist. Für Händler in Luma ist das Eventing vorkonfiguriert verfügbar. Bei Headless- oder benutzerdefinierten Implementierungen müssen Sie [Ereignis implementieren](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) basierend auf Ihren spezifischen Anforderungen.
 
 Weitere Informationen zu Suchregeln:
 
@@ -139,7 +140,7 @@ Weitere Informationen zu Suchregeln:
    - [Erstellen](rules-add.md)
    - [Bearbeiten, Anzeigen, Löschen](rules-manage.md)
 - Datenerfassung
-   - [Ereignisse [!DNL Live Search]](events.md)
+   - [[!DNL Live Search] Ereignisse](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
    - [Adobe Commerce Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)
    - [GitHub-Commerce-Ereignisse](https://github.com/adobe/commerce-events/tree/main/examples) 
 
@@ -154,7 +155,7 @@ Stellen Sie sicher, dass jedes Produkt relevanten Inhalt in jedem durchsuchbaren
 Weitere Informationen zu Produktattributen für die Suche:
 
 - [Festlegen von Attributen als durchsuchbar](workspace.md#set-attributes-as-searchable)
-- [Attributen Gewichtung zuweisen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Attributen Gewichtung zuweisen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Suchergebnisse überwachen
 
@@ -195,4 +196,4 @@ Sie können diese Metrikdaten verwenden, um Ihre Suchfunktion wie folgt zu optim
 - Analysieren Sie beliebte Suchbegriffe und Produktdaten, um wichtige Keywords zu identifizieren. Optimieren Sie die durchsuchbaren Attribute Ihres Produkts mit diesen Keywords, um die Suchrelevanz zu verbessern.
 - Analysieren Sie Ihre Ergebnisdaten regelmäßig, um sich ändernde Trends, Kundenpräferenzen und -verhalten zu verstehen, die wichtigsten Suchbegriffe zu identifizieren und Probleme zu erkennen. Verwenden Sie diese Feedback-Schleife, um Ihre Suchregeln und Produktangebote kontinuierlich zu verfeinern und zu verbessern
 
-Um korrekte Daten in Ihrem [!DNL Live Search]-Bericht zu erhalten, müssen Sie sicherstellen, dass das Eventing korrekt implementiert ist. Für Händler in Luma ist das Eventing vorkonfiguriert verfügbar. Bei Headless- oder benutzerdefinierten Implementierungen müssen Sie [Ereignis implementieren](events.md) basierend auf Ihren spezifischen Anforderungen.
+Um korrekte Daten in Ihrem [!DNL Live Search]-Bericht zu erhalten, müssen Sie sicherstellen, dass das Eventing korrekt implementiert ist. Für Händler in Luma ist das Eventing vorkonfiguriert verfügbar. Bei Headless- oder benutzerdefinierten Implementierungen müssen Sie [Ereignis implementieren](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) basierend auf Ihren spezifischen Anforderungen.
