@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Im Folgenden sind die Commerce-Verhaltensereignisse aufgeführt, die bei der Installation der [!DNL Data Connection] verfügbar sind. Die von diesen Ereignissen erfassten Daten werden an die Adobe Experience Platform gesendet. Sie können auch [benutzerspezifische Ereignisse](custom-events.md) erstellen, um zusätzliche Daten zu erfassen, die nicht vorkonfiguriert bereitgestellt werden.
 
-Zusätzlich zu den Daten, die die folgenden Ereignisse erfassen, erhalten Sie auch [andere Daten](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) bereitgestellt von der Adobe Experience Platform Web SDK.
+Zusätzlich zu den Daten, die die folgenden Ereignisse erfassen, erhalten Sie auch [andere Daten](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=de) bereitgestellt von der Adobe Experience Platform Web SDK.
 
 Die Verhaltensereignisse erfassen anonymisierte Verhaltensdaten von Ihren Kundinnen und Kunden, während sie Ihre Website durchsuchen. Sie können die von diesen Ereignissen erfassten Daten verwenden, um Werbeaktionen und Kampagnen für eine bestimmte Gruppe von Käufern zu erstellen.
 
 >[!NOTE]
 >
->Alle Verhaltensereignisse umfassen das Feld [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) , das die E-Mail-Adresse des Käufers (sofern verfügbar) und die ECID enthält.
+>Alle Verhaltensereignisse umfassen das Feld [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=de) , das die E-Mail-Adresse des Käufers (sofern verfügbar) und die ECID enthält.
 
 ## Storefront-Ereignisse
 
@@ -47,6 +47,6 @@ Weitere Informationen zu Suchereignissen finden [ in ](https://developer.adobe.c
 
 ![B2B für Adobe Commerce](../assets/b2b.svg) Für B2B-Händler müssen [ die ](install.md#install-the-b2b-extension)-Erweiterung `experience-platform-connector-b2b`installieren“, um auf diese Ereignisse zugreifen zu können.
 
-Die B2B-Ereignisse enthalten [Anforderungsliste](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) Informationen, z. B. ob eine Anforderungsliste erstellt, hinzugefügt oder gelöscht wurde. Durch die Verfolgung von für Anforderungslisten spezifischen Ereignissen können Sie sehen, welche Produkte Ihre Kunden häufig kaufen, und auf dieser Grundlage Kampagnen erstellen.
+Die B2B-Ereignisse enthalten [Anforderungsliste](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html?lang=de) Informationen, z. B. ob eine Anforderungsliste erstellt, hinzugefügt oder gelöscht wurde. Durch die Verfolgung von für Anforderungslisten spezifischen Ereignissen können Sie sehen, welche Produkte Ihre Kunden häufig kaufen, und auf dieser Grundlage Kampagnen erstellen.
 
 Weitere Informationen zu B2B[Ereignissen finden ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection) in der Entwicklerdokumentation .
