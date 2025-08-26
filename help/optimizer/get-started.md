@@ -3,11 +3,11 @@ title: Erste Schritte
 description: Erfahren Sie mehr über die ersten Schritte mit [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 5cb7dc4d2bd1b9bd43d4a858e4814ca803a49027
+source-git-commit: 89099811cd04b92a56fd3c1bda98c586e988f878
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -38,24 +38,24 @@ Führen Sie die folgenden Schritte aus, um Ihre [!DNL Adobe Commerce Optimizer]-
    ![Instanz erstellen](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
 1. Instanzeinstellungen konfigurieren:
-   - **Name**: Beschreibender Name (z. B. „Meine Unternehmens-Sandbox„)
+   - **Instance Name**: Beschreibender Name (z. B. „My Company Sandbox„)
    - **Beschreibung**: Kurze Beschreibung des Zwecks
-   - **Region**: Wählen Sie Ihre bevorzugte Region aus
    - **Umgebungstyp**: Beginnen Sie zum Testen mit **Sandbox**-Umgebung
+   - **Region**: Wählen Sie Ihre bevorzugte Region aus
 
 1. Klicken Sie **Instanz hinzufügen**.
 
-   Die Cloud Manager wird aktualisiert und enthält jetzt auch Ihre neue Instanz. Weitere Informationen zum Zugriff und zur Verwaltung finden Sie unter [Verwalten einer Instanz](#manage-an-instance).
+   Die Cloud Manager wird aktualisiert und enthält jetzt auch Ihre neue Instanz. Weitere Informationen zum Zugriff und zur Verwaltung finden Sie unter [Verwalten einer Instanz](#manage-instances).
 
 >[!NOTE]
 >
->Sandbox-Instanzen sind auf die Region Nordamerika beschränkt. Sie können die Region nach der Erstellung nicht mehr ändern.
+>Sie können Sandbox-Umgebungen nur in der nordamerikanischen Region erstellen. Nachdem eine Instanz erstellt wurde, können Sie die Region nicht mehr ändern.
 
 ### Schritt 2. Einrichten der Umgebung
 
 Nach dem Erstellen der Instanz:
 
-1. [Instanz verwalten](#manage-an-instance) über Commerce Cloud Manager.
+1. [Instanz verwalten](#manage-instances) über Commerce Cloud Manager.
 1. Konfigurieren Sie den Benutzerzugriff mithilfe des [Benutzerhandbuchs für die ](./user-management.md)&quot;
 
 ### Schritt 3. Beispieldaten hinzufügen (optional)
@@ -217,6 +217,6 @@ Nach Abschluss der Einrichtung:
 ### Hilfe erhalten
 
 - **Entwicklerressourcen**: [Entwicklerdokumentation](https://developer.adobe.com/commerce/services/optimizer/)
-- **Storefront-Ressourcen**: [Dokumentation zur Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)
-- **Tutorials**: [Commerce Optimizer-Tutorials](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Support**: [Adobe Commerce-Support-Ressourcen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/overview)
+- **Storefront-Ressourcen**: [Dokumentation zur Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Tutorials**: [Commerce Optimizer-Tutorials](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Support**: [Adobe Commerce-Support-Ressourcen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
