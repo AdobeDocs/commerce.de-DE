@@ -3,16 +3,16 @@ title: Benutzerdefinierter automatischer Abgleich
 description: Erfahren Sie, wie die benutzerdefinierte automatische Zuordnung besonders für Händler mit komplexer Abgleichlogik oder für Händler nützlich ist, die auf einem Drittanbietersystem basieren, das keine Metadaten in AEM Assets einfügen kann.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: ff6affa5bcc4111e14054f3f6b3ce970619ca295
+source-git-commit: ee1dd902a883e5653a9fb8764fac708975c37091
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '323'
 ht-degree: 1%
 
 ---
 
 # Benutzerdefinierter automatischer Abgleich
 
-Wenn die standardmäßige automatische Abgleichstrategie (**OOTB Automatic Matching**) nicht an Ihren spezifischen Geschäftsanforderungen ausgerichtet ist, wählen Sie die Option Benutzerdefinierte Abgleichung aus. Diese Option unterstützt die Verwendung von [Adobe Developer App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) zum Entwickeln einer benutzerdefinierten Matcher-Anwendung, die komplexe Matching-Logik verarbeitet, oder von Assets, die von einem Drittanbietersystem stammen, das keine Metadaten in AEM Assets einfügen kann.
+Wenn die standardmäßige automatische Abgleichstrategie (**OOTB Automatic Matching**) nicht an Ihren spezifischen Geschäftsanforderungen ausgerichtet ist, wählen Sie die Option Benutzerdefinierte Abgleichung aus. Diese Option unterstützt die Verwendung von [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) zum Entwickeln einer benutzerdefinierten Matcher-Anwendung, die komplexe Matching-Logik verarbeitet, oder von Assets, die von einem Drittanbietersystem stammen, das keine Metadaten in AEM Assets einfügen kann.
 
 ## Konfigurieren von benutzerdefiniertem automatischem Abgleich
 
@@ -24,7 +24,7 @@ Wenn die standardmäßige automatische Abgleichstrategie (**OOTB Automatic Match
 
 ## Benutzerdefinierte Matcher-API-Endpunkte
 
-Wenn Sie eine benutzerdefinierte Matcher-Anwendung mit [App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} erstellen, muss die Anwendung die folgenden Endpunkte bereitstellen:
+Wenn Sie eine benutzerdefinierte Matcher-Anwendung mit [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} erstellen, muss die Anwendung die folgenden Endpunkte bereitstellen:
 
 * Endpunkt **App Builder-Asset zur Produkt** URL
 * Endpunkt **App Builder-Produkt zu Asset** URL
@@ -76,8 +76,8 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 
 | Parameter | Datentyp | Beschreibung |
 | --- | --- | --- |
-| `assetId` | Zeichenfolge | Stellt die aktualisierte Asset-ID dar |
-| `eventData` | Zeichenfolge | Gibt die mit dem `assetId` verknüpfte Daten-Payload aus. |
+| `assetId` | Zeichenfolge | Stellt die aktualisierte Asset-ID dar. |
+| `eventData` | Zeichenfolge | Gibt die Daten-Payload zurück, die mit der Asset-ID verknüpft ist. |
 
 **Antwort**
 
@@ -136,22 +136,13 @@ exports.main = main;
 **Anfrage**
 
 ```bash
-GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
+POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
 ```
 
 | Parameter | Datentyp | Beschreibung |
 | --- | --- | --- |
 | `productSKU` | Zeichenfolge | Stellt die aktualisierte Produkt-SKU dar. |
-| `asset_matches` | Zeichenfolge | Gibt alle mit einem bestimmten `productSku` verknüpften Assets aus |
-
-Der `asset_matches`-Parameter enthält die folgenden Attribute:
-
-| Attribut | Datentyp | Beschreibung |
-| --- | --- | --- |
-| `asset_id` | Zeichenfolge | Stellt die aktualisierte Asset-ID dar. |
-| `asset_roles` | Zeichenfolge | Gibt alle verfügbaren Asset-Rollen zurück. Verwendet unterstützte [Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)Asset-Rollen wie `thumbnail`, `image`, `small_image` und `swatch_image`. |
-| `asset_format` | Zeichenfolge | Stellt die verfügbaren Formate für das Asset bereit. Mögliche Werte sind `image` und `video`. |
-| `asset_position` | Zeichenfolge | Zeigt die Position des Assets an. |
+| `eventData` | Zeichenfolge | Gibt die Daten-Payload zurück, die mit der Produkt-SKU verknüpft ist. |
 
 **Antwort**
 
@@ -161,12 +152,30 @@ Der `asset_matches`-Parameter enthält die folgenden Attribute:
   "asset_matches": [
     {
       "asset_id": "{ASSET_ID_1}",
-      "asset_roles": ["thumbnail","image"]
+      "asset_roles": ["thumbnail","image"],
+      "asset_position": 1,
+      "asset_format": image
     },
     {
       "asset_id": "{ASSET_ID_2}",
       "asset_roles": ["thumbnail"]
+      "asset_position": 2,
+      "asset_format": image     
     }
   ]
 }
 ```
+
+| Parameter | Datentyp | Beschreibung |
+| --- | --- | --- |
+| `productSKU` | Zeichenfolge | Stellt die aktualisierte Produkt-SKU dar. |
+| `asset_matches` | Zeichenfolge | Gibt alle Assets zurück, die mit einer bestimmten Produkt-SKU verknüpft sind. |
+
+Der `asset_matches`-Parameter enthält die folgenden Attribute:
+
+| Attribut | Datentyp | Beschreibung |
+| --- | --- | --- |
+| `asset_id` | Zeichenfolge | Stellt die aktualisierte Asset-ID dar. |
+| `asset_roles` | Zeichenfolge | Gibt alle verfügbaren Asset-Rollen zurück. Verwendet unterstützte [Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)Asset-Rollen wie `thumbnail`, `image`, `small_image` und `swatch_image`. |
+| `asset_format` | Zeichenfolge | Stellt die verfügbaren Formate für das Asset bereit. Mögliche Werte sind `image` und `video`. |
+| `asset_position` | Zeichenfolge | Zeigt die Position des Assets an. |
