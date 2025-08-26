@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Ereignisse [!DNL Adobe Commerce Optimiz
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
-source-git-commit: f12aff86957c2f8f1f830da6f481d28cd54e1f20
+source-git-commit: 7a77cc79be9b6f835668b394909ea2325b642b03
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -62,7 +62,7 @@ In dieser Tabelle werden die von der Produkterkennung verwendeten Ereignisse [Ra
 | Am häufigsten zum Warenkorb hinzugefügt | `page-view`<br>`add-to-cart` | Produktdetailseite<br>Produktlistenseite<br>Warenkorb<br>Wunschliste |
 | hat dieses angezeigt, hat Folgendes angezeigt | `page-view`<br>`product-view` | Produktdetailseite |
 
-#### Erforderliche Dashboard-Ereignisse
+### Erforderliche Dashboard-Ereignisse
 
 Einige Ereignisse sind erforderlich, um das Dashboard [Suchleistung“ ](../../manage-results/search-performance.md)
 
@@ -174,4 +174,4 @@ In dieser Tabelle werden die von den einzelnen Empfehlungstypen verwendeten Erei
 
 ## Support
 
-Wenn Sie Datendiskrepanzen feststellen oder Empfehlungen und Suchergebnisse nicht erwartungsgemäß funktionieren, [ Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Wenn Sie Datendiskrepanzen feststellen oder Empfehlungen und Suchergebnisse nicht erwartungsgemäß funktionieren, [ Sie ein Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
