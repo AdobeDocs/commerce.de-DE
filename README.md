@@ -1,8 +1,8 @@
 ---
-source-git-commit: 80c4b41ceb0d8809f82db61ce9c3df6b7e1d7102
+source-git-commit: 39977196f322cac571ecdb0219f006970aff3575
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 7%
+source-wordcount: '448'
+ht-degree: 5%
 
 ---
 # Technische Dokumentation zu Adobe Commerce
@@ -15,13 +15,13 @@ Dieses Projekt beachtet den [Adobe Open Source Code of Conduct](code-of-conduct.
 
 ## Über Ihre Beiträge zu Adobe-Inhalten
 
-Siehe das [Handbuch für Mitwirkende an Adobe-Dokumenten](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
+Siehe das [Handbuch für Mitwirkende an Adobe-Dokumenten](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
 
 ### Geringfügige Änderungen
 
-Wenn Sie kleinere Aktualisierungen beitragen möchten, besuchen Sie den Artikel und klicken Sie auf den Feedback-Bereich unten im Artikel, klicken Sie auf **Detaillierte Feedback-Optionen** und dann auf **Bearbeiten vorschlagen**, um zur Markdown-Quelldatei auf GitHub zu gelangen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen Leitfaden für Beitragende zu Adobe[Dokumenten .](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de)
+Wenn Sie kleinere Aktualisierungen beitragen möchten, besuchen Sie den Artikel und klicken Sie auf den Feedback-Bereich unten im Artikel, klicken Sie auf **Detaillierte Feedback-Optionen** und dann auf **Bearbeiten vorschlagen**, um zur Markdown-Quelldatei auf GitHub zu gelangen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen Leitfaden für Beitragende zu Adobe[Dokumenten .](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)
 
 Kleinere Korrekturen oder Erläuterungen, die Sie zur Dokumentation und zu Code-Beispielen in diesem Repository eingeben, werden von den Adobe-Nutzungsbedingungen abgedeckt.
 
@@ -37,7 +37,7 @@ Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entw
 
 Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
 
-Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [ Dokumenten .](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de)
+Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [ Dokumenten .](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)
 
 ## Verwenden von Markdown zum Formatieren des Themas
 
@@ -45,3 +45,31 @@ Alle Artikel in diesem Repository verwenden GitHub-Markdown. Wenn Sie mit Markdo
 
 - [Markdown-Grundlagen](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 - [Druckbare Markdown-Anleitung](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+## Pre-commit-Hooks für die Bildoptimierung
+
+Dieses Repository enthält automatisierte Hooks zur Vorabbestätigung, mit denen Bilder vor dem Commit optimiert werden. **Alle Mitwirkenden sollten diese Erweiterungspunkte aktivieren** um eine konsistente Bildoptimierung und eine reduzierte Repository-Größe sicherzustellen.
+
+### Schnelleinrichtung
+
+Führen Sie nach dem Klonen des Repositorys Folgendes aus:
+
+```bash
+.githooks/setup-hooks.sh
+```
+
+### Was die Haken tun
+
+- Gestaffelte Bilddateien automatisch erkennen (PNG, JPG, JPEG, GIF, SVG)
+- `image_optim` ausführen, um Bilder zu komprimieren und zu optimieren
+- Optimierte Bilder automatisch neu inszenieren
+- Sicherstellen, dass alle übergebenen Bilder ordnungsgemäß optimiert sind
+
+### Vorteile
+
+- Verringerte Repository-Größe
+- Schnelleres Laden von Seiten für die Dokumentation
+- Konsistente Bildqualität für alle Mitwirkenden
+- Keine manuelle Optimierung erforderlich
+
+Detaillierte Setup-Anweisungen, Fehlerbehebung und Konfiguration finden Sie unter [`.githooks/README.md`](.githooks/README.md).
