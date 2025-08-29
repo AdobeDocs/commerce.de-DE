@@ -3,10 +3,10 @@ title: Erste Schritte mit [!DNL Adobe Commerce as a Cloud Service]
 description: Erfahren Sie mehr über die ersten Schritte mit [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: d8c0cf5f54a8518b033013cdb24b25f8ff363f02
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+source-git-commit: a070fa6ba000e1b101deb3f0a96e53c5f2ece9a4
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Klicken Sie auf die folgenden Registerkarten, um allgemeine Workflow-Übersichte
 
 >[!TAB Administrator- und Händler-Workflow]
 
-Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Administratoren und Händler auf [!DNL Adobe Commerce as a Cloud Service]-Instanzen zugreifen und diese verwalten. Weitere Informationen zu Administrator-Workflows finden [ im Handbuch zu Adobe Admin Console ](https://helpx.adobe.com/de/enterprise/admin-guide.html).
+Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Administratoren und Händler auf [!DNL Adobe Commerce as a Cloud Service]-Instanzen zugreifen und diese verwalten. Weitere Informationen zu Administrator-Workflows finden [ im Handbuch zu Adobe Admin Console ](https://helpx.adobe.com/enterprise/admin-guide.html).
 
 ![[!DNL Adobe Commerce as a Cloud Service] Handelsflussdiagramm](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -93,13 +93,24 @@ Nachdem Sie eine Instanz erstellt haben, können Sie über die [!UICONTROL Comme
 >
 >Um Informationen zu Ihrer -Instanz, einschließlich der REST- und GraphQL-Endpunkte und der Admin-URL, anzuzeigen, klicken Sie auf das Informationssymbol neben dem Instanznamen.
 
+Die Basis-URLs für Ihre Admin- und -Endpunkte unterscheiden sich je nach Region und Umgebung. Verwenden Sie dazu das folgende Muster:
+
+* Administrator
+   * Produktionsadministrator in Nordamerika: `https://na1.admin.commerce.adobe.com`
+   * Sandbox-Admin in Nordamerika: `https://na1-sandbox.admin.commerce.adobe.com`
+   * Produktionsadministrator in Europa: `https://eu1.admin.commerce.adobe.com`
+* REST und GraphQL
+   * Nordamerika-Produktion GraphQL: `https://na1.api.commerce.adobe.com`
+   * Nordamerika Sandbox GraphQL: `https://na1-sandbox.api.commerce.adobe.com`
+   * Europa-Produktion GraphQL: `https://eu1.api.commerce.adobe.com`
+
 ## Importieren des Katalogs
 
 Standardmäßig enthalten [!DNL Adobe Commerce as a Cloud Service] Instanzen keine Produktdaten. Sie haben die Möglichkeit, beim Erstellen einer Instanz zu Test- und Lernzwecken Beispielproduktdaten einzubeziehen, bevor Sie Ihren eigenen Katalog importieren.
 
 Es gibt zwei Möglichkeiten, Ihren Katalog in [!DNL Adobe Commerce as a Cloud Service] zu importieren:
 
-* [**Commerce Admin**](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/import/data-import) - Eine benutzerfreundliche Oberfläche, über die Sie Ihre Katalogdaten mit wenigen Klicks importieren können.
+* [**Commerce Admin**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Eine benutzerfreundliche Oberfläche, über die Sie Ihre Katalogdaten mit wenigen Klicks importieren können.
 * [**JSON-API importieren**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - Eine REST-API, mit der Sie Ihre Katalogdaten programmgesteuert importieren können.
 
 <!-- TODO
