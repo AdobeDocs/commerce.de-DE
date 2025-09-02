@@ -3,10 +3,11 @@ title: Benutzerdefinierte Ereignisse erstellen
 description: Erfahren Sie, wie Sie benutzerdefinierte Ereignisse erstellen, um Ihre Adobe Commerce-Daten mit anderen Adobe DX-Produkten zu verbinden.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
+source-git-commit: 81fbcde11da6f5d086c2b94daeffeec60a9fdbcc
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 0%
+source-wordcount: '271'
+ht-degree: 1%
 
 ---
 
@@ -76,11 +77,7 @@ Attributüberschreibungen für Standardereignisse werden nur für die Experience
 
 Für jedes Ereignis mit `customContext` überschreibt der Collector Felder, die in den relevanten Kontexten festgelegt sind, mit Feldern in `customContext`. Der Anwendungsfall für Überschreibungen besteht darin, dass ein Entwickler Kontexte, die von anderen Teilen der Seite in bereits unterstützten Ereignissen festgelegt wurden, wiederverwenden und erweitern möchte.
 
->[!NOTE]
->
->Beim Überschreiben benutzerdefinierter Ereignisse sollte die Ereignisweiterleitung an Experience Platform für diesen Ereignistyp deaktiviert werden, um eine doppelte Zählung zu vermeiden.
-
-Beispiele:
+### Beispiele
 
 Produktansicht mit Überschreibungen, die über Adobe Commerce Events SDK veröffentlicht wurden:
 
@@ -131,6 +128,30 @@ In Experience Platform Edge:
   }
 }
 ```
+
+Luma-basierte Stores:
+
+In Luma-basierten Stores wird das Veröffentlichen von Ereignissen nativ implementiert. Daher können Sie benutzerdefinierte Daten festlegen, indem Sie `customContext` erweitern.
+
+Beispiel:
+
+```javascript
+mse.context.setCustom({
+  productListItems: [
+    {
+      productCategories: [
+        {
+          categoryID: "cat_15",
+          categoryName: "summer pants",
+          categoryPath: "pants/mens/summer",
+        },
+      ],
+    },
+  ],
+});
+```
+
+Weitere Informationen [ Umgang mit benutzerdefinierten Daten finden ](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md) unter „Außerkraftsetzung benutzerdefinierter Ereignisse“.
 
 >[!NOTE]
 >
