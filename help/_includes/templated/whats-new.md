@@ -1,5 +1,5 @@
 ---
-source-git-commit: 757c1f430346ef82cba0f708cdd17580d8e6dba9
+source-git-commit: c7c9c19936ed1db8e262daaf391bd2d168b91741
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 3%
@@ -23,12 +23,12 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>FEHLENDE Neuigkeiten im PR-#197 für Major-Updates: „Removing scaffolder“ zugewiesen zu jhoover (https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/197)</p>
+      <td><p>Sie können jetzt das Tool <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Site Creator</a> verwenden, um Ihre Storefront ohne Verwendung der CLI einzurichten.</p>
 </td>
       <td>
         Größere Aktualisierung
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf3954af26fba0aa943261a0673166c0537e692e">verpflichten</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf3954af26fba0aa943261a0673166c0537e692e">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
@@ -45,12 +45,12 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>FEHLENDE Neuigkeiten im PR-#158 zum neuen Thema: „Hinzufügen eines neuen Themas zu benutzerdefinierten Identitäten“, das eMar zugewiesen wurde (https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/158)</p>
+      <td><p>Es wurde ein Thema zum Hinzufügen von <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities">benutzerdefinierten Attributen zu Profilen</a> hinzugefügt.</p>
 </td>
       <td>
         Neues Thema
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/403b15368c52f3965e65a9175c82c2f6cd1773bb">verpflichten</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/403b15368c52f3965e65a9175c82c2f6cd1773bb">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
@@ -72,7 +72,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td>
         Feedback
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ad0c36006a01491aee1ca1643c6a3ab63f39f7e4">verpflichten</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ad0c36006a01491aee1ca1643c6a3ab63f39f7e4">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
