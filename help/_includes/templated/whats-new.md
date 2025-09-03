@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Sie können jetzt das Tool <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Site Creator</a> verwenden, um Ihre Storefront ohne Verwendung der CLI einzurichten.</p>
+      <td><p>Sie können jetzt das Tool <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/storefront">Site Creator</a> verwenden, um Ihre Storefront ohne Verwendung der CLI einzurichten.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -45,7 +45,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde ein Thema zum Hinzufügen von <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities">benutzerdefinierten Attributen zu Profilen</a> hinzugefügt.</p>
+      <td><p>Es wurde ein Thema zum Hinzufügen von <a href="https://experienceleague.adobe.com/de/docs/commerce/data-connection/customize-data/custom-identities">benutzerdefinierten Attributen zu Profilen</a> hinzugefügt.</p>
 </td>
       <td>
         Neues Thema
