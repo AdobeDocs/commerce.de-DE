@@ -3,7 +3,7 @@ title: Dynamisches Hinzufügen von Produktattributen
 description: Erfahren Sie, wie Sie dem Datenexport-Feed während des Datensynchronisierungsprozesses dynamisch benutzerdefinierte Produktattribute hinzufügen.
 role: Admin, Developer
 exl-id: d5ed7497-4be1-440a-a567-81b64fdc54fc
-source-git-commit: bf45670a0bc5fb02dd229a9e3d7af7f2676c5a1f
+source-git-commit: 37d5699315e34f1504602090fae5201ee51cf470
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Sie können Produktattribute erweitern, ohne sie in Adobe Commerce zu registrier
 
 ## Produktattribute hinzufügen
 
-Erstellen Sie ein Plug-in, das der `Magento\CatalogDataExporter\Model\Provider\Product\Attributes`-Klasse einen `customer_attribute` hinzufügt.
+Erstellen Sie ein Plug-in, das der `customer_attribute`-Klasse einen `Magento\CatalogDataExporter\Model\Provider\Product\Attributes` hinzufügt.
 
 1. Aktualisieren Sie die [Konfigurationsdatei für die Abhängigkeitseinspeisung](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`), um das Plug-in zu definieren.
 
@@ -176,3 +176,4 @@ Wenn Sie ein benutzerdefiniertes Produktattribut dynamisch erstellen und es für
    ```
    bin/magento saas:resync --feed=productattributes
    ```
+
