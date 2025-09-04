@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Das Modul Zusätzliche Produktattribute von Adobe Commerce erweitert Produktdaten-Feeds. Sie enthält zusätzliche Produktattribute aus Adobe Commerce-Produktkonfigurationen:
 
-* [Steuerklassifizierung](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
-* [Attribut festgelegt](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
-* [Inventar](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
+* [Steuerklassifizierung](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
+* [Attribut festgelegt](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
+* [Inventar](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
 
 Nach der Installation funktioniert das Modul automatisch. Die zusätzlichen Attribute werden während der Produktsynchronisierung erfasst und exportiert. Es ist keine zusätzliche Konfiguration erforderlich.
 
@@ -158,7 +158,7 @@ Das Modul Zusätzliche Produktattribute erweitert die vorhandenen Produkt-Feeds.
 * [Adobe Commerce-Datenexporterweiterung](manage-extension.md#update-a-module-to-a-specific-version), Version 103.4.11 oder höher
 * Zugriff auf [repo.magento.com](https://repo.magento.com)
 
-  Informationen zum Generieren von Schlüsseln und Abrufen der erforderlichen Berechtigungen finden Sie unter [Abrufen Ihrer Authentifizierungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Informationen zu Cloud-Installationen finden Sie im Handbuch zu [Commerce in Cloud-Infrastrukturen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+  Informationen zum Generieren von Schlüsseln und Abrufen der erforderlichen Berechtigungen finden Sie unter [Abrufen Ihrer Authentifizierungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Informationen zu Cloud-Installationen finden Sie im Handbuch zu [Commerce in Cloud-Infrastrukturen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
 * Zugriff auf die Befehlszeile des Adobe Commerce-Anwendungsservers.
 
 ### Installationsschritte
@@ -171,7 +171,7 @@ composer require adobe-commerce/module-extra-product-attributes
 
 Detaillierte Informationen zu den Installationsschritten finden Sie in den folgenden Handbüchern:
 
-* [Installieren der Erweiterung auf Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+* [Installieren der Erweiterung auf Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/extensions)
 * [Installieren der Erweiterung Adobe Commerce On-Premise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extension)
 
 ## Produktdaten synchronisieren
@@ -200,9 +200,9 @@ bin/magento saas:resync --feed=productAttributes
 
 * Überprüfen Sie, ob die Inventareinstellungen in der Admin Console korrekt konfiguriert sind
 * Auf Website-spezifische Inventar-Überschreibungen prüfen
-* Überprüfen, ob das [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview)Modul ordnungsgemäß funktioniert
+* Überprüfen, ob das [Inventory management](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/guide-overview)Modul ordnungsgemäß funktioniert
 
-Weitere Informationen finden Sie im [Inventory management-Handbuch](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) in der *Adobe Commerce-Händlerdokumentation*.
+Weitere Informationen finden Sie im [Inventory management-Handbuch](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/guide-overview) in der *Adobe Commerce-Händlerdokumentation*.
 
 **Leistungsprobleme:**
 
