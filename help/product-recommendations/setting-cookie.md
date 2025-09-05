@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Handhabung von Cookie-Einschränkungen
 
-Sowohl Adobe Commerce als auch Magento Open Source bitten um Zustimmung, bevor Daten in Browser-Cookies gespeichert werden. Weitere Informationen finden Sie unter [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html).
+Sowohl Adobe Commerce als auch Magento Open Source bitten um Zustimmung, bevor Daten in Browser-Cookies gespeichert werden. Weitere Informationen finden Sie unter [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=de).
 
 ## Handhabung von Cookie-Einschränkungen durch Produktempfehlungen
 
