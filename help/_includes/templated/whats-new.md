@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde Dokumentation für das optionale Modul <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">Zusätzliche Produktattribute“ </a>. Wenn dieses Modul in einer Adobe Commerce-Umgebung installiert wird, exportiert der Datenexportprozess automatisch Steuerklassen-, Attributsatz- und Bestandsmetadaten aus der Commerce-Produktkonfiguration in die <code class="language-plaintext highlighter-rouge">products</code>- und <code class="language-plaintext highlighter-rouge">product attributes</code>-Feeds.</p>
+      <td><p>Es wurde Dokumentation für das optionale Modul <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">Zusätzliche Produktattribute“ </a>. Wenn dieses Modul in einer Adobe Commerce-Umgebung installiert wird, exportiert der Datenexportprozess automatisch Steuerklassen-, Attributsatz- und Bestandsmetadaten aus der Commerce-Produktkonfiguration in die <code class="language-plaintext highlighter-rouge">products</code>- und <code class="language-plaintext highlighter-rouge">product attributes</code>-Feeds.</p>
 </td>
       <td>
         Neues Thema
@@ -45,7 +45,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Sie können jetzt das Tool <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Site Creator</a> verwenden, um Ihre Storefront ohne Verwendung der CLI einzurichten.</p>
+      <td><p>Sie können jetzt das Tool <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/storefront">Site Creator</a> verwenden, um Ihre Storefront ohne Verwendung der CLI einzurichten.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -67,7 +67,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde ein Thema zum Hinzufügen von <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities">benutzerdefinierten Attributen zu Profilen</a> hinzugefügt.</p>
+      <td><p>Es wurde ein Thema zum Hinzufügen von <a href="https://experienceleague.adobe.com/de/docs/commerce/data-connection/customize-data/custom-identities">benutzerdefinierten Attributen zu Profilen</a> hinzugefügt.</p>
 </td>
       <td>
         Neues Thema
