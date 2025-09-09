@@ -1,8 +1,9 @@
 ---
 title: Einstellungen
 description: Einstellungen konfigurieren für [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+exl-id: 6ac223de-8e03-4842-8b67-92ce321d323d
+source-git-commit: 652681cc9aef416040ccd470d04bf2540fe97262
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Die **Language** gibt [!DNL Adobe Commerce Optimizer] an, welche Sprache beim Sc
 Sie können die Anzahl der Preisbereichsgruppen und die Verteilung der Preiswerte untereinander angeben. Jede Preisspanne überschneidet sich mit der vorherigen Gruppe um eins. Beispielsweise erstellen fünf Gruppen mit einem Intervall von 20 die folgenden Preisbereiche: 0-20, 20-40, 40-60, 60-80 und >80. Wenn nicht genügend Produkte im Katalog vorhanden sind, um alle definierten Bereiche zu füllen, wird die Anzeige der verfügbaren Gruppen entsprechend angepasst. Beispiel: 0-20, 60-80, >80.
 
 1. Wählen Sie **Arbeitsbereich** Einstellungen“ die Option **[!UICONTROL Search]** aus und führen Sie dann unter **Preisfacettierung** folgende Schritte aus:
-   - Geben Sie die **Anzahl der** oder Preisgruppen ein, die verfügbar sein sollen. Es können bis zu 50 Preisgruppen definiert werden.
+   - Geben Sie die **Anzahl der** oder Preisgruppen ein, die verfügbar sein sollen. Es können bis zu 100 Preisgruppen definiert werden.
    - Geben Sie für jede Gruppe **Intervallwert** oder Preisbereich ein. Der maximale Wert ist 40.000.000.
 1. Klicken Sie **Speichern**.
 
@@ -32,7 +33,7 @@ Sie können die Anzahl der Preisbereichsgruppen und die Verteilung der Preiswert
 
 | Feld | Beschreibung |
 |--- |--- |
-| Anzahl der Auswahlen | Gibt die Anzahl der Preisbereichsgruppierungen an, die als Suchfilter in der Storefront verwendet werden können. Standardwert: 8, Höchstwert: 50 |
+| Anzahl der Auswahlen | Gibt die Anzahl der Preisbereichsgruppierungen an, die als Suchfilter in der Storefront verwendet werden können. Standardwert: 8, Höchstwert: 100 |
 | Intervallwert | Gibt das Preisintervall für jede Gruppe an. Beispiel: Bei fünf Auswahlen mit einem Intervallwert von 20 werden fünf Gruppierungen von 0-20, 20-40, 40-60, 60-80 und >80 erstellt. Standardwert: 5, Höchstwert: 40.000.000 |
 
 ## Sprache
