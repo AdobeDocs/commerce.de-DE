@@ -194,7 +194,7 @@ Nachdem ein(e) Benutzende(r) zu AEM Assets hinzugefügt wurde, kann er/sie auf d
 
 1. Klicken Sie im [!UICONTROL **Schnellzugriff**]-Abschnitt auf [!UICONTROL **Experience Manager**] oder klicken Sie auf [!UICONTROL **Alle anzeigen**] wenn [!UICONTROL **Experience Manager nicht angezeigt**]. Klicken Sie dann auf [!UICONTROL **Cloud Manager**] oder navigieren Sie direkt zu [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}.
 
-1. Cloud Manager Klicken Sie auf der Seite [!UICONTROL ****] auf [!UICONTROL **Programm hinzufügen**], um zu beginnen.
+1. Cloud Manager Klicken Sie auf der Seite [!UICONTROL **&#x200B;**] auf [!UICONTROL **Programm hinzufügen**], um zu beginnen.
 
 1. [Erstellen Sie ein neues Programm](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}.
 
