@@ -41,7 +41,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Durch die Aktivierung von [!DNL Product Recommendations] in Page Builder können Sie eine vorhandene, aktive [Empfehlungseinheit](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) zu allen in Page Builder erstellten Inhalten hinzufügen, z. B. Seiten, Blöcke und dynamische Blöcke.
+Durch die Aktivierung von [!DNL Product Recommendations] in Page Builder können Sie eine vorhandene, aktive [Empfehlungseinheit](https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/add-content/recommendations) zu allen in Page Builder erstellten Inhalten hinzufügen, z. B. Seiten, Blöcke und dynamische Blöcke.
 
 Weitere [ finden  [!DNL Product Recommendations]  unter „Verwenden ](page-builder.md) Page Builder-Inhalten“.
 
@@ -59,13 +59,13 @@ composer require magento/module-visual-product-recommendations
 
    Durch die Konfiguration dieser Verbindung wird die Datensynchronisation und Kommunikation zwischen der Commerce-Instanz, dem Katalog-Service und anderen unterstützenden Services aktiviert. Die Datensynchronisation wird von der [SaaS-Datenexporterweiterung“ ](../data-export/overview.md).
 
-1. Um sicherzustellen, dass der Katalogexport ordnungsgemäß ausgeführt werden kann, überprüfen Sie, ob [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)-Vorgänge und [indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) ausgeführt werden und der `Product Feed`-Indexer auf `Update by Schedule` festgelegt ist.
+1. Um sicherzustellen, dass der Katalogexport ordnungsgemäß ausgeführt werden kann, überprüfen Sie, ob [cron](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)-Vorgänge und [indexers](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers) ausgeführt werden und der `Product Feed`-Indexer auf `Update by Schedule` festgelegt ist.
 
 Nachdem Sie die Commerce-Anwendung erfolgreich mit Commerce Services verknüpft und den [SaaS-Datenspeicher](../landing/saas.md#saas-configuration) angegeben haben, beginnt die Katalogsynchronisierung. Sie können [ überprüfen](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) ob Verhaltensdaten an Ihre Storefront gesendet werden.
 
 ## Überwachen und Fehlerbehebung bei der Datensynchronisation
 
-Vom Commerce-Administrator aus können Sie den Synchronisierungsprozess mithilfe des [Daten-Management-Dashboards“ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Verwenden Sie die [Commerce-CLI](../data-export/data-export-cli-commands.md#troubleshooting) und Protokolle, um den Prozess zu verwalten und Fehler zu beheben.
+Vom Commerce-Administrator aus können Sie den Synchronisierungsprozess mithilfe des [Daten-Management-Dashboards“ ](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-dashboard). Verwenden Sie die [Commerce-CLI](../data-export/data-export-cli-commands.md#troubleshooting) und Protokolle, um den Prozess zu verwalten und Fehler zu beheben.
 
 Sie können [ überprüfen](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) ob Verhaltensdaten an Ihre Storefront gesendet werden.
 
@@ -119,4 +119,4 @@ Um Produktempfehlungen durch eine Firewall zu lassen, fügen Sie `commerce.adobe
 
 ## [!DNL Product Recommendations] deinstallieren {#uninstall}
 
-Bei Bedarf können Sie [ Modul ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)product-recommendations“ (deinstallieren).
+Bei Bedarf können Sie [ Modul ](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)product-recommendations“ (deinstallieren).
