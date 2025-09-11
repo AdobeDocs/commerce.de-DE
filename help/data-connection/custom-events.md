@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie benutzerdefinierte Ereignisse erstellen, um I
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
-source-git-commit: 81fbcde11da6f5d086c2b94daeffeec60a9fdbcc
+source-git-commit: 25d796da49406216f26d12e3b1be01902dfe9302
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 1%
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
@@ -73,16 +73,26 @@ In Experience Platform Edge:
 
 ## Überschreibungen von Ereignissen behandeln (benutzerdefinierte Attribute)
 
-Attributüberschreibungen für Standardereignisse werden nur für die Experience Platform unterstützt. Benutzerdefinierte Daten werden nicht an Commerce-Dashboards und Metrik-Tracker weitergeleitet.
+Für jedes Ereignis, das mit einem `customContext` festgelegt wird, überschreibt oder erweitert der Collector Felder in der Ereignis-Payload von den Feldern im `custom context`. Der Anwendungsfall für Überschreibungen besteht darin, dass ein Entwickler Kontexte, die von anderen Teilen der Seite in bereits unterstützten Ereignissen festgelegt wurden, wiederverwenden und erweitern möchte.
 
-Für jedes Ereignis mit `customContext` überschreibt der Collector Felder, die in den relevanten Kontexten festgelegt sind, mit Feldern in `customContext`. Der Anwendungsfall für Überschreibungen besteht darin, dass ein Entwickler Kontexte, die von anderen Teilen der Seite in bereits unterstützten Ereignissen festgelegt wurden, wiederverwenden und erweitern möchte.
+Ereignisüberschreibungen sind nur bei der Weiterleitung an Experience Platform anwendbar. Sie werden nicht auf Analytics-Ereignisse in Adobe Commerce und Sensei angewendet. Der Adobe Commerce Events Collector [README](https://github.com/adobe/commerce-events/blob/e34bcfc0deca8d5ac1f9310fc1ee4c1becf4ffbb/packages/storefront-events-collector/README.md) bietet zusätzliche Informationen.
 
-### Beispiele
+>[!NOTE]
+>
+>Wenn Sie die `productListItems` mit benutzerdefinierten Attributen in Experience Platform-Ereignis-Payloads erweitern, stimmen Sie Produkte mithilfe der SKU ab. Diese Anforderung gilt nicht für `product-page-view`.
 
-Produktansicht mit Überschreibungen, die über Adobe Commerce Events SDK veröffentlicht wurden:
+### Nutzung
 
 ```javascript
-mse.publish.productPageView({
+const mse = window.magentoStorefrontEvents;
+
+mse.publish.productPageView(customCtx);
+```
+
+### Beispiel 1: Hinzufügen von `productCategories`
+
+```javascript
+magentoStorefrontEvents.publish.productPageView({
     productListItems: [
         {
             productCategories: [
@@ -97,45 +107,11 @@ mse.publish.productPageView({
 });
 ```
 
-In Experience Platform Edge:
+### Beispiel 2: Hinzufügen von benutzerdefiniertem Kontext vor der Veröffentlichung des Ereignisses
 
 ```javascript
-{
-  xdm: {
-    eventType: 'commerce.productViews',
-    identityMap: {
-      ECID: [
-        {
-          id: 'ecid1234',
-          primary: true,
-        }
-      ]
-    },
-    commerce: {
-      productViews: {
-        value : 1,
-      }
-    },
-    productListItems: [{
-        SKU: "1234",
-        name: "leora summer pants",
-        productCategories: [{
-            categoryID: "cat_15",
-            categoryName: "summer pants",
-            categoryPath: "pants/mens/summer",
-        }],
-    }],
-  }
-}
-```
+const mse = window.magentoStorefrontEvents;
 
-Luma-basierte Stores:
-
-In Luma-basierten Stores wird das Veröffentlichen von Ereignissen nativ implementiert. Daher können Sie benutzerdefinierte Daten festlegen, indem Sie `customContext` erweitern.
-
-Beispiel:
-
-```javascript
 mse.context.setCustom({
   productListItems: [
     {
@@ -149,9 +125,56 @@ mse.context.setCustom({
     },
   ],
 });
+
+mse.publish.productPageView();
 ```
 
-Weitere Informationen [ Umgang mit benutzerdefinierten Daten finden ](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md) unter „Außerkraftsetzung benutzerdefinierter Ereignisse“.
+### Beispiel 3: Der benutzerdefinierte Kontextsatz im Publisher überschreibt den benutzerdefinierten Kontext, der zuvor in der Adobe-Client-Datenschicht festgelegt wurde.
+
+In diesem Beispiel weist das `pageView`-Ereignis **Feld „Benutzerdefinierter**&quot; im `web.webPageDetails.name` auf.
+
+```javascript
+const mse = window.magentoStorefrontEvents;
+
+mse.context.setCustom({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name 1'
+    },
+  },
+});
+
+mse.publish.pageView({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name 2'
+    },
+  },
+});
+```
+
+### Beispiel 4: Hinzufügen von benutzerdefiniertem Kontext zu `productListItems` mit Ereignissen mit mehreren Produkten
+
+```javascript
+const mse = window.magentoStorefrontEvents;
+
+mse.context.setCustom({
+  productListItems: [
+    {
+      SKU: "24-WB01", //Match SKU to override correct product in event payload
+      productCategory: "Hand Bag", //Custom attribute added to event payload
+      name: "Strive Handbag (CustomName)" //Override existing attribute with custom value in event payload
+    },
+    {
+      SKU: "24-MB04",
+      productCategory: "Backpack Bag",
+      name: "Strive Backpack (CustomName)"
+    },
+  ],
+});
+
+mse.publish.shoppingCartView();
+```
 
 >[!NOTE]
 >
