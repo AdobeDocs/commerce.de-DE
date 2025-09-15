@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie benutzerdefinierte Ereignisse erstellen, um I
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
-source-git-commit: 25d796da49406216f26d12e3b1be01902dfe9302
+source-git-commit: 4e8cf0ad3f8f94d4f59bc8d78a44f4b3e86cbc3e
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,9 @@ const mse = window.magentoStorefrontEvents;
 mse.publish.productPageView(customCtx);
 ```
 
-### Beispiel 1: Hinzufügen von `productCategories`
+### Beispiel 1
+
+Dieses Beispiel fügt beim Veröffentlichen des Ereignisses benutzerdefinierten Kontext hinzu.
 
 ```javascript
 magentoStorefrontEvents.publish.productPageView({
@@ -107,7 +109,9 @@ magentoStorefrontEvents.publish.productPageView({
 });
 ```
 
-### Beispiel 2: Hinzufügen von benutzerdefiniertem Kontext vor der Veröffentlichung des Ereignisses
+### Beispiel 2
+
+In diesem Beispiel wird vor der Veröffentlichung des Ereignisses benutzerdefinierter Kontext hinzugefügt.
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -129,7 +133,9 @@ mse.context.setCustom({
 mse.publish.productPageView();
 ```
 
-### Beispiel 3: Der benutzerdefinierte Kontextsatz im Publisher überschreibt den benutzerdefinierten Kontext, der zuvor in der Adobe-Client-Datenschicht festgelegt wurde.
+### Beispiel 3
+
+Dieses Beispiel legt den benutzerdefinierten Kontext im Herausgeber fest und überschreibt den benutzerdefinierten Kontext, der zuvor in der Adobe-Client-Datenschicht festgelegt wurde.
 
 In diesem Beispiel weist das `pageView`-Ereignis **Feld „Benutzerdefinierter**&quot; im `web.webPageDetails.name` auf.
 
@@ -153,7 +159,9 @@ mse.publish.pageView({
 });
 ```
 
-### Beispiel 4: Hinzufügen von benutzerdefiniertem Kontext zu `productListItems` mit Ereignissen mit mehreren Produkten
+### Beispiel 4
+
+Dieses Beispiel fügt benutzerdefinierten Kontext zu `productListItems` Ereignissen mit mehreren Produkten hinzu.
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -174,6 +182,22 @@ mse.context.setCustom({
 });
 
 mse.publish.shoppingCartView();
+```
+
+Luma-basierte Stores:
+
+Luma-basierte Stores implementieren nativ Publishing-Ereignisse, sodass Sie benutzerdefinierte Daten durch Erweitern von `customContext` festlegen können.
+
+Beispiel:
+
+```javascript
+mse.context.setCustom({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name'
+    },
+  },
+});
 ```
 
 >[!NOTE]
