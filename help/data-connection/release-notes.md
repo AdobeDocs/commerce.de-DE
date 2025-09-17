@@ -3,9 +3,9 @@ title: Versionshinweise
 description: Die neuesten Versionsinformationen zur  [!DNL Data Connection]  von Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 90fcaa2cdd7c869ceddaeea7525cac00a41d94c5
+source-git-commit: 9c10aecb303dd09a85bdafa93d791d30611ec8b2
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1290'
 ht-degree: 1%
 
 ---
@@ -24,9 +24,9 @@ Diese Versionshinweise enthalten Aktualisierungen der [!DNL Data Connection]-Erw
 
 Informationen zu Funktionsänderungen und -korrekturen im Zusammenhang mit Erweiterungen, die von der [!DNL Data Connection]-Erweiterung verwendet werden, finden Sie unter **Unterstützte Service-Updates**.
 
-Unter [Kommende Versionen](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/schedule) erfahren Sie mehr über Versionspläne und Support.
+Unter [Kommende Versionen](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) erfahren Sie mehr über Versionspläne und Support.
 
-In der Entwicklerdokumentation erfahren [, welche Commerce-Versionen dieses Modul unterstützen](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability).
+In der Entwicklerdokumentation erfahren [, welche Commerce-Versionen dieses Modul unterstützen](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Unterstützte Service-Updates
 
@@ -81,6 +81,14 @@ _12. Oktober 2022_
 ![Neu](../assets/new.svg) - Unterstützung für eine [AEM-Storefront hinzugefügt](overview.md#aem-support).
 
 +++
+
+## 3,4,0
+
+_16. September 2025_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"} Adobe Commerce-Versionen 2.4.4 und höher
+
+![Neu](../assets/new.svg) [!DNL Data Connection] respektiert jetzt vollständig den Cookie-Einschränkungsmodus, indem die Datenerfassung und -speicherung in Cookies/im lokalen Speicher verhindert wird, wenn die Einschränkungen aktiviert sind.
 
 ## 3,3,0
 
