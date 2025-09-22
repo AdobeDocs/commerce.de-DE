@@ -4,9 +4,9 @@ description: Die neuesten Versionsinformationen für  [!DNL Data Export Extensio
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 6abfeca68ab67fb11493f78440e09408479e1535
+source-git-commit: 4a25bcb82f98eb44c83a186caa6e5d6d664851d4
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1669'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,13 @@ Zu den Aktualisierungen gehören:
 
 ## Aktuelle Hauptversion
 
+## Version 103.4.12
+
+![Beheben](../assets/fix.svg) Es wurde ein Problem behoben, bei dem auf der Produktdetailseite (PDP) keine Rabatte für Katalogpreisregeln angezeigt wurden, wenn die Preisgestaltung für Kundengruppen vorhanden war. Die PDP zeigt nun korrekt den niedrigsten Preis an.<!--MDEE-1158-->
+
 ## Version 103.4.11
 
-![Neu](../assets/new.svg) [!BADGE nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+![Neu](../assets/new.svg) [!BADGE nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 Es wurde Unterstützung für zusätzliche Produktattribute hinzugefügt, um Steuerklasse-, Attributsatz- und Bestandsdaten aus Commerce-Produktkonfigurationen im Produkt-Feed einzuschließen. Kunden, die diese Attribute in Produktexport-Feeds einbeziehen möchten, müssen das Modul Zusätzliche Produktattribute zu ihrem Adobe Commerce-Projekt hinzufügen. Siehe [Hinzufügen von Steuerklassen-, Attributsatz- und Bestandsattributen](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 ![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, das zu einer falschen Synchronisierung gelöschter Produktaktualisierungen führte, wenn während eines vollständigen Produktindex ein Fehler auftrat. Jetzt werden alle Produktlöschungen korrekt synchronisiert, selbst wenn während des Indizierungsprozesses ein Fehler auftritt. <!--MDEE-1144-->
 
