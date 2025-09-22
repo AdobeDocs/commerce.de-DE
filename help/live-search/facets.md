@@ -2,16 +2,16 @@
 title: Facetten
 description: '[!DNL Live Search] Facetten verwenden mehrere Dimensionen von Attributwerten als Suchkriterien.'
 exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
-source-git-commit: 58252ffc7417f30b835ec1baf21a709191afd033
+source-git-commit: 31223f4196187e4960c5bec0e90aa55cc4e0ac9a
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
 
 # Facetten
 
-Facettierung ist eine Methode zur Hochleistungsfilterung, bei der mehrere Dimensionen von Attributwerten als Suchkriterien verwendet werden. Die Facettensuche ist ähnlich, aber erheblich „intelligenter“ als die standardmäßige [Layered Navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=de). Die Liste der verfügbaren Filter wird durch die [filterbaren Attribute](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=de#filterable-attributes) der in den Suchergebnissen zurückgegebenen Produkte bestimmt.
+Facettierung ist eine Methode zur Hochleistungsfilterung, bei der mehrere Dimensionen von Attributwerten als Suchkriterien verwendet werden. Die Facettensuche ist ähnlich, aber erheblich „intelligenter“ als die standardmäßige [Layered Navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). Die Liste der verfügbaren Filter wird durch die [filterbaren Attribute](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) der in den Suchergebnissen zurückgegebenen Produkte bestimmt.
 
 [!DNL Live Search] verwendet die `productSearch`-Abfrage, die Facetten- und andere Daten zurückgibt, die spezifisch für [!DNL Live Search] sind. Code-Beispiele finden Sie [`productSearch` der Entwicklerdokumentation unter ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) Abfrage .
 
@@ -23,7 +23,7 @@ Jede definierte Facette kann als URL-Parameter verwendet werden. Die Ergebnisse 
 
 ## Anforderungen an Facetten
 
-Die Anforderungen an Kategorie- und Produktattribute für die Facettierung ähneln den filterbaren Attributen, die für die mehrschichtige Navigation verwendet werden. Für jede Storefront-Eigenschaft eines Attributs muss der Wert „In Suchergebnissen in mehrschichtiger Navigation verwenden“ auf „Ja“ festgelegt sein.
+Die Anforderungen an Kategorie- und Produktattribute für die Facettierung ähneln den filterbaren Attributen, die für die mehrschichtige Navigation verwendet werden. Für jede Storefront-Eigenschaft eines Attributs muss der Wert „In Suchergebnissen in mehrschichtiger Navigation verwenden“ auf „Ja“ festgelegt sein. Sie können die Attributkonfiguration über das Menü [!DNL Stores] > [!DNL Attribute] in Admin überprüfen und aktualisieren.
 
 >[!NOTE]
 >
@@ -37,8 +37,8 @@ Wenn Sie mit einer großen Anzahl von Attributen zu kämpfen haben, sollten Sie 
 
 | Einstellung | Beschreibung |
 |--- |--- |
-| [Einstellungen für Kategorieanzeige](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=de) | Anker - `Yes` |
-| [Attributeigenschaften](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=de) | [Katalogeingabetyp](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=de) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (nur Widget), `Text swatch` (nur Widget) |
+| [Einstellungen für Kategorieanzeige](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Anker - `Yes` |
+| [Attributeigenschaften](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Katalogeingabetyp](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (nur Widget), `Text swatch` (nur Widget) |
 | Eigenschaften der Storefront-Attribute | Verwendung in Suchergebnissen - mehrschichtige Navigation - `Yes` |
 
 ## Facettenaggregation
@@ -51,7 +51,7 @@ Die Facettenaggregation wird wie folgt durchgeführt: Wenn die Storefront drei F
 
 ## Standard-Attributwerte
 
-Die folgenden Produktattribute verfügen über [Storefront-Eigenschaften](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=de), die von [!DNL Live Search] verwendet und standardmäßig aktiviert werden.
+Die folgenden Produktattribute verfügen über [Storefront-Eigenschaften](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), die von [!DNL Live Search] verwendet und standardmäßig aktiviert werden.
 
 | Eigenschaft | Storefront-Eigenschaft | Attribut |
 |---|---|---|
