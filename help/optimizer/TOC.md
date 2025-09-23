@@ -4,10 +4,10 @@ user-guide-description: Dokumentation und Ressourcen für [!DNL Adobe Commerce O
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
+source-git-commit: a1872e89625c0c2f78e25ebe9a91cc5bca1f44f6
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 11%
+source-wordcount: '91'
+ht-degree: 12%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 11%
 - [Grenzen und Einschränkungen](boundaries-limits.md)
 - [Versionshinweise](release-notes.md)
 - Ergebnisse verwalten {#manage-results}
-   - [Bericht zu Erfolgsmetriken](./manage-results/success-metrics.md)
+   - [Erfolgsmetriken](./manage-results/success-metrics.md)
    - [Suchleistung](./manage-results/search-performance.md)
    - [Recommendations-Leistung](./manage-results/recommendation-performance.md)
 - Verkauf von Waren {#merchandising}
