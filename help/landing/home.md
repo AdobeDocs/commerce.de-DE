@@ -5,7 +5,7 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: e761e54e7bd7997f3f40b1dfc1293012931111b0
+source-git-commit: 8a80f803607e15163d3f75d93727a304917ef4d6
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Adobe bietet eine Sammlung von Commerce-Services, Integrations-Services und Date
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und in lokalen Projekten."}
+         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip=„Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und in lokalen Projekten.“}
          </a>
       </div>
       <p>
@@ -130,7 +130,7 @@ Adobe bietet eine Sammlung von Commerce-Services, Integrations-Services und Date
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce Services Connector</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt für Adobe Commerce nur für Cloud-Projekte (Adobe-verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+         <strong>Commerce Services Connector</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip=„Gilt für Adobe Commerce nur für Cloud-Projekte (Adobe-verwaltete PaaS-Infrastruktur) und lokale Projekte.“}
          </a>
       </div>
       <p>
@@ -184,11 +184,11 @@ Adobe bietet eine Sammlung von Commerce-Services, Integrations-Services und Date
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="Überwachen der Datensynchronisation" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong>Daten-Management-Dashboard</strong>
          </a>
       </div>
@@ -204,4 +204,4 @@ Adobe bietet eine Sammlung von Commerce-Services, Integrations-Services und Date
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2025-09-08 14:32:40 -->
+<!-- Last updated from includes: 2025-09-26 20:42:12 -->
