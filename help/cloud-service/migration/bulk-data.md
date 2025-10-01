@@ -1,12 +1,12 @@
 ---
 title: Tool für die Massendatenmigration
 description: Erfahren Sie, wie Sie mit dem Tool für die Massendatenmigration Daten aus Ihrer bestehenden Adobe Commerce in der Cloud-Instanz zu migrieren [!DNL Adobe Commerce as a Cloud Service].
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Architect
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 131d3bdb7e6ef2622236ddf08f306639396d6ffa
+source-git-commit: 6396bc5f4b265e2e13328ec1af3b72c0e8e15c9a
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -39,8 +39,8 @@ In den folgenden Abschnitten werden diese Schritte detailliert beschrieben.
 
 Das Tool für die Massendatenmigration ist wie folgt verfügbar:
 
-- **4. Quartal 2025** - Senden Sie ein Support-Ticket, um auf das Tool für die Massendatenmigration zuzugreifen.
-- **4. Quartal 2025** - Das Tool für die Massendatenmigration ist öffentlich verfügbar und kann von dieser Seite aus aufgerufen werden.
+- **4. Quartal 2025** (noch nicht verfügbar) - Nach der ersten Version des Tools für die Massendatenmigration können Sie durch Senden eines Support-Tickets darauf zugreifen.
+- **4. Quartal 2025** (noch nicht verfügbar) - Nach der öffentlichen Veröffentlichung des Tools für die Massendatenmigration ist es von dieser Seite aus zugänglich.
 
 ## Erstellen einer Zielumgebung
 
