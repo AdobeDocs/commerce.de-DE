@@ -26,4 +26,4 @@ ht-degree: 16%
    - [Tool für die Massendatenmigration](migration/bulk-data.md)
    - [Kodierwerkzeuge](migration/coding-tools.md)
 - [Versionshinweise](release-notes.md)
-- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
