@@ -4,9 +4,9 @@ description: Die neuesten Versionsinformationen für  [!DNL Data Export Extensio
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: e81eded54df197c92548aae4636da0e885406b60
+source-git-commit: 9cca531a5f50850366a1c942fcda71eacecef5d0
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1775'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Zu den Aktualisierungen gehören:
 
 ## Aktuelle Hauptversion
 
+## Version 103.4.14
+
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem der Vorgang [mview indexer](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) fehlschlagen konnte, wenn die `cde_product_overrides_feed_cl` fehlte. Die Fehlerbehebung stellt eine stabile Neuindizierung sicher und verhindert Auftragsfehler in Zusammenhang mit dieser Tabelle in Umgebungen mit mehreren Mandanten.“ <!--MDEE-1175-->
+
 ## Version 103.4.13
 
 ![Beheben](../assets/fix.svg) Es wurde ein Problem behoben, bei dem die Bearbeitung von Web-Konfigurationseinstellungen dazu führte, dass der Produkt-Feed-Index zurückgesetzt wurde. <!--MDEE-1154-->
@@ -39,7 +43,7 @@ Zu den Aktualisierungen gehören:
 
 ## Version 103.4.11
 
-![Neu](../assets/new.svg) [!BADGE nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+![Neu](../assets/new.svg) [!BADGE nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 Es wurde Unterstützung für zusätzliche Produktattribute hinzugefügt, um Steuerklasse-, Attributsatz- und Bestandsdaten aus Commerce-Produktkonfigurationen im Produkt-Feed einzuschließen. Kunden, die diese Attribute in Produktexport-Feeds einbeziehen möchten, müssen das Modul Zusätzliche Produktattribute zu ihrem Adobe Commerce-Projekt hinzufügen. Siehe [Hinzufügen von Steuerklassen-, Attributsatz- und Bestandsattributen](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 ![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, das zu einer falschen Synchronisierung gelöschter Produktaktualisierungen führte, wenn während eines vollständigen Produktindex ein Fehler auftrat. Jetzt werden alle Produktlöschungen korrekt synchronisiert, selbst wenn während des Indizierungsprozesses ein Fehler auftritt. <!--MDEE-1144-->
 
