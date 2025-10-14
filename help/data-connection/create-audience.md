@@ -54,7 +54,7 @@ In diesem Artikel erfahren Sie, wie Sie:
 Bevor Sie beginnen, stellen Sie Folgendes sicher:
 
 - Sie haben die Berechtigung zur Verwendung von Real-Time CDP. Wenn Sie sich nicht sicher sind, wenden Sie sich an Ihren Systemintegrator oder das Entwicklungs-Team, das Projekte und Umgebungen verwaltet.
-- Sie [ die ](install.md)-Erweiterung in [&#128279;](connect-data.md) und [!DNL Data Connection] [!DNL Commerce] konfiguriert.
+- Sie [&#x200B; die &#x200B;](install.md)-Erweiterung in [&#128279;](connect-data.md) und [!DNL Data Connection] [!DNL Commerce] konfiguriert.
 - Sie [bestätigt](connect-data.md#confirm-that-event-data-is-collected) dass Ihre [!DNL Commerce] Ereignisdaten am Experience Platform Edge eintreffen.
 
 ### &#x200B;1. Erstellen einer Zielgruppe
@@ -133,8 +133,8 @@ In diesem Abschnitt erfahren Sie, wie Sie eine Warenkorb-Preisregel basierend au
 
 1. Vergewissern Sie sich, dass Ihre neue Zielgruppe im Dashboard **Real-Time CDP-Zielgruppen** angezeigt wird.
 1. [Erstellen einer Warenkorb-Preisregel](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create).
-1. [Legen Sie die Bedingung ](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition) Warenkorb-Preisregel mithilfe Ihrer neuen Zielgruppe fest.
-1. [Legen Sie die Aktion ](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions), die beim Hinzufügen des Produkts zum Warenkorb ausgeführt werden soll.
+1. [Legen Sie die Bedingung &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition) Warenkorb-Preisregel mithilfe Ihrer neuen Zielgruppe fest.
+1. [Legen Sie die Aktion &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions), die beim Hinzufügen des Produkts zum Warenkorb ausgeführt werden soll.
 1. Fahren Sie mit der Konfiguration Ihrer Warenkorb-Preisregel fort.
 1. Navigieren Sie zur Kundenansicht Ihrer Sandbox-Instanz.
 1. Fügen Sie das Produkt, das Sie basierend auf der Zielgruppe von erstellt haben, zum Warenkorb hinzu. Beachten Sie, dass die Warenkorb-Preisregel aktiviert ist.

@@ -52,7 +52,7 @@ Wenn Sie Mediendateien haben, die außerhalb von Adobe Commerce gespeichert sind
 
 Erstellen Sie nach dem Exportieren der Mediendateien eine CSV-Datei, um diese Assets den für die Automatisierung erforderlichen Metadaten zuzuordnen. Die CSV sollte Felder für **Produkt**, **Position** und **Rollenzuordnung)**, um die Abstimmung mit dem [AEM Assets-Metadatenprofil sicherzustellen](configure-aem.md#configure-a-metadata-profile).
 
-Geben Sie für jede Mediendatei, die Sie migrieren möchten, Werte für die Metadatenfelder im [AEM Assets-Metadatenprofil für Commerce-Assets ](configure-aem.md), wie in der folgenden Tabelle beschrieben.
+Geben Sie für jede Mediendatei, die Sie migrieren möchten, Werte für die Metadatenfelder im [AEM Assets-Metadatenprofil für Commerce-Assets &#x200B;](configure-aem.md), wie in der folgenden Tabelle beschrieben.
 
 | Metadaten | Beschreibung | Wert |
 |-------|-------------|--------|
@@ -80,7 +80,7 @@ Nachdem Sie die Metadatenzuordnungsdatei erstellt haben, verwenden Sie das Tool 
 
 Im Folgenden finden Sie einen allgemeinen Überblick über die Verwendung des Tools.
 
-1. [Melden Sie sich bei Ihrer AEM Assets as a Cloud Service-Autorenumgebung ](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/aem-users#login-aem).
+1. [Melden Sie sich bei Ihrer AEM Assets as a Cloud Service-Autorenumgebung &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/aem-users#login-aem).
 
 1. Wählen Sie in der Ansicht Experience Manager-Tools die Option **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]** aus.
 

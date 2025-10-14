@@ -23,7 +23,7 @@ Mit Abzeichen können Sie schnell erkennen, ob die Commerce-Dokumentation, die S
 
 Wenn ein Badge angezeigt wird, bedeutet dies, dass der Inhalt nur für die angegebene Lösung gilt. Wenn keine Abzeichen angezeigt werden, bedeutet dies, dass der Inhalt für alle Adobe Commerce-Lösungen gilt.
 
-Wenn Sie beispielsweise Adobe Commerce as a Cloud Service verwenden, sollten Sie Inhalte zum [ (Installieren) ](../product-recommendations/install-configure.md#install-product-recommendations) Produktempfehlungserweiterung und zum [ (Konfigurieren](../product-recommendations/install-configure.md#configure-product-recommendations) des Commerce Services-Connectors ignorieren. Adobe führt diese Schritte beim Erstellen einer Instanz automatisch aus.
+Wenn Sie beispielsweise Adobe Commerce as a Cloud Service verwenden, sollten Sie Inhalte zum [&#x200B; (Installieren) &#x200B;](../product-recommendations/install-configure.md#install-product-recommendations) Produktempfehlungserweiterung und zum [&#x200B; (Konfigurieren](../product-recommendations/install-configure.md#configure-product-recommendations) des Commerce Services-Connectors ignorieren. Adobe führt diese Schritte beim Erstellen einer Instanz automatisch aus.
 
 ### Definitionen
 
@@ -41,7 +41,7 @@ Dieses Badge identifiziert die Dokumentation nur für [Adobe Commerce as a Cloud
 
 #### [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 
-Dieses Badge kennzeichnet nur Dokumentationen zu [Adobe Commerce in ](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview) Cloud und lokalen Projekten. Adobe Commerce on Cloud-Projekte werden auf einer Cloud-nativen, vollständig verwalteten Platform-as-a-Service (PaaS)-Lösung gehostet, die alle Kernfunktionen von Adobe Commerce in einer vorab bereitgestellten Umgebung enthält. Lokale Projekte werden auf kundenverwalteter Infrastruktur gehostet.
+Dieses Badge kennzeichnet nur Dokumentationen zu [Adobe Commerce in &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview) Cloud und lokalen Projekten. Adobe Commerce on Cloud-Projekte werden auf einer Cloud-nativen, vollständig verwalteten Platform-as-a-Service (PaaS)-Lösung gehostet, die alle Kernfunktionen von Adobe Commerce in einer vorab bereitgestellten Umgebung enthält. Lokale Projekte werden auf kundenverwalteter Infrastruktur gehostet.
 
 >[!NOTE]
 >

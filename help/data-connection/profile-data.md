@@ -31,7 +31,7 @@ Wenn Ihre Kunden ein Profil auf Ihrer Commerce-Site erstellen, wird ein Profilda
 
    Ein Datensatz ist ein Konstrukt zur Datenspeicherung und -verwaltung, normalerweise eine Tabelle, die ein Schema (Spalten) und Felder (Zeilen) enthält. Datensätze enthalten auch Metadaten, die verschiedene Aspekte der in ihnen gespeicherten Daten beschreiben.
 
-1. Erstellen Sie [ Experience Platform einen ](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/namespaces#create-namespaces)benutzerdefinierten Namespace“ mit den folgenden Werten:
+1. Erstellen Sie [&#x200B; Experience Platform einen &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/namespaces#create-namespaces)benutzerdefinierten Namespace“ mit den folgenden Werten:
 
    - **Anzeigename**: _Commerce-Kunden-ID_
    - **Identitätssymbol**: _CustomerId_

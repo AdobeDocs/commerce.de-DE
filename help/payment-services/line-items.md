@@ -123,7 +123,7 @@ Das `upc`-Objekt enthält die folgenden Attribute:
 
 +++
 
-Weitere Informationen [ diesen Feldern und deren Einschränkungen finden Sie in der ](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank} für PayPal-Entwickler zu Zeileneinträgen .
+Weitere Informationen [&#x200B; diesen Feldern und deren Einschränkungen finden Sie in der &#x200B;](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank} für PayPal-Entwickler zu Zeileneinträgen .
 
 ## Zeileneinträge verwalten
 

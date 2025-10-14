@@ -121,7 +121,7 @@ Sie können auch manuell eine Aktualisierung der Berichtsdaten erzwingen, um die
 Sie können eine CSV-Datei herunterladen, in der alle Transaktionen im Raster der Transaktionsansicht sichtbar sind, unabhängig davon, ob Sie die standardmäßige 30-Tage-Transaktionsansicht oder einen benutzerdefinierten Zeitrahmen anzeigen.
 
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
-1. Wenn Sie Transaktionen für einen anderen Zeitraum als die letzten 30 Tage anzeigen möchten, [ Sie den Zeitrahmen des Datumsbereichs für Ihre Status ](#customize-dates-timeframe).
+1. Wenn Sie Transaktionen für einen anderen Zeitraum als die letzten 30 Tage anzeigen möchten, [&#x200B; Sie den Zeitrahmen des Datumsbereichs für Ihre Status &#x200B;](#customize-dates-timeframe).
 1. Klicken Sie auf _Symbol_ Herunterladen![Herunterladen](assets/icon-download.png){width="20" zoomable="yes"} .
 
 Ihre Transaktionen werden im CSV-Format heruntergeladen.
@@ -134,14 +134,14 @@ Transaktionsberichte enthalten die folgenden Informationen.
 | ------------ | -------------------- |
 | [!UICONTROL Order ID] | Commerce-Auftrags-ID (enthält nur Werte für erfolgreiche Transaktionen und ist leer für zurückgewiesene Transaktionen)<br> <br>Um zugehörige [Bestellinformationen) anzuzeigen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} klicken Sie auf die ID. |
 | [!UICONTROL PayPal Transaction ID] | Transaktions-ID vom Zahlungsdienstleister; enthält nur Werte für erfolgreiche Transaktionen und einen Bindestrich für abgelehnte Transaktionen. Sie können auf diese ID klicken, um auf die Seite mit den PayPal-Transaktionsdetails zuzugreifen. |
-| [!UICONTROL Customer ID] | Commerce-Kunden-ID einer Bestellung<br> <br>Weitere Informationen finden Sie [ Thema ](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}Kundeninformationen) . |
+| [!UICONTROL Customer ID] | Commerce-Kunden-ID einer Bestellung<br> <br>Weitere Informationen finden Sie [&#x200B; Thema &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}Kundeninformationen) . |
 | [!UICONTROL Transaction Date] | Zeitstempel des Transaktionsdatums |
 | [!UICONTROL Payment Method] | Art der Zahlung, die für die Transaktion verwendet wird, mit Informationen über Marke und Kartentyp. Siehe [Kartenarten](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) für weitere Informationen; verfügbar für Payment Services-Versionen 1.6.0 und höher |
 | [!UICONTROL Payment Detail] | Enthält zusätzliche Informationen zur Art der Zahlung, die für die Transaktion verwendet wird, sofern verfügbar. |
 | [!UICONTROL Card Last Four] | Letzte vier Stellen der für die Transaktion verwendeten Kredit- oder Debitkarten |
 | [!UICONTROL Result] | Das Ergebnis der Transaktion - *[!UICONTROL OK]* (erfolgreiche Transaktion), *[!UICONTROL Rejected by Payment Provider]* (von PayPal abgelehnt), *[!UICONTROL Rejected by Bank]* (von der Bank, die die Karte ausgegeben hat, abgelehnt) |
-| [!UICONTROL Response Code] | Fehlercode, der den Ablehnungsgrund des Zahlungsdienstleisters oder der Bank angibt; siehe Liste möglicher Antwort-Codes und Beschreibungen für [`Rejected by Bank` Status ](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) den [`Rejected by Payment Provider` Status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
-| [!UICONTROL AVS Code] | Adressverifizierungs-Service-Code; die Antwortinformationen des Prozessors für Zahlungsanfragen. Weitere Informationen [ Sie unter „Liste möglicher Codes und ](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response)&quot;. |
+| [!UICONTROL Response Code] | Fehlercode, der den Ablehnungsgrund des Zahlungsdienstleisters oder der Bank angibt; siehe Liste möglicher Antwort-Codes und Beschreibungen für [`Rejected by Bank` Status &#x200B;](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) den [`Rejected by Payment Provider` Status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
+| [!UICONTROL AVS Code] | Adressverifizierungs-Service-Code; die Antwortinformationen des Prozessors für Zahlungsanfragen. Weitere Informationen [&#x200B; Sie unter „Liste möglicher Codes und &#x200B;](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response)&quot;. |
 | [!UICONTROL CVV Code] | Kartenprüfwert-Code für Kredit- und Debitkarten; siehe [Liste möglicher Codes und Beschreibungen](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) für weitere Informationen. |
 | [!UICONTROL Amount] | Bestellbetrag der Transaktion |
 | [!UICONTROL Currency] | Für Bestellung in Transaktion verwendete Währung |

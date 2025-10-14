@@ -48,7 +48,7 @@ Der *Merchandising-Regeln*-Arbeitsbereich listet die aktuelle Auswahl von Regeln
 
 Im Detailbereich werden der Regelname, der Status, Bedingungen und Ereignisse, das Start- und Enddatum, die Beschreibung und das Datum der letzten Bearbeitung angezeigt. Regeln können im Detailbereich aktiviert, bearbeitet und gelöscht werden.
 
-1. Suchen Sie im Arbeitsbereich *Merchandising* Regeln“ die Regel in dem Raster, das Sie anzeigen möchten, und klicken Sie auf das Symbol (![Weitere ](../../assets/btn-more.png)).
+1. Suchen Sie im Arbeitsbereich *Merchandising* Regeln“ die Regel in dem Raster, das Sie anzeigen möchten, und klicken Sie auf das Symbol (![Weitere &#x200B;](../../assets/btn-more.png)).
 
    Im Menü können Sie eine der folgenden Aktionen ausführen:
 

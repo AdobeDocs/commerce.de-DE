@@ -46,7 +46,7 @@ Informationen zum Anpassen des PLP-Widgets für die oben genannten Funktionen fi
 
 ## Beispiel für einen Stil
 
-Sie können das Erscheinungsbild des PLP-Widgets mit (CSS) an Ihre [ anpassen](https://developer.adobe.com/commerce/frontend-core/guide/css/).
+Sie können das Erscheinungsbild des PLP-Widgets mit (CSS) an Ihre [&#x200B; anpassen](https://developer.adobe.com/commerce/frontend-core/guide/css/).
 
 >[!NOTE]
 >

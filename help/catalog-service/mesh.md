@@ -21,7 +21,7 @@ Um API Mesh mit dem Katalog-Service zu verwenden, müssen Sie API Mesh mit Ihrer
 
 ## Verbinden und Konfigurieren von API-Mesh.
 
-1. Verbinden Sie API Mesh mit Ihrer Adobe Commerce-Instanz, indem Sie die Anweisungen [Erstellen eines ](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/)) im _API Mesh-Entwicklerhandbuch_ befolgen.
+1. Verbinden Sie API Mesh mit Ihrer Adobe Commerce-Instanz, indem Sie die Anweisungen [Erstellen eines &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/)) im _API Mesh-Entwicklerhandbuch_ befolgen.
 
    Wenn Sie API Mesh zum ersten Mal verwenden, schließen Sie den [Erste Schritte-Prozess](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) ab, bevor Sie das Netz erstellen.
 

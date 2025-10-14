@@ -60,7 +60,7 @@ In diesem Thema erfahren Sie, wie Sie eine E-Mail zu einem Transaktionsabbruch e
 Bevor Sie mit diesen Schritten beginnen, stellen Sie Folgendes sicher:
 
 - Sie haben die Berechtigung zur Verwendung von Adobe [!DNL Journey Optimizer]. Wenn Sie sich nicht sicher sind, wenden Sie sich an Ihren Systemintegrator oder das Entwicklungs-Team, das Projekte und Umgebungen verwaltet.
-- Sie [ die [!DNL Data Connection]-Erweiterung in [!DNL Commerce] ](install.md) und [&#128279;](connect-data.md) konfiguriert.
+- Sie [&#x200B; die [!DNL Data Connection]-Erweiterung in [!DNL Commerce] &#x200B;](install.md) und [&#128279;](connect-data.md) konfiguriert.
 - Sie [bestätigt](connect-data.md#confirm-that-event-data-is-collected) dass Ihre [!DNL Commerce] Ereignisdaten am Experience Platform Edge eintreffen.
 
 ## Schritt 1: Erstellen Sie einen Benutzer in Ihrer [!DNL Commerce] Sandbox-Umgebung

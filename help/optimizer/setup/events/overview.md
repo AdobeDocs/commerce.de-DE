@@ -64,7 +64,7 @@ In dieser Tabelle werden die von der Produkterkennung verwendeten Ereignisse [Ra
 
 #### Erforderliche Dashboard-Ereignisse
 
-Einige Ereignisse sind erforderlich, um das Dashboard [Suchleistung“ ](../../manage-results/search-performance.md)
+Einige Ereignisse sind erforderlich, um das Dashboard [Suchleistung“ &#x200B;](../../manage-results/search-performance.md)
 
 | Dashboard-Bereich | -Events | Feld verbinden |
 | ------------------- | ------------- | ---------- |
@@ -103,11 +103,11 @@ Andere Variablen, die sich auf die für das Training benötigte Zeit auswirken k
 - Einige Empfehlungstypen trainieren schneller als andere
 - [!DNL Adobe Commerce Optimizer] berechnet die Verhaltensdaten alle vier Stunden neu. Empfehlungen werden umso genauer, je länger sie auf Ihrer Site verwendet werden.
 
-Auf der Seite „Empfehlung erstellen[ werden Bereitschaftsindikatoren angezeigt, damit Sie den Trainings-Fortschritt ](../../merchandising/recommendations/create.md#readiness-indicators) jeden Empfehlungstyp visualisieren können.
+Auf der Seite „Empfehlung erstellen[&#x200B; werden Bereitschaftsindikatoren angezeigt, damit Sie den Trainings-Fortschritt &#x200B;](../../merchandising/recommendations/create.md#readiness-indicators) jeden Empfehlungstyp visualisieren können.
 
 Während Daten auf Ihrer Live-Site erfasst werden und die Modelle für maschinelles Lernen trainiert werden, können Sie andere Test- und Konfigurationsaufgaben abschließen, die zum Einrichten von Empfehlungen erforderlich sind. Wenn Sie mit dieser Arbeit fertig sind, verfügen die Modelle über genügend Daten, um nützliche Empfehlungen zu erstellen, sodass Sie sie in Ihrer Storefront bereitstellen können.
 
-Wenn auf Ihrer Site nicht genügend Traffic (Ansichten, Käufe, Trends) für die meisten Produkt-SKUs vorhanden ist, sind möglicherweise nicht genügend Daten vorhanden, um den Lernprozess abzuschließen. Dadurch kann der Bereitschaftsindikator im Recommendations-Arbeitsbereich hängen bleiben. Die Bereitschaftsindikatoren sollen Händlern einen weiteren Datenpunkt bei der Auswahl des Recommendations-Typs bieten, der für ihren Store besser ist. Die Zahlen sind Richtwerte und erreichen möglicherweise nie 100 %. [Weitere ](../../merchandising/recommendations/create.md#readiness-indicators) zu Bereitschaftsindikatoren.
+Wenn auf Ihrer Site nicht genügend Traffic (Ansichten, Käufe, Trends) für die meisten Produkt-SKUs vorhanden ist, sind möglicherweise nicht genügend Daten vorhanden, um den Lernprozess abzuschließen. Dadurch kann der Bereitschaftsindikator im Recommendations-Arbeitsbereich hängen bleiben. Die Bereitschaftsindikatoren sollen Händlern einen weiteren Datenpunkt bei der Auswahl des Recommendations-Typs bieten, der für ihren Store besser ist. Die Zahlen sind Richtwerte und erreichen möglicherweise nie 100 %. [Weitere &#x200B;](../../merchandising/recommendations/create.md#readiness-indicators) zu Bereitschaftsindikatoren.
 
 #### Empfehlungen für Backups
 
@@ -136,7 +136,7 @@ In der folgenden Tabelle sind die Ereignisse aufgeführt, die ausgelöst werden,
 
 #### Erforderliche Dashboard-Ereignisse
 
-Die folgenden Ereignisse sind erforderlich, um das [Recommendations-Performance-Dashboard“ ](../../manage-results/recommendation-performance.md)
+Die folgenden Ereignisse sind erforderlich, um das [Recommendations-Performance-Dashboard“ &#x200B;](../../manage-results/recommendation-performance.md)
 
 | Dashboard-Spalte | -Events | Feld verbinden |
 | ---------------- | --------- | ----------- |
@@ -174,4 +174,4 @@ In dieser Tabelle werden die von den einzelnen Empfehlungstypen verwendeten Erei
 
 ## Support
 
-Wenn Sie Datendiskrepanzen feststellen oder Empfehlungen und Suchergebnisse nicht erwartungsgemäß funktionieren, [ Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Wenn Sie Datendiskrepanzen feststellen oder Empfehlungen und Suchergebnisse nicht erwartungsgemäß funktionieren, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

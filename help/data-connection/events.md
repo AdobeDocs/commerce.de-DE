@@ -27,13 +27,13 @@ Die Verhaltensereignisse erfassen anonymisierte Verhaltensdaten von Ihren Kundin
 
 Storefront-Ereignisse erfassen Daten aus den Interaktionen von Käufern auf der Website und umfassen Ereignisse wie `addToCart`, `pageView`, `createAccount`, `editAccount`, `startCheckout`, `completeCheckout`, `signIn`, `signOut` usw. Storefront-Ereignisse gelten nur für einfache und konfigurierbare Produkte.
 
-Weitere Informationen zu Storefront[Ereignissen finden Sie ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection) der Entwicklerdokumentation .
+Weitere Informationen zu Storefront[Ereignissen finden Sie &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection) der Entwicklerdokumentation .
 
 ## Kundenprofil-Ereignisse
 
 Profilereignisse, die von der Storefront erfasst werden, enthalten Kontoinformationen wie `signIn`, `signOut`, `createAccount` und `editAccount`. Diese Daten werden verwendet, um wichtige Kundendetails auszufüllen, die erforderlich sind, um Segmente besser zu definieren oder Marketing-Kampagnen auszuführen, z. B. Sende-Anmelde-Rabattangebote, Kontoänderungsbestätigungen usw.
 
-Weitere Informationen zu Kundenprofilereignissen finden [ in der ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection) für Entwickler .
+Weitere Informationen zu Kundenprofilereignissen finden [&#x200B; in der &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection) für Entwickler .
 
 ## Ereignisse suchen
 
@@ -41,12 +41,12 @@ Die Suchereignisse liefern Daten, die für die Absicht des Erstkäufers relevant
 
 Verwenden Sie die Felder `searchRequest.id` und `searchResponse.id`, die sowohl in den `searchRequestSent`- als auch in den `searchResponseReceived`-Ereignissen zu finden sind, um einen Querverweis zwischen einer Suchanfrage und der entsprechenden Suchantwort durchzuführen.
 
-Weitere Informationen zu Suchereignissen finden [ in ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection) Entwicklerdokumentation .
+Weitere Informationen zu Suchereignissen finden [&#x200B; in &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection) Entwicklerdokumentation .
 
 ## B2B-Ereignisse
 
-![B2B für Adobe Commerce](../assets/b2b.svg) Für B2B-Händler müssen [ die ](install.md#install-the-b2b-extension)-Erweiterung `experience-platform-connector-b2b`installieren“, um auf diese Ereignisse zugreifen zu können.
+![B2B für Adobe Commerce](../assets/b2b.svg) Für B2B-Händler müssen [&#x200B; die &#x200B;](install.md#install-the-b2b-extension)-Erweiterung `experience-platform-connector-b2b`installieren“, um auf diese Ereignisse zugreifen zu können.
 
 Die B2B-Ereignisse enthalten [Anforderungsliste](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html?lang=de) Informationen, z. B. ob eine Anforderungsliste erstellt, hinzugefügt oder gelöscht wurde. Durch die Verfolgung von für Anforderungslisten spezifischen Ereignissen können Sie sehen, welche Produkte Ihre Kunden häufig kaufen, und auf dieser Grundlage Kampagnen erstellen.
 
-Weitere Informationen zu B2B[Ereignissen finden ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection) in der Entwicklerdokumentation .
+Weitere Informationen zu B2B[Ereignissen finden &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection) in der Entwicklerdokumentation .

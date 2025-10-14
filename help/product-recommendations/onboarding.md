@@ -36,9 +36,9 @@ Das Onboarding für [!DNL Product Recommendations] erfordert Zugriff auf die Bef
 
 ### Page Builder-Unterstützung
 
-[!DNL Product Recommendations] können einer Seite als Page Builder-Inhaltstyp hinzugefügt werden. Informationen zum Hinzufügen der Page Builder-Unterstützung zu Produktempfehlungen finden Sie unter [ und Konfigurieren](install-configure.md).
+[!DNL Product Recommendations] können einer Seite als Page Builder-Inhaltstyp hinzugefügt werden. Informationen zum Hinzufügen der Page Builder-Unterstützung zu Produktempfehlungen finden Sie unter [&#x200B; und Konfigurieren](install-configure.md).
 
-Anweisungen [[!DNL Page Builder]  Hinzufügen von ](page-builder.md) zu [!DNL Product Recommendations] Inhalten finden Sie unter Integration[!DNL Page Builder].
+Anweisungen [[!DNL Page Builder]  Hinzufügen von &#x200B;](page-builder.md) zu [!DNL Product Recommendations] Inhalten finden Sie unter Integration[!DNL Page Builder].
 
 ### SaaS-Preisindizierung
 

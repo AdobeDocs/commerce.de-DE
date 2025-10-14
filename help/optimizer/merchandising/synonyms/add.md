@@ -75,7 +75,7 @@ In diesem Beispiel lautet das Keyword, mit dem eine Übereinstimmung erzielt wer
 
 ## Verwalten von Synonymen
 
-Befolgen Sie diese Anweisungen, um bestehende [!DNL Adobe Commerce Optimizer] ([) ](overview.md) verwalten.
+Befolgen Sie diese Anweisungen, um bestehende [!DNL Adobe Commerce Optimizer] ([) &#x200B;](overview.md) verwalten.
 
 ## Synonym suchen
 

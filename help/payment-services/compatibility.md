@@ -96,13 +96,13 @@ Siehe [Verbinden](connect.md) für weitere Informationen zum Einrichten der [!DN
 
 >[!ENDTABS]
 
-Weitere Informationen zu Versionen [ Versionen ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=de) versionsspezifischen Versionen finden Sie auf den [[!DNL Payment Services] Lebenszyklusrichtlinie](release-notes.md) und den Versionshinweisen .
+Weitere Informationen zu Versionen [&#x200B; Versionen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=de) versionsspezifischen Versionen finden Sie auf den [[!DNL Payment Services] Lebenszyklusrichtlinie](release-notes.md) und den Versionshinweisen .
 
 Die vollständigen Anweisungen und den Start des Onboarding-Prozesses finden Sie unter [Erste Schritte mit [!DNL Payment Services]](onboard.md).
 
 ### Akzeptierte Kreditkarten und Währungen
 
-[!DNL Payment Services] akzeptiert die Währungen der Länder [in denen es verfügbar ist](#availability). Weitere Informationen [ Einrichten von ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=de) finden Sie unter „Währungskonfiguration“.
+[!DNL Payment Services] akzeptiert die Währungen der Länder [in denen es verfügbar ist](#availability). Weitere Informationen [&#x200B; Einrichten von &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=de) finden Sie unter „Währungskonfiguration“.
 
 Weitere Informationen zu den Währungen und Zahlungsmethoden, die mit PayPal-Produkten und -Services verfügbar sind, finden Sie auf den folgenden Seiten:
 

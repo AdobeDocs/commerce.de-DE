@@ -37,7 +37,7 @@ Navigieren Sie in _Admin_-Seitenleiste zu **Verkauf** > **Zahlungsdienste** > _B
 
 ![Visualisierung der Auszahlungsdaten in der Admin-](assets/orderpayment-dataviz.png){width="800" zoomable="yes"}
 
-Klicken Sie auf **[!UICONTROL View Report]** , um zur detaillierten Tabelle [Berichtsansicht Bestellzahlungsstatus“ ](#order-payment-status-report-view).
+Klicken Sie auf **[!UICONTROL View Report]** , um zur detaillierten Tabelle [Berichtsansicht Bestellzahlungsstatus“ &#x200B;](#order-payment-status-report-view).
 
 ### Anpassen des Zeitrahmens für Status
 
@@ -114,7 +114,7 @@ Händler können den aktualisierten Zahlungsstatus über die Berichtsansicht „
 
 [!DNL Payment Services] verwendet Bestelldaten und kombiniert sie mit aggregierten Zahlungsdaten aus anderen Quellen (einschließlich PayPal), um aussagekräftige und hochnützliche Berichte zu erstellen.
 
-Bestelldaten werden exportiert und im Zahlungsdienst gespeichert. Wenn Sie [Bestellstatus ändern oder hinzufügen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) oder [eine Store-Ansicht ](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [Store](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/store-details#store-information) oder den Website-Namen bearbeiten, werden diese Daten mit Zahlungsdaten kombiniert und der Bericht „Status der Bestellzahlung“ wird mit den kombinierten Informationen ausgefüllt.
+Bestelldaten werden exportiert und im Zahlungsdienst gespeichert. Wenn Sie [Bestellstatus ändern oder hinzufügen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) oder [eine Store-Ansicht &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [Store](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/store-details#store-information) oder den Website-Namen bearbeiten, werden diese Daten mit Zahlungsdaten kombiniert und der Bericht „Status der Bestellzahlung“ wird mit den kombinierten Informationen ausgefüllt.
 
 Dieser Prozess umfasst zwei Schritte:
 
@@ -134,7 +134,7 @@ Die einzigen Daten, die zu Berichtszwecken exportiert und sortiert werden, sind 
 
 Obwohl die Neuindizierung standardmäßig im `ON SAVE` erfolgt, wird empfohlen, die Indizierung im `BY SCHEDULE`-Modus durchzuführen. Der `BY SCHEDULE`-Index wird nach einem Cron-Zeitplan von einer Minute ausgeführt, und alle geänderten Daten werden innerhalb von zwei Minuten nach einer Datenänderung in Ihrem Bestellstatusbericht angezeigt. Diese geplante Neuindizierung hilft Ihnen, die Belastung Ihres Geschäfts zu reduzieren, insbesondere wenn Sie eine große Menge an eingehenden Bestellungen haben, da sie nach einem Zeitplan erfolgt (nicht bei jeder Bestellung).
 
-Sie können den Indexmodus - `ON SAVE` oder `BY SCHEDULE` - [ Admin ](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+Sie können den Indexmodus - `ON SAVE` oder `BY SCHEDULE` - [&#x200B; Admin &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 
 Informationen zum Konfigurieren des Datenexports finden Sie unter [Befehlszeilenkonfiguration](configure-cli.md#configure-data-export).
 
@@ -235,7 +235,7 @@ Sie können eine CSV-Datei herunterladen, deren Status im Ansichtsraster „Zahl
 
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Wenn Sie Status für einen anderen Zeitraum als die letzten 30 Tage anzeigen möchten, [passen Sie den Zeitrahmen des Datumsbereichs für Ihre Status an](#customize-dates-timeframe).
-1. Klicken Sie auf _Symbol_ Herunterladen![ (](assets/icon-download.png){width="20" zoomable="yes"}).
+1. Klicken Sie auf _Symbol_ Herunterladen![&#x200B; (](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Der Status der Bestellzahlung wird im CSV-Format heruntergeladen.
 

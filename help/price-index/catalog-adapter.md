@@ -22,7 +22,7 @@ Wenn Sie die [!DNL Catalog Adapter] aktivieren, werden Preisindizierung und -vor
 - Der im Adobe Commerce-Programm enthaltene Preisindizer ist deaktiviert.
 - Die Preisverwaltung erfolgt über den SaaS-Datenexport und den [SaaS-Preisindex](price-indexing.md).
 - Wenn ein Kunde ein Produkt, eine Kategorie oder eine andere Seite öffnet, die Produktpreise anzeigt, werden die Preise über den Adobe Commerce-Service abgerufen.
-- Die Preise werden an den Adobe Commerce-Service gesendet, indem Daten aus dem [SaaS-Datenexport“ ](../data-export/overview.md) werden.
+- Die Preise werden an den Adobe Commerce-Service gesendet, indem Daten aus dem [SaaS-Datenexport“ &#x200B;](../data-export/overview.md) werden.
 - Checkout berechnet Preise dynamisch neu.
 
 Sie können die Preisindizierung in der Commerce-Anwendung erneut aktivieren, indem Sie die Katalogadaptererweiterung entfernen oder deaktivieren.

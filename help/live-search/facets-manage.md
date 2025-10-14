@@ -14,7 +14,7 @@ Folgen Sie diesen Anweisungen, um die Eigenschaften vorhandener Facetten zu aktu
 
 ## Konfigurieren von Preisfacettengruppierungen
 
-Informationen zum Konfigurieren von [ und Gruppierungen finden ](settings.md) unter „Einstellungen“.
+Informationen zum Konfigurieren von [&#x200B; und Gruppierungen finden &#x200B;](settings.md) unter „Einstellungen“.
 
 ## Facette bearbeiten
 
@@ -79,7 +79,7 @@ Die Nadel ändert ihre Farbe, wenn Sie darauf klicken, und wird verwendet, um di
 Die Reihenfolge der fixierten Facetten kann geändert werden, indem die Zeile an eine andere Position verschoben wird. Angeheftete Facetten haben ein *Verschieben*-Symbol (![Auswahl verschieben](assets/btn-move.png)) am Anfang der Zeile. Im Gegensatz zu fixierten Facetten können dynamische Facetten nicht verschoben werden.
 
 1. Suchen Sie die Facette *Abschnitt „Angeheftete*&quot; der Liste.
-1. Ziehen Sie die **mithilfe des Symbols** Verschieben![ (Auswahl verschieben](assets/btn-move.png) an eine neue Position im Abschnitt *Fixierte Facetten*.
+1. Ziehen Sie die **mithilfe des Symbols** Verschieben![&#x200B; (Auswahl verschieben](assets/btn-move.png) an eine neue Position im Abschnitt *Fixierte Facetten*.
 
    Nachdem die Änderungen veröffentlicht wurden, werden die neu angeordneten Facetten in der Liste Storefront *Filter* angezeigt.
 

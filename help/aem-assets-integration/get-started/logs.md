@@ -20,5 +20,5 @@ Die AEM Assets-Integration stellt die folgenden Protokolldateien in Ihrer Commer
 
 Bitten Sie Ihren Systemadministrator, den Drehplan für die Protokolldateien auf diese Protokolle zu überprüfen, um zu verhindern, dass sie zu groß werden. In einigen Umgebungen drehen sich Protokolle automatisch. In anderen müssen Sie die Protokollrotation manuell konfigurieren.  Weitere Informationen finden Sie in den folgenden Themen:
 
-- Bitten Sie bei lokalen Installationen von Adobe Commerce Ihren Systemadministrator, eine [ einzurichten](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=de#server-settings).
+- Bitten Sie bei lokalen Installationen von Adobe Commerce Ihren Systemadministrator, eine [&#x200B; einzurichten](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=de#server-settings).
 - Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Protokolle anzeigen und verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=de).

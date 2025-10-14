@@ -41,7 +41,7 @@ Mit dem Textbaustein werden die folgenden Ressourcen zur Authoring-Umgebung von 
 
 >[!NOTE]
 >
-> Weitere Informationen zum {[}Textbaustein für AEM Commerce finden Sie auf ](https://github.com/ankumalh/assets-commerce) Seite „Readme **.**
+> Weitere Informationen zum {[}Textbaustein für AEM Commerce finden Sie auf &#x200B;](https://github.com/ankumalh/assets-commerce) Seite „Readme **.**
 
 ### Voraussetzungen
 

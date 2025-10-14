@@ -29,7 +29,7 @@ Sie können [!DNL Payment Services] für Ihren Store und Ihre _[!UICONTROL Merch
 1. Erweitern Sie im Abschnitt _[!UICONTROL [!DNL Payment Services]]_&#x200B;den Abschnitt&#x200B;_[!UICONTROL General Configuration]_ .
 1. Wählen **für &quot;**&quot; die Option `Yes` aus, um [!DNL Payment Services] für Ihren Store zu aktivieren.
 1. Legen Sie für **Methode** den Wert auf `Sandbox` fest, wenn Sie noch [!DNL Payment Services] für Ihren Store testen, oder auf `Production`, wenn Sie bereit sind, Live-Zahlungen zu aktivieren.
-1. Ihre **[!UICONTROL Payment Services Sandbox ID]**- und **[!UICONTROL Payment Services Production ID]** werden automatisch ausgefüllt, sobald Sie den [Commerce Services-Connector ](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} und das [!DNL Payment Services]-Dashboard zum ersten Mal aufrufen. Führen Sie diese Schritte aus, um das Onboarding für Ihre Sandbox- und/oder Produktionsumgebung abzuschließen. Diese Werte verknüpfen Ihre SaaS-ID mit [!DNL Payment Services].
+1. Ihre **[!UICONTROL Payment Services Sandbox ID]**- und **[!UICONTROL Payment Services Production ID]** werden automatisch ausgefüllt, sobald Sie den [Commerce Services-Connector &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} und das [!DNL Payment Services]-Dashboard zum ersten Mal aufrufen. Führen Sie diese Schritte aus, um das Onboarding für Ihre Sandbox- und/oder Produktionsumgebung abzuschließen. Diese Werte verknüpfen Ihre SaaS-ID mit [!DNL Payment Services].
 
    >[!WARNING]
    >
@@ -58,7 +58,7 @@ Sie können [!DNL Payment Services] für Ihren Store und Ihre _[!UICONTROL Merch
 
 Die [!UICONTROL Credit Card Fields] Zahlungsoptionen bieten einen einfachen und sicheren Checkout für Kreditkarten- oder Debitkartenzahlungsmethoden.
 
-Weitere Informationen finden [ unter ](payments-options.md#paypal-smart-buttons).
+Weitere Informationen finden [&#x200B; unter &#x200B;](payments-options.md#paypal-smart-buttons).
 
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Erweitern Sie im linken Bereich **[!UICONTROL Sales]** und wählen Sie **[!UICONTROL Payment Methods]**.
@@ -84,7 +84,7 @@ Weitere Informationen finden [ unter ](payments-options.md#paypal-smart-buttons)
 | [!UICONTROL Sort order] | Shop-Ansicht | Die Sortierreihenfolge für die angegebene Zahlungsmethode auf der Kasse. `Numeric Only` |
 | [!UICONTROL Show on checkout page] | Website | Aktivieren oder Deaktivieren von Kreditkartenfeldern auf der Kasse. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | Shop-Ansicht | Aktivieren oder Deaktivieren [Kreditkarten-Vaulting](vaulting.md). Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled in Admin] | Shop-Ansicht | Aktivieren oder deaktivieren Sie die Möglichkeit für [Händler, Bestellungen für Kunden in der ](vaulting.md) mithilfe einer Tresorzahlmethode abzuschließen. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled in Admin] | Shop-Ansicht | Aktivieren oder deaktivieren Sie die Möglichkeit für [Händler, Bestellungen für Kunden in der &#x200B;](vaulting.md) mithilfe einer Tresorzahlmethode abzuschließen. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL 3D Secure authentication] | Website | Aktivieren oder deaktivieren Sie [3DS Secure Authentication](security.md#3ds). Optionen: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | Website | Aktivieren oder Deaktivieren des Debug-Modus. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
@@ -92,7 +92,7 @@ Weitere Informationen finden [ unter ](payments-options.md#paypal-smart-buttons)
 
 [[!DNL Fastlane by PayPal]](https://www.paypal.com/us/cshelp/article/what-is-fastlane-by-paypal-help1096) ist eine schnelle und einfache Möglichkeit, sicher online zu bezahlen. Während eines **Gast-Checkouts** können Sie Ihre Karte und Versanddetails sicher speichern, um in Zukunft noch schnellere Käufe zu ermöglichen.
 
-Weitere Informationen finden [ unter ](payments-options.md#fastlane-button)Zahlungsoptionen“.
+Weitere Informationen finden [&#x200B; unter &#x200B;](payments-options.md#fastlane-button)Zahlungsoptionen“.
 
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Erweitern Sie im linken Bereich **[!UICONTROL Sales]** und wählen Sie **[!UICONTROL Payment Methods]**.
@@ -132,7 +132,7 @@ Mit diesen optionalen Einstellungen können Sie anpassen, wie [!UICONTROL Fastla
 1. Ändern Sie die Einstellungen nach Bedarf.
 1. Klicken Sie auf **[!UICONTROL Save Config]** , um Ihre Änderungen zu speichern.
 
-Weitere Informationen [ Anpassung finden Sie ](https://developer.paypal.com/limited-release/accelerated-checkout-bt/) den PayPal-Entwicklerdokumenten .
+Weitere Informationen [&#x200B; Anpassung finden Sie &#x200B;](https://developer.paypal.com/limited-release/accelerated-checkout-bt/) den PayPal-Entwicklerdokumenten .
 
 #### Root-Einstellungen
 
@@ -165,7 +165,7 @@ Diese optionalen Einstellungen gelten für die Kundeneingabefelder Ihrer [!UICON
 
 Mit [!DNL Apple Pay] können Händler in Safari ein sicheres, schnelles und nahtloses Checkout-Erlebnis bieten - mit Unterstützung für bis zu 99 Domains pro Händlerkonto. Mit der Schaltfläche &quot;[!DNL Apple Pay]&quot; werden automatisch Zahlungs-, Kontakt- und Versandinformationen vom iOS- oder macOS-Gerät des Kunden ausgefüllt, was schnelle, einmalige Käufe ermöglicht, die die Konversionsraten steigern können.
 
-Weitere Informationen finden [ unter ](payments-options.md#apple-pay-button).
+Weitere Informationen finden [&#x200B; unter &#x200B;](payments-options.md#apple-pay-button).
 
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Erweitern Sie im linken Bereich **[!UICONTROL Sales]** und wählen Sie **[!UICONTROL Payment Methods]**.
@@ -199,7 +199,7 @@ Weitere Informationen finden [ unter ](payments-options.md#apple-pay-button).
 
 Mit der [!UICONTROL Google Pay] Zahlungsoption kann der Händler Google Pay an seine Kunden anbieten, die die Google Wallet auf ihren Geräten verwenden können, um Käufe zu tätigen.
 
-Weitere Informationen finden [ unter ](payments-options.md#google-pay-button).
+Weitere Informationen finden [&#x200B; unter &#x200B;](payments-options.md#google-pay-button).
 
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Erweitern Sie im linken Bereich **[!UICONTROL Sales]** und wählen Sie **[!UICONTROL Payment Methods]**.
@@ -241,7 +241,7 @@ Weitere Informationen finden Sie in der Dokumentation zu den Objektoptionen für
 
 Die [!DNL PayPal payment buttons] Zahlungsoptionen bieten einen einfachen, schnellen und sicheren Checkout-Prozess für Ihren Kunden.
 
-Weitere Informationen finden [ unter ](payments-options.md#paypal-smart-buttons).
+Weitere Informationen finden [&#x200B; unter &#x200B;](payments-options.md#paypal-smart-buttons).
 
 Konfigurieren von [!DNL PayPal payment buttons]
 
@@ -254,7 +254,7 @@ Sie können die Zahlungsoptionen der PayPal-Zahlungs-Buttons im Admin-Bereich ak
 1. Um den Namen der Zahlungsmethode zu ändern, wie er während des Checkouts angezeigt wird, bearbeiten Sie das _[!UICONTROL Title]_.
 1. Um [Zahlungsaktion festzulegen](production.md#set-payment-services-as-payment-method) wählen Sie **[!UICONTROL Authorize]** oder **[!UICONTROL Authorize and Capture]**.
 1. Um eine Zahlungsmethode auf der Checkout-Seite zu priorisieren, geben Sie einen `Numeric Only` Wert in das Feld **[!UICONTROL Sort order]** ein.
-1. Um „Später bezahlen[ zu aktivieren/deaktivieren](payments-options.md#pay-later-button) wählen Sie `Yes`/`No` für **[!UICONTROL Display Pay Later Message]** aus.
+1. Um „Später bezahlen[&#x200B; zu aktivieren/deaktivieren](payments-options.md#pay-later-button) wählen Sie `Yes`/`No` für **[!UICONTROL Display Pay Later Message]** aus.
 
    * Wenn Sie die Option [Später bezahlen](payments-options.md#pay-later-button) aktivieren, wird eine modale **[!UICONTROL Configure Messaging]**-Schaltfläche angezeigt, über die Sie die Stile für die **[!UICONTROL PayPal Pay Later messaging]** festlegen können.
 
@@ -325,7 +325,7 @@ Wenn Sie die Konfiguration in _Einstellungen_ ändern, z. B. durch Umschalten de
 
 Wenn ein Cache-Typ in der Cache-Management-Tabelle einen `INVALIDATED` hat, zeigt Ihr Store möglicherweise nicht die neueste Konfiguration für dieses Element an. Leeren Sie den Cache, um Ihren Store zu aktualisieren und die neueste Konfiguration anzuzeigen.
 
-Um sicherzustellen, dass Ihr Store die richtige Konfiguration anzeigt, [ Sie regelmäßig den Cache](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management).
+Um sicherzustellen, dass Ihr Store die richtige Konfiguration anzeigt, [&#x200B; Sie regelmäßig den Cache](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management).
 
 ## Kartengewölbe
 
@@ -335,7 +335,7 @@ Sie können in der Admin-Instanz auch das Vaulting von Karten verwenden, um nach
 
 Aktivieren oder deaktivieren Sie das Vaulting von Karten in [Einstellungen für Kreditkartenfelder](#credit-card-fields).
 
-Weitere Informationen [ Sie unter ](vaulting.md)Kreditkartenabwicklung).
+Weitere Informationen [&#x200B; Sie unter &#x200B;](vaulting.md)Kreditkartenabwicklung).
 
 ## 3DS
 
@@ -343,13 +343,13 @@ Weitere Informationen [ Sie unter ](vaulting.md)Kreditkartenabwicklung).
 
 Aktivieren oder deaktivieren Sie 3DS in den [Kreditkartenfeldeinstellungen](#credit-card-fields).
 
-Weitere Informationen finden Sie unter [3DS ](security.md#3ds) Sicherheit).
+Weitere Informationen finden Sie unter [3DS &#x200B;](security.md#3ds) Sicherheit).
 
 ## Mehrere PayPal-Konten verwenden
 
 In [!UICONTROL Payment Services] können Sie mehrere PayPal-Konten innerhalb von **einem**-Händlerkonto auf Website-Ebene verwenden. Wenn Sie beispielsweise Ihr(e) Geschäft(e) in mehreren Ländern betreiben (die unterschiedliche [Währungen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/currency/currency) verwenden) oder Adobe Commerce für einige Teile Ihres Unternehmens, aber nicht _alle_ verwenden möchten, können Sie Ihr Händlerkonto so einrichten, dass mehrere PayPal-Konten verwendet werden.
 
-Weitere [ zur Hierarchie von Websites, Stores und Store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de)Ansichten finden Sie unter „Site, Store und View Scope“.
+Weitere [&#x200B; zur Hierarchie von Websites, Stores und Store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de)Ansichten finden Sie unter „Site, Store und View Scope“.
 
 Siehe [Befehlszeilenkonfiguration](configure-cli.md#configure-scope-via-cli) für weitere Informationen zur Konfiguration von Bereichen für mehrere PayPal-Konten über die CLI.
 

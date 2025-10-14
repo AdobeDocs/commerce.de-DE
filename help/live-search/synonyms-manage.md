@@ -10,7 +10,7 @@ ht-degree: 0%
 
 # Verwalten von Synonymen
 
-Befolgen Sie diese Anweisungen, um bestehende [!DNL Live Search] ([) ](synonyms.md) verwalten.
+Befolgen Sie diese Anweisungen, um bestehende [!DNL Live Search] ([) &#x200B;](synonyms.md) verwalten.
 
 ## Synonym suchen
 

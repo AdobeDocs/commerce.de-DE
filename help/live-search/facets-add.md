@@ -56,14 +56,14 @@ Die Facette wird am unteren Rand der Liste *Dynamische Facetten* hinzugefügt un
 
 1. Wenn die Facette abgeschlossen ist, klicken Sie auf **Änderungen**.
 1. Warten Sie, bis die Facette im Store angezeigt wird.
-Wenn die Facette nach zwei Stunden nicht verfügbar ist, finden Sie weitere Informationen unter [Überprüfen des ](install.md#synchronize-catalog-data)) in den Installationsanweisungen.
+Wenn die Facette nach zwei Stunden nicht verfügbar ist, finden Sie weitere Informationen unter [Überprüfen des &#x200B;](install.md#synchronize-catalog-data)) in den Installationsanweisungen.
 
 ## Feldbeschreibungen
 
 | Feld | Beschreibung |
 |--- |--- |
 | Bezeichnung | ([Nur Headless](facets-type.md)) Die [Facettenbeschriftung](facets-type.md) die in der Storefront sichtbar ist, kann aus Gründen der Konsistenz mit Ihrer Marke bearbeitet werden. |
-| Sortierungstyp | Die Methode, die zum [ von ](facets-type.md) verwendet wird. Alle [!DNL Commerce] Storefronts sortieren Facetten nur alphabetisch. Headless-Implementierungen können auch nach `Count` sortiert werden. options:<br />Alphabetisch - Sortiert Facetten alphabetisch.<br />Anzahl - (Nur Headless) Sortiert Facetten nach der Anzahl der gefundenen Übereinstimmungen. |
+| Sortierungstyp | Die Methode, die zum [&#x200B; von &#x200B;](facets-type.md) verwendet wird. Alle [!DNL Commerce] Storefronts sortieren Facetten nur alphabetisch. Headless-Implementierungen können auch nach `Count` sortiert werden. options:<br />Alphabetisch - Sortiert Facetten alphabetisch.<br />Anzahl - (Nur Headless) Sortiert Facetten nach der Anzahl der gefundenen Übereinstimmungen. |
 | Maximaler Wert | Die maximale Anzahl von Werten, die für jede Facette in der Storefront angezeigt werden können. Facetten, die einen Wertebereich darstellen, sind gleichmäßig verteilt. Gültige Einträge: 0 - 100; Standard: 8 |
 
 ### Kontrollen

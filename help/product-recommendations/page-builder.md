@@ -16,7 +16,7 @@ Produktempfehlungen können in jeden Page Builder-Inhalt integriert werden, den 
 
 >[!NOTE]
 >
-> Auf einer nativen Page Builder-Seite können bis zu 25 Empfehlungseinheiten vorhanden sein. Nicht-native Page Builder-Seiten können bis zu 5 Empfehlungseinheiten enthalten. Weitere Informationen [ Sie unter ](create.md) Empfehlung erstellen .
+> Auf einer nativen Page Builder-Seite können bis zu 25 Empfehlungseinheiten vorhanden sein. Nicht-native Page Builder-Seiten können bis zu 5 Empfehlungseinheiten enthalten. Weitere Informationen [&#x200B; Sie unter &#x200B;](create.md) Empfehlung erstellen .
 
 ## Verwenden von Produktempfehlungen mit Page Builder-Inhalten
 

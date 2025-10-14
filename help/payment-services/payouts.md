@@ -27,7 +27,7 @@ Sie können [Auszahlungstransaktionen](#download-transactions) im CSV-Dateiforma
 
 >[!NOTE]
 >
->Auszahlungsberichte zeigen nur Bestellungen an, die erfasst (Zahlungsaktion ist auf [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html?lang=de#set-payment-services-as-payment-method) eingestellt) - oder [ als `Invoiced`](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) markiert sind.
+>Auszahlungsberichte zeigen nur Bestellungen an, die erfasst (Zahlungsaktion ist auf [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html?lang=de#set-payment-services-as-payment-method) eingestellt) - oder [&#x200B; als `Invoiced`](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) markiert sind.
 
 ## Datenvisualisierungsansicht für Auszahlungen
 
@@ -137,7 +137,7 @@ Sie können eine CSV-Datei herunterladen, die alle Transaktionen enthält, die i
 
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [Passen Sie den Zeitrahmen des Datumsbereichs für Ihre Transaktionen an](#customize-transactions-timeframe).
-1. Klicken Sie auf _Symbol_ Herunterladen![ (](assets/icon-download.png){width="20" zoomable="yes"}).
+1. Klicken Sie auf _Symbol_ Herunterladen![&#x200B; (](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Ihre Auszahlungstransaktionen werden im CSV-Format heruntergeladen.
 

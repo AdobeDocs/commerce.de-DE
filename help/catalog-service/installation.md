@@ -141,7 +141,7 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Service] für eine lokale Inst
 
 ### Konfigurieren des Service und des Datenexports
 
-Führen Sie nach der Installation des [!DNL Catalog Service] die folgenden Schritte aus, um den Katalog-Service in Ihre Adobe Commerce-Instanz zu integrieren. Diese Integration ermöglicht die Datensynchronisation und Kommunikation zwischen der Commerce-Instanz, dem Katalog-Service und anderen unterstützenden Services. Die Datensynchronisation wird von der [SaaS-Datenexporterweiterung“ ](../data-export/overview.md).
+Führen Sie nach der Installation des [!DNL Catalog Service] die folgenden Schritte aus, um den Katalog-Service in Ihre Adobe Commerce-Instanz zu integrieren. Diese Integration ermöglicht die Datensynchronisation und Kommunikation zwischen der Commerce-Instanz, dem Katalog-Service und anderen unterstützenden Services. Die Datensynchronisation wird von der [SaaS-Datenexporterweiterung“ &#x200B;](../data-export/overview.md).
 
 1. Richten Sie den [Commerce Services-Connector ein](https://experienceleague.adobe.com/de/docs/commerce/user-guides/integration-services/saas) indem Sie die API-Schlüssel angeben und einen SaaS-Datenspeicher auswählen.
 
@@ -163,4 +163,4 @@ So stellen Sie sicher, dass der Katalogexport ordnungsgemäß ausgeführt wird:
 
 ### Überwachen und Fehlerbehebung bei der Datensynchronisation
 
-Vom Commerce-Administrator aus können Sie den Synchronisierungsprozess mithilfe des [Daten-Management-Dashboards“ ](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-dashboard). Verwenden Sie die [Commerce-CLI](../data-export/data-export-cli-commands.md#troubleshooting) und Protokolle, um den Prozess zu verwalten und Fehler zu beheben.
+Vom Commerce-Administrator aus können Sie den Synchronisierungsprozess mithilfe des [Daten-Management-Dashboards“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-dashboard). Verwenden Sie die [Commerce-CLI](../data-export/data-export-cli-commands.md#troubleshooting) und Protokolle, um den Prozess zu verwalten und Fehler zu beheben.

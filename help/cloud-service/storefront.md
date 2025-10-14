@@ -27,7 +27,7 @@ Informationen zu einer anpassbareren und detaillierteren Anleitung finden Sie in
 
 1. Geben Sie im Feld **Commerce GraphQL-Endpunkt (optional)** Ihren Adobe Commerce as a Cloud Service (SaaS) GraphQL-Endpunkt ein, auf den Sie im Commerce Cloud Manager zugreifen können, nachdem Sie [Ihre Instanz erstellt haben](./getting-started.md#create-an-instance).
 
-   Wenn Sie „API Mesh[ verwenden, geben ](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic) alternativ Ihren API Mesh-GraphQL-Endpunkt in das Feld **Commerce GraphQL-Endpunkt (optional)** ein. Weitere [ finden Sie unter ](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) erstellen .
+   Wenn Sie „API Mesh[&#x200B; verwenden, geben &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic) alternativ Ihren API Mesh-GraphQL-Endpunkt in das Feld **Commerce GraphQL-Endpunkt (optional)** ein. Weitere [&#x200B; finden Sie unter &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) erstellen .
 
 1. Klicken Sie **Site erstellen**. Befolgen Sie die Anweisungen auf dem Bildschirm, um den Zugriff auf Ihr GitHub-Repository zu autorisieren.
 

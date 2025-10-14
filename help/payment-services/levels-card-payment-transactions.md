@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ![Kartendetails](assets/cards-details-level-processing.png){width="500" zoomable="yes"}
 
-Weitere Informationen finden [ in der ](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank}-Dokumentation für PayPal-Entwickler unter „Zahlungsabwicklung“.
+Weitere Informationen finden [&#x200B; in der &#x200B;](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank}-Dokumentation für PayPal-Entwickler unter „Zahlungsabwicklung“.
 
 ### Stufe 1
 
@@ -43,17 +43,17 @@ Stufe 1 ist die häufigste, erfordert weniger Informationen und verursacht daher
 * Betrug verhindern, Prozessorisiken senken
 * Verbesserung der Transaktionssicherheit
 
-Siehe [Was ist IC++?Weitere Informationen finden Sie in der Entwicklerdokumentation zu PayPal ](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank}.
+Siehe [Was ist IC++?Weitere Informationen finden Sie in der Entwicklerdokumentation zu PayPal &#x200B;](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank}.
 
 ## Kartenzahlungstransaktionen der Stufen 2 und 3 in [!DNL Payment Services]
 
 Um sich für die Verarbeitung auf Stufe 2 oder Stufe 3 zu qualifizieren, müssen die Händler die vorherigen Informationen übermitteln, obwohl es die Kartennetzwerke sind, die letztendlich bestimmen, für welche Stufe eine Transaktion bei der Verarbeitung qualifiziert ist.
 
-Weitere Informationen finden Sie in der [ zu ](https://www.paypal.com/us/cshelp/article/ts2278?_ga=1.131773126.875104296.1712843492){target=_blank} in der Entwicklerdokumentation zu PayPal.
+Weitere Informationen finden Sie in der [&#x200B; zu &#x200B;](https://www.paypal.com/us/cshelp/article/ts2278?_ga=1.131773126.875104296.1712843492){target=_blank} in der Entwicklerdokumentation zu PayPal.
 
 Die Verarbeitung der Ebenen 2 und 3 ist für [!DNL Payment Services] Händler auf Store-Ebene standardmäßig deaktiviert.
 
-Level 2 und Level 3 Verarbeitung sind verfügbar, wenn Sie bereits IC++ Preise verwenden. Um diese Funktion zu aktivieren, können Sie dies über die [Befehlszeilenschnittstelle (CLI) ](configure-cli.md).
+Level 2 und Level 3 Verarbeitung sind verfügbar, wenn Sie bereits IC++ Preise verwenden. Um diese Funktion zu aktivieren, können Sie dies über die [Befehlszeilenschnittstelle (CLI) &#x200B;](configure-cli.md).
 
 >[!IMPORTANT]
 >

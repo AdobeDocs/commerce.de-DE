@@ -47,7 +47,7 @@ Um produktbezogene Bilder zu verwalten, müssen alle Änderungen direkt in **AEM
 
 ### Synchronisations-SLAs
 
-Weitere [ zu diesem Thema finden ](get-started/setup-synchronization.md#synchronization-sla) unter Synchronisierung mit SLA .
+Weitere [&#x200B; zu diesem Thema finden &#x200B;](get-started/setup-synchronization.md#synchronization-sla) unter Synchronisierung mit SLA .
 
 ## Inhaltsbilder
 
@@ -119,7 +119,7 @@ Diese Integration stellt sicher, dass Händler Produktvideos mühelos skalierbar
 
 ### Synchronisations-SLAs
 
-Weitere [ zu diesem Thema finden ](get-started/setup-synchronization.md#synchronization-sla) unter Synchronisierung mit SLA .
+Weitere [&#x200B; zu diesem Thema finden &#x200B;](get-started/setup-synchronization.md#synchronization-sla) unter Synchronisierung mit SLA .
 
 ## Kategoriebilder
 

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Facettenbeschriftungen
 
-Facettenbeschriftungen können über den Arbeitsbereich [Facettenbeschriftung“ bearbeitet ](workspace.md).
+Facettenbeschriftungen können über den Arbeitsbereich [Facettenbeschriftung“ bearbeitet &#x200B;](workspace.md).
 
 ## Sortiertyp
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Kategorie-Merchandising
 
-Mit dem Kategorie-Merchandising können Store-Besitzer [!DNL Live Search] intelligente [ (Regeln](rules.md) auf Produktkategorien und Unterkategorien anwenden.
+Mit dem Kategorie-Merchandising können Store-Besitzer [!DNL Live Search] intelligente [&#x200B; (Regeln](rules.md) auf Produktkategorien und Unterkategorien anwenden.
 
 Dieses Video ist eine Einführung in das Kategorie-Merchandising.
 
@@ -23,7 +23,7 @@ Die Funktion ist im Administrator unter **Marketing** > SEO &amp; Search > **[!D
 
 >[!NOTE]
 >
->Kategorie-Merchandising ist ab Version [!DNL Live Search] [.0.0 ](release-notes.md). Wenn Sie die Kategorie Merchandising-Arbeitsbereich sehen, sie jedoch nicht mit Daten gefüllt ist, aktualisieren Sie das [!DNL Live Search].
+>Kategorie-Merchandising ist ab Version [!DNL Live Search] [.0.0 &#x200B;](release-notes.md). Wenn Sie die Kategorie Merchandising-Arbeitsbereich sehen, sie jedoch nicht mit Daten gefüllt ist, aktualisieren Sie das [!DNL Live Search].
 
 ![Kategorie Merchandising](assets/category_workspace.png)
 

@@ -18,7 +18,7 @@ Um mit Payment Services für [!DNL Adobe Commerce] und [!DNL Magento Open Source
 
 >[!INFO]
 >
-> Adobe Commerce Weitere Informationen finden [ in  [!DNL Payment Services]  Video „Konfigurieren für ](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services)&quot;.
+> Adobe Commerce Weitere Informationen finden [&#x200B; in  [!DNL Payment Services]  Video „Konfigurieren für &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services)&quot;.
 
 Das Herunterladen und Installieren der [!DNL Payment Services]-Erweiterung für [!DNL Adobe Commerce] und [!DNL Magento Open Source] ist ein erforderlicher Schritt für die Verwendung von [!DNL Payment Services].
 
@@ -38,14 +38,14 @@ Sie müssen zuerst die Erweiterung von [Commerce Marketplace herunterladen](http
 
 ## Installieren der Erweiterung
 
-Sie können die [!DNL Payment Services]-Erweiterung sowohl für [!DNL Adobe Commerce] in der Cloud-Infrastruktur als auch für lokale Instanzen installieren, die mit Ihrem im Anmeldeprozess bereitgestellten Commerce-[ (](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys)) verknüpft sind.
+Sie können die [!DNL Payment Services]-Erweiterung sowohl für [!DNL Adobe Commerce] in der Cloud-Infrastruktur als auch für lokale Instanzen installieren, die mit Ihrem im Anmeldeprozess bereitgestellten Commerce-[&#x200B; (](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys)) verknüpft sind.
 [!DNL Magento Open Source] Kunden verwenden die lokal installierten Anweisungen.
 
 Composer verwendet diese Schlüssel bei der ersten Installation von [!DNL Adobe Commerce] oder in Situationen, in denen die Composer-Schlüssel zuvor nicht in der `auth.json`-Datei gespeichert wurden.
 
-Weitere [ zum Abrufen von Composer-Schlüsseln finden ](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) unter „Abrufen von Authentifizierungsschlüsseln“.
+Weitere [&#x200B; zum Abrufen von Composer-Schlüsseln finden &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) unter „Abrufen von Authentifizierungsschlüsseln“.
 
-Weitere Informationen dazu[ was vor dem Herunterladen und Installieren einer Erweiterung zu beachten ](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/extensions), finden Sie unter „Installieren einer Erweiterung“.
+Weitere Informationen dazu[&#x200B; was vor dem Herunterladen und Installieren einer Erweiterung zu beachten &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/extensions), finden Sie unter „Installieren einer Erweiterung“.
 
 ### [!DNL Adobe Commerce] zur Cloud-Infrastruktur
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Sie können [!DNL Payment Services] mit hilfreichen Einstellungen auf der [!DNL Payment Services]-Startseite an Ihre Anforderungen anpassen.
 
-Um [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] zu konfigurieren, klicken Sie auf **[!UICONTROL Settings]**. Diese Konfigurationsoptionen gelten nur für die Umgebung, die im Feld _[!UICONTROL Payment mode]_&#x200B;der Konfigurationsoptionen[_ Allgemein _festgelegt ](#configure-general-settings).
+Um [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] zu konfigurieren, klicken Sie auf **[!UICONTROL Settings]**. Diese Konfigurationsoptionen gelten nur für die Umgebung, die im Feld _[!UICONTROL Payment mode]_&#x200B;der Konfigurationsoptionen[_ Allgemein _festgelegt &#x200B;](#configure-general-settings).
 
 Informationen zur Multi-Store- oder Legacy-Konfiguration finden Sie [Konfigurieren von in der Admin-](configure-admin.md)).
 
@@ -30,7 +30,7 @@ Sie können [!DNL Payment Services] für Ihre Website aktivieren und entweder Sa
 
 1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-1. Klicken Sie auf **[!UICONTROL Settings]**. Weitere Informationen finden [ unter „Einführung  [!DNL Payment Services] Startseite](payments-home.md) .
+1. Klicken Sie auf **[!UICONTROL Settings]**. Weitere Informationen finden [&#x200B; unter „Einführung  [!DNL Payment Services] Startseite](payments-home.md) .
 
    ![React-Einstellungsansicht](assets/react-settings-view.png){width="500" zoomable="yes"}
 
@@ -40,7 +40,7 @@ Sie können [!DNL Payment Services] für Ihre Website aktivieren und entweder Sa
 
 1. Wenn Sie noch [!DNL Payment Services] für Ihren Store testen, setzen Sie **Zahlungsmodus** auf `Sandbox`. Wenn Sie bereit sind, Live-Zahlungen zu aktivieren, setzen Sie sie auf `Production`.
 
-1. Ihre **[!UICONTROL Payment Services Sandbox ID]**- und **[!UICONTROL Payment Services Production ID]** werden automatisch ausgefüllt, sobald Sie den [Commerce Services-Connector ](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} und das [!DNL Payment Services]-Dashboard zum ersten Mal aufrufen. Führen Sie diese Schritte aus, um das Onboarding für Ihre Sandbox- und/oder Produktionsumgebung abzuschließen. Diese Werte verknüpfen Ihre SaaS-ID mit [!DNL Payment Services].
+1. Ihre **[!UICONTROL Payment Services Sandbox ID]**- und **[!UICONTROL Payment Services Production ID]** werden automatisch ausgefüllt, sobald Sie den [Commerce Services-Connector &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} und das [!DNL Payment Services]-Dashboard zum ersten Mal aufrufen. Führen Sie diese Schritte aus, um das Onboarding für Ihre Sandbox- und/oder Produktionsumgebung abzuschließen. Diese Werte verknüpfen Ihre SaaS-ID mit [!DNL Payment Services].
 
    >[!WARNING]
    >
@@ -59,7 +59,7 @@ Sie können jetzt mit der Änderung der Standardeinstellungen für [Zahlungsopti
 Sie können [!UICONTROL Soft Descriptor] zu Ihrer/Ihren Website(s) oder Konfiguration einzelner Store-Ansichten hinzufügen. Weiche Deskriptoren werden auf den Kontoauszügen für Kundentransaktionen angezeigt. Wenn Sie beispielsweise über mehrere Stores/Marken/Kataloge verfügen, können Sie diese einfach voneinander abgrenzen, indem Sie dem [!UICONTROL Soft Descriptor] benutzerdefinierten Text hinzufügen.
 
 1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicken Sie auf **[!UICONTROL Settings]**. Weitere Informationen finden [ unter „Einführung  [!DNL Payment Services] Startseite](payments-home.md) .
+1. Klicken Sie auf **[!UICONTROL Settings]**. Weitere Informationen finden [&#x200B; unter „Einführung  [!DNL Payment Services] Startseite](payments-home.md) .
 1. Wählen Sie im Dropdown-Menü **[!UICONTROL Scope]** die Website- oder Store-Ansicht aus, für die Sie einen Soft-Deskriptor erstellen möchten. Belassen Sie diese Einstellung für die Ersteinrichtung als **[!UICONTROL Default]**, um den Standardwert festzulegen.
 1. Fügen Sie im Textfeld benutzerdefinierten Text (bis zu 22 Zeichen) ein, der `Soft descriptor` ersetzt.
 1. Klicken Sie auf **[!UICONTROL Save]**.
@@ -90,19 +90,19 @@ Sie können [!UICONTROL Soft Descriptor] zu Ihrer/Ihren Website(s) oder Konfigur
 Nachdem Sie [!UICONTROL Payment Services] für Ihre Website aktiviert haben, können Sie die Standardeinstellungen für Zahlungsfunktionen und die Storefront-Anzeige ändern.
 
 1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicken Sie auf **[!UICONTROL Settings]**. Weitere Informationen finden [ unter „Einführung  [!DNL Payment Services] Startseite](payments-home.md) .
+1. Klicken Sie auf **[!UICONTROL Settings]**. Weitere Informationen finden [&#x200B; unter „Einführung  [!DNL Payment Services] Startseite](payments-home.md) .
 1. Konfigurieren Sie Zahlungsoptionen für [Kreditkarten](#credit-card-fields), [Zahlungsschaltflächen](#payment-buttons) und [Schaltflächenstil](#button-style) gemäß den folgenden Abschnitten.
 
 ### Kreditkartenfelder
 
 Die _[!UICONTROL Credit Card Fields]_&#x200B;Einstellungen bieten eine einfache und sichere Checkout-Option für Kreditkarten- oder Debitkarten-Zahlungsmethoden.
 
-Weitere Informationen finden [ unter ](payments-options.md#credit-card-fields).
+Weitere Informationen finden [&#x200B; unter &#x200B;](payments-options.md#credit-card-fields).
 
 1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Wählen Sie im Dropdown-Menü **[!UICONTROL Scope]** die Store-Ansicht aus, für die Sie eine Zahlungsmethode aktivieren möchten.
 1. Bearbeiten Sie im Abschnitt **[!UICONTROL Credit card fields]** den Wert im Feld **[!UICONTROL Checkout title]** , um den Namen der Zahlungsmethode zu ändern, die während des Checkouts angezeigt wird.
-1. Um [ Zahlungsaktion festzulegen, ](production.md#set-payment-services-as-payment-method) Sie **[!UICONTROL Payment action]** auf `Authorize` oder `Authorize and Capture`.
+1. Um [&#x200B; Zahlungsaktion festzulegen, &#x200B;](production.md#set-payment-services-as-payment-method) Sie **[!UICONTROL Payment action]** auf `Authorize` oder `Authorize and Capture`.
 1. Um eine Zahlungsmethode auf der Checkout-Seite zu priorisieren, geben Sie einen `Numeric Only` Wert in das Feld **[!UICONTROL Sort order]** ein.
 1. Um die sichere [3DS-Authentifizierung zu aktivieren](security.md#3ds) (standardmäßig `Off`), schalten Sie den **[!UICONTROL 3DS Secure authentication]** auf `Always` oder `When required` um.
 1. Um Kreditkartenfelder auf der Kaufbestätigungsseite zu aktivieren oder zu deaktivieren, schalten Sie die **[!UICONTROL Show on checkout page]** ein.
@@ -125,7 +125,7 @@ Weitere Informationen finden [ unter ](payments-options.md#credit-card-fields).
 | [!UICONTROL 3DS Secure authentication] | Website | Aktivieren oder deaktivieren Sie [3DS Secure Authentication](security.md#3ds). Optionen: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | Website | Aktivieren oder deaktivieren Sie Kreditkartenfelder, die auf der Kasse angezeigt werden sollen. Optionen: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Vault enabled] | Shop-Ansicht | Aktivieren oder Deaktivieren [Kreditkarten-Vaulting](vaulting.md). Optionen: [!UICONTROL Off] / [!UICONTROL On] |
-| [!UICONTROL Show vaulted payment methods in Admin] | Shop-Ansicht | Möglichkeit für Händler aktivieren oder deaktivieren, Bestellungen für Kunden in der Admin [mit einer Tresorzahlmethode) ](vaulting.md). Optionen: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show vaulted payment methods in Admin] | Shop-Ansicht | Möglichkeit für Händler aktivieren oder deaktivieren, Bestellungen für Kunden in der Admin [mit einer Tresorzahlmethode) &#x200B;](vaulting.md). Optionen: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Debug Mode] | Website | Aktivieren oder Deaktivieren des Debug-Modus. Optionen: [!UICONTROL Off] / [!UICONTROL On] |
 
 ### Apple Pay
@@ -134,14 +134,14 @@ Mit der Zahlungsoption &quot;[!UICONTROL Apple Pay]-Button“ können Sie eine [
 
 Sie können Apple Pay nur verwenden, wenn Sie die [Apple Pay-Selbstregistrierung über PayPal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) abschließen und dann [Apple Pay konfigurieren](configure-admin.md/#payment-buttons) für Ihre Stores durchführen.
 
-Weitere Informationen finden [ unter ](payments-options.md#apple-pay-button).
+Weitere Informationen finden [&#x200B; unter &#x200B;](payments-options.md#apple-pay-button).
 
 Sie können die [!UICONTROL Apple Pay]-Zahlungsoption aktivieren und konfigurieren:
 
 1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Wählen Sie im Dropdown-Menü **[!UICONTROL Scope]** die Store-Ansicht aus, für die Sie eine Zahlungsmethode aktivieren möchten.
 1. Bearbeiten Sie im Abschnitt **[!UICONTROL Apple Pay]** den Wert im Feld _[!UICONTROL Checkout title]_, um den Namen der Zahlungsmethode zu ändern, die während des Checkouts angezeigt wird.
-1. Um [ Zahlungsaktion festzulegen, ](production.md#set-payment-services-as-payment-method) Sie **[!UICONTROL Payment action]** auf `Authorize` oder `Authorize and Capture`.
+1. Um [&#x200B; Zahlungsaktion festzulegen, &#x200B;](production.md#set-payment-services-as-payment-method) Sie **[!UICONTROL Payment action]** auf `Authorize` oder `Authorize and Capture`.
 1. Um Apple Pay auf der Kaufbestätigungsseite zu aktivieren oder zu deaktivieren, schalten Sie die **[!UICONTROL Show Apple Pay on checkout page]**-Auswahl um.
 1. Um Apple Pay auf der Produktdetailseite zu aktivieren oder zu deaktivieren, schalten Sie die **[!UICONTROL Show Apple Pay on product detail page]**-Auswahl um.
 1. Um Apple Pay für die Vorschau des Mini-Warenkorbs zu aktivieren oder zu deaktivieren, schalten Sie die **[!UICONTROL Show Apple Pay on the mini cart preview]** um.
@@ -167,13 +167,13 @@ Sie können die [!UICONTROL Apple Pay]-Zahlungsoption aktivieren und konfigurier
 
 ### Zahlungs-Schaltflächen
 
-Die [!DNL PayPal payment buttons] Zahlungsoptionen bieten einen einfachen, schnellen und sicheren Checkout-Prozess für Ihren Kunden. Weitere Informationen finden [ unter ](payments-options.md#paypal-smart-buttons).
+Die [!DNL PayPal payment buttons] Zahlungsoptionen bieten einen einfachen, schnellen und sicheren Checkout-Prozess für Ihren Kunden. Weitere Informationen finden [&#x200B; unter &#x200B;](payments-options.md#paypal-smart-buttons).
 
 Sie können die Zahlungsoptionen für PayPal-Zahlungsschaltflächen aktivieren und konfigurieren:
 
 1. Wählen Sie im Dropdown-Menü **[!UICONTROL Scope]** die Store-Ansicht aus, für die Sie eine Zahlungsmethode aktivieren möchten.
 1. Um den Namen der Zahlungsmethode wie beim Checkout angezeigt zu ändern, bearbeiten Sie den Wert im Feld **[!UICONTROL Checkout Title]** .
-1. Um [ Zahlungsaktion festzulegen, ](production.md#set-payment-services-as-payment-method) Sie **[!UICONTROL Payment action]** auf `Authorize` oder `Authorize and Capture`.
+1. Um [&#x200B; Zahlungsaktion festzulegen, &#x200B;](production.md#set-payment-services-as-payment-method) Sie **[!UICONTROL Payment action]** auf `Authorize` oder `Authorize and Capture`.
 1. Um eine Zahlungsmethode auf der Checkout-Seite zu priorisieren, geben Sie einen `Numeric Only` Wert in das Feld **[!UICONTROL Sort order]** ein.
 1. Verwenden Sie die Umschalter-Selektoren, um [!DNL PayPal smart button] Anzeigefunktionen zu aktivieren oder zu deaktivieren:
 
@@ -189,7 +189,7 @@ Sie können die Zahlungsoptionen für PayPal-Zahlungsschaltflächen aktivieren u
 
      >[!NOTE]
      >
-     > Um Apple Pay zu verwenden[ müssen Sie über ein Apple Sandbox-Testerkonto verfügen](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (mit gefälschten Kreditkarten- und Rechnungsinformationen), um es zu testen. Wenn Sie bereit sind, Apple Pay im Sandbox- _oder_ Produktionsmodus zu verwenden, [ Sie nach Abschluss von ](test-validate.md#test-in-sandbox-environment)Tests und Validierung die [Selbstregistrierung mit [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (nur Abschnitt _Registrieren Sie Ihre Live-Domain_) ab und konfigurieren Sie sie für Ihre Stores in [!DNL Payment Services].
+     > Um Apple Pay zu verwenden[&#x200B; müssen Sie über ein Apple Sandbox-Testerkonto verfügen](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (mit gefälschten Kreditkarten- und Rechnungsinformationen), um es zu testen. Wenn Sie bereit sind, Apple Pay im Sandbox- _oder_ Produktionsmodus zu verwenden, [&#x200B; Sie nach Abschluss von &#x200B;](test-validate.md#test-in-sandbox-environment)Tests und Validierung die [Selbstregistrierung mit [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (nur Abschnitt _Registrieren Sie Ihre Live-Domain_) ab und konfigurieren Sie sie für Ihre Stores in [!DNL Payment Services].
 
      Wenn Sie die Sichtbarkeit der Zahlungs-Buttons oder der PayPal Pay Later-Nachricht ein-/ausschalten, wird unten auf der Einstellungsseite eine visuelle Vorschau dieser Konfiguration angezeigt.
 
@@ -244,7 +244,7 @@ Sie können auch die _[!UICONTROL Button style]_&#x200B;Optionen der Zahlungs-Sc
 
 1. [Leeren Sie den Cache](#flush-the-cache).
 
-Sie können die Gestaltung der Zahlungs-Schaltfläche [in der Legacy-Konfiguration in der Admin-](configure-admin.md#configure-paypal-smart-buttons) oder hier in [!DNL Payment Services Home] konfigurieren. Weitere Informationen [ Formatieren von PayPal-Zahlungstasten finden Sie ](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) „PayPal&#39;s Buttons Style Guide“.
+Sie können die Gestaltung der Zahlungs-Schaltfläche [in der Legacy-Konfiguration in der Admin-](configure-admin.md#configure-paypal-smart-buttons) oder hier in [!DNL Payment Services Home] konfigurieren. Weitere Informationen [&#x200B; Formatieren von PayPal-Zahlungstasten finden Sie &#x200B;](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) „PayPal&#39;s Buttons Style Guide“.
 
 #### Konfigurationsoptionen
 
@@ -280,7 +280,7 @@ Wenn Sie die Konfiguration in _Einstellungen_ ändern, z. B. durch Umschalten de
 
 Wenn ein Cache-Typ in der Cache-Management-Tabelle einen `INVALIDATED` hat, zeigt Ihr Store möglicherweise nicht die neueste Konfiguration für dieses Element an. Leeren Sie den Cache, um Ihren Store zu aktualisieren und die neueste Konfiguration anzuzeigen.
 
-Um sicherzustellen, dass Ihr Store die richtige Konfiguration anzeigt, [ Sie regelmäßig den Cache](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management).
+Um sicherzustellen, dass Ihr Store die richtige Konfiguration anzeigt, [&#x200B; Sie regelmäßig den Cache](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management).
 
 ## Kartengewölbe
 
@@ -290,7 +290,7 @@ Sie können in der Admin-Instanz auch das Vaulting von Karten verwenden, um nach
 
 Aktivieren oder deaktivieren Sie das Vaulting von Karten in [Einstellungen für Kreditkartenfelder](#credit-card-fields).
 
-Weitere Informationen [ Sie unter ](vaulting.md)Kreditkartenabwicklung).
+Weitere Informationen [&#x200B; Sie unter &#x200B;](vaulting.md)Kreditkartenabwicklung).
 
 ## 3DS
 
@@ -298,13 +298,13 @@ Weitere Informationen [ Sie unter ](vaulting.md)Kreditkartenabwicklung).
 
 Aktivieren oder deaktivieren Sie 3DS in den [Kreditkartenfeldeinstellungen](#credit-card-fields).
 
-Weitere Informationen finden Sie unter [3DS ](security.md#3ds) Sicherheit).
+Weitere Informationen finden Sie unter [3DS &#x200B;](security.md#3ds) Sicherheit).
 
 ## Mehrere PayPal-Konten verwenden
 
 In [!UICONTROL Payment Services] können Sie mehrere PayPal-Konten innerhalb von **einem**-Händlerkonto auf Website-Ebene verwenden. Wenn Sie beispielsweise Ihr(e) Geschäft(e) in mehreren Ländern betreiben (die unterschiedliche [Währungen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/currency/currency) verwenden) oder Adobe Commerce für einige Teile Ihres Unternehmens, aber nicht _alle_ verwenden möchten, können Sie Ihr Händlerkonto so einrichten, dass mehrere PayPal-Konten verwendet werden.
 
-Weitere [ zur Hierarchie von Websites, Stores und Store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de)Ansichten finden Sie unter „Site, Store und View Scope“.
+Weitere [&#x200B; zur Hierarchie von Websites, Stores und Store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de)Ansichten finden Sie unter „Site, Store und View Scope“.
 
 Siehe [Befehlszeilenkonfiguration](configure-cli.md#configure-scope-via-cli) für weitere Informationen zur Konfiguration von Bereichen für mehrere PayPal-Konten über die CLI.
 

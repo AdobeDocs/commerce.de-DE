@@ -16,7 +16,7 @@ Sie können Produktattribute erweitern, ohne sie in Adobe Commerce zu registrier
 
 >[!NOTE]
 >
->Die beste Möglichkeit, Produktattribute zu erweitern, besteht darin[ sie zu Adobe Commerce hinzuzufügen](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce) wo Sie sie über den Commerce-Administrator konfigurieren und verwalten können. Fügen Sie sie nur dann dynamisch hinzu, wenn Sie sie ausschließlich für Commerce-Storefront-Services benötigen und nicht in Adobe Commerce registrieren möchten. Sie haben außerdem die Möglichkeit, benutzerdefinierte Attribute mithilfe von [API Mesh mit dem Katalog-Service](../catalog-service/mesh.md) zu verwalten, um das GraphQL-Schema des Katalog-Service zu erweitern.
+>Die beste Möglichkeit, Produktattribute zu erweitern, besteht darin[&#x200B; sie zu Adobe Commerce hinzuzufügen](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce) wo Sie sie über den Commerce-Administrator konfigurieren und verwalten können. Fügen Sie sie nur dann dynamisch hinzu, wenn Sie sie ausschließlich für Commerce-Storefront-Services benötigen und nicht in Adobe Commerce registrieren möchten. Sie haben außerdem die Möglichkeit, benutzerdefinierte Attribute mithilfe von [API Mesh mit dem Katalog-Service](../catalog-service/mesh.md) zu verwalten, um das GraphQL-Schema des Katalog-Service zu erweitern.
 
 ## Produktattribute hinzufügen
 

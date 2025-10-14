@@ -24,7 +24,7 @@ Nachdem Sie Attributdaten hinzugefügt haben, können Sie über das Feld [Attrib
 
 Der Produkt-Feed enthält standardmäßige Systemattribute, die für die Produktverarbeitung erforderlich sind oder von Verbrauchern häufig verwendet werden. Sie können zusätzliche Systemattribute in den Produkt-Feed aufnehmen, indem Sie sie zum Feed hinzufügen.
 
-Um diese Aufgabe abzuschließen, aktualisieren Sie das Modul `magento/catalog-data-exporter` , um die zusätzlichen Systemattribute zur Konfigurationsdatei [Dependency Injection“ hinzuzufügen ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/)`di.xml`).
+Um diese Aufgabe abzuschließen, aktualisieren Sie das Modul `magento/catalog-data-exporter` , um die zusätzlichen Systemattribute zur Konfigurationsdatei [Dependency Injection“ hinzuzufügen &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/)`di.xml`).
 
 Fügen Sie die Attribute der `Magento\CatalogDataExporter\Model\Query\ProductAttributeQuery` Produktattributabfrage hinzu.
 

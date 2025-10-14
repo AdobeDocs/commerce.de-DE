@@ -17,7 +17,7 @@ Benutzerdefinierte Profilattribute ermöglichen es Ihnen, die Identifizierung vo
 
 >[!NOTE]
 >
->Erfahren Sie, wie [ Bestellungen „benutzerdefinierte Attribute ](custom-attributes.md)&quot; können.
+>Erfahren Sie, wie [&#x200B; Bestellungen „benutzerdefinierte Attribute &#x200B;](custom-attributes.md)&quot; können.
 
 ## Vorteile
 

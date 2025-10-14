@@ -34,7 +34,7 @@ Die logischen Operatoren `AND` und `OR` werden verwendet, um mehrere Bedingungen
 
 >[!NOTE]
 >
-> Einschluss- und Ausschlussfilter ersetzen die alten Kategorieausschlüsse in Version 3.2.2 und höher des `magento/product-recommendations`. Weitere Informationen [ Adobe Commerce-Versionen finden ](release-notes.md) in den Versionshinweisen .
+> Einschluss- und Ausschlussfilter ersetzen die alten Kategorieausschlüsse in Version 3.2.2 und höher des `magento/product-recommendations`. Weitere Informationen [&#x200B; Adobe Commerce-Versionen finden &#x200B;](release-notes.md) in den Versionshinweisen .
 
 ## Filtertypen {#filtertypes}
 

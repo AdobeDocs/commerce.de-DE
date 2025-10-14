@@ -27,7 +27,7 @@ Nachdem Sie [Commerce-Services konfiguriert](connect.md#configure-commerce-servi
 
    Diese Option ist sichtbar, wenn Sie [!DNL Payment Services] noch nicht als Zahlungsmethode für eine oder mehrere Ihrer Websites konfiguriert haben.
 
-   Sie gelangen in den Einstellungsbereich der Startansicht mit den entsprechenden erweiterten Optionen (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), wo Sie die [!DNL Payment Services] als [Zahlungsmethode“ ](https://experienceleague.adobe.com/de/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"} können.
+   Sie gelangen in den Einstellungsbereich der Startansicht mit den entsprechenden erweiterten Optionen (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), wo Sie die [!DNL Payment Services] als [Zahlungsmethode“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"} können.
 
 1. Legen Sie in _[!UICONTROL General Configuration]_&#x200B;**[!UICONTROL Enable]**&#x200B;auf `Yes` fest.
 1. Legen Sie **[!UICONTROL Payment Action]** sowohl für _[!UICONTROL Credit Card Fields]_&#x200B;als auch für&#x200B;_[!UICONTROL PayPal payment buttons]_ auf einen der folgenden Werte fest:
@@ -47,13 +47,13 @@ Nachdem Sie [Commerce-Services konfiguriert](connect.md#configure-commerce-servi
 
    Das Löschen sollte nach jeder Konfigurationsänderung erfolgen.
 
-Weitere Informationen [ Konfigurieren  [!DNL Payment Services]](configure-admin.md) Kreditkartenfeldern und PayPal-Zahlungsschaltflächen finden Sie unter „Konfigurieren“.
+Weitere Informationen [&#x200B; Konfigurieren  [!DNL Payment Services]](configure-admin.md) Kreditkartenfeldern und PayPal-Zahlungsschaltflächen finden Sie unter „Konfigurieren“.
 
 ## Umfassendes Onboarding von Händlern
 
 Der nächste Schritt bei der Aktivierung Ihrer Stores mit Payment Services besteht darin, das Live-Onboarding abzuschließen.
 
-Payment Services bietet [**Erweiterte** (vollständig unterstützte) und **Standard** (Express-Checkout) Zahlungsoptionen ](../payment-services/payments-options.md#standard-vs-advanced-payments-experience) Onboarding-Flüsse, je nach dem Land, in dem Sie tätig sind, und Ihrem bevorzugten Zahlungserlebnis.
+Payment Services bietet [**Erweiterte** (vollständig unterstützte) und **Standard** (Express-Checkout) Zahlungsoptionen &#x200B;](../payment-services/payments-options.md#standard-vs-advanced-payments-experience) Onboarding-Flüsse, je nach dem Land, in dem Sie tätig sind, und Ihrem bevorzugten Zahlungserlebnis.
 
 1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicken Sie auf **[!UICONTROL Live onboarding]**.
@@ -62,7 +62,7 @@ Payment Services bietet [**Erweiterte** (vollständig unterstützte) und **Stand
 
 1. Wählen _im Modal „Land_&quot; das Land aus, von dem aus Sie tätig sind.
 
-   Payment Services bietet vollständige Unterstützung für alle Zahlungsoptionen in [fünf ](../payment-services/introduction.md#availability). Payment Services bietet Express Checkout-Funktionen (eine Untergruppe von Zahlungsoptionen) für alle anderen Länder, die in der Länderliste dargestellt sind.
+   Payment Services bietet vollständige Unterstützung für alle Zahlungsoptionen in [fünf &#x200B;](../payment-services/introduction.md#availability). Payment Services bietet Express Checkout-Funktionen (eine Untergruppe von Zahlungsoptionen) für alle anderen Länder, die in der Länderliste dargestellt sind.
 
    Das Land, das Sie aus der Liste auswählen, bestimmt die Zahlungsoptionen, und der Onboarding-Ablauf - [Erweitert](#advanced-onboarding) (vollständig unterstützt) oder [Standard](#standard-onboarding) (Express-Checkout) - steht Ihnen zur Verfügung.
 
@@ -72,7 +72,7 @@ Payment Services bietet [**Erweiterte** (vollständig unterstützte) und **Stand
 
 ### Erweitertes Onboarding
 
-Dieser Onboarding-Fluss ist für Händler in ([ unterstützten Ländern) ](../payment-services/introduction.md#availability).
+Dieser Onboarding-Fluss ist für Händler in ([&#x200B; unterstützten Ländern) &#x200B;](../payment-services/introduction.md#availability).
 
 Nachdem das Land ausgewählt wurde:
 
@@ -121,7 +121,7 @@ Nachdem das Land ausgewählt wurde:
 
 ## Zahlungsansprüche von Adobe anfordern
 
-Um Ihre Stores aktivieren zu können, fordern Sie Zahlungsberechtigungen von Adobe an (nur für [ Onboarding](#advanced-onboarding)):
+Um Ihre Stores aktivieren zu können, fordern Sie Zahlungsberechtigungen von Adobe an (nur für [&#x200B; Onboarding](#advanced-onboarding)):
 
 1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicken Sie auf **[!UICONTROL Get Live Payments]** in Ihrer [!DNL Payment Services].
@@ -145,11 +145,11 @@ Alternativ können Sie die Zahlungsansprüche von Adobe unter [business.adobe.co
 1. Klicken Sie in der Startansicht auf **[!UICONTROL Settings]**. Siehe [Startseite](payments-home.md) für weitere Informationen.
 1. Wählen Sie die erforderliche _Händler-ID_ aus und senden Sie sie an Ihren Kundenbetreuer, der die richtige Preisstufe konfiguriert.
 
-Weitere Informationen [ Zahlungsvorgänge finden Sie unter ](levels-card-payment-transactions.md) 2 und 3.
+Weitere Informationen [&#x200B; Zahlungsvorgänge finden Sie unter &#x200B;](levels-card-payment-transactions.md) 2 und 3.
 
 ## Live-Zahlungen aktivieren
 
-Eine _Produktions-Händler_ ID) wird automatisch generiert und in der [Konfiguration“ ](configure-admin.md). Diese ID darf nicht geändert werden.
+Eine _Produktions-Händler_ ID) wird automatisch generiert und in der [Konfiguration“ &#x200B;](configure-admin.md). Diese ID darf nicht geändert werden.
 
 Live-Zahlungen aktivieren:
 
@@ -175,4 +175,4 @@ Siehe [Konfigurieren von in der Admin](configure-admin.md) für die Optionen fü
 
 Es wird dringend empfohlen, Zahlungen in der Produktion mit echten Kreditkarten und Banken zu testen, bevor Sie diese Funktion Käufern offenlegen.
 
-Weitere Informationen [ Sie unter ](test-validate.md) und Validieren .
+Weitere Informationen [&#x200B; Sie unter &#x200B;](test-validate.md) und Validieren .

@@ -18,16 +18,16 @@ Bevor Sie Ihren Käufern [!DNL Payment Services] für [!DNL Adobe Commerce] und 
 
 Das Testen von [!DNL Payment Services] in einer Sandbox-Umgebung ist ein wichtiger Validierungsschritt, auch wenn es sich um eine simulierte Umgebung handelt, die nur mit der PayPal-Sandbox und nicht mit echten Banken und Händlern verbunden ist.
 
-1. Schließen Sie einen erfolgreichen Checkout aus Ihrem Geschäft ab, entweder mit [Kreditkartenfeldern](payments-options.md#credit-card-fields) oder einer der [PayPal-Zahlungsschaltflächen](payments-options.md#paypal-smart-buttons). Weitere Informationen [ Verwendung gefälschter Kreditkarten zum Testen finden ](#testing-credentials) unter „Testen von Anmeldeinformationen“.
+1. Schließen Sie einen erfolgreichen Checkout aus Ihrem Geschäft ab, entweder mit [Kreditkartenfeldern](payments-options.md#credit-card-fields) oder einer der [PayPal-Zahlungsschaltflächen](payments-options.md#paypal-smart-buttons). Weitere Informationen [&#x200B; Verwendung gefälschter Kreditkarten zum Testen finden &#x200B;](#testing-credentials) unter „Testen von Anmeldeinformationen“.
 1. Erfassen Sie (wenn Ihre Zahlungsaktion [auf `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method) eingestellt), [Rückerstattung](refunds.md) oder [Annullierung](voids.md) die gerade abgeschlossene Bestellung. Sie können auch einfach [Rechnung erstellen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} für eine Bestellung, wenn Ihre Zahlungsaktion auf `Authorize` statt auf `Authorize and Capture` gesetzt ist.
 1. Zeigen Sie die Transaktion und andere Informationen innerhalb von 24-48 Stunden im [Auszahlungsbericht](payouts.md) an.
-1. Weitere Informationen zur Bestellung finden Sie im [Bericht zum Status der ](order-payment-status.md).
+1. Weitere Informationen zur Bestellung finden Sie im [Bericht zum Status der &#x200B;](order-payment-status.md).
 
 ### Testen von Anmeldeinformationen
 
 Beim Testen und Validieren Ihrer Sandbox müssen Sie gefälschte Kreditkartennummern verwenden, damit Sie keine echten Gebühren für ein vorhandenes Kreditkartenkonto erstellen.
 
-Verwenden Sie den Kreditkartengenerator von PayPal, um [zufällige Kreditkarteninformationen) zum Testen ](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) generieren.
+Verwenden Sie den Kreditkartengenerator von PayPal, um [zufällige Kreditkarteninformationen) zum Testen &#x200B;](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) generieren.
 
 So testen Sie Apple Pay im Sandbox-Modus:
 

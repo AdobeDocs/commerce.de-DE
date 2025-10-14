@@ -46,4 +46,4 @@ ht-degree: 2%
 
 ## Einstellungen
 
-Klicken Sie in der Startansicht auf **[!UICONTROL Settings]**. Weitere Informationen finden [[!DNL Payment Services]  unter ](configure-admin.md)Konfiguration“.
+Klicken Sie in der Startansicht auf **[!UICONTROL Settings]**. Weitere Informationen finden [[!DNL Payment Services]  unter &#x200B;](configure-admin.md)Konfiguration“.

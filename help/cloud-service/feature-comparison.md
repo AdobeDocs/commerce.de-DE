@@ -189,4 +189,4 @@ In der folgenden Tabelle werden die Funktionen der Plattform und die Erweiterung
 >- Erwägen Sie API Mesh für die Erweiterung der API-Funktionalität.
 >- Überwachen Sie die fortlaufende Plattformentwicklung und neue Funktionsveröffentlichungen von Adobe.
 >- Bewerten Sie branchenspezifische Datenmodellanforderungen anhand der verfügbaren Erweiterungsoptionen.
->- Erwägen Sie die [ von (Merchandising-Services, die auf Katalogansichten und Richtlinien basieren](../optimizer/setup/catalog-view.md).
+>- Erwägen Sie die [&#x200B; von (Merchandising-Services, die auf Katalogansichten und Richtlinien basieren](../optimizer/setup/catalog-view.md).

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Checkout in [!DNL Payment Services]
 
-Sie können den Checkout für Adobe Commerce [!DNL Payment Services] so konfigurieren, dass er Ihren Kundinnen und Kunden am besten entspricht. Funktionen wie [automatische ](#order-auto-voided-if-error) bestellen) und [Tresor für Kreditkarten](#credit-card-vaulting) stellen sicher, dass Ihre Kunden ein reibungsloses Benutzererlebnis haben.
+Sie können den Checkout für Adobe Commerce [!DNL Payment Services] so konfigurieren, dass er Ihren Kundinnen und Kunden am besten entspricht. Funktionen wie [automatische &#x200B;](#order-auto-voided-if-error) bestellen) und [Tresor für Kreditkarten](#credit-card-vaulting) stellen sicher, dass Ihre Kunden ein reibungsloses Benutzererlebnis haben.
 
 ## Bei Fehler automatisch storniert bestellen
 

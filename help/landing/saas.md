@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # [!DNL Commerce Services Connector]
 
-Einige Funktionen von Adobe Commerce und Magento Open Source basieren auf [!DNL Commerce Services] und werden als SaaS (Software as a Service) bereitgestellt. Um diese Services zu verwenden, müssen Sie Ihre [!DNL Commerce] mithilfe von Produktions- und Sandbox-API-Schlüsseln verbinden und den Datenspeicher in der [Konfiguration“ ](#saas-configuration). Sie müssen die Verbindung nur einmal für jede Instanz konfigurieren.
+Einige Funktionen von Adobe Commerce und Magento Open Source basieren auf [!DNL Commerce Services] und werden als SaaS (Software as a Service) bereitgestellt. Um diese Services zu verwenden, müssen Sie Ihre [!DNL Commerce] mithilfe von Produktions- und Sandbox-API-Schlüsseln verbinden und den Datenspeicher in der [Konfiguration“ &#x200B;](#saas-configuration). Sie müssen die Verbindung nur einmal für jede Instanz konfigurieren.
 
 ## Verfügbare Services {#availableservices}
 
@@ -79,7 +79,7 @@ Darüber hinaus sind Lösungsintegratoren auch berechtigt, [!DNL Commerce Servic
 
 [!DNL Commerce] Instanzen müssen mit einem SaaS-Projekt und einem SaaS-Datenraum konfiguriert werden, damit [!DNL Commerce Services] Daten an den richtigen Speicherort senden können. Ein SaaS-Projekt gruppiert alle SaaS-Datenräume. Die SaaS-Datenräume dienen zur Erfassung und Speicherung von Daten, die [!DNL Commerce Services] eine reibungslose Arbeit ermöglichen. Einige dieser Daten werden möglicherweise aus der [!DNL Commerce]-Instanz exportiert und einige werden aus dem Käuferverhalten in der Storefront erfasst. Diese Daten werden dann im sicheren Cloud-Speicher aufbewahrt.
 
-[!DNL Product Recommendations] enthält der SaaS-Datenbereich Katalog- und Verhaltensdaten. Sie können eine [!DNL Commerce]-Instanz auf einen SaaS-Datenbereich verweisen, indem [ sie ](https://experienceleague.adobe.com/de/docs/commerce-admin/config/services/saas) der [!DNL Commerce]-Konfiguration auswählen.
+[!DNL Product Recommendations] enthält der SaaS-Datenbereich Katalog- und Verhaltensdaten. Sie können eine [!DNL Commerce]-Instanz auf einen SaaS-Datenbereich verweisen, indem [&#x200B; sie &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/config/services/saas) der [!DNL Commerce]-Konfiguration auswählen.
 
 >[!WARNING]
 >
@@ -139,7 +139,7 @@ Alle SaaS-Projekte, die mit Ihren Schlüsseln verknüpft sind, werden im Feld **
 
 >[!NOTE]
 >
->Wenn Sie über separate Instanzen verfügen, die in Commerce Services integriert werden können, [ Sie ein Support-Ticket ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket), um für jede weitere Instanz ein neues SaaS-Projekt anzufordern. Nachdem das SaaS-Projekt vom Support erstellt wurde, konfigurieren Sie die Commerce Services-Integration für die Instanz mit demselben API-Schlüssel und wählen Sie das neue SaaS-Projekt für den Datenspeicher aus.
+>Wenn Sie über separate Instanzen verfügen, die in Commerce Services integriert werden können, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket), um für jede weitere Instanz ein neues SaaS-Projekt anzufordern. Nachdem das SaaS-Projekt vom Support erstellt wurde, konfigurieren Sie die Commerce Services-Integration für die Instanz mit demselben API-Schlüssel und wählen Sie das neue SaaS-Projekt für den Datenspeicher aus.
 
 >[!WARNING]
 >
@@ -153,4 +153,4 @@ Um Ihre Adobe Commerce-Instanz mit der Adobe Experience Platform zu verbinden, m
 
 ## SaaS-Datenexport
 
-Wenn Ihre [!DNL Commerce]-Instanz erfolgreich eine Verbindung mit [!DNL Commerce Services] herstellt, exportiert der SaaS-Datenexportprozess Commerce-Daten von Ihrem [!DNL Commerce]-Server nach [!DNL Commerce SaaS Services], damit sie mit verbundenen Commerce-Services synchronisiert werden können. Im Admin-Bereich können Sie den Synchronisierungsstatus mithilfe des [Daten-Management-Dashboards“ ](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-dashboard). Weitere Informationen finden Sie im [SaaS-Datenexporthandbuch](../data-export/overview.md).
+Wenn Ihre [!DNL Commerce]-Instanz erfolgreich eine Verbindung mit [!DNL Commerce Services] herstellt, exportiert der SaaS-Datenexportprozess Commerce-Daten von Ihrem [!DNL Commerce]-Server nach [!DNL Commerce SaaS Services], damit sie mit verbundenen Commerce-Services synchronisiert werden können. Im Admin-Bereich können Sie den Synchronisierungsstatus mithilfe des [Daten-Management-Dashboards“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-dashboard). Weitere Informationen finden Sie im [SaaS-Datenexporthandbuch](../data-export/overview.md).

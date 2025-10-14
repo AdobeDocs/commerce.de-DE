@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Adobe Experience Platform Mobile SDK für iOS unterstützt iOS 11 oder höher.
 
-Durch die Integration von [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) mit der Commerce Mobile App können Händler Commerce-[ (Ereignisdaten](events.md) an Experience Platform Edge senden.
+Durch die Integration von [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) mit der Commerce Mobile App können Händler Commerce-[&#x200B; (Ereignisdaten](events.md) an Experience Platform Edge senden.
 
 Wenn Commerce-Ereignisdaten am Edge verfügbar sind, können andere Adobe Experience Cloud-Programme darauf zugreifen. Sie können die Daten beispielsweise verwenden, um Zielgruppen in Real-Time CDP zu erstellen, und dann [diese Zielgruppen verwenden](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=de) um Ihre Mobile App von Commerce zu personalisieren.
 
@@ -39,7 +39,7 @@ Installieren und konfigurieren Sie SDK in der Experience Platform, um mit der Ve
 
 Nachdem Sie die SDK-Konfiguration für Experience Platform abgeschlossen haben, fügen Sie die SDK-Konfiguration zu Commerce hinzu.
 
-1. Um Commerce-Ereignisdaten über die SDK an Experience Platform zu senden, müssen Sie ein XDM-Schema im Anwendungs-Code angeben. Dieses Schema muss mit dem Schema ([) ](https://developer.adobe.com/client-sdks/home/getting-started/set-up-schemas-and-datasets/) SDK in Experience Platform übereinstimmen.
+1. Um Commerce-Ereignisdaten über die SDK an Experience Platform zu senden, müssen Sie ein XDM-Schema im Anwendungs-Code angeben. Dieses Schema muss mit dem Schema ([) &#x200B;](https://developer.adobe.com/client-sdks/home/getting-started/set-up-schemas-and-datasets/) SDK in Experience Platform übereinstimmen.
 
    Das folgende Beispiel zeigt, wie Sie das `web.webpagedetails.pageViews`-Ereignis verfolgen und die `identityMap` mithilfe des E-Mail-Felds festlegen.
 

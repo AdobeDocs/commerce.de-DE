@@ -18,7 +18,7 @@ Der *Performance*-Arbeitsbereich bietet Einblicke in die Suchbegriffe, die Kundi
 
 ![Leistung](assets/performance-unique-searches.png)
 
-Weitere Informationen zur Datensynchronisation finden [ auch im ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=de)Daten-Management-Dashboard).
+Weitere Informationen zur Datensynchronisation finden [&#x200B; auch im &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=de)Daten-Management-Dashboard).
 
 >[!NOTE]
 >

@@ -16,7 +16,7 @@ Mit der [!DNL Data Connection]-Erweiterung können Sie [!DNL Commerce] Backoffic
 
 >[!IMPORTANT]
 >
->Da Storefront-Ereignisse Client-seitig generiert werden, liegt es in der Verantwortung des Händlers ([ Storefront-Ereignisdaten zu senden](connect-data.md#data-collection) an Experience Platform.
+>Da Storefront-Ereignisse Client-seitig generiert werden, liegt es in der Verantwortung des Händlers ([&#x200B; Storefront-Ereignisdaten zu senden](connect-data.md#data-collection) an Experience Platform.
 
 In diesem Artikel erfahren Sie mehr über:
 
@@ -30,7 +30,7 @@ Wenn Sie das Add-on für das Gesundheitswesen für Adobe [!DNL Commerce] erworbe
 
 >[!IMPORTANT]
 >
->Wenn Sie die **Data Services HIPAA**-Erweiterung installieren, werden Storefront-Ereignisdaten, die von Live Search und Product Recommendations verwendet werden, nicht mehr erfasst. Dies liegt daran, dass Storefront-Ereignisdaten Client-seitig generiert werden. Um Storefront-Ereignisdaten weiterhin zu erfassen und zu senden, aktivieren Sie die Ereigniserfassung für diese Services erneut. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services)Allgemeine Konfiguration“.
+>Wenn Sie die **Data Services HIPAA**-Erweiterung installieren, werden Storefront-Ereignisdaten, die von Live Search und Product Recommendations verwendet werden, nicht mehr erfasst. Dies liegt daran, dass Storefront-Ereignisdaten Client-seitig generiert werden. Um Storefront-Ereignisdaten weiterhin zu erfassen und zu senden, aktivieren Sie die Ereigniserfassung für diese Services erneut. Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services)Allgemeine Konfiguration“.
 
 ## So stellen Sie sicher, dass an Experience Platform gesendete Daten HIPAA-fähig sind
 
@@ -48,7 +48,7 @@ Wenn Ihre [!DNL Commerce] als sensibel gekennzeichnet sind, können Sie Richtlin
 
 ## Datenverschlüsselung in Commerce
 
-Adobe [!DNL Commerce] verwendet eine Verschlüsselung auf Blockebene. Für die Speicherung verwendet [!DNL Commerce] Amazon Elastic Block Store (EBS). Alle EBS-Volumes werden mit dem AES-256-Algorithmus verschlüsselt, was bedeutet, dass die Daten im Ruhezustand verschlüsselt werden. [!DNL Commerce] Daten während der Übertragung werden über sichere, verschlüsselte Verbindungen mit HTTPS ([ v1.2) ](https://datatracker.ietf.org/doc/html/rfc5246).
+Adobe [!DNL Commerce] verwendet eine Verschlüsselung auf Blockebene. Für die Speicherung verwendet [!DNL Commerce] Amazon Elastic Block Store (EBS). Alle EBS-Volumes werden mit dem AES-256-Algorithmus verschlüsselt, was bedeutet, dass die Daten im Ruhezustand verschlüsselt werden. [!DNL Commerce] Daten während der Übertragung werden über sichere, verschlüsselte Verbindungen mit HTTPS ([&#x200B; v1.2) &#x200B;](https://datatracker.ietf.org/doc/html/rfc5246).
 
 >[!IMPORTANT]
 >

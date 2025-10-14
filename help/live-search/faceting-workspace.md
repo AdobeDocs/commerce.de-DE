@@ -30,7 +30,7 @@ Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, setzen S
 ## Facette hinzufügen
 
 1. Klicken Sie **Facetten hinzufügen**.
-1. Detaillierte Anweisungen finden [ unter ](facets-add.md) von Facetten hinzufügen .
+1. Detaillierte Anweisungen finden [&#x200B; unter &#x200B;](facets-add.md) von Facetten hinzufügen .
 
 ## Spaltenbeschreibungen
 

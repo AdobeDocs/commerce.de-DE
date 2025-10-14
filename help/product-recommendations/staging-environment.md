@@ -25,7 +25,7 @@ Wie können Ihre Empfehlungen in einer Nicht-Produktionsumgebung mithilfe von Ve
 
 ## Abrufen von Empfehlungen aus der Produktionsumgebung (empfohlen)
 
-Mit Adobe Commerce können Sie Empfehlungen aus Ihrer Produktionsumgebung abrufen und in Ihrer Nicht-Produktionsumgebung in der Vorschau anzeigen, indem Sie [ SaaS](settings.md)Datenbereich wechseln.
+Mit Adobe Commerce können Sie Empfehlungen aus Ihrer Produktionsumgebung abrufen und in Ihrer Nicht-Produktionsumgebung in der Vorschau anzeigen, indem Sie [&#x200B; SaaS](settings.md)Datenbereich wechseln.
 
 Um Empfehlungen aus Ihrer Produktionsumgebung abzurufen, müssen Sie Folgendes sicherstellen:
 

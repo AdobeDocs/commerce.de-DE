@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Erstellen einer Bestellung mit [!DNL Payment Services]
 
-[!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] können Sie eine Bestellung direkt von der Admin durch einen Händler für ihre Kunden, die Hilfe benötigen, erfüllen. Das **[!UICONTROL Create New Order]** Formular enthält alle Informationen, die für den normalen Checkout-Prozess erforderlich sind, einschließlich gehosteter Felder mit Kreditkarteninformationen. Detaillierte [ zu den erforderlichen Schritten finden ](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"} unter „Erstellen einer Bestellung“.
+[!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] können Sie eine Bestellung direkt von der Admin durch einen Händler für ihre Kunden, die Hilfe benötigen, erfüllen. Das **[!UICONTROL Create New Order]** Formular enthält alle Informationen, die für den normalen Checkout-Prozess erforderlich sind, einschließlich gehosteter Felder mit Kreditkarteninformationen. Detaillierte [&#x200B; zu den erforderlichen Schritten finden &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"} unter „Erstellen einer Bestellung“.
 
 ## Felder für gehostete Kreditkarten
 

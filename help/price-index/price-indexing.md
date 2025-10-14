@@ -47,7 +47,7 @@ Die SaaS-Preisindizierung wird bei der Installation von Adobe Commerce Services 
 
 >[!NOTE]
 >
->Bei Bedarf kann der standardmäßige Preisindexer in der Commerce-Anwendung über den [Catalog Adapter“ deaktiviert ](catalog-adapter.md).
+>Bei Bedarf kann der standardmäßige Preisindexer in der Commerce-Anwendung über den [Catalog Adapter“ deaktiviert &#x200B;](catalog-adapter.md).
 
 ## Preise mit SaaS-Preisindizierung synchronisieren
 

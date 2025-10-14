@@ -52,4 +52,4 @@ Die Nachfrage nach einem qualitativ hochwertigen Commerce-Erlebnis ist hoch, und
 
 >[!NOTE]
 >
-> Einige der hier genannten Funktionen sind möglicherweise noch nicht in Ihrem Markt verfügbar. Weitere Informationen finden [ unter ](compatibility.md) .
+> Einige der hier genannten Funktionen sind möglicherweise noch nicht in Ihrem Markt verfügbar. Weitere Informationen finden [&#x200B; unter &#x200B;](compatibility.md) .

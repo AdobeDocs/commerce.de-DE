@@ -33,7 +33,7 @@ Sie müssen direkt mit Signifyd kommunizieren, um die Erweiterung für die Verwe
 Beim Onboarding mit Signified müssen Sie:
 
 1. Kontakt Angegeben, um ein neues Konto einzurichten.
-1. Standardmäßig ist Signifyd [auf die Zulassungsliste gesetzt ](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md) um sicherzustellen, dass Signifyd keinen Trigger für andere Zahlungsoptionen erzeugt, die es derzeit nicht unterstützt. Wenn Sie eine bestimmte Zahlungsmethode verbieten möchten, müssen Sie Änderungen vornehmen.
+1. Standardmäßig ist Signifyd [auf die Zulassungsliste gesetzt &#x200B;](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md) um sicherzustellen, dass Signifyd keinen Trigger für andere Zahlungsoptionen erzeugt, die es derzeit nicht unterstützt. Wenn Sie eine bestimmte Zahlungsmethode verbieten möchten, müssen Sie Änderungen vornehmen.
 1. Bestätigen Sie mit Signifyd, dass PayPal keine Bestellungen über die Betrugsschutzeinstellung des Händlers in PayPal zurückweist, die von Signifyd genehmigt werden könnten.
 1. Aktivieren Sie die Signify-Erweiterung, um mit [!DNL Payment Services] kompatibel zu sein:
    * Bei Verwendung von [!DNL Payment Services] im _Live_-Modus muss sich SignifyID im Produktionsmodus befinden.

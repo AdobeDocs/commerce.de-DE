@@ -26,13 +26,13 @@ Mit der [!DNL Live Search]-API kann ein Client nach jedem Produktattribut sortie
 
 >[!NOTE]
 >
-> Commerce-Kunden mit [!DNL Live Search] können mit dem SaaS-Preisindexer [ schnellere Preisänderungen und Synchronisierungszeiten auf ihren Websites ](../price-index/price-indexing.md).
+> Commerce-Kunden mit [!DNL Live Search] können mit dem SaaS-Preisindexer [&#x200B; schnellere Preisänderungen und Synchronisierungszeiten auf ihren Websites &#x200B;](../price-index/price-indexing.md).
 
 ## Indizierungs-Pipeline
 
 Der Client ruft den Suchdienst von der Storefront auf, um (filterbare, sortierbare) Indexmetadaten abzurufen. Der Suchdienst kann nur durchsuchbare Produktattribute aufrufen, bei denen die Eigenschaft *Verwenden in der* Navigation) auf `Filterable (with results)` und *Verwenden für die Sortierung in der* auf `Yes` gesetzt ist.
 
-Um eine dynamische Abfrage zu erstellen, muss der Suchdienst wissen, welche Attribute durchsuchbar sind und welche ([) ](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] berücksichtigt die Gewichtung der Adobe Commerce-Suche (1-10, wobei 10 die höchste Priorität hat). Die Liste der Daten, die mit dem Katalog-Service synchronisiert und freigegeben werden, finden Sie im Schema , das definiert ist in:
+Um eine dynamische Abfrage zu erstellen, muss der Suchdienst wissen, welche Attribute durchsuchbar sind und welche ([) &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] berücksichtigt die Gewichtung der Adobe Commerce-Suche (1-10, wobei 10 die höchste Priorität hat). Die Liste der Daten, die mit dem Katalog-Service synchronisiert und freigegeben werden, finden Sie im Schema , das definiert ist in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
