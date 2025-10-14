@@ -2,10 +2,11 @@
 title: Grenzen und Beschränkungen
 description: Erfahren Sie mehr über die Grenzen und Beschränkungen für [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 553490762ef10e43ccce1654acec59aeb83bb5f9
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
+source-git-commit: 1eb95f26a196ad4e66cbc980c7f8a41cae950cb6
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ Im Folgenden finden Sie Grenzen und Einschränkungen für [!DNL Adobe Commerce O
 
 ## Katalog
 
-- Die garantierte Rate der Katalogaufnahme ist: 1000 Produkte/Minute und 5000 Preise/Minute.
+- Die garantierte Rate der Katalogaufnahme beträgt: 1.000 Produkte/Minute und 5.000 Preise/Minute.
 - Die Gesamtzahl der Produktaktualisierungen pro Tag beträgt 1.000.000.
 - Die Gesamtzahl der in einer Instanz zulässigen SKUs beträgt 250.000. 
 - Die maximale Anzahl von Katalogquellen ist 50.
@@ -34,12 +35,12 @@ Im Folgenden finden Sie Grenzen und Einschränkungen für [!DNL Adobe Commerce O
 - Die maximale Anzahl durchsuchbarer Attribute ist 200.
 - Die maximale Anzahl sortierbarer Attribute ist 50.
 - Die maximale Anzahl von Facetten ist 100. Alle Facetten müssen filterbare Attribute sein.
-- Die maximale Anzahl von Optionen, die eine einzelne Facettenkatze zurückgibt, beträgt 100, die pro Support-Anfrage erhöht werden können.
+- Die maximale Anzahl von Optionen, die eine einzelne Facette zurückgeben kann, ist 100, die pro Support-Anfrage erhöht werden können.
 
 ## Katalogansichten und Richtlinien
 
-- Die maximale Anzahl von Katalogansichten pro Mandant ist 1.000.
-- Die maximale Anzahl von Richtlinien, die einer Katalogansicht zugewiesen sind, beträgt 10.
+- Die maximale Anzahl von Katalogansichten pro Mandant beträgt 1.000.
+- Die maximale Anzahl von Richtlinien, die einer Katalogansicht zugewiesen werden können, beträgt 10.
 - Die maximale Anzahl der in einer Richtlinie verwendeten Attributwerte ist 100. 
 
 ## Recommendations

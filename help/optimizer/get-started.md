@@ -3,18 +3,18 @@ title: Erste Schritte
 description: Erfahren Sie mehr über die ersten Schritte mit [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
+source-git-commit: c27b2a8c7dffdcc5d5195cf809d5b475f3e01059
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
 
 # Erste Schritte
 
-Diese Anleitung führt Sie durch die Einrichtung von [!DNL Adobe Commerce Optimizer] von Anfang bis Ende. Dieses Handbuch deckt zwar alle Rollen ab, doch finden [&#x200B; in der &#x200B;](https://developer.adobe.com/commerce/services/optimizer/) für Entwickler detaillierte Informationen zu den jeweiligen Inhalten.
+Diese Anleitung führt Sie durch die Einrichtung von [!DNL Adobe Commerce Optimizer] von Anfang bis Ende. Dieses Handbuch deckt zwar alle Rollen ab, doch finden [ in der ](https://developer.adobe.com/commerce/services/optimizer/) für Entwickler detaillierte Informationen zu den jeweiligen Inhalten.
 
 ## Voraussetzungen
 
@@ -35,7 +35,7 @@ Führen Sie die folgenden Schritte aus, um Ihre [!DNL Adobe Commerce Optimizer]-
 1. Navigieren Sie zu **Commerce** > **Commerce Cloud Manager**.
 1. Klicken Sie **Instanz hinzufügen** > **Commerce Optimizer**.
 
-   ![Instanz erstellen](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
+   ![Adobe Commerce Cloud Manager-Bildschirm „Instanz hinzufügen“ zum Erstellen einer Commerce Optimizer-Umgebung](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
 1. Instanzeinstellungen konfigurieren:
    - **Instance Name**: Beschreibender Name (z. B. „My Company Sandbox„)
@@ -49,14 +49,14 @@ Führen Sie die folgenden Schritte aus, um Ihre [!DNL Adobe Commerce Optimizer]-
 
 >[!NOTE]
 >
->Sie können Sandbox-Umgebungen nur in der nordamerikanischen Region erstellen. Nachdem eine Instanz erstellt wurde, können Sie die Region nicht mehr ändern.
+>Sie können Sandbox-Umgebungen nur in der nordamerikanischen Region erstellen. Nachdem eine Instanz erstellt wurde, kann die Region nicht mehr geändert werden.
 
 ### Schritt 2. Einrichten der Umgebung
 
 Nach dem Erstellen der Instanz:
 
 1. [Instanz verwalten](#manage-instances) über Commerce Cloud Manager.
-1. Konfigurieren Sie den Benutzerzugriff mithilfe des [Benutzerhandbuchs für die &#x200B;](./user-management.md)&quot;
+1. Konfigurieren Sie den Benutzerzugriff mithilfe des [Benutzerhandbuchs für die ](./user-management.md)&quot;
 
 ### Schritt 3. Beispieldaten hinzufügen (optional)
 
@@ -66,7 +66,7 @@ Zum Testen und Lernen folgen Sie den Anweisungen [Beispieldaten laden](#add-samp
 
 Die Einrichtung und Verwaltung von [!DNL Adobe Commerce Optimizer] beruht auf drei Schlüsselrollen. Jede Rolle hat bestimmte Aufgaben und Zuständigkeiten:
 
-![Workflow auf hoher Ebene](./assets/high-level-workflow.png){zoomable="yes"}
+![Rollenbasierter Workflow für das Adobe Commerce Optimizer-Setup mit Administrator-, Entwickler- und Benutzeraufgaben](./assets/high-level-workflow.png){zoomable="yes"}
 
 ### Administratoraufgaben
 
@@ -119,7 +119,7 @@ Verwalten von Instanzen über Commerce Cloud Manager.
 Nach der Anmeldung zeigt das Dashboard alle in der Organisation verfügbaren Commerce-Produktinstanzen an.
 Die Spalte Produkt gibt an, für welche Commerce-Anwendung die Instanz bereitgestellt wird.
 
-![Instanzsuche und -filter](./assets/search-filter-instances.png){zoomable="yes"}
+![Dashboard mit Such- und Filteroptionen für Adobe Commerce Cloud-Produktinstanzen](./assets/search-filter-instances.png){zoomable="yes"}
 
 Verwenden Sie die Filter- und Suchwerkzeuge, um bestimmte Instanzen schnell nach Erstellungsdatum, Region, Ersteller, Produkttyp, Umgebung oder Status zu finden.
 
@@ -133,20 +133,20 @@ Sobald die App geöffnet ist, können Sie einfach zwischen Umgebungen wie Sandbo
 
    In der Dropdown-Liste Instanz werden alle in der Organisation verfügbaren Optimizer-Instanzen aufgelistet. Anzuzeigende Instanz auswählen.
 
-   ![Instanzwechsel](./assets/context-switcher.png){zoomable="yes"}
+   ![Dropdown-Liste „Instanzwechsel“ zur Auswahl von Adobe Commerce Optimizer-Umgebungen](./assets/context-switcher.png){zoomable="yes"}
 
 ### Instanzdetails abrufen
 
 Zeigen Sie die Details der Instanz an, indem Sie auf das Informationssymbol neben Ihrem Instanznamen klicken.
 
-![Details der Instanz](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+Bedienfeld mit Details zur Adobe Commerce Optimizer-Instanz von ![mit Endpunkten und Instanz-ID](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 Beachten Sie die folgenden wichtigen Informationen:
 
 - **GraphQL-Endpunkt** zum Abrufen von Commerce-Katalogdaten mithilfe der Merchandising-API
 - **Catalog Service-Endpunkt** für die Datenaufnahme mithilfe der REST-API
 - **Commerce Optimizer-URL** für den Zugriff auf die [!DNL Adobe Commerce Optimizer]
-- **Instanz-ID** Die eindeutige Mandanten-ID, die die Instanz identifiziert
+- **Instanz-ID**: Die eindeutige Mandanten-ID, die die Instanz identifiziert
 
 Wenn Sie Entwickler sind, benötigen Sie diese Details, um Ihre Entwicklungsumgebung einzurichten und eine Verbindung zu den [!DNL Adobe Commerce Optimizer]-APIs herzustellen.
 
@@ -174,7 +174,7 @@ Die Beispieldaten basieren auf dem [Carvelo-Geschäftsszenario](./use-case/admin
 
 **Beispieldaten laden:**
 
-1. GitHub[Repository für die Datenaufnahme &#x200B;](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion) Beispielkatalogs.
+1. GitHub[Repository für die Datenaufnahme ](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion) Beispielkatalogs.
 
 1. Befolgen Sie die Setup-Anweisungen in der README-Datei des Repositorys, um die folgenden Aufgaben auszuführen:
 
@@ -217,6 +217,6 @@ Nach Abschluss der Einrichtung:
 ### Hilfe erhalten
 
 - **Entwicklerressourcen**: [Entwicklerdokumentation](https://developer.adobe.com/commerce/services/optimizer/)
-- **Storefront-Ressourcen**: [Dokumentation zur Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)
-- **Tutorials**: [Commerce Optimizer-Tutorials](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Support**: [Adobe Commerce-Support-Ressourcen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/overview)
+- **Storefront-Ressourcen**: [Dokumentation zur Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Tutorials**: [Commerce Optimizer-Tutorials](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Support**: [Adobe Commerce-Support-Ressourcen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

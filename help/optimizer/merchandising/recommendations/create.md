@@ -1,8 +1,9 @@
 ---
 title: Empfehlungen erstellen und verwalten
 description: Erfahren Sie, wie Sie Empfehlungen erstellen und verwalten.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
+source-git-commit: 0b8e0222a1de1c425964f9f54294d7e0435a26d8
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -50,7 +51,7 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
 Sie können eine vorhandene Empfehlung bearbeiten, deaktivieren oder löschen.
 
-1. Navigieren Sie in der Seitenleiste _0&rbrace;Adobe Commerce Optimizer&quot; zu_ Merchandising _>**Recommendations**._
+1. Navigieren Sie in der Seitenleiste _0}Adobe Commerce Optimizer&quot; zu_ Merchandising _>_ Recommendations **.**
 
 1. Wählen Sie die Empfehlung aus, die Sie ändern möchten.
 
