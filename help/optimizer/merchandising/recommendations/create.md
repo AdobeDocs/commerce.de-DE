@@ -51,7 +51,7 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
 Sie können eine vorhandene Empfehlung bearbeiten, deaktivieren oder löschen.
 
-1. Navigieren Sie in der Seitenleiste _0}Adobe Commerce Optimizer&quot; zu_ Merchandising _>_ Recommendations **.**
+1. Navigieren Sie in der Seitenleiste _0&rbrace;Adobe Commerce Optimizer&quot; zu_ Merchandising _>_ Recommendations **.**
 
 1. Wählen Sie die Empfehlung aus, die Sie ändern möchten.
 

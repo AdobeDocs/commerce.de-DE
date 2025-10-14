@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Erste Schritte
 
-Diese Anleitung führt Sie durch die Einrichtung von [!DNL Adobe Commerce Optimizer] von Anfang bis Ende. Dieses Handbuch deckt zwar alle Rollen ab, doch finden [ in der ](https://developer.adobe.com/commerce/services/optimizer/) für Entwickler detaillierte Informationen zu den jeweiligen Inhalten.
+Diese Anleitung führt Sie durch die Einrichtung von [!DNL Adobe Commerce Optimizer] von Anfang bis Ende. Dieses Handbuch deckt zwar alle Rollen ab, doch finden [&#x200B; in der &#x200B;](https://developer.adobe.com/commerce/services/optimizer/) für Entwickler detaillierte Informationen zu den jeweiligen Inhalten.
 
 ## Voraussetzungen
 
@@ -56,7 +56,7 @@ Führen Sie die folgenden Schritte aus, um Ihre [!DNL Adobe Commerce Optimizer]-
 Nach dem Erstellen der Instanz:
 
 1. [Instanz verwalten](#manage-instances) über Commerce Cloud Manager.
-1. Konfigurieren Sie den Benutzerzugriff mithilfe des [Benutzerhandbuchs für die ](./user-management.md)&quot;
+1. Konfigurieren Sie den Benutzerzugriff mithilfe des [Benutzerhandbuchs für die &#x200B;](./user-management.md)&quot;
 
 ### Schritt 3. Beispieldaten hinzufügen (optional)
 
@@ -174,7 +174,7 @@ Die Beispieldaten basieren auf dem [Carvelo-Geschäftsszenario](./use-case/admin
 
 **Beispieldaten laden:**
 
-1. GitHub[Repository für die Datenaufnahme ](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion) Beispielkatalogs.
+1. GitHub[Repository für die Datenaufnahme &#x200B;](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion) Beispielkatalogs.
 
 1. Befolgen Sie die Setup-Anweisungen in der README-Datei des Repositorys, um die folgenden Aufgaben auszuführen:
 
