@@ -2,9 +2,9 @@
 title: Einrichten der Live-Suche
 description: Der  [!DNL Live Search]  wird zum Konfigurieren, Verwalten und Überwachen der Suchleistung verwendet.
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
-source-git-commit: bb212bf88ba7bad3deb2d2d699124413f4dd76ff
+source-git-commit: 2c44f408da051441df32d78d9a768e28cf708d49
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1793'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ Wenn Sie eine Headless-Storefront verwenden, finden Sie in der folgenden Dokumen
 
 ### Healthcare-Kunden
 
-Wenn Sie Kundschaft im Gesundheitswesen sind und die [Data Services HIPAA-Erweiterung](../data-connection/hipaa-readiness.md#installation) installiert haben, die Teil der [Data Connection](../data-connection/overview.md)-Erweiterung ist, werden von [!DNL Live Search] verwendete Storefront-Ereignisdaten nicht mehr erfasst. Dies liegt daran, dass Storefront-Ereignisdaten Client-seitig generiert werden. Um weiterhin Storefront-Ereignisdaten zu erfassen und zu senden, aktivieren Sie die Ereigniserfassung für [!DNL Live Search] erneut. Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/config/general/general#data-services)Allgemeine Konfiguration“.
+Wenn Sie Kundschaft im Gesundheitswesen sind und die [Data Services HIPAA-Erweiterung](../data-connection/hipaa-readiness.md#installation) installiert haben, die Teil der [Data Connection](../data-connection/overview.md)-Erweiterung ist, werden von [!DNL Live Search] verwendete Storefront-Ereignisdaten nicht mehr erfasst. Dies liegt daran, dass Storefront-Ereignisdaten Client-seitig generiert werden. Um weiterhin Storefront-Ereignisdaten zu erfassen und zu senden, aktivieren Sie die Ereigniserfassung für [!DNL Live Search] erneut. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)Allgemeine Konfiguration“.
 
 ## Festlegen des Umfangs
 
-Anfangs ist [Umfang](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings) aller [!DNL Live Search] auf `Default Store View` festgelegt. Wenn Ihre [!DNL Commerce] mehrere Store-Ansichten enthält, legen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de) fest, für die Ihre Facetteneinstellungen gelten.
+Anfangs ist [Umfang](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) aller [!DNL Live Search] auf `Default Store View` festgelegt. Wenn Ihre [!DNL Commerce] mehrere Store-Ansichten enthält, legen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) fest, für die Ihre Facetteneinstellungen gelten.
 
 ## Menüoptionen
 
@@ -50,7 +50,7 @@ Anfangs ist [Umfang](https://experienceleague.adobe.com/docs/commerce-admin/star
 
 ## Festlegen von Attributen als durchsuchbar
 
-Um zielgerichtete Ergebnisse zu erzielen, überprüfen Sie den Satz [&#x200B; (durchsuchbaren](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=de) (`searchable=true`) Produktattribute. Um Relevanz zu gewährleisten, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und knappen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langen Text enthalten, z. B. `description`. Dies kann, obwohl standardmäßig die Suche aktiviert ist, die Genauigkeit der Suchergebnisse verringern. Wenn eine Person beispielsweise nach „kurzen Hosen“ sucht und es Hemden mit einer Beschreibung gibt, die den Begriff „kurze Ärmel“ enthält, werden die Hemden in die Suchergebnisse aufgenommen.
+Um zielgerichtete Ergebnisse zu erzielen, überprüfen Sie den Satz [ (durchsuchbaren](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) Produktattribute. Um Relevanz zu gewährleisten, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und knappen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langen Text enthalten, z. B. `description`. Dies kann, obwohl standardmäßig die Suche aktiviert ist, die Genauigkeit der Suchergebnisse verringern. Wenn eine Person beispielsweise nach „kurzen Hosen“ sucht und es Hemden mit einer Beschreibung gibt, die den Begriff „kurze Ärmel“ enthält, werden die Hemden in die Suchergebnisse aufgenommen.
 
 Führen Sie die folgenden Schritte aus, damit Attribute durchsuchbar sein können:
 
@@ -58,15 +58,88 @@ Führen Sie die folgenden Schritte aus, damit Attribute durchsuchbar sein könne
 1. Wählen Sie das Attribut aus, das durchsuchbar sein soll, z. B. `color`.
 1. Wählen Sie **Storefront-Eigenschaften** aus und setzen **In der Suche verwenden** auf `yes`.
 
-   ![Workspace](assets/attribute-searchable.png)
-
-[!DNL Live Search] berücksichtigt auch die [Gewichtung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=de#weighted-search) eines Produktattributs, wie in Adobe Commerce festgelegt. Attribute mit einer höheren Gewichtung werden in den Suchergebnissen höher angezeigt.
+[!DNL Live Search] berücksichtigt auch die [Gewichtung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) eines Produktattributs, wie in Adobe Commerce festgelegt. Attribute mit einer höheren Gewichtung werden in den Suchergebnissen höher angezeigt.
 
 Die folgenden Attribute sind immer durchsuchbar:
 
 - `sku`
 - `name`
 - `categories`
+
+### Mehrschichtige Suche und Erweiterung von Suchtypen
+
+Die mehrschichtige Suche oder Suche innerhalb einer Suche ist ein leistungsstarkes, attributbasiertes Filtersystem, das die herkömmliche Suchfunktion um zusätzliche Suchparameter erweitert. Diese zusätzlichen Suchparameter ermöglichen eine präzisere und flexiblere Produktsuche.
+
+>[!NOTE]
+>
+>Die mehrschichtige Suche ist in Live Search 4.6.0 verfügbar.
+
+Mit der mehrschichtigen Suche können Sie:
+
+- Ermöglichen Sie es Käufern, innerhalb der Suchergebnisse zu suchen.
+- Verwenden Sie `startsWith` und `contains` Suchindizierung in der zweiten Ebene der mehrschichtigen Suche, um die Ergebnisse weiter zu verfeinern.
+
+Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`productSearch`-Abfrage mithilfe ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) Operatoren implementiert:
+
+- **Mehrschichtige Suche** - Suche in einem anderen Suchkontext - Mit dieser Funktion können Sie bis zu zwei Suchebenen für Ihre Suchanfragen durchführen. Beispiel:
+
+   - **Layer 1 Suche** - Suche nach „motor“ auf `product_attribute_1`.
+   - **Layer 2-Suche** - Suche nach „Teilenummer 123“ auf `product_attribute_2`. In diesem Beispiel wird in den Ergebnissen nach „Motor“ nach „Teilenummer 123“ gesucht.
+
+  Die mehrschichtige Suche ist sowohl für die `startsWith` als auch für die `contains` Suchindizierung in der zweiten Ebene der mehrschichtigen Suche verfügbar, wie unten beschrieben:
+
+- **startsWith search indexation** - Suche mit `startsWith`. Diese neue Funktion ermöglicht Folgendes:
+
+   - Suchen nach Produkten, bei denen der Attributwert mit einer angegebenen Zeichenfolge beginnt.
+   - Konfigurieren der Suche „endet mit“, damit Käufer nach Produkten suchen können, bei denen der Attributwert mit einer bestimmten Zeichenfolge endet. Um eine Suche „endet mit“ zu aktivieren, muss das Produktattribut in umgekehrter Reihenfolge aufgenommen werden und der API-Aufruf sollte auch eine umgekehrte Zeichenfolge sein. Wenn Sie beispielsweise nach einem Produktnamen suchen möchten, der mit „pants“ endet, müssen Sie dies als „stnap“ senden.
+
+- **enthält Suchindizierung** - Suchattribut mit enthält indizierung. Diese neue Funktion ermöglicht Folgendes:
+
+   - Suchen nach einer Abfrage innerhalb einer größeren Zeichenfolge. Beispiel: Ein Käufer sucht in der Zeichenfolge „HAPE-123“ nach der Produktnummer „PE-123“.
+
+      - Hinweis: Dieser Suchtyp unterscheidet sich von dem vorhandenen Suchbegriff[ der eine ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase) Suche durchführt. Wenn Ihr Produktattributwert beispielsweise „Outdoor Pants“ ist, gibt eine Suchphrase eine Antwort für „out pan“ zurück, aber keine Antwort für „or ants“. Eine Suche enthält jedoch eine Antwort für „oder Ameisen“.
+
+Diese neuen Bedingungen verbessern den Filtermechanismus für Suchanfragen, um Suchergebnisse zu verfeinern. Diese neuen Bedingungen wirken sich nicht auf die Hauptsuchabfrage aus.
+
+#### Implementierung
+
+1. Legen Sie in der Admin [ein Produktattribut fest](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) um durchsuchbar zu sein.
+
+   Siehe die Liste der durchsuchbaren [Attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
+
+1. Geben Sie die Suchfunktion für dieses Attribut an, z. B **„Enthält** (Standard) oder **Beginnt mit**. Sie können maximal sechs Attribute angeben, die für &quot;**&quot; aktiviert** sollen, und sechs Attribute, die für „Beginnt **&quot;** werden sollen. Darüber hinaus ist für die **Enthält**-Indizierung die Zeichenfolgenlänge auf 50 Zeichen oder weniger begrenzt.
+
+   ![Suchfunktion angeben](./assets/search-filters-admin.png)
+
+1. In der [Entwicklerdokumentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) finden Sie Beispiele dazu, wie Sie Ihre [!DNL Live Search]-API-Aufrufe mithilfe der neuen `contains` und `startsWith` Suchfunktionen aktualisieren können.
+
+   Sie können diese neuen Bedingungen auf Ihrer Suchergebnisseite implementieren. Sie können beispielsweise einen neuen Abschnitt auf der Seite hinzufügen, in dem der Erstkäufer seine Suchergebnisse weiter verfeinern kann. Sie können Käufern die Auswahl bestimmter Produktattribute ermöglichen, z. B. „Hersteller“, „Teilenummer“ und „Beschreibung“. Von dort aus suchen sie mithilfe der `contains` oder `startsWith` Bedingungen innerhalb dieser Attribute.
+
+### Verwendung der mehrschichtigen Suche anstelle von Facetten
+
+Die mehrschichtige Suche und Facetten dienen verschiedenen Zwecken der Produktsuche. Die Auswahl zwischen ihnen hängt von Ihrem spezifischen Anwendungsfall ab:
+
+**Verwenden Sie die mehrschichtige Suche, wenn:**
+
+- Sie müssen anhand mehrerer Kriterien in den Suchergebnissen suchen.
+- Arbeiten mit Teilenummern, SKUs oder technischen Spezifikationen, bei denen Benutzende nur teilweise Informationen kennen.
+- Käufer müssen die Ergebnisse Schritt für Schritt anhand verschachtelter Kriterien eingrenzen.
+- Sie möchten die Anzahl der API-Aufrufe reduzieren, indem Sie mehrere Suchkriterien in einer einzigen Abfrage kombinieren.
+- Sie müssen geschäftsspezifische Suchmuster implementieren, die über die standardmäßige Facettennavigation hinausgehen.
+
+**Verwenden von Facetten bei:**
+
+- Bereitstellung typischer Filter für Kategorien, Preise, Marken und Attribute
+- Intuitive Filteroptionen, die Benutzerinnen und Benutzer leicht verstehen und auswählen können
+- Verfügbare Optionen basierend auf aktuellen Suchergebnissen anzeigen
+- Anzeigen von Filterzählungen und -bereichen, die Benutzern das Verständnis der verfügbaren Optionen erleichtern
+- Arbeiten mit allgemeinen Produktmerkmalen wie Farbe, Größe, Material usw.
+
+**Best Practice:** Verwenden Sie die mehrschichtige Suche für komplexe, technische Suchen, bei denen Benutzende bestimmte Kriterien haben, und verwenden Sie Facetten für die standardmäßige E-Commerce-Filterung, bei der Benutzende Optionen visuell erkunden und eingrenzen möchten.
+
+## Facetten und Synonyme
+
+Facetten und Synonyme sind eine weitere Möglichkeit, das Sucherlebnis für Ihre Kunden zu verbessern.
 
 [Facetten](facets.md) sind Produktattribute, die in definiert sind, [!DNL Live Search] filterbar zu sein. Sie können jedes filterbare Attribut als Facette in [!DNL Live Search] festlegen, aber es gibt [Beschränkungen](boundaries-limits.md) nach wie vielen Facetten Sie gleichzeitig suchen können.
 
@@ -84,7 +157,7 @@ Im folgenden Abschnitt werden die unterstützten und nicht unterstützten Commer
 
 >[!IMPORTANT]
 >
->Es wird dringend empfohlen, die Widgets zur Produktauflistung zu verwenden, die in Live Search 4.0.0 standardmäßig aktiviert sind. Die Widgets sollen die Adapterimplementierung in zukünftigen Versionen vollständig ersetzen. Weitere [&#x200B; finden Sie unter &#x200B;](install.md#enable-product-listing-widgets) für die Produktliste aktivieren .
+>Es wird dringend empfohlen, die Widgets zur Produktauflistung zu verwenden, die in Live Search 4.0.0 standardmäßig aktiviert sind. Die Widgets sollen die Adapterimplementierung in zukünftigen Versionen vollständig ersetzen. Weitere [ finden Sie unter ](install.md#enable-product-listing-widgets) für die Produktliste aktivieren .
 
 | Commerce-Konfigurationseinstellung | Beschreibung | Unterstützt von Popover | Unterstützt durch Adapter |
 |---|---|---|---|
@@ -109,4 +182,4 @@ Die Preise auf der Widget-Produktlistenseite und im Pop-up werden mithilfe der k
 
 ### Suchbegriffe
 
-[!DNL Live Search] unterstützt [Suchbegriff-](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=de)) für Implementierungen, bei denen Adobe Commerce das Routing übernimmt, wie z. B. auf Luma und anderen PHP-basierten Designs.
+[!DNL Live Search] unterstützt [Suchbegriff-](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html)) für Implementierungen, bei denen Adobe Commerce das Routing übernimmt, wie z. B. auf Luma und anderen PHP-basierten Designs.
