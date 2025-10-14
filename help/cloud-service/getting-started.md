@@ -58,13 +58,13 @@ Wählen Sie eine Registerkarte unten aus, um allgemeine Workflow-Grafiken für d
 
 >[!TAB Systemadministrator und Händler-Workflow]
 
-Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Systemadministratoren und Händler auf [!DNL Adobe Commerce as a Cloud Service]-Instanzen zugreifen und diese verwalten. Weitere Informationen zu Administrator-Workflows finden [ im Handbuch zu Adobe Admin Console ](https://helpx.adobe.com/enterprise/admin-guide.html).
+Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Systemadministratoren und Händler auf [!DNL Adobe Commerce as a Cloud Service]-Instanzen zugreifen und diese verwalten. Weitere Informationen zu Administrator-Workflows finden [&#x200B; im Handbuch zu Adobe Admin Console &#x200B;](https://helpx.adobe.com/enterprise/admin-guide.html).
 
 ![[!DNL Adobe Commerce as a Cloud Service] Handelsflussdiagramm](./assets/merchant-flow.svg){zoomable="yes"}
 
 >[!TAB Entwickler-Workflow]
 
-Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Entwickler Integrationen für [!DNL Adobe Commerce as a Cloud Service] mit App Builder erstellen. Weitere Informationen finden Sie in [ API](https://developer.adobe.com/commerce/webapi/rest/)Dokumentation.
+Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Entwickler Integrationen für [!DNL Adobe Commerce as a Cloud Service] mit App Builder erstellen. Weitere Informationen finden Sie in [&#x200B; API](https://developer.adobe.com/commerce/webapi/rest/)Dokumentation.
 
 ![[!DNL Adobe Commerce as a Cloud Service] Flussdiagramm für Entwickler](./assets/developer-flow.svg){zoomable="yes"}
 
@@ -128,7 +128,7 @@ In den folgenden Abschnitten werden die grundlegenden Prozesse beschrieben, die 
 
 >[!NOTE]
 >
->Bevor Sie eine Instanz erstellen können, müssen Sie vom Produktadministrator oder Systemadministrator Ihres Unternehmens als Benutzer des [!DNL Adobe Commerce as a Cloud Service] Produkts hinzugefügt werden. Weitere Informationen finden [ unter „Hinzufügen von ](./user-management.md#add-users-and-admins) und Administratoren“.
+>Bevor Sie eine Instanz erstellen können, müssen Sie vom Produktadministrator oder Systemadministrator Ihres Unternehmens als Benutzer des [!DNL Adobe Commerce as a Cloud Service] Produkts hinzugefügt werden. Weitere Informationen finden [&#x200B; unter „Hinzufügen von &#x200B;](./user-management.md#add-users-and-admins) und Administratoren“.
 
 [!DNL Adobe Commerce as a Cloud Service] Instanzen verwenden ein kreditbasiertes System. Sie können mehrere Instanzen erstellen, aber jede Instanz erfordert verfügbare Credits. Die Anzahl der Guthaben, die Sie zunächst haben, hängt von Ihrem Abonnement ab.
 
