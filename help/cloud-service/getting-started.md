@@ -3,8 +3,8 @@ title: Erste Schritte mit [!DNL Adobe Commerce as a Cloud Service]
 description: Erfahren Sie mehr über die ersten Schritte mit [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 061b976872fae614cf1fb3db5aaabd9ffdc5e0f9
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+source-git-commit: 911d984efa9587c0154db3ab97f6136bf6c34166
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 0%
@@ -58,13 +58,13 @@ Wählen Sie eine Registerkarte unten aus, um allgemeine Workflow-Grafiken für d
 
 >[!TAB Systemadministrator und Händler-Workflow]
 
-Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Systemadministratoren und Händler auf [!DNL Adobe Commerce as a Cloud Service]-Instanzen zugreifen und diese verwalten. Weitere Informationen zu Administrator-Workflows finden [&#x200B; im Handbuch zu Adobe Admin Console &#x200B;](https://helpx.adobe.com/de/enterprise/admin-guide.html).
+Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Systemadministratoren und Händler auf [!DNL Adobe Commerce as a Cloud Service]-Instanzen zugreifen und diese verwalten. Weitere Informationen zu Administrator-Workflows finden [ im Handbuch zu Adobe Admin Console ](https://helpx.adobe.com/enterprise/admin-guide.html).
 
 ![[!DNL Adobe Commerce as a Cloud Service] Handelsflussdiagramm](./assets/merchant-flow.svg){zoomable="yes"}
 
 >[!TAB Entwickler-Workflow]
 
-Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Entwickler Integrationen für [!DNL Adobe Commerce as a Cloud Service] mit App Builder erstellen. Weitere Informationen finden Sie in [&#x200B; API](https://developer.adobe.com/commerce/webapi/rest/)Dokumentation.
+Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Entwickler Integrationen für [!DNL Adobe Commerce as a Cloud Service] mit App Builder erstellen. Weitere Informationen finden Sie in [ API](https://developer.adobe.com/commerce/webapi/rest/)Dokumentation.
 
 ![[!DNL Adobe Commerce as a Cloud Service] Flussdiagramm für Entwickler](./assets/developer-flow.svg){zoomable="yes"}
 
@@ -97,7 +97,6 @@ Als Händler konzentrieren Sie sich auf die Verwaltung von Produkten, Bestellung
 | Katalog importieren | Erfahren Sie, wie Sie Ihre Produktdaten in die Plattform importieren | [Katalog importieren](#import-your-catalog) |
 | Zugriff auf AEM Assets und Produktvisualisierungen (optional) | Experience Manager aufrufen, um mit der Verwendung von AEM Assets und Produktvisualisierungen zu beginnen | [Zugriff auf die Experience Manager-Benutzeroberfläche](./user-management.md#access-the-experience-manager-interface) |
 
-
 >[!TAB Entwickler]
 
 Als Entwickler müssen Sie wissen, wie Sie benutzerdefinierte Integrationen erstellen und die Platform-Funktionalität erweitern können.
@@ -129,7 +128,7 @@ In den folgenden Abschnitten werden die grundlegenden Prozesse beschrieben, die 
 
 >[!NOTE]
 >
->Bevor Sie eine Instanz erstellen können, müssen Sie vom Produktadministrator oder Systemadministrator Ihres Unternehmens als Benutzer des [!DNL Adobe Commerce as a Cloud Service] Produkts hinzugefügt werden. Weitere Informationen finden [&#x200B; unter „Hinzufügen von &#x200B;](./user-management.md#add-users-and-admins) und Administratoren“.
+>Bevor Sie eine Instanz erstellen können, müssen Sie vom Produktadministrator oder Systemadministrator Ihres Unternehmens als Benutzer des [!DNL Adobe Commerce as a Cloud Service] Produkts hinzugefügt werden. Weitere Informationen finden [ unter „Hinzufügen von ](./user-management.md#add-users-and-admins) und Administratoren“.
 
 [!DNL Adobe Commerce as a Cloud Service] Instanzen verwenden ein kreditbasiertes System. Sie können mehrere Instanzen erstellen, aber jede Instanz erfordert verfügbare Credits. Die Anzahl der Guthaben, die Sie zunächst haben, hängt von Ihrem Abonnement ab.
 
@@ -198,7 +197,7 @@ Standardmäßig enthalten [!DNL Adobe Commerce as a Cloud Service] Instanzen kei
 
 Es gibt zwei Möglichkeiten, Ihren Katalog in [!DNL Adobe Commerce as a Cloud Service] zu importieren:
 
-* [**Commerce Admin**](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/import/data-import) - Eine benutzerfreundliche Oberfläche, über die Sie Ihre Katalogdaten mit wenigen Klicks importieren können.
+* [**Commerce Admin**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Eine benutzerfreundliche Oberfläche, über die Sie Ihre Katalogdaten mit wenigen Klicks importieren können.
 * [**JSON-API importieren**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - Eine REST-API, mit der Sie Ihre Katalogdaten programmgesteuert importieren können.
 
 ### Einrichten der Storefront
@@ -209,4 +208,4 @@ Nachdem Sie eine Instanz erstellt haben, können Sie mit Edge Delivery Services 
 
 * [Versionshinweise](release-notes.md)
 * [Migrationshandbuch](migration/overview.md)
-* [Dokumentation zur Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)
+* [Dokumentation zur Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
