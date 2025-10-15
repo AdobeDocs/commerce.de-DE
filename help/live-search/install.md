@@ -23,7 +23,7 @@ Dieser Artikel richtet sich an Entwicklerinnen und Entwickler oder Systemintegra
 
 ## Anforderungen
 
-- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
+- [Adobe Commerce](https://business.adobe.com/de/products/magento/magento-commerce.html) 2.4.4+
 - PHP 8.1, 8.2 oder 8.3
 - [!DNL Composer]
 - Ausführen von Cron-Aufträgen und Indexern

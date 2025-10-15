@@ -131,7 +131,7 @@ Um Ihre Stores aktivieren zu können, fordern Sie Zahlungsberechtigungen von Ado
 1. Füllen Sie das Formular aus.
 1. Ein Mitglied des Vertriebsteams wird sich mit Ihnen in Verbindung setzen.
 
-Alternativ können Sie die Zahlungsansprüche von Adobe unter [business.adobe.com](https://business.adobe.com/resources/payment-services.html) anfordern.
+Alternativ können Sie die Zahlungsansprüche von Adobe unter [business.adobe.com](https://business.adobe.com/de/resources/payment-services.html) anfordern.
 
 >[!IMPORTANT]
 >
