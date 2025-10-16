@@ -1,7 +1,7 @@
 ---
 title: Benutzerverwaltung
 description: Erfahren Sie, wie Sie Benutzer erstellen und verwalten und Benutzerrollen für [!DNL Adobe Commerce Optimizer] zuweisen.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 9ab2118d-b7e3-4e2e-adac-8f3950fe1824
 source-git-commit: 36a953d4fb0e1e14c7cb88a80f3b59d6fe8eb49e
 workflow-type: tm+mt
@@ -18,10 +18,10 @@ Sie können Benutzer einer der folgenden Rollen zuweisen:
 
 - **Benutzer** - Benutzer haben Zugriff auf die [!DNL Adobe Commerce Optimizer]-Benutzeroberfläche, um Katalogansichten und Merchandising-Regeln anzuzeigen und zu verwalten und Leistungsmetriken zu verfolgen.
 
-- [**Entwickler**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} - Entwicklerinnen und Entwickler haben Benutzerberechtigungen und Zugriff auf die Adobe Developer Console. Das bedeutet, dass sie Projekte erstellen und Anmeldeinformationen konfigurieren können, um Entwickler-Tools wie die [!DNL Adobe Commerce Optimizer]-APIs und -SDKs zusammen mit Adobe-Erweiterbarkeits-Tools wie App Builder und API Mesh zu verwenden.
+- [**Entwickler**](https://helpx.adobe.com/de/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} - Entwicklerinnen und Entwickler haben Benutzerberechtigungen und Zugriff auf die Adobe Developer Console. Das bedeutet, dass sie Projekte erstellen und Anmeldeinformationen konfigurieren können, um Entwickler-Tools wie die [!DNL Adobe Commerce Optimizer]-APIs und -SDKs zusammen mit Adobe-Erweiterbarkeits-Tools wie App Builder und API Mesh zu verwenden.
 
 - **Admin** - Es gibt drei verschiedene Arten von Administratorrollen:
-   - [Systemadmins](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - Der Systemadmin hat über die Adobe Admin Console Zugriff auf alle Produkte und Produktprofile in der Organisation.
+   - [Systemadmins](https://helpx.adobe.com/de/enterprise/using/admin-roles.html){target="_blank"} - Der Systemadmin hat über die Adobe Admin Console Zugriff auf alle Produkte und Produktprofile in der Organisation.
    - [Produktadministratoren](#add-a-product-admin) - Produktadministratoren können [Benutzer, Rollen und Berechtigungen für das Produkt verwalten](#add-users-and-admins) in der [!DNL Adobe Admin Console].
    - [Produktprofil-Administrierende](#add-users-developers-and-product-profile-admins) - Produktprofil-Administrierende können Benutzende für das Produkt in der [!DNL Adobe Admin Console] verwalten.
 
@@ -143,6 +143,6 @@ Um Entwickler und Produktprofil-Administrierende hinzuzufügen, wiederholen Sie 
 
 Sie können mit einer der folgenden Methoden mehrere Benutzer effizienter hinzufügen:
 
-- Verwenden Sie die **Benutzer nach CSV hinzufügen** in der Adobe Admin Console, um einen [CSV-Massen-Upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"} durchzuführen.
-- Fügen Sie einer Rolle mehrere Benutzer hinzu, indem Sie eine [Benutzergruppe](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"} erstellen. Fügen Sie dann das Produkt [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] zur Benutzergruppe hinzu.
+- Verwenden Sie die **Benutzer nach CSV hinzufügen** in der Adobe Admin Console, um einen [CSV-Massen-Upload](https://helpx.adobe.com/de/enterprise/using/bulk-upload-users.html){target="_blank"} durchzuführen.
+- Fügen Sie einer Rolle mehrere Benutzer hinzu, indem Sie eine [Benutzergruppe](https://helpx.adobe.com/de/enterprise/using/user-groups.html){target="_blank"} erstellen. Fügen Sie dann das Produkt [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] zur Benutzergruppe hinzu.
 
