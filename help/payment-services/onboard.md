@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration, Paas, Saas
-source-git-commit: 9f7690ae325853b9b4a590b3d1cd538909a26462
+source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ Dieses Flussdiagramm zeigt den Onboarding-Sandbox-Prozess mit einer Adobe Commer
 
 **Onboarding-Schritte für Versionen v2.4.7+ Teil 1: Sandbox**
 
-1. [Instanz mit &#x200B;](connect.md#configure-commerce-services) Services von Commerce verbinden Diese Verbindung darf nur einmal pro Commerce-Instanz hergestellt werden. [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."}
+1. [Instanz mit ](connect.md#configure-commerce-services) Services von Commerce verbinden Diese Verbindung darf nur einmal pro Commerce-Instanz hergestellt werden. [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."}
 1. [Richten Sie den Sandbox-](sandbox.md#enable-sandbox-testing) ein (oder fahren Sie alternativ mit [Aktivieren von Live-Zahlungen](sandbox.md#enable-live-payments) fort, wenn Sie die Funktionalität in einer anderen Umgebung getestet haben) mit einem PayPal-Zahlungsverarbeitungskonto.
 1. Testen von Zahlungen in einer [Sandbox](sandbox.md#test-in-sandbox-environment)-Umgebung.
 
-[![Weitere Informationen](assets/learn-more-button.svg)](https://helpx.adobe.com/de/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![Weitere Informationen](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB Produktion]
 
@@ -57,7 +57,7 @@ Dieses Flussdiagramm zeigt die Produktionsschritte, die zum Aktivieren von [!DNL
 1. [Umfassendes Onboarding von Händlern](production.md#complete-merchant-onboarding), um Live-Zahlungen für Ihre Commerce-Websites zu aktivieren.
 1. [Erhalten Sie Ihre  [!DNL Payment Services] -Händler-ID](production.md#configure-pricing-tier) und übergeben Sie sie an den Vertrieb, um die richtige Preisstufe zu konfigurieren.
 1. [Aktivieren [!DNL Payment Services] im Live-Modus](production.md#enable-live-payments), um mit der Verarbeitung von Live-Zahlungen zu beginnen.
-1. Testen Sie Zahlungen sowohl in [Sandbox](sandbox.md#test-in-sandbox-environment)- als auch [&#128279;](production.md#test-in-production).
+1. Testen Sie Zahlungen sowohl in [Sandbox](sandbox.md#test-in-sandbox-environment)- als auch [](production.md#test-in-production).
 
 [![Weitere Informationen](assets/learn-more-button.svg)](production.md)
 
@@ -77,13 +77,13 @@ Dieses Flussdiagramm zeigt die Sandbox-Schritte, die für das Onboarding von [!D
 
 **Onboarding-Schritte für Versionen v2.4.0-2.4.6 Teil 1: Sandbox**
 
-1. [Installieren Sie bei  [!DNL Payment Services]  die &#x200B;](install.md#get-payment-services).
+1. [Installieren Sie bei  [!DNL Payment Services]  die ](install.md#get-payment-services).
 1. [API-Anmeldeinformationen abrufen](connect.md#obtain-api-credentials).
-1. [Instanz mit &#x200B;](connect.md#configure-commerce-services) Services von Commerce verbinden Diese Verbindung darf nur einmal pro Commerce-Instanz hergestellt werden.
+1. [Instanz mit ](connect.md#configure-commerce-services) Services von Commerce verbinden Diese Verbindung darf nur einmal pro Commerce-Instanz hergestellt werden.
 1. [Richten Sie den Sandbox-](sandbox.md#enable-sandbox-testing) ein (oder fahren Sie alternativ mit [Aktivieren von Live-Zahlungen](sandbox.md#enable-live-payments) fort, wenn Sie die Funktionalität in einer anderen Umgebung getestet haben) mit einem PayPal-Zahlungsverarbeitungskonto.
 1. Testen von Zahlungen in einer [Sandbox](sandbox.md#test-in-sandbox-environment)-Umgebung.
 
-[![Weitere Informationen](assets/learn-more-button.svg)](https://helpx.adobe.com/de/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![Weitere Informationen](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB Produktion]
 
@@ -98,7 +98,7 @@ Dieses Flussdiagramm zeigt den allgemeinen Prozess zum Aktivieren von [!DNL Paym
 1. [Umfassendes Onboarding von Händlern](production.md#complete-merchant-onboarding), um Live-Zahlungen für Ihre Commerce-Websites zu aktivieren.
 1. [Erhalten Sie Ihre  [!DNL Payment Services] -Händler-ID](production.md#configure-pricing-tier) und übergeben Sie sie an den Vertrieb, um die richtige Preisstufe zu konfigurieren.
 1. [Aktivieren [!DNL Payment Services] im Live-Modus](production.md#enable-live-payments), um mit der Verarbeitung von Live-Zahlungen zu beginnen.
-1. Testen Sie Zahlungen sowohl in [Sandbox](sandbox.md#test-in-sandbox-environment)- als auch [&#128279;](production.md#test-in-production).
+1. Testen Sie Zahlungen sowohl in [Sandbox](sandbox.md#test-in-sandbox-environment)- als auch [](production.md#test-in-production).
 
 [![Weitere Informationen](assets/learn-more-button.svg)](onboard.md)
 
@@ -110,7 +110,8 @@ Dieses Flussdiagramm zeigt den allgemeinen Prozess zum Aktivieren von [!DNL Paym
 
 >[!MORELIKETHIS]
 >
-> * [Fehlerbehebung [!DNL Payment Services] Installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=de)
-> * [PayPal-Sandbox-Konto nicht verifiziert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=de)
-> * [Verzögerte [!DNL Payment Services] Berichtsdaten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=de)
-> * [Testkreditkarte schlägt mit PayPal bei der Verarbeitung von Zahlungen in einer Sandbox-Umgebung fehl](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=de)
+> * [Fehlerbehebung [!DNL Payment Services] Installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
+> * [PayPal-Sandbox-Konto nicht verifiziert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
+> * [Verzögerte [!DNL Payment Services] Berichtsdaten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
+> * [Testkreditkarte schlägt mit PayPal bei der Verarbeitung von Zahlungen in einer Sandbox-Umgebung fehl](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)
+> * [Deaktivieren der  [!DNL Payment Services] -Erweiterung](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)
