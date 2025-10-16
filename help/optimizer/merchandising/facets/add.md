@@ -1,9 +1,9 @@
 ---
 title: Erstellen und Verwalten von Facetten
 description: Erfahren Sie, wie Sie in Facetten hinzufügen und verwalten [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: d6b7ff1f-a9b8-4fb8-8bd3-b3596695045c
-source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
+source-git-commit: dc751a54c654980a29606c85cdd1cd3324973aab
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -26,9 +26,9 @@ Jedes filterbare Produktattribut kann als Facette verwendet werden. Facetten hel
 
    Die Facette wird am unteren Rand der Liste *Dynamische Facetten* hinzugefügt und die Schaltfläche *Änderungen veröffentlichen* wird verfügbar.
 
-1. Wenn die hinzuzufügende Facette nicht gefunden werden kann, verwenden Sie die [Metadaten-API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata), um den `searchable` festzulegen:
+1. Wenn die hinzuzufügende Facette nicht gefunden werden kann, verwenden Sie die [Metadaten-API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata), um den `filterable` Parameter festzulegen:
 
-   `"searchable": true`
+   `"filterable": true`
 
    Die Facette wird in der Storefront verfügbar, wenn der Katalog das nächste Mal mit [!DNL Adobe Commerce Optimizer] synchronisiert wird. Wenn die Facette nach zwei Stunden nicht verfügbar ist, finden Sie weitere Informationen unter [Datensynchronisierung](../../setup/data-sync.md).
 

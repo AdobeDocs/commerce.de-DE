@@ -2,9 +2,9 @@
 title: Empfehlungstypen
 description: Erfahren Sie mehr über die Recommendations, die Sie auf verschiedenen Seiten auf Ihrer Site bereitstellen können.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
-source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
+source-git-commit: 67d0b98f3a9317c0db944a176fd99375091a3970
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1991'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,29 @@ Als Best Practice empfiehlt Adobe bei der Verwendung von Recommendations die fol
 >
 >Weitere Informationen zu den in diesem Artikel beschriebenen Ereignissen finden Sie unter [Storefront-Ereignisse](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) in der Entwicklerdokumentation.
 
+## Datenanforderungen und -verhalten
+
+Product Recommendations ist ein datengesteuertes System, das auf Verhaltensdaten beruht, die in Ihrer Storefront erfasst werden. Qualität und Quantität der Empfehlungen hängen von der Menge der verfügbaren Ereignisdaten ab.
+
+>[!IMPORTANT]
+>
+>Die meisten Empfehlungstypen erfordern ausreichende Verhaltensdaten (z. B. Produktansichten, Warenkorbaktionen und Käufe), um aussagekräftige Ergebnisse zu generieren. Das System benötigt in der Regel mehrere Tage aktiver Käuferaktivität, um genaue Empfehlungen zu erstellen. Unter [Bereitschaftsindikatoren](create.md#readiness-indicators) erfahren Sie, wie der Website-Traffic dabei hilft, die verschiedenen Empfehlungstypen auszufüllen.
+
+### Was passiert bei unzureichenden Daten?
+
+Wenn nicht genügend Ereignisdaten vorhanden sind, um Empfehlungen zu generieren, kann das System:
+
+- Leere Ergebnisse für die Empfehlungseinheit zurückgeben.
+- Trigger [Sicherungsempfehlungen](events.md#backup-recommendations), z. B. Anzeige `Most viewed` Produkte, wenn noch keine personalisierten Empfehlungen verfügbar sind.
+- Zeigt weniger Produkte als [konfiguriert](create.md) in der Empfehlungseinheit an.
+
 ## Personalisiert {#personalized}
 
 Diese Empfehlungstypen empfehlen Produkte basierend auf dem Verhaltensverlauf des jeweiligen Käufers auf Ihrer Site. Wenn ein Käufer beispielsweise zuvor auf Ihrer Site nach einer Jacke gesucht oder eine Jacke gekauft hat, greifen diese Empfehlungen im Wesentlichen dort auf, wo er aufgehört hat, und empfehlen andere Jacken oder ähnliche Produkte.
+
+>[!NOTE]
+>
+>Personalisierte Empfehlungen erfordern, dass die Käufer über eine etablierte Verhaltensgeschichte verfügen. Neuen Besuchern oder Käufern ohne ausreichenden Interaktionsverlauf werden [Sicherungsempfehlungen](events.md#backup-recommendations) wie Am häufigsten angezeigte Produkte angezeigt, bis sie genügend Verhaltenssignale auf Ihrer Site generieren.
 
 | Typ | Beschreibung |
 |---|---|
@@ -48,6 +68,8 @@ Diese Empfehlungstypen sind sozial abgesichert, um Käufern zu helfen, das zu fi
 >[!NOTE]
 >
 >Die Empfehlungstypen „hat dies angezeigt, gesehen,“ hat dies angezeigt, gekauft, und „hat dies gekauft, hat das gekauft“ verwenden keine Metrik für einfache Vorfälle, sondern einen komplexeren Algorithmus für die kollaborative Filterung, der nach *interessanten Ähnlichkeiten“ sucht* die nicht auf beliebte Produkte ausgerichtet sind. Die für diese Empfehlungstypen verwendeten Daten basieren auf dem aggregierten Verhalten des Käufers, das aus mehreren Sitzungen auf Ihrer Site abgeleitet wurde. Die Daten basieren nicht auf dem Käuferverhalten, das aus einem einzelnen Sitzungsereignis auf Ihrer Site abgeleitet wurde. Diese Empfehlungstypen helfen Käufern dabei, die benachbarten Produkte zu finden, deren Kombination mit dem aktuell angezeigten Produkt möglicherweise nicht offensichtlich ist.
+>
+>Diese Empfehlungstypen erfordern erhebliche produktübergreifende Interaktionsdaten, um aussagekräftige Korrelationen zu identifizieren. Stores mit begrenzter Produktkatalogvielfalt oder geringem Traffic erhalten möglicherweise weniger Empfehlungen, bis ausreichende Verhaltensmuster erkennbar werden.
 
 | Typ | Beschreibung |
 |---|---|
@@ -61,6 +83,10 @@ Diese Empfehlungstypen sind sozial abgesichert, um Käufern zu helfen, das zu fi
 
 Diese Empfehlungstypen empfehlen Produkte, die in den letzten sieben Tagen am beliebtesten oder beliebtesten waren.
 
+>[!NOTE]
+>
+>Beliebtheitsbasierte Empfehlungen erfordern ausreichende Ereignisdaten aus Ihrer Storefront. Wenn Ihr Store neu ist oder nur geringen Traffic hat, können diese Empfehlungstypen eingeschränkte Ergebnisse oder keine Ergebnisse zurückgeben, bis ausreichende Verhaltensdaten erfasst wurden. Überwachen Sie Ihre [Data Readiness Indicator](workspace.md), um eine optimale Leistung zu gewährleisten.
+
 | Typ | Beschreibung |
 |---|---|
 | Am häufigsten angezeigt | empfiehlt Produkte, die am häufigsten angezeigt wurden, indem die Anzahl der Sitzungen gezählt wird, bei denen in den letzten sieben Tagen eine Ansichtsaktion stattgefunden hat.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/>- Am beliebtesten<br/>- Trend<br/>- Beliebt<br/>- Kürzlich beliebt<br/>- Beliebte Produkte inspiriert durch dieses Produkt (PDP)<br/>- Topverkäufe |
@@ -71,6 +97,10 @@ Diese Empfehlungstypen empfehlen Produkte, die in den letzten sieben Tagen am be
 ## Hochleistungsfähig {#highperf}
 
 Diese Empfehlungstypen empfehlen, Produkte basierend auf Erfolgskriterien wie Hinzufügen zum Warenkorb oder Konversionsraten am besten zu entwickeln.
+
+>[!NOTE]
+>
+>Leistungsstarke Empfehlungstypen basieren auf Konversionsdaten (Käufe und Aktionen vom Typ „In den Warenkorb legen„). Neue Stores oder Stores mit niedrigen Konversionsvolumina müssen möglicherweise Daten über 7-14 Tage sammeln, bevor diese Empfehlungen in Kraft treten.
 
 | Typ | Beschreibung |
 |---|---|
@@ -110,7 +140,7 @@ Da dieser Empfehlungstyp für die meisten Kataloge nicht anwendbar ist, ist er n
 
 >[!NOTE]
 >
-> Der Empfehlungstyp _Visuelle Ähnlichkeit_ ist verfügbar, wenn Sie [&#x200B; als optionales &#x200B;](install-configure.md) installieren.
+> Der Empfehlungstyp _Visuelle Ähnlichkeit_ ist verfügbar, wenn Sie [ als optionales ](install-configure.md) installieren.
 
 1. Wechseln Sie in der _Admin_-Seitenleiste zu **Marketing** > _Promotions_ > **Product Recommendations**, um das _Product Recommendations_ Dashboard anzuzeigen.
 

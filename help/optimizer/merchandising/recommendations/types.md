@@ -1,10 +1,11 @@
 ---
 title: Empfehlungstypen
 description: Erfahren Sie mehr über die Recommendations, die Sie auf verschiedenen Seiten auf Ihrer Site bereitstellen können.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+exl-id: f1c4e0ef-a8fe-452d-9870-6d6964b4335d
+source-git-commit: 3fa6816c539494ce2cc67a9e3c601b8d3048f5d9
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1731'
 ht-degree: 0%
 
 ---
@@ -18,13 +19,43 @@ Adobe Commerce Optimizer bietet eine Vielzahl von Empfehlungen, die Sie auf vers
 - [Beliebtheit](#popularity)
 - [leistungsstark](#highperf)
 
+Als Best Practice empfiehlt Adobe bei der Verwendung von Recommendations die folgenden Richtlinien:
+
+- Diversifizieren Sie Ihre Empfehlungstypen. Kunden ignorieren die Empfehlungen, wenn sie immer wieder dieselben Produkte vorschlagen.
+
+- Stellen Sie nicht dieselben Empfehlungen auf Ihrer Warenkorbseite und Bestellbestätigungsseite bereit. Erwägen Sie, `Most Added to Cart` für die Warenkorbseite und `Bought This, Bought That` für die Bestellbestätigungsseite zu verwenden.
+
+- Halten Sie Ihre Website aufgeräumt. Stellen Sie nicht mehr als drei Empfehlungseinheiten auf derselben Seite bereit.
+
+- Wenn Ihr Geschäft Kleidung verkauft, kann die `More like this` Empfehlung geschlechtsspezifische Produkte vorschlagen, die nicht mit dem Geschlecht des angezeigten Produkts übereinstimmen. Erwägen, diesen Empfehlungstyp nur für Nicht-Bekleidungskategorien zu verwenden.
+
 >[!NOTE]
 >
->Weitere Informationen zu den in diesem Artikel beschriebenen Ereignissen finden Sie unter [Ereignisse](../../setup/events/overview.md).
+>Weitere Informationen zu den in diesem Artikel beschriebenen Ereignissen finden Sie unter [Storefront-Ereignisse](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) in der Entwicklerdokumentation.
+
+## Datenanforderungen und -verhalten
+
+Product Recommendations ist ein datengesteuertes System, das auf Verhaltensdaten beruht, die in Ihrer Storefront erfasst werden. Qualität und Quantität der Empfehlungen hängen von der Menge der verfügbaren Ereignisdaten ab.
+
+>[!IMPORTANT]
+>
+>Die meisten Empfehlungstypen erfordern ausreichende Verhaltensdaten (z. B. Produktansichten, Warenkorbaktionen und Käufe), um aussagekräftige Ergebnisse zu generieren. Das System benötigt in der Regel mehrere Tage aktiver Käuferaktivität, um genaue Empfehlungen zu erstellen. Unter [Bereitschaftsindikatoren](create.md#readiness-indicators) erfahren Sie, wie der Website-Traffic dabei hilft, die verschiedenen Empfehlungstypen auszufüllen.
+
+### Was passiert bei unzureichenden Daten?
+
+Wenn nicht genügend Ereignisdaten vorhanden sind, um Empfehlungen zu generieren, kann das System:
+
+- Leere Ergebnisse für die Empfehlungseinheit zurückgeben.
+- Trigger [Sicherungsempfehlungen](../../setup/events/overview.md#backup-recommendations), z. B. Anzeige `Most viewed` Produkte, wenn noch keine personalisierten Empfehlungen verfügbar sind.
+- Zeigt weniger Produkte als [konfiguriert](create.md) in der Empfehlungseinheit an.
 
 ## Personalisiert {#personalized}
 
 Diese Empfehlungstypen empfehlen Produkte basierend auf dem Verhaltensverlauf des jeweiligen Käufers auf Ihrer Site. Wenn ein Käufer beispielsweise zuvor auf Ihrer Site nach einer Jacke gesucht oder eine Jacke gekauft hat, greifen diese Empfehlungen im Wesentlichen dort auf, wo er aufgehört hat, und empfehlen andere Jacken oder ähnliche Produkte.
+
+>[!NOTE]
+>
+>Personalisierte Empfehlungen erfordern, dass die Käufer über eine etablierte Verhaltensgeschichte verfügen. Neuen Besuchern oder Käufern ohne ausreichenden Interaktionsverlauf werden [Sicherungsempfehlungen](../../setup/events/overview.md#backup-recommendations) wie Am häufigsten angezeigte Produkte angezeigt, bis sie genügend Verhaltenssignale auf Ihrer Site generieren.
 
 | Typ | Beschreibung |
 |---|---|
@@ -38,6 +69,8 @@ Diese Empfehlungstypen sind sozial abgesichert, um Käufern zu helfen, das zu fi
 >[!NOTE]
 >
 >Die Empfehlungstypen „hat dies angezeigt, gesehen,“ hat dies angezeigt, gekauft, und „hat dies gekauft, hat das gekauft“ verwenden keine Metrik für einfache Vorfälle, sondern einen komplexeren Algorithmus für die kollaborative Filterung, der nach *interessanten Ähnlichkeiten“ sucht* die nicht auf beliebte Produkte ausgerichtet sind. Die für diese Empfehlungstypen verwendeten Daten basieren auf dem aggregierten Verhalten des Käufers, das aus mehreren Sitzungen auf Ihrer Site abgeleitet wurde. Die Daten basieren nicht auf dem Käuferverhalten, das aus einem einzelnen Sitzungsereignis auf Ihrer Site abgeleitet wurde. Diese Empfehlungstypen helfen Käufern dabei, die benachbarten Produkte zu finden, deren Kombination mit dem aktuell angezeigten Produkt möglicherweise nicht offensichtlich ist.
+>
+>Diese Empfehlungstypen erfordern erhebliche produktübergreifende Interaktionsdaten, um aussagekräftige Korrelationen zu identifizieren. Stores mit begrenzter Produktkatalogvielfalt oder geringem Traffic erhalten möglicherweise weniger Empfehlungen, bis ausreichende Verhaltensmuster erkennbar werden.
 
 | Typ | Beschreibung |
 |---|---|
@@ -50,6 +83,10 @@ Diese Empfehlungstypen sind sozial abgesichert, um Käufern zu helfen, das zu fi
 
 Diese Empfehlungstypen empfehlen Produkte, die in den letzten sieben Tagen am beliebtesten oder beliebtesten waren.
 
+>[!NOTE]
+>
+>Beliebtheitsbasierte Empfehlungen erfordern ausreichende Ereignisdaten aus Ihrer Storefront. Wenn Ihr Store neu ist oder nur geringen Traffic hat, können diese Empfehlungstypen eingeschränkte Ergebnisse oder keine Ergebnisse zurückgeben, bis ausreichende Verhaltensdaten erfasst wurden. Überwachen Sie Ihre [Data Readiness Indicator](../../manage-results/recommendation-performance.md), um eine optimale Leistung zu gewährleisten.
+
 | Typ | Beschreibung |
 |---|---|
 | Am häufigsten angezeigt | empfiehlt Produkte, die am häufigsten angezeigt wurden, indem die Anzahl der Sitzungen gezählt wird, bei denen in den letzten sieben Tagen eine Ansichtsaktion stattgefunden hat.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/>- Am beliebtesten<br/>- Trend<br/>- Beliebt<br/>- Kürzlich beliebt<br/>- Beliebte Produkte inspiriert durch dieses Produkt (PDP)<br/>- Topverkäufe |
@@ -61,9 +98,14 @@ Diese Empfehlungstypen empfehlen Produkte, die in den letzten sieben Tagen am be
 
 Diese Empfehlungstypen empfehlen, Produkte basierend auf Erfolgskriterien wie Hinzufügen zum Warenkorb oder Konversionsraten am besten zu entwickeln.
 
+>[!NOTE]
+>
+>Leistungsstarke Empfehlungstypen basieren auf Konversionsdaten (Käufe und Aktionen vom Typ „In den Warenkorb legen„). Neue Stores oder Stores mit niedrigen Konversionsvolumina müssen möglicherweise Daten über 7-14 Tage sammeln, bevor diese Empfehlungen in Kraft treten.
+
 | Typ | Beschreibung |
 |---|---|
 | Konvertierung für Kauf anzeigen | empfiehlt Produkte mit der höchsten Konversionsrate von Ansicht zu Kauf. Wie hoch ist der Anteil aller Shopper-Sitzungen, in denen eine Produktansicht registriert wurde, an der es letztendlich zu einem Kauf durch den Shopper kam.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/> -Topverkäufe<br/>- Beliebte Produkte<br/>- Sie könnten Interesse haben an |
 | Konvertierung von Ansicht in Warenkorb | empfiehlt Produkte mit der höchsten Konversionsrate von Warenkorb zu Ansicht. Wie hoch ist der Anteil aller Shopper-Sitzungen, in denen eine Produktansicht registriert wurde, die von dem Shopper schließlich registriert und in den Warenkorb gelegt wurde.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/> - Topverkäufe<br/>- Beliebte Produkte<br/>- Interessieren Sie sich vielleicht für |
 | Am häufigsten gekauft | Dieser Empfehlungstyp wird häufig als „Topverkäufe“ bezeichnet und zählt die Anzahl der Sitzungen, in denen in den letzten sieben Tagen eine Aktion „Bestellung aufgeben“ stattgefunden hat. Dieser Empfehlungstyp kann auf allen Seiten verwendet werden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/> - Am beliebtesten<br/>- Trend<br/>- Beliebt<br/>- Kürzlich beliebt<br/>- Beliebte Produkte inspiriert durch dieses Produkt (PDP)<br/>- Topverkäufe |
+| Am häufigsten zum Warenkorb hinzugefügt | empfiehlt Produkte, die von Käufern in den letzten sieben Tagen am häufigsten in den Warenkorb gelegt wurden. Dieser Empfehlungstyp kann auf allen Seiten verwendet werden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/> - Am beliebtesten<br/>- Trend<br/>- Beliebt<br/>- Kürzlich beliebt<br/>- Beliebte Produkte inspiriert durch dieses Produkt (PDP)<br/>- Topverkäufe |
 | Am häufigsten zum Warenkorb hinzugefügt | empfiehlt Produkte, die von Käufern in den letzten sieben Tagen am häufigsten in den Warenkorb gelegt wurden. Dieser Empfehlungstyp kann auf allen Seiten verwendet werden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/> - Am beliebtesten<br/>- Trend<br/>- Beliebt<br/>- Kürzlich beliebt<br/>- Beliebte Produkte inspiriert durch dieses Produkt (PDP)<br/>- Topverkäufe |
