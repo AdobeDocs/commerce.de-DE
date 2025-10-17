@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8ba935c4e8c39f0897bf2c031ff07be178b2a91d
+source-git-commit: 9195aab4f6d01d7f570a8a1684c3110917ee3f53
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '263'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,50 @@ ht-degree: 2%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;14. Oktober 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Die Schritte <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Benutzerverwaltung</a> zum Hinzufügen eines Benutzers wurden aktualisiert.</p>
+</td>
+      <td>
+        Größere Aktualisierung
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4088b88553cbdd328a55f3483b20ea073e6c78b2">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;13. Oktober 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Das <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">Handbuch zur Einrichtung der Storefront</a> wurde für Adobe Commerce Optimizer aktualisiert. Es enthält jetzt Anweisungen zum Erstellen eines Storefront-Projekts mit dem Site Creator-Tool, zum Anpassen der Storefront-Konfiguration und zum Überprüfen der Site- und Katalogdaten durch Überprüfen der standardmäßigen Produktdetailseiten und Produktsuchergebnisseiten.</p>
+</td>
+      <td>
+        Größere Aktualisierung
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4c2d5fc7ad0febbeef2ff0b8ee3bdec5e9b5710c">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;2. Oktober 2025
 
@@ -23,7 +67,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/user-management">User Management</a> müssen jetzt alle Entwickler und Produktadministratoren zuerst die Benutzerrolle hinzufügen.</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">User Management</a> müssen jetzt alle Entwickler und Produktadministratoren zuerst die Benutzerrolle hinzufügen.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -45,7 +89,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Veröffentlichte <a href="https://experienceleague.adobe.com/de/docs/commerce/payment-services/release-notes">Versionshinweise</a> für Payment Services v2.12.2.</p>
+      <td><p>Veröffentlichte <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">Versionshinweise</a> für Payment Services v2.12.2.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -67,7 +111,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Informationen zur AEM Assets-Einrichtung wurden der Seite <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/user-management">Benutzerverwaltung</a> für Adobe Commerce as a Cloud Service hinzugefügt.</p>
+      <td><p>Informationen zur AEM Assets-Einrichtung wurden der Seite <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Benutzerverwaltung</a> für Adobe Commerce as a Cloud Service hinzugefügt.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -75,7 +119,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/acce1aad405e74b1171faddf7f0d6681bd0a048d">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Rollenbasierte Aufgaben und Workflow-Informationen wurden zur Seite <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/getting-started">Erste Schritte</a> für Adobe Commerce as a Cloud Service hinzugefügt</p>
+      <td><p>Rollenbasierte Aufgaben und Workflow-Informationen wurden zur Seite <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/getting-started">Erste Schritte</a> für Adobe Commerce as a Cloud Service hinzugefügt</p>
 </td>
       <td>
         Neues Thema
@@ -97,7 +141,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde Dokumentation für das optionale Modul <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">Zusätzliche Produktattribute“ </a>. Wenn dieses Modul in einer Adobe Commerce-Umgebung installiert wird, exportiert der Datenexportprozess automatisch Steuerklassen-, Attributsatz- und Bestandsmetadaten aus der Commerce-Produktkonfiguration in die <code class="language-plaintext highlighter-rouge">products</code>- und <code class="language-plaintext highlighter-rouge">product attributes</code>-Feeds.</p>
+      <td><p>Es wurde Dokumentation für das optionale Modul <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">Zusätzliche Produktattribute“ </a>. Wenn dieses Modul in einer Adobe Commerce-Umgebung installiert wird, exportiert der Datenexportprozess automatisch Steuerklassen-, Attributsatz- und Bestandsmetadaten aus der Commerce-Produktkonfiguration in die <code class="language-plaintext highlighter-rouge">products</code>- und <code class="language-plaintext highlighter-rouge">product attributes</code>-Feeds.</p>
 </td>
       <td>
         Neues Thema
@@ -119,7 +163,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Sie können jetzt das Tool <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/storefront">Site Creator</a> verwenden, um Ihre Storefront ohne Verwendung der CLI einzurichten.</p>
+      <td><p>Sie können jetzt das Tool <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Site Creator</a> verwenden, um Ihre Storefront ohne Verwendung der CLI einzurichten.</p>
 </td>
       <td>
         Größere Aktualisierung
