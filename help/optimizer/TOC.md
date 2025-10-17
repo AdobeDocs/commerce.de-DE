@@ -4,9 +4,9 @@ user-guide-description: Dokumentation und Ressourcen für [!DNL Adobe Commerce O
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b524c75b59984ddfa63ce133a917b9891dd6719f
+source-git-commit: d788c6419831814f2a81229c2354ffc41b637873
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '106'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 - [Was ist Adobe Commerce Optimizer?](overview.md)
 - [Erste Schritte](get-started.md)
-- [Benutzerverwaltung](user-management.md)
+- [Benutzer- und Identitätsverwaltung](user-management.md)
 - [Geteilte Verantwortung](shared-responsibility.md)
 - [Grenzen und Einschränkungen](boundaries-limits.md)
 - [Versionshinweise](release-notes.md)
@@ -27,24 +27,24 @@ ht-degree: 10%
    - [Überblick](./merchandising/overview.md)
    - Recommendations {#recommendations}
       - [Überblick](./merchandising/recommendations/overview.md)
-      - [Erstellen und Verwalten](./merchandising/recommendations/create.md)
+      - [Erstellen und verwalten](./merchandising/recommendations/create.md)
       - [Filter](./merchandising/recommendations/filters.md)
       - [Typen](./merchandising/recommendations/types.md)
       - [Best Practices](./merchandising/recommendations/best-practice.md)
    - Merchandising-Regeln {#rules}
       - [Überblick](./merchandising/rules/overview.md)
       - [Workspace](./merchandising/rules/workspace.md)
-      - [Erstellen und Verwalten](./merchandising/rules/add.md)
+      - [Erstellen und verwalten](./merchandising/rules/add.md)
       - [Best Practices](./merchandising/rules/best-practice.md)
    - Facetten {#facets}
       - [Überblick](./merchandising/facets/overview.md)
       - [Workspace](./merchandising/facets/workspace.md)
-      - [Erstellen und Verwalten](./merchandising/facets/add.md)
+      - [Erstellen und verwalten](./merchandising/facets/add.md)
       - [Typen](./merchandising/facets/type.md)
       - [Best Practices](./merchandising/facets/best-practice.md)
    - Synonyme {#synonyms}
       - [Überblick](./merchandising/synonyms/overview.md)
-      - [Erstellen und Verwalten](./merchandising/synonyms/add.md)
+      - [Erstellen und verwalten](./merchandising/synonyms/add.md)
       - [Typen](./merchandising/synonyms/type.md)
       - [Best Practices](./merchandising/synonyms/best-practice.md)
 - Store-Setup {#setup}
@@ -57,7 +57,7 @@ ht-degree: 10%
 - [Schaufenster](storefront.md)
 - [Einstellungen](settings.md)
 - Anwendungsfall {#use-case}
-   - [End-to-End-Anwendungsfall für Storefront- und Katalogadministrator](./use-case/admin-use-case.md)
+   - [End-to-End-Anwendungsfall für Storefront- und Katalog-Admin](./use-case/admin-use-case.md)
 - Ressourcen für Entwickler {#developer}
    - [Salesforce Commerce Connector](./developer/salesforce-connector.md)
    - [API-Referenz zur Datenaufnahme](https://developer.adobe.com/commerce/services/reference/rest/)
