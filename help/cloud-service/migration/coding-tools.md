@@ -1,7 +1,7 @@
 ---
 title: KI-Kodierungstools für Erweiterungen
 description: Erfahren Sie, wie Sie die KI-Tools zum Erstellen von Commerce App Builder-Erweiterungen verwenden.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Architect
 hide: true
 hidefromtoc: true
@@ -174,7 +174,7 @@ Lesen Sie die folgenden Ressourcen, um loszulegen:
 
 * [Integrations-Starter-Kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce Starter Kit-Vorlagen](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Beispielanwendungen für App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Warum Sie diese Ressourcen verwenden sollten
