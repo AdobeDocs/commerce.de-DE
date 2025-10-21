@@ -3,9 +3,9 @@ title: Pflegen genauer und relevanter Inhalte
 description: Eine E-Commerce-Plattform ist einer der wichtigsten Interaktionskanäle. Durch nahtlose Aktualisierungen im Asset-Management-System wird sichergestellt, dass Commerce-Storefronts immer die aktuellsten Produktinformationen anzeigen.
 feature: CMS, Media, Integration
 exl-id: 2c749e84-fcc4-4bf9-90b2-87438329889e
-source-git-commit: 6640635fca5c53fe4b06b9bbb3120fffc46cb0b8
+source-git-commit: 141f2291d1ead324a159053145e92ee7d4237a7d
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ Durch die Entkopplung der Inhaltserstellung vom Katalogmanagement erhalten Unter
 * Produktaktualisierungen bleiben schnell, da die Asset-Erstellung Katalogänderungen nicht verzögert, was die Verwaltung neuer Produkte flexibler macht.
 
 * Die Automatisierung verbessert die Effizienz und Genauigkeit und verringert Abweichungen zwischen Produktdaten und zugehörigen Inhalten.
+
+>[!NOTE]
+>
+> CSV-Produktimporte in PaaS und SaaS führen keine Trigger-Aktualisierungsereignisse durch. Verwenden Sie die -API für Katalogimporte und -aktualisierungen.
 
 ## AEM Assets-Lebenszyklusänderungen
 
