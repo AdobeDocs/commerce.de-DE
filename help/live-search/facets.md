@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Facettierung ist eine Methode zur Hochleistungsfilterung, bei der mehrere Dimensionen von Attributwerten als Suchkriterien verwendet werden. Die Facettensuche ist ähnlich, aber erheblich „intelligenter“ als die standardmäßige [Layered Navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). Die Liste der verfügbaren Filter wird durch die [filterbaren Attribute](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) der in den Suchergebnissen zurückgegebenen Produkte bestimmt.
 
-[!DNL Live Search] verwendet die `productSearch`-Abfrage, die Facetten- und andere Daten zurückgibt, die spezifisch für [!DNL Live Search] sind. Code-Beispiele finden Sie [`productSearch` der Entwicklerdokumentation unter ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) Abfrage .
+[!DNL Live Search] verwendet die `productSearch`-Abfrage, die Facetten- und andere Daten zurückgibt, die spezifisch für [!DNL Live Search] sind. Code-Beispiele finden Sie [`productSearch` der Entwicklerdokumentation unter &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) Abfrage .
 
 ![Gefilterte Suchergebnisse](assets/storefront-search-results-run.png)
 
@@ -31,7 +31,7 @@ Die Anforderungen an Kategorie- und Produktattribute für die Facettierung ähne
 >
 >![Kategoriefacetten](assets/facet-category.png)
 
-Weitere [ zu den Facettenanforderungen in ](./boundaries-limits.md#facets) finden [!DNL Live Search] unter „Grenzen und Beschränkungen“.
+Weitere [&#x200B; zu den Facettenanforderungen in &#x200B;](./boundaries-limits.md#facets) finden [!DNL Live Search] unter „Grenzen und Beschränkungen“.
 
 Wenn Sie mit einer großen Anzahl von Attributen zu kämpfen haben, sollten Sie Attribute zu einem einzigen „Meta-Attribut“ kombinieren. Beispielsweise haben Schuhe in der Regel numerische Größen, während Hemden in der Regel die Größe „S/M/L/XL“ haben. Diese beiden Größentypen können zu einem durchsuchbaren Attribut kombiniert werden.
 
