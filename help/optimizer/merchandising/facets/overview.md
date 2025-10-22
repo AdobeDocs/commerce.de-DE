@@ -1,9 +1,9 @@
 ---
 title: Facettenübersicht
 description: Erfahren Sie mehr über Facetten in  [!DNL Adobe Commerce Optimizer]  und wie sie die Suchergebnisse verbessern.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
-source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Die folgenden Produktattribute werden von [!DNL Adobe Commerce Optimizer] verwen
 | sortierbar | Wird zum Sortieren in der Produktliste verwendet | `price` |
 | durchsuchbar | In Suche verwenden | `price` <br />`sku`<br />`name` |
 
-Weitere Informationen [&#x200B; Produktattribute und ihre Eigenschaften finden Sie unter &#x200B;](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)Datenaufnahme-Metadaten-API“.
+Weitere Informationen [ Produktattribute und ihre Eigenschaften finden Sie unter ](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)Datenaufnahme-Metadaten-API“.
 
 ## Standardmäßige Nicht-Systemattribut-Eigenschaften
 
@@ -52,7 +52,7 @@ In der folgenden Tabelle werden die standardmäßigen durchsuchbaren und filterb
 | Kragen | Ja |
 | Farbe | Ja |
 | Kosten | Ja |
-| eco_collection |
+| eco_collection |  |
 | Geschlecht | Ja |
 | Hersteller | Ja |
 | Material | Ja |

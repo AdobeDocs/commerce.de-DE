@@ -1,10 +1,10 @@
 ---
 title: Tool für die Massendatenmigration
 description: Erfahren Sie, wie Sie mit dem Tool für die Massendatenmigration Daten aus Ihrer bestehenden Adobe Commerce in der Cloud-Instanz zu migrieren [!DNL Adobe Commerce as a Cloud Service].
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-role: Architect
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+role: Developer
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 6396bc5f4b265e2e13328ec1af3b72c0e8e15c9a
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Das Tool für die Massendatenmigration ist wie folgt verfügbar:
 
 Der Lösungsimplementierer erstellt eine Zielumgebung für die Migration. Diese Umgebung wird verwendet, um die Daten zu speichern, die von der Quellinstanz migriert werden.
 
-Erstellen [&#x200B; zunächst eine neue  [!DNL Adobe Commerce as a Cloud Service] SaaS) &#x200B;](../getting-started.md#create-an-instance).
+Erstellen [ zunächst eine neue  [!DNL Adobe Commerce as a Cloud Service] SaaS) ](../getting-started.md#create-an-instance).
 
 ### Konfigurieren des Extraktionstools
 

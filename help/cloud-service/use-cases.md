@@ -3,8 +3,8 @@ title: Anwendungsszenarien
 description: Erfahren Sie, wie Sie mit praktische Anwendungsfälle und unterstützte Geschäftsszenarien durchführen können [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 47eb8ee55bb093767f76aa23df8bb347ee280aae
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Bevor Sie einen dieser Anwendungsfälle ausführen, müssen Sie die folgenden Vo
    1. Wählen Sie [!UICONTROL **Sandbox**] in der Dropdown [!UICONTROL **Umgebung**] aus.
    1. Wählen Sie [!UICONTROL **Adobe Store**] in der Dropdown-Liste [!UICONTROL **Testdaten**] aus.
 1. [Melden Sie sich bei Ihrem Adobe Experience Cloud-Konto an](https://experience.adobe.com)
-1. [Richten Sie Ihre Cloud Service-Storefront &#x200B;](./storefront.md), indem Sie die folgenden Optionen verwenden:
+1. [Richten Sie Ihre Cloud Service-Storefront ](./storefront.md), indem Sie die folgenden Optionen verwenden:
    1. Wählen Sie [!UICONTROL `adobe-commerce/adobe-demo-store`] für die Vorlage aus.
    1. Wählen Sie [!UICONTROL **Verfügbare Instanz auswählen (Mesh -> SaaS)**] für die Verbindungsmethode aus.
 
@@ -37,7 +37,7 @@ Dieser Workflow zeigt den Checkout-Prozess für einen Kunden, der ein Produkt in
 
 1. Navigieren Sie in Commerce Admin zu [!UICONTROL **Stores**] > [!UICONTROL Settings] > [!UICONTROL **Configuration**] > [!UICONTROL **Zahlungsmethoden**].
 
-1. Geben [!UICONTROL **im Abschnitt „Allgemeine**]&quot; Ihre `Payment Services Sandbox ID` und `Payment Services Sandbox Key` ein. Sie können diese IDs abrufen, indem Sie die unter &quot;[-Onboarding“ beschriebenen Schritte &#x200B;](../payment-services/sandbox.md#sandbox-onboarding)
+1. Geben [!UICONTROL **im Abschnitt „Allgemeine**]&quot; Ihre `Payment Services Sandbox ID` und `Payment Services Sandbox Key` ein. Sie können diese IDs abrufen, indem Sie die unter &quot;[-Onboarding“ beschriebenen Schritte ](../payment-services/sandbox.md#sandbox-onboarding)
 
 1. Legen Sie das [!UICONTROL **Aktivieren**]-Dropdown auf [!UICONTROL **Ja**] fest.
 
@@ -156,7 +156,7 @@ Stellen Sie sich ein Szenario vor, in dem Sie den Hintergrund eines Produktbilds
 
 1. Öffnen Sie die [Storefront](./storefront.md) die Sie in den Voraussetzungen erstellt haben, und navigieren Sie zu einem Element, das Sie ändern möchten. Beachten Sie die Artikel-SKU oder den Produkt-Code.
 
-1. Öffnen Sie [!UICONTROL AEM Assets], indem Sie es in der [Adobe Experience Cloud &#x200B;](https://experience.adobe.com/#/home).
+1. Öffnen Sie [!UICONTROL AEM Assets], indem Sie es in der [Adobe Experience Cloud ](https://experience.adobe.com/#/home).
 
    ![AEM Assets](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 
@@ -198,7 +198,7 @@ Stellen Sie sich ein Szenario vor, in dem Sie den Hintergrund eines Produktbilds
 
 #### Hinzufügen des Bildes zu Commerce AEM Assets
 
-1. Wählen Sie im [Navigationsbereich](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) von AEM as a Cloud Service **Assets** > **Dateien** > **Commerce** und klicken Sie auf das Asset, das Sie im vorherigen Abschnitt erstellt haben.
+1. Wählen Sie im [Navigationsbereich](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) von AEM as a Cloud Service **Assets** > **Dateien** > **Commerce** und klicken Sie auf das Asset, das Sie im vorherigen Abschnitt erstellt haben.
 
    ![Commerce-Ordner](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -248,7 +248,7 @@ Adobe Commerces Generate Variations nutzt die generative KI zur Automatisierung 
 
 ### Text generieren
 
-1. Öffnen Sie Ihre Storefront-Site mit dem [universellen Editor](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Öffnen Sie Ihre Storefront-Site mit dem [universellen Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Wählen Sie den Textblock aus, den Sie bearbeiten möchten.
 
@@ -262,7 +262,7 @@ Adobe Commerces Generate Variations nutzt die generative KI zur Automatisierung 
 
 ### Erstellen von Inhalten und Bildern
 
-1. Öffnen Sie [Varianten generieren](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Öffnen Sie [Varianten generieren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Wählen Sie die Vorlage [!UICONTROL **Hero Banner**] aus.
 
@@ -290,30 +290,36 @@ Adobe Commerces Generate Variations nutzt die generative KI zur Automatisierung 
 Verwenden Sie die folgenden Vorschläge, um Probleme zu beheben, die beim Versuch dieser Tutorials auftreten.
 
 * Wenn Sie Anleitungen zu Befehlen oder Flags benötigen:
+
    1. Führen Sie `aio --help` aus, um alle verfügbaren Befehle und Flags anzuzeigen.
    1. Verwenden Sie für bestimmte Befehle das `--help`-Flag. Beispiel:
       * `aio console --help`
       * `aio commerce –help`
 
 * Wenn Sie auf ungültige Anmeldeprobleme stoßen:
-   1. `aio config clear ` ausführen.
-   1. `aio auth login –-force ` ausführen.
+
+   1. `aio config clear` ausführen.
+   1. `aio auth login –-force` ausführen.
    1. Melden Sie sich bei Ihrem Browser an.
    1. Wählen Sie Ihr Profil.
    1. Wechseln Sie zurück zum Terminal, um fortzufahren.
 
 * Wenn der `init`-Befehl fehlschlägt:
+
    1. `aio api-mesh delete` ausführen.
    1. Führen Sie `aio commerce init` erneut aus.
 
 * Wenn Sie die falsche Organisation, das falsche Projekt oder den falschen Arbeitsbereich ausgewählt haben, bevor Sie den `init` Befehl ausgeführt haben:
+
    1. `aio console org select` ausführen.
    1. `aio console project select` ausführen.
    1. `aio console workspace select` ausführen.
 
 * Wenn Sie eine ungültige Mandantenauswahl haben:
+
    1. Brechen Sie die aktuelle CLI-Ausführung mit der Taste **Strg-C** ab.
    1. `aio commerce init` ausführen.
 
 * Wenn eine ungültige API-Mesh-Installation auftritt:
+
    * `aio api-mesh update mesh-config.json` ausführen.

@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service] Versionshinweise'
 description: Die neuesten Versionsinformationen für  [!DNL Catalog Service]  für Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -68,7 +68,7 @@ _23. Mai 2024_
 
 ![Beheben](../assets/fix.svg) <!--DATA-5033-->Das `InStock` für Optionswerte berücksichtigt jetzt den `enabled` der Produktvariante.
 
-![Fix](../assets/fix.svg) <!--DATA-5888-->Unterstützung für Produktpreise hinzufügen, die eine große Anzahl (bis zu 16 Stellen) und eine höhere Dezimalgenauigkeit (bis zu 4 Dezimalstellen) erfordern. Um die Preiskonfigurationsaktualisierungen auf Ihren bestehenden Katalog anzuwenden, synchronisieren Sie Katalogdaten über das [Daten-Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-dashboard) oder mithilfe der [Adobe Commerce-Befehlszeilenschnittstelle](../landing/catalog-sync.md#command-line-interface) neu.
+![Fix](../assets/fix.svg) <!--DATA-5888-->Unterstützung für Produktpreise hinzufügen, die eine große Anzahl (bis zu 16 Stellen) und eine höhere Dezimalgenauigkeit (bis zu 4 Dezimalstellen) erfordern. Um die Preiskonfigurationsaktualisierungen auf Ihren bestehenden Katalog anzuwenden, synchronisieren Sie Katalogdaten über das [Daten-Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) oder mithilfe der [Adobe Commerce-Befehlszeilenschnittstelle](../landing/catalog-sync.md#command-line-interface) neu.
 
 #### Bekannte Einschränkungen
 
@@ -102,7 +102,7 @@ _22. Februar 2024_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=de) ist jetzt verfügbar. Dieses überarbeitete Dashboard bietet Einblicke in Datenströme für [!DNL Product Recommendations], [!DNL Live Search] und [!DNL Catalog Service]. Die Unterstützung für diese Funktion wurde in Version 3.1.0 des `catalog-service`-Metapakets eingeführt.
+![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) ist jetzt verfügbar. Dieses überarbeitete Dashboard bietet Einblicke in Datenströme für [!DNL Product Recommendations], [!DNL Live Search] und [!DNL Catalog Service]. Die Unterstützung für diese Funktion wurde in Version 3.1.0 des `catalog-service`-Metapakets eingeführt.
 
 ### Version 1.16
 
@@ -177,7 +177,7 @@ _28. März 2023_
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Neu](../assets/new.svg) Zur [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) Abfrage wurden Farbfelder hinzugefügt.
-![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt, `entityId` mithilfe von [API Mesh) &#x200B;](mesh.md).
+![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt, `entityId` mithilfe von [API Mesh) ](mesh.md).
 
 ### Version 1.5
 

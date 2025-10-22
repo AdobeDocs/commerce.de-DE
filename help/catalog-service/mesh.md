@@ -4,7 +4,7 @@ description: '[!DNL API Mesh] für Adobe Commerce bietet eine Möglichkeit, mehr
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
-source-git-commit: ca0b2b2a158b9a376724b30c80a6bf9a60e3d1ba
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Um API Mesh mit dem Katalog-Service zu verwenden, müssen Sie API Mesh mit Ihrer
 
 ## Verbinden und Konfigurieren von API-Mesh.
 
-1. Verbinden Sie API Mesh mit Ihrer Adobe Commerce-Instanz, indem Sie die Anweisungen [Erstellen eines &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/)) im _API Mesh-Entwicklerhandbuch_ befolgen.
+1. Verbinden Sie API Mesh mit Ihrer Adobe Commerce-Instanz, indem Sie die Anweisungen [Erstellen eines ](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/)) im _API Mesh-Entwicklerhandbuch_ befolgen.
 
    Wenn Sie API Mesh zum ersten Mal verwenden, schließen Sie den [Erste Schritte-Prozess](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) ab, bevor Sie das Netz erstellen.
 
@@ -50,7 +50,7 @@ Mit der API Mesh können Benutzer externe Datenquellen nutzen, um Ihre Adobe Com
 ### Stufenpreise aktivieren
 
 In diesem Beispiel wird die API Mesh verwendet, um Preisstufen in Adobe Commerce zu aktivieren.
-Ersetzen Sie die Werte `name `, `endpoint` und `x-api-key`.
+Ersetzen Sie die Werte `name`, `endpoint` und `x-api-key`.
 
 ```json
 {
@@ -165,7 +165,7 @@ query {
 
 ### Entitäts-ID abrufen
 
-Dieses Mesh fügt die `entityId` an die ProductView-Schnittstelle an. Ersetzen Sie die Werte `name `, `endpoint` und `x-api-key`.
+Dieses Mesh fügt die `entityId` an die ProductView-Schnittstelle an. Ersetzen Sie die Werte `name`, `endpoint` und `x-api-key`.
 
 ```json
 {
