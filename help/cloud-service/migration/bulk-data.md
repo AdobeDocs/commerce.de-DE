@@ -46,7 +46,7 @@ Das Tool für die Massendatenmigration ist wie folgt verfügbar:
 
 Der Lösungsimplementierer erstellt eine Zielumgebung für die Migration. Diese Umgebung wird verwendet, um die Daten zu speichern, die von der Quellinstanz migriert werden.
 
-Erstellen [ zunächst eine neue  [!DNL Adobe Commerce as a Cloud Service] SaaS) ](../getting-started.md#create-an-instance).
+Erstellen [&#x200B; zunächst eine neue  [!DNL Adobe Commerce as a Cloud Service] SaaS) &#x200B;](../getting-started.md#create-an-instance).
 
 ### Konfigurieren des Extraktionstools
 

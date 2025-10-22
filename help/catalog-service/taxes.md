@@ -30,7 +30,7 @@ Sie müssen Steuern dafür konfiguriert haben, damit sie auf der Produktdetailse
 
 ## Konfigurieren von API-Mesh
 
-Verbinden Sie, falls noch nicht geschehen, die API Mesh mit dem Katalog-Service mit Ihrer -Instanz. Detaillierte Anweisungen finden Sie [ Thema „Erste Schritte](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) im API Mesh-Entwicklerhandbuch.
+Verbinden Sie, falls noch nicht geschehen, die API Mesh mit dem Katalog-Service mit Ihrer -Instanz. Detaillierte Anweisungen finden Sie [&#x200B; Thema „Erste Schritte](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) im API Mesh-Entwicklerhandbuch.
 
 Ersetzen Sie in der `mesh.json`-Datei die Werte `name`, `endpoint` und `x-api-key`.
 

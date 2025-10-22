@@ -36,7 +36,7 @@ In diesen Versionshinweisen werden Funktionsänderungen und Fehlerbehebungen im 
 
 _7. August 2025_
 
-![Neu](../assets/new.svg) - Mit Version 3.3.0 können Sie jetzt ([ Attribute zu Profilen) ](custom-identities.md).
+![Neu](../assets/new.svg) - Mit Version 3.3.0 können Sie jetzt ([&#x200B; Attribute zu Profilen) &#x200B;](custom-identities.md).
 
 _2. August 2024_
 
@@ -104,7 +104,7 @@ _17. Januar 2025_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"} Adobe Commerce-Versionen 2.4.4 und höher
 
-![Neu](../assets/new.svg) - [ wurde die ](hipaa-readiness.md)HIPAA-fähige Erweiterung[!DNL Data Connection] hinzugefügt, damit Händler [!DNL Commerce] Backoffice-Ereignisdaten mit Experience Platform teilen und die HIPAA-Konformität aufrechterhalten können.
+![Neu](../assets/new.svg) - [&#x200B; wurde die &#x200B;](hipaa-readiness.md)HIPAA-fähige Erweiterung[!DNL Data Connection] hinzugefügt, damit Händler [!DNL Commerce] Backoffice-Ereignisdaten mit Experience Platform teilen und die HIPAA-Konformität aufrechterhalten können.
 ![Beheben](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem die [!DNL Data Connection]-Erweiterung `eventForwarding` Daten überschrieb und das `HIPAA`-Flag für alle Kunden setzte. Jetzt setzt die Erweiterung nur noch das Flag für HIPAA-Kunden.
 
 ## 3,2,0
@@ -115,7 +115,7 @@ _7. Oktober 2024_
 
 ![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt, [benutzerdefinierte Bestellattribute](custom-attributes.md) zu Back-Office-Daten zu erstellen.
 ![Neu](../assets/new.svg) - Es wurde eine neue Tabelle [Benutzerdefinierte Bestellattribute](connect-data.md#data-customization) hinzugefügt, in der Sie alle benutzerdefinierten Attribute anzeigen können, die in [!DNL Commerce] konfiguriert und an Experience Platform gesendet wurden.
-![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt[ Profildatensätze ](connect-data.md#send-customer-profile-data) Daten zu erfassen und an Experience Platform zu senden.
+![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt[&#x200B; Profildatensätze &#x200B;](connect-data.md#send-customer-profile-data) Daten zu erfassen und an Experience Platform zu senden.
 
 ## 3.2.0-beta3
 
@@ -148,7 +148,7 @@ _5. Juni 2024_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"} Adobe Commerce-Versionen 2.4.4 und höher
 
-![Korrigieren](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem beim Initiieren einer [Verlaufssynchronisierung) das falsche ](connect-data.md#specify-order-history-date-range) verwendet wurde.
+![Korrigieren](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem beim Initiieren einer [Verlaufssynchronisierung) das falsche &#x200B;](connect-data.md#specify-order-history-date-range) verwendet wurde.
 ![Beheben](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem das `startCheckout`-Ereignis in Adobe Commerce 2.4.7 nicht gesendet wurde.
 
 ## 3.1.1
@@ -158,7 +158,7 @@ _4. April 2024_
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"} Adobe Commerce-Versionen 2.4.4 und höher
 
 ![Neu](../assets/new.svg) - PHP 8.3 wird nun für alle [!DNL Data Connection] Erweiterungen unterstützt.
-![Neu](../assets/new.svg) - Es wurde ein Artikel zur [ (Integration](mobile-sdk-epc.md) der Adobe Experience Platform Mobile SDK mit Commerce hinzugefügt.
+![Neu](../assets/new.svg) - Es wurde ein Artikel zur [&#x200B; (Integration](mobile-sdk-epc.md) der Adobe Experience Platform Mobile SDK mit Commerce hinzugefügt.
 
 ## 3.2.0-beta2
 
@@ -167,8 +167,8 @@ _4. März 2024_
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"} Adobe Commerce-Versionen 2.4.4 und höher
 
 ![Neu](../assets/new.svg) - Wenn Sie die Betaversion verwenden, stellen Sie sicher, dass Ihre `composer.json`-Datei auf der Stammebene Folgendes enthält: `"minimum-stability": "beta"`. Fügen Sie außerdem `composer require "magento/customers-connector: ^1.2.0"` hinzu, um Kundenprofile von Ihrer Commerce-Instanz an SaaS zu senden.
-![Neu](../assets/new.svg) - Es wurde die Möglichkeit zum [Hinzufügen benutzerdefinierter Attribute“ ](custom-attributes.md).
-![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt[ Profildatensätze ](connect-data.md#send-customer-profile-data) Daten zu erfassen und an Experience Platform zu senden.
+![Neu](../assets/new.svg) - Es wurde die Möglichkeit zum [Hinzufügen benutzerdefinierter Attribute“ &#x200B;](custom-attributes.md).
+![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt[&#x200B; Profildatensätze &#x200B;](connect-data.md#send-customer-profile-data) Daten zu erfassen und an Experience Platform zu senden.
 
 ## 3,1,0
 
@@ -188,8 +188,8 @@ _10. Oktober 2023_
 
 Dies ist eine Hauptversion. [Bearbeiten](install.md#update-the-data-connection) Sie die Datei „composer.json“ im Stammverzeichnis Ihres Projekts.
 
-![Neu](../assets/new.svg) - Allgemeine Verfügbarkeit zum [Senden von historischen ](connect-data.md#send-historical-order-data) und Status an die Experience Platform.
-![Neu](../assets/new.svg) - Es wurde Unterstützung für OAuth 2.0 beim [ (Konfigurieren](connect-data.md#connect-commerce-data-to-adobe-experience-platform) der [!DNL Data Connection] hinzugefügt.
+![Neu](../assets/new.svg) - Allgemeine Verfügbarkeit zum [Senden von historischen &#x200B;](connect-data.md#send-historical-order-data) und Status an die Experience Platform.
+![Neu](../assets/new.svg) - Es wurde Unterstützung für OAuth 2.0 beim [&#x200B; (Konfigurieren](connect-data.md#connect-commerce-data-to-adobe-experience-platform) der [!DNL Data Connection] hinzugefügt.
 ![Neu](../assets/new.svg) - Beendet die Unterstützung für Adobe Commerce 2.4.3.
 
 ## 2,3,0
@@ -198,7 +198,7 @@ _27. Juni 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.3 und neuer
 
-![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt[ „Storefront-Ereignisse zu senden](connect-data.md#data-collection) an die Experience Platform zu deaktivieren.
+![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt[&#x200B; „Storefront-Ereignisse zu senden](connect-data.md#data-collection) an die Experience Platform zu deaktivieren.
 ![Beheben](../assets/fix.svg) - Aktualisierte Konfigurationen der Content Security Policy.
 ![Fix](../assets/fix.svg) - Die Unterstützung für Backoffice-Ereignisse in Commerce 2.4.7 wurde korrigiert.
 ![Neu](../assets/new.svg) - Es wurde eine Benachrichtigung zur Cache-Invalidierung hinzugefügt, wenn Sie Änderungen am [!DNL Data Connection]-Erweiterungsformular speichern.
@@ -209,7 +209,7 @@ _13. Juni 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.3 und neuer
 
-![Neu](../assets/new.svg) - (Beta) Es wurde die Möglichkeit hinzugefügt[ Daten und Status ](connect-data.md#beta-send-historical-order-data) historischen Reihenfolge an Experience Platform zu senden.
+![Neu](../assets/new.svg) - (Beta) Es wurde die Möglichkeit hinzugefügt[&#x200B; Daten und Status &#x200B;](connect-data.md#beta-send-historical-order-data) historischen Reihenfolge an Experience Platform zu senden.
 
 ## 2,2,0
 

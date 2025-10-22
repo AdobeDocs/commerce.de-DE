@@ -37,7 +37,7 @@ Die folgenden Produktattribute werden von [!DNL Adobe Commerce Optimizer] verwen
 | sortierbar | Wird zum Sortieren in der Produktliste verwendet | `price` |
 | durchsuchbar | In Suche verwenden | `price` <br />`sku`<br />`name` |
 
-Weitere Informationen [ Produktattribute und ihre Eigenschaften finden Sie unter ](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)Datenaufnahme-Metadaten-API“.
+Weitere Informationen [&#x200B; Produktattribute und ihre Eigenschaften finden Sie unter &#x200B;](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)Datenaufnahme-Metadaten-API“.
 
 ## Standardmäßige Nicht-Systemattribut-Eigenschaften
 
