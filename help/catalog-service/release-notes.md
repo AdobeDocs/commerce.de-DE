@@ -68,7 +68,7 @@ _23. Mai 2024_
 
 ![Beheben](../assets/fix.svg) <!--DATA-5033-->Das `InStock` für Optionswerte berücksichtigt jetzt den `enabled` der Produktvariante.
 
-![Fix](../assets/fix.svg) <!--DATA-5888-->Unterstützung für Produktpreise hinzufügen, die eine große Anzahl (bis zu 16 Stellen) und eine höhere Dezimalgenauigkeit (bis zu 4 Dezimalstellen) erfordern. Um die Preiskonfigurationsaktualisierungen auf Ihren bestehenden Katalog anzuwenden, synchronisieren Sie Katalogdaten über das [Daten-Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) oder mithilfe der [Adobe Commerce-Befehlszeilenschnittstelle](../landing/catalog-sync.md#command-line-interface) neu.
+![Fix](../assets/fix.svg) <!--DATA-5888-->Unterstützung für Produktpreise hinzufügen, die eine große Anzahl (bis zu 16 Stellen) und eine höhere Dezimalgenauigkeit (bis zu 4 Dezimalstellen) erfordern. Um die Preiskonfigurationsaktualisierungen auf Ihren bestehenden Katalog anzuwenden, synchronisieren Sie Katalogdaten über das [Daten-Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-dashboard) oder mithilfe der [Adobe Commerce-Befehlszeilenschnittstelle](../landing/catalog-sync.md#command-line-interface) neu.
 
 #### Bekannte Einschränkungen
 
@@ -102,7 +102,7 @@ _22. Februar 2024_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) ist jetzt verfügbar. Dieses überarbeitete Dashboard bietet Einblicke in Datenströme für [!DNL Product Recommendations], [!DNL Live Search] und [!DNL Catalog Service]. Die Unterstützung für diese Funktion wurde in Version 3.1.0 des `catalog-service`-Metapakets eingeführt.
+![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=de) ist jetzt verfügbar. Dieses überarbeitete Dashboard bietet Einblicke in Datenströme für [!DNL Product Recommendations], [!DNL Live Search] und [!DNL Catalog Service]. Die Unterstützung für diese Funktion wurde in Version 3.1.0 des `catalog-service`-Metapakets eingeführt.
 
 ### Version 1.16
 
