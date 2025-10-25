@@ -30,7 +30,7 @@ Zu den Aktualisierungen gehören:
 
 ## Version 103.4.15
 
-![Neu](../assets/new.svg) Es wurde Unterstützung für die Erweiterung „Status der Daten-Feed-Synchronisierung“ hinzugefügt, um Datenübertragungen von Adobe Commerce zu Connected Services (Katalog-Service, Live-Suche und Produktempfehlungen) zu überwachen und Fehler zu beheben. Weitere Informationen zur Installation und Verwendung dieser Erweiterung finden Sie [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) im *Commerce Admin Guide*. <!--MDEE-954-->
+![Neu](../assets/new.svg) Es wurde Unterstützung für die Erweiterung „Status der Daten-Feed-Synchronisierung“ hinzugefügt, um Datenübertragungen von Adobe Commerce zu Connected Services (Katalog-Service, Live-Suche und Produktempfehlungen) zu überwachen und Fehler zu beheben. Weitere Informationen zur Installation und Verwendung dieser Erweiterung finden Sie [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=de) im *Commerce Admin Guide*. <!--MDEE-954-->
 
 ## Version 103.4.14
 
