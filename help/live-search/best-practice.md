@@ -101,7 +101,7 @@ Empfohlene Anwendungsfälle zum Einrichten von Suchumleitungen:
 
 Testen Sie immer die Umleitungen der Suche, um sicherzustellen, dass sie ordnungsgemäß funktionieren und zu den relevantesten Seiten führen. Überwachen Sie kontinuierlich ihre Leistung und nehmen Sie bei Bedarf Anpassungen vor.
 
-Erfahren Sie, wie [Suchumleitungen verwalten](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms).
+Erfahren Sie, wie [Suchumleitungen verwalten](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-terms).
 
 ## Relevanz der Suchergebnisse verbessern
 
@@ -155,7 +155,7 @@ Stellen Sie sicher, dass jedes Produkt relevanten Inhalt in jedem durchsuchbaren
 Weitere Informationen zu Produktattributen für die Suche:
 
 - [Festlegen von Attributen als durchsuchbar](workspace.md#set-attributes-as-searchable)
-- [Attributen Gewichtung zuweisen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Attributen Gewichtung zuweisen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Suchergebnisse überwachen
 
