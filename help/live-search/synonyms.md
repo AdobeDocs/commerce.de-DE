@@ -1,9 +1,10 @@
 ---
 title: Synonyme
 description: '[!DNL Live Search] Synonyme erweitern Abfragen mit Wörtern, die sich von denen in Ihrem Katalog unterscheiden.'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 4aa731b0-b922-476b-a311-5c400f31f749
+source-git-commit: f96e7d8d2a31d5e0f49bd3ac2da320313908a868
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '115'
 ht-degree: 0%
 
 ---
@@ -14,6 +15,4 @@ Synonyme erweitern die Suchabfrage um Wörter, die Käufer möglicherweise verwe
 
 >[!IMPORTANT]
 >
->Bei Adobe Commerce-Installationen mit installiertem [!DNL Live Search] ersetzt [!DNL Live Search] Synonyme die standardmäßige Adobe Commerce-Funktion [Suchsynonyme](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=de#search-synonyms), obwohl beide im Abschnitt *SEO und Suche* des Menüs Marketing angezeigt werden. Wenn Sie [!DNL Live Search] anwenden, befolgen Sie die Anweisungen in diesem Abschnitt.
-
-[!DNL Live Search] unterstützt auch [Suchbegriff-Umleitungen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=de).
+>Bei Adobe Commerce-Installationen mit installiertem [!DNL Live Search] ersetzt [!DNL Live Search] Synonyme die standardmäßige Adobe Commerce-Funktion [Suchsynonyme](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms), obwohl beide im Abschnitt *SEO und Suche* des Menüs Marketing angezeigt werden. Wenn Sie [!DNL Live Search] anwenden, befolgen Sie die Anweisungen in diesem Abschnitt.
