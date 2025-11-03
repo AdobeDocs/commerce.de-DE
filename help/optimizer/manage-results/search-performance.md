@@ -1,7 +1,7 @@
 ---
 title: Suchleistung
 description: Auf der Seite Suchleistung finden Sie insight zu den Suchbegriffen, die Kundinnen und Kunden verwenden.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
 source-git-commit: c9fc68fb54f66b6d471295c6d68f09404a7ac17a
 workflow-type: tm+mt
