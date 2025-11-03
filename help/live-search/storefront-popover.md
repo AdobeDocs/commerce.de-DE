@@ -19,7 +19,7 @@ Wenn [!DNL Live Search] [installiert](install.md) wird, wird eine [!DNL popover]
 
 >[!TIP]
 >
->Im Artikel „Einrichten der Live-Suche“ erfahren [, wie Sie Produktattribute ](workspace.md) durchsuchbar festlegen.
+>Im Artikel „Einrichten der Live-Suche“ erfahren [, wie Sie Produktattribute &#x200B;](workspace.md) durchsuchbar festlegen.
 
 ## [!DNL Popover] Seitengröße
 
@@ -37,7 +37,7 @@ Standardmäßig ist der Grenzwert für Katalogsuche - automatische Vervollständ
 
 Sie können das Erscheinungsbild des [!DNL Popover] Widgets an die Stil- und Branding-Richtlinien Ihres Unternehmens anpassen.
 
-Die [!DNL storefront popover] zeigt immer die `name` und `price` an, und die Auswahl der Felder ist nicht konfigurierbar. [!DNL popover] können jedoch mithilfe von CSS-Klassen [ werden](https://developer.adobe.com/commerce/frontend-core/guide/css/). Beispielsweise ändern die folgenden Deklarationen die Hintergrundfarbe des [!DNL popover]-Containers und der Fußzeile.
+Die [!DNL storefront popover] zeigt immer die `name` und `price` an, und die Auswahl der Felder ist nicht konfigurierbar. [!DNL popover] können jedoch mithilfe von CSS-Klassen [&#x200B; werden](https://developer.adobe.com/commerce/frontend-core/guide/css/). Beispielsweise ändern die folgenden Deklarationen die Hintergrundfarbe des [!DNL popover]-Containers und der Fußzeile.
 
 ```css
 .livesearch.popover-container {
@@ -127,4 +127,4 @@ bin/magento module:disable Magento_LiveSearchStorefrontPopover
 
 ## Headless-Implementierung
 
-Für Benutzer mit Headless-Implementierungen können Sie das [!DNL Live Search popover] mit einem npm[Paket ](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+Für Benutzer mit Headless-Implementierungen können Sie das [!DNL Live Search popover] mit einem npm[Paket &#x200B;](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).

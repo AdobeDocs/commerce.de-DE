@@ -80,7 +80,7 @@ Um Suchergebnisse mit [!DNL Adobe Commerce Optimizer] zu optimieren, überwachen
 
   Um die Nullergebnisrate zu reduzieren, haben Sie folgende Möglichkeiten:
 
-   - Bieten Sie alternative oder verwandte Suchbegriffe an, z[ B. &quot;](../merchandising/synonyms/overview.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
+   - Bieten Sie alternative oder verwandte Suchbegriffe an, z[&#x200B; B. &quot;](../merchandising/synonyms/overview.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
    - Überprüfen Sie regelmäßig Nullergebnisabfragen, um Muster zu identifizieren und notwendige Anpassungen an Ihrem Produktkatalog und Ihren Sucheinstellungen vorzunehmen.
 
 Sie können diese Metrikdaten verwenden, um Ihre Suchfunktion wie folgt zu optimieren:
@@ -110,7 +110,7 @@ Stellen Sie sicher, dass die untergeordneten Produkte der konfigurierbaren Produ
 
 ### Verwenden von Produktmetadaten
 
-Stellen Sie sicher, dass genaue [ detaillierte Produktattribute als durchsuchbar eingerichtet ](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata). Beachten Sie, dass die Attribute „SKU“, „Name“ und „Kategorie“ standardmäßig durchsuchbar sind und nicht von der Suche ausgeschlossen werden können. Verwenden Sie für optimale Ergebnisse keine Leerzeichen in Ihren SKUs.
+Stellen Sie sicher, dass genaue [&#x200B; detaillierte Produktattribute als durchsuchbar eingerichtet &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata). Beachten Sie, dass die Attribute „SKU“, „Name“ und „Kategorie“ standardmäßig durchsuchbar sind und nicht von der Suche ausgeschlossen werden können. Verwenden Sie für optimale Ergebnisse keine Leerzeichen in Ihren SKUs.
 
 Um die Suchrelevanz zu erhöhen, weisen Sie jedem durchsuchbaren Attribut eine Gewichtung zu. Attribute mit einer höheren Gewichtung sollten in den Suchergebnissen höher angezeigt werden. Die Sortierung nach Relevanz wird von mehreren Kriterien beeinflusst, z. B. der Suchgewichtung. Dies bedeutet, dass manchmal Attribute mit niedrigerer Suchgewichtung immer noch mehr Relevanz haben können als Attribute mit höherer Suchgewichtung. Andere Kriterien können die Anzahl der Übereinstimmungen in einem bestimmten Attribut, die Position des gefundenen Suchbegriffs und die Gesamttextstruktur vor und nach einem Suchbegriff sein.
 

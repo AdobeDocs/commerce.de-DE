@@ -37,7 +37,7 @@ Die folgenden Produktattribute werden von [!DNL Adobe Commerce Optimizer] verwen
 | sortierbar | Wird zum Sortieren in der Produktliste verwendet | `price` |
 | durchsuchbar | In Suche verwenden | `price` <br />`sku`<br />`name` |
 
-Weitere Informationen [ Produktattribute und ihre Eigenschaften finden Sie unter ](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)Datenaufnahme-Metadaten-API“.
+Weitere Informationen [&#x200B; Produktattribute und ihre Eigenschaften finden Sie unter &#x200B;](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)Datenaufnahme-Metadaten-API“.
 
 ## Mehrschichtige Suche und Erweiterung von Suchtypen
 
@@ -48,7 +48,7 @@ Mit der mehrschichtigen Suche können Sie:
 - Ermöglichen Sie es Käufern, innerhalb der Suchergebnisse zu suchen.
 - Verwenden Sie `startsWith` und `contains` Suchindizierung in der zweiten Ebene der mehrschichtigen Suche, um die Ergebnisse weiter zu verfeinern.
 
-Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`productSearch`-Abfrage mithilfe ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) Operatoren implementiert:
+Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`productSearch`-Abfrage mithilfe &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) Operatoren implementiert:
 
 - **Mehrschichtige Suche** - Suche in einem anderen Suchkontext - Mit dieser Funktion können Sie bis zu zwei Suchebenen für Ihre Suchanfragen durchführen. Beispiel:
 
@@ -67,7 +67,7 @@ Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`prod
 
    - Suchen nach einer Abfrage innerhalb einer größeren Zeichenfolge. Beispiel: Ein Käufer sucht in der Zeichenfolge „HAPE-123“ nach der Produktnummer „PE-123“.
 
-      - Hinweis: Dieser Suchtyp unterscheidet sich von dem vorhandenen Suchbegriff[ der eine ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase) Suche durchführt. Wenn Ihr Produktattributwert beispielsweise „Outdoor Pants“ ist, gibt eine Suchphrase eine Antwort für „out pan“ zurück, aber keine Antwort für „or ants“. Eine Suche enthält jedoch eine Antwort für „oder Ameisen“.
+      - Hinweis: Dieser Suchtyp unterscheidet sich von dem vorhandenen Suchbegriff[&#x200B; der eine &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase) Suche durchführt. Wenn Ihr Produktattributwert beispielsweise „Outdoor Pants“ ist, gibt eine Suchphrase eine Antwort für „out pan“ zurück, aber keine Antwort für „or ants“. Eine Suche enthält jedoch eine Antwort für „oder Ameisen“.
 
 Diese neuen Bedingungen verbessern den Filtermechanismus für Suchanfragen, um Suchergebnisse zu verfeinern. Diese neuen Bedingungen wirken sich nicht auf die Hauptsuchabfrage aus.
 
