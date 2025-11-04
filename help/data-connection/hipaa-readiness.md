@@ -27,11 +27,11 @@ In diesem Artikel erfahren Sie mehr über:
 
 ## Installation
 
-Wenn Sie das Add-on für das Gesundheitswesen für Adobe [!DNL Commerce] erworben haben, haben Sie höchstwahrscheinlich bereits die [HIPAA-fähige Erweiterung](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation) installiert. Um sicherzustellen, dass Ihre [!DNL Commerce] Back-Office-Ereignisdaten HIPAA-fähig sind, müssen Sie auch die [!DNL Data Connection]-Erweiterung mit der zusätzlichen **Data Services HIPAA**-Erweiterung installieren. Die **Data Services HIPAA**-Erweiterung stellt sicher, dass alle Back-Office-Daten, die Sie an Experience Platform senden, HIPAA-fähig sind. Erfahren Sie [wie Sie die Erweiterung installieren](install.md#install-the-data-services-hipaa-extension).
+Wenn Sie das Add-on für das Gesundheitswesen für Adobe [!DNL Commerce] erworben haben, haben Sie höchstwahrscheinlich bereits die [HIPAA-fähige Erweiterung](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation) installiert. Um sicherzustellen, dass Ihre [!DNL Commerce] Back-Office-Ereignisdaten HIPAA-fähig sind, müssen Sie auch die [!DNL Data Connection]-Erweiterung mit der zusätzlichen **Data Services HIPAA**-Erweiterung installieren. Die **Data Services HIPAA**-Erweiterung stellt sicher, dass alle Back-Office-Daten, die Sie an Experience Platform senden, HIPAA-fähig sind. Erfahren Sie [wie Sie die Erweiterung installieren](install.md#install-the-data-services-hipaa-extension).
 
 >[!IMPORTANT]
 >
->Wenn Sie die **Data Services HIPAA**-Erweiterung installieren, werden Storefront-Ereignisdaten, die von Live Search und Product Recommendations verwendet werden, nicht mehr erfasst. Dies liegt daran, dass Storefront-Ereignisdaten Client-seitig generiert werden. Um Storefront-Ereignisdaten weiterhin zu erfassen und zu senden, aktivieren Sie die Ereigniserfassung für diese Services erneut. Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)Allgemeine Konfiguration“.
+>Wenn Sie die **Data Services HIPAA**-Erweiterung installieren, werden Storefront-Ereignisdaten, die von Live Search und Product Recommendations verwendet werden, nicht mehr erfasst. Dies liegt daran, dass Storefront-Ereignisdaten Client-seitig generiert werden. Um Storefront-Ereignisdaten weiterhin zu erfassen und zu senden, aktivieren Sie die Ereigniserfassung für diese Services erneut. Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/config/general/general#data-services)Allgemeine Konfiguration“.
 
 ## So stellen Sie sicher, dass an Experience Platform gesendete Daten HIPAA-fähig sind
 
@@ -41,11 +41,11 @@ Eine Übersicht über Datennutzungskennzeichnungen und ihre Rolle im Data Govern
 
 ### Anwenden von Datennutzungskennzeichnungen auf [!DNL Commerce]
 
-Befolgen Sie die Schritte im Tutorial [Verwalten von Datennutzungskennzeichnungen für ein Schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/labels), um zu erfahren, wie Sie Kennzeichnungen auf Ihr [!DNL Commerce]-Schema anwenden.
+Befolgen Sie die Schritte im Tutorial [Verwalten von Datennutzungskennzeichnungen für ein Schema](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/labels), um zu erfahren, wie Sie Kennzeichnungen auf Ihr [!DNL Commerce]-Schema anwenden.
 
-Im [Glossar der sensiblen Kennzeichnungen](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference#sensitive) erfahren Sie mehr über die verfügbaren Kennzeichnungen, die Sie auf die Felder in Ihrem [!DNL Commerce] anwenden können. Beispielsweise kennzeichnet das Label `RHD` geschützte Gesundheitsinformationen (PHI) oder Patienteninformationen, die von Adobe vertraglich zum Hochladen zugelassen sind.
+Im [Glossar der sensiblen Kennzeichnungen](https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/reference#sensitive) erfahren Sie mehr über die verfügbaren Kennzeichnungen, die Sie auf die Felder in Ihrem [!DNL Commerce] anwenden können. Beispielsweise kennzeichnet das Label `RHD` geschützte Gesundheitsinformationen (PHI) oder Patienteninformationen, die von Adobe vertraglich zum Hochladen zugelassen sind.
 
-Wenn Ihre [!DNL Commerce] als sensibel gekennzeichnet sind, können Sie Richtlinien durchsetzen, um Datenoperationen zu verhindern, die Richtlinienverletzungen darstellen. Erfahren Sie mehr über [Richtliniendurchsetzung](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) in Experience Platform.
+Wenn Ihre [!DNL Commerce] als sensibel gekennzeichnet sind, können Sie Richtlinien durchsetzen, um Datenoperationen zu verhindern, die Richtlinienverletzungen darstellen. Erfahren Sie mehr über [Richtliniendurchsetzung](https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/enforcement/overview) in Experience Platform.
 
 ## Datenverschlüsselung in Commerce
 
@@ -57,7 +57,7 @@ Adobe [!DNL Commerce] verwendet eine Verschlüsselung auf Blockebene. Für die S
 
 ### Datenverschlüsselung in Experience Platform
 
-Wenn Händler ihre Daten an Experience Platform senden, werden diese Daten mit HTTPS TLS v1.2 gesendet. Erfahren Sie mehr darüber, wie [Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption) Daten verschlüsselt.
+Wenn Händler ihre Daten an Experience Platform senden, werden diese Daten mit HTTPS TLS v1.2 gesendet. Erfahren Sie mehr darüber, wie [Experience Platform](https://experienceleague.adobe.com/de/docs/experience-platform/landing/governance-privacy-security/encryption) Daten verschlüsselt.
 
 ## Handhabung von Datenschutzanfragen durch [!DNL Commerce]
 
