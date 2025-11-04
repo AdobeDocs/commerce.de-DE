@@ -2,9 +2,9 @@
 title: Salesforce Commerce Connector
 description: Erfahren Sie mehr über  [!DNL Commerce Optimizer SFCC Connector] , das einen Ausgangspunkt für die Integration von Salesforce Commerce B2C mit  [!DNL Adobe Commerce Optimizer] bietet, um Katalogdaten zu synchronisieren und den Connector zu implementieren und anzupassen, um Geschäftsvorgänge zu unterstützen.
 role: Admin, Developer
-source-git-commit: f3da99ec4d2c518748d0911d6cf5d2d89ab45a47
+source-git-commit: fc6f8566a1932e830a37bcfa32cd1c4168c67c68
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 Die auf der Adobe App Builder-Technologie aufbauende [!DNL Commerce Optimizer Salesforce Commerce Connector] ermöglicht die nahtlose Übertragung und Verwaltung von Katalogdaten von Salesforce Commerce Cloud B2C zu [!DNL Adobe Commerce Optimizer]. Es verbindet beide Plattformen und sorgt dafür, dass Produktinformationen, Preise und Updates ohne erneute Plattform synchron bleiben.
 
 Standardmäßig bietet der Connector zuverlässige Datensynchronisierungsfunktionen und die Flexibilität, Workflows an Ihre Geschäftsanforderungen anzupassen.
+
+Eine vollständige Video-Tutorial-Reihe finden Sie unter [Informationen zum Salesforce Commerce Cloud Starter Kit](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 ## Wichtigste Funktionen
 
@@ -87,7 +89,6 @@ Die [!DNL Commerce Optimizer SFCC Connector] besteht aus mehreren Schlüsselkomp
 * **ACO SFCC Starter Kit App Builder application**-Stellt Server-lose Funktionen bereit, die die Datensynchronisation zwischen SFCC und Adobe Commerce Optimizer handhaben.
 * **Benutzerdefinierte SFCC-Patrone** - Erforderliche Patrone, die Ihre Salesforce Commerce Cloud-Instanz um APIs erweitert, die für die Datenextraktion benötigt werden.
 * **Verwaltungs-Benutzeroberfläche** - Web-Schnittstelle zur Überwachung des Synchronisierungsstatus und zur Verwaltung von Connector-Vorgängen.
-
 
 ### Synchronisierungsprozess
 
