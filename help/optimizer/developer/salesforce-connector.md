@@ -15,7 +15,7 @@ Die auf der Adobe App Builder-Technologie aufbauende [!DNL Commerce Optimizer Sa
 
 Standardmäßig bietet der Connector zuverlässige Datensynchronisierungsfunktionen und die Flexibilität, Workflows an Ihre Geschäftsanforderungen anzupassen.
 
-Eine vollständige Video-Tutorial-Reihe finden Sie unter [Informationen zum Salesforce Commerce Cloud Starter Kit](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+Eine vollständige Video-Tutorial-Reihe finden Sie unter [Informationen zum Salesforce Commerce Cloud Starter Kit](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 ## Wichtigste Funktionen
 
