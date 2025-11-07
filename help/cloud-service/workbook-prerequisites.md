@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Developers Live - Voraussetzungen für Adobe Commerce Lab
 
-Auf dieser Seite werden die Voraussetzungen und andere manuelle Einrichtungsschritte für das ([-Erweiterungslabor) ](./workbook.md). Das Labor enthält auch ein Skript, das die meisten dieser Schritte automatisiert.
+Auf dieser Seite werden die Voraussetzungen und andere manuelle Einrichtungsschritte für das ([-Erweiterungslabor) &#x200B;](./workbook.md). Das Labor enthält auch ein Skript, das die meisten dieser Schritte automatisiert.
 
 ## Voraussetzungen für Erweiterungen
 
