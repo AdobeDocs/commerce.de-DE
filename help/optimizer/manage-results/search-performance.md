@@ -1,11 +1,11 @@
 ---
 title: Suchleistung
 description: Auf der Seite Suchleistung finden Sie insight zu den Suchbegriffen, die Kundinnen und Kunden verwenden.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: c9fc68fb54f66b6d471295c6d68f09404a7ac17a
+source-git-commit: c408f3de4e3b980545a655e2f6040187f00bc571
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Im folgenden Abschnitt finden Sie Strategien, mit denen Sie Ihre Site-Suchfunkti
 Die Relevanz und Effektivität von Suchergebnissen hängt von mehreren Schlüsselfaktoren ab:
 
 - Durch gut strukturierte Produktdaten wird sichergestellt, dass Suchalgorithmen Produkte effektiv Abfragen zuordnen können. Produktdaten von geringer Qualität führen zu weniger relevanten Suchergebnissen. So wirken Sie sich direkt auf den Erfolg Ihrer Merchandising-Strategie aus:
-   - Richten Sie die richtigen [Attribute als durchsuchbar](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) mit der entsprechenden Gewichtung ein.
+   - Richten Sie die richtigen [Attribute als durchsuchbar](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) mit der entsprechenden Gewichtung ein.
    - Stellen Sie sicher, dass Daten innerhalb dieser Attribute relevant sind.
 - Ein gut gestaltetes Sucherlebnis schafft Vertrauen bei den Kunden und gibt ihnen die Zuversicht, das zu finden, was sie brauchen.
 - Suchregeln sind wichtig, da sie die Sichtbarkeit bestimmter Produkte basierend auf Popularität, Neuankömmlingen, Werbekriterien oder einer anderen Merchandising-Strategie erhöhen können, um Ihre Geschäftsanforderungen zu erfüllen.
@@ -80,7 +80,7 @@ Um Suchergebnisse mit [!DNL Adobe Commerce Optimizer] zu optimieren, überwachen
 
   Um die Nullergebnisrate zu reduzieren, haben Sie folgende Möglichkeiten:
 
-   - Bieten Sie alternative oder verwandte Suchbegriffe an, z[&#x200B; B. &quot;](../merchandising/synonyms/overview.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
+   - Bieten Sie alternative oder verwandte Suchbegriffe an, z[ B. &quot;](../merchandising/synonyms/overview.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
    - Überprüfen Sie regelmäßig Nullergebnisabfragen, um Muster zu identifizieren und notwendige Anpassungen an Ihrem Produktkatalog und Ihren Sucheinstellungen vorzunehmen.
 
 Sie können diese Metrikdaten verwenden, um Ihre Suchfunktion wie folgt zu optimieren:
@@ -98,7 +98,7 @@ Um Ihre Suchfunktion zu optimieren, verwenden Sie [Synonyme und Schreibweisen](.
 
 ## Relevanz der Suchergebnisse verbessern
 
-Um die Relevanz der Suchergebnisse zu verbessern, implementieren Sie effektive [Suchregeln](../merchandising/rules/overview.md) und verwenden Sie Produktmetadaten, um sicherzustellen, dass genaue und detaillierte [Attribute durchsuchbar sind](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata).
+Um die Relevanz der Suchergebnisse zu verbessern, implementieren Sie effektive [Suchregeln](../merchandising/rules/overview.md) und verwenden Sie Produktmetadaten, um sicherzustellen, dass genaue und detaillierte [Attribute durchsuchbar sind](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata).
 
 ### Bilder
 
@@ -110,16 +110,11 @@ Stellen Sie sicher, dass die untergeordneten Produkte der konfigurierbaren Produ
 
 ### Verwenden von Produktmetadaten
 
-Stellen Sie sicher, dass genaue [&#x200B; detaillierte Produktattribute als durchsuchbar eingerichtet &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata). Beachten Sie, dass die Attribute „SKU“, „Name“ und „Kategorie“ standardmäßig durchsuchbar sind und nicht von der Suche ausgeschlossen werden können. Verwenden Sie für optimale Ergebnisse keine Leerzeichen in Ihren SKUs.
+Stellen Sie sicher, dass genaue und [ Produktattribute als durchsuchbar eingerichtet sind und eine Gewichtung ](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Beachten Sie, dass die Attribute „SKU“, „Name“ und „Kategorie“ standardmäßig durchsuchbar sind und nicht von der Suche ausgeschlossen werden können. Verwenden Sie für optimale Ergebnisse keine Leerzeichen in Ihren SKUs.
 
 Um die Suchrelevanz zu erhöhen, weisen Sie jedem durchsuchbaren Attribut eine Gewichtung zu. Attribute mit einer höheren Gewichtung sollten in den Suchergebnissen höher angezeigt werden. Die Sortierung nach Relevanz wird von mehreren Kriterien beeinflusst, z. B. der Suchgewichtung. Dies bedeutet, dass manchmal Attribute mit niedrigerer Suchgewichtung immer noch mehr Relevanz haben können als Attribute mit höherer Suchgewichtung. Andere Kriterien können die Anzahl der Übereinstimmungen in einem bestimmten Attribut, die Position des gefundenen Suchbegriffs und die Gesamttextstruktur vor und nach einem Suchbegriff sein.
 
 Stellen Sie sicher, dass jedes Produkt relevanten Inhalt in jedem durchsuchbaren Attribut hat. Es wird nicht empfohlen, ein Attribut als durchsuchbar festzulegen, wenn es große Mengen an Inhalten enthält, die die Relevanz der Suchergebnisse verringern können.
-
-Weitere Informationen zu Produktattributen für die Suche:
-
-- [Attribute als durchsuchbar festlegen](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
-- [Attributen Gewichtung zuweisen](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
 
 ## Feldbeschreibungen
 
