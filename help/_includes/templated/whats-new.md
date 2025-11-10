@@ -1,7 +1,7 @@
 ---
-source-git-commit: a35078af6a818cd87ec64e60d193d3705e462501
+source-git-commit: 27a593d86255cb48b04a876cbfd8e5413bbfa6f4
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '203'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 2%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;6. November 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Die <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">Versionshinweise</a> für die AEM Assets Integration v1.2.7 wurden aktualisiert.</p>
+</td>
+      <td>
+        Technisch
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/89091ee8a69259ad325a2b2d7ed8d522fe23fac9">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;17. Oktober 2025
 
@@ -23,7 +45,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die folgenden Themen wurden aktualisiert und enthalten jetzt Informationen zum Konfigurieren der Identitätsverwaltung und Single Sign-on über die Adobe Admin Console:<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service User und Identity Management</a><br />- <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer: User und Identity Management</a></p>
+      <td><p>Die folgenden Themen wurden aktualisiert und enthalten jetzt Informationen zum Konfigurieren der Identitätsverwaltung und Single Sign-on über die Adobe Admin Console:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service User und Identity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer: User und Identity Management</a></p>
 </td>
       <td>
         Feedback, technisch
@@ -45,7 +67,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die Schritte <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/user-management">Benutzerverwaltung</a> zum Hinzufügen eines Benutzers wurden aktualisiert.</p>
+      <td><p>Die Schritte <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Benutzerverwaltung</a> zum Hinzufügen eines Benutzers wurden aktualisiert.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -67,7 +89,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Das <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/storefront">Handbuch zur Einrichtung der Storefront</a> wurde für Adobe Commerce Optimizer aktualisiert. Es enthält jetzt Anweisungen zum Erstellen eines Storefront-Projekts mit dem Site Creator-Tool, zum Anpassen der Storefront-Konfiguration und zum Überprüfen der Site- und Katalogdaten durch Überprüfen der standardmäßigen Produktdetailseiten und Produktsuchergebnisseiten.</p>
+      <td><p>Das <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">Handbuch zur Einrichtung der Storefront</a> wurde für Adobe Commerce Optimizer aktualisiert. Es enthält jetzt Anweisungen zum Erstellen eines Storefront-Projekts mit dem Site Creator-Tool, zum Anpassen der Storefront-Konfiguration und zum Überprüfen der Site- und Katalogdaten durch Überprüfen der standardmäßigen Produktdetailseiten und Produktsuchergebnisseiten.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -89,7 +111,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/user-management">User Management</a> müssen jetzt alle Entwickler und Produktadministratoren zuerst die Benutzerrolle hinzufügen.</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">User Management</a> müssen jetzt alle Entwickler und Produktadministratoren zuerst die Benutzerrolle hinzufügen.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -111,64 +133,12 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Veröffentlichte <a href="https://experienceleague.adobe.com/de/docs/commerce/payment-services/release-notes">Versionshinweise</a> für Payment Services v2.12.2.</p>
+      <td><p>Veröffentlichte <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">Versionshinweise</a> für Payment Services v2.12.2.</p>
 </td>
       <td>
         Größere Aktualisierung
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1e5ee370bf91d33f35585d2d64b393fede721ce6">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;9. September 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Informationen zur AEM Assets-Einrichtung wurden der Seite <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/user-management">Benutzerverwaltung</a> für Adobe Commerce as a Cloud Service hinzugefügt.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/acce1aad405e74b1171faddf7f0d6681bd0a048d">verpflichten</a></td>
-    </tr>
-    <tr>
-      <td><p>Rollenbasierte Aufgaben und Workflow-Informationen wurden zur Seite <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/getting-started">Erste Schritte</a> für Adobe Commerce as a Cloud Service hinzugefügt</p>
-</td>
-      <td>
-        Neues Thema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/f62434c55d21f65568af422bd278e6ed917b805b">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;4. September 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurde Dokumentation für das optionale Modul <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">Zusätzliche Produktattribute“ </a>. Wenn dieses Modul in einer Adobe Commerce-Umgebung installiert wird, exportiert der Datenexportprozess automatisch Steuerklassen-, Attributsatz- und Bestandsmetadaten aus der Commerce-Produktkonfiguration in die <code class="language-plaintext highlighter-rouge">products</code>- und <code class="language-plaintext highlighter-rouge">product attributes</code>-Feeds.</p>
-</td>
-      <td>
-        Neues Thema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a77c6bd98622488214d89a077e1dfaa8338108fd">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
