@@ -129,11 +129,11 @@ Nachdem Sie das Projekt erstellt haben, speichern Sie die folgenden Werte auf de
 
 Speichern Sie die folgenden Werte aus Ihren Adobe Commerce Optimizer-Instanzdetails.
 
-* **Instanz-ID - **Die eindeutige Kennung für Ihre Adobe Commerce Optimizer-Instanz. Wird auch als Mandanten-ID bezeichnet.
+* **Instanz-ID - &#x200B;** Die eindeutige Kennung für Ihre Adobe Commerce Optimizer-Instanz. Wird auch als Mandanten-ID bezeichnet.
 
   Rufen Sie die Instanz-ID von der URL ab, um auf Ihre Adobe Commerce Optimizer-Instanz zuzugreifen. Im URL-`https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef` ist die Instanz-ID beispielsweise `1234567890abcdef`.
 
-* **Region - **Die Region, in der Ihre Adobe Commerce Optimizer-Sandbox-Instanz gehostet wird.
+* **Region - &#x200B;** Die Region, in der Ihre Adobe Commerce Optimizer-Sandbox-Instanz gehostet wird.
 
   Abrufen der Region aus der Adobe Commerce Optimizer-URL. Im URL-`https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef` ist die Region beispielsweise `na1`.
 
@@ -167,11 +167,11 @@ Sie können die Datensynchronisation sowohl von der Commerce Admin als auch von 
 
 * Auf **[Seite „Synchronisierungsstatus für Daten-Feeds](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.md)** wird der Fortschritt der Synchronisierung von Katalogdaten von Commerce zu Adobe Commerce Optimizer angezeigt.
 
-* Auf der **[[!UICONTROL Data Sync]Seite ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)** in Adobe Commerce Optimizer werden die Katalogdaten angezeigt, die von Ihrer Commerce-Instanz übertragen wurden.
+* Auf der **[[!UICONTROL Data Sync]Seite &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)** in Adobe Commerce Optimizer werden die Katalogdaten angezeigt, die von Ihrer Commerce-Instanz übertragen wurden.
 
 1. Überprüfen Sie, ob Katalogdaten von Commerce an Commerce Optimizer fließen:
 
-   Öffnen Sie in Commerce Admin die Seite [!UICONTROL Data Feed Sync Status] , indem Sie [!UICONTROL System]** > [!UICONTROL Data Transfer] > **[!UICONTROL Data Feed Sync Status]** auswählen.
+   Öffnen Sie in Commerce Admin die Seite [!UICONTROL Data Feed Sync Status] , indem Sie [!UICONTROL System] **&#x200B; > [!UICONTROL Data Transfer] > &#x200B;** [!UICONTROL Data Feed Sync Status]** auswählen.
 
    ![Seite „Daten-Feed-Synchronisierungsstatus“ mit Reporting zum Feed-Elementstatus](./assets/data-feed-sync-status.png)
 
@@ -209,7 +209,7 @@ Beachten Sie, dass Preisverzeichnisse automatisch von Adobe Commerce-Kundengrupp
 
 ## Einrichten einer Commerce-Storefront in Edge Delivery Services
 
-In diesem Abschnitt finden Sie einen allgemeinen Überblick über die Schritte, die zum Einrichten Ihrer Commerce-Storefront erforderlich sind. Detaillierte Informationen finden Sie auf der Dokumentations-Site zur {0[ Adobe Commerce Storefront (https://experienceleague.adobe.com/developer/commerce/storefront/).]
+In diesem Abschnitt finden Sie einen allgemeinen Überblick über die Schritte, die zum Einrichten Ihrer Commerce-Storefront erforderlich sind. Detaillierte Informationen finden Sie auf der Dokumentations-Site zur &lbrace;0[ Adobe Commerce Storefront (https://experienceleague.adobe.com/developer/commerce/storefront/).]
 
 1. Klonen und stellen Sie das Adobe Commerce Storefront-Textbaustein mithilfe des [Site Creator-Tools](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) für EDS bereit.
 
