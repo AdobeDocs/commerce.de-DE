@@ -1,13 +1,13 @@
 ---
-title: Adobe Commerce Optimizer Connector für Commerce
+title: Adobe Commerce Optimizer-Connector
 description: Erfahren Sie, wie Sie Ihre Daten aus Ihrem Commerce Cloud- oder lokalen Projekt mit Adobe Commerce Optimizer verbinden
 feature: Personalization, Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 hidefromtoc: true
 hide: true
-source-git-commit: 36cfafff243a2310a17a2c9ec8a00f10403bc133
+source-git-commit: 1654aede42cf53b2dffe2965680f122d7c247234
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1529'
 ht-degree: 0%
 
 ---
@@ -49,24 +49,24 @@ Der Connector ermöglicht mehrere wichtige Workflows:
 
 ## Voraussetzungen für die Verwendung der Integration
 
-* Adobe Commerce 2.4.5+
+* Adobe Commerce 2.4.7+
 
-   * PHP 8.1, 8.2, 8.3 oder 8.4
+   * PHP 8.2, 8.3 oder 8.4
    * Composer 2.x
 
 * Adobe Commerce Optimizer-Lizenz mit einer bereitgestellten Sandbox-Instanz.
 
 * Zugriff auf [repo.magento.com](https://repo.magento.com), um das Commerce Connector-Metapaket mit Composer herunterzuladen.
 
-* Administratorzugriff auf eine [Adobe Commerce Optimizer Sandbox-Instanz](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-commerce-optimizer/create-first-instance).
+* Administratorzugriff auf eine [Adobe Commerce Optimizer Sandbox-Instanz](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/create-first-instance).
 
 Der Adobe Commerce-Benutzer, der die Integration konfiguriert, muss über Folgendes verfügen:
 
 * Administratorzugriff auf den Adobe Commerce Admin.
 
-* [Befehlszeilenzugriff auf den Adobe Commerce-Anwendungsserver](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/user-access).
+* [Befehlszeilenzugriff auf den Adobe Commerce-Anwendungsserver](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access).
 
-* Entwicklerzugriff auf die [IMS-Organisation](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations?), in der das Adobe Commerce Optimizer-Projekt bereitgestellt wird.
+* Entwicklerzugriff auf die [IMS-Organisation](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?), in der das Adobe Commerce Optimizer-Projekt bereitgestellt wird.
 
 ## Erste Schritte
 
@@ -106,9 +106,9 @@ Nachdem Sie Ihre Änderungen bereitgestellt haben, ist die Option Commerce Optim
 >
 >Detaillierte Installationsanweisungen für Erweiterungen finden Sie in den folgenden Handbüchern:
 >
->[Installieren der Erweiterung auf Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>[Installieren der Erweiterung auf Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
 >
->[Installieren der Erweiterung Adobe Commerce On-Premise](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/extensions)
+>[Installieren der Erweiterung Adobe Commerce On-Premise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## Erforderliche Werte zum Konfigurieren der Commerce Optimizer-Verbindung abrufen
 
@@ -116,9 +116,9 @@ Nachdem Sie Ihre Änderungen bereitgestellt haben, ist die Option Commerce Optim
 
 >[!NOTE]
 >
->Wenn Sie bereits über ein App Builder Developer-Projekt in der IMS-Organisation verfügen, in der Ihre Commerce Optimizer-Instanz bereitgestellt ist, können Sie die erforderlichen API-Anmeldeinformationen und die Organisations-ID aus den OAUTH-Server-zu-Server-Anmeldeinformationen in diesem Projekt abrufen.
+>Wenn Sie bereits ein Entwicklerprojekt mit der Datenaufnahme-API in der IMS-Organisation haben, in der Ihre Commerce Optimizer-Instanz bereitgestellt ist, können Sie die erforderlichen API-Anmeldeinformationen und die Organisations-ID aus den OAUTH-Server-zu-Server-Anmeldeinformationen in diesem Projekt abrufen.
 
-Erstellen Sie ein neues Entwicklerprojekt in der Adobe Developer-Konsole, um API-Anmeldeinformationen zu erhalten und die Integration zwischen Commerce- und Commerce Optimizer-Instanzen zu konfigurieren. Anweisungen finden Sie unter [Erstellen eines App Builder-Projekts](https://developer.adobe.com/commerce/extensibility/events/project-setup/) in der Entwicklerdokumentation.
+Erstellen Sie ein neues Entwicklerprojekt in der Adobe Developer-Konsole, um die Anmeldedaten für die Adobe Commerce Optimizer-Aufnahme-API abzurufen und die Integration zwischen Commerce- und Commerce Optimizer-Instanzen zu konfigurieren. Anweisungen finden Sie unter [Abrufen von IMS](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials) im *Merchandising-Entwicklerhandbuch*.
 
 Nachdem Sie das Projekt erstellt haben, speichern Sie die folgenden Werte auf der Seite mit den OAUTH-Server-zu-Server-Anmeldeinformationen :
 
@@ -130,11 +130,11 @@ Nachdem Sie das Projekt erstellt haben, speichern Sie die folgenden Werte auf de
 
 Speichern Sie die folgenden Werte aus Ihren Adobe Commerce Optimizer-Instanzdetails.
 
-* **Instanz-ID - &#x200B;** Die eindeutige Kennung für Ihre Adobe Commerce Optimizer-Instanz. Wird auch als Mandanten-ID bezeichnet.
+* **Instanz-ID - **Die eindeutige Kennung für Ihre Adobe Commerce Optimizer-Instanz. Wird auch als Mandanten-ID bezeichnet.
 
   Rufen Sie die Instanz-ID von der URL ab, um auf Ihre Adobe Commerce Optimizer-Instanz zuzugreifen. Im URL-`https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef` ist die Instanz-ID beispielsweise `1234567890abcdef`.
 
-* **Region - &#x200B;** Die Region, in der Ihre Adobe Commerce Optimizer-Sandbox-Instanz gehostet wird.
+* **Region - **Die Region, in der Ihre Adobe Commerce Optimizer-Sandbox-Instanz gehostet wird.
 
   Abrufen der Region aus der Adobe Commerce Optimizer-URL. Im URL-`https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef` ist die Region beispielsweise `na1`.
 
@@ -150,7 +150,7 @@ Mithilfe der API-Anmeldeinformationen und Instanzdetails, die Sie in den vorheri
 
    ![Adobe Commerce Optimizer-Konfigurationsseite](../assets/aco-connector-config-page.png)
 
-1. Verwenden Sie in der Befehlszeile [SSH](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/secure-connections), um eine Verbindung zur Commerce-Staging-Umgebung herzustellen.
+1. Verwenden Sie in der Befehlszeile [SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections), um eine Verbindung zur Commerce-Staging-Umgebung herzustellen.
 
 1. Führen Sie den folgenden Commerce-CLI-Befehl aus, um die Integration zu konfigurieren. Ersetzen Sie dabei die Platzhalterwerte durch die Werte für Ihr Commerce Optimizer-Projekt:
 
@@ -166,13 +166,13 @@ bin/magento aco:config:init --org_id=<<your_org_id>> --tenant_id=<<your_tenant_i
 
 Sie können die Datensynchronisation sowohl von der Commerce Admin als auch von der Commerce Optimizer aus überprüfen.
 
-* Auf **[Seite „Synchronisierungsstatus für Daten-Feeds](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.md)** wird der Fortschritt der Synchronisierung von Katalogdaten von Commerce zu Adobe Commerce Optimizer angezeigt.
+* Auf **[Seite „Synchronisierungsstatus für Daten-Feeds](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.md)** wird der Fortschritt der Synchronisierung von Katalogdaten von Commerce zu Adobe Commerce Optimizer angezeigt.
 
-* Auf der **[[!UICONTROL Data Sync]Seite &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/data-sync)** in Adobe Commerce Optimizer werden die Katalogdaten angezeigt, die von Ihrer Commerce-Instanz übertragen wurden.
+* Auf der **[[!UICONTROL Data Sync]Seite ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)** in Adobe Commerce Optimizer werden die Katalogdaten angezeigt, die von Ihrer Commerce-Instanz übertragen wurden.
 
 1. Überprüfen Sie, ob Katalogdaten von Commerce an Commerce Optimizer fließen:
 
-   Öffnen Sie in Commerce Admin die Seite [!UICONTROL Data Feed Sync Status] , indem Sie [!UICONTROL System] **&#x200B; > [!UICONTROL Data Transfer] > &#x200B;** [!UICONTROL Data Feed Sync Status]** auswählen.
+   Öffnen Sie in Commerce Admin die Seite [!UICONTROL Data Feed Sync Status] , indem Sie [!UICONTROL System]** > [!UICONTROL Data Transfer] > **[!UICONTROL Data Feed Sync Status]** auswählen.
 
    ![Seite „Daten-Feed-Synchronisierungsstatus“ mit Reporting zum Feed-Elementstatus](./assets/data-feed-sync-status.png)
 
@@ -204,19 +204,19 @@ Wenn die Konfiguration geändert wird, werden die entsprechenden Indizes ungült
 
 ## Konfigurieren von Adobe Commerce Optimizer-Stores
 
-Konfigurieren Sie Adobe Commerce Optimizer-Stores, indem Sie Katalogansichten und Richtlinien erstellen&#x200B; Siehe [Erstellen von Katalogansichten](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-view) im Adobe Commerce Optimizer-Handbuch.
+Konfigurieren Sie Adobe Commerce Optimizer-Stores, indem Sie Katalogansichten und Richtlinien erstellen&#x200B; Siehe [Erstellen von Katalogansichten](../optimizer/setup/catalog-view.md) im Adobe Commerce Optimizer-Handbuch.
 
 Beachten Sie, dass Preisverzeichnisse automatisch von Adobe Commerce-Kundengruppen erstellt werden.
 
 ## Einrichten einer Commerce-Storefront in Edge Delivery Services
 
-In diesem Abschnitt finden Sie einen allgemeinen Überblick über die Schritte, die zum Einrichten Ihrer Commerce-Storefront erforderlich sind. Detaillierte Informationen finden Sie auf der Dokumentations-Site zur &lbrace;0[ Adobe Commerce Storefront (https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de).]
+In diesem Abschnitt finden Sie einen allgemeinen Überblick über die Schritte, die zum Einrichten Ihrer Commerce-Storefront erforderlich sind. Detaillierte Informationen finden Sie auf der Dokumentations-Site zur {0[ Adobe Commerce Storefront (https://experienceleague.adobe.com/developer/commerce/storefront/).]
 
 1. Klonen und stellen Sie das Adobe Commerce Storefront-Textbaustein mithilfe des [Site Creator-Tools](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) für EDS bereit.
 
-1. [Einrichten einer lokalen Entwicklungsumgebung](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=de#set-up-local-environment).
+1. [Einrichten einer lokalen Entwicklungsumgebung](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment).
 
-1. [GraphQL Storefront-Kompatibilitätspaket installieren](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/?lang=de).&#x200B;
+1. [GraphQL Storefront-Kompatibilitätspaket installieren](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/).&#x200B;
 
 1. [Konfigurieren Sie CORS-Header für die Commerce-Instanz in der Cloud-Umgebung](#configure-cors-headers-for-commerce-instance).
 
@@ -224,35 +224,24 @@ In diesem Abschnitt finden Sie einen allgemeinen Überblick über die Schritte, 
 
 ### Konfigurieren von CORS-Headern für die Commerce-Instanz
 
-Damit GraphQL-Anfragen von einer Edge Delivery Services (EDS)-Storefront an Adobe Commerce in einer Cloud- oder On-Premise-Umgebung gesendet werden können, können Sie den Adobe Commerce GraphQL-Endpunkten mithilfe einer der folgenden Optionen spezifische CORS-Header (Cross-Origin Resource Sharing) hinzufügen&#x200B;
-
-1. Fügen Sie CORS-Header (Cross-Origin Resource Sharing) zu den Adobe Commerce GraphQL-Endpunkten hinzu&#x200B;
-
-   **Option 1: Implementieren Sie ein benutzerdefiniertes PHP-Modul für Adobe Commerce Foundation, um CORS-Header hinzufügen zu können&#x200B;**
-
-   **Option 2: Installieren Sie das Community-Modul eines Drittanbieters graycore/magento2-&#x200B;** - Siehe [CORS-Setup](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/cors-setup/?lang=de) in der Dokumentation zur *Adobe Commerce Storefront*.
-
-1. Fügen Sie die folgenden CORS-Variablen zur Konfigurationsdatei der Commerce on Cloud-Instanz `app.yaml` der Umgebung hinzu:
-
-   * `CONFIG__DEFAULT__WEB__GRAPHQL__CORS_ALLOWED_HEADERS: *`
-   * `CONFIG__DEFAULT__WEB__GRAPHQL__CORS_ALLOWED_ORIGINS: *`
+Damit GraphQL-Anfragen von einer Edge Delivery Services (EDS)-Storefront an Adobe Commerce in einer Cloud- oder On-Premise-Umgebung gesendet werden können, fügen Sie den Adobe Commerce GraphQL-Endpunkten spezifische CORS-Kopfzeilen (Cross-Origin Resource Sharing) hinzu&#x200B; Anweisungen finden Sie unter [CORS-Setup](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/cors-setup/) in der Dokumentation zur *Adobe Commerce*.
 
 ### Verbinden der Storefront mit Commerce-Datenquellen
 
 Aktualisieren Sie im GitHub-Repository für den Textbausteincode für die Storefront die Konfigurationsdatei für die Storefront, `config.json` mit den folgenden Parametern:
 
-* `"commerce-core-endpoint": "Commerce cloud instance GraphQL endpoint"`
+* `"commerce-core-endpoint": "Commerce cloud instance GraphQL endpoint"`, zum Beispiel `https://{{your store}}/graphql`.
 
-* `"commerce-endpoint": "Commerce Optimizer instance GraphQL endpoint"` - Diesen Wert auf der Detailseite der [Commerce Optimizer-Instanz abrufen](https://experienceleague.adobe.com/de/docs/commerce/optimizer/get-started#get-instance-details)&#x200B;
+* `"commerce-endpoint": "Commerce Optimizer instance GraphQL endpoint"`, zum Beispiel `https://na1-sandbox.api.commerce.adobe.com/{{instanceId}}/v1/catalog&#x200B;`.
 
-* `"AC-Environment-Id": "Customer organization ID"` - Diesen Wert aus dem [Commerce-Cloud-Projekt abrufen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/overview#project-overview)
+* `"AC-Environment-Id": "Customer organization ID"` - Diesen Wert aus dem [Commerce-Cloud-Projekt abrufen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#project-overview).
 
-* `"AC-View-ID": "Catalog view ID in Commerce Optimizer Admin"` - Diesen Wert erhalten Sie von der Adobe Commerce Optimizer-Administratorin bzw. dem -Administrator.
+* `"AC-View-ID": "Catalog view ID in Commerce Optimizer Admin"` - Diesen Wert erhalten Sie aus der [Katalogansichtsdetails](../optimizer/setup/catalog-view.md#view-details) in Adobe Commerce Optimizer.
 
-* `"AC-Price-Book-ID": "base::b6589fc6ab0dc82cf12099d1c2d40ab994e8410c"` - Diesen Wert erhalten Sie von der Adobe Commerce Optimizer-Administratorin bzw. dem-Administrator&#x200B;
+* `"AC-Price-Book-ID": "base::b6589fc6ab0dc82cf12099d1c2d40ab994e8410c"` - Diesen Wert erhalten Sie aus der Liste der zugeordneten Preisbücher in der [Katalogansichtsdetails](../optimizer/setup/catalog-view.md#view-details) in Adobe Commerce Optimizer.
 
-* `"AC-Source-Locale": "Catalog source – Store View code from Commerce cloud instance"`
+* `"AC-Source-Locale": "catalogSource"` - Geben Sie die Quelle an, die mit der Commerce-Storeview verknüpft ist, um eine Verbindung zur Storefront herzustellen. Verfügbare Quellen werden auf der Seite [Datensynchronisierung](../optimizer/setup/data-sync.md) in Adobe Commerce Optimizer angezeigt.
 
-Weitere Informationen finden Sie unter [Storefront-Konfiguration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=de) in der Dokumentation *Adobe Commerce*.
+Weitere Informationen finden Sie unter [Storefront-Konfiguration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/) in der Dokumentation *Adobe Commerce*.
 
 
