@@ -1,11 +1,11 @@
 ---
 title: Recommendations-Leistung
 description: Die Seite Recommendations-Performance zeigt insight die Leistung Ihrer Produktempfehlungen an.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: 0eea4658d554f2913c7c2d25e0c0753f22016aaa
+source-git-commit: 177ebffe0295fdc87b6f4a60473ebfda6bea0f01
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,15 @@ Auf der Seite Recommendations-Performance wird eine Liste der konfigurierten Rec
 
 ![Recommendations-Leistung](../assets/rec-performance.png){zoomable="yes"}
 
-## Wählen Sie die **Katalogansicht**
-
-Wählen Sie die [Katalogansicht](../setup/catalog-view.md) für die Ihre Empfehlungen gelten.
-
-![Katalogansicht](../assets/catalog-view.png)
-
 ## Anzeigen eines Berichts
 
-Klicken Sie auf die **[!UICONTROL Date Range]** und wählen Sie einen der folgenden Bereiche aus:
+1. Wählen Sie die **Katalogquelle** aus, z. B. `en-US`, für die Ihre Empfehlungen gelten.
 
-![Recommendations-Datumsbereich](../assets/rec-perf-date-range.png)
+1. Klicken Sie auf die **[!UICONTROL Date Range]** und wählen Sie einen der folgenden Bereiche aus:
 
-Die Empfehlungstabelle wird aktualisiert, um Metriken für diesen Datumsbereich anzuzeigen.
+   ![Recommendations-Datumsbereich](../assets/rec-perf-date-range.png)
+
+   Die Empfehlungstabelle wird aktualisiert, um Metriken für diesen Datumsbereich anzuzeigen.
 
 ## Tabelle anpassen
 
@@ -47,14 +43,6 @@ Die Empfehlungstabelle wird aktualisiert, um Metriken für diesen Datumsbereich 
 
    Die Tabelle wird aktualisiert und enthält nur die ausgewählten Spalten.
 
-## Filter festlegen
-
-Klicken Sie auf das Filtersymbol, um die Metriken im Arbeitsbereich Recommendations-Leistung zu filtern.
-
-![Metriken filtern](../assets/rec-filters.png)
-
-Sie können für jeden Filter mehrere Werte konfigurieren. In [Tabelle unten](#column-descriptions) finden Sie Beschreibungen der einzelnen Filter.
-
 ## Details anzeigen
 
 1. Klicken Sie in der Tabelle auf das Symbol (![Weitere Auswahl](../assets/btn-more.png)) neben der Empfehlung, die Sie untersuchen möchten.
@@ -63,7 +51,7 @@ Sie können für jeden Filter mehrere Werte konfigurieren. In [Tabelle unten](#c
 
 ## Empfehlungen erstellen oder verwalten
 
-Erfahren Sie, wie [&#x200B; eine neue Empfehlung erstellen oder eine vorhandene &#x200B;](../merchandising/recommendations/create.md) verwalten können.
+Erfahren Sie, wie [ eine neue Empfehlung erstellen oder eine vorhandene ](../merchandising/recommendations/create.md) verwalten können.
 
 ## Workspace-Steuerelemente
 
