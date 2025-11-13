@@ -1,10 +1,11 @@
 ---
 title: Recommendations-Leistung
 description: Die Seite Recommendations-Performance zeigt insight die Leistung Ihrer Produktempfehlungen an.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
+source-git-commit: 0eea4658d554f2913c7c2d25e0c0753f22016aaa
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -27,14 +28,11 @@ Wählen Sie die [Katalogansicht](../setup/catalog-view.md) für die Ihre Empfehl
 
 ## Anzeigen eines Berichts
 
-Klicken Sie auf den Kalender und führen Sie einen der folgenden Schritte aus:
+Klicken Sie auf die **[!UICONTROL Date Range]** und wählen Sie einen der folgenden Bereiche aus:
 
-- Um ein einzelnes Datum anzugeben, doppelklicken Sie auf das Datum im Kalender.
-- Um einen Datumsbereich anzugeben, klicken Sie auf das erste und letzte Datum im Kalender.
+![Recommendations-Datumsbereich](../assets/rec-perf-date-range.png)
 
->[!NOTE]
->
->Der Datumsbereich darf ein Jahr nicht überschreiten.
+Die Empfehlungstabelle wird aktualisiert, um Metriken für diesen Datumsbereich anzuzeigen.
 
 ## Tabelle anpassen
 
@@ -65,13 +63,13 @@ Sie können für jeden Filter mehrere Werte konfigurieren. In [Tabelle unten](#c
 
 ## Empfehlungen erstellen oder verwalten
 
-Erfahren Sie, wie [&#x200B; eine neue Empfehlung erstellen oder eine vorhandene &#x200B;](../merchandising/recommendations/create.md) verwalten können.
+Erfahren Sie, wie [ eine neue Empfehlung erstellen oder eine vorhandene ](../merchandising/recommendations/create.md) verwalten können.
 
 ## Workspace-Steuerelemente
 
 | Kontrolle | Beschreibung |
 |---|---|
-| ![Kalenderauswahl](../assets/icon-calendar.png) | Bestimmt den Zeitbereich, der für Metrikberechnungen verwendet wird. |
+| ![Datumsbereich](../assets/rec-perf-date-range.png) | Bestimmt den Zeitbereich, der für Metrikberechnungen verwendet wird. |
 | ![Spaltenauswahl](../assets/icon-show-hide-columns.png) | Bestimmt die Spalten, die in der Recommendations-Tabelle angezeigt werden. |
 | Empfehlung erstellen | Öffnet die Seite [Neue Empfehlung erstellen](../merchandising/recommendations/create.md). |
 
