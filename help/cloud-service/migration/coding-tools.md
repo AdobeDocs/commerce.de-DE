@@ -1,13 +1,13 @@
 ---
 title: KI-Kodierungstools für Erweiterungen
 description: Erfahren Sie, wie Sie die KI-Tools zum Erstellen von Commerce App Builder-Erweiterungen verwenden.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 9382ce8f139f9d2f4ec1732c0d83b466cd54fa37
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -96,10 +96,19 @@ Bei der Auswahl des Package Managers empfiehlt Adobe aus Konsistenzgründen die 
 
    Die folgenden Dateien werden Ihrem Arbeitsbereich hinzugefügt:
 
+   **Cursor**
+
    * MCP-Konfiguration: `.cursor/mcp.json`
    * Regelverzeichnis: `.cursor/rules/`
 
+   **Kopilot**
+
+   * MCP-Konfiguration: `.vscode/mcp.json`
+   * Regelverzeichnis: `.github/copilot-instructions.md`
+
 ## Konfiguration nach der Installation
+
+### Cursor
 
 1. Starten Sie die Cursor-IDE neu, um die neuen MCP-Tools und die neue Konfiguration zu laden.
 
@@ -119,6 +128,45 @@ Bei der Auswahl des Package Managers empfiehlt Adobe aus Konsistenzgründen die 
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
    ```
+
+1. Verwenden Sie die folgende Eingabeaufforderung, um zu sehen, ob der Agent den MCP-Server verwendet. Ist dies nicht der Fall, bitten Sie den Agenten ausdrücklich, die verfügbaren MCP-Tools zu verwenden.
+
+```terminal
+What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
+```
+
+### Kopilot
+
+1. Starten Sie Visual Studio Code neu, um die neuen MCP-Tools und -Konfigurationen zu laden.
+
+1. Überprüfen Sie die Installation, indem Sie bestätigen, dass die `copilot-instructions.md` Datei im `.github` vorhanden ist.
+
+1. MCP-Server aktivieren:
+
+   * Öffnen Sie den Bereich „Erweiterungen“, indem Sie auf **Erweiterungen** in der Aktivitätsleiste auf der linken Seitenleiste klicken oder **Befehlstaste+Umschalt+X** (macOS) oder **Strg+Umschalt+X** (Windows und Linux) verwenden.
+   * Klicken Sie **MCP SERVERS - INSTALLED**.
+   * Klicken Sie auf das Zahnradsymbol neben **Commerce-Extensibility MCP Server** und wählen Sie **Server starten**, wenn der Server angehalten wird.
+   * Klicken Sie erneut auf das Zahnradsymbol und wählen Sie **Ausgabe anzeigen**.
+
+1. Überprüfen Sie den Serverstatus. Die `MCP:commerce-extensibility` sollte wie folgt aussehen:
+
+   ```terminal
+   2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
+   2025-11-13 12:58:50.652 [info] Connection state: Starting
+   2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
+   2025-11-13 12:58:50.657 [info] Connection state: Starting
+   2025-11-13 12:58:50.657 [info] Connection state: Running
+   
+   (...)
+   
+   2025-11-13 12:58:50.753 [info] Discovered 10 tools
+   ```
+
+1. Verwenden Sie die folgende Eingabeaufforderung, um zu sehen, ob der Agent den MCP-Server verwendet. Ist dies nicht der Fall, bitten Sie den Agenten ausdrücklich, die verfügbaren MCP-Tools zu verwenden.
+
+```terminal
+What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
+```
 
 ## Eingabeaufforderung für Muster
 
@@ -174,7 +222,7 @@ Lesen Sie die folgenden Ressourcen, um loszulegen:
 
 * [Integrations-Starter-Kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce Starter Kit-Vorlagen](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Beispielanwendungen für App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Warum Sie diese Ressourcen verwenden sollten
@@ -201,7 +249,7 @@ Das folgende Vierphasenprotokoll wird automatisch vom Regelsystem durchgesetzt. 
 
 ### Anfordern von Implementierungsplänen für die komplexe Entwicklung
 
-Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [&#x200B; hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
+Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [ hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
 
 ```terminal
 Create a detailed implementation plan for this complex development.
