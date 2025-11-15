@@ -1,9 +1,10 @@
 ---
 title: Widget „Produktlistenseite“
 description: Aktivieren und Formatieren des  [!DNL Live Search Product Listing Page Widget]
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
+source-git-commit: 7684d5cded63f2b0805ee307dff77932607c47eb
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,15 @@ Das [!DNL Live Search Product Listing Page Widget] (PLP) verwendet die Commerce 
 
 Wenn der [!DNL Live Search]-Service installiert ist, wird die Standardsuchfunktion automatisch in [!DNL Live Search] konvertiert.
 
-Das [!DNL Live Search] PLP-Widget ist bei Neuinstallationen standardmäßig aktiviert. Wenn Sie ein Upgrade von [!DNL Live Search] durchführen und das PLP-Widget bereits deaktiviert wurde, wird es so bleiben.
+Das [!DNL Live Search] PLP-Widget ist bei Neuinstallationen standardmäßig aktiviert.
+
+Wenn Sie ein Upgrade von [!DNL Live Search] durchführen und das PLP-Widget bereits deaktiviert wurde, wird es so bleiben. So schalten Sie sie ein:
+1. Wechseln Sie in Ihrem Adobe Commerce-Administrator zu Stores → Einstellungen → Konfiguration.
+1. Klicken Sie in der linken Navigation auf **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**.
+1. Klicken Sie auf den Abschnitt [!UICONTROL Storefront Features] .
+1. [!UICONTROL Enable Product Listing Widget] = Ja
+1. Konfiguration speichern
+1. Leeren Sie den Cache, wenn Sie dazu aufgefordert werden (navigieren Sie zu System > Tools > Cache-Verwaltung > [!UICONTROL Flush Magento Cache]).
 
 >[!IMPORTANT]
 >
@@ -46,7 +55,7 @@ Informationen zum Anpassen des PLP-Widgets für die oben genannten Funktionen fi
 
 ## Beispiel für einen Stil
 
-Sie können das Erscheinungsbild des PLP-Widgets mit (CSS) an Ihre [&#x200B; anpassen](https://developer.adobe.com/commerce/frontend-core/guide/css/).
+Sie können das Erscheinungsbild des PLP-Widgets mit (CSS) an Ihre [ anpassen](https://developer.adobe.com/commerce/frontend-core/guide/css/).
 
 >[!NOTE]
 >
