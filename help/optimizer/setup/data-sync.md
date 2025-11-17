@@ -3,11 +3,11 @@ title: Datensynchronisation
 description: Überprüfen Sie die Katalogdaten, die aus Ihrer Commerce-Datenquelle in synchronisiert werden [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
-source-git-commit: 0b8e0222a1de1c425964f9f54294d7e0435a26d8
+source-git-commit: e2c3c8a225b2c56985ba48c7efc9ae2c2d059b2e
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -51,3 +51,8 @@ Wenn bestimmte Produkte nicht auf der Seite **Datensynchronisierung** angezeigt 
 >[!IMPORTANT]
 >
 >Die Dauer der Synchronisierung hängt von der Größe Ihres Katalogs und der Menge der aktualisierten Daten ab.
+
+## Überwachen des Synchronisierungsstatus von Daten
+
+Für Projekte, die Adobe Commerce als Upstream-Datenquelle verwenden, können Sie den Datenexportprozess überwachen und Resynchronisierungsvorgänge über die Seite [Synchronisierungsstatus des Daten-Feeds](../../data-export/data-synchronization.md) in Commerce Admin starten.
+
