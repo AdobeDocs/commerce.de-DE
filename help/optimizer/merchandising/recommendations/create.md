@@ -1,11 +1,11 @@
 ---
 title: Empfehlungen erstellen und verwalten
 description: Erfahren Sie, wie Sie Empfehlungen erstellen und verwalten.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: 0b8e0222a1de1c425964f9f54294d7e0435a26d8
+source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1369'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,10 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
 1. Wenn Sie dazu aufgefordert werden, kopieren Sie die Recommendations-ID. Verwenden Sie diese ID, um zu ermitteln, welche Empfehlungseinheit in der Dropdown-Liste „Empfehlung“ in Ihrer Edge Delivery Services-Storefront verwendet wird.
 
+>[!NOTE]
+>
+> Sie können bis zu 50 aktive Empfehlungseinheiten erstellen.
+
 >[!IMPORTANT]
 >
 >Einige Browser blockieren möglicherweise wichtige Skripte, die verhindern, dass Recommendations erwartungsgemäß funktioniert.
@@ -51,7 +55,7 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
 Sie können eine vorhandene Empfehlung bearbeiten, deaktivieren oder löschen.
 
-1. Navigieren Sie in der Seitenleiste _0&rbrace;Adobe Commerce Optimizer&quot; zu_ Merchandising _>_ Recommendations **.**
+1. Navigieren Sie in der Seitenleiste _0}Adobe Commerce Optimizer&quot; zu_ Merchandising _>_ Recommendations **.**
 
 1. Wählen Sie die Empfehlung aus, die Sie ändern möchten.
 
