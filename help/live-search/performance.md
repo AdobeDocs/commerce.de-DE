@@ -1,7 +1,8 @@
 ---
 title: Leistung
-description: Der  [!DNL Live Search]  „Performance“ bietet Einblicke in die Suchbegriffe, die Kundinnen und Kunden verwenden.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+description: Der  [!DNL Live Search] -Performance-Arbeitsbereich bietet insight zu den Suchbegriffen, die Käufer verwenden.
+exl-id: 07a63df8-b981-4913-841a-7e81ec634281
+source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
@@ -10,7 +11,7 @@ ht-degree: 0%
 
 # Leistung
 
-Der *Performance*-Arbeitsbereich bietet Einblicke in die Suchbegriffe, die Kundinnen und Kunden verwenden. Die Informationen können verwendet werden, um Trends zu identifizieren, den Clickthrough zu erhöhen und die Konversionsrate zu verbessern. Der Arbeitsbereich Leistung bietet eine Momentaufnahme der Suchmetriken für einen bestimmten Datumsbereich und umfasst die folgenden Berichte:
+Der *Performance*-Arbeitsbereich bietet insight zu den Suchbegriffen, die Käufer verwenden. Die Informationen können verwendet werden, um Trends zu identifizieren, den Clickthrough zu erhöhen und die Konversionsrate zu verbessern. Der Arbeitsbereich Leistung bietet eine Momentaufnahme der Suchmetriken für einen bestimmten Datumsbereich und umfasst die folgenden Berichte:
 
 * Eindeutige Suchvorgänge
 * Keine Ergebnisse
@@ -18,7 +19,7 @@ Der *Performance*-Arbeitsbereich bietet Einblicke in die Suchbegriffe, die Kundi
 
 ![Leistung](assets/performance-unique-searches.png)
 
-Weitere Informationen zur Datensynchronisation finden [&#x200B; auch im &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=de)Daten-Management-Dashboard).
+Weitere Informationen zur Datensynchronisation finden [ auch im ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)Daten-Management-Dashboard).
 
 >[!NOTE]
 >

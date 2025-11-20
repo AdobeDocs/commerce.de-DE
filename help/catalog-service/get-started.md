@@ -3,7 +3,7 @@ title: Erste Schritte mit [!DNL Catalog Service]
 description: Erfahren Sie, wie Sie auf  [!DNL Catalog Service]  zugreifen und mit Frontend-Anwendungen und Services von Drittanbietern integrieren können.
 role: Admin, Developer
 exl-id: ee178e67-519d-4283-8de8-2634ae1f347a
-source-git-commit: 377a2b9e42378640aee034eda1426b049c173aad
+source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
@@ -18,14 +18,14 @@ Nachdem die [!DNL Catalog Service] aktiviert wurde, können Sie auf den Service 
 
 Die [!DNL Catalog Service] ist als GraphQL-API verfügbar, auf die Sie über Commerce Admin oder ein beliebiges Frontend-Programm zugreifen können, das GraphQL-Abfragen unterstützt. Der Service ist sowohl in SaaS- als auch in PaaS-Umgebungen verfügbar.
 
-[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 
 | Umgebung | Endpunkt |
 | ------------ | ----------: |
 | **Testen** | `https://catalog-service-sandbox.adobe.io/graphql` |
 | **Produktion** | `https://catalog-service.adobe.io/graphql` |
 
-[!BADGE nur SaaS]{type=Positive url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."}
+[!BADGE nur SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."}
 
 | Umgebung | Endpunkt |
 | ----------- | --------:|
@@ -48,7 +48,7 @@ Weitere Informationen zur Verwendung der Catalog Service GraphQL-API finden Sie 
 
 Zur Integration mit einer Headless-Storefront müssen Sie die Storefront-Konfiguration aktualisieren, um die Kommunikation zwischen der Storefront und dem [!DNL Catalog Service] zum Abrufen von Produkt- und Kategoriedaten zu ermöglichen.
 
-Wenn Sie die Adobe Commerce-Storefront auf Edge Delivery Services verwenden, fügen Sie den Catalog Service-Endpunkt zur Storefront-Konfiguration hinzu. Weitere Informationen finden Sie in der Dokumentation zu [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=de#storefront-configuration).
+Wenn Sie die Adobe Commerce-Storefront auf Edge Delivery Services verwenden, fügen Sie den Catalog Service-Endpunkt zur Storefront-Konfiguration hinzu. Weitere Informationen finden Sie in der Dokumentation zu [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/#storefront-configuration).
 
 Für andere Integrationen finden Sie Details zum Konfigurieren von Integrationen zwischen dem Service und Backend-Datenquellen in der Dokumentation zu Projekteinstellungen .
 
@@ -60,8 +60,8 @@ Um [!DNL Catalog Service] durch eine Firewall zuzulassen, fügen Sie `commerce.a
 
 Das [API Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) ermöglicht Entwicklern die Integration von privaten oder Drittanbieter-APIs und anderen Benutzeroberflächen mit Adobe-Produkten mithilfe von Adobe IO.
 
-Informationen zur Installation [[!DNL Catalog Service]  Konfiguration finden Sie &#x200B;](mesh.md) Thema „und API-Mesh“ .
+Informationen zur Installation [[!DNL Catalog Service]  Konfiguration finden Sie ](mesh.md) Thema „und API-Mesh“ .
 
 ## Verwenden des Daten-Management-Dashboards
 
-Verwenden Sie das [Daten-Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-dashboard), um die Datensynchronisation zwischen dem [!DNL Catalog Service] und Ihrer Adobe Commerce-Instanz zu überwachen. Das Dashboard bietet Einblicke in den Datenübertragungsprozess, einschließlich des Status von Datenexporten und einer Liste synchronisierter Produkte.
+Verwenden Sie das [Daten-Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard), um die Datensynchronisation zwischen dem [!DNL Catalog Service] und Ihrer Adobe Commerce-Instanz zu überwachen. Das Dashboard bietet Einblicke in den Datenübertragungsprozess, einschließlich des Status von Datenexporten und einer Liste synchronisierter Produkte.
