@@ -60,7 +60,7 @@ Um [!DNL Catalog Service] durch eine Firewall zuzulassen, fügen Sie `commerce.a
 
 Das [API Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) ermöglicht Entwicklern die Integration von privaten oder Drittanbieter-APIs und anderen Benutzeroberflächen mit Adobe-Produkten mithilfe von Adobe IO.
 
-Informationen zur Installation [[!DNL Catalog Service]  Konfiguration finden Sie ](mesh.md) Thema „und API-Mesh“ .
+Informationen zur Installation [[!DNL Catalog Service]  Konfiguration finden Sie &#x200B;](mesh.md) Thema „und API-Mesh“ .
 
 ## Verwenden des Daten-Management-Dashboards
 
