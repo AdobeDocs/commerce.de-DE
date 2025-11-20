@@ -1,7 +1,7 @@
 ---
 title: Empfehlungen erstellen und verwalten
 description: Erfahren Sie, wie Sie Empfehlungen erstellen und verwalten.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
 workflow-type: tm+mt
