@@ -3,34 +3,51 @@ title: '[!DNL Adobe Commerce as a Cloud Service] Versionshinweise'
 description: Erfahren Sie mehr über die neuesten Funktionen und Verbesserungen in [!DNL Adobe Commerce as a Cloud Service].
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 925df19c2827f474efe85708ea49974b285df29e
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 1%
+source-wordcount: '310'
+ht-degree: 0%
 
 ---
 
 # Versionshinweise
 
-Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerce as a Cloud Service]. Versionsinformationen für andere Produkte finden Sie unter [Adobe Commerce Optimizer](../optimizer/release-notes.md) oder [Adobe Commerce On-Premise und Adobe Commerce on Cloud](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview).
+Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerce as a Cloud Service]. Versionsinformationen für andere Produkte finden Sie unter [Adobe Commerce Optimizer](../optimizer/release-notes.md) oder [Adobe Commerce On-Premise und Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## August 2025
+[!DNL Adobe Commerce as a Cloud Service] enthält die neuesten Versionen von Merchandising-Services, Zahlungsdiensten und Erweiterbarkeitsversionen. Verwenden Sie die folgenden Links, um die jeweiligen Versionshinweise anzuzeigen:
 
-**Veröffentlichungsdatum:**. August 2025
+* Dienste
+   * [Katalog-Service](../catalog-service/release-notes.md)
+   * [Live Search](../live-search/release-notes.md)
+   * [Zahlungsdienste](../payment-services/release-notes.md)
+   * [Produkt Recommendations](../product-recommendations/release-notes.md)
+   * [SaaS-Datenexport](../data-export/release-notes.md)
+* Erweiterbarkeit
+   * [Admin-Benutzeroberfläche - SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)
+   * [API-Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)
+   * [Ereignisse](https://developer.adobe.com/commerce/extensibility/events/release-notes/)
+   * [Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)
+
+## November 2025
 
 >[!BEGINSHADEBOX]
 
-### EU-Region jetzt verfügbar
+### Verbesserungen
 
-Unterstützung für Kunden-IMS-Organisationen aus der Region der Europäischen Union (eu1) ist jetzt verfügbar. Sie können jetzt **Europäische Union** als **Region** auswählen, wenn [eine Commerce SaaS-Instanz &#x200B;](./getting-started.md#create-an-instance) Cloud Manager hinzufügen. Die Region der Europäischen Union ist nur für Produktionsumgebungen verfügbar.
+* [Benutzerverwaltung](./user-management.md) - hat die Rolle **Produktadministrator** in der Admin Console geändert, um den Benutzerzugriff auf den Commerce-Administrator automatisch zu aktualisieren. <!-- CCSAAS-3012 -->
 
-Die Basis-Produktions-URLs für die Region der Europäischen Union lauten:
+* Amazon Es wurde die Möglichkeit hinzugefügt, verhandelbare Angebotsanhänge sowie Dateien und Bilder, die mit Kunden und Kundenadressen verknüpft sind, mithilfe von vordefinierten URLs in [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads) und [REST3 hochzuladen und ](https://developer.adobe.com/commerce/webapi/rest/modules/s3-uploads) abzurufen. Mit REST können Sie auch Kategoriebilder hochladen. <!-- CCSAAS-3250 -->
 
-* Administrator: `https://eu1.admin.commerce.adobe.com`
-* REST und GraphQL: `https://eu1.api.commerce.adobe.com`
+* Die Endpunkte `POST /V1/customers` und `PUT /V1/customers/{customerId}` wurden der [REST-API“ hinzugefügt](https://developer.adobe.com/commerce/webapi/rest/reference/) um Kunden zu erstellen und zu aktualisieren. Diese Endpunkte erfordern eine Admin-Autorisierung. <!-- CCSAAS-3112 -->
 
-![Instanz erstellen](./assets/create-instance-eu.png){width="600" align="center" zoomable="yes"}
+* Es wurde die [`exchangeOtpForCustomerToken`-Mutation hinzugefügt](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) für die die E-Mail-Adresse eines Käufers und ein einmaliges Kennwort (One-Time Password, OTP) erforderlich sind und für die im Austausch ein Kunden-Token empfangen wird. Diese Mutation wird normalerweise in Szenarien verwendet, in denen sich ein Kunde mithilfe eines OTP authentifizieren muss, der an seine E-Mail oder sein Telefon gesendet wird.
+
+* Wenn eine im Konfigurationsbildschirm [!UICONTROL **E-Mail-Adressen speichern**] im Admin-Bereich definierte Adresse einen Wert enthält, der auf `example.com` endet, sendet Commerce keine E-Mails an diese Adresse. Stattdessen protokolliert das System, dass die E-Mail nicht gesendet wurde.  <!-- CCSAAS-3533 -->
+
+#### Benutzerdefinierte Bestellattribute
+
+* Admin-Benutzer können jetzt [benutzerdefinierte Bestellattribute](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) direkt in den Bildschirmen „Bestellansicht“, „Bearbeiten“ und „Erstellen“ im Admin-Bedienfeld anzeigen und bearbeiten. Diese Verbesserung verbessert die Verwaltung von benutzerdefinierten Bestelldaten, die über GraphQL erstellt wurden. <!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]
