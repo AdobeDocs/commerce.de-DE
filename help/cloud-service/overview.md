@@ -142,7 +142,7 @@ Der folgende Vergleich hilft Ihnen bei der Auswahl der besten Option für Ihre I
   </tr>
 </table>
 
-Weitere Informationen zur Integration von Produktvisualisierungen mit AEM Assets in [ finden Sie im Handbuch zur Integration von ](../aem-assets-integration/overview.md)AEM Assets mit [!DNL Adobe Commerce as a Cloud Service].
+Weitere Informationen zur Integration von Produktvisualisierungen mit AEM Assets in [&#x200B; finden Sie im Handbuch zur Integration von &#x200B;](../aem-assets-integration/overview.md)AEM Assets mit [!DNL Adobe Commerce as a Cloud Service].
 
 ## Entwicklerplattform
 
