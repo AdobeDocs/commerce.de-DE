@@ -2,9 +2,9 @@
 title: Regeln hinzufügen
 description: Erfahren Sie, wie Sie Merchandising-Suchregeln erstellen.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 00c6d728b1bc425c873bdf46293085b8da242782
+source-git-commit: 0b8ab786bb6ec333337dc114de214b6d8e4df427
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '2046'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Um eine Regel zu erstellen, müssen Sie zunächst mit dem Regeleditor die Beding
 ## Regel hinzufügen
 
 1. Gehen Sie im Admin zu **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Legen Sie den **Bereich** fest, um die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings) zu identifizieren, für die die Regel gilt.
+1. Legen Sie den **Bereich** fest, um die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) zu identifizieren, für die die Regel gilt.
 1. Klicken Sie auf den **Merchandising suchen**-Arbeitsbereich.
 1. Klicken Sie **Regel hinzufügen**, um den Regeleditor zu starten.
 
@@ -90,6 +90,33 @@ Store-Inhaber können die folgenden Arten von Rangfolgestrategien einrichten:
 * Keine: Die Produkte werden nach Relevanz sortiert.
 
 Wählen Sie den Strategietyp für die Regel aus. Das Fenster **Regel testen** zeigt die erwarteten Ergebnisse an.
+
+### Funktionsweise der intelligenten Rangfolgenbewertung
+
+Das intelligente Ranking bestimmt die endgültige Produktreihenfolge durch die Kombination zweier Schlüsselfaktoren: **Textrelevanz** und **Verhaltenssignale**. Wenn Sie verstehen, wie diese Faktoren interagieren, können Sie realistische Erwartungen an Ihre Suchergebnisse stellen.
+
+**Bewertungskomponenten:**
+
+* **Textrelevanz**: Der dominante Faktor bei der Bewertung. Dadurch wird gemessen, wie gut der Name, die Beschreibung und die Attribute eines Produkts mit der Suchanfrage übereinstimmen. Die Textrelevanz-Bewertung ist unbegrenzt (hat keine bestimmte Obergrenze) und wird durch Faktoren wie folgende beeinflusst:
+
+   * Häufigkeit des Auftretens von übereinstimmenden Wörtern.
+   * Länge (in Worten) der Produktnamen/-beschreibungen.
+
+* **Verhaltenssignale**: Ein begrenzter Verstärker, der zusätzlich zum Textrelevanzwert angewendet wird. Wenn Sie eine intelligente Rangfolgestrategie wie „Am häufigsten angezeigt“ oder „Am häufigsten gekauft“ auswählen, erhalten Produkte mit höheren Verhaltenssignalen eine feste Steigerung ihrer Bewertungen. Dieser Schub hat jedoch eine definierte Grenze.
+
+**Warum das am häufigsten angezeigte Produkt möglicherweise nicht zuerst angezeigt wird:**
+
+Die textliche Relevanz dominiert in der Regel das Ranking, da die Punktzahl unbegrenzt ist, während die Verhaltenssteigerungen fixiert sind. Daher übertreffen Produkte mit starkem Text häufig diejenigen mit höheren Interaktionssignalen. Verhaltenssteigerungen allein können große Lücken in der Textrelevanz möglicherweise nicht ausgleichen. Das intelligente Ranking berücksichtigt dies, indem sowohl die Spielqualität als auch die Kundeninteraktion berücksichtigt werden, was die Gesamtrelevanz verbessert. Die Qualität der Textübereinstimmung bleibt jedoch der primäre Treiber der Rangfolge.
+
+**Beispiel:**
+
+Ein Händler verwendet die „am häufigsten angesehene“ intelligente Rangfolgestrategie und sucht nach „Candle“. Sie erwarten, dass die Produkt-SKU YAN-K-E-512 an der Spitze der Ergebnisse angezeigt wird, da sie die höchste Ansichtsanzahl aufweist. Andere Produkte sind jedoch höher:
+
+* **Texas Candle** (1. Position): Hat einen kürzeren, saubereren Produktnamen, der einen sehr hohen Textrelevanzwert erzeugt. Obwohl es weniger Ansichten als YAN-K-E-512 hat, überwiegt seine überlegene Textübereinstimmung den Verhaltensschub.
+
+* **YAN-K-E-512** (untere Position): Obwohl der Name das höchste Ansichts-Perzentil in den Verhaltensdaten mit dem Status „Am häufigsten angezeigt“ hat, erzeugt sein komplexer, auf SKU basierender Name einen niedrigeren Textrelevanzwert. Der feste Verhaltensschub reicht nicht aus, um diese Lücke in der Textrelevanz zu schließen.
+
+Unter [Suchregeln](./best-practice.md#search-rules) erfahren Sie, wie Sie die Auffindbarkeit von Produkten mithilfe von Regeln verbessern.
 
 ### Einschränkungen
 

@@ -1,11 +1,11 @@
 ---
 title: Regeln erstellen und verwalten
 description: Erfahren Sie, wie Sie Merchandising-Regeln erstellen und verwalten.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
+source-git-commit: 5f3bde7070857cbfd6892e5881ce0437973f0cc0
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '2103'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,33 @@ Store-Inhaber können die folgenden Arten von Rangfolgestrategien einrichten:
 - Keine: Die Produkte werden nach Relevanz sortiert.
 
 Wählen Sie den Strategietyp für die Regel aus. Das Fenster **Regel testen** zeigt die erwarteten Ergebnisse an.
+
+#### Funktionsweise der intelligenten Rangfolgenbewertung
+
+Das intelligente Ranking bestimmt die endgültige Produktreihenfolge durch die Kombination zweier Schlüsselfaktoren: **Textrelevanz** und **Verhaltenssignale**. Wenn Sie verstehen, wie diese Faktoren interagieren, können Sie realistische Erwartungen an Ihre Suchergebnisse stellen.
+
+**Bewertungskomponenten:**
+
+- **Textrelevanz**: Der dominante Faktor bei der Bewertung. Dadurch wird gemessen, wie gut der Name, die Beschreibung und die Attribute eines Produkts mit der Suchanfrage übereinstimmen. Die Textrelevanz-Bewertung ist unbegrenzt (hat keine bestimmte Obergrenze) und wird durch Faktoren wie folgende beeinflusst:
+
+   - Häufigkeit des Auftretens von übereinstimmenden Wörtern.
+   - Länge (in Worten) der Produktnamen/-beschreibungen.
+
+- **Verhaltenssignale**: Ein begrenzter Verstärker, der zusätzlich zum Textrelevanzwert angewendet wird. Wenn Sie eine intelligente Rangfolgestrategie wie „Am häufigsten angezeigt“ oder „Am häufigsten gekauft“ auswählen, erhalten Produkte mit höheren Verhaltenssignalen eine feste Steigerung ihrer Bewertungen. Dieser Schub hat jedoch eine definierte Grenze.
+
+**Warum das am häufigsten angezeigte Produkt möglicherweise nicht zuerst angezeigt wird:**
+
+Die textliche Relevanz dominiert in der Regel das Ranking, da die Punktzahl unbegrenzt ist, während die Verhaltenssteigerungen fixiert sind. Daher übertreffen Produkte mit starkem Text häufig diejenigen mit höheren Interaktionssignalen. Verhaltenssteigerungen allein können große Lücken in der Textrelevanz möglicherweise nicht ausgleichen. Das intelligente Ranking berücksichtigt dies, indem sowohl die Spielqualität als auch die Kundeninteraktion berücksichtigt werden, was die Gesamtrelevanz verbessert. Die Qualität der Textübereinstimmung bleibt jedoch der primäre Treiber der Rangfolge.
+
+**Beispiel:**
+
+Ein Händler verwendet die „am häufigsten angesehene“ intelligente Rangfolgestrategie und sucht nach „Candle“. Sie erwarten, dass die Produkt-SKU YAN-K-E-512 an der Spitze der Ergebnisse angezeigt wird, da sie die höchste Ansichtsanzahl aufweist. Andere Produkte sind jedoch höher:
+
+- **Texas Candle** (1. Position): Hat einen kürzeren, saubereren Produktnamen, der einen sehr hohen Textrelevanzwert erzeugt. Obwohl es weniger Ansichten als YAN-K-E-512 hat, überwiegt seine überlegene Textübereinstimmung den Verhaltensschub.
+
+- **YAN-K-E-512** (untere Position): Obwohl der Name das höchste Ansichts-Perzentil in den Verhaltensdaten mit dem Status „Am häufigsten angezeigt“ hat, erzeugt sein komplexer, auf SKU basierender Name einen niedrigeren Textrelevanzwert. Der feste Verhaltensschub reicht nicht aus, um diese Lücke in der Textrelevanz zu schließen.
+
+Unter [Suchregeln](./best-practice.md#tips-to-optimize-search-rules) erfahren Sie, wie Sie die Auffindbarkeit von Produkten mithilfe von Regeln verbessern.
 
 #### Einschränkungen
 
