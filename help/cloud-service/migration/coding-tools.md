@@ -1,13 +1,13 @@
 ---
 title: KI-Kodierungstools für Erweiterungen
 description: Erfahren Sie, wie Sie die KI-Tools zum Erstellen von Commerce App Builder-Erweiterungen verwenden.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 9382ce8f139f9d2f4ec1732c0d83b466cd54fa37
+source-git-commit: 0e76dee3b33ca7906b22d33d15c6c75ca1c391ef
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1686'
 ht-degree: 0%
 
 ---
@@ -105,6 +105,16 @@ Bei der Auswahl des Package Managers empfiehlt Adobe aus Konsistenzgründen die 
 
    * MCP-Konfiguration: `.vscode/mcp.json`
    * Regelverzeichnis: `.github/copilot-instructions.md`
+
+>[!NOTE]
+>
+>Vor der Bereitstellung des Projekts müssen Sie die folgenden Konfigurationsaufgaben durchführen:
+>
+>* Melden Sie sich über die Adobe I/O-CLI [ ](https://developer.adobe.com/console)Adobe Developer Console an.
+>* Erstellen Sie ein App Builder-Projekt (siehe [Projekt-Setup](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
+>* Einrichten von Umgebungsvariablen in einer `.env`.
+>
+>Sie können diese Konfigurationsschritte manuell durchführen oder die KI-Kodierungs-Tools nutzen, um Sie durch den Prozess zu führen. Siehe [Erstellen einer Integration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) für detaillierte Konfigurationsanweisungen.
 
 ## Konfiguration nach der Installation
 
@@ -222,7 +232,7 @@ Lesen Sie die folgenden Ressourcen, um loszulegen:
 
 * [Integrations-Starter-Kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce Starter Kit-Vorlagen](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Beispielanwendungen für App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Warum Sie diese Ressourcen verwenden sollten
@@ -249,7 +259,7 @@ Das folgende Vierphasenprotokoll wird automatisch vom Regelsystem durchgesetzt. 
 
 ### Anfordern von Implementierungsplänen für die komplexe Entwicklung
 
-Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [&#x200B; hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
+Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [ hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
 
 ```terminal
 Create a detailed implementation plan for this complex development.
