@@ -1,11 +1,11 @@
 ---
 title: Empfehlungen erstellen und verwalten
 description: Erfahren Sie, wie Sie Empfehlungen erstellen und verwalten.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
+source-git-commit: 032a19183b79cea1bfe27e8a4e20c60ba5ac6b8b
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
 Sie können eine vorhandene Empfehlung bearbeiten, deaktivieren oder löschen.
 
-1. Navigieren Sie in der Seitenleiste _0&rbrace;Adobe Commerce Optimizer&quot; zu_ Merchandising _>_ Recommendations **.**
+1. Navigieren Sie in der Seitenleiste _0}Adobe Commerce Optimizer&quot; zu_ Merchandising _>_ Recommendations **.**
 
 1. Wählen Sie die Empfehlung aus, die Sie ändern möchten.
 
@@ -161,11 +161,9 @@ Im Folgenden sind mögliche Gründe und Lösungen für häufige Bewertungen der 
 
 ## Recommendations-Vorschau
 
->[!IMPORTANT]
->
->Diese Funktion ist noch nicht verfügbar.
-
 Das Bedienfeld _Empfohlene Produktvorschau_ ist immer verfügbar mit einer Auswahl von Produkten, die in der Empfehlungseinheit angezeigt werden können, wenn sie in der Storefront bereitgestellt werden.
+
+![Recommendations-Vorschau](../../assets/rec-preview.png)
 
 Um eine Empfehlung beim Arbeiten in einer Nicht-Produktionsumgebung zu testen, können Sie Empfehlungsdaten aus einer anderen Quelle abrufen. Händler können so mit Regeln experimentieren und eine Vorschau der Recommendations anzeigen, bevor sie sie in der Produktion bereitstellen.
 
