@@ -41,7 +41,7 @@ Mit dem Textbaustein werden die folgenden Ressourcen zur Authoring-Umgebung von 
 
 >[!NOTE]
 >
-> Weitere Informationen zum {[}Textbaustein für AEM Commerce finden Sie auf ](https://github.com/ankumalh/assets-commerce) Seite „Readme **.**
+> Weitere Informationen zum {[}Textbaustein für AEM Commerce finden Sie auf &#x200B;](https://github.com/ankumalh/assets-commerce) Seite „Readme **.**
 
 ### Voraussetzungen
 
@@ -122,13 +122,13 @@ Die Komponente Produktdaten-Benutzeroberfläche wird automatisch auf Grundlage d
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Optional. Um genehmigte Commerce-Assets beim Hochladen in die AEM Assets-Umgebung automatisch zu synchronisieren, setzen Sie den Standardwert für das _[!UICONTROL Review Status]_auf der Registerkarte `Basic` auf `approved`.
+1. Optional. Um genehmigte Commerce-Assets beim Hochladen in die AEM Assets-Umgebung automatisch zu synchronisieren, setzen Sie den Standardwert für das _[!UICONTROL Review Status]_&#x200B;auf der Registerkarte `Basic` auf `approved`.
 
 1. Speichern Sie die Aktualisierung.
 
 #### Anwenden des Metadatenprofils auf den Commerce Assets-Quellordner
 
-1. Wählen Sie auf [!UICONTROL  Metadata Profiles] Seite das Integrationsprofil Commerce aus.
+1. Wählen Sie auf [!UICONTROL &#x200B; Metadata Profiles] Seite das Integrationsprofil Commerce aus.
 
 1. Wählen Sie im Menü Aktion die Option **[!UICONTROL Apply Metadata Profiles to Folders]** aus.
 
