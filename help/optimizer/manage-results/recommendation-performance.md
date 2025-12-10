@@ -51,7 +51,7 @@ Auf der Seite Recommendations-Performance wird eine Liste der konfigurierten Rec
 
 ## Empfehlungen erstellen oder verwalten
 
-Erfahren Sie, wie [ eine neue Empfehlung erstellen oder eine vorhandene ](../merchandising/recommendations/create.md) verwalten können.
+Erfahren Sie, wie [&#x200B; eine neue Empfehlung erstellen oder eine vorhandene &#x200B;](../merchandising/recommendations/create.md) verwalten können.
 
 ## Workspace-Steuerelemente
 

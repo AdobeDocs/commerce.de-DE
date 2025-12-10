@@ -74,5 +74,5 @@ In der Admin gestellte Anfragen funktionieren etwas anders. Bei der Vorschau im 
 
 ## Zuweisungen von Kategorie-Merchandising und Kategorie-Produkten
 
-[!DNL Live Search] können Sie nach Kategorien filtern. Weitere Informationen finden [ unter &quot;](category-merch.md)&quot;.
-In Adobe Commerce können Sie jedoch eine virtuelle Kategorie mit [Kategorieproduktzuweisungen“ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Dieser Kategorietyp wird zur Laufzeit erstellt und ist in der Kategoriedatenbank nicht vorhanden. Daher können [!DNL Live Search] diesen Kategorietyp nicht lesen oder verwenden.
+[!DNL Live Search] können Sie nach Kategorien filtern. Weitere Informationen finden [&#x200B; unter &quot;](category-merch.md)&quot;.
+In Adobe Commerce können Sie jedoch eine virtuelle Kategorie mit [Kategorieproduktzuweisungen“ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Dieser Kategorietyp wird zur Laufzeit erstellt und ist in der Kategoriedatenbank nicht vorhanden. Daher können [!DNL Live Search] diesen Kategorietyp nicht lesen oder verwenden.
