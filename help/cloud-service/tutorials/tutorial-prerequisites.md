@@ -4,9 +4,9 @@ description: Lernen Sie die Voraussetzungen für das Labor der Bewertungserweite
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: e153e974be1dc5ec8ff2eff8d699ce87ef6708dc
+source-git-commit: fda04de3301a305c897c34d3dd0166d50fc3c12a
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -27,10 +27,10 @@ Auf dieser Seite werden die Voraussetzungen und Einrichtungsschritte für Tutori
   npm install -g @adobe/aio-cli
   ```
 
-* Installieren des Commerce-Plug-ins
+* Installieren Sie die Plug-ins [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime) und [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev):
 
   ```bash
-  aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
+  aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
 * Herunterladen einer KI-unterstützten IDE wie [Cursor](https://cursor.com/download) (empfohlen), andere IDEs wie Claude Code, Gemini CLI oder Copilot werden ebenfalls unterstützt, könnten jedoch Änderungen an den Eingabeaufforderungen und anderen Schritten im Tutorial erfordern.
@@ -169,6 +169,12 @@ Führen Sie den folgenden Befehl aus, um die Workspace-Konfigurationsdatei herun
 
 ```bash
 aio console workspace download workspace.json
+```
+
+Kopieren Sie die Workspace-Konfigurationsdatei in das `scripts`:
+
+```bash
+cp workspace.json scripts/
 ```
 
 ### Lokalen Arbeitsbereich mit Remote-Arbeitsbereich verbinden
