@@ -3,7 +3,7 @@ title: Synchronisieren von Daten mit dem SaaS-Datenexport
 description: Erfahren Sie, wie  [!DNL SaaS Data Export]  Daten zwischen Adobe Commerce-Instanzen und verbundenen SaaS-Services erfasst und synchronisiert.
 role: Admin, Developer
 exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
-source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Wenn Sie einen Commerce-Service installieren, für den ein Datenexport erforderlich ist, z. B. Catalog Service, Live Search oder Product Recommendations, wird eine Sammlung von SaaS-Datenexportmodulen installiert, um den Datenerfassungs- und Synchronisierungsprozess zu verwalten.
 
-Der SaaS-Datenexport verschiebt Produktdaten laufend von einer Adobe Commerce-Instanz auf die Commerce Services-Plattform, um die Daten auf dem neuesten Stand zu halten. Beispielsweise benötigen Sie für Produktempfehlungen aktuelle Kataloginformationen, um Empfehlungen mit korrekten Namen, Preisen und Verfügbarkeit genau zurückzugeben. Verwenden Sie [Daten-Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce/user-guides/data-services/catalog-sync), um den Synchronisierungsprozess zu beobachten und zu verwalten, oder die Befehlszeilenschnittstelle, um eine Synchronisierung Trigger und Produktdaten für die Nutzung durch Commerce Services neu zu indizieren.
+Der SaaS-Datenexport verschiebt Produktdaten laufend von einer Adobe Commerce-Instanz auf die Commerce Services-Plattform, um die Daten auf dem neuesten Stand zu halten. Beispielsweise benötigen Sie für Produktempfehlungen aktuelle Kataloginformationen, um Empfehlungen mit korrekten Namen, Preisen und Verfügbarkeit genau zurückzugeben. Verwenden Sie [Daten-Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync), um den Synchronisierungsprozess zu beobachten und zu verwalten, oder die Befehlszeilenschnittstelle, um eine Synchronisierung Trigger und Produktdaten für die Nutzung durch Commerce Services neu zu indizieren.
 
 Das folgende Diagramm zeigt den SaaS-Datenexportfluss.
 
@@ -65,7 +65,7 @@ Diese Aufträge werden jede Minute ausgeführt.
 
 Damit die partielle Synchronisierung funktioniert, benötigt die Commerce-Anwendung die folgende Konfiguration:
 
-- [Die Aufgabenplanung wird über Cron-Aufträge aktiviert](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=de)
+- [Die Aufgabenplanung wird über Cron-Aufträge aktiviert](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
 
 - Alle SaaS-Datenexportindizierer sind im `Update by Schedule`-Modus konfiguriert.
 
@@ -82,7 +82,7 @@ Die Synchronisierung fehlgeschlagener Elemente wiederholen verwendet einen separ
 
 Die meisten Synchronisierungsaktivitäten werden automatisch auf Grundlage der Anwendungskonfiguration verarbeitet. Der SaaS-Datenexport bietet jedoch auch Tools zur Verwaltung des Prozesses.
 
-- Admin-Benutzer können den Synchronisierungsfortschritt anzeigen und verfolgen und Informationen zu den Daten vom [Daten-Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) abrufen.
+- Admin-Benutzer können den Synchronisierungsfortschritt anzeigen und verfolgen und Informationen zu den Daten vom [Daten-Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) abrufen.
 
 - Entwickler, Systemintegratoren oder Admins mit Zugriff auf den Commerce-Anwendungsserver können den Synchronisierungsprozess und die Daten-Feeds mithilfe des Adobe Commerce-Befehlszeilen-Tools (CLI) verwalten. Siehe [Verwalten von Synchronisierungsvorgängen mithilfe der Commerce-CLI](data-export-cli-commands.md).
 
@@ -90,11 +90,11 @@ Die meisten Synchronisierungsaktivitäten werden automatisch auf Grundlage der A
 
 Die Synchronisierung von teilweise synchronisierten und fehlgeschlagenen Elementen mit „Erneut versuchen“ funktioniert nur, wenn die Commerce-Instanz korrekt konfiguriert wurde. Normalerweise wird die Konfiguration abgeschlossen, wenn der Commerce-Service eingerichtet wird. Wenn der Datenexport nicht ordnungsgemäß funktioniert, überprüfen Sie die folgende Konfiguration.
 
-- [Bestätigen Sie, dass Cron-Aufträge ausgeführt werden](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- [Bestätigen Sie, dass Cron-Aufträge ausgeführt werden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
 
-- Stellen Sie sicher, dass die Indexer vom [Admin](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/index-management) oder mithilfe des Commerce CLI-`bin/magento indexer:info` ausgeführt werden.
+- Stellen Sie sicher, dass die Indexer vom [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) oder mithilfe des Commerce CLI-`bin/magento indexer:info` ausgeführt werden.
 
-- Stellen Sie sicher, dass die Indexer für die folgenden Feeds auf `Update by Schedule` eingestellt sind: Katalogattribute, Produkt, Produktüberschreibungen und Produktvariante. Sie können die Indexer unter [Indexverwaltung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/index-management) im Admin oder über die CLI (`bin/magento indexer:show-mode | grep -i feed`) überprüfen.
+- Stellen Sie sicher, dass die Indexer für die folgenden Feeds auf `Update by Schedule` eingestellt sind: Katalogattribute, Produkt, Produktüberschreibungen und Produktvariante. Sie können die Indexer unter [Indexverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) im Admin oder über die CLI (`bin/magento indexer:show-mode | grep -i feed`) überprüfen.
 
 ### Ereignis-Manager-Benachrichtigungen für die Datenübertragungsprotokollierung
 

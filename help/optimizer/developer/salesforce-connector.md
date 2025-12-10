@@ -2,7 +2,7 @@
 title: Salesforce Commerce Connector
 description: Erfahren Sie mehr über  [!DNL Commerce Optimizer SFCC Connector] , das einen Ausgangspunkt für die Integration von Salesforce Commerce B2C mit  [!DNL Adobe Commerce Optimizer] bietet, um Katalogdaten zu synchronisieren und den Connector zu implementieren und anzupassen, um Geschäftsvorgänge zu unterstützen.
 role: Admin, Developer
-source-git-commit: fc6f8566a1932e830a37bcfa32cd1c4168c67c68
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '1115'
 ht-degree: 0%
@@ -15,7 +15,7 @@ Die auf der Adobe App Builder-Technologie aufbauende [!DNL Commerce Optimizer Sa
 
 Standardmäßig bietet der Connector zuverlässige Datensynchronisierungsfunktionen und die Flexibilität, Workflows an Ihre Geschäftsanforderungen anzupassen.
 
-Eine vollständige Video-Tutorial-Reihe finden Sie unter [Informationen zum Salesforce Commerce Cloud Starter Kit](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+Eine vollständige Video-Tutorial-Reihe finden Sie unter [Informationen zum Salesforce Commerce Cloud Starter Kit](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 ## Wichtigste Funktionen
 
@@ -47,7 +47,7 @@ Die [!DNL Salesforce Commerce Connector] ist ideal für:
 * **AEM-Kunden** Verwalten von Produktkatalogen über Salesforce Commerce B2C bei Verwendung der Adobe Commerce-Storefront mit Edge Delivery Services
 * **Einzelhändler mit Anforderungen für mehrere Gebietsschemata** Synchronisieren lokalisierter Produktinformationen über Märkte und Sprachen hinweg
 
-## Anwendungsfälle
+## Anwendungsszenarien
 
 Der Connector unterstützt mehrere wichtige Anwendungsfälle:
 

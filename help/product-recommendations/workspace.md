@@ -2,7 +2,7 @@
 title: '[!DNL Product Recommendations] Workspace'
 description: Erfahren Sie, wie Sie die Leistung von Produktempfehlungen konfigurieren, verwalten und überwachen.
 exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
-source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Wenn Sie eine Headless-Storefront verwenden, finden Sie in der folgenden Dokumen
 
 ## Festlegen des Umfangs
 
-Zunächst wird [Umfang](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de) aller Empfehlungseinstellungen auf `Default Store View` festgelegt. Wenn Ihre Commerce-Installation mehrere Store-Ansichten enthält, setzen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings), für die Ihre Empfehlungen gelten.
+Zunächst wird [Umfang](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) aller Empfehlungseinstellungen auf `Default Store View` festgelegt. Wenn Ihre Commerce-Installation mehrere Store-Ansichten enthält, setzen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings), für die Ihre Empfehlungen gelten.
 
 ## Festlegen des Datumsbereichs von Metriken
 

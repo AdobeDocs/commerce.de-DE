@@ -1,9 +1,9 @@
 ---
 title: Suchleistung
 description: Auf der Seite Suchleistung finden Sie insight zu den Suchbegriffen, die Kundinnen und Kunden verwenden.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: c408f3de4e3b980545a655e2f6040187f00bc571
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '1825'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Um Suchergebnisse mit [!DNL Adobe Commerce Optimizer] zu optimieren, überwachen
 
   Um die Nullergebnisrate zu reduzieren, haben Sie folgende Möglichkeiten:
 
-   - Bieten Sie alternative oder verwandte Suchbegriffe an, z[&#x200B; B. &quot;](../merchandising/synonyms/overview.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
+   - Bieten Sie alternative oder verwandte Suchbegriffe an, z[ B. &quot;](../merchandising/synonyms/overview.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
    - Überprüfen Sie regelmäßig Nullergebnisabfragen, um Muster zu identifizieren und notwendige Anpassungen an Ihrem Produktkatalog und Ihren Sucheinstellungen vorzunehmen.
 
 Sie können diese Metrikdaten verwenden, um Ihre Suchfunktion wie folgt zu optimieren:
@@ -110,7 +110,7 @@ Stellen Sie sicher, dass die untergeordneten Produkte der konfigurierbaren Produ
 
 ### Verwenden von Produktmetadaten
 
-Stellen Sie sicher, dass genaue und [&#x200B; Produktattribute als durchsuchbar eingerichtet sind und eine Gewichtung &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Beachten Sie, dass die Attribute „SKU“, „Name“ und „Kategorie“ standardmäßig durchsuchbar sind und nicht von der Suche ausgeschlossen werden können. Verwenden Sie für optimale Ergebnisse keine Leerzeichen in Ihren SKUs.
+Stellen Sie sicher, dass genaue und [ Produktattribute als durchsuchbar eingerichtet sind und eine Gewichtung ](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Beachten Sie, dass die Attribute „SKU“, „Name“ und „Kategorie“ standardmäßig durchsuchbar sind und nicht von der Suche ausgeschlossen werden können. Verwenden Sie für optimale Ergebnisse keine Leerzeichen in Ihren SKUs.
 
 Um die Suchrelevanz zu erhöhen, weisen Sie jedem durchsuchbaren Attribut eine Gewichtung zu. Attribute mit einer höheren Gewichtung sollten in den Suchergebnissen höher angezeigt werden. Die Sortierung nach Relevanz wird von mehreren Kriterien beeinflusst, z. B. der Suchgewichtung. Dies bedeutet, dass manchmal Attribute mit niedrigerer Suchgewichtung immer noch mehr Relevanz haben können als Attribute mit höherer Suchgewichtung. Andere Kriterien können die Anzahl der Übereinstimmungen in einem bestimmten Attribut, die Position des gefundenen Suchbegriffs und die Gesamttextstruktur vor und nach einem Suchbegriff sein.
 

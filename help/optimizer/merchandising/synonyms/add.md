@@ -1,8 +1,9 @@
 ---
 title: Erstellen und Verwalten von Synonymen
 description: Erfahren Sie, wie Sie Synonyme für erstellen und verwalten [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -31,7 +32,7 @@ Befolgen Sie die Anweisungen für den [Typ des Synonyms](type.md) den Sie erstel
    ![Zwei-Wege-Synonym hinzufügen](../../assets/synonym-add-two-way.png)
 
 1. Geben Sie den **Keyword**-Begriff oder die zuzuordnende Phrase ein.
-1. Geben Sie **Begriffe**&#x200B;Erweiterung) ein, die Sie als Synonyme für das Keyword hinzufügen möchten. Trennen Sie mehrere Begriffe durch Kommas.
+1. Geben Sie **Begriffe**Erweiterung) ein, die Sie als Synonyme für das Keyword hinzufügen möchten. Trennen Sie mehrere Begriffe durch Kommas.
 In diesem Beispiel lautet das Keyword, mit dem eine Übereinstimmung erzielt werden soll, „Hose“, und die Menge der Ausdehnungsbegriffe lautet „Hose, Hose“.
 
    ![Beispiel für ein Zwei-Wege-Synonym](../../assets/synonym-add-two-way-example.png)
@@ -75,7 +76,7 @@ In diesem Beispiel lautet das Keyword, mit dem eine Übereinstimmung erzielt wer
 
 ## Verwalten von Synonymen
 
-Befolgen Sie diese Anweisungen, um bestehende [!DNL Adobe Commerce Optimizer] ([) &#x200B;](overview.md) verwalten.
+Befolgen Sie diese Anweisungen, um bestehende [!DNL Adobe Commerce Optimizer] ([) ](overview.md) verwalten.
 
 ## Synonym suchen
 

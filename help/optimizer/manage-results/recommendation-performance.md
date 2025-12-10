@@ -1,9 +1,9 @@
 ---
 title: Recommendations-Leistung
 description: Die Seite Recommendations-Performance zeigt insight die Leistung Ihrer Produktempfehlungen an.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: 177ebffe0295fdc87b6f4a60473ebfda6bea0f01
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Auf der Seite Recommendations-Performance wird eine Liste der konfigurierten Rec
 
 ## Empfehlungen erstellen oder verwalten
 
-Erfahren Sie, wie [&#x200B; eine neue Empfehlung erstellen oder eine vorhandene &#x200B;](../merchandising/recommendations/create.md) verwalten können.
+Erfahren Sie, wie [ eine neue Empfehlung erstellen oder eine vorhandene ](../merchandising/recommendations/create.md) verwalten können.
 
 ## Workspace-Steuerelemente
 

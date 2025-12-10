@@ -1,7 +1,8 @@
 ---
 title: Merchandising suchen
 description: '[!DNL Live Search] Merchandising-Regeln kombinieren Logik mit Aktionen, um das Einkaufserlebnis zu gestalten.'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 9894bf2b-8556-4057-aa23-ebdcb1599914
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 0%
@@ -73,5 +74,5 @@ In der Admin gestellte Anfragen funktionieren etwas anders. Bei der Vorschau im 
 
 ## Zuweisungen von Kategorie-Merchandising und Kategorie-Produkten
 
-[!DNL Live Search] können Sie nach Kategorien filtern. Weitere Informationen finden [&#x200B; unter &quot;](category-merch.md)&quot;.
-In Adobe Commerce können Sie jedoch eine virtuelle Kategorie mit [Kategorieproduktzuweisungen“ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html?lang=de). Dieser Kategorietyp wird zur Laufzeit erstellt und ist in der Kategoriedatenbank nicht vorhanden. Daher können [!DNL Live Search] diesen Kategorietyp nicht lesen oder verwenden.
+[!DNL Live Search] können Sie nach Kategorien filtern. Weitere Informationen finden [ unter &quot;](category-merch.md)&quot;.
+In Adobe Commerce können Sie jedoch eine virtuelle Kategorie mit [Kategorieproduktzuweisungen“ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Dieser Kategorietyp wird zur Laufzeit erstellt und ist in der Kategoriedatenbank nicht vorhanden. Daher können [!DNL Live Search] diesen Kategorietyp nicht lesen oder verwenden.
