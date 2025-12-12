@@ -1,11 +1,11 @@
 ---
 title: KI-Kodierungstools für Erweiterungen
 description: Erfahren Sie, wie Sie die KI-Tools zum Erstellen von Commerce App Builder-Erweiterungen verwenden.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 8f7b5536388e8f4cb1e763b430bdca8644d1da5c
+source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 0%
@@ -72,7 +72,7 @@ Die Verwendung der KI-Kodierungs-Tools bietet die folgenden Vorteile:
 
 Der Einrichtungsprozess fragt Sie nach den Konfigurationsoptionen. Wählen Sie als Setup-Speicherort „Aktuelles Verzeichnis“, um die Tools in Ihrem aktuellen Arbeitsbereich zu installieren:
 
-```terminal
+```plain
 ? Where would you like to setup the tools?
 ❯ Current directory
   New directory
@@ -80,7 +80,7 @@ Der Einrichtungsprozess fragt Sie nach den Konfigurationsoptionen. Wählen Sie a
 
 Bei der Auswahl des Codierungs-Agenten empfiehlt Adobe die Auswahl von `Cursor` für ein optimales Entwicklungserlebnis:
 
-```terminal
+```plain
 ? Which coding agent would you like to use?
 ❯ Cursor
   Copilot
@@ -90,7 +90,7 @@ Bei der Auswahl des Codierungs-Agenten empfiehlt Adobe die Auswahl von `Cursor` 
 
 Bei der Auswahl des Package Managers empfiehlt Adobe aus Konsistenzgründen die Verwendung von `npm`:
 
-```terminal
+```plain
 ? Which package manager would you like to use?
 ❯ npm
   yarn
@@ -118,7 +118,7 @@ Bei der Auswahl des Package Managers empfiehlt Adobe aus Konsistenzgründen die 
 >
 >Vor der Bereitstellung des Projekts müssen Sie die folgenden Konfigurationsaufgaben durchführen:
 >
->* Melden Sie sich über die Adobe I/O-CLI [&#x200B; &#x200B;](https://developer.adobe.com/console)Adobe Developer Console an.
+>* Melden Sie sich über die Adobe I/O-CLI [ ](https://developer.adobe.com/console)Adobe Developer Console an.
 >* Erstellen Sie ein App Builder-Projekt (siehe [Projekt-Setup](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Einrichten von Umgebungsvariablen in einer `.env`.
 >
@@ -168,7 +168,7 @@ aio auth login
 
 1. Überprüfen Sie den Serverstatus. Der Commerce Extensibility MCP-Server sollte wie folgt aussehen:
 
-   ```terminal
+   ```plain
    Status: Connected/Active
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
@@ -176,7 +176,7 @@ aio auth login
 
 1. Verwenden Sie die folgende Eingabeaufforderung, um zu sehen, ob der Agent den MCP-Server verwendet. Ist dies nicht der Fall, bitten Sie den Agenten ausdrücklich, die verfügbaren MCP-Tools zu verwenden.
 
-```terminal
+```plain
 What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
 ```
 
@@ -195,7 +195,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Überprüfen Sie den Serverstatus. Die `MCP:commerce-extensibility` sollte wie folgt aussehen:
 
-   ```terminal
+   ```plain
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
    2025-11-13 12:58:50.652 [info] Connection state: Starting
    2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
@@ -209,7 +209,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Verwenden Sie die folgende Eingabeaufforderung, um zu sehen, ob der Agent den MCP-Server verwendet. Ist dies nicht der Fall, bitten Sie den Agenten ausdrücklich, die verfügbaren MCP-Tools zu verwenden.
 
-   ```terminal
+   ```plain
    What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
    ```
 
@@ -217,7 +217,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 Die folgende Beispiel-Eingabeaufforderung erstellt eine Erweiterung, um Benachrichtigungen zu senden, wenn eine Bestellung aufgegeben wird.
 
-```terminal
+```plain
 Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
@@ -230,7 +230,7 @@ Payment Type -> pType
 
 Zusätzlich zur Eingabeaufforderung können Sie den `/search-commerce-docs`-Befehl verwenden, um die Dokumentation in Konversationen mit Ihrem Agenten zu durchsuchen. Beispiel:
 
-```text
+```plain
 /search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
@@ -275,7 +275,7 @@ Lesen Sie die folgenden Ressourcen, um loszulegen:
 
 * [Integrations-Starter-Kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce Starter Kit-Vorlagen](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Beispielanwendungen für App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Warum Sie diese Ressourcen verwenden sollten
@@ -302,9 +302,9 @@ Das folgende Vierphasenprotokoll wird automatisch vom Regelsystem durchgesetzt. 
 
 ### Anfordern von Implementierungsplänen für die komplexe Entwicklung
 
-Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [&#x200B; hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
+Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [ hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
 
-```terminal
+```plain
 Create a detailed implementation plan for this complex development.
 ```
 
@@ -320,13 +320,13 @@ Komplexe Adobe Commerce-Erweiterungen umfassen häufig Folgendes:
 
 >[!NOTE]
 >
->Stellen Sie vor der Verwendung der MCP-Tools [, dass Sie bei der Adobe I/O CLI angemeldet &#x200B;](#log-in-to-the-adobe-io-cli).
+>Stellen Sie vor der Verwendung der MCP-Tools [, dass Sie bei der Adobe I/O CLI angemeldet ](#log-in-to-the-adobe-io-cli).
 
 Das Tool ist standardmäßig auf MCP-Tools eingestellt, kann jedoch unter bestimmten Umständen stattdessen CLI-Befehle verwenden. Wenn Sie die Verwendung des MCP-Tools sicherstellen möchten, fordern Sie diese in Ihrer Eingabeaufforderung explizit an.
 
 Wenn CLI-Befehle verwendet werden und Sie stattdessen MCP-Tools verwenden möchten, verwenden Sie die folgende Eingabeaufforderung:
 
-```terminal
+```plain
 Use only MCP tools and not CLI commands
 ```
 
@@ -346,7 +346,7 @@ Es ist wichtig, unnötige Komplexität zu hinterfragen, die durch die KI-Tools v
 
 Wenn unnötige Dateien (`validator.js`, `transformer.js`, `sender.js`) für einfache schreibgeschützte Endpunkte hinzugefügt werden, verwenden Sie die folgenden Eingabeaufforderungen:
 
-```terminal
+```plain
 Why do we need these files for a simple read-only endpoint?
 Perform a root cause analysis before adding complexity
 Verify if simpler solutions exist
@@ -402,47 +402,47 @@ Bitten Sie um Hilfe beim Testen. Die Tools können beim Debuggen, bei der Protok
 
 **Laufzeitaktionen testen**:
 
-```terminal
+```plain
 Help me test the customer-created runtime action running locally
 ```
 
 **Fehler beim Debuggen**:
 
-```terminal
+```plain
 Why did the subscription-updated runtime action activation fail?
 ```
 
 **Protokolle überprüfen**:
 
-```terminal
+```plain
 Help me check the logs for the last stock-monitoring runtime action invocation
 ```
 
 **Erstellen von Test-Payloads**:
 
-```terminal
+```plain
 Generate test data for this Commerce event
 ```
 
-```terminal
+```plain
 Create a test payload for the customer_save_after event
 ```
 
 **Laufzeitendpunkte suchen**:
 
-```terminal
+```plain
 What's the URL for this deployed action?
 ```
 
 **Authentifizierung verarbeiten**:
 
-```terminal
+```plain
 How do I authenticate with this external API?
 ```
 
 **Fehlerbehebung**:
 
-```terminal
+```plain
 Help me debug why this action is returning 500 errors
 ```
 
@@ -477,19 +477,19 @@ Stellen Sie nur geänderte Aktionen bereit, um die Entwicklung zu beschleunigen.
 
 Nutzen Sie nach umfangreichen Änderungen die Tools, um verwaiste Aktionen zu bereinigen. Lassen Sie die KI-Tools den Bereinigungsprozess systematisch durchführen. Sie können verwaiste Aktionen effizient identifizieren, ihren Status überprüfen und sie ohne manuelles Eingreifen sicher entfernen.
 
-```terminal
+```plain
 Help me identify and clean up orphaned runtime actions
 ```
 
 Anfordern des KI-Tools zum Auflisten bereitgestellter Aktionen und Identifizieren nicht verwendeter Aktionen
 
-```terminal
+```plain
 List all deployed actions and identify which ones are no longer needed
 ```
 
 Lassen Sie die KI-Tools verwaiste Aktionen mit entsprechenden Befehlen entfernen
 
-```terminal
+```plain
 Remove the orphaned actions that are no longer part of the current implementation
 ```
 
