@@ -1,7 +1,7 @@
 ---
 title: Opportunities
 description: Identifizieren Sie Möglichkeiten zur Steigerung von Traffic, Interaktion und Konversionen durch die Integration mit Adobe Sites Optimizer für intelligente, datengesteuerte Site-Verbesserungen.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: 7f7b4a3c866c453d9722b708a0ed4e1b601c8e8e
 workflow-type: tm+mt
 source-wordcount: '1349'
@@ -17,7 +17,7 @@ Die **Opportunities** hilft Ihnen, Optimierungen zu identifizieren und zu implem
 
 ## Was sind Opportunities?
 
-[Opportunities](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) sind KI-gestützte Empfehlungen, die Merchandisern dabei helfen, Probleme zu identifizieren und zu beheben, die sich auf die Leistung ihrer Commerce-Site auswirken. Diese Empfehlungen basieren auf [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home), einem Cloud-basierten Service, der die Leistung der Website analysiert und verbessert.
+[Opportunities](https://experienceleague.adobe.com/de/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) sind KI-gestützte Empfehlungen, die Merchandisern dabei helfen, Probleme zu identifizieren und zu beheben, die sich auf die Leistung ihrer Commerce-Site auswirken. Diese Empfehlungen basieren auf [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/de/docs/experience-manager-sites-optimizer/content/home), einem Cloud-basierten Service, der die Leistung der Website analysiert und verbessert.
 
 ## Wichtigste Funktionen
 
@@ -176,7 +176,7 @@ Erfolgsmetriken überwachen wichtige Leistungsindikatoren wie Produkterkennung u
 
 ## Weitere Informationen zu Sites Optimizer
 
-Detaillierte Informationen zu den Funktionen und Leistungsmerkmalen von Sites Optimizer finden Sie in der Dokumentation zu [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home).
+Detaillierte Informationen zu den Funktionen und Leistungsmerkmalen von Sites Optimizer finden Sie in der Dokumentation zu [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/de/docs/experience-manager-sites-optimizer/content/home).
 
 Zusätzliche Ressourcen:
 

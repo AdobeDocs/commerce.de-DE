@@ -1,7 +1,7 @@
 ---
 title: Erfolgsmetriken
 description: Erfolgsmetriken liefern insight in die wichtigsten Leistungsmetriken für Ihren - [!DNL Adobe Commerce Optimizer] .
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
 source-git-commit: 4e85d70dc1b099a5b40a807a76ca589aa9a28f07
 workflow-type: tm+mt
