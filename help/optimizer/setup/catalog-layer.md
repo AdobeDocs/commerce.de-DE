@@ -48,7 +48,7 @@ Sie können Ihren Produkten während der Datenaufnahme Katalogebenen hinzufügen
 
 >[!NOTE]
 >
->Sie importieren Katalogebenen mit der Aufnahme-API, aber [ Festlegen der Reihenfolge ](#manage-layer-priorities) Ebenen erfolgt über die Benutzeroberfläche.
+>Sie importieren Katalogebenen mit der Aufnahme-API, aber [&#x200B; Festlegen der Reihenfolge &#x200B;](#manage-layer-priorities) Ebenen erfolgt über die Benutzeroberfläche.
 
 **Voraussetzungen:**
 
