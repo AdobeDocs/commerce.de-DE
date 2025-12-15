@@ -4,7 +4,7 @@ description: Lernen Sie die Voraussetzungen für das Labor der Bewertungserweite
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
+source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -127,7 +127,7 @@ cp env.dist .env
 
 Öffnen Sie die `.env` in einem Texteditor und fügen Sie die folgenden OAuth-Anmeldeinformationen hinzu:
 
-```plain
+```shell-session
 OAUTH_CLIENT_ID=
 OAUTH_CLIENT_SECRET=
 OAUTH_TECHNICAL_ACCOUNT_ID=
@@ -143,7 +143,7 @@ Sie können diese Werte von der **[!UICONTROL Credential details]** in [Develope
 
 Fügen Sie die folgenden Commerce-Instanzdetails zu Ihrer `.env` hinzu:
 
-```plain
+```shell-session
 COMMERCE_BASE_URL=
 COMMERCE_GRAPHQL_ENDPOINT=
 ```
@@ -159,7 +159,7 @@ So suchen Sie diese Werte:
 
 Legen Sie einen temporären Wert für das Ereignispräfix fest:
 
-```plain
+```shell-session
 EVENT_PREFIX=test
 ```
 
@@ -331,7 +331,7 @@ Check that the MCP server is running correctly:
 1. Look for an indicator showing the MCP server is connected. This indicator is typically located in the chat interface.
 1. Try entering a prompt like the following:
 
-   ```plain
+   ```shell-session
    Search the storefront docs for information about slots
    ```
 
