@@ -3,11 +3,11 @@ title: Katalogansicht
 description: Erfahren Sie, was Katalogansichten sind und wie Sie sie erstellen, um Ihren Produktkatalog nach Geschäftsstruktur, Richtlinien und Preisen zu organisieren.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 769aafeb261d978623e68c466888924c92632883
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,11 @@ In diesem Abschnitt erstellen Sie eine Katalogansicht, wählen eine [Richtlinie]
 
 Bevor Sie eine Katalogansicht erstellen, stellen Sie sicher, dass Sie Folgendes haben:
 
-- [Erstellte Richtlinien](policies.md) um Produktfilter zu definieren
+- [Erstellte Richtlinien](policies.md) um Produktfilter zu definieren.
 
-- [Aufgenommene Preisbücher](pricebooks.md) für die Preisgestaltung
+- [Definierte Katalogebenen](catalog-layer.md) um Varianten Ihrer Produkte zu definieren.
+
+- [Aufgenommene Preisbücher](pricebooks.md) für die Preisgestaltung.
 
 1. Navigieren Sie im linken Menü zu _Store-Einrichtung_ und klicken Sie auf **[!UICONTROL Catalog views]**.
 
@@ -50,6 +52,7 @@ Bevor Sie eine Katalogansicht erstellen, stellen Sie sicher, dass Sie Folgendes 
 
    - **Name** - Geben Sie den Namen der Katalogansicht ein, z. B. `Celport`. &#x200B;
    - **Katalogquellen** - Wählen Sie die Katalogquelle (Gebietsschema) aus, z. B. `en-US`.
+   - **Katalogebenen** Überprüfen der aufgenommenen Ebenen und der Priorität.
    - **Richtlinien** - Wählen Sie in der Dropdown-Liste die entsprechenden Richtlinien aus. Beispiel: „Marke“, „Modell“. &#x200B;Stellen Sie sicher, dass Sie bereits [eine Richtlinie erstellt haben](policies.md).
 
 1. Wählen Sie das Preisbuch aus, das mit der Katalogansicht verknüpft werden soll.
@@ -63,6 +66,20 @@ Bevor Sie eine Katalogansicht erstellen, stellen Sie sicher, dass Sie Folgendes 
 Die Seite mit den Katalogansichten wird aktualisiert, um die neue Katalogansicht anzuzeigen&#x200B;
 
 Nachdem Sie diese Schritte ausgeführt haben, ist die Katalogansicht jetzt so konfiguriert, dass Produkte und Preise basierend auf Ihren ausgewählten Quellen und Richtlinien angezeigt werden.
+
+## Katalogebenen
+
+Mit Katalogebenen können Sie Produktdaten in einer Katalogansicht ändern, ohne die ursprünglichen Quelldaten zu ändern. Ebenen wenden Änderungen an bestimmten Produktattributen an, z. B. Name, Beschreibung, Bilder, Links und Metadaten, indem eine Ebene über Ihrem Basiskatalog erstellt wird. Ihre ursprünglichen Produktdaten bleiben intakt, sodass Sie Produkte sicher anpassen und Änderungen jederzeit rückgängig machen können.
+
+Häufige Anwendungsfälle für Katalogebenen sind:
+
+- **SEO-Optimierung** - Überschreiben von Produktmetadaten-Titeln und -Beschreibungen basierend auf KI-Empfehlungen von [Sites Optimizer](../manage-results/opportunities.md)
+- **Saisonale Kampagnen** - Aktualisieren Sie vorübergehend Produktnamen, Beschreibungen oder Bilder für Werbeaktionen
+- **Regionale Anpassung** - Anzeige unterschiedlicher Produktinformationen basierend auf geografischem Standort oder Sprache
+- **A/B-Tests** - Testen Sie verschiedene Produktpräsentationen, um die Konversionsraten zu optimieren
+- **Mehrmarken-Management** - Passen Sie Produktattribute für verschiedene Ansichten des Markenkatalogs an.
+
+Weitere Informationen zum Erstellen, Verwalten und Priorisieren von Katalogebenen finden Sie unter [Katalogebenen](catalog-layer.md).
 
 ## Katalogansicht verwalten
 
@@ -166,3 +183,9 @@ Die gefilterten Katalogdaten werden für verschiedene Ziele bereitgestellt, eins
 >[!INFO]
 >
 >Detaillierte Informationen zur Aufnahme und Bereitstellung von Katalogdaten finden Sie unter [Entwicklerdokumentation](https://developer.adobe.com/commerce/services/optimizer/).
+
+## Ähnliche Themen
+
+- [Katalogebenen](catalog-layer.md) Erfahren Sie, wie Sie Produktdaten ändern, ohne die ursprüngliche Quelle zu ändern
+- [Richtlinien](policies.md) - Erstellen von Richtlinien zum Filtern von Produkten in Katalogansichten
+- [Preisbücher](pricebooks.md) - Verwalten von Preisstrukturen für verschiedene Kundensegmente

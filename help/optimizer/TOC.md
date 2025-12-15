@@ -4,9 +4,9 @@ user-guide-description: Dokumentation und Ressourcen für [!DNL Adobe Commerce O
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b3a3fcc34154cb231a4a656f0b9cafb9f4bef9bb
+source-git-commit: 49c74bbdbf2c951c79a95d8bb9395228d5655fdf
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '104'
 ht-degree: 10%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 10%
 - [Grenzen und Einschränkungen](boundaries-limits.md)
 - [Versionshinweise](release-notes.md)
 - Ergebnisse verwalten {#manage-results}
+   - [Opportunities](./manage-results/opportunities.md)
    - [Erfolgsmetriken](./manage-results/success-metrics.md)
    - [Suchleistung](./manage-results/search-performance.md)
    - [Recommendations-Leistung](./manage-results/recommendation-performance.md)
@@ -49,6 +50,7 @@ ht-degree: 10%
       - [Best Practices](./merchandising/synonyms/best-practice.md)
 - Store-Setup {#setup}
    - [Katalogansichten](./setup/catalog-view.md)
+   - [Katalogebenen](./setup/catalog-layer.md)
    - [Richtlinien](./setup/policies.md)
    - [Preisbücher](./setup/pricebooks.md)
    - [Datensynchronisation](./setup/data-sync.md)
