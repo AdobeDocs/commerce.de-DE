@@ -22,7 +22,7 @@ Der Dokumentations-RAG-Service (Retrieval-Augmented Generation) bietet KI-gestü
 
 Dieses ARG bietet eine IDE-Oberfläche für Fragen zu Adobe Commerce und kann Sie bei Best Practices für die Entwicklung von Anwendungen und anderen Migrationsaufgaben beraten.
 
-Der RAG-Service ist Teil des MCP-Servers (Model Context Protocol) [ ](./coding-tools.md)Commerce-Erweiterungstools, der mit Cursor und anderen MCP-kompatiblen KI-Assistenten integriert wird.
+Der RAG-Service ist Teil des MCP-Servers (Model Context Protocol) [&#x200B; &#x200B;](./coding-tools.md)Commerce-Erweiterungstools, der mit Cursor und anderen MCP-kompatiblen KI-Assistenten integriert wird.
 
 ## Verfügbare Dokumentation
 
@@ -53,7 +53,7 @@ Der Produktions-Endpunkt ist durch [Azure Front Door](https://learn.microsoft.co
 * DDoS-Schutz am Edge
 * API-Management-Backend gesperrt, um nur Traffic von der Haustür zu akzeptieren
 
-Für verschiedene Sicherheitsanforderungen können Sie einen benutzerdefinierten Endpunkt verwenden. Weitere Informationen [ Sie unter ](#custom-front-door-endpoint)-Endpunkt für benutzerdefinierte Fronttüren .
+Für verschiedene Sicherheitsanforderungen können Sie einen benutzerdefinierten Endpunkt verwenden. Weitere Informationen [&#x200B; Sie unter &#x200B;](#custom-front-door-endpoint)-Endpunkt für benutzerdefinierte Fronttüren .
 
 ## Voraussetzungen
 
@@ -127,7 +127,7 @@ Stellen Sie vor der Installation Folgendes sicher:
 
 ## Nutzung
 
-Nach der Installation können Sie die Indizes ([) ](#automatic-index-selection-recommended) [explizit](#explicit-index-selection) aufrufen. Sie können auch den Befehl [`/search-commerce-docs` verwenden](#command-based-search).
+Nach der Installation können Sie die Indizes ([) &#x200B;](#automatic-index-selection-recommended) [explizit](#explicit-index-selection) aufrufen. Sie können auch den Befehl [`/search-commerce-docs` verwenden](#command-based-search).
 
 >[!NOTE]
 >
