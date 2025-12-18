@@ -1,7 +1,7 @@
 ---
 title: Dokumentations-RAG-Service
 description: Erfahren Sie, wie Sie den KI-gestützten Dokumentationssuchdienst für die Adobe Commerce-Entwicklung verwenden.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 hide: true
 hidefromtoc: true
@@ -30,9 +30,9 @@ In der folgenden Tabelle wird beschrieben, welche Dokumentation derzeit vom RAG-
 
 | Kategorie | Index | Enthaltene Inhalte | Schlüsselwörter |
 |-------|---------|---------|------------------------|
-| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, Dropdown-Listen, Storefront-Komponenten | Storefront, Dropin, EDS, Produktliste, Checkout |
+| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de) | commerce-storefront-docs | Edge Delivery Services, Dropdown-Listen, Storefront-Komponenten | Storefront, Dropin, EDS, Produktliste, Checkout |
 | [Erweiterbarkeit](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, Ereignisse, Erweiterungen, Integrationen | Webhook, Ereignis, Erweiterung, API-Mesh, GraphQL |
-| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce (Katalog, Kunden, Bestellungen) | Katalog, Produkt, Kunde, Bestellung, Bestand |
+| [Commerce](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce (Katalog, Kunden, Bestellungen) | Katalog, Produkt, Kunde, Bestellung, Bestand |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, Laufzeitaktionen, Benutzeroberflächenerweiterungen | App Builder, Laufzeitaktion, React Spectrum |
 
 Weitere Informationen zur Indexauswahl finden Sie unter [Automatische Indexauswahl](#automatic-index-selection-recommended) und [Explizite Indexauswahl](#explicit-index-selection).

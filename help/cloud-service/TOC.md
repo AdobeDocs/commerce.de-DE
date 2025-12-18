@@ -30,4 +30,4 @@ ht-degree: 10%
    - [Voraussetzungen für das Tutorial zur Bewertungserweiterung](tutorials/tutorial-prerequisites.md)
    - [Tutorial zur Bewertungserweiterung](tutorials/ratings-extension.md)
 - [Versionshinweise](release-notes.md)
-- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
