@@ -44,23 +44,23 @@ Dieser Paket-Code fügt die folgenden Ressourcen zur Authoring-Umgebung von AEM 
 
 Sie benötigen die folgenden Ressourcen und Berechtigungen, um den `assets-commerce`-Code in der AEM Assets as a Cloud Service AEM-Umgebung bereitzustellen:
 
-* [Zugriff auf das AEM Assets Cloud Manager-Programm und Umgebungen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) mit den Rollen „Programm“ und „Bereitstellungs-Manager“
+* [Zugriff auf das AEM Assets Cloud Manager-Programm und Umgebungen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) mit den Rollen „Programm“ und „Bereitstellungs-Manager“
 
-* eine [lokale AEM-Entwicklungsumgebung](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) und die Vertrautheit mit dem lokalen AEM-Entwicklungsprozess.
+* eine [lokale AEM-Entwicklungsumgebung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) und die Vertrautheit mit dem lokalen AEM-Entwicklungsprozess.
 
 * Machen Sie sich mit der [AEM](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure)Projektstruktur und der Bereitstellung benutzerdefinierter Inhaltspakete mit Cloud Manager vertraut.
 
 ### Schritt 1: Installieren des `assets-commerce`
 
-1. Erstellen Sie aus [&#x200B; AEM Cloud Manager (Produktions- und Staging](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)Umgebungen) für Ihr AEM Assets-Projekt, falls erforderlich.
+1. Erstellen Sie aus [&#x200B; AEM Cloud Manager (Produktions- und Staging](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)Umgebungen) für Ihr AEM Assets-Projekt, falls erforderlich.
 
-1. Konfigurieren Sie [Bereitstellungs-Pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) falls erforderlich.
+1. Konfigurieren Sie [Bereitstellungs-Pipeline](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) falls erforderlich.
 
-1. [Klonen Sie das Git-Repository](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access).
+1. [Klonen Sie das Git-Repository](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access).
 
 1. Laden Sie von GitHub den Paket-Code aus dem [AEM Assets Commerce-Repository](https://github.com/ankumalh/assets-commerce) herunter.
 
-1. aus Ihrer [lokalen AEM-](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), indem Sie den Code manuell in die vorhandene Projektkonfiguration kopieren und alle `<my-app>` im `filter.xml` und alle `pom.xml files` im Projekt durch Ihren App-Namen ersetzen.
+1. aus Ihrer [lokalen AEM-](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), indem Sie den Code manuell in die vorhandene Projektkonfiguration kopieren und alle `<my-app>` im `filter.xml` und alle `pom.xml files` im Projekt durch Ihren App-Namen ersetzen.
 
    >[!NOTE]
    >
@@ -154,4 +154,4 @@ Die Komponente Produktdaten-Benutzeroberfläche wird automatisch auf Grundlage d
 
 * [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} [Adobe Commerce-Pakete installieren](configure-commerce.md)
 
-* **Konfigurieren Ihrer Commerce-Storefront** - Um AEM Assets mit der von Edge Delivery Services unterstützten Commerce-Storefront zu verwenden, schließen Sie die Storefront-Konfiguration ab, die im Thema [EDS AEM Assets-Konfiguration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) beschrieben ist.
+* **Konfigurieren Ihrer Commerce-Storefront** - Um AEM Assets mit der von Edge Delivery Services unterstützten Commerce-Storefront zu verwenden, schließen Sie die Storefront-Konfiguration ab, die im Thema [EDS AEM Assets-Konfiguration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=de) beschrieben ist.
