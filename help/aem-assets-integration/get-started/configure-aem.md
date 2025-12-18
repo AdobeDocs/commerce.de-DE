@@ -52,7 +52,7 @@ Sie benötigen die folgenden Ressourcen und Berechtigungen, um den `assets-comme
 
 ### Schritt 1: Installieren des `assets-commerce`
 
-1. Erstellen Sie aus [ AEM Cloud Manager (Produktions- und Staging](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)Umgebungen) für Ihr AEM Assets-Projekt, falls erforderlich.
+1. Erstellen Sie aus [&#x200B; AEM Cloud Manager (Produktions- und Staging](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)Umgebungen) für Ihr AEM Assets-Projekt, falls erforderlich.
 
 1. Konfigurieren Sie [Bereitstellungs-Pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) falls erforderlich.
 
@@ -76,7 +76,7 @@ Sie benötigen die folgenden Ressourcen und Berechtigungen, um den `assets-comme
 
    * Produkt-SKUs werden korrekt angezeigt.
 
-Wenn Probleme auftreten, führen Sie die unter [ beschriebenen Schritte ](../overview.md#support).
+Wenn Probleme auftreten, führen Sie die unter [&#x200B; beschriebenen Schritte &#x200B;](../overview.md#support).
 
 ## Optional. Schritt 2: Konfigurieren eines Metadatenprofils
 
@@ -134,13 +134,13 @@ Die Komponente Produktdaten-Benutzeroberfläche wird automatisch auf Grundlage d
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Optional. Um genehmigte Commerce-Assets beim Hochladen in die AEM Assets-Umgebung automatisch zu synchronisieren, setzen Sie den Standardwert für das _[!UICONTROL Review Status]_auf der Registerkarte `Basic` auf `approved`.
+1. Optional. Um genehmigte Commerce-Assets beim Hochladen in die AEM Assets-Umgebung automatisch zu synchronisieren, setzen Sie den Standardwert für das _[!UICONTROL Review Status]_&#x200B;auf der Registerkarte `Basic` auf `approved`.
 
 1. Speichern Sie die Aktualisierung.
 
 #### Anwenden des Metadatenprofils auf den Commerce Assets-Quellordner
 
-1. Wählen Sie auf [!UICONTROL  Metadata Profiles] Seite das Integrationsprofil Commerce aus.
+1. Wählen Sie auf [!UICONTROL &#x200B; Metadata Profiles] Seite das Integrationsprofil Commerce aus.
 
 1. Wählen Sie im Menü Aktion die Option **[!UICONTROL Apply Metadata Profiles to Folders]** aus.
 
