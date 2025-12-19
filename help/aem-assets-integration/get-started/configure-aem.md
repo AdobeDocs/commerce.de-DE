@@ -1,20 +1,26 @@
 ---
-title: Konfigurieren des AEM Assets-Projekts
+title: Konfigurieren des AEM Assets-Projekts zur Unterstützung von Commerce-Metadaten
 description: Aktivieren Sie die nahtlose Synchronisierung von Assets zwischen Adobe Commerce und AEM Assets, indem Sie die erforderlichen Metadaten für die Integration hinzufügen.
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
-source-git-commit: d46526db56dad08a8f865664c92d1214bbf063d8
+source-git-commit: d426c7878f7a66fe1047673be7c5bf65ae1949a7
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
 
 # Konfigurieren des AEM Assets-Projekts zur Unterstützung von Commerce-Metadaten
 
-Um Commerce Asset-Dateien in AEM Assets zu verwalten, führen Sie die folgenden Schritte aus, um das AEM Assets-Projekt mit dem erforderlichen Paket-Code und den erforderlichen Metadaten für die Verwaltung von Commerce-Assets aus der AEM-Autorenumgebung zu konfigurieren.
+Wenn Sie AEM Assets als DAM (Digital Asset Management System) für Commerce verwenden, können Sie nach der Installation des `assets-commerce`-Pakets Bilder und Videos für Commerce-Produkte aus der AEM-Autorenumgebung verwalten.
 
-## AEM Commerce `assets-commerce` Paketinhalte
+Führen Sie die folgenden Schritte aus, um das AEM Assets-Projekt mit dem erforderlichen Paket-Code und den erforderlichen Metadaten für die Verwaltung von Commerce-Assets aus der AEM-Autorenumgebung zu konfigurieren:
+
+1. [Weitere Informationen zu ](#aem-commerce-assets-commerce-package-contents)
+
+1. [Führen Sie die Installationsschritte aus, um das AEM Assets-Projekt zur Unterstützung von Commerce-Metadaten zu konfigurieren](#step-1-install-the-assets-commerce-package)
+
+## Paketinhalte **AEM Commerce** assets-commerce
 
 Adobe bietet eine AEM Commerce Package-Code-`assets-commerce` zum Hinzufügen von Commerce-Namespace- und Metadatenschema-Ressourcen zur Experience Manager Assets as a Cloud Service-Umgebungskonfiguration.
 
@@ -40,45 +46,65 @@ Dieser Paket-Code fügt die folgenden Ressourcen zur Authoring-Umgebung von AEM 
 >
 > Weitere Informationen zum {[}AEM Commerce](https://github.com/ankumalh/assets-commerce)Package-Code finden Sie auf der Seite „Readme **.**
 
-### Voraussetzungen
+## Voraussetzungen
 
 Sie benötigen die folgenden Ressourcen und Berechtigungen, um den `assets-commerce`-Code in der AEM Assets as a Cloud Service AEM-Umgebung bereitzustellen:
 
-* [Zugriff auf das AEM Assets Cloud Manager-Programm und Umgebungen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) mit den Rollen „Programm“ und „Bereitstellungs-Manager“
+* [Zugriff auf das AEM Assets Cloud Manager-Programm und Umgebungen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) mit den Rollen „Programm“ und „Bereitstellungs-Manager“
 
-* eine [lokale AEM-Entwicklungsumgebung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) und die Vertrautheit mit dem lokalen AEM-Entwicklungsprozess.
+* eine [lokale AEM-Entwicklungsumgebung](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) und die Vertrautheit mit dem lokalen AEM-Entwicklungsprozess.
 
 * Machen Sie sich mit der [AEM](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure)Projektstruktur und der Bereitstellung benutzerdefinierter Inhaltspakete mit Cloud Manager vertraut.
 
-### Schritt 1: Installieren des `assets-commerce`
+* Die **IMS-Organisations** ID), die für Ihre Commerce-Instanz konfiguriert wurde.
 
-1. Erstellen Sie aus [&#x200B; AEM Cloud Manager (Produktions- und Staging](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)Umgebungen) für Ihr AEM Assets-Projekt, falls erforderlich.
+## Schritt 1: Installieren des Pakets **assets-commerce**
 
-1. Konfigurieren Sie [Bereitstellungs-Pipeline](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) falls erforderlich.
+1. Gehen Sie zur AEM Cloud Manager, wählen Sie ein Programm aus und erstellen [Produktions- und Staging-Umgebungen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) die Sie in Adobe Commerce integrieren möchten.
 
-1. [Klonen Sie das Git-Repository](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access).
+1. Konfigurieren Sie eine [Bereitstellungs-Pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) oder stellen Sie sicher, dass Ihre Pipeline Änderungen an der ausgewählten Umgebung bereitstellen kann.
+
+1. [Klonen Sie das in Adobe verwaltete Git](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access)Repository für das ausgewählte Programm.
 
 1. Laden Sie von GitHub den Paket-Code aus dem [AEM Assets Commerce-Repository](https://github.com/ankumalh/assets-commerce) herunter.
 
-1. aus Ihrer [lokalen AEM-](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), indem Sie den Code manuell in die vorhandene Projektkonfiguration kopieren und alle `<my-app>` im `filter.xml` und alle `pom.xml files` im Projekt durch Ihren App-Namen ersetzen.
+1. Kopieren Sie [lokalen AEM-](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)) den heruntergeladenen Code manuell in das bestehende von Adobe verwaltete Repository.
 
-   >[!NOTE]
-   >
-   > Alternativ können Sie den benutzerdefinierten Code in Ihrer AEM Assets-Projektkonfiguration als Maven **Paket**.
+1. Ersetzen Sie in allen `filter.xml` und `pom.xml files` für Ihr Projekt alle Vorkommen von `<my-app>` durch Ihren App-Namen.
+
+>[!NOTE]
+>
+> Alternativ können Sie den benutzerdefinierten Code in Ihrer AEM Assets-Projektkonfiguration als Maven **Paket**.
 
 1. Übertragen Sie die Änderungen und pushen Sie Ihre lokale Entwicklungsverzweigung in das Cloud Manager-Git-Repository.
 
-1. Stellen Sie in AEM Cloud Manager [Code bereit, um die AEM-Umgebung zu aktualisieren](https://experienceleague.dobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
+1. Aktualisieren Sie in AEM Cloud Manager [die AEM-Umgebung, indem Sie die Pipeline verwenden, um Ihren Code bereitzustellen](https://experienceleague.dobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
 
-1. Validieren Sie die Änderungen:
+1. Gehen Sie zu einem beliebigen Asset und bearbeiten Sie dessen Eigenschaften, um die Änderungen zu validieren:
 
    * Das Standard-Metadatenschema umfasst die Registerkarte **Commerce** .
 
-   * Produkt-SKUs werden korrekt angezeigt.
+   * Produkt-SKUs und die `Eligible for Commerce` Felder sind sichtbar.
 
-Wenn Probleme auftreten, führen Sie die unter [&#x200B; beschriebenen Schritte &#x200B;](../overview.md#support).
+### Registerkarte **Commerce** ist in den Eigenschaften nicht sichtbar
 
-## Optional. Schritt 2: Konfigurieren eines Metadatenprofils
+Wenn die Registerkarte **Commerce** nicht in den Eigenschaften angezeigt wird, müssen Sie eine im Metadatenschema-Editor manuell erstellen.
+
+1. Navigieren Sie zum Metadatenschema-Editor.
+
+1. Klicken Sie **Bearbeiten**, um das Standard-Metadatenschema-Formular zu ändern.
+
+1. Erstellen Sie eine **Commerce**-Registerkarte und wählen Sie sie aus.
+
+1. Ziehen Sie die Komponente **Produkt** in die Registerkarte **Commerce** und ordnen Sie sie der `commerce:skus` zu.
+
+1. Aktivieren Sie das Kontrollkästchen für **Rollen anzeigen** und **Reihenfolge anzeigen**.
+
+1. Ziehen Sie eine **checkbox**-Komponente per Drag-and-Drop auf die Registerkarte {2 **Commerce} und ordnen Sie sie der** zu. `commerce:isCommerce` Definieren Sie **Ja** und **Nein** als Optionen.
+
+Wenn Sie auf andere Probleme stoßen, erstellen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) oder wenden Sie sich an Ihren AEM Assets Integration-Vertriebsmitarbeiter, um Hilfe zu erhalten.
+
+## Schritt 2: Optional. Konfigurieren eines Metadatenprofils
 
 Legen Sie in der AEM Assets-Autorenumgebung Standardwerte für Commerce-Asset-Metadaten fest, indem Sie ein Metadatenprofil erstellen. Wenden Sie dann das neue Profil auf AEM Asset-Ordner an, um diese Standardwerte automatisch zu verwenden. Diese Konfiguration optimiert die Asset-Verarbeitung durch Reduzierung manueller Schritte.
 
@@ -134,13 +160,13 @@ Die Komponente Produktdaten-Benutzeroberfläche wird automatisch auf Grundlage d
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Optional. Um genehmigte Commerce-Assets beim Hochladen in die AEM Assets-Umgebung automatisch zu synchronisieren, setzen Sie den Standardwert für das _[!UICONTROL Review Status]_&#x200B;auf der Registerkarte `Basic` auf `approved`.
+1. Optional. Um genehmigte Commerce-Assets beim Hochladen in die AEM Assets-Umgebung automatisch zu synchronisieren, setzen Sie den Standardwert für das _[!UICONTROL Review Status]_auf der Registerkarte `Basic` auf `approved`.
 
 1. Speichern Sie die Aktualisierung.
 
-#### Anwenden des Metadatenprofils auf den Commerce Assets-Quellordner
+### Anwenden des Metadatenprofils auf den Commerce Assets-Quellordner
 
-1. Wählen Sie auf [!UICONTROL &#x200B; Metadata Profiles] Seite das Integrationsprofil Commerce aus.
+1. Wählen Sie auf [!UICONTROL  Metadata Profiles] Seite das Integrationsprofil Commerce aus.
 
 1. Wählen Sie im Menü Aktion die Option **[!UICONTROL Apply Metadata Profiles to Folders]** aus.
 
@@ -152,6 +178,6 @@ Die Komponente Produktdaten-Benutzeroberfläche wird automatisch auf Grundlage d
 
 ## Nächste Schritte
 
-* [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} [Adobe Commerce-Pakete installieren](configure-commerce.md)
+* [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} [Adobe Commerce-Pakete installieren](configure-commerce.md).
 
-* **Konfigurieren Ihrer Commerce-Storefront** - Um AEM Assets mit der von Edge Delivery Services unterstützten Commerce-Storefront zu verwenden, schließen Sie die Storefront-Konfiguration ab, die im Thema [EDS AEM Assets-Konfiguration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=de) beschrieben ist.
+* [!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} [Konfigurieren der Integration über den Commerce Admin](setup-synchronization.md).
