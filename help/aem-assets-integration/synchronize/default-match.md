@@ -42,7 +42,7 @@ Wenn die Regel zum Abgleichen von **[!UICONTROL Match by product SKU]** in der C
    >
    > Wenn ein Asset für mehrere Produkte verwendet wird, konfigurieren Sie die Metadaten für jede zugehörige SKU.
 
-1. Legen Sie auf der Registerkarte `Basic` den Standardwert für das Feld _[!UICONTROL Review Status]_auf `approved` fest.
+1. Legen Sie auf der Registerkarte `Basic` den Standardwert für das Feld _[!UICONTROL Review Status]_&#x200B;auf `approved` fest.
 
    ![Beispiel-Metadaten](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
