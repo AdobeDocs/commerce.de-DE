@@ -28,4 +28,4 @@ Um die Integration in Commerce-Storefronts mit Edge Delivery Services zu aktivie
 
 Die Commerce-Dropdown-Menüs erkennen automatisch die `commerce-assets-enabled`-Konfiguration und passen die Bildverarbeitung entsprechend an.
 
-Weitere Informationen zur Verwendung von AEM Assets mit der Commerce-Storefront mit Edge Delivery Services finden Sie in der Storefront-Konfiguration, die im Thema [AEM Assets-Integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) in der Dokumentation zu *Adobe Commerce* Storefront beschrieben wird.
+Weitere Informationen zur Verwendung von AEM Assets mit der Commerce-Storefront mit Edge Delivery Services finden Sie in der Storefront-Konfiguration, die im Thema [AEM Assets-Integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=de) in der Dokumentation zu *Adobe Commerce* Storefront beschrieben wird.
