@@ -27,9 +27,9 @@ Eine besser anpassbare und detailliertere Anleitung finden Sie in der [Storefron
 
 1. Geben Sie einen **[!UICONTROL Site Name]** ein.
 
-1. Geben Sie im Feld **[!UICONTROL Commerce GraphQL Endpoint (optional)]** Ihren [!DNL Adobe Commerce as a Cloud Service] (SaaS) GraphQL-Endpunkt ein, auf den Sie im Commerce Cloud Manager zugreifen können, nachdem Sie [ Instanz erstellt ](./getting-started.md#create-an-instance).
+1. Geben Sie im Feld **[!UICONTROL Commerce GraphQL Endpoint (optional)]** Ihren [!DNL Adobe Commerce as a Cloud Service] (SaaS) GraphQL-Endpunkt ein, auf den Sie im Commerce Cloud Manager zugreifen können, nachdem Sie [&#x200B; Instanz erstellt &#x200B;](./getting-started.md#create-an-instance).
 
-   Wenn Sie [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic) verwenden, geben Sie alternativ Ihren [!DNL API Mesh] GraphQL-Endpunkt in das Feld **[!UICONTROL Commerce GraphQL Endpoint (optional)]** ein. Weitere [ finden Sie unter ](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) erstellen .
+   Wenn Sie [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic) verwenden, geben Sie alternativ Ihren [!DNL API Mesh] GraphQL-Endpunkt in das Feld **[!UICONTROL Commerce GraphQL Endpoint (optional)]** ein. Weitere [&#x200B; finden Sie unter &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) erstellen .
 
 1. Klicken Sie auf **[!UICONTROL Create Site]**. Befolgen Sie die Anweisungen auf dem Bildschirm, um den Zugriff auf Ihr GitHub-Repository zu autorisieren.
 

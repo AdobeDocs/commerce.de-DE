@@ -27,7 +27,7 @@ Bevor Sie einen dieser Anwendungsfälle ausführen, müssen Sie die folgenden Vo
    1. Wählen Sie [!UICONTROL **Sandbox**] in der Dropdown [!UICONTROL **Umgebung**] aus.
    1. Wählen Sie [!UICONTROL **Adobe Store**] in der Dropdown-Liste [!UICONTROL **Testdaten**] aus.
 1. [Beim Konto  [!DNL Adobe Experience Cloud]  anmelden](https://experience.adobe.com)
-1. [Richten Sie Ihre Cloud Service-Storefront ](./storefront.md), indem Sie die folgenden Optionen verwenden:
+1. [Richten Sie Ihre Cloud Service-Storefront &#x200B;](./storefront.md), indem Sie die folgenden Optionen verwenden:
    1. Wählen Sie [!UICONTROL `adobe-commerce/adobe-demo-store`] für die Vorlage aus.
    1. Wählen Sie [!UICONTROL **Verfügbare Instanz auswählen (Mesh -> SaaS)**] für die Verbindungsmethode aus.
 
@@ -39,7 +39,7 @@ Dieser Workflow zeigt den Checkout-Prozess für einen Kunden, der ein Produkt in
 
 1. Navigieren Sie in Commerce Admin zu [!UICONTROL **Stores**] > [!UICONTROL Settings] > [!UICONTROL **Configuration**] > [!UICONTROL **Zahlungsmethoden**].
 
-1. Geben [!UICONTROL **im Abschnitt „Allgemeine**]&quot; Ihre `Payment Services Sandbox ID` und `Payment Services Sandbox Key` ein. Sie können diese IDs abrufen, indem Sie die unter &quot;[-Onboarding“ beschriebenen Schritte ](../payment-services/sandbox.md#sandbox-onboarding)
+1. Geben [!UICONTROL **im Abschnitt „Allgemeine**]&quot; Ihre `Payment Services Sandbox ID` und `Payment Services Sandbox Key` ein. Sie können diese IDs abrufen, indem Sie die unter &quot;[-Onboarding“ beschriebenen Schritte &#x200B;](../payment-services/sandbox.md#sandbox-onboarding)
 
 1. Legen Sie das [!UICONTROL **Aktivieren**]-Dropdown auf [!UICONTROL **Ja**] fest.
 
@@ -158,7 +158,7 @@ Stellen Sie sich ein Szenario vor, in dem Sie den Hintergrund eines Produktbilds
 
 1. Öffnen Sie die [Storefront](./storefront.md) die Sie in den Voraussetzungen erstellt haben, und navigieren Sie zu einem Element, das Sie ändern möchten. Beachten Sie die Artikel-SKU oder den Produkt-Code.
 
-1. Öffnen Sie [!DNL AEM Assets], indem Sie es in der [Adobe Experience Cloud ](https://experience.adobe.com/#/home).
+1. Öffnen Sie [!DNL AEM Assets], indem Sie es in der [Adobe Experience Cloud &#x200B;](https://experience.adobe.com/#/home).
 
    ![[!DNL AEM Assets]-Selektor, der die [!DNL Adobe Experience Cloud] anzeigt](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 

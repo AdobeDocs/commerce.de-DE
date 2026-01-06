@@ -124,7 +124,7 @@ Bei der Auswahl des Package Managers empfiehlt Adobe aus Konsistenzgründen die 
 >
 >Vor der Bereitstellung des Projekts müssen Sie die folgenden Konfigurationsaufgaben durchführen:
 >
->* Melden Sie sich über die Adobe I/O-CLI [ ](https://developer.adobe.com/console)Adobe Developer Console an.
+>* Melden Sie sich über die Adobe I/O-CLI [&#x200B; &#x200B;](https://developer.adobe.com/console)Adobe Developer Console an.
 >* Erstellen Sie ein App Builder-Projekt (siehe [Projekt-Setup](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Einrichten von Umgebungsvariablen in einer `.env`.
 >
@@ -308,7 +308,7 @@ Das folgende Vierphasenprotokoll wird automatisch vom Regelsystem durchgesetzt. 
 
 ### Anfordern von Implementierungsplänen für die komplexe Entwicklung
 
-Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [ hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
+Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [&#x200B; hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
 
 ```shell-session
 Create a detailed implementation plan for this complex development.
@@ -326,7 +326,7 @@ Komplexe Adobe Commerce-Erweiterungen umfassen häufig Folgendes:
 
 >[!NOTE]
 >
->Stellen Sie vor der Verwendung der MCP-Tools [, dass Sie bei der Adobe I/O CLI angemeldet ](#log-in-to-the-adobe-io-cli).
+>Stellen Sie vor der Verwendung der MCP-Tools [, dass Sie bei der Adobe I/O CLI angemeldet &#x200B;](#log-in-to-the-adobe-io-cli).
 
 Das Tool ist standardmäßig auf MCP-Tools eingestellt, kann jedoch unter bestimmten Umständen stattdessen CLI-Befehle verwenden. Um die Verwendung von MCP-Tools sicherzustellen, fordern Sie diese in Ihrer Eingabeaufforderung explizit an.
 
