@@ -29,7 +29,7 @@ Für diesen Prozess ist eine IMS-Organisation mit Zugriff auf [!DNL Adobe Commer
 
 Die folgenden Rollen sind für [!DNL Adobe Commerce as a Cloud Service] verfügbar. Um diese Rollen anzuzeigen oder zu bearbeiten, navigieren Sie in der Commerce-Admin zu [!UICONTROL **System**] > [!UICONTROL **Berechtigungen**] > [!UICONTROL **Benutzerrollen**].
 
-* **Benutzer**: Benutzer haben Administratorzugriff auf Commerce Admin, können jedoch nicht den Zugriff auf Produktebene in Admin Console verwalten. Benutzer können auch Punktzahlen verwenden, um [ Instanzen ](./getting-started.md#create-an-instance) der [!DNL Commerce Cloud Manager] zu erstellen.
+* **Benutzer**: Benutzer haben Administratorzugriff auf Commerce Admin, können jedoch nicht den Zugriff auf Produktebene in Admin Console verwalten. Benutzer können auch Punktzahlen verwenden, um [&#x200B; Instanzen &#x200B;](./getting-started.md#create-an-instance) der [!DNL Commerce Cloud Manager] zu erstellen.
 
   >[!NOTE]
   >
@@ -154,11 +154,11 @@ Die folgenden Anweisungen enthalten Informationen zum Hinzufügen von Benutzern 
 
 ### Hinzufügen von Entwicklern und Produktprofil-Administrierenden
 
-Um Entwickler und Produktprofil-Administrierende hinzuzufügen, wiederholen Sie den [Benutzer hinzufügen](#add-users), wählen Sie jedoch die Registerkarte [!UICONTROL ****] oder [!UICONTROL **Administratoren**] anstelle der Registerkarte [!UICONTROL **Benutzer**] aus.
+Um Entwickler und Produktprofil-Administrierende hinzuzufügen, wiederholen Sie den [Benutzer hinzufügen](#add-users), wählen Sie jedoch die Registerkarte [!UICONTROL **&#x200B;**] oder [!UICONTROL **Administratoren**] anstelle der Registerkarte [!UICONTROL **Benutzer**] aus.
 
 >[!NOTE]
 >
->Produktprofil-Administrierende haben keinen Zugriff auf Commerce Admin. Weitere Informationen finden [ unter ](#understanding-roles) von Rollen .
+>Produktprofil-Administrierende haben keinen Zugriff auf Commerce Admin. Weitere Informationen finden [&#x200B; unter &#x200B;](#understanding-roles) von Rollen .
 >
 >Weisen Sie Entwicklern die Benutzerrolle zu, bevor Sie sie als Entwickler hinzufügen. Die Benutzerrolle ist für grundlegende Commerce-Berechtigungen erforderlich.
 
@@ -276,7 +276,7 @@ Nachdem ein Benutzer zu [!DNL AEM Assets] hinzugefügt wurde, kann er auf die [!
 
 1. Klicken Sie im [!UICONTROL **Schnellzugriff**]-Abschnitt auf [!UICONTROL **Experience Manager**] oder klicken Sie auf [!UICONTROL **Alle anzeigen**] wenn [!UICONTROL **Experience Manager nicht angezeigt**]. Klicken Sie dann auf [!UICONTROL **Cloud Manager**] oder navigieren Sie direkt zu [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}.
 
-1. Cloud Manager Klicken Sie auf der Seite [!UICONTROL ****] auf [!UICONTROL **Programm hinzufügen**], um zu beginnen.
+1. Cloud Manager Klicken Sie auf der Seite [!UICONTROL **&#x200B;**] auf [!UICONTROL **Programm hinzufügen**], um zu beginnen.
 
 1. [Erstellen Sie ein neues Programm](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}.
 
