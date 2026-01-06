@@ -4,9 +4,9 @@ description: Die neuesten Versionsinformationen für  [!DNL Data Export Extensio
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: f945cb34e57a6c51e308d05944821e37e1a4c7d4
+source-git-commit: 029cbbf75a21ba68f9829d5755a40a610d34d479
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1962'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,20 @@ Zu den Aktualisierungen gehören:
 
 ## Aktuelle Hauptversion
 
+## Version 103.4.17   
+
+![Korrigieren](../assets/fix.svg) Die Datenexporterweiterung (`magento/module-data-exporter`) wurde aktualisiert, um die nicht mehr erforderliche `magento/module-analytics` zu entfernen.<!--MDEE-1260--> 
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem beim Aktualisieren der Stufenpreise eines Produkts alte Werte nicht entfernt wurden, was zu doppelten oder veralteten Stufenpreiseinträgen führte. Jetzt werden nach Aktualisierungen nur noch die aktuellen Stufenpreise angezeigt. <!--MDEE-1157-->  
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem Produkte mit einem Preis von 0 $ oder 100 % Rabatt nicht als kostenlos in der Storefront angezeigt wurden. Die Preise für Storefront und Warenkorb sind jetzt konsistent. <!--MDEE-1159-->  
+![Fix](../assets/fix.svg) Symfony 7.4 LTS-Kompatibilität wurde zu den Datenexporterweiterungen hinzugefügt, um zukünftige Upgrades und Integrationen zu unterstützen. <!--MDEE-1272-->   
+
+## Version 103.4.16   
+
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem bestimmte Indexer beim Setup oder Upgrade aufgrund fehlender ActionInterface-Implementierungen in mehreren Indexern nicht in den `Update On Schedule`-Modus wechseln konnten. Diese Fehlerbehebung stellt sicher, dass die Erweiterung erfolgreich installiert und aktualisiert wird, ohne dass Indexerfehler auftreten. <!--MDEE-1235-->
+
 ## Version 103.4.15
 
-![Neu](../assets/new.svg) Es wurde Unterstützung für die Erweiterung „Status der Daten-Feed-Synchronisierung“ hinzugefügt, um Datenübertragungen von Adobe Commerce zu Connected Services (Katalog-Service, Live-Suche und Produktempfehlungen) zu überwachen und Fehler zu beheben. Weitere Informationen zur Installation und Verwendung dieser Erweiterung finden Sie [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=de) im *Commerce Admin Guide*. <!--MDEE-954-->
+![Neu](../assets/new.svg) Es wurde Unterstützung für die Erweiterung „Status der Daten-Feed-Synchronisierung“ hinzugefügt, um Datenübertragungen von Adobe Commerce zu Connected Services (Katalog-Service, Live-Suche und Produktempfehlungen) zu überwachen und Fehler zu beheben. Weitere Informationen zur Installation und Verwendung dieser Erweiterung finden Sie [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) im *Commerce Admin Guide*. <!--MDEE-954-->
 
 ## Version 103.4.14
 
@@ -47,7 +58,7 @@ Zu den Aktualisierungen gehören:
 
 ## Version 103.4.11
 
-![Neu](../assets/new.svg) [!BADGE nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+![Neu](../assets/new.svg) [!BADGE nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 Es wurde Unterstützung für zusätzliche Produktattribute hinzugefügt, um Steuerklasse-, Attributsatz- und Bestandsdaten aus Commerce-Produktkonfigurationen im Produkt-Feed einzuschließen. Kunden, die diese Attribute in Produktexport-Feeds einbeziehen möchten, müssen das Modul Zusätzliche Produktattribute zu ihrem Adobe Commerce-Projekt hinzufügen. Siehe [Hinzufügen von Steuerklassen-, Attributsatz- und Bestandsattributen](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 ![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, das zu einer falschen Synchronisierung gelöschter Produktaktualisierungen führte, wenn während eines vollständigen Produktindex ein Fehler auftrat. Jetzt werden alle Produktlöschungen korrekt synchronisiert, selbst wenn während des Indizierungsprozesses ein Fehler auftritt. <!--MDEE-1144-->
 
