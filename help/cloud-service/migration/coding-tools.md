@@ -1,22 +1,24 @@
 ---
 title: KI-Kodierungstools für Erweiterungen
 description: Erfahren Sie, wie Sie die KI-Tools zum Erstellen von Commerce App Builder-Erweiterungen verwenden.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+feature: App Builder, Cloud
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: d2f2563a1f3a656d7bfaa12a0c3ca2b828e7fc33
+source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1847'
 ht-degree: 0%
 
 ---
 
 # KI-Kodierungstools für Erweiterungen
 
-Bei der Migration zu [!DNL Adobe Commerce as a Cloud Service] können Sie die KI-Kodierungstools verwenden, um vorhandene [!DNL Adobe Commerce] PHP-Erweiterungen in [!DNL Adobe Developer App Builder]-Erweiterungen zu konvertieren. Sie kann auch verwendet werden, um neue [!DNL App Builder] zu erstellen.
+Bei der Migration zu [!DNL Adobe Commerce as a Cloud Service] können Sie die KI-Kodierungstools verwenden, um vorhandene [!DNL Adobe Commerce] PHP-Erweiterungen in [!DNL Adobe Developer App Builder]-Erweiterungen zu konvertieren. Sie können diese Tools auch verwenden, um neue [!DNL App Builder] zu erstellen.
 
-Die Verwendung der KI-Kodierungs-Tools bietet die folgenden Vorteile:
+Die KI-Kodierungs-Tools bieten die folgenden Vorteile:
 
 * **Verbesserter Entwicklungs-Workflow**: Integrierte Adobe Commerce-Entwicklungs-Tools.
 * **KI-gestützte Hilfe**: Kontextabhängige Code-Generierung und -Debugging.
@@ -122,7 +124,7 @@ Bei der Auswahl des Package Managers empfiehlt Adobe aus Konsistenzgründen die 
 >
 >Vor der Bereitstellung des Projekts müssen Sie die folgenden Konfigurationsaufgaben durchführen:
 >
->* Melden Sie sich über die Adobe I/O-CLI [&#x200B; &#x200B;](https://developer.adobe.com/console)Adobe Developer Console an.
+>* Melden Sie sich über die Adobe I/O-CLI [ ](https://developer.adobe.com/console)Adobe Developer Console an.
 >* Erstellen Sie ein App Builder-Projekt (siehe [Projekt-Setup](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Einrichten von Umgebungsvariablen in einer `.env`.
 >
@@ -130,7 +132,7 @@ Bei der Auswahl des Package Managers empfiehlt Adobe aus Konsistenzgründen die 
 
 ## Konfiguration nach der Installation
 
-### Beim [!DNL Adobe I/O CLI] anmelden
+### Melden Sie sich bei der Adobe I/O CLI an
 
 Nach der Installation des [!DNL Adobe I/O CLI] müssen Sie sich jederzeit anmelden, wenn Sie den MCP-Server verwenden möchten.
 
@@ -193,9 +195,9 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 1. MCP-Server aktivieren:
 
    * Öffnen Sie den Bereich „Erweiterungen“, indem Sie auf **Erweiterungen** in der Aktivitätsleiste auf der linken Seitenleiste klicken oder **Befehlstaste+Umschalt+X** (macOS) oder **Strg+Umschalt+X** (Windows und Linux) verwenden.
-   * Klicken Sie **MCP SERVERS - INSTALLED**.
-   * Klicken Sie auf das Zahnradsymbol neben **Commerce-Extensibility MCP Server** und wählen Sie **Server starten**, wenn der Server angehalten wird.
-   * Klicken Sie erneut auf das Zahnradsymbol und wählen Sie **Ausgabe anzeigen**.
+   * Klicken Sie [!UICONTROL **MCP SERVERS - INSTALLED**].
+   * Klicken Sie auf das Zahnradsymbol neben [!UICONTROL **Commerce-Extensibility MCP Server**] und wählen Sie [!UICONTROL **Server starten**], wenn der Server angehalten wird.
+   * Klicken Sie erneut auf das Zahnradsymbol und wählen Sie [!UICONTROL **Ausgabe anzeigen**].
 
 1. Überprüfen Sie den Serverstatus. Die `MCP:commerce-extensibility` sollte wie folgt aussehen:
 
@@ -279,7 +281,7 @@ Lesen Sie die folgenden Ressourcen, um loszulegen:
 
 * [Integrations-Starter-Kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce Starter Kit-Vorlagen](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Beispielanwendungen für App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Warum Sie diese Ressourcen verwenden sollten
@@ -306,7 +308,7 @@ Das folgende Vierphasenprotokoll wird automatisch vom Regelsystem durchgesetzt. 
 
 ### Anfordern von Implementierungsplänen für die komplexe Entwicklung
 
-Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [&#x200B; hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
+Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [ hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
 
 ```shell-session
 Create a detailed implementation plan for this complex development.
@@ -324,9 +326,9 @@ Komplexe Adobe Commerce-Erweiterungen umfassen häufig Folgendes:
 
 >[!NOTE]
 >
->Stellen Sie vor der Verwendung der MCP-Tools [, dass Sie bei der Adobe I/O CLI angemeldet &#x200B;](#log-in-to-the-adobe-io-cli).
+>Stellen Sie vor der Verwendung der MCP-Tools [, dass Sie bei der Adobe I/O CLI angemeldet ](#log-in-to-the-adobe-io-cli).
 
-Das Tool ist standardmäßig auf MCP-Tools eingestellt, kann jedoch unter bestimmten Umständen stattdessen CLI-Befehle verwenden. Wenn Sie die Verwendung des MCP-Tools sicherstellen möchten, fordern Sie diese in Ihrer Eingabeaufforderung explizit an.
+Das Tool ist standardmäßig auf MCP-Tools eingestellt, kann jedoch unter bestimmten Umständen stattdessen CLI-Befehle verwenden. Um die Verwendung von MCP-Tools sicherzustellen, fordern Sie diese in Ihrer Eingabeaufforderung explizit an.
 
 Wenn CLI-Befehle verwendet werden und Sie stattdessen MCP-Tools verwenden möchten, verwenden Sie die folgende Eingabeaufforderung:
 
@@ -346,7 +348,7 @@ CLI-Befehle können für die folgenden Szenarien verwendet werden:
 
 ### Entwicklung
 
-Es ist wichtig, unnötige Komplexität zu hinterfragen, die durch die KI-Tools verursacht wird.
+Fragt unnötige Komplexität, die von den KI-Tools erzeugt wird.
 
 Wenn unnötige Dateien (`validator.js`, `transformer.js`, `sender.js`) für einfache schreibgeschützte Endpunkte hinzugefügt werden, verwenden Sie die folgenden Eingabeaufforderungen:
 
@@ -466,7 +468,7 @@ Verwenden Sie bei der Bereitstellung die folgenden Best Practices:
 
 #### Inkrementelle Bereitstellung
 
-Stellen Sie nur geänderte Aktionen bereit, um die Entwicklung zu beschleunigen. Dadurch wird das Risiko verringert, dass vorhandene Funktionen beeinträchtigt werden, und es wird schnelleres Feedback zu Änderungen bereitgestellt. Außerdem wird das Risiko minimiert, dass vorhandene Funktionen beschädigt werden.
+Stellen Sie nur geänderte Aktionen bereit, um die Entwicklung zu beschleunigen. Dieser Ansatz verringert das Risiko, dass vorhandene Funktionen beeinträchtigt werden, und bietet ein schnelleres Feedback zu Änderungen.
 
 * Verwenden von MCP-Tools zum Bereitstellen spezifischer Aktionen
 
@@ -479,7 +481,7 @@ Stellen Sie nur geänderte Aktionen bereit, um die Entwicklung zu beschleunigen.
 
 #### Laufzeitbereinigung
 
-Nutzen Sie nach umfangreichen Änderungen die Tools, um verwaiste Aktionen zu bereinigen. Lassen Sie die KI-Tools den Bereinigungsprozess systematisch durchführen. Sie können verwaiste Aktionen effizient identifizieren, ihren Status überprüfen und sie ohne manuelles Eingreifen sicher entfernen.
+Nutzen Sie nach umfangreichen Änderungen die Tools, um verwaiste Aktionen zu bereinigen. Lassen Sie den Bereinigungsprozess systematisch durch die KI-Tools durchführen. Es kann verwaiste Aktionen effizient identifizieren, ihren Status überprüfen und sie ohne manuelles Eingreifen sicher entfernen.
 
 ```shell-session
 Help me identify and clean up orphaned runtime actions
@@ -520,7 +522,7 @@ Verfolgen Sie Token-Nutzungsmuster:
 
 ## Was zu vermeiden ist
 
-Bei Verwendung der KI-Kodierungs-Tools sollten Sie die folgenden Anti-Muster vermeiden:
+Vermeiden Sie die folgenden Anti-Muster bei Verwendung der KI-Kodierungs-Tools:
 
 * **Die Klärungsphase nicht überspringen** - Stellen Sie sicher, dass Phase 1 vor der Implementierung abgeschlossen ist.
 * **Test nach jeder Funktion nicht überspringen** - Inkrementelles Testen, nicht warten, bis alles abgeschlossen ist.

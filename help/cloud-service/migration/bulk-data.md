@@ -1,19 +1,21 @@
 ---
 title: Tool für die Massendatenmigration
 description: Erfahren Sie, wie Sie mit dem Tool für die Massendatenmigration Daten aus Ihrer bestehenden Adobe Commerce in der Cloud-Instanz zu migrieren [!DNL Adobe Commerce as a Cloud Service].
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+feature: Cloud
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
+level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 06bdcfbff5d376064b18bdab3945e7609075b8bc
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
 
 # Tool für die Massendatenmigration
 
-Das Tool für die Massendatenmigration folgt einer verteilten Architektur, die eine sichere und effiziente Datenmigration von PaaS- zu SaaS-Umgebungen ermöglicht. Dieses Tool wurde für Implementierer von Lösungen entwickelt, um Daten von einer bestehenden Adobe Commerce on Cloud Instance (PaaS) zu [!DNL Adobe Commerce as a Cloud Service] (SaaS) zu migrieren. Weitere Informationen zum Migrationsprozess finden Sie unter [Migrationsübersicht](./overview.md).
+Das Tool für die Massendatenmigration folgt einer verteilten Architektur, die eine sichere und effiziente Datenmigration von PaaS- zu SaaS-Umgebungen ermöglicht. Mit diesem Tool können Lösungsimplementierende Daten aus einer bestehenden Adobe Commerce on Cloud-Instanz (PaaS) nach [!DNL Adobe Commerce as a Cloud Service] (SaaS) migrieren. Weitere Informationen zum Migrationsprozess finden Sie unter [Migrationsübersicht](./overview.md).
 
 >[!NOTE]
 >
@@ -21,7 +23,7 @@ Das Tool für die Massendatenmigration folgt einer verteilten Architektur, die e
 
 Die folgende Abbildung zeigt die Architektur und die wichtigsten Komponenten für die Verwendung des Tools für die Massendatenmigration.
 
-![Architektur des Tools für die Massendatenmigration](../assets/bulk-data-diagram.png)
+![Architekturdiagramm des Tools für die Massendatenmigration, das den Datenfluss von PaaS zu SaaS anzeigt](../assets/bulk-data-diagram.png){zoomable="yes"}
 
 ## Migrations-Workflow
 
@@ -44,13 +46,13 @@ Das Tool für die Massendatenmigration ist wie folgt verfügbar:
 
 ## Erstellen einer Zielumgebung
 
-Der Lösungsimplementierer erstellt eine Zielumgebung für die Migration. Diese Umgebung wird verwendet, um die Daten zu speichern, die von der Quellinstanz migriert werden.
+Der Lösungsimplementierer erstellt eine Zielumgebung für die Migration. Diese Umgebung speichert die aus der Quellinstanz migrierten Daten.
 
-Erstellen [&#x200B; zunächst eine neue  [!DNL Adobe Commerce as a Cloud Service] SaaS) &#x200B;](../getting-started.md#create-an-instance).
+Erstellen [ zunächst eine neue  [!DNL Adobe Commerce as a Cloud Service] SaaS) ](../getting-started.md#create-an-instance).
 
 ### Konfigurieren des Extraktionstools
 
-Das Extraktions-Tool wird verwendet, um Daten aus der Quellinstanz zu extrahieren.
+Extrahieren Sie mit dem Extraktions-Tool Daten aus der Quellinstanz.
 
 1. Laden Sie das Extraktions-Tool über den von Adobe bereitgestellten Link herunter.
 1. Legen Sie die folgenden Umgebungsvariablen im Extraktions-Tool fest:
@@ -87,13 +89,13 @@ Führen Sie das von Adobe bereitgestellte Tool zum Laden von Daten aus. Dieses T
 1. Erstellen Sie einen Ladeplan.
 1. Führen Sie den Plan aus und verschieben Sie Daten in Batches in die SaaS-Mandantendatenbank.
 1. Katalogmedien verarbeiten und in die Zielumgebung übertragen
-1. Leert den SaaS-Redis-Cache und macht die Datenbankindizes für den Mandanten ungültig.
+1. Leeren Sie den SaaS-Redis-Cache und invalidieren Sie die Datenbankindizes für den Mandanten.
 
 ### Aufnahme von Katalogdaten
 
 Nach dem Laden der Daten fließen die Katalogdaten automatisch von der SaaS-Mandantendatenbank zum Katalog-Service.
 
-Der Katalog-Service gibt diese Daten für die Live-Suche und für Produktempfehlungen frei. Für diesen Prozess ist kein manuelles Eingreifen erforderlich. Die Daten stehen nach Abschluss der Aufnahme in allen Services zur Verfügung.
+Der Katalog-Service gibt diese Daten für die Live-Suche und für Produktempfehlungen frei. Für diesen Prozess ist kein manuelles Eingreifen erforderlich. Die Daten sind in allen -Services verfügbar, sobald die Aufnahme abgeschlossen ist.
 
 ### Prüfung der Datenintegrität
 

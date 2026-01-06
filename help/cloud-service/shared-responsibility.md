@@ -1,19 +1,21 @@
 ---
 title: Geteilte Verantwortung
 description: Erfahren Sie mehr über die Sicherheitsaufgaben der einzelnen an Ihrem Projekt  [!DNL Adobe Commerce as a Cloud Service]  Parteien.
+feature: Cloud, Security
 role: Admin, Architect, Leader
+level: Intermediate
 exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: a06d64566fda76c0527aabfa9e8fdf27e7c149ca
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+source-git-commit: 1ce3b6b6b94b1b4e94c0d34c081dec2884d7f0f8
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
 
 # Gemeinsames Verantwortungs-, Sicherheits- und Betriebsmodell
 
-[!DNL Adobe Commerce as a Cloud Service] ist ein On-Demand-Service, der sich auf ein Sicherheits- und Betriebsmodell mit gemeinsamer Verantwortung stützt. Diese Zuständigkeiten teilen sich Adobe und seine Kunden. Jede Partei ist für die Sicherung und den Betrieb des Adobe Commerce-Programms verantwortlich.
+[!DNL Adobe Commerce as a Cloud Service] ist ein On-Demand-Service, der sich auf ein Sicherheits- und Betriebsmodell mit gemeinsamer Verantwortung stützt. Adobe und Kunden teilen sich diese Verantwortlichkeiten, wobei jede Partei eine eigene Verantwortung für die Sicherung und den Betrieb des Adobe Commerce-Programms trägt.
 
 >[!BEGINSHADEBOX]
 

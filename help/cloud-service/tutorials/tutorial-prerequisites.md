@@ -1,12 +1,14 @@
 ---
 title: Voraussetzungen für das Tutorial zur Bewertungserweiterung
 description: Lernen Sie die Voraussetzungen für das Labor der Bewertungserweiterung kennen.
+feature: App Builder, Cloud
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
+source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -17,7 +19,7 @@ ht-degree: 0%
 >
 >Die in diesem Tutorial verwendeten KI-Tools befinden sich derzeit in Beta und können Fehler oder andere Probleme umfassen.
 
-Auf dieser Seite werden die Voraussetzungen und Einrichtungsschritte für Tutorials mithilfe von [!DNL Adobe Commerce as a Cloud Service], wie z. B. das [Erweiterungs-Tutorial für Bewertungen](./ratings-extension.md), aufgeführt.
+Auf dieser Seite werden die Voraussetzungen und Einrichtungsschritte für [!DNL Adobe Commerce as a Cloud Service] Tutorials aufgelistet, z. B. das [Erweiterungs-Tutorial für Bewertungen](./ratings-extension.md).
 
 ## Voraussetzungen für Adobe Commerce as a Cloud Service
 
@@ -48,15 +50,15 @@ Auf dieser Seite werden die Voraussetzungen und Einrichtungsschritte für Tutori
 1. Geben Sie einen [!UICONTROL **Projekttitel**] und [!UICONTROL **App-Namen**] ein.
 1. Stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Include Runtime]** markiert ist.
 
-   ![Erstellen eines Projekts mit einer App Builder-Vorlage](../assets/app-builder-template.png){width="600" zoomable="yes"}
+   ![Adobe Developer Console-Projekterstellung mit ausgewählter App Builder-Vorlage](../assets/app-builder-template.png){width="600" zoomable="yes"}
 
-1. Klicken Sie **Speichern**.
+1. Klicken Sie [!UICONTROL **Speichern**].
 
 #### Hinzufügen von APIs zum Arbeitsbereich
 
 1. Klicken Sie auf [!UICONTROL **Staging**]-Arbeitsbereich und wiederholen Sie dann die folgenden Schritte für jede API.
 
-   ![APIs wurden zu Workspace hinzugefügt](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
+   ![Staging-Arbeitsbereich mit Option „Service hinzufügen“ für APIs](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
 
 1. Klicken Sie auf [!UICONTROL **Service hinzufügen**] und wählen Sie [!UICONTROL **API**] aus.
 
@@ -74,7 +76,7 @@ Auf dieser Seite werden die Voraussetzungen und Einrichtungsschritte für Tutori
 
 1. Wiederholen Sie die vorherigen Schritte, bis alle APIs zum Arbeitsbereich hinzugefügt wurden.
 
-   ![APIs wurden zu Workspace hinzugefügt](../assets/apis-added.png){width="600" zoomable="yes"}
+   ![Workspace mit allen erfolgreich hinzugefügten erforderlichen APIs](../assets/apis-added.png){width="600" zoomable="yes"}
 
 ### Konfigurieren der Adobe I/O-CLI
 
@@ -104,7 +106,7 @@ Auf dieser Seite werden die Voraussetzungen und Einrichtungsschritte für Tutori
    aio console workspace select
    ```
 
-   ![CLI-Konfiguration](../assets/cli-configuration.png){width="600" zoomable="yes"}
+   ![Terminal mit Auswahl der Adobe I/O CLI-Organisationsprojekte und des Arbeitsbereichs](../assets/cli-configuration.png){width="600" zoomable="yes"}
 
 ### Klonen des Integrations-Starter-Kits
 
@@ -115,7 +117,7 @@ git clone https://github.com/adobe/commerce-integration-starter-kit.git extensio
 cd extension
 ```
 
-![Klonen des Starter-Kits](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
+![Terminal-Ausgabe mit dem Git-Klonbefehl für das Commerce Integration Starter Kit](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
 
 ### Erstellen einer .env-Datei
 
@@ -137,7 +139,7 @@ OAUTH_ORG_ID=
 
 Sie können diese Werte von der **[!UICONTROL Credential details]** in [Developer Console kopieren](https://developer.adobe.com/) indem Sie auf die Registerkarte **[!UICONTROL OAuth Server-to-Server]** in Ihrem Arbeitsbereich klicken.
 
-![OAuth-Anmeldeinformationen](../assets/oauth-credentials.png){width="600" zoomable="yes"}
+![Seite mit OAuth Server-zu-Server-Anmeldeinformationen in Adobe Developer Console](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
 #### Hinzufügen der Commerce-Konfiguration
 
@@ -185,7 +187,7 @@ Verknüpfen des lokalen Projekts mit dem Remote-Arbeitsbereich:
 aio app use workspace.json -m
 ```
 
-![Verbindung zu Workspace herstellen](../assets/connect-workspace.png){width="600" zoomable="yes"}
+![Terminal, das eine erfolgreiche Arbeitsbereich-Verbindung mit dem AIO-Programm-Anwendungsbefehl anzeigt](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
 ### Installieren von Erweiterbarkeits-KI-Tools
 
@@ -201,7 +203,7 @@ Aktualisieren Sie die Cursor-Regeldatei und die MCP-Konfiguration so, dass sie d
    aio commerce extensibility tools-setup
    ```
 
-   ![KI-Tools installieren](../assets/install-ai-tools.png){width="600" zoomable="yes"}
+   ![Terminal mit der Befehlsausgabe für die Einrichtung von KI-Erweiterbarkeitstools](../assets/install-ai-tools.png){width="600" zoomable="yes"}
 <!--
 ## Storefront prerequisites
 

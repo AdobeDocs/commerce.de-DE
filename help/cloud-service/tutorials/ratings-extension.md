@@ -1,12 +1,14 @@
 ---
 title: Tutorial zur Bewertungserweiterung
 description: Erfahren Sie, wie Sie mithilfe von App Builder und KI-unterstützten Entwicklungstools eine Produktbewertungserweiterung für Adobe Commerce as a Cloud Service erstellen.
+feature: App Builder, Cloud
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
+source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -43,25 +45,25 @@ Wenn einer der vorherigen Befehle nicht die erwarteten Ergebnisse zurückgibt, f
 
 ## Entwicklung von Erweiterungen
 
-Dieser Abschnitt führt Sie durch den Prozess der Entwicklung einer Bewertungserweiterung für Adobe Commerce as a Cloud Service mithilfe von KI-unterstützten Entwicklungstools.
+Dieser Abschnitt führt Sie durch die Entwicklung einer Bewertungserweiterung für Adobe Commerce as a Cloud Service mithilfe von KI-unterstützten Entwicklungstools.
 
 1. Navigieren Sie zu **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]** und stellen Sie sicher, dass das `commerce-extensibility`-Toolset fehlerfrei aktiviert ist. Wenn Fehler angezeigt werden, schalten Sie das Toolset aus und ein.
 
-   ![Cursoreinstellungen](../assets/cursor-settings.png){width="600" zoomable="yes"}
+   ![Cursor-IDE-Einstellungen, für die das MCP Commerce-Extensibility-Toolset aktiviert ist](../assets/cursor-settings.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
-   >Bei der Arbeit mit KI-unterstützten Entwicklungs-Tools gibt es natürliche Variationen im Code und den vom Agenten generierten Antworten.
+   >Bei der Arbeit mit KI-unterstützten Entwicklungs-Tools sollten Sie natürliche Variationen im Code und den vom Agenten generierten Antworten erwarten.
    >Wenn Probleme mit dem Code auftreten, können Sie den Agenten jederzeit um Hilfe beim Debuggen bitten.
 
 1. Wenn Sie dem Kontext des Cursors eine Dokumentation hinzugefügt haben, deaktivieren Sie diese:
 
    - Navigieren Sie zu [!UICONTROL **Cursor**] > [!UICONTROL **Einstellungen**] > [!UICONTROL **Cursor-Einstellungen**] > [!UICONTROL **Indizierung und Dokumente**] und löschen Sie alle aufgelisteten Dokumentationen.
 
-   ![Dokumentation deaktivieren](../assets/disable-documentation.png){width="600" zoomable="yes"}
+   ![Cursor-Indizierungs- und Dokumenteneinstellungen, wobei die Dokumentationsliste leer ist](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
 1. Generieren von Code für eine Produktbewertungserweiterung:
-   - Wählen Sie im Cursor-Chat-Fenster **Agent**-Modus aus.
+   - Wählen Sie im Cursor-Chat-Fenster [!UICONTROL **Agent**]-Modus aus.
    - Geben Sie die folgende Eingabeaufforderung ein:
 
    ```shell-session
@@ -80,9 +82,9 @@ Dieser Abschnitt führt Sie durch den Prozess der Entwicklung einer Bewertungser
 
 1. Beantworten Sie die Fragen des Agenten genau, damit er den besten Code generieren kann.
 
-   ![Eingabeaufforderung im Cursor eingeben](../assets/enter-prompt.png){width="600" zoomable="yes"}
+   ![Cursor-Chat-Fenster im Agent-Modus mit eingegebener Eingabeaufforderung für Erweiterung](../assets/enter-prompt.png){width="600" zoomable="yes"}
 
-   ![Agent stellt klärende Fragen](../assets/agent-questions.png){width="600" zoomable="yes"}
+   ![KI-Agent, der Fragen zu Erweiterungsanforderungen stellt](../assets/agent-questions.png){width="600" zoomable="yes"}
 
 1. Verwenden Sie den folgenden Beispieltext, um die Fragen des Agenten zu beantworten und randomisierte Bewertungsdaten einzurichten:
 
@@ -90,7 +92,7 @@ Dieser Abschnitt führt Sie durch den Prozess der Entwicklung einer Bewertungser
    Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront,
    but we do not need any authentication for the GET API because guest users should be able to use it on the storefront.
    
-   This extension will be called directly from the storefront, no async invocation, such as events or webhooks, is required.
+   This extension is called directly from the storefront, no async invocation, such as events or webhooks, is required.
    
    Start with just the GET API for now, we will implement other CRUD operations at a later time.
    
@@ -102,7 +104,7 @@ Dieser Abschnitt führt Sie durch den Prozess der Entwicklung einer Bewertungser
 
    Der Agent erstellt eine `requirements.md`-Datei, die als Datenquelle für die Implementierung dient.
 
-   ![Anforderungsdatei erstellt](../assets/requirements-file.png){width="600" zoomable="yes"}
+   ![Vom KI-Agenten erstellte Datei Requirements.md mit Implementierungsdetails](../assets/requirements-file.png){width="600" zoomable="yes"}
 
 1. Überprüfen Sie die `requirements.md` und überprüfen Sie den Plan.
 
@@ -112,11 +114,11 @@ Dieser Abschnitt führt Sie durch den Prozess der Entwicklung einer Bewertungser
 
    Der Agent generiert den erforderlichen Code und stellt eine detaillierte Zusammenfassung der nächsten Schritte bereit.
 
-   ![Architekturplanung](../assets/architecture-planning.png){width="600" zoomable="yes"}
+   ![KI-Agent Phase-2-Architekturplan für die Bewertungs-API](../assets/architecture-planning.png){width="600" zoomable="yes"}
 
-   ![Zusammenfassung der Code-Erstellung](../assets/code-generation-summary.png){width="600" zoomable="yes"}
+   ![Zusammenfassung der erzeugten Code-Dateien und der Struktur](../assets/code-generation-summary.png){width="600" zoomable="yes"}
 
-   ![Nächste Schritte](../assets/next-steps.png){width="600" zoomable="yes"}
+   ![KI-Agent mit den nächsten Schritten für Tests und Bereitstellung](../assets/next-steps.png){width="600" zoomable="yes"}
 
 ### Lokale Tests
 
@@ -128,9 +130,9 @@ Dieser Abschnitt führt Sie durch den Prozess der Entwicklung einer Bewertungser
 
 1. Befolgen Sie die Anweisungen des Agenten und bestätigen Sie, dass die API lokal funktioniert.
 
-   ![Lokale Tests](../assets/local-testing.png){width="600" zoomable="yes"}
+   ![KI-Agent-Anweisungen für lokale API-Tests](../assets/local-testing.png){width="600" zoomable="yes"}
 
-   ![Lokale Testergebnisse](../assets/local-testing-1.png){width="600" zoomable="yes"}
+   ![Terminal mit erfolgreichen Ergebnissen aus lokalen API-Tests mit cURL](../assets/local-testing-1.png){width="600" zoomable="yes"}
 
 ### Bereitstellen der Erweiterung
 
@@ -142,19 +144,19 @@ Dieser Abschnitt führt Sie durch den Prozess der Entwicklung einer Bewertungser
 
    Der Agent führt vor der Bereitstellung eine Bewertung der Bereitschaft durch.
 
-   ![Bewertung vor der Bereitstellung](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
+   ![Checkliste zur Bewertung der Bereitschaft des KI-Agenten vor der Bereitstellung](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
 
 1. Wenn Sie mit den Bewertungsergebnissen vertraut sind, weisen Sie den Agenten an, mit der Bereitstellung fortzufahren.
 
    Der Agent verwendet das MCP-Toolkit, um automatisch zu überprüfen, zu erstellen und bereitzustellen.
 
-   ![Bereitstellung](../assets/deployment-process.png){width="600" zoomable="yes"}
+   ![MCP Toolkit-Verifizierungs-Build- und Bereitstellungsprozess](../assets/deployment-process.png){width="600" zoomable="yes"}
 
 ### Nach der Bereitstellung
 
 Sie können die API testen, bevor Sie sie in die Storefront integrieren. Der Agent sollte den Speicherort der neuen Aktion und eine Teststrategie angeben.
 
-![Teststrategie](../assets/testing-strategy.png){width="600" zoomable="yes"}
+![KI-Agent-Teststrategie mit bereitgestellter Aktions-URL und Testbefehlen](../assets/testing-strategy.png){width="600" zoomable="yes"}
 
 Sie können die API auch manuell mit cURL in einem Terminal testen:
 
@@ -162,7 +164,7 @@ Sie können die API auch manuell mit cURL in einem Terminal testen:
 curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=TEST-SKU-123"
 ```
 
-![cURL-Test](../assets/curl-test.png){width="600" zoomable="yes"}
+![Terminal mit erfolgreichem cURL-Test der bereitgestellten Bewertungs-API](../assets/curl-test.png){width="600" zoomable="yes"}
 
 ### Integration mit Edge Delivery Services
 
@@ -172,9 +174,9 @@ Um die Bewertungs-API in eine von [!DNL Adobe Commerce] unterstützte [!DNL Edge
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
-![Servicevertrag](../assets/create-contract.png){width="600" zoomable="yes"}
+![KI-Agent erstellt Servicevertragsdatei für Storefront-Integration](../assets/create-contract.png){width="600" zoomable="yes"}
 
-![Details zum Servicevertrag](../assets/contract.png){width="600" zoomable="yes"}
+![Markdown-Datei der Bewertungs-API mit Endpunkt- und Antwortdetails](../assets/contract.png){width="600" zoomable="yes"}
 <!-- 
 Return to the terminal and run the following command in the `extension` folder to copy the file to the `storefront` folder:
 
@@ -246,7 +248,7 @@ This section teaches you how to implement real storefront features and communica
    You should see the following changes in your development environment and browser:
 
    * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=de).
+   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
    * Stars display with proper fill proportions based on mock rating values.
 
 ![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
