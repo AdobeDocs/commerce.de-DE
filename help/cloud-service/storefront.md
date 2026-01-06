@@ -5,7 +5,7 @@ feature: Storefront
 role: Developer
 level: Beginner
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: 6eda2197fde2e88292e58b2bb4fc4759f24da558
 workflow-type: tm+mt
 source-wordcount: '235'
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Führen Sie die folgenden Schritte aus, um Ihre [!DNL Adobe Commerce Storefront] mit [!DNL Edge Delivery Services] für [!DNL Adobe Commerce as a Cloud Service] (SaaS) einzurichten.
 
-Eine besser anpassbare und detailliertere Anleitung finden Sie in der [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
+Eine besser anpassbare und detailliertere Anleitung finden Sie in der [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=de).
 
 1. Öffnen Sie das [Tool Site Creator](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
 
@@ -47,4 +47,4 @@ Weitere Informationen finden Sie in den folgenden Artikeln:
 * Weitere Informationen zum Verwalten und Anzeigen von Inhalten und Daten in der Storefront finden Sie unter [Storefront-Inhalte aktualisieren](./use-cases.md#update-storefront-content).
 * Weitere Informationen zu Funktionen für kontextuelle Experimente finden Sie unter [Kontextuelle Experimente](./use-cases.md#contextual-experimentation).
 * Weitere Informationen zur Verwendung der generativen KI zur Automatisierung der Erstellung hochwertiger Inhalte finden Sie unter [Varianten generieren](./use-cases.md#generate-variations).
-* Weitere Informationen zum Aktualisieren von Website-Inhalten und zur Integration mit Commerce-Frontend-Komponenten und Backend-Daten finden Sie in der [[!DNL Adobe Commerce Storefront documentation]](https://experienceleague.adobe.com/developer/commerce/storefront/).
+* Weitere Informationen zum Aktualisieren von Website-Inhalten und zur Integration mit Commerce-Frontend-Komponenten und Backend-Daten finden Sie in der [[!DNL Adobe Commerce Storefront documentation]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de).

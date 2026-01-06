@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
 source-wordcount: '1390'
@@ -200,7 +200,7 @@ Stellen Sie sich ein Szenario vor, in dem Sie den Hintergrund eines Produktbilds
 
 #### Hinzufügen des Bildes zu [!DNL Commerce AEM Assets]
 
-1. Wählen Sie [Navigationsbereich](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) von [!DNL AEM as a Cloud Service] die Option [!UICONTROL **Assets**] > [!UICONTROL **Dateien**] > [!UICONTROL **Commerce**] und klicken Sie auf das Asset, das Sie im vorherigen Abschnitt erstellt haben.
+1. Wählen Sie [Navigationsbereich](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) von [!DNL AEM as a Cloud Service] die Option [!UICONTROL **Assets**] > [!UICONTROL **Dateien**] > [!UICONTROL **Commerce**] und klicken Sie auf das Asset, das Sie im vorherigen Abschnitt erstellt haben.
 
    ![Commerce-Ordner in [!DNL AEM Assets] mit Produktbildern](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -250,7 +250,7 @@ Stellen Sie sich ein Szenario vor, in dem Sie den Hintergrund eines Produktbilds
 
 ### Text generieren
 
-1. Öffnen Sie Ihre Storefront-Site mit dem [universellen Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Öffnen Sie Ihre Storefront-Site mit dem [universellen Editor](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Wählen Sie den Textblock aus, den Sie bearbeiten möchten.
 
@@ -264,7 +264,7 @@ Stellen Sie sich ein Szenario vor, in dem Sie den Hintergrund eines Produktbilds
 
 ### Erstellen von Inhalten und Bildern
 
-1. [[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) öffnen
+1. [[!DNL Generate Variations]](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) öffnen
 
 1. Wählen Sie die Vorlage [!UICONTROL **Hero Banner**] aus.
 

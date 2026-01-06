@@ -5,7 +5,7 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
 source-wordcount: '1341'
@@ -67,13 +67,13 @@ Dieses Diagramm zeigt den Datenfluss zwischen [!DNL Adobe Commerce as a Cloud Se
 
 ## Commerce-Storefront
 
-Nutzen Sie die [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront) von Adobe, die von [!DNL Edge Delivery Services] unterstützt werden, um in Minutenschnelle umfassende Erlebnisse mit einfacher, dokumentbasierter Bearbeitung oder visueller Bearbeitung mit [!DNL Storefront Builder] zu erstellen.
+Nutzen Sie die [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront?lang=de) von Adobe, die von [!DNL Edge Delivery Services] unterstützt werden, um in Minutenschnelle umfassende Erlebnisse mit einfacher, dokumentbasierter Bearbeitung oder visueller Bearbeitung mit [!DNL Storefront Builder] zu erstellen.
 
 [!DNL Commerce Storefront] ist vollständig Headless mit einer entkoppelten Architektur, die alle Merchandising-Services und -Daten über eine GraphQL-API-Ebene bereitstellt. Diese Architektur ermöglicht es Teams, ihre Frontends unabhängig von der Commerce Foundation zu entwickeln, und bietet die Agilität, neue Touchpoints mit neuen Technologien zu erstellen und zu testen.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] unterstützt keine Luma-Storefronts. Wenn Sie von Adobe Commerce in der Cloud oder lokal migrieren, finden Sie unter [Vorhandene Storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) Anleitungen zum Übergang.
+>[!DNL Adobe Commerce as a Cloud Service] unterstützt keine Luma-Storefronts. Wenn Sie von Adobe Commerce in der Cloud oder lokal migrieren, finden Sie unter [Vorhandene Storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=de#existing-storefronts) Anleitungen zum Übergang.
 
 ## Merchandising- und Zahlungsdienste
 
@@ -198,7 +198,7 @@ Entwickler können umfassende [GraphQL](https://developer.adobe.com/commerce/web
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 

@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die neuesten Funktionen und Verbesserungen 
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
 source-git-commit: 1ce3b6b6b94b1b4e94c0d34c081dec2884d7f0f8
 workflow-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Versionshinweise
 
-Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerce as a Cloud Service]. Versionsinformationen für andere Produkte finden Sie unter [Adobe Commerce Optimizer](../optimizer/release-notes.md) oder [Adobe Commerce On-Premise und Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
+Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerce as a Cloud Service]. Versionsinformationen für andere Produkte finden Sie unter [Adobe Commerce Optimizer](../optimizer/release-notes.md) oder [Adobe Commerce On-Premise und Adobe Commerce on Cloud](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview).
 
 [!DNL Adobe Commerce as a Cloud Service] enthält die neuesten Versionen von Merchandising-Services, Zahlungsdiensten und Erweiterbarkeitsversionen. Verwenden Sie die folgenden Links, um die jeweiligen Versionshinweise anzuzeigen:
 
@@ -49,6 +49,6 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 
 #### Benutzerdefinierte Bestellattribute
 
-* Admin-Benutzer können jetzt [benutzerdefinierte Bestellattribute](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) direkt in den Bildschirmen „Bestellansicht“, „Bearbeiten“ und „Erstellen“ im Admin-Bedienfeld anzeigen und bearbeiten. Diese Verbesserung verbessert die Verwaltung von benutzerdefinierten Bestelldaten, die über GraphQL erstellt wurden. <!-- CEXT-5044 -->
+* Admin-Benutzer können jetzt [benutzerdefinierte Bestellattribute](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) direkt in den Bildschirmen „Bestellansicht“, „Bearbeiten“ und „Erstellen“ im Admin-Bedienfeld anzeigen und bearbeiten. Diese Verbesserung verbessert die Verwaltung von benutzerdefinierten Bestelldaten, die über GraphQL erstellt wurden. <!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]
