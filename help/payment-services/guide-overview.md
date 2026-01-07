@@ -38,7 +38,7 @@ Dieses Handbuch behandelt Folgendes:
 
 Wenn Sie neugierig sind, wie [!DNL Payment Services] Ihre Commerce-Vorgänge transformieren können, oder weitere technische Anleitungen zu [!DNL Payment Services] für Adobe Commerce und Magento Open Source benötigen, finden Sie in diesem Handbuch weitere Informationen.
 
-Einen Überblick über vordefinierte Zahlungslösungen, einschließlich Funktionen und Vorteile, erhalten Sie im Abschnitt &quot;[ Vorteile](introduction.md). Eine schrittweise Anleitung zur Implementierung finden Sie unter [Onboarding](onboard.md).
+Einen Überblick über vordefinierte Zahlungslösungen, einschließlich Funktionen und Vorteile, erhalten Sie im Abschnitt &quot;[&#x200B; Vorteile](introduction.md). Eine schrittweise Anleitung zur Implementierung finden Sie unter [Onboarding](onboard.md).
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
