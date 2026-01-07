@@ -6,9 +6,9 @@ seo-description: Describes contents of the [!DNL Payment Services] for Adobe Com
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
 feature: Payments, Checkout, Paas, Saas
 recommendations: noCatalog
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: b75cad4fd71b5ab9c0199ca47800c36cbd1ae76c
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Dieses Handbuch behandelt Folgendes:
 
 Wenn Sie neugierig sind, wie [!DNL Payment Services] Ihre Commerce-Vorgänge transformieren können, oder weitere technische Anleitungen zu [!DNL Payment Services] für Adobe Commerce und Magento Open Source benötigen, finden Sie in diesem Handbuch weitere Informationen.
 
-Einen Überblick über vordefinierte Zahlungslösungen, einschließlich Funktionen und Vorteile, erhalten Sie im Abschnitt &quot;[&#x200B; Vorteile](introduction.md). Eine schrittweise Anleitung zur Implementierung finden Sie unter [Onboarding](onboard.md).
+Einen Überblick über vordefinierte Zahlungslösungen, einschließlich Funktionen und Vorteile, erhalten Sie im Abschnitt &quot;[ Vorteile](introduction.md). Eine schrittweise Anleitung zur Implementierung finden Sie unter [Onboarding](onboard.md).
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -113,16 +113,16 @@ Einen Überblick über vordefinierte Zahlungslösungen, einschließlich Funktion
 
 >[!MORELIKETHIS]
 >
-> * [[!DNL Adobe Commerce] 2.4-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=de) - Händlerorientierte Dokumentation für [!DNL Adobe Commerce] und [!DNL Magento Open Source]
-> * [[!DNL Adobe Commerce] 2.4-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=de) - Entwicklerorientierte Dokumentation zum Erstellen und Anpassen von [!DNL Adobe Commerce] oder [!DNL Magento Open Source]
+> * [[!DNL Adobe Commerce] 2.4-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) - Händlerorientierte Dokumentation für [!DNL Adobe Commerce] und [!DNL Magento Open Source]
+> * [[!DNL Adobe Commerce] 2.4-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) - Entwicklerorientierte Dokumentation zum Erstellen und Anpassen von [!DNL Adobe Commerce] oder [!DNL Magento Open Source]
 > * [Versionshinweise](release-notes.md) - Erfahren Sie mehr über bevorstehende Versionen, Produktdetails und darüber, welche Adobe Commerce-Versionen die [!DNL Payment Services] unterstützen
-> * [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=de) - Suchen Sie in der Wissensdatenbank nach [!DNL Payment Services] Artikeln zur Fehlerbehebung
-> * [Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) - Commerce-Kunden können ein Ticket einreichen, um zusätzliche Hilfe zu erhalten
+> * [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) - Suchen Sie in der Wissensdatenbank nach [!DNL Payment Services] Artikeln zur Fehlerbehebung
+> * [Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Commerce-Kunden können ein Ticket einreichen, um zusätzliche Hilfe zu erhalten
 
 ## Support
 
-Wenn Sie Informationen benötigen oder Fragen haben, die nicht in diesem Handbuch behandelt werden, wenden Sie sich an Ihren [!DNL Payment Services] Vertriebsmitarbeiter oder verwenden Sie die Ressourcen, die in Ihrer [!DNL Payment Services] verfügbar sind:
+Wenn Sie Informationen zu [!DNL Payment Services] benötigen oder Fragen haben, die in diesem Handbuch nicht behandelt werden, wenden Sie sich an Ihren [!DNL Payment Services] Vertriebsmitarbeiter oder verwenden Sie die Ressourcen in Ihrem [!DNL Payment Services] Home:
 
->[!VIDEO](https://video.tv.adobe.com/v/3448236?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3447836)
 
 Siehe [Welche [!DNL Payment Services] Option ist die richtige für Sie?](compatibility.md#which-payment-services-option-is-right-for-you) Thema, um zu überprüfen, welche die am besten für Sie geeignete [!DNL Payment Services] ist.
