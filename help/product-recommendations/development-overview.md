@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Entwicklung für Produktempfehlungen-Admins
 
-Produktempfehlungen sind ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, Umsätze steigern und die Kundenbindung steigern können. Produktempfehlungen werden in der Storefront in Form von Einheiten wie „Kunden, die dieses Produkt angesehen haben, haben es auch angesehen“, „Kunden, die dieses Produkt gekauft haben, haben auch gekauft“, „Empfohlen für Sie“ usw. angezeigt. Adobe Commerce-Produktempfehlungen basieren auf [Adobe AI](https://business.adobe.com/ai.html), das Algorithmen für künstliche Intelligenz und maschinelles Lernen verwendet, um eine gründliche Analyse aggregierter Kundendaten durchzuführen. Wenn diese Daten mit Ihrem Commerce-Katalog kombiniert werden, ergeben sich für den Erstkäufer sehr ansprechende, relevante und personalisierte Erlebnisse.
+Produktempfehlungen sind ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, Umsätze steigern und die Kundenbindung steigern können. Produktempfehlungen werden in der Storefront in Form von Einheiten wie „Kunden, die dieses Produkt angesehen haben, haben es auch angesehen“, „Kunden, die dieses Produkt gekauft haben, haben auch gekauft“, „Empfohlen für Sie“ usw. angezeigt. Adobe Commerce-Produktempfehlungen basieren auf [Adobe AI](https://business.adobe.com/de/ai.html), das Algorithmen für künstliche Intelligenz und maschinelles Lernen verwendet, um eine gründliche Analyse aggregierter Kundendaten durchzuführen. Wenn diese Daten mit Ihrem Commerce-Katalog kombiniert werden, ergeben sich für den Erstkäufer sehr ansprechende, relevante und personalisierte Erlebnisse.
 
 >[!NOTE]
 >

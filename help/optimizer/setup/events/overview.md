@@ -174,4 +174,4 @@ In dieser Tabelle werden die von den einzelnen Empfehlungstypen verwendeten Erei
 
 ## Support
 
-Wenn Sie Datendiskrepanzen feststellen oder Empfehlungen und Suchergebnisse nicht erwartungsgemäß funktionieren, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Wenn Sie Datendiskrepanzen feststellen oder Empfehlungen und Suchergebnisse nicht erwartungsgemäß funktionieren, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Einstellungen
 
-Wenn Sie [SaaS-Datenbereich konfigurieren](../landing/saas.md#saas-configuration) für Recommendations verwenden, erfasst der SaaS-Datenbereich Katalogdaten und Verhaltensdaten zur Storefront. [Adobe AI](https://business.adobe.com/ai.html) analysiert diese Daten und berechnet Produktverknüpfungen, die zur Bereitstellung von Produktempfehlungen verwendet werden.
+Wenn Sie [SaaS-Datenbereich konfigurieren](../landing/saas.md#saas-configuration) für Recommendations verwenden, erfasst der SaaS-Datenbereich Katalogdaten und Verhaltensdaten zur Storefront. [Adobe AI](https://business.adobe.com/de/ai.html) analysiert diese Daten und berechnet Produktverknüpfungen, die zur Bereitstellung von Produktempfehlungen verwendet werden.
 
 Nicht-Produktionsumgebungen für Tests oder Staging verfügen normalerweise nicht über die Menge oder Qualität der Verhaltensdaten der Storefront, um realistische Produktempfehlungen zu liefern. Das tatsächliche Einkaufsverhalten in großem Umfang kann nur in einer Produktionsumgebung erfasst werden. Um dieses Problem zu lösen, können Sie mit Adobe Commerce Produktempfehlungen aus Ihrer Produktionsumgebung mit anderen, produktionsfremden SaaS-Datenbereichen verwenden. Durch die Verwendung tatsächlicher Storefront-Daten in einer Nicht-Produktionsumgebung können Sie eine Vorschau der Empfehlungen anzeigen, die Ihre Kunden sehen, und mit verschiedenen Empfehlungstypen und Platzierungsorten experimentieren. Empfehlungen aus einem anderen SaaS-Datenbereich können von Käufern in der Vorschau angezeigt, aber nicht angeklickt werden.
 
