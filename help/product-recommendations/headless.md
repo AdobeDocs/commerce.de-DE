@@ -23,7 +23,7 @@ Benutzerdefinierte und Headless-Integratoren sollten diese Anweisungen für Luma
 
 Um [!DNL Product Recommendations] in eine Headless-Storefront zu integrieren, müssen Sie:
 
-1. Senden Sie Verhaltensdaten an Adobe AI, um die Ergebnisse der Produktempfehlungen zu analysieren und zu berechnen. Sie können auch zusätzliche Daten senden, um Produktempfehlungen ([) ](workspace.md) aktivieren.
+1. Senden Sie Verhaltensdaten an Adobe AI, um die Ergebnisse der Produktempfehlungen zu analysieren und zu berechnen. Sie können auch zusätzliche Daten senden, um Produktempfehlungen ([) &#x200B;](workspace.md) aktivieren.
 
 1. Rufen Sie Ergebnisse von Produktempfehlungen ab und rendern Sie diese Ergebnisse auf der Seite.
 
@@ -52,8 +52,8 @@ Sie können diese beiden Aktionen mit den verfügbaren SDKs ausführen, wie im f
 
 1. Wenn die Ereignisse ausgelöst werden, verwenden Sie den [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/), um die Ereignisse zu verarbeiten und an Adobe AI zu senden.
 
-1. Nachdem die Verhaltensdaten erfasst wurden, können Sie [ Admin ](create.md)Erstellen[!DNL Product Recommendations].
+1. Nachdem die Verhaltensdaten erfasst wurden, können Sie [&#x200B; Admin &#x200B;](create.md)Erstellen[!DNL Product Recommendations].
 
 1. Verwenden Sie [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/), um die Empfehlungseinheiten aus der Storefront abzurufen. SDK gibt die erforderlichen Produktdaten zum Rendern der Empfehlungseinheiten auf einer Seite zurück.
 
-1. Erfahren Sie, wie Sie mit der [`recommendations` GraphQL-Abfrage ](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) Informationen zu Produktempfehlungsblöcken für eine bestimmte SKU zurückgeben und vieles mehr.
+1. Erfahren Sie, wie Sie mit der [`recommendations` GraphQL-Abfrage &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) Informationen zu Produktempfehlungsblöcken für eine bestimmte SKU zurückgeben und vieles mehr.
