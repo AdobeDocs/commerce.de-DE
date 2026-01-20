@@ -3,8 +3,8 @@ title: Kategorie-Merchandising
 description: Verwenden  [!DNL Live Search]  Kategorie-Merchandising für ein schnelleres Einkaufserlebnis.
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
-source-git-commit: 59aa4ae67a1a8a853b72d78cd65a6cc44a6bc662
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 0%
@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Kategorie-Merchandising
 
-Mit dem Kategorie-Merchandising können Store-Besitzer [!DNL Live Search] intelligente [&#x200B; (Regeln](rules.md) auf Produktkategorien und Unterkategorien anwenden.
+Mit dem Kategorie-Merchandising können Store-Besitzer [!DNL Live Search] intelligente [ (Regeln](rules.md) auf Produktkategorien und Unterkategorien anwenden.
 
 Dieses Video ist eine Einführung in das Kategorie-Merchandising.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448860?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 Die Funktion ist im Administrator unter **Marketing** > SEO &amp; Search > **[!DNL Live Search]** > (Kategorie **Merchandising** verfügbar.
 
 >[!NOTE]
 >
->Kategorie-Merchandising ist ab Version [!DNL Live Search] [.0.0 &#x200B;](release-notes.md). Wenn Sie die Kategorie Merchandising-Arbeitsbereich sehen, sie jedoch nicht mit Daten gefüllt ist, aktualisieren Sie das [!DNL Live Search].
+>Kategorie-Merchandising ist ab Version [!DNL Live Search] [.0.0 ](release-notes.md). Wenn Sie die Kategorie Merchandising-Arbeitsbereich sehen, sie jedoch nicht mit Daten gefüllt ist, aktualisieren Sie das [!DNL Live Search].
 
 ![Kategorie Merchandising](assets/category_workspace.png)
 
@@ -42,7 +42,7 @@ Sie können im Feld „Suche nach Kategorie“ nach einer Kategorie oder Unterka
 Kategorie-Merchandising verwendet dieselben Ranking-Typen wie bei [einzelnen Produkten](rules-workspace.md).
 Es gibt zwei Arten von Rankings: Intelligent und Manual.
 
-**Intelligent Ranking** nutzt die Verhaltensdatenanalyse der Storefront durch [Adobe Sensei](https://www.adobe.com/sensei.html) um alle Produkte innerhalb ausgewählter Kategorien nach einem bestimmten Algorithmus zu sortieren. Sobald ein Intelligent-Ranking ausgewählt wurde, wird erwartet, dass sich die spezifische Produktreihenfolge im Laufe der Zeit ändert, da die zugrunde liegenden Daten von Adobe Sensei laufend neu analysiert werden. Die beliebtesten Produkte ändern sich beispielsweise automatisch im Laufe der Zeit, wenn sich die Kundenpräferenzen ändern.
+**Intelligent Ranking** nutzt die Verhaltensdatenanalyse der Storefront durch [Adobe AI](https://business.adobe.com/ai.html) um alle Produkte innerhalb ausgewählter Kategorien nach einem bestimmten Algorithmus zu sortieren. Sobald ein Intelligent Ranking ausgewählt ist, wird erwartet, dass sich die spezifische Produktreihenfolge im Laufe der Zeit ändert, da die zugrunde liegenden Daten von Adobe AI laufend neu analysiert werden. Die beliebtesten Produkte ändern sich beispielsweise automatisch im Laufe der Zeit, wenn sich die Kundenpräferenzen ändern.
 Intelligente Ranking-Methoden sind:
 
 * Am häufigsten gekauft: Sortiert Produkte nach der Häufigkeit, mit der sie von Käufern in den letzten sieben Tagen gekauft wurden.

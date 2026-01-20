@@ -2,7 +2,7 @@
 title: Implementierungs-Workflow
 description: Erfahren Sie, wie Sie  [!DNL Product Recommendations]  erfolgreich in Ihrer Storefront implementieren.
 exl-id: 4a784d04-8be6-473f-afb3-264af06c850a
-source-git-commit: a3e19940e2a3d8a240bb17703cfdd9903df311aa
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -13,23 +13,23 @@ ht-degree: 0%
 
 [!DNL Product Recommendations] verwendet sowohl Verhaltens- als auch Katalogdaten:
 
-- Verhalten - Daten aus der Interaktion eines Käufers auf Ihrer Site, z. B. Produktansichten, Artikel, die einem Warenkorb hinzugefügt werden, und Käufe. Adobe Commerce und Adobe Sensei sammeln keine personenbezogenen Daten.
+- Verhalten - Daten aus der Interaktion eines Käufers auf Ihrer Site, z. B. Produktansichten, Artikel, die einem Warenkorb hinzugefügt werden, und Käufe. Adobe Commerce und Adobe AI erfassen keine personenbezogenen Daten.
 
 - Katalog : Produktmetadaten wie Name, Preis und Verfügbarkeit.
 
-Bei der Installation des `magento/product-recommendations module` aggregiert Adobe Sensei die Verhaltens- und Katalogdaten und erstellt [!DNL Product Recommendations] für jeden Empfehlungstyp. Der [!DNL Product Recommendations]-Service stellt diese Empfehlungen dann in Ihrer Storefront bereit. Verwenden Sie den folgenden Workflow, um Produktempfehlungen in Ihrer Storefront zu implementieren:
+Bei der Installation des `magento/product-recommendations module` aggregiert Adobe AI die Verhaltens- und Katalogdaten und erstellt [!DNL Product Recommendations] für jeden Empfehlungstyp. Der [!DNL Product Recommendations]-Service stellt diese Empfehlungen dann in Ihrer Storefront bereit. Verwenden Sie den folgenden Workflow, um Produktempfehlungen in Ihrer Storefront zu implementieren:
 
 >[!NOTE]
 >
-> Wenn Ihre Storefront mit PWA Studio implementiert wird, lesen Sie den Abschnitt [Dokumentation zu PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Wenn Sie eine benutzerdefinierte Frontend-Technologie wie React oder Vue JS verwenden, erfahren Sie, wie Sie [&#x200B; in &#x200B;](headless.md) Headless-Storefront [!DNL Product Recommendations] (integrieren) können.
+> Wenn Ihre Storefront mit PWA Studio implementiert wird, lesen Sie den Abschnitt [Dokumentation zu PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Wenn Sie eine benutzerdefinierte Frontend-Technologie wie React oder Vue JS verwenden, erfahren Sie, wie Sie [ in ](headless.md) Headless-Storefront [!DNL Product Recommendations] (integrieren) können.
 
 ## Workflow
 
 1. **Bereitstellung der Datenerfassung in der Produktion**
 
-   Für die Bereitstellung von [!DNL Product Recommendations] sind zwei [Datenquellen](type.md) Kataloge und Verhaltensdaten erforderlich. Da die Produktion die einzige Umgebung ist, in der die Aktionen Ihrer Kunden erfasst und analysiert werden, können Sie so früh wie möglich mit der Datenerfassung in der Produktion beginnen. [Erfahren Sie](events.md) wie Adobe Sensei Modelle für maschinelles Lernen trainiert, die zu qualitativ hochwertigeren Empfehlungen führen. Wenn Sie mit der Erfassung von Verhaltensdaten in der Produktion beginnen, können Sie [Empfehlungen abrufen](staging-environment.md#fetch-recommendations-from-production-environment-recommended) die auf diesen Produktionsdaten basieren, während Sie in Nicht-Produktionsumgebungen arbeiten. Anschließend können Sie mit verschiedenen Empfehlungen testen und experimentieren, die auf der Grundlage der in der Produktion erfassten echten Kundendaten berechnet werden.
+   Für die Bereitstellung von [!DNL Product Recommendations] sind zwei [Datenquellen](type.md) Kataloge und Verhaltensdaten erforderlich. Da die Produktion die einzige Umgebung ist, in der die Aktionen Ihrer Kunden erfasst und analysiert werden, können Sie so früh wie möglich mit der Datenerfassung in der Produktion beginnen. [Erfahren Sie](events.md) wie Adobe AI Modelle für maschinelles Lernen trainiert, die zu qualitativ hochwertigeren Empfehlungen führen. Wenn Sie mit der Erfassung von Verhaltensdaten in der Produktion beginnen, können Sie [Empfehlungen abrufen](staging-environment.md#fetch-recommendations-from-production-environment-recommended) die auf diesen Produktionsdaten basieren, während Sie in Nicht-Produktionsumgebungen arbeiten. Anschließend können Sie mit verschiedenen Empfehlungen testen und experimentieren, die auf der Grundlage der in der Produktion erfassten echten Kundendaten berechnet werden.
 
-   Um die Datenerfassung für die Produktion bereitzustellen, müssen [&#x200B; das &#x200B;](install-configure.md)-Modul installieren [!DNL Product Recommendations] konfigurieren, indem Sie einen [API-Schlüssel](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=de) bereitstellen.
+   Um die Datenerfassung für die Produktion bereitzustellen, müssen [ das ](install-configure.md)-Modul installieren [!DNL Product Recommendations] konfigurieren, indem Sie einen [API-Schlüssel](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) bereitstellen.
 
    >[!TIP]
    >
@@ -43,7 +43,7 @@ Bei der Installation des `magento/product-recommendations module` aggregiert Ado
    >
    > Durch Anpassen der Vorlage können Sie Ihr Stylesheet angeben, überschreiben, wo eine Empfehlungseinheit auf einer Seite angezeigt wird usw.
 
-   Siehe [Anpassen](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html?lang=de) in der Entwicklerdokumentation, um zu erfahren, wie Sie diesen Schritt durchführen.
+   Siehe [Anpassen](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html) in der Entwicklerdokumentation, um zu erfahren, wie Sie diesen Schritt durchführen.
 
 1. **Testen von Recommendations in Ihrer produktionsfremden Umgebung**
 
@@ -57,4 +57,4 @@ Bei der Installation des `magento/product-recommendations module` aggregiert Ado
 
 1. **Erstellen und Bereitstellen von Recommendations für Ihre Produktions-Storefront**
 
-   Nachdem Sie nun die Verhaltensdatenerfassung in der Produktion bereitgestellt, die Vorlage für Produktempfehlungen geändert und Empfehlungen mit dem tatsächlichen Käuferverhalten getestet haben, sind Sie bereit, den gesamten Code in die Produktion weiterzuleiten und Live[Produktempfehlungen &#x200B;](create.md) erstellen.
+   Nachdem Sie nun die Verhaltensdatenerfassung in der Produktion bereitgestellt, die Vorlage für Produktempfehlungen geändert und Empfehlungen mit dem tatsächlichen Käuferverhalten getestet haben, sind Sie bereit, den gesamten Code in die Produktion weiterzuleiten und Live[Produktempfehlungen ](create.md) erstellen.

@@ -2,7 +2,7 @@
 title: Empfehlungstypen
 description: Erfahren Sie mehr über die Recommendations, die Sie auf verschiedenen Seiten auf Ihrer Site bereitstellen können.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
-source-git-commit: 67d0b98f3a9317c0db944a176fd99375091a3970
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Diese Empfehlungstypen empfehlen Produkte, die in den letzten sieben Tagen am be
 | Am häufigsten angezeigt | empfiehlt Produkte, die am häufigsten angezeigt wurden, indem die Anzahl der Sitzungen gezählt wird, bei denen in den letzten sieben Tagen eine Ansichtsaktion stattgefunden hat.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/>- Am beliebtesten<br/>- Trend<br/>- Beliebt<br/>- Kürzlich beliebt<br/>- Beliebte Produkte inspiriert durch dieses Produkt (PDP)<br/>- Topverkäufe |
 | Am häufigsten gekauft | empfiehlt Produkte, die von Käufern in den letzten sieben Tagen am häufigsten gekauft wurden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/> - Am beliebtesten<br/>- Trend<br/>- Beliebt<br/>- Kürzlich beliebt<br/>- Beliebte Produkte inspiriert durch dieses Produkt (PDP)<br/>- Topverkäufe |
 | Am häufigsten zum Warenkorb hinzugefügt | empfiehlt Produkte, die von Käufern in den letzten sieben Tagen am häufigsten in den Warenkorb gelegt wurden. Dieser Empfehlungstyp kann auf allen Seiten verwendet werden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/> - Am beliebtesten<br/>- Trend<br/>- Beliebt<br/>- Kürzlich beliebt<br/>- Beliebte Produkte inspiriert durch dieses Produkt (PDP)<br/>- Topverkäufe |
-| Trend | empfiehlt Produkte basierend auf der jüngsten Popularitätsdynamik eines Produkts auf Ihrer Site.<br/><br/>Adobe Sensei aggregiert Such- und Kaufdaten auf Ihrer Site, um zu ermitteln und zu bewerten, welche Produkte bei Ihren Kundinnen und Kunden am beliebtesten sind. Da Trending die jüngste Produktimpulse analysiert, ist es ein effektiver Empfehlungstyp für Kataloge mit hohem Umsatz. Wenn Ihr Katalog statischer ist, ist er möglicherweise nur dann so nützlich, wenn die Einkaufsmuster Ihrer Zielgruppe sehr variabel sind.<br/><br/>Bei Verwendung auf der Startseite empfiehlt Trend Produkte, die kürzlich auf der gesamten Site beliebt waren. Im Trend-Bereich werden nicht Produkte angezeigt, die durchgängig beliebt sind, sondern solche, die erst kürzlich beliebt wurden. Wenn Sie beispielsweise eine E-Mail-Marketing-Kampagne haben, die bestimmte Produkte bewirbt, erhöht die durch die E-Mail generierte Popularitätssteigerung die Wahrscheinlichkeit, dass die beworbenen Produkte als Trend klassifiziert werden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/>- Trending<br/>- Jetzt <br/>- Kürzlich trendend<br/>- Hot products<br/>- Trending Related Products (PDP) |
+| Trend | empfiehlt Produkte basierend auf der jüngsten Popularitätsdynamik eines Produkts auf Ihrer Site.<br/><br/>Adobe-KI aggregiert Such- und Kaufdaten auf Ihrer Site, um zu ermitteln und zu bewerten, welche Produkte bei Ihren Kundinnen und Kunden am beliebtesten sind. Da Trending die jüngste Produktimpulse analysiert, ist es ein effektiver Empfehlungstyp für Kataloge mit hohem Umsatz. Wenn Ihr Katalog statischer ist, ist er möglicherweise nur dann so nützlich, wenn die Einkaufsmuster Ihrer Zielgruppe sehr variabel sind.<br/><br/>Bei Verwendung auf der Startseite empfiehlt Trend Produkte, die kürzlich auf der gesamten Site beliebt waren. Im Trend-Bereich werden nicht Produkte angezeigt, die durchgängig beliebt sind, sondern solche, die erst kürzlich beliebt wurden. Wenn Sie beispielsweise eine E-Mail-Marketing-Kampagne haben, die bestimmte Produkte bewirbt, erhöht die durch die E-Mail generierte Popularitätssteigerung die Wahrscheinlichkeit, dass die beworbenen Produkte als Trend klassifiziert werden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/>- Trending<br/>- Jetzt <br/>- Kürzlich trendend<br/>- Hot products<br/>- Trending Related Products (PDP) |
 
 ## Hochleistungsfähig {#highperf}
 
@@ -124,7 +124,7 @@ Der Empfehlungstyp _Visuelle Ähnlichkeit_ bietet Empfehlungen für andere Produ
 - Material
 - Stil
 
-Adobe Sensei verwendet KI, um die Bilder in Ihrem Katalog zu verarbeiten und zu analysieren und Attribute zu erstellen, die verwendet werden, um visuelle Ähnlichkeiten zu ermitteln.
+Adobe AI verwendet KI, um die Bilder in Ihrem Katalog zu verarbeiten und zu analysieren und Attribute zu erstellen, die verwendet werden, um visuelle Ähnlichkeiten zu ermitteln.
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Da dieser Empfehlungstyp für die meisten Kataloge nicht anwendbar ist, ist er n
 
 >[!NOTE]
 >
-> Der Empfehlungstyp _Visuelle Ähnlichkeit_ ist verfügbar, wenn Sie [&#x200B; als optionales &#x200B;](install-configure.md) installieren.
+> Der Empfehlungstyp _Visuelle Ähnlichkeit_ ist verfügbar, wenn Sie [ als optionales ](install-configure.md) installieren.
 
 1. Wechseln Sie in der _Admin_-Seitenleiste zu **Marketing** > _Promotions_ > **Product Recommendations**, um das _Product Recommendations_ Dashboard anzuzeigen.
 
@@ -152,7 +152,7 @@ Da dieser Empfehlungstyp für die meisten Kataloge nicht anwendbar ist, ist er n
 
    Die Seite [Neue Empfehlung erstellen](create.md) wird jetzt **Visuelle Ähnlichkeit** als auswählbarer Empfehlungstyp angezeigt, wenn der Seitentyp &quot;**&quot;**.
 
-Nachdem Sie die visuellen Empfehlungen aktiviert haben, startet Adobe Sensei die Bildverarbeitung. Wie lange es dauert, hängt von der Größe Ihres Katalogs ab.
+Nachdem Sie visuelle Empfehlungen aktiviert haben, startet Adobe AI die Bildverarbeitung. Wie lange es dauert, hängt von der Größe Ihres Katalogs ab.
 
 ### Wo verwendet
 
