@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Weitere Informationen zu Migrationswerkzeugen finden Sie unter Massenmigrationstool [](./bulk-data.md)Daten.
+>Weitere Informationen zu Migrationswerkzeugen finden Sie unter Massenmigrationstool [&#128279;](./bulk-data.md)Daten.
 
 ## Den Wandel verstehen – PaaS und SaaS im Vergleich
 
@@ -165,7 +165,7 @@ Dies ist ein wichtiger erster Integrationspunkt mit zwei Optionen für die Katal
 
 **Nutzen Sie den vorhandenen Catalog SaaS-Service, der in das PaaS-Backend integriert ist**
 
-Diese Option dient als Übergangsschritt und baut auf einer bestehenden Integration auf, bei der Ihr PaaS-Backend eine vorhandene Instanz des Adobe Systems Commerce SaaS-Dienstes mit Daten aus dem Katalogdienst[, Live-suchen](../../catalog-service/guide-overview.md)[ und ](../../live-search/overview.md)Produktempfehlungen[](../../product-recommendations/overview.md) füllt.
+Diese Option dient als Übergangsschritt und baut auf einer bestehenden Integration auf, bei der Ihr PaaS-Backend eine vorhandene Instanz des Adobe Systems Commerce SaaS-Dienstes mit Daten aus dem Katalogdienst[, Live-suchen](../../catalog-service/guide-overview.md) [&#x200B; und &#x200B;](../../live-search/overview.md)Produktempfehlungen[&#128279;](../../product-recommendations/overview.md) füllt.
 
 * **Katalogdatensynchronisierung**: Stellen Sie sicher, dass Ihre Adobe Systems Commerce-PaaS-Instanz weiterhin Produkt- und Katalogdaten mit Ihrem vorhandenen Adobe Systems Commerce-Katalog-SaaS-Dienst synchronisiert. Dies beruht in der Regel auf etablierten Konnektoren oder Modulen innerhalb Ihrer PaaS-Instanz. Der Catalog SaaS-Dienst bleibt die maßgebliche Quelle für suchen- und Merchandising Funktionen und leitet seine Daten von Ihrem PaaS-Backend ab.
 * **API-Mesh zur Optimierung**: Während die Headless-Storefront (auf Edge Lieferung Services) und andere Dienste Daten direkt aus dem Catalog SaaS-Dienst nutzen können, empfiehlt Adobe Systems dringend, API Mesh (innerhalb Applikation Builders) zu verwenden. API Mesh kann APIs aus dem Catalog SaaS-Dienst mit anderen erforderlichen APIs aus Ihrem PaaS-Backend (z. B. Echtzeit-Warenbestand-Überprüfungen aus der Transaktionsdatenbank oder benutzerdefinierten Produktattributen, die nicht vollständig auf den Catalog SaaS-Dienst repliziert werden) in einem einzigen, leistungsfähigen GraphQL-Endpunkt vereinheitlichen. Dies ermöglicht auch eine zentralisierte Caching, Authentifizierung und Antwort Umwandlung.
