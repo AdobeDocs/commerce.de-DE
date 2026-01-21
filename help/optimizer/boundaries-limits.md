@@ -2,7 +2,7 @@
 title: Beschränkungen und Grenzen
 description: Verstehen  [!DNL Adobe Commerce Optimizer]  Beschränkungen und Grenzen, um Kapazitäten zu planen und Leistungsprobleme zu vermeiden.
 role: Admin, Developer
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
 workflow-type: tm+mt
@@ -24,7 +24,7 @@ Ihre Nutzung muss innerhalb dieser Grenzen bleiben. Sie zu überschreiten kann z
 
 Lizenzbeschränkungen können erhöht werden, indem Sie die Lizenzpakete erwerben, die im Abschnitt [Lizenzbeschränkungen und Systemgrenzen](#license-limits-and-system-boundaries) beschrieben sind, oder indem Sie benutzerdefinierte Lizenzen für eindeutige Anwendungsfälle aushandeln. Wenden Sie sich an Ihren Adobe-Kundenbetreuer, um Ihre Anforderungen zu besprechen.
 
-Wenden Sie sich bei Fragen zu Systemgrenzen an den [Adobe-Support](https://experienceleague.adobe.com/home?lang=en#support).
+Wenden Sie sich bei Fragen zu Systemgrenzen an den [Adobe-Support](https://experienceleague.adobe.com/home?lang=de#support).
 
 ## Leistungsprobleme verhindern
 
@@ -156,7 +156,7 @@ Die folgenden Funktionen sind für Produktempfehlungen verfügbar. Einige in and
 
 | **Funktion** | **Beschreibung** | **Basiszuweisung** | **Erweiterbar?** | **Hinweise** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Kapazität zum Erstellen Cloud-nativer Erweiterungen und Integrationen | Basierend auf GMV-Stufe<p>Mindestzuweisung: 1 Packung/Jahr</p> | Ja<p>Zusätzliche Packs hinzufügen</p> | Für die pro Packung definierten Grenzwerte siehe:<ul><li>[App Builder-Produktbeschreibung](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) für pro Pack definierte Beschränkungen.</li><li>[Systemeinstellungen und Einschränkungen](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in den *App Builder Runtime Guides*.</li><li>[Speicheranforderungen für App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Kapazität zum Erstellen Cloud-nativer Erweiterungen und Integrationen | Basierend auf GMV-Stufe<p>Mindestzuweisung: 1 Packung/Jahr</p> | Ja<p>Zusätzliche Packs hinzufügen</p> | Für die pro Packung definierten Grenzwerte siehe:<ul><li>[App Builder-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-developer-app-builder.html) für pro Pack definierte Beschränkungen.</li><li>[Systemeinstellungen und Einschränkungen](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in den *App Builder Runtime Guides*.</li><li>[Speicheranforderungen für App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
