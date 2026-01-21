@@ -2,7 +2,7 @@
 title: Tool für die Massendatenmigration
 description: Erfahren Sie, wie Sie mit dem Tool für die Massendatenmigration Daten aus Ihrer bestehenden Adobe Commerce in der Cloud-Instanz zu migrieren [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
