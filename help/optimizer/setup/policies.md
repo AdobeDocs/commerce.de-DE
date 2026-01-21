@@ -2,11 +2,11 @@
 title: Richtlinien
 description: Erfahren Sie, wie Sie in Richtlinien erstellen und  [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: 845d93e367c8e2495943afe8c7d5d0a4bde990c2
+source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ In diesem Abschnitt erstellen Sie eine neue Richtlinie. Die Richtlinie kann entw
    1. **Attribut** - Geben Sie ein Attribut aus Ihrem Katalog ein. Beispiel: „part_category“. Dieser Name muss genau mit dem Namen des Attributs im Katalog übereinstimmen.
    1. **Operator** - Wählen Sie den Operator. Beispiel: **IN**. &#x200B;
    1. **Wert Source** - Wählen Sie **STATIC**. &#x200B;
-   1. **Wert** - Geben Sie einen Wert aus der zuvor angegebenen Attributdefinition ein. Geben Sie beispielsweise „Bremsen“ ein, um einen Filter für Bremsenteile zu erstellen. &#x200B;Der Wert muss exakt mit dem Attributnamen übereinstimmen.
+   1. **Wert** - Geben Sie einen Wert aus der zuvor angegebenen Attributdefinition ein. Geben Sie beispielsweise „Bremsen“ ein, um einen Filter für Bremsenteile zu erstellen.
    1. Drücken Sie die Eingabetaste, um **Wert zu**.
 
       Wenn die Richtlinie nach mehreren Werten filtern soll, geben Sie jeden Wert separat ein.
