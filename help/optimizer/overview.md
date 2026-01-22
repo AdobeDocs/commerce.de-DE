@@ -2,11 +2,11 @@
 title: Was ist Adobe Commerce Optimizer?
 description: Erfahren Sie mehr über  [!DNL Adobe Commerce Optimizer]  und seine wichtigsten Funktionen.
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 8cf3e66641cf4bbc6db1da1dec14f7aaa291d6fe
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Mit [!DNL Adobe Commerce Optimizer] können Sie:
 
 Sehen Sie sich das folgende Video an, um einen allgemeinen Überblick über [!DNL Adobe Commerce Optimizer] zu erhalten:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450472?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Wer profitiert am meisten von [!DNL Adobe Commerce Optimizer]?
 
@@ -84,6 +84,10 @@ Zu den wichtigsten Funktionen gehören:
 - **Vorher-Nachher**-Metriken: Bietet Echtzeiteinblicke in die Leistung Ihrer Commerce-Initiativen. Sie können vor und nach den Ergebnissen bestimmter KPIs anzeigen, die Auswirkungen von Änderungen auswerten und optimieren, um bessere Ergebnisse zu erzielen. Sie können die Ergebnisse in eine PDF exportieren.
 - **Commerce-Storefront mit Edge Delivery** - Mit der Bereitstellung von Edge können Sie Ihre Site schnell mit vordefinierten Storefront-Komponenten mit integrierten Commerce-Funktionen starten, einschließlich Produktlistenseiten, Produktdetailseiten, Warenkorb und Checkout.
 - **Warenkorb und Checkout von Drittanbietern** - Verwenden Sie API Mesh und App Builder, um eine Integration mit Warenkorb- und Checkout-Systemen von Drittanbietern durchzuführen.
+
+>[!NOTE]
+>
+>Informationen zu Systemgrenzen und Lizenzierung für [!DNL Adobe Commerce Optimizer] finden Sie unter [Beschränkungen und Grenzen](boundaries-limits.md).
 
 ## Architektur
 
