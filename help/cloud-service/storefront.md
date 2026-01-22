@@ -5,10 +5,10 @@ feature: Storefront
 role: Developer
 level: Beginner
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 6eda2197fde2e88292e58b2bb4fc4759f24da558
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+source-git-commit: 0cd9749574460374a8fe875f1eff54f2a4a8d614
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Führen Sie die folgenden Schritte aus, um Ihre [!DNL Adobe Commerce Storefront] mit [!DNL Edge Delivery Services] für [!DNL Adobe Commerce as a Cloud Service] (SaaS) einzurichten.
 
-Eine besser anpassbare und detailliertere Anleitung finden Sie in der [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=de).
+Eine besser anpassbare und detailliertere Anleitung finden Sie in der [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
 1. Öffnen Sie das [Tool Site Creator](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
 
@@ -27,9 +27,9 @@ Eine besser anpassbare und detailliertere Anleitung finden Sie in der [Storefron
 
 1. Geben Sie einen **[!UICONTROL Site Name]** ein.
 
-1. Geben Sie im Feld **[!UICONTROL Commerce GraphQL Endpoint (optional)]** Ihren [!DNL Adobe Commerce as a Cloud Service] (SaaS) GraphQL-Endpunkt ein, auf den Sie im Commerce Cloud Manager zugreifen können, nachdem Sie [&#x200B; Instanz erstellt &#x200B;](./getting-started.md#create-an-instance).
+1. Geben Sie im Feld **[!UICONTROL Commerce GraphQL Endpoint (optional)]** Ihren [!DNL Adobe Commerce as a Cloud Service] (SaaS) GraphQL-Endpunkt ein, auf den Sie im Commerce Cloud Manager zugreifen können, nachdem Sie [ Instanz erstellt ](./getting-started.md#create-an-instance).
 
-   Wenn Sie [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic) verwenden, geben Sie alternativ Ihren [!DNL API Mesh] GraphQL-Endpunkt in das Feld **[!UICONTROL Commerce GraphQL Endpoint (optional)]** ein. Weitere [&#x200B; finden Sie unter &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) erstellen .
+   Wenn Sie [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic) verwenden, geben Sie alternativ Ihren [!DNL API Mesh] GraphQL-Endpunkt in das Feld **[!UICONTROL Commerce GraphQL Endpoint (optional)]** ein. Weitere [ finden Sie unter ](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) erstellen .
 
 1. Klicken Sie auf **[!UICONTROL Create Site]**. Befolgen Sie die Anweisungen auf dem Bildschirm, um den Zugriff auf Ihr GitHub-Repository zu autorisieren.
 
@@ -44,7 +44,8 @@ Sobald der Prozess abgeschlossen ist, können Sie Ihre Storefront mit den folgen
 
 Weitere Informationen finden Sie in den folgenden Artikeln:
 
-* Weitere Informationen zum Verwalten und Anzeigen von Inhalten und Daten in der Storefront finden Sie unter [Storefront-Inhalte aktualisieren](./use-cases.md#update-storefront-content).
-* Weitere Informationen zu Funktionen für kontextuelle Experimente finden Sie unter [Kontextuelle Experimente](./use-cases.md#contextual-experimentation).
-* Weitere Informationen zur Verwendung der generativen KI zur Automatisierung der Erstellung hochwertiger Inhalte finden Sie unter [Varianten generieren](./use-cases.md#generate-variations).
-* Weitere Informationen zum Aktualisieren von Website-Inhalten und zur Integration mit Commerce-Frontend-Komponenten und Backend-Daten finden Sie in der [[!DNL Adobe Commerce Storefront documentation]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de).
+* [Storefront-Inhalt aktualisieren](./use-cases.md#update-storefront-content) - Verwalten und Anzeigen von Inhalten und Daten in der Storefront.
+* [Kontextuelles Experimentieren](./use-cases.md#contextual-experimentation) - Erstellen und verwalten Sie Experimente in Ihrer Storefront.
+* [Varianten generieren](./use-cases.md#generate-variations) - Verwenden Sie generative KI, um die Erstellung hochwertiger Inhalte zu automatisieren.
+* [Dokumentation zur Adobe Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)—Hier erhalten Sie detaillierte Informationen zum Aktualisieren von Website-Inhalten und zur Integration mit Commerce-Frontend-Komponenten und Backend-Daten.
+* [Konfigurations-Service](https://www.aem.live/docs/config-service-setup) - Erfahren Sie mehr über die Migration Ihrer Storefront-Konfiguration von `config.json` zur Verwendung des Konfigurations-Service, der erweiterte Anwendungsfälle wie die Konfiguration ohne Antwort und Überlagerungen unterstützt.

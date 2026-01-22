@@ -2,11 +2,11 @@
 title: Einrichten der Storefront
 description: Erfahren Sie, wie Sie Ihre Storefront  [!DNL Adobe Commerce Optimizer] .
 role: Developer
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: e46c55cba21501c6fa12db6c130493b99de0e4da
+source-git-commit: 0cd9749574460374a8fe875f1eff54f2a4a8d614
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1397'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Bevor Sie beginnen, erfassen Sie die folgenden Informationen aus Ihrer [!DNL Ado
 * **GraphQL-Endpunkt** für Ihre Instanz
    * Verfügbar auf der [Detailseite der Instanz](get-started.md#manage-instances)
 * **Katalogansicht-ID** für die globale Katalogansicht
-   * Auf der Seite [Katalogdetails“ &#x200B;](./setup/catalog-view.md#manage-catalog-view)
+   * Auf der Seite [Katalogdetails“ ](./setup/catalog-view.md#manage-catalog-view)
 * **Source-Gebietsschema** für Ihre Katalogansicht
    * Die Standardeinstellung für Beispieldaten ist `en-US`
 
@@ -200,8 +200,8 @@ Verwenden Sie die folgende Anleitung, um häufige Probleme zu überprüfen:
 |-------|----------|----------|
 | **Die Installation der Codesynchronisierung schlägt fehl** | Einrichtung der Codesynchronisierung kann nicht abgeschlossen werden | <ul><li>Stellen Sie sicher, dass Sie Administratorzugriff auf Ihre GitHub-Organisation haben.</li><li>Versuchen Sie, ein persönliches Repository anstelle einer Organisation zu verwenden.</li><li>Überprüfen Sie die GitHub-Berechtigungen und versuchen Sie es erneut.</li></ul> |
 | **Site wird nicht geladen** | 404- oder Verbindungsfehler | <ul><li>URL-Format der Site überprüfen: `https://main--{SITE}--{ORG}.aem.live`</li><li>Überprüfen Sie, ob die Code Sync App ordnungsgemäß installiert ist.</li><li>Stellen Sie sicher, dass das Repository öffentlich ist oder ordnungsgemäß konfiguriert ist.</li></ul> |
-| **Keine Produktdaten angezeigt** | Produktseiten enthalten Platzhalter oder Fehler | <ul><li>Überprüfen Sie Ihre Konfigurationswerte in `config.json`</li><li>Überprüfen Sie in der [!DNL Adobe Commerce Optimizer]-Instanz die Seite Datensynchronisierung , um sicherzustellen, dass Beispielprodukte geladen werden. Wenn keine Produkte verfügbar sind, laden Sie die Beispieldaten neu oder fügen Sie ein Produkt mithilfe der [Datenaufnahme-API“ &#x200B;](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request). Warten Sie einige Minuten, bis die Konfigurationsänderungen weitergegeben werden.</li><li>Versuchen Sie, die Produktdetails mithilfe der Merchandising-Service-[Produktabfrage](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details) abzurufen, indem Sie dieselben Kopfzeilen verwenden, die in der `config.json`-Datei konfiguriert sind. Wenn Sie die Daten abrufen können, ist dies wahrscheinlich ein Problem mit der Konfiguration der Katalogansicht oder ein Indexfehler.</li></ul> |
-| **Suche gibt keine Ergebnisse zurück** | Leere Suchergebnisseite | <ul><li>Stellen Sie sicher, dass Sie die Produktsuchergebnisse mithilfe der Merchandising-Services [productSearch-Abfrage](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search) mit denselben Kopfzeilen abrufen können, die in der `config.json`-Datei konfiguriert sind. Wenn Sie die Daten abrufen können, ist dies wahrscheinlich ein Problem mit der Konfiguration der Katalogansicht oder ein Indexfehler.</li><li>Vergewissern Sie sich, dass die Katalogansichts-ID in der `config.json` mit der Katalogansichts-ID in [!DNL Adobe Commerce Optimizer] übereinstimmt.</li><li>Überprüfen Sie in Adobe Commerce Optimizer die Konfiguration der Richtlinien, des Gebietsschemas und der Preisverzeichnisse, die Sie in der Konfiguration der Storefront-Kopfzeilen verwendet haben.</li><li>Stellen Sie sicher[&#x200B; dass für die Suche die &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)Attribut-Metadateneinstellungen) korrekt eingestellt sind.</li></ul> |
+| **Keine Produktdaten angezeigt** | Produktseiten enthalten Platzhalter oder Fehler | <ul><li>Überprüfen Sie Ihre Konfigurationswerte in `config.json`</li><li>Überprüfen Sie in der [!DNL Adobe Commerce Optimizer]-Instanz die Seite Datensynchronisierung , um sicherzustellen, dass Beispielprodukte geladen werden. Wenn keine Produkte verfügbar sind, laden Sie die Beispieldaten neu oder fügen Sie ein Produkt mithilfe der [Datenaufnahme-API“ ](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request). Warten Sie einige Minuten, bis die Konfigurationsänderungen weitergegeben werden.</li><li>Versuchen Sie, die Produktdetails mithilfe der Merchandising-Service-[Produktabfrage](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details) abzurufen, indem Sie dieselben Kopfzeilen verwenden, die in der `config.json`-Datei konfiguriert sind. Wenn Sie die Daten abrufen können, ist dies wahrscheinlich ein Problem mit der Konfiguration der Katalogansicht oder ein Indexfehler.</li></ul> |
+| **Suche gibt keine Ergebnisse zurück** | Leere Suchergebnisseite | <ul><li>Stellen Sie sicher, dass Sie die Produktsuchergebnisse mithilfe der Merchandising-Services [productSearch-Abfrage](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search) mit denselben Kopfzeilen abrufen können, die in der `config.json`-Datei konfiguriert sind. Wenn Sie die Daten abrufen können, ist dies wahrscheinlich ein Problem mit der Konfiguration der Katalogansicht oder ein Indexfehler.</li><li>Vergewissern Sie sich, dass die Katalogansichts-ID in der `config.json` mit der Katalogansichts-ID in [!DNL Adobe Commerce Optimizer] übereinstimmt.</li><li>Überprüfen Sie in Adobe Commerce Optimizer die Konfiguration der Richtlinien, des Gebietsschemas und der Preisverzeichnisse, die Sie in der Konfiguration der Storefront-Kopfzeilen verwendet haben.</li><li>Stellen Sie sicher[ dass für die Suche die ](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)Attribut-Metadateneinstellungen) korrekt eingestellt sind.</li></ul> |
 
 ### Validierungs-Checkliste
 
@@ -218,26 +218,28 @@ Bevor Sie mit den nächsten Schritten fortfahren, stellen Sie sicher, dass Ihre 
 
 Wenn die Probleme bestehen bleiben:
 
-* Lesen Sie die Dokumentation zur [Adobe Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)
+* Lesen Sie die Dokumentation zur [Adobe Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * Lesen Sie das [Adobe Commerce Optimizer-Entwicklerhandbuch](https://developer.adobe.com/commerce/services/optimizer/)
-* Besuchen Sie die [Adobe Commerce Support-Ressourcen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/overview)
+* Besuchen Sie die [Adobe Commerce Support-Ressourcen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
 
 ## Nächste Schritte
 
 Nachdem Sie Ihre Storefront eingerichtet und überprüft haben, können Sie:
 
-1. **[Sidekick installieren](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=de#install-and-configure-sidekick)** - Browser-Erweiterung zum Bearbeiten, Anzeigen einer Vorschau und Veröffentlichen von Inhalten direkt von Ihrer Website aus
+1. **[Installieren Sie die ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** Sidekick-Browser, um Inhalte direkt auf Ihrer Website zu bearbeiten, in der Vorschau anzuzeigen und zu veröffentlichen.
 
-2. **[Einrichten einer lokalen Entwicklungsumgebung](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=de#set-up-local-environment)** - Erstellen einer lokalen Umgebung zum Anpassen des Codes und Inhalts Ihrer Storefront
+2. **[Einrichten einer lokalen Entwicklungsumgebung](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** - Erstellen einer lokalen Umgebung zum Anpassen des Codes und Inhalts Ihrer Storefront.
 
 ### Erfahren und erkunden
 
-* **[Abschließen des End-to-End-Anwendungsfalls](./use-case/admin-use-case.md)** - Erfahren Sie mehr über die Einrichtung von Storefronts und die Katalogverwaltung mit [!DNL Adobe Commerce Optimizer]
+* **[Abschließen des End-to-End-Anwendungsfalls](./use-case/admin-use-case.md)** Erfahren Sie mehr über die Einrichtung von Storefronts und die Katalogverwaltung mithilfe von [!DNL Adobe Commerce Optimizer].
 
-* **[Anpassung der Storefront erkunden](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=de)** - Erweiterte Einrichtungs- und Konfigurationsoptionen
+* **[Anpassung der Storefront erkunden](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)**—Erfahren Sie mehr über erweiterte Setup- und Konfigurationsoptionen.
 
-* **[Verwenden von Commerce-Dropdown-Menüs zum Anpassen des Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=de)**-Hinzufügen vordefinierter Komponenten zur Verbesserung des Storefront-Erlebnisses
+* **[Verwenden Sie Commerce-Dropdown-Menüs, um das Storefront-Erlebnis anzupassen](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**-Fügen Sie vorgefertigte Komponenten hinzu, um das Storefront-Erlebnis zu verbessern.
+
+* **Migrieren zum Storefront-Konfigurations-**: Nachdem Sie Ihre erste Storefront erstellt haben, können Sie die Konfiguration so migrieren, dass der Konfigurations-Service verwendet wird, der erweiterte Anwendungsfälle wie die Konfiguration „Repoless“ und Überlagerungen unterstützt. Weitere Informationen finden Sie in der [Konfigurationsdienst](https://www.aem.live/docs/config-service-setup) Dokumentation in der Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
-> Weitere Informationen zum Aktualisieren von Website-Inhalten und [&#x200B; Integration mit Commerce-Frontend-Komponenten und Backend-Daten finden Sie in der Dokumentation zur &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)Adobe Commerce Storefront .
+> Weitere Informationen zum Aktualisieren von Website-Inhalten und [ Integration mit Commerce-Frontend-Komponenten und Backend-Daten finden Sie in der Dokumentation zur ](https://experienceleague.adobe.com/developer/commerce/storefront/)Adobe Commerce Storefront .
