@@ -58,7 +58,7 @@ Wandeln Sie die in den Kunden-E-Mails enthaltenen Sendungsverfolgungsnummern aus
 
 ### Instanzspezifischer Admin-Zugriff
 
-Sie können jetzt [ einzelnen ](./user-management.md#add-users)-Instanzen in der Admin Console [!DNL Adobe Commerce as a Cloud Service]Benutzerzugriff zuweisen“. <!-- CCSAAS-4337 --><!-- See PR #332 -->
+Sie können jetzt [&#x200B; einzelnen &#x200B;](./user-management.md#add-users)-Instanzen in der Admin Console [!DNL Adobe Commerce as a Cloud Service]Benutzerzugriff zuweisen“. <!-- CCSAAS-4337 --><!-- See PR #332 -->
 
 ### Beobachtbarkeit
 
@@ -100,7 +100,7 @@ Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen i
 
 * [Benutzerverwaltung](./user-management.md) - hat die Rolle **Produktadministrator** in der Admin Console geändert, um den Benutzerzugriff auf den Commerce-Administrator automatisch zu aktualisieren. <!-- CCSAAS-3012 -->
 
-* Amazon Es wurde die Möglichkeit hinzugefügt, verhandelbare Angebotsanhänge sowie Dateien und Bilder, die mit Kunden und Kundenadressen verknüpft sind, mithilfe von vordefinierten URLs in [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads) und [REST3 hochzuladen und ](https://developer.adobe.com/commerce/webapi/rest/modules/s3-uploads) abzurufen. Mit REST können Sie auch Kategoriebilder hochladen. <!-- CCSAAS-3250 -->
+* Amazon Es wurde die Möglichkeit hinzugefügt, verhandelbare Angebotsanhänge sowie Dateien und Bilder, die mit Kunden und Kundenadressen verknüpft sind, mithilfe von vordefinierten URLs in [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads) und [REST3 hochzuladen und &#x200B;](https://developer.adobe.com/commerce/webapi/rest/modules/s3-uploads) abzurufen. Mit REST können Sie auch Kategoriebilder hochladen. <!-- CCSAAS-3250 -->
 
 * Die Endpunkte `POST /V1/customers` und `PUT /V1/customers/{customerId}` wurden der [REST-API“ hinzugefügt](https://developer.adobe.com/commerce/webapi/rest/reference/) um Kunden zu erstellen und zu aktualisieren. Diese Endpunkte erfordern eine IMS-Autorisierung. <!-- CCSAAS-3112 -->
 
