@@ -129,7 +129,7 @@ Wenn Daten in Commerce Services fehlen oder falsch sind, überprüfen Sie die Pr
 - Das Datenexportfehlerprotokoll (`commerce-data-export-errors.log`) erfasst Fehler, die während der Erfassungsphase auftreten.
 - Das SaaS-Exportfehlerprotokoll (`saas-export-errors.log`) erfasst Fehler, die während der Übertragungsphase auftreten.
 
-Wenn Sie Fehler sehen, die nicht mit der Konfiguration oder Erweiterungen von Drittanbietern in Zusammenhang stehen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) mit so vielen Informationen wie möglich.
+Wenn Sie Fehler sehen, die nicht mit der Konfiguration oder Erweiterungen von Drittanbietern in Zusammenhang stehen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) mit so vielen Informationen wie möglich.
 
 ### Beheben von Katalogsynchronisierungsproblemen {#resolvesync}
 
@@ -144,11 +144,11 @@ Beim Trigger einer erneuten Synchronisierung von Daten kann es bis zu einer Stun
 
 #### Synchronisierung läuft nicht
 
-Wenn die Synchronisierung nicht nach einem Zeitplan ausgeführt wird oder nichts synchronisiert wird, lesen Sie diesen [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)Artikel.
+Wenn die Synchronisierung nicht nach einem Zeitplan ausgeführt wird oder nichts synchronisiert wird, lesen Sie diesen [KnowledgeBase](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)Artikel.
 
 #### Synchronisierung fehlgeschlagen
 
-Wenn der Status der Katalogsynchronisierung &quot;**&quot; lautet** senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Wenn der Status der Katalogsynchronisierung &quot;**&quot; lautet** senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Erweiterte Protokollierung
 
