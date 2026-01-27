@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Im Folgenden sind die Commerce-Backoffice-Ereignisse aufgeführt, die bei der Installation der [!DNL Data Connection]-Erweiterung verfügbar sind. Die von diesen Ereignissen erfassten Daten werden an die Adobe Experience Platform gesendet. Sie können auch [benutzerspezifische Ereignisse](custom-events.md) erstellen, um zusätzliche Daten zu erfassen, die nicht vorkonfiguriert bereitgestellt werden.
 
-Zusätzlich zu den Daten, die die folgenden Ereignisse erfassen, erhalten Sie auch [andere Daten](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) bereitgestellt von der Adobe Experience Platform Web SDK.
+Zusätzlich zu den Daten, die die folgenden Ereignisse erfassen, erhalten Sie auch [andere Daten](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=de) bereitgestellt von der Adobe Experience Platform Web SDK.
 
 Back-Office-Ereignisse enthalten Server-seitige Daten. Diese Daten umfassen [Bestellstatus](#order-status) Informationen wie z. B. ob eine Bestellung aufgegeben, storniert, zurückerstattet, versendet oder abgeschlossen wurde. Server-seitige Daten enthalten auch [Kundenprofilereignisse](#customer-profile-events) Informationen, beispielsweise ob ein Konto erstellt, aktualisiert oder gelöscht wurde.
 
 >[!NOTE]
 >
->Alle Backoffice-Ereignisse enthalten das Feld [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) , das die E-Mail-Adresse des Käufers, sofern verfügbar, und die ECID enthält.
+>Alle Backoffice-Ereignisse enthalten das Feld [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=de) , das die E-Mail-Adresse des Käufers, sofern verfügbar, und die ECID enthält.
 
 ## Bestellstatus
 
@@ -408,7 +408,7 @@ Von der Server-Seite erfasste Profilereignisse enthalten Kontoinformationen wie 
 
 >[!NOTE]
 >
->Jedes Kundenprofilereignis enthält auch das Feld [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) , das die vom System generierte Commerce-Kunden-ID als primäre Kennung für das Profil und eine E-Mail-ID enthält, die als sekundäre Kennung verwendet wird. [Erfahren Sie](custom-identities.md) wie Sie benutzerdefinierte Identitätsattribute erstellen, um die Identifizierung von Kundenprofilen zu verbessern.
+>Jedes Kundenprofilereignis enthält auch das Feld [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=de) , das die vom System generierte Commerce-Kunden-ID als primäre Kennung für das Profil und eine E-Mail-ID enthält, die als sekundäre Kennung verwendet wird. [Erfahren Sie](custom-identities.md) wie Sie benutzerdefinierte Identitätsattribute erstellen, um die Identifizierung von Kundenprofilen zu verbessern.
 
 ### accountCreated
 
