@@ -319,7 +319,7 @@ In diesem Szenario gibt es ein bekanntes Problem, bei dem die Aktivierung des PL
 
 **Option 3: GTM durch Adobe Analytics ersetzen**
 
-- Ziehen Sie ggf. eine Migration zu [Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html) in Betracht.
+- Ziehen Sie ggf. eine Migration zu [Adobe Analytics](https://business.adobe.com/de/products/adobe-analytics.html) in Betracht.
 - Wenden Sie sich an den Customer Engineering.
 
 **An wen wenden**: Senden eines Support-Tickets für GTM-Kompatibilitätsaktualisierungen oder Customer Engineering-Unterstützung.
@@ -444,7 +444,7 @@ Der **Adobe-Support** kann bei Folgendem helfen:
 - Headless- oder PWA-Implementierung
 - Benutzerdefinierte Ereignisverfolgung
 
-Informationen zum Adobe-Support finden Sie im [Hilfezentrum-Benutzerhandbuch](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Informationen zum Adobe-Support finden Sie im [Hilfezentrum-Benutzerhandbuch](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 ## FAQs
 
