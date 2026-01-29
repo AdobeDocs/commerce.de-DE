@@ -2,9 +2,9 @@
 title: Widget „Produktlistenseite“
 description: Aktivieren und Formatieren des  [!DNL Live Search Product Listing Page Widget]
 exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
-source-git-commit: 7684d5cded63f2b0805ee307dff77932607c47eb
+source-git-commit: c0a6f038d2528a67da6f1bb4f5e5bb140afc7dfc
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,14 @@ Wenn der [!DNL Live Search]-Service installiert ist, wird die Standardsuchfunkti
 
 Das [!DNL Live Search] PLP-Widget ist bei Neuinstallationen standardmäßig aktiviert.
 
-Wenn Sie ein Upgrade von [!DNL Live Search] durchführen und das PLP-Widget bereits deaktiviert wurde, wird es so bleiben. So schalten Sie sie ein:
+Wenn Sie ein Upgrade von [!DNL Live Search] durchführen und das PLP-Widget bereits deaktiviert wurde, wird es so bleiben.
+
+>[!NOTE]
+>
+>Wenn Sie vom veralteten Suchadapter migrieren, finden Sie im [Migrationshandbuch](migrate-to-plp.md) detaillierte Anleitungen zu Szenarien, Voraussetzungen und schrittweise Anweisungen.
+
+Aktivieren des PLP-Widgets:
+
 1. Wechseln Sie in Ihrem Adobe Commerce-Administrator zu Stores → Einstellungen → Konfiguration.
 1. Klicken Sie in der linken Navigation auf **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**.
 1. Klicken Sie auf den Abschnitt [!UICONTROL Storefront Features] .
@@ -55,7 +62,7 @@ Informationen zum Anpassen des PLP-Widgets für die oben genannten Funktionen fi
 
 ## Beispiel für einen Stil
 
-Sie können das Erscheinungsbild des PLP-Widgets mit (CSS) an Ihre [&#x200B; anpassen](https://developer.adobe.com/commerce/frontend-core/guide/css/).
+Sie können das Erscheinungsbild des PLP-Widgets mit (CSS) an Ihre [ anpassen](https://developer.adobe.com/commerce/frontend-core/guide/css/).
 
 >[!NOTE]
 >
