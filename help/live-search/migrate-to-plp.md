@@ -10,7 +10,7 @@ ht-degree: 0%
 
 # Migration vom Suchadapter zum PLP-Widget
 
-Der Suchadapter ist seit [ 4.0.0 ](release-notes.md#live-search-400)veraltet[!DNL Live Search] und erhält nur Sicherheits-Updates. Das [Widget „Produktlistenseite (PLP)](plp-styling.md) ist die unterstützte Lösung für alle [!DNL Live Search] Implementierungen, die in Zukunft durchgeführt werden. Dieser Leitfaden hilft Ihnen zu verstehen, wann die Migration einfach ist und wann zusätzliche Arbeit erforderlich ist.
+Der Suchadapter ist seit [&#x200B; 4.0.0 &#x200B;](release-notes.md#live-search-400)veraltet[!DNL Live Search] und erhält nur Sicherheits-Updates. Das [Widget „Produktlistenseite (PLP)](plp-styling.md) ist die unterstützte Lösung für alle [!DNL Live Search] Implementierungen, die in Zukunft durchgeführt werden. Dieser Leitfaden hilft Ihnen zu verstehen, wann die Migration einfach ist und wann zusätzliche Arbeit erforderlich ist.
 
 ## Voraussetzungen
 
