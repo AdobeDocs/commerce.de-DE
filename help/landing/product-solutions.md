@@ -6,16 +6,20 @@ recommendations: noDisplay, noCatalog
 hide: true
 hidefromtoc: true
 exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
-source-git-commit: 7b59d3a3c7d3cdc875e3329c7949eccc3a6c9fdc
+source-git-commit: 5e4481dfd7259a07bda58a1e945b086e9f1c1805
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce-Produktlösungen
 
-Adobe bietet verschiedene Lösungen, um die Anforderungen Ihres E-Commerce-Geschäfts zu erfüllen. Die Adobe Commerce-Dokumentation auf [Experience League](https://experienceleague.adobe.com/de/docs/commerce) und die [Adobe Developer](https://developer.adobe.com/commerce/docs/)-Website bietet Kundinnen und Kunden Self-Service-Ressourcen, die alle Lösungen unterstützen. Die Navigation durch eine derart große Menge von Inhalten kann jedoch ohne Anleitung eine Herausforderung darstellen.
+Adobe bietet verschiedene Lösungen, um die Anforderungen Ihres E-Commerce-Geschäfts zu erfüllen. Die Adobe Commerce-Dokumentation auf [Experience League](https://experienceleague.adobe.com/en/docs/commerce) und die [Adobe Developer](https://developer.adobe.com/commerce/docs/)-Website bietet Kundinnen und Kunden Self-Service-Ressourcen, die alle Lösungen unterstützen. Die Navigation durch eine derart große Menge von Inhalten kann jedoch ohne Anleitung eine Herausforderung darstellen.
+
+>[!NOTE]
+>
+>Weitere Informationen zu verfügbaren Funktionen in [!DNL Adobe Commerce as a Cloud Service] (SaaS) und dazu, wie diese Funktionen mit anderen Versionen von Adobe Commerce, z. B. [!DNL Adobe Commerce on Cloud] und [!DNL Adobe Commerce on Premises] (PaaS), abgestimmt sind, finden Sie im [Funktionsvergleich](../cloud-service/feature-comparison.md).
 
 ## Abzeichen
 
@@ -23,7 +27,7 @@ Mit Abzeichen können Sie schnell erkennen, ob die Commerce-Dokumentation, die S
 
 Wenn ein Badge angezeigt wird, bedeutet dies, dass der Inhalt nur für die angegebene Lösung gilt. Wenn keine Abzeichen angezeigt werden, bedeutet dies, dass der Inhalt für alle Adobe Commerce-Lösungen gilt.
 
-Wenn Sie beispielsweise Adobe Commerce as a Cloud Service verwenden, sollten Sie Inhalte zum [&#x200B; (Installieren) &#x200B;](../product-recommendations/install-configure.md#install-product-recommendations) Produktempfehlungserweiterung und zum [&#x200B; (Konfigurieren](../product-recommendations/install-configure.md#configure-product-recommendations) des Commerce Services-Connectors ignorieren. Adobe führt diese Schritte beim Erstellen einer Instanz automatisch aus.
+Wenn Sie beispielsweise Adobe Commerce as a Cloud Service verwenden, sollten Sie Inhalte zum [ (Installieren) ](../product-recommendations/install-configure.md#install-product-recommendations) Produktempfehlungserweiterung und zum [ (Konfigurieren](../product-recommendations/install-configure.md#configure-product-recommendations) des Commerce Services-Connectors ignorieren. Adobe führt diese Schritte beim Erstellen einer Instanz automatisch aus.
 
 ### Definitionen
 
@@ -41,7 +45,7 @@ Dieses Badge identifiziert die Dokumentation nur für [Adobe Commerce as a Cloud
 
 #### [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 
-Dieses Badge kennzeichnet nur Dokumentationen zu [Adobe Commerce in &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview) Cloud und lokalen Projekten. Adobe Commerce on Cloud-Projekte werden auf einer Cloud-nativen, vollständig verwalteten Platform-as-a-Service (PaaS)-Lösung gehostet, die alle Kernfunktionen von Adobe Commerce in einer vorab bereitgestellten Umgebung enthält. Lokale Projekte werden auf kundenverwalteter Infrastruktur gehostet.
+Dieses Badge kennzeichnet nur Dokumentationen zu [Adobe Commerce in ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) Cloud und lokalen Projekten. Adobe Commerce on Cloud-Projekte werden auf einer Cloud-nativen, vollständig verwalteten Platform-as-a-Service (PaaS)-Lösung gehostet, die alle Kernfunktionen von Adobe Commerce in einer vorab bereitgestellten Umgebung enthält. Lokale Projekte werden auf kundenverwalteter Infrastruktur gehostet.
 
 >[!NOTE]
 >
