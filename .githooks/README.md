@@ -1,7 +1,7 @@
 ---
-source-git-commit: e97db43bcd167acc5d537a6c53479923fd761cc9
+source-git-commit: 65313a91d28d199c142e33f9b77b7e59bbb512ac
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ Dieses Verzeichnis enthält Pre-Commit-Hooks, die Bilder automatisch optimieren,
 
 ## Was die Haken tun
 
-- **Staging** Bilddateien (PNG, JPG, JPEG, GIF, SVG) automatisch erkennen
+- **Staging** Bilddateien (PNG, JPG, JPEG, GIF) automatisch erkennen
 - **`image_optim`** ausführen, um Bilder zu komprimieren und zu optimieren
 - **Optimierte Bilder automatisch neu**.
 - **Sicherstellen, dass alle übergebenen Bilder** optimiert sind
@@ -85,11 +85,11 @@ Image optimization complete!
 ## Bildrichtlinien
 
 - **PNG**: Für Screenshots und Benutzeroberflächenelemente verwenden (wird automatisch optimiert)
-- **SVG**: Für Symbole und einfache Grafiken verwenden (Optimierung standardmäßig deaktiviert)
 - **JPEG**: Für Fotos verwenden (wird automatisch optimiert)
 - **GIF**: Für Animationen verwenden (wird automatisch optimiert)
+- **SVG**: Für Symbole und einfache Grafiken verwenden (nicht von Hooks verarbeitet, Commit unverändert)
 
-Die Pre-Commit-Hooks optimieren automatisch alle Bilder beim Commit.
+Die Pre-Commit-Hooks optimieren beim Commit automatisch PNG-, JPEG- und GIF-Bilder.
 
 ## Manuelle Optimierung
 
@@ -107,7 +107,7 @@ Die Erweiterungspunkte verwenden die Konfigurationsdatei `_jekyll/.image_optim.y
 - **PNG**: Verwendet `advpng`, `optipng` und `pngquant`
 - **JPEG**: Verwendet `jhead`, `jpegoptim` und `jpegtran`
 - **GIF**: Verwendet `gifsicle`
-- **SVG**: Die SVG-Optimierung ist standardmäßig deaktiviert (kann komplexe Vektorgrafiken und Animationen beschädigen)
+- **SVG**: Nicht verarbeitet (von der Erkennung ausgeschlossen, um Vektorgrafiken und Animationen beizubehalten)
 
 ## Fehlerbehebung
 
@@ -141,7 +141,7 @@ Die Erweiterungspunkte verwenden die Konfigurationsdatei `_jekyll/.image_optim.y
 - **PNG** (`.png`) - Verlustfreie und verlustbehaftete Komprimierung
 - **JPEG** (`.jpg`, `.jpeg`) - Verlustbehaftete Komprimierung mit Metadatenbereinigung
 - **GIF** (`.gif`) - Animation und statische Optimierung
-- **SVG** (`.svg`) - Vektoroptimierung (standardmäßig deaktiviert)
+- **SVG** (`.svg`) - Nicht von Hooks verarbeitet (unverändert übernehmen, um die Qualität zu erhalten)
 
 ## Best Practices
 
