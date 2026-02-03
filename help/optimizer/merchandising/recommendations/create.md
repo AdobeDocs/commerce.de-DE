@@ -1,7 +1,7 @@
 ---
 title: Empfehlungen erstellen und verwalten
 description: Erfahren Sie, wie Sie Empfehlungen erstellen und verwalten.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 source-git-commit: ca0e786da6d23364d27d69ccf0fc5ded1f39f46e
 workflow-type: tm+mt
@@ -65,7 +65,7 @@ Nachdem Sie eine Empfehlung erstellt haben, müssen Sie deren ID abrufen, um die
 
 1. Kopieren Sie **Abschnitt** Recommendations-ID“ die ID.
 
-1. Verwenden Sie diese ID, um das [Empfehlungs-Dropdown-Menü](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) in Ihrer Edge Delivery Services-Storefront zu konfigurieren.
+1. Verwenden Sie diese ID, um das [Empfehlungs-Dropdown-Menü](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=de) in Ihrer Edge Delivery Services-Storefront zu konfigurieren.
 
 ## Verwalten vorhandener Empfehlungen
 
