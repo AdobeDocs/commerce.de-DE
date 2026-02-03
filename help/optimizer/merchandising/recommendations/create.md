@@ -1,11 +1,11 @@
 ---
 title: Empfehlungen erstellen und verwalten
 description: Erfahren Sie, wie Sie Empfehlungen erstellen und verwalten.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: ca0e786da6d23364d27d69ccf0fc5ded1f39f46e
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
    - **Aktivieren**, um die Empfehlungseinheit in Ihrer Storefront zu aktivieren.
 
-1. Wenn Sie dazu aufgefordert werden, kopieren Sie die Recommendations-ID. Verwenden Sie diese ID, um zu ermitteln, welche Empfehlungseinheit in der Dropdown-Liste „Empfehlung“ in Ihrer Edge Delivery Services-Storefront verwendet wird.
+   Ihre Empfehlung wird im Arbeitsbereich Recommendations angezeigt. Um Ihre Empfehlung in Ihrer Storefront zu verwenden, müssen Sie die „Recommendations[ID“ ](#get-recommendation-id).
 
 >[!NOTE]
 >
@@ -51,11 +51,27 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 >
 >Einige Browser blockieren möglicherweise wichtige Skripte, die verhindern, dass Recommendations erwartungsgemäß funktioniert.
 
+## Recommendations-ID abrufen
+
+Nachdem Sie eine Empfehlung erstellt haben, müssen Sie deren ID abrufen, um die Empfehlungseinheit auf Ihrer Storefront zu implementieren.
+
+1. Wählen Sie auf **Seite** die Empfehlung aus.
+
+1. Klicken Sie auf das Informationssymbol (![Infosymbol](../../assets/info-icon.png)) neben dem Namen der Empfehlung.
+
+   Die **„Details der Empfehlungseinheit** wird angezeigt.
+
+   ![Empfehlungs-ID abrufen](../../assets/get-rec-id.png)
+
+1. Kopieren Sie **Abschnitt** Recommendations-ID“ die ID.
+
+1. Verwenden Sie diese ID, um das [Empfehlungs-Dropdown-Menü](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) in Ihrer Edge Delivery Services-Storefront zu konfigurieren.
+
 ## Verwalten vorhandener Empfehlungen
 
 Sie können eine vorhandene Empfehlung bearbeiten, deaktivieren oder löschen.
 
-1. Navigieren Sie in der Seitenleiste _0&rbrace;Adobe Commerce Optimizer&quot; zu_ Merchandising _>_ Recommendations **.**
+1. Navigieren Sie in der Seitenleiste _0}Adobe Commerce Optimizer&quot; zu_ Merchandising _>_ Recommendations **.**
 
 1. Wählen Sie die Empfehlung aus, die Sie ändern möchten.
 
