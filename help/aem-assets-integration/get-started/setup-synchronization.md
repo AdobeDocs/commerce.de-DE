@@ -3,9 +3,9 @@ title: Integration konfigurieren
 description: Erfahren Sie, wie Sie Ihr Adobe Commerce-Projekt mit Experience Manager Assets-Projekten verbinden, um die Synchronisierung von Assets zwischen diesen beiden Systemen zu aktivieren.
 feature: CMS, Media
 exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
-source-git-commit: 2aa4d4ef0f81a4b2d442dd196814503c339b3f53
+source-git-commit: 2796a2246368d1baeb8721e1f4b74c5f30a5e73b
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -16,34 +16,21 @@ Konfigurieren Sie die Integration, indem Sie Commerce mit der AEM Assets-Instanz
 
 Nachdem Sie das AEM Assets-Projekt identifiziert haben, wählen Sie die Zuordnungsregel für die Synchronisierung von Assets zwischen Adobe Commerce und AEM Assets aus.
 
-* **[!UICONTROL Match by product SKU]** - Standardregel, die die SKU in den Asset-Metadaten mit der [Commerce-Produkt-SKU](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/glossary#sku) abgleicht, um sicherzustellen, dass Assets mit den richtigen Produkten verknüpft sind.
+* **[!UICONTROL Match by product SKU]** - Standardregel, die die SKU in den Asset-Metadaten mit der [Commerce-Produkt-SKU](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku) abgleicht, um sicherzustellen, dass Assets mit den richtigen Produkten verknüpft sind.
 
 * **[!UICONTROL Custom match]** - Matching-Regel für komplexere Szenarien oder spezifische Geschäftsanforderungen, die eine benutzerdefinierte Matching-Logik erfordern. Für die Implementierung des benutzerdefinierten Abgleichs ist die Entwicklung von benutzerdefiniertem Code in Adobe Developer App Builder erforderlich, um zu definieren, wie Assets mit Produkten abgeglichen werden. Weitere Details folgen in Kürze…
 
 Verwenden Sie für die Ersteinrichtung die Standardregel *Übereinstimmung nach Produkt-SKU*.
 
-## Voraussetzungen
+## Anforderungen
 
 * [Konfigurieren des AEM Assets-Projekts](configure-aem.md)
 
 * [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} [Installieren von Adobe Commerce-](configure-commerce.md), um die Erweiterung hinzuzufügen und die erforderlichen Anmeldeinformationen und Verbindungen zur Verwendung der Erweiterung zu generieren.
 
-* Um [Dynamic Media mit OpenAPI-Funktionen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) auf AEM as a Cloud Service zu aktivieren, senden Sie ein Adobe-Support-Ticket mit den folgenden Informationen:
-
-   * Bezeichnung: Aktivieren der Dynamic Media OpenAPI für eine vollständige Integration zwischen Adobe Commerce und AEM Assets/Product Visuals mit AEM Assets
-
-   * Inhalt des Support-Tickets:
-
-   * **[!UICONTROL AEM Program ID]**
-   * **[!UICONTROL Adobe Commerce URL]**
-   * **[!UICONTROL AEM Environment ID]**
-   * **[!UICONTROL IMS Org ID]** für die AEM Assets-Authoring-Umgebung, die Sie mit Commerce verbinden möchten.
-
-  Sobald Sie das Support-Ticket gesendet haben, aktiviert Adobe Dynamic Media mit OpenAPI-Funktionen in Ihrer Cloud Services-Umgebung und gibt die Details wie die IMS-Client-ID frei, damit Sie mit der Integration fortfahren können.
-
 ## Konfigurieren der Verbindung
 
-1. Rufen Sie die Projekt- und Umgebungs-ID der [0&rbrace;AEM Assets-Autorenumgebung ab.](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/quick-start)
+1. Rufen Sie die Projekt- und Umgebungs-ID der [0}AEM Assets-Autorenumgebung ab.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/quick-start)
 
    1. Öffnen Sie die AEM Cloud Manager und wählen Sie **[!UICONTROL Assets]** aus.
 
@@ -63,13 +50,11 @@ Verwenden Sie für die Ersteinrichtung die Standardregel *Übereinstimmung nach 
 
    Bearbeiten Sie die Konfigurationswerte, indem Sie die Auswahl aus der *[!UICONTROL Use system value]* entfernen.
 
-1. Geben Sie die **[!UICONTROL Asset Selector IMS Client ID]** ein.
+1. [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} Geben Sie die **[!UICONTROL Asset Selector IMS Client ID]** ein.
 
    Weitere Informationen zum Asset-Wähler finden Sie unter [Manuelles Auswählen von Assets](../synchronize/asset-selector-integration.md)
 
 1. [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} Wählen Sie die [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) zum Authentifizieren von Anfragen zwischen Commerce und dem Asset Matching-Service aus.
-
-1. Legen Sie die **[!UICONTROL Commerce integration]** auf `assets-integration` fest, um die Commerce-Integration auszuwählen, die mit AEM Assets verwendet werden soll.
 
 1. Legen Sie **[!UICONTROL Synchronization enabled]** auf `Yes` fest, damit Commerce eingehende Updates von AEM Assets annehmen kann.
 
@@ -77,8 +62,8 @@ Verwenden Sie für die Ersteinrichtung die Standardregel *Übereinstimmung nach 
 
 1. Wählen Sie aus dem Dropdown-Menü &quot;**[!UICONTROL Asset matching rule]**&quot; eine der Asset-Zuordnungsregeln für die Asset-Synchronisierung aus.
 
-   * Wählen Sie **[!UICONTROL Match by SKU]** für [standardmäßige automatische &#x200B;](../synchronize/default-match.md))
-   * Wählen Sie **[!UICONTROL Custom match]** für [benutzerdefinierten automatischen Abgleich](../synchronize/custom-match.md) (erfordert [Adobe Developer App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder).)
+   * Wählen Sie **[!UICONTROL Match by SKU]** für [standardmäßige automatische ](../synchronize/default-match.md))
+   * Wählen Sie **[!UICONTROL Custom match]** für [benutzerdefinierten automatischen Abgleich](../synchronize/custom-match.md) (erfordert [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder).)
 
 1. Fügen Sie den [AEM Assets-Metadatenfeldnamen](configure-aem.md#configure-metadata) der für Commerce-Produkt-SKUs definiert ist, in das Feld **[!UICONTROL Match by product SKU attribute name]** ein, `commerce:skus` standardmäßig.
 
@@ -105,7 +90,7 @@ Die Einstellung **Visualisierungseigentümer** bestimmt, welches System Produktb
 
 Der Administrator zeigt die verfügbaren Bilder für diesen Eigentümer an, während der Rest der Bilder ausgegraut ist und mit einer **Beschriftung angezeigt**.
 
-Weitere Informationen [&#x200B; Verhalten bei der Anzeige von Bildern finden &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} unter „Festlegen von“.
+Weitere Informationen [ Verhalten bei der Anzeige von Bildern finden ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} unter „Festlegen von“.
 
 >[!TIP]
 >
@@ -133,7 +118,7 @@ Wenn das AEM Assets as a Cloud Service-Projekt mit einem [benutzerdefinierten Do
 
 ## Nächster Schritt
 
-* **Konfigurieren Ihrer Commerce-Storefront** - Um AEM Assets mit der Commerce-Storefront mit Edge Delivery Services zu verwenden, schließen Sie die Storefront-Konfiguration ab, die im Thema [AEM Assets-Integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=de) in der *Dokumentation zur Adobe Commerce-Storefront beschrieben*.
+* **Konfigurieren Ihrer Commerce-Storefront** - Um AEM Assets mit der Commerce-Storefront mit Edge Delivery Services zu verwenden, schließen Sie die Storefront-Konfiguration ab, die im Thema [AEM Assets-Integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) in der *Dokumentation zur Adobe Commerce-Storefront beschrieben*.
 
 * Einrichten von [Abgleichregeln](../synchronize/default-match.md) zwischen Adobe Commerce und der AEM Assets-Integration.
 
