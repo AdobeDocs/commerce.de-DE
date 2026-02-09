@@ -3,16 +3,16 @@ title: Benutzerdefinierter automatischer Abgleich
 description: Erfahren Sie, wie die benutzerdefinierte automatische Zuordnung besonders für Händler mit komplexer Abgleichlogik oder für Händler nützlich ist, die auf einem Drittanbietersystem basieren, das keine Metadaten in AEM Assets einfügen kann.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: ee1dd902a883e5653a9fb8764fac708975c37091
+source-git-commit: dfc4aaf1f780eb4a57aa4b624325fa24e571017d
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 1%
+source-wordcount: '432'
+ht-degree: 0%
 
 ---
 
 # Benutzerdefinierter automatischer Abgleich
 
-Wenn die standardmäßige automatische Abgleichstrategie (**OOTB Automatic Matching**) nicht an Ihren spezifischen Geschäftsanforderungen ausgerichtet ist, wählen Sie die Option Benutzerdefinierte Abgleichung aus. Diese Option unterstützt die Verwendung von [Adobe Developer App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) zum Entwickeln einer benutzerdefinierten Matcher-Anwendung, die komplexe Matching-Logik verarbeitet, oder von Assets, die von einem Drittanbietersystem stammen, das keine Metadaten in AEM Assets einfügen kann.
+Wenn die standardmäßige automatische Abgleichstrategie (**OOTB Automatic Matching**) nicht an Ihren spezifischen Geschäftsanforderungen ausgerichtet ist, wählen Sie die Option Benutzerdefinierte Abgleichung aus. Diese Option unterstützt die Verwendung von [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) zum Entwickeln einer benutzerdefinierten Matcher-Anwendung, die komplexe Matching-Logik verarbeitet, oder von Assets, die von einem Drittanbietersystem stammen, das keine Metadaten in AEM Assets einfügen kann.
 
 ## Konfigurieren von benutzerdefiniertem automatischem Abgleich
 
@@ -22,9 +22,99 @@ Wenn die standardmäßige automatische Abgleichstrategie (**OOTB Automatic Match
 
 1. Wenn Sie diese Zuordnungsregel auswählen, zeigt Admin zusätzliche Felder zum Konfigurieren der **Endpunkte** und der erforderlichen **Authentifizierungsparameter** für die benutzerdefinierte Zuordnungslogik an.
 
+### workspace.json
+
+Das Feld **[!UICONTROL Adobe I/O Workspace Configuration]** bietet eine optimierte Möglichkeit, Ihren benutzerdefinierten Matcher zu konfigurieren, indem Sie Ihre App Builder `workspace.json`-Konfigurationsdatei importieren.
+
+Sie können die `workspace.json` Datei von der [Adobe Developer Console herunterladen](https://developer.adobe.com/console). Die Datei enthält alle Anmeldeinformationen und Konfigurationsdetails für Ihren App Builder Workspace.
+
++++Beispiel `workspace.json`
+
+```json
+{
+  "project": {
+    "id": "project_id",
+    "name": "project_name",
+    "title": "title_name",
+    "org": {
+      "id": "id",
+      "name": "Organization_name",
+      "ims_org_id": "ims_id"
+    },
+    "workspace": {
+      "id": "workspace_id",
+      "name": "workspace_name_id",
+      "title": "workspace_title_id",
+      "action_url": "https://action_url.net",
+      "app_url": "https://app_url.net",
+      "details": {
+        "credentials": [
+          {
+            "id": "credential_id",
+            "name": "credential_name_id",
+            "integration_type": "oauth_server_to_server",
+            "oauth_server_to_server": {
+              "client_id": "client_id",
+              "client_secrets": ["secret"],
+              "technical_account_email": "xx@technical_account_email.com",
+              "technical_account_id": "technical_account_id",
+              "scopes": [
+                "AdobeID",
+                "openid",
+                "read_organizations",
+                "additional_info.projectedProductContext",
+                "additional_info.roles",
+                "adobeio_api",
+                "read_client_secret",
+                "manage_client_secrets"
+              ]
+            }
+          }
+        ],
+        "services": [
+          {
+            "code": "AdobeIOManagementAPISDK",
+            "name": "I/O Management API"
+          }
+        ],
+        "runtime": {
+          "namespaces": [
+            {
+              "name": "namespace_name",
+              "auth": "example_auth"
+            }
+          ]
+        },
+        "events": {
+          "registrations": []
+        },
+        "mesh": {}
+      }
+    }
+  }
+}
+```
+
++++
+
+1. Ziehen Sie Ihre `workspace.json` aus dem App Builder-Projekt in das Feld **[!UICONTROL Adobe I/O Workspace Configuration]** . Alternativ können Sie zum Durchsuchen klicken und die Datei auswählen.
+
+![Workspace-Konfiguration](../assets/workspace-configuration.png){width="600" zoomable="yes"}
+
+1. Das System führt automatisch folgende Schritte durch:
+
+   * Validiert die JSON-Struktur
+   * Extrahiert und füllt OAuth-Anmeldeinformationen
+   * Ruft verfügbare Laufzeitaktionen für den Arbeitsbereich ab
+   * Füllt Dropdown-Optionen für die Felder **[!UICONTROL Product to Asset URL]** und **[!UICONTROL Asset to Product URL]** aus
+
+1. Wählen Sie für jeden Fluss die entsprechenden Laufzeitaktionen aus den Dropdown-Menüs aus.
+
+1. Klicken Sie auf **[!UICONTROL Save Config]**.
+
 ## Benutzerdefinierte Matcher-API-Endpunkte
 
-Wenn Sie eine benutzerdefinierte Matcher-Anwendung mit [App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} erstellen, muss die Anwendung die folgenden Endpunkte bereitstellen:
+Wenn Sie eine benutzerdefinierte Matcher-Anwendung mit [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} erstellen, muss die Anwendung die folgenden Endpunkte bereitstellen:
 
 * Endpunkt **App Builder-Asset zur Produkt** URL
 * Endpunkt **App Builder-Produkt zu Asset** URL
@@ -176,6 +266,6 @@ Der `asset_matches`-Parameter enthält die folgenden Attribute:
 | Attribut | Datentyp | Beschreibung |
 | --- | --- | --- |
 | `asset_id` | Zeichenfolge | Stellt die aktualisierte Asset-ID dar. |
-| `asset_roles` | Zeichenfolge | Gibt alle verfügbaren Asset-Rollen zurück. Verwendet unterstützte [Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)Asset-Rollen wie `thumbnail`, `image`, `small_image` und `swatch_image`. |
+| `asset_roles` | Zeichenfolge | Gibt alle verfügbaren Asset-Rollen zurück. Verwendet unterstützte [Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)Asset-Rollen wie `thumbnail`, `image`, `small_image` und `swatch_image`. |
 | `asset_format` | Zeichenfolge | Stellt die verfügbaren Formate für das Asset bereit. Mögliche Werte sind `image` und `video`. |
 | `asset_position` | Zeichenfolge | Zeigt die Position des Assets an. |
