@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Benutzerdefinierter automatischer Abgleich
 
-Wenn die standardmäßige automatische Abgleichstrategie (**OOTB Automatic Matching**) nicht an Ihren spezifischen Geschäftsanforderungen ausgerichtet ist, wählen Sie die Option Benutzerdefinierte Abgleichung aus. Diese Option unterstützt die Verwendung von [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) zum Entwickeln einer benutzerdefinierten Matcher-Anwendung, die komplexe Matching-Logik verarbeitet, oder von Assets, die von einem Drittanbietersystem stammen, das keine Metadaten in AEM Assets einfügen kann.
+Wenn die standardmäßige automatische Abgleichstrategie (**OOTB Automatic Matching**) nicht an Ihren spezifischen Geschäftsanforderungen ausgerichtet ist, wählen Sie die Option Benutzerdefinierte Abgleichung aus. Diese Option unterstützt die Verwendung von [Adobe Developer App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) zum Entwickeln einer benutzerdefinierten Matcher-Anwendung, die komplexe Matching-Logik verarbeitet, oder von Assets, die von einem Drittanbietersystem stammen, das keine Metadaten in AEM Assets einfügen kann.
 
 ## Konfigurieren von benutzerdefiniertem automatischem Abgleich
 
@@ -114,7 +114,7 @@ Sie können die `workspace.json` Datei von der [Adobe Developer Console herunter
 
 ## Benutzerdefinierte Matcher-API-Endpunkte
 
-Wenn Sie eine benutzerdefinierte Matcher-Anwendung mit [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} erstellen, muss die Anwendung die folgenden Endpunkte bereitstellen:
+Wenn Sie eine benutzerdefinierte Matcher-Anwendung mit [App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} erstellen, muss die Anwendung die folgenden Endpunkte bereitstellen:
 
 * Endpunkt **App Builder-Asset zur Produkt** URL
 * Endpunkt **App Builder-Produkt zu Asset** URL
@@ -266,6 +266,6 @@ Der `asset_matches`-Parameter enthält die folgenden Attribute:
 | Attribut | Datentyp | Beschreibung |
 | --- | --- | --- |
 | `asset_id` | Zeichenfolge | Stellt die aktualisierte Asset-ID dar. |
-| `asset_roles` | Zeichenfolge | Gibt alle verfügbaren Asset-Rollen zurück. Verwendet unterstützte [Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)Asset-Rollen wie `thumbnail`, `image`, `small_image` und `swatch_image`. |
+| `asset_roles` | Zeichenfolge | Gibt alle verfügbaren Asset-Rollen zurück. Verwendet unterstützte [Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)Asset-Rollen wie `thumbnail`, `image`, `small_image` und `swatch_image`. |
 | `asset_format` | Zeichenfolge | Stellt die verfügbaren Formate für das Asset bereit. Mögliche Werte sind `image` und `video`. |
 | `asset_position` | Zeichenfolge | Zeigt die Position des Assets an. |
