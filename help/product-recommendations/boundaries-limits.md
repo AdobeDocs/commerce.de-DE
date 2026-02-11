@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ## Allgemein
 
-- **Produkttypen** - Unterstützte Produkttypen sind _einfach_, _konfigurierbar_, _virtuell_, _herunterladbar_ und _Geschenkkarte_. _Bundle_, _grouped_ und benutzerdefinierte Produkttypen werden nicht unterstützt. Wenn Ihr Katalog eine große Anzahl nicht unterstützter Produkttypen enthält, können Sie mit einem niedrigen [Bereitschaftswert) ](create.md#readiness-indicators). Siehe [Filtern nach Produkttyp](filters.md#type).
+- **Produkttypen** - Unterstützte Produkttypen sind _einfach_, _konfigurierbar_, _virtuell_, _herunterladbar_ und _Geschenkkarte_. _Bundle_, _grouped_ und benutzerdefinierte Produkttypen werden nicht unterstützt. Wenn Ihr Katalog eine große Anzahl nicht unterstützter Produkttypen enthält, können Sie mit einem niedrigen [Bereitschaftswert) &#x200B;](create.md#readiness-indicators). Siehe [Filtern nach Produkttyp](filters.md#type).
 - **SKUs mit Leerzeichen** - SKUs, die Leerzeichen enthalten, können die Relevanz von Empfehlungen reduzieren und sollten nach Möglichkeit vermieden werden.
-- **Warenkorbseite** - Produktempfehlungen werden auf der Warenkorbseite nicht unterstützt, wenn Ihr Store so konfiguriert ist, dass [die Warenkorbseite sofort nach dem Hinzufügen eines Produkts zum Warenkorb angezeigt ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Siehe [Erstellen von Empfehlungen](create.md).
+- **Warenkorbseite** - Produktempfehlungen werden auf der Warenkorbseite nicht unterstützt, wenn Ihr Store so konfiguriert ist, dass [die Warenkorbseite sofort nach dem Hinzufügen eines Produkts zum Warenkorb angezeigt &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Siehe [Erstellen von Empfehlungen](create.md).
 - **Untergeordnete Produkte** - Untergeordnete Produkte eines konfigurierbaren Produkts (Sichtbarkeit _Nicht einzeln sichtbar_) werden nicht in einer Empfehlungseinheit angezeigt. Nur das konfigurierbare (übergeordnete) Produkt kann angezeigt werden. Siehe [Produkte filtern](filters.md#product).
 - **Deaktivierte oder nicht sichtbare Produkte** - Produkte, die deaktiviert oder nicht einzeln sichtbar sind, können nie in Empfehlungen angezeigt und nicht in Produktfiltern ausgewählt werden.
 - **Sonderpreise** - [Sonderpreise](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) mit Start- und Enddatum werden in Empfehlungseinheiten nicht unterstützt. Ein Produkt mit einem Sonderpreis kann in Recommendations angezeigt werden, aber die Einheit zeigt weder den Sonderpreis noch das Start- oder Enddatum an. Kundinnen und Kunden sehen den regulären Preis (oder andere Preisdaten, die von Ihrem Katalog/Preis-Feed bereitgestellt werden), bis sie die Produktseite öffnen.
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## Page Builder
 
-- **Metriken und Store-**: Metriken für Page Builder-Empfehlungseinheiten werden nur in der standardmäßigen Store-Ansicht im Arbeitsbereich „Produktempfehlungen“ angezeigt. Um Page Builder-Empfehlungsmetriken in einer nicht standardmäßigen Store-Ansicht anzuzeigen, müssen Sie die Page Builder[Empfehlungseinheit in dieser Store-Ansicht öffnen und ](edit.md)bearbeiten) und speichern. Die Metriken werden dann für diese Store-Ansicht angezeigt. Siehe [Page Builder-Integration](page-builder.md).
+- **Metriken und Store-**: Metriken für Page Builder-Empfehlungseinheiten werden nur in der standardmäßigen Store-Ansicht im Arbeitsbereich „Produktempfehlungen“ angezeigt. Um Page Builder-Empfehlungsmetriken in einer nicht standardmäßigen Store-Ansicht anzuzeigen, müssen Sie die Page Builder[Empfehlungseinheit in dieser Store-Ansicht öffnen und &#x200B;](edit.md)bearbeiten) und speichern. Die Metriken werden dann für diese Store-Ansicht angezeigt. Siehe [Page Builder-Integration](page-builder.md).
 
 ## B2B
 
@@ -63,4 +63,4 @@ ht-degree: 0%
 
 ## Fehlerbehebung
 
-Suchen Sie in der [Commerce-Wissensdatenbank nach Hilfe bei Katalogsynchronisierung, nicht angezeigten Empfehlungen oder anderen häufigen Problemen ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) wenden Sie sich an den [Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Suchen Sie in der [Commerce-Wissensdatenbank nach Hilfe bei Katalogsynchronisierung, nicht angezeigten Empfehlungen oder anderen häufigen Problemen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) wenden Sie sich an den [Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
