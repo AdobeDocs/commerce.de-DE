@@ -68,7 +68,7 @@ _15. Januar 2026_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
 
-![Es wurde ](../assets/fix.svg)<!-- Issue ACAP-1180 --> Problem behoben: Die Produktbearbeitungsseite wurde verbessert, indem Dateigröße und -abmessungen für AEM-Assets ausgeblendet wurden, da sie vom CDN dynamisch optimiert werden. Jetzt werden Seiten korrekt vorab gerendert, wenn die AEM Assets-Integration aktiviert ist.
+![Es wurde &#x200B;](../assets/fix.svg)<!-- Issue ACAP-1180 --> Problem behoben: Die Produktbearbeitungsseite wurde verbessert, indem Dateigröße und -abmessungen für AEM-Assets ausgeblendet wurden, da sie vom CDN dynamisch optimiert werden. Jetzt werden Seiten korrekt vorab gerendert, wenn die AEM Assets-Integration aktiviert ist.
 
 ## v1.2.10
 
@@ -156,7 +156,7 @@ _23. April 2025_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
 
-![Neues Problem](../assets/new.svg)<!-- Issue ACAP-955 --> Anstelle der AEM[Bereitstellungs-URL ](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url) jetzt eine benutzerdefinierte Domain-URL verwendet werden. Wenn ein Händler in seinem AEM **Dashboard einen** benutzerdefinierten Domain-Namen) festlegt, muss diese **benutzerdefinierte Domain-URL** in Commerce hinzugefügt werden.
+![Neues Problem](../assets/new.svg)<!-- Issue ACAP-955 --> Anstelle der AEM[Bereitstellungs-URL &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url) jetzt eine benutzerdefinierte Domain-URL verwendet werden. Wenn ein Händler in seinem AEM **Dashboard einen** benutzerdefinierten Domain-Namen) festlegt, muss diese **benutzerdefinierte Domain-URL** in Commerce hinzugefügt werden.
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue ACAP-987 --> Verbesserte Gesamtprotokolle für AEM Assets-Synchronisierungsprozesse.
 
