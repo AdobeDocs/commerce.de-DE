@@ -85,7 +85,7 @@ Verwenden Sie den CLI-Befehl für die AEM Assets-Integration, um automatisch ein
 
 #### CSV manuell erstellen
 
-Für Mediendateien, die außerhalb von Adobe Commerce gespeichert werden, müssen Sie die CSV-Datei manuell erstellen. Die Spaltenüberschriften **müssen übereinstimmen** mit den Feldnamen, die in Ihrem [AEM Assets-Metadatenprofil konfiguriert ](configure-aem.md). Füllen Sie nach dem Erstellen der Datei die Zeilen mit den Metadatenwerten für jede Mediendatei.
+Für Mediendateien, die außerhalb von Adobe Commerce gespeichert werden, müssen Sie die CSV-Datei manuell erstellen. Die Spaltenüberschriften **müssen übereinstimmen** mit den Feldnamen, die in Ihrem [AEM Assets-Metadatenprofil konfiguriert &#x200B;](configure-aem.md). Füllen Sie nach dem Erstellen der Datei die Zeilen mit den Metadatenwerten für jede Mediendatei.
 
 | Metadaten | Beschreibung | Wert |
 |-------|-------------|--------|
@@ -113,7 +113,7 @@ Nachdem Sie die Metadatenzuordnungsdatei erstellt haben, verwenden Sie das Tool 
 
 Im Folgenden finden Sie einen allgemeinen Überblick über die Verwendung des Tools.
 
-1. [Melden Sie sich bei Ihrer AEM Assets as a Cloud Service-Autorenumgebung ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/aem-users#login-aem).
+1. [Melden Sie sich bei Ihrer AEM Assets as a Cloud Service-Autorenumgebung &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/aem-users#login-aem).
 
 1. Wählen Sie in der Ansicht Experience Manager-Tools die Option **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]** aus.
 
