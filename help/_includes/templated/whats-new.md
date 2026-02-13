@@ -1,7 +1,7 @@
 ---
-source-git-commit: 6f11ad00aed7642c44aeaf384f4433e9522b6bf0
+source-git-commit: b8e5e9ea5673bea4e21f18e22f8655f4ef861e6c
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '574'
 ht-degree: 3%
 
 ---
@@ -10,6 +10,80 @@ ht-degree: 3%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;13. Februar 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Verbessert die Dokumentation zur AEM Assets-Integration, indem Anforderungen präzisiert und <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/migrate-data">CLI-Befehlsdokumentation für den Metadatenexport hinzugefügt</a>.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ac880333814d9d9a45e658e2a637cd9634dbfb1f">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;11. Februar 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits">Grenzen und Beschränkungen</a> für Produktempfehlungen, die Dokumentation unterstützter Produktarten, Sonderpreisbeschränkungen, Einheiten- und Filterbeschränkungen, das Vorschau-/API-/Cookie-Verhalten und damit zusammenhängende Einschränkungen wurden hinzugefügt.</p>
+</td>
+      <td>
+        Feedback, neues Thema
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2b850e32660f1a8540bb6a024f3617994b6c13f6">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Der Eintrag PAY-6227 in Version 2.12.0 wurde erweitert, um eine Verknüpfung mit dem neuen Abschnitt <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options#paypal-payment-buttons">Server-seitiger Versandrückruf</a> herzustellen, in dem klargestellt wird, wie diese Funktion einen schnelleren Checkout-Prozess ermöglicht.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/007674c3b81b95af4c0ec2688a4a98e19ec04d08">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;10. Februar 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Die <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes"> (Versionshinweise</a> für Adobe Commerce as a Cloud Service für die Februarversion wurden aktualisiert.</p>
+</td>
+      <td>
+        Größere Aktualisierung
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d559417d12151d1f390b4217bca83b9ddb65e491">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;9. Februar 2026
 
@@ -23,7 +97,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>AEM Assets Integration v1.2.13 fügt <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/synchronize/custom-match">Adobe I/O Workspace Configuration</a> für benutzerdefinierte Matcher-Einrichtung hinzu. Sie können Ihre App Builder-<code class="language-plaintext highlighter-rouge">workspace.json</code> zur automatischen Validierung und Extraktion von Berechtigungen hochladen oder manuell konfigurieren. Siehe <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/release-notes">Versionshinweise</a> für Version 1.2.13 und das aktualisierte Handbuch <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/synchronize/custom-match">Benutzerdefinierte Zuordnung</a>.</p>
+      <td><p>AEM Assets Integration v1.2.13 fügt <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Adobe I/O Workspace Configuration</a> für benutzerdefinierte Matcher-Einrichtung hinzu. Sie können Ihre App Builder-<code class="language-plaintext highlighter-rouge">workspace.json</code> zur automatischen Validierung und Extraktion von Berechtigungen hochladen oder manuell konfigurieren. Siehe <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">Versionshinweise</a> für Version 1.2.13 und das aktualisierte Handbuch <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Benutzerdefinierte Zuordnung</a>.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -45,7 +119,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Versionshinweise für <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS-Datenexport-Version 103.4.19</a> hinzugefügt.</p>
+      <td><p>Versionshinweise für <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS-Datenexport-Version 103.4.19</a> hinzugefügt.</p>
 </td>
       <td>
         Technisch
@@ -67,7 +141,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise zu Adobe Commerce as a Cloud Service</a> für die Sandbox-Version vom Februar 2026 wurden aktualisiert.</p>
+      <td><p>Die <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Versionshinweise zu Adobe Commerce as a Cloud Service</a> für die Sandbox-Version vom Februar 2026 wurden aktualisiert.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -89,7 +163,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Versionshinweise für <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS-Datenexport-Version 103.4.18 hinzugefügt</a>.</p>
+      <td><p>Versionshinweise für <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS-Datenexport-Version 103.4.18 hinzugefügt</a>.</p>
 </td>
       <td>
         Technisch
@@ -111,7 +185,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde beschrieben, wie Commerce-Kunden Daten-Feed-Exporte über die Seite „Status der Feed-Synchronisierung“ in Commerce Admin überwachen und Fehler beheben können. Siehe <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/data-synchronization#view-and-manage-the-synchronization-process">Anzeigen und Verwalten des Synchronisierungsprozesses</a> im Datenexporthandbuch.</p>
+      <td><p>Es wurde beschrieben, wie Commerce-Kunden Daten-Feed-Exporte über die Seite „Status der Feed-Synchronisierung“ in Commerce Admin überwachen und Fehler beheben können. Siehe <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization#view-and-manage-the-synchronization-process">Anzeigen und Verwalten des Synchronisierungsprozesses</a> im Datenexporthandbuch.</p>
 </td>
       <td>
         Technisch
@@ -133,7 +207,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Der Seite "<a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/feature-comparison">" wurden weitere Informationen hinzugefügt</a> einschließlich neuer Infrastruktur, Betriebsfähigkeit und Marktplatzinformationen.</p>
+      <td><p>Der Seite "<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison">" wurden weitere Informationen hinzugefügt</a> einschließlich neuer Infrastruktur, Betriebsfähigkeit und Marktplatzinformationen.</p>
 </td>
       <td>
         Feedback
@@ -155,7 +229,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Das <a href="https://experienceleague.adobe.com/de/docs/commerce/live-search/live-search-storefront/migrate-to-plp">Migrieren vom Suchadapter zum PLP-Widget</a> mit detaillierten Migrationsszenarien, schrittweisen Verfahren, rollenbasierten Anleitungen und Fehlerbehebung für Kunden, die vom veralteten Suchadapter wechseln, wurde hinzugefügt.</p>
+      <td><p>Das <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/migrate-to-plp">Migrieren vom Suchadapter zum PLP-Widget</a> mit detaillierten Migrationsszenarien, schrittweisen Verfahren, rollenbasierten Anleitungen und Fehlerbehebung für Kunden, die vom veralteten Suchadapter wechseln, wurde hinzugefügt.</p>
 </td>
       <td>
         Feedback, große Aktualisierung, neues Thema
@@ -177,7 +251,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die Einrichtungshandbücher für die Storefront für <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service</a> wurden aktualisiert. Sie enthalten nun Informationen zum Migrieren der Commerce-Storefront-Konfiguration für Edge Delivery Services, um den Konfigurations-Service anstelle <code class="language-plaintext highlighter-rouge">config.json</code> -Datei im vorkonfigurierten Repository für die Storefront zu verwenden. Adobe empfiehlt, den Konfigurations-Service zu verwenden, um die Konfiguration für Storefronts zu verwalten, die in Edge Delivery Services bereitgestellt werden.</p>
+      <td><p>Die Einrichtungshandbücher für die Storefront für <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> und <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service</a> wurden aktualisiert. Sie enthalten nun Informationen zum Migrieren der Commerce-Storefront-Konfiguration für Edge Delivery Services, um den Konfigurations-Service anstelle <code class="language-plaintext highlighter-rouge">config.json</code> -Datei im vorkonfigurierten Repository für die Storefront zu verwenden. Adobe empfiehlt, den Konfigurations-Service zu verwenden, um die Konfiguration für Storefronts zu verwalten, die in Edge Delivery Services bereitgestellt werden.</p>
 </td>
       <td>
         Feedback, technisch
@@ -243,7 +317,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes#latest">Versionshinweise“ </a> Adobe Commerce as a Cloud Service wurden aktualisiert.</p>
+      <td><p>Die <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">Versionshinweise“ </a> Adobe Commerce as a Cloud Service wurden aktualisiert.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -265,7 +339,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Das Thema <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits">Beschränkungen und Grenzen</a> für Adobe Commerce Optimizer wurde aktualisiert, um Lizenzbeschränkungen und Systemgrenzen zu beschreiben, Limitbeschreibungen hinzuzufügen und Anleitungen zur Kapazitätsplanung und zur Vermeidung von Leistungsproblemen einzuschließen.</p>
+      <td><p>Das Thema <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits">Beschränkungen und Grenzen</a> für Adobe Commerce Optimizer wurde aktualisiert, um Lizenzbeschränkungen und Systemgrenzen zu beschreiben, Limitbeschreibungen hinzuzufügen und Anleitungen zur Kapazitätsplanung und zur Vermeidung von Leistungsproblemen einzuschließen.</p>
 </td>
       <td>
         Feedback, technisch
@@ -287,7 +361,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Versionshinweise für <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS-Datenexport-Version 103.4.16 und 103.4.17</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce/price-indexer/catalog-adapter/release-notes">Catalog Adapter-Version 1.10.0</a> hinzugefügt.</p>
+      <td><p>Versionshinweise für <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS-Datenexport-Version 103.4.16 und 103.4.17</a> und <a href="https://experienceleague.adobe.com/en/docs/commerce/price-indexer/catalog-adapter/release-notes">Catalog Adapter-Version 1.10.0</a> hinzugefügt.</p>
 </td>
       <td>
         Technisch
@@ -309,34 +383,12 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Das Thema <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">Konfigurieren von AEM</a> in der Dokumentation zur AEM Assets-Integration wurde aktualisiert.</p>
+      <td><p>Das Thema <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">Konfigurieren von AEM</a> in der Dokumentation zur AEM Assets-Integration wurde aktualisiert.</p>
 </td>
       <td>
         Größere Aktualisierung
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d46526db56dad08a8f865664c92d1214bbf063d8">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;15. Dezember 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurden neue Themen hinzugefügt: <br />- <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/manage-results/opportunities">Chancen</a> um KI-gestützte Empfehlungen zur Site-Optimierung über die Adobe Sites Optimizer-Integration zu dokumentieren, einschließlich Workflows zur automatischen Erkennung und Fehlerbehebung zur Verbesserung der SEO-, Metadaten- und Produktdatenqualität.<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-layer">Katalogebenen</a> um zu erklären, wie Sie Produktdaten ändern können, ohne die Quelldaten zu ändern, einschließlich der Verwaltung von Ebenenprioritäten und der Integration mit Sites Optimizer-Funktionen zur automatischen Fehlerbehebung.</p>
-</td>
-      <td>
-        Größere Aktualisierung, neues Thema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dd4447d519761f43d06f13de71c5ae97f6b103e7">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
