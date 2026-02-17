@@ -123,7 +123,7 @@ Der Katalog-Service sorgt für genaue Preisaktualisierungen und Berechnungen, in
 
 >[!NOTE]
 >
-> Commerce-Kunden mit [!DNL Catalog Service] können mit dem SaaS-Preisindexer [ schnellere Preisänderungen und Synchronisierungszeiten auf ihren Websites ](../price-index/price-indexing.md).
+> Commerce-Kunden mit [!DNL Catalog Service] können mit dem SaaS-Preisindexer [&#x200B; schnellere Preisänderungen und Synchronisierungszeiten auf ihren Websites &#x200B;](../price-index/price-indexing.md).
 
 ## Implementierung
 

@@ -18,7 +18,7 @@ Installieren Sie den Katalog-Service, um Produktdaten von einer Commerce-Instanz
 >
 >Wenn Ihre Commerce-Instanz die Live Search oder Product Recommendations verwendet, wird der Katalog-Service automatisch installiert oder aktualisiert, sobald Sie diese Services integrieren oder aktualisieren. Weitere Informationen finden Sie in den Installationsanweisungen für [Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/install) und [Product Recommendations](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure).
 >
->Wenn Sie Adobe Commerce as a Cloud Service verwenden, ist die neueste Version des Metapakets in Ihrer Umgebung verfügbar. Informationen zum Einstieg in die Verwendung der [ finden Sie unter „Erste Schritte mit dem Katalog-Service](get-started.md).
+>Wenn Sie Adobe Commerce as a Cloud Service verwenden, ist die neueste Version des Metapakets in Ihrer Umgebung verfügbar. Informationen zum Einstieg in die Verwendung der [&#x200B; finden Sie unter „Erste Schritte mit dem Katalog-Service](get-started.md).
 >
 >Implementierungen von Commerce-Storefronts mit Adobe Commerce Optimizer finden Sie im [Merchandising Services-Entwicklerhandbuch](https://developer-stage.adobe.com/commerce/services/optimizer/).
 
@@ -145,7 +145,7 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Service] für eine lokale Inst
 
 ### Konfigurieren des Service und des Datenexports
 
-Führen Sie nach der Installation des [!DNL Catalog Service] die folgenden Schritte aus, um den Katalog-Service in Ihre Adobe Commerce-Instanz zu integrieren. Diese Integration ermöglicht die Datensynchronisation und Kommunikation zwischen der Commerce-Instanz, dem Katalog-Service und anderen unterstützenden Services. Die Datensynchronisation wird von der [SaaS-Datenexporterweiterung“ ](../data-export/overview.md).
+Führen Sie nach der Installation des [!DNL Catalog Service] die folgenden Schritte aus, um den Katalog-Service in Ihre Adobe Commerce-Instanz zu integrieren. Diese Integration ermöglicht die Datensynchronisation und Kommunikation zwischen der Commerce-Instanz, dem Katalog-Service und anderen unterstützenden Services. Die Datensynchronisation wird von der [SaaS-Datenexporterweiterung“ &#x200B;](../data-export/overview.md).
 
 1. Richten Sie den [Commerce Services-Connector ein](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) indem Sie die API-Schlüssel angeben und einen SaaS-Datenspeicher auswählen.
 
@@ -167,4 +167,4 @@ So stellen Sie sicher, dass der Katalogexport ordnungsgemäß ausgeführt wird:
 
 ### Überwachen und Fehlerbehebung bei der Datensynchronisation
 
-Vom Commerce-Administrator aus können Sie den Synchronisierungsprozess mithilfe des [Daten-Management-Dashboards“ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Verwenden Sie die [Commerce-CLI](../data-export/data-export-cli-commands.md#troubleshooting) und Protokolle, um den Prozess zu verwalten und Fehler zu beheben.
+Vom Commerce-Administrator aus können Sie den Synchronisierungsprozess mithilfe des [Daten-Management-Dashboards“ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Verwenden Sie die [Commerce-CLI](../data-export/data-export-cli-commands.md#troubleshooting) und Protokolle, um den Prozess zu verwalten und Fehler zu beheben.
