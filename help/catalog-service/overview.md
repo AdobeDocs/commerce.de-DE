@@ -4,9 +4,9 @@ description: Beschleunigen Sie Ihre Adobe Commerce-Storefront mit  [!DNL Catalog
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
-source-git-commit: e582bff6ee8ee7c4213f04bdab984efa94333fb6
+source-git-commit: 4f3f8accd653dbee6fec45c065f55ff04b17bd2d
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ Die umfangreichen Ansichtsmodelldaten, die von der [!DNL Catalog Service] bereit
 
 
 ## Überblick über die Architektur
+
+>[!NOTE]
+>
+>Wenn Sie Ihren Katalog mithilfe des zusammenstellbaren Katalogs mit Adobe Commerce Optimizer oder Adobe Commerce Optimizer Connector implementieren, lesen Sie das [Adobe Commerce Optimizer-](../optimizer/overview.md#architecture) und Merchandising Services-Entwicklerhandbuch.
 
 Der [!DNL Catalog Service] verwendet [GraphQL](https://graphql.org/), um Katalogdaten, einschließlich Produkte, Produktattribute, Bestand und Preise, anzufordern und zu empfangen. GraphQL ist eine Abfragesprache, die ein Frontend-Client verwendet, um mit der in einem Backend wie Adobe Commerce definierten Anwendungsprogrammierschnittstelle (API) zu kommunizieren. GraphQL ist eine beliebte Kommunikationsmethode, da sie einfach ist und es einem Systemintegrator ermöglicht, den Inhalt und die Reihenfolge jeder Antwort anzugeben.
 
@@ -119,13 +123,13 @@ Der Katalog-Service sorgt für genaue Preisaktualisierungen und Berechnungen, in
 
 >[!NOTE]
 >
-> Commerce-Kunden mit [!DNL Catalog Service] können mit dem SaaS-Preisindexer [&#x200B; schnellere Preisänderungen und Synchronisierungszeiten auf ihren Websites &#x200B;](../price-index/price-indexing.md).
+> Commerce-Kunden mit [!DNL Catalog Service] können mit dem SaaS-Preisindexer [ schnellere Preisänderungen und Synchronisierungszeiten auf ihren Websites ](../price-index/price-indexing.md).
 
 ## Implementierung
 
 Der Implementierungsprozess umfasst Folgendes:
 
-1. [!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."} **[Installieren und Konfigurieren des Katalog-Service](installation.md)** - Installieren und konfigurieren Sie die Catalog-Service-Erweiterung und richten Sie die SaaS-Verbindung mithilfe der [!DNL Commerce Services Connector] ein.
+1. [!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."} **[Installieren und Konfigurieren des Katalog-Service](installation.md)** - Installieren und konfigurieren Sie die Catalog-Service-Erweiterung und richten Sie die SaaS-Verbindung mithilfe der [!DNL Commerce Services Connector] ein.
 2. **Storefront-Code aktualisieren**: Integrieren Sie GraphQL-Abfragen des Katalog-Services in Ihr Frontend.
 3. **Routing-Abfragen**: Alle Abfragen des Katalog-Services gehen über das GraphQL-Gateway (die URL wird beim Onboarding angegeben)
 4. **Überwachung und Fehlerbehebung bei der Datensynchronisation**: Überprüfen Sie die verbesserte Leistung und überwachen Sie die Ergebnisse.
