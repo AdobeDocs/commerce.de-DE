@@ -99,7 +99,7 @@ _3. November 2025_
 - Überschreibungen auf Feldebene mit Ebenenmasken steuern
 - Unterstützung für Premium-, Saison- und Mobile-optimierte Inhaltsebenen
 
-  Ebenen werden mit der vorhandenen `products` Abfrage abgerufen, werden Server-seitig aus Anfrage-Headern angewendet und erfordern keine Schemaänderungen. Siehe [Katalogebene](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer) im _Adobe Commerce Optimizer-Handbuch_.
+  Ebenen werden mit der vorhandenen `products` Abfrage abgerufen, werden Server-seitig aus Anfrage-Headern angewendet und erfordern keine Schemaänderungen. Siehe [Katalogebene](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-layer) im _Adobe Commerce Optimizer-Handbuch_.
 
 ![Korrigieren](../assets/fix.svg) Gruppierte Produkte können jetzt abgefragt werden, wenn das übergeordnete Element keine Preise hat. Untergeordnete Produkte geben ihre eigenen Sichtbarkeitsrollen zurück.<!--DATA-6779-->
 
@@ -210,7 +210,7 @@ _15. Juli 2025_
 
 _20. Juni 2025_
 
-![Neu](../assets/new.svg) **Hierarchische Preisbuchkonfiguration** - Präzise Preisbereiche für über- und untergeordnete Preisbücher. Berechnungen berücksichtigen Hierarchie und übernommene Regeln; reduziert Preisfehler, wenn mehrere Preisbücher verknüpft sind. Nur Adobe Commerce Optimizer. Siehe [Preisbücher](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
+![Neu](../assets/new.svg) **Hierarchische Preisbuchkonfiguration** - Präzise Preisbereiche für über- und untergeordnete Preisbücher. Berechnungen berücksichtigen Hierarchie und übernommene Regeln; reduziert Preisfehler, wenn mehrere Preisbücher verknüpft sind. Nur Adobe Commerce Optimizer. Siehe [Preisbücher](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/pricebooks).
 
 ![Neu](../assets/new.svg) **Schlüssel ohne Unterscheidung von Groß- und Kleinschreibung** - Bei Schlüsselsuchen in Abfragen wird jetzt nicht mehr zwischen Groß- und Kleinschreibung unterschieden, wodurch Fehler durch Schlüsselschreibungen reduziert werden. <!--DATA-6494, DCAT-2495-->
 
@@ -339,7 +339,7 @@ _23. Mai 2024_
 
 ![Beheben](../assets/fix.svg) <!--DATA-5033-->Das `InStock` für Optionswerte berücksichtigt jetzt den `enabled` der Produktvariante.
 
-![Fix](../assets/fix.svg) <!--DATA-5888-->Unterstützung für Produktpreise mit bis zu 16 Stellen und 4 Dezimalstellen hinzugefügt. Synchronisieren Sie über das [Data Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) oder [CLI](../landing/catalog-sync.md#command-line-interface) neu, um Aktualisierungen anzuwenden.
+![Fix](../assets/fix.svg) <!--DATA-5888-->Unterstützung für Produktpreise mit bis zu 16 Stellen und 4 Dezimalstellen hinzugefügt. Synchronisieren Sie über das [Data Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) oder [CLI](../landing/catalog-sync.md#command-line-interface) neu, um Aktualisierungen anzuwenden.
 
 #### Bekannte Einschränkungen
 
@@ -373,7 +373,7 @@ _22. Februar 2024_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) ist jetzt für Datenströme verfügbar (Produktempfehlungen, Live-Suche, Katalog-Service). Erfordert `catalog-service` Metapaket v3.1.0+.
+![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=de) ist jetzt für Datenströme verfügbar (Produktempfehlungen, Live-Suche, Katalog-Service). Erfordert `catalog-service` Metapaket v3.1.0+.
 
 ### Version v1.16
 
