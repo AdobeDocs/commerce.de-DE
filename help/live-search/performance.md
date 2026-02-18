@@ -19,7 +19,7 @@ Der *Performance*-Arbeitsbereich bietet insight zu den Suchbegriffen, die Käufe
 
 ![Leistung](assets/performance-unique-searches.png)
 
-Weitere Informationen zur Datensynchronisation finden [&#x200B; auch im &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)Daten-Management-Dashboard).
+Weitere Informationen zur Datensynchronisation finden [&#x200B; auch im &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=de)Daten-Management-Dashboard).
 
 >[!NOTE]
 >
