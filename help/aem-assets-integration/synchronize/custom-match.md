@@ -3,16 +3,16 @@ title: Benutzerdefinierter automatischer Abgleich
 description: Erfahren Sie, wie die benutzerdefinierte automatische Zuordnung besonders für Händler mit komplexer Abgleichlogik oder für Händler nützlich ist, die auf einem Drittanbietersystem basieren, das keine Metadaten in AEM Assets einfügen kann.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: dfc4aaf1f780eb4a57aa4b624325fa24e571017d
+source-git-commit: 6e8d266aeaec4d47b82b0779dfc3786ccaa7d83a
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
 # Benutzerdefinierter automatischer Abgleich
 
-Wenn die standardmäßige automatische Abgleichstrategie (**OOTB Automatic Matching**) nicht an Ihren spezifischen Geschäftsanforderungen ausgerichtet ist, wählen Sie die Option Benutzerdefinierte Abgleichung aus. Diese Option unterstützt die Verwendung von [Adobe Developer App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) zum Entwickeln einer benutzerdefinierten Matcher-Anwendung, die komplexe Matching-Logik verarbeitet, oder von Assets, die von einem Drittanbietersystem stammen, das keine Metadaten in AEM Assets einfügen kann.
+Wenn die standardmäßige automatische Abgleichstrategie (**OOTB Automatic Matching**) nicht an Ihren spezifischen Geschäftsanforderungen ausgerichtet ist, wählen Sie die Option Benutzerdefinierte Abgleichung aus. Diese Option unterstützt die Verwendung von [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) zum Entwickeln einer benutzerdefinierten Matcher-Anwendung, die komplexe Matching-Logik verarbeitet, oder von Assets, die von einem Drittanbietersystem stammen, das keine Metadaten in AEM Assets einfügen kann.
 
 ## Konfigurieren von benutzerdefiniertem automatischem Abgleich
 
@@ -114,7 +114,7 @@ Sie können die `workspace.json` Datei von der [Adobe Developer Console herunter
 
 ## Benutzerdefinierte Matcher-API-Endpunkte
 
-Wenn Sie eine benutzerdefinierte Matcher-Anwendung mit [App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} erstellen, muss die Anwendung die folgenden Endpunkte bereitstellen:
+Wenn Sie eine benutzerdefinierte Matcher-Anwendung mit [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} erstellen, muss die Anwendung die folgenden Endpunkte bereitstellen:
 
 * Endpunkt **App Builder-Asset zur Produkt** URL
 * Endpunkt **App Builder-Produkt zu Asset** URL
@@ -125,7 +125,7 @@ Dieser Endpunkt ruft die Liste der mit einem bestimmten Asset verknüpften SKUs 
 
 #### Beispielverwendung
 
-```bash
+```javascript
 const { Core } = require('@adobe/aio-sdk')
 
 async function main(params) {
@@ -140,8 +140,11 @@ async function main(params) {
     // ...
     // End of your matching logic
 
+    // Set skip to true if the mapping hasn't changed
+    const skipSync = false;
+
     return {
-        statusCode: 500,
+        statusCode: 200,
         body: {
             asset_id: params.assetId,
             product_matches: [
@@ -150,7 +153,8 @@ async function main(params) {
                     asset_roles: ["thumbnail", "image", "swatch_image", "small_image"],
                     asset_position: 1
                 }
-            ]
+            ],
+            skip: skipSync
         }
     };
 }
@@ -160,7 +164,7 @@ exports.main = main;
 
 **Anfrage**
 
-```bash
+```text
 POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-product
 ```
 
@@ -171,21 +175,28 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 
 **Antwort**
 
-```bash
+```json
 {
   "asset_id": "{ASSET_ID}",
   "product_matches": [
     {
       "product_sku": "{PRODUCT_SKU_1}",
-      "asset_roles": ["thumbnail","image"]
+      "asset_roles": ["thumbnail", "image"]
     },
     {
       "product_sku": "{PRODUCT_SKU_2}",
       "asset_roles": ["thumbnail"]
     }
-  ]
+  ],
+  "skip": false
 }
 ```
+
+| Parameter | Datentyp | Beschreibung |
+| --- | --- | --- |
+| `asset_id` | Zeichenfolge | Die Asset-ID, die abgeglichen wird. |
+| `product_matches` | Array | Liste der mit dem Asset verknüpften Produkte. |
+| `skip` | Boolesch | (Optional) Bei der `true` überspringt die Regel-Engine die Synchronisierung für dieses Asset (keine Aktualisierung der Produktzuordnung). Wenn `false` oder ausgelassen, wird die normale Verarbeitung ausgeführt. Siehe [Synchronisierungsverarbeitung überspringen](#skip-sync-processing). |
 
 ### Endpunkt von App Builder-Produkt-zu-Asset-URL
 
@@ -193,7 +204,7 @@ Dieser Endpunkt ruft die Liste der Assets ab, die mit einer bestimmten SKU verkn
 
 #### Beispielverwendung
 
-```bash
+```javascript
 const { Core } = require('@adobe/aio-sdk')
 
 async function main(params) {
@@ -204,8 +215,11 @@ async function main(params) {
     // ...
     // End of your matching logic
 
+    // Set skip to true if the mapping hasn't changed
+    const skipSync = false;
+
     return {
-        statusCode: 500,
+        statusCode: 200,
         body: {
             product_sku: params.productSku,
             asset_matches: [
@@ -215,7 +229,8 @@ async function main(params) {
                     asset_format: "image", // can be "image" or "video"
                     asset_position: 1
                 }
-            ]
+            ],
+            skip: skipSync
         }
     };
 }
@@ -225,7 +240,7 @@ exports.main = main;
 
 **Anfrage**
 
-```bash
+```text
 POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
 ```
 
@@ -236,36 +251,44 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 
 **Antwort**
 
-```bash
+```json
 {
   "product_sku": "{PRODUCT_SKU}",
   "asset_matches": [
     {
       "asset_id": "{ASSET_ID_1}",
-      "asset_roles": ["thumbnail","image"],
+      "asset_roles": ["thumbnail", "image"],
       "asset_position": 1,
-      "asset_format": image
+      "asset_format": "image"
     },
     {
       "asset_id": "{ASSET_ID_2}",
-      "asset_roles": ["thumbnail"]
+      "asset_roles": ["thumbnail"],
       "asset_position": 2,
-      "asset_format": image     
+      "asset_format": "image"
     }
-  ]
+  ],
+  "skip": false
 }
 ```
 
 | Parameter | Datentyp | Beschreibung |
 | --- | --- | --- |
-| `productSKU` | Zeichenfolge | Stellt die aktualisierte Produkt-SKU dar. |
-| `asset_matches` | Zeichenfolge | Gibt alle Assets zurück, die mit einer bestimmten Produkt-SKU verknüpft sind. |
+| `product_sku` | Zeichenfolge | Die abgeglichene Produkt-SKU. |
+| `asset_matches` | Array | Liste der mit dem Produkt verknüpften Assets. |
+| `skip` | Boolesch | (Optional) Bei der `true` überspringt die Regel-Engine die Synchronisierung für dieses Produkt (keine Aktualisierung der Asset-Zuordnung). Wenn `false` oder ausgelassen, wird die normale Verarbeitung ausgeführt. Siehe [Synchronisierungsverarbeitung überspringen](#skip-sync-processing). |
 
 Der `asset_matches`-Parameter enthält die folgenden Attribute:
 
 | Attribut | Datentyp | Beschreibung |
 | --- | --- | --- |
-| `asset_id` | Zeichenfolge | Stellt die aktualisierte Asset-ID dar. |
-| `asset_roles` | Zeichenfolge | Gibt alle verfügbaren Asset-Rollen zurück. Verwendet unterstützte [Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)Asset-Rollen wie `thumbnail`, `image`, `small_image` und `swatch_image`. |
-| `asset_format` | Zeichenfolge | Stellt die verfügbaren Formate für das Asset bereit. Mögliche Werte sind `image` und `video`. |
-| `asset_position` | Zeichenfolge | Zeigt die Position des Assets an. |
+| `asset_id` | Zeichenfolge | Die Asset-ID. |
+| `asset_roles` | Array | Asset-Rollen. Verwendet unterstützte [Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)Asset-Rollen wie `thumbnail`, `image`, `small_image` und `swatch_image`. |
+| `asset_format` | Zeichenfolge | Das Asset-Format. Mögliche Werte sind `image` und `video`. |
+| `asset_position` | Zahl | Die Position des Assets in der Produktgalerie. |
+
+## Synchronisierungsverarbeitung überspringen
+
+Mit dem `skip` Parameter kann der benutzerdefinierte Matcher die Synchronisierungsverarbeitung für bestimmte Assets oder Produkte umgehen.
+
+Wenn Ihre App Builder-Anwendung in der Antwort `"skip": true` zurückgibt, sendet die Regel-Engine keine Aktualisierungs- oder Entfernungs-API-Anfragen für dieses Asset oder Produkt an Commerce. Diese Optimierung reduziert unnötige API-Aufrufe und verbessert die Leistung.
