@@ -1,22 +1,22 @@
 ---
-title: KI-Kodierungstools für Erweiterungen
-description: Erfahren Sie, wie Sie die KI-Tools zum Erstellen von Commerce App Builder-Erweiterungen verwenden.
+title: Entwickler-Tools für KI-Codierung für Adobe Commerce App Builder
+description: Erfahren Sie, wie Sie die KI-Tools zum Erstellen von Commerce App Builder-Programmen verwenden.
 feature: App Builder, Cloud
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
+source-git-commit: 5d4726f7191f74507524667555ab46838bb2407a
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '2098'
 ht-degree: 0%
 
 ---
 
-# KI-Kodierungstools für Erweiterungen
+# Entwickler-Tools für KI-Codierung für Adobe Commerce App Builder
 
-Bei der Migration zu [!DNL Adobe Commerce as a Cloud Service] können Sie die KI-Kodierungstools verwenden, um vorhandene [!DNL Adobe Commerce] PHP-Erweiterungen in [!DNL Adobe Developer App Builder]-Erweiterungen zu konvertieren. Sie können diese Tools auch verwenden, um neue [!DNL App Builder] zu erstellen.
+Bei der Migration zu [!DNL Adobe Commerce as a Cloud Service] können Sie die KI-Kodierungstools verwenden, um vorhandene [!DNL Adobe Commerce] PHP-Erweiterungen in [!DNL Adobe Developer App Builder] Anwendungen zu konvertieren. Sie können diese Tools auch verwenden, um neue [!DNL App Builder]-Programme zu erstellen.
 
 Die KI-Kodierungs-Tools bieten die folgenden Vorteile:
 
@@ -25,10 +25,26 @@ Die KI-Kodierungs-Tools bieten die folgenden Vorteile:
 * **Commerce-spezifische Funktionen**: Spezialisierte Tools für die Entwicklung von Adobe Commerce App Builder.
 * **Automatisierte Workflows**: Optimierte Entwicklungs- und Bereitstellungsprozesse.
 
+Durch die Installation der KI-Kodierungstools erhalten Sie Zugriff auf:
+
+* Regeln : Ein für Adobe Commerce und App Builder spezifischer Regelsatz, der die Anwendungsentwicklung anleitet und darüber informiert.
+* MCP-Server für Entwickler
+* App Builder MCP-Server
+
+## Aktualisieren auf die neueste Version
+
+Nach [Installation der Entwickler-Tools für die KI](#installation)Codierung) können Sie mit dem folgenden Befehl auf die neueste Version aktualisieren:
+
+```bash
+aio commerce extensibility tools-setup
+```
+
+Dadurch werden die Tools auf die neueste Version aktualisiert.
+
 ## Voraussetzungen
 
 * Einer der folgenden Codierer:
-   * [Cursor](https://cursor.com/download) (empfohlen)
+   * [Cursor](https://cursor.com/download)
    * [GitHub-Copilot](https://github.com/features/copilot)
    * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [Claude Code](https://www.claude.com/product/claude-code)
@@ -84,7 +100,7 @@ Der Einrichtungsprozess fragt Sie nach den Konfigurationsoptionen. Wählen Sie a
   New directory
 ```
 
-Bei der Auswahl des Codierungs-Agenten empfiehlt Adobe die Auswahl von `Cursor` für ein optimales Entwicklungserlebnis:
+Wählen Sie Ihren bevorzugten Codierer aus:
 
 ```shell-session
 ? Which coding agent would you like to use?
@@ -124,7 +140,7 @@ Bei der Auswahl des Package Managers empfiehlt Adobe aus Konsistenzgründen die 
 >
 >Vor der Bereitstellung des Projekts müssen Sie die folgenden Konfigurationsaufgaben durchführen:
 >
->* Melden Sie sich über die Adobe I/O-CLI [&#x200B; &#x200B;](https://developer.adobe.com/console)Adobe Developer Console an.
+>* Melden Sie sich über die Adobe I/O-CLI [ ](https://developer.adobe.com/console)Adobe Developer Console an.
 >* Erstellen Sie ein App Builder-Projekt (siehe [Projekt-Setup](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Einrichten von Umgebungsvariablen in einer `.env`.
 >
@@ -221,10 +237,10 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 ## Eingabeaufforderung für Muster
 
-Die folgende Beispiel-Eingabeaufforderung erstellt eine Erweiterung, um Benachrichtigungen zu senden, wenn eine Bestellung aufgegeben wird.
+Die folgende Beispiel-Eingabeaufforderung erstellt eine Anwendung, die Benachrichtigungen sendet, wenn eine Bestellung aufgegeben wird.
 
 ```shell-session
-Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
+Implement an Adobe Commerce SaaS application that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
 Order Total -> total
@@ -281,14 +297,14 @@ Lesen Sie die folgenden Ressourcen, um loszulegen:
 
 * [Integrations-Starter-Kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce Starter Kit-Vorlagen](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Beispielanwendungen für App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Warum Sie diese Ressourcen verwenden sollten
 
 * **Bewährte Muster**: Starter Kits enthalten Best Practices und architektonische Entscheidungen von Adobe
 * **Schnellere Entwicklung**: Reduziert den Zeitaufwand für Textbaustein und Konfiguration
-* **Konsistenz**: Stellt sicher, dass Ihre Erweiterung den etablierten Konventionen entspricht
+* **Konsistenz**: Stellt sicher, dass die Anwendung den üblichen Konventionen entspricht
 * **Wartbarkeit**: Einfachere Pflege und Aktualisierung bei der Einhaltung von Standardmustern
 * **Dokumentation**: Starter Kits enthalten Beispiele und Dokumentation
 * **Community-Support**: Einfachere Hilfe bei der Verwendung von Standardansätzen
@@ -297,7 +313,7 @@ Lesen Sie die folgenden Ressourcen, um loszulegen:
 
 ### Protokoll
 
-Das folgende Vierphasenprotokoll wird automatisch vom Regelsystem durchgesetzt. Die Tools sollten dieses Protokoll beim Entwickeln von Erweiterungen automatisch befolgen:
+Das folgende Vierphasenprotokoll wird automatisch vom Regelsystem durchgesetzt. Die Tools sollten bei der Entwicklung von Anwendungen diesem Protokoll automatisch folgen:
 
 * Phase 1: Anforderungsanalyse und -klärung
    * Wenn Sie Fragen zur Klärung stellen, geben Sie vollständige Antworten.
@@ -308,13 +324,13 @@ Das folgende Vierphasenprotokoll wird automatisch vom Regelsystem durchgesetzt. 
 
 ### Anfordern von Implementierungsplänen für die komplexe Entwicklung
 
-Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [&#x200B; hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
+Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [ hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
 
 ```shell-session
 Create a detailed implementation plan for this complex development.
 ```
 
-Komplexe Adobe Commerce-Erweiterungen umfassen häufig Folgendes:
+Komplexe Adobe Commerce-Anwendungen beinhalten oft:
 
 * Mehrere Laufzeitaktionen
 * Ereigniskonfiguration über mehrere Touchpoints hinweg
@@ -326,7 +342,7 @@ Komplexe Adobe Commerce-Erweiterungen umfassen häufig Folgendes:
 
 >[!NOTE]
 >
->Stellen Sie vor der Verwendung der MCP-Tools [, dass Sie bei der Adobe I/O CLI angemeldet &#x200B;](#log-in-to-the-adobe-io-cli).
+>Stellen Sie vor der Verwendung der MCP-Tools [, dass Sie bei der Adobe I/O CLI angemeldet ](#log-in-to-the-adobe-io-cli).
 
 Das Tool ist standardmäßig auf MCP-Tools eingestellt, kann jedoch unter bestimmten Umständen stattdessen CLI-Befehle verwenden. Um die Verwendung von MCP-Tools sicherzustellen, fordern Sie diese in Ihrer Eingabeaufforderung explizit an.
 
@@ -529,3 +545,31 @@ Vermeiden Sie die folgenden Anti-Muster bei Verwendung der KI-Kodierungs-Tools:
 * **Komplexität nicht ohne Ursachenanalyse hinzufügen** - Fragen Sie unnötige Dateihinzufügungen und fordern Sie eine ordnungsgemäße Untersuchung an.
 * **Deklarieren Sie keinen Erfolg ohne echte Datentests** - Testen Sie immer mit tatsächlichen Daten, nicht nur mit Edge-Fällen.
 * **Vergessen Sie nicht die Laufzeitbereinigung** - Bereinigen Sie verwaiste Aktionen immer nach größeren Änderungen.
+
+## Bereitstellen von Feedback
+
+Entwickler, die Feedback zu den KI-Kodierungs-Tools geben möchten, können den `/feedback`-Befehl verwenden.
+
+Mit diesem Befehl können Sie Text-Feedback geben und Protokolle an Adobe senden. Alle Protokolle, die Sie senden, werden bereinigt, um private oder persönliche Informationen zu entfernen.
+
+>[!TIP]
+>
+>Das Benutzererlebnis hängt von der verwendeten IDE ab. Im folgenden Prozess wird das Erlebnis in Cursor beschrieben.
+
+1. Geben Sie in Ihrem Agenten `/feedback` ein und wählen Sie den Befehl `commerce-extensibility/feedback` aus.
+
+1. Geben Sie Ihr Feedback für die Tools im Feld **Feedback**, das oben in der IDE angezeigt wird, und drücken Sie die **Eingabetaste**.
+
+   ![Cursor-Feedback-Befehlseingabefeld](../assets/feedback-response.png){width="600" zoomable="yes"}
+
+1. Geben Sie im Feld **Lokal speichern** entweder `yes` oder `no` ein und drücken Sie die **Eingabetaste**, um anzugeben, ob Sie eine lokale Kopie Ihrer Protokolle speichern möchten.
+
+   ![Cursor-Feedback-Befehl - Feld lokal speichern](../assets/feedback-save.png){width="600" zoomable="yes"}
+
+   Wenn Sie **Ja** ausgewählt haben, können Sie die Protokolle in Ihrem `chats` Ordner überprüfen, nachdem Sie Ihr Feedback gesendet haben.
+
+1. Der `commerce-extensibility/feedback` Befehl wird im Chat-Eingabefeld Ihres Agenten angezeigt. Drücken Sie **Eingabetaste** oder klicken Sie auf **Senden**, um Ihr Feedback an Adobe zu senden.
+
+>[!NOTE]
+>
+>Wenn der Befehl `/feedback` nicht angezeigt wird, müssen Sie möglicherweise [auf die neueste Version aktualisieren](#updating-to-the-latest-version).
