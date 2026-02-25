@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Voraussetzungen für das Tutorial
 
-Auf dieser Seite werden die Voraussetzungen und Einrichtungsschritte für [!DNL Adobe Commerce as a Cloud Service] Tutorials aufgelistet, z. B[ das Tutorial zur Erweiterung von Bewertungen ](./ratings-extension.md) das Tutorial [Erweiterung der Versandmethode](./shipping-method-extension.md).
+Auf dieser Seite werden die Voraussetzungen und Einrichtungsschritte für [!DNL Adobe Commerce as a Cloud Service] Tutorials aufgelistet, z. B[&#x200B; das Tutorial zur Erweiterung von Bewertungen &#x200B;](./ratings-extension.md) das Tutorial [Erweiterung der Versandmethode](./shipping-method-extension.md).
 
 ## Voraussetzungen für Adobe Commerce as a Cloud Service
 
