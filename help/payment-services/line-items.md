@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Zeileneinträge für  [!DNL Payment Service
 feature: Payments, Paas, Saas
 role: User
 exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,29 @@ Die Positionen für [!DNL Payment Services] sind die in einer Bestellung enthalt
 
 Diese Informationen sind für den Kundendienst, die Auftragsverwaltung und die ordnungsgemäße Rechnungsstellung nützlich.
 
-Diese Funktion ist standardmäßig für [!DNL Payment Services] aktiviert. So zeigen Sie Zeileneinträge an:
+## Konfigurieren von Zeileneinträgen
+
+Zeileneinträge sind standardmäßig für [!DNL Payment Services] aktiviert. So konfigurieren Sie:
+
+1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+
+1. Navigieren Sie zu **[!UICONTROL Sales]** und wählen Sie **[!UICONTROL Payment Methods]** aus.
+
+1. Erweitern Sie den Abschnitt _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
+
+1. Erweitern Sie im Abschnitt _[!UICONTROL Payment Services]_den Abschnitt_[!UICONTROL Line Items]_ .
+
+1. Wählen Sie **[!UICONTROL Line Items Enabled]** &quot;`Yes`&quot; aus, um Zeileneinträge zu aktivieren (Standard), oder &quot;`No`&quot;, um sie zu deaktivieren.
+
+1. Klicken Sie auf **[!UICONTROL Save Config]** , um Ihre Änderungen zu speichern.
+
+>[!IMPORTANT]
+>
+> Wenn Sie Erweiterungen von Drittanbietern haben, die Ihren Bestellungen benutzerdefinierte Gebühren hinzufügen (z. B. Bearbeitungsgebühren), müssen Sie möglicherweise Zeileneinträge deaktivieren. [!DNL Payment Services] berechnet Positionsartikel auf der Basis von standardmäßigen Commerce-Auftragskomponenten (Artikel, Steuer, Versand und Rabatte). Gebühren von Drittanbietern, die von [!DNL Payment Services] nicht erkannt werden, können zu einer Diskrepanz zwischen der Gesamtsumme des Einzelpostens und der Bestellsumme führen, was den Abschluss des Checkouts verhindern kann.
+
+## Zeileneinträge anzeigen
+
+So zeigen Sie Zeileneinträge an:
 
 1. Navigieren Sie zu Ihrem [PayPal-Händler-Dashboard](https://www.paypal.com/merchant/){target=_blank}.
 
@@ -76,7 +98,7 @@ Das `upc`-Objekt enthält die folgenden Attribute:
 | `type` | Zeichenfolge! | Der UPC-Typ. |
 | `code` | Zeichenfolge! | Der UPC-Produktcode des Artikels. |
 
-+++Beispiel für Zeilenelemente
++++Beispiel für Zeileneinträge
 
 ```json
 {
@@ -123,17 +145,17 @@ Das `upc`-Objekt enthält die folgenden Attribute:
 
 +++
 
-Weitere Informationen [&#x200B; diesen Feldern und deren Einschränkungen finden Sie in der &#x200B;](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank} für PayPal-Entwickler zu Zeileneinträgen .
+Weitere Informationen [ diesen Feldern und deren Einschränkungen finden Sie in der ](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank} für PayPal-Entwickler zu Zeileneinträgen .
 
 ## Zeileneinträge verwalten
 
-Adobe Commerce [berechnet die Steuer auf der Grundlage des Gesamtbetrags für jede Zeile](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank} was zu Rundungsproblemen führen kann, wenn mehrere Mengen desselben Artikels bestellt werden oder wenn im Katalog steuerinklusive Preise angezeigt werden. In solchen Fällen kann die Gesamtmenge in zwei Zeilen aufgeteilt werden, aber die Menge entspricht der Gesamtzahl der bestellten Artikel.
+Adobe Commerce [berechnet die Steuer auf der Grundlage des Gesamtbetrags für jede Zeile](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank} was zu Rundungsproblemen führen kann, wenn mehrere Mengen desselben Artikels bestellt werden oder wenn im Katalog steuerinklusive Preise angezeigt werden. In solchen Fällen kann die Gesamtmenge in zwei Zeilen aufgeteilt werden, aber die Menge entspricht der Gesamtzahl der bestellten Artikel.
 
 > Beispiel für Zeileneinträge mit Rundungsproblemen in der Ansicht „Händler-Dashboard“
 
 ![Zeileneintragsansicht](assets/line-items-example.png){width="600" zoomable="yes"}
 
-+++So berechnet Adobe Commerce ein Rundungsproblem in Zeileneinträgen
++++Wie Adobe Commerce ein Rundungsproblem in Zeileneinträgen berechnet
 
 Zeileneinträge für [!DNL Payment Services] gleichen dieses Rundungsproblem aus, sodass der `unit_amount`- oder `unit_tax` dem Gesamtbetrag für den Auftrag entspricht. Ein Artikel kann zur Lösung dieses Rundungsproblems in zwei Zeilen aufgeteilt werden:
 

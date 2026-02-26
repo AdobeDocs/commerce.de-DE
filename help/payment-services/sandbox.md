@@ -3,9 +3,9 @@ title: Einrichten der Test-Sandbox
 description: Verwenden Sie ein PayPal-Sandbox-Konto, um  [!DNL Payment Services]  Testmodus zu verwenden.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ So schließen Sie das Sandbox-Onboarding ab:
       Wenn Sie während des PayPal-Onboarding-Prozesses ein PayPal-Sandbox-Konto erstellt haben, müssen Sie [Ihre Onboarding-Sandbox zurücksetzen](#reset-your-sandbox-account) da Sie sonst Ihre E-Mail nicht verifizieren können.
 
    1. Wählen Sie **[!UICONTROL Business]** als Kontotyp aus und klicken Sie auf **[!UICONTROL Create]**.
-   1. Klicken Sie im Abschnitt _[!UICONTROL Sandbox Accounts]_&#x200B;auf die drei Punkte in der Spalte&#x200B;_[!UICONTROL Manage accounts]_ für das von Ihnen erstellte Sandbox-Konto.
+   1. Klicken Sie im Abschnitt _[!UICONTROL Sandbox Accounts]_auf die drei Punkte in der Spalte_[!UICONTROL Manage accounts]_ für das von Ihnen erstellte Sandbox-Konto.
    1. Klicken Sie auf **[!UICONTROL View/edit account]**.
 
       ![PayPal - Sandbox-Konto anzeigen/bearbeiten](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -72,7 +72,7 @@ So setzen Sie Ihr Sandbox-Konto zurück:
 
 ## Telefonnummer des Kontakts aktivieren
 
-Mit der Telefonnummer des Kontakts können Sie die Telefonnummern des Kontakts abrufen, die PayPal von Ihren Kunden sammelt. PayPal sammelt immer Kontakt-Telefonnummern von PayPal-Kontoinhabern, um ihre Identität zu bestätigen und sie zu kontaktieren, um Probleme mit ihren Konten zu lösen oder ihre Erfüllungsprozesse abzuschließen. PayPal rät jedoch davon ab, Kontaktnummern direkt vom Händler zu verwenden, da dies negative Auswirkungen auf den Umsatz haben kann. Weitere Informationen finden [&#x200B; in der Dokumentation &#x200B;](https://www.sandbox.paypal.com/businessmanage/preferences/website)PayPal - Telefonnummern für Kontakte“.
+Mit der Telefonnummer des Kontakts können Sie die Telefonnummern des Kontakts abrufen, die PayPal von Ihren Kunden sammelt. PayPal sammelt immer Kontakt-Telefonnummern von PayPal-Kontoinhabern, um ihre Identität zu bestätigen und sie zu kontaktieren, um Probleme mit ihren Konten zu lösen oder ihre Erfüllungsprozesse abzuschließen. PayPal rät jedoch davon ab, Kontaktnummern direkt vom Händler zu verwenden, da dies negative Auswirkungen auf den Umsatz haben kann. Weitere Informationen finden [ in der Dokumentation ](https://www.sandbox.paypal.com/businessmanage/preferences/website)PayPal - Telefonnummern für Kontakte“.
 
 Diese Funktion ist standardmäßig `off`. Wenn Sie diese Option aktivieren, können Store-Administratoren Telefonnummern sehen, wenn ein Kunde einen markenspezifischen Checkout-Fluss außerhalb der Checkout-Seite abschließt.
 
@@ -80,8 +80,34 @@ Diese Funktion ist standardmäßig `off`. Wenn Sie diese Option aktivieren, kön
 >
 >Diese Einstellung gilt nicht für andere Checkout-Flüsse.
 
+## Land des Käufers
+
+In der Produktion verwendet PayPal die Geolokalisierung des Käufers, um zu bestimmen, welche Zahlungsmethoden in Checkout- und Express-Flüssen verfügbar sind. Da der Sandbox-Modus keine Geolokalisierung unterstützt, verwenden Sie die Konfiguration **Land des Käufers** um den Standort des Käufers zu simulieren und zu steuern, welche Zahlungsmethoden gerendert werden.
+
+Diese Einstellung ist nützlich, um regionsspezifische Zahlungsmethoden wie Venmo (nur USA), Pay Later (USA und Großbritannien) oder [Lokale Zahlungsmethoden](payments-options.md#local-payment-methods) (Europa) zu testen, ohne ein VPN zu benötigen.
+
+So konfigurieren Sie das Land des Käufers:
+
+1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+
+1. Erweitern Sie im linken Bereich **[!UICONTROL Sales]** und wählen Sie **[!UICONTROL Payment Methods]** aus.
+
+1. Erweitern Sie den Abschnitt _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
+
+1. Erweitern Sie im Abschnitt _[!UICONTROL Payment Services]_den Abschnitt_[!UICONTROL General Configuration]_ .
+
+1. Legen Sie **[!UICONTROL Method]** auf `Sandbox` fest.
+
+1. Wählen Sie das gewünschte Land aus der Dropdown-Liste **[!UICONTROL Buyer's country]** aus.
+
+1. Klicken Sie auf **[!UICONTROL Save Config]** , um Ihre Änderungen zu speichern.
+
+>[!NOTE]
+>
+>Die **[!UICONTROL Buyer's country]** wird nur angezeigt, wenn die Methode auf `Sandbox` gesetzt ist. Dies hat keine Auswirkungen auf die Produktionsumgebungen.
+
 ## Testen in Sandbox-Umgebung
 
 Es wird dringend empfohlen, Testdatenräume für Integrations- und Staging-Umgebungen zu verwenden und Zahlungen in der Produktion mit echten Kreditkarten und Banken zu testen, bevor Sie diese Funktion Käufern bereitstellen.
 
-Weitere Informationen [&#x200B; Sie unter &#x200B;](test-validate.md) und Validieren .
+Weitere Informationen [ Sie unter ](test-validate.md) und Validieren .
