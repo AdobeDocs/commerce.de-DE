@@ -149,7 +149,7 @@ Weitere Informationen [&#x200B; diesen Feldern und deren Einschränkungen finden
 
 ## Zeileneinträge verwalten
 
-Adobe Commerce [berechnet die Steuer auf der Grundlage des Gesamtbetrags für jede Zeile](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank} was zu Rundungsproblemen führen kann, wenn mehrere Mengen desselben Artikels bestellt werden oder wenn im Katalog steuerinklusive Preise angezeigt werden. In solchen Fällen kann die Gesamtmenge in zwei Zeilen aufgeteilt werden, aber die Menge entspricht der Gesamtzahl der bestellten Artikel.
+Adobe Commerce [berechnet die Steuer auf der Grundlage des Gesamtbetrags für jede Zeile](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank} was zu Rundungsproblemen führen kann, wenn mehrere Mengen desselben Artikels bestellt werden oder wenn im Katalog steuerinklusive Preise angezeigt werden. In solchen Fällen kann die Gesamtmenge in zwei Zeilen aufgeteilt werden, aber die Menge entspricht der Gesamtzahl der bestellten Artikel.
 
 > Beispiel für Zeileneinträge mit Rundungsproblemen in der Ansicht „Händler-Dashboard“
 
