@@ -2,13 +2,13 @@
 title: Tool für die Massendatenmigration
 description: Erfahren Sie, wie Sie mit dem Tool für die Massendatenmigration Daten aus Ihrer bestehenden Adobe Commerce in der Cloud-Instanz zu migrieren [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: e582ce85b58b57922a8cdd63dbe32bd0f08c64f9
+source-git-commit: 66bb62e1288f034fa246056dbec43c0104803451
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -21,23 +21,23 @@ Das Tool für die Massendatenmigration folgt einer verteilten Architektur, die e
 >
 >Das Tool für die Massendatenmigration unterstützt nur die Migration von Commerce-Kerndaten von Erstanbietern. Die Migration benutzerdefinierter Daten wird derzeit nicht unterstützt.
 
-In der folgenden Abbildung werden die Architektur und die Schlüsselkomponenten für die Verwendung der Tool für die Massendatenmigration erläutert.
+Die folgende Abbildung zeigt die Architektur und die wichtigsten Komponenten für die Verwendung des Tools für die Massendatenmigration.
 
-![Architekturdiagramm für das Bulk-Daten-Migrationstool, das den Datenfluss zwischen PaaS und SaaS zeigt](../assets/bulk-data-diagram.png){zoomable="yes"}
+![Architekturdiagramm des Tools für die Massendatenmigration, das den Datenfluss von PaaS zu SaaS anzeigt](../assets/bulk-data-diagram.png){zoomable="yes"}
 
-## Migration arbeitsablauf
+## Migrations-Workflow
 
-Die arbeitsablauf zur Massendatenmigration umfasst die folgenden Schritte:
+Der Workflow für die Massendatenmigration besteht aus den folgenden Schritten:
 
-1. Festlegen eine neue Umgebung für die Migration ein.
+1. Richten Sie eine neue Umgebung für Ihre Migration ein.
 1. Kopieren Sie Ihre Daten aus Ihrem alten System.
 1. Verschieben Sie Ihre Daten in das neue System.
 1. Stellen Sie Ihren Produktkatalog im neuen System zur Verfügung.
 1. Überprüfen Sie, ob Ihre Daten korrekt migriert wurden.
 
-In den folgenden Abschnitten werden diese Schritte im Detail beschrieben.
+In den folgenden Abschnitten werden diese Schritte detailliert beschrieben.
 
-## Zugreifen auf die Tool zur Massendatenmigration
+## Zugriff auf das Tool für die Massendatenmigration
 
 Das Tool für die Massendatenmigration ist wie folgt verfügbar:
 
@@ -48,7 +48,7 @@ Das Tool für die Massendatenmigration ist wie folgt verfügbar:
 
 Der Lösungsimplementierer erstellt eine Zielumgebung für die Migration. Diese Umgebung speichert die aus der Quellinstanz migrierten Daten.
 
-Erstellen [&#x200B; zunächst eine neue  [!DNL Adobe Commerce as a Cloud Service] SaaS) &#x200B;](../getting-started.md#create-an-instance).
+Erstellen [ zunächst eine neue  [!DNL Adobe Commerce as a Cloud Service] SaaS) ](../getting-started.md#create-an-instance).
 
 ### Konfigurieren des Extraktionstools
 
@@ -56,18 +56,18 @@ Extrahieren Sie mit dem Extraktions-Tool Daten aus der Quellinstanz.
 
 1. Laden Sie das Extraktions-Tool über den von Adobe bereitgestellten Link herunter.
 1. Legen Sie die folgenden Umgebungsvariablen im Extraktions-Tool fest:
-   - Verbindung Details zu Ihrer bestehenden MySQL-Datenbank
-   - Die Target-Komponente Mandanten-ID für Ihre [!DNL Adobe Commerce as a Cloud Service] Instanz
+   - Verbindungsdetails zur vorhandenen MySQL-Datenbank
+   - Die Ziel-Mandanten-ID für Ihre [!DNL Adobe Commerce as a Cloud Service]
    - Ihre IMS-Anmeldedaten, einschließlich:
-      - Client ID
-      - Client geheim
-      - IMS-Geltungsbereiche
+      - Client-ID
+      - Client-Geheimnis
+      - IMS-Bereiche
       - IMS-URL : Die Basis-URL. Beispiel: `https://ims-na1.adobelogin.com/`.
-      - Kennung der IMS-Organisation
+      - IMS-Organisations-ID
 
-   Wählen Sie für IMS-Bereiche und andere Werte Ihren OAuth-Typ im **Abschnitt Anmeldeinformationen** in Ihrem Projekt in der [Adobe Systems Developer Console](https://developer.adobe.com/console/) aus. Mehr Informationen sind in der Datei enthalten, die `.example.env` im Extraktion Tool enthalten ist.
+   Wählen Sie für IMS-Bereiche und andere Werte Ihren OAuth-Typ im Abschnitt **Anmeldedaten** innerhalb Ihres Projekts in der [Adobe Developer Console](https://developer.adobe.com/console/). Weitere Informationen finden Sie in der `.example.env`, die mit dem Extraktions-Tool geliefert wird.
 
-### Extract Daten
+### Extrahieren von Daten
 
 Vor Ausführung des Extraktions-Tools muss der Implementierer der Lösung einen SSH-Tunnel zur PaaS-Datenbank einrichten, indem er Folgendes verwendet:
 
@@ -83,19 +83,23 @@ Führen Sie dann das Extraktions-Tool aus. Dieses führt folgende Vorgänge aus:
 
 ### Daten laden
 
-Führen Sie die von Adobe Systems bereitgestellten Ladedaten Tool aus. Diese Tool wird:
+Führen Sie das von Adobe bereitgestellte Tool zum Laden von Daten aus. Dieses Tool wird:
 
-1. Stellen Sie mithilfe eines Migrations Konto eine Verbindung zur SaaS-Mandantendatenbank her.
-1. Generieren Sie einen Beladungsplan.
-1. Führen Sie den Plan aus und verschieben Sie die Daten stapelweise in die SaaS-Mandantendatenbank.
-1. Katalog Medien verarbeiten und in die Target-Komponente Umgebung übertragen.
+1. Stellen Sie mithilfe eines Migrationskontos eine Verbindung zur SaaS-Mandantendatenbank her.
+1. Erstellen Sie einen Ladeplan.
+1. Führen Sie den Plan aus und verschieben Sie Daten in Batches in die SaaS-Mandantendatenbank.
+1. Katalogmedien verarbeiten und in die Zielumgebung übertragen
 1. Leeren Sie den SaaS-Redis-Cache und invalidieren Sie die Datenbankindizes für den Mandanten.
 
 ### Aufnahme von Katalogdaten
 
 Nach dem Laden der Daten fließen die Katalogdaten automatisch von der SaaS-Mandantendatenbank zum Katalog-Service.
 
-Der Katalog-Service gibt diese Daten für die Live-Suche und für Produktempfehlungen frei. Für diesen Prozess ist kein manueller Eingriff erforderlich. Die Daten sind in allen -Services verfügbar, sobald die Aufnahme abgeschlossen ist.
+Der Katalog-Service gibt diese Daten für die Live-Suche und für Produktempfehlungen frei. Für diesen Prozess ist kein manuelles Eingreifen erforderlich. Die Daten sind in allen -Services verfügbar, sobald die Aufnahme abgeschlossen ist.
+
+>[!IMPORTANT]
+>
+>Die Konfigurationseinstellungen werden nicht automatisch importiert. Beachten Sie vor Beginn des Datenmigrationsprozesses Ihre aktuellen Katalogkonfigurationseinstellungen in der [!DNL Commerce Admin]. Implementieren Sie dann dieselbe Konfiguration in der [!DNL Adobe Commerce as a Cloud Service].
 
 ### Prüfung der Datenintegrität
 
@@ -120,4 +124,4 @@ Sie können auch manuell eine umfassende Überprüfung aller Systemdatensätze i
 Die vollständige Verifizierung umfasst:
 
 - Vollständige API-basierte Verifizierung mit allen vorab extrahierten REST- und GraphQL-API-Antworten
-- Detaillierter Bericht über festgestellte Inkonsistenzen.
+- Detaillierter Bericht über festgestellte Inkonsistenzen
