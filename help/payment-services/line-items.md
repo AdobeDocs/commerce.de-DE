@@ -31,7 +31,7 @@ Zeileneinträge sind standardmäßig für [!DNL Payment Services] aktiviert. So 
 
 1. Erweitern Sie den Abschnitt _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 
-1. Erweitern Sie im Abschnitt _[!UICONTROL Payment Services]_den Abschnitt_[!UICONTROL Line Items]_ .
+1. Erweitern Sie im Abschnitt _[!UICONTROL Payment Services]_&#x200B;den Abschnitt&#x200B;_[!UICONTROL Line Items]_ .
 
 1. Wählen Sie **[!UICONTROL Line Items Enabled]** &quot;`Yes`&quot; aus, um Zeileneinträge zu aktivieren (Standard), oder &quot;`No`&quot;, um sie zu deaktivieren.
 
@@ -145,7 +145,7 @@ Das `upc`-Objekt enthält die folgenden Attribute:
 
 +++
 
-Weitere Informationen [ diesen Feldern und deren Einschränkungen finden Sie in der ](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank} für PayPal-Entwickler zu Zeileneinträgen .
+Weitere Informationen [&#x200B; diesen Feldern und deren Einschränkungen finden Sie in der &#x200B;](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank} für PayPal-Entwickler zu Zeileneinträgen .
 
 ## Zeileneinträge verwalten
 
