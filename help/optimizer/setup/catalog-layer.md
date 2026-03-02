@@ -3,10 +3,10 @@ title: Katalogebene
 description: Erfahren Sie, wie Sie mit Katalogebenen Produktdaten ändern können, ohne die ursprünglichen Quelldaten zu ändern, sodass Sie Änderungen jederzeit sicher anpassen und rückgängig machen können.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 4a904527af172a5e35b87410135d55484d07ad84
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,8 @@ Wenn ein Kunde Ihre Storefront aufruft, kombiniert das System Ihre Basiskatalogd
 
 1. **Feldbehandlung** - Verschiedene Feldtypen werden unterschiedlich verarbeitet:
 
-   - **Felder überschreiben** - Textfelder wie Name, Beschreibung und Meta-Titel werden durch die in der Ebene definierten Werte ersetzt, wobei die Ebene mit der höheren Priorität Vorrang hat.
-   - **Felder zusammenführen** - Array-Felder wie Bilder, Links und Attribute werden aus mehreren Ebenen kombiniert, um eine einheitliche Antwort zu erzielen.
+   * **Felder überschreiben** - Textfelder wie Name, Beschreibung und Meta-Titel werden durch die in der Ebene definierten Werte ersetzt, wobei die Ebene mit der höheren Priorität Vorrang hat.
+   * **Felder zusammenführen** - Array-Felder wie Bilder, Links und Attribute werden aus mehreren Ebenen kombiniert, um eine einheitliche Antwort zu erzielen.
 
 1. **Prioritätsauflösung** - Das Reihenfolgenfeld bestimmt, welche Ebene Vorrang hat. Wenn mehrere Ebenen dasselbe Feld ändern, hat die Ebene mit der Nummer niedrigerer Ordnung eine höhere Priorität (z. B. Reihenfolge 1 ist die höchste).
 
@@ -36,11 +36,50 @@ Wenn ein Kunde Ihre Storefront aufruft, kombiniert das System Ihre Basiskatalogd
 
 Katalogebenen werden häufig für Folgendes verwendet:
 
-- **SEO-Optimierung** - Überschreiben von Produktmetadaten-Titeln und -Beschreibungen basierend auf KI-Empfehlungen von [Sites Optimizer](../manage-results/opportunities.md).
-- **Saisonale Kampagnen** - Aktualisieren Sie Produktnamen, Beschreibungen oder Bilder für Werbeaktionen vorübergehend, ohne die Quelldaten zu ändern.
-- **Regionale Anpassung** - Zeigt verschiedene Produktinformationen basierend auf geografischem Standort oder Sprache an.
-- **A/B-Tests** - Testen Sie verschiedene Produktpräsentationen, um die Konversionsraten zu optimieren.
-- **Verwaltung mehrerer Marken** - Passen Sie Produktattribute für verschiedene Ansichten des Markenkatalogs an.
+* **SEO-Optimierung** - Überschreiben von Produktmetadaten-Titeln und -Beschreibungen basierend auf KI-Empfehlungen von [Sites Optimizer](../manage-results/opportunities.md).
+* **Saisonale Kampagnen** - Aktualisieren Sie Produktnamen, Beschreibungen oder Bilder für Werbeaktionen vorübergehend, ohne die Quelldaten zu ändern.
+* **Regionale Anpassung** - Zeigt verschiedene Produktinformationen basierend auf geografischem Standort oder Sprache an.
+* **A/B-Tests** - Testen Sie verschiedene Produktpräsentationen, um die Konversionsraten zu optimieren.
+* **Verwaltung mehrerer Marken** - Passen Sie Produktattribute für verschiedene Ansichten des Markenkatalogs an.
+* **Produktvisualisierungen** - Wenden Sie Produktbilder aus AEM Assets als Ebene über Ihrem Basiskatalog an.
+
+## AEM-Assets-Ebene
+
+Wenn Sie [Produktvisualisierung](product-visuals.md) aktivieren, erstellt und verwaltet die AEM Assets-Integration automatisch eine Katalogebene, die ausschließlich AEM Assets-Inhalten gewidmet ist. Der standardmäßige Ebenenname lautet `AEM-Assets`. Sie können jedoch während des Onboardings [ der AEM Assets-Integration einen benutzerdefinierten Namen ](../../aem-assets-integration/get-started/configure-aco.md).
+
+Diese Ebene enthält Produktbilder, die aus AEM Assets synchronisiert wurden. Wie andere Katalogebenen wird es über die [Product Layers-API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank} gefüllt. Der Assets Integration Service transformiert AEM-Asset-Metadaten und Bereitstellungs-URLs in das API-Format und sendet die Daten automatisch, wenn Assets in AEM Assets genehmigt wurden.
+
+Die Integration unterstützt eine Quelle pro Mandant (ein Gebietsschema + eine Ebene).
+
+>[!CAUTION]
+>
+> Weisen Sie die AEM-Assets-Ebene Ihrer Katalogansicht zu. Wenn die Ebene nicht zugewiesen ist, können Produktbilddaten unerwartet überschrieben werden.
+
+### Funktionsweise der AEM-Assets-Ebene
+
+1. **Automatische Erstellung**: Die Ebene wird erstellt, wenn die AEM Assets-Integration für Ihre [!DNL Commerce Optimizer]-Instanz konfiguriert ist.
+
+1. **Bildsynchronisierung**: Wenn Assets in AEM Assets genehmigt werden, transformiert der Assets Integration Service die Asset-Daten und aktualisiert die `AEM-Assets` über die Produktebenen-API.
+
+1. **Ebenenzuweisung**: Weisen Sie die `AEM-Assets` Katalogansicht zu, in der AEM Assets-Bilder angezeigt werden sollen.
+
+### Zuweisen der AEM-Assets-Ebene zu einer Katalogansicht
+
+So zeigen Sie AEM Assets-Bilder in Ihrer Storefront an:
+
+1. Navigieren Sie zu _Store-Setup_ und klicken Sie auf **[!UICONTROL Catalog views]**.
+
+1. Wählen Sie die Katalogansicht aus, in der Sie die Ebene anwenden möchten.
+
+1. Suchen Sie im Abschnitt Katalogebenen die Ebene **AEM-Assets**.
+
+1. Aktivieren Sie die Ebene, um sie für diese Katalogansicht zu aktivieren.
+
+1. Klicken Sie auf **[!UICONTROL Save]** , um die Änderungen anzuwenden.
+
+Nach der Zuweisung geben die Storefront-APIs (Katalog-Service, Live-Suche, Produktempfehlungen und Storefront GraphQL-API) sowohl Basiskatalogbilder als auch AEM Assets-Bilder für Produkte zurück.
+
+Weitere Informationen zum Konfigurieren von Produktvisualisierungen finden Sie unter [Produktvisualisierungen mit AEM Assets](product-visuals.md).
 
 ## Hinzufügen einer Katalogebene über die Datenaufnahme
 
@@ -48,12 +87,12 @@ Sie können Ihren Produkten während der Datenaufnahme Katalogebenen hinzufügen
 
 >[!NOTE]
 >
->Sie importieren Katalogebenen mit der Aufnahme-API, aber [&#x200B; Festlegen der Reihenfolge &#x200B;](#manage-layer-priorities) Ebenen erfolgt über die Benutzeroberfläche.
+>Sie importieren Katalogebenen mit der Aufnahme-API, aber [ Festlegen der Reihenfolge ](#manage-layer-priorities) Ebenen erfolgt über die Benutzeroberfläche.
 
 **Voraussetzungen:**
 
-- API-Anmeldeinformationen mit Berechtigung für den Zugriff auf den Datenaufnahme-Service
-- Produkt-SKUs, die bereits im Basiskatalog vorhanden sind
+* API-Anmeldeinformationen mit Berechtigung für den Zugriff auf den Datenaufnahme-Service
+* Produkt-SKUs, die bereits im Basiskatalog vorhanden sind
 
 **Schritte:**
 
@@ -63,7 +102,7 @@ Sie können Ihren Produkten während der Datenaufnahme Katalogebenen hinzufügen
 
 1. Überprüfen Sie, ob die Ebene erfolgreich aufgenommen wurde, indem Sie die Konfiguration der Katalogansicht überprüfen.
 
-Detaillierte API-Spezifikationen und Payload-Beispiele finden Sie unter [Produktebenen](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers) in der Entwicklerdokumentation.
+Detaillierte API-Spezifikationen und Payload-Beispiele finden Sie unter [Produktebenen](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank} in der Entwicklerdokumentation.
 
 ## Manuelles Hinzufügen einer Katalogebene in der Benutzeroberfläche
 
@@ -91,10 +130,10 @@ Die Benutzeroberfläche für die Katalogansicht ermöglicht die manuelle Erstell
 
 1. Konfigurieren Sie die Ebeneneigenschaften:
 
-   - **Ebenenname** - Geben Sie einen beschreibenden Namen ein, um den Zweck der Ebene zu identifizieren.
-   - **Produkte** - Wählen Sie die Produkte aus, für die diese Ebene gilt.
-   - **Attribute** - Wählen Sie aus, welche Produktattribute geändert werden sollen (Name, Beschreibung, Bilder, Meta-Tags usw.).
-   - **Werte** - Geben Sie die neuen Werte für jedes ausgewählte Attribut ein.
+   * **Ebenenname** - Geben Sie einen beschreibenden Namen ein, um den Zweck der Ebene zu identifizieren.
+   * **Produkte** - Wählen Sie die Produkte aus, für die diese Ebene gilt.
+   * **Attribute** - Wählen Sie aus, welche Produktattribute geändert werden sollen (Name, Beschreibung, Bilder, Meta-Tags usw.).
+   * **Werte** - Geben Sie die neuen Werte für jedes ausgewählte Attribut ein.
 
 1. Klicken Sie auf **Speichern**, um die Ebene zu erstellen.
 
@@ -134,14 +173,14 @@ Sie können Katalogebenen aktivieren oder deaktivieren, ohne sie zu löschen, so
 
 1. Klicken Sie auf den Umschalter Aktivierung , um die Ebene zu aktivieren oder zu deaktivieren.
 
-   - **Aktiv** - Die Ebene wird auf Produktdaten angewendet.
-   - **Inaktiv** - Die Ebene wird beibehalten, aber nicht auf Produktdaten angewendet.
+   * **Aktiv** - Die Ebene wird auf Produktdaten angewendet.
+   * **Inaktiv** - Die Ebene wird beibehalten, aber nicht auf Produktdaten angewendet.
 
 1. Die Änderung wird sofort in Ihrer Storefront wirksam.
 
 **So löschen Sie eine Ebene:**
 
-Verwenden Sie die Datenerfassungs-API, um [eine Katalogschicht zu löschen](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers).
+Verwenden Sie die Datenerfassungs-API, um [eine Katalogschicht zu löschen](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers){target=_blank}.
 
 ## Verwalten von Ebenenprioritäten
 
@@ -149,11 +188,11 @@ Die Reihenfolge, in der Ebenen angewendet werden, bestimmt, welche Werte in Ihre
 
 **Grundlegendes zur Prioritätsreihenfolge:**
 
-- Jeder Ebene wird eine Ordnungsnummer (1, 2, 3 usw.) zugewiesen
-- Reihenfolge 1 hat die höchste Priorität und überschreibt alle anderen Ebenen
-- Wenn mehrere Ebenen dasselbe Feld ändern, hat die Ebene mit der Nummer niedrigerer Ordnung Vorrang
-- Priorität gilt nur für das Überschreiben von Feldern (Name, Beschreibung, Meta-Tags)
-- Felder (Bilder, Links, Attribute) verbinden Daten aus allen Ebenen
+* Jeder Ebene wird eine Ordnungsnummer (1, 2, 3 usw.) zugewiesen
+* Reihenfolge 1 hat die höchste Priorität und überschreibt alle anderen Ebenen
+* Wenn mehrere Ebenen dasselbe Feld ändern, hat die Ebene mit der Nummer niedrigerer Ordnung Vorrang
+* Priorität gilt nur für das Überschreiben von Feldern (Name, Beschreibung, Meta-Tags)
+* Felder (Bilder, Links, Attribute) verbinden Daten aus allen Ebenen
 
 **So ordnen Sie die Ebenenprioritäten neu an:**
 
@@ -177,19 +216,20 @@ Die Reihenfolge, in der Ebenen angewendet werden, bestimmt, welche Werte in Ihre
 
 Befolgen Sie beim Arbeiten mit Katalogebenen die folgenden Empfehlungen:
 
-- **Beschreibende Namen verwenden** - Namensebenen, um ihren Zweck deutlich anzugeben (z. B. „Holiday 2025-Kampagne“ oder „SEO-Optimierung - Produktseiten„).
+* **Beschreibende Namen verwenden** - Namensebenen, um ihren Zweck deutlich anzugeben (z. B. „Holiday 2025-Kampagne“ oder „SEO-Optimierung - Produktseiten„).
 
-- **Ebenen begrenzen** - Während das System mehrere Ebenen unterstützt, kann die Verwendung zu vieler Ebenen die Leistung beeinträchtigen. Konsolidieren Sie Ebenen nach Möglichkeit.
+* **Ebenen begrenzen** - Während das System mehrere Ebenen unterstützt, kann die Verwendung zu vieler Ebenen die Leistung beeinträchtigen. Konsolidieren Sie Ebenen nach Möglichkeit.
 
 <!--- **Test before activating**—Always preview layer effects before activating them on your live storefront. !!!REMOVE IF PREVIEW NOT AVAILABLE FOR GA!!!-->
 
-- **Dokumentprioritätslogik** - Verfolgen Sie, welche Ebenen Vorrang haben sollten, um unbeabsichtigte Überschreibungen zu vermeiden.
+* **Dokumentprioritätslogik** - Verfolgen Sie, welche Ebenen Vorrang haben sollten, um unbeabsichtigte Überschreibungen zu vermeiden.
 
-- **Sites Optimizer-Ebenen überprüfen** - Bei Verwendung der automatischen Fehlerbehebung in Sites Optimizer erstellt das System Ebenen mit der höchsten Priorität. Achten Sie beim Hinzufügen manueller Ebenen, die KI-Empfehlungen überschreiben können. Weitere Informationen zur Verwendung von [Sites Optimizer](../manage-results/opportunities.md).
+* **Sites Optimizer-Ebenen überprüfen** - Bei Verwendung der automatischen Fehlerbehebung in Sites Optimizer erstellt das System Ebenen mit der höchsten Priorität. Achten Sie beim Hinzufügen manueller Ebenen, die KI-Empfehlungen überschreiben können. Weitere Informationen zur Verwendung von [Sites Optimizer](../manage-results/opportunities.md).
 
-- **Überwachen der Leistung** - Wenn Sie langsame Ladevorgänge der Produktseite bemerken, überprüfen Sie Ihre Ebenenkonfiguration und erwägen Sie die Konsolidierung von Ebenen.
+* **Überwachen der Leistung** - Wenn Sie langsame Ladevorgänge der Produktseite bemerken, überprüfen Sie Ihre Ebenenkonfiguration und erwägen Sie die Konsolidierung von Ebenen.
 
 ## Ähnliche Themen
 
-- [Katalogansichten](catalog-view.md) - Konfigurieren von Katalogansichten für verschiedene Storefronts
-- [Opportunities](../manage-results/opportunities.md) - Erfahren Sie mehr über die KI-gestützte Optimierung mithilfe von Katalogschichten
+* [Katalogansichten](catalog-view.md) - Konfigurieren von Katalogansichten für verschiedene Storefronts
+* [Produktvisualisierungen](product-visuals.md) - Verwenden von AEM Assets für Produktbilder
+* [Opportunities](../manage-results/opportunities.md) - Erfahren Sie mehr über die KI-gestützte Optimierung mithilfe von Katalogschichten
