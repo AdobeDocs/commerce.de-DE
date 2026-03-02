@@ -76,7 +76,7 @@ Sehen Sie sich diese Videos an, um zu erfahren, wie Sie die AEM Assets-Integrati
 
 In diesem Video erfahren Sie, wie Adobe Commerce und AEM Assets zusammenarbeiten, um Inhalts-Workflows zu optimieren:
 
->[!VIDEO](https://video.tv.adobe.com/v/3447837)
+>[!VIDEO](https://video.tv.adobe.com/v/3447896?captions=ger)
 
 >[!TAB ACCS-Tutorial]
 
