@@ -39,7 +39,7 @@ Stellen Sie vor dem Konfigurieren der Integration Folgendes sicher:
 
 ## Onboarding
 
-Um die AEM Assets-Integration mit [!DNL Commerce Optimizer] zu integrieren, müssen [&#x200B; ein Support-Ticket erstellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Um die AEM Assets-Integration mit [!DNL Commerce Optimizer] zu integrieren, müssen [&#x200B; ein Support-Ticket erstellen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 Der Adobe-Support verwendet die Informationen in Ihrem Ticket, um Ihren Mandanten beim Assets Integration Service zu registrieren und die Integration zu konfigurieren.
 
@@ -115,7 +115,7 @@ Das Asset muss den Status **Genehmigt** aufweisen, damit die Daten mit dem Trigg
 
 >[!CAUTION]
 >
-> Weisen Sie die `AEM-Assets` Ihrer [Katalogansicht“ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). Wenn die Ebene nicht zugewiesen ist, können Produktbilddaten unerwartet überschrieben werden.
+> Weisen Sie die `AEM-Assets` Ihrer [Katalogansicht“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-view). Wenn die Ebene nicht zugewiesen ist, können Produktbilddaten unerwartet überschrieben werden.
 
 ## Synchronisierung
 
