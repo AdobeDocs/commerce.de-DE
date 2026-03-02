@@ -3,9 +3,9 @@ title: Best Practices für [!DNL Live Search]
 description: Erfahren Sie mehr über die Best Practices für die Implementierung von  [!DNL Live Search]  in Ihrem Store.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
+source-git-commit: c3d431a6536c3c5528b9aee45f03b0b94b4ea64e
 workflow-type: tm+mt
-source-wordcount: '2201'
+source-wordcount: '2892'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,8 @@ Die Relevanz und Effektivität von Suchergebnissen hängt von mehreren Schlüsse
 
 - Durch gut strukturierte Produktdaten wird sichergestellt, dass Suchalgorithmen Produkte effektiv Abfragen zuordnen können. Niedrige Produktdaten führen zu schlechten relevanten Suchergebnissen. So wirken Sie sich direkt auf den Erfolg Ihrer Merchandising-Strategie aus:
    - Richten Sie die richtigen Attribute als durchsuchbar mit der entsprechenden Gewichtung ein.
-   - Stellen Sie sicher, dass Daten innerhalb dieser Attribute relevant sind.
-- Ein gut gestaltetes Sucherlebnis schafft Vertrauen bei den Kunden und gibt ihnen die Zuversicht, das zu finden, was sie brauchen.
+   - Stellen Sie sicher, dass die Daten in diesen Attributen relevant sind.
+- Ein gut gestaltetes Sucherlebnis schafft Vertrauen bei den Kunden und schafft Vertrauen, dass sie das finden, was sie brauchen.
 - Suchregeln sind wichtig, da sie die Sichtbarkeit bestimmter Produkte basierend auf Popularität, Neuankömmlingen, Werbekriterien oder einer anderen Merchandising-Strategie erhöhen können, um Ihre Geschäftsanforderungen zu erfüllen.
 - Die Facettennavigation ermöglicht es Kunden, ihre Suche zu verfeinern und schnell relevante Ergebnisse zu erhalten.
 
@@ -61,7 +61,7 @@ Weitere Informationen zu Synonymen:
 
 Die Filter- und Facettenfunktionalität ist eine wichtige Komponente Ihrer [!DNL Commerce]-Site, die das Käufererlebnis verbessert, indem sie es Käufern ermöglicht, die Suchergebnisse einzugrenzen und Produkte effizienter zu finden. Diese Funktion hilft Käufern, große Kataloge von Artikeln zu sortieren, indem sie bestimmte Kriterien anwendet, was den Einkaufsprozess schneller, einfacher und befriedigender macht. Durch die Implementierung effektiver, käuferfreundlicher Filter und Facetten können Sie Kunden dabei unterstützen, schnell und effizient genau das zu finden, was sie benötigen, was letztendlich die Zufriedenheit und die Konversionsraten steigert.
 
-Um ein Produktattribut als Facette einzurichten, müssen die folgenden [Eigenschaften“ festgelegt &#x200B;](facets-add.md#step-1-add-a-facet):
+Um ein Produktattribut als Facette einzurichten, müssen die folgenden [Eigenschaften“ festgelegt ](facets-add.md#step-1-add-a-facet):
 
 - **[!UICONTROL Use in Search]** -  `Yes`
 - **[!UICONTROL Use in Layered Navigation]** -  `Filterable (with results)`
@@ -69,7 +69,7 @@ Um ein Produktattribut als Facette einzurichten, müssen die folgenden [Eigensch
 
 #### Tipps zum Optimieren von Facetten
 
-- Bestimmen Sie die relevantesten und nützlichsten Attribute für Ihre Produkte, wie Titel, Kategorie, Marke, Preisspanne, Farbe und Größe und legen Sie sie als [dynamische Facetten“ &#x200B;](facets-type.md). 
+- Bestimmen Sie die relevantesten und nützlichsten Attribute für Ihre Produkte, wie Titel, Kategorie, Marke, Preisspanne, Farbe und Größe und legen Sie sie als [dynamische Facetten“ ](facets-type.md). 
 - Legen Sie Produktattribute fest und sortieren Sie sie, die in Ihrem gesamten Katalog konsistent und für Ihre Produkte äußerst relevant sind, um die Relevanz und Filtermöglichkeiten für Ihre Kunden zu verbessern.
 - Stellen Sie sicher, dass Facettenbeschriftungen leicht verständlich sind und auf der gesamten Site konsistent benannt werden. Verwenden Sie beispielsweise „Preisspanne“ anstelle von „Kosten“.
 - Vermeiden Sie es, Käufer zu überfordern, indem Sie die Anzahl der Facetten auf die wichtigsten beschränken. Zu viele Optionen können zu Entscheidungsermüdung führen. Standardmäßig ist [!DNL Live Search] auf maximal 100 Attribute beschränkt, die als Facetten konfiguriert sind, und auf 30 Buckets, die innerhalb jeder Facette zurückgegeben werden. Weitere Informationen zu [Facettenbegrenzungen](boundaries-limits.md#facets). 
@@ -112,7 +112,7 @@ Es ist von entscheidender Bedeutung, eine gut durchdachte Standard-Suchregel fes
 - Heben Sie Produkte hervor, die zum Verkauf stehen oder Teil von Sonderaktionen sind.
 - Legen Sie Suchregeln während der Promotion oder des Verkaufszeitraums automatisch fest, indem Sie den Datumsbereich während des Promotion-Zeitraums verwenden.
 - Verwenden Sie immer das Bedienfeld „Regel testen“, um eine Vorschau anzuzeigen, wie sich Ihre intelligente Rangfolgestrategie auf die tatsächlichen Suchergebnisse für verschiedene Abfragen auswirkt.
-- Passen Sie Suchergebnisse mithilfe von „Intelligent Ranking[&#x200B; wie &quot;](rules-add.md#intelligent-ranking) für Sie empfohlen“, „Am häufigsten angezeigt“ usw. an das individuelle Kundenverhalten an. Um das Kundenverhalten anzupassen, müssen Sie sicherstellen, dass das Eventing korrekt implementiert ist. Für Händler in Luma ist das Eventing vorkonfiguriert verfügbar. Bei Headless- oder benutzerdefinierten Implementierungen müssen Sie [Ereignis implementieren](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) basierend auf Ihren spezifischen Anforderungen.
+- Passen Sie Suchergebnisse mithilfe von „Intelligent Ranking[ wie &quot;](rules-add.md#intelligent-ranking) für Sie empfohlen“, „Am häufigsten angezeigt“ usw. an das individuelle Kundenverhalten an. Um das Kundenverhalten anzupassen, müssen Sie sicherstellen, dass das Eventing korrekt implementiert ist. Für Händler in Luma ist das Eventing vorkonfiguriert verfügbar. Bei Headless- oder benutzerdefinierten Implementierungen müssen Sie [Ereignis implementieren](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) basierend auf Ihren spezifischen Anforderungen.
 
 Weitere Informationen zu Suchregeln:
 
@@ -124,27 +124,98 @@ Weitere Informationen zu Suchregeln:
    - [Bearbeiten, Anzeigen, Löschen](rules-manage.md)
 - Datenerfassung
    - [[!DNL Live Search] Ereignisse](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
-   - [Adobe Commerce Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)
+   - [Adobe Commerce Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)
    - [GitHub-Commerce-Ereignisse](https://github.com/adobe/commerce-events/tree/main/examples) 
 
 ### Verwenden von Produktmetadaten
 
-Stellen Sie sicher, dass genaue und detaillierte Produktattribute [als durchsuchbar eingerichtet) &#x200B;](workspace.md#set-attributes-as-searchable). Beachten Sie, dass die Attribute „SKU“, „Name“ und „Kategorie“ standardmäßig durchsuchbar sind und nicht von der Suche ausgeschlossen werden können. Verwenden Sie für optimale Ergebnisse keine Leerzeichen in Ihren SKUs.
+Stellen Sie sicher, dass genaue und detaillierte Produktattribute [als durchsuchbar eingerichtet) ](workspace.md#set-attributes-as-searchable). Beachten Sie, dass die Attribute „SKU“, „Name“ und „Kategorie“ standardmäßig durchsuchbar sind und nicht von der Suche ausgeschlossen werden können. Verwenden Sie für optimale Ergebnisse keine Leerzeichen in Ihren SKUs.
+
+Die Auswahl der Attribute, die durchsuchbar gemacht werden sollen, hat einen großen Einfluss auf die Suchqualität. Wenn Sie zu viele Attribute durchsuchbar machen, kann dies die Relevanz reduzieren und zu unerwarteten Übereinstimmungen führen, selbst wenn es die Anzahl der zurückgegebenen Ergebnisse erhöht. In diesem Abschnitt wird erläutert, wie Sie durchsuchbare Attribute bewusst auswählen, um ein Gleichgewicht zwischen Abdeckung und Relevanz herzustellen.
+
+**Empfohlene durchsuchbare Attribute:**
+
+- **Produktname** - Mit hohem Intent wird das Produkt direkt beschrieben.
+- **Primäre Beschreibung** - Präzise Produktdetails, die Käufer erwarten, dass sie übereinstimmen.
+- **Marke** - Käufer suchen häufig nach Marke.
+- **Modellnummer/-stil** - Spezifische Kennungen mit klarem Zweck.
+- **Wichtige Funktionen** - Wichtige Unterscheidungsmerkmale (z. B. „wasserdicht“, „drahtlos„).
+- **Material/Stoff** - Für Mode- und Möbelkategorien.
+
+**Vermeiden Sie es, diese Attribute durchsuchbar zu machen:**
+
+- **Lange Beschreibungen oder Spezifikationen** - Zu viel Text erzeugt Rauschen und unerwartete Übereinstimmungen.
+- **Kategoriepfade** - Kann aufgrund weit gefasster Taxonomiebegriffe zu irrelevanten Ergebnissen führen.
+- **Interne SKU-Codes mit gemischten Zeichen** - Erstellt falsch-positive Ergebnisse bei Teilübereinstimmungen.
+- **Administrative Felder** - Interne Notizen oder Lagercodes sind für Einkäufer nicht relevant.
+- **HTML-Inhalte oder Formatierungs-Tags** - Technische Inhalte verbessern die Relevanz nicht.
+
+#### Häufige Probleme, die durch falsche durchsuchbare Attribute verursacht werden
+
+Wenn Sie die falschen Attribute durchsuchbar machen, kann dies Kundinnen und Kunden frustrieren und zu Support-Eskalationen führen.
+
+| Beispiel | Szenario | Empfehlung |
+|---------|----------|----------------|
+| **Stemmen und automatische Vervollständigung von Nebenwirkungen** | Ein Händler macht lange Produktbeschreibungen durchsuchbar. Ein Käufer sucht nach „can“ (auf der Suche nach Containern). Aufgrund der Wortstampfung und des teilweisen Abgleichs werden Produkte mit „can“ als Teil größerer Wörter in ihren Beschreibungen angezeigt, wie „American“, „canopy“ oder „canvas“. Produkte, die nicht mit der beabsichtigten Oberfläche des Käufers in Zusammenhang stehen, und sie verlieren das Vertrauen in die Suche. | Reduzieren Sie durchsuchbare Felder auf Attribute mit hoher Absicht wie Produktname und primäre Beschreibung. Validieren Sie Ihre wichtigsten Suchbegriffe, um problematische Übereinstimmungen zu identifizieren. Verwenden Sie Merchandising-Suchregeln oder Umleitungen, um bestimmte bekannte Edge-Fälle zu behandeln. |
+| **Die Rangfolge nach Popularität verstärkt einen geräuschvollen Abgleich** | Ein Händler setzt das Ranking auf „Am häufigsten gekauft“ und enthält Kategoriepfade und lange Beschreibungen als durchsuchbare Attribute. Ein Käufer sucht nach „Laptoptasche“. Die breite Übereinstimmung gibt Laptoptaschen, Laptopzubehör, Taschen für andere Zwecke und Laptops selbst zurück. Da Notebooks häufiger gekauft werden als Laptoptaschen, rangieren sie an der Spitze. Der Erstkäufer betrachtet das Ranking als falsch, obwohl das System wie konfiguriert funktioniert. | Entfernen Sie laute durchsuchbare Attribute wie Kategoriepfade. Sobald der Übereinstimmungssatz präziser ist, wenden Sie populärbasierte Rangfolgestrategien an. Überwachen Sie die Suchanalyse, um Abfragen zu identifizieren, bei denen dieses Muster auftritt. |
+| **Kategoriepfad erstellt falsch-positive Ergebnisse** | Ein Händler macht den vollständigen Kategoriepfad durchsuchbar (z. B. „Startseite > Küche > Geräte > Kleingeräte„). Ein Käufer sucht nach „Home Office Desk“. Produkte aus der Kategorie „Startseite“ stimmen auch dann überein, wenn es sich um Küchenartikel handelt, da „Startseite“ in ihrem Kategoriepfad vorhanden ist. Küchengeräte, Haushaltsdekor und andere nicht verwandte Produkte erscheinen in den Ergebnissen, verwässern Relevanz. | Kategoriepfade nicht durchsuchbar machen. Stattdessen Facetten verwenden, damit Käufer nach Kategorie filtern können. Wenn die Kategoriefilterung für Ihre Suchstrategie wichtig ist, implementieren Sie sie mit Merchandising-Regeln statt mit durchsuchbaren Attributen. |
+
+#### Durchsuchbare Attribute entsprechend gewichten
 
 Um die Suchrelevanz zu erhöhen, weisen Sie jedem durchsuchbaren Attribut eine Gewichtung zu. Attribute mit einer höheren Gewichtung sollten in den Suchergebnissen höher angezeigt werden. Die Sortierung nach Relevanz wird von mehreren Kriterien beeinflusst, z. B. der Suchgewichtung. Dies bedeutet, dass manchmal Attribute mit niedrigerer Suchgewichtung immer noch mehr Relevanz haben können als Attribute mit höherer Suchgewichtung. Andere Kriterien können die Anzahl der Übereinstimmungen in einem bestimmten Attribut, die Position des gefundenen Suchbegriffs und die Gesamttextstruktur vor und nach einem Suchbegriff sein.
 
+**Gewichtungsprioritäten:**
+
+- **Höchstgewicht (9-10):** Produktname, Marke
+- **Medium-Gewichtung (6-8):** Modellnummer, primäre Beschreibung, wichtige Funktionen
+- **Geringeres Gewicht (3-5):** Sekundäre Beschreibungen, Materialien, Spezifikationen
+
 Stellen Sie sicher, dass jedes Produkt relevanten Inhalt in jedem durchsuchbaren Attribut hat. Es wird nicht empfohlen, ein Attribut als durchsuchbar festzulegen, wenn es große Mengen an Inhalten enthält, die die Relevanz der Suchergebnisse verringern können.
+
+#### Fehlerbehebung
+
+Wenn Suchergebnisse zufällig oder irrelevant sind, verwenden Sie diese Checkliste, bevor Sie als Produktfehler eskalieren:
+
+1. **Konfiguration durchsuchbarer Attribute überprüfen:**
+
+   - Listet alle Attribute auf, die derzeit als durchsuchbar festgelegt sind.
+   - Identifizieren Sie umfassende oder verrauschte Attribute (lange Beschreibungen, Kategoriepfade, administrative Felder).
+   - Entfernen Sie durchsuchbare Status aus Attributen, die nicht den Kundenwunsch darstellen.
+
+1. **Validieren von Abfrageübereinstimmungen mit Kernattributen:**
+
+   - Testen Sie Ihre häufigsten Suchabfragen.
+   - Stellen Sie sicher, dass die Ergebnisse in erster Linie mit dem Produktnamen und der Marke übereinstimmen und nicht mit tangentialem Text.
+   - Überprüfen Sie, ob unerwartete Ergebnisse nur schwache Übereinstimmungen im langfristigen Inhalt aufweisen.
+
+1. **Testen mit und ohne verrauschte Felder:**
+
+   - Entfernen Sie vorübergehend den durchsuchbaren Status aus den Feldern Kategoriepfad und lange Beschreibung.
+   - Führen Sie problematische Abfragen erneut aus, um zu sehen, ob sich die Relevanz verbessert.
+   - Wenn sich die Ergebnisse verbessern, passen Sie Ihre Konfiguration dauerhaft an.
+
+1. **Verwenden von Merchandising-Regeln für Ausnahmen:**
+
+   - Erstellen Sie zielgerichtete Suchregeln für bestimmte bekannte Abfragen, die eine besondere Verarbeitung erfordern.
+   - Versuchen Sie nicht, Randfälle zu lösen, indem Sie mehr Attribute durchsuchbar machen.
+   - Verwenden Sie Umleitungen für die Suche nach Markennamen oder häufige Rechtschreibfehler.
+
+1. **Überwachen und Wiederholen:**
+
+   - Verwenden Sie den [Arbeitsbereich „Performance](performance.md), um Null-Ergebnisraten und Clickthrough-Raten zu verfolgen.
+   - Sehen Sie sich die wichtigsten Suchabfragen wöchentlich an, um neue Muster zu identifizieren.
+   - Passen Sie durchsuchbare Attribute und Gewichtungen basierend auf Daten an, nicht auf Annahmen.
 
 Weitere Informationen zu Produktattributen für die Suche:
 
 - [Festlegen von Attributen als durchsuchbar](workspace.md#set-attributes-as-searchable)
-- [Attributen Gewichtung zuweisen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Attributen Gewichtung zuweisen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Suchergebnisse überwachen
 
 Um Suchergebnisse mit [!DNL Live Search] zu optimieren, überwachen Sie relevante Key Performance Indicators (KPIs) wie eindeutige Abfragen, durchschnittliche Klickposition, Clickthrough-Raten, Konversionsrate und Nullergebnisrate, um zu verstehen, wie Käufer mit Ihrer Suchfunktion interagieren. Diese Daten helfen Ihnen, Ihre Suchregeln regelmäßig zu aktualisieren und zu verfeinern.
 
-Sie können diese KPIs im [!DNL Live Search]Arbeitsbereich Leistung[&#x200B; überwachen](performance.md) in dem die folgenden Metriken zu finden sind: 
+Sie können diese KPIs im [!DNL Live Search]Arbeitsbereich Leistung[ überwachen](performance.md) in dem die folgenden Metriken zu finden sind: 
 
 - **Eindeutige Suchvorgänge** - Die Anzahl der einzelnen Suchabfragen, die auf Ihrer [!DNL Commerce]-Site durchgeführt wurden. Jede einzelne Suche wird nur einmal gezählt, auch wenn sie mehrere Male von ein und demselben oder verschiedenen Erstkäufern wiederholt wird. Diese Metrik hilft Ihnen, die Vielfalt der von Kundinnen und Kunden verwendeten Suchbegriffe zu verstehen, und bietet Einblicke in die Produkte oder Informationen, die Kundinnen und Kunden suchen. Das Tracking einzelner Suchvorgänge ermöglicht Folgendes:
 
@@ -164,7 +235,7 @@ Sie können diese KPIs im [!DNL Live Search]Arbeitsbereich Leistung[&#x200B; üb
 
   Um die Nullergebnisrate zu reduzieren, haben Sie folgende Möglichkeiten:
 
-   - Bieten Sie alternative oder verwandte Suchbegriffe an, z[&#x200B; B. &quot;](synonyms.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
+   - Bieten Sie alternative oder verwandte Suchbegriffe an, z[ B. &quot;](synonyms.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
    - Überprüfen Sie regelmäßig Nullergebnisabfragen, um Muster zu identifizieren und notwendige Anpassungen an Ihrem Produktkatalog und Ihren Sucheinstellungen vorzunehmen.
 
 - **Beliebte Ergebnisse** - Kann Ihre Suchergebnisse erheblich verbessern, indem es sie an den Vorlieben und Verhaltensweisen der Käufer ausrichtet.
