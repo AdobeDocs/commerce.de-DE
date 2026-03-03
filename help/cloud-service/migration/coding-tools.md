@@ -2,12 +2,12 @@
 title: Entwickler-Tools für KI-Codierung für Adobe Commerce App Builder
 description: Erfahren Sie, wie Sie die KI-Tools zum Erstellen von Commerce App Builder-Programmen verwenden.
 feature: App Builder, Cloud
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 level: Intermediate
-source-git-commit: 4e3f593ead4b0e32bdf474498421b20475dcbe52
+source-git-commit: 2c851da1dc521f5309031fc091be88f9ca39cd8f
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2438'
 ht-degree: 0%
 
 ---
@@ -56,10 +56,6 @@ Dadurch werden die Tools auf die neueste Version aktualisiert.
 * [Git](https://github.com/git-guides/install-git): Für das Klonen von Repositorys und die Versionskontrolle
 
 ## Installation
-
->[!NOTE]
->
->Wenn Sie nur den Dokumentation-RAG-Service und nicht das gesamte Paket mit den KI-Kodierungs-Tools installieren möchten, lesen Sie [Dokumentation-RAG-Service](./doc-rag.md).
 
 1. Installieren Sie die neueste [Adobe I/O CLI](https://github.com/adobe/aio-cli) global:
 
@@ -147,7 +143,7 @@ Dadurch werden die Tools auf die neueste Version aktualisiert.
 >
 >Vor der Bereitstellung des Projekts müssen Sie die folgenden Konfigurationsaufgaben durchführen:
 >
->* Melden Sie sich über die Adobe I/O-CLI [&#x200B; &#x200B;](https://developer.adobe.com/console)Adobe Developer Console an.
+>* Melden Sie sich über die Adobe I/O-CLI [ ](https://developer.adobe.com/console)Adobe Developer Console an.
 >* Erstellen Sie ein App Builder-Projekt (siehe [Projekt-Setup](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Einrichten von Umgebungsvariablen in einer `.env`.
 >
@@ -179,8 +175,6 @@ aio auth login
 >[!NOTE]
 >
 >Einige Funktionen des MCP-Servers funktionieren ohne Anmeldung, aber der RAG-Service (Retrieval-Augmented Generation) funktioniert nicht. Der RAG-Service bietet dem KI-Codierungs-Agenten Echtzeitzugriff auf den vollständigen Adobe Commerce-Dokumentationssatz, sodass er Fragen beantworten und Code basierend auf aktuellen Commerce-Entwicklungspraktiken, APIs und Architekturmustern generieren kann.
->
->Informationen zur unabhängigen Installation des RAG-Service finden Sie [Dokumentation zum RAG-Service](./doc-rag.md).
 
 ### Cursor
 
@@ -340,7 +334,7 @@ Lesen Sie die folgenden Ressourcen, um loszulegen:
 * [Integrations-Starter-Kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Checkout-Starterkit](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Adobe Commerce Starter Kit-Vorlagen](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Beispielanwendungen für App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Warum Sie diese Ressourcen verwenden sollten
@@ -367,7 +361,7 @@ Das folgende Vierphasenprotokoll wird automatisch von den installierten Kenntnis
 
 ### Anfordern von Implementierungsplänen für die komplexe Entwicklung
 
-Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [&#x200B; hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
+Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [ hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
 
 ```shell-session
 Create a detailed implementation plan for this complex development.
@@ -385,7 +379,7 @@ Komplexe Adobe Commerce-Anwendungen beinhalten oft:
 
 >[!NOTE]
 >
->Stellen Sie vor der Verwendung der MCP-Tools [, dass Sie bei der Adobe I/O CLI angemeldet &#x200B;](#log-in-to-the-adobe-io-cli).
+>Stellen Sie vor der Verwendung der MCP-Tools [, dass Sie bei der Adobe I/O CLI angemeldet ](#log-in-to-the-adobe-io-cli).
 
 Das Tool ist standardmäßig auf MCP-Tools eingestellt, kann jedoch unter bestimmten Umständen stattdessen CLI-Befehle verwenden. Um die Verwendung von MCP-Tools sicherzustellen, fordern Sie diese in Ihrer Eingabeaufforderung explizit an.
 
