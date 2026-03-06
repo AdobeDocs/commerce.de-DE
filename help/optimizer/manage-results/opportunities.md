@@ -1,10 +1,10 @@
 ---
 title: Opportunities
 description: Identifizieren Sie Möglichkeiten zur Steigerung von Traffic, Interaktion und Konversionen durch die Integration mit Adobe Sites Optimizer für intelligente, datengesteuerte Site-Verbesserungen.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 7f7b4a3c866c453d9722b708a0ed4e1b601c8e8e
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für  [!DNL Adobe Commerce Optimizer]  (von Adobe verwaltete SaaS-Infrastruktur)."
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1342'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Die **Opportunities** hilft Ihnen, Optimierungen zu identifizieren und zu implem
 
 ## Was sind Opportunities?
 
-[Opportunities](https://experienceleague.adobe.com/de/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) sind KI-gestützte Empfehlungen, die Merchandisern dabei helfen, Probleme zu identifizieren und zu beheben, die sich auf die Leistung ihrer Commerce-Site auswirken. Diese Empfehlungen basieren auf [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/de/docs/experience-manager-sites-optimizer/content/home), einem Cloud-basierten Service, der die Leistung der Website analysiert und verbessert.
+[Opportunities](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) sind KI-gestützte Empfehlungen, die Merchandisern dabei helfen, Probleme zu identifizieren und zu beheben, die sich auf die Leistung ihrer Commerce-Site auswirken. Diese Empfehlungen basieren auf [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home), einem Cloud-basierten Service, der die Leistung der Website analysiert und verbessert.
 
 ## Wichtigste Funktionen
 
@@ -28,7 +28,7 @@ Die **Opportunities** hilft Ihnen, Optimierungen zu identifizieren und zu implem
 
 ## Erste Schritte
 
-Um Opportunities in Commerce Optimizer zu aktivieren, wenden Sie sich an Ihren Customer Success Manager (CSM). Opportunitys sind mit der **Ultima** Adobe Sites Optimizer-Lizenz verfügbar.
+Um Opportunities in [!DNL Adobe Commerce Optimizer] zu aktivieren, wenden Sie sich an Ihren Customer Success Manager (CSM). Opportunitys sind mit der **Ultima** Adobe Sites Optimizer-Lizenz verfügbar.
 
 ## Schneller Überblick
 
@@ -68,7 +68,7 @@ Sobald die automatische Erkennung Optimierungsmöglichkeiten identifiziert, kön
 
 ## Workflow für automatische Fehlerbehebung
 
-Der Workflow für die automatische Fehlerbehebung ermöglicht die schnelle Bereitstellung von KI-generierten Optimierungen mit einem einzigen Klick. Wenn Sie eine automatische Fehlerbehebung anwenden, erstellt das System eine Katalogoptimierungsschicht, die bestimmte Produktattribute überschreibt, ohne die ursprünglichen Produktdaten zu ändern. Ihre ursprünglichen Produktdaten bleiben intakt, sodass Sie Optimierungen sicher anwenden und Änderungen jederzeit rückgängig machen können. Weitere [&#x200B; finden Sie unter „Funktionsweise von Katalogebenen mit &#x200B;](#how-catalog-layers-work-with-auto-fix)&quot;.
+Der Workflow für die automatische Fehlerbehebung ermöglicht die schnelle Bereitstellung von KI-generierten Optimierungen mit einem einzigen Klick. Wenn Sie eine automatische Fehlerbehebung anwenden, erstellt das System eine Katalogoptimierungsschicht, die bestimmte Produktattribute überschreibt, ohne die ursprünglichen Produktdaten zu ändern. Ihre ursprünglichen Produktdaten bleiben intakt, sodass Sie Optimierungen sicher anwenden und Änderungen jederzeit rückgängig machen können. Weitere [ finden Sie unter „Funktionsweise von Katalogebenen mit ](#how-catalog-layers-work-with-auto-fix)&quot;.
 
 ### Unterstützte Opportunity-Typen
 
@@ -96,7 +96,7 @@ Im Folgenden sind die unterstützten Opportunity-Typen aufgeführt:
 
 Bevor Sie die automatische Fehlerbehebung verwenden, stellen Sie Folgendes sicher:
 
-- Ihr Produktkatalog ist vollständig in Commerce Optimizer aufgenommen.
+- Ihr Produktkatalog ist vollständig in [!DNL Adobe Commerce Optimizer] aufgenommen.
 - Der Opportunity-Typ unterstützt die automatische Fehlerbehebung (einige Optimierungstypen erfordern eine manuelle Implementierung).
 - Sie verfügen über die entsprechenden Berechtigungen zum Erstellen und Verwalten von Katalogebenen.
 
@@ -118,7 +118,7 @@ Führen Sie die folgenden Schritte aus, um eine von KI vorgeschlagene Optimierun
 
    >[!NOTE]
    >
-   >Die Schaltfläche **Optimierung bereitstellen** ist nur für [unterstützte &#x200B;](#supported-opportunity-types)&quot; verfügbar. Bei nicht unterstützten Typen ist das Kontrollkästchen deaktiviert und Sie müssen die Fehlerbehebungen in Ihrem Katalog manuell vornehmen.
+   >Die Schaltfläche **Optimierung bereitstellen** ist nur für [unterstützte ](#supported-opportunity-types)&quot; verfügbar. Bei nicht unterstützten Typen ist das Kontrollkästchen deaktiviert und Sie müssen die Fehlerbehebungen in Ihrem Katalog manuell vornehmen.
 
 1. Klicken Sie **Optimierung bereitstellen** und anschließend auf **Bereitstellen**, um den automatischen Fehlerbehebungsprozess Trigger.
 
@@ -176,7 +176,7 @@ Erfolgsmetriken überwachen wichtige Leistungsindikatoren wie Produkterkennung u
 
 ## Weitere Informationen zu Sites Optimizer
 
-Detaillierte Informationen zu den Funktionen und Leistungsmerkmalen von Sites Optimizer finden Sie in der Dokumentation zu [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/de/docs/experience-manager-sites-optimizer/content/home).
+Detaillierte Informationen zu den Funktionen und Leistungsmerkmalen von Sites Optimizer finden Sie in der Dokumentation zu [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home).
 
 Zusätzliche Ressourcen:
 

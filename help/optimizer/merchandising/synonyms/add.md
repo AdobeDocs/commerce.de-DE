@@ -1,25 +1,25 @@
 ---
 title: Erstellen und Verwalten von Synonymen
 description: Erfahren Sie, wie Sie Synonyme für erstellen und verwalten [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
 
 # Erstellen von Synonymen
 
-Erhöhen Sie die Kundeninteraktion, indem Sie Ihre eigene kuratierte Liste [!DNL Adobe Commerce Optimizer] Synonyme hinzufügen. Pro Shop können bis zu 200 Synonyme hinzugefügt werden.
+Erhöhen Sie die Kundeninteraktion, indem Sie Ihre eigene kuratierte Liste [!DNL Adobe Commerce Optimizer] Synonyme hinzufügen. Pro Katalogquelle können bis zu 200 Synonyme hinzugefügt werden.
 
 ![Synonym Workspace](../../assets/synonym-workspace.png)
 
 ## Schritt 1: Synonym hinzufügen
 
 1. Navigieren Sie in der linken Leiste zu _Merchandising_ > **Synonyme**.
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Add synonyms]** .
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Create synonyms]** .
 
 ## Schritt 2: Synonym nach Typ definieren
 
@@ -27,31 +27,25 @@ Befolgen Sie die Anweisungen für den [Typ des Synonyms](type.md) den Sie erstel
 
 ### Zweiweg-Synonym
 
-1. Akzeptieren Sie die standardmäßige **bidirektionale** Option.
-
-   ![Zwei-Wege-Synonym hinzufügen](../../assets/synonym-add-two-way.png)
-
 1. Geben Sie den **Keyword**-Begriff oder die zuzuordnende Phrase ein.
-1. Geben Sie **Begriffe**&#x200B;Erweiterung) ein, die Sie als Synonyme für das Keyword hinzufügen möchten. Trennen Sie mehrere Begriffe durch Kommas.
+1. Geben Sie **Begriffe**Erweiterung) ein, die Sie als Synonyme für das Keyword hinzufügen möchten. Trennen Sie mehrere Begriffe durch Kommas.
 In diesem Beispiel lautet das Keyword, mit dem eine Übereinstimmung erzielt werden soll, „Hose“, und die Menge der Ausdehnungsbegriffe lautet „Hose, Hose“.
 
-   ![Beispiel für ein Zwei-Wege-Synonym](../../assets/synonym-add-two-way-example.png)
+   ![Zwei-Wege-Synonym](../../assets/synonym-add-two-way.png)
 
 1. Klicken Sie abschließend auf **Speichern**.
 
    Die Gruppe von Synonymen wird in der Liste mit einem Pfeil in beide Richtungen zwischen den einzelnen Begriffen angezeigt, was bedeutet, dass die Begriffe austauschbar sind.
 
-   ![Zwei-Wege-Synonym](../../assets/synonym-two-way.png)
+   ![Beispiel für ein Zwei-Wege-Synonym](../../assets/synonym-add-two-way-example.png)
 
 ### Einwegsynonym
 
 1. Klicken Sie auf **Einwegsynonym** Typ.
 
-   ![Einwegsynonym hinzufügen](../../assets/synonym-add-one-way.png)
-
 1. Geben Sie die Begriffe **Keyword** und **Erweiterung** ein. Trennen Sie mehrere Begriffe durch Kommas.
 
-   ![Beispiel für Einwegsynonyme](../../assets/synonym-add-one-way-example.png)
+   ![Einwegsynonym](../../assets/synonym-add-one-way.png)
 
    In diesem Beispiel ist das Keyword „pants“ und die Einweg-Erweiterungsbegriffe „capris, peddle-pushers“ sind jeweils eine Untergruppe von „pants“, jedoch mit einer bestimmten Bedeutung.
 
@@ -59,7 +53,7 @@ In diesem Beispiel lautet das Keyword, mit dem eine Übereinstimmung erzielt wer
 
    Der Satz von Synonymen wird in der Liste mit einem Einwegpfeil angezeigt, der von den Erweiterungsbegriffen auf das Keyword verweist, um anzugeben, dass die Begriffe Untergruppen des Keywords sind. Ein Pluszeichen trennt jeden Expansionsbegriff.
 
-   ![Einwegsynonym](../../assets/synonym-one-way.png)
+   ![Beispiel für Einwegsynonyme](../../assets/synonym-add-one-way-example.png)
 
 ## Schritt 3: Änderungen veröffentlichen
 
@@ -76,7 +70,7 @@ In diesem Beispiel lautet das Keyword, mit dem eine Übereinstimmung erzielt wer
 
 ## Verwalten von Synonymen
 
-Befolgen Sie diese Anweisungen, um bestehende [!DNL Adobe Commerce Optimizer] ([) &#x200B;](overview.md) verwalten.
+Befolgen Sie diese Anweisungen, um bestehende [!DNL Adobe Commerce Optimizer] ([) ](overview.md) verwalten.
 
 ## Synonym suchen
 

@@ -3,11 +3,11 @@ title: End-to-End-Anwendungsfall für Storefront- und Katalogadministrator
 description: Erfahren Sie, wie Sie  [!DNL Adobe Commerce Optimizer]  verwenden, um Ihren Katalog mithilfe von Katalogansichten und Richtlinien zu verwalten, und wie Sie Ihre Storefront basierend auf Ihrer Katalogkonfiguration einrichten.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: e5844cad1d666a81042db64e51e124e6444d19ac
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '2179'
+source-wordcount: '2161'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Dieses Anwendungsbeispiel richtet sich an Administratoren und Entwickler, die mi
 
 Bevor Sie mit diesem Tutorial beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- **Adobe Commerce Optimizer-Instanz**
+- **[!DNL Adobe Commerce Optimizer]Instanz**
    - Zugriff auf eine Testinstanz in Cloud Manager
    - Siehe [Erste Schritte](../get-started.md) für Einrichtungsanweisungen
 
@@ -55,7 +55,7 @@ In diesem Anwendungsbeispiel verwenden Sie Folgendes:
 
 >[!NOTE]
 >
-> Erfahren Sie mehr über die Konfigurationsdateien für Storefronts, indem Sie das Thema [Erkunden des Textbausteins](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=de) in der Dokumentation zur Adobe Commerce Storefront lesen.
+> Erfahren Sie mehr über die Konfigurationsdateien für Storefronts, indem Sie das Thema [Erkunden des Textbausteins](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) in der Dokumentation zur Adobe Commerce Storefront lesen.
 
 ### ‌Wichtige Erkenntnisse
 
@@ -63,7 +63,7 @@ Am Ende dieses Artikels werden Sie:
 
 - Lernen Sie die Grundlagen der [!DNL Adobe Commerce Optimizer] mit ihrem leistungsfähigen und skalierbaren Katalogdatenmodell kennen.
 - Erfahren Sie, wie das Katalogdatenmodell mit von Adobe erstellten plattformunabhängigen Storefront-Komponenten integriert wird.
-- Erfahren Sie, wie Sie mit Katalogansichten und Richtlinien von Adobe Commerce Optimizer benutzerdefinierte Katalogansichten und Datenzugriffsfilter erstellen und die Daten an eine Adobe Commerce-Storefront mit Edge Delivery senden.
+- Erfahren Sie, wie Sie [!DNL Adobe Commerce Optimizer] Katalogansichten und Richtlinien verwenden, um benutzerdefinierte Katalogansichten und Datenzugriffsfilter zu erstellen und die Daten an eine Adobe Commerce-Storefront mit Edge Delivery zu senden.
 
 ## Geschäftsszenario - Carvelo Automobile
 
@@ -118,7 +118,7 @@ Beim Starten von [!DNL Adobe Commerce Optimizer] wird Folgendes angezeigt:
 
 >[!NOTE]
 >
->Informationen zu den wichtigsten Komponenten [&#x200B; Benutzeroberfläche finden &#x200B;](../overview.md) im Artikel [!DNL Adobe Commerce Optimizer]Übersicht“.
+>Informationen zu den wichtigsten Komponenten [ Benutzeroberfläche finden ](../overview.md) im Artikel [!DNL Adobe Commerce Optimizer]Übersicht“.
 
 Erweitern Sie in der linken Navigation den Abschnitt _Store-Einrichtung_ und klicken Sie auf **[!UICONTROL Catalog views]**. Beachten Sie, dass die Arkbridge- und Kingsbluff-Händler bereits Katalogansichten erstellt haben:
 
@@ -126,7 +126,7 @@ Erweitern Sie in der linken Navigation den Abschnitt _Store-Einrichtung_ und kli
 
 >[!NOTE]
 >
->Sie können die Katalogansicht **global** vorerst ignorieren.
+>Sie können die Katalogansicht **Alle**) vorerst ignorieren.
 
 Klicken Sie auf das Infosymbol, um die Details der Katalogansicht anzuzeigen.
 
@@ -221,7 +221,7 @@ Erstellen Sie eine neue Katalogansicht für den *Celport*-Händler und verknüpf
 
 1. Erweitern Sie in der linken Leiste den Abschnitt _Store-Einrichtung_ und klicken Sie auf **[!UICONTROL Catalog views]**.
 
-   Beachten Sie die vorhandenen Katalogansichten: *Arkbridge*, *Kingsbluff* und *Global*.
+   Beachten Sie die vorhandenen Katalogansichten: *Arkbridge*, *Kingsbluff* und *Alle Ansichten*.
 
    ![Vorhandene Seite mit Katalogansichten](../assets/existing-channels-list.png)
 
@@ -392,7 +392,7 @@ Nachdem Sie die Konfiguration der Storefront aktualisiert haben, um die Celport-
 
       Beachten Sie die verschiedenen verfügbaren Teiletypen und die Preise, die der Kingsbluff-Katalogansicht zugeordnet sind.
 
-   Diese Experimente zeigen die Flexibilität von Adobe Commerce Optimizer. Sie können schnell zwischen verschiedenen Katalogansichten und Preisverzeichnissen wechseln, um benutzerdefinierte Einkaufserlebnisse für verschiedene Zielgruppen zu erstellen, ohne Ihre Katalogdaten zu duplizieren.
+   Diese Experimente zeigen die Flexibilität der [!DNL Adobe Commerce Optimizer]. Sie können schnell zwischen verschiedenen Katalogansichten und Preisverzeichnissen wechseln, um benutzerdefinierte Einkaufserlebnisse für verschiedene Zielgruppen zu erstellen, ohne Ihre Katalogdaten zu duplizieren.
 
 ## Fehlerbehebung
 
@@ -422,13 +422,13 @@ Wenn während dieses Tutorials Probleme auftreten, versuchen Sie die folgenden L
 
 **Problem:** Keine Produkte angezeigt
 
-- **Lösung:** Überprüfen Sie, ob die Preisbuch-ID mit der in Ihrer Adobe Commerce Optimizer-Instanz verfügbaren ID übereinstimmt.
+- **Lösung:** Überprüfen Sie, ob die Preisbuch-ID mit der in Ihrer [!DNL Adobe Commerce Optimizer]-Instanz verfügbaren ID übereinstimmt.
 
 **Problem:** Suche gibt keine Ergebnisse zurück
 
 - **Lösung:** Vergewissern Sie sich, dass die Richtlinien zur Katalogansicht die durchsuchte Produktkategorie zulassen.
 
-Weitere Hilfe finden Sie in der [Dokumentation zu Adobe Commerce Optimizer oder &#x200B;](../overview.md) Sie sich an den Adobe-Support.
+Weitere Hilfe finden Sie in der [[!DNL Adobe Commerce Optimizer] Dokumentation](../overview.md) oder wenden Sie sich an den Adobe-Support.
 
 ## Zusammenfassung
 
@@ -441,10 +441,10 @@ In diesem Tutorial haben Sie erfolgreich:
 
 ## Nächste Schritte
 
-So erfahren Sie mehr über Adobe Commerce Optimizer:
+So erfahren Sie mehr über [!DNL Adobe Commerce Optimizer]:
 
 - Erkunden Sie [Merchandising-Funktionen](../merchandising/overview.md) um das Einkaufserlebnis zu personalisieren
 - Erfahren Sie mehr [erweiterte Richtlinienkonfigurationen](../setup/policies.md)
-- ([&#x200B; Katalogansichten) &#x200B;](../setup/catalog-view.md) andere Händler einrichten
+- ([ Katalogansichten) ](../setup/catalog-view.md) andere Händler einrichten
 - Lesen Sie die [API-Dokumentation](https://developer.adobe.com/commerce/services/optimizer/) für die programmgesteuerte Katalogverwaltung
-- Erfahren Sie, wie Sie Dropdown-Komponenten für Ihre Edge Delivery Services-Storefront konfigurieren, um benutzerdefinierte Storefront-Erlebnisse für die Produkterkennung, Empfehlungen und andere Storefront-Funktionen zu erstellen. Siehe die [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=de)
+- Erfahren Sie, wie Sie Dropdown-Komponenten für Ihre Edge Delivery Services-Storefront konfigurieren, um benutzerdefinierte Storefront-Erlebnisse für die Produkterkennung, Empfehlungen und andere Storefront-Funktionen zu erstellen. Siehe die [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

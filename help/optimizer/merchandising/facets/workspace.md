@@ -1,11 +1,12 @@
 ---
 title: Facetten Workspace
 description: Erfahren Sie, wie Sie den Arbeitsbereich „Facetten“ in  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+exl-id: bd977769-6565-48ca-b5aa-963a217df3ea
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 0%
+source-wordcount: '205'
+ht-degree: 1%
 
 ---
 
@@ -20,8 +21,8 @@ Der *Facetten*-Arbeitsbereich listet alle derzeit verfügbaren Facetten auf und 
 | Feld | Beschreibung |
 |--- |--- |
 | Erstellen von Facetten | Öffnet den [Facetteneditor](add.md). |
-| Bezeichnung | Die [Facettenbezeichnung](type.md#facet-labels) die in der Storefront sichtbar ist, kann aus Gründen der Konsistenz mit Ihrer Marke bearbeitet werden. |
-| Sortierungstyp | Die Methode, die zum [&#x200B; von &#x200B;](type.md#sort-type) verwendet wird. Alle [!DNL Adobe Commerce Optimizer] Storefronts sortieren Facetten alphabetisch und nach `Count`. options:<br />Alphabetisch - Sortiert Facetten alphabetisch.<br />Anzahl - Sortiert Facetten nach der Anzahl der gefundenen Übereinstimmungen. |
+| Label | Die [Facettenbezeichnung](type.md#facet-labels) die in der Storefront sichtbar ist, kann aus Gründen der Konsistenz mit Ihrer Marke bearbeitet werden. |
+| Sortierungstyp | Die Methode, die zum [ von ](type.md#sort-type) verwendet wird. Alle [!DNL Adobe Commerce Optimizer] Storefronts sortieren Facetten alphabetisch und nach `Count`. options:<br />Alphabetisch - Sortiert Facetten alphabetisch.<br />Anzahl - Sortiert Facetten nach der Anzahl der gefundenen Übereinstimmungen. |
 | Maximaler Wert | Die maximale Anzahl von Werten, die für jede Facette in der Storefront angezeigt werden können. Facetten, die einen Wertebereich darstellen, sind gleichmäßig verteilt. Gültige Einträge: 0 - 100; Standard: 8. |
 
 ## Kontrollen

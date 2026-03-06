@@ -1,11 +1,11 @@
 ---
 title: Erfolgsmetriken
 description: Erfolgsmetriken liefern insight in die wichtigsten Leistungsmetriken für Ihren - [!DNL Adobe Commerce Optimizer] .
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
-source-git-commit: 4e85d70dc1b099a5b40a807a76ca589aa9a28f07
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '2599'
+source-wordcount: '2594'
 ht-degree: 0%
 
 ---
@@ -149,7 +149,7 @@ Total Revenue = Sum of (Product Base Price × Quantity) for all completed orders
 
 - Alle abgeschlossenen Bestellungen im ausgewählten Datumsbereich.
 - Basisproduktpreise multipliziert mit den gekauften Mengen.
-- Umsatz aus allen von Commerce Optimizer verfolgten Vertriebskanälen.
+- Umsatz aller von [!DNL Adobe Commerce Optimizer] verfolgten Vertriebskanäle.
 
 **Wichtige Hinweise:**
 
@@ -296,7 +296,7 @@ Diese Tracking-Methode weist einige bekannte Einschränkungen auf:
 
 - **Nutzen von Suchleistungsdaten**: Verwenden Sie den [Suchleistung](../manage-results/search-performance.md)-Bericht, um Trenderzeugnisse und beliebte Suchbegriffe zu identifizieren. Erstellen Sie Merchandising-Regeln, um diese Elemente hervorzuheben.
 
-- **Optimieren der Empfehlungsleistung**: Überwachen Sie [&#x200B; Metriken zur Empfehlungsleistung](../manage-results/recommendation-performance.md) um zu ermitteln, welche Empfehlungstypen den meisten Traffic und die meisten Konversionen fördern.
+- **Optimieren der Empfehlungsleistung**: Überwachen Sie [ Metriken zur Empfehlungsleistung](../manage-results/recommendation-performance.md) um zu ermitteln, welche Empfehlungstypen den meisten Traffic und die meisten Konversionen fördern.
 
 - **Neue Artikel und Werbeartikel hervorheben**: Verwenden Sie Merchandising-Regeln, um neue Produkte oder Werbeartikel in den Suchergebnissen zu optimieren, um die Aufmerksamkeit neuer Besucher zu erregen.
 
@@ -395,7 +395,7 @@ Bounce Rate = (Number of Bounced Sessions ÷ Total Sessions) × 100
 | Feld | Beschreibung |
 |---|---|
 | Datumsbereich | Zu den Optionen gehören **Letzte 3 Monate**, **Letzte 7 Tage**, **Letzte 30 Tage**, **Letzte 6 Monate**, **Letzte 12 Monate** und **Jahr bis heute**. Verwenden Sie kürzere Bereiche für sofortige Optimierungseinblicke und längere Bereiche für Trendanalysen. |
-| Land | Basierend auf der für Ihre [Katalogansicht“ angegebenen &#x200B;](../setup/catalog-view.md). Wählen Sie den geeigneten Markt für eine genaue Leistungsanalyse aus. |
+| Land | Basierend auf der für Ihre [Katalogansicht“ angegebenen ](../setup/catalog-view.md). Wählen Sie den geeigneten Markt für eine genaue Leistungsanalyse aus. |
 | Währung | Die für Ihre Katalogansicht angegebene Währung. Stellen Sie sicher, dass dies Ihrem Zielmarkt für eine genaue Umsatzberichterstattung entspricht. |
 | Export | Speichert den Bericht als PDF zur Freigabe für Stakeholder oder Offline-Analyse. |
 

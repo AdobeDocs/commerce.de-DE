@@ -1,12 +1,12 @@
 ---
-title: Was ist Adobe Commerce Optimizer?
+title: Was ist [!DNL Adobe Commerce Optimizer]?
 description: Erfahren Sie mehr über  [!DNL Adobe Commerce Optimizer]  und seine wichtigsten Funktionen.
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Mit [!DNL Adobe Commerce Optimizer] können Sie:
 
 Sehen Sie sich das folgende Video an, um einen allgemeinen Überblick über [!DNL Adobe Commerce Optimizer] zu erhalten:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450472?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Wer profitiert am meisten von [!DNL Adobe Commerce Optimizer]?
 
@@ -69,7 +69,7 @@ Erstellen Sie personalisierte Erlebnisse für Ihre Kunden durch Produktentdeckun
 Definieren Sie Ihre Katalogansichten und Richtlinien. Der Katalog enthält nicht nur Ihre Produktdaten, sondern hilft Ihnen auch bei der Definition Ihrer Geschäftsstruktur. Außerdem können Sie wertvolle Einblicke in die Verfügbarkeit von Produktdaten für Ihre Storefront erhalten, um sicherzustellen, dass sie Ihren Käufern sofort angezeigt werden können.
 
 - **Katalogansichten** - Hilft Ihnen, Ihre Einzelhandelsstruktur in aussagekräftige Geschäftsgruppen zu definieren. Zum Beispiel Händler für die Automobilindustrie, Tochtergesellschaften für Mehrmarkenkonglomerate oder Produktionsstandorte für Zulieferer.
-- **Katalogebenen** - Ändern von Produktdaten ohne Änderung der Quelldaten. Wenn Sie AEM Assets für Produktbilder verwenden, wird die AEM-Assets-Ebene über &quot;[&quot; &#x200B;](setup/product-visuals.md). Weitere Informationen [&#x200B; Sie unter &#x200B;](setup/catalog-layer.md)Katalogebenen).
+- **Katalogebenen** - Ändern von Produktdaten ohne Änderung der Quelldaten. Wenn Sie AEM Assets für Produktbilder verwenden, wird die AEM-Assets-Ebene über &quot;[&quot; ](setup/product-visuals.md). Weitere Informationen [ Sie unter ](setup/catalog-layer.md)Katalogebenen).
 - **Richtlinien** - Datenzugriffsfilter, die in Katalogansichten untergebracht sind. Richtlinien helfen sicherzustellen, dass der richtige Inhalt an das richtige Ziel gesendet wird. Zum Beispiel physische Ladengeschäfte, Marktplätze, Werbeleitungen (Google, Facebook, Instagram).
 - **Datensynchronisation**: Zeigt einen Überblick über den Synchronisationsstatus für Produktdaten an, die aus ihrer Datenquelle (PIM, ERP usw.) in [!DNL Adobe Commerce Optimizer] übertragen wurden. Diese Produktdaten werden auf den Registerkarten **[!UICONTROL Catalog Service]**, **[!UICONTROL Search]** und **[!UICONTROL Recommendations]** angezeigt.
 - **Ereignisse** - Zeigt Ereignisdaten für die Storefront an, die die Produkterkennung und Empfehlungen ermöglichen. Auf **Seite „Ereignisse** kann der Händler überprüfen, ob er das Storefront-Ereignis korrekt implementiert hat und ob Ereignisse erfolgreich erfasst werden. Händler können diese Seite verwenden, um potenzielle Probleme zu identifizieren und Schritte zum Beheben von Eventing-Problemen zu unternehmen.

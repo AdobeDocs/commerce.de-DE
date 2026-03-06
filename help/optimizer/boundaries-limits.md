@@ -2,11 +2,11 @@
 title: Beschränkungen und Grenzen
 description: Verstehen  [!DNL Adobe Commerce Optimizer]  Beschränkungen und Grenzen, um Kapazitäten zu planen und Leistungsprobleme zu vermeiden.
 role: Admin, Developer
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1320'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Ihre Nutzung muss innerhalb dieser Grenzen bleiben. Sie zu überschreiten kann z
 
 Lizenzbeschränkungen können erhöht werden, indem Sie die Lizenzpakete erwerben, die im Abschnitt [Lizenzbeschränkungen und Systemgrenzen](#license-limits-and-system-boundaries) beschrieben sind, oder indem Sie benutzerdefinierte Lizenzen für eindeutige Anwendungsfälle aushandeln. Wenden Sie sich an Ihren Adobe-Kundenbetreuer, um Ihre Anforderungen zu besprechen.
 
-Wenden Sie sich bei Fragen zu Systemgrenzen an den [Adobe-Support](https://experienceleague.adobe.com/home?lang=de#support).
+Wenden Sie sich bei Fragen zu Systemgrenzen an den [Adobe-Support](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Leistungsprobleme verhindern
 
@@ -84,12 +84,12 @@ In den folgenden Tabellen sind die Lizenzbeschränkungen und Systemgrenzen nach 
 
 >[!NOTE]
 >
->**Power Users** können direkt oder innerhalb von Adobe Commerce Optimizer auf Adobe Express zugreifen. **Collaborator-Benutzer** können direkt auf das Adobe Express-Programm zugreifen. Die Nutzung wird durch die [Adobe Express mit Firefly-spezifischen Lizenzbedingungen geregelt](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
+>**Power Users** können direkt oder in [!DNL Adobe Commerce Optimizer] auf Adobe Express zugreifen. **Collaborator-Benutzer** können direkt auf das Adobe Express-Programm zugreifen. Die Nutzung wird durch die [Adobe Express mit Firefly-spezifischen Lizenzbedingungen geregelt](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
 
 
 >[!BEGINSHADEBOX „Berechnen der Dynamic Media-Nutzung“]
 
-Die Verwendung von Dynamic Media verfolgt API-Anfragen, die in die Produktvisualisierungskomponenten in Adobe Commerce Optimizer eingehen, um eine der folgenden Aktionen zu erleichtern:
+Die Verwendung von Dynamic Media verfolgt API-Anfragen, die innerhalb von [!DNL Adobe Commerce Optimizer] in die Komponenten für visuelle Produktinformationen gelangen, um eine der folgenden Aktionen zu erleichtern:
 
 - **Die Bildbereitstellung verbraucht einen Dynamic Media** Vorgang für jedes Vorkommen der folgenden:
    - **Grundlegende Bildumwandlung** eines digitalen Assets, z. B. Größenänderungs-, Skalierungs-, Formatkonvertierungs-, Komprimierungs- oder Zuschneidevorgänge.
@@ -124,7 +124,7 @@ Die Basiszuordnung für die Funktionen der Katalog-Storefront wird auf der Grund
 
 >[!NOTE]
 >
->Für die Bildgenerierung ist eine Adobe Firefly-Lizenz erforderlich, die derselben IMS-Organisation wie Adobe Commerce Optimizer bereitgestellt wird.
+>Für die Bildgenerierung ist eine Adobe Firefly-Lizenz erforderlich, die derselben IMS-Organisation wie [!DNL Adobe Commerce Optimizer] bereitgestellt wird.
 
 
 ### Produkterkennung
@@ -137,7 +137,7 @@ Die Basiszuordnung für die Funktionen der Katalog-Storefront wird auf der Grund
 | Sortierbare Attribute | Die Anzahl der Produktmerkmale, die zur Bestimmung der Reihenfolge der Suchergebniswerte konfiguriert werden können | 50 | Nein |
 | Paginierungstiefe suchen | Die maximale Anzahl von Produkten, auf die über Paginierung zugegriffen werden kann (z. B. Seite 100 × 100 Produkte/Seite) | 10 K | Nein |
 | Facetten | Die Anzahl der filterbaren Produktattribute (wie Marke, Farbe, Größe, Preis), die konfiguriert werden können, um Käufern zu helfen, Suchergebnisse zu verfeinern und Kategorien zu durchsuchen | 100<p>Muss filterbare Attribute sein</p> | Nein |
-| Optionen pro Facette | Die Anzahl der filterbaren Produktattributwerte (z. B. „Rot“, „Blau“ für Farbe; „Klein“, &quot;Medium&quot; für Größe), die Käufer aus einer Liste auswählen können | 100 | Ja<p>Kann über eine Support-Anfrage erhöht werden</p> |
+| Optionen pro Facette | Die Anzahl der filterbaren Produktattributwerte (z. B. „Rot“, „Blau“ für Farbe; „Klein“, &quot;Medium&quot; für Größe), die Käufer aus einer Liste auswählen können | 1000 | Nein |
 
 {style="table-layout:auto"}
 
@@ -156,7 +156,7 @@ Die folgenden Funktionen sind für Produktempfehlungen verfügbar. Einige in and
 
 | **Funktion** | **Beschreibung** | **Basiszuweisung** | **Erweiterbar?** | **Hinweise** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Kapazität zum Erstellen Cloud-nativer Erweiterungen und Integrationen | Basierend auf GMV-Stufe<p>Mindestzuweisung: 1 Packung/Jahr</p> | Ja<p>Zusätzliche Packs hinzufügen</p> | Für die pro Packung definierten Grenzwerte siehe:<ul><li>[App Builder-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-developer-app-builder.html) für pro Pack definierte Beschränkungen.</li><li>[Systemeinstellungen und Einschränkungen](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in den *App Builder Runtime Guides*.</li><li>[Speicheranforderungen für App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Kapazität zum Erstellen Cloud-nativer Erweiterungen und Integrationen | Basierend auf GMV-Stufe<p>Mindestzuweisung: 1 Packung/Jahr</p> | Ja<p>Zusätzliche Packs hinzufügen</p> | Für die pro Packung definierten Grenzwerte siehe:<ul><li>[App Builder-Produktbeschreibung](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) für pro Pack definierte Beschränkungen.</li><li>[Systemeinstellungen und Einschränkungen](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in den *App Builder Runtime Guides*.</li><li>[Speicheranforderungen für App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -164,7 +164,7 @@ Die folgenden Funktionen sind für Produktempfehlungen verfügbar. Einige in and
 
 Ask your Adobe representative for a list of available packages to determine which most closely matches your project
 
-To accurately size your Adobe Commerce Optimizer solution, follow these steps:
+To accurately size your [!DNL Adobe Commerce Optimizer] solution, follow these steps:
 
 1. Review the available packages, and start with a package that most closely matches your requirements.
 1. Review the capabilities and metrics to ensure they align with your business requirements.

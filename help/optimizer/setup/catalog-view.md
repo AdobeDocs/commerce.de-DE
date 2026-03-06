@@ -3,11 +3,11 @@ title: Katalogansicht
 description: Erfahren Sie, was Katalogansichten sind und wie Sie sie erstellen, um Ihren Produktkatalog nach Geschäftsstruktur, Richtlinien und Preisen zu organisieren.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 769aafeb261d978623e68c466888924c92632883
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Katalogansichten für Merchandising-Services
 
-Katalogansichten sind die Grundlage von Adobe Commerce Optimizer Merchandising Services und ermöglichen es Ihnen, Ihren Produktkatalog nach Geschäftsstruktur, Richtlinien und Preisen zu organisieren. Dieses flexible Datenmodell unterstützt Szenarien mit mehreren Marken, mehreren Geschäftseinheiten und mehreren Sprachen bei gleichzeitiger Wahrung der betrieblichen Effizienz.
+Katalogansichten sind die Grundlage [!DNL Adobe Commerce Optimizer] Merchandising-Services, mit denen Sie Ihren Produktkatalog nach Geschäftsstruktur, Richtlinien und Preisen organisieren können. Dieses flexible Datenmodell unterstützt Szenarien mit mehreren Marken, mehreren Geschäftseinheiten und mehreren Sprachen bei gleichzeitiger Wahrung der betrieblichen Effizienz.
 
 ## Was sind Katalogansichten?
 
@@ -31,6 +31,16 @@ Stellen Sie sich Katalogansichten als verschiedene „Linsen“ vor, durch die K
 - In einer Händlerkatalogansicht werden möglicherweise nur Produkte angezeigt, die für diesen Händler verfügbar sind
 - In einer regionalen Katalogansicht können Produkte und Preise angezeigt werden, die für ein geografisches Gebiet spezifisch sind
 - In einer Markenkatalogansicht werden möglicherweise nur Produkte einer bestimmten Marke angezeigt
+
+### Katalogansicht versus Katalogquelle
+
+Im Folgenden wird der Unterschied zwischen einer Katalogansicht und einer Katalogquelle erläutert:
+
+- **Katalogansicht** - Eine konfigurierte Ansicht Ihres Katalogs für eine bestimmte Geschäftsanforderung. Wenn Sie eine Katalogansicht erstellen, wählen Sie die zu verwendende Katalogquelle (oder das zu verwendende Gebietsschema) aus und fügen dann [Richtlinien](policies.md) hinzu, um zu filtern, welche Produkte sichtbar sind, und verknüpfen [Preislisten](pricebooks.md) um die Preise zu steuern. Eine einzelne Katalogquelle kann für viele Katalogansichten verwendet werden (z. B. eine `en-US` mit separaten Katalogansichten für verschiedene Marken oder Regionen). Stellen Sie sich eine Katalogansicht wie *vor* wie Sie diese Daten einer Storefront, einem Kanal oder einer Zielgruppe bereitstellen.
+
+- **Katalogquelle** - Der zugrunde liegende Datenkontext, der Produktinformationen bereitstellt. Eine Katalogquelle ist normalerweise ein Gebietsschema (z. B. `en-US`, `fr-CA`) oder ein externes System wie ein PIM oder ERP. [!DNL Adobe Commerce Optimizer] nimmt Produktdaten aus einer oder mehreren Katalogquellen in einen einheitlichen Basiskatalog auf. Stellen Sie sich eine Katalogquelle vor *aus* die Rohkatalogdaten stammen.
+
+Zusammenfassend lässt sich sagen, **Katalogquelle** der Datenkontext ist, aus dem Sie Daten abrufen. **Katalogansicht** ist der gefilterte, preisliche und organisierte Kontext, den Sie Käufern oder Kanälen präsentieren.
 
 ## Erstellen einer Katalogansicht
 
@@ -66,6 +76,14 @@ Bevor Sie eine Katalogansicht erstellen, stellen Sie sicher, dass Sie Folgendes 
 Die Seite mit den Katalogansichten wird aktualisiert, um die neue Katalogansicht anzuzeigen&#x200B;
 
 Nachdem Sie diese Schritte ausgeführt haben, ist die Katalogansicht jetzt so konfiguriert, dass Produkte und Preise basierend auf Ihren ausgewählten Quellen und Richtlinien angezeigt werden.
+
+### Angeben von Katalogansichten für Recommendations und Regeln zur Produkterkennung
+
+>[!IMPORTANT]
+>
+>Diese Funktion befindet sich derzeit in der Betaphase.
+
+Sie können eine Katalogansicht angeben, wenn Sie [Empfehlungseinheiten erstellen](../merchandising/recommendations/create.md) oder [Merchandisingregeln](../merchandising/rules/add.md).
 
 ## Katalogebenen
 

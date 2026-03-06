@@ -1,18 +1,18 @@
 ---
 title: Empfehlungstypen
 description: Erfahren Sie mehr über die Recommendations, die Sie auf verschiedenen Seiten auf Ihrer Site bereitstellen können.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: f1c4e0ef-a8fe-452d-9870-6d6964b4335d
-source-git-commit: 6fed7dd049019918646a9b871147c2d6ae27ed36
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1605'
 ht-degree: 0%
 
 ---
 
 # Empfehlungstypen
 
-Adobe Commerce Optimizer bietet eine Vielzahl von Empfehlungen, die Sie auf verschiedenen Seiten Ihrer Site bereitstellen können. Alle Empfehlungstypen sind datengesteuert. Sie basieren auf Verhaltensdaten, Produktattributdaten und Metriken. Zur Vereinfachung werden die Empfehlungstypen wie folgt gruppiert:
+[!DNL Adobe Commerce Optimizer] bietet eine Vielzahl von Empfehlungen, die Sie auf verschiedenen Seiten Ihrer Site bereitstellen können. Alle Empfehlungstypen sind datengesteuert. Sie basieren auf Verhaltensdaten, Produktattributdaten und Metriken. Zur Vereinfachung werden die Empfehlungstypen wie folgt gruppiert:
 
 - [Personalisiert](#personalized)
 - [Crosssell und Up-Sells](#crossup)

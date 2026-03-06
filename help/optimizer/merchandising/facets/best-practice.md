@@ -2,14 +2,14 @@
 title: Best Practices für Facetten
 description: Erfahren Sie mehr über die Best Practices für die Implementierung von Facetten in Ihrem Store.
 role: Admin, Developer
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 3131cc27a25d1bf958071b973f1d4bf1a68be152
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+exl-id: b9da6853-c846-4267-8dee-17abc034ead0
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices für Facetten
 
@@ -17,7 +17,7 @@ Die Filter- und Facettenfunktionalität ist eine wichtige Komponente Ihrer [!DNL
 
 ## Tipps zum Optimieren von Facetten
 
-- Bestimmen Sie die relevantesten und nützlichsten Attribute für Ihre Produkte, wie Titel, Kategorie, Marke, Preisspanne, Farbe und Größe und legen Sie sie als [dynamische Facetten“ &#x200B;](type.md). 
+- Bestimmen Sie die relevantesten und nützlichsten Attribute für Ihre Produkte, wie Titel, Kategorie, Marke, Preisspanne, Farbe und Größe und legen Sie sie als [dynamische Facetten“ ](type.md). 
 - Legen Sie Produktattribute fest und sortieren Sie sie, die in Ihrem gesamten Katalog konsistent und für Ihre Produkte äußerst relevant sind, um die Relevanz und Filtermöglichkeiten für Ihre Kunden zu verbessern.
 - Stellen Sie sicher, dass Facettenbeschriftungen leicht verständlich sind und auf der gesamten Site konsistent benannt werden. Verwenden Sie beispielsweise „Preisspanne“ anstelle von „Kosten“.
 - Vermeiden Sie es, Käufer zu überfordern, indem Sie die Anzahl der Facetten auf die wichtigsten beschränken. Zu viele Optionen können zu Entscheidungsermüdung führen. Standardmäßig ist [!DNL Adobe Commerce Optimizer] auf maximal 100 Attribute beschränkt, die als Facetten konfiguriert sind, und auf 30 Buckets, die innerhalb jeder Facette zurückgegeben werden. Weitere Informationen zu [Facettenbegrenzungen](../../boundaries-limits.md#catalog-views-and-policies). 

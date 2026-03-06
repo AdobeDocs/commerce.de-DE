@@ -2,11 +2,11 @@
 title: Best Practices für Merchandising-Regeln
 description: Erfahren Sie mehr über die Best Practices zur Implementierung von Merchandising-Regeln in Ihrem Store.
 role: Admin, Developer
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
-source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -25,5 +25,5 @@ Es ist von entscheidender Bedeutung, eine gut durchdachte Standard-Suchregel fes
 - Produkte mit höheren Gewinnspannen leicht priorisieren, ohne die Relevanz zu beeinträchtigen.
 - Heben Sie Produkte hervor, die zum Verkauf stehen oder Teil von Sonderaktionen sind.
 - Legen Sie Suchregeln während der Promotion oder des Verkaufszeitraums automatisch fest, indem Sie den Datumsbereich während des Promotion-Zeitraums verwenden.
-- Passen Sie Suchergebnisse mithilfe von „Intelligent Ranking[&#x200B; wie &quot;](add.md#intelligent-ranking) für Sie empfohlen“, „Am häufigsten angezeigt“ usw. an das individuelle Kundenverhalten an.
+- Passen Sie Suchergebnisse mithilfe von „Intelligent Ranking[ wie &quot;](add.md#intelligent-ranking) für Sie empfohlen“, „Am häufigsten angezeigt“ usw. an das individuelle Kundenverhalten an.
 - Verwenden Sie immer das Bedienfeld „Regel testen“, um eine Vorschau anzuzeigen, wie sich Ihre intelligente Rangfolgestrategie auf die tatsächlichen Suchergebnisse für verschiedene Abfragen auswirkt.

@@ -3,12 +3,12 @@ title: Versionshinweise
 description: Die neuesten Versionsinformationen für das  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 3%
+source-wordcount: '100'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +24,7 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 
 ### EU-Region jetzt verfügbar
 
-Unterstützung für Kunden-IMS-Organisationen aus der Region der Europäischen Union (eu1) ist jetzt verfügbar. Sie können jetzt **Europäische Union** als **Region** auswählen, wenn [eine Commerce Optimizer-Instanz &#x200B;](./get-started.md#step-1-create-an-instance) Cloud Manager hinzufügen. Die Region der Europäischen Union ist nur für Produktionsumgebungen verfügbar.
+Unterstützung für Kunden-IMS-Organisationen aus der Region der Europäischen Union (eu1) ist jetzt verfügbar. Sie können jetzt **Europäische Union** als **Region** auswählen, wenn [eine Commerce Optimizer-Instanz ](./get-started.md#step-1-create-an-instance) Cloud Manager hinzufügen. Die Region der Europäischen Union ist nur für Produktionsumgebungen verfügbar.
 
 Die Basis-Produktions-URLs für die Region der Europäischen Union lauten:
 

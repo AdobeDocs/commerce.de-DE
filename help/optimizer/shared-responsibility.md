@@ -2,10 +2,11 @@
 title: Geteilte Verantwortung
 description: Erfahren Sie mehr über die Sicherheitsaufgaben der einzelnen an Ihrem Projekt  [!DNL Adobe Commerce Optimizer]  Parteien.
 role: Admin, Architect, Leader
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 7c407bfc2becfb0ba6babe5958bcb790c178f406
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+exl-id: 9e09790f-832d-43ab-b2df-6389ad52b43d
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -43,12 +44,12 @@ Die folgenden Zusammenfassungstabellen verwenden das RACI-Modell, um die gemeins
 | Unterstützen von Backend-CDN | RA |  |
 | Beziehen eines Backend-DNS-Anbieters | RA | |
 | Bereitstellen der Produktions- und Sandbox-Umgebungen | A | R |
-| Zugriff auf Dynamics für Adobe Commerce Optimizer | R | C |
+| Zugriff auf Dynamics for [!DNL Adobe Commerce Optimizer] | R | C |
 | Beheben von Backend-Kundensicherheitsproblemen | RA | I |
 | Beheben von Backend-CDN-Sicherheitsproblemen | RA | |
 | Unterstützung von Adobe bei der Sicherheitsforschung (Scans/Audits) | RA | |
 | Durchführen von PCI-ASV-Scans | RA | I |
-| Wiederherstellen von PCI-Scans für die Adobe Commerce Optimizer-Infrastruktur | R | |
+| Wiederherstellen [!DNL Adobe Commerce Optimizer] PCI-Scans | R | |
 | Verwalten von Betriebssystem- und Plattformgeheimnissen | RA | |
 | Überwachen von Backend-Sicherheitsprotokollen | RA | |
 | Steuerung des Kunden-Supports und des Zugriffs | A | R |
@@ -56,5 +57,5 @@ Die folgenden Zusammenfassungstabellen verwenden das RACI-Modell, um die gemeins
 | Jährliche Prüfung und Dokumentation des Notfallwiederherstellungsplans | RA | |
 | Debugging und Problemisolierung | R | R |
 | Rechtzeitige Unterstützung des Debugging- und Problemisolierungsprozesses | R | R |
-| Installieren von Updates und Patches für Adobe Commerce Optimizer | RA | I |
-| Qualität der Adobe Commerce Optimizer-Kernanwendungen | RA | |
+| Installieren von Updates und Patches für [!DNL Adobe Commerce Optimizer] | RA | I |
+| Qualität [!DNL Adobe Commerce Optimizer] Kernanwendungen | RA | |
