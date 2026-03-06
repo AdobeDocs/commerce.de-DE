@@ -1,21 +1,47 @@
 ---
 title: Voraussetzungen für das Tutorial
-description: Lernen Sie die Voraussetzungen für das Labor der Bewertungserweiterung kennen.
+description: Erfahren Sie mehr über die Voraussetzungen und Einrichtungsschritte für Adobe Commerce as a Cloud Service-Tutorials, einschließlich Erweiterungs- und Storefront-Entwicklungs-Tools.
+solution: Commerce
 feature: App Builder, Cloud
+feature-set: Commerce
 role: Developer
 level: Intermediate
-source-git-commit: 68e34cecbc1b16194ccc2e0296c2d66f37855b7c
+type: Tutorial
+source-git-commit: 1848c9dda4a1976e1bccb4d1f9d5a2e21540fc0b
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
 
 # Voraussetzungen für das Tutorial
 
-Auf dieser Seite werden die Voraussetzungen und Einrichtungsschritte für [!DNL Adobe Commerce as a Cloud Service] Tutorials aufgelistet, z. B[&#x200B; das Tutorial zur Erweiterung von Bewertungen &#x200B;](./ratings-extension.md) das Tutorial [Erweiterung der Versandmethode](./shipping-method-extension.md).
+Auf dieser Seite werden die Voraussetzungen und Einrichtungsschritte für [!DNL Adobe Commerce as a Cloud Service] Tutorials aufgelistet, z. B[ das Tutorial zur Erweiterung von Bewertungen ](./ratings-extension.md) das Tutorial [Erweiterung der Versandmethode](./shipping-method-extension.md).
 
-## Voraussetzungen für Adobe Commerce as a Cloud Service
+## Allgemeine Voraussetzungen
+
+In diesem Tutorial sind die folgenden Tools für die Entwicklung von Erweiterungen und Storefronts erforderlich.
+
+* [!DNL Node.js] (Version `22.x.x`) und npm (`9.0.0` oder höher): Überprüfen Sie Ihre Installation mit dem folgenden Befehl:
+
+  ```bash
+  node --version
+  npm --version
+  ```
+
+* Installieren von [Git](https://git-scm.com) - Überprüfen Sie Ihre Installation:
+
+  ```bash
+  git --version
+  ```
+
+* Bash-Shell
+   * macOS/Linux: Keine Installation erforderlich
+   * Windows: Verwenden Sie [Git Bash](https://git-scm.com/install) oder [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
+
+* Laden Sie eine KI-unterstützte IDE herunter, z. B[Cursor](https://cursor.com/download) (empfohlen). Andere IDEs wie Claude Code, Gemini CLI oder Copilot werden ebenfalls unterstützt, erfordern jedoch möglicherweise Änderungen an den Eingabeaufforderungen und anderen Schritten im Tutorial.
+
+## Voraussetzungen für [!DNL Adobe Commerce as a Cloud Service]
 
 * Installieren des [!DNL Adobe I/O CLI]
 
@@ -29,50 +55,56 @@ Auf dieser Seite werden die Voraussetzungen und Einrichtungsschritte für [!DNL 
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
-* Herunterladen einer KI-unterstützten IDE wie [Cursor](https://cursor.com/download) (empfohlen), andere IDEs wie Claude Code, Gemini CLI oder Copilot werden ebenfalls unterstützt, könnten jedoch Änderungen an den Eingabeaufforderungen und anderen Schritten im Tutorial erfordern.
-
 ### Voraussetzungen für Adobe Developer Console
+
+Richten Sie in der Adobe Developer Console ein Projekt mit den erforderlichen APIs und Anmeldeinformationen ein.
 
 1. Navigieren Sie zur [Adobe Developer Console](https://developer.adobe.com/console){target="_blank"}.
 1. Melden Sie sich mit Ihrer E-Mail-Adresse und Ihrem Passwort an.
 
 #### Neues Projekt erstellen
 
+Erstellen Sie ein App Builder-Projekt in der Adobe Developer Console, um Ihre Erweiterung zu hosten.
+
 1. Navigieren Sie zu [Adobe Developer Console](https://developer.adobe.com/).
-1. Klicken Sie [!UICONTROL **Projekt aus einer Vorlage erstellen**].
-1. Wählen Sie die Vorlage [!UICONTROL **App Builder**] aus.
-1. Geben Sie einen [!UICONTROL **Projekttitel**] und [!UICONTROL **App-Namen**] ein.
+1. Klicken Sie auf **[!UICONTROL Create project from a template]**.
+1. Wählen Sie die **[!UICONTROL App Builder]** aus.
+1. Geben Sie einen **[!UICONTROL Project Title]** und einen **[!UICONTROL App Name]** ein.
 1. Stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Include Runtime]** markiert ist.
 
    ![Adobe Developer Console-Projekterstellung mit ausgewählter App Builder-Vorlage](../assets/app-builder-template.png){width="600" zoomable="yes"}
 
-1. Klicken Sie [!UICONTROL **Speichern**].
+1. Klicken Sie auf **[!UICONTROL Save]**.
 
 #### Hinzufügen von APIs zum Arbeitsbereich
 
-1. Klicken Sie auf [!UICONTROL **Staging**]-Arbeitsbereich und wiederholen Sie dann die folgenden Schritte für jede API.
+Fügen Sie Ihrem Staging-Arbeitsbereich die erforderlichen APIs für die Ereignisverwaltung und Commerce-Integration hinzu.
+
+1. Klicken Sie auf Arbeitsbereich **[!UICONTROL Stage]** und wiederholen Sie dann die folgenden Schritte für jede API.
 
    ![Staging-Arbeitsbereich mit Option „Service hinzufügen“ für APIs](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
 
-1. Klicken Sie auf [!UICONTROL **Service hinzufügen**] und wählen Sie [!UICONTROL **API**] aus.
+1. Klicken Sie auf **[!UICONTROL Add Service]** und wählen Sie **[!UICONTROL API]** aus.
 
-1. Wählen Sie eine der folgenden APIs aus. Sie müssen diesen Vorgang für jede der unten aufgeführten APIs wiederholen:
+1. Wählen Sie eine der folgenden APIs aus. Wiederholen Sie diesen Vorgang für jede unten aufgeführte API:
 
-   * [!UICONTROL **Adobe Services**]-Filter:
-      * [!UICONTROL **I/O-Management-API**]
-      * [!UICONTROL **I/O Events**] API
-   * [!UICONTROL **Experience Cloud**]-Filter:
-      * [!UICONTROL **Adobe I/O Events für Adobe Commerce**]-API
+   * **[!UICONTROL Adobe Services]**:
+      * **[!UICONTROL I/O Management API]**
+      * **[!UICONTROL I/O Events]** API
+   * **[!UICONTROL Experience Cloud]**:
+      * **[!UICONTROL Adobe I/O Events for Adobe Commerce]** API
 
-1. Klicken Sie [!UICONTROL **Weiter**].
+1. Klicken Sie auf **[!UICONTROL Next]**.
 
-1. Klicken Sie [!UICONTROL **Konfigurierte API speichern**].
+1. Klicken Sie auf **[!UICONTROL Save configured API]**.
 
-1. Wiederholen Sie die vorherigen Schritte, bis alle APIs zum Arbeitsbereich hinzugefügt wurden.
+1. Wiederholen Sie die vorherigen Schritte, bis Sie alle APIs zum Arbeitsbereich hinzufügen.
 
    ![Workspace mit allen erfolgreich hinzugefügten erforderlichen APIs](../assets/apis-added.png){width="600" zoomable="yes"}
 
 ### Konfigurieren der Adobe I/O-CLI
+
+Verbinden Sie die [!DNL Adobe I/O CLI] mit Ihrer Organisation, Ihrem Projekt und Ihrem Arbeitsbereich.
 
 1. Löschen Sie eine vorhandene Konfiguration:
 
@@ -80,13 +112,13 @@ Auf dieser Seite werden die Voraussetzungen und Einrichtungsschritte für [!DNL 
    aio config clear
    ```
 
-   Melden Sie sich mit dem [!DNL Adobe I/O CLI] an:
+1. Melden Sie sich mit dem [!DNL Adobe I/O CLI] an:
 
    ```bash
    aio auth login -f
    ```
 
-1. Wählen Sie Ihre Organisation, Ihr Projekt und Ihren Arbeitsbereich mithilfe der folgenden Befehle aus:
+1. Wählen Sie Ihre Organisation, Ihr Projekt und Ihren Arbeitsbereich mit jedem der folgenden Befehle aus:
 
    ```bash
    aio console org select
@@ -134,7 +166,7 @@ cp env.dist .env
 
 Öffnen Sie die `.env` in einem Texteditor und fügen Sie die folgenden OAuth-Anmeldeinformationen hinzu:
 
-```shell-session
+```bash
 OAUTH_CLIENT_ID=
 OAUTH_CLIENT_SECRET=
 OAUTH_TECHNICAL_ACCOUNT_ID=
@@ -142,7 +174,7 @@ OAUTH_TECHNICAL_ACCOUNT_EMAIL=
 OAUTH_ORG_ID=
 ```
 
-Sie können diese Werte von der **[!UICONTROL Credential details]** in [Developer Console kopieren](https://developer.adobe.com/) indem Sie auf die Registerkarte **[!UICONTROL OAuth Server-to-Server]** in Ihrem Arbeitsbereich klicken.
+Kopieren Sie diese Werte von der **[!UICONTROL Credential details]** in [Developer Console](https://developer.adobe.com/) indem Sie auf die Registerkarte **[!UICONTROL OAuth Server-to-Server]** in Ihrem Arbeitsbereich klicken.
 
 ![Seite mit OAuth Server-zu-Server-Anmeldeinformationen in Adobe Developer Console](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
@@ -150,7 +182,7 @@ Sie können diese Werte von der **[!UICONTROL Credential details]** in [Develope
 
 Fügen Sie die folgenden Commerce-Instanzdetails zu Ihrer `.env` hinzu:
 
-```shell-session
+```bash
 COMMERCE_BASE_URL=
 COMMERCE_GRAPHQL_ENDPOINT=
 ```
@@ -166,11 +198,11 @@ So suchen Sie diese Werte:
 
 Legen Sie einen temporären Wert für das Ereignispräfix fest:
 
-```shell-session
+```bash
 EVENT_PREFIX=test
 ```
 
-### Workspace-Konfiguration herunterladen
+### Herunterladen der Workspace-Konfiguration
 
 Führen Sie den folgenden Befehl aus, um die Workspace-Konfigurationsdatei herunterzuladen:
 
@@ -184,7 +216,7 @@ Kopieren Sie die Workspace-Konfigurationsdatei in das `scripts`:
 cp workspace.json scripts/
 ```
 
-### Lokalen Arbeitsbereich mit Remote-Arbeitsbereich verbinden
+### Verbinden des lokalen Arbeitsbereichs mit dem Remote-Arbeitsbereich
 
 Verknüpfen des lokalen Projekts mit dem Remote-Arbeitsbereich:
 
@@ -210,7 +242,7 @@ Wählen Sie bei Aufforderung die Option aus, die die Organisation, das Projekt u
 
 >[!ENDTABS]
 
-### Installieren von Erweiterbarkeits-KI-Tools
+### Installieren der KI-Tools für die Erweiterbarkeit
 
 Dieser Prozess erstellt die MCP-Konfiguration (`.<agent>/mcp.json`), das Skills-Verzeichnis (`.<agent>/skills/`) und fügt `AGENTS.md` zum Projektstamm hinzu. Sie werden aufgefordert, ein Starter Kit, einen Codierungsagenten und einen Package Manager auszuwählen.
 
@@ -235,142 +267,43 @@ Dieser Prozess erstellt die MCP-Konfiguration (`.<agent>/mcp.json`), das Skills-
 
    ![Terminal mit KI-Erweiterbarkeits-Tools-Setup mit ausgewähltem Checkout-Starter-Kit](../assets/tools-setup-checkout.png){width="600" zoomable="yes"}
 
-<!--
-## Storefront prerequisites
+## Voraussetzungen für die Storefront
 
-The following items are required to complete the [storefront](./ratings-extension.md#connect-to-the-storefront) section of [this tutorial](./ratings-extension.md) and see the product ratings in your store.
+Die folgenden Elemente sind erforderlich, um den Abschnitt [Storefront](./ratings-extension.md#connect-to-the-storefront) des Tutorials [Ratings-Erweiterung](./ratings-extension.md) abzuschließen und Produktbewertungen in Ihrem Store anzuzeigen.
 
-* Install [!DNL Node.js] (version `22.x.x`) and npm (`9.0.0` or higher). Verify your installation:
+* [Google Chrome](https://www.google.com/chrome/) - Zum Testen der Storefront erforderlich
 
-   ```bash
-   node --version
-   npm --version
-   ```
+* Ein Storefront-Projekt, das mit Ihrer [!DNL Commerce] verbunden ist. Wenn Sie kein Storefront-Projekt haben, führen Sie die Schritte in [Storefront erstellen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"} aus, einschließlich des Abschnitts [Repo mit Commerce-Daten verknüpfen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}.
 
-* Install [Git](https://git-scm.com) (Optional) - Required only if [cloning the repository directly](#option-a-clone-the-repository-recommended)(recommended), not needed if you [download the zip file](#option-b-download-the-zip-file). Verify your installation:
+### Klonen des Storefront-Repositorys
 
-  ```bash
-  git --version
-  ```
-
-* Bash shell
-  * macOS/Linux: No installation required
-  * Windows: Use [Git Bash](https://git-scm.com/install) or [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
-
-* [Google Chrome](https://www.google.com/chrome/) - Required for testing the storefront
-
-### Get the project files
-
-You can obtain the project files using one of the following methods:
-
-#### Option A: Clone the repository (recommended)
-
-If you have [!DNL Git] installed, open your terminal and clone the repository:
+Öffnen Sie Ihr Terminal und klonen Sie das Repository :
 
 ```bash
 git clone --branch agentic-dev https://github.com/hlxsites/aem-boilerplate-commerce.git storefront
 cd storefront
 ```
 
-#### Option B: Download the zip file
+### Installieren der Abhängigkeiten
 
-If you do not have [!DNL Git] installed:
-
-1. Download the project zip file from: [https://github.com/hlxsites/aem-boilerplate-commerce/archive/refs/heads/agentic-dev.zip](https://github.com/hlxsites/aem-boilerplate-commerce/archive/refs/heads/agentic-dev.zip)
-1. Extract the zip file to a folder on your machine.
-1. Open your terminal and navigate into the unzipped folder:
-
-   ```bash
-   cd path/to/aem-boilerplate-commerce-agentic-dev
-   ```
-
-### Install root dependencies
-
-Install the main project dependencies:
+Installieren Sie die Projektabhängigkeiten:
 
 ```bash
 npm install
 ```
 
-This will install all the necessary packages for the storefront application.
+### Installieren der KI-Tools für die Storefront
 
-### Install MCP server dependencies
-
-Navigate to the MCP server directory and install its dependencies:
+Richten Sie die KI-unterstützten Entwicklungs-Tools im Ordner `storefront` ein. Führen Sie den folgenden Befehl aus dem Stammverzeichnis Ihres Textbausteinprojekts aus:
 
 ```bash
-cd mcp-server
-npm install
-cd ..
+aio commerce extensibility tools-setup
 ```
 
-### Configure environment variables
+Der Befehl führt Sie durch zwei Eingabeaufforderungen:
 
-The MCP server requires certain environment variables to connect to the RAG service.
+1. **Starter Kit auswählen** — Wählen Sie **AEM Boilerplate Commerce**.
 
-Create an `.env` file in the `mcp-server` directory:
+1. **Codierungsagent auswählen** - Wählen Sie Ihren Agenten aus der Liste der unterstützten Agenten aus.
 
-```bash
-cd mcp-server
-cp env.example .env
-```
-
-Edit the `.env` file and add the following values:
-
-```env
-RAG_MODE=worker
-WORKER_RAG_URL=
-```
-
-### Enable MCP in Cursor
-
-The Model Context Protocol (MCP) server provides AI agents with access to [!DNL Adobe Commerce] Storefront documentation.
-
-#### Open Cursor MCP settings
-
-![Open Cursor MCP Settings](../assets/cursor-mcp-settings.png){width="600" zoomable="yes"}
-
-1. Open [!DNL Cursor].
-1. Navigate to **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]**.
-
-#### Enable and configure MCP features
-
-The project includes an MCP configuration file at `.cursor/mcp.json`. This file should already be configured to use the local MCP server.
-
-Verify the MCP configuration:
-
-1. Ensure the "commerce-documentation-rag" server is listed and enabled
-
-The configuration should look similar to this:
-
-![MCP Configuration](../assets/mcp-configuration.png){width="600" zoomable="yes"}
-
->[!NOTE]
->
->The `start-mcp.sh` script will automatically load the environment variables from your `.env` file in the `mcp-server` directory.
-
-#### Restart Cursor
-
-After enabling MCP and configuring the server:
-
-1. Quit [!DNL Cursor] completely.
-1. Reopen [!DNL Cursor] and open the `aem-boilerplate-commerce` project.
-
-#### Verify MCP connection
-
-Check that the MCP server is running correctly:
-
-1. Open a new chat in [!DNL Cursor].
-1. Look for an indicator showing the MCP server is connected. This indicator is typically located in the chat interface.
-1. Try entering a prompt like the following:
-
-   ```shell-session
-   Search the storefront docs for information about slots
-   ```
-
-If the MCP server is working, you should see relevant documentation results.
-
-![MCP Connection Verified](../assets/mcp-connection-verified.png){width="600" zoomable="yes"}
-
-If this works, you are ready to continue with the [tutorial](./ratings-extension.md).
- -->
+Der Befehl installiert das `@adobe-commerce/commerce-extensibility-tools`-Paket als Dev-Abhängigkeit, kopiert die Skill-Dateien in das Skill-Verzeichnis Ihres Agenten und konfiguriert MCP (Model Context Protocol), damit Ihr Agent auf Commerce-Dokumentationssuchwerkzeuge zugreifen kann.
