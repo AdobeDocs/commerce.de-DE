@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Benutzerverwaltung
 
-Um den Zugriff auf [!DNL Adobe Commerce Optimizer] zu aktivieren, fügen Sie Benutzer aus der [Adobe Admin Console ](https://adminconsole.adobe.com){target="_blank"} und stellen Sie sicher, dass sie Zugriff auf das Commerce-Produkt haben.
+Um den Zugriff auf [!DNL Adobe Commerce Optimizer] zu aktivieren, fügen Sie Benutzer aus der [Adobe Admin Console &#x200B;](https://adminconsole.adobe.com){target="_blank"} und stellen Sie sicher, dass sie Zugriff auf das Commerce-Produkt haben.
 
 Sie können Benutzer einer der folgenden Rollen zuweisen:
 
@@ -133,7 +133,7 @@ Mit den folgenden Anweisungen können Sie erfahren, wie Sie Benutzende zum [!DNL
 
 ### Hinzufügen von Entwicklern und Produktprofil-Administrierenden
 
-Um Entwickler und Produktprofil-Administrierende hinzuzufügen, wiederholen Sie den [Benutzer hinzufügen](#add-users), wählen Sie jedoch die Registerkarte [!UICONTROL ****] oder [!UICONTROL **Administratoren**] anstelle der Registerkarte [!UICONTROL **Benutzer**] aus.
+Um Entwickler und Produktprofil-Administrierende hinzuzufügen, wiederholen Sie den [Benutzer hinzufügen](#add-users), wählen Sie jedoch die Registerkarte [!UICONTROL **&#x200B;**] oder [!UICONTROL **Administratoren**] anstelle der Registerkarte [!UICONTROL **Benutzer**] aus.
 
 >[!NOTE]
 >

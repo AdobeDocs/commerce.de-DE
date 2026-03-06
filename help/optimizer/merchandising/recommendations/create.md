@@ -19,7 +19,7 @@ _Empfehlungseinheit_
 
 Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Datenerfassung](../../manage-results/recommendation-performance.md) um Impressionen, Ansichten, Klicks usw. zu messen. Die Tabelle Recommendations zeigt die Metriken für jede Empfehlungseinheit an, die Ihnen bei fundierten Geschäftsentscheidungen hilft.
 
-1. Wechseln Sie in der _[!DNL Adobe Commerce Optimizer]_Seitenleiste zu_ Merchandising _>**Recommendations**, um den_ Recommendations _-Arbeitsbereich anzuzeigen.
+1. Wechseln Sie in der _[!DNL Adobe Commerce Optimizer]_&#x200B;Seitenleiste zu_ Merchandising _>**Recommendations**, um den_ Recommendations _-Arbeitsbereich anzuzeigen.
 
 1. Wählen **im Feld** Katalogansicht“ die Katalogansicht aus, in der die Empfehlung verfügbar sein soll. Weitere Informationen über [Verwenden von Katalogansichten für Recommendations](../../manage-results/recommendation-performance.md#select-catalog-view).
 
@@ -51,11 +51,11 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
    - **Aktivieren**, um die Empfehlungseinheit in Ihrer Storefront zu aktivieren.
 
-   Ihre Empfehlung wird im Arbeitsbereich Recommendations angezeigt. Um Ihre Empfehlung in Ihrer Storefront zu verwenden, müssen Sie die „Recommendations[ID“ ](#get-recommendation-id).
+   Ihre Empfehlung wird im Arbeitsbereich Recommendations angezeigt. Um Ihre Empfehlung in Ihrer Storefront zu verwenden, müssen Sie die „Recommendations[ID“ &#x200B;](#get-recommendation-id).
 
 >[!NOTE]
 >
->Sie können bis zu 50 aktive Empfehlungseinheiten erstellen. Weitere Informationen finden [ unter ](../../boundaries-limits.md) und Grenzen .
+>Sie können bis zu 50 aktive Empfehlungseinheiten erstellen. Weitere Informationen finden [&#x200B; unter &#x200B;](../../boundaries-limits.md) und Grenzen .
 
 >[!IMPORTANT]
 >
@@ -81,7 +81,7 @@ Experimentieren Sie beim Erstellen Ihrer Empfehlungseinheit mit dem Empfehlungst
 
 [!DNL Adobe Commerce Optimizer] [Filter](filters.md) Empfehlungen, um die Anzeige doppelter Produkte zu vermeiden, wenn mehrere Empfehlungseinheiten auf einer Seite bereitgestellt werden. Daher können sich die Produkte, die im Vorschaubereich angezeigt werden, von denen unterscheiden, die in der Storefront angezeigt werden.
 
-Bei Setups mit mehreren Storefronts, mehreren Sprachen oder mehreren Marken können Sie konfigurieren, ob jede Empfehlung für alle Katalogansichten (global) oder für eine einzelne [Katalogansicht) ](../../setup/catalog-view.md). Erfahren Sie mehr darüber, wie [die Katalogansicht festlegen](../../manage-results/recommendation-performance.md#select-catalog-view) wenn Sie mit Recommendations arbeiten.
+Bei Setups mit mehreren Storefronts, mehreren Sprachen oder mehreren Marken können Sie konfigurieren, ob jede Empfehlung für alle Katalogansichten (global) oder für eine einzelne [Katalogansicht) &#x200B;](../../setup/catalog-view.md). Erfahren Sie mehr darüber, wie [die Katalogansicht festlegen](../../manage-results/recommendation-performance.md#select-catalog-view) wenn Sie mit Recommendations arbeiten.
 
 ## Recommendations-ID abrufen
 
@@ -103,7 +103,7 @@ Nachdem Sie eine Empfehlung erstellt haben, müssen Sie deren ID abrufen, um die
 
 Sie können eine vorhandene Empfehlung bearbeiten, deaktivieren oder löschen.
 
-1. Navigieren Sie in der _[!DNL Adobe Commerce Optimizer]_Seitenleiste zu_ Merchandising _>**Recommendations**.
+1. Navigieren Sie in der _[!DNL Adobe Commerce Optimizer]_&#x200B;Seitenleiste zu_ Merchandising _>**Recommendations**.
 
 1. Wählen Sie die Empfehlung aus, die Sie ändern möchten.
 
@@ -122,7 +122,7 @@ Sie können eine vorhandene Empfehlung bearbeiten, deaktivieren oder löschen.
 
 ## Bereitschaftsindikatoren
 
-Bereitschaftsindikatoren zeigen, welche Empfehlungstypen basierend auf den verfügbaren Katalog- und Verhaltensdaten am besten abschneiden. Sie können Ihnen auch dabei helfen, potenzielle Probleme mit der [Ereigniserfassung“ zu identifizieren ](../../setup/events/overview.md) festzustellen, ob ein Empfehlungstyp nicht genügend Traffic erhält, um Ergebnisse zu generieren.
+Bereitschaftsindikatoren zeigen, welche Empfehlungstypen basierend auf den verfügbaren Katalog- und Verhaltensdaten am besten abschneiden. Sie können Ihnen auch dabei helfen, potenzielle Probleme mit der [Ereigniserfassung“ zu identifizieren &#x200B;](../../setup/events/overview.md) festzustellen, ob ein Empfehlungstyp nicht genügend Traffic erhält, um Ergebnisse zu generieren.
 
 Bereitschaftsindikatoren werden entweder in [statisch-basiert](#static-based) oder [dynamisch-](#dynamic-based) kategorisiert. Verwenden Sie nur statische Katalogdaten, während dynamische Verhaltensdaten von Ihren Kunden verwendet werden. Diese Verhaltensdaten werden verwendet, um [Modelle für maschinelles Lernen](../../setup/events/overview.md) zu trainieren, um personalisierte Empfehlungen zu erstellen und ihren Bereitschaftswert zu berechnen.
 
