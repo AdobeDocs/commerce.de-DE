@@ -303,7 +303,7 @@ Verwenden Sie den Agenten, um die Bewertungs-API in die Produktdetailseite der S
    In Ihrer Entwicklungsumgebung und Ihrem Browser sollten die folgenden Änderungen angezeigt werden:
 
    * Eine Produktbewertungskomponente wird automatisch erstellt.
-   * Die Komponente wird je nach ausgewählter Architektur mit [Drop-In-Steckplätzen](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) oder als eigenständiger Block in die PDP integriert.
+   * Die Komponente wird je nach ausgewählter Architektur mit [Drop-In-Steckplätzen](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=de) oder als eigenständiger Block in die PDP integriert.
    * Sterne werden mit korrekten Füllverhältnissen basierend auf den Bewertungswerten aus Ihrer API angezeigt.
 
    ![Produktdetailseite mit unter dem Produkttitel integrierten Sternebewertungen](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
