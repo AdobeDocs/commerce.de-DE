@@ -24,7 +24,7 @@ Die folgende Abbildung zeigt einen Überblick über die Produktsynchronisierung 
 
 Diese Integration umfasst zwei Hauptflüsse:
 
-* **Von AEM Assets**: Wenn ein Asset genehmigt, abgelehnt oder entfernt wird, fließt das Ereignis über die Adobe-Pipeline zum Assets Integration Service. Der Service ordnet Assets Produkten mithilfe von `match-by-SKU` (Metadatengesteuert) oder einem [benutzerdefinierten Matcher (App Builder) zu ](../synchronize/custom-match.md){target=_blank} sendet dann die `product-asset` Zuordnungen an die Commerce Optimizer, wo sie als Produktebenen gespeichert werden.
+* **Von AEM Assets**: Wenn ein Asset genehmigt, abgelehnt oder entfernt wird, fließt das Ereignis über die Adobe-Pipeline zum Assets Integration Service. Der Service ordnet Assets Produkten mithilfe von `match-by-SKU` (Metadatengesteuert) oder einem [benutzerdefinierten Matcher (App Builder) zu &#x200B;](../synchronize/custom-match.md){target=_blank} sendet dann die `product-asset` Zuordnungen an die Commerce Optimizer, wo sie als Produktebenen gespeichert werden.
 
 * **Von[!DNL Adobe Commerce Optimizer]**: Wenn ein Produkt in [!DNL Commerce Optimizer] aktualisiert wird, fließt das Ereignis über die Adobe-Pipeline zum Assets Integration Service. Der Service synchronisiert alle übereinstimmenden Asset-Zuordnungen zurück mit der [!DNL Adobe Commerce Optimizer].
 
@@ -39,7 +39,7 @@ Stellen Sie vor dem Konfigurieren der Integration Folgendes sicher:
 
 ## Onboarding
 
-Um die AEM Assets-Integration mit [!DNL Commerce Optimizer] zu integrieren, müssen [ ein Support-Ticket erstellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Um die AEM Assets-Integration mit [!DNL Commerce Optimizer] zu integrieren, müssen [&#x200B; ein Support-Ticket erstellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 Der Adobe-Support verwendet die Informationen in Ihrem Ticket, um Ihren Mandanten beim Assets Integration Service zu registrieren und die Integration zu konfigurieren.
 
@@ -81,7 +81,7 @@ Die [!DNL Commerce Optimizer]-Integration hat die folgenden Einschränkungen:
 
 ### Konfigurieren von AEM Assets
 
-Der Installations- und Konfigurationsprozess von AEM Assets für [!DNL Commerce Optimizer] entspricht dem für Adobe Commerce as a Cloud Service. Die [ Schritte finden Sie unter „Konfigurieren des AEM Assets-Projekts zur Unterstützung ](configure-aem.md) Commerce-Metadaten“.
+Der Installations- und Konfigurationsprozess von AEM Assets für [!DNL Commerce Optimizer] entspricht dem für Adobe Commerce as a Cloud Service. Die [&#x200B; Schritte finden Sie unter „Konfigurieren des AEM Assets-Projekts zur Unterstützung &#x200B;](configure-aem.md) Commerce-Metadaten“.
 
 Stellen Sie sicher, dass Ihre AEM Assets-Umgebung bereit ist:
 
@@ -95,13 +95,13 @@ Um die Synchronisierung von Produkten und Assets zu aktivieren, konfigurieren Si
 
 ### Schritt 1: Aktivieren von Dynamic Media mit OpenAPI
 
-Dynamic Media mit OpenAPI muss in Ihrer AEM Assets-Umgebung aktiviert sein. Mit Produktvisualisierungen und neuen AEM Assets-Lizenzen können Sie diese Funktion über Cloud Manager im Self-Service aktivieren. Ältere AEM Assets-Lizenzen benötigen Adobe-Support, um sie zu aktivieren. Die [ Schritte zur Aktivierung finden Sie ](configure-aem.md#prerequisites) „Konfigurieren des AEM Assets-Projekts“.
+Dynamic Media mit OpenAPI muss in Ihrer AEM Assets-Umgebung aktiviert sein. Mit Produktvisualisierungen und neuen AEM Assets-Lizenzen können Sie diese Funktion über Cloud Manager im Self-Service aktivieren. Ältere AEM Assets-Lizenzen benötigen Adobe-Support, um sie zu aktivieren. Die [&#x200B; Schritte zur Aktivierung finden Sie &#x200B;](configure-aem.md#prerequisites) „Konfigurieren des AEM Assets-Projekts“.
 
 ### Schritt 2: Optional. Konfigurieren des Commerce-Metadatenprofils
 
 Richten Sie das Metadatenprofil in AEM Assets ein, um Commerce-spezifische Metadaten zu speichern.
 
-Detaillierte [ finden Sie unter „Konfigurieren ](configure-aem.md#step-2-optional-configure-a-metadata-profile) Metadatenprofils“.
+Detaillierte [&#x200B; finden Sie unter „Konfigurieren &#x200B;](configure-aem.md#step-2-optional-configure-a-metadata-profile) Metadatenprofils“.
 
 ### Schritt 3: Anwenden von Metadaten auf Assets
 
@@ -113,13 +113,13 @@ Das Asset muss den Status **Genehmigt** aufweisen, damit die Daten mit dem Trigg
 
 >[!CAUTION]
 >
-> Weisen Sie die `AEM-Assets` Ihrer [Katalogansicht“ ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). Wenn die Ebene nicht zugewiesen ist, können Produktbilddaten unerwartet überschrieben werden.
+> Weisen Sie die `AEM-Assets` Ihrer [Katalogansicht“ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). Wenn die Ebene nicht zugewiesen ist, können Produktbilddaten unerwartet überschrieben werden.
 
 ## Synchronisierung
 
 Nach der Konfiguration synchronisiert die Integration `product-asset` automatisch.
 
-Weitere Informationen finden [ unter ](../synchronize/custom-match.md)Benutzerdefinierter automatischer Abgleich“.
+Weitere Informationen finden [&#x200B; unter &#x200B;](../synchronize/custom-match.md)Benutzerdefinierter automatischer Abgleich“.
 
 ### Beispiel für Übereinstimmung nach SKU-Workflow
 
