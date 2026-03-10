@@ -17,4 +17,4 @@ ht-degree: 7%
 - Mobile App verwalten {#manage-app}
    - [Mobile App verwalten](manage-app.md)
    - [Fehlerbehebung](troubleshooting.md)
-- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
