@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: fd7ee8757758d63f0fadf284657e4756f878102f
+source-git-commit: ab635fecb7b82294bd4a4fd045ed71931e9d265d
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1198'
 ht-degree: 0%
 
 ---
@@ -132,6 +132,19 @@ Integrations-Services beziehen sich auf Funktionen, die Ihre Commerce-Instanz mi
          <em>Vereinfachen Sie die Verwaltung digitaler Assets mithilfe eines Systems, das für die Verwaltung von Rich-Media-Inhalten mit Adobe Experience Manager integriert ist.</em>
       </p>
    </td>
+   <td valign="top">
+      <a href="../app-management/overview.md">
+      <img alt="App-Verwaltung" src="../assets/icons/DataSetting.svg" width="40">
+      </a>
+      <div>
+         <a href="../app-management/overview.md">
+         <strong>App-Verwaltung</strong>
+         </a>
+      </div>
+      <p>
+         <em>Verknüpfen, Konfigurieren und Verwalten von App Builder-Anwendungen mit Ihrer Commerce-Instanz über die Admin-Benutzeroberfläche.</em>
+      </p>
+   </td>
 </tr>
 </table>
 
@@ -168,11 +181,11 @@ Mit Daten-Tools können Sie den Informationsfluss zwischen Ihrer Commerce-Instan
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="Überwachen der Datensynchronisation" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>Daten-Management-Dashboard</strong>
          </a>
       </div>
@@ -198,7 +211,7 @@ Unabhängig davon, ob Sie Ihr Unternehmen skalieren, Kundenerlebnisse verbessern
 | Erstellen personalisierter Omni-Channel-Erlebnisse | Ihre Commerce-Daten sind isoliert, sodass Sie keine personalisierten Erlebnisse kanalübergreifend bereitstellen können. | Verwenden Sie [Datenverbindung](../data-connection/overview.md) um Verhaltens-, Transaktions- und Profildaten an Adobe Experience Platform zu senden. Erstellen Sie anspruchsvolle Kundensegmente, erstellen Sie Kampagnen mit Transaktionsabbruch, sprechen Sie Lookalike-Zielgruppen an und analysieren Sie saisonale Trends auf Ihrem gesamten Kunden-Journey. |
 | Optimierung der Verwaltung digitaler Assets | Die Verwaltung von Produkt-Images und Rich-Media-Inhalten über mehrere Systeme hinweg ist zeitaufwendig und fehleranfällig. | Die [AEM Assets-Integration](../aem-assets-integration/overview.md) bietet zentralisiertes Asset-Management, indem Adobe Commerce mit einem Adobe Experience Manager Assets-Projekt verbunden wird, Workflows vereinfacht und konsistente Markenerlebnisse auf allen Touchpoints sichergestellt werden. |
 | Optimieren der Zahlungsverarbeitung | Begrenzte Zahlungsoptionen und schlechte Zahlungserfahrungen schaden der Kundenzufriedenheit und der Konversion. | [Payment Services](../payment-services/guide-overview.md) bietet mehrere Zahlungsmethoden, einschließlich zinsfreier Raten, mit einem einheitlichen Dashboard zur Verwaltung von Zahlungen, Bestellungen und Rechnungen. |
-| Datensynchronisierung skaliert verwalten | Die ressourcenintensive Indizierung verlangsamt Ihre Site, und Sie können Probleme bei der Datensynchronisation nicht einfach verfolgen. | [SaaS Data Export](../data-export/overview.md), [SaaS Price Indexer](../price-index/price-indexing.md) und das [Data Management Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) synchronisieren automatisch Katalog-, Auftrags- und Bestandsdaten, entlasten Preisberechnungen auf die Cloud-Infrastruktur von Adobe und bieten Echtzeiteinblicke in den Synchronisierungsstatus. |
+| Datensynchronisierung skaliert verwalten | Die ressourcenintensive Indizierung verlangsamt Ihre Site, und Sie können Probleme bei der Datensynchronisation nicht einfach verfolgen. | [SaaS Data Export](../data-export/overview.md), [SaaS Price Indexer](../price-index/price-indexing.md) und das [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) synchronisieren automatisch Katalog-, Auftrags- und Bestandsdaten, entlasten Preisberechnungen auf die Cloud-Infrastruktur von Adobe und bieten Echtzeiteinblicke in den Synchronisierungsstatus. |
 | Verlorene Kunden zurückgewinnen und Renditen reduzieren | Hohe Kundenabwanderungs- und Produktrenditen wirken sich negativ auf die Rentabilität aus. | Kombinieren Sie [Datenverbindung](../data-connection/overview.md) mit Adobe Journey Optimizer und Real-Time CDP, um Rückgabemuster zu identifizieren, Win-Back-Kampagnen zu erstellen, Kundinnen und Kunden nach Verhalten zu segmentieren und personalisierte Rückgewinnungskampagnen über E-Mail und SMS zu senden. |
 | Treffen von datengesteuerten Merchandising-Entscheidungen | Sie sind sich nicht sicher, welche Produkte beworben werden sollen und wann Werbeaktionen durchgeführt werden sollen. | [Live Search](../live-search/overview.md) bietet Suchleistungseinblicke und Merchandising-Tools für den Zugriff auf Schlüsselmetriken, die Analyse von Suchbegriffen und die Verwendung intelligenter Merchandising-Regeln, um Produkte basierend auf echtem Kundenverhalten und Geschäftszielen zu fördern oder zu begraben. |
 | Einhaltung sensibler Daten | Sie müssen vertrauliche Kundendaten verarbeiten und gleichzeitig die HIPAA-Konformität gewährleisten. | [Datenverbindung](../data-connection/overview.md) ist HIPAA-fähig, sodass Sie Backoffice-Daten mit Experience Platform freigeben können, während Sie die Compliance beibehalten und Datenschutzanfragen systematisch bearbeiten. |

@@ -1,0 +1,71 @@
+---
+title: Installieren und Zugreifen auf [!DNL App Management]
+description: Voraussetzungen und Zugriffsanforderungen für die Verwendung von Adobe Commerce [!DNL App Management].
+feature: App Builder, Extensibility, Integration
+source-git-commit: ab635fecb7b82294bd4a4fd045ed71931e9d265d
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 1%
+
+---
+
+# Installieren und Zugreifen auf [!DNL App Management]
+
+[!DNL App Management] für geeignete Commerce-Instanzen ist im Commerce-Admin verfügbar. Die Verfügbarkeit hängt von Ihrem Bereitstellungstyp ab.
+
+## Verfügbarkeit
+
+Nachdem Sie die folgenden Anforderungen erfüllt haben, wählen Sie unten die entsprechende Registerkarte für Ihren Bereitstellungstyp aus, um zu sehen, ob [!DNL App Management] eine Installation erfordert oder bereits auf Ihrer Instanz verfügbar ist.
+
+## Voraussetzungen
+
+Bevor Sie eine App verknüpfen, stellen Sie Folgendes sicher:
+
+| Anforderung | Beschreibung |
+|-------------|-------------|
+| **Administratorzugriff** | Commerce-Admin mit [!DNL App Management] Berechtigungen |
+| **Bereitgestellte App** | App Builder-Anwendung, die in Ihrem Unternehmen bereitgestellt wird und eine Verbindung herstellen kann |
+| **Organisationszugriff** | Zugriff auf die Adobe-Organisation, in der die App bereitgestellt wird |
+
+>[!BEGINTABS]
+
+>[!TAB Adobe Commerce as a Cloud Service]
+
+[!DNL App Management] ist automatisch auf [!DNL Adobe Commerce as a Cloud Service] verfügbar. Es ist keine Installation erforderlich. [Aktivieren Sie sie in der Admin](#access-app-management) und beginnen Sie mit der Verknüpfung von Apps.
+
+>[!TAB Adobe Commerce on Cloud (PaaS) und On-Premise]
+
+* **Adobe Commerce 2.4.8 und höher** - [!DNL App Management] wird automatisch einbezogen. Es ist keine Installation erforderlich.
+
+* **Adobe Commerce 2.4.5 bis 2.4.7**—Installieren Sie die [!DNL Admin UI SDK] (einschließlich [!DNL App Management]) mit dem Composer:
+
+  ```bash
+  composer require "magento/commerce-backend-sdk": ">=3.3"
+  ```
+
+  Führen Sie dann aus:
+
+  ```bash
+  composer update
+  bin/magento setup:upgrade
+  bin/magento indexer:reindex
+  bin/magento cache:clean
+  ```
+
+Weitere Informationen finden [ unter „Installieren oder Aktualisieren der Adobe Commerce Admin](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/){target="_blank"}Benutzeroberfläche - SDK&quot;.
+
+>[!ENDTABS]
+
+## [!DNL App Management]
+
+1. Melden Sie sich beim Commerce Admin an.
+
+1. Navigieren Sie zu **[!UICONTROL Apps]** > **[!UICONTROL App Management]**.
+
+Die [!DNL App Management] wird angezeigt. Hier können Sie App Builder-Programme verknüpfen, konfigurieren und verwalten.
+
+## Installieren von App Builder Apps
+
+Wenn Sie eine App Builder-App von Adobe Exchange installieren müssen (z. B. eine vordefinierte Integration oder eine Marketplace-App), finden Sie unter [Installieren von App Builder-Apps von Adobe Exchange](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} schrittweise Anweisungen.
+
+Nachdem eine App installiert und bereitgestellt wurde, verwenden Sie [!DNL App Management] , um [sie mit Ihrer Commerce-Instanz zu verknüpfen](manage-app.md#associate-an-app) und ihre Einstellungen zu konfigurieren.
