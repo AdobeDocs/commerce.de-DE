@@ -52,7 +52,7 @@ Bevor Sie eine App verknüpfen, stellen Sie Folgendes sicher:
   bin/magento cache:clean
   ```
 
-Weitere Informationen finden [ unter „Installieren oder Aktualisieren der Adobe Commerce Admin](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/){target="_blank"}Benutzeroberfläche - SDK&quot;.
+Weitere Informationen finden [&#x200B; unter „Installieren oder Aktualisieren der Adobe Commerce Admin](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/){target="_blank"}Benutzeroberfläche - SDK&quot;.
 
 >[!ENDTABS]
 
