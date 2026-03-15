@@ -3,9 +3,9 @@ title: Verwalten von Assets
 description: Verwenden Sie die AEM Assets-Integration für Commerce, um Medien-Assets für Ihre Storefront zu verwalten.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,13 @@ Sie können die folgenden Medientypen verwalten, nachdem die AEM Assets-Integrat
 * Inhaltsbilder
 * Produktvideos
 * Kategoriebilder
+
+**Aktualisieren von Produktbildern?**
+
+Produktbilder werden über übereinstimmende Regeln verknüpft:
+
+* Informationen zum Hinzufügen oder Aktualisieren von Produkt-Assets in AEM Assets (Metadaten, SKU-Verknüpfung, Genehmigung) finden Sie unter [Standardmäßige automatische Zuordnung](synchronize/default-match.md).
+* Informationen zu Kategoriebildern oder Page Builder-Inhalten finden Sie unter [Manuelle Asset-Auswahl](synchronize/asset-selector-integration.md).
 
 ## Produktbilder
 
@@ -41,13 +48,20 @@ Produktbilder werden automatisch anhand vorkonfigurierter übereinstimmender Reg
    >
    > Es wird eine Meldung angezeigt, dass die Integration aktiviert ist, wodurch dies zu einem **schreibgeschützten** wird, da die Bildverwaltung im DAM zentralisiert ist.
 
+   Um Produkt-Assets zu konfigurieren (Bilder mit SKUs verknüpfen), öffnen Sie Ihre AEM Assets-Autoreninstanz und klicken Sie in der **auf** Assets. Siehe [Standardmäßiger automatischer Abgleich](synchronize/default-match.md) für die Konfigurationsschritte für Metadaten.
+
 ### Verwalten von Produktbildern in AEM Assets
 
 Um produktbezogene Bilder zu verwalten, müssen alle Änderungen direkt in **AEM Assets vorgenommen**. Dieser Prozess ist vollständig automatisiert, sodass alle Änderungen mit Adobe Commerce synchronisiert werden, ohne dass ein manuelles Eingreifen erforderlich ist.
 
+Informationen zum Verknüpfen von Assets mit Produkten in AEM Assets (einschließlich Metadatenkonfiguration und -validierung) finden Sie unter folgenden Themen:
+
+* [Standardmäßige automatische Zuordnung](synchronize/default-match.md)
+* [Benutzerdefinierte automatische Zuordnung](synchronize/custom-match.md).
+
 ### Synchronisations-SLAs
 
-Weitere [&#x200B; zu diesem Thema finden &#x200B;](get-started/setup-synchronization.md#synchronization-sla) unter Synchronisierung mit SLA .
+Informationen zum Synchronisierungszeitpunkt finden Sie unter [Synchronisierung von SLA](get-started/setup-synchronization.md#synchronization-sla).
 
 ## Inhaltsbilder
 
@@ -79,7 +93,7 @@ Die Verknüpfung mit dem ausgewählten Bild wird in Adobe Commerce als direkte U
 
 >[!TIP]
 >
-> [DA.live (Dokumenterstellung)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=de#dalive-document-authoring){target=_blank} bietet außerdem einen Asset-Selektor zum Anreichern von Daten.
+> [DA.live (Dokumenterstellung)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} bietet außerdem einen Asset-Selektor zum Anreichern von Daten.
 
 ## Produktvideos
 
@@ -119,7 +133,7 @@ Diese Integration stellt sicher, dass Händler Produktvideos mühelos skalierbar
 
 ### Synchronisations-SLAs
 
-Weitere [&#x200B; zu diesem Thema finden &#x200B;](get-started/setup-synchronization.md#synchronization-sla) unter Synchronisierung mit SLA .
+Informationen zum Synchronisierungszeitpunkt finden Sie unter [Synchronisierung von SLA](get-started/setup-synchronization.md#synchronization-sla).
 
 ## Kategoriebilder
 
@@ -149,14 +163,16 @@ Nachdem Sie den [AEM-Asset-Selektor](synchronize/asset-selector-integration.md) 
 
 1. Klicken Sie auf **[!UICONTROL Save]** und fahren Sie fort.
 
-   Weitere Informationen zum Erstellen einer Kategorie finden Sie unter [Kategorieinhalt vervollständigen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) im **Handbuch zur Katalogverwaltung in Commerce**.
+   Weitere Informationen zum Erstellen einer Kategorie finden Sie unter [Kategorieinhalt vervollständigen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) im **Handbuch zur Katalogverwaltung in Commerce**.
 
 ## Aktualisieren von Assets
 
 Nachdem Sie ein Asset in AEM Assets aktualisiert und genehmigt haben, werden die Aktualisierungen mithilfe der Funktion für den automatischen Abgleich automatisch an Adobe Commerce gesendet. Dieser Prozess wird bei der Asset-Genehmigung ausgelöst. Um sicherzustellen, dass alle endgültigen Änderungen und Metadatenaktualisierungen enthalten sind, müssen Sie das Asset erneut verarbeiten, bevor Sie es genehmigen.
 
-Weitere Informationen finden Sie in der folgenden Dokumentation zu AEM Assets.
+Informationen zum Commerce-seitigen Workflow zum Verknüpfen von Assets mit Produkten über Metadaten finden Sie unter [Standardmäßiger automatischer Abgleich](synchronize/default-match.md).
 
-* [Erneute Verarbeitung digitaler Assets](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+Informationen zu AEM Assets-Verfahren finden Sie in der folgenden Dokumentation:
 
-* [Genehmigen eines Assets](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Erneute Verarbeitung digitaler Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+
+* [Genehmigen eines Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

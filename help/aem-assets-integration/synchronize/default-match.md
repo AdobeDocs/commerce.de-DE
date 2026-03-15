@@ -3,9 +3,9 @@ title: Standardmäßige automatische Zuordnung
 description: Erfahren Sie, wie die standardmäßige Regel für den automatischen Abgleich eine nahtlose Synchronisierung zwischen Adobe Commerce und der AEM Assets-Integration ermöglicht, um sicherzustellen, dass Assets automatisch mit den richtigen Merchandising-Entitäten verknüpft werden.
 feature: CMS, Media, Integration
 exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
-source-git-commit: d426c7878f7a66fe1047673be7c5bf65ae1949a7
+source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,10 @@ Die AEM Assets-Integration für Commerce bietet einen standardmäßigen automati
 
 Wenn die Regel zum Abgleichen von **[!UICONTROL Match by product SKU]** in der Commerce Admin konfiguriert ist, werden Commerce-Asset-Dateien automatisch von AEM Assets mit Ihrem Commerce-Projekt synchronisiert, basierend auf den Asset-Metadaten, die für jede Datei konfiguriert wurden. Sie konfigurieren die Metadaten auf der Registerkarte &quot;AEM **Commerce** in der **AEM Assets Author**-Umgebung:
 
+1. Öffnen Sie Ihre AEM Assets-Autoreninstanz (die URL wird für Ihr Projekt in derselben IMS-Organisation wie Adobe Commerce bereitgestellt).
+
+1. Klicken Sie im Hauptnavigationsbildschirm auf **Assets**, um auf die Benutzeroberfläche von Digital Asset Management (DAM) zuzugreifen.
+
 1. Aktualisieren Sie in AEM Assets die Bildmetadaten, um die Adobe Commerce-Verknüpfung hinzuzufügen, indem Sie das Feld `Eligible for Commerce` auf `Yes` festlegen.
 
    ![Beispiel-Metadaten](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
@@ -42,7 +46,7 @@ Wenn die Regel zum Abgleichen von **[!UICONTROL Match by product SKU]** in der C
    >
    > Wenn ein Asset für mehrere Produkte verwendet wird, konfigurieren Sie die Metadaten für jede zugehörige SKU.
 
-1. Legen Sie auf der Registerkarte `Basic` den Standardwert für das Feld _[!UICONTROL Review Status]_&#x200B;auf `approved` fest.
+1. Legen Sie auf der Registerkarte `Basic` den Standardwert für das Feld _[!UICONTROL Review Status]_auf `approved` fest.
 
    ![Beispiel-Metadaten](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
