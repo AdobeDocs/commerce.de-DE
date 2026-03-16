@@ -30,7 +30,7 @@ Bevor Sie eine App verknüpfen, stellen Sie Folgendes sicher:
 
 In diesem Video erfahren Sie, wie Sie eine App mit einer Commerce-Instanz verknüpfen und Einstellungen konfigurieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478944)
+>[!VIDEO](https://video.tv.adobe.com/v/3478964?captions=ger)
 
 ## App verknüpfen
 
