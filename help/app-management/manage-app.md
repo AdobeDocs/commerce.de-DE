@@ -2,7 +2,7 @@
 title: Mobile App verwalten
 description: Verknüpfen, Konfigurieren und Aufheben der Verknüpfung von App Builder-Programmen mit Ihrer Commerce-Instanz.
 feature: App Builder, Extensibility, Integration
-source-git-commit: ab635fecb7b82294bd4a4fd045ed71931e9d265d
+source-git-commit: 4a5174d074a020f6199ed121e0289939612bc5c2
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Ein App Manager verknüpft ein App Builder-Programm mit seiner Commerce-Instanz. Konfigurationsformulare werden basierend auf dem Schema der App dynamisch gerendert, sodass keine benutzerdefinierte Entwicklung der Admin-Benutzeroberfläche erforderlich ist. App Manager konfiguriert Einstellungen über Formulare, die Commerce automatisch generiert.
 
-![App-Verwaltung](assets/app-management-ui.png){width="500" zoomable="yes"}
+![App-Verwaltung](assets/app-management-view.png){width="500" zoomable="yes"}
 
 ## Voraussetzungen
 
@@ -30,7 +30,7 @@ Bevor Sie eine App verknüpfen, stellen Sie Folgendes sicher:
 
 In diesem Video erfahren Sie, wie Sie eine App mit einer Commerce-Instanz verknüpfen und Einstellungen konfigurieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478964?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## App verknüpfen
 
