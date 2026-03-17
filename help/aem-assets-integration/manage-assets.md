@@ -3,9 +3,9 @@ title: Verwalten von Assets
 description: Verwenden Sie die AEM Assets-Integration für Commerce, um Medien-Assets für Ihre Storefront zu verwalten.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
+source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Adobe Commerce bietet Page Builder als **Content Management System (CMS)** für 
 
 ### Verwenden der AEM-Asset-Auswahl in Page Builder
 
-[!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} So verwenden Sie den **AEM Asset-Selektor** zum Einbetten von Bildern:
+[!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} Um den **AEM Asset Selector** zum Einbetten von Bildern zu verwenden, stellen Sie sicher, dass die Benutzer über die erforderlichen [Berechtigungen und IMS-Authentifizierung](get-started/permissions.md) verfügen.
 
 1. Navigieren Sie zu einem beliebigen Abschnitt in **Adobe Commerce Admin** der `content enrichment` mit **Page Builder** unterstützt.
 
@@ -93,7 +93,7 @@ Die Verknüpfung mit dem ausgewählten Bild wird in Adobe Commerce als direkte U
 
 >[!TIP]
 >
-> [DA.live (Dokumenterstellung)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=de#dalive-document-authoring){target=_blank} bietet außerdem einen Asset-Selektor zum Anreichern von Daten.
+> [DA.live (Dokumenterstellung)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} bietet außerdem einen Asset-Selektor zum Anreichern von Daten.
 
 ## Produktvideos
 
@@ -141,7 +141,7 @@ Mit Adobe Commerce können Händler Bilder mit Produktkategorien verknüpfen und
 
 ### Verwenden des AEM Asset-Wählers für Kategoriebilder
 
-Nachdem Sie den [AEM-Asset-Selektor](synchronize/asset-selector-integration.md) konfiguriert haben, können Sie damit Assets zu Ihren Inhaltskategorien hinzufügen.
+Nachdem Sie den [AEM-Asset-Selektor konfiguriert ](synchronize/asset-selector-integration.md) und sichergestellt haben, dass Benutzer über die erforderlichen [Berechtigungen und IMS-Authentifizierung](get-started/permissions.md) verfügen, können Sie damit Assets zu Ihren Katalogkategorieinhalten hinzufügen.
 
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 
@@ -163,7 +163,7 @@ Nachdem Sie den [AEM-Asset-Selektor](synchronize/asset-selector-integration.md) 
 
 1. Klicken Sie auf **[!UICONTROL Save]** und fahren Sie fort.
 
-   Weitere Informationen zum Erstellen einer Kategorie finden Sie unter [Kategorieinhalt vervollständigen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) im **Handbuch zur Katalogverwaltung in Commerce**.
+   Weitere Informationen zum Erstellen einer Kategorie finden Sie unter [Kategorieinhalt vervollständigen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) im **Handbuch zur Katalogverwaltung in Commerce**.
 
 ## Aktualisieren von Assets
 
@@ -173,6 +173,6 @@ Informationen zum Commerce-seitigen Workflow zum Verknüpfen von Assets mit Prod
 
 Informationen zu AEM Assets-Verfahren finden Sie in der folgenden Dokumentation:
 
-* [Erneute Verarbeitung digitaler Assets](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [Erneute Verarbeitung digitaler Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [Genehmigen eines Assets](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Genehmigen eines Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
