@@ -46,7 +46,7 @@ _11. März 2026_
 
 ![Neues Problem](../assets/new.svg)<!-- Issue PAY-1041 --> Unterstützung für Adobe Commerce 2.4.9-beta1 und PHP 8.5 hinzugefügt.
 
-![Neues Problem](../assets/new.svg)<!-- Issue ACCS-169 --> Die Felder **[!UICONTROL Program ID]**, **[!UICONTROL Environment ID]** und [**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank} werden jetzt basierend auf der IMS-Sitzung des [ automatisch als Dropdown-](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank} ausgefüllt.
+![Neues Problem](../assets/new.svg)<!-- Issue ACCS-169 --> Die Felder **[!UICONTROL Program ID]**, **[!UICONTROL Environment ID]** und [**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank} werden jetzt basierend auf der IMS-Sitzung des [&#x200B; automatisch als Dropdown-](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank} ausgefüllt.
 
 ## v1.2.14
 
@@ -78,7 +78,7 @@ _15. Januar 2026_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
 
-![Es wurde ](../assets/fix.svg)<!-- Issue ACAP-1180 --> Problem behoben: Die Produktbearbeitungsseite wurde verbessert, indem Dateigröße und -abmessungen für AEM-Assets ausgeblendet wurden, da sie vom CDN dynamisch optimiert werden. Jetzt werden Seiten korrekt vorab gerendert, wenn die AEM Assets-Integration aktiviert ist.
+![Es wurde &#x200B;](../assets/fix.svg)<!-- Issue ACAP-1180 --> Problem behoben: Die Produktbearbeitungsseite wurde verbessert, indem Dateigröße und -abmessungen für AEM-Assets ausgeblendet wurden, da sie vom CDN dynamisch optimiert werden. Jetzt werden Seiten korrekt vorab gerendert, wenn die AEM Assets-Integration aktiviert ist.
 
 ## v1.2.10
 
@@ -166,7 +166,7 @@ _23. April 2025_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
 
-![Neues Problem](../assets/new.svg)<!-- Issue ACAP-955 --> Anstelle der AEM[Bereitstellungs-URL ](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url) jetzt eine benutzerdefinierte Domain-URL verwendet werden. Wenn ein Händler in seinem AEM **Dashboard einen** benutzerdefinierten Domain-Namen) festlegt, muss diese **benutzerdefinierte Domain-URL** in Commerce hinzugefügt werden.
+![Neues Problem](../assets/new.svg)<!-- Issue ACAP-955 --> Anstelle der AEM[Bereitstellungs-URL &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url) jetzt eine benutzerdefinierte Domain-URL verwendet werden. Wenn ein Händler in seinem AEM **Dashboard einen** benutzerdefinierten Domain-Namen) festlegt, muss diese **benutzerdefinierte Domain-URL** in Commerce hinzugefügt werden.
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue ACAP-987 --> Verbesserte Gesamtprotokolle für AEM Assets-Synchronisierungsprozesse.
 

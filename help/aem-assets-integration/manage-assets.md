@@ -141,7 +141,7 @@ Mit Adobe Commerce können Händler Bilder mit Produktkategorien verknüpfen und
 
 ### Verwenden des AEM Asset-Wählers für Kategoriebilder
 
-Nachdem Sie den [AEM-Asset-Selektor konfiguriert ](synchronize/asset-selector-integration.md) und sichergestellt haben, dass Benutzer über die erforderlichen [Berechtigungen und IMS-Authentifizierung](get-started/permissions.md) verfügen, können Sie damit Assets zu Ihren Katalogkategorieinhalten hinzufügen.
+Nachdem Sie den [AEM-Asset-Selektor konfiguriert &#x200B;](synchronize/asset-selector-integration.md) und sichergestellt haben, dass Benutzer über die erforderlichen [Berechtigungen und IMS-Authentifizierung](get-started/permissions.md) verfügen, können Sie damit Assets zu Ihren Katalogkategorieinhalten hinzufügen.
 
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 
