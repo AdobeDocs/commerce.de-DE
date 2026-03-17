@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Benutzerberechtigungen und IMS
 
-**IMS** (Adobe Identity Management System) ist die Authentifizierungsebene. Für Adobe Commerce as a Cloud Service ist die IMS-Authentifizierung standardmäßig im Admin-Bereich aktiviert. Für Adobe Commerce in der Cloud oder lokal ist IMS optional. [Aktivieren von IMS für Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html){target=_blank} bietet eine erweiterte Konfigurationsoberfläche (Asset-Selektor, automatisch ausgefüllte Dropdown-Listen). Sie können die Integration jedoch auch ohne IMS konfigurieren, indem Sie **Programm-ID** und **Umgebungs-ID** manuell eingeben.
+**IMS** (Adobe Identity Management System) ist die Authentifizierungsebene. Für Adobe Commerce as a Cloud Service ist die IMS-Authentifizierung standardmäßig im Admin-Bereich aktiviert. Für Adobe Commerce in der Cloud oder lokal ist IMS optional. [Aktivieren von IMS für Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html?lang=de){target=_blank} bietet eine erweiterte Konfigurationsoberfläche (Asset-Selektor, automatisch ausgefüllte Dropdown-Listen). Sie können die Integration jedoch auch ohne IMS konfigurieren, indem Sie **Programm-ID** und **Umgebungs-ID** manuell eingeben.
 
 Die AEM Assets-Integration erfordert auch bestimmte **Adobe Admin Console-Produktprofile** wenn Sie IMS verwenden. Benutzende, die die Integration in Commerce Admin konfigurieren, benötigen das Produktprofil **AEM Assets DM OpenAPI Users - delivery** oder das Produktprofil **author** als Fallback. Dies wird über Admin Console-Produktprofile in der IMS-Organisation des Benutzers gesteuert und ermöglicht:
 
@@ -54,7 +54,7 @@ Die IMS-Authentifizierung ist standardmäßig aktiviert. Fügen Sie den Benutzer
 
 >[!NOTE]
 >
-> Benutzende müssen auch zu Commerce und AEM Assets hinzugefügt werden. Siehe [Hinzufügen von Benutzenden zu AEM Assets oder Produktvisualisierungen](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} im _Benutzerhandbuch und Identity Management_ für die vollständige Einrichtung.
+> Benutzende müssen auch zu Commerce und AEM Assets hinzugefügt werden. Siehe [Hinzufügen von Benutzenden zu AEM Assets oder Produktvisualisierungen](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} im _Benutzerhandbuch und Identity Management_ für die vollständige Einrichtung.
 
 ![Admin Console-Produktprofil für AEM Assets-Versand](../assets/aem-assets-delivery-product-profile.png){width="600" zoomable="yes"}
 
@@ -66,9 +66,9 @@ Die **IMS-Client-**) ist für PaaS erforderlich, um den Asset-Wähler zu aktivie
 
 So verwenden Sie den Asset-Selektor und automatisch ausgefüllte Konfigurationsfelder (Programm-ID, Umgebungs-ID, Domain-Zuordnung):
 
-1. [Adobe IMS für Commerce aktivieren](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html){target=_blank} sodass der Commerce-Administrator die IMS-Authentifizierung verwendet und die Admin Console-Produktprofile der Benutzenden lesen kann.
+1. [Adobe IMS für Commerce aktivieren](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html?lang=de){target=_blank} sodass der Commerce-Administrator die IMS-Authentifizierung verwendet und die Admin Console-Produktprofile der Benutzenden lesen kann.
 
-1. [Öffnen Sie ein Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases), um eine benutzerdefinierte IMS-Client-ID für den Asset-Wähler anzufordern.
+1. [Öffnen Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases), um eine benutzerdefinierte IMS-Client-ID für den Asset-Wähler anzufordern.
 
 1. Fügen Sie in der [Adobe Admin Console](https://adminconsole.adobe.com/) den Benutzer dem Produktprofil **AEM Assets DM OpenAPI Users - delivery** oder dem Produktprofil **author** (z. B. `<environment-name> - author - <program-id> - <environment-id>`) als Ausweichlösung hinzu, wenn der Benutzer nicht über das Produktprofil AEM-Versand in seiner Admin Console verfügt.
 
@@ -80,5 +80,5 @@ Ohne IMS können Sie die Integration weiterhin konfigurieren, indem Sie die Prog
 
 * [Konfigurieren von IMS-Benutzerberechtigungen für die AEM Assets-Integration](setup-synchronization.md) - Verbinden Sie Commerce mit AEM Assets und konfigurieren Sie übereinstimmende Regeln.
 * [Manuelle Asset-Auswahl](../synchronize/asset-selector-integration.md) - Verwenden Sie den Asset-Selektor für Kategoriebilder und Page Builder.
-* [Benutzer zu AEM Assets oder Produktvisualisierungen hinzufügen](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} - Fügen Sie ACCS zuerst Benutzer zu Commerce und AEM Cloud Manager (Geschäftsinhaber, Bereitstellungs-Manager) hinzu. Das Profil **AEM Assets DM OpenAPI Users - delivery** (oder **author**-Profil als Fallback) ist eine zusätzliche Anforderung für die Asset-Wähler- und Auto-Ausfüllen-Funktionen.
-* [Weisen Sie Team-Mitglieder der AEM-Bereitstellungsebene zu](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}. AEM-Dokumentation für den Versandzugriff.
+* [Benutzer zu AEM Assets oder Produktvisualisierungen hinzufügen](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} - Fügen Sie ACCS zuerst Benutzer zu Commerce und AEM Cloud Manager (Geschäftsinhaber, Bereitstellungs-Manager) hinzu. Das Profil **AEM Assets DM OpenAPI Users - delivery** (oder **author**-Profil als Fallback) ist eine zusätzliche Anforderung für die Asset-Wähler- und Auto-Ausfüllen-Funktionen.
+* [Weisen Sie Team-Mitglieder der AEM-Bereitstellungsebene zu](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}. AEM-Dokumentation für den Versandzugriff.
