@@ -388,7 +388,7 @@ Während der Implementierung erstellt und ändert der Agent Blockdateien. Beobac
 
 Fügen Sie den Produktüberprüfungsblock zur Produktseitenvorlage hinzu, damit er in allen PDPs angezeigt wird. Verwenden Sie den Document Authoring-Service (da.live), um den Block hinzuzufügen und zu konfigurieren.
 
-1. Öffnen Sie den Dokumenterstellungsdienst, z. B[ „da.live](https://da.live/)
+1. Öffnen Sie den Dokumenterstellungsdienst, z. B[&#x200B; „da.live](https://da.live/)
 
 1. Klicken Sie auf Ihren Projektbereich, öffnen Sie den Ordner **Produkte** und wählen Sie **Standard** (`products/default`) aus.
 
