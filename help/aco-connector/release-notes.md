@@ -2,9 +2,9 @@
 title: '[!DNL Adobe Commerce Optimizer Connector] Versionshinweise'
 description: Die neuesten Versionsinformationen für  [!DNL Adobe Commerce Optimizer Connector]  für Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 1509c55bf4611ce82e46c357fd77bbefa055927d
+source-git-commit: dc5bd916b93789b4a25f0bc16a40fdfc6604c6ea
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,20 @@ In diesen Versionshinweisen werden alle Versionen für die [!DNL Adobe Commerce 
 ![Neu](../assets/new.svg) Neue Funktionen
 ![Problem behoben](../assets/fix.svg) Fehlerbehebungen und Verbesserungen
 ![Bekanntes Problem](../assets/bug.svg) Bekannte Probleme
+
+
+## v1.0.11
+
+_10. März 2026_
+
+![Es wurde ](../assets/fix.svg) Kompatibilitätsproblem behoben, durch das der Zugriff auf die Seite &quot;Commerce Services Connector-Konfiguration“ über das Commerce Admin-System und die Konfigurationsmenüs blockiert wurde, wenn der Adobe Commerce Optimizer Connector auf einer Commerce-Instanz installiert ist.  Jetzt können Sie auf die Commerce Services Connector-Konfigurationsseite zugreifen, wenn beide Erweiterungen installiert sind. <!--MDEE-1322-->
+
+
+## v1.0.10
+
+_9. März 2026_
+
+![Fehlerbehebung](../assets/fix.svg) Wenn Sie auf die Seite „Status der Daten-Feed-Synchronisierung“ zugreifen, bevor Sie die Connector-Konfiguration abgeschlossen haben, werden Sie jetzt automatisch zur Seite „Connector-Konfiguration“ weitergeleitet. Dieser geführte Fluss stellt sicher, dass die Connector-Einrichtung abgeschlossen ist, und hilft, Fehler zu vermeiden, die durch fehlende Konfigurationseinstellungen verursacht werden, die zu fehlgeschlagenen oder unvollständigen Statuselementen führen könnten.<!--MDEE-1296-->
 
 ## v1.0.9
 
