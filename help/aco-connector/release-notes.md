@@ -2,14 +2,14 @@
 title: '[!DNL Adobe Commerce Optimizer Connector] Versionshinweise'
 description: Die neuesten Versionsinformationen für  [!DNL Adobe Commerce Optimizer Connector]  für Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
-source-git-commit: dc5bd916b93789b4a25f0bc16a40fdfc6604c6ea
+source-git-commit: 4da2776c561d88b5343442df84b691cb857fada3
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
 
-# Versionshinweise zu Adobe Commerce Optimizer
+# Versionshinweise zum Adobe Commerce Optimizer-Connector
 
 In diesen Versionshinweisen werden alle Versionen für die [!DNL Adobe Commerce Optimizer Connector] beschrieben. Sie enthalten:
 
@@ -22,7 +22,7 @@ In diesen Versionshinweisen werden alle Versionen für die [!DNL Adobe Commerce 
 
 _10. März 2026_
 
-![Es wurde &#x200B;](../assets/fix.svg) Kompatibilitätsproblem behoben, durch das der Zugriff auf die Seite &quot;Commerce Services Connector-Konfiguration“ über das Commerce Admin-System und die Konfigurationsmenüs blockiert wurde, wenn der Adobe Commerce Optimizer Connector auf einer Commerce-Instanz installiert ist.  Jetzt können Sie auf die Commerce Services Connector-Konfigurationsseite zugreifen, wenn beide Erweiterungen installiert sind. <!--MDEE-1322-->
+![Es wurde ](../assets/fix.svg) Kompatibilitätsproblem behoben, durch das der Zugriff auf die Seite &quot;Commerce Services Connector-Konfiguration“ über das Commerce Admin-System und die Konfigurationsmenüs blockiert wurde, wenn der Adobe Commerce Optimizer Connector auf einer Commerce-Instanz installiert ist.  Jetzt können Sie auf die Commerce Services Connector-Konfigurationsseite zugreifen, wenn beide Erweiterungen installiert sind. <!--MDEE-1322-->
 
 
 ## v1.0.10
