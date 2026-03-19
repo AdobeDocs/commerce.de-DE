@@ -122,7 +122,7 @@ In der folgenden Tabelle wird beschrieben, welche Daten auf jeder Bereichsebene 
 
 | Umfang | Daten exportiert | Notizen |
 | ------- | --------------- | ------- |
-| Website | Preise und Preisbücher | Jede Preisgruppe wird als „Preisbuch[ exportiert, wobei ](../optimizer/setup/pricebooks.md) Namenskonvention `website::customergroupcode` verwendet wird. Alle Kundengruppen für die Website sind enthalten. |
+| Website | Preise und Preisbücher | Jede Preisgruppe wird als „Preisbuch[&#x200B; exportiert, wobei &#x200B;](../optimizer/setup/pricebooks.md) Namenskonvention `website::customergroupcode` verwendet wird. Alle Kundengruppen für die Website sind enthalten. |
 | Shop-Ansicht | Produkte und Produktattribute | Jede Store-Ansicht erstellt eine separate Katalogquelle in [!DNL Adobe Commerce Optimizer]. |
 
 ### Aktivieren und Deaktivieren des Verhaltens
