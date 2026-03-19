@@ -24,9 +24,9 @@ Diese Versionshinweise enthalten Aktualisierungen der [!DNL Data Connection]-Erw
 
 Informationen zu Funktionsänderungen und -korrekturen im Zusammenhang mit Erweiterungen, die von der [!DNL Data Connection]-Erweiterung verwendet werden, finden Sie unter **Unterstützte Service-Updates**.
 
-Unter [Kommende Versionen](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) erfahren Sie mehr über Versionspläne und Support.
+Unter [Kommende Versionen](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/schedule) erfahren Sie mehr über Versionspläne und Support.
 
-In der Entwicklerdokumentation erfahren [, welche Commerce-Versionen dieses Modul unterstützen](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+In der Entwicklerdokumentation erfahren [, welche Commerce-Versionen dieses Modul unterstützen](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability).
 
 ## Unterstützte Service-Updates
 
