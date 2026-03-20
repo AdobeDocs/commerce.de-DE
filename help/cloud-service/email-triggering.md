@@ -36,10 +36,10 @@ Im folgenden Abschnitt wird erläutert, wie Sie mit der REST-API bei Bedarf Tran
 ### Endpunkt
 
 - **URL** - `POST /rest/V1/custom-email/send`
-- **Autorisierung** - Nur **Service-zu-Service-IMS-Autorisierung** wird unterstützt. Der Aufrufer muss Zugriff auf die Ressource **Benutzerdefinierte E-Mail über API senden** (`Magento_CustomEmailSend::send_custom_email`) haben. Weitere Informationen finden [ unter ](https://developer.adobe.com/commerce/webapi/rest/authentication/)-Authentifizierung .
+- **Autorisierung** - Nur **Service-zu-Service-IMS-Autorisierung** wird unterstützt. Der Aufrufer muss Zugriff auf die Ressource **Benutzerdefinierte E-Mail über API senden** (`Magento_CustomEmailSend::send_custom_email`) haben. Weitere Informationen finden [&#x200B; unter &#x200B;](https://developer.adobe.com/commerce/webapi/rest/authentication/)-Authentifizierung .
 - **Asynchrone Verwendung** (empfohlen) - Obwohl dieser Endpunkt synchron implementiert ist, empfehlen wir, ihn mit der **asynchronen REST-API** aufzurufen, damit die Anfrage von einem Verbraucher in die Warteschlange gestellt und verarbeitet wird, wodurch langlebige HTTP-Verbindungen vermieden werden. In [!DNL Adobe Commerce as a Cloud Service] können Sie die Route mit `/async` nach `V1` verwenden, z. B.: `POST https://<server>.api.commerce.adobe.com/<tenant-id>/V1/async/custom-email/send`.
 
-  Weitere Informationen finden [ unter „Asynchrone Web-Endpunkte (SaaS](https://developer.adobe.com/commerce/webapi/rest/use-rest/asynchronous-web-endpoints/).
+  Weitere Informationen finden [&#x200B; unter „Asynchrone Web-Endpunkte (SaaS](https://developer.adobe.com/commerce/webapi/rest/use-rest/asynchronous-web-endpoints/).
 
 ### Anfragetext
 
@@ -48,7 +48,7 @@ Im folgenden Abschnitt wird erläutert, wie Sie mit der REST-API bei Bedarf Tran
 - **recipientEmail** (Zeichenfolge, erforderlich) - Die Ziel-E-Mail-Adresse. Muss ein gültiges E-Mail-Format sein. Fehlende oder leere Werte verursachen Trigger bei der Validierung.
 - **variables** (Objekt, optional) - Schlüssel-Wert-Zuordnung, die als `UnstructuredArray` in die Vorlage eingefügt wird.
 
-  Wenn Sie keine Variablen verwenden, übergeben Sie ein leeres -Objekt oder lassen Sie es weg. Verwenden Sie im Textkörper und Betreff der E-Mail-Vorlage die Variablensyntax, um auf eine Variable zu verweisen, z. B. `var order_id`. Der Betreff unterstützt außerdem dieselben benutzerdefinierten Variablen und die Syntax, die unter [Unterstützte Vorlagenszenarien“ beschrieben ](#supported-template-scenarios).
+  Wenn Sie keine Variablen verwenden, übergeben Sie ein leeres -Objekt oder lassen Sie es weg. Verwenden Sie im Textkörper und Betreff der E-Mail-Vorlage die Variablensyntax, um auf eine Variable zu verweisen, z. B. `var order_id`. Der Betreff unterstützt außerdem dieselben benutzerdefinierten Variablen und die Syntax, die unter [Unterstützte Vorlagenszenarien“ beschrieben &#x200B;](#supported-template-scenarios).
 
 ### Erfolgsantwort (HTTP 200)
 
