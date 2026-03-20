@@ -3,7 +3,7 @@ title: Geschenkkartenkonto-REST-Endpunkte
 description: Erfahren Sie, wie Sie mit den REST-APIs für Geschenkkartenkonten in programmgesteuert Geschenkkartenkonten erstellen, aktualisieren, löschen und abfragen können [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer
 level: Experienced
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: 160180d9d779514f6faee3c7de46531ebf191c7d
 workflow-type: tm+mt
 source-wordcount: '807'

@@ -3,7 +3,7 @@ title: E-Mail-Auslösung durch REST
 description: Erfahren Sie, wie Sie mit der REST-API bei Bedarf Transaktions-E-Mails in Trigger nehmen können, indem Sie eine Vorlagen-ID, eine Empfänger-E-Mail und Vorlagenvariablen für angeben [!DNL Adobe Commerce as a Cloud Service].
 role: Admin
 level: Experienced
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: 9661e368f7a0dc85edcd3e52a67ae2a98355d8b5
 workflow-type: tm+mt
 source-wordcount: '523'
