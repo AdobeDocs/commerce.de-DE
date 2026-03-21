@@ -46,7 +46,7 @@ _11. März 2026_
 
 ![Neues Problem](../assets/new.svg)<!-- Issue PAY-1041 --> Unterstützung für Adobe Commerce 2.4.9-beta1 und PHP 8.5 hinzugefügt.
 
-![Neues Problem](../assets/new.svg)<!-- Issue ACCS-169 --> Die Felder **[!UICONTROL Program ID]**, **[!UICONTROL Environment ID]** und [**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank} werden jetzt basierend auf der IMS-Sitzung des [&#x200B; automatisch als Dropdown-](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank} ausgefüllt.
+![Neues Problem](../assets/new.svg)<!-- Issue ACCS-169 --> Die Felder **[!UICONTROL Program ID]**, **[!UICONTROL Environment ID]** und [**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank} werden jetzt basierend auf der IMS-Sitzung des [&#x200B; automatisch als Dropdown-](https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank} ausgefüllt.
 
 ## v1.2.14
 

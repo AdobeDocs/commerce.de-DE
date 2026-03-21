@@ -42,7 +42,7 @@ Die folgenden Rollen sind für [!DNL Adobe Commerce as a Cloud Service] verfügb
 * [**Entwickler**](https://helpx.adobe.com/de/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}: Entwicklerinnen und Entwickler verfügen über Benutzerberechtigungen und werden der Commerce-Instanz als Entwicklerperson hinzugefügt. Sie können die [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"} verwenden, [Ereignisse konfigurieren](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"} und [Webhooks erstellen](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
 
 * Administratoren : Es gibt drei verschiedene Arten von Administratoren:
-   * [Systemadmins](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - Der Systemadmin hat über die Admin Console Zugriff auf alle Produkte und Produktprofile in der Organisation.
+   * [Systemadmins](https://helpx.adobe.com/de/enterprise/using/admin-roles.html){target="_blank"} - Der Systemadmin hat über die Admin Console Zugriff auf alle Produkte und Produktprofile in der Organisation.
    * [Produktadministrierende](#add-a-product-admin) - Produktadministrierende können [Benutzende, Rollen und Berechtigungen für das Produkt verwalten](#add-users) in der [!DNL Adobe Admin Console] und [Benutzende im Commerce Admin verwalten](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
    * [Produktprofil-Administrierende](#add-developers-and-product-profile-admins) - Produktprofil-Administrierende haben keinen Zugriff auf den Adobe Commerce-Admin, können jedoch Benutzende für das Produkt im [!DNL Adobe Admin Console] verwalten.
 
@@ -264,7 +264,7 @@ Wenn Ihr Konto Zugriff auf [[!DNL Adobe Experience Manager as a Cloud Service]](
    >
    >Weitere Informationen dazu, wie sich diese Berechtigungen auf Ihren Zugriff auf [!DNL AEM Assets] auswirken, finden Sie unter [Cloud Manager-Produktprofile](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}.
 
-   Für die Asset-Wähler- und automatisch ausgefüllten Konfigurationsfelder (Programm-ID, Umgebungs-ID, Domain-Zuordnung) in der Commerce Admin benötigen Benutzende auch das Produktprofil **AEM Assets DM OpenAPI Users - delivery** . Weitere Informationen finden [&#x200B; unter „Benutzerberechtigungen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"} IMS“.
+   Für die Asset-Wähler- und automatisch ausgefüllten Konfigurationsfelder (Programm-ID, Umgebungs-ID, Domain-Zuordnung) in der Commerce Admin benötigen Benutzende auch das Produktprofil **AEM Assets DM OpenAPI Users - delivery** . Weitere Informationen finden [&#x200B; unter „Benutzerberechtigungen &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"} IMS“.
 
 1. Klicken Sie [!UICONTROL **Apply**].
 
