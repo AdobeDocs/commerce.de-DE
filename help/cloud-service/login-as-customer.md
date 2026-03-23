@@ -65,7 +65,7 @@ Sie müssen die folgenden Anforderungen erfüllen, bevor Sie die Funktion „Als
 
 >[!IMPORTANT]
 >
->Der generierte OTC-Einmalcode ist standardmäßig 30 Sekunden lang gültig und wird nach einer einzigen Verwendung ungültig. Die TTL kann durch Senden eines -Support[Tickets konfiguriert ](https://experienceleague.adobe.com/home?support-tab=home#support).
+>Der generierte OTC-Einmalcode ist standardmäßig 30 Sekunden lang gültig und wird nach einer einzigen Verwendung ungültig. Die TTL kann durch Senden eines -Support[Tickets konfiguriert &#x200B;](https://experienceleague.adobe.com/home?support-tab=home#support).
 
 Nachdem der Einmalcode generiert wurde, können Sie ihn verwenden, indem Sie zu Ihrer Storefront navigieren und sich mit den folgenden Anmeldeinformationen anmelden:
 
