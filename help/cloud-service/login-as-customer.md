@@ -3,7 +3,7 @@ title: Melden Sie sich als Kunde mit einmaligen Codes an.
 description: Erfahren Sie, wie Sie mit der OTC-Funktion „Als Kunde anmelden“ einmalige Codes für die Kundenauthentifizierung in [!DNL Adobe Commerce as a Cloud Service] generieren können.
 role: Admin
 level: Intermediate
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: 2de1006ad3cee936d114bcf1b9a98b43a54d8c76
 workflow-type: tm+mt
 source-wordcount: '861'
@@ -65,7 +65,7 @@ Sie müssen die folgenden Anforderungen erfüllen, bevor Sie die Funktion „Als
 
 >[!IMPORTANT]
 >
->Der generierte OTC-Einmalcode ist standardmäßig 30 Sekunden lang gültig und wird nach einer einzigen Verwendung ungültig. Die TTL kann durch Senden eines -Support[Tickets konfiguriert &#x200B;](https://experienceleague.adobe.com/home?support-tab=home#support).
+>Der generierte OTC-Einmalcode ist standardmäßig 30 Sekunden lang gültig und wird nach einer einzigen Verwendung ungültig. Die TTL kann durch Senden eines -Support[Tickets konfiguriert &#x200B;](https://experienceleague.adobe.com/home?lang=de&support-tab=home#support).
 
 Nachdem der Einmalcode generiert wurde, können Sie ihn verwenden, indem Sie zu Ihrer Storefront navigieren und sich mit den folgenden Anmeldeinformationen anmelden:
 
