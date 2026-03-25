@@ -52,7 +52,7 @@ Bevor Sie eine App verknüpfen, stellen Sie Folgendes sicher:
   bin/magento cache:clean
   ```
 
-Weitere Informationen finden [ unter „Installieren oder Aktualisieren der Adobe Commerce Admin](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/){target="_blank"}Benutzeroberfläche - SDK&quot;.
+Weitere Informationen finden [&#x200B; unter „Installieren oder Aktualisieren der Adobe Commerce Admin](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/){target="_blank"}Benutzeroberfläche - SDK&quot;.
 
 >[!ENDTABS]
 
@@ -74,7 +74,7 @@ Nachdem eine App installiert und bereitgestellt wurde, verwenden Sie [!DNL App M
 
 Einige App Builder-Programme verwenden [Adobe Commerce-Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/) damit Commerce Ihre App über HTTP aufrufen kann, wenn bestimmte Ereignisse eintreten (z. B. nachdem ein Produkt gespeichert wurde). Webhook-Endpunkte und Abonnementlogik werden vom **App-Entwickler** beim Erstellen und Bereitstellen der Anwendung definiert. Store-Administratoren konfigurieren Webhooks nicht separat in App Management.
 
-Nachdem Sie [ App mit ](https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app) Commerce-Instanz verknüpft und alle Einrichtungsanweisungen der App ausgeführt haben, folgt das Webhook-Verhalten der Implementierung der App.
+Nachdem Sie [&#x200B; App mit &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app) Commerce-Instanz verknüpft und alle Einrichtungsanweisungen der App ausgeführt haben, folgt das Webhook-Verhalten der Implementierung der App.
 
 Wenn [!DNL App Management] den Validierungsendpunkt der App nicht mit Triggern versehen können (z. B. wenn die URL nicht erreichbar ist oder die Antwort die Anforderungen nicht erfüllt), wird möglicherweise ein Fehler wie der folgende im [!DNL App Management]-Dashboard angezeigt:
 
@@ -82,4 +82,4 @@ Wenn [!DNL App Management] den Validierungsendpunkt der App nicht mit Triggern v
 
 Arbeiten Sie mit dem **App-Entwickler** zusammen, um die Webhook-Konfiguration oder -Bereitstellung zu korrigieren, damit die Validierung erfolgreich sein kann.
 
-**App-**. Informationen zum Implementieren von Webhook-Abonnements und Handler-Antworten von App Builder [ Sie unter ](https://developer.adobe.com/commerce/extensibility/app-management/installation/webhooks/)Webhooks“ in der Entwicklerdokumentation für die Commerce-Erweiterbarkeit und im [`@adobe/aio-commerce-lib-webhooks`](https://github.com/adobe/aio-commerce-sdk/tree/main/packages/aio-commerce-lib-webhooks) auf GitHub.
+**App-**. Informationen zum Implementieren von Webhook-Abonnements und Handler-Antworten von App Builder [&#x200B; Sie unter &#x200B;](https://developer.adobe.com/commerce/extensibility/app-management/installation/webhooks/)Webhooks“ in der Entwicklerdokumentation für die Commerce-Erweiterbarkeit und im [`@adobe/aio-commerce-lib-webhooks`](https://github.com/adobe/aio-commerce-sdk/tree/main/packages/aio-commerce-lib-webhooks) auf GitHub.
