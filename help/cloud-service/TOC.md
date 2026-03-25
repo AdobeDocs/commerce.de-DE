@@ -3,9 +3,9 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Verwendung von  [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 3cbb166833ea8aacbdb15bdce469eff3930ef741
+source-git-commit: 5c84464a463672d48544031bb365f3484065acf4
 workflow-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '97'
 ht-degree: 5%
 
 ---
@@ -26,9 +26,9 @@ ht-degree: 5%
       - [Tool für die Massendatenmigration](migration/bulk-data.md)
       - [Kodierwerkzeuge](migration/coding-tools.md)
    - [Dokumentations-RAG-Service](migration/doc-rag.md)
-- [Als Kunde anmelden](login-as-customer.md)
-- [Geschenkkartenkonto-API](gift-card-account-api.md)
-- [E-Mail-Auslösung](email-triggering.md)
+- [Als Kunde anmelden](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [Geschenkkartenkonto-REST-Endpunkte](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
+- [E-Mail-Trigger über REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - Tutorials {#tutorials}
    - [Voraussetzungen für das Tutorial](tutorials/tutorial-prerequisites.md)
    - [Ratings-Erweiterung - Tutorial](tutorials/ratings-extension.md)
@@ -39,6 +39,6 @@ ht-degree: 5%
 - Schemata {#schemas}
    - [GraphQL-Schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [REST-API-Schema](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
-- [Video-Tutorials](https://experienceleague.adobe.com/de/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Video-Tutorials](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Versionshinweise](release-notes.md)
-- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
