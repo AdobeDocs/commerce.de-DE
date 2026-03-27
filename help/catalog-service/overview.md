@@ -4,7 +4,7 @@ description: Beschleunigen Sie Ihre Adobe Commerce-Storefront mit  [!DNL Catalog
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
-source-git-commit: 4f3f8accd653dbee6fec45c065f55ff04b17bd2d
+source-git-commit: 8bdd41f2ee774f214c4be1fb5ae51c6e2a2fe053
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 0%
@@ -24,7 +24,6 @@ Die umfangreichen Ansichtsmodelldaten, die von der [!DNL Catalog Service] bereit
 - Produktvergleichsseiten
 - Alle anderen Seiten, die Produktdaten rendern, wie Warenkorb-, Bestell- und Wunschlistenseiten
 
-
 ## Wichtige Vorteile und Funktionen
 
 - **Schnelleres Seitenladen**: Optimierte Abfragen für bis zu 10-mal schnelleren Abruf von Katalogdaten im Vergleich zum GraphQL-Kernsystem
@@ -35,7 +34,6 @@ Die umfangreichen Ansichtsmodelldaten, die von der [!DNL Catalog Service] bereit
 - **Echtzeit-Datensynchronisation**: Der Katalog-Service wird über die SaaS-Datenexporterweiterung mit der Adobe Commerce-Anwendung synchronisiert, um sicherzustellen, dass Abfragen die aktuellen Katalogdaten zurückgeben
 - **Daten-Management-Dashboard**: Überwachen und Verwalten von Datensynchronisierungsvorgängen über die Admin-Benutzeroberfläche von Adobe Commerce
 - **API-Mesh-Integration**: Optional Integration mit [API-Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/), um die Adobe Commerce GraphQL-Systeme mit anderen internen APIs und Drittanbieter-APIs zu kombinieren, um das GraphQL-Schema des Katalog-Services zu erweitern und benutzerdefinierte Daten oder Funktionen hinzuzufügen
-
 
 ## Überblick über die Architektur
 
@@ -123,15 +121,13 @@ Der Katalog-Service sorgt für genaue Preisaktualisierungen und Berechnungen, in
 
 >[!NOTE]
 >
-> Commerce-Kunden mit [!DNL Catalog Service] können mit dem SaaS-Preisindexer [&#x200B; schnellere Preisänderungen und Synchronisierungszeiten auf ihren Websites &#x200B;](../price-index/price-indexing.md).
+> Commerce-Kunden mit [!DNL Catalog Service] können mit dem SaaS-Preisindexer [ schnellere Preisänderungen und Synchronisierungszeiten auf ihren Websites ](../price-index/price-indexing.md).
 
 ## Implementierung
 
 Der Implementierungsprozess umfasst Folgendes:
 
-1. [!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."} **[Installieren und Konfigurieren des Katalog-Service](installation.md)** - Installieren und konfigurieren Sie die Catalog-Service-Erweiterung und richten Sie die SaaS-Verbindung mithilfe der [!DNL Commerce Services Connector] ein.
+1. [!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."} **[Installieren und Konfigurieren des Katalog-Service](installation.md)** - Installieren und konfigurieren Sie die Catalog-Service-Erweiterung und richten Sie die SaaS-Verbindung mithilfe der [!DNL Commerce Services Connector] ein.
 2. **Storefront-Code aktualisieren**: Integrieren Sie GraphQL-Abfragen des Katalog-Services in Ihr Frontend.
 3. **Routing-Abfragen**: Alle Abfragen des Katalog-Services gehen über das GraphQL-Gateway (die URL wird beim Onboarding angegeben)
 4. **Überwachung und Fehlerbehebung bei der Datensynchronisation**: Überprüfen Sie die verbesserte Leistung und überwachen Sie die Ergebnisse.
-
-
