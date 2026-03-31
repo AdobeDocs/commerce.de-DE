@@ -2,9 +2,9 @@
 title: Synchronisieren von Feeds mit der Commerce-CLI
 description: Erfahren Sie, wie Sie die Befehle der Befehlszeilenschnittstelle verwenden, um Feeds und Prozesse für die SaaS [!DNL data export extension] Services von Adobe Commerce zu verwalten.
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: a05f716200fbf2af74b8488ae66053a56e7037a0
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Mit dem Befehl `saas:resync` im `magento/saas-export` können Sie die Datensynch
 Es wird von Adobe nicht empfohlen, den Befehl `saas:resync` regelmäßig zu verwenden. Typische Szenarien für die Verwendung des Befehls sind:
 
 - Erstsynchronisierung
-- Synchronisieren von Daten mit einem neuen Datenraum nach Änderung der [SaaS-Datenraum-ID](https://experienceleague.adobe.com/de/docs/commerce-admin/config/services/saas)
+- Synchronisieren von Daten mit einem neuen Datenraum nach Änderung der [SaaS-Datenraum-ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Fehlerbehebung
 
 Überwachen von Synchronisierungsvorgängen in der `var/log/saas-export.log`.
@@ -85,9 +85,9 @@ Bereinigen Sie die Feed-Indexertabelle, bevor Sie Daten neu indizieren und an Sa
 
 Bei Verwendung mit der Option `--dry-run` führt der Vorgang einen Probelauf-Resynchronisierungsvorgang für alle Elemente durch.
 
->[!IMPORTANT]
+>[!WARNING]
 >
->Nur nach der Umgebungsbereinigung oder mit der Option `--dry-run` verwenden. In anderen Fällen kann der Bereinigungsvorgang zu Datenverlust und Problemen mit der Datensynchronisation führen.
+>Wenn Sie den Befehl resynchronisieren mit der Option `cleanup-feed` verwenden, wird der Status des lokalen Feed-Exports gelöscht und die Synchronisierung kann unvollständig sein. Zum Beispiel werden Entitätslöschungen in Adobe Commerce möglicherweise nicht in den verbundenen Commerce-Services angezeigt oder veraltete Entitäten verbleiben möglicherweise in den Remote-Commerce-Services-Indizes, auch wenn sie in Adobe Commerce gelöscht oder aktualisiert wurden. Verwenden Sie diese Option nur für vollständige Neuaufbauten der Umgebung, z. B. nach einer SaaS-Datenspeicherbereinigung.
 
 **Beispiel:**
 
