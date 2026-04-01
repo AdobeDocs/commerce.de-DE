@@ -33,7 +33,7 @@ Sie können den Transaktionsbericht im CSV-Dateiformat herunterladen, um ihn in 
 
 Die Berichtsansicht „Transaktionen“ ist in der Ansicht „Transaktionen“ von Payment Services verfügbar. Es enthält alle verfügbaren Informationen über Transaktionen für Ihren Shop/Ihre Geschäfte.
 
-Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**, um die detaillierte Ansicht des tabellarischen Transaktionsberichts anzuzeigen. Aus **[!UICONTROL Home]**können Sie auch **[!UICONTROL View Report]**unter **[!UICONTROL Transactions]**in [!DNL Adobe Commerce as a Cloud Service] und [!DNL Adobe Commerce Optimizer] auswählen.
+Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**, um die detaillierte Ansicht des tabellarischen Transaktionsberichts anzuzeigen. Aus **[!UICONTROL Home]**&#x200B;können Sie auch **[!UICONTROL View Report]**&#x200B;unter **[!UICONTROL Transactions]**&#x200B;in [!DNL Adobe Commerce as a Cloud Service] und [!DNL Adobe Commerce Optimizer] auswählen.
 
 >[!BEGINTABS]
 
@@ -67,12 +67,12 @@ In der Berichtsansicht Transaktionen können Sie die Datenquelle - **[!UICONTROL
 
 ![Datenquellenauswahl](assets/datasource.png){width="300" zoomable="yes"}
 
-Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Ihre Stores anzeigen, die [!DNL Payment Services] im Produktionsmodus verwenden. Wenn_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Ihren Sandbox-Modus anzeigen.
+Wenn _[!UICONTROL Live]_&#x200B;die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Ihre Stores anzeigen, die [!DNL Payment Services] im Produktionsmodus verwenden. Wenn&#x200B;_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Ihren Sandbox-Modus anzeigen.
 
 Die Auswahl von Datenquellen funktioniert wie folgt:
 
-* Wenn Sie keine Stores haben, die [!DNL Payment Services] im Produktionsmodus verwenden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Sandbox]_eingestellt.
-* Wenn Sie über Stores (einen oder mehrere) verfügen, die [!DNL Payment Services] im Produktionsmodus verwenden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Live]_eingestellt.
+* Wenn Sie keine Stores haben, die [!DNL Payment Services] im Produktionsmodus verwenden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Sandbox]_&#x200B;eingestellt.
+* Wenn Sie über Stores (einen oder mehrere) verfügen, die [!DNL Payment Services] im Produktionsmodus verwenden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Live]_&#x200B;eingestellt.
 * Berichtsexporte berücksichtigen immer die Auswahl der Datenquelle.
 
 So wählen Sie die Datenquelle für Ihren [!UICONTROL Transactions] aus:
@@ -97,14 +97,14 @@ In der Berichtsansicht Transaktionen können Sie die anzuzeigenden Statusergebni
 
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Klicken Sie auf die **[!UICONTROL Filter]**.
-1. Schalten Sie die _[!UICONTROL Transaction Result]_ein, um die Berichtsergebnisse nur für ausgewählte Auftragstransaktionen anzuzeigen.
-1. Schalten Sie die _[!UICONTROL Payment Method]_ein, um Berichtsergebnisse für die Art der Zahlung anzuzeigen, die für die Transaktion verwendet wird.
-1. Schalten Sie die _[!UICONTROL Payment Detail]_ein, um zusätzliche Informationen zur verwendeten Zahlungsart anzuzeigen, sofern verfügbar.
+1. Schalten Sie die _[!UICONTROL Transaction Result]_&#x200B;ein, um die Berichtsergebnisse nur für ausgewählte Auftragstransaktionen anzuzeigen.
+1. Schalten Sie die _[!UICONTROL Payment Method]_&#x200B;ein, um Berichtsergebnisse für die Art der Zahlung anzuzeigen, die für die Transaktion verwendet wird.
+1. Schalten Sie die _[!UICONTROL Payment Detail]_&#x200B;ein, um zusätzliche Informationen zur verwendeten Zahlungsart anzuzeigen, sofern verfügbar.
 1. Geben Sie einen _Mindestauftragsbetrag_ oder _Höchstauftragsbetrag_ ein, um die Berichtsergebnisse innerhalb dieses Auftragsbetragsbereichs anzuzeigen.
-1. Geben Sie eine _[!UICONTROL Order ID]_ein, um nach einer bestimmten Transaktion zu suchen.
-1. Stellen Sie die _[!UICONTROL Card Last Four]_vor, um nach einer bestimmten Kredit- oder Debitkarte zu suchen.
-1. Geben Sie eine _[!UICONTROL Customer ID]_ein, um alle Transaktionen eines bestimmten Kunden anzuzeigen.
-1. Geben Sie die _[!UICONTROL Customer Email]_ein, um Transaktionen für diese E-Mail zu filtern.
+1. Geben Sie eine _[!UICONTROL Order ID]_&#x200B;ein, um nach einer bestimmten Transaktion zu suchen.
+1. Stellen Sie die _[!UICONTROL Card Last Four]_&#x200B;vor, um nach einer bestimmten Kredit- oder Debitkarte zu suchen.
+1. Geben Sie eine _[!UICONTROL Customer ID]_&#x200B;ein, um alle Transaktionen eines bestimmten Kunden anzuzeigen.
+1. Geben Sie die _[!UICONTROL Customer Email]_&#x200B;ein, um Transaktionen für diese E-Mail zu filtern.
 1. Klicken Sie auf **[!UICONTROL Hide filters]** , um den Filter auszublenden.
 
 ### Spalten ein- und ausblenden
@@ -119,7 +119,7 @@ Der Transaktionsbericht zeigt standardmäßig alle verfügbaren Informationsspal
 
 ### Berichtsdaten aktualisieren
 
-Die Berichtsansicht Transaktionen zeigt einen _[!UICONTROL Last updated]_Zeitstempel an, der das letzte Mal anzeigt, dass die Berichtsinformationen aktualisiert wurden. Standardmäßig werden die Daten des Transaktionsberichts alle drei Stunden automatisch aktualisiert.
+Die Berichtsansicht Transaktionen zeigt einen _[!UICONTROL Last updated]_&#x200B;Zeitstempel an, der das letzte Mal anzeigt, dass die Berichtsinformationen aktualisiert wurden. Standardmäßig werden die Daten des Transaktionsberichts alle drei Stunden automatisch aktualisiert.
 
 Sie können auch manuell eine Aktualisierung der Berichtsdaten erzwingen, um die aktuellsten Berichtsinformationen anzuzeigen.
 
@@ -133,7 +133,7 @@ Sie können auch manuell eine Aktualisierung der Berichtsdaten erzwingen, um die
 Sie können eine CSV-Datei herunterladen, in der alle Transaktionen im Raster der Transaktionsansicht sichtbar sind, unabhängig davon, ob Sie die standardmäßige 30-Tage-Transaktionsansicht oder einen benutzerdefinierten Zeitrahmen anzeigen.
 
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
-1. Wenn Sie Transaktionen für einen anderen Zeitraum als die letzten 30 Tage anzeigen möchten, [ Sie den Zeitrahmen des Datumsbereichs für Ihre Status ](#customize-dates-timeframe).
+1. Wenn Sie Transaktionen für einen anderen Zeitraum als die letzten 30 Tage anzeigen möchten, [&#x200B; Sie den Zeitrahmen des Datumsbereichs für Ihre Status &#x200B;](#customize-dates-timeframe).
 1. Klicken Sie auf _Symbol_ Herunterladen![Herunterladen](assets/icon-download.png){width="20" zoomable="yes"} .
 
 Ihre Transaktionen werden im CSV-Format heruntergeladen.
@@ -146,14 +146,14 @@ Transaktionsberichte enthalten die folgenden Informationen.
 | ------------ | -------------------- |
 | [!UICONTROL Order ID] | Commerce-Auftrags-ID (enthält nur Werte für erfolgreiche Transaktionen und ist leer für zurückgewiesene Transaktionen)<br> <br>Um zugehörige [Bestellinformationen) anzuzeigen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} klicken Sie auf die ID. |
 | [!UICONTROL PayPal Transaction ID] | Transaktions-ID vom Zahlungsdienstleister; enthält nur Werte für erfolgreiche Transaktionen und einen Bindestrich für abgelehnte Transaktionen. Sie können auf diese ID klicken, um auf die Seite mit den PayPal-Transaktionsdetails zuzugreifen. |
-| [!UICONTROL Customer ID] | Commerce-Kunden-ID einer Bestellung<br> <br>Weitere Informationen finden Sie [ Thema ](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}Kundeninformationen) . |
+| [!UICONTROL Customer ID] | Commerce-Kunden-ID einer Bestellung<br> <br>Weitere Informationen finden Sie [&#x200B; Thema &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}Kundeninformationen) . |
 | [!UICONTROL Transaction Date] | Zeitstempel des Transaktionsdatums |
 | [!UICONTROL Payment Method] | Art der Zahlung, die für die Transaktion verwendet wird, mit Informationen über Marke und Kartentyp. Siehe [Kartenarten](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) für weitere Informationen; verfügbar für Payment Services-Versionen 1.6.0 und höher |
 | [!UICONTROL Payment Detail] | Enthält zusätzliche Informationen zur Art der Zahlung, die für die Transaktion verwendet wird, sofern verfügbar. |
 | [!UICONTROL Card Last Four] | Letzte vier Stellen der für die Transaktion verwendeten Kredit- oder Debitkarten |
 | [!UICONTROL Result] | Das Ergebnis der Transaktion - *[!UICONTROL OK]* (erfolgreiche Transaktion), *[!UICONTROL Rejected by Payment Provider]* (von PayPal abgelehnt), *[!UICONTROL Rejected by Bank]* (von der Bank, die die Karte ausgegeben hat, abgelehnt) |
-| [!UICONTROL Response Code] | Fehlercode, der den Ablehnungsgrund des Zahlungsdienstleisters oder der Bank angibt; siehe Liste möglicher Antwort-Codes und Beschreibungen für [`Rejected by Bank` Status ](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) den [`Rejected by Payment Provider` Status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
-| [!UICONTROL AVS Code] | Adressverifizierungs-Service-Code; die Antwortinformationen des Prozessors für Zahlungsanfragen. Weitere Informationen [ Sie unter „Liste möglicher Codes und ](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response)&quot;. |
+| [!UICONTROL Response Code] | Fehlercode, der den Ablehnungsgrund des Zahlungsdienstleisters oder der Bank angibt; siehe Liste möglicher Antwort-Codes und Beschreibungen für [`Rejected by Bank` Status &#x200B;](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) den [`Rejected by Payment Provider` Status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
+| [!UICONTROL AVS Code] | Adressverifizierungs-Service-Code; die Antwortinformationen des Prozessors für Zahlungsanfragen. Weitere Informationen [&#x200B; Sie unter „Liste möglicher Codes und &#x200B;](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response)&quot;. |
 | [!UICONTROL CVV Code] | Kartenprüfwert-Code für Kredit- und Debitkarten; siehe [Liste möglicher Codes und Beschreibungen](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) für weitere Informationen. |
 | [!UICONTROL Amount] | Bestellbetrag der Transaktion |
 | [!UICONTROL Currency] | Für Bestellung in Transaktion verwendete Währung |
