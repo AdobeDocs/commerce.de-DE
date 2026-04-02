@@ -4,9 +4,9 @@ description: Die neuesten Versionsinformationen für  [!DNL Data Export Extensio
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 5ce7a8aa82d23312685f052864aed96066c6e6c4
+source-git-commit: c7ad81a2b53e06ea9aab65aa53088a07839bc30d
 workflow-type: tm+mt
-source-wordcount: '2173'
+source-wordcount: '2226'
 ht-degree: 0%
 
 ---
@@ -21,12 +21,17 @@ Zu den Aktualisierungen gehören:
 ![Fehlerbehebung](../assets/fix.svg) Fehlerbehebungen und Verbesserungen
 ![Bug](../assets/bug.svg) Bekannte Probleme
 
-
 >[!NOTE]
 >
 >Die SaaS-Datenexporterweiterung ist eine Sammlung von Modulen, die automatisch mit der Live-Suche, Produktempfehlungen und dem Katalog-Service installiert werden. Sie können die auf Ihrem System installierte Version mit dem Composer überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Versionen 2026
+
+### Version 103.4.21
+
+_2. April 2026_
+
+![Beheben](../assets/fix.svg) **Verbesserte Zuverlässigkeit der manuellen Neusynchronisierung des Indexers für Kategorieberechtigungen**-Es wurde ein Problem behoben, bei dem das Ausführen von Indexern in einer bestimmten Reihenfolge dazu führen konnte, dass einige Produkte vorübergehend unsichtbar wurden. Das System erzwingt jetzt die richtige Reihenfolge und führt bei Bedarf automatisch eine vollständige Neusynchronisierung durch, sodass alle Produkte nach manuellen Neuindizierungsvorgängen sichtbar bleiben. <!--MDEE-1332-->
 
 ### Version 103.4.20
 
@@ -46,15 +51,13 @@ _6. Februar 2026_
 
 _2. Februar 2026_
 
-![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem Element-Batches während Aktualisierungen das zulässige Limit überschreiten konnten, was zu `items_limit_exceeded`-Fehlern beim Synchronisieren von Daten mit [Commerce-](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home) oder [Adobe Commerce Optimizer](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/data-sync) führte. <!--MDEE-1264-->
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem Element-Batches während Aktualisierungen das zulässige Limit überschreiten konnten, was zu `items_limit_exceeded`-Fehlern beim Synchronisieren von Daten mit [Commerce-](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) oder [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync) führte. <!--MDEE-1264-->
 
 ![Korrektur](../assets/fix.svg) Verbesserte Zuverlässigkeit von Produktdatenexporten durch Hinzufügen von Logik zum Registrieren fehlgeschlagener Elemente während der Sammlung von Bundle-Produktoptionen. <!--CCSAAS-4458-->
 
 ### Version 103.4.17
 
 _5. Januar 2026_
-
-### Version 103.4.17
 
 ![Korrigieren](../assets/fix.svg) Die Datenexporterweiterung (`magento/module-data-exporter`) wurde aktualisiert, um die nicht mehr benötigte `magento/module-analytics` zu entfernen.<!--MDEE-1260-->
 
@@ -63,7 +66,6 @@ _5. Januar 2026_
 ![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem Produkte mit einem Preis von 0 $ oder 100 % Rabatt nicht als kostenlos in der Storefront angezeigt wurden. Die Preise für Storefront und Warenkorb sind jetzt konsistent. <!--MDEE-1159-->
 
 ![Fix](../assets/fix.svg) Symfony 7.4 LTS-Kompatibilität wurde zu den Datenexporterweiterungen hinzugefügt, um zukünftige Upgrades und Integrationen zu unterstützen. <!--MDEE-1272-->
-
 
 ## Ältere Versionen
 
@@ -77,13 +79,13 @@ _24. November 2025_
 
 _22. Oktober 2025_
 
-![Neu](../assets/new.svg) Es wurde Unterstützung für die Erweiterung „Status der Daten-Feed-Synchronisierung“ hinzugefügt, um Datenübertragungen von Adobe Commerce zu Connected Services (Katalog-Service, Live-Suche und Produktempfehlungen) zu überwachen und Fehler zu beheben. Weitere Informationen zur Installation und Verwendung dieser Erweiterung finden Sie [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=de) im *Commerce Admin Guide*. <!--MDEE-954-->
+![Neu](../assets/new.svg) Es wurde Unterstützung für die Erweiterung „Status der Daten-Feed-Synchronisierung“ hinzugefügt, um Datenübertragungen von Adobe Commerce zu Connected Services (Katalog-Service, Live-Suche und Produktempfehlungen) zu überwachen und Fehler zu beheben. Weitere Informationen zur Installation und Verwendung dieser Erweiterung finden Sie [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) im *Commerce Admin Guide*. <!--MDEE-954-->
 
 ### Version 103.4.14
 
 _10. Oktober 2025_
 
-![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem der Vorgang [mview indexer](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) fehlschlagen konnte, wenn die `cde_product_overrides_feed_cl` fehlte. Die Fehlerbehebung stellt eine stabile Neuindizierung sicher und verhindert Auftragsfehler in Zusammenhang mit dieser Tabelle in Umgebungen mit mehreren Mandanten.“ <!--MDEE-1175-->
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem der Vorgang [mview indexer](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) fehlschlagen konnte, wenn die `cde_product_overrides_feed_cl` fehlte. Die Fehlerbehebung stellt eine stabile Neuindizierung sicher und verhindert Auftragsfehler in Zusammenhang mit dieser Tabelle in Umgebungen mit mehreren Mandanten. <!--MDEE-1175-->
 
 ### Version 103.4.13
 
@@ -103,7 +105,7 @@ _18. September 2025_
 
 _29. August 2025_
 
-![Neu](../assets/new.svg) [!BADGE nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+![Neu](../assets/new.svg) [!BADGE nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 Es wurde Unterstützung für zusätzliche Produktattribute hinzugefügt, um Steuerklasse-, Attributsatz- und Bestandsdaten aus Commerce-Produktkonfigurationen im Produkt-Feed einzuschließen. Kunden, die diese Attribute in Produktexport-Feeds einbeziehen möchten, müssen das Modul Zusätzliche Produktattribute zu ihrem Adobe Commerce-Projekt hinzufügen. Siehe [Hinzufügen von Steuerklassen-, Attributsatz- und Bestandsattributen](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 
 ![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, das zu einer falschen Synchronisierung gelöschter Produktaktualisierungen führte, wenn während eines vollständigen Produktindex ein Fehler auftrat. Jetzt werden alle Produktlöschungen korrekt synchronisiert, selbst wenn während des Indizierungsprozesses ein Fehler auftritt. <!--MDEE-1144-->
@@ -112,7 +114,7 @@ Es wurde Unterstützung für zusätzliche Produktattribute hinzugefügt, um Steu
 
 _18. August 2025_
 
-![Beheben](../assets/fix.svg) Es wurde ein Problem behoben, bei dem für einige dynamisch erstellte Attribute der falsche Typ (`text` statt `OBJECT`) zurückgegeben wurde. Jetzt werden durchgängig die richtigen Typinformationen zurückgegeben, sodass keine manuellen Neusynchronisierungen oder Problemumgehungen mehr erforderlich sind.<!--MDEE-1131-->
+![Beheben](../assets/fix.svg) Es wurde ein Problem behoben, bei dem für einige dynamisch erstellte Attribute der falsche Typ (`text` statt `OBJECT`) zurückgegeben wurde. Jetzt werden konsistent die richtigen Typinformationen zurückgegeben, sodass keine manuellen Neusynchronisierungen oder Problemumgehungen mehr erforderlich sind.<!--MDEE-1131-->
 
 ![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem die Erfassung von Produktdaten während partieller Synchronisierungen aufgrund von Fehlern im Lagerplatzanbieter fehlschlagen konnte. Diese Fehlerbehebung stellt sicher, dass Produktdaten zuverlässig exportiert werden und keine Produkt-IDs aufgrund von Fehlern im Zusammenhang mit LowStock übersprungen werden.<!--MDEE-1132-->
 
@@ -200,7 +202,7 @@ _31. März 2025_
 
 _11. März 2025_
 
-![Korrektur](../assets/new.svg) Es wurde eine Funktion hinzugefügt, um `products`-, `productOverrides`- und `productAttributes`-Feeds basierend auf einer bestimmten Liste von Produkt-SKUs teilweise zu synchronisieren. Verwenden Sie die neue Funktion, indem Sie dem Befehl CLI neu synchronisieren die Option `--by-ids` hinzufügen: <!--MDEE-606-->
+![Neu](../assets/new.svg) Es wurde eine Funktion hinzugefügt, um `products`-, `productOverrides`- und `productAttributes`-Feeds basierend auf einer bestimmten Liste von Produkt-SKUs teilweise zu synchronisieren. Verwenden Sie die neue Funktion, indem Sie dem Befehl CLI neu synchronisieren die Option `--by-ids` hinzufügen: <!--MDEE-606-->
 
 ```shell
 bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
@@ -284,7 +286,7 @@ _9. September 2024_
 
 _26. August 2024_
 
-![Korrigieren](../assets/fix.svg) Es wurde eine Filterung mehrerer Storeviews für den Feed mit benutzerdefinierten Optionen für das Produkt behoben. <!--MDEE-842-->
+![Korrigieren](../assets/fix.svg) Es wurde eine mehrfache storeview-Filterung für den Feed mit benutzerdefinierten Optionen für das Produkt behoben. <!--MDEE-842-->
 
 ![Korrigieren](../assets/fix.svg) Ungültige Feeds werden erst erneut gesendet, wenn sich der Hash-Wert des Feeds geändert hat.<!--MDEE-848-->
 
@@ -334,7 +336,7 @@ _5. Juni 2024_
 
 _31. Mai 2024_
 
-![Korrektur](../assets/fix.svg) Es wurde Unterstützung für die Datenübertragungs-Auditprotokollierung hinzugefügt, indem ein Mechanismus hinzugefügt wird, um jedes Mal, wenn Daten von der Commerce-Instanz an einen Commerce-Service-`data_sent_outside` übertragen werden, ein <!--MDEE-785-->-Ereignis zu senden
+![Korrektur](../assets/fix.svg) Es wurde Unterstützung für die Datenübertragungs-Auditprotokollierung hinzugefügt, indem ein Mechanismus hinzugefügt wird, um jedes Mal, wenn Daten von der Commerce-Instanz an einen Commerce-Service übertragen werden, ein `data_sent_outside`-Ereignis zu senden. <!--MDEE-785-->
 
 ### Version 103.3.3
 
@@ -378,7 +380,7 @@ _30. April 2024_
    - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
    - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
 
-- Ändern von Protokolltabellennamen - folgt demselben Benennungsmuster wie die Feed-Tabellen, aber ändern Sie die Protokolltabellennamen, um ein `_cl` Suffix hinzuzufügen.  Beispiel: `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
+- Ändern von Protokolltabellennamen - folgt demselben Benennungsmuster wie die Feed-Tabellen, aber ändern Sie die Protokolltabellennamen, um ein `_cl` Suffix hinzuzufügen. Beispiel: `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
 
 Wenn Sie über benutzerdefinierten Code verfügen, der auf eine dieser Entitäten verweist, aktualisieren Sie die Verweise mit den neuen Namen, um sicherzustellen, dass Ihr Code weiterhin ordnungsgemäß funktioniert.
 
@@ -412,7 +414,6 @@ _3. April 2024_
 
 ![Korrigieren](../assets/fix.svg) Es wurde ein Mutex für alle Feeds hinzugefügt, die verarbeitet werden.
 
-
 ### Version 103.2.2
 
 _14. März 2024_
@@ -434,3 +435,5 @@ _5. März 2024_
 _21. Februar 2024_
 
 - Multi-Thread-Datensynchronisation für Produkte und Preise hinzugefügt.
+
+
