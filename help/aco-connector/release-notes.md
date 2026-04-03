@@ -2,9 +2,9 @@
 title: '[!DNL Adobe Commerce Optimizer Connector] Versionshinweise'
 description: Die neuesten Versionsinformationen für  [!DNL Adobe Commerce Optimizer Connector]  für Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 4da2776c561d88b5343442df84b691cb857fada3
+source-git-commit: 205fca38b379f94027a965b58826ffd922577f61
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
@@ -17,21 +17,30 @@ In diesen Versionshinweisen werden alle Versionen für die [!DNL Adobe Commerce 
 ![Problem behoben](../assets/fix.svg) Fehlerbehebungen und Verbesserungen
 ![Bekanntes Problem](../assets/bug.svg) Bekannte Probleme
 
+## Versionen 2026
 
-## v1.0.11
+### Version 1.0.12
+
+_2. April 2026_
+
+![Neu](../assets/new.svg) **Es wurde Unterstützung für den Feed Kategorien in `saas:resync` Befehl ** hinzugefügt. Mit dem `saas:resync` CLI-Befehl können Sie jetzt Ihre neuesten Kategoriedaten einfach aktualisieren und anzeigen:
+
+```terminal
+bin/magento saas:resync --feed=categories
+```
 
 _10. März 2026_
 
-![Es wurde &#x200B;](../assets/fix.svg) Kompatibilitätsproblem behoben, durch das der Zugriff auf die Seite &quot;Commerce Services Connector-Konfiguration“ über das Commerce Admin-System und die Konfigurationsmenüs blockiert wurde, wenn der Adobe Commerce Optimizer Connector auf einer Commerce-Instanz installiert ist.  Jetzt können Sie auf die Commerce Services Connector-Konfigurationsseite zugreifen, wenn beide Erweiterungen installiert sind. <!--MDEE-1322-->
+![Es wurde ](../assets/fix.svg) Kompatibilitätsproblem behoben, durch das der Zugriff auf die Seite &quot;Commerce Services Connector-Konfiguration“ über das Commerce Admin-System und die Konfigurationsmenüs blockiert wurde, wenn der Adobe Commerce Optimizer Connector auf einer Commerce-Instanz installiert ist.  Jetzt können Sie auf die Commerce Services Connector-Konfigurationsseite zugreifen, wenn beide Erweiterungen installiert sind. <!--MDEE-1322-->
 
 
-## v1.0.10
+### Version 1.0.10
 
 _9. März 2026_
 
 ![Fehlerbehebung](../assets/fix.svg) Wenn Sie auf die Seite „Status der Daten-Feed-Synchronisierung“ zugreifen, bevor Sie die Connector-Konfiguration abgeschlossen haben, werden Sie jetzt automatisch zur Seite „Connector-Konfiguration“ weitergeleitet. Dieser geführte Fluss stellt sicher, dass die Connector-Einrichtung abgeschlossen ist, und hilft, Fehler zu vermeiden, die durch fehlende Konfigurationseinstellungen verursacht werden, die zu fehlgeschlagenen oder unvollständigen Statuselementen führen könnten.<!--MDEE-1296-->
 
-## v1.0.9
+### Version 1.0.9
 
 _1. März 2026_
 
