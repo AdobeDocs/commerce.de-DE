@@ -1,13 +1,13 @@
 ---
 title: Dokumentations-RAG-Service
 description: Erfahren Sie, wie Sie den KI-gestützten Dokumentationssuchdienst für die Adobe Commerce-Entwicklung verwenden.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 28396828516645abec3b42a2c6874afe9134dfb8
+source-git-commit: 6c7055be007d75ff4cf3673da9938d9d79779aef
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Der Dokumentations-RAG-Service (Retrieval-Augmented Generation) bietet KI-gestü
 
 Dieses ARG bietet eine IDE-Oberfläche für Fragen zu Adobe Commerce und kann Sie bei Best Practices für die Entwicklung von Anwendungen und anderen Migrationsaufgaben beraten.
 
-Der RAG-Service ist Teil des MCP-Servers (Model Context Protocol) [&#x200B; &#x200B;](./coding-tools.md)Commerce-Erweiterungstools, der mit Cursor und anderen MCP-kompatiblen KI-Assistenten integriert wird.
+Der RAG-Service ist Teil des MCP-Servers (Model Context Protocol) [ ](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}Commerce-Erweiterungstools, der mit Cursor und anderen MCP-kompatiblen KI-Assistenten integriert wird.
 
 ## Verfügbare Dokumentation
 
@@ -30,9 +30,9 @@ In der folgenden Tabelle wird beschrieben, welche Dokumentation derzeit vom RAG-
 
 | Kategorie | Index | Enthaltene Inhalte | Schlüsselwörter |
 |-------|---------|---------|------------------------|
-| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de) | commerce-storefront-docs | Edge Delivery Services, Dropdown-Listen, Storefront-Komponenten | Storefront, Dropin, EDS, Produktliste, Checkout |
+| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, Dropdown-Listen, Storefront-Komponenten | Storefront, Dropin, EDS, Produktliste, Checkout |
 | [Erweiterbarkeit](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, Ereignisse, Erweiterungen, Integrationen | Webhook, Ereignis, Erweiterung, API-Mesh, GraphQL |
-| [Commerce](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce (Katalog, Kunden, Bestellungen) | Katalog, Produkt, Kunde, Bestellung, Bestand |
+| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce (Katalog, Kunden, Bestellungen) | Katalog, Produkt, Kunde, Bestellung, Bestand |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, Laufzeitaktionen, Benutzeroberflächenerweiterungen | App Builder, Laufzeitaktion, React Spectrum |
 
 Weitere Informationen zur Indexauswahl finden Sie unter [Automatische Indexauswahl](#automatic-index-selection-recommended) und [Explizite Indexauswahl](#explicit-index-selection).
@@ -46,14 +46,14 @@ Ausführliche Informationen zur Dokumentation, die in den einzelnen Indizes enth
 * **Lokale Ausführung** - Alle Tools werden lokal auf Ihrem Computer ausgeführt.
 * **Sichere Kommunikation** - Die Dokumentationssuche verwendet HTTPS mit Token-Validierung.
 
-Der Produktions-Endpunkt ist durch [Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview) geschützt, die die folgenden Schutzmaßnahmen umfasst:
+Der Produktions-Endpunkt wird durch [Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview) geschützt, die die folgenden Schutzmechanismen umfasst:
 
 * Web Application Firewall (WAF) mit Microsoft Standard RuleSet 2.1 und Bot Manager RuleSet 1.0
 * Geoblocking für die von den USA blockierten Regionen (Kuba, Iran, Nordkorea, Syrien, Krim, Luhansk, Donezk)
 * DDoS-Schutz am Edge
 * API-Management-Backend gesperrt, um nur Traffic von der Haustür zu akzeptieren
 
-Für verschiedene Sicherheitsanforderungen können Sie einen benutzerdefinierten Endpunkt verwenden. Weitere Informationen [&#x200B; Sie unter &#x200B;](#custom-front-door-endpoint)-Endpunkt für benutzerdefinierte Fronttüren .
+Für verschiedene Sicherheitsanforderungen können Sie einen benutzerdefinierten Endpunkt verwenden. Weitere Informationen [ Sie unter ](#custom-front-door-endpoint)-Endpunkt für benutzerdefinierte Fronttüren .
 
 ## Voraussetzungen
 
@@ -127,7 +127,7 @@ Stellen Sie vor der Installation Folgendes sicher:
 
 ## Nutzung
 
-Nach der Installation können Sie die Indizes ([) &#x200B;](#automatic-index-selection-recommended) [explizit](#explicit-index-selection) aufrufen. Sie können auch den Befehl [`/search-commerce-docs` verwenden](#command-based-search).
+Nach der Installation können Sie die Indizes ([) ](#automatic-index-selection-recommended) [explizit](#explicit-index-selection) aufrufen. Sie können auch den Befehl [`/search-commerce-docs` verwenden](#command-based-search).
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ Wenn Sie sicherstellen möchten, dass der RAG-Service verwendet wird, können Si
 
 ## Benutzerdefinierter Endpunkt der Fronttür
 
-Standardmäßig verwendet die Dokumentationssuche den Produktions-Endpunkt [Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview) mit WAF-Schutz. Zu Test- oder Entwicklungszwecken können Sie dies mit der Umgebungsvariablen `FRONT_DOOR_URL` überschreiben.
+Standardmäßig verwendet die Dokumentationssuche den Produktions-[Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview)-Endpunkt mit WAF-Schutz. Zu Test- oder Entwicklungszwecken können Sie dies mit der Umgebungsvariablen `FRONT_DOOR_URL` überschreiben.
 
 Um einen benutzerdefinierten Endpunkt zu verwenden, fügen Sie ihn Ihrer Cursor-MCP-Konfiguration hinzu:
 
