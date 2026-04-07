@@ -1,7 +1,7 @@
 ---
 title: Empfehlungen erstellen und verwalten
 description: Erfahren Sie, wie Sie Empfehlungen erstellen und verwalten.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 source-git-commit: a0863a0d54c5c26b1ae207fd36777e0c515caaf0
 workflow-type: tm+mt
@@ -25,7 +25,7 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
    >[!IMPORTANT]
    >
-   >Diese Funktion befindet sich derzeit in der [Betaversion](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Beta-Teilnehmer müssen alle vorhandenen Empfehlungseinheiten neu erstellen, um den neuen Katalogansichtsumfang nutzen zu können.
+   >Diese Funktion befindet sich derzeit in der [Betaversion](https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Beta-Teilnehmer müssen alle vorhandenen Empfehlungseinheiten neu erstellen, um den neuen Katalogansichtsumfang nutzen zu können.
 
 1. Klicken Sie **Empfehlung erstellen**.
 
@@ -97,7 +97,7 @@ Nachdem Sie eine Empfehlung erstellt haben, müssen Sie deren ID abrufen, um die
 
 1. Kopieren Sie **Abschnitt** Recommendations-ID“ die ID.
 
-1. Verwenden Sie diese ID, um das [Empfehlungs-Dropdown-Menü](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) in Ihrer Edge Delivery Services-Storefront zu konfigurieren.
+1. Verwenden Sie diese ID, um das [Empfehlungs-Dropdown-Menü](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=de) in Ihrer Edge Delivery Services-Storefront zu konfigurieren.
 
 ## Verwalten vorhandener Empfehlungen
 
