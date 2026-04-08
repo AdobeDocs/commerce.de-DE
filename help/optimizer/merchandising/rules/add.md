@@ -1,49 +1,60 @@
 ---
 title: Regeln erstellen und verwalten
-description: Erfahren Sie, wie Sie Merchandising-Regeln erstellen und verwalten.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+description: Erfahren Sie, wie Sie Merchandising-Regeln für Suchvorgänge, Standardproduktlisten und Kategorieseiten erstellen und verwalten.
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: 0df932ab95666438baf1210b6fe913e4ae8e28b9
+source-git-commit: 0d1ebaddada8be82645164368ebfbb6dd0a569cd
 workflow-type: tm+mt
-source-wordcount: '2239'
+source-wordcount: '2714'
 ht-degree: 0%
 
 ---
 
 # Regeln erstellen und verwalten
 
-Um eine Regel zu erstellen, müssen Sie zunächst mit dem Regeleditor die Bedingungen im Abfragetext des Käufers definieren, unter denen die zugehörigen Ereignisse Trigger werden. Füllen Sie dann die Regeldetails aus, testen Sie die Ergebnisse und veröffentlichen Sie die Regel.
+Um eine Regel zu erstellen, öffnen Sie den Regeleditor, wählen Sie einen **Regeltyp** aus (Suchbedingungen, Standardauflistung oder Kategorieseiten), definieren Sie dann Bedingungen und Rangfolgen, wo sie gelten, testen Sie die Ergebnisse und veröffentlichen Sie die Regel.
 
-## Erstellen einer Regel
+## Erstellen einer Regel {#create-a-rule}
 
 1. Navigieren Sie in der linken Leiste zu _Merchandising_ > **Merchandising-Regeln**.
-1. (Optional) Verwenden Sie das **Katalogansicht**, um die Katalogansicht auszuwählen, in der die Regel angewendet werden soll. Die von Ihnen erstellte Regel wird auf die ausgewählte Ansicht beschränkt (oder auf alle Katalogansichten, wenn **Alle Ansichten** ausgewählt ist). Siehe [Auswählen der &#x200B;](workspace.md#select-catalog-view)), wie der Umfang der Katalogansicht funktioniert.
+1. (Optional) Verwenden Sie das **Katalogansicht**, um die Katalogansicht auszuwählen, in der die Regel angewendet werden soll. Die von Ihnen erstellte Regel wird auf die ausgewählte Ansicht beschränkt (oder auf alle Katalogansichten, wenn **Alle Ansichten** ausgewählt ist). Siehe [Auswählen der ](workspace.md#select-catalog-view)), wie der Umfang der Katalogansicht funktioniert.
 
    >[!IMPORTANT]
    >
-   >Diese Funktion befindet sich derzeit in der [Betaversion](https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Beta-Teilnehmer müssen alle vorhandenen Merchandising-Regeln neu erstellen, um den neuen Umfang der Katalogansicht nutzen zu können.
+   >Katalogansichten befinden sich derzeit in der [Beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Beta-Teilnehmer müssen alle vorhandenen Merchandising-Regeln neu erstellen, um den neuen Umfang der Katalogansicht nutzen zu können.
 
 1. Klicken Sie auf **[!UICONTROL Create rule]** , um den Regeleditor zu starten.
 
 ![Regel erstellen](../../assets/create-rule.png)
 
-Im **Regel erstellen** definieren Sie bestimmte Suchkriterien, Bedingungen und Ranking-Typen.
+### Regeltypen
+
+Jeder Regeltyp verfügt im Editor über ein Informationssymbol mit einer kurzen Erläuterung. Verwenden Sie den Typ, der entspricht, wo Käufer die Merchandising-Logik sehen sollen:
+
+| Regeltyp | Zweck |
+| --- | --- |
+| **Regel „Alle Produkte“** | Standard-Ranking und Merchandising in allen Produktlisten, wenn keine spezifischere Such- oder Kategorieregel gilt. Sie können nur eine solche Regel erstellen; sie kann keine Bedingungen enthalten. |
+| **Kategorieregel** (Beta) | Wendet Merchandising und Ranking auf eine oder mehrere ausgewählte Kategorien an und steuert die Produktbestellung auf diesen Kategorieseiten. |
+| **Suchregel** | Wendet Merchandising und Ranking an, wenn Käufer eine Suche ausführen, die den Abfragebedingungen der Regel entspricht. |
+
+Im Abschnitt **Regel erstellen** definieren Sie den Regelnamen, den Zeitplan, unabhängig davon, ob die Regel für alle Listen oder für bestimmte Suchbedingungen gilt, sowie Ranking-Typen.
 
 1. Geben Sie im Feld **[!UICONTROL Name]** einen Namen für die Regel ein. Alle Regelnamen müssen eindeutig sein.
 1. Geben Sie im Feld **[!UICONTROL Description]** eine Beschreibung für die Regel ein.
 1. Geben Sie im Feld **[!UICONTROL Date range]** das Datum oder den Datumsbereich an, zu dem die Regel aktiv sein soll.
-1. Im Abschnitt **[!UICONTROL Rule applies to]** stehen zwei Optionen zur Verfügung: **[!UICONTROL All product listings]** oder **[!UICONTROL Specific conditions]**.
+1. Wählen Sie im Abschnitt **[!UICONTROL Rule applies to]** den [Regeltyp](#rule-types) aus, den Sie verwenden möchten.
 
-   - **Alle Produktlisten** - Dies ist im Wesentlichen Ihre Standardregel und wird auf alle Suchabfragen angewendet, es sei denn, es ist eine spezifischere Suchabfrage definiert. Sie können nur eine Standardregel erstellen und sie kann keine Bedingungen enthalten. Wählen Sie den Intelligent-Ranking-Typ und alle manuellen Rankings aus, die auf alle Standardsuchen angewendet werden sollen.
-   - **Spezifische Bedingungen** - Im nächsten Abschnitt erfahren Sie mehr über die Bedingungstypen, die Sie für Ihre Regel festlegen können.
+>[!BEGINTABS]
 
-### Bedingungen
+>[!TAB Suchregel]
 
-Bedingungen sind die Voraussetzungen für den Trigger eines Ereignisses. Eine Regel kann bis zu zehn Bedingungen und 25 Ereignisse enthalten. Eine Standardregel darf keine Bedingungen enthalten.
+Eine Suchregel wendet eine Merchandising- und Ranking-Logik an, wenn Käufer eine Suche durchführen, die den definierten Bedingungen entspricht.
+
+Die Bedingungen sind die Voraussetzungen für den Trigger eines Ereignisses. Eine Regel kann bis zu zehn Bedingungen und 25 Ereignisse enthalten. Eine Standardregel darf keine Bedingungen enthalten.
 
 ![Regelbedingung auswählen](../../assets/rule-set-condition.png)
 
-#### Einzel-Bedingung
+**Einzel-Bedingung**
 
 1. Wählen *unter „Regel erstellen* die **Bedingung** aus und befolgen Sie die Anweisungen, um die Anweisung abzuschließen.
 
@@ -57,8 +68,9 @@ Bedingungen sind die Voraussetzungen für den Trigger eines Ereignisses. Eine Re
 1. Um andere Abfragen zu testen, ändern Sie den Abfragetext im Suchfeld *Regel testen* und drücken Sie **Return**.
 Zunächst rendert der Testbereich die Abfrage aus dem Suchfeld Bedingungen . Jetzt wird die Abfrage jedoch aus dem Feld Testabfrage gerendert. Im Testbereich wird jeweils nur eine Abfrage gerendert.
 1. Wenn Ihnen das Ergebnis gefällt, aktualisieren Sie den Text im Suchfeld *Bedingungen* . Klicken Sie dann auf eine beliebige Stelle auf der Seite, um die Ergebnisse im Testbereich zu aktualisieren.
+1. Legen Sie [Intelligente Rangfolge](#intelligent-ranking) und [Manuelle Rangfolge](#manual-ranking) wie in den folgenden Abschnitten beschrieben fest. Die gleichen Steuerelemente gelten für Kategorieseiten, wobei alle Unterschiede hervorgehoben werden.
 
-#### Mehrere Bedingungen
+**Mehrere Bedingungen**
 
 1. Um eine Regel mit mehreren Bedingungen zu erstellen, klicken Sie auf **Bedingung hinzufügen**.
 Eine Regel kann bis zu zehn Bedingungen enthalten. Der logische Operator, der zwei Bedingungen verknüpft, basiert auf der aktuellen Einstellung *Übereinstimmung*. Standardmäßig ist *Match* `All` und der logische Operator ist `AND`.
@@ -75,26 +87,47 @@ Eine Regel kann bis zu zehn Bedingungen enthalten. Der logische Operator, der zw
    In diesem Beispiel gibt es zwei separate Abfragen, die nach „Yoga“ oder „Hose“ suchen, anstatt nach „Yoga-Hose“ zu suchen. Diese Regel ist weniger spezifisch und wird häufiger in der Storefront ausgelöst als in der anderen.
 
 1. Um eine weitere Bedingung hinzuzufügen, klicken Sie auf **Bedingung hinzufügen** und wiederholen Sie den Vorgang.
+1. Legen Sie [Intelligente Rangfolge](#intelligent-ranking) und [Manuelle Rangfolge](#manual-ranking) wie in den folgenden Abschnitten beschrieben fest. Die gleichen Steuerelemente gelten für Kategorieseiten, wobei alle Unterschiede hervorgehoben werden.
 
-### Intelligente Rangfolge
+>[!TAB Kategorieregel]
 
-Intelligente Rangfolge kombiniert Benutzerverhalten und Website-Statistiken, um das Produkt-Ranking zu bestimmen.
-Store-Inhaber können die folgenden Arten von Rangfolgestrategien einrichten:
+>[!IMPORTANT]
+>
+>Kategorieregeln befinden sich in der Beta-Phase.
+
+Kategorieregeln steuern, wie Produkte auf (Kategorieseiten **bestellt**. Sie kombinieren **Kategorieregeln** mit **intelligentem Ranking** (einschließlich KI-gesteuerter Signale) und **manuellen** Aktionen wie Pin, Boost und Bury. So können Sie Discovery kuratieren, Promotions ausführen und Kategorieseiten an Ihrer Strategie ausrichten, ohne sich auf externe Tools verlassen zu müssen.
+
+1. Wählen **unter** die Kategorie(n) aus, für die die Regel gelten soll. Ausgewählte Kategorien werden unter dem Steuerelement angezeigt, sodass Sie den Umfang bestätigen können.
+1. Sie können in der angezeigten Liste der Kategorien auf die drei Punkte klicken und Folgendes auswählen:
+
+   - **Löschen** - Entfernt die Kategorie aus der Regel.
+   - **Auf Unterkategorien anwenden** - Wendet die Regel auf Unterkategorien an, für die noch keine aktive Merchandising-Regel definiert ist.
+   - **Vorschau** - Zeigt an, wie die Kategorieseite in Ihrer Storefront angezeigt würde.
+
+1. Legen Sie [Intelligente Rangfolge](#intelligent-ranking) und [Manuelle Rangfolge](#manual-ranking) wie in den folgenden Abschnitten beschrieben fest. Die gleichen Steuerelemente gelten für Suchregeln, wobei alle Unterschiede hervorgehoben werden.
+
+>[!ENDTABS]
+
+### Intelligente Rangfolge {#intelligent-ranking}
+
+Intelligente Rangfolgen bestellen Produkte mithilfe **Verhaltenssignalen** und gegebenenfalls KI. Sie gilt für **Suchregeln**, **alle Produktlisten** (Standardregeln) und **Kategorieregeln** (Kategorieseiten). Bei Einkäufern **Suchvorgängen** wiegt das Ranking auch **textliche Relevanz** für die Abfrage; **Kategorieseiten** verwenden Abfragetext nicht auf die gleiche Weise - der Editor konzentriert sich auf Verhaltensstrategien.
+
+Store-Inhaber können Strategien wie die folgenden festlegen. Exakte Beschriftungen und Zeitfenster stimmen mit dem Regeleditor überein und können je nach Regeltyp leicht abweichen.
 
 ![Intelligente Rangfolgen](../../assets/rule-intelligent-ranking.png)
 
-- Am häufigsten gekauft: Hierbei werden Produkte nach Gesamteinkäufen pro SKU in den letzten 7 Tagen sortiert.
-- Am häufigsten zum Warenkorb hinzugefügt - Ordnet die Aktivitäten „Zum Warenkorb hinzufügen“ in den letzten 7 Tagen der Reihe nach zu.
-- Am häufigsten angezeigt: Sortiert die Gesamtzahl der Ansichten pro SKU in den letzten 7 Tagen.
-- Empfohlen für Sie - Verwendet den `viewed-viewed` Datenpunkt - Käufer, die diese SKU angesehen haben, haben sich auch diese anderen SKUs angesehen.
-- Trends: Blicken Sie auf die Seitenansichtsereignisse der letzten 72 Stunden für Hintergrundereignisse und 24 Stunden für Vordergrundereignisse zurück.
-- Keine: Die Produkte werden nach Relevanz sortiert.
+- **Am häufigsten gekauft**/**Am häufigsten gekauft** - Sortiert nach der Kaufhäufigkeit pro SKU in einem aktuellen Fenster (z. B. in den vorherigen 7 Tagen für Suchkontexte).
+- **Am häufigsten zum Warenkorb hinzugefügt** - Sortiert nach der Gesamtaktivität von Hinzufügungen zum Warenkorb in einem aktuellen Fenster (z. B. die letzten 7 Tage für Suchkontexte).
+- **Am häufigsten angezeigt** - Sortiert die Ansichten nach SKU in einem aktuellen Fenster (z. B. in den letzten 7 Tagen für Suchkontexte).
+- **Empfohlen für Sie** - Verwendet das `viewed-viewed` Signal: Käufer, die diese SKU angesehen haben, haben auch andere SKUs angesehen; unterstützt, sofern verfügbar, die personalisierte Sortierung auf Kategorieseiten.
+- **Trending** - betont die jüngste Popularität (für Suchen, Seitenansichten in den letzten 72 Stunden für Hintergrund-Ereignisse und 24 Stunden für Vordergrund-Ereignisse).
+- **None** - Für Such- und Standardauflistungen werden die Produkte nach **Relevanz** sortiert. Bei **Kategorieregeln** wird die standardmäßige Merchandising-Reihenfolge für die Kategorie verwendet, wenn Sie keine andere intelligente Strategie auswählen.
 
-Wählen Sie den Strategietyp für die Regel aus. Das Fenster **Regel testen** zeigt die erwarteten Ergebnisse an.
+Wählen Sie die Strategie für Ihre Regel aus. Der Bereich **Regel testen** zeigt erwartete Ergebnisse für suchorientierte Regeln an; **Kategorieregeln** verwenden die Kategorievorschau.
 
-#### Funktionsweise der intelligenten Rangfolgenbewertung
+#### Funktionsweise der intelligenten Rangfolgenbewertung (Suche)
 
-Das intelligente Ranking bestimmt die endgültige Produktreihenfolge durch die Kombination zweier Schlüsselfaktoren: **Textrelevanz** und **Verhaltenssignale**. Wenn Sie verstehen, wie diese Faktoren interagieren, können Sie realistische Erwartungen an Ihre Suchergebnisse stellen.
+Für **Suchergebnisse** (und die Testabfrage im Regeleditor) bestimmt ein intelligentes Ranking die endgültige Produktreihenfolge, indem zwei Schlüsselfaktoren kombiniert werden: **Textrelevanz** und **Verhaltenssignale**. Wenn Sie verstehen, wie diese Faktoren interagieren, können Sie realistische Erwartungen an Ihre Suchergebnisse stellen.
 
 **Bewertungskomponenten:**
 
@@ -122,18 +155,18 @@ Unter [Suchregeln](./best-practice.md#tips-to-optimize-search-rules) erfahren Si
 #### Einschränkungen
 
 - Apostrophe und Anführungszeichen in Abfragen können zu einigen kleineren Problemen mit Rangfolge und Relevanz in einigen Sprachen führen.
-- Um sicherzustellen, dass das intelligente Ranking ordnungsgemäß funktioniert, stellen Sie sicher, dass **Suchgewichtung** für alle Attribute, die für die Suche oder Filterung (Facetten) verwendet werden, `5` oder kleiner ist.
+- Um sicherzustellen, dass das intelligente Ranking für **Suche** ordnungsgemäß funktioniert, stellen Sie sicher, dass **Suchgewichtung** für alle Attribute, die für die Suche oder Filterung (Facetten) verwendet werden, `5` oder kleiner ist. (Diese Anleitung gilt für die Suchindizierung, nicht für Merchandising-Flüsse, die nur einer Kategorie angehören.)
 
 Informationen zum Festlegen der Suchgewichtung finden Sie unter [Metadaten-API](https://developer.adobe.com/commerce/services/reference/rest/).
 
-### Manuelle Rangfolge
+### Manuelle Rangfolge {#manual-ranking}
 
-**Manuelles Ranking** sind Aktionen, die die Suchergebnisse ändern, wenn definierte Bedingungen erfüllt sind. Eine einzelne Regel kann bis zu 25 Ereignisse enthalten.
+**Manuelle Rangfolge** Ereignisse passen die Produktreihenfolge für **Suchergebnisse** (wenn die Bedingungen Ihrer Regel erfüllt sind), für **Standardproduktlisten** und für **Kategorieseite** an. Eine einzelne Regel kann bis zu 25 Ereignisse enthalten.
 
-- Verstärken - Verschiebt ein Produkt in den Suchergebnissen nach oben.
-- Beerdigen - Verschiebt eine SKU in den Suchergebnissen nach unten.
-- Produkt anheften - Das Produkt wird an der ausgewählten „Position“ auf der Seite angezeigt.
-- Produkt ausblenden - Schließt eine SKU aus den Suchergebnissen aus.
+- **Verstärken** - Verschiebt ein Produkt in der Liste nach oben.
+- **Bury** - Verschiebt eine SKU weiter unten in der Liste.
+- **Produkt anheften** - Fixiert ein Produkt an der ausgewählten Position in der Auflistung.
+- **Produkt ausblenden** - Schließt eine SKU aus den Ergebnissen aus (suchorientiert; Verhalten für Kategorieregeln im Editor bestätigen).
 
 Die einfachste Möglichkeit, ein Produkt anzuheften, besteht darin, es per Drag-and-Drop zu ziehen.
 
@@ -143,9 +176,9 @@ Sie können auch auf das Anheften-Symbol klicken, um ein Produkt an seinen aktue
 
 >[!NOTE]
 >
->Sie können nur Produkte anheften, die in den Suchergebnissen für die konfigurierten Abfrage- und Regelbedingungen angezeigt werden.
+>**Suchregeln** - Sie können nur Produkte anheften, die in den Suchergebnissen für die konfigurierten Abfrage- und Regelbedingungen angezeigt werden. Produkte müssen indiziert, sichtbar und vorrätig sein und alle Regelfilter erfüllen, damit sie angeheftet werden können. Wenn ein Produkt nicht in der Vorschau oder in den Ergebnissen für Ihre Regel angezeigt wird, hat das Anheften keine Auswirkung.
 >
->Produkte müssen indiziert, sichtbar und vorrätig sein und alle Regelfilter erfüllen, damit sie angeheftet werden können. Wenn ein Produkt nicht in der Vorschau oder in den Ergebnissen für Ihre Regel angezeigt wird, hat das Anheften keine Auswirkung.
+>**Standardsortierung** — Manuelle Positionen werden angewendet, wenn der Käufer die Standardsortierung verwendet: **Sortieren nach:** Relevanz für die Suche oder **Relevanz** / **Position** für Kategorienlisten. Wenn der Erstkäufer die Sortierreihenfolge ändert, z. B. nach Name, angeheftet, verstärkt, begraben oder ausgeblendet, stimmt das Verhalten möglicherweise nicht mehr mit der Vorschau überein.
 
 Oder Ereignisse können manuell festgelegt werden:
 
@@ -155,7 +188,7 @@ Oder Ereignisse können manuell festgelegt werden:
 
 1. Wählen Sie für mehrere Ereignisse alle anderen Ereignisse aus, die Sie bei Erfüllung der Bedingungen als Trigger festlegen möchten.
 
-### Regel abschließen
+### Regel abschließen {#finalizing-the-rule}
 
 1. Untersuchen Sie die Ergebnisse der Regel im Testbereich.
 1. Wenn die Regel mehrere Abfragen umfasst, testen Sie jede, die von der Regel betroffen sein könnte.
@@ -167,9 +200,9 @@ Oder Ereignisse können manuell festgelegt werden:
 
 >[!NOTE]
 >
->Regeln und manuell sortierte Produkte werden auf die Suchergebnisse angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sodass sie etwa nach Name oder Preis sortiert wird, sind Regeln und manuelle Rankings nicht mehr wirksam.
+>Regeln und manuell sortierte Produkte werden auf **Suchergebnisse** angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sodass sie etwa nach Namen sortiert wird, sind Regeln und manuelle Rankings nicht mehr wirksam. Für **category**-Listen wird das Standardsortierverhalten unter „Manuelles [&quot; ](#manual-ranking).
 
-## Regeln bearbeiten, anzeigen und löschen
+## Regeln bearbeiten, anzeigen und löschen {#edit-view-and-delete-rules}
 
 Befolgen Sie diese Anweisungen, um die Eigenschaften vorhandener Regeln zu aktualisieren. Sie können die Katalogansicht (den Umfang) einer Regel nicht ändern, nachdem sie erstellt wurde. Der Umfang wird beim Erstellen der Regel festgelegt. Siehe [Auswählen einer Katalogansicht](workspace.md#select-catalog-view).
 
@@ -196,7 +229,7 @@ Diese Option bietet eine schnelle Möglichkeit, alle Regelparameter anzuzeigen, 
 1. Suchen Sie im Arbeitsbereich *Regeln* die Regel in dem Raster, das Sie bearbeiten möchten, und klicken Sie auf **Mehr** (…) Optionen.
 1. Klicken Sie **Löschen**.
 
-## Feldbeschreibungen
+## Feldbeschreibungen {#field-descriptions}
 
 ### Bedingungen (falls)
 
@@ -221,21 +254,21 @@ Diese Option bietet eine schnelle Möglichkeit, alle Regelparameter anzuzeigen, 
 | Beliebig | Ändert alle logischen Operatoren in der Regel in `OR` und gibt den Satz übereinstimmender Produkte zurück. |
 | Alle | Ändert alle logischen Operatoren in der Regel in `AND` und gibt den Satz übereinstimmender Produkte zurück. |
 
-### Manuelle Rangfolge
+### Manuelle Ranking-Ereignisse
 
 | Ereignis | Beschreibung |
 |--- |--- |
-| Verstärken | Verschiebt eine SKU oder einen Bereich von SKUs in den Suchergebnissen nach oben. Jedes wird in den Testsuchergebnissen mit einem „erweiterten“ Vorschausymbol gekennzeichnet. |
-| begraben | Verschiebt eine SKU oder einen SKU-Bereich in den Suchergebnissen nach unten. Jeder wird in den Testsuchergebnissen mit einem „Buried“-Vorschauabzeichen gekennzeichnet. |
-| Produkt anheften | Hängt eine einzelne SKU an eine bestimmte Position in den Suchergebnissen an. Das Produkt ist in den Testsuchergebnissen mit einem „angehefteten“ Vorschauabzeichen gekennzeichnet. |
-| Produkt ausblenden | Schließt eine SKU oder einen Bereich von SKUs aus den Suchergebnissen aus. |
+| Verstärken | Verschiebt eine SKU oder einen Bereich von SKUs in der Liste nach oben (Suche oder Kategorie). Jede Version ist in den Testergebnissen mit einem „erweiterten“ Vorschau-Badge gekennzeichnet. |
+| begraben | Verschiebt eine SKU oder einen Bereich von SKUs in den unteren Bereich der Liste. Jedes wird in den Testergebnissen mit einem „Buried“-Vorschauabzeichen gekennzeichnet. |
+| Produkt anheften | Fügt einer bestimmten Position im Listeneintrag eine einzelne SKU hinzu. Das Produkt ist in den Testergebnissen mit einem „angehefteten“ Vorschauabzeichen gekennzeichnet. |
+| Produkt ausblenden | Schließt eine SKU oder eine Reihe von SKUs aus den Ergebnissen aus (suchorientiert; Kategorieregeln im Editor bestätigen). |
 
 ### Details
 
 | Feld | Beschreibung |
 |--- |--- |
 | -Name | Der Name der Regel. Regelnamen müssen eindeutig sein. |
-| Regeltyp | Standard oder Abfrage. Der Standardwert wird auf alle Regeln angewendet, es sei denn, es ist eine spezifischere Abfrageregel definiert. |
+| Regeltyp | **Standard** (alle Produktlisten), **Abfrage** (spezifische Suchbedingungen) oder **Kategorie** (Kategorieseiten), je nachdem, für **Regel gilt**. |
 | Startdatum | Das Startdatum der Regel, falls geplant. |
 | Enddatum | Das Enddatum der Regel, falls geplant. |
 | Beschreibung | Eine kurze Beschreibung der Regel. |

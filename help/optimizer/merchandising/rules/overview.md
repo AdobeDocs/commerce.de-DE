@@ -1,34 +1,45 @@
 ---
 title: Merchandising-Regeln
-description: '[!DNL Adobe Commerce Optimizer] Merchandising-Regeln kombinieren Logik mit Aktionen, um das Einkaufserlebnis zu gestalten.'
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+description: '[!DNL Adobe Commerce Optimizer] Merchandising-Regeln kombinieren Logik mit Aktionen, um Suchergebnisse, Standardproduktlisten und Kategorieseiten zu gestalten.'
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
 
 # Merchandising-Regeln
 
-Merchandising-Regeln beziehen sich auf einen Satz von Regeln, die Logik mit Aktionen kombinieren, um das Sucherlebnis eines Käufers in Ihrem Geschäft zu gestalten. Sie können Merchandising-Regeln verwenden, um Produkte zu optimieren, zu vergraben, anzuheften oder auszublenden, um Suchergebnisse in Echtzeit zu kalibrieren und so Ihre Geschäftsziele zu unterstützen.
+Merchandising-Regeln kombinieren Logik mit Aktionen, um das Erscheinungsbild von Produkten **Suchergebnisse** auf **Standardproduktlisten** (**Alle Produktlisten**) und auf **Kategorieseiten** ([Kategorienregeln](#category-rules) befinden sich in der Beta-Phase) zu gestalten. Sie können Produkte ankurbeln, vergraben, anheften oder ausblenden und **intelligentes Ranking** anwenden, sodass die Listeneinträge Ihre Geschäftsziele widerspiegeln.
 
-Jede Regel besteht aus drei Hauptkomponenten:
+Jede **Suchregel** besteht aus drei Hauptkomponenten:
 
-- Bedingungen : Die Bedingungen, unter denen eine Aktion Trigger wird.
-- Ereignisse : Die Aktionen, die ausgeführt werden, wenn die Bedingungen erfüllt sind.
-- Details : Der Name der Regel und optionaler Zeitrahmen und Beschreibung.
+- **Bedingungen** - Abfragebasierte Anforderungen, bei denen eine Aktion durch einen Trigger ausgelöst wird, wenn die Suche des Käufers übereinstimmt.
+- **Ereignisse** - Aktionen, die stattfinden, wenn die Bedingungen erfüllt sind (manuelle Rangfolge und zugehörige Ereignisse).
+- **Details** - Der Name der Regel sowie optionaler Zeitrahmen und Beschreibung.
 
-Sie können mehrere Bedingungen und Aktionen kombinieren und eine Regel so planen, dass sie für einen Zeitraum aktiv ist. Sie können auch eine Standardregel festlegen, die auch dann angewendet wird, wenn kein Suchbegriff festgelegt ist.
+**Kategorieregeln** Verwenden Sie **Kategorieauswahl** anstelle von Suchabfragebedingungen; intelligentes Ranking und manuelles Ranking funktionieren auf die gleiche Weise wie für die Suche, wobei die Unterschiede in „Regeln erstellen [ verwalten“ ](add.md).
+
+Sie können mehrere Bedingungen und Aktionen für Suchregeln kombinieren und jede Regel so planen, dass sie für einen Zeitraum aktiv ist. Sie können auch eine **Standardregel** festlegen (**Alle Produktlisten**), die gilt, wenn keine spezifischere Such- oder Kategorieregel gilt.
+
+## Kategorieregeln {#category-rules}
+
+>[!IMPORTANT]
+>
+>Kategorieregeln befinden sich in der Beta-Phase.
+
+**Kategorieregeln** Steuern der Produktreihenfolge auf **Kategorieseiten**. Sie wählen eine oder mehrere Kategorien aus und wenden dann intelligentes Ranking (z. B. am häufigsten angezeigt, Trend) und manuelle Aktionen wie Pin, Boost und Bury an. Sie verwenden keine Suchabfragebedingungen. Informationen zu Einrichtungsschritten, Regeltypen und der Art und Weise, wie die Rangfolge für Kategorie und Suche gilt, finden Sie unter [Regeln erstellen und verwalten](add.md).
 
 ## Anforderungen
 
-Eine einfache Suchregel kann eine einzelne Bedingung und ein einzelnes Ereignis enthalten, während eine komplexe Regel bis zu zehn Bedingungen mit Triggern von bis zu 25 Ereignissen enthalten kann.
+Eine einfache **Suchregel** kann eine einzelne Bedingung und ein einzelnes Ereignis enthalten, während eine komplexe Regel bis zu zehn Bedingungen mit Triggern von bis zu 25 Ereignissen enthalten kann. **Kategorieregeln** folgen denselben Ereignisbeschränkungen für die manuelle Rangfolge; sie verwenden keine Abfragebedingungen.
+
 Regeln können Folgendes enthalten:
 
-- Bis zu zehn Bedingungen
-- Bis zu 25 Ereignisse
+- Bis zu zehn **Bedingungen** (nur Suchregeln)
+- Bis zu 25 **Events**
 
 Abfragetext kann Folgendes enthalten:
 
@@ -50,9 +61,11 @@ Beim Erstellen einer komplexen Regel kann es hilfreich sein, sie mit Einzügen a
 
 ## Standardregel
 
-Sie können eine Standardregel festlegen, die angewendet wird, wenn kein Suchbegriff angegeben wird oder keine andere Suchregel angewendet werden kann. Wenn Sie die Standardregel auf „Am häufigsten gekauft“ festlegen, wird für alle Abfragen standardmäßig dieser Rangfolgetyp verwendet, es sei denn, sie werden durch einen spezifischeren Suchbegriff überschrieben. Für die Standardregel kann kein Suchbegriff festgelegt werden.
+Sie können eine Standardregel (**Alle Produktlisten) festlegen** die gilt, wenn kein Suchbegriff angegeben wird oder keine andere Suchregel angewendet werden kann. Wenn Sie die Standardregel auf „Am häufigsten gekauft“ setzen, wird für Abfragen standardmäßig dieser Rangfolgetyp verwendet, es sei denn, sie werden durch einen spezifischeren Suchbegriff ersetzt. Für die Standardregel kann kein Suchbegriff festgelegt werden. **Kategorieregeln** sind separat: Sie gelten nur für die von Ihnen ausgewählten Kategorien und ersetzen nicht die standardmäßige Auflistungsregel.
 
 ## Rangfolge mit mehreren Regeln
+
+Folgendes gilt für **Suchregeln** und ihre Interaktion für eine bestimmte Suche. **Kategorieregeln** gelten pro Kategorie. Siehe [Erstellen und Verwalten von Regeln](add.md#category-rules), wie sie mit Such- und Standardregeln übereinstimmen.
 
 Auf einen Suchbegriff wird immer nur eine Suchregel angewendet.
 Wenn mehrere Regeln für einen Suchbegriff gefunden werden, werden alle diese Regeln angewendet. Wenn es zu einer Kollision zwischen zwei Regeln kommt - `rule 1`, die SKU1 erhöht, aber `rule 2` dieselbe SKU ausblendet - hat die zuletzt angewendete Regel (`rule 2`) Vorrang.

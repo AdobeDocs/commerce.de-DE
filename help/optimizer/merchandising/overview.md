@@ -2,11 +2,11 @@
 title: Übersicht über Merchandising
 description: Erfahren Sie mehr über Merchandising-Funktionen in [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Product Discovery stattet Merchandiser mit leistungsstarken Tools aus, um das Ei
 
 Die Produkterkennung ermöglicht Ihnen Folgendes:
 
-* **Konfigurieren Sie [Facetten](./facets/overview.md), [Merchandising-Regeln](./rules/overview.md) und [Synonyme](./synonyms/overview.md)**, um Käufer mit minimaler Reibung zu den relevantesten Produkten zu führen.
+* **Konfigurieren Sie [Facetten](./facets/overview.md), [Merchandising-Such- und Kategorieregeln](./rules/overview.md) und [Synonyme](./synonyms/overview.md)**, um Käufer mit minimaler Reibung zu den relevantesten Produkten zu führen.
 * **Erstellen Sie intuitive, zielorientierte Sucherlebnisse** die Ihre Merchandising-Strategie und saisonalen Prioritäten widerspiegeln.
 * **Verwenden Sie KI-gesteuerte dynamische Facettenbildung und Ergebnisneubildung** um Suchergebnisse in Echtzeit auf der Grundlage des Käuferverhaltens anzupassen und so Interaktion und Umsatz zu steigern.
 * **Stellen Sie sicher, dass Werbeartikel und Elemente mit hoher Priorität effektiv** werden, um Suchergebnisse an Geschäftszielen auszurichten.
