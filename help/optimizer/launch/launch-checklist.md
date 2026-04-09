@@ -48,7 +48,7 @@ Vergewissern Sie sich, dass Ihre Adobe Commerce on Cloud-Umgebung produktionsber
 
 Vergewissern Sie sich, dass Ihre [!DNL Adobe Commerce Optimizer] Produktionsinstanz korrekt eingerichtet ist.
 
-▢ Die Produktionsinstanz ist aktiv. Weitere Informationen [ Bereitstellung finden ](../get-started.md) unter „Erste Schritte“.
+▢ Die Produktionsinstanz ist aktiv. Weitere Informationen [&#x200B; Bereitstellung finden &#x200B;](../get-started.md) unter „Erste Schritte“.
 ▢ Die Instanz befindet sich in der richtigen Region.
 ▢ Der Umgebungstyp ist Produktion.
 ▢ Sie kennen die Organisations-ID, Client-ID, Aufnahme-URL und Commerce Optimizer-URL. Siehe [Erste Schritte](../get-started.md).
@@ -138,8 +138,8 @@ Bestätigen der Erweiterungskonfiguration für die Produktion.
 
 ▢ Der Arbeitsbereich Produktion enthält alle erforderlichen Konfigurationen und Services.
 ▢ Die Produktions-App durchläuft Tests für verschiedene Build-Szenarien.
-▢ Produktbeschränkungen und -grenzen wurden anhand der [Adobe Developer App Builder-Produktbeschreibung und der {](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}}Systemeinstellungen und -beschränkungen von App Builder überprüft und [.
-](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}
+▢ Produktbeschränkungen und -grenzen wurden anhand der [Adobe Developer App Builder-Produktbeschreibung und der {](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}}Systemeinstellungen und -beschränkungen von App Builder überprüft und [&#128279;](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings).
+{target="_blank"}
 ▢ Die Produktions-App verwendet App Builder-Produktionsendpunkte.
 ▢ benutzerdefinierte *Admin*-Bedienfelderweiterungen werden im Produktionsarbeitsbereich bereitgestellt.
 
@@ -159,8 +159,8 @@ Polnische Inhalte, SEO, Leistung, Sicherheit und CDN-Verhalten vor dem Launch.
 
 Bestätigen des Authoring-Workflows und der Storefront-Komponenten
 
-▢ Die Prüfung der Go-Live-Checkliste für {1[ AEM/EDS ist abgeschlossen.
-](https://www.aem.live/docs/go-live-checklist)
+▢ Die Prüfung der Go-Live-Checkliste für &lbrace;1[&#128279;](https://www.aem.live/docs/go-live-checklist) AEM/EDS ist abgeschlossen.
+
 ▢ Die Authoring-Quelle ist ein dokumentbasierter oder universeller Editor (und konfiguriert).
 ▢ Inhalte werden mit dem Vorschau- → Veröffentlichungszyklus veröffentlicht.
 ▢ Inhalts- und Design-QA ist in der `.aem.live` Domain abgeschlossen.
@@ -174,7 +174,7 @@ Bestätigen des Authoring-Workflows und der Storefront-Komponenten
 Bestätigen von Metadaten, URLs und crawlen Verhalten.
 
 ▢ Metadaten des Dokumenttitels sind für wichtige Seiten (insbesondere PDPs und PLPs) vorhanden. Siehe [SEO-Metadaten](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/){target="_blank"} in der Dokumentation zu _Adobe Commerce_.
-▢ PDPs umfassen [Metadaten und strukturierte ](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/){target="_blank"} (z. B. JSON-LD).
+▢ PDPs umfassen [Metadaten und strukturierte &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/){target="_blank"} (z. B. JSON-LD).
 ▢ Produkt-URL-Formate sind konsistent (z. B. `domain/product-name`).
 ▢ Vanity-URLs werden zu kanonischen URLs umgeleitet.
 ▢ Das Projekt enthält `robots.txt`, die ggf. eine Indizierung ermöglichen, Verweise auf Sitemaps und Blockpfade, die nicht indiziert werden sollen (z. B. `/drafts`).
@@ -209,7 +209,7 @@ Bestätigen Sie die Leistungsgrundlagen und die Analytics-Verkabelung.
 Bestätigen Sie Berechtigungen und Geheimnisse.
 
 ▢ entsprechenden Berechtigungen sind für DAM-Inhalte und EDS-Sites konfiguriert. Siehe [DA.live-Berechtigungen](https://da.live/docs/administration/permissions) und [Authentifizierungseinstellungen für das Authoring](https://www.aem.live/docs/authentication-setup-authoring).
-▢ Die Integration von Produktvisualisierungen wird bereitgestellt. Siehe [Übersicht über den Zugriff auf AEM Cloud ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
+▢ Die Integration von Produktvisualisierungen wird bereitgestellt. Siehe [Übersicht über den Zugriff auf AEM Cloud &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
 ▢ Links zum Zurücksetzen des Kennworts in E-Mail-Vorlagen stimmen mit Ihrer Edge Delivery Services-Einrichtung überein. Siehe die häufig gestellten Fragen zur Storefront: [Was sollte ich tun, wenn meine Links zur E-Mail-Vorlage nach der Migration zu Edge Delivery Services oder Helix beschädigt sind?](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}.
 ▢ Produktionsschlüssel für Integrationen und Zahlungsanbieter sind vorhanden.
 ▢ Domains werden auf die Zulassungsliste gesetzt und Backend-Webhooks funktionieren.
