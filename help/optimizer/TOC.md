@@ -4,7 +4,7 @@ user-guide-description: Dokumentation und Ressourcen für [!DNL Adobe Commerce O
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: e5cb31d0daec30b78cebf4173b72a556e7a92dd2
+source-git-commit: 67e254242d93c6f05d4c204cbc39e50116605c6b
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 11%
@@ -18,7 +18,6 @@ ht-degree: 11%
 - [Benutzer- und Identitätsverwaltung](user-management.md)
 - [Geteilte Verantwortung](shared-responsibility.md)
 - [Beschränkungen und Grenzen](boundaries-limits.md)
-- [Versionshinweise](release-notes.md)
 - Ergebnisse verwalten {#manage-results}
    - [Opportunities](./manage-results/opportunities.md)
    - [Erfolgsmetriken](./manage-results/success-metrics.md)
@@ -66,4 +65,4 @@ ht-degree: 11%
 - Ressourcen für Entwickler {#developer}
    - [Entwicklerhandbuch und API-Referenzen](https://developer.adobe.com/commerce/services/optimizer/)
    - [Salesforce Commerce Connector](./developer/salesforce-connector.md)
-
+- [Versionshinweise](release-notes.md)
