@@ -3,12 +3,12 @@ title: Versionshinweise
 description: Die neuesten Versionsinformationen für das  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
-source-git-commit: d0967674d05018f13dc6c8a562005d65d44e42ab
+source-git-commit: a42f6b3348eed476095c6d9777ac9486579fe6ea
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 0%
+source-wordcount: '461'
+ht-degree: 1%
 
 ---
 
@@ -22,21 +22,15 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 
 >[!BEGINSHADEBOX]
 
-### Katalogregeln
+### Katalogregeln (Betaversion)
 
 Merchandising-Regeln enthalten jetzt [Kategorieregeln](./merchandising/rules/add.md), sodass Sie eine oder mehrere Kategorien auswählen und die Produktreihenfolge auf Kategorieseiten steuern können, indem Sie dieselben intelligenten Ranking- und manuellen Aktionen (Pin, Boost, Bury) wie für die Suche verwenden.
 
-### Preisfilter
+### Preisfilter (Beta)
 
 Empfehlungsfilter unterstützen jetzt einen [Preisfilter](./merchandising/recommendations/filters.md#price) mit dem Sie eine Mindest- und Höchstpreisspanne für Produkte festlegen können.
 
-### Zusätzliche Versionshinweise
-
-[!DNL Adobe Commerce Optimizer] funktioniert mit den neuesten Versionen der AEM Assets-Integration, dem Commerce Optimizer-Connector und [!DNL Adobe Commerce Storefront]. Über die folgenden Links können Sie Versionshinweise für jeden Bereich anzeigen:
-
-| Erweiterbarkeit | Schaufenster |
-| --- | --- |
-| [AEM Assets-Integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer-Connector](../aco-connector/release-notes.md) | [Storefront-Versionsinformationen](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=de)<br>[Storefront-Änderungsprotokoll](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=de) |
+{{aco-release}}
 
 >[!ENDSHADEBOX]
 
@@ -46,15 +40,11 @@ Empfehlungsfilter unterstützen jetzt einen [Preisfilter](./merchandising/recomm
 
 >[!BEGINSHADEBOX]
 
-Es wurde die Möglichkeit hinzugefügt, eine Katalogansicht anzugeben, wenn Sie [Empfehlungseinheiten erstellen](./merchandising/recommendations/create.md) oder ([) &#x200B;](./merchandising/rules/add.md).
+### Katalogansicht für Merchandising-Regeln und -Empfehlungen (Beta)
 
-### Zusätzliche Versionshinweise
+Es wurde die Möglichkeit hinzugefügt, eine Katalogansicht anzugeben, wenn Sie [Empfehlungseinheiten erstellen](./merchandising/recommendations/create.md) oder ([) ](./merchandising/rules/add.md).
 
-[!DNL Adobe Commerce Optimizer] funktioniert mit den neuesten Versionen der AEM Assets-Integration, dem Commerce Optimizer-Connector und [!DNL Adobe Commerce Storefront]. Über die folgenden Links können Sie Versionshinweise für jeden Bereich anzeigen:
-
-| Erweiterbarkeit | Schaufenster |
-| --- | --- |
-| [AEM Assets-Integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer-Connector](../aco-connector/release-notes.md) | [Storefront-Versionsinformationen](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=de)<br>[Storefront-Änderungsprotokoll](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=de) |
+{{aco-release}}
 
 >[!ENDSHADEBOX]
 
@@ -72,13 +62,7 @@ KI-gestützte Empfehlungen zur Site-Optimierung sind jetzt über die [Adobe Site
 
 Es wurden [Katalogebenen](./setup/catalog-layer.md) hinzugefügt, damit Sie Produktdaten ändern können, ohne die Quelldaten zu ändern, einschließlich der Ebenenprioritätsverwaltung und der Integration mit Adobe Sites Optimizer-Funktionen zur automatischen Fehlerbehebung.
 
-### Zusätzliche Versionshinweise
-
-[!DNL Adobe Commerce Optimizer] funktioniert mit den neuesten Versionen der AEM Assets-Integration, dem Commerce Optimizer-Connector und [!DNL Adobe Commerce Storefront]. Über die folgenden Links können Sie Versionshinweise für jeden Bereich anzeigen:
-
-| Erweiterbarkeit | Schaufenster |
-| --- | --- |
-| [AEM Assets-Integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer-Connector](../aco-connector/release-notes.md) | [Storefront-Versionsinformationen](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=de)<br>[Storefront-Änderungsprotokoll](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=de) |
+{{aco-release}}
 
 >[!ENDSHADEBOX]
 
@@ -111,13 +95,7 @@ Das [!DNL Commerce Optimizer Salesforce Commerce Connector] ist ein neues Starte
 
 Eine neue Kategorien-REST-API ist jetzt verfügbar, mit der Admins und Entwickler mehrere Kategoriestrukturen für die Navigation und Produktgruppierung programmgesteuert erstellen, aktualisieren und verwalten können. Die API unterstützt sowohl globale als auch kanalspezifische Konfigurationen und ist für hohe Skalierbarkeit ausgelegt. Sie unterstützt bis zu 10.000 Kategoriestrukturen und 500 Kategorien pro Struktur. Weitere Informationen finden Sie unter [Kategorien](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#categories) im _Merchandising Services-Entwicklerhandbuch_.<!--DCAT-2649-->
 
-### Zusätzliche Versionshinweise
-
-[!DNL Adobe Commerce Optimizer] funktioniert mit den neuesten Versionen der AEM Assets-Integration, dem Commerce Optimizer-Connector und [!DNL Adobe Commerce Storefront]. Über die folgenden Links können Sie Versionshinweise für jeden Bereich anzeigen:
-
-| Erweiterbarkeit | Schaufenster |
-| --- | --- |
-| [AEM Assets-Integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer-Connector](../aco-connector/release-notes.md) | [Storefront-Versionsinformationen](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=de)<br>[Storefront-Änderungsprotokoll](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=de) |
+{{aco-release}}
 
 >[!ENDSHADEBOX]
 
@@ -129,7 +107,7 @@ Eine neue Kategorien-REST-API ist jetzt verfügbar, mit der Admins und Entwickle
 
 ### EU-Region jetzt verfügbar
 
-Unterstützung für Kunden-IMS-Organisationen aus der Region der Europäischen Union (eu1) ist jetzt verfügbar. Sie können jetzt **Europäische Union** als **Region** auswählen, wenn [eine Commerce Optimizer-Instanz &#x200B;](./get-started.md#step-1-create-an-instance) Cloud Manager hinzufügen. Die Region der Europäischen Union ist nur für Produktionsumgebungen verfügbar.
+Unterstützung für Kunden-IMS-Organisationen aus der Region der Europäischen Union (eu1) ist jetzt verfügbar. Sie können jetzt **Europäische Union** als **Region** auswählen, wenn [eine Commerce Optimizer-Instanz ](./get-started.md#step-1-create-an-instance) Cloud Manager hinzufügen. Die Region der Europäischen Union ist nur für Produktionsumgebungen verfügbar.
 
 Die Basis-Produktions-URLs für die Region der Europäischen Union lauten:
 
@@ -138,12 +116,6 @@ Die Basis-Produktions-URLs für die Region der Europäischen Union lauten:
 
 ![Instanz erstellen](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
 
-### Zusätzliche Versionshinweise
-
-[!DNL Adobe Commerce Optimizer] funktioniert mit den neuesten Versionen der AEM Assets-Integration, dem Commerce Optimizer-Connector und [!DNL Adobe Commerce Storefront]. Über die folgenden Links können Sie Versionshinweise für jeden Bereich anzeigen:
-
-| Erweiterbarkeit | Schaufenster |
-| --- | --- |
-| [AEM Assets-Integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer-Connector](../aco-connector/release-notes.md) | [Storefront-Versionsinformationen](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=de)<br>[Storefront-Änderungsprotokoll](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=de) |
+{{aco-release}}
 
 >[!ENDSHADEBOX]
