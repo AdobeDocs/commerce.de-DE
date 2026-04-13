@@ -4,9 +4,9 @@ description: Die neuesten Versionsinformationen für  [!DNL Data Export Extensio
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: c7ad81a2b53e06ea9aab65aa53088a07839bc30d
+source-git-commit: 396ed02596d451f41cfb81e0da226d299f1f2bb7
 workflow-type: tm+mt
-source-wordcount: '2226'
+source-wordcount: '2375'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,17 @@ Zu den Aktualisierungen gehören:
 >Die SaaS-Datenexporterweiterung ist eine Sammlung von Modulen, die automatisch mit der Live-Suche, Produktempfehlungen und dem Katalog-Service installiert werden. Sie können die auf Ihrem System installierte Version mit dem Composer überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Versionen 2026
+
+### Version 103.4.22
+
+_10. April 2026_
+
+![Beheben](../assets/fix.svg) **Verbesserte Datensynchronisation**
+
+- Es wurde ein Problem behoben, bei dem gelöschte Produkte nicht ordnungsgemäß aus den verbundenen Commerce-Services entfernt wurden, wenn der Exportservice beim Löschen nicht verfügbar war. Wiederholungs- und Neusynchronisierungsvorgänge stellen jetzt sicher, dass gelöschte Produkte in SaaS korrekt angezeigt werden. <!--MDEE-1319-->
+- Katalogentitäten (Produkte und Kategorien) können jetzt in verbundene Commerce-Services exportiert werden, auch wenn in der Admin Store-Ansicht Attributwerte fehlen. Dies verbessert die Kompatibilität mit Erweiterungen von Drittanbietern und reduziert Exportfehler aufgrund fehlender Standardwerte. <!--MDEE-1333-->
+
+![Behebung](../assets/fix.svg) Es wurde ein Fehler auf der Seite „Status der Daten-Feed-Synchronisierung“ behoben, der auftreten konnte, wenn Feed-Datensätze unerwartete oder fehlende Daten enthielten. Das System kann nun problemlos mit solchen Fällen umgehen, wodurch die Stabilität verbessert und Abstürze verhindert werden. Wenn Sie den Adobe Commerce Optimizer-Connector zum Synchronisieren von Daten aus Adobe Commerce mit Adobe Commerce Optimizer verwenden, aktualisieren Sie für die [ auf ACO-Connector ](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes)Version 1.0.11) oder höher.<!--MDEE-1327-->
 
 ### Version 103.4.21
 
@@ -51,7 +62,7 @@ _6. Februar 2026_
 
 _2. Februar 2026_
 
-![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem Element-Batches während Aktualisierungen das zulässige Limit überschreiten konnten, was zu `items_limit_exceeded`-Fehlern beim Synchronisieren von Daten mit [Commerce-](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home) oder [Adobe Commerce Optimizer](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/data-sync) führte. <!--MDEE-1264-->
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem Element-Batches während Aktualisierungen das zulässige Limit überschreiten konnten, was zu `items_limit_exceeded`-Fehlern beim Synchronisieren von Daten mit [Commerce-](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) oder [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync) führte. <!--MDEE-1264-->
 
 ![Korrektur](../assets/fix.svg) Verbesserte Zuverlässigkeit von Produktdatenexporten durch Hinzufügen von Logik zum Registrieren fehlgeschlagener Elemente während der Sammlung von Bundle-Produktoptionen. <!--CCSAAS-4458-->
 
@@ -79,7 +90,7 @@ _24. November 2025_
 
 _22. Oktober 2025_
 
-![Neu](../assets/new.svg) Es wurde Unterstützung für die Erweiterung „Status der Daten-Feed-Synchronisierung“ hinzugefügt, um Datenübertragungen von Adobe Commerce zu Connected Services (Katalog-Service, Live-Suche und Produktempfehlungen) zu überwachen und Fehler zu beheben. Weitere Informationen zur Installation und Verwendung dieser Erweiterung finden Sie [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=de) im *Commerce Admin Guide*. <!--MDEE-954-->
+![Neu](../assets/new.svg) Es wurde Unterstützung für die Erweiterung „Status der Daten-Feed-Synchronisierung“ hinzugefügt, um Datenübertragungen von Adobe Commerce zu Connected Services (Katalog-Service, Live-Suche und Produktempfehlungen) zu überwachen und Fehler zu beheben. Weitere Informationen zur Installation und Verwendung dieser Erweiterung finden Sie [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) im *Commerce Admin Guide*. <!--MDEE-954-->
 
 ### Version 103.4.14
 
@@ -105,7 +116,7 @@ _18. September 2025_
 
 _29. August 2025_
 
-![Neu](../assets/new.svg) [!BADGE nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+![Neu](../assets/new.svg) [!BADGE nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 Es wurde Unterstützung für zusätzliche Produktattribute hinzugefügt, um Steuerklasse-, Attributsatz- und Bestandsdaten aus Commerce-Produktkonfigurationen im Produkt-Feed einzuschließen. Kunden, die diese Attribute in Produktexport-Feeds einbeziehen möchten, müssen das Modul Zusätzliche Produktattribute zu ihrem Adobe Commerce-Projekt hinzufügen. Siehe [Hinzufügen von Steuerklassen-, Attributsatz- und Bestandsattributen](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 
 ![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, das zu einer falschen Synchronisierung gelöschter Produktaktualisierungen führte, wenn während eines vollständigen Produktindex ein Fehler auftrat. Jetzt werden alle Produktlöschungen korrekt synchronisiert, selbst wenn während des Indizierungsprozesses ein Fehler auftritt. <!--MDEE-1144-->
