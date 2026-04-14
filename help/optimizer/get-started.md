@@ -3,18 +3,18 @@ title: Erste Schritte
 description: Erfahren Sie mehr über die ersten Schritte mit [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: aac6efa53d7a8b2907fcbe8d3b97cc38e7178aa5
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
 
 # Erste Schritte
 
-Diese Anleitung führt Sie durch die Einrichtung von [!DNL Adobe Commerce Optimizer] von Anfang bis Ende. Dieses Handbuch deckt zwar alle Rollen ab, doch finden [&#x200B; in der &#x200B;](https://developer.adobe.com/commerce/services/optimizer/) für Entwickler detaillierte Informationen zu den jeweiligen Inhalten.
+Diese Anleitung führt Sie durch die Einrichtung von [!DNL Adobe Commerce Optimizer] von Anfang bis Ende. Dieses Handbuch deckt zwar alle Rollen ab, doch finden [ in der ](https://developer.adobe.com/commerce/services/optimizer/) für Entwickler detaillierte Informationen zu den jeweiligen Inhalten.
 
 ## Voraussetzungen
 
@@ -56,7 +56,7 @@ Führen Sie die folgenden Schritte aus, um Ihre [!DNL Adobe Commerce Optimizer]-
 Nach dem Erstellen der Instanz:
 
 1. [Instanz verwalten](#manage-instances) über Commerce Cloud Manager.
-1. Konfigurieren Sie den Benutzerzugriff mithilfe des [Benutzerhandbuchs für die &#x200B;](./user-management.md)&quot;
+1. Konfigurieren Sie den Benutzerzugriff mithilfe des [Benutzerhandbuchs für die ](./user-management.md)&quot;
 
 ### Schritt 3. Beispieldaten hinzufügen (optional)
 
@@ -86,7 +86,7 @@ Entwickler übernehmen die technische Implementierung und Datenintegration, eins
 | Aufgabe | Beschreibung | Link |
 |---|---|---|
 | **Zugriff auf Developer Console** | Erstellen von Projekten und Generieren von Anmeldeinformationen | [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
-| **Aufnehmen von Katalogdaten** | Importieren von Produktdaten aus vorhandenen Systemen | [Datenaufnahme-API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) |
+| **Aufnehmen von Katalogdaten** | Importieren von Produktdaten aus vorhandenen Systemen | Informationen zum direkten Aufnehmen von Daten in Adobe Commerce Optimizer finden Sie [Datenaufnahme-API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}.<br><br>Um Daten aus Commerce in Cloud- oder lokalen Umgebungen oder anderen Drittanbietersystemen aufzunehmen, lesen Sie den Abschnitt [Integrationen](./integrations/integrations-overview.md){target="_blank"}. |
 | **Einrichten der Storefront** | Konfigurieren der Edge Delivery Services-Storefront | [Storefront-Setup](./storefront.md) |
 
 ### Merchandiser-Aufgaben
@@ -174,7 +174,7 @@ Die Beispieldaten basieren auf dem [Carvelo-Geschäftsszenario](./use-case/admin
 
 **Beispieldaten laden:**
 
-1. GitHub[Repository für die Datenaufnahme &#x200B;](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion) Beispielkatalogs.
+1. GitHub[Repository für die Datenaufnahme ](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion) Beispielkatalogs.
 
 1. Befolgen Sie die Setup-Anweisungen in der README-Datei des Repositorys, um die folgenden Aufgaben auszuführen:
 
@@ -217,6 +217,6 @@ Nach Abschluss der Einrichtung:
 ### Hilfe erhalten
 
 - **Entwicklerressourcen**: [Entwicklerdokumentation](https://developer.adobe.com/commerce/services/optimizer/)
-- **Storefront-Ressourcen**: [Dokumentation zur Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)
-- **Tutorials**: [Commerce Optimizer-Tutorials](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Support**: [Adobe Commerce-Support-Ressourcen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/overview)
+- **Storefront-Ressourcen**: [Dokumentation zur Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Tutorials**: [Commerce Optimizer-Tutorials](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Support**: [Adobe Commerce-Support-Ressourcen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

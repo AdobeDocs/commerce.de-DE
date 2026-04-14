@@ -4,10 +4,10 @@ user-guide-description: Dokumentation und Ressourcen für [!DNL Adobe Commerce O
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 67e254242d93c6f05d4c204cbc39e50116605c6b
+source-git-commit: fccfd5b75419e2f04537a48098591b53220725a5
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 11%
+source-wordcount: '108'
+ht-degree: 12%
 
 ---
 
@@ -15,6 +15,7 @@ ht-degree: 11%
 
 - [Was ist [!DNL Adobe Commerce Optimizer]?](overview.md)
 - [Erste Schritte](get-started.md)
+- [Integrationen](./integrations/integrations-overview.md)
 - [Benutzer- und Identitätsverwaltung](user-management.md)
 - [Geteilte Verantwortung](shared-responsibility.md)
 - [Beschränkungen und Grenzen](boundaries-limits.md)
@@ -47,7 +48,7 @@ ht-degree: 11%
       - [Erstellen und verwalten](./merchandising/synonyms/add.md)
       - [Typen](./merchandising/synonyms/type.md)
       - [Best Practices](./merchandising/synonyms/best-practice.md)
-- Store-Setup {#setup}
+- Store-Einrichtung {#setup}
    - [Katalogansichten](./setup/catalog-view.md)
    - [Katalogebenen](./setup/catalog-layer.md)
    - [Richtlinien](./setup/policies.md)
