@@ -3,9 +3,9 @@ title: Was ist [!DNL Live Search]?
 description: '[!DNL Live Search] von Adobe Commerce ermöglicht ein schnelles, relevantes und intuitives Sucherlebnis.'
 recommendations: noCatalog
 exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
-source-git-commit: c0a6f038d2528a67da6f1bb4f5e5bb140afc7dfc
+source-git-commit: 1ae6b0f6786375ca4e7bb7620e164008a08f8965
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '1014'
 ht-degree: 1%
 
 ---
@@ -23,11 +23,11 @@ Mit [!DNL Live Search] können Sie:
 
 >[!IMPORTANT]
 >
->Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüfen Sie vor der Implementierung die Informationen [Grenzen und &#x200B;](boundaries-limits.md)), um sicherzustellen, dass [!DNL Live Search] zu Ihren Geschäftsanforderungen passt.
+>Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüfen Sie vor der Implementierung die Informationen [Grenzen und ](boundaries-limits.md)), um sicherzustellen, dass [!DNL Live Search] zu Ihren Geschäftsanforderungen passt.
 
 ## Architektur
 
-Der Adobe Commerce-Teil der Architektur umfasst das Hosten der Suche *Admin*, das Synchronisieren von Katalogdaten und das Ausführen des Abfrage-Service. Nach der Installation und Konfiguration von [!DNL Live Search] beginnt Adobe Commerce mit der Freigabe von Such- und Katalogdaten für SaaS-Services. Jetzt können Admin-Benutzer Such-(Facetten[&#x200B; &#x200B;](facets.md), [Synonyme](synonyms.md) und Merchandising[Regeln einrichten, anpassen und &#x200B;](category-merch.md).
+Der Adobe Commerce-Teil der Architektur umfasst das Hosten der Suche *Admin*, das Synchronisieren von Katalogdaten und das Ausführen des Abfrage-Service. Nach der Installation und Konfiguration von [!DNL Live Search] beginnt Adobe Commerce mit der Freigabe von Such- und Katalogdaten für SaaS-Services. Jetzt können Admin-Benutzer Such-(Facetten[ ](facets.md), [Synonyme](synonyms.md) und Merchandising[Regeln einrichten, anpassen und ](category-merch.md).
 
 ![Live Search-Datenfluss](assets/ls-cs-data-flow.png)
 
@@ -35,13 +35,13 @@ Der Adobe Commerce-Teil der Architektur umfasst das Hosten der Suche *Admin*, da
 
 Mit dem Fokus auf Geschwindigkeit, Relevanz und Benutzerfreundlichkeit ist [!DNL Live Search] ein Wendepunkt für Käufer und Händler gleichermaßen. Sehen Sie sich das folgende Video an und machen Sie dann einen kurzen Überblick über [!DNL Live Search] in der Storefront.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452578?captions=ger&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-Ein ausführlicheres Video zur Verwendung und Konfiguration der Live-Suche finden Sie unter [Vollständige Demonstration zu [!DNL Live Search]](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
+Ein ausführlicheres Video zur Verwendung und Konfiguration der Live-Suche finden Sie unter [Vollständige Demonstration zu [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 
 ### Während der Eingabe suchen
 
-[!DNL Live Search] antwortet mit vorgeschlagenen Produkten und einer Miniaturansicht der wichtigsten Suchergebnisse in einem [Pop-up](storefront-popover.md) wenn Käufer Abfragen in das Feld [Suche](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search) eingeben. Die [&#x200B; „Produktdetails](https://experienceleague.adobe.com/de/docs/commerce-admin/start/storefront/storefront) wird angezeigt, wenn Käufer auf ein empfohlenes oder vorgestelltes Produkt klicken. Ein _Alle anzeigen_ in der Fußzeile des Popups zeigt die Suchergebnisseite an.
+[!DNL Live Search] antwortet mit vorgeschlagenen Produkten und einer Miniaturansicht der wichtigsten Suchergebnisse in einem [Pop-up](storefront-popover.md) wenn Käufer Abfragen in das Feld [Suche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) eingeben. Die [ „Produktdetails](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) wird angezeigt, wenn Käufer auf ein empfohlenes oder vorgestelltes Produkt klicken. Ein _Alle anzeigen_ in der Fußzeile des Popups zeigt die Suchergebnisseite an.
 
 [!DNL Live Search] gibt Suchergebnisse für eine Abfrage mit zwei oder mehr Zeichen zurück. Bei einer Teilübereinstimmung beträgt die maximale Anzahl von Zeichen pro Wort 20. Die Anzahl der Zeichen in der Abfrage kann nicht konfiguriert werden. Das Popover enthält die `name`, `sku` und `category_ids`.
 
@@ -89,7 +89,7 @@ Merchandising [Regeln](rules.md) gestalten das Einkaufserlebnis mit If-Then-Anwe
 
 Der [!DNL Live Search] [Arbeitsbereich](workspace.md) ist der Bereich im Admin-Bereich, in dem Sie [!DNL Live Search] Funktionen wie Synonyme, Facetten und Kategorie-Merchandising konfigurieren.
 
-## -Events
+## Ereignisse
 
 [!DNL Live Search] verwendet [Ereignisse](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search) zum Berechnen von [Intelligent Merchandising](category-merch.md) und [Performance](performance.md)-Dashboards. Eventing wird mit Standardimplementierungen bereitgestellt. Eventing für Headless-Storefronts sollte manuell aktiviert werden.
 
@@ -97,4 +97,12 @@ Der [!DNL Live Search] [Arbeitsbereich](workspace.md) ist der Bereich im Admin-B
 
 Wenn Sie an 90 aufeinander folgenden Tagen keine Suchanfrage für die Katalogdaten in Ihrer Testumgebung senden, werden die Katalogdaten in den Ruhezustand versetzt und es werden keine Daten für eine Suchanfrage zurückgegeben. Katalogdaten in Ihrer Produktionsumgebung sind von dieser Richtlinie nicht betroffen.
 
-Um die Katalogdaten in Ihrer Testumgebung erneut zu aktivieren, [&#x200B; Sie „eine Support-Anfrage &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Live Search] erneut aktivieren“ und fügen Sie die Umgebungs-IDs hinzu. Die Katalogdaten in Ihrer Testumgebung sollten innerhalb weniger Stunden wiederhergestellt werden.
+### Inaktive Testumgebung
+
+Um die Katalogdaten in Ihrer Testumgebung erneut zu aktivieren, [ Sie „eine Support-Anfrage ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Live Search] erneut aktivieren“ und fügen Sie die Umgebungs-IDs hinzu. Die Katalogdaten in Ihrer Testumgebung sollten innerhalb weniger Stunden wiederhergestellt werden.
+
+### Leerer Katalog
+
+Wenn Ihre Umgebung 45 Tage nach der Erstellung einen leeren Katalog hat, werden die Katalogdaten auf den Ruhezustand eingestellt und es werden keine Daten für eine Suchabfrage zurückgegeben. Dies umfasst sowohl Produktions- als auch Testumgebungen.
+
+Um die Katalogdaten in Ihrer Umgebung wieder zu aktivieren, [ Sie „eine Support-Anfrage ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Live Search] erneut aktivieren“ und geben Sie die Umgebungs-IDs an. Die Katalogdaten in Ihrer Umgebung sollten innerhalb weniger Stunden wiederhergestellt werden.
