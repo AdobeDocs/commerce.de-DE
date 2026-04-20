@@ -126,7 +126,7 @@ In der folgenden Tabelle wird beschrieben, welche Daten auf jeder Bereichsebene 
 
 | Umfang | Daten exportiert | Notizen |
 | ------- | --------------- | ------- |
-| Website | Preise und Preisbücher | Jede Preisgruppe wird als „Preisbuch[ exportiert, wobei ](../optimizer/setup/pricebooks.md) Namenskonvention `website::customergroupcode` verwendet wird. Alle Kundengruppen für die Website sind enthalten. |
+| Website | Preise und Preisbücher | Jede Preisgruppe wird als „Preisbuch[&#x200B; exportiert, wobei &#x200B;](../optimizer/setup/pricebooks.md) Namenskonvention `website::customergroupcode` verwendet wird. Alle Kundengruppen für die Website sind enthalten. |
 | Shop-Ansicht | Produkte und Produktattribute | Jede Store-Ansicht erstellt eine separate Katalogquelle in [!DNL Adobe Commerce Optimizer]. |
 
 ### Aktivieren und Deaktivieren des Verhaltens
@@ -181,7 +181,7 @@ bin/magento aco:config:init --org_id=your-org --tenant_id=your-tenant --client_i
 ## Überprüfen, ob die Datensynchronisation funktioniert
 
 Nach Aktivierung der Integration beginnt die Datensynchronisation automatisch. Je nach Kataloggröße kann die erste Synchronisierung einige Minuten bis mehrere Stunden dauern.
-Sie können über die Seite [Daten-Feed-Synchronisierungsstatus“ in Admin überwachen ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) überprüfen, ob die Synchronisierung funktioniert.
+Sie können über die Seite [Daten-Feed-Synchronisierungsstatus“ in Admin überwachen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) überprüfen, ob die Synchronisierung funktioniert.
 
 1. **Überprüfen Sie den Synchronisierungsstatus im Commerce Admin-**:
 
