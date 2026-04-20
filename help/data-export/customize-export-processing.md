@@ -3,7 +3,7 @@ title: Verbessern der SaaS-Datenexportleistung
 description: Erfahren Sie, wie Sie die SaaS-Datenexportleistung für Commerce Services mithilfe eines Multi-Thread-Datenexportmodus verbessern können.
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
-source-git-commit: 9b28da0bf861a266e9d679ba59470f46d9a89c1c
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Denken Sie daran, dass eine sorgfältige Planung, einschließlich der Schätzung
 
 ## Multithreading konfigurieren
 
-Der Multi-Thread-Modus wird für alle [Synchronisierungsmethoden](data-synchronization.md#synchronization-process) - Vollsynchronisierung, Teilsynchronisierung und Synchronisierung fehlgeschlagener Elemente unterstützt. Um Multithreading zu konfigurieren, geben Sie die Anzahl der Threads und die Batch-Größe an, die während der Synchronisierung verwendet werden sollen.
+Der Multi-Thread-Modus wird für alle [Synchronisierungsmethoden](data-synchronization.md#view-and-manage-the-synchronization-process) - Vollsynchronisierung, Teilsynchronisierung und Synchronisierung fehlgeschlagener Elemente unterstützt. Um Multithreading zu konfigurieren, geben Sie die Anzahl der Threads und die Batch-Größe an, die während der Synchronisierung verwendet werden sollen.
 
 - `thread-count` ist die Anzahl der Threads, die für die Verarbeitung von Entitäten aktiviert werden. Der `thread-count` lautet `1`.
 - `batch-size` ist die Anzahl der Entitäten, die in einer Iteration verarbeitet werden. Der `batch-size` ist `100` Datensätze für alle Feeds mit Ausnahme des Preis-Feeds. Für den Preis-Feed ist der Standardwert `500` Datensätze.
@@ -64,7 +64,7 @@ In der Befehlszeile angegebene Optionen überschreiben die in der `config.php` d
 
 Um alle Datenexportvorgänge mit Multithreading zu verarbeiten, können Systemintegratoren oder Entwickler die Anzahl der Threads und die Batch-Größe für jeden Feed in der Commerce-Anwendungskonfiguration ändern.
 
-Diese Änderungen können angewendet werden, indem benutzerdefinierte Werte zum [Systemabschnitt](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) der Konfigurationsdatei hinzugefügt werden, `app/etc/config.php`.
+Diese Änderungen können angewendet werden, indem benutzerdefinierte Werte zum [Systemabschnitt](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) der Konfigurationsdatei hinzugefügt werden, `app/etc/config.php`.
 
 **Beispiel: Multithreading für Produkte und Preise konfigurieren**
 

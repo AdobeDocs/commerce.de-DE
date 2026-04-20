@@ -1,9 +1,9 @@
 ---
 title: Merchandising-Regeln
 description: '[!DNL Adobe Commerce Optimizer] Merchandising-Regeln kombinieren Logik mit Aktionen, um Suchergebnisse, Standardproduktlisten und Kategorieseiten zu gestalten.'
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
-source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Jede **Suchregel** besteht aus drei Hauptkomponenten:
 - **Ereignisse** - Aktionen, die stattfinden, wenn die Bedingungen erfüllt sind (manuelle Rangfolge und zugehörige Ereignisse).
 - **Details** - Der Name der Regel sowie optionaler Zeitrahmen und Beschreibung.
 
-**Kategorieregeln** Verwenden Sie **Kategorieauswahl** anstelle von Suchabfragebedingungen; intelligentes Ranking und manuelles Ranking funktionieren auf die gleiche Weise wie für die Suche, wobei die Unterschiede in „Regeln erstellen [&#x200B; verwalten“ &#x200B;](add.md).
+**Kategorieregeln** Verwenden Sie **Kategorieauswahl** anstelle von Suchabfragebedingungen; intelligentes Ranking und manuelles Ranking funktionieren auf die gleiche Weise wie für die Suche, wobei die Unterschiede in „Regeln erstellen [ verwalten“ ](add.md).
 
 Sie können mehrere Bedingungen und Aktionen für Suchregeln kombinieren und jede Regel so planen, dass sie für einen Zeitraum aktiv ist. Sie können auch eine **Standardregel** festlegen (**Alle Produktlisten**), die gilt, wenn keine spezifischere Such- oder Kategorieregel gilt.
 
@@ -65,7 +65,7 @@ Sie können eine Standardregel (**Alle Produktlisten) festlegen** die gilt, wenn
 
 ## Rangfolge mit mehreren Regeln
 
-Folgendes gilt für **Suchregeln** und ihre Interaktion für eine bestimmte Suche. **Kategorieregeln** gelten pro Kategorie. Siehe [Erstellen und Verwalten von Regeln](add.md#category-rules), wie sie mit Such- und Standardregeln übereinstimmen.
+Folgendes gilt für **Suchregeln** und ihre Interaktion für eine bestimmte Suche. **Kategorieregeln** gelten pro Kategorie. Siehe [Erstellen und Verwalten von Regeln](add.md), wie sie mit Such- und Standardregeln übereinstimmen.
 
 Auf einen Suchbegriff wird immer nur eine Suchregel angewendet.
 Wenn mehrere Regeln für einen Suchbegriff gefunden werden, werden alle diese Regeln angewendet. Wenn es zu einer Kollision zwischen zwei Regeln kommt - `rule 1`, die SKU1 erhöht, aber `rule 2` dieselbe SKU ausblendet - hat die zuletzt angewendete Regel (`rule 2`) Vorrang.

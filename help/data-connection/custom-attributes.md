@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Ihren Back-Office-Daten benutzerdefinierte Be
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
-source-git-commit: 5b1387e18e059c938aca600cc31951a3f5289e7e
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 2%
@@ -17,7 +17,7 @@ In diesem Artikel erfahren Sie, wie Sie Backoffice-Ereignissen benutzerdefiniert
 
 >[!NOTE]
 >
->Erfahren Sie, wie [&#x200B; Profile „benutzerdefinierte Identitäten &#x200B;](custom-identities.md)&quot; können.
+>Erfahren Sie, wie [ Profile „benutzerdefinierte Identitäten ](custom-identities.md)&quot; können.
 
 Benutzerdefinierte Attribute werden auf zwei Ebenen unterstützt:
 
@@ -349,7 +349,7 @@ ComponentRegistrar::register(
 
 Um sicherzustellen, dass die neuen benutzerdefinierten Sortierattribute von Ihrem [!DNL Commerce] in Experience Platform aufgenommen werden können, müssen Sie das Schema erweitern, um diese benutzerdefinierten Felder einzuschließen.
 
-Informationen zum Erweitern eines vorhandenen XDM-Schemas um diese benutzerdefinierten Felder finden Sie im Artikel [Erstellen und Bearbeiten von Schemas in der Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) in der Experience Platform-Dokumentation. Das Feld Mandanten-ID wird dynamisch generiert. Die Feldstruktur sollte jedoch dem Beispiel in der Experience Platform-Dokumentation ähneln.
+Informationen zum Erweitern eines vorhandenen XDM-Schemas um diese benutzerdefinierten Felder finden Sie im Artikel [Erstellen und Bearbeiten von Schemas in der Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) in der Experience Platform-Dokumentation. Das Feld Mandanten-ID wird dynamisch generiert. Die Feldstruktur sollte jedoch dem Beispiel in der Experience Platform-Dokumentation ähneln.
 
 >[!IMPORTANT]
 >
@@ -365,12 +365,12 @@ Fügen Sie `productListItems` Felder für die Bestellartikelebene hinzu:
 
 ## Schritt 12: Bestätigen Sie, dass Daten erfasst werden
 
-Gehen Sie in [&#x200B; Admin zur Registerkarte &#x200B;](connect-data.md#data-customization)Datenanpassung“, um zu bestätigen, dass benutzerdefinierte Attributdaten erfasst und an die Experience Platform gesendet werden.
+Gehen Sie in [ Admin zur Registerkarte ](connect-data.md#data-customization)Datenanpassung“, um zu bestätigen, dass benutzerdefinierte Attributdaten erfasst und an die Experience Platform gesendet werden.
 
 ### Fehlerbehebung
 
 Wenn die Meldung `No custom order attributes found.` auf der Registerkarte **[!UICONTROL Data Customization]** angezeigt wird, bestätigen Sie Folgendes:
 
 1. Sie haben die Voraussetzungen zum Aktivieren der [Data Connector-Erweiterung](overview.md#prerequisites) erfüllt.
-1. Sie haben [benutzerdefinierte Bestellattribute“ &#x200B;](#add-custom-order-attributes).
+1. Sie haben [benutzerdefinierte Bestellattribute“ ](#add-custom-attributes-to-orders).
 1. Mindestens ein Auftragsereignis wurde generiert.

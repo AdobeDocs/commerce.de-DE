@@ -2,7 +2,7 @@
 title: Regeln hinzufügen
 description: Erfahren Sie, wie Sie Merchandising-Suchregeln erstellen.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 085eb0fa1a278701cc889d219db7e8571327a632
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Um eine Regel zu erstellen, müssen Sie zunächst mit dem Regeleditor die Beding
 ## Regel hinzufügen
 
 1. Gehen Sie im Admin zu **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Legen Sie den **Bereich** fest, um die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings) zu identifizieren, für die die Regel gilt.
+1. Legen Sie den **Bereich** fest, um die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) zu identifizieren, für die die Regel gilt.
 1. Klicken Sie auf den **Merchandising suchen**-Arbeitsbereich.
 1. Klicken Sie **Regel hinzufügen**, um den Regeleditor zu starten.
 
@@ -53,7 +53,7 @@ Bedingungen sind die Voraussetzungen für den Trigger eines Ereignisses. Eine Re
 1. Um andere Abfragen zu testen, ändern Sie den Abfragetext im Suchfeld *Regel testen* und drücken Sie **Return**.
 Zunächst rendert der Testbereich die Abfrage aus dem Suchfeld Bedingungen . Jetzt wird die Abfrage jedoch aus dem Feld Testabfrage gerendert. Im Testbereich wird jeweils nur eine Abfrage gerendert.
 1. Wenn Ihnen das Ergebnis gefällt, aktualisieren Sie den Text im Suchfeld *Bedingungen* . Klicken Sie dann auf eine beliebige Stelle auf der Seite, um die Ergebnisse im Testbereich zu aktualisieren.
-1. Um eine einfache Regel mit einer Bedingung zu erstellen, gehen Sie zu Schritt 3: [Ereignisse hinzufügen](#events).
+1. Um eine einfache Regel mit einer Bedingung zu erstellen, gehen Sie zu Schritt 3: [Ereignisse hinzufügen](#manual-ranking).
 
 ### Mehrere Bedingungen
 

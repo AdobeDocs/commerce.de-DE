@@ -3,9 +3,9 @@ title: End-to-End-Anwendungsfall für Storefront- und Katalogadministrator
 description: Erfahren Sie, wie Sie  [!DNL Adobe Commerce Optimizer]  verwenden, um Ihren Katalog mithilfe von Katalogansichten und Richtlinien zu verwalten, und wie Sie Ihre Storefront basierend auf Ihrer Katalogkonfiguration einrichten.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 0%
@@ -55,7 +55,7 @@ In diesem Anwendungsbeispiel verwenden Sie Folgendes:
 
 >[!NOTE]
 >
-> Erfahren Sie mehr über die Konfigurationsdateien für Storefronts, indem Sie das Thema [Erkunden des Textbausteins](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=de) in der Dokumentation zur Adobe Commerce Storefront lesen.
+> Erfahren Sie mehr über die Konfigurationsdateien für Storefronts, indem Sie das Thema [Erkunden des Textbausteins](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) in der Dokumentation zur Adobe Commerce Storefront lesen.
 
 ### ‌Wichtige Erkenntnisse
 
@@ -110,7 +110,7 @@ Letztlich verfolgt Carvelo zwei Hauptziele:
 
 ## &#x200B;1. Zugriff auf die [!DNL Adobe Commerce Optimizer]
 
-Navigieren Sie zur URL für das Commerce Optimizer-Programm, die mit den Beispieldaten vorkonfiguriert ist. Sie finden die URL im Commerce Cloud Manager in den Instanzdetails für Ihr Commerce Optimizer-Projekt oder wenden sich an Ihren Systemadministrator. (Siehe [Zugriff auf eine Instanz](../get-started.md#access-an-instance).)
+Navigieren Sie zur URL für das Commerce Optimizer-Programm, die mit den Beispieldaten vorkonfiguriert ist. Sie finden die URL im Commerce Cloud Manager in den Instanzdetails für Ihr Commerce Optimizer-Projekt oder wenden sich an Ihren Systemadministrator. (Siehe [Zugriff auf eine Instanz](../get-started.md#access-the-adobe-commerce-optimizer-application).)
 
 Beim Starten von [!DNL Adobe Commerce Optimizer] wird Folgendes angezeigt:
 
@@ -118,7 +118,7 @@ Beim Starten von [!DNL Adobe Commerce Optimizer] wird Folgendes angezeigt:
 
 >[!NOTE]
 >
->Informationen zu den wichtigsten Komponenten [&#x200B; Benutzeroberfläche finden &#x200B;](../overview.md) im Artikel [!DNL Adobe Commerce Optimizer]Übersicht“.
+>Informationen zu den wichtigsten Komponenten [ Benutzeroberfläche finden ](../overview.md) im Artikel [!DNL Adobe Commerce Optimizer]Übersicht“.
 
 Erweitern Sie in der linken Navigation den Abschnitt _Store-Einrichtung_ und klicken Sie auf **[!UICONTROL Catalog views]**. Beachten Sie, dass die Arkbridge- und Kingsbluff-Händler bereits Katalogansichten erstellt haben:
 
@@ -157,7 +157,7 @@ Mit [!DNL Adobe Commerce Optimizer] wird der Commerce Manager:
 1. Erstellen Sie eine neue Richtlinie mit dem Namen *Celport-Teilekategorien*, damit Celport nur Brems- und Federungsteile verkaufen kann.
 1. Erstellen Sie eine neue Katalogansicht für die Celport-Storefront.
 
-   Diese Katalogansicht verwendet Ihre neu erstellte Richtlinie *Celport-Teilekategorien* und die vorhandenen *East Coast Inc Brands*, um sicherzustellen, dass Celport nur die Marken Bolt und Cruz als Teil der Vereinbarung mit East Coast Inc. verkaufen kann. Die Celport-Katalogansicht verwendet das `east_coast_inc` Preisbuch, um Produktpreispläne zu unterstützen, die mit den Lizenzvereinbarungen für Marken übereinstimmen.
+   Diese Katalogansicht verwendet Ihre neu erstellte Richtlinie *Celport-Teilekategorien* und die vorhandenen *East Coast Inc Brands*, um sicherzustellen, dass Celport im Rahmen der Vereinbarung mit East Coast Inc nur die Marken Bolt und Cruz verkaufen kann. Die Celport-Katalogansicht verwendet das `east_coast_inc` Preisbuch, um Produktpreispläne zu unterstützen, die mit Markenlizenzvereinbarungen übereinstimmen.
 1. Aktualisieren Sie die Konfiguration der Commerce-Storefront, um Daten aus der von Ihnen erstellten Celport-Katalogansicht zu verwenden.
 
 Am Ende dieses Abschnitts wird Celport für den Verkauf der Carvelo-Produkte bereit sein.
@@ -257,7 +257,7 @@ Nachdem Sie die Celport-Katalogansicht und die zugehörigen Richtlinien erstellt
 
 ## &#x200B;3. Aktualisieren der Storefront
 
-Der letzte Teil dieses Tutorials beinhaltet die Aktualisierung der Storefront, die [Sie bereits erstellt haben](#prerequisite) um Daten an den neuen Celport-Katalog zu liefern. In diesem Abschnitt ersetzen Sie die Katalogansichts-ID in Ihrer Storefront-Konfigurationsdatei durch die Katalogansichts-ID für Celport.
+Der letzte Teil dieses Tutorials beinhaltet die Aktualisierung der Storefront, die [Sie bereits erstellt haben](#prerequisites) um Daten an den neuen Celport-Katalog zu liefern. In diesem Abschnitt ersetzen Sie die Katalogansichts-ID in Ihrer Storefront-Konfigurationsdatei durch die Katalogansichts-ID für Celport.
 
 1. Öffnen Sie in Ihrer lokalen Entwicklungsumgebung den Ordner, in den Sie das GitHub-Repository geklont haben, mit Ihren Textbausteinkonfigurationsdateien für die Storefront.
 
@@ -445,6 +445,6 @@ So erfahren Sie mehr über [!DNL Adobe Commerce Optimizer]:
 
 - Erkunden Sie [Merchandising-Funktionen](../merchandising/overview.md) um das Einkaufserlebnis zu personalisieren
 - Erfahren Sie mehr [erweiterte Richtlinienkonfigurationen](../setup/policies.md)
-- ([&#x200B; Katalogansichten) &#x200B;](../setup/catalog-view.md) andere Händler einrichten
+- ([ Katalogansichten) ](../setup/catalog-view.md) andere Händler einrichten
 - Lesen Sie die [API-Dokumentation](https://developer.adobe.com/commerce/services/optimizer/) für die programmgesteuerte Katalogverwaltung
-- Erfahren Sie, wie Sie Dropdown-Komponenten für Ihre Edge Delivery Services-Storefront konfigurieren, um benutzerdefinierte Storefront-Erlebnisse für die Produkterkennung, Empfehlungen und andere Storefront-Funktionen zu erstellen. Siehe die [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=de)
+- Erfahren Sie, wie Sie Dropdown-Komponenten für Ihre Edge Delivery Services-Storefront konfigurieren, um benutzerdefinierte Storefront-Erlebnisse für die Produkterkennung, Empfehlungen und andere Storefront-Funktionen zu erstellen. Siehe die [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

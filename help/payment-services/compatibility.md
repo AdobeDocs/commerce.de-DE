@@ -4,13 +4,13 @@ description: Erfahren Sie [!DNL Payment Services]  ob in Ihrem Land verfügbar i
 role: User
 level: Intermediate
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+exl-id: 4bef8429-5053-424d-806a-9e8b96295b1b
+source-git-commit: c532d72cb4aa7c920af790d345cce3ae6cbd2281
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%
 
 ---
-
 
 # Kompatibilität für [!DNL Payment Services]
 
@@ -26,7 +26,7 @@ Um [!DNL Payment Services] zu verwenden, müssen Sie zunächst eine Verbindung m
 
    >[!TIP]
    >
-   > Weitere Informationen finden Sie in unserem Tutorial-Video [&#128279;](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) Adobe Commerce Services Connector.
+   > Weitere Informationen finden Sie in unserem Tutorial-Video [ ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)Adobe Commerce Services Connector.
 
 1. Wenn Sie Ihre Instanz bereits verbunden haben, navigieren Sie für die nächsten Schritte zur [Onboarding](onboard.md)-Seite.
 
@@ -44,7 +44,7 @@ Um [!DNL Payment Services] zu verwenden, müssen Sie zunächst eine Verbindung m
 
 ### Welche [!DNL Payment Services] ist die richtige für Sie?
 
->[!VIDEO](https://video.tv.adobe.com/v/3447927?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
 
 Siehe [Verbinden](connect.md) für weitere Informationen zum Einrichten der [!DNL Payment Services].
 
@@ -96,13 +96,13 @@ Siehe [Verbinden](connect.md) für weitere Informationen zum Einrichten der [!DN
 
 >[!ENDTABS]
 
-Weitere Informationen zu Versionen [&#x200B; Versionen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=de) versionsspezifischen Versionen finden Sie auf den [[!DNL Payment Services] Lebenszyklusrichtlinie](release-notes.md) und den Versionshinweisen .
+Weitere Informationen zu Versionen [ Versionen ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) versionsspezifischen Versionen finden Sie auf den [[!DNL Payment Services] Lebenszyklusrichtlinie](release-notes.md) und den Versionshinweisen .
 
 Die vollständigen Anweisungen und den Start des Onboarding-Prozesses finden Sie unter [Erste Schritte mit [!DNL Payment Services]](onboard.md).
 
 ### Akzeptierte Kreditkarten und Währungen
 
-[!DNL Payment Services] akzeptiert die Währungen der Länder [in denen es verfügbar ist](#availability). Weitere Informationen [&#x200B; Einrichten von &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=de) finden Sie unter „Währungskonfiguration“.
+[!DNL Payment Services] akzeptiert die Währungen der Länder, in denen es verfügbar ist. Weitere Informationen [ Einrichten von ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) finden Sie unter „Währungskonfiguration“.
 
 Weitere Informationen zu den Währungen und Zahlungsmethoden, die mit PayPal-Produkten und -Services verfügbar sind, finden Sie auf den folgenden Seiten:
 

@@ -2,8 +2,8 @@
 title: Adobe Commerce Optimizer-Connector
 description: Erfahren Sie, wie Sie Ihre Daten aus Ihrem Commerce Cloud- oder lokalen Projekt mit Adobe Commerce Optimizer verbinden
 feature: Personalization, Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
-source-git-commit: 11bb5df2488a017065db44504f35612fe54e284c
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Der Connector ermöglicht mehrere wichtige Workflows:
 
 * **Exportieren von Commerce-Katalogdaten nach[!DNL Adobe Commerce Optimizer]** - Preis- und Preisbuchdaten werden auf Website- und Kundengruppenebene exportiert. Produkt- und Produktattributdaten werden auf `store view` exportiert. Standardmäßig ist die Synchronisierung von Katalogdaten für alle Commerce-Bereiche (Websites und Store-Ansichten) aktiviert.
 
-  Um diesen Workflow zu aktivieren, installieren Sie die `adobe-commerce/commerce-data-export-aco-adapter` PHP-Erweiterung, überprüfen Sie die Exporter-Konfiguration und aktivieren Sie dann über die Commerce-Admin die Integration zwischen Commerce und Commerce Optimizer. Detaillierte Anweisungen finden Sie unter [Erste Schritte](#get-started).
+  Um diesen Workflow zu aktivieren, installieren Sie die `adobe-commerce/commerce-data-export-aco-adapter` PHP-Erweiterung, überprüfen Sie die Exporter-Konfiguration und aktivieren Sie dann über die Commerce-Admin die Integration zwischen Commerce und Commerce Optimizer. Detaillierte Anweisungen finden Sie unter [Erste Schritte](get-started.md).
 
 * **Ordnen Sie die Commerce-Website zu und speichern Sie Ansichtsdaten, die in exportiert werden sollen[!DNL Adobe Commerce Optimizer]**
 

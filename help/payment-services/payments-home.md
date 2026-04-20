@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: e4aede88f8470f79e5987afcb7311bf6ef44c16e
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICON
 
 >[!TAB Adobe Commerce as a Cloud Service und Commerce Optimizer]
 
-Bis zum Abschluss des Onboarding werden **[!UICONTROL Home]** Folgendes **[!UICONTROL ACCS Onboarding Required]**. Die Benachrichtigung ist verknüpft mit [Einrichten des Sandbox-Service](sandbox.md#enable-sandbox-testing) (mit einem Test-PayPal-Verarbeitungskonto) oder mit [Aktivieren von Live-Zahlungen](production.md#enable-live-payments) wenn Sie bereits in einer anderen Umgebung getestet haben:
+Bis zum Abschluss des Onboarding werden **[!UICONTROL Home]** Folgendes **[!UICONTROL ACCS Onboarding Required]**. Die Benachrichtigung ist verknüpft mit [Einrichten des Sandbox-Service](sandbox.md#sandbox-onboarding) (mit einem Test-PayPal-Verarbeitungskonto) oder mit [Aktivieren von Live-Zahlungen](production.md#enable-live-payments) wenn Sie bereits in einer anderen Umgebung getestet haben:
 
 ![ACCS-Onboarding für Zahlungsdienste erforderlich](assets/payment-services-home-accs-onboarding.png){width="700" zoomable="yes"}
 
@@ -40,14 +40,14 @@ In dieser Startansicht können Sie auf _Startseite_, _Erfahren_ über [!DNL Paym
 
 ## Startseite
 
-[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 
 | Feld | Beschreibung |
 |---|---|
 | [!UICONTROL Orders] | Diese Berichte ermöglichen es Ihnen, den Zahlungsstatus Ihrer Bestellungen schnell anzuzeigen und mögliche Probleme zu identifizieren. |
 | [!UICONTROL Payouts] | Die Auszahlungsberichte zeigen umfassende Auszahlungsinformationen auf einen Blick und ermöglichen Ihnen volle Transparenz in Bezug auf den Zahlungsbetrag, das verarbeitete Volumen und detaillierte Berichte auf Transaktionsebene für die finanzielle Abstimmung. |
 
-[!BADGE nur SaaS]{type=Positive url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."}
+[!BADGE nur SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."}
 
 | Feld | Beschreibung |
 |---|---|
@@ -70,6 +70,6 @@ In dieser Startansicht können Sie auf _Startseite_, _Erfahren_ über [!DNL Paym
 
 ## Einstellungen
 
-Klicken Sie in der Startansicht auf **[!UICONTROL Settings]**. Weitere Informationen finden [[!DNL Payment Services]  unter &#x200B;](configure-admin.md)Konfiguration“.
+Klicken Sie in der Startansicht auf **[!UICONTROL Settings]**. Weitere Informationen finden [[!DNL Payment Services]  unter ](configure-admin.md)Konfiguration“.
 
 In der Fußzeile des Bereichs Zahlungsdienste werden die Versionsbezeichnungen **Zahlungsdienste** und **Zahlungsdienste-Dashboard** angezeigt, z. B. wenn Sie Details für den Support erfassen.
