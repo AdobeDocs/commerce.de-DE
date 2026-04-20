@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Installieren von [!DNL Data Connection]
 
-Bevor Sie die Erweiterung installieren, [ Sie die Voraussetzungen ](overview.md#prerequisites).
+Bevor Sie die Erweiterung installieren, [&#x200B; Sie die Voraussetzungen &#x200B;](overview.md#prerequisites).
 
 ## Installieren der Erweiterung
 

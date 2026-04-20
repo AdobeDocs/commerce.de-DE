@@ -37,7 +37,7 @@ Navigieren Sie in _Admin_-Seitenleiste zu **Verkauf** > **Zahlungsdienste** > _B
 
 ![Visualisierung der Auszahlungsdaten in der Admin-](assets/orderpayment-dataviz.png){width="800" zoomable="yes"}
 
-Klicken Sie auf **[!UICONTROL View Report]** , um zur detaillierten Tabelle [Berichtsansicht Bestellzahlungsstatus“ ](#order-payment-status-report-view).
+Klicken Sie auf **[!UICONTROL View Report]** , um zur detaillierten Tabelle [Berichtsansicht Bestellzahlungsstatus“ &#x200B;](#order-payment-status-report-view).
 
 ### Anpassen des Zeitrahmens für Status
 
@@ -114,7 +114,7 @@ Händler können den aktualisierten Zahlungsstatus über die Berichtsansicht „
 
 [!DNL Payment Services] verwendet Bestelldaten und kombiniert sie mit aggregierten Zahlungsdaten aus anderen Quellen (einschließlich PayPal), um aussagekräftige und hochnützliche Berichte zu erstellen.
 
-Bestelldaten werden exportiert und im Zahlungsdienst gespeichert. Wenn Sie [Bestellstatus ändern oder hinzufügen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) oder [eine Store-Ansicht ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [Store](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information) oder den Website-Namen bearbeiten, werden diese Daten mit Zahlungsdaten kombiniert und der Bericht „Status der Bestellzahlung“ wird mit den kombinierten Informationen ausgefüllt.
+Bestelldaten werden exportiert und im Zahlungsdienst gespeichert. Wenn Sie [Bestellstatus ändern oder hinzufügen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) oder [eine Store-Ansicht &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [Store](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information) oder den Website-Namen bearbeiten, werden diese Daten mit Zahlungsdaten kombiniert und der Bericht „Status der Bestellzahlung“ wird mit den kombinierten Informationen ausgefüllt.
 
 Dieser Prozess umfasst zwei Schritte:
 
@@ -134,7 +134,7 @@ Die einzigen Daten, die zu Berichtszwecken exportiert und sortiert werden, sind 
 
 Obwohl die Neuindizierung standardmäßig im `ON SAVE` erfolgt, wird empfohlen, die Indizierung im `BY SCHEDULE`-Modus durchzuführen. Der `BY SCHEDULE`-Index wird nach einem Cron-Zeitplan von einer Minute ausgeführt, und alle geänderten Daten werden innerhalb von zwei Minuten nach einer Datenänderung in Ihrem Bestellstatusbericht angezeigt. Diese geplante Neuindizierung hilft Ihnen, die Belastung Ihres Geschäfts zu reduzieren, insbesondere wenn Sie eine große Menge an eingehenden Bestellungen haben, da sie nach einem Zeitplan erfolgt (nicht bei jeder Bestellung).
 
-Sie können den Indexmodus - `ON SAVE` oder `BY SCHEDULE` - [ Admin ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+Sie können den Indexmodus - `ON SAVE` oder `BY SCHEDULE` - [&#x200B; Admin &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 
 Informationen zum Konfigurieren des Datenexports finden Sie unter [Befehlszeilenkonfiguration](configure-cli.md#configure-data-export).
 
@@ -144,18 +144,18 @@ In der Berichtsansicht zum Status der Bestellzahlung können Sie die Datenquelle
 
 ![Datenquellenauswahl](assets/datasource.png){width="300" zoomable="yes"}
 
-Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Ihre Stores anzeigen, die [!DNL Payment Services] im Produktionsmodus verwenden. Wenn_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Berichtsinformationen für den Sandbox-Modus angezeigt werden.
+Wenn _[!UICONTROL Live]_&#x200B;die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Ihre Stores anzeigen, die [!DNL Payment Services] im Produktionsmodus verwenden. Wenn&#x200B;_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Berichtsinformationen für den Sandbox-Modus angezeigt werden.
 
 Die Auswahl von Datenquellen funktioniert wie folgt:
 
-* Wenn Sie keine Stores haben, die [!DNL Payment Services] im Live-Modus verwenden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Sandbox]_eingestellt.
-* Wenn Sie über Stores (einen oder mehrere) verfügen, die [!DNL Payment Services] im Live-Modus verwenden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Live]_eingestellt.
+* Wenn Sie keine Stores haben, die [!DNL Payment Services] im Live-Modus verwenden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Sandbox]_&#x200B;eingestellt.
+* Wenn Sie über Stores (einen oder mehrere) verfügen, die [!DNL Payment Services] im Live-Modus verwenden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Live]_&#x200B;eingestellt.
 * Berichtsexporte berücksichtigen immer die Auswahl der Datenquelle.
 
 So wählen Sie die Datenquelle für Ihren [!UICONTROL Order Payment Status] aus:
 
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
-1. Klicken Sie auf den Filter _[!UICONTROL Data source]_und wählen Sie **[!UICONTROL Live]**oder **[!UICONTROL Sandbox]**aus.
+1. Klicken Sie auf den Filter _[!UICONTROL Data source]_&#x200B;und wählen Sie **[!UICONTROL Live]**&#x200B;oder **[!UICONTROL Sandbox]**&#x200B;aus.
 
    Die Berichtsergebnisse werden basierend auf der ausgewählten Datenquelle neu generiert.
 
@@ -175,7 +175,7 @@ In der Berichtsansicht zum Status der Bestellzahlung können Sie die anzuzeigend
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Klicken Sie auf die **[!UICONTROL Filter]**.
 1. Schalten Sie die _Zahlungsstatus_ ein, um Berichtsergebnisse nur für ausgewählte Zahlungsstatus anzuzeigen.
-1. Berichtsergebnisse innerhalb eines Bestellbetragsbereichs durch Eingabe eines _[!UICONTROL Min Order Amount]_oder _[!UICONTROL Max Order Amount_] anzeigen.
+1. Berichtsergebnisse innerhalb eines Bestellbetragsbereichs durch Eingabe eines _[!UICONTROL Min Order Amount]_&#x200B;oder _[!UICONTROL Max Order Amount_] anzeigen.
 1. Klicken Sie auf **[!UICONTROL Hide filters]** , um den Filter auszublenden.
 
 ### Spalten ein- und ausblenden
@@ -208,7 +208,7 @@ Die Spalte Erstattungsstatus zeigt den aktuellen Status für jede Erstattung an.
 
 ### Berichtsdaten aktualisieren
 
-Die Berichtsansicht zum Status der Bestellzahlung zeigt einen _[!UICONTROL Last updated]_Zeitstempel an, der das letzte Mal anzeigt, dass die Berichtsinformationen aktualisiert wurden. Standardmäßig werden die Berichtsdaten zum Status der Bestellzahlung alle drei Stunden automatisch aktualisiert.
+Die Berichtsansicht zum Status der Bestellzahlung zeigt einen _[!UICONTROL Last updated]_&#x200B;Zeitstempel an, der das letzte Mal anzeigt, dass die Berichtsinformationen aktualisiert wurden. Standardmäßig werden die Berichtsdaten zum Status der Bestellzahlung alle drei Stunden automatisch aktualisiert.
 
 Sie können auch manuell eine Aktualisierung der Berichtsdaten zum Status der Bestellzahlung erzwingen, um die aktuellsten Berichtsinformationen anzuzeigen.
 
@@ -235,7 +235,7 @@ Sie können eine CSV-Datei herunterladen, deren Status im Ansichtsraster „Zahl
 
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Wenn Sie Status für einen anderen Zeitraum als die letzten 30 Tage anzeigen möchten, [passen Sie den Zeitrahmen des Datumsbereichs für Ihre Status an](#customize-order-dates-timeframe).
-1. Klicken Sie auf _Symbol_ Herunterladen![ (](assets/icon-download.png){width="20" zoomable="yes"}).
+1. Klicken Sie auf _Symbol_ Herunterladen![&#x200B; (](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Der Status der Bestellzahlung wird im CSV-Format heruntergeladen.
 

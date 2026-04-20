@@ -70,6 +70,6 @@ In dieser Startansicht können Sie auf _Startseite_, _Erfahren_ über [!DNL Paym
 
 ## Einstellungen
 
-Klicken Sie in der Startansicht auf **[!UICONTROL Settings]**. Weitere Informationen finden [[!DNL Payment Services]  unter ](configure-admin.md)Konfiguration“.
+Klicken Sie in der Startansicht auf **[!UICONTROL Settings]**. Weitere Informationen finden [[!DNL Payment Services]  unter &#x200B;](configure-admin.md)Konfiguration“.
 
 In der Fußzeile des Bereichs Zahlungsdienste werden die Versionsbezeichnungen **Zahlungsdienste** und **Zahlungsdienste-Dashboard** angezeigt, z. B. wenn Sie Details für den Support erfassen.
