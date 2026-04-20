@@ -44,7 +44,7 @@ Um [!DNL Payment Services] zu verwenden, müssen Sie zunächst eine Verbindung m
 
 ### Welche [!DNL Payment Services] ist die richtige für Sie?
 
->[!VIDEO](https://video.tv.adobe.com/v/3447811)
+>[!VIDEO](https://video.tv.adobe.com/v/3447927?captions=ger)
 
 Siehe [Verbinden](connect.md) für weitere Informationen zum Einrichten der [!DNL Payment Services].
 
