@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Dateien wie PDFs, Handbücher und Datenblätt
 feature: Catalog Management, Products, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '607'
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Hinzufügen von Dateien zu Produkten
 
-[!DNL Adobe Commerce as a Cloud Service] unterstützt einen &quot;[&quot; (Produktattribut-Eingabetyp), &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"} es Händlern ermöglicht, Dateien wie PDFs, Handbücher, Zertifikate und Datenblätter direkt an Produkte anzuhängen. Dateien werden im Amazon S3-Medienspeicher gespeichert und können über die Storefront mithilfe von GraphQL oder über Integrationen mithilfe der REST-API aufgerufen werden.
+[!DNL Adobe Commerce as a Cloud Service] unterstützt einen &quot;[&quot; (Produktattribut-Eingabetyp), &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"} es Händlern ermöglicht, Dateien wie PDFs, Handbücher, Zertifikate und Datenblätter direkt an Produkte anzuhängen. Dateien werden im Amazon S3-Medienspeicher gespeichert und können über die Storefront mithilfe von GraphQL oder über Integrationen mithilfe der REST-API aufgerufen werden.
 
 Es gibt drei Möglichkeiten, Dateien in Produktdateiattribute hochzuladen:
 
@@ -26,15 +26,15 @@ Es gibt drei Möglichkeiten, Dateien in Produktdateiattribute hochzuladen:
 
 Vor dem Hochladen von Dateien müssen Sie ein Dateiattribut erstellen und es einem Attributsatz zuweisen.
 
-* [Dateiattribut erstellen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} - **[!UICONTROL Catalog Input Type for Store Owner]** auf &quot;**[!UICONTROL File]**&quot; festlegen.
+* [Dateiattribut erstellen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} - **[!UICONTROL Catalog Input Type for Store Owner]** auf &quot;**[!UICONTROL File]**&quot; festlegen.
 
-* [Attribut einem Attributsatz zuweisen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} - Ziehen Sie das neue Dateiattribut in die gewünschte Gruppe.
+* [Attribut einem Attributsatz zuweisen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} - Ziehen Sie das neue Dateiattribut in die gewünschte Gruppe.
 
-* Konfigurieren Sie zulässige Dateitypen und deren Größe in der Konfiguration [Produktdateiattribute](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes).
+* Konfigurieren Sie zulässige Dateitypen und deren Größe in der Konfiguration [Produktdateiattribute](https://experienceleague.adobe.com/de/docs/commerce-admin/config/catalog/product-file-attributes).
 
 ## Hochladen von Dateien über den Administrator
 
-Nachdem Sie [Dateiattribut erstellen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} und es einem Attributsatz zuweisen, können Sie Dateien direkt über die Produktbearbeitungsseite hochladen.
+Nachdem Sie [Dateiattribut erstellen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} und es einem Attributsatz zuweisen, können Sie Dateien direkt über die Produktbearbeitungsseite hochladen.
 
 1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Catalog]** > **[!UICONTROL Products]**.
 
@@ -61,7 +61,7 @@ Der Prozess umfasst vier Schritte:
 
 ## Hochladen durch Produktimport
 
-Sie können Dateien mithilfe der „Import-API[&#x200B; oder der Admin](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}Import-Benutzeroberfläche stapelweise an Produkte anhängen. Produktdateiattribute unterstützen nur den Import aus externen URLs, der demselben Ansatz folgt wie [Methode 2 für den Produktbildimport](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}. Commerce lädt die Datei von der angegebenen URL herunter und speichert sie im S3-Medienspeicher.
+Sie können Dateien mithilfe der „Import-API[&#x200B; oder der Admin](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}Import-Benutzeroberfläche stapelweise an Produkte anhängen. Produktdateiattribute unterstützen nur den Import aus externen URLs, der demselben Ansatz folgt wie [Methode 2 für den Produktbildimport](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}. Commerce lädt die Datei von der angegebenen URL herunter und speichert sie im S3-Medienspeicher.
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ sku,name,additional_attributes
 ADB112,"My Product",file_upload=https://example.com/files/manual.pdf
 ```
 
-In beiden Fällen muss die URL öffentlich zugänglich sein und die Dateierweiterung und -größe müssen den [konfigurierten Einschränkungen“ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}.
+In beiden Fällen muss die URL öffentlich zugänglich sein und die Dateierweiterung und -größe müssen den [konfigurierten Einschränkungen“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}.
 
 ## Abrufen von Dateien über GraphQL
 
