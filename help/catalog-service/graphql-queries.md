@@ -4,9 +4,9 @@ description: Verwenden Sie GraphQL-Abfragen, um die Katalogdaten abzurufen und C
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: 49bbdb3b-bbe9-4777-8ea7-3bd25ae53889
-source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
+source-git-commit: a4c3a24deb77a9aadc7954b46d171b4d4edea6ba
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 # Abrufen von Katalogdaten mit GraphQL {#graphql-queries}
 
 Verwenden Sie GraphQL-Abfragen, um Produkt-, Preis- und andere Daten aus dem SaaS-Datenbereich des Adobe Commerce-Katalogs abzurufen und sie zu verwenden, um Commerce-Erlebnisse schneller zu rendern als die nativen Adobe Commerce GraphQL-Abfragen.
+
+{{aco-merchandising-services}}
 
 Der Katalog-Service stellt die folgenden Abfragen bereit:
 
@@ -25,4 +27,4 @@ Der Katalog-Service stellt die folgenden Abfragen bereit:
 | `refineProduct` | Engt die Ergebnisse einer Produktabfrage ein, die für ein komplexes Produkt ausgeführt wird, um bestimmte Informationen über eine Produktvariante zurückzugeben. | Nützlich für die Darstellung aktualisierter Produktdetailseiten, wenn der Käufer eine Produktoption auswählt. [Siehe Beispiel.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) |
 | `variants` | Gibt Details zu allen Varianten eines Produkts zurück. | Nützlich für die Anzeige von Variantenbildern auf Produktdetailseiten oder Listenseiten, ohne mehrere API-Anfragen zu senden. [Siehe Beispiel.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-variants/) |
 
-Weitere Informationen zur Verwendung [&#x200B; Abfragen finden Sie &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/) Handbuch zur Catalog Service-API .
+Weitere [ zur Verwendung dieser Abfragen finden ](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/) unter „Storefront Services GraphQL&quot;.
