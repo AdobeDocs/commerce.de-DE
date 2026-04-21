@@ -27,4 +27,4 @@ Der Katalog-Service stellt die folgenden Abfragen bereit:
 | `refineProduct` | Engt die Ergebnisse einer Produktabfrage ein, die für ein komplexes Produkt ausgeführt wird, um bestimmte Informationen über eine Produktvariante zurückzugeben. | Nützlich für die Darstellung aktualisierter Produktdetailseiten, wenn der Käufer eine Produktoption auswählt. [Siehe Beispiel.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) |
 | `variants` | Gibt Details zu allen Varianten eines Produkts zurück. | Nützlich für die Anzeige von Variantenbildern auf Produktdetailseiten oder Listenseiten, ohne mehrere API-Anfragen zu senden. [Siehe Beispiel.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-variants/) |
 
-Weitere [ zur Verwendung dieser Abfragen finden ](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/) unter „Storefront Services GraphQL&quot;.
+Weitere [&#x200B; zur Verwendung dieser Abfragen finden &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/) unter „Storefront Services GraphQL&quot;.
