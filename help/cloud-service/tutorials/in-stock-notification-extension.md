@@ -9,9 +9,9 @@ level: Intermediate
 type: Tutorial
 hide: true
 hidefromtoc: true
-source-git-commit: ce8882b8af21198a7bc57bc58124e8a2d1491a50
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '2599'
+source-wordcount: '2693'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,8 @@ Wenn einer der vorherigen Befehle nicht die erwarteten Ergebnisse zurückgibt, f
 
 Überprüfen Sie außerdem Folgendes:
 
-- Sie haben eine [!DNL Adobe Commerce as a Cloud Service] mit Produktdaten. Siehe [Commerce Cloud Service-Instanzen](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/overview){target="_blank"}.
-- Sie haben ein Storefront-Projekt mit Ihrer [!DNL Commerce] verbunden. Wenn Sie noch keine haben, führen Sie die Schritte in [Erstellen einer Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=de){target="_blank"} aus.
+- Sie haben eine [!DNL Adobe Commerce as a Cloud Service] mit Produktdaten. Siehe [Commerce Cloud Service-Instanzen](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Sie haben ein Storefront-Projekt mit Ihrer [!DNL Commerce] verbunden. Wenn Sie noch keine haben, führen Sie die Schritte in [Erstellen einer Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"} aus.
 - Die `aem` CLI wird installiert:
 
   ```bash

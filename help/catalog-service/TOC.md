@@ -4,10 +4,10 @@ user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Ve
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 2c3a67698927ab9a9840c49a5e46497e4111a7cc
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 10%
+source-wordcount: '53'
+ht-degree: 7%
 
 ---
 
@@ -22,6 +22,6 @@ ht-degree: 10%
    - [Katalog-Service und API-Mesh](mesh.md)
    - [Anwendungsfall: Steuern anzeigen](taxes.md)
 - [Versionshinweise](release-notes.md)
-- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 

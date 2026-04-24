@@ -9,9 +9,9 @@ level: Intermediate
 type: Tutorial
 hide: true
 hidefromtoc: true
-source-git-commit: 3fc8982613df7b1155cdfb08ac4b56de6d1ce4f6
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3398'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,8 @@ Wenn einer der vorherigen Befehle nicht die erwarteten Ergebnisse zurückgibt, f
 
 Überprüfen Sie außerdem Folgendes:
 
-- Sie haben eine [!DNL Adobe Commerce as a Cloud Service] mit Produktdaten. Siehe [Commerce Cloud Service-Instanzen](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/overview){target="_blank"}.
-- Sie haben ein Storefront-Projekt mit Ihrer [!DNL Commerce] verbunden. Wenn Sie noch keine haben, führen Sie die Schritte in [Erstellen einer Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=de){target="_blank"} aus.
+- Sie haben eine [!DNL Adobe Commerce as a Cloud Service] mit Produktdaten. Siehe [Commerce Cloud Service-Instanzen](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Sie haben ein Storefront-Projekt mit Ihrer [!DNL Commerce] verbunden. Wenn Sie noch keine haben, führen Sie die Schritte in [Erstellen einer Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"} aus.
 - Die `aem` CLI wird installiert:
 
   ```bash
@@ -364,7 +364,7 @@ Clarifications:
 
 >[!TIP]
 >
->Trigger Wenn Sie den Agenten fragen, ob die Storefront die Drittanbieter-API direkt aufrufen soll oder eine Laufzeitaktion durchläuft, führt dies eine hilfreiche Architekturdiskussion durch. Der Agent erklärt die Vorteile des BFF-Musters (Backend-für-Frontend): Der API-Schlüssel bleibt Server-seitig, CORS wird gehandhabt, das Caching ist zentralisiert und Sie erhalten Anbieterabstraktion. Wenn Sie nach der Konfigurierbarkeit der Admin-Benutzeroberfläche fragen, wird der Agent dazu gedrängt, alle Einstellungen in `aio-lib-state` anstatt in `.env` zu speichern, sodass Neubereitstellungen beim Ändern von Einstellungen vermieden werden.
+>Wenn Sie den Agenten fragen, ob die Storefront die Drittanbieter-API direkt aufrufen soll oder eine Laufzeitaktion durchläuft, führt dies eine hilfreiche Architekturdiskussion durch. Der Agent erklärt die Vorteile des BFF-Musters (Backend-für-Frontend): Der API-Schlüssel bleibt Server-seitig, CORS wird gehandhabt, das Caching ist zentralisiert und Sie erhalten Anbieterabstraktion. Wenn Sie nach der Konfigurierbarkeit der Admin-Benutzeroberfläche fragen, wird der Agent dazu gedrängt, alle Einstellungen in `aio-lib-state` anstatt in `.env` zu speichern, sodass Neubereitstellungen beim Ändern von Einstellungen vermieden werden.
 
 >[!NOTE]
 >
@@ -459,7 +459,7 @@ Konfigurieren Sie anschließend die Admin-Benutzeroberfläche:
 
 1. Klicken Sie auf **[!UICONTROL Refresh registrations]**.
 
-1. Navigieren Sie in der **[!UICONTROL Apps]** Seitenleiste zu **[!UICONTROL Delivery Estimates]** > [!DNL Admin] .
+1. Navigieren Sie in der [!DNL Admin] Seitenleiste zu **[!UICONTROL Apps]** > **[!UICONTROL Delivery Estimates]** .
 
 1. Schließen Sie die Konfiguration ab, indem Sie die Funktion aktivieren und die erforderlichen Einstellungen angeben, einschließlich API-URL und API-Schlüssel, Ursprungsadresse, Standardnetzbetreiber, Cache-TTL und Provider-Code-Zuordnungen.
 
@@ -701,7 +701,7 @@ Verwenden Sie die folgenden Tipps, wenn während des Tutorials Probleme auftrete
 | Symptom | Ursache | Fehlerbehebung |
 |---------|-------|-----|
 | Die Aktion „Konfiguration der Admin-Benutzeroberfläche“ gibt `400 Bad Request` mit der Meldung „Anfrage definiert nicht zulässige Parameter (reservierte Eigenschaften)“ zurück. | Der Frontend-Hook sendet `__ow_method` im Anfragetext. Eigenschaften mit dem Präfix `__ow_` werden von OpenWhisk reserviert und zurückgewiesen, wenn die Aktion `final: true` ist. | Senden Sie eine benutzerdefinierte `method`-Eigenschaft anstelle von `__ow_method`. Die Backend-Aktion liest zuerst `params.method` und kehrt dann auf `params.__ow_method` zurück (was von Runtime automatisch bereitgestellt wird). |
-| `aio app deploy` schlägt fehl mit „maxVersion ist in productDependencies erforderlich“ | Die CLI-Validierung erfordert sowohl `minVersion` als auch `maxVersion` in `app.config.yaml` Produktabhängigkeiten. | Fügen Sie jedem `maxVersion` in `productDependencies` einen `app.config.yaml` hinzu. |
+| `aio app deploy` schlägt fehl mit „maxVersion ist in productDependencies erforderlich“ | Die CLI-Validierung erfordert sowohl `minVersion` als auch `maxVersion` in `app.config.yaml` Produktabhängigkeiten. | Fügen Sie jedem `productDependencies` in `app.config.yaml` einen `maxVersion` hinzu. |
 | Bereitstellungsbefehl schlägt fehl | Anmeldedaten vor der Bereitstellung nicht konfiguriert. `.env`, Arbeitsbereichsauswahl und OAuth-Synchronisierung müssen zuerst erfolgen. | Folgen Sie der richtigen Reihenfolge: `cp env.dist .env` > `aio app use --merge` > `npm run sync-oauth-credentials` > `aio app deploy`. |
 
 {style="table-layout:auto"}

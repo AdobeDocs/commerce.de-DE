@@ -5,9 +5,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '110'
 ht-degree: 2%
 
 ---
@@ -49,4 +49,4 @@ ht-degree: 2%
 - Sicherheit und Compliance {#security-compliance}
    - [Sicherheit](security.md)
    - [Deutlicher Schutz vor Betrug](fraud-protection.md)
-- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=de)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

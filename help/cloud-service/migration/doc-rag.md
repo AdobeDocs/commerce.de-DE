@@ -1,13 +1,13 @@
 ---
 title: Dokumentations-RAG-Service
 description: Erfahren Sie, wie Sie den KI-gestützten Dokumentationssuchdienst für die Adobe Commerce-Entwicklung verwenden.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6c7055be007d75ff4cf3673da9938d9d79779aef
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Der Dokumentations-RAG-Service (Retrieval-Augmented Generation) bietet KI-gestü
 
 Dieses ARG bietet eine IDE-Oberfläche für Fragen zu Adobe Commerce und kann Sie bei Best Practices für die Entwicklung von Anwendungen und anderen Migrationsaufgaben beraten.
 
-Der RAG-Service ist Teil des MCP-Servers (Model Context Protocol) [&#x200B; &#x200B;](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}Commerce-Erweiterungstools, der mit Cursor und anderen MCP-kompatiblen KI-Assistenten integriert wird.
+Der RAG-Service ist Teil des MCP-Servers (Model Context Protocol) ](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} [Commerce-Erweiterungstools, der mit Cursor und anderen MCP-kompatiblen KI-Assistenten integriert wird.
 
 ## Verfügbare Dokumentation
 
@@ -30,9 +30,9 @@ In der folgenden Tabelle wird beschrieben, welche Dokumentation derzeit vom RAG-
 
 | Kategorie | Index | Enthaltene Inhalte | Schlüsselwörter |
 |-------|---------|---------|------------------------|
-| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de) | commerce-storefront-docs | Edge Delivery Services, Dropdown-Listen, Storefront-Komponenten | Storefront, Dropin, EDS, Produktliste, Checkout |
+| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, Dropdown-Listen, Storefront-Komponenten | Storefront, Dropin, EDS, Produktliste, Checkout |
 | [Erweiterbarkeit](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, Ereignisse, Erweiterungen, Integrationen | Webhook, Ereignis, Erweiterung, API-Mesh, GraphQL |
-| [Commerce](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce (Katalog, Kunden, Bestellungen) | Katalog, Produkt, Kunde, Bestellung, Bestand |
+| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce (Katalog, Kunden, Bestellungen) | Katalog, Produkt, Kunde, Bestellung, Bestand |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, Laufzeitaktionen, Benutzeroberflächenerweiterungen | App Builder, Laufzeitaktion, React Spectrum |
 
 Weitere Informationen zur Indexauswahl finden Sie unter [Automatische Indexauswahl](#automatic-index-selection-recommended) und [Explizite Indexauswahl](#explicit-index-selection).
@@ -53,7 +53,7 @@ Der Produktions-Endpunkt wird durch [Azure Front Door](https://learn.microsoft.c
 * DDoS-Schutz am Edge
 * API-Management-Backend gesperrt, um nur Traffic von der Haustür zu akzeptieren
 
-Für verschiedene Sicherheitsanforderungen können Sie einen benutzerdefinierten Endpunkt verwenden. Weitere Informationen [&#x200B; Sie unter &#x200B;](#custom-front-door-endpoint)-Endpunkt für benutzerdefinierte Fronttüren .
+Für verschiedene Sicherheitsanforderungen können Sie einen benutzerdefinierten Endpunkt verwenden. Weitere Informationen [ Sie unter ](#custom-front-door-endpoint)-Endpunkt für benutzerdefinierte Fronttüren .
 
 ## Voraussetzungen
 
@@ -127,7 +127,7 @@ Stellen Sie vor der Installation Folgendes sicher:
 
 ## Nutzung
 
-Nach der Installation können Sie die Indizes ([) &#x200B;](#automatic-index-selection-recommended) [explizit](#explicit-index-selection) aufrufen. Sie können auch den Befehl [`/search-commerce-docs` verwenden](#command-based-search).
+Nach der Installation können Sie die Indizes ([) ](#automatic-index-selection-recommended) [explizit](#explicit-index-selection) aufrufen. Sie können auch den Befehl [`/search-commerce-docs` verwenden](#command-based-search).
 
 >[!NOTE]
 >
@@ -293,7 +293,7 @@ Verwenden Sie unter Windows Schrägstriche `/` oder umgekehrte Schrägstriche mi
 
 ## Zusätzliche Ressourcen
 
-* [Entwicklerdokumentation für Adobe Commerce](https://developer.adobe.com/commerce/docs/){target="_blank"}
+* [Entwicklerdokumentation zu Adobe Commerce](https://developer.adobe.com/commerce/docs/){target="_blank"}
 * [Dokumentation zu App Builder](https://developer.adobe.com/app-builder/docs/){target="_blank"}
 * [Modell-Kontextprotokoll](https://modelcontextprotocol.io/){target="_blank"}
 * [Cursor-IDE](https://cursor.sh/docs){target="_blank"}

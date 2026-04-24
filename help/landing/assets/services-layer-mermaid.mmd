@@ -1,26 +1,33 @@
-graph LR
-    subgraph CF["<b>Commerce Foundation</b>"]
-        direction TB
-        CS(["Storefront"])
-        CB(["Backend"])
+---
+source-git-commit: fd3857e93dbaaf7ffce97715b77ee63e8460af16
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 0%
+
+---
+Diagramm-LR
+Unterdiagramm CF[&quot;<b>Commerce Foundation</b>&quot;]
+Richtung TB
+CS([„Storefront“])
+CB([„Backend“])
+Ende
+
+    SC([„Services Connector“])
+    
+    subgraph SaaS[&quot;&lt;b>SaaS&lt;/b>&quot;]
+    direction TB
+    Services([&quot;&lt;b>Services&lt;/b>&lt;br/>Live Search&lt;br/>Product Recommendations&lt;br/>Catalog Service&lt;br/>Payment Services“])
+    Integrationen([&quot;&lt;b>Integrationen&lt;/b>&lt;br/>Datenverbindung&lt;br/>AEM Assets&quot;])
     end
     
-    SC(["Services Connector"])
+    CF &lt;—> SC &lt;—> SaaS
     
-    subgraph SaaS["<b>SaaS</b>"]
-        direction TB
-        Services(["<b>Services</b><br/>Live Search<br/>Product Recommendations<br/>Catalog Service<br/>Payment Services"])
-        Integrations(["<b>Integrations</b><br/>Data Connection<br/>AEM Assets"])
-    end
-    
-    CF <--> SC <--> SaaS
-    
-    classDef foundationStyle fill:#FFF9E6,stroke:#C7B88A,stroke-width:3px,color:#000000,rx:15,ry:15,font-family:Adobe Clean
-    classDef saasStyle fill:#FFE6F0,stroke:#D4A6B8,stroke-width:3px,color:#000000,rx:15,ry:15,font-family:Adobe Clean
-    classDef boxStyle fill:#FFFFFF,stroke:#000000,stroke-width:2px,color:#000000,rx:15,ry:15,font-family:Adobe Clean
-    classDef connectorStyle fill:#4A4A4A,stroke:#4A4A4A,stroke-width:2px,color:#FFFFFF,rx:15,ry:15,font-family:Adobe Clean
+    classDef foundationStyle Fill:#FFF9E6,Stroke:#C7B88A,Stroke-width:3px,color:#000000,rx:15,ry:15,font-family:Adobe Clean
+    classDef saasStyle Fill:#FFE6F0,Stroke:#D4A6B8,Stroke-width:3px,color:#000000,rx:15,font-family:Adobe Clean
+    classDef boxStyle Fill:#FFFFFF,Stroke:#000000,Stroke-width:2px,color:#000000,rx:15,ry:15,font-family:Adobe Clean
+    classDef connectorStyle fill:#4A4A4A,Stroke:#4A4A4A,Stroke-width:2px,color:#FFFFFF,rx:15,ry:15,font-family:Adobe Clean
     
     class CF foundationStyle
-    class SaaS saasStyle
-    class CS,CB,Services,Integrations boxStyle
-    class SC connectorStyle
+    class SaaS saasStyle&lt;ph id=&#39;807&#39; id=&#39;851&#39;/>Klasse SC connectorStyle
+    
+    

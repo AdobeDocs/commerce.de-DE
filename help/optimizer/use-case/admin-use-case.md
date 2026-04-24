@@ -3,11 +3,11 @@ title: End-to-End-Anwendungsfall für Storefront- und Katalogadministrator
 description: Erfahren Sie, wie Sie  [!DNL Adobe Commerce Optimizer]  verwenden, um Ihren Katalog mithilfe von Katalogansichten und Richtlinien zu verwalten, und wie Sie Ihre Storefront basierend auf Ihrer Katalogkonfiguration einrichten.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2205'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ In diesem Anwendungsbeispiel verwenden Sie Folgendes:
 
 >[!NOTE]
 >
-> Erfahren Sie mehr über die Konfigurationsdateien für Storefronts, indem Sie das Thema [Erkunden des Textbausteins](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=de) in der Dokumentation zur Adobe Commerce Storefront lesen.
+> Erfahren Sie mehr über die Konfigurationsdateien für Storefronts, indem Sie das Thema [Erkunden des Textbausteins](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) in der Dokumentation zur Adobe Commerce Storefront lesen.
 
 ### ‌Wichtige Erkenntnisse
 
@@ -118,7 +118,7 @@ Beim Starten von [!DNL Adobe Commerce Optimizer] wird Folgendes angezeigt:
 
 >[!NOTE]
 >
->Informationen zu den wichtigsten Komponenten [&#x200B; Benutzeroberfläche finden &#x200B;](../overview.md) im Artikel [!DNL Adobe Commerce Optimizer]Übersicht“.
+>Informationen zu den wichtigsten Komponenten [ Benutzeroberfläche finden ](../overview.md) im Artikel [!DNL Adobe Commerce Optimizer]Übersicht“.
 
 Erweitern Sie in der linken Navigation den Abschnitt _Store-Einrichtung_ und klicken Sie auf **[!UICONTROL Catalog views]**. Beachten Sie, dass die Arkbridge- und Kingsbluff-Händler bereits Katalogansichten erstellt haben:
 
@@ -196,7 +196,7 @@ Erstellen wir eine neue Richtlinie mit dem Namen *Celport-Teilekategorien* um di
 
 1. Klicken Sie im Dialogfeld **[!UICONTROL Filter details]** auf **[!UICONTROL Save]**.
 
-1. Um den soeben erstellten Filter zu aktivieren, klicken Sie auf die Aktionspunkte (…) und wählen Sie **Aktivieren**.
+1. Um den soeben erstellten Filter zu aktivieren, klicken Sie auf die Aktionspunkte (…) und wählen Sie **Aktivieren** aus.
 
 1. Klicken Sie auf **[!UICONTROL Save]**.
 
@@ -231,7 +231,7 @@ Erstellen Sie eine neue Katalogansicht für den *Celport*-Händler und verknüpf
 
    - **name** = *Celport*
    - **Catalog sources** = *en-US*
-   - **Richtlinien** (Dropdown verwenden) = *East Coast Inc Brands*; *Celport-Teilekategorien*; *Marke*; *Modell*
+   - **Richtlinien** (Dropdown verwenden) = *East Coast Inc Brands*; *Celport-Teilekategorien*; *Marke*; *model*
                          
 1. Klicken Sie auf **[!UICONTROL Add]** , um die Katalogansicht zu erstellen.
 
@@ -255,7 +255,7 @@ Erstellen Sie eine neue Katalogansicht für den *Celport*-Händler und verknüpf
 
 Nachdem Sie die Celport-Katalogansicht und die zugehörigen Richtlinien erstellt haben, besteht der nächste Schritt darin, die Storefront für die Verwendung Ihres neuen Celport-Katalogs zu konfigurieren.
 
-## &#x200B;3. Aktualisieren der Storefront
+## &#x200B;3. Storefront aktualisieren
 
 Der letzte Teil dieses Tutorials beinhaltet die Aktualisierung der Storefront, die [Sie bereits erstellt haben](#prerequisites) um Daten an den neuen Celport-Katalog zu liefern. In diesem Abschnitt ersetzen Sie die Katalogansichts-ID in Ihrer Storefront-Konfigurationsdatei durch die Katalogansichts-ID für Celport.
 
@@ -293,6 +293,8 @@ Der letzte Teil dieses Tutorials beinhaltet die Aktualisierung der Storefront, d
       }
    }
    ```
+
+   +++
 
    Beachten Sie, dass die Kopfzeile der Katalogansicht die folgenden Werte enthält:
 
@@ -445,6 +447,6 @@ So erfahren Sie mehr über [!DNL Adobe Commerce Optimizer]:
 
 - Erkunden Sie [Merchandising-Funktionen](../merchandising/overview.md) um das Einkaufserlebnis zu personalisieren
 - Erfahren Sie mehr [erweiterte Richtlinienkonfigurationen](../setup/policies.md)
-- ([&#x200B; Katalogansichten) &#x200B;](../setup/catalog-view.md) andere Händler einrichten
+- ([ Katalogansichten) ](../setup/catalog-view.md) andere Händler einrichten
 - Lesen Sie die [API-Dokumentation](https://developer.adobe.com/commerce/services/optimizer/) für die programmgesteuerte Katalogverwaltung
-- Erfahren Sie, wie Sie Dropdown-Komponenten für Ihre Edge Delivery Services-Storefront konfigurieren, um benutzerdefinierte Storefront-Erlebnisse für die Produkterkennung, Empfehlungen und andere Storefront-Funktionen zu erstellen. Siehe die [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=de)
+- Erfahren Sie, wie Sie Dropdown-Komponenten für Ihre Edge Delivery Services-Storefront konfigurieren, um benutzerdefinierte Storefront-Erlebnisse für die Produkterkennung, Empfehlungen und andere Storefront-Funktionen zu erstellen. Siehe die [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

@@ -9,16 +9,16 @@ level: Intermediate
 type: Tutorial
 hide: true
 hidefromtoc: true
-source-git-commit: 9c76bae29c05909406a40ca03a2b3d242db05f3f
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2533'
 ht-degree: 0%
 
 ---
 
 # Tutorial zur Erweiterung „Produktbewertungen“
 
-Dieses Tutorial führt Sie durch den Aufbau einer Erweiterung, mit der Kunden mithilfe von [!DNL Adobe Commerce as a Cloud Service]- und KI-unterstützten Entwicklungs-Tools Produktüberprüfungs- und Frage- und Antwortinhalte (Q&amp;A) für Storefronts mit einem [!DNL Adobe App Builder]-Backend senden können. Die Erweiterung bietet REST-API-Endpunkte, mit denen Käufer Inhalte zu Produktprüfungen und Fragen und Antworten (Q&amp;A) anzeigen und senden und auf der Produktdetailseite (PDP) anzeigen können.
+Dieses Tutorial führt Sie durch den Aufbau einer Erweiterung, mit der Kunden mithilfe von [!DNL Adobe App Builder]- und KI-unterstützten Entwicklungs-Tools Produktüberprüfungs- und Frage- und Antwortinhalte (Q&amp;A) für Storefronts mit einem [!DNL Adobe Commerce as a Cloud Service]-Backend senden können. Die Erweiterung bietet REST-API-Endpunkte, mit denen Käufer Inhalte zu Produktprüfungen und Fragen und Antworten (Q&amp;A) anzeigen und senden und auf der Produktdetailseite (PDP) anzeigen können.
 
 Sie bauen zwei Teile:
 
@@ -53,8 +53,8 @@ Wenn einer der vorherigen Befehle nicht die erwarteten Ergebnisse zurückgibt, f
 
 Überprüfen Sie außerdem Folgendes:
 
-- Sie haben eine [!DNL Adobe Commerce as a Cloud Service] mit Produktdaten. Siehe [Commerce Cloud Service-Instanzen](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/overview){target="_blank"}.
-- Sie haben ein Storefront-Projekt mit Ihrer [!DNL Commerce] verbunden. Wenn Sie noch keine haben, führen Sie die Schritte in [Erstellen einer Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=de){target="_blank"} aus.
+- Sie haben eine [!DNL Adobe Commerce as a Cloud Service] mit Produktdaten. Siehe [Commerce Cloud Service-Instanzen](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Sie haben ein Storefront-Projekt mit Ihrer [!DNL Commerce] verbunden. Wenn Sie noch keine haben, führen Sie die Schritte in [Erstellen einer Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"} aus.
 - Die `aem` CLI wird installiert:
 
   ```bash
@@ -136,7 +136,7 @@ Der Agent gibt eine Reihe von Fragen zurück, die er beantworten muss, bevor er 
 1. **REST-API - Host und Verbraucher** - Soll die CRUD-REST-API Teil dieser App Builder-App (Web-Aktionen auf Adobe I/O Runtime) sein, die von Storefronts aufgerufen wird? Wer wird es nennen (EDS-Storefront, benutzerdefinierte/Headless-Storefront oder beides)? Benötigen Sie CORS, öffentlichen (nicht authentifizierten) Zugriff oder verwenden Anrufer API-Schlüssel oder OAuth?
 1. **Datenmodell** - Was sollte eine „Überprüfung“ oder „Frage“ darstellen? Kundenkennung (nur E-Mail oder auch Kunden-ID)? Produktkennung (nur SKU oder SKU + Shop-Ansicht)? Kann ein und derselbe Kunde mehrere Bewertungen für dieselbe SKU einreichen?
 1. **Persistenz** - Ist `aio-lib-state` der richtige Ort, um Rezensionen und Fragen und Antworten beizubehalten, oder haben Sie einen externen Store? Sollte das Design von mehreren Mandanten oder einem einzelnen Mandanten ausgehen?
-1. GET **Paginierungssemantik** - Gilt `limit` für Fragen und Antworten mit Fragen nur für Fragen (mit verschachtelten Antworten) oder für die Gesamtzahl der Fragen plus Antworten?
+1. **Paginierungssemantik** - Gilt `limit` für Fragen und Antworten mit Fragen nur für Fragen (mit verschachtelten Antworten) oder für die Gesamtzahl der Fragen plus Antworten?
 
 **Beispielantworten:**
 
@@ -274,7 +274,7 @@ curl -s -X POST "$API_URL/qa-post" \
   -d '{"sku":"ADB153","type":"question","content":"Is this dishwasher safe?","user":"test@example.com"}'
 ```
 
-**Antwort senden** (Verwenden Sie wie `id` die `questionId` aus der Fragebogenantwort):
+**Antwort senden** (Verwenden Sie wie `questionId` die `id` aus der Fragebogenantwort):
 
 ```bash
 curl -s -X POST "$API_URL/qa-post" \
@@ -388,7 +388,7 @@ Während der Implementierung erstellt und ändert der Agent Blockdateien. Beobac
 
 Fügen Sie den Produktüberprüfungsblock zur Produktseitenvorlage hinzu, damit er in allen PDPs angezeigt wird. Verwenden Sie den Document Authoring-Service (da.live), um den Block hinzuzufügen und zu konfigurieren.
 
-1. Öffnen Sie den Dokumenterstellungsdienst, z. B[&#x200B; „da.live](https://da.live/)
+1. Öffnen Sie den Dokumenterstellungsdienst, z. B[ „da.live](https://da.live/)
 
 1. Klicken Sie auf Ihren Projektbereich, öffnen Sie den Ordner **Produkte** und wählen Sie **Standard** (`products/default`) aus.
 
@@ -438,9 +438,9 @@ Verwenden Sie die folgenden Tipps, wenn während des Tutorials Probleme auftrete
 
 | Symptom | Ursache | Fehlerbehebung |
 |---------|-------|-----|
-| GET oder POST gibt 500 „Modul wurde nicht gefunden“ zurück | Die Aktionen zur Produktüberprüfung verwenden `require("../../utils")` oder `require("../../constants")`, die dem Paket entzogen sind. Diese Dateien sind bei der Bereitstellung des Pakets nicht enthalten. | Machen Sie das Paket mit den Produktbewertungen eigenständig. Fügen Sie `actions/product-reviews/lib/constants.js` und `actions/product-reviews/lib/utils.js` hinzu und aktualisieren Sie alle vier Aktionen so, dass sie von `../lib/...` anstelle von `../../` angefordert werden. |
-| GET gibt 500 mit der Zeichenfolge „Schlüssel muss dem Muster entsprechen“ zurück. | Bei Statusschlüsseln werden Doppelpunkte verwendet (z. B. `reviews:ADB153`). `aio-lib-state` erlaubt nur `[a-zA-Z0-9-_.]`. | Ändern Sie Präfixe von `reviews:` und `qa:` in `reviews.` und `qa.`. Fügen Sie einen `stateKey(prefix, sku)` Helper hinzu, der die SKU bereinigt (ersetzen Sie ungültige Zeichen durch `_`). |
-| POST gibt 500 mit „Wert muss Zeichenfolge sein“ zurück. | `aio-lib-state` akzeptiert nur Zeichenfolgenwerte. Der Code übergibt Arrays oder Objekte an `state.put()`. | Serialisieren mit `JSON.stringify()` beim Schreiben und `JSON.parse()` beim Lesen. Aktualisieren Sie alle vier Aktionen. |
+| GET or POST returns 500 &quot;Cannot find module&quot; | The product-reviews actions use `require("../../utils")` or `require("../../constants")`, which escape the package bundle. Those files are not included when the package is deployed. | Make the product-reviews package self-contained. Add `actions/product-reviews/lib/constants.js` and `actions/product-reviews/lib/utils.js`, and update all four actions to require from `../lib/...` instead of `../../`. |
+| GET returns 500 with &quot;key must match pattern&quot; | State keys use colons (for example, `reviews:ADB153`). `aio-lib-state` allows only `[a-zA-Z0-9-_.]`. | Change prefixes from `reviews:` and `qa:` to `reviews.` and `qa.`. Add a `stateKey(prefix, sku)` helper that sanitizes the SKU (replace invalid chars with `_`). |
+| POST returns 500 with &quot;value must be string&quot; | `aio-lib-state` accepts only string values. The code passes arrays or objects to `state.put()`. | Serialize with `JSON.stringify()` when writing and `JSON.parse()` when reading. Update all four actions. |
 
 {style="table-layout:auto"}
 
@@ -448,7 +448,7 @@ Verwenden Sie die folgenden Tipps, wenn während des Tutorials Probleme auftrete
 
 | Symptom | Ursache | Fehlerbehebung |
 |---------|-------|-----|
-| Block wird auf Testseite nicht gerendert | Das Blockelement ist in einem zusätzlichen `div` verschachtelt, sodass die Blockauswahl (`decorateSections`) nach dem `div.section > div > div` nicht übereinstimmt. | Definieren Sie den Block als direktes untergeordnetes Element des Abschnitts. Struktur: `section > div.product-review` (oder entsprechende Blockklasse). Vermeiden Sie `section > div > div.product-review`. |
+| Block does not render on test page | The block element is nested inside an extra `div`, so after `decorateSections` the block selector (`div.section > div > div`) does not match. | Make the block a direct child of the section. Structure: `section > div.product-review` (or equivalent block class). Avoid `section > div > div.product-review`. |
 | Ungültige CSS-Token | Der Block verwendet Design-Token, die in `styles/styles.css` nicht vorhanden sind (z. B. `--color-error-100`, `--type-detail-font-size`). | Bitten Sie den Agenten, Token anhand der `styles/styles.css` des Projekts zu validieren und ungültige Token durch vorhandene zu ersetzen (z. B. `--color-alert-*`, `--type-details-caption-*`). |
 
 {style="table-layout:auto"}

@@ -2,13 +2,13 @@
 title: Geteilte Verantwortung
 description: Erfahren Sie mehr über die Sicherheitsaufgaben der einzelnen an Ihrem Projekt  [!DNL Adobe Commerce as a Cloud Service]  Parteien.
 feature: Cloud, Security
-role: Admin, Architect, Leader
+role: Admin, Developer, Leader
 level: Intermediate
 exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 1ce3b6b6b94b1b4e94c0d34c081dec2884d7f0f8
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,6 @@ Die folgenden Zusammenfassungstabellen verwenden das RACI-Modell, um die gemeins
 | Jährliche Prüfung und Dokumentation des Notfallwiederherstellungsplans | RA | |
 | Debugging und Problemisolierung | R | R |
 | Rechtzeitige Unterstützung des Debugging- und Problemisolierungsprozesses | R | R |
-| Veröffentlichen von Aktualisierungen und Patches in Adobe Commerce Core | RA | I |
-| Installieren von Updates und Patches für Adobe Commerce Core | RA | I |
-| Qualität der Adobe Commerce-Kernanwendungen | RA | |
+| Publishing updates and patches to Adobe Commerce core | RA | I |
+| Installing updates and patches to Adobe Commerce core | RA | I |
+| Core Adobe Commerce Application Quality | RA | |
