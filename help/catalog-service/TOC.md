@@ -22,6 +22,6 @@ ht-degree: 7%
    - [Katalog-Service und API-Mesh](mesh.md)
    - [Anwendungsfall: Steuern anzeigen](taxes.md)
 - [Versionshinweise](release-notes.md)
-- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
 
 
