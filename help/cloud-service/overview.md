@@ -94,7 +94,7 @@ Die Integration stellt sicher, dass digitale Assets, wie Produktbilder oder Mark
 
 Alternativ bieten die nativen Funktionen in [!DNL Adobe Commerce as a Cloud Service] grundlegende Asset-Management-Tools zum Speichern und Verwalten digitaler Assets.
 
-Weitere Informationen zur Integration von ](../aem-assets-integration/overview.md) mit [!DNL Adobe Commerce as a Cloud Service] finden Sie im Handbuch zur [Integration von [!DNL Product Visuals powered by AEM Assets] mit.
+Weitere Informationen zur Integration von [&#128279;](../aem-assets-integration/overview.md) mit [!DNL Adobe Commerce as a Cloud Service] finden Sie im Handbuch zur Integration von [!DNL Product Visuals powered by AEM Assets] mit.
 
 ### [!DNL Product Visuals] oder [!DNL AEM Assets]
 

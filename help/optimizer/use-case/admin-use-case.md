@@ -118,7 +118,7 @@ Beim Starten von [!DNL Adobe Commerce Optimizer] wird Folgendes angezeigt:
 
 >[!NOTE]
 >
->Informationen zu den wichtigsten Komponenten [ Benutzeroberfläche finden ](../overview.md) im Artikel [!DNL Adobe Commerce Optimizer]Übersicht“.
+>Informationen zu den wichtigsten Komponenten [&#x200B; Benutzeroberfläche finden &#x200B;](../overview.md) im Artikel [!DNL Adobe Commerce Optimizer]Übersicht“.
 
 Erweitern Sie in der linken Navigation den Abschnitt _Store-Einrichtung_ und klicken Sie auf **[!UICONTROL Catalog views]**. Beachten Sie, dass die Arkbridge- und Kingsbluff-Händler bereits Katalogansichten erstellt haben:
 
@@ -447,6 +447,6 @@ So erfahren Sie mehr über [!DNL Adobe Commerce Optimizer]:
 
 - Erkunden Sie [Merchandising-Funktionen](../merchandising/overview.md) um das Einkaufserlebnis zu personalisieren
 - Erfahren Sie mehr [erweiterte Richtlinienkonfigurationen](../setup/policies.md)
-- ([ Katalogansichten) ](../setup/catalog-view.md) andere Händler einrichten
+- ([&#x200B; Katalogansichten) &#x200B;](../setup/catalog-view.md) andere Händler einrichten
 - Lesen Sie die [API-Dokumentation](https://developer.adobe.com/commerce/services/optimizer/) für die programmgesteuerte Katalogverwaltung
 - Erfahren Sie, wie Sie Dropdown-Komponenten für Ihre Edge Delivery Services-Storefront konfigurieren, um benutzerdefinierte Storefront-Erlebnisse für die Produkterkennung, Empfehlungen und andere Storefront-Funktionen zu erstellen. Siehe die [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
