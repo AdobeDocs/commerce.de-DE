@@ -66,7 +66,7 @@ Die [!DNL App Management] wird angezeigt. Hier können Sie App Builder-Programme
 
 ## Installieren von App Builder Apps
 
-Wenn Sie eine App Builder-App von Adobe Exchange installieren müssen (z. B. eine vordefinierte Integration oder eine Marketplace-App), finden Sie unter [Installieren von App Builder-Apps von Adobe Exchange](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} schrittweise Anweisungen.
+Wenn Sie eine App Builder-App von Adobe Exchange installieren müssen (z. B. eine vordefinierte Integration oder eine Marketplace-App), finden Sie unter [Installieren von App Builder-Apps von Adobe Exchange](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} schrittweise Anweisungen.
 
 Nachdem eine App installiert und bereitgestellt wurde, verwenden Sie [!DNL App Management] , um [sie mit Ihrer Commerce-Instanz zu verknüpfen](manage-app.md#associate-an-app) und ihre Einstellungen zu konfigurieren.
 
@@ -74,7 +74,7 @@ Nachdem eine App installiert und bereitgestellt wurde, verwenden Sie [!DNL App M
 
 Einige App Builder-Programme verwenden [Adobe Commerce-Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/) damit Commerce Ihre App über HTTP aufrufen kann, wenn bestimmte Ereignisse eintreten (z. B. nachdem ein Produkt gespeichert wurde). Webhook-Endpunkte und Abonnementlogik werden vom **App-Entwickler** beim Erstellen und Bereitstellen der Anwendung definiert. Store-Administratoren konfigurieren Webhooks nicht separat in App Management.
 
-Nachdem Sie [&#x200B; App mit &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app) Commerce-Instanz verknüpft und alle Einrichtungsanweisungen der App ausgeführt haben, folgt das Webhook-Verhalten der Implementierung der App.
+Nachdem Sie [&#x200B; App mit &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/app-management/manage-app/manage-app) Commerce-Instanz verknüpft und alle Einrichtungsanweisungen der App ausgeführt haben, folgt das Webhook-Verhalten der Implementierung der App.
 
 Wenn [!DNL App Management] den Validierungsendpunkt der App nicht mit Triggern versehen können (z. B. wenn die URL nicht erreichbar ist oder die Antwort die Anforderungen nicht erfüllt), wird möglicherweise ein Fehler wie der folgende im [!DNL App Management]-Dashboard angezeigt:
 
