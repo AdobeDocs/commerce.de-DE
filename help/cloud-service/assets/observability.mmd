@@ -1,0 +1,48 @@
+---
+source-git-commit: 65c2720f8e21089e45948a2a5fe3828ca28f0dbd
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
+
+---
+%%{ init: { „Flussdiagramm“: { „Kurve“: „linear“ } }%
+
+Graph BT
+subgraph commerce[&quot;Adobe Commerce&quot;]
+event_mod[„Eventing \n Modul“]
+webhook_mod[„Webhook \n Modul“]
+admin_sdk[„Admin-Benutzeroberfläche \n SDK&quot;]
+Ende
+
+    subgraph appbuilder[&quot;App Builder&quot;]
+    int_sk[„Integration \n Starter Kit“]
+    checkout_sk[„Checkout \n Starter Kit“]
+    generic_app[„Generic \n Application“]
+    end
+    
+    subgraph apimesh[„API Mesh“]
+    api_mesh_log[„API Mesh \n Logging“]
+    end
+    
+    subgraph storefront[&quot;
+    cdn_rum[„CDN / Real User \n Monitoring“]
+    op_tel[„Operational \n Telemetrie“]
+    end
+    
+    commerce —> obs_mod[„Observability \n Module“]
+    appbuilder —> aio_tel[„AIO lib \n Telemetry“]
+    
+    obs_mod —> OTel[„OpenTelemetry“]
+    aio_tel —> OTel
+    
+    OTel —> Backends[„Third-Party-Observability \n (z. B.: Grafana, New Relic, Splunk)“]
+    api_mesh_log —> Backends
+    cdn_rum —> Backends
+    
+    
+     
+     
+     
+     
+     
+     Stil Commerce-Fill:#cc0000,color:#fff,Stroke:#cc0000Stil AppBuilder-Fill:#cc0000,color:#fff,Stroke:#cc0000Stil Apimesh-Fill:#cc0000,color:#fff,Stroke:#cc0000Stil Storefront-Fill:#cc0000,color:#fff,Stroke:#cc0000Stil Backends-Fill:#f0f0f0,color:#333,Stroke:#999#333style OTel-Fill:#fff,Stroke:#333
