@@ -2,9 +2,9 @@
 title: Übersicht über [!DNL App Management]
 description: Verwalten Sie App Builder-Programme, die Ihrer Adobe Commerce-Instanz zugeordnet sind, über eine einheitliche Admin-Benutzeroberfläche.
 feature: App Builder, Extensibility, Integration
-source-git-commit: 4a5174d074a020f6199ed121e0289939612bc5c2
+source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Gemeinsam schaffen diese Funktionen ein skalierbares Erweiterungsmodell, das es 
 
 ## Was [!DNL App Management] bietet
 
-* **Ein Ort für alle Ihre Apps**. Verknüpfen, Konfigurieren und Verwalten von Apps über **[!UICONTROL Apps]** > **[!UICONTROL App Management]**.
+* **Ein Ort für alle Ihre Apps**. Verknüpfen, Konfigurieren und Verwalten von Apps über **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Apps suchen, filtern und ](manage-app.md) aus derselben Ansicht.
 * **Einstellungen, die Ihrem Unternehmen entsprechen**. Wenden Sie verschiedene Konfigurationen pro Website, Store oder Store-Ansicht für Multi-Region- oder Multi-Marken-Setups an.
 * **Automatische Speichersynchronisierung**. Websites, Stores und Store-Ansichten aus Commerce werden importiert, wenn Sie eine App verknüpfen.
 * **Natives Admin-**. Arbeiten mit Apps aus Adobe Exchange- oder benutzerdefinierten Bereitstellungen, ohne Commerce verlassen zu müssen.

@@ -2,9 +2,9 @@
 title: Mobile App verwalten
 description: Verknüpfen, Konfigurieren und Aufheben der Verknüpfung von App Builder-Programmen mit Ihrer Commerce-Instanz.
 feature: App Builder, Extensibility, Integration
-source-git-commit: 4a5174d074a020f6199ed121e0289939612bc5c2
+source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,22 @@ ht-degree: 0%
 Ein App Manager verknüpft ein App Builder-Programm mit seiner Commerce-Instanz. Konfigurationsformulare werden basierend auf dem Schema der App dynamisch gerendert, sodass keine benutzerdefinierte Entwicklung der Admin-Benutzeroberfläche erforderlich ist. App Manager konfiguriert Einstellungen über Formulare, die Commerce automatisch generiert.
 
 ![App-Verwaltung](assets/app-management-view.png){width="500" zoomable="yes"}
+
+## Suchen einer Anwendung im Admin-Bereich
+
+Unter **[!UICONTROL Apps]** > **[!UICONTROL App Management]** wird jede Anwendung als Karte angezeigt. Die Liste kann jede App enthalten, die mit der Adobe Commerce-Instanz für die ausgewählte Adobe IMS-Organisation verknüpft ist. Verwenden Sie die Steuerelemente oberhalb der Karten, um die Ergebnisse einzugrenzen:
+
+| Kontrolle | Beschreibung |
+| --- | --- |
+| **Nach App filtern…** | Nach Anwendungsnamen suchen. |
+| **Status** | Karten nach Lebenszyklusstatus begrenzen. **Alle Status** zeigt jede App an. Andere Werte sind **Zugeordnet**, **Installiert**, **Teilweise installiert** und **Nicht zugeordnet**. Der Status auf jeder Karte entspricht dem farbigen Indikator in der Liste. |
+| **Erweiterungsmuster** | Begrenzen Sie Karten nach den Funktionen, die die App verwendet. **Alle Erweiterbarkeitsmuster** Zeigt jede App an. Andere Werte werden mit den Abzeichen auf jeder Karte abgestimmt, z. B. **Business Configuration**, **Admin UI SDK**, **Webhooks** und **Events**. |
+
+Suchtext und beide Dropdown-Listen gelten zusammen (logisches UND). Um die vollständige Liste erneut anzuzeigen, setzen Sie **Status** und **Erweiterungsmuster** wieder auf ihre **Alle …** Optionen und löschen Sie das Suchfeld.
+
+## Mobile App erwerben
+
+**[!UICONTROL Acquire App]** öffnet eine neue Browser-Registerkarte (oder eine separate Browser-Ansicht) für [Adobe Exchange](https://exchange.adobe.com/experiencecloud){target="_blank"}, auf der Sie Commerce-bezogene Marktplatzlisten entdecken und Programme zu Ihrer Adobe IMS-Organisation hinzufügen können. Sobald die App erworben, genehmigt und bereitgestellt wurde, wird sie in [!DNL App Management] für ([ und Installation) ](#associate-an-app).
 
 ## Voraussetzungen
 
@@ -30,7 +46,7 @@ Bevor Sie eine App verknüpfen, stellen Sie Folgendes sicher:
 
 In diesem Video erfahren Sie, wie Sie eine App mit einer Commerce-Instanz verknüpfen und Einstellungen konfigurieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478964?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## App verknüpfen
 
