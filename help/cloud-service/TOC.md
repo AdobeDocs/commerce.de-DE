@@ -28,7 +28,7 @@ ht-degree: 2%
       - [Tool für die Massendatenmigration](migration/bulk-data.md)
       - [Kodierwerkzeuge](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
    - [Dokumentations-RAG-Service](migration/doc-rag.md)
-- [Als Kunde anmelden](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [Als Kunde anmelden](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Geschenkkartenkonto-REST-Endpunkte](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [E-Mail-Auslösung durch REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - Tutorials {#tutorials}
@@ -42,6 +42,6 @@ ht-degree: 2%
    - [GraphQL-Schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [REST-API-Schema](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [Entwickleragent](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [Videoschulungen](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Videoschulungen](https://experienceleague.adobe.com/de/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Versionshinweise](release-notes.md)
-- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
