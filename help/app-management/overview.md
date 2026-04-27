@@ -23,7 +23,7 @@ Gemeinsam schaffen diese Funktionen ein skalierbares Erweiterungsmodell, das es 
 
 ## Was [!DNL App Management] bietet
 
-* **Ein Ort für alle Ihre Apps**. Verknüpfen, Konfigurieren und Verwalten von Apps über **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Apps suchen, filtern und ](manage-app.md) aus derselben Ansicht.
+* **Ein Ort für alle Ihre Apps**. Verknüpfen, Konfigurieren und Verwalten von Apps über **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Apps suchen, filtern und &#x200B;](manage-app.md) aus derselben Ansicht.
 * **Einstellungen, die Ihrem Unternehmen entsprechen**. Wenden Sie verschiedene Konfigurationen pro Website, Store oder Store-Ansicht für Multi-Region- oder Multi-Marken-Setups an.
 * **Automatische Speichersynchronisierung**. Websites, Stores und Store-Ansichten aus Commerce werden importiert, wenn Sie eine App verknüpfen.
 * **Natives Admin-**. Arbeiten mit Apps aus Adobe Exchange- oder benutzerdefinierten Bereitstellungen, ohne Commerce verlassen zu müssen.
