@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Wenn Sie den Adobe Commerce Optimizer-Connector installieren, wird dieselbe Datenexporterweiterung verwendet, um Katalog- und Preis-Feeds mithilfe des Composable Catalog Data Model (CCDM) an Adobe Commerce Optimizer zu senden. Architektur- und Konfigurationsdetails finden Sie im ](../aco-connector/overview.md) zum Adobe Commerce Optimizer-Connector [.
+>Wenn Sie den Adobe Commerce Optimizer-Connector installieren, wird dieselbe Datenexporterweiterung verwendet, um Katalog- und Preis-Feeds mithilfe des Composable Catalog Data Model (CCDM) an Adobe Commerce Optimizer zu senden. Architektur- und Konfigurationsdetails finden Sie im [&#128279;](../aco-connector/overview.md) zum Adobe Commerce Optimizer-Connector .
 
 SaaS-Datenexport erfasst und exportiert verschiedene Datentypen, so genannte _Feeds_, mit denen bestimmte Arten von Informationen aggregiert werden. Je nachdem, welche Commerce-Services installiert sind, umfassen die SaaS-Datenexport-Feeds Folgendes:
 
