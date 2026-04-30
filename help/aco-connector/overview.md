@@ -178,7 +178,7 @@ Commerce ist die wahre Informationsquelle für Produkte, Preise und Kundengruppe
 
 **Bevor Sie beginnen:**
 
-- Stellen Sie sicher, dass Commerce die Mindestanforderungen an Version und Services-Connector erfüllt. Weitere Informationen [ Sie unter ](get-started.md#prerequisites) Schritte .
+- Stellen Sie sicher, dass Commerce die Mindestanforderungen an Version und Services-Connector erfüllt. Weitere Informationen [&#x200B; Sie unter &#x200B;](get-started.md#prerequisites) Schritte .
 - Stellen Sie sicher, dass Sie Zugriff auf die IMS-Organisation, eine [!DNL Adobe Commerce Optimizer]-Instanz und die erforderlichen Anmeldeinformationen und Regionsdetails haben.
 
 ## Verwandte Dokumentation {#related-documentation}
