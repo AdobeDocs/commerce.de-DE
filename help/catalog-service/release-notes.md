@@ -38,7 +38,7 @@ Unterstützung wird für die neueste Version bereitgestellt. Versionshinweise f�
 _29. April 2026_
 
 ![Neu](../assets/new.svg) Erzwungenes Limit von maximal 100 SKUs pro Anfrage für Adobe Commerce Optimizer und Adobe Commerce as a Cloud Service
-Clients gemäß [dokumentierte Beschränkungen und ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)<!--DATA-7156-->
+Clients gemäß [dokumentierte Beschränkungen und &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)<!--DATA-7156-->
 
 ### Version 1.51
 
@@ -481,7 +481,7 @@ _28. März 2023_
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Neu](../assets/new.svg) Zur [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) Abfrage wurden Farbfelder hinzugefügt.
-![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt, `entityId` mithilfe von [API Mesh) ](mesh.md).
+![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt, `entityId` mithilfe von [API Mesh) &#x200B;](mesh.md).
 
 ### Version v1.5
 
