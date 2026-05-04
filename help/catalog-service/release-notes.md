@@ -3,9 +3,9 @@ title: '[!DNL Commerce Storefront Catalog Service Release Notes]'
 description: Die neuesten Versionsinformationen für  [!DNL Catalog Service]  für Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: a3002e93b121c16892d3106e09a0ad55cb99845e
+source-git-commit: a7a48e0150d817d29c147c504353245f12d2089c
 workflow-type: tm+mt
-source-wordcount: '2809'
+source-wordcount: '2873'
 ht-degree: 0%
 
 ---
@@ -33,12 +33,18 @@ Unterstützung wird für die neueste Version bereitgestellt. Versionshinweise f�
 
 ## Storefront Catalog Service
 
+### Version 1.53
+
+_4. Mai 2026_
+
+![Fix](../assets/fix.svg) Die Preise für Storefront-Produkte zeigen jetzt den korrekten Währungscode (z. B. USD) für alle Produkttypen an. Zuvor zeigten einige Produkte `NONE` anstelle der erwarteten Währung, was zu fehlenden Preisen führte. Diese Aktualisierung gewährleistet ein konsistentes und genaues Preis-Rendering in der Storefront.<!--DATA-7115-->
+
 ### Version 1.52
 
 _29. April 2026_
 
 ![Neu](../assets/new.svg) Erzwungenes Limit von maximal 100 SKUs pro Anfrage für Adobe Commerce Optimizer und Adobe Commerce as a Cloud Service
-Clients gemäß [dokumentierte Beschränkungen und &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits)<!--DATA-7156-->
+Clients gemäß [dokumentierte Beschränkungen und ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)<!--DATA-7156-->
 
 ### Version 1.51
 
@@ -53,6 +59,12 @@ Diese Abfrage ist nur für Kunden verfügbar, die Adobe Commerce Optimizer Merch
 _7. April 2026_
 
 ![Neu](../assets/new.svg) Die [categoryTree](https://developer-stage.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)-Abfrage verfügt jetzt über den Familieneingabeparameter als optional. Dies ermöglicht einen flexibleren Kategorieabruf, da der Zugriff über den Slug ohne Abhängigkeit von einem bestimmten Familienparameter möglich ist. Diese Abfrage ist nur für [Adobe Commerce Optimizer Merchandising Services](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/) verfügbar.
+
+### Version 1.49
+
+_24. März 2026_
+
+![Neu](../assets/new.svg) Es wurde Unterstützung für die Berechnung und Rückgabe der Preisspanne für dynamische Pakete hinzugefügt. <!--DATA-7014-->
 
 ### Version 1.48
 
@@ -132,7 +144,7 @@ _3. November 2025_
 - Überschreibungen auf Feldebene mit Ebenenmasken steuern
 - Unterstützung für Premium-, Saison- und Mobile-optimierte Inhaltsebenen
 
-  Ebenen werden mit der vorhandenen `products` Abfrage abgerufen, werden Server-seitig aus Anfrage-Headern angewendet und erfordern keine Schemaänderungen. Siehe [Katalogebene](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-layer) im _Adobe Commerce Optimizer-Handbuch_.
+  Ebenen werden mit der vorhandenen `products` Abfrage abgerufen, werden Server-seitig aus Anfrage-Headern angewendet und erfordern keine Schemaänderungen. Siehe [Katalogebene](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer) im _Adobe Commerce Optimizer-Handbuch_.
 
 ![Korrigieren](../assets/fix.svg) Gruppierte Produkte können jetzt abgefragt werden, wenn das übergeordnete Element keine Preise hat. Untergeordnete Produkte geben ihre eigenen Sichtbarkeitsrollen zurück.<!--DATA-6779-->
 
@@ -243,7 +255,7 @@ _15. Juli 2025_
 
 _20. Juni 2025_
 
-![Neu](../assets/new.svg) **Hierarchische Preisbuchkonfiguration** - Präzise Preisbereiche für über- und untergeordnete Preisbücher. Berechnungen berücksichtigen Hierarchie und übernommene Regeln; reduziert Preisfehler, wenn mehrere Preisbücher verknüpft sind. Nur Adobe Commerce Optimizer. Siehe [Preisbücher](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/pricebooks).
+![Neu](../assets/new.svg) **Hierarchische Preisbuchkonfiguration** - Präzise Preisbereiche für über- und untergeordnete Preisbücher. Berechnungen berücksichtigen Hierarchie und übernommene Regeln; reduziert Preisfehler, wenn mehrere Preisbücher verknüpft sind. Nur Adobe Commerce Optimizer. Siehe [Preisbücher](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
 
 ![Neu](../assets/new.svg) **Schlüssel ohne Unterscheidung von Groß- und Kleinschreibung** - Bei Schlüsselsuchen in Abfragen wird jetzt nicht mehr zwischen Groß- und Kleinschreibung unterschieden, wodurch Fehler durch Schlüsselschreibungen reduziert werden. <!--DATA-6494, DCAT-2495-->
 
@@ -372,7 +384,7 @@ _23. Mai 2024_
 
 ![Beheben](../assets/fix.svg) <!--DATA-5033-->Das `InStock` für Optionswerte berücksichtigt jetzt den `enabled` der Produktvariante.
 
-![Fix](../assets/fix.svg) <!--DATA-5888-->Unterstützung für Produktpreise mit bis zu 16 Stellen und 4 Dezimalstellen hinzugefügt. Synchronisieren Sie über das [Data Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) oder [CLI](../data-export/data-export-cli-commands.md) neu, um Aktualisierungen anzuwenden.
+![Fix](../assets/fix.svg) <!--DATA-5888-->Unterstützung für Produktpreise mit bis zu 16 Stellen und 4 Dezimalstellen hinzugefügt. Synchronisieren Sie über das [Data Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) oder [CLI](../data-export/data-export-cli-commands.md) neu, um Aktualisierungen anzuwenden.
 
 #### Bekannte Einschränkungen
 
@@ -406,7 +418,7 @@ _22. Februar 2024_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=de) ist jetzt für Datenströme verfügbar (Produktempfehlungen, Live-Suche, Katalog-Service). Erfordert `catalog-service` Metapaket v3.1.0+.
+![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) ist jetzt für Datenströme verfügbar (Produktempfehlungen, Live-Suche, Katalog-Service). Erfordert `catalog-service` Metapaket v3.1.0+.
 
 ### Version v1.16
 
@@ -481,7 +493,7 @@ _28. März 2023_
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Neu](../assets/new.svg) Zur [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) Abfrage wurden Farbfelder hinzugefügt.
-![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt, `entityId` mithilfe von [API Mesh) &#x200B;](mesh.md).
+![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt, `entityId` mithilfe von [API Mesh) ](mesh.md).
 
 ### Version v1.5
 
