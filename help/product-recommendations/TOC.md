@@ -36,4 +36,4 @@ ht-degree: 10%
    - [Erfassen von Daten](events.md)
    - [Customize](customize.md)
    - [Handhabung von Cookie-Einschränkungen](setting-cookie.md)
-- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=de)
