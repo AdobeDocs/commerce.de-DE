@@ -3,10 +3,10 @@ title: Katalogebene
 description: Erfahren Sie, wie Sie mit Katalogebenen Produktdaten ändern können, ohne die ursprünglichen Quelldaten zu ändern, sodass Sie Änderungen jederzeit sicher anpassen und rückgängig machen können.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+source-git-commit: 00f5aaa4d08e686195096b3fee0dcca2d2ac56d8
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Wenn ein Kunde Ihre Storefront aufruft, kombiniert das System Ihre Basiskatalogd
    * **Felder überschreiben** - Textfelder wie Name, Beschreibung und Meta-Titel werden durch die in der Ebene definierten Werte ersetzt, wobei die Ebene mit der höheren Priorität Vorrang hat.
    * **Felder zusammenführen** - Array-Felder wie Bilder, Links und Attribute werden aus mehreren Ebenen kombiniert, um eine einheitliche Antwort zu erzielen.
 
-1. **Prioritätsauflösung** - Das Reihenfolgenfeld bestimmt, welche Ebene Vorrang hat. Wenn mehrere Ebenen dasselbe Feld ändern, hat die Ebene mit der Nummer niedrigerer Ordnung eine höhere Priorität (z. B. Reihenfolge 1 ist die höchste).
+1. **Prioritätsauflösung** - Das Reihenfolgenfeld bestimmt, welche Ebene Vorrang hat. Wenn mehrere Ebenen dasselbe Feld ändern, hat die Ebene mit der höheren Ordnungszahl eine höhere Priorität (z. B. ist Reihenfolge 10 die höchste).
 
 ## Anwendungsfälle für Katalogebenen
 
@@ -45,7 +45,7 @@ Katalogebenen werden häufig für Folgendes verwendet:
 
 ## AEM-Assets-Ebene
 
-Wenn Sie [Produktvisualisierung](product-visuals.md) aktivieren, erstellt und verwaltet die AEM Assets-Integration automatisch eine Katalogebene, die ausschließlich AEM Assets-Inhalten gewidmet ist. Der standardmäßige Ebenenname lautet `AEM-Assets`. Sie können jedoch während des Onboardings [&#x200B; der AEM Assets-Integration einen benutzerdefinierten Namen &#x200B;](../../aem-assets-integration/get-started/configure-aco.md).
+Wenn Sie [Produktvisualisierung](product-visuals.md) aktivieren, erstellt und verwaltet die AEM Assets-Integration automatisch eine Katalogebene, die ausschließlich AEM Assets-Inhalten gewidmet ist. Der standardmäßige Ebenenname lautet `AEM-Assets`. Sie können jedoch während des Onboardings [ der AEM Assets-Integration einen benutzerdefinierten Namen ](../../aem-assets-integration/get-started/configure-aco.md).
 
 Diese Ebene enthält Produktbilder, die aus AEM Assets synchronisiert wurden. Wie andere Katalogebenen wird es über die [Product Layers-API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank} gefüllt. Der Assets Integration Service transformiert AEM-Asset-Metadaten und Bereitstellungs-URLs in das API-Format und sendet die Daten automatisch, wenn Assets in AEM Assets genehmigt wurden.
 
@@ -87,7 +87,7 @@ Sie können Ihren Produkten während der Datenaufnahme Katalogebenen hinzufügen
 
 >[!NOTE]
 >
->Sie importieren Katalogebenen mit der Aufnahme-API, aber [&#x200B; Festlegen der Reihenfolge &#x200B;](#manage-layer-priorities) Ebenen erfolgt über die Benutzeroberfläche.
+>Sie importieren Katalogebenen mit der Aufnahme-API, aber [ Festlegen der Reihenfolge ](#manage-layer-priorities) Ebenen erfolgt über die Benutzeroberfläche.
 
 **Voraussetzungen:**
 
@@ -114,7 +114,7 @@ Die Benutzeroberfläche für die Katalogansicht ermöglicht die manuelle Erstell
 
 >[!NOTE]
 >
->Wenn in Ihrer Katalogansicht keine Sites Optimizer-Ebene vorhanden ist, erstellt die Funktion zur automatischen Fehlerbehebung in Sites Optimizer automatisch eine und weist ihr Reihenfolge 1 (höchste Priorität) zu. Wenn Sie diese Ebene löschen, wird sie bei der nächsten Ausführung der Funktion zur automatischen Fehlerbehebung in Sites Optimizer neu erstellt und die bestehenden Ebenen werden in niedrigere Ordnungszahlen verschoben. Wenn die Sites Optimizer-Ebene bereits mit einer anderen Bestellnummer vorhanden ist, ändert die Funktion für die automatische Fehlerbehebung ihre Priorität nicht.
+>Wenn in Ihrer Katalogansicht keine Sites Optimizer-Ebene vorhanden ist, erstellt die Funktion zur automatischen Fehlerbehebung in Sites Optimizer automatisch eine Ebene und weist ihr die höchste Priorität (höchste Zahl) zu. Wenn Sie diese Ebene löschen, wird sie bei der nächsten Ausführung der Funktion zur automatischen Fehlerbehebung in Sites Optimizer neu erstellt und die bestehenden Ebenen werden in niedrigere Ordnungszahlen verschoben. Wenn die Sites Optimizer-Ebene bereits mit einer anderen Bestellnummer vorhanden ist, ändert die Funktion für die automatische Fehlerbehebung ihre Priorität nicht.
 
 >[!TIP]
 >
@@ -189,8 +189,8 @@ Die Reihenfolge, in der Ebenen angewendet werden, bestimmt, welche Werte in Ihre
 **Grundlegendes zur Prioritätsreihenfolge:**
 
 * Jeder Ebene wird eine Ordnungsnummer (1, 2, 3 usw.) zugewiesen
-* Reihenfolge 1 hat die höchste Priorität und überschreibt alle anderen Ebenen
-* Wenn mehrere Ebenen dasselbe Feld ändern, hat die Ebene mit der Nummer niedrigerer Ordnung Vorrang
+* Höhere Zahlen geben eine höhere Priorität an und überschreiben alle anderen Ebenen
+* Wenn mehrere Ebenen dasselbe Feld ändern, hat die Ebene mit der höheren Ordnungszahl Vorrang
 * Priorität gilt nur für das Überschreiben von Feldern (Name, Beschreibung, Meta-Tags)
 * Felder (Bilder, Links, Attribute) verbinden Daten aus allen Ebenen
 
