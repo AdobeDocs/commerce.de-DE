@@ -45,7 +45,7 @@ Katalogebenen werden häufig für Folgendes verwendet:
 
 ## AEM-Assets-Ebene
 
-Wenn Sie [Produktvisualisierung](product-visuals.md) aktivieren, erstellt und verwaltet die AEM Assets-Integration automatisch eine Katalogebene, die ausschließlich AEM Assets-Inhalten gewidmet ist. Der standardmäßige Ebenenname lautet `AEM-Assets`. Sie können jedoch während des Onboardings [ der AEM Assets-Integration einen benutzerdefinierten Namen ](../../aem-assets-integration/get-started/configure-aco.md).
+Wenn Sie [Produktvisualisierung](product-visuals.md) aktivieren, erstellt und verwaltet die AEM Assets-Integration automatisch eine Katalogebene, die ausschließlich AEM Assets-Inhalten gewidmet ist. Der standardmäßige Ebenenname lautet `AEM-Assets`. Sie können jedoch während des Onboardings [&#x200B; der AEM Assets-Integration einen benutzerdefinierten Namen &#x200B;](../../aem-assets-integration/get-started/configure-aco.md).
 
 Diese Ebene enthält Produktbilder, die aus AEM Assets synchronisiert wurden. Wie andere Katalogebenen wird es über die [Product Layers-API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank} gefüllt. Der Assets Integration Service transformiert AEM-Asset-Metadaten und Bereitstellungs-URLs in das API-Format und sendet die Daten automatisch, wenn Assets in AEM Assets genehmigt wurden.
 
@@ -87,7 +87,7 @@ Sie können Ihren Produkten während der Datenaufnahme Katalogebenen hinzufügen
 
 >[!NOTE]
 >
->Sie importieren Katalogebenen mit der Aufnahme-API, aber [ Festlegen der Reihenfolge ](#manage-layer-priorities) Ebenen erfolgt über die Benutzeroberfläche.
+>Sie importieren Katalogebenen mit der Aufnahme-API, aber [&#x200B; Festlegen der Reihenfolge &#x200B;](#manage-layer-priorities) Ebenen erfolgt über die Benutzeroberfläche.
 
 **Voraussetzungen:**
 
