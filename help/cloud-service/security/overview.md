@@ -2,7 +2,7 @@
 title: Sicherheitsübersicht
 description: Erfahren Sie mehr über die Sicherheitsfunktionen für Adobe Commerce as a Cloud Service.
 role: Admin, Architect, Leader
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: 0343c4f3ecc182145a97e08eca2790bd1512aa27
 workflow-type: tm+mt
 source-wordcount: '581'
