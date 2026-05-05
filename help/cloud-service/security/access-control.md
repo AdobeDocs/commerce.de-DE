@@ -36,7 +36,7 @@ Der [!DNL Adobe Admin Console] ist der zentrale Hub für die Verwaltung des Benu
 - **Produktprofile**: Definieren Sie Zugriffsbereiche für verschiedene Umgebungen wie Staging und Produktion.
 - **Delegierte Administration**: Systemadministratoren und Produktadministratoren können den Benutzerzugriff ohne IT-Beteiligung verwalten.
 
-Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)Benutzerverwaltung“.
+Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)Benutzerverwaltung“.
 
 ## API-Authentifizierung und Integrationssicherheit
 
@@ -50,4 +50,4 @@ Die REST-API-Authentifizierung von [!DNL Adobe Commerce as a Cloud Service] wird
 - **API-Zugriff im Umfang**: Beschränken des API-Zugriffs auf bestimmte Ressourcen und Vorgänge.
 - **Auditprotokollierung**: Verfolgen Sie Authentifizierungsereignisse und Zugriffsänderungen, um die Compliance und die Fehlerbehebung sicherzustellen.
 
-Weitere Informationen finden [ unter ](https://developer.adobe.com/commerce/webapi/rest/authentication/)-Authentifizierung .
+Weitere Informationen finden [&#x200B; unter &#x200B;](https://developer.adobe.com/commerce/webapi/rest/authentication/)-Authentifizierung .
