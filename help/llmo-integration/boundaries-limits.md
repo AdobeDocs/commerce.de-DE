@@ -3,7 +3,7 @@ title: Integrationsbeschränkungen und -grenzen
 description: Erfahren Sie mehr über die Beschränkungen des Umfangs von Katalogen von Drittanbietern, die Abdeckung durch automatische Fehlerbehebung, crawlen Voraussetzungen, Überlegungen zur Unternehmensskalierung und eingeschränkte Beta-Zugriffsbeschränkungen für LLM Optimizer mit Commerce.
 role: Admin, User, Leader
 recommendations: noCatalog
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '258'
