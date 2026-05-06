@@ -30,7 +30,7 @@ _6. Mai 2026_
 
 _2. April 2026_
 
-![Neu](../assets/new.svg) **Es wurde Unterstützung für den Feed Kategorien in `saas:resync` Befehl ** hinzugefügt. Mit dem `saas:resync` CLI-Befehl können Sie jetzt Ihre neuesten Kategoriedaten einfach aktualisieren und anzeigen:
+![Neu](../assets/new.svg) **Es wurde Unterstützung für den Feed Kategorien in `saas:resync` Befehl &#x200B;** hinzugefügt. Mit dem `saas:resync` CLI-Befehl können Sie jetzt Ihre neuesten Kategoriedaten einfach aktualisieren und anzeigen:
 
 ```terminal
 bin/magento saas:resync --feed=categories
@@ -38,7 +38,7 @@ bin/magento saas:resync --feed=categories
 
 _10. März 2026_
 
-![Es wurde ](../assets/fix.svg) Kompatibilitätsproblem behoben, durch das der Zugriff auf die Seite &quot;Commerce Services Connector-Konfiguration“ über das Commerce Admin-System und die Konfigurationsmenüs blockiert wurde, wenn der Adobe Commerce Optimizer Connector auf einer Commerce-Instanz installiert ist.  Jetzt können Sie auf die Commerce Services Connector-Konfigurationsseite zugreifen, wenn beide Erweiterungen installiert sind. <!--MDEE-1322-->
+![Es wurde &#x200B;](../assets/fix.svg) Kompatibilitätsproblem behoben, durch das der Zugriff auf die Seite &quot;Commerce Services Connector-Konfiguration“ über das Commerce Admin-System und die Konfigurationsmenüs blockiert wurde, wenn der Adobe Commerce Optimizer Connector auf einer Commerce-Instanz installiert ist.  Jetzt können Sie auf die Commerce Services Connector-Konfigurationsseite zugreifen, wenn beide Erweiterungen installiert sind. <!--MDEE-1322-->
 
 
 ### Version 1.0.10
