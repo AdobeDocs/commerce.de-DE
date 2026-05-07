@@ -2,18 +2,22 @@
 title: Facetten hinzufügen
 description: Erfahren Sie, wie Sie filterbare Produktattribute als  [!DNL Live Search]  hinzufügen.
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 3c6ca2398cf80649e2dbe127b1835b0a057d3534
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
 
 # Facetten hinzufügen
 
-Jedes filterbare Produktattribut kann als Facette verwendet werden. Im Bedienfeld *Facetten hinzufügen* werden die aktuellen Facetten aufgelistet und die Zuweisung zusätzlicher Produktattribute als Facetten wird erleichtert. Während dieses dreistufigen Prozesses wird ein Attribut ausgewählt, das als Facette verwendet wird, Eigenschaften bei Bedarf bearbeitet werden und die Änderungen in der Storefront veröffentlicht werden.
+Jedes filterbare Produktattribut kann als Facette außer Lagerstatus (`quantity_and_stock_status`) verwendet werden. Im Bedienfeld *[!UICONTROL Add facets]* werden die aktuellen Facetten aufgelistet. Damit können Sie problemlos zusätzliche Produktattribute als Facetten zuweisen. Während dieses dreistufigen Prozesses wird ein Attribut ausgewählt, das als Facette verwendet wird, Eigenschaften bei Bedarf bearbeitet werden und die Änderungen in der Storefront veröffentlicht werden.
 
 ![Facetten hinzufügen](assets/facets-add.png)
+
+>[!NOTE]
+>
+>Informationen zur Verwaltung der Produktanzeige nach Lagerstatus finden Sie [Verwalten von nicht vorrätigen Produkten](manage-out-of-stock-products.md).
 
 ## Schritt 1: Facette hinzufügen
 
@@ -58,14 +62,14 @@ Die Facette wird am unteren Rand der Liste *Dynamische Facetten* hinzugefügt un
 1. Wenn die Facette abgeschlossen ist, klicken Sie auf **Änderungen**.
 1. Warten Sie, bis die Facette im Store angezeigt wird.
 
-   Wenn die Facette nach zwei Stunden nicht verfügbar ist, finden Sie weitere Informationen unter [Überprüfen des &#x200B;](install.md#sync)) in den Installationsanweisungen.
+   Wenn die Facette nach zwei Stunden nicht verfügbar ist, finden Sie weitere Informationen unter [Überprüfen des ](install.md#sync)) in den Installationsanweisungen.
 
 ## Feldbeschreibungen
 
 | Feld | Beschreibung |
 |--- |--- |
 | Label | ([Nur Headless](facets-type.md)) Die [Facettenbeschriftung](facets-type.md) die in der Storefront sichtbar ist, kann aus Gründen der Konsistenz mit Ihrer Marke bearbeitet werden. |
-| Sortierungstyp | Die Methode, die zum [&#x200B; von &#x200B;](facets-type.md) verwendet wird. Alle [!DNL Commerce] Storefronts sortieren Facetten nur alphabetisch. Headless-Implementierungen können auch nach `Count` sortiert werden. options:<br />Alphabetisch - Sortiert Facetten alphabetisch.<br />Anzahl - (Nur Headless) Sortiert Facetten nach der Anzahl der gefundenen Übereinstimmungen. |
+| Sortierungstyp | Die Methode, die zum [ von ](facets-type.md) verwendet wird. Alle [!DNL Commerce] Storefronts sortieren Facetten nur alphabetisch. Headless-Implementierungen können auch nach `Count` sortiert werden. options:<br />Alphabetisch - Sortiert Facetten alphabetisch.<br />Anzahl - (Nur Headless) Sortiert Facetten nach der Anzahl der gefundenen Übereinstimmungen. |
 | Maximaler Wert | Die maximale Anzahl von Werten, die für jede Facette in der Storefront angezeigt werden können. Facetten, die einen Wertebereich darstellen, sind gleichmäßig verteilt. Gültige Einträge: 0 - 100; Standard: 8 |
 
 ### Kontrollen
