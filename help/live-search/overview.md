@@ -35,7 +35,7 @@ Der Adobe Commerce-Teil der Architektur umfasst das Hosten der Suche *Admin*, da
 
 Mit dem Fokus auf Geschwindigkeit, Relevanz und Benutzerfreundlichkeit ist [!DNL Live Search] ein Wendepunkt für Käufer und Händler gleichermaßen. Sehen Sie sich das folgende Video an und machen Sie dann einen kurzen Überblick über [!DNL Live Search] in der Storefront.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452578?captions=ger&learn=on)
 
 Ein ausführlicheres Video zur Verwendung und Konfiguration der Live-Suche finden Sie unter [Vollständige Demonstration zu [!DNL Live Search]](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 
