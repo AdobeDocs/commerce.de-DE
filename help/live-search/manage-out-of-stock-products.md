@@ -57,7 +57,7 @@ query productSearchInStockOnly {
 }
 ```
 
-Verwenden Sie diesen Ansatz, wenn Sie die Anfrage nicht über das [Live Search PLP Widget) ](plp-styling.md).
+Verwenden Sie diesen Ansatz, wenn Sie die Anfrage nicht über das [Live Search PLP Widget) &#x200B;](plp-styling.md).
 
 ### Nicht vorrätige Ergebnisse nach Lagerbestand anzeigen
 
