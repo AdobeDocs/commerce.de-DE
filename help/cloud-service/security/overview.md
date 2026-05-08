@@ -64,7 +64,7 @@ Das integrierte CDN und WAF bieten sowohl DDoS-Schutz auf Netzwerkebene als auch
 
 ## Datenspeicherung und -verschlüsselung
 
-Wenn Daten in [!DNL App Builder] gespeichert werden, kann ein Händler auf die [!DNL App Builder]Speicheroptionen[ verweisen](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/). [!DNL App Builder] erzwingt die Isolierung von Mandanten, und der Zugriff auf Daten, die in diesen Services gespeichert sind, ist auf den Laufzeitnamespace beschränkt, in dem die Aktion ausgeführt wird. Es gibt keine Verschlüsselung von Daten im Speicher.
+Wenn Daten in [!DNL App Builder] gespeichert werden, kann ein Händler auf die [!DNL App Builder]Speicheroptionen[&#x200B; verweisen](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/). [!DNL App Builder] erzwingt die Isolierung von Mandanten, und der Zugriff auf Daten, die in diesen Services gespeichert sind, ist auf den Laufzeitnamespace beschränkt, in dem die Aktion ausgeführt wird. Es gibt keine Verschlüsselung von Daten im Speicher.
 
 Bei Verwendung von [!DNL API Mesh] sollten geheime Daten in der `secrets.yaml`-Datei in der Netzkonfiguration gespeichert werden. [!DNL API Mesh] verschlüsselt diese geheimen Daten mit AES-256-Verschlüsselung ([https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/)).
 
