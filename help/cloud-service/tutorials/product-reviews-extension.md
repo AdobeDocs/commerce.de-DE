@@ -8,8 +8,7 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-hidefromtoc: true
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '2533'
 ht-degree: 0%
@@ -438,9 +437,9 @@ Verwenden Sie die folgenden Tipps, wenn während des Tutorials Probleme auftrete
 
 | Symptom | Ursache | Fehlerbehebung |
 |---------|-------|-----|
-| GET or POST returns 500 &quot;Cannot find module&quot; | The product-reviews actions use `require("../../utils")` or `require("../../constants")`, which escape the package bundle. Those files are not included when the package is deployed. | Make the product-reviews package self-contained. Add `actions/product-reviews/lib/constants.js` and `actions/product-reviews/lib/utils.js`, and update all four actions to require from `../lib/...` instead of `../../`. |
-| GET returns 500 with &quot;key must match pattern&quot; | State keys use colons (for example, `reviews:ADB153`). `aio-lib-state` allows only `[a-zA-Z0-9-_.]`. | Change prefixes from `reviews:` and `qa:` to `reviews.` and `qa.`. Add a `stateKey(prefix, sku)` helper that sanitizes the SKU (replace invalid chars with `_`). |
-| POST returns 500 with &quot;value must be string&quot; | `aio-lib-state` accepts only string values. The code passes arrays or objects to `state.put()`. | Serialize with `JSON.stringify()` when writing and `JSON.parse()` when reading. Update all four actions. |
+| GET oder POST gibt 500 „Modul wurde nicht gefunden“ zurück | Die Aktionen zur Produktüberprüfung verwenden `require("../../utils")` oder `require("../../constants")`, die dem Paket entzogen sind. Diese Dateien sind bei der Bereitstellung des Pakets nicht enthalten. | Machen Sie das Paket mit den Produktbewertungen eigenständig. Fügen Sie `actions/product-reviews/lib/constants.js` und `actions/product-reviews/lib/utils.js` hinzu und aktualisieren Sie alle vier Aktionen so, dass sie von `../lib/...` anstelle von `../../` angefordert werden. |
+| GET gibt 500 mit der Zeichenfolge „Schlüssel muss dem Muster entsprechen“ zurück. | Bei Statusschlüsseln werden Doppelpunkte verwendet (z. B. `reviews:ADB153`). `aio-lib-state` erlaubt nur `[a-zA-Z0-9-_.]`. | Ändern Sie Präfixe von `reviews:` und `qa:` in `reviews.` und `qa.`. Fügen Sie einen `stateKey(prefix, sku)` Helper hinzu, der die SKU bereinigt (ersetzen Sie ungültige Zeichen durch `_`). |
+| POST gibt 500 mit „Wert muss Zeichenfolge sein“ zurück. | `aio-lib-state` akzeptiert nur Zeichenfolgenwerte. Der Code übergibt Arrays oder Objekte an `state.put()`. | Serialisieren mit `JSON.stringify()` beim Schreiben und `JSON.parse()` beim Lesen. Aktualisieren Sie alle vier Aktionen. |
 
 {style="table-layout:auto"}
 
@@ -448,7 +447,7 @@ Verwenden Sie die folgenden Tipps, wenn während des Tutorials Probleme auftrete
 
 | Symptom | Ursache | Fehlerbehebung |
 |---------|-------|-----|
-| Block does not render on test page | The block element is nested inside an extra `div`, so after `decorateSections` the block selector (`div.section > div > div`) does not match. | Make the block a direct child of the section. Structure: `section > div.product-review` (or equivalent block class). Avoid `section > div > div.product-review`. |
+| Block wird auf Testseite nicht gerendert | Das Blockelement ist in einem zusätzlichen `div` verschachtelt, sodass die Blockauswahl (`div.section > div > div`) nach dem `decorateSections` nicht übereinstimmt. | Definieren Sie den Block als direktes untergeordnetes Element des Abschnitts. Struktur: `section > div.product-review` (oder entsprechende Blockklasse). Vermeiden Sie `section > div > div.product-review`. |
 | Ungültige CSS-Token | Der Block verwendet Design-Token, die in `styles/styles.css` nicht vorhanden sind (z. B. `--color-error-100`, `--type-detail-font-size`). | Bitten Sie den Agenten, Token anhand der `styles/styles.css` des Projekts zu validieren und ungültige Token durch vorhandene zu ersetzen (z. B. `--color-alert-*`, `--type-details-caption-*`). |
 
 {style="table-layout:auto"}

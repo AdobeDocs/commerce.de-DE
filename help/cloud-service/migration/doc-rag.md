@@ -4,8 +4,7 @@ description: Erfahren Sie, wie Sie den KI-gestützten Dokumentationssuchdienst f
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 hide: true
-hidefromtoc: true
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 0%

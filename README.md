@@ -1,8 +1,8 @@
 ---
 source-git-commit: e761e54e7bd7997f3f40b1dfc1293012931111b0
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 5%
+source-wordcount: '506'
+ht-degree: 0%
 
 ---
 # Technische Dokumentation zu Adobe Commerce
@@ -11,7 +11,7 @@ Wir freuen uns über Beiträge von der Community sowie von Adobe-Mitarbeitern vo
 
 ## Adobe Open Source-Verhaltenskodex
 
-Dieses Projekt beachtet den [Adobe Open Source Code of Conduct](code-of-conduct.md) bzw. den [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct). Weitere Informationen finden Sie in [diesem Artikel](contributing.md).
+Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe &#x200B;](code-of-conduct.md) den [.NET Foundation-Verhaltenskodex &#x200B;](https://dotnetfoundation.org/code-of-conduct). Weitere Informationen finden Sie im Artikel [Beitragende](contributing.md) .
 
 ## Über Ihre Beiträge zu Adobe-Inhalten
 
@@ -21,7 +21,7 @@ Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von �
 
 ### Geringfügige Änderungen
 
-Wenn Sie kleinere Aktualisierungen beitragen möchten, besuchen Sie den Artikel und klicken Sie auf den Feedback-Bereich unten im Artikel, klicken Sie auf **Detaillierte Feedback-Optionen** und dann auf **Bearbeiten vorschlagen**, um zur Markdown-Quelldatei auf GitHub zu gelangen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen Leitfaden für Beitragende zu Adobe[Dokumenten .](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de)
+Wenn Sie kleinere Aktualisierungen beitragen möchten, besuchen Sie den Artikel und klicken Sie auf den Feedback-Bereich unten im Artikel, klicken Sie auf **Detaillierte Feedback-Optionen** und dann auf **Bearbeiten vorschlagen**, um zur Markdown-Quelldatei auf GitHub zu gelangen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen Leitfaden für Beitragende zu Adobe[&#128279;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de)Dokumenten .
 
 Kleinere Korrekturen oder Erläuterungen, die Sie zur Dokumentation und zu Code-Beispielen in diesem Repository eingeben, werden von den Adobe-Nutzungsbedingungen abgedeckt.
 
@@ -37,7 +37,7 @@ Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entw
 
 Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
 
-Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [&#x200B; Dokumenten .](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de)
+Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [&#128279;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de) Dokumenten .
 
 ## Verwenden von Markdown zum Formatieren des Themas
 

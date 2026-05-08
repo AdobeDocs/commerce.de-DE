@@ -1,9 +1,9 @@
 ---
 title: Identitäts- und Zugriffsverwaltung
 description: Erfahren Sie mehr über die Funktionen zur Identitäts- und Zugriffsverwaltung für Adobe Commerce as a Cloud Service.
-role: Admin, Architect, Leader
+role: Admin, Developer, Leader
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 283e9c8b9dd0812bb19640681d1fdf86f0f7fce1
+source-git-commit: feb48068137c6a63e6594167fe969c3aa4b044c4
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
