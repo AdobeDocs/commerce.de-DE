@@ -3,7 +3,7 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Verwendung von  [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: fb7d70be0a9325d20f3e9392a32e896fe1e1e833
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 4%
@@ -32,21 +32,21 @@ ht-degree: 4%
    - Migrations-Tools {#migration-tools}
       - [Tool für die Massendatenmigration](migration/bulk-data.md)
       - [Kodierwerkzeuge](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-   - [Dokumentations-RAG-Service](migration/doc-rag.md)
-- [Als Kunde anmelden](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+   - {hide-from-toc}[Dokumentations-RAG-Service](migration/doc-rag.md)
+- [Als Kunde anmelden](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Geschenkkartenkonto-REST-Endpunkte](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [E-Mail-Auslösung durch REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - Tutorials {#tutorials}
    - [Voraussetzungen für das Tutorial](tutorials/tutorial-prerequisites.md)
    - [Ratings-Erweiterung - Tutorial](tutorials/ratings-extension.md)
    - [Tutorial zur Erweiterung der Versandmethode](tutorials/shipping-method-extension.md)
-   - [Tutorial zur Erweiterung von Versandschätzungen](tutorials/delivery-estimates-extension.md)
-   - [Tutorial zur Erweiterung „Benachrichtigung auf Lager“](tutorials/in-stock-notification-extension.md)
-   - [Tutorial zur Erweiterung „Produktbewertungen“](tutorials/product-reviews-extension.md)
+   - {hide-from-toc}[Tutorial zu Versandschätzungen](tutorials/delivery-estimates-extension.md)
+   - {hide-from-toc}[Tutorial zur Erweiterung „Benachrichtigung auf Lager“](tutorials/in-stock-notification-extension.md)
+   - {hide-from-toc}[Tutorial zur Erweiterung der Produktbewertungen](tutorials/product-reviews-extension.md)
 - Schemata {#schemas}
    - [GraphQL-Schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [REST-API-Schema](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [Entwickleragent](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [Videoschulungen](https://experienceleague.adobe.com/de/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Videoschulungen](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Versionshinweise](release-notes.md)
-- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
