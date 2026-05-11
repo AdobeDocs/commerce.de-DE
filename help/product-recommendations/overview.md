@@ -3,9 +3,23 @@ title: Was sind Product Recommendations?
 description: Erfahren Sie mehr über Produktempfehlungen in Adobe Commerce. Entdecken Sie KI-gesteuerte Storefront-Einheiten, Datenschutz, Admin- und Storefront-Pfade und die Aufbewahrung wichtiger Daten.
 recommendations: noCatalog
 exl-id: 72850cfd-555c-4e0e-ac3e-097e6dac2030
-source-git-commit: 6bfc2c0ed53b44fb30a142dc87f87dca8a601a33
+TQID: https://experienceleague.adobe.com/kRTCG6D5k17Ah-1Q-XNZq4o48xqIwlpI8vDQJDTEeoU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: 738
 ht-degree: 0%
 
 ---

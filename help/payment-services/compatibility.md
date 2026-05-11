@@ -5,9 +5,18 @@ role: User
 level: Intermediate
 feature: Payments, Checkout, Paas, Saas
 exl-id: 4bef8429-5053-424d-806a-9e8b96295b1b
-source-git-commit: c532d72cb4aa7c920af790d345cce3ae6cbd2281
+TQID: https://experienceleague.adobe.com/UUD0IiEiwh0sZKMkclOJtoC2bKYcmDN3WAWD16mfad4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: 454
 ht-degree: 0%
 
 ---
@@ -26,7 +35,7 @@ Um [!DNL Payment Services] zu verwenden, müssen Sie zunächst eine Verbindung m
 
    >[!TIP]
    >
-   > Weitere Informationen finden Sie in unserem Tutorial-Video [&#x200B; &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)Adobe Commerce Services Connector.
+   > Weitere Informationen finden Sie in unserem Tutorial-Video [&#128279;](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) Adobe Commerce Services Connector.
 
 1. Wenn Sie Ihre Instanz bereits verbunden haben, navigieren Sie für die nächsten Schritte zur [Onboarding](onboard.md)-Seite.
 

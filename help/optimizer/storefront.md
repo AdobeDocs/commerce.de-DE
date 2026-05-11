@@ -4,9 +4,25 @@ description: Erfahren Sie, wie Sie Ihre Storefront  [!DNL Adobe Commerce Optimiz
 role: Developer
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: b6f7286f223c6253ab9edbead63a4bc4a9baddfe
+TQID: https://experienceleague.adobe.com/Jcj-3qVJPXr-t0X8-Y9GVziGj57ksUdWDhCO6pt-94A
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: 1562
 ht-degree: 0%
 
 ---
@@ -207,8 +223,8 @@ Verwenden Sie die folgende Anleitung, um häufige Probleme zu überprüfen:
 
 Bevor Sie mit den nächsten Schritten fortfahren, stellen Sie sicher, dass Ihre Storefront ordnungsgemäß funktioniert, indem Sie Folgendes überprüfen:
 
-![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Konfigurationswerte stimmen mit Ihren Instanzeinstellungen überein<br>
-![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Die Startseite der Storefront wird fehlerfrei geladen<br>
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Konfigurationswerte entsprechen Ihren Instanzeinstellungen.<br>
+![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Die Storefront-Homepage wird fehlerfrei geladen<br>
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Auf mindestens einer Produktdetailseite werden vollständige Informationen angezeigt<br>
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Die Suchfunktion gibt relevante Ergebnisse zurück<br>
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Produktbilder werden korrekt geladen<br>
@@ -239,4 +255,4 @@ Wenn die Probleme bestehen bleiben:
 
 >[!MORELIKETHIS]
 >
-> Weitere Informationen zum Aktualisieren von Website-Inhalten und [&#x200B; Integration mit Commerce-Frontend-Komponenten und Backend-Daten finden Sie in der Dokumentation zur &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de){target="_blank"}Adobe Commerce Storefront .
+> Weitere Informationen zum Aktualisieren von Website-Inhalten und [&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de){target="_blank"} Integration mit Commerce-Frontend-Komponenten und Backend-Daten finden Sie in der Dokumentation zur Adobe Commerce Storefront .

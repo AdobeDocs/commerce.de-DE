@@ -3,9 +3,17 @@ title: Verbessern der SaaS-Datenexportleistung
 description: Erfahren Sie, wie Sie die SaaS-Datenexportleistung für Commerce Services mithilfe eines Multi-Thread-Datenexportmodus verbessern können.
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/k-gizR-v-zQjQiN5IZm1Mv87J6j9eMsxH8vl-K1Co2M
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: 669
 ht-degree: 0%
 
 ---

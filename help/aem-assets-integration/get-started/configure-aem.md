@@ -3,10 +3,21 @@ title: Konfigurieren des AEM Assets-Projekts zur Unterstützung von Commerce-Met
 description: Aktivieren Sie die nahtlose Synchronisierung von Assets zwischen Adobe Commerce und AEM Assets, indem Sie die erforderlichen Metadaten für die Integration hinzufügen.
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
-source-git-commit: ac880333814d9d9a45e658e2a637cd9634dbfb1f
+TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 0%
+source-wordcount: 1450
+ht-degree: 1%
 
 ---
 
@@ -16,13 +27,13 @@ Wenn Sie AEM Assets als DAM (Digital Asset Management System) für Commerce verw
 
 Führen Sie die folgenden Schritte aus, um das AEM Assets-Projekt mit dem erforderlichen Paket-Code und den erforderlichen Metadaten für die Verwaltung von Commerce-Assets aus der AEM-Autorenumgebung zu konfigurieren:
 
-1. [Weitere Informationen zu &#x200B;](#aem-commerce-assets-commerce-package-contents)
+1. [Informationen über den Inhalt des `assets-commerce`](#aem-commerce-assets-commerce-package-contents)
 
 1. [Führen Sie die Installationsschritte aus, um das AEM Assets-Projekt zur Unterstützung von Commerce-Metadaten zu konfigurieren](#step-1-install-the-assets-commerce-package)
 
 ## AEM Commerce Assets-Commerce-Paketinhalte
 
-Adobe bietet eine AEM Commerce Package-Code-`assets-commerce` zum Hinzufügen von Commerce-Namespace- und Metadatenschema-Ressourcen zur Experience Manager Assets as a Cloud Service-Umgebungskonfiguration.
+Adobe bietet eine AEM Commerce-Paket-Code-`assets-commerce` zum Hinzufügen von Commerce-Namespace- und Metadatenschema-Ressourcen zur Experience Manager Assets as a Cloud Service-Umgebungskonfiguration.
 
 Dieser Paket-Code fügt die folgenden Ressourcen zur Authoring-Umgebung von AEM Assets hinzu:
 
@@ -44,7 +55,7 @@ Dieser Paket-Code fügt die folgenden Ressourcen zur Authoring-Umgebung von AEM 
 
 >[!NOTE]
 >
-> Weitere Informationen zum {[}AEM Commerce](https://github.com/ankumalh/assets-commerce)Package-Code finden Sie auf der Seite „Readme **.**
+> Weitere Informationen [&#x200B; **AEM Commerce-Package-Code](https://github.com/ankumalh/assets-commerce) finden Sie auf der Seite „Readme**.
 
 ## Voraussetzungen
 
@@ -133,7 +144,7 @@ Wenn die Registerkarte **Commerce** nicht in den Eigenschaften angezeigt wird, m
 
 1. Aktivieren Sie das Kontrollkästchen für **Rollen anzeigen** und **Reihenfolge anzeigen**.
 
-1. Ziehen Sie eine **checkbox**-Komponente per Drag-and-Drop auf die Registerkarte {2 **Commerce} und ordnen Sie sie der** zu. `commerce:isCommerce` Definieren Sie **Ja** und **Nein** als Optionen.
+1. Ziehen Sie eine **checkbox**-Komponente per Drag-and-Drop auf die Registerkarte {2 **Commerce} und ordnen Sie sie der `commerce:isCommerce` zu.** Definieren Sie **Ja** und **Nein** als Optionen.
 
 Wenn Sie auf andere Probleme stoßen, erstellen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) oder wenden Sie sich an Ihren AEM Assets Integration-Vertriebsmitarbeiter, um Hilfe zu erhalten.
 

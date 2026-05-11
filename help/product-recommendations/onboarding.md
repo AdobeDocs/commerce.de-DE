@@ -2,9 +2,18 @@
 title: Onboarding
 description: Erfahren Sie mehr über die Anforderungen und unterstützten Plattformen in [!DNL Product Recommendations].
 exl-id: 7b8a1117-b6d5-4e5d-bb97-09f76a024cbd
-source-git-commit: 8f421bd4421b9599ad52aa68c5caaee6592ccb43
+TQID: https://experienceleague.adobe.com/FLrOFe-Lwe7i3dOwCISflVGEv2MIkXmmE-NqTvpaY-0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: 418
 ht-degree: 0%
 
 ---
@@ -13,7 +22,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->**Product Recommendations ist kein HIPAA-fähiger Service.** Aktivieren oder verwenden Sie keine Produktempfehlungen in Adobe Commerce-Implementierungen, die das HIPAA-fähige Angebot verwenden oder geschützte Gesundheitsinformationen (Protected Health Information, PHI) anderweitig verarbeiten. Product Recommendations ist Teil der Commerce SaaS-Services, die derzeit als nicht HIPAA-fähig eingestuft sind.
+>**Product Recommendations ist kein HIPAA-fähiger Service.** Aktivieren oder verwenden Sie keine Produktempfehlungen in Adobe Commerce-Implementierungen, die das HIPAA-fähige Angebot verwenden oder anderweitig geschützte Gesundheitsinformationen (PHI) verarbeiten. Product Recommendations ist Teil der Commerce SaaS-Services, die derzeit als nicht HIPAA-fähig eingestuft sind.
 >
 >Weitere Informationen dazu, welche Adobe Commerce-Funktionen HIPAA-fähig sind und welche Services nicht mit PHI verwendet werden dürfen, finden Sie unter [HIPAA-Bereitschaft für Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) und [Vorgänge](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
 
@@ -44,7 +53,7 @@ Das Onboarding für [!DNL Product Recommendations] erfordert Zugriff auf die Bef
 
 [!DNL Product Recommendations] können einer Seite als Page Builder-Inhaltstyp hinzugefügt werden. Informationen zum Hinzufügen der Page Builder-Unterstützung zu Produktempfehlungen finden Sie unter [&#x200B; und Konfigurieren](install-configure.md).
 
-Anweisungen [[!DNL Page Builder]  Hinzufügen von &#x200B;](page-builder.md) zu [!DNL Product Recommendations] Inhalten finden Sie unter Integration[!DNL Page Builder].
+Anweisungen [[!DNL Page Builder]  Hinzufügen von [!DNL Product Recommendations] zu [!DNL Page Builder] Inhalten finden Sie unter Integration](page-builder.md).
 
 ### SaaS-Preisindizierung
 

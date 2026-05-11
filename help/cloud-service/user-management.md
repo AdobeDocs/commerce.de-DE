@@ -6,9 +6,21 @@ role: Admin
 level: Intermediate
 exl-id: 9bc80fe6-6dfd-4bb3-8dc5-d5efd8a8d90c
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: cdb15907871faec9a94b2671a44ac2d6ce8f51c5
+TQID: https://experienceleague.adobe.com/8cIklZrl3rmXMD4Hf6oTU5bBuseh3ianLw2IMujps-E
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: 1787
 ht-degree: 0%
 
 ---
@@ -292,7 +304,7 @@ Nachdem ein Benutzer zu [!DNL AEM Assets] hinzugefügt wurde, kann er auf die [!
 
 1. [Hinzufügen von Benutzern zum Produktprofil](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}.
 
-* [Konfigurieren [!DNL AEM Assets] , um Commerce-Metadaten zu unterstützen](https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/get-started/configure-aem)
+* [Konfigurieren von  [!DNL AEM Assets]  zur Unterstützung von Commerce-Metadaten](https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/get-started/configure-aem)
 * [Integration  [!DNL AEM Assets]  Commerce für die Synchronisierung von Assets](https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
 
 {{aem-assets-instance-mapping}}

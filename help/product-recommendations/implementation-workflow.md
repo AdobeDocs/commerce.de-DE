@@ -2,9 +2,23 @@
 title: Implementierungs-Workflow
 description: Erfahren Sie, wie Sie  [!DNL Product Recommendations]  erfolgreich in Ihrer Storefront implementieren.
 exl-id: 4a784d04-8be6-473f-afb3-264af06c850a
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/-nvORlxBNwoCcZb6s-OvaX8TtIh28Q-fjeUxsDXpe9E
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: 563
 ht-degree: 0%
 
 ---
@@ -13,7 +27,7 @@ ht-degree: 0%
 
 [!DNL Product Recommendations] verwendet sowohl Verhaltens- als auch Katalogdaten:
 
-- Verhalten - Daten aus der Interaktion eines Käufers auf Ihrer Site, z. B. Produktansichten, Artikel, die einem Warenkorb hinzugefügt werden, und Käufe. Adobe Commerce und Adobe AI erfassen keine personenbezogenen Daten.
+- Verhalten - Daten aus der Interaktion eines Käufers auf Ihrer Site, z. B. Produktansichten, Artikel, die einem Warenkorb hinzugefügt werden, und Käufe. Adobe Commerce und Adobe AI sammeln keine personenbezogenen Daten.
 
 - Katalog : Produktmetadaten wie Name, Preis und Verfügbarkeit.
 
@@ -21,7 +35,7 @@ Bei der Installation des `magento/product-recommendations module` aggregiert Ado
 
 >[!NOTE]
 >
-> Wenn Ihre Storefront mit PWA Studio implementiert wird, lesen Sie den Abschnitt [Dokumentation zu PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Wenn Sie eine benutzerdefinierte Frontend-Technologie wie React oder Vue JS verwenden, erfahren Sie, wie Sie [&#x200B; in &#x200B;](headless.md) Headless-Storefront [!DNL Product Recommendations] (integrieren) können.
+> Wenn Ihre Storefront mit PWA Studio implementiert wird, lesen Sie den Abschnitt [Dokumentation zu PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Wenn Sie eine benutzerdefinierte Frontend-Technologie wie React oder Vue JS verwenden, erfahren Sie, wie Sie [!DNL Product Recommendations] in [&#x200B; Headless-Storefront &#x200B;](headless.md) (integrieren) können.
 
 ## Workflow
 
@@ -29,7 +43,7 @@ Bei der Installation des `magento/product-recommendations module` aggregiert Ado
 
    Für die Bereitstellung von [!DNL Product Recommendations] sind zwei [Datenquellen](type.md) Kataloge und Verhaltensdaten erforderlich. Da die Produktion die einzige Umgebung ist, in der die Aktionen Ihrer Kunden erfasst und analysiert werden, können Sie so früh wie möglich mit der Datenerfassung in der Produktion beginnen. [Erfahren Sie](events.md) wie Adobe AI Modelle für maschinelles Lernen trainiert, die zu qualitativ hochwertigeren Empfehlungen führen. Wenn Sie mit der Erfassung von Verhaltensdaten in der Produktion beginnen, können Sie [Empfehlungen abrufen](staging-environment.md#fetch-recommendations-from-production-environment-recommended) die auf diesen Produktionsdaten basieren, während Sie in Nicht-Produktionsumgebungen arbeiten. Anschließend können Sie mit verschiedenen Empfehlungen testen und experimentieren, die auf der Grundlage der in der Produktion erfassten echten Kundendaten berechnet werden.
 
-   Um die Datenerfassung für die Produktion bereitzustellen, müssen [&#x200B; das &#x200B;](install-configure.md)-Modul installieren [!DNL Product Recommendations] konfigurieren, indem Sie einen [API-Schlüssel](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=de) bereitstellen.
+   Um die Datenerfassung für die Produktion bereitzustellen, müssen [&#x200B; das [!DNL Product Recommendations]-Modul installieren &#x200B;](install-configure.md) konfigurieren, indem Sie einen [API-Schlüssel](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=de) bereitstellen.
 
    >[!TIP]
    >

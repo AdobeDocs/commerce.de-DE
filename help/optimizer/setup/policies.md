@@ -4,9 +4,18 @@ description: Erfahren Sie, wie Sie in Richtlinien erstellen und  [!DNL Adobe Com
 recommendations: noCatalog
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/hUwBKWEcFOlkC2WOwBtDDitnj-nu-kixJ9WuencZIe4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: 917
 ht-degree: 0%
 
 ---
@@ -75,7 +84,7 @@ In diesem Abschnitt erstellen Sie eine neue Richtlinie. Die Richtlinie kann entw
 
    1. **Attribut** - Geben Sie ein Attribut aus Ihrem Katalog ein. Beispiel: „part_category“. Dieser Name muss genau mit dem Namen des Attributs im Katalog übereinstimmen.
    1. **Operator** - Wählen Sie den Operator. Beispiel: **IN**. &#x200B;
-   1. **Wert Source** - Wählen Sie **STATIC**. &#x200B;
+   1. **Wert Source** - Wählen Sie **STATIC** aus. &#x200B;
    1. **Wert** - Geben Sie einen Wert aus der zuvor angegebenen Attributdefinition ein. Geben Sie beispielsweise „Bremsen“ ein, um einen Filter für Bremsenteile zu erstellen.
    1. Drücken Sie die Eingabetaste, um **Wert zu**.
 
@@ -83,11 +92,11 @@ In diesem Abschnitt erstellen Sie eine neue Richtlinie. Die Richtlinie kann entw
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Save]** im Dialogfeld Filterdetails . &#x200B;
 
-1. Klicken Sie auf die Aktionspunkte (…) neben dem erstellten Filter und wählen Sie **Aktivieren**. Von hier aus können Sie **Filter auch**, **Deaktivieren** oder **Löschen**.
+1. Klicken Sie auf die Aktionspunkte (…) Klicken Sie neben dem erstellten Filter auf **Aktivieren**. Von hier aus können Sie **Filter auch**, **Deaktivieren** oder **Löschen**.
 
    Die Spalte **Status** zeigt ein grünes Symbol und das Wort „Aktiviert“.
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Save]** , um die neue Richtlinie zu speichern&#x200B; Wenn die Schaltfläche nicht aktiv ist, stellen Sie sicher, dass der Richtlinienname hinzugefügt wird, indem Sie auf das Stiftsymbol neben &quot;**Richtlinie“**.
+1. Klicken Sie auf die Schaltfläche &quot;**[!UICONTROL Save]**&quot;, um die neue Richtlinie zu speichern&#x200B; Wenn die Schaltfläche nicht aktiv ist, stellen Sie sicher, dass der Richtlinienname hinzugefügt wird, indem Sie auf das Stiftsymbol neben &quot;**Richtlinie“**.
 
 1. Um Ihre neue Richtlinie zu überprüfen, gehen Sie zurück zur Liste der Richtlinien, indem Sie auf den Pfeil nach hinten klicken. &#x200B;Ihre neue Richtlinie wird aufgelistet.
 
@@ -124,11 +133,11 @@ In diesem Abschnitt erstellen Sie eine neue Richtlinie. Die Richtlinie kann entw
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Save]** im Dialogfeld Filterdetails . &#x200B;
 
-1. Klicken Sie auf die Aktionspunkte (…) neben dem erstellten Filter und wählen Sie **Aktivieren**. Von hier aus können Sie **Filter auch**, **Deaktivieren** oder **Löschen**.
+1. Klicken Sie auf die Aktionspunkte (…) Klicken Sie neben dem erstellten Filter auf **Aktivieren**. Von hier aus können Sie **Filter auch**, **Deaktivieren** oder **Löschen**.
 
    Die Spalte **Status** zeigt ein grünes Symbol und das Wort „Aktiviert“.
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Save]** , um die neue Richtlinie zu speichern&#x200B; Wenn die Schaltfläche nicht aktiv ist, stellen Sie sicher, dass der Richtlinienname hinzugefügt wird, indem Sie auf das Stiftsymbol neben &quot;**Richtlinie“**.
+1. Klicken Sie auf die Schaltfläche &quot;**[!UICONTROL Save]**&quot;, um die neue Richtlinie zu speichern&#x200B; Wenn die Schaltfläche nicht aktiv ist, stellen Sie sicher, dass der Richtlinienname hinzugefügt wird, indem Sie auf das Stiftsymbol neben &quot;**Richtlinie“**.
 
 1. Um Ihre neue Richtlinie zu überprüfen, gehen Sie zurück zur Liste der Richtlinien, indem Sie auf den Pfeil nach hinten klicken. &#x200B;Ihre neue Richtlinie wird aufgelistet.
 

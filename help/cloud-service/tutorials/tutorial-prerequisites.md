@@ -7,9 +7,18 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
-source-git-commit: 0ece7b58bdafd664297cbdee809c53ef2389fb12
+TQID: https://experienceleague.adobe.com/UvtVXuUjbanuVWqNG3-bYQh6IzY1OuDjGYpojtXHMHY
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: 1291
 ht-degree: 0%
 
 ---

@@ -1,16 +1,31 @@
 ---
 title: Migration vom Suchadapter zum PLP-Widget
 description: Erfahren Sie, wie Sie vom veralteten Suchadapter zum Widget  [!DNL Live Search] Produktlistenseite“ migrieren.
-source-git-commit: 8811f0f271928fbc827e5a0164542da473c57224
+TQID: https://experienceleague.adobe.com/YAwhAbTVeYpGYKh4dTe1umcfgoRUOg8QPZNIiGFjKVo
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: 2121
 ht-degree: 0%
 
 ---
 
 # Migration vom Suchadapter zum PLP-Widget
 
-Der Suchadapter ist seit [&#x200B; 4.0.0 &#x200B;](release-notes.md#live-search-400)veraltet[!DNL Live Search] und erhält nur Sicherheits-Updates. Das [Widget „Produktlistenseite (PLP)](plp-styling.md) ist die unterstützte Lösung für alle [!DNL Live Search] Implementierungen, die in Zukunft durchgeführt werden. Dieser Leitfaden hilft Ihnen zu verstehen, wann die Migration einfach ist und wann zusätzliche Arbeit erforderlich ist.
+Der Suchadapter ist seit [!DNL Live Search] 4.0.0 [veraltet](release-notes.md#live-search-400) und erhält nur Sicherheits-Updates. Das [Widget „Produktlistenseite (PLP)](plp-styling.md) ist die unterstützte Lösung für alle [!DNL Live Search] Implementierungen, die in Zukunft durchgeführt werden. Dieser Leitfaden hilft Ihnen zu verstehen, wann die Migration einfach ist und wann zusätzliche Arbeit erforderlich ist.
 
 ## Voraussetzungen
 

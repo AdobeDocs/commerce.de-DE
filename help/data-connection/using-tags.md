@@ -3,9 +3,23 @@ title: Erfassen von Commerce-Daten mithilfe von Adobe Experience Platform Tags
 description: Erfahren Sie, wie Sie Commerce-Daten mithilfe von Adobe Experience Platform-Tags erfassen.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: dab333e8-5f71-4f3e-9660-6363b0e230c8
+TQID: https://experienceleague.adobe.com/7HNafiIenZfLrAhILPMwuUzRDzBVuClvDchJBGEg6bs
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: 2655
 ht-degree: 0%
 
 ---
@@ -14,7 +28,7 @@ ht-degree: 0%
 
 Sie können die [!DNL Data Connection]-Erweiterung zwar verwenden, um Storefront-Ereignisse zu veröffentlichen und zu abonnieren, einige Händler verwenden jedoch möglicherweise bereits eine Datenerfassungslösung, z. B. die [Adobe Experience Platform-Tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=de). Für diese Händler bietet Adobe Commerce in der [!DNL Data Connection]-Erweiterung eine Veröffentlichungsoption, die die Adobe Commerce Event SDK verwendet.
 
-Datenfluss ![[!DNL Data Connection] Erweiterung](assets/tags-data-flow.png)
+Datenfluss der ![[!DNL Data Connection]](assets/tags-data-flow.png)
 Datenfluss der _[!DNL Data Connection]mit Tags_
 
 In diesem Abschnitt erfahren Sie, wie Sie die von der [!DNL Data Connection] bereitgestellten Storefront-Ereigniswerte der bereits verwendeten Adobe Experience Platform Tags-Lösung zuordnen.
@@ -57,7 +71,7 @@ Da sich die Datenerfassung mithilfe von Tags von der Verwendung der Adobe Commer
 
 Wenn Sie die Datenelemente und Regeln in Adobe Experience Platform Tags mit Adobe Commerce-spezifischen Ereignisdaten aktualisieren, werden Sie einige allgemeine Schritte ausführen.
 
-Fügen wir beispielsweise das Adobe Commerce-`signOut`-Ereignis zu Adobe Experience Platform-Tags hinzu. Die folgenden Schritte beschreiben mit Ausnahme der von Ihnen festgelegten spezifischen Werte, wie [Datenelemente](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=de#data-element) und [Regeln](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=de#create-a-rule) hinzugefügt werden. Diese gelten für alle Adobe Commerce-Ereignisse, die Sie Tags hinzufügen.
+Fügen wir beispielsweise das Adobe Commerce-`signOut`-Ereignis zu Adobe Experience Platform-Tags hinzu. Die folgenden Schritte beschreiben mit Ausnahme der von Ihnen festgelegten spezifischen Werte, wie [Datenelemente](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#data-element) und [Regeln](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#create-a-rule) hinzugefügt werden. Diese gelten für alle Adobe Commerce-Ereignisse, die Sie Tags hinzufügen.
 
 1. Erstellen Sie ein Datenelement:
 
@@ -128,7 +142,7 @@ Ordnen Sie die Adobe Commerce-Ereignisse jedem der folgenden Ereignisse Ihrem XD
 - [`openCart`](#opencart)
 - [`viewCart`](#viewcart)
 - [`removeFromCart`](#removefromcart)
-- [`initiativeCheckout`](#initiatecheckout)
+- [`initiateCheckout`](#initiatecheckout)
 - [`placeOrder`](#placeorder)
 
 ### Abmelden
@@ -726,7 +740,7 @@ Erstellen Sie die folgenden Datenelemente:
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `productContext.pricing.regularPrice`
 
-1. Produkt  Preis:
+1. Produktpreis:
 
    - **Name**: `product price`
    - **Erweiterung**: `Core`
@@ -969,7 +983,7 @@ Erstellen Sie die folgenden Datenelemente:
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `productContext.pricing.regularPrice`
 
-1. Produkt  Preis:
+1. Produktpreis:
 
    - **Name**: `product price`
    - **Erweiterung**: `Core`
@@ -1415,7 +1429,7 @@ Wenn Sie die [!DNL Data Connection]-Erweiterung in Adobe Commerce installieren, 
 
 1. Erstellen Sie ein **Core Custom Code**-Datenelement (`%do not track cookie%`) für das `mg_dnt` Cookie:
 
-   ![Erstellen verfolgt kein Datenelement](assets/element-dnt-cookie.png)
+   ![Datenelement erstellen/nicht verfolgen](assets/element-dnt-cookie.png)
    _Erstellen verfolgt kein Datenelement_
 
 1. Erstellen Sie ein **Core Custom Code**-Datenelement (`%consent%`), das `out` zurückgibt, wenn das Cookie gesetzt ist, und andernfalls `in`:

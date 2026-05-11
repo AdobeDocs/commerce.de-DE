@@ -3,9 +3,20 @@ title: Pflegen genauer und relevanter Inhalte
 description: Eine E-Commerce-Plattform ist einer der wichtigsten Interaktionskanäle. Durch nahtlose Aktualisierungen im Asset-Management-System wird sichergestellt, dass Commerce-Storefronts immer die aktuellsten Produktinformationen anzeigen.
 feature: CMS, Media, Integration
 exl-id: 2c749e84-fcc4-4bf9-90b2-87438329889e
-source-git-commit: 141f2291d1ead324a159053145e92ee7d4237a7d
+TQID: https://experienceleague.adobe.com/cTeAl0vABSDcqSR9S7pGkV2yGnFHz11VmXtPoE0C86M
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: 416
 ht-degree: 0%
 
 ---

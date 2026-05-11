@@ -3,9 +3,25 @@ title: Benutzer und Identity Management
 description: Erfahren Sie, wie Sie Benutzer erstellen und verwalten und Benutzerrollen für [!DNL Adobe Commerce Optimizer] zuweisen.
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 9ab2118d-b7e3-4e2e-adac-8f3950fe1824
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/ORS8H-GM48FMaTL7ywENU6lJnPrz7PULLhlu5AVlzDc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+  - id: ce84ce08-883f-4337-ae83-6bb1855ca732
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: 816
 ht-degree: 0%
 
 ---

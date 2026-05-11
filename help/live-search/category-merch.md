@@ -4,9 +4,18 @@ description: Verwenden  [!DNL Live Search]  Kategorie-Merchandising für ein sch
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: 1131
 ht-degree: 0%
 
 ---
@@ -42,7 +51,7 @@ Sie können im Feld „Suche nach Kategorie“ nach einer Kategorie oder Unterka
 Kategorie-Merchandising verwendet dieselben Ranking-Typen wie bei [einzelnen Produkten](rules-workspace.md).
 Es gibt zwei Arten von Rankings: Intelligent und Manual.
 
-**Intelligent Ranking** nutzt die Verhaltensdatenanalyse der Storefront durch [Adobe AI](https://business.adobe.com/de/ai.html) um alle Produkte innerhalb ausgewählter Kategorien nach einem bestimmten Algorithmus zu sortieren. Sobald ein Intelligent Ranking ausgewählt ist, wird erwartet, dass sich die spezifische Produktreihenfolge im Laufe der Zeit ändert, da die zugrunde liegenden Daten von Adobe AI laufend neu analysiert werden. Die beliebtesten Produkte ändern sich beispielsweise automatisch im Laufe der Zeit, wenn sich die Kundenpräferenzen ändern.
+**Intelligent Ranking** nutzt die Verhaltensdatenanalyse der Storefront durch [Adobe AI](https://business.adobe.com/de/ai.html) um alle Produkte innerhalb ausgewählter Kategorien nach einem bestimmten Algorithmus zu sortieren. Sobald ein Intelligent-Ranking ausgewählt wurde, wird erwartet, dass sich die spezifische Produktreihenfolge im Laufe der Zeit ändert, da die zugrunde liegenden Daten von Adobe AI laufend neu analysiert werden. Die beliebtesten Produkte ändern sich beispielsweise automatisch im Laufe der Zeit, wenn sich die Kundenpräferenzen ändern.
 Intelligente Ranking-Methoden sind:
 
 * Am häufigsten gekauft: Sortiert Produkte nach der Häufigkeit, mit der sie von Käufern in den letzten sieben Tagen gekauft wurden.

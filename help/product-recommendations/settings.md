@@ -2,9 +2,21 @@
 title: Einstellungen
 description: Erfahren Sie, wie Sie die Quelle Ihrer  [!DNL Product Recommendations]  ändern und visuelle Empfehlungen aktivieren.
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/GJ8h9mX-3vlH1AUxk7FyM0-7rZTt40SGmdwfEMlvLvE
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: 477
 ht-degree: 0%
 
 ---
@@ -34,14 +46,14 @@ Um die Quelle der Produktempfehlungsdaten zu ändern, wählen Sie den SaaS-Daten
 
 1. Klicken Sie **Einstellungen**.
 
-   ![Produktempfehlungseinstellungen](assets/settings.png)
+   ![Einstellungen für Produktempfehlungen](assets/settings.png)
    _Einstellungen_
 
 1. Aktivieren Sie _Abschnitt_ Recommendations-Quelle“ die Option **Abrufen von Recommendations aus einem anderen SaaS-**. Der Abschnitt _Recommendations-Quelle_ wird nur in einer Nicht-Produktionsumgebung angezeigt.
 
    Eine Liste _Verfügbare SaaS-Datenräume_ wird angezeigt.
 
-   ![Produktempfehlungseinstellungen](assets/settings-select-saas.png)
+   ![Einstellungen für Produktempfehlungen](assets/settings-select-saas.png)
    _Einstellungen_
 
 1. Wählen Sie den SaaS-Datenbereich aus, der über Kundendaten verfügt, die Sie verwenden möchten.

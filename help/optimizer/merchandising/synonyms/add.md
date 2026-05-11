@@ -3,9 +3,19 @@ title: Erstellen und Verwalten von Synonymen
 description: Erfahren Sie, wie Sie Synonyme für erstellen und verwalten [!DNL Adobe Commerce Optimizer].
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/YtlgC9okQYDboZg-A0bcnLUVFRH4IVEeBLMeshGad4s
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: 606
 ht-degree: 0%
 
 ---
@@ -86,7 +96,7 @@ Um das Auffinden eines Synonyms zu erleichtern, können Sie die Liste nach Typ f
 
 ## Synonym bearbeiten
 
-1. Suchen Sie das Synonym, das Sie bearbeiten möchten, und klicken Sie auf **Optionen** Mehr…).
+1. Suchen Sie das Synonym, das Sie bearbeiten möchten, und klicken Sie auf **Mehr** (…) Optionen.
 
 1. Klicken Sie **Bearbeiten**.
 Das Keyword ist der erste Begriff in der Liste, und jeder Begriff wird durch ein Komma getrennt. Die Schlüsselwort- und Erweiterungsbegriffe können aktualisiert werden, der Typ des Synonyms kann jedoch nicht geändert werden.

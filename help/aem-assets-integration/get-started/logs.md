@@ -4,9 +4,16 @@ description: Erfahren Sie, wo Sie Protokolle für die AEM Assets-Integration fü
 feature: CMS, Media, Integration
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 exl-id: 9c6c8694-6ded-4cc8-a3ab-d1dfb50e3583
-source-git-commit: 202eca18c71a211cbbf1d210be00543049170c3f
+TQID: https://experienceleague.adobe.com/im5QUgqayCNj9lZfZ-7UvxiUW9NmgHyhVbyBdjjPxAA
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: 154
 ht-degree: 0%
 
 ---

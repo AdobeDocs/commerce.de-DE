@@ -4,9 +4,17 @@ description: Verwenden Sie  [!DNL API Mesh]  für Adobe Commerce und Catalog Ser
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: ca62c653-29b9-45cf-b2d4-8cb693b08aac
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+TQID: https://experienceleague.adobe.com/mK-o11X-G7WZgCL9BmVnDMfTDBg3lDemTNkxqkhyMZM
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: 292
 ht-degree: 0%
 
 ---

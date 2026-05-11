@@ -4,9 +4,20 @@ description: Erfahren Sie, welche Daten jedes Verhaltensereignis erfasst.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: bcabccc9-8a2e-4045-9306-1d999bb75624
-source-git-commit: 631dfacd26a333e70a70f354d191d256d90d946f
+TQID: https://experienceleague.adobe.com/YS3jKQ3jmy76aeaqAp1PR8cGpD0euagdhoqL6CoMAnQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: 467
 ht-degree: 0%
 
 ---
@@ -45,7 +56,7 @@ Weitere Informationen zu Suchereignissen finden [&#x200B; in &#x200B;](https://d
 
 ## B2B-Ereignisse
 
-![B2B für Adobe Commerce](../assets/b2b.svg) Für B2B-Händler müssen [&#x200B; die &#x200B;](install.md#install-the-b2b-extension)-Erweiterung `experience-platform-connector-b2b`installieren“, um auf diese Ereignisse zugreifen zu können.
+![B2B für Adobe Commerce](../assets/b2b.svg) Für B2B-Händler müssen [&#x200B; die `experience-platform-connector-b2b`-Erweiterung &#x200B;](install.md#install-the-b2b-extension)installieren“, um auf diese Ereignisse zugreifen zu können.
 
 Die B2B-Ereignisse enthalten [Anforderungsliste](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html?lang=de) Informationen, z. B. ob eine Anforderungsliste erstellt, hinzugefügt oder gelöscht wurde. Durch die Verfolgung von für Anforderungslisten spezifischen Ereignissen können Sie sehen, welche Produkte Ihre Kunden häufig kaufen, und auf dieser Grundlage Kampagnen erstellen.
 

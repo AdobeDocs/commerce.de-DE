@@ -3,9 +3,19 @@ title: Migrieren von Mediendateien zu AEM
 description: Migrieren Sie die Mediendateien aus Adobe Commerce oder einer externen Quelle in das AEM Assets-DAM.
 feature: CMS, Media, Integration
 exl-id: ccb13e90-8b18-4f1e-94ce-f0dacea2f617
-source-git-commit: ac880333814d9d9a45e658e2a637cd9634dbfb1f
+TQID: https://experienceleague.adobe.com/-fCE7lTivOuhLDzEMNexxGWLTkL52oo9p-sm54HxpQM
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: 1010
 ht-degree: 0%
 
 ---
@@ -138,6 +148,6 @@ Im Folgenden finden Sie einen allgemeinen Überblick über die Verwendung des To
 
 >[!MORELIKETHIS]
 >
-> [Video-Demo zum Tool für den Massenimport](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
+> [Videodemo zum Tool für den Massenimport](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
 > [Tipps, Best Practices und Einschränkungen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
 > [Hochladen oder Aufnehmen von Assets mithilfe von APIs](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)

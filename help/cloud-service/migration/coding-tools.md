@@ -5,9 +5,21 @@ feature: App Builder, Cloud
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 level: Intermediate
-source-git-commit: 2c851da1dc521f5309031fc091be88f9ca39cd8f
+TQID: https://experienceleague.adobe.com/ZbqP1MO-QrqAtocvmgFStqaluqQdzMm4LXlY3o4o3xY
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2438'
+source-wordcount: 2634
 ht-degree: 0%
 
 ---
@@ -47,8 +59,8 @@ Dadurch werden die Tools auf die neueste Version aktualisiert.
    * [Claude Code](https://www.claude.com/product/claude-code)
    * [GitHub-Copilot](https://github.com/features/copilot)
    * [Windsurfen](https://windsurf.com)
-   * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
-   * [OpenAI-Codex](https://openai.com/index/introducing-codex/)
+   * [Gemini-CLI](https://github.com/google-gemini/gemini-cli)
+   * [OpenAI-Code](https://openai.com/index/introducing-codex/)
    * [Cline](https://cline.bot)
 
 * [Node.](https://nodejs.org/en/download): LTS-Version
@@ -65,9 +77,9 @@ Dadurch werden die Tools auf die neueste Version aktualisiert.
 
 1. Installieren Sie die folgenden Plug-ins:
 
-   * [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce)
+   * [ADOBE I/O CLI COMMERCE](https://github.com/adobe-commerce/aio-cli-plugin-commerce)
    * [Adobe I/O CLI-Laufzeit](https://github.com/adobe/aio-cli-plugin-runtime)
-   * [App Builder-CLI](https://github.com/adobe/aio-cli-plugin-app-dev)
+   * [APP BUILDER CLI](https://github.com/adobe/aio-cli-plugin-app-dev)
 
    ```bash
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
@@ -143,7 +155,7 @@ Dadurch werden die Tools auf die neueste Version aktualisiert.
 >
 >Vor der Bereitstellung des Projekts müssen Sie die folgenden Konfigurationsaufgaben durchführen:
 >
->* Melden Sie sich über die Adobe I/O-CLI [&#x200B; &#x200B;](https://developer.adobe.com/console)Adobe Developer Console an.
+>* Melden Sie sich über die Adobe I/O-CLI [&#128279;](https://developer.adobe.com/console) Adobe Developer Console an.
 >* Erstellen Sie ein App Builder-Projekt (siehe [Projekt-Setup](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Einrichten von Umgebungsvariablen in einer `.env`.
 >
@@ -294,7 +306,7 @@ Die Methode zur Auswahl des **Plan**-Modus variiert je nach verwendetem Agenten.
 
 * [Cursor](https://cursor.com/docs/agent/modes)
 * [Claude Code](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
-* [Gemini CLI](https://geminicli.com/docs/cli/plan-mode/)
+* [Gemini-CLI](https://geminicli.com/docs/cli/plan-mode/)
 
 ### Checkliste
 

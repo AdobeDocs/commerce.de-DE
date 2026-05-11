@@ -3,9 +3,24 @@ title: Erfassen von Daten
 description: Erfahren Sie, wie Ereignisse Daten für  [!DNL Product Recommendations] erfassen.
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/efHRMj3u3w-xvUgMnEYDpX0D-BDCUyjhhrkMaa3n-xg
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: 1019
 ht-degree: 0%
 
 ---
@@ -14,7 +29,7 @@ ht-degree: 0%
 
 Wenn Sie [[!DNL Product Recommendations]](install-configure.md) installieren und konfigurieren, stellt das Modul die Verhaltensdatenerfassung in Ihrer Storefront bereit. Dieser Mechanismus erfasst anonymisierte Verhaltensdaten von Ihren Käufern und unterstützt [!DNL Product Recommendations]. Beispielsweise wird das `view` Ereignis verwendet, um den `Viewed this, viewed that` Empfehlungstyp zu berechnen, und das `place-order` Ereignis wird verwendet, um den `Bought this, bought that` Empfehlungstyp zu berechnen.
 
-Weitere Informationen zu den Verhaltensdaten[&#x200B; die von &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)-Ereignissen erfasst werden, finden Sie in der [!DNL Product Recommendations]Entwicklerdokumentation“.
+Weitere Informationen zu den Verhaltensdaten[&#x200B; die von [!DNL Product Recommendations]-Ereignissen erfasst werden, finden Sie in der &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)Entwicklerdokumentation“.
 
 >[!NOTE]
 >
@@ -31,7 +46,7 @@ Es gibt zwei Arten von Daten, die in Produktempfehlungen verwendet werden:
 - **Verhalten** - Daten aus der Interaktion eines Käufers auf Ihrer Site, z. B. Produktansichten, Artikel, die zum Warenkorb hinzugefügt werden, und Käufe.
 - **Katalog** - Produktmetadaten, z. B. Name, Preis, Verfügbarkeit usw.
 
-Bei der Installation des `magento/product-recommendations`-Moduls aggregiert Adobe AI die Verhaltens- und Katalogdaten und erstellt für jeden Empfehlungstyp Produktempfehlungen. Der Produktempfehlungs-Service stellt diese Empfehlungen dann in Form eines Widgets, das das empfohlene Produkt (die empfohlenen _) enthält, in Ihrer Storefront_.
+Bei der Installation des `magento/product-recommendations` aggregiert Adobe AI die Verhaltens- und Katalogdaten und erstellt für jeden Empfehlungstyp Produktempfehlungen. Der Produktempfehlungs-Service stellt diese Empfehlungen dann in Form eines Widgets, das das empfohlene Produkt (die empfohlenen _) enthält, in Ihrer Storefront_.
 
 Einige Empfehlungstypen verwenden Verhaltensdaten von Kundinnen und Kunden, um Modelle für maschinelles Lernen zu trainieren, um personalisierte Empfehlungen zu erstellen. Andere Empfehlungstypen verwenden nur Katalogdaten und verwenden keine Verhaltensdaten. Wenn Sie Produktempfehlungen schnell auf Ihrer Site verwenden möchten, können Sie die folgenden, nur für den Katalog geeigneten Empfehlungstypen verwenden:
 
