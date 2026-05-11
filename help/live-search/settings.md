@@ -2,9 +2,12 @@
 title: Einstellungen
 description: Konfigurieren Sie die Einstellungen für den  [!DNL Live Search] .
 exl-id: 6387a365-7e23-4023-95ac-27908164d81c
-source-git-commit: 70ff444afbe7ddf41e966e479e03975a02f4e10f
+TQID: https://experienceleague.adobe.com/Dn4x8Boo-1F5RQgMXVx6Dpt7iYWFIlqOlO5QwhJrjVU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: 467
 ht-degree: 0%
 
 ---

@@ -2,9 +2,13 @@
 title: Synonyme hinzufügen
 description: Fügen Sie  [!DNL Live Search]  hinzu, um die Reaktion auf Suchanfragen zu verbessern.
 exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+TQID: https://experienceleague.adobe.com/eGBxKnn3lLD5VQel52jyrt7EB8rcrhGOi-DDwhW7wzc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: 410
 ht-degree: 0%
 
 ---
@@ -18,7 +22,7 @@ Erhöhen Sie die Kundeninteraktion, indem Sie Ihre eigene kuratierte Liste [!DNL
 ## Schritt 1: Synonym hinzufügen
 
 1. Gehen Sie im Admin zu **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Setzen Sie bei mehreren Stores **Bereich** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings), für die die Synonymeinstellungen gelten.
+1. Setzen Sie bei mehreren Stores **Bereich** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings), für die die Synonymeinstellungen gelten.
 1. Klicken Sie auf die **Synonyme**.
 1. Klicken Sie auf **Schaltfläche „Synonyme**&quot;.
 
@@ -33,7 +37,7 @@ Befolgen Sie die Anweisungen für den [Typ des Synonyms](synonyms-type.md) den S
    ![Zwei-Wege-Synonym hinzufügen](assets/synonym-add-two-way.png)
 
 1. Geben Sie den **Keyword**-Begriff oder die zuzuordnende Phrase ein.
-1. Geben Sie **Begriffe**&#x200B;Erweiterung) ein, die Sie als Synonyme für das Keyword hinzufügen möchten. Trennen Sie mehrere Begriffe durch Kommas.
+1. Geben Sie **Begriffe**Erweiterung) ein, die Sie als Synonyme für das Keyword hinzufügen möchten. Trennen Sie mehrere Begriffe durch Kommas.
 In diesem Beispiel lautet das Keyword, mit dem eine Übereinstimmung erzielt werden soll, „Hose“, und die Menge der Ausdehnungsbegriffe lautet „Hose, Hose“.
 
    ![Beispiel für ein Zwei-Wege-Synonym](assets/synonym-add-two-way-example.png)

@@ -2,9 +2,14 @@
 title: Platzierung und Beschriftungen
 description: Erfahren Sie, wo Sie Empfehlungen auf verschiedenen Seiten Ihrer Site platzieren und Vorschläge für häufig verwendete Beschriftungen für jeden Empfehlungstyp machen können.
 exl-id: 0576add8-50dd-4aac-91f5-38b7d85b751f
-source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
+TQID: https://experienceleague.adobe.com/Bu5SbZHmj-PfJ3-KnVTu6sc4emkmRJeWTusmQHYz1aU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: 500
 ht-degree: 0%
 
 ---
@@ -26,14 +31,14 @@ Einige Storefront-Seiten beschränken, wo Sie die Empfehlungen platzieren könne
 - Oben im Hauptinhalt - Empfehlungen werden über dem Hauptinhaltsbereich direkt unter der oberen Navigationsleiste angezeigt.
 - Am unteren Rand des Hauptinhalts (Standard) - Empfehlungen werden unter dem Hauptinhaltsbereich und vor allen anderen Inhaltsblöcken auf der Seite angezeigt, z. B _„Verwandte Produkte_.
 
-![Empfehlungsplatzierung](assets/storefront-home-page-top.png)
+![Platzierung der Empfehlung](assets/storefront-home-page-top.png)
 _Empfehlung oben auf der Startseite_
 
 ## Empfehlungsbeschriftungen
 
 Die Beschriftung, die einer Empfehlung in der Storefront zugewiesen wird, wirkt sich darauf aus, wie Käufer die Relevanz der Empfehlung für sie interpretieren. Die folgenden Beschriftungen werden häufig für jeden Empfehlungstyp verwendet.
 
-![Empfehlungsplatzierung](assets/storefront-search-results-top.png)
+![Platzierung der Empfehlung](assets/storefront-search-results-top.png)
 _Empfehlung am Anfang der Suchergebnisse_
 
 | Empfehlungstyp | Empfohlene Kennzeichnungen |
@@ -59,4 +64,4 @@ In der folgenden Tabelle sind die Storefront-Seiten aufgeführt, auf denen Sie E
 | Produktdetails | Am Ende des Hauptinhalts (Standard) | Am häufigsten angezeigt<br>am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>angezeigt, angezeigt, <br>, gekauft, gekauft, <br>, gekauft, <br>Ähnliches<br>Trending<br> |
 | Warenkorb | Am Ende des Hauptinhalts (Standard) | Am häufigsten angezeigt<br>am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Anzeigen, angezeigt, <br>, gekauft, <br>, gekauft, <br>, Ähnliche Artikel<br>Trend |
 | Bestätigung | Am Ende des Hauptinhalts (Standard) | Am häufigsten angezeigt<br>am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Anzeigen, angezeigt, <br>, gekauft, <br>, gekauft, <br>, Ähnliche Artikel<br>Trend |
-| Page Builder | [Drag-and](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=de)Drop, um Inhaltstyp zu positionieren | Am häufigsten angezeigt<br>Am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Empfohlen für Sie<br>Trend |
+| Page Builder | [Drag-and](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)Drop, um Inhaltstyp zu positionieren | Am häufigsten angezeigt<br>Am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Empfohlen für Sie<br>Trend |

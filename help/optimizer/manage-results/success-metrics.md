@@ -1,11 +1,16 @@
 ---
 title: Erfolgsmetriken
 description: Erfolgsmetriken liefern insight in die wichtigsten Leistungsmetriken für Ihren - [!DNL Adobe Commerce Optimizer] .
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/Z1Ntq9O5Pde8B2N8UCarCf-V5NZw-YiCx78ortu5PwY
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2594'
+source-wordcount: 2627
 ht-degree: 0%
 
 ---
@@ -296,7 +301,7 @@ Diese Tracking-Methode weist einige bekannte Einschränkungen auf:
 
 - **Nutzen von Suchleistungsdaten**: Verwenden Sie den [Suchleistung](../manage-results/search-performance.md)-Bericht, um Trenderzeugnisse und beliebte Suchbegriffe zu identifizieren. Erstellen Sie Merchandising-Regeln, um diese Elemente hervorzuheben.
 
-- **Optimieren der Empfehlungsleistung**: Überwachen Sie [&#x200B; Metriken zur Empfehlungsleistung](../manage-results/recommendation-performance.md) um zu ermitteln, welche Empfehlungstypen den meisten Traffic und die meisten Konversionen fördern.
+- **Optimieren der Empfehlungsleistung**: Überwachen Sie [ Metriken zur Empfehlungsleistung](../manage-results/recommendation-performance.md) um zu ermitteln, welche Empfehlungstypen den meisten Traffic und die meisten Konversionen fördern.
 
 - **Neue Artikel und Werbeartikel hervorheben**: Verwenden Sie Merchandising-Regeln, um neue Produkte oder Werbeartikel in den Suchergebnissen zu optimieren, um die Aufmerksamkeit neuer Besucher zu erregen.
 
@@ -342,7 +347,7 @@ Bounce Rate = (Number of Bounced Sessions ÷ Total Sessions) × 100
 - Bounce-Raten über verschiedene Seitentypen und Traffic-Quellen hinweg vergleichen, um Problembereiche zu identifizieren.
 - Plötzliche Anstiege der Absprungrate deuten häufig auf technische Probleme oder schlechtes Targeting für Kampagnen hin.
 
-**Wie hoch ist die Absprungrate?** Dies variiert je nach Branche und Seitentyp, aber im Allgemeinen:
+**Was ist eine gute Absprungrate?** Dies variiert je nach Branche und Seitentyp, aber im Allgemeinen:
 
 - 40-60 %: Durchschnitt für E-Commerce-Sites.
 - Unter 40 %: Ausgezeichnetes Engagement.
@@ -395,7 +400,7 @@ Bounce Rate = (Number of Bounced Sessions ÷ Total Sessions) × 100
 | Feld | Beschreibung |
 |---|---|
 | Datumsbereich | Zu den Optionen gehören **Letzte 3 Monate**, **Letzte 7 Tage**, **Letzte 30 Tage**, **Letzte 6 Monate**, **Letzte 12 Monate** und **Jahr bis heute**. Verwenden Sie kürzere Bereiche für sofortige Optimierungseinblicke und längere Bereiche für Trendanalysen. |
-| Land | Basierend auf der für Ihre [Katalogansicht“ angegebenen &#x200B;](../setup/catalog-view.md). Wählen Sie den geeigneten Markt für eine genaue Leistungsanalyse aus. |
+| Land | Basierend auf der für Ihre [Katalogansicht“ angegebenen ](../setup/catalog-view.md). Wählen Sie den geeigneten Markt für eine genaue Leistungsanalyse aus. |
 | Währung | Die für Ihre Katalogansicht angegebene Währung. Stellen Sie sicher, dass dies Ihrem Zielmarkt für eine genaue Umsatzberichterstattung entspricht. |
 | Export | Speichert den Bericht als PDF zur Freigabe für Stakeholder oder Offline-Analyse. |
 

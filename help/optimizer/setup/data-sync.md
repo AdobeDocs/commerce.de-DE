@@ -3,11 +3,15 @@ title: Datensynchronisation
 description: Überprüfen Sie die Katalogdaten, die aus Ihrer Commerce-Datenquelle in synchronisiert werden [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
-source-git-commit: 2cb17424a0f063a585ddd861b7057d9851467fbc
+TQID: https://experienceleague.adobe.com/ZTMFkch-YNS-CUgCdadmg1kemA8ORXQ7KGCEkI7d-Yw
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: 483
 ht-degree: 0%
 
 ---
@@ -54,7 +58,7 @@ Wenn bestimmte Produkte nicht auf der Seite **Datensynchronisierung** angezeigt 
 
 ## Überwachen des Synchronisierungsstatus von Daten
 
-Bei Projekten, die Adobe Commerce als Upstream-Datenquelle über den Commerce Optimizer Connector verwenden, können Sie den Datenexportvorgang überwachen und Resynchronisierungsvorgänge über die Seite [Synchronisierungsstatus für Daten-Feeds](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in Commerce Admin starten.
+Bei Projekten, die Adobe Commerce als Upstream-Datenquelle über den Commerce Optimizer Connector verwenden, können Sie den Datenexportvorgang überwachen und Resynchronisierungsvorgänge über die Seite [Synchronisierungsstatus für Daten-Feeds](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in Commerce Admin starten.
 
 ## Verwandte Themen
 

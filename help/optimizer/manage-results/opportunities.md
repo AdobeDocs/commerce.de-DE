@@ -1,10 +1,15 @@
 ---
 title: Opportunities
 description: Identifizieren Sie Möglichkeiten zur Steigerung von Traffic, Interaktion und Konversionen durch die Integration mit Adobe Sites Optimizer für intelligente, datengesteuerte Site-Verbesserungen.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für  [!DNL Adobe Commerce Optimizer]  (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 00f5aaa4d08e686195096b3fee0dcca2d2ac56d8
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für  [!DNL Adobe Commerce Optimizer]  (von Adobe verwaltete SaaS-Infrastruktur)."
+TQID: https://experienceleague.adobe.com/KQb7XtqY-4Qrt4B9fwn9w6u8yBjwsj4owArk53v6VHo
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: 1445
 ht-degree: 0%
 
 ---
@@ -17,7 +22,7 @@ Die **Opportunities** hilft Ihnen, Optimierungen zu identifizieren und zu implem
 
 ## Was sind Opportunities?
 
-[Opportunities](https://experienceleague.adobe.com/de/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) sind KI-gestützte Empfehlungen, die Merchandisern dabei helfen, Probleme zu identifizieren und zu beheben, die sich auf die Leistung ihrer Commerce-Site auswirken. Diese Empfehlungen basieren auf [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/de/docs/experience-manager-sites-optimizer/content/home), einem Cloud-basierten Service, der die Leistung der Website analysiert und verbessert.
+[Opportunities](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) sind KI-gestützte Empfehlungen, die Merchandisern dabei helfen, Probleme zu identifizieren und zu beheben, die sich auf die Leistung ihrer Commerce-Site auswirken. Diese Empfehlungen basieren auf [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home), einem Cloud-basierten Service, der die Leistung der Website analysiert und verbessert.
 
 ## Wichtigste Funktionen
 
@@ -68,7 +73,7 @@ Sobald die automatische Erkennung Optimierungsmöglichkeiten identifiziert, kön
 
 ## Workflow für automatische Fehlerbehebung
 
-Der Workflow für die automatische Fehlerbehebung ermöglicht die schnelle Bereitstellung von KI-generierten Optimierungen mit einem einzigen Klick. Wenn Sie eine automatische Fehlerbehebung anwenden, erstellt das System eine Katalogoptimierungsschicht, die bestimmte Produktattribute überschreibt, ohne die ursprünglichen Produktdaten zu ändern. Ihre ursprünglichen Produktdaten bleiben intakt, sodass Sie Optimierungen sicher anwenden und Änderungen jederzeit rückgängig machen können. Weitere [&#x200B; finden Sie unter „Funktionsweise von Katalogebenen mit &#x200B;](#how-catalog-layers-work-with-auto-fix)&quot;.
+Der Workflow für die automatische Fehlerbehebung ermöglicht die schnelle Bereitstellung von KI-generierten Optimierungen mit einem einzigen Klick. Wenn Sie eine automatische Fehlerbehebung anwenden, erstellt das System eine Katalogoptimierungsschicht, die bestimmte Produktattribute überschreibt, ohne die ursprünglichen Produktdaten zu ändern. Ihre ursprünglichen Produktdaten bleiben intakt, sodass Sie Optimierungen sicher anwenden und Änderungen jederzeit rückgängig machen können. Weitere [ finden Sie unter „Funktionsweise von Katalogebenen mit ](#how-catalog-layers-work-with-auto-fix)&quot;.
 
 ### Unterstützte Opportunity-Typen
 
@@ -118,7 +123,7 @@ Führen Sie die folgenden Schritte aus, um eine von KI vorgeschlagene Optimierun
 
    >[!NOTE]
    >
-   >Die Schaltfläche **Optimierung bereitstellen** ist nur für [unterstützte &#x200B;](#supported-opportunity-types)&quot; verfügbar. Bei nicht unterstützten Typen ist das Kontrollkästchen deaktiviert und Sie müssen die Fehlerbehebungen in Ihrem Katalog manuell vornehmen.
+   >Die Schaltfläche **Optimierung bereitstellen** ist nur für [unterstützte ](#supported-opportunity-types)&quot; verfügbar. Bei nicht unterstützten Typen ist das Kontrollkästchen deaktiviert und Sie müssen die Fehlerbehebungen in Ihrem Katalog manuell vornehmen.
 
 1. Klicken Sie **Optimierung bereitstellen** und anschließend auf **Bereitstellen**, um den automatischen Fehlerbehebungsprozess Trigger.
 
@@ -176,7 +181,7 @@ Erfolgsmetriken überwachen wichtige Leistungsindikatoren wie Produkterkennung u
 
 ## Weitere Informationen zu Sites Optimizer
 
-Detaillierte Informationen zu den Funktionen und Leistungsmerkmalen von Sites Optimizer finden Sie in der Dokumentation zu [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/de/docs/experience-manager-sites-optimizer/content/home).
+Detaillierte Informationen zu den Funktionen und Leistungsmerkmalen von Sites Optimizer finden Sie in der Dokumentation zu [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home).
 
 Zusätzliche Ressourcen:
 

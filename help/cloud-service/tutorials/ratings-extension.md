@@ -7,9 +7,15 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
-source-git-commit: 33ba97fd6766c9d11baea74170a7119d72e06379
+TQID: https://experienceleague.adobe.com/FozTiUWpL6Ab2eqbbf3nhL-faFHdwBIFOgAkvGe5jXQ
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: 1738
 ht-degree: 0%
 
 ---
@@ -171,7 +177,7 @@ curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=T
 
 ### Integration mit Edge Delivery Services
 
-Um die Bewertungs-API in eine von [!DNL Adobe Commerce] unterstützte [!DNL Edge Delivery Services]-Storefront zu integrieren, bitten Sie den Agenten, einen Service-Vertrag mit den Anforderungen für die Bewertungs-API zu erstellen:
+Um die Bewertungs-API in eine von [!DNL Edge Delivery Services] unterstützte [!DNL Adobe Commerce]-Storefront zu integrieren, bitten Sie den Agenten, einen Service-Vertrag mit den Anforderungen für die Bewertungs-API zu erstellen:
 
 ```shell-session
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
@@ -303,7 +309,7 @@ Verwenden Sie den Agenten, um die Bewertungs-API in die Produktdetailseite der S
    In Ihrer Entwicklungsumgebung und Ihrem Browser sollten die folgenden Änderungen angezeigt werden:
 
    * Eine Produktbewertungskomponente wird automatisch erstellt.
-   * Die Komponente wird je nach ausgewählter Architektur mit [Drop-In-Steckplätzen](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=de) oder als eigenständiger Block in die PDP integriert.
+   * Die Komponente wird je nach ausgewählter Architektur mit [Drop-In-Steckplätzen](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) oder als eigenständiger Block in die PDP integriert.
    * Sterne werden mit korrekten Füllverhältnissen basierend auf den Bewertungswerten aus Ihrer API angezeigt.
 
    ![Produktdetailseite mit unter dem Produkttitel integrierten Sternebewertungen](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

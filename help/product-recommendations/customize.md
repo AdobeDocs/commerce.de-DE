@@ -1,9 +1,14 @@
 ---
 title: Customize
 description: Erfahren Sie, wie Sie Ihre Produktempfehlungen anpassen können.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: b59932e1-748a-432d-b65b-13cf1c287fb2
+TQID: https://experienceleague.adobe.com/-49Lqkuhnrn5GCQtHLO-9gr1nHwMjEQeEVDRR4cDk5Y
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -18,7 +23,7 @@ Weitere Informationen zum Ändern von Vorlagendateien finden Sie unter [Vorlagen
 
 Wenn Sie die `recommendations.html` ändern, müssen Sie die folgenden Tags in der Datei beibehalten, um sicherzustellen, dass Adobe Commerce Empfehlungsmetriken aus Ihrer Storefront erfassen kann:
 
-| Tag | Verwenden Sie |
+| Tag | Verwenden |
 |---|---|
 | `<div data-bind="attr : {'data-unit-id' : unitId }"...</div>` | Sammelt Ansichtsereignisse. |
 | `<a data-bind="attr : {'data-sku' : sku, 'data-unit-id'}"...</a>` | Sammelt Klickereignisse. <br/>**Hinweis:** Wenn Sie Anker-Tags hinzufügen, müssen Sie diese Attribute einschließen. |
@@ -102,7 +107,7 @@ Wenn Sie [Empfehlung erstellen](create.md) geben Sie den [Speicherort](placement
 
    Durch diese Änderung wird Ihre Empfehlungseinheit nach dem Produktbild auf der Produktdetailseite angezeigt. Wenn die Empfehlungseinheit vor dem `product.info.media` angezeigt werden soll, ändern Sie das `after="-"` Attribut in `before="-"`. Das `pagePlacement` Argument ist ein internes Argument, das nicht geändert werden sollte.
 
-Weitere Informationen [&#x200B; Blocktypen auf der Seite finden &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) unter „Layout - Übersicht .
+Weitere Informationen [ Blocktypen auf der Seite finden ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) unter „Layout - Übersicht .
 
 ## Benutzerdefinierte Produktattribute
 
@@ -112,7 +117,7 @@ Wenn Ihr Geschäft beispielsweise Bio-Produkte verkauft, können Sie ein benutze
 
 ![Abzeichen hinzufügen](assets/unit-custom.png)
 
-Um sicherzustellen, dass beim Rendern der Empfehlungseinheit auf der Seite ein benutzerdefiniertes Produktattribut verfügbar ist, legen Sie die `Used in Product Listing` Eigenschaft auf der Seite &quot;[&quot; &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=de) Admin auf `Yes` fest.
+Um sicherzustellen, dass beim Rendern der Empfehlungseinheit auf der Seite ein benutzerdefiniertes Produktattribut verfügbar ist, legen Sie die `Used in Product Listing` Eigenschaft auf der Seite &quot;[&quot; ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) Admin auf `Yes` fest.
 
 Wenn diese Eigenschaft festgelegt ist, enthält die JSON-Payload ein `attributes`-Objekt, das ein Array von Attributcodes und -werten enthält. Sie können dann einen benutzerdefinierten Storefront-Stil anwenden, der auf diesen Attributwerten basiert, z. B. das Hinzufügen spezieller visueller Behandlungen oder Abzeichen wie zuvor erwähnt.
 

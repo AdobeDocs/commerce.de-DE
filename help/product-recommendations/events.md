@@ -3,9 +3,14 @@ title: Erfassen von Daten
 description: Erfahren Sie, wie Ereignisse Daten für  [!DNL Product Recommendations] erfassen.
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/efHRMj3u3w-xvUgMnEYDpX0D-BDCUyjhhrkMaa3n-xg
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: eb30f47f-d87a-400f-8f78-63ce7979ff56id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: 1019
 ht-degree: 0%
 
 ---
@@ -14,15 +19,15 @@ ht-degree: 0%
 
 Wenn Sie [[!DNL Product Recommendations]](install-configure.md) installieren und konfigurieren, stellt das Modul die Verhaltensdatenerfassung in Ihrer Storefront bereit. Dieser Mechanismus erfasst anonymisierte Verhaltensdaten von Ihren Käufern und unterstützt [!DNL Product Recommendations]. Beispielsweise wird das `view` Ereignis verwendet, um den `Viewed this, viewed that` Empfehlungstyp zu berechnen, und das `place-order` Ereignis wird verwendet, um den `Bought this, bought that` Empfehlungstyp zu berechnen.
 
-Weitere Informationen zu den Verhaltensdaten[&#x200B; die von &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)-Ereignissen erfasst werden, finden Sie in der [!DNL Product Recommendations]Entwicklerdokumentation“.
+Weitere Informationen zu den Verhaltensdaten[ die von [!DNL Product Recommendations]-Ereignissen erfasst werden, finden Sie in der ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)Entwicklerdokumentation“.
 
 >[!NOTE]
 >
->Die Datenerhebung zum Zwecke der [!DNL Product Recommendations] umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. Weitere [&#x200B; (](https://www.adobe.com/privacy/experience-cloud.html).
+>Die Datenerhebung zum Zwecke der [!DNL Product Recommendations] umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. Weitere [ (](https://www.adobe.com/privacy/experience-cloud.html).
 
 ## Healthcare-Kunden
 
-Wenn Sie Kundschaft im Gesundheitswesen sind und die [Data Services HIPAA-Erweiterung](../data-connection/hipaa-readiness.md#installation) installiert haben, die Teil der [Data Connection](../data-connection/overview.md)-Erweiterung ist, werden von [!DNL Product Recommendations] verwendete Storefront-Ereignisdaten nicht mehr erfasst. Dies liegt daran, dass Storefront-Ereignisdaten Client-seitig generiert werden. Um weiterhin Storefront-Ereignisdaten zu erfassen und zu senden, aktivieren Sie die Ereigniserfassung für [!DNL Product Recommendations] erneut. Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/config/general/general#data-services)Allgemeine Konfiguration“.
+Wenn Sie Kundschaft im Gesundheitswesen sind und die [Data Services HIPAA-Erweiterung](../data-connection/hipaa-readiness.md#installation) installiert haben, die Teil der [Data Connection](../data-connection/overview.md)-Erweiterung ist, werden von [!DNL Product Recommendations] verwendete Storefront-Ereignisdaten nicht mehr erfasst. Dies liegt daran, dass Storefront-Ereignisdaten Client-seitig generiert werden. Um weiterhin Storefront-Ereignisdaten zu erfassen und zu senden, aktivieren Sie die Ereigniserfassung für [!DNL Product Recommendations] erneut. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)Allgemeine Konfiguration“.
 
 ## Datentypen und Ereignisse
 
@@ -31,7 +36,7 @@ Es gibt zwei Arten von Daten, die in Produktempfehlungen verwendet werden:
 - **Verhalten** - Daten aus der Interaktion eines Käufers auf Ihrer Site, z. B. Produktansichten, Artikel, die zum Warenkorb hinzugefügt werden, und Käufe.
 - **Katalog** - Produktmetadaten, z. B. Name, Preis, Verfügbarkeit usw.
 
-Bei der Installation des `magento/product-recommendations`-Moduls aggregiert Adobe AI die Verhaltens- und Katalogdaten und erstellt für jeden Empfehlungstyp Produktempfehlungen. Der Produktempfehlungs-Service stellt diese Empfehlungen dann in Form eines Widgets, das das empfohlene Produkt (die empfohlenen _) enthält, in Ihrer Storefront_.
+Bei der Installation des `magento/product-recommendations` aggregiert Adobe AI die Verhaltens- und Katalogdaten und erstellt für jeden Empfehlungstyp Produktempfehlungen. Der Produktempfehlungs-Service stellt diese Empfehlungen dann in Form eines Widgets, das das empfohlene Produkt (die empfohlenen _) enthält, in Ihrer Storefront_.
 
 Einige Empfehlungstypen verwenden Verhaltensdaten von Kundinnen und Kunden, um Modelle für maschinelles Lernen zu trainieren, um personalisierte Empfehlungen zu erstellen. Andere Empfehlungstypen verwenden nur Katalogdaten und verwenden keine Verhaltensdaten. Wenn Sie Produktempfehlungen schnell auf Ihrer Site verwenden möchten, können Sie die folgenden, nur für den Katalog geeigneten Empfehlungstypen verwenden:
 
@@ -59,11 +64,11 @@ Andere Variablen, die sich auf die für das Training benötigte Zeit auswirken k
 - Einige Empfehlungstypen trainieren schneller als andere
 - Adobe Commerce berechnet die Verhaltensdaten alle vier Stunden neu. Empfehlungen werden umso genauer, je länger sie auf Ihrer Site verwendet werden.
 
-Auf der Seite „Empfehlung erstellen[&#x200B; werden Bereitschaftsindikatoren angezeigt, damit Sie den Trainings-Fortschritt &#x200B;](create.md#readiness-indicators) jeden Empfehlungstyp visualisieren können.
+Auf der Seite „Empfehlung erstellen[ werden Bereitschaftsindikatoren angezeigt, damit Sie den Trainings-Fortschritt ](create.md#readiness-indicators) jeden Empfehlungstyp visualisieren können.
 
 Während Daten auf Ihrer Live-Site erfasst werden und die Modelle für maschinelles Lernen trainiert werden, können Sie andere Test- und Konfigurationsaufgaben abschließen, die zum Einrichten von Empfehlungen erforderlich sind. Wenn Sie mit dieser Arbeit fertig sind, verfügen die Modelle über genügend Daten, um nützliche Empfehlungen zu erstellen, sodass Sie sie in Ihrer Storefront bereitstellen können.
 
-Wenn auf Ihrer Site nicht genügend Traffic (Ansichten, Käufe, Trends) für die meisten Produkt-SKUs vorhanden ist, sind möglicherweise nicht genügend Daten vorhanden, um den Lernprozess abzuschließen. Dadurch kann der Bereitschaftsindikator im Admin-Bereich hängen bleiben. Die Bereitschaftsindikatoren sollen Händlern einen weiteren Datenpunkt bei der Auswahl des Recommendations-Typs bieten, der für ihren Store besser ist. Die Zahlen sind Richtwerte und erreichen möglicherweise nie 100 %. [Weitere &#x200B;](create.md#readiness-indicators) zu Bereitschaftsindikatoren.
+Wenn auf Ihrer Site nicht genügend Traffic (Ansichten, Käufe, Trends) für die meisten Produkt-SKUs vorhanden ist, sind möglicherweise nicht genügend Daten vorhanden, um den Lernprozess abzuschließen. Dadurch kann der Bereitschaftsindikator im Admin-Bereich hängen bleiben. Die Bereitschaftsindikatoren sollen Händlern einen weiteren Datenpunkt bei der Auswahl des Recommendations-Typs bieten, der für ihren Store besser ist. Die Zahlen sind Richtwerte und erreichen möglicherweise nie 100 %. [Weitere ](create.md#readiness-indicators) zu Bereitschaftsindikatoren.
 
 ### Empfehlungen für Backups {#backuprecs}
 
@@ -87,4 +92,4 @@ Bei unzureichender Erfassung von Eingabedaten greifen die folgenden Empfehlungst
 
 >[!NOTE]
 >
->Wenn [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=de) aktiviert ist, erfasst Adobe Commerce keine Verhaltensdaten, bis der Käufer der Verwendung von Cookies zustimmt. Wenn der Cookie-Einschränkungsmodus deaktiviert ist, erfasst Adobe Commerce standardmäßig Verhaltensdaten.
+>Wenn [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) aktiviert ist, erfasst Adobe Commerce keine Verhaltensdaten, bis der Käufer der Verwendung von Cookies zustimmt. Wenn der Cookie-Einschränkungsmodus deaktiviert ist, erfasst Adobe Commerce standardmäßig Verhaltensdaten.

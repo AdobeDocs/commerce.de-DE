@@ -1,9 +1,15 @@
 ---
 title: Facetten verwalten
 description: Erfahren Sie, wie Sie vorhandene Facetten  [!DNL Live Search] .
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 5062bb1f-ce6f-4244-a1df-65ae1ce868b9
+TQID: https://experienceleague.adobe.com/KWh5KwVRNJO3XLiG9xbqhBsGkt99BgY0hPnPbxDd8vY
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: 481
 ht-degree: 0%
 
 ---
@@ -14,7 +20,7 @@ Folgen Sie diesen Anweisungen, um die Eigenschaften vorhandener Facetten zu aktu
 
 ## Konfigurieren von Preisfacettengruppierungen
 
-Informationen zum Konfigurieren von [&#x200B; und Gruppierungen finden &#x200B;](settings.md) unter „Einstellungen“.
+Informationen zum Konfigurieren von [ und Gruppierungen finden ](settings.md) unter „Einstellungen“.
 
 ## Facette bearbeiten
 
@@ -28,14 +34,14 @@ Informationen zum Konfigurieren von [&#x200B; und Gruppierungen finden &#x200B;]
 
    ![Filterfacetten](assets/facets-filter-by-cropped.png)
 
-1. Um die Facetteneigenschaften zu bearbeiten, klicken Sie auf **Optionen** Mehr…).
+1. Um die Facetteneigenschaften zu bearbeiten, klicken Sie auf **Mehr** (…) Optionen.
 1. Klicken Sie auf **Bearbeiten**
 
    ![Optionen bearbeiten](assets/facet-edit-menu.png)
 
 1. Führen Sie einen der folgenden Schritte aus, um die Facettenbeschriftung zu bearbeiten:
 
-   * Bearbeiten Sie für eine [!DNL Commerce] Storefront die [Attributbezeichnung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=de).
+   * Bearbeiten Sie für eine [!DNL Commerce] Storefront die [Attributbezeichnung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
    * Klicken Sie bei einer Headless-Implementierung auf den Wert in der ersten Spalte und bearbeiten Sie den Text nach Bedarf.
 
    ![Bezeichnung bearbeiten](assets/facet-edit-label.png)
@@ -79,7 +85,7 @@ Die Nadel ändert ihre Farbe, wenn Sie darauf klicken, und wird verwendet, um di
 Die Reihenfolge der fixierten Facetten kann geändert werden, indem die Zeile an eine andere Position verschoben wird. Angeheftete Facetten haben ein *Verschieben*-Symbol (![Auswahl verschieben](assets/btn-move.png)) am Anfang der Zeile. Im Gegensatz zu fixierten Facetten können dynamische Facetten nicht verschoben werden.
 
 1. Suchen Sie die Facette *Abschnitt „Angeheftete*&quot; der Liste.
-1. Ziehen Sie die **mithilfe des Symbols** Verschieben![&#x200B; (Auswahl verschieben](assets/btn-move.png) an eine neue Position im Abschnitt *Fixierte Facetten*.
+1. Ziehen Sie die **mithilfe des Symbols** Verschieben![ (Auswahl verschieben](assets/btn-move.png) an eine neue Position im Abschnitt *Fixierte Facetten*.
 
    Nachdem die Änderungen veröffentlicht wurden, werden die neu angeordneten Facetten in der Liste Storefront *Filter* angezeigt.
 

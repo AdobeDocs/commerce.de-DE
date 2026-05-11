@@ -3,9 +3,14 @@ title: '[!DNL Commerce Storefront Catalog Service Release Notes]'
 description: Die neuesten Versionsinformationen für  [!DNL Catalog Service]  für Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: ba78e2dd6ae6e075579b045b57cdcf98798aa983
+TQID: https://experienceleague.adobe.com/-yxW4sTuk7LPjGy5YsQ65phtkBLiByg8SmBaQPHMevM
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: 2709
 ht-degree: 0%
 
 ---
@@ -19,7 +24,7 @@ In diesen Versionshinweisen werden die neuesten Aktualisierungen des Commerce Ca
    - Verbesserungen des Catalog Service-API-Schemas für einen verbesserten Datenabruf
    - Verbesserungen der Sicherheit, Leistung und Zuverlässigkeit für die Catalog Service-API und die zugrunde liegende Infrastruktur.
 
-  Weitere [&#x200B; zu diesen APIs finden &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/) in der Commerce Developer-Dokumentation unter „Schema für Storefront-Services“.
+  Weitere [ zu diesen APIs finden ](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/) in der Commerce Developer-Dokumentation unter „Schema für Storefront-Services“.
 
 - **[Catalog Service Metapaket-Versionen](#catalog-service-metapackage)**
 
@@ -56,7 +61,7 @@ Unterstützung wird für die neueste Version bereitgestellt. Versionshinweise f�
 <!--v1.52-->
 
 ![Neu](../assets/new.svg) Erzwungenes Limit von maximal 100 SKUs pro Anfrage für Adobe Commerce Optimizer und Adobe Commerce as a Cloud Service
-Clients gemäß [dokumentierte Beschränkungen und &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits)<!--DATA-7156-->
+Clients gemäß [dokumentierte Beschränkungen und ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)<!--DATA-7156-->
 
 **Veröffentlichungsdatum:**. April 2026
 <!--v1.51-->
@@ -240,7 +245,7 @@ Gilt für:
 **Veröffentlichungsdatum:**. Juni 2025
 <!-- v1.37 -->
 
-![Neu](../assets/new.svg) **Hierarchische Preisbuchkonfiguration** - Präzise Preisbereiche für über- und untergeordnete Preisbücher. Berechnungen berücksichtigen Hierarchie und übernommene Regeln; reduziert Preisfehler, wenn mehrere Preisbücher verknüpft sind. Nur Adobe Commerce Optimizer. Siehe [Preisbücher](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/pricebooks).
+![Neu](../assets/new.svg) **Hierarchische Preisbuchkonfiguration** - Präzise Preisbereiche für über- und untergeordnete Preisbücher. Berechnungen berücksichtigen Hierarchie und übernommene Regeln; reduziert Preisfehler, wenn mehrere Preisbücher verknüpft sind. Nur Adobe Commerce Optimizer. Siehe [Preisbücher](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
 
 ![Neu](../assets/new.svg) **Schlüssel ohne Unterscheidung von Groß- und Kleinschreibung** - Bei Schlüsselsuchen in Abfragen wird jetzt nicht mehr zwischen Groß- und Kleinschreibung unterschieden, wodurch Fehler durch Schlüsselschreibungen reduziert werden. <!--DATA-6494, DCAT-2495-->
 
@@ -377,7 +382,7 @@ Hauptversion: [Zusammensetzbares Katalogdatenmodell](https://developer.adobe.com
 
 <!--DATA-5033-->
 
-![Fix](../assets/fix.svg) Es wurde Unterstützung für Produktpreise mit bis zu 16 Stellen und 4 Dezimalstellen hinzugefügt. Synchronisieren Sie über das [Data Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) oder [CLI](../data-export/data-export-cli-commands.md) neu, um Aktualisierungen anzuwenden.
+![Fix](../assets/fix.svg) Es wurde Unterstützung für Produktpreise mit bis zu 16 Stellen und 4 Dezimalstellen hinzugefügt. Synchronisieren Sie über das [Data Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) oder [CLI](../data-export/data-export-cli-commands.md) neu, um Aktualisierungen anzuwenden.
 <!--DATA-5033-->
 
 #### Bekannte Einschränkungen
@@ -414,7 +419,7 @@ Weitere Informationen und Beispiele finden Sie unter [Katalog-Service und API-Me
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=de) ist jetzt für Datenströme verfügbar (Produktempfehlungen, Live-Suche, Katalog-Service). Erfordert `catalog-service` Metapaket v3.1.0+.
+![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) ist jetzt für Datenströme verfügbar (Produktempfehlungen, Live-Suche, Katalog-Service). Erfordert `catalog-service` Metapaket v3.1.0+.
 
 **Veröffentlichungsdatum**: 13. Februar 2024
 <!-- v1.16 -->
@@ -494,7 +499,7 @@ Verwenden Sie API Mesh und die GraphQL-Kern-API für:
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Neu](../assets/new.svg) Zur [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) Abfrage wurden Farbfelder hinzugefügt.
-![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt, `entityId` mithilfe von [API Mesh) &#x200B;](mesh.md).
+![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt, `entityId` mithilfe von [API Mesh) ](mesh.md).
 
 **Veröffentlichungsdatum:**. März 2023
 <!-- v1.5 -->
@@ -623,7 +628,7 @@ Das Installationsprogramm wird mit der Catalog Service-Erweiterung bereitgestell
 
 - Für **Kunden von Adobe Commerce** as a Cloud Service) wird die neueste Installationsprogrammversion in Ihrer Umgebung installiert.
 
-- Halten Sie bei **Adobe Commerce in der Cloud** Infrastruktur oder **On-Premise** das Installationsprogramm mit dem Metapaket [Katalog-Service) &#x200B;](#catalog-service-metapackage).
+- Halten Sie bei **Adobe Commerce in der Cloud** Infrastruktur oder **On-Premise** das Installationsprogramm mit dem Metapaket [Katalog-Service) ](#catalog-service-metapackage).
 
 Jedes Mal, wenn Sie Composer zum Aktualisieren des `magento/catalog-service` verwenden, wird das Installationspaket automatisch auf die neueste Version aktualisiert. Sie können Composer auch verwenden, um `magento/catalog-service-installer` separat zu aktualisieren, wenn diese Versionshinweise eine Änderung beschreiben, die Sie benötigen, z. B. Unterstützung für eine neue PHP-Version. Auf diese Weise bleiben Ihre Installations-Tools mit der von Ihnen ausgeführten Version des Katalog-Service kompatibel.
 

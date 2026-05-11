@@ -3,16 +3,21 @@ title: Benutzerdefinierter automatischer Abgleich
 description: Erfahren Sie, wie die benutzerdefinierte automatische Zuordnung besonders für Händler mit komplexer Abgleichlogik oder für Händler nützlich ist, die auf einem Drittanbietersystem basieren, das keine Metadaten in AEM Assets einfügen kann.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: cd7a332dd09840aabcc0efae081ba0a713506897
+TQID: https://experienceleague.adobe.com/RHRfW99iShMpajrEC8BhvoMEfQ-ABdipWTCdK-KaVH4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: 603
 ht-degree: 0%
 
 ---
 
 # Benutzerdefinierter automatischer Abgleich
 
-Wenn die standardmäßige automatische Abgleichstrategie (**OOTB Automatic Matching**) nicht an Ihren spezifischen Geschäftsanforderungen ausgerichtet ist, wählen Sie die Option Benutzerdefinierte Abgleichung aus. Diese Option unterstützt die Verwendung von [Adobe Developer App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) zum Entwickeln einer benutzerdefinierten Matcher-Anwendung, die komplexe Matching-Logik verarbeitet, oder von Assets, die von einem Drittanbietersystem stammen, das keine Metadaten in AEM Assets einfügen kann.
+Wenn die standardmäßige automatische Abgleichstrategie (**OOTB Automatic Matching**) nicht an Ihren spezifischen Geschäftsanforderungen ausgerichtet ist, wählen Sie die Option Benutzerdefinierte Abgleichung aus. Diese Option unterstützt die Verwendung von [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) zum Entwickeln einer benutzerdefinierten Matcher-Anwendung, die komplexe Matching-Logik verarbeitet, oder von Assets, die von einem Drittanbietersystem stammen, das keine Metadaten in AEM Assets einfügen kann.
 
 ## Konfigurieren von benutzerdefiniertem automatischem Abgleich
 
@@ -114,7 +119,7 @@ Sie können die `workspace.json` Datei von der [Adobe Developer Console herunter
 
 ## Benutzerdefinierte Matcher-API-Endpunkte
 
-Wenn Sie eine benutzerdefinierte Matcher-Anwendung mit [App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} erstellen, muss die Anwendung die folgenden Endpunkte bereitstellen:
+Wenn Sie eine benutzerdefinierte Matcher-Anwendung mit [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} erstellen, muss die Anwendung die folgenden Endpunkte bereitstellen:
 
 * Endpunkt **App Builder-Asset zur Produkt** URL
 * Endpunkt **App Builder-Produkt zu Asset** URL
@@ -283,7 +288,7 @@ Der `asset_matches`-Parameter enthält die folgenden Attribute:
 | Attribut | Datentyp | Beschreibung |
 | --- | --- | --- |
 | `asset_id` | Zeichenfolge | Die Asset-ID. |
-| `asset_roles` | Array | Asset-Rollen. Verwendet unterstützte [Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)Asset-Rollen wie `thumbnail`, `image`, `small_image` und `swatch_image`. |
+| `asset_roles` | Array | Asset-Rollen. Verwendet unterstützte [Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)Asset-Rollen wie `thumbnail`, `image`, `small_image` und `swatch_image`. |
 | `asset_format` | Zeichenfolge | Das Asset-Format. Mögliche Werte sind `image` und `video`. |
 | `asset_position` | Zahl | Die Position des Assets in der Produktgalerie. |
 

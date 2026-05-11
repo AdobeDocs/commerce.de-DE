@@ -3,9 +3,14 @@ title: Überprüfen von Protokollen und Fehlerbehebung
 description: Erfahren Sie, wie Sie  [!DNL data export]  Fehler mithilfe der Protokolle „data-export“ und „saas-export“ beheben können.
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
-source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
+TQID: https://experienceleague.adobe.com/PkV4L0RpfA-jeja0Fd6JCDriE6wwjd25Qou0JhG5o8E
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: 1155
 ht-degree: 0%
 
 ---
@@ -16,7 +21,7 @@ Die [!DNL data export]-Erweiterung stellt Protokolle zum Nachverfolgen von Daten
 
 >[!NOTE]
 >
->Sie können auch die Konsistenz und Leistung der Datenexport-Feeds für Produkt- und Kategoriedaten über das Dashboard [Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in Admin verfolgen.
+>Sie können auch die Konsistenz und Leistung der Datenexport-Feeds für Produkt- und Kategoriedaten über das Dashboard [Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in Admin verfolgen.
 
 ## Protokolle
 
@@ -133,7 +138,7 @@ Wenn Daten in Commerce Services fehlen oder falsch sind, überprüfen Sie die Pr
 - Das Datenexportfehlerprotokoll (`commerce-data-export-errors.log`) erfasst Fehler, die während der Erfassungsphase auftreten.
 - Das SaaS-Exportfehlerprotokoll (`saas-export-errors.log`) erfasst Fehler, die während der Übertragungsphase auftreten.
 
-Wenn Sie Fehler sehen, die nicht mit der Konfiguration oder Erweiterungen von Drittanbietern in Zusammenhang stehen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) mit so vielen Informationen wie möglich.
+Wenn Sie Fehler sehen, die nicht mit der Konfiguration oder Erweiterungen von Drittanbietern in Zusammenhang stehen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) mit so vielen Informationen wie möglich.
 
 ### Beheben von Katalogsynchronisierungsproblemen {#resolvesync}
 
@@ -148,11 +153,11 @@ Beim Trigger einer erneuten Synchronisierung von Daten kann es bis zu einer Stun
 
 #### Synchronisierung läuft nicht
 
-Wenn die Synchronisierung nicht nach einem Zeitplan ausgeführt wird oder nichts synchronisiert wird, lesen Sie diesen [KnowledgeBase](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)Artikel.
+Wenn die Synchronisierung nicht nach einem Zeitplan ausgeführt wird oder nichts synchronisiert wird, lesen Sie diesen [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)Artikel.
 
 #### Synchronisierung fehlgeschlagen
 
-Wenn der Status der Katalogsynchronisierung &quot;**&quot; lautet** senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Wenn der Status der Katalogsynchronisierung &quot;**&quot; lautet** senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Erweiterte Protokollierung
 

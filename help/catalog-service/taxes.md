@@ -4,9 +4,13 @@ description: Verwenden Sie  [!DNL API Mesh]  für Adobe Commerce und Catalog Ser
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: ca62c653-29b9-45cf-b2d4-8cb693b08aac
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+TQID: https://experienceleague.adobe.com/mK-o11X-G7WZgCL9BmVnDMfTDBg3lDemTNkxqkhyMZM
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: 292
 ht-degree: 0%
 
 ---
@@ -21,8 +25,8 @@ In diesem Thema wird API Mesh verwendet, um Produktpreise auf einer Produktdetai
 
 Sie müssen Steuern dafür konfiguriert haben, damit sie auf der Produktdetailseite angezeigt werden.
 
-1. [Steuersätze einrichten](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=de).
-1. Aktivieren Sie die Anzeige [im Katalog](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=de#step-1%3A-configure-catalog-prices-display-settings) und legen Sie dafür entweder `Including and Excluding Tax` oder `Including Tax` fest.
+1. [Steuersätze einrichten](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
+1. Aktivieren Sie die Anzeige [im Katalog](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings) und legen Sie dafür entweder `Including and Excluding Tax` oder `Including Tax` fest.
 
 Überprüfen Sie, ob der Katalog-Service funktioniert, indem Sie eine Produktdetailseite prüfen.
 
@@ -30,7 +34,7 @@ Sie müssen Steuern dafür konfiguriert haben, damit sie auf der Produktdetailse
 
 ## Konfigurieren von API-Mesh
 
-Verbinden Sie, falls noch nicht geschehen, die API Mesh mit dem Katalog-Service mit Ihrer -Instanz. Detaillierte Anweisungen finden Sie [&#x200B; Thema „Erste Schritte](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) im API Mesh-Entwicklerhandbuch.
+Verbinden Sie, falls noch nicht geschehen, die API Mesh mit dem Katalog-Service mit Ihrer -Instanz. Detaillierte Anweisungen finden Sie [ Thema „Erste Schritte](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) im API Mesh-Entwicklerhandbuch.
 
 Ersetzen Sie in der `mesh.json`-Datei die Werte `name`, `endpoint` und `x-api-key`.
 
