@@ -19,7 +19,7 @@ In diesen Versionshinweisen werden die neuesten Aktualisierungen des Commerce Ca
    - Verbesserungen des Catalog Service-API-Schemas für einen verbesserten Datenabruf
    - Verbesserungen der Sicherheit, Leistung und Zuverlässigkeit für die Catalog Service-API und die zugrunde liegende Infrastruktur.
 
-  Weitere [ zu diesen APIs finden ](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/) in der Commerce Developer-Dokumentation unter „Schema für Storefront-Services“.
+  Weitere [&#x200B; zu diesen APIs finden &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/) in der Commerce Developer-Dokumentation unter „Schema für Storefront-Services“.
 
 - **[Catalog Service Metapaket-Versionen](#catalog-service-metapackage)**
 
@@ -56,7 +56,7 @@ Unterstützung wird für die neueste Version bereitgestellt. Versionshinweise f�
 <!--v1.52-->
 
 ![Neu](../assets/new.svg) Erzwungenes Limit von maximal 100 SKUs pro Anfrage für Adobe Commerce Optimizer und Adobe Commerce as a Cloud Service
-Clients gemäß [dokumentierte Beschränkungen und ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)<!--DATA-7156-->
+Clients gemäß [dokumentierte Beschränkungen und &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)<!--DATA-7156-->
 
 **Veröffentlichungsdatum:**. April 2026
 <!--v1.51-->
@@ -494,7 +494,7 @@ Verwenden Sie API Mesh und die GraphQL-Kern-API für:
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Neu](../assets/new.svg) Zur [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) Abfrage wurden Farbfelder hinzugefügt.
-![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt, `entityId` mithilfe von [API Mesh) ](mesh.md).
+![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt, `entityId` mithilfe von [API Mesh) &#x200B;](mesh.md).
 
 **Veröffentlichungsdatum:**. März 2023
 <!-- v1.5 -->
@@ -623,7 +623,7 @@ Das Installationsprogramm wird mit der Catalog Service-Erweiterung bereitgestell
 
 - Für **Kunden von Adobe Commerce** as a Cloud Service) wird die neueste Installationsprogrammversion in Ihrer Umgebung installiert.
 
-- Halten Sie bei **Adobe Commerce in der Cloud** Infrastruktur oder **On-Premise** das Installationsprogramm mit dem Metapaket [Katalog-Service) ](#catalog-service-metapackage).
+- Halten Sie bei **Adobe Commerce in der Cloud** Infrastruktur oder **On-Premise** das Installationsprogramm mit dem Metapaket [Katalog-Service) &#x200B;](#catalog-service-metapackage).
 
 Jedes Mal, wenn Sie Composer zum Aktualisieren des `magento/catalog-service` verwenden, wird das Installationspaket automatisch auf die neueste Version aktualisiert. Sie können Composer auch verwenden, um `magento/catalog-service-installer` separat zu aktualisieren, wenn diese Versionshinweise eine Änderung beschreiben, die Sie benötigen, z. B. Unterstützung für eine neue PHP-Version. Auf diese Weise bleiben Ihre Installations-Tools mit der von Ihnen ausgeführten Version des Katalog-Service kompatibel.
 
