@@ -4,10 +4,15 @@ description: Migrieren Sie die Mediendateien aus Adobe Commerce oder einer exter
 feature: CMS, Media, Integration
 exl-id: ccb13e90-8b18-4f1e-94ce-f0dacea2f617
 TQID: https://experienceleague.adobe.com/-fCE7lTivOuhLDzEMNexxGWLTkL52oo9p-sm54HxpQM
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1010
@@ -90,7 +95,7 @@ Verwenden Sie den CLI-Befehl für die AEM Assets-Integration, um automatisch ein
 
 #### CSV manuell erstellen
 
-Für Mediendateien, die außerhalb von Adobe Commerce gespeichert werden, müssen Sie die CSV-Datei manuell erstellen. Die Spaltenüberschriften **müssen übereinstimmen** mit den Feldnamen, die in Ihrem [AEM Assets-Metadatenprofil konfiguriert ](configure-aem.md). Füllen Sie nach dem Erstellen der Datei die Zeilen mit den Metadatenwerten für jede Mediendatei.
+Für Mediendateien, die außerhalb von Adobe Commerce gespeichert werden, müssen Sie die CSV-Datei manuell erstellen. Die Spaltenüberschriften **müssen übereinstimmen** mit den Feldnamen, die in Ihrem [AEM Assets-Metadatenprofil konfiguriert &#x200B;](configure-aem.md). Füllen Sie nach dem Erstellen der Datei die Zeilen mit den Metadatenwerten für jede Mediendatei.
 
 | Metadaten | Beschreibung | Wert |
 |-------|-------------|--------|
@@ -118,7 +123,7 @@ Nachdem Sie die Metadatenzuordnungsdatei erstellt haben, verwenden Sie das Tool 
 
 Im Folgenden finden Sie einen allgemeinen Überblick über die Verwendung des Tools.
 
-1. [Melden Sie sich bei Ihrer AEM Assets as a Cloud Service-Autorenumgebung ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/aem-users#login-aem).
+1. [Melden Sie sich bei Ihrer AEM Assets as a Cloud Service-Autorenumgebung &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/aem-users#login-aem).
 
 1. Wählen Sie in der Ansicht Experience Manager-Tools die Option **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]** aus.
 

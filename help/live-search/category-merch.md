@@ -5,10 +5,14 @@ gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1131
@@ -18,7 +22,7 @@ ht-degree: 0%
 
 # Kategorie-Merchandising
 
-Mit dem Kategorie-Merchandising können Store-Besitzer [!DNL Live Search] intelligente [ (Regeln](rules.md) auf Produktkategorien und Unterkategorien anwenden.
+Mit dem Kategorie-Merchandising können Store-Besitzer [!DNL Live Search] intelligente [&#x200B; (Regeln](rules.md) auf Produktkategorien und Unterkategorien anwenden.
 
 Dieses Video ist eine Einführung in das Kategorie-Merchandising.
 
@@ -28,7 +32,7 @@ Die Funktion ist im Administrator unter **Marketing** > SEO &amp; Search > **[!D
 
 >[!NOTE]
 >
->Kategorie-Merchandising ist ab Version [!DNL Live Search] [.0.0 ](release-notes.md). Wenn Sie die Kategorie Merchandising-Arbeitsbereich sehen, sie jedoch nicht mit Daten gefüllt ist, aktualisieren Sie das [!DNL Live Search].
+>Kategorie-Merchandising ist ab Version [!DNL Live Search] [.0.0 &#x200B;](release-notes.md). Wenn Sie die Kategorie Merchandising-Arbeitsbereich sehen, sie jedoch nicht mit Daten gefüllt ist, aktualisieren Sie das [!DNL Live Search].
 
 ![Kategorie Merchandising](assets/category_workspace.png)
 

@@ -3,10 +3,15 @@ title: Widget „Produktlistenseite“
 description: Aktivieren und Formatieren des  [!DNL Live Search Product Listing Page Widget]
 exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
 TQID: https://experienceleague.adobe.com/rEQBfgR9CqVBTFtBtq21QFZ6L5ZvoWJ02VI2xiWqAcw
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 539
@@ -67,7 +72,7 @@ Informationen zum Anpassen des PLP-Widgets für die oben genannten Funktionen fi
 
 ## Beispiel für einen Stil
 
-Sie können das Erscheinungsbild des PLP-Widgets mit (CSS) an Ihre [ anpassen](https://developer.adobe.com/commerce/frontend-core/guide/css/).
+Sie können das Erscheinungsbild des PLP-Widgets mit (CSS) an Ihre [&#x200B; anpassen](https://developer.adobe.com/commerce/frontend-core/guide/css/).
 
 >[!NOTE]
 >

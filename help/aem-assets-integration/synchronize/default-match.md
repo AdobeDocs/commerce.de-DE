@@ -4,10 +4,14 @@ description: Erfahren Sie, wie die standardmäßige Regel für den automatischen
 feature: CMS, Media, Integration
 exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
 TQID: https://experienceleague.adobe.com/z7vpuhsVJnKohiU-bKNrcGnoIQ5WAwcwiccYlvawN0U
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 317
@@ -51,7 +55,7 @@ Wenn die Regel zum Abgleichen von **[!UICONTROL Match by product SKU]** in der C
    >
    > Wenn ein Asset für mehrere Produkte verwendet wird, konfigurieren Sie die Metadaten für jede zugehörige SKU.
 
-1. Legen Sie auf der Registerkarte `Basic` den Standardwert für das Feld _[!UICONTROL Review Status]_auf `approved` fest.
+1. Legen Sie auf der Registerkarte `Basic` den Standardwert für das Feld _[!UICONTROL Review Status]_&#x200B;auf `approved` fest.
 
    ![Beispiel-Metadaten](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 

@@ -4,11 +4,21 @@ description: Erfahren Sie, wie Sie Benutzer erstellen und verwalten und Benutzer
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 9ab2118d-b7e3-4e2e-adac-8f3950fe1824
 TQID: https://experienceleague.adobe.com/ORS8H-GM48FMaTL7ywENU6lJnPrz7PULLhlu5AVlzDc
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c4f010fa-1478-4300-a88d-706fbc036a7aid: cc250cf1-34eb-4863-80d0-d170d45ea067id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2: id: a743e5dc-8f37-4b5d-a848-03c32ca30598id: ce84ce08-883f-4337-ae83-6bb1855ca732
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+  - id: ce84ce08-883f-4337-ae83-6bb1855ca732
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 816
@@ -18,7 +28,7 @@ ht-degree: 0%
 
 # Benutzerverwaltung
 
-Um den Zugriff auf [!DNL Adobe Commerce Optimizer] zu aktivieren, fügen Sie Benutzer aus der [Adobe Admin Console ](https://adminconsole.adobe.com){target="_blank"} und stellen Sie sicher, dass sie Zugriff auf das Commerce-Produkt haben.
+Um den Zugriff auf [!DNL Adobe Commerce Optimizer] zu aktivieren, fügen Sie Benutzer aus der [Adobe Admin Console &#x200B;](https://adminconsole.adobe.com){target="_blank"} und stellen Sie sicher, dass sie Zugriff auf das Commerce-Produkt haben.
 
 Sie können Benutzer einer der folgenden Rollen zuweisen:
 
@@ -139,7 +149,7 @@ Mit den folgenden Anweisungen können Sie erfahren, wie Sie Benutzende zum [!DNL
 
 ### Hinzufügen von Entwicklern und Produktprofil-Administrierenden
 
-Um Entwickler und Produktprofil-Administrierende hinzuzufügen, wiederholen Sie den [Benutzer hinzufügen](#add-users), wählen Sie jedoch die Registerkarte [!UICONTROL ****] oder [!UICONTROL **Administratoren**] anstelle der Registerkarte [!UICONTROL **Benutzer**] aus.
+Um Entwickler und Produktprofil-Administrierende hinzuzufügen, wiederholen Sie den [Benutzer hinzufügen](#add-users), wählen Sie jedoch die Registerkarte [!UICONTROL **&#x200B;**] oder [!UICONTROL **Administratoren**] anstelle der Registerkarte [!UICONTROL **Benutzer**] aus.
 
 >[!NOTE]
 >

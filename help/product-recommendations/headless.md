@@ -3,10 +3,18 @@ title: Headless
 description: Erfahren Sie, wie  [!DNL Product Recommendations]  in eine Headless-Storefront integriert werden können.
 exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
 TQID: https://experienceleague.adobe.com/J3qXs-SWuDCz7pQwzGm0VcOOFoU1QM2M4qwsTxxPwE8
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 372
@@ -28,7 +36,7 @@ Benutzerdefinierte und Headless-Integratoren sollten diese Anweisungen für Luma
 
 Um [!DNL Product Recommendations] in eine Headless-Storefront zu integrieren, müssen Sie:
 
-1. Senden Sie Verhaltensdaten an Adobe AI, um die Ergebnisse der Produktempfehlungen zu analysieren und zu berechnen. Sie können auch zusätzliche Daten senden, um Produktempfehlungen ([) ](workspace.md) aktivieren.
+1. Senden Sie Verhaltensdaten an Adobe AI, um die Ergebnisse der Produktempfehlungen zu analysieren und zu berechnen. Sie können auch zusätzliche Daten senden, um Produktempfehlungen ([) &#x200B;](workspace.md) aktivieren.
 
 1. Rufen Sie Ergebnisse von Produktempfehlungen ab und rendern Sie diese Ergebnisse auf der Seite.
 
@@ -57,8 +65,8 @@ Sie können diese beiden Aktionen mit den verfügbaren SDKs ausführen, wie im f
 
 1. Wenn die Ereignisse ausgelöst werden, verwenden Sie den [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/), um die Ereignisse zu verarbeiten und an Adobe AI zu senden.
 
-1. Nachdem die Verhaltensdaten erfasst wurden, können Sie [ Admin ](create.md)Erstellen[!DNL Product Recommendations].
+1. Nachdem die Verhaltensdaten erfasst wurden, können Sie [&#x200B; Admin &#x200B;](create.md)Erstellen[!DNL Product Recommendations].
 
 1. Verwenden Sie [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/), um die Empfehlungseinheiten aus der Storefront abzurufen. SDK gibt die erforderlichen Produktdaten zum Rendern der Empfehlungseinheiten auf einer Seite zurück.
 
-1. Erfahren Sie, wie Sie mit der [`recommendations` GraphQL-Abfrage ](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) Informationen zu Produktempfehlungsblöcken für eine bestimmte SKU zurückgeben und vieles mehr.
+1. Erfahren Sie, wie Sie mit der [`recommendations` GraphQL-Abfrage &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) Informationen zu Produktempfehlungsblöcken für eine bestimmte SKU zurückgeben und vieles mehr.

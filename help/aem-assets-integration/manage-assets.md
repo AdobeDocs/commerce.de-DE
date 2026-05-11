@@ -4,11 +4,19 @@ description: Verwenden Sie die AEM Assets-Integration für Commerce, um Medien-A
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
 TQID: https://experienceleague.adobe.com/y-207fJaMiLZbQW7bzv2WCzFItckGDnyKUm6Q0tqMw8
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cb
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1072
@@ -147,7 +155,7 @@ Mit Adobe Commerce können Händler Bilder mit Produktkategorien verknüpfen und
 
 ### Verwenden des AEM Asset-Wählers für Kategoriebilder
 
-Nachdem Sie den [AEM-Asset-Selektor konfiguriert ](synchronize/asset-selector-integration.md) und sichergestellt haben, dass Benutzer über die erforderlichen [Berechtigungen und IMS-Authentifizierung](get-started/permissions.md) verfügen, können Sie damit Assets zu Ihren Katalogkategorieinhalten hinzufügen.
+Nachdem Sie den [AEM-Asset-Selektor konfiguriert &#x200B;](synchronize/asset-selector-integration.md) und sichergestellt haben, dass Benutzer über die erforderlichen [Berechtigungen und IMS-Authentifizierung](get-started/permissions.md) verfügen, können Sie damit Assets zu Ihren Katalogkategorieinhalten hinzufügen.
 
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 

@@ -3,9 +3,13 @@ title: Facetten
 description: '[!DNL Live Search] Facetten verwenden mehrere Dimensionen von Attributwerten als Suchkriterien.'
 exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
 TQID: https://experienceleague.adobe.com/bTE-Ow8xEDfK-saxGxotnvkgHZI4QThno1dCqRbjvCc
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 452
@@ -17,7 +21,7 @@ ht-degree: 0%
 
 Facettierung ist eine Methode zur Hochleistungsfilterung, bei der mehrere Dimensionen von Attributwerten als Suchkriterien verwendet werden. Die Facettensuche ist ähnlich, aber erheblich „intelligenter“ als die standardmäßige [Layered Navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). Die Liste der verfügbaren Filter wird durch die [filterbaren Attribute](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) der in den Suchergebnissen zurückgegebenen Produkte bestimmt.
 
-[!DNL Live Search] verwendet die `productSearch`-Abfrage, die Facetten- und andere Daten zurückgibt, die spezifisch für [!DNL Live Search] sind. Code-Beispiele finden Sie ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) der Entwicklerdokumentation unter [`productSearch` Abfrage .
+[!DNL Live Search] verwendet die `productSearch`-Abfrage, die Facetten- und andere Daten zurückgibt, die spezifisch für [!DNL Live Search] sind. Code-Beispiele finden Sie [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) der Entwicklerdokumentation unter `productSearch` Abfrage .
 
 ![Gefilterte Suchergebnisse](assets/storefront-search-results-run.png)
 
@@ -35,7 +39,7 @@ Die Anforderungen an Kategorie- und Produktattribute für die Facettierung ähne
 >
 >![Kategoriefacetten](assets/facet-category.png)
 
-Weitere [ zu den Facettenanforderungen in [!DNL Live Search] finden ](./boundaries-limits.md#facets) unter „Grenzen und Beschränkungen“.
+Weitere [&#x200B; zu den Facettenanforderungen in [!DNL Live Search] finden &#x200B;](./boundaries-limits.md#facets) unter „Grenzen und Beschränkungen“.
 
 Wenn Sie mit einer großen Anzahl von Attributen zu kämpfen haben, sollten Sie Attribute zu einem einzigen „Meta-Attribut“ kombinieren. Beispielsweise haben Schuhe in der Regel numerische Größen, während Hemden in der Regel die Größe „S/M/L/XL“ haben. Diese beiden Größentypen können zu einem durchsuchbaren Attribut kombiniert werden.
 

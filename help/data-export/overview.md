@@ -4,10 +4,17 @@ description: Erfahren Sie mehr über die Verwendung  [!DNL data export]  Erweite
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
 TQID: https://experienceleague.adobe.com/OHE1GBUEd8hHFPwFlO9fJa3Y0wK2xZ0HOYnwUn0-DSk
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 569
@@ -21,7 +28,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Wenn Sie den Adobe Commerce Optimizer-Connector installieren, wird dieselbe Datenexporterweiterung verwendet, um Katalog- und Preis-Feeds mithilfe des Composable Catalog Data Model (CCDM) an Adobe Commerce Optimizer zu senden. Architektur- und Konfigurationsdetails finden Sie im ](../aco-connector/overview.md) zum Adobe Commerce Optimizer-Connector [.
+>Wenn Sie den Adobe Commerce Optimizer-Connector installieren, wird dieselbe Datenexporterweiterung verwendet, um Katalog- und Preis-Feeds mithilfe des Composable Catalog Data Model (CCDM) an Adobe Commerce Optimizer zu senden. Architektur- und Konfigurationsdetails finden Sie im [&#128279;](../aco-connector/overview.md) zum Adobe Commerce Optimizer-Connector .
 
 SaaS-Datenexport erfasst und exportiert verschiedene Datentypen, so genannte _Feeds_, mit denen bestimmte Arten von Informationen aggregiert werden. Je nachdem, welche Commerce-Services installiert sind, umfassen die SaaS-Datenexport-Feeds Folgendes:
 

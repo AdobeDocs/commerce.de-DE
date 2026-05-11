@@ -3,10 +3,15 @@ title: Indizierung
 description: Erfahren Sie [!DNL Live Search]  wie Produktattributeigenschaften indiziert.
 exl-id: 01cbbf56-2e12-4ad0-a56d-de0fe13df50f
 TQID: https://experienceleague.adobe.com/8STop-AunMGpKCLgjQaywtpPRNHF-l7sobRnh82QOXI
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 787
@@ -32,13 +37,13 @@ Mit der [!DNL Live Search]-API kann ein Client nach jedem Produktattribut sortie
 
 >[!NOTE]
 >
-> Commerce-Kunden mit [!DNL Live Search] können mit dem SaaS-Preisindexer [ schnellere Preisänderungen und Synchronisierungszeiten auf ihren Websites ](../price-index/price-indexing.md).
+> Commerce-Kunden mit [!DNL Live Search] können mit dem SaaS-Preisindexer [&#x200B; schnellere Preisänderungen und Synchronisierungszeiten auf ihren Websites &#x200B;](../price-index/price-indexing.md).
 
 ## Indizierungs-Pipeline
 
 Der Client ruft den Suchdienst von der Storefront auf, um (filterbare, sortierbare) Indexmetadaten abzurufen. Der Suchdienst kann nur durchsuchbare Produktattribute aufrufen, bei denen die Eigenschaft *Verwenden in der* Navigation) auf `Filterable (with results)` und *Verwenden für die Sortierung in der* auf `Yes` gesetzt ist.
 
-Um eine dynamische Abfrage zu erstellen, muss der Suchdienst wissen, welche Attribute durchsuchbar sind und welche ([) ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] berücksichtigt die Gewichtung der Adobe Commerce-Suche (1-10, wobei 10 die höchste Priorität hat). Die Liste der Daten, die mit dem Katalog-Service synchronisiert und freigegeben werden, finden Sie im Schema , das definiert ist in:
+Um eine dynamische Abfrage zu erstellen, muss der Suchdienst wissen, welche Attribute durchsuchbar sind und welche ([) &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] berücksichtigt die Gewichtung der Adobe Commerce-Suche (1-10, wobei 10 die höchste Priorität hat). Die Liste der Daten, die mit dem Katalog-Service synchronisiert und freigegeben werden, finden Sie im Schema , das definiert ist in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 

@@ -3,8 +3,10 @@ title: Verwalten von Synonymen
 description: Erfahren Sie, wie Sie bestehende  [!DNL Live Search]  verwalten.
 exl-id: 648e5fec-acc5-4244-aa26-8120c62abe6a
 TQID: https://experienceleague.adobe.com/-B-ixlItkljDDCrau969-DPOvxPxhWM6NWRSG-TFcak
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 222
@@ -14,7 +16,7 @@ ht-degree: 0%
 
 # Verwalten von Synonymen
 
-Befolgen Sie diese Anweisungen, um bestehende [!DNL Live Search] ([) ](synonyms.md) verwalten.
+Befolgen Sie diese Anweisungen, um bestehende [!DNL Live Search] ([) &#x200B;](synonyms.md) verwalten.
 
 ## Synonym suchen
 

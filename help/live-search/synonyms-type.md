@@ -3,8 +3,10 @@ title: Typen von Synonymen
 description: Ein- und Zwei-Wege [!DNL Live Search] Synonyme erweitern die Definition von Keywords.
 exl-id: f5522428-c7cc-4627-a09b-d9148918c127
 TQID: https://experienceleague.adobe.com/n0ON02CVlSTTOdRCPFRGVIVPWbGRltq4B0INC-U3ldo
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 617
@@ -52,7 +54,7 @@ Konsistenz mit der Verwendung der Terminologie in Ihrem Katalog Beachten Sie, da
 
 ## Synonymverhalten für mehrere Wörter
 
-Bei Synonymen mit mehreren Wörtern betrachtet Commerce das Synonym als eine Phrase. Wenn Sie beispielsweise ein Zwei-Wege-Synonym **Esszimmertisch** ![Zwei-Wege-Selektor](assets/btn-two-way.png) **** Küchentisch![Zwei-Wege-Selektor](assets/btn-two-way.png)**Esstisch** erstellen, durchsucht Commerce alle Felder, die auf Durchsuchbar eingestellt sind, nach **Esszimmertisch** oder **Küchentisch** oder **Esstisch**.
+Bei Synonymen mit mehreren Wörtern betrachtet Commerce das Synonym als eine Phrase. Wenn Sie beispielsweise ein Zwei-Wege-Synonym **Esszimmertisch** ![Zwei-Wege-Selektor](assets/btn-two-way.png) **&#x200B;**&#x200B;Küchentisch![Zwei-Wege-Selektor](assets/btn-two-way.png)**Esstisch** erstellen, durchsucht Commerce alle Felder, die auf Durchsuchbar eingestellt sind, nach **Esszimmertisch** oder **Küchentisch** oder **Esstisch**.
 
 Wenn kein Synonym erstellt wird und ein Käufer nach **Küchentabelle** sucht, sucht Commerce in den durchsuchbaren Feldern nach den Begriffen, auch über verschiedene Felder hinweg, z. B. **table** im Namensfeld und **küche** im Meta-Schlüsselwort.
 

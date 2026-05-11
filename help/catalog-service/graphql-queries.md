@@ -5,9 +5,13 @@ role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: 49bbdb3b-bbe9-4777-8ea7-3bd25ae53889
 TQID: https://experienceleague.adobe.com/ahutwotbB6Dxg7Tc3WMFd7S-WBMALvOYIUTmB5JKmyM
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 268
@@ -31,4 +35,4 @@ Der Katalog-Service stellt die folgenden Abfragen bereit:
 | `refineProduct` | Engt die Ergebnisse einer Produktabfrage ein, die für ein komplexes Produkt ausgeführt wird, um bestimmte Informationen über eine Produktvariante zurückzugeben. | Nützlich für die Darstellung aktualisierter Produktdetailseiten, wenn der Käufer eine Produktoption auswählt. [Siehe Beispiel.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) |
 | `variants` | Gibt Details zu allen Varianten eines Produkts zurück. | Nützlich für die Anzeige von Variantenbildern auf Produktdetailseiten oder Listenseiten, ohne mehrere API-Anfragen zu senden. [Siehe Beispiel.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-variants/) |
 
-Weitere [ zur Verwendung dieser Abfragen finden ](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/) unter „Storefront Services GraphQL&quot;.
+Weitere [&#x200B; zur Verwendung dieser Abfragen finden &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/) unter „Storefront Services GraphQL&quot;.
