@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c3e995d46b7cfca3186b7599e22b825f0efa80f1
 workflow-type: tm+mt
-source-wordcount: 2996
+source-wordcount: 3052
 ht-degree: 1%
 
 ---
@@ -117,6 +117,15 @@ _31. Mai 2024_
 _27. Oktober 2023_
 
 ![Neu](../assets/new.svg) Das [!DNL Live Search] PLP-Widget unterstützt jetzt Farbfelder.
+
+
+## [!DNL Live Search] 4.7.1
+
+_12. Mai 2026_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
+
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem die Popover-Skripte der [!DNL Live Search] Storefront Fehler in den Content Security Policy (CSP) verursachten, wenn CSP im eingeschränkten Modus konfiguriert wurde und Inline-Skripte deaktiviert wurden. Die Erweiterung verwendet jetzt sicheres Rendering für diese Skripte, damit Seiten ohne CSP-Skript-src-Verletzungen geladen werden.
 
 ## [!DNL Live Search] 4.7.0
 
