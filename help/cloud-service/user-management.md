@@ -18,9 +18,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 118e2865ce9d4903b9a82254e0f56fc76c9fdadf
 workflow-type: tm+mt
-source-wordcount: 1787
+source-wordcount: 1822
 ht-degree: 0%
 
 ---
@@ -53,10 +53,15 @@ Die folgenden Rollen sind für [!DNL Adobe Commerce as a Cloud Service] verfügb
 
 * [**Entwickler**](https://helpx.adobe.com/de/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}: Entwicklerinnen und Entwickler verfügen über Benutzerberechtigungen und werden der Commerce-Instanz als Entwicklerperson hinzugefügt. Sie können die [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"} verwenden, [Ereignisse konfigurieren](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"} und [Webhooks erstellen](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
 
-* Administratoren : Es gibt drei verschiedene Arten von Administratoren:
+* Administratoren : Es gibt verschiedene Arten von Administratorrollen:
    * [Systemadmins](https://helpx.adobe.com/de/enterprise/using/admin-roles.html){target="_blank"} - Der Systemadmin hat über die Admin Console Zugriff auf alle Produkte und Produktprofile in der Organisation.
    * [Produktadministrierende](#add-a-product-admin) - Produktadministrierende können [Benutzende, Rollen und Berechtigungen für das Produkt verwalten](#add-users) in der [!DNL Adobe Admin Console] und [Benutzende im Commerce Admin verwalten](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
    * [Produktprofil-Administrierende](#add-developers-and-product-profile-admins) - Produktprofil-Administrierende haben keinen Zugriff auf den Adobe Commerce-Admin, können jedoch Benutzende für das Produkt im [!DNL Adobe Admin Console] verwalten.
+   * Support-Administratoren : Support-Administratoren können Support-Tickets erstellen und verwalten.
+
+>[!NOTE]
+>
+>Wenn Sie möchten, dass Benutzende Support-Tickets erstellen können, muss ihnen in der Admin Console die Rolle **Support** zugewiesen werden.
 
 Detaillierte Informationen zu den Berechtigungen, die den einzelnen Rollen in Adobe Commerce gewährt werden, finden Sie unter [Rollenressourcen](#role-resources).
 
