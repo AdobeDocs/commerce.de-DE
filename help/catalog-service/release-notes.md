@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 22f44afb7221c735785b6e9a38fb70c733cf0942
 workflow-type: tm+mt
-source-wordcount: 2709
+source-wordcount: 2742
 ht-degree: 0%
 
 ---
@@ -54,6 +54,12 @@ Unterstützung wird für die neueste Version bereitgestellt. Versionshinweise f�
 ## Storefront Catalog Service
 
 ### Mai 2026
+
+**Veröffentlichungsdatum:**. Mai 2026
+<!--v1.54-->
+
+![Neu](../assets/new.svg) **Kategoriesortierreihenfolge in GraphQL** - Der `CategoryView` GraphQL-Typ enthält jetzt ein Positionsfeld, sodass Storefronts Kategorien in der Reihenfolge anzeigen können, die Händler in der Kataloghierarchie konfigurieren.
+<!--DATA-7166-->
 
 **Veröffentlichungsdatum**: 4. Mai 2026
 <!-- v1.53 -->
