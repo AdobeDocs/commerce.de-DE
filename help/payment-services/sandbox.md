@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 2c6c812fd25feecfe5133d6623a1c814003d579c
+source-git-commit: 5312d23f050d9007132f7f14b17caf13ab52c7df
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Wenn das Onboarding Ihrer PayPal-Sandbox genehmigt wurde, sollte eine Benachrich
 
 ### Sandbox-Konto zurücksetzen
 
-Wenn Sie während des PayPal-Onboarding-Prozesses ein PayPal-Sandbox-Konto erstellt haben, müssen Sie Ihre Onboarding-Sandbox zurücksetzen, da Sie sonst Ihre E-Mail nicht verifizieren können.
+Wenn Sie während des PayPal-Onboarding-Prozesses ein PayPal-Sandbox-Konto erstellt haben, müssen Sie Ihre Onboarding-Sandbox zurücksetzen, da Sie Ihre E-Mail nicht verifizieren können.
 
 So setzen Sie Ihr Sandbox-Konto zurück:
 
