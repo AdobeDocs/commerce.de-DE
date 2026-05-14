@@ -3,7 +3,8 @@ user-guide-title: Handbuch zu [!DNL Product Recommendations]
 user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Verwendung von  [!DNL Product Recommendations]  von Adobe Commerce.
 role: Admin
 feature: Services, Recommendations
-source-git-commit: 2b1186d83718347149516de469c31cdfeaa72b4a
+nudge: true
+source-git-commit: f5a75403fd7187a6441ad16f3778bfddbc05c1c2
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 10%
