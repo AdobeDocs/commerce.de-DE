@@ -1,12 +1,13 @@
 ---
 user-guide-title: Handbuch zu [!DNL Payment Services]
+breadcrumb-title: '[!DNL Payment Services]'
 user-guide-description: Dieses Handbuch enthält detaillierte Informationen zum Installieren und Konfigurieren von  [!DNL Payment Services]  für  [!DNL Adobe Commerce] - oder  [!DNL Magento Open Source] .
 index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
 nudge: true
-source-git-commit: 82cea97c9c0498f91e3c2b4b44e0f21c736a2dc4
+source-git-commit: 22c2fa72c3603e28b5ab55a34a908c10c02457fe
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 2%
@@ -50,4 +51,4 @@ ht-degree: 2%
 - Sicherheit und Compliance {#security-compliance}
    - [Sicherheit](security.md)
    - [Deutlicher Schutz vor Betrug](fraud-protection.md)
-- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=de)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
