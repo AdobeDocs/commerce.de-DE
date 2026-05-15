@@ -1,12 +1,13 @@
 ---
 user-guide-title: SaaS-Preisindizierungshandbuch
+breadcrumb-title: SaaS-Preisindizierung
 user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Verwendung des SaaS-Preisindexers.
 hide: true
 role: Admin
 feature: Services, Price Indexer
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
-source-wordcount: '39'
+source-wordcount: '42'
 ht-degree: 7%
 
 ---

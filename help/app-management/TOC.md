@@ -1,11 +1,12 @@
 ---
 user-guide-title: '[!DNL App Management]'
+breadcrumb-title: '[!DNL App Management]'
 user-guide-description: Verknüpfen, Konfigurieren und Verwalten von App Builder-Anwendungen mit Ihrer Adobe Commerce-Instanz.
 feature: App Builder, Extensibility, Integration
-source-git-commit: ab635fecb7b82294bd4a4fd045ed71931e9d265d
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
-source-wordcount: '27'
-ht-degree: 7%
+source-wordcount: '34'
+ht-degree: 5%
 
 ---
 
@@ -17,4 +18,4 @@ ht-degree: 7%
 - Mobile App verwalten {#manage-app}
    - [Mobile App verwalten](manage-app.md)
    - [Fehlerbehebung](troubleshooting.md)
-- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
