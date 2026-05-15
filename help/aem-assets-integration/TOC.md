@@ -30,4 +30,4 @@ ht-degree: 4%
    - [Benutzerdefinierter automatischer Abgleich](synchronize/custom-match.md)
    - [Manuelle Asset-Auswahl](synchronize/asset-selector-integration.md)
 - [Verwalten von Commerce Media-Assets](manage-assets.md)
-- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)

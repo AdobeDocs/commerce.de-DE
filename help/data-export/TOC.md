@@ -28,4 +28,4 @@ ht-degree: 4%
    - [Dynamisches Hinzufügen des Produktattributs](add-attribute-dynamically.md)
    - [Hinzufügen von Steuerklasse, Attributsatz und Inventar-Metadaten](add-tax-attribute-set-inventory-attributes.md)
 - [Versionshinweise](release-notes.md)
-- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=de)
