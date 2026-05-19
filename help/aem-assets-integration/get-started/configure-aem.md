@@ -4,19 +4,13 @@ description: Aktivieren Sie die nahtlose Synchronisierung von Assets zwischen Ad
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
 TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: da3860b0-d637-47df-bef0-273751180266
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
 workflow-type: tm+mt
-source-wordcount: 1450
+source-wordcount: 1708
 ht-degree: 1%
 
 ---
@@ -47,6 +41,8 @@ Dieser Paket-Code fügt die folgenden Ressourcen zur Authoring-Umgebung von AEM 
 
    * Ein benutzerdefinierter Metadatentyp `commerce:roles` und `commerce:positions` Attribute, die zeigen, wie das Asset in Commerce visualisiert wird.
 
+   * Metadaten des Alternativtext-Multifelds (_[!UICONTROL Alt texts]_), damit Bearbeiter Alternativtext eingeben können, der vom Commerce Store-Ansichtscode eingegeben wurde. Dies ändert nichts daran, wie Produktbilder im Katalog zugewiesen werden oder welchen Umfang sie haben. Siehe [ALT-Text in AEM Assets-Metadaten](#localized-alt-text-in-aem-assets-metadata).
+
 * Ein Metadatenschema-Formular mit einer Registerkarte &quot;Commerce&quot;, das die `Eligible for Commerce`- und `Product Data` für das Tagging von Commerce-Assets enthält. Das Formular bietet außerdem Optionen zum Ein- oder Ausblenden der `roles`- und `position` in der AEM Assets-Benutzeroberfläche.
 
   Registerkarte ![Commerce für das Metadatenschema-Formular von AEM Assets](../assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
@@ -55,27 +51,54 @@ Dieser Paket-Code fügt die folgenden Ressourcen zur Authoring-Umgebung von AEM 
 
 >[!NOTE]
 >
-> Weitere Informationen [&#x200B; **AEM Commerce-Package-Code](https://github.com/ankumalh/assets-commerce) finden Sie auf der Seite „Readme**.
+> Weitere Informationen [ **AEM Commerce-Package-Code](https://github.com/ankumalh/assets-commerce) finden Sie auf der Seite „Readme**.
+
+## Alt-Text in AEM Assets-Metadaten
+
+Das _[!UICONTROL Alt texts]_Multifield ist im Metadaten-Editor für AEM Assets-Assets auf der Registerkarte **[!UICONTROL Commerce]**verfügbar, wenn Sie ein geeignetes Bild bearbeiten.
+
+>[!IMPORTANT]
+>
+> Das Verhalten der Pre-Store-Ansicht gilt nur für Alternativtext. Die AEM Assets-Integration synchronisiert nicht verschiedene Produktbilder pro Adobe Commerce-Store-Ansicht. Produktbilder aus AEM werden weiterhin mit Commerce synchronisiert. Dies entspricht dem Verhalten bei der Galeriezuweisung wie vor dieser Version.
+
+Das Multifield enthält eine Zeile pro Commerce-Store-Ansicht. Jede Zeile hat zwei Eingaben:
+
+* **[!UICONTROL Store View Code]** - Die Kennung der Store-Ansicht (z. B. `default` oder `en_US`).
+
+* **[!UICONTROL Alt Text]** - Alternativtext für diese Store-Ansicht, begrenzt auf 255 Zeichen.
+
+Wählen Sie **[!UICONTROL Add]** aus, um weitere Zeilen für zusätzliche Shop-Ansichten hinzuzufügen. Um eine Zeile zu entfernen, klicken Sie auf das Symbol **[!UICONTROL Delete]** in dieser Zeile, um sie zu entfernen.
+
+![Mehrfachfeld „Alt-Texte“ mit Code für Store-Ansicht und Eingabe von Alt-Text](../assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
+
+Beim Speichern blockiert die Client-seitige Validierung die Übermittlung, wenn eine Zeile einen leeren _[!UICONTROL Store View Code]_hat oder wenn zwei Zeilen denselben Code für die Store-Ansicht verwenden (ignoriert Groß-/Kleinschreibung).
+
+Alternativtexteinträge werden in JCR-Asset-Metadaten als zwei indexorientierte `String[]` beibehalten:
+
+* `commerce:altTextStoreViews`: Ansichtscode für jede Zeile speichern.
+* `commerce:altTextValues`: Abgleichen von ALT-Text am selben Index wie bei jedem Eintrag in `commerce:altTextStoreViews`.
+
+Wenn diese Assets mit Adobe Commerce synchronisiert werden, wird Alt-Text für die Einzelspeicheransicht in die Produktmediensammlung für die entsprechenden Speicheransichts-Codes geschrieben. Die zugrunde liegende Bildzuordnung bleibt unverändert.
 
 ## Voraussetzungen
 
 Sie benötigen die folgenden Ressourcen und Berechtigungen, um den `assets-commerce`-Code in der AEM Assets as a Cloud Service AEM-Umgebung bereitzustellen:
 
-* [Zugriff auf das AEM Assets Cloud Manager-Programm und Umgebungen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) mit den Rollen „Programm“ und „Bereitstellungs-Manager“
+* [Zugriff auf das AEM Assets Cloud Manager-Programm und Umgebungen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) mit den Rollen „Programm“ und „Bereitstellungs-Manager“
 
-* eine [lokale AEM-Entwicklungsumgebung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) und die Vertrautheit mit dem lokalen AEM-Entwicklungsprozess.
+* eine [lokale AEM-Entwicklungsumgebung](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) und die Vertrautheit mit dem lokalen AEM-Entwicklungsprozess.
 
 * Machen Sie sich mit der [AEM](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure)Projektstruktur und der Bereitstellung benutzerdefinierter Inhaltspakete mit Cloud Manager vertraut.
 
 * Die **IMS-Org-ID** für Ihre Commerce-Instanz. Sowohl Ihre Commerce-Instanz als auch die Authoring-Umgebung von AEM Assets müssen sich in derselben IMS-Organisation befinden.
 
-* So aktivieren Sie [Dynamic Media mit OpenAPI-Funktionen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis):
+* So aktivieren Sie [Dynamic Media mit OpenAPI-Funktionen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis):
 
 >[!BEGINTABS]
 
 >[!TAB Produktvisualisierung]
 
-[!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} Dynamic Media mit OpenAPI-Funktionen ist ein Self-Service für Produktvisualisierungen mit AEM Assets.
+[!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} Dynamic Media mit OpenAPI-Funktionen ist ein Self-Service für Produktvisualisierungen mit AEM Assets.
 
 1. Navigieren Sie zu Ihrer Cloud Manager.
 
@@ -104,15 +127,15 @@ Sobald Sie das Support-Ticket gesendet haben, aktiviert Adobe Dynamic Media mit 
 
 ## Schritt 1: Installieren des Assets-Commerce-Pakets
 
-1. Gehen Sie zur AEM Cloud Manager, wählen Sie ein Programm aus und erstellen [Produktions- und Staging-Umgebungen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) die Sie in Adobe Commerce integrieren möchten.
+1. Gehen Sie zur AEM Cloud Manager, wählen Sie ein Programm aus und erstellen [Produktions- und Staging-Umgebungen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) die Sie in Adobe Commerce integrieren möchten.
 
-1. Konfigurieren Sie eine [Bereitstellungs-Pipeline](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) oder stellen Sie sicher, dass Ihre Pipeline Änderungen an der ausgewählten Umgebung bereitstellen kann.
+1. Konfigurieren Sie eine [Bereitstellungs-Pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) oder stellen Sie sicher, dass Ihre Pipeline Änderungen an der ausgewählten Umgebung bereitstellen kann.
 
-1. [Klonen Sie das in Adobe verwaltete Git](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access)Repository für das ausgewählte Programm.
+1. [Klonen Sie das in Adobe verwaltete Git](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access)Repository für das ausgewählte Programm.
 
 1. Laden Sie von GitHub den Paket-Code aus dem [AEM Assets Commerce-Repository](https://github.com/ankumalh/assets-commerce) herunter.
 
-1. Kopieren Sie [lokalen AEM-](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)) den heruntergeladenen Code manuell in das bestehende von Adobe verwaltete Repository.
+1. Kopieren Sie [lokalen AEM-](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)) den heruntergeladenen Code manuell in das bestehende von Adobe verwaltete Repository.
 
 1. Ersetzen Sie in allen `filter.xml` und `pom.xml files` für Ihr Projekt alle Vorkommen von `<my-app>` durch Ihren App-Namen.
 
@@ -146,7 +169,7 @@ Wenn die Registerkarte **Commerce** nicht in den Eigenschaften angezeigt wird, m
 
 1. Ziehen Sie eine **checkbox**-Komponente per Drag-and-Drop auf die Registerkarte {2 **Commerce} und ordnen Sie sie der `commerce:isCommerce` zu.** Definieren Sie **Ja** und **Nein** als Optionen.
 
-Wenn Sie auf andere Probleme stoßen, erstellen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) oder wenden Sie sich an Ihren AEM Assets Integration-Vertriebsmitarbeiter, um Hilfe zu erhalten.
+Wenn Sie auf andere Probleme stoßen, erstellen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) oder wenden Sie sich an Ihren AEM Assets Integration-Vertriebsmitarbeiter, um Hilfe zu erhalten.
 
 ## Schritt 2: Optional. Konfigurieren eines Metadatenprofils
 
@@ -204,13 +227,13 @@ Die Komponente Produktdaten-Benutzeroberfläche wird automatisch auf Grundlage d
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Optional. Um genehmigte Commerce-Assets beim Hochladen in die AEM Assets-Umgebung automatisch zu synchronisieren, setzen Sie den Standardwert für das _[!UICONTROL Review Status]_&#x200B;auf der Registerkarte `Basic` auf `approved`.
+1. Optional. Um genehmigte Commerce-Assets beim Hochladen in die AEM Assets-Umgebung automatisch zu synchronisieren, setzen Sie den Standardwert für das _[!UICONTROL Review Status]_auf der Registerkarte `Basic` auf `approved`.
 
 1. Speichern Sie die Aktualisierung.
 
 ### Anwenden des Metadatenprofils auf den Commerce Assets-Quellordner
 
-1. Wählen Sie auf [!UICONTROL &#x200B; Metadata Profiles] Seite das Integrationsprofil Commerce aus.
+1. Wählen Sie auf [!UICONTROL  Metadata Profiles] Seite das Integrationsprofil Commerce aus.
 
 1. Wählen Sie im Menü Aktion die Option **[!UICONTROL Apply Metadata Profiles to Folders]** aus.
 
@@ -224,4 +247,4 @@ Die Komponente Produktdaten-Benutzeroberfläche wird automatisch auf Grundlage d
 
 * [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} [Adobe Commerce-Pakete installieren](configure-commerce.md).
 
-* [!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} [Konfigurieren der Integration über den Commerce Admin](setup-synchronization.md).
+* [!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} [Konfigurieren der Integration über den Commerce Admin](setup-synchronization.md).
