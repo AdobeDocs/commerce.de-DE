@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 4288998fdae56112dc9ddcebfc42b85b9f5d8c00
 workflow-type: tm+mt
-source-wordcount: 3633
+source-wordcount: 4032
 ht-degree: 0%
 
 ---
@@ -42,11 +42,51 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 >
 >Wenn Sie Adobe Commerce On-Premise oder Adobe Commerce in der Cloud-Infrastruktur verwenden, lesen Sie die [Versionshinweise zu Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview).
 
-## Mai 2026 - #1 {#latest}
+## Mai 2026 - #2 {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
+
+Die folgenden Elemente werden am 21. Mai 2026 in Produktionsumgebungen veröffentlicht.
+
+>[!BEGINSHADEBOX]
+
+### Verfolgen von Sendungen mit standardmäßigen und benutzerdefinierten Spediteuren
+
+Die Nachverfolgung von Bestellungen ist jetzt zuverlässig für standardmäßige und benutzerdefinierte Versanddienstleister in der [!DNL Commerce Admin], sodass Händler konsistente Tracking-Erlebnisse nach dem Kauf bereitstellen können. Zuvor konnte die Auswahl eines Providers wie UPS oder FedEx und die Anwendung einer Tracking-ID verhindern, dass der Tracking-Link angezeigt wurde. Es ist keine Händleraktion erforderlich, um dieses Verhalten wiederherzustellen. Die Unterstützung für Tracking-Links ist auch für [benutzerdefinierte Provider](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference/) verfügbar, die mit dem [!DNL App Builder Integration Starter Kit] erstellt wurden. <!-- ACCS-891 -->
+
+### Anzeigen von Attributeingabetypen im Raster „Produktattribute“
+
+Eine neue Spalte [!UICONTROL **Attributtyp**] ist jetzt im Raster Produktattribute in ([!UICONTROL **Stores**] > _[!UICONTROL Attributes]_>[!UICONTROL **Product**]) sichtbar, die den Eingabetyp (z. B. Textfeld, Dropdown oder Ja/Nein) für jedes Produktattribut anzeigt, einschließlich der von Erweiterungen bereitgestellten Typen. Dies erleichtert die Identifizierung und Verwaltung von Attributen bei der Arbeit mit großen Attributsätzen. <!-- ACCS-925 -->
+
+### Verbesserungen und Fehlerbehebungen
+
+Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen sind in dieser Version enthalten:
+
+* Es wurde ein Problem behoben, bei dem der REST-Endpunkt POST `V1/async/custom-email/send` einen `UnstructuredArray` Validierungsfehler zurückgab. Der asynchrone Endpunkt funktioniert jetzt konsistent mit dem synchronen POST-`V1/custom-email/send`-Endpunkt. <!-- ACCS-921 -->
+
+* Es wurde ein Problem behoben, bei dem benutzerdefinierte serialisierbare Attribute für Entitäten wie Unternehmen unbeabsichtigt gelöscht wurden, wenn die Entität über REST aktualisiert wurde, ohne die benutzerdefinierten Attribute in die Payload einzubeziehen. Benutzerdefinierte Attribute werden jetzt beibehalten, wenn sie nicht angegeben werden. <!-- ACCS-946 -->
+
+* Es wurde ein Fehler „Verbraucher ist nicht autorisiert“ behoben, der die Gastanmeldung bei GraphQL verhindern konnte, wenn der `X-Adobe-Company`-Header in der Anfrage vorhanden war. <!-- ACCS-949 -->
+
+* Fehlerkorrektur - Das Bearbeiten oder Löschen eines Unternehmens in der [!DNL Commerce Admin] schlägt jetzt nicht mehr fehl, wenn dem Unternehmen über den REST-Endpunkt von PUT `V1/customers/companies` ein Kunde zugewiesen wird. <!-- ACCS-856 -->
+
+* Es wurde ein Problem mit veralteten Auftragsrasterstatus behoben. <!-- CCSAAS-4915 -->
+
+* Fehlerkorrektur - Auf der [!DNL Commerce Admin], auf der Dateien, die als Beispiele und Links zu herunterladbaren Produkten angehängt sind, beim Zugriff auf die Seite zur Produktbearbeitung einen `404` zurückgaben, tritt jetzt kein Fehler mehr auf. <!-- CCSAAS-4394 -->
+
+* Fehlerkorrektur - Beim Erstellen einer Sendung für eine Bestellung, die konfigurierbare Produkte enthält, tritt jetzt kein Fehler mehr wegen des „Undefined Array Key &#39;simple_sku&#39;&quot; mehr auf. <!-- CCSAAS-4877 -->
+
+* Die `guestOrderByToken` GraphQL-Abfrage gibt jetzt eine aussagekräftigere Fehlermeldung zurück, wenn sie mit einem falsch formatierten Token statt mit einem internen Server-Fehler aufgerufen wird. <!-- CCSAAS-4921 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Mai 2026 - #1
 
 [!BADGE Produktion]{type=Neutral tooltip="Die aufgelisteten Elemente sind derzeit in Produktionsumgebungen verfügbar."}
-
-<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
 Die folgenden Elemente wurden am 7. Mai 2026 in Produktionsumgebungen veröffentlicht.
 
