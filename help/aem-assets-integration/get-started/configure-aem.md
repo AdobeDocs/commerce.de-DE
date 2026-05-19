@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
 workflow-type: tm+mt
-source-wordcount: 1450
+source-wordcount: 1708
 ht-degree: 1%
 
 ---
@@ -47,6 +47,8 @@ Dieser Paket-Code fügt die folgenden Ressourcen zur Authoring-Umgebung von AEM 
 
    * Ein benutzerdefinierter Metadatentyp `commerce:roles` und `commerce:positions` Attribute, die zeigen, wie das Asset in Commerce visualisiert wird.
 
+   * Metadaten des Alternativtext-Multifelds (_[!UICONTROL Alt texts]_), damit Bearbeiter Alternativtext eingeben können, der vom Commerce Store-Ansichtscode eingegeben wurde. Dies ändert nichts daran, wie Produktbilder im Katalog zugewiesen werden oder welchen Umfang sie haben. Siehe [ALT-Text in AEM Assets-Metadaten](#localized-alt-text-in-aem-assets-metadata).
+
 * Ein Metadatenschema-Formular mit einer Registerkarte &quot;Commerce&quot;, das die `Eligible for Commerce`- und `Product Data` für das Tagging von Commerce-Assets enthält. Das Formular bietet außerdem Optionen zum Ein- oder Ausblenden der `roles`- und `position` in der AEM Assets-Benutzeroberfläche.
 
   Registerkarte ![Commerce für das Metadatenschema-Formular von AEM Assets](../assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
@@ -56,6 +58,33 @@ Dieser Paket-Code fügt die folgenden Ressourcen zur Authoring-Umgebung von AEM 
 >[!NOTE]
 >
 > Weitere Informationen [&#x200B; **AEM Commerce-Package-Code](https://github.com/ankumalh/assets-commerce) finden Sie auf der Seite „Readme**.
+
+## Alt-Text in AEM Assets-Metadaten
+
+Das _[!UICONTROL Alt texts]_&#x200B;Multifield ist im Metadaten-Editor für AEM Assets-Assets auf der Registerkarte **[!UICONTROL Commerce]**&#x200B;verfügbar, wenn Sie ein geeignetes Bild bearbeiten.
+
+>[!IMPORTANT]
+>
+> Das Verhalten der Pre-Store-Ansicht gilt nur für Alternativtext. Die AEM Assets-Integration synchronisiert nicht verschiedene Produktbilder pro Adobe Commerce-Store-Ansicht. Produktbilder aus AEM werden weiterhin mit Commerce synchronisiert. Dies entspricht dem Verhalten bei der Galeriezuweisung wie vor dieser Version.
+
+Das Multifield enthält eine Zeile pro Commerce-Store-Ansicht. Jede Zeile hat zwei Eingaben:
+
+* **[!UICONTROL Store View Code]** - Die Kennung der Store-Ansicht (z. B. `default` oder `en_US`).
+
+* **[!UICONTROL Alt Text]** - Alternativtext für diese Store-Ansicht, begrenzt auf 255 Zeichen.
+
+Wählen Sie **[!UICONTROL Add]** aus, um weitere Zeilen für zusätzliche Shop-Ansichten hinzuzufügen. Um eine Zeile zu entfernen, klicken Sie auf das Symbol **[!UICONTROL Delete]** in dieser Zeile, um sie zu entfernen.
+
+![Mehrfachfeld „Alt-Texte“ mit Code für Store-Ansicht und Eingabe von Alt-Text](../assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
+
+Beim Speichern blockiert die Client-seitige Validierung die Übermittlung, wenn eine Zeile einen leeren _[!UICONTROL Store View Code]_&#x200B;hat oder wenn zwei Zeilen denselben Code für die Store-Ansicht verwenden (ignoriert Groß-/Kleinschreibung).
+
+Alternativtexteinträge werden in JCR-Asset-Metadaten als zwei indexorientierte `String[]` beibehalten:
+
+* `commerce:altTextStoreViews`: Ansichtscode für jede Zeile speichern.
+* `commerce:altTextValues`: Abgleichen von ALT-Text am selben Index wie bei jedem Eintrag in `commerce:altTextStoreViews`.
+
+Wenn diese Assets mit Adobe Commerce synchronisiert werden, wird Alt-Text für die Einzelspeicheransicht in die Produktmediensammlung für die entsprechenden Speicheransichts-Codes geschrieben. Die zugrunde liegende Bildzuordnung bleibt unverändert.
 
 ## Voraussetzungen
 
