@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
-source-wordcount: 1180
+source-wordcount: 1167
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ Merchandising [Regeln](rules.md) gestalten das Einkaufserlebnis mit If-Then-Anwe
 
 - [!DNL Live Search] [Popover-](storefront-popover.md)) ist das Feld, das unter dem Suchfeld geöffnet wird, das die Suchergebnisse enthält.
 - [Produktlistenseite-Widget](plp-styling.md) (PLP) bietet eine durchsuchbare Produktlistenseite mit Facetten und Unterstützung für Synonyme. Das Widget wird in Live Search 4.0.0+ installiert und aktiviert und ersetzt den Suchadapter.
-- (**Veraltet**) Der Suchadapter war der Vorläufer des PLP-Widgets und wurde mit Live Search &lt; 4.0.0 installiert. Wenn Sie eine Version der Live Search vor 4.0.0 verwenden, empfiehlt Commerce ein Upgrade, um die Vorteile der PLP-Widget-Funktionen und zukünftige Verbesserungen zu erhalten. Ab nun wird der Suchadapter nur noch aktualisiert, um Sicherheitsprobleme zu beheben. Siehe [Migrationshandbuch](migrate-to-plp.md) für detaillierte Informationen zur Migration zum PLP-Widget.
+- (**Veraltet**) Der Suchadapter war der Vorläufer des PLP-Widgets und wurde mit Live Search &lt; 4.0.0 installiert. Wenn Sie eine Version der Live Search vor 4.0.0 verwenden, empfiehlt Commerce ein Upgrade, um die Vorteile der PLP-Widget-Funktionen und zukünftige Verbesserungen zu erhalten. Siehe [Migrationshandbuch](migrate-to-plp.md) für detaillierte Informationen zur Migration zum PLP-Widget.
 
 ## [!DNL Live Search] Workspace
 

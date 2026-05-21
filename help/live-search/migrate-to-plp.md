@@ -16,16 +16,16 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
-source-wordcount: 2121
+source-wordcount: 2102
 ht-degree: 0%
 
 ---
 
 # Migration vom Suchadapter zum PLP-Widget
 
-Der Suchadapter ist seit [!DNL Live Search] 4.0.0 [veraltet](release-notes.md#live-search-400) und erhält nur Sicherheits-Updates. Das [Widget „Produktlistenseite (PLP)](plp-styling.md) ist die unterstützte Lösung für alle [!DNL Live Search] Implementierungen, die in Zukunft durchgeführt werden. Dieser Leitfaden hilft Ihnen zu verstehen, wann die Migration einfach ist und wann zusätzliche Arbeit erforderlich ist.
+Der Suchadapter ist seit [!DNL Live Search] 4[0.0 &#x200B;](release-notes.md#live-search-400). Das [Widget „Produktlistenseite (PLP)](plp-styling.md) ist die unterstützte Lösung für alle [!DNL Live Search] Implementierungen, die in Zukunft durchgeführt werden. Dieser Leitfaden hilft Ihnen zu verstehen, wann die Migration einfach ist und wann zusätzliche Arbeit erforderlich ist.
 
 ## Voraussetzungen
 
@@ -312,7 +312,6 @@ In diesem Szenario gibt es ein bekanntes Problem, bei dem die Aktivierung des PL
 **Option 1: Suche nach Adapter fortsetzen (nur interimistisch)**
 
 - Lassen Sie den Suchadapter aktiviert, wenn GTM geschäftskritisch ist.
-- Sie sollten wissen, dass Sie nur Sicherheitsupdates erhalten.
 - Planen Sie die Migration, wenn die GTM-Kompatibilität behoben ist.
 - Wenden Sie sich an den Adobe-Support , um Informationen zur GTM-Kompatibilität zu erhalten.
 
@@ -467,7 +466,7 @@ Hier finden Sie Antworten auf häufig gestellte Fragen zur Migration vom Suchada
 
 **F: Erhält der Suchadapter Fehlerbehebungen oder Funktionsaktualisierungen?**
 
-A: Nein. Der Suchadapter ist veraltet und erhält nur Sicherheitsupdates. Fehlerbehebungen, Leistungsverbesserungen und neue Funktionen sind nur im PLP-Widget verfügbar. Wenn Sie auf Probleme mit dem Suchadapter stoßen, ist die Migration zum PLP-Widget die empfohlene Lösung.
+A: Nein. Der Suchadapter wird nicht mehr unterstützt. Fehlerbehebungen, Leistungsverbesserungen und neue Funktionen sind nur im PLP-Widget verfügbar. Wenn Sie auf Probleme mit dem Suchadapter stoßen, ist die Migration zum PLP-Widget die empfohlene Lösung.
 
 **F: Wird die Migration meine Storefront stören?**
 

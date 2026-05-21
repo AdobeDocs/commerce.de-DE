@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: bf3acd889f099a2ee9aed2665b86c37347d10a46
+source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
-source-wordcount: 3073
+source-wordcount: 3060
 ht-degree: 1%
 
 ---
@@ -279,7 +279,7 @@ _13. November 2023_
 ### Updates
 
 ![Beheben](../assets/fix.svg) Das [!DNL Live Search] PLP-Widget ist jetzt standardmäßig für Neuinstallationen aktiviert.
-![Beheben](../assets/fix.svg) Der Suchadapter wird nicht mehr unterstützt. Ab nun wird der Suchadapter nur noch aktualisiert, um Sicherheitsprobleme zu beheben.
+![Beheben](../assets/fix.svg) Der Suchadapter wird nicht mehr unterstützt.
 ![Korrigieren](../assets/fix.svg) Neukonfigurierte CSS-Stile, um Widget-Klassen besser zu isolieren.
 ![Behebung](../assets/fix.svg) Kleinere Fehlerbehebungen
 
