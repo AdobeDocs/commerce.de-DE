@@ -4,10 +4,26 @@ description: Erfahren Sie, wie Sie Ihre Commerce-Daten mit Adobe Experience Plat
 feature: Personalization, Integration, Configuration
 exl-id: 8ba33277-38a5-45af-86e0-906cfb3b998d
 TQID: https://experienceleague.adobe.com/Hof7ftSKKkdMzoJ7eXLr9D2jv-U1LfFnMiFuGwzJpYE
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 3071
@@ -28,7 +44,7 @@ Um Ihre Adobe Commerce-Instanz mit der Adobe Experience Platform zu verbinden, m
 
 Wenn Sie zuvor einen Adobe Commerce-Service installiert haben, haben Sie wahrscheinlich bereits den Commerce Services-Connector konfiguriert. Andernfalls müssen Sie die folgenden Aufgaben auf der Seite [Commerce Services-Connector](../landing/saas.md) ausführen:
 
-1. Melden Sie sich bei Ihrem Commerce-Konto an, um [Ihre Produktions- und Sandbox-API-Schlüssel ](../landing/saas.md#credentials).
+1. Melden Sie sich bei Ihrem Commerce-Konto an, um [Ihre Produktions- und Sandbox-API-Schlüssel &#x200B;](../landing/saas.md#credentials).
 1. Wählen Sie einen [SaaS-Datenbereich](../landing/saas.md#saas-configuration).
 1. Melden Sie sich bei Ihrem Adobe-Konto an, um [Ihre Organisations-ID abzurufen](../landing/saas.md#ims-organization-optional).
 
@@ -40,7 +56,7 @@ In diesem Abschnitt erfahren Sie, wie Sie die [!DNL Data Connection]-Erweiterung
 
 ### Hinzufügen von Details zum Service-Konto und zu den Anmeldedaten
 
-Wenn Sie (historische [) oder (Kundenprofildaten](#send-historical-order-data) [ erfassen und senden möchten](#send-customer-profile-data) müssen Sie Details zum Service-Konto und zu den Anmeldedaten hinzufügen. Wenn Sie die Erweiterung [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) konfigurieren, müssen Sie außerdem die folgenden Schritte ausführen.
+Wenn Sie (historische [) oder (Kundenprofildaten](#send-historical-order-data) [&#x200B; erfassen und senden möchten](#send-customer-profile-data) müssen Sie Details zum Service-Konto und zu den Anmeldedaten hinzufügen. Wenn Sie die Erweiterung [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) konfigurieren, müssen Sie außerdem die folgenden Schritte ausführen.
 
 Wenn Sie nur Storefront- oder Back-Office-Daten erfassen und senden, können Sie zum Abschnitt [Allgemein](#general) wechseln.
 
@@ -53,7 +69,7 @@ Um das Projekt zu erstellen, führen Sie die Schritte aus, die im Tutorial [Auth
 Stellen Sie beim Durchlaufen des Tutorials sicher, dass Ihr Projekt Folgendes enthält:
 
 - Zugriff auf die folgenden [Produktprofile](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **Standardzugriff für alle Produktionsvorgänge** und **Standardzugriff für alle AEP**.
-- Die richtigen [Rollen und Berechtigungen sind ](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+- Die richtigen [Rollen und Berechtigungen sind &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
 - Wenn Sie sich für die Verwendung von JSON Web Token (JWT) als Server-zu-Server-Authentifizierungsmethode entschieden haben, müssen Sie auch einen privaten Schlüssel hochladen.
 
 Als Ergebnis dieses Schritts wird eine Konfigurationsdatei erstellt, die Sie im nächsten Schritt verwenden.
@@ -96,9 +112,9 @@ In diesem Abschnitt geben Sie den Datentyp an, den Sie erfassen und an Experienc
 
 - **Verhalten** (Client-seitige Daten) sind Daten, die in der Storefront erfasst werden. Dazu gehören Käuferinteraktionen wie `View Page`, `View Product`, `Add to Cart` und Informationen [Anforderungsliste](events.md#b2b-events) (für B2B-Händler).
 
-- **Back Office** (Server-seitige Daten) sind Daten, die auf den Commerce-Servern erfasst werden. Dazu gehören Informationen über den Status einer Bestellung, z. B. ob eine Bestellung aufgegeben, storniert, zurückerstattet, versendet oder abgeschlossen wurde. Sie enthält auch [historische ](#send-historical-order-data).
+- **Back Office** (Server-seitige Daten) sind Daten, die auf den Commerce-Servern erfasst werden. Dazu gehören Informationen über den Status einer Bestellung, z. B. ob eine Bestellung aufgegeben, storniert, zurückerstattet, versendet oder abgeschlossen wurde. Sie enthält auch [historische &#x200B;](#send-historical-order-data).
 
-- **Profil** sind Daten, die sich auf die Profilinformationen Ihres Kunden beziehen. Weitere [ (](#send-customer-profile-data).
+- **Profil** sind Daten, die sich auf die Profilinformationen Ihres Kunden beziehen. Weitere [&#x200B; (](#send-customer-profile-data).
 
 Um sicherzustellen, dass Ihre Adobe Commerce-Instanz mit der Datenerfassung beginnen kann, überprüfen Sie die [Voraussetzungen](overview.md#prerequisites).
 
@@ -263,7 +279,7 @@ Auf der Registerkarte **Datenanpassung** können Sie alle benutzerdefinierten At
 
 >[!IMPORTANT]
 >
->Stellen Sie sicher, dass die Datenstrom-ID[ die Sie ](#data-collection) der Registerkarte **Datenerfassung** angegeben haben, mit der ID übereinstimmt, die mit dem Schema für die Aufnahme benutzerdefinierter Attribute verknüpft ist.
+>Stellen Sie sicher, dass die Datenstrom-ID[&#x200B; die Sie &#x200B;](#data-collection) der Registerkarte **Datenerfassung** angegeben haben, mit der ID übereinstimmt, die mit dem Schema für die Aufnahme benutzerdefinierter Attribute verknüpft ist.
 
 Wenn Sie benutzerdefinierte Attribute für Bestellungen erstellen und an die Experience Platform senden, müssen die Attributnamen in Commerce mit denen im [!DNL Commerce] in der Experience Platform übereinstimmen. Wenn sie nicht übereinstimmen, kann es schwierig sein, die Unterschiede zu identifizieren. Wenn Namen nicht übereinstimmen, kann die Tabelle **Benutzerdefinierte Bestellattribute** helfen, das Problem zu lösen.
 
@@ -287,7 +303,7 @@ Erfahren Sie mehr über das [Einrichten benutzerdefinierter Attribute](custom-at
 
 ## Überprüfen, ob Ereignisdaten erfasst werden
 
-Um zu bestätigen, dass Daten aus Ihrem Commerce-Store erfasst werden, verwenden Sie den [Adobe Experience Platform-Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html), um Ihre Commerce-Site zu untersuchen. Nachdem Sie bestätigt haben, dass Daten erfasst werden, können Sie überprüfen, ob Ihre Storefront- und Backoffice-Ereignisdaten am Edge angezeigt werden, indem Sie eine Abfrage ausführen, die Daten aus dem von [ erstellten Datensatz ](overview.md#prerequisites).
+Um zu bestätigen, dass Daten aus Ihrem Commerce-Store erfasst werden, verwenden Sie den [Adobe Experience Platform-Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html), um Ihre Commerce-Site zu untersuchen. Nachdem Sie bestätigt haben, dass Daten erfasst werden, können Sie überprüfen, ob Ihre Storefront- und Backoffice-Ereignisdaten am Edge angezeigt werden, indem Sie eine Abfrage ausführen, die Daten aus dem von [&#x200B; erstellten Datensatz &#x200B;](overview.md#prerequisites).
 
 1. Wählen **im** Navigationsbereich von Experience Platform „Abfragen“ aus und klicken Sie auf [!UICONTROL Create Query].
 

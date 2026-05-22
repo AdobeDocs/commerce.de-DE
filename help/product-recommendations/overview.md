@@ -4,10 +4,19 @@ description: Erfahren Sie mehr über Produktempfehlungen in Adobe Commerce. Entd
 recommendations: noCatalog
 exl-id: 72850cfd-555c-4e0e-ac3e-097e6dac2030
 TQID: https://experienceleague.adobe.com/kRTCG6D5k17Ah-1Q-XNZq4o48xqIwlpI8vDQJDTEeoU
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bbbea26f-9621-49eb-9ab8-e06fb3bbce8cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 738
@@ -17,7 +26,7 @@ ht-degree: 0%
 
 # Was sind [!DNL Product Recommendations]?
 
-[!DNL Product Recommendations] können Ihnen mithilfe von [Adobe AIpersonalisierte Produktempfehlungen für Adobe Commerce-Storefronts ](https://business.adobe.com/ai.html) und maschinelles Lernen für das aggregierte Käuferverhalten und Ihren Katalog zeigen. Diese Übersicht behandelt Service-Einschränkungen (einschließlich HIPAA), Daten und Datenschutz, wo Empfehlungseinheiten angezeigt werden, Storefront-Implementierungspfade, wie Empfehlungen Produktbeziehungen ergänzen und die Aufbewahrung von Katalogdaten.
+[!DNL Product Recommendations] können Ihnen mithilfe von [Adobe AIpersonalisierte Produktempfehlungen für Adobe Commerce-Storefronts &#x200B;](https://business.adobe.com/ai.html) und maschinelles Lernen für das aggregierte Käuferverhalten und Ihren Katalog zeigen. Diese Übersicht behandelt Service-Einschränkungen (einschließlich HIPAA), Daten und Datenschutz, wo Empfehlungseinheiten angezeigt werden, Storefront-Implementierungspfade, wie Empfehlungen Produktbeziehungen ergänzen und die Aufbewahrung von Katalogdaten.
 
 >[!IMPORTANT]
 >
@@ -49,7 +58,7 @@ Wählen Sie die Dokumentation aus, die Ihrer Storefront entspricht:
 
 ## Produktempfehlungen versus Produktbeziehungen
 
-Angesichts der sich ständig verändernden Komplexität von Online-Shopping, ist das, was am besten für Ihre Storefront funktioniert, oft eine Kombination aus mehreren Schlüsseltechnologien. Die Verwendung von [!DNL Product Recommendations]- [Produktbeziehungen](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) bietet Ihnen mehr Flexibilität bei der Promotion von Produkten. Sie können [!DNL Product Recommendations] mit Adobe AI nutzen, um Ihre Empfehlungen im benötigten Umfang intelligent zu automatisieren. Anschließend können Sie &quot;[ Produktregeln“ nutzen](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) wenn Sie manuell eingreifen müssen und sicherstellen müssen, dass eine bestimmte Empfehlung an ein Zielkunden-Segment gesendet wird oder wenn bestimmte Geschäftsziele erfüllt werden müssen.
+Angesichts der sich ständig verändernden Komplexität von Online-Shopping, ist das, was am besten für Ihre Storefront funktioniert, oft eine Kombination aus mehreren Schlüsseltechnologien. Die Verwendung von [!DNL Product Recommendations]- [Produktbeziehungen](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) bietet Ihnen mehr Flexibilität bei der Promotion von Produkten. Sie können [!DNL Product Recommendations] mit Adobe AI nutzen, um Ihre Empfehlungen im benötigten Umfang intelligent zu automatisieren. Anschließend können Sie &quot;[&#x200B; Produktregeln“ nutzen](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) wenn Sie manuell eingreifen müssen und sicherstellen müssen, dass eine bestimmte Empfehlung an ein Zielkunden-Segment gesendet wird oder wenn bestimmte Geschäftsziele erfüllt werden müssen.
 
 Produktempfehlungen ermöglichen Ihnen Folgendes:
 
@@ -73,4 +82,4 @@ Wenn Ihre Umgebung 45 Tage nach **Erstellung einen** Katalog hat, werden die Kat
 
 ### Reaktivieren von Katalogdaten
 
-Um Katalogdaten nach dem Ruhezustand wiederherzustellen[ senden Sie eine Support-Anfrage ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) dem Titel &quot;[!DNL Product Recommendations] erneut aktivieren“ und schließen Sie die Umgebungs-IDs ein. Katalogdaten sollten innerhalb weniger Stunden wiederhergestellt werden.
+Um Katalogdaten nach dem Ruhezustand wiederherzustellen[&#x200B; senden Sie eine Support-Anfrage &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) dem Titel &quot;[!DNL Product Recommendations] erneut aktivieren“ und schließen Sie die Umgebungs-IDs ein. Katalogdaten sollten innerhalb weniger Stunden wiederhergestellt werden.
