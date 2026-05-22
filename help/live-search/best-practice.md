@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
-source-wordcount: 2966
+source-wordcount: 3008
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ Es ist von entscheidender Bedeutung, eine gut durchdachte Standard-Suchregel fes
 - Heben Sie Produkte hervor, die zum Verkauf stehen oder Teil von Sonderaktionen sind.
 - Legen Sie Suchregeln während der Promotion oder des Verkaufszeitraums automatisch fest, indem Sie den Datumsbereich während des Promotion-Zeitraums verwenden.
 - Verwenden Sie immer das Bedienfeld „Regel testen“, um eine Vorschau anzuzeigen, wie sich Ihre intelligente Rangfolgestrategie auf die tatsächlichen Suchergebnisse für verschiedene Abfragen auswirkt.
+- Wenn Sie intelligentes Ranking aktivieren, **[Sie](rules-add.md#intelligent-ranking-boost)** Regeleditor die intelligente Ranking-Optimierung an, um Beliebtheitssignale mit Textrelevanz auszugleichen und die Ergebnisse für Zielabfragen in **Testen Sie Ihre Regel** zu überprüfen. Der intelligente Ranking-Boost ist für die **None**-Strategie nicht verfügbar.
 - Passen Sie Suchergebnisse mithilfe von „Intelligent Ranking[&#x200B; wie &quot;](rules-add.md#intelligent-ranking) für Sie empfohlen“, „Am häufigsten angezeigt“ usw. an das individuelle Kundenverhalten an. Um das Kundenverhalten anzupassen, müssen Sie sicherstellen, dass das Eventing korrekt implementiert ist. Für Händler in Luma ist das Eventing vorkonfiguriert verfügbar. Bei Headless- oder benutzerdefinierten Implementierungen müssen Sie [Ereignis implementieren](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) basierend auf Ihren spezifischen Anforderungen.
 
 Weitere Informationen zu Suchregeln:

@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
 workflow-type: tm+mt
-source-wordcount: 3060
+source-wordcount: 3098
 ht-degree: 1%
 
 ---
@@ -40,6 +40,10 @@ Zu den Aktualisierungen gehören:
 ## Gehostete Service-Aktualisierungen
 
 Diese Hinweise beschreiben Aktualisierungen, die außerhalb einer versionierten Version veröffentlicht wurden, oder Verbesserungen am gehosteten Service.
+
+_22. Mai 2026_
+
+![Neu](../assets/new.svg) Regeln für Such-Merchandising, Standardregeln und [Kategorie-Merchandising](./category-merch.md) enthalten jetzt **[!UICONTROL Intelligent Ranking Boost]**, sodass Sie abstimmen können, wie stark intelligente Rangfolgestrategien die Ergebnisse in Bezug auf die Textrelevanz beeinflussen. Die Regelvorschau entspricht dem konfigurierten Boost. [Weitere Informationen](./rules-add.md#intelligent-ranking-boost).
 
 _1. Oktober 2025_
 

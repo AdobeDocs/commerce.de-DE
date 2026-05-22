@@ -12,9 +12,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 657c4b3123407580dfeb2c021a5a1ba515e82115
 workflow-type: tm+mt
-source-wordcount: 2085
+source-wordcount: 2547
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Eine Regel kann bis zu zehn Bedingungen enthalten. Der logische Operator, der zw
 
 1. Um eine weitere Bedingung hinzuzufügen, klicken Sie auf **Bedingung hinzufügen** und wiederholen Sie den Vorgang.
 
-## Intelligente Rangfolge
+## Intelligente Rangfolge {#intelligent-ranking}
 
 Intelligente Rangfolge kombiniert Benutzerverhalten und Website-Statistiken, um das Produkt-Ranking zu bestimmen.
 Store-Inhaber können die folgenden Arten von Rangfolgestrategien einrichten:
@@ -99,11 +99,38 @@ Store-Inhaber können die folgenden Arten von Rangfolgestrategien einrichten:
 * Trends: Blicken Sie auf die Seitenansichtsereignisse der letzten 72 Stunden für Hintergrundereignisse und 24 Stunden für Vordergrundereignisse zurück.
 * Keine: Die Produkte werden nach Relevanz sortiert.
 
-Wählen Sie den Strategietyp für die Regel aus. Das Fenster **Regel testen** zeigt die erwarteten Ergebnisse an.
+Wählen Sie den Strategietyp für die Regel aus. Das **[!UICONTROL Test your rule]** zeigt die erwarteten Ergebnisse an.
 
-### Funktionsweise der intelligenten Rangfolgenbewertung
+### Intelligente Ranking-Optimierung {#intelligent-ranking-boost}
 
-Das intelligente Ranking bestimmt die endgültige Produktreihenfolge durch die Kombination zweier Schlüsselfaktoren: **Textrelevanz** und **Verhaltenssignale**. Wenn Sie verstehen, wie diese Faktoren interagieren, können Sie realistische Erwartungen an Ihre Suchergebnisse stellen.
+Für **Empfohlen für Sie**, **Am häufigsten angezeigt**, **Am häufigsten gekauft**, **Am häufigsten zum Warenkorb hinzugefügt** und **Trending** zeigt der Editor **[!UICONTROL Intelligent Ranking Boost]** (den Verstärkungsfaktor) an. Er wird nicht verwendet, wenn Sie &quot;**&quot;**.
+
+Verwenden Sie diese Steuerung, um abzuwägen, wie stark **Verhaltenssignale** die Sortierung in Bezug auf **textliche Relevanz** auf der Suche und in Bezug auf andere Rangfolgesignale auf **Kategorieseiten** und **Standardlisten**. Der Boost ist für **Suchabfrageregeln**, **Standardregeln** und **Kategorie-Merchandising-Regeln** verfügbar. Jede Regel speichert ihren eigenen Wert.
+
+| Verhalten | Detail |
+| --- | --- |
+| Standard | `5` (entspricht dem vorherigen festen Verhaltensmultiplikator). |
+| Bereich | Von `1` (sanfter Verhaltenseinfluss) bis `100` (stärkerer Einfluss). |
+| Umfang | Gilt nur für Abfragen oder Listeneinträge, die das Ziel der Regel sind. Andere Regeln behalten ihre eigenen Verstärkungswerte bei. |
+| Vorschau | Die Regelvorschau verwendet denselben Verstärkungsfaktor wie Live-Ergebnisse für diese Regel. |
+| Indizierung | Wird zur **Abfragezeit** angewendet. Sie benötigen keinen Katalog neu synchronisieren oder vollständig neu indizieren, nur weil Sie diese Einstellung geändert haben. |
+
+**Wann muss der Verstärker erhöht oder verringert werden**
+
+* **Erhöhen** Wenn Strategien wie **Am häufigsten angezeigt** SKUs mit hohem Engagement für mehrdeutige oder umfassende Abfragen aggressiver aufzeigen sollten, ohne jeden Steckplatz manuell anzuheften.
+* **Niedriger** Der Boost, wenn Sie die Qualität der Textübereinstimmung benötigen, um die Liste strenger zu gestalten, und Verhaltensdaten sollten die Reihenfolge nur geringfügig verbessern.
+
+**Wann sollte stattdessen die manuelle Rangfolge verwendet werden**
+
+Verwenden Sie **Pin**, **Boost** oder **Bury**, wenn Sie bestimmte Produkte in exakten Positionen oder garantierter Sichtbarkeit benötigen, unabhängig von katalogweiten Signalen. **[!UICONTROL Intelligent Ranking Boost]** passt für diese Regel eine **globale** Verhaltensgewichtung an; sie ersetzt nicht die Steuerung auf SKU-Ebene.
+
+>[!NOTE]
+>
+> Eine hohe **[!UICONTROL Intelligent Ranking Boost]** kann einen **manuellen Schub** auf demselben Produkt überwiegen. Wenn eine erweiterte SKU niedriger ist als erwartet, **[!UICONTROL Test your rule]** oder in der Storefront, **[!UICONTROL Intelligent Ranking Boost]** niedriger oder **Pin** das Produkt an eine bestimmte Position gebracht. Jede Änderung verschiebt das manuell sortierte Produkt in den Ergebnissen nach oben.
+
+### Funktionsweise der intelligenten Rangfolgenbewertung (Suche)
+
+Für **Suchregeln** (und die Testabfrage im Regeleditor) bestimmt ein intelligentes Ranking die endgültige Produktreihenfolge, indem zwei Schlüsselfaktoren kombiniert werden: **Textrelevanz** und **Verhaltenssignale**. Wenn Sie verstehen, wie diese Faktoren interagieren, können Sie realistische Erwartungen an Ihre Suchergebnisse stellen.
 
 **Bewertungskomponenten:**
 
@@ -112,19 +139,23 @@ Das intelligente Ranking bestimmt die endgültige Produktreihenfolge durch die K
    * Häufigkeit des Auftretens von übereinstimmenden Wörtern.
    * Länge (in Worten) der Produktnamen/-beschreibungen.
 
-* **Verhaltenssignale**: Ein begrenzter Verstärker, der zusätzlich zum Textrelevanzwert angewendet wird. Wenn Sie eine intelligente Rangfolgestrategie wie „Am häufigsten angezeigt“ oder „Am häufigsten gekauft“ auswählen, erhalten Produkte mit höheren Verhaltenssignalen eine feste Steigerung ihrer Bewertungen. Dieser Schub hat jedoch eine definierte Grenze.
+* **Verhaltenssignale**: Ein begrenzter Verstärker, der zusätzlich zum Textrelevanzwert angewendet wird. Wenn Sie eine intelligente Rangfolgestrategie wie „Am häufigsten angezeigt“ oder „Am häufigsten gekauft“ auswählen, erhalten Produkte mit höheren Verhaltenssignalen eine höhere relative Gewichtung. Die Stärke dieser Gewichtung wird durch **[!UICONTROL Intelligent Ranking Boost]** gesteuert (siehe [Intelligente Rangverstärkung](#intelligent-ranking-boost)). Die Steigerung bleibt begrenzt, aber Sie können erhöhen, wie viel sie der Reihenfolge nach verschiebt.
 
 **Warum das am häufigsten angezeigte Produkt möglicherweise nicht zuerst angezeigt wird:**
 
-Die textliche Relevanz dominiert in der Regel das Ranking, da die Punktzahl unbegrenzt ist, während die Verhaltenssteigerungen fixiert sind. Daher übertreffen Produkte mit starkem Text häufig diejenigen mit höheren Interaktionssignalen. Verhaltenssteigerungen allein können große Lücken in der Textrelevanz möglicherweise nicht ausgleichen. Das intelligente Ranking berücksichtigt dies, indem sowohl die Spielqualität als auch die Kundeninteraktion berücksichtigt werden, was die Gesamtrelevanz verbessert. Die Qualität der Textübereinstimmung bleibt jedoch der primäre Treiber der Rangfolge.
+Die textliche Relevanz dominiert oft das Ranking, da die Punktzahl unbegrenzt ist, während der verhaltensbezogene Einfluss durch das Boost-Modell begrenzt wird. Produkte mit sehr starken Textübereinstimmungen können SKUs mit höherer Interaktion immer noch übertreffen, es sei denn, Sie erhöhen die **[!UICONTROL Intelligent Ranking Boost]** für diese Regel. Selbst bei höheren Verstärkungswerten kann eine extreme Textrelevanzlücke die Liste nicht vollständig umkehren, da die Qualität der Textübereinstimmung ein primärer Treiber bleibt. Überprüfen Sie die Ergebnisse immer in **[!UICONTROL Test your rule]** für Ihre Zielgruppenabfragen.
 
 **Beispiel:**
 
-Ein Händler verwendet die „am häufigsten angesehene“ intelligente Rangfolgestrategie und sucht nach „Candle“. Sie erwarten, dass die Produkt-SKU YAN-K-E-512 an der Spitze der Ergebnisse angezeigt wird, da sie die höchste Ansichtsanzahl aufweist. Andere Produkte sind jedoch höher:
+Ein Händler verwendet die „am häufigsten angesehene“ intelligente Rangfolgestrategie und sucht nach **Kerze**. Sie erwarten, dass die Produkt-SKU YAN-K-E-512 an der Spitze der Ergebnisse angezeigt wird, da sie die höchste Ansichtsanzahl aufweist. Andere Produkte sind jedoch höher:
 
-* **Texas Candle** (1. Position): Hat einen kürzeren, saubereren Produktnamen, der einen sehr hohen Textrelevanzwert erzeugt. Obwohl es weniger Ansichten als YAN-K-E-512 hat, überwiegt seine überlegene Textübereinstimmung den Verhaltensschub.
+* **Texas Candle** (1. Position): Hat einen kürzeren, saubereren Produktnamen, der einen sehr hohen Textrelevanzwert erzeugt. Obwohl es weniger Ansichten als **YAN-K-E-512** hat, überwiegt seine überlegene Textübereinstimmung den Verhaltensschub.
 
-* **YAN-K-E-512** (untere Position): Obwohl der Name das höchste Ansichts-Perzentil in den Verhaltensdaten mit dem Status „Am häufigsten angezeigt“ hat, erzeugt sein komplexer, auf SKU basierender Name einen niedrigeren Textrelevanzwert. Der feste Verhaltensschub reicht nicht aus, um diese Lücke in der Textrelevanz zu schließen.
+* **YAN-K-E-512** (untere Position): Obwohl der Name das höchste Ansichts-Perzentil in den Verhaltensdaten mit dem Status „Am häufigsten angezeigt“ hat, erzeugt sein komplexer, auf SKU basierender Name einen niedrigeren Textrelevanzwert. Im **[!UICONTROL Intelligent Ranking Boost]** (`5`) reicht der Verhaltenseinfluss möglicherweise nicht aus, um diese Textlücke zu schließen. Bei Produkten, die bereits mit der **übereinstimmen, kann die Steigerung** YAN-K-E-512) höher ausfallen. **YAN-K-E-512** muss auch mit der Abfrage übereinstimmen: Mindestens ein durchsuchbares Attribut für diese SKU muss **candle** enthalten, sonst wird es nicht in den Ergebnissen angezeigt und die Steigerung kann nicht angewendet werden.
+
+**Beispiel (allgemeine Abfrage):**
+
+Bei einer Abfrage wie **Holz** können mehrere Produkte eine ähnliche Textrelevanz aufweisen, während die Anzahl der Ansichten unterschiedlich ist. Wenn **Am häufigsten angezeigt** ausgewählt ist, steigt die Wahrscheinlichkeit, dass die historisch am häufigsten angezeigte relevante SKU mit zunehmender **[!UICONTROL Intelligent Ranking Boost]** über leichtere Übereinstimmungen auftaucht. Durch das Verringern der Steigerung können die Ergebnisse näher an der reinen Textreihenfolge liegen.
 
 Unter [Suchregeln](./best-practice.md#search-rules) erfahren Sie, wie Sie die Auffindbarkeit von Produkten mithilfe von Regeln verbessern.
 
@@ -245,3 +276,9 @@ Die hier eingegebenen Informationen werden im Bedienfeld [Regeldetails](rules-wo
 | Startdatum | Das Startdatum der Regel, falls geplant. |
 | Enddatum | Das Enddatum der Regel, falls geplant. |
 | Beschreibung | Eine kurze Beschreibung der Regel. |
+
+### Intelligente Ranking-Steuerelemente
+
+| Feld | Beschreibung |
+| --- | --- |
+| [!UICONTROL Intelligent Ranking Boost] | Wenn eine andere intelligente Strategie als **Keine** ausgewählt wird, steuert diese Einstellung, wie stark sich Verhaltenssignale auf das Ranking für diese Regel auswirken. `5`; zulässiger Bereich `1`-`100`. Wird zur Abfragezeit angewendet. Die Regelvorschau entspricht dem Live-Verhalten der konfigurierten Regel. |

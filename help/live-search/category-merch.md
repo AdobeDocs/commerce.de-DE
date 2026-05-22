@@ -13,9 +13,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
-source-wordcount: 1131
+source-wordcount: 1171
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Die Funktion ist im Administrator unter **Marketing** > SEO &amp; Search > **[!D
 >
 >Kategorie-Merchandising ist ab Version [!DNL Live Search] [.0.0 &#x200B;](release-notes.md). Wenn Sie die Kategorie Merchandising-Arbeitsbereich sehen, sie jedoch nicht mit Daten gefüllt ist, aktualisieren Sie das [!DNL Live Search].
 
-![Kategorie Merchandising](assets/category_workspace.png)
+![Merchandising-Arbeitsbereich für Kategorie](assets/category_workspace.png)
 
 Die Merchandising-Ansicht „Kategorie“ zeigt definierte Kategorieregeln mit Spalten für:
 
@@ -60,6 +60,9 @@ Intelligente Ranking-Methoden sind:
 * Empfohlen: Anhand des vorherigen und aktuellen Onsite-Verhaltens jedes Käufers werden Produkte nach der Wahrscheinlichkeit geordnet, mit der der Käufer mit jedem Kontakt interagiert.
 * Trends: Sortiert Produkte nach den jüngsten Popularitätsaufschwüngen auf der Grundlage von Ansichten.
 * Keine: Produkte werden nach ihrer Standardreihenfolge sortiert.
+
+
+Für jede intelligente Ranking-Methode außer **Keine** können Sie **[!UICONTROL Intelligent Ranking Boost]** im Regeleditor festlegen, um abzustimmen, wie stark sich Verhaltenssignale auf die Produktreihenfolge auswirken. Weitere Informationen zu Standardwerten, Beschränkungen, dem Vorschauverhalten und dem Vergleich von &quot;**Ranking“ finden** unter [Intelligent Ranking Boost](rules-add.md#intelligent-ranking-boost).
 
 **Manuelles Ranking** Ermöglicht es Benutzern, die automatische Produktsortierreihenfolge durch Definieren von manuellen Pin-, Boost-, Bury- und Hide-Regeln außer Kraft zu setzen.
 
@@ -104,7 +107,7 @@ So erstellen Sie eine Kategorieregel:
    ![Kategorie auswählen](assets/category_select.png)
 
 1. Wählen _in der Ansicht_Kategorieregel hinzufügen“ die intelligente Rangfolgenmethode aus, die Sie auf die Kategorie anwenden möchten.
-Die Kategorievorschauseite zeigt die tatsächlichen Ergebnisse der ausgewählten Rangfolge unter Verwendung Ihrer Live Search-Daten an.
+Die Kategorievorschauseite zeigt die tatsächlichen Ergebnisse der ausgewählten Rangfolge unter Verwendung Ihrer [!DNL Live Search] an.
 1. Klicken Sie **Speichern und Veröffentlichen**, um die Regel zu speichern.
 
 ![Wählen Sie die intelligente Rangfolgenmethode aus](assets/category_ranking.png)
