@@ -6,30 +6,11 @@ seo-description: Access the product documentation for hosted services that help 
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
 TQID: https://experienceleague.adobe.com/zKL5fNTECsNOKZfEl7OUSYHTo-wrh81z3-C7wB1SoWM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: da3860b0-d637-47df-bef0-273751180266
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: da3860b0-d637-47df-bef0-273751180266id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1291
@@ -218,11 +199,11 @@ Mit Daten-Tools können Sie den Informationsfluss zwischen Ihrer Commerce-Instan
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="Überwachen der Datensynchronisation" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>Daten-Management-Dashboard</strong>
          </a>
       </div>
@@ -248,7 +229,7 @@ Unabhängig davon, ob Sie Ihr Unternehmen skalieren, Kundenerlebnisse verbessern
 | Erstellen personalisierter Omni-Channel-Erlebnisse | Ihre Commerce-Daten sind isoliert, sodass Sie keine personalisierten Erlebnisse kanalübergreifend bereitstellen können. | Verwenden Sie [Datenverbindung](../data-connection/overview.md) um Verhaltens-, Transaktions- und Profildaten an Adobe Experience Platform zu senden. Erstellen Sie anspruchsvolle Kundensegmente, erstellen Sie Kampagnen mit Transaktionsabbruch, sprechen Sie Lookalike-Zielgruppen an und analysieren Sie saisonale Trends auf Ihrem gesamten Kunden-Journey. |
 | Optimierung der Verwaltung digitaler Assets | Die Verwaltung von Produkt-Images und Rich-Media-Inhalten über mehrere Systeme hinweg ist zeitaufwendig und fehleranfällig. | Die [AEM Assets-Integration](../aem-assets-integration/overview.md) bietet zentralisiertes Asset-Management, indem Adobe Commerce mit einem Adobe Experience Manager Assets-Projekt verbunden wird, Workflows vereinfacht und konsistente Markenerlebnisse auf allen Touchpoints sichergestellt werden. |
 | Optimieren der Zahlungsverarbeitung | Begrenzte Zahlungsoptionen und schlechte Zahlungserfahrungen schaden der Kundenzufriedenheit und der Konversion. | [Payment Services](../payment-services/guide-overview.md) bietet mehrere Zahlungsmethoden, einschließlich zinsfreier Raten, mit einem einheitlichen Dashboard zur Verwaltung von Zahlungen, Bestellungen und Rechnungen. |
-| Datensynchronisierung skaliert verwalten | Die ressourcenintensive Indizierung verlangsamt Ihre Site, und Sie können Probleme bei der Datensynchronisation nicht einfach verfolgen. | [SaaS Data Export](../data-export/overview.md), [SaaS Price Indexer](../price-index/price-indexing.md) und das [Data Management Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) synchronisieren automatisch Katalog-, Auftrags- und Bestandsdaten, entlasten Preisberechnungen auf die Cloud-Infrastruktur von Adobe und bieten Echtzeiteinblicke in den Synchronisierungsstatus. |
+| Datensynchronisierung skaliert verwalten | Die ressourcenintensive Indizierung verlangsamt Ihre Site, und Sie können Probleme bei der Datensynchronisation nicht einfach verfolgen. | [SaaS Data Export](../data-export/overview.md), [SaaS Price Indexer](../price-index/price-indexing.md) und das [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) synchronisieren automatisch Katalog-, Auftrags- und Bestandsdaten, entlasten Preisberechnungen auf die Cloud-Infrastruktur von Adobe und bieten Echtzeiteinblicke in den Synchronisierungsstatus. |
 | Verlorene Kunden zurückgewinnen und Renditen reduzieren | Hohe Kundenabwanderungs- und Produktrenditen wirken sich negativ auf die Rentabilität aus. | Kombinieren Sie [Datenverbindung](../data-connection/overview.md) mit Adobe Journey Optimizer und Real-Time CDP, um Rückgabemuster zu identifizieren, Win-Back-Kampagnen zu erstellen, Kundinnen und Kunden nach Verhalten zu segmentieren und personalisierte Rückgewinnungskampagnen über E-Mail und SMS zu senden. |
 | Treffen von datengesteuerten Merchandising-Entscheidungen | Sie sind sich nicht sicher, welche Produkte beworben werden sollen und wann Werbeaktionen durchgeführt werden sollen. | [Live Search](../live-search/overview.md) bietet Suchleistungseinblicke und Merchandising-Tools für den Zugriff auf Schlüsselmetriken, die Analyse von Suchbegriffen und die Verwendung intelligenter Merchandising-Regeln, um Produkte basierend auf echtem Kundenverhalten und Geschäftszielen zu fördern oder zu begraben. |
 | Einhaltung sensibler Daten | Sie müssen vertrauliche Kundendaten verarbeiten und gleichzeitig die HIPAA-Konformität gewährleisten. | [Datenverbindung](../data-connection/overview.md) ist HIPAA-fähig, sodass Sie Backoffice-Daten mit Experience Platform freigeben können, während Sie die Compliance beibehalten und Datenschutzanfragen systematisch bearbeiten. |
