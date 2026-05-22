@@ -3,38 +3,34 @@ title: Kategorie-Merchandising
 description: Verwenden  [!DNL Live Search]  Kategorie-Merchandising für ein schnelleres Einkaufserlebnis.
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
-source-wordcount: 1131
+source-wordcount: 1171
 ht-degree: 0%
 
 ---
 
 # Kategorie-Merchandising
 
-Mit dem Kategorie-Merchandising können Store-Besitzer [!DNL Live Search] intelligente [&#x200B; (Regeln](rules.md) auf Produktkategorien und Unterkategorien anwenden.
+Mit dem Kategorie-Merchandising können Store-Besitzer [!DNL Live Search] intelligente [ (Regeln](rules.md) auf Produktkategorien und Unterkategorien anwenden.
 
 Dieses Video ist eine Einführung in das Kategorie-Merchandising.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448860?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 Die Funktion ist im Administrator unter **Marketing** > SEO &amp; Search > **[!DNL Live Search]** > (Kategorie **Merchandising** verfügbar.
 
 >[!NOTE]
 >
->Kategorie-Merchandising ist ab Version [!DNL Live Search] [.0.0 &#x200B;](release-notes.md). Wenn Sie die Kategorie Merchandising-Arbeitsbereich sehen, sie jedoch nicht mit Daten gefüllt ist, aktualisieren Sie das [!DNL Live Search].
+>Kategorie-Merchandising ist ab Version [!DNL Live Search] [.0.0 ](release-notes.md). Wenn Sie die Kategorie Merchandising-Arbeitsbereich sehen, sie jedoch nicht mit Daten gefüllt ist, aktualisieren Sie das [!DNL Live Search].
 
-![Kategorie Merchandising](assets/category_workspace.png)
+![Merchandising-Arbeitsbereich für Kategorie](assets/category_workspace.png)
 
 Die Merchandising-Ansicht „Kategorie“ zeigt definierte Kategorieregeln mit Spalten für:
 
@@ -51,7 +47,7 @@ Sie können im Feld „Suche nach Kategorie“ nach einer Kategorie oder Unterka
 Kategorie-Merchandising verwendet dieselben Ranking-Typen wie bei [einzelnen Produkten](rules-workspace.md).
 Es gibt zwei Arten von Rankings: Intelligent und Manual.
 
-**Intelligent Ranking** nutzt die Verhaltensdatenanalyse der Storefront durch [Adobe AI](https://business.adobe.com/de/ai.html) um alle Produkte innerhalb ausgewählter Kategorien nach einem bestimmten Algorithmus zu sortieren. Sobald ein Intelligent-Ranking ausgewählt wurde, wird erwartet, dass sich die spezifische Produktreihenfolge im Laufe der Zeit ändert, da die zugrunde liegenden Daten von Adobe AI laufend neu analysiert werden. Die beliebtesten Produkte ändern sich beispielsweise automatisch im Laufe der Zeit, wenn sich die Kundenpräferenzen ändern.
+**Intelligent Ranking** nutzt die Verhaltensdatenanalyse der Storefront durch [Adobe AI](https://business.adobe.com/ai.html) um alle Produkte innerhalb ausgewählter Kategorien nach einem bestimmten Algorithmus zu sortieren. Sobald ein Intelligent-Ranking ausgewählt wurde, wird erwartet, dass sich die spezifische Produktreihenfolge im Laufe der Zeit ändert, da die zugrunde liegenden Daten von Adobe AI laufend neu analysiert werden. Die beliebtesten Produkte ändern sich beispielsweise automatisch im Laufe der Zeit, wenn sich die Kundenpräferenzen ändern.
 Intelligente Ranking-Methoden sind:
 
 * Am häufigsten gekauft: Sortiert Produkte nach der Häufigkeit, mit der sie von Käufern in den letzten sieben Tagen gekauft wurden.
@@ -60,6 +56,9 @@ Intelligente Ranking-Methoden sind:
 * Empfohlen: Anhand des vorherigen und aktuellen Onsite-Verhaltens jedes Käufers werden Produkte nach der Wahrscheinlichkeit geordnet, mit der der Käufer mit jedem Kontakt interagiert.
 * Trends: Sortiert Produkte nach den jüngsten Popularitätsaufschwüngen auf der Grundlage von Ansichten.
 * Keine: Produkte werden nach ihrer Standardreihenfolge sortiert.
+
+
+Für jede intelligente Ranking-Methode außer **Keine** können Sie **[!UICONTROL Intelligent Ranking Boost]** im Regeleditor festlegen, um abzustimmen, wie stark sich Verhaltenssignale auf die Produktreihenfolge auswirken. Weitere Informationen zu Standardwerten, Beschränkungen, dem Vorschauverhalten und dem Vergleich von &quot;**Ranking“ finden** unter [Intelligent Ranking Boost](rules-add.md#intelligent-ranking-boost).
 
 **Manuelles Ranking** Ermöglicht es Benutzern, die automatische Produktsortierreihenfolge durch Definieren von manuellen Pin-, Boost-, Bury- und Hide-Regeln außer Kraft zu setzen.
 
@@ -104,7 +103,7 @@ So erstellen Sie eine Kategorieregel:
    ![Kategorie auswählen](assets/category_select.png)
 
 1. Wählen _in der Ansicht_Kategorieregel hinzufügen“ die intelligente Rangfolgenmethode aus, die Sie auf die Kategorie anwenden möchten.
-Die Kategorievorschauseite zeigt die tatsächlichen Ergebnisse der ausgewählten Rangfolge unter Verwendung Ihrer Live Search-Daten an.
+Die Kategorievorschauseite zeigt die tatsächlichen Ergebnisse der ausgewählten Rangfolge unter Verwendung Ihrer [!DNL Live Search] an.
 1. Klicken Sie **Speichern und Veröffentlichen**, um die Regel zu speichern.
 
 ![Wählen Sie die intelligente Rangfolgenmethode aus](assets/category_ranking.png)
