@@ -4,7 +4,8 @@ description: Erfahren Sie mehr über Adobe Commerce Optimizer-Lizenzbeschränkun
 role: Admin, Developer
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
+nudge: true
+source-git-commit: 6ae571dd77206859e69e57100e80bb01416a36cd
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 0%
