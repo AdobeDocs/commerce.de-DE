@@ -1,7 +1,7 @@
 ---
-source-git-commit: c435c7751fca8c46077cbab3534bd9f47cd03b2b
+source-git-commit: bfbfd43620580b8db464b823be6f0f64c97c261d
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1218'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,66 @@ ht-degree: 1%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;22. Mai 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Versionshinweise für die API-Updates zu <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a> und Commerce <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/release-notes">Catalog Service</a> für die Version vom 20. Mai 2026 hinzugefügt, die jetzt das dokumentierte Limit von 100 SKU pro Anfrage beim Abrufen von Produktdaten durchsetzt. Siehe <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits">Grenzen und </a>.</p>
+</td>
+      <td>
+        Technisch
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/342a3015f743e12b7089e4d430a517804a7cd40c">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Dokumentierte intelligente Ranking-Steigerung (konfigurierbare Verhaltensgewichtung pro Regel, Standard 5.0) für [!DNL Live Search] in <a href="https://experienceleague.adobe.com/de/docs/commerce/live-search/live-search-admin/rules/rules-add#intelligent-ranking-boost">Regeln hinzufügen</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce/live-search/best-practice">Best Practices</a> mit einem Querverweis aus <a href="https://experienceleague.adobe.com/de/docs/commerce/live-search/live-search-admin/category-merch">Kategorie-Merchandising</a>. Es wurde dieselbe Anleitung für [!DNL Adobe Commerce Optimizer] in <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">Erstellen und Verwalten</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/best-practice">Best Practices für Merchandising-Regeln“ </a>.</p>
+</td>
+      <td>
+        Größere Aktualisierung
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/40b4528d417a4df09ac9ae9fb0d97b0f678b55ac">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;19. Mai 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Im AEM Assets-Integrationshandbuch wird beschrieben, wie Editoren <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/get-started/configure-aem#localized-alt-text-in-aem-assets-metadata">Alternativtext</a> in der </a> für die <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/release-notes">AEM Assets-Integration v1.3.6 festlegen.</p>
+</td>
+      <td>
+        Größere Aktualisierung
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d3dfbc59e72c00c3552af5805b57c69e60b38b4">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Sandbox <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
+</td>
+      <td>
+        Größere Aktualisierung
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/14aa082c1f0f8ce4c51328eb8ee9f4af25adf859">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;30. April 2026
 
@@ -363,72 +423,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Größere Aktualisierung
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/522240cfd305bb00026ba477dc94e0bd2de30f06">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;23. März 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurde eine neue automatisierte Installation für das <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">Tutorial-Voraussetzungen</a> hinzugefügt.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a383e95e23291959f039390dfd3943bf98aa83ef">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;19. März 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurden neue Themen hinzugefügt: <br />- <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer">Als Kunde anmelden</a> für Adobe Commerce as a Cloud Service.<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/">REST-Endpunkte für Geschenkkartenkonten</a> für Adobe Commerce as a Cloud Service.<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/">E-Mail-Trigger über REST</a> für Adobe Commerce as a Cloud Service.<br /><a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise</a> mit März 2026 - Versionshinweise Nr. 2.</p>
-</td>
-      <td>
-        Neues Thema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/58b94a9a587b3947d4b340ce77c8b3f7b28c27f4">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;17. März 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurde <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/get-started/permissions">Konfigurieren von IMS-Benutzerberechtigungen für die AEM Assets-Integration</a> hinzugefügt, um zu erklären, wie Sie IMS- und Bereitstellungsebenenberechtigungen konfigurieren, um den Asset-Selektor und automatisch ausgefüllte Konfigurationsfelder (Programm-ID, Umgebungs-ID, Domain-Zuordnung) in Admin zu aktivieren.</p>
-</td>
-      <td>
-        Neues Thema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0fd98bf86555c914f7a5b1e177c31c37764dbf84">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
