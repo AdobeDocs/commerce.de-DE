@@ -30,7 +30,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 976bc4114790473d3bdcab6c06684f0c955893ee
 workflow-type: tm+mt
 source-wordcount: 1291
 ht-degree: 0%
@@ -274,4 +274,4 @@ Jeder Service kann unabhängig verwendet werden, aber durch die Kombination ents
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2026-04-20 19:43:27 -->
+<!-- Last updated from includes: 2026-05-22 20:54:53 -->
