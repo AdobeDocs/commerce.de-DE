@@ -52,8 +52,8 @@ Wenn einer der vorherigen Befehle nicht die erwarteten Ergebnisse zurückgibt, f
 
 Überprüfen Sie außerdem Folgendes:
 
-- Sie haben eine [!DNL Adobe Commerce as a Cloud Service] mit Produktdaten. Siehe [Commerce Cloud Service-Instanzen](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/overview){target="_blank"}.
-- Sie haben ein Storefront-Projekt mit Ihrer [!DNL Commerce] verbunden. Wenn Sie noch keine haben, führen Sie die Schritte in [Erstellen einer Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=de){target="_blank"} aus.
+- Sie haben eine [!DNL Adobe Commerce as a Cloud Service] mit Produktdaten. Siehe [Commerce Cloud Service-Instanzen](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Sie haben ein Storefront-Projekt mit Ihrer [!DNL Commerce] verbunden. Wenn Sie noch keine haben, führen Sie die Schritte in [Erstellen einer Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"} aus.
 - Die `aem` CLI wird installiert:
 
   ```bash
@@ -135,7 +135,7 @@ Der Agent gibt eine Reihe von Fragen zurück, die er beantworten muss, bevor er 
 1. **REST-API - Host und Verbraucher** - Soll die CRUD-REST-API Teil dieser App Builder-App (Web-Aktionen auf Adobe I/O Runtime) sein, die von Storefronts aufgerufen wird? Wer wird es nennen (EDS-Storefront, benutzerdefinierte/Headless-Storefront oder beides)? Benötigen Sie CORS, öffentlichen (nicht authentifizierten) Zugriff oder verwenden Anrufer API-Schlüssel oder OAuth?
 1. **Datenmodell** - Was sollte eine „Überprüfung“ oder „Frage“ darstellen? Kundenkennung (nur E-Mail oder auch Kunden-ID)? Produktkennung (nur SKU oder SKU + Shop-Ansicht)? Kann ein und derselbe Kunde mehrere Bewertungen für dieselbe SKU einreichen?
 1. **Persistenz** - Ist `aio-lib-state` der richtige Ort, um Rezensionen und Fragen und Antworten beizubehalten, oder haben Sie einen externen Store? Sollte das Design von mehreren Mandanten oder einem einzelnen Mandanten ausgehen?
-1. **Paginierungssemantik** - Gilt `limit` für Fragen und Antworten mit Fragen nur für Fragen (mit verschachtelten Antworten) oder für die Gesamtzahl der Fragen plus Antworten?
+1. **Paginierungssemantik** - Gilt `limit` für Fragen und Antworten nur für Fragen (mit verschachtelten Antworten) oder für die Gesamtzahl der Fragen plus Antworten?
 
 **Beispielantworten:**
 
@@ -387,7 +387,7 @@ Während der Implementierung erstellt und ändert der Agent Blockdateien. Beobac
 
 Fügen Sie den Produktüberprüfungsblock zur Produktseitenvorlage hinzu, damit er in allen PDPs angezeigt wird. Verwenden Sie den Document Authoring-Service (da.live), um den Block hinzuzufügen und zu konfigurieren.
 
-1. Öffnen Sie den Dokumenterstellungsdienst, z. B[&#x200B; „da.live](https://da.live/)
+1. Öffnen Sie den Dokumenterstellungsdienst, z. B[ „da.live](https://da.live/)
 
 1. Klicken Sie auf Ihren Projektbereich, öffnen Sie den Ordner **Produkte** und wählen Sie **Standard** (`products/default`) aus.
 
@@ -437,8 +437,8 @@ Verwenden Sie die folgenden Tipps, wenn während des Tutorials Probleme auftrete
 
 | Symptom | Ursache | Fehlerbehebung |
 |---------|-------|-----|
-| GET oder POST gibt 500 „Modul wurde nicht gefunden“ zurück | Die Aktionen zur Produktüberprüfung verwenden `require("../../utils")` oder `require("../../constants")`, die dem Paket entzogen sind. Diese Dateien sind bei der Bereitstellung des Pakets nicht enthalten. | Machen Sie das Paket mit den Produktbewertungen eigenständig. Fügen Sie `actions/product-reviews/lib/constants.js` und `actions/product-reviews/lib/utils.js` hinzu und aktualisieren Sie alle vier Aktionen so, dass sie von `../lib/...` anstelle von `../../` angefordert werden. |
-| GET gibt 500 mit der Zeichenfolge „Schlüssel muss dem Muster entsprechen“ zurück. | Bei Statusschlüsseln werden Doppelpunkte verwendet (z. B. `reviews:ADB153`). `aio-lib-state` erlaubt nur `[a-zA-Z0-9-_.]`. | Ändern Sie Präfixe von `reviews:` und `qa:` in `reviews.` und `qa.`. Fügen Sie einen `stateKey(prefix, sku)` Helper hinzu, der die SKU bereinigt (ersetzen Sie ungültige Zeichen durch `_`). |
+| GET oder POST gibt 500 „Module nicht gefunden“ zurück. | Die Aktionen zur Produktüberprüfung verwenden `require("../../utils")` oder `require("../../constants")`, die dem Paket entzogen sind. Diese Dateien sind bei der Bereitstellung des Pakets nicht enthalten. | Machen Sie das Paket mit den Produktbewertungen eigenständig. Fügen Sie `actions/product-reviews/lib/constants.js` und `actions/product-reviews/lib/utils.js` hinzu und aktualisieren Sie alle vier Aktionen so, dass sie von `../lib/...` anstelle von `../../` angefordert werden. |
+| GET gibt 500 mit der Zeichenfolge „Schlüssel muss Muster aufweisen“ zurück | Bei Statusschlüsseln werden Doppelpunkte verwendet (z. B. `reviews:ADB153`). `aio-lib-state` erlaubt nur `[a-zA-Z0-9-_.]`. | Ändern Sie Präfixe von `reviews:` und `qa:` in `reviews.` und `qa.`. Fügen Sie einen `stateKey(prefix, sku)` Helper hinzu, der die SKU bereinigt (ersetzen Sie ungültige Zeichen durch `_`). |
 | POST gibt 500 mit „Wert muss Zeichenfolge sein“ zurück. | `aio-lib-state` akzeptiert nur Zeichenfolgenwerte. Der Code übergibt Arrays oder Objekte an `state.put()`. | Serialisieren mit `JSON.stringify()` beim Schreiben und `JSON.parse()` beim Lesen. Aktualisieren Sie alle vier Aktionen. |
 
 {style="table-layout:auto"}

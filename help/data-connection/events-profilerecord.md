@@ -5,13 +5,9 @@ role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: aaa30886-d9c0-4909-81ee-fad3407cac43
 TQID: https://experienceleague.adobe.com/bHKuzUSApLQNW-M8NY1xb6-WZtjACmRRZ0TtsPM55rU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 499
@@ -33,7 +29,7 @@ Im Folgenden werden die Daten beschrieben, die für einen Profildatensatz erfass
 
 | Feld | Beschreibung |
 |---|---|
-| `channel` | Enthält Informationen zur Datenquelle. Sowohl `_id` als auch `_type` enthalten [Werte mit Namespace](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/namespaces). |
+| `channel` | Enthält Informationen zur Datenquelle. Sowohl `_id` als auch `_type` enthalten [Werte mit Namespace](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces). |
 | `channel._id` | Die eindeutige Kennung des Kanals, z. B. `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifiziert die Quelle der Kanaldaten, z. B. `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | Enthält Informationen zum Kunden. |
@@ -68,6 +64,6 @@ Im Folgenden werden die Daten beschrieben, die für einen Profildatensatz erfass
 
 >[!NOTE]
 >
->Jeder Profildatensatz enthält auch das Feld [`identityMap`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/profile/identitymap) , das die vom System generierte Commerce-Kunden-ID als primäre Kennung für das Profil und eine E-Mail-ID enthält, die als sekundäre Kennung verwendet wird.
+>Jeder Profildatensatz enthält auch das Feld [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) , das die vom System generierte Commerce-Kunden-ID als primäre Kennung für das Profil und eine E-Mail-ID enthält, die als sekundäre Kennung verwendet wird.
 
 Erfahren Sie, wie [ein profildatensatzspezifisches Schema erstellen](profile-data.md) das die Daten aus Ihren Profildatensätzen aufnehmen kann.
