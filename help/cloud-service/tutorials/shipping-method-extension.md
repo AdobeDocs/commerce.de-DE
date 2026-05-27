@@ -6,7 +6,7 @@ role: Developer
 level: Intermediate
 source-git-commit: e55bc4db196d3d973b981bb2484be950dcd6b7c3
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1893'
 ht-degree: 0%
 
 ---
@@ -181,7 +181,7 @@ Dieser Abschnitt führt Sie durch die Entwicklung einer Versandmethodenerweiteru
 1. Überprüfen Sie die `requirements.md` (oder vergleichbare Datei) und überprüfen Sie den Plan. Wenn alles korrekt aussieht, weisen Sie den Agenten an, zur Architekturplanung (oder **Phase 2**) zu wechseln. Bestätigen Sie Folgendes:
 
    - Eine **shipping-methods**-Aktion (oder Ähnliches) verarbeitet den Commerce-Webhook und ruft die API für externe Raten auf.
-   - Eine **shipping-config**-Aktion (oder eine entsprechende Aktion) unterstützt GET (Lesekonfiguration, API-Schlüssel maskiert) und SET (Dienst-URL speichern, API-Schlüssel, Warehouse-Adresse), wobei die Konfiguration sicher gespeichert ist, z. B. im Laufzeitstatus.
+   - Eine **shipping-config**-Aktion (oder eine vergleichbare Aktion) unterstützt GET (read config, API key masked) und SET (save service URL, API key, Warehouse Address), wobei die Konfiguration sicher gespeichert ist, z. B. im Laufzeitstatus.
    - Die Admin-Benutzeroberfläche enthält eine Registerkarte **Pseudolieferung** (oder eine ähnliche Registerkarte) mit Feldern für die Service-URL, den API-Schlüssel (Kennwort/maskiert) und die Warehouse-Adresse.
 
    ![Vom KI-Agenten erstellte Anforderungsdatei mit Details zur Implementierung der Versanderweiterung](../assets/requirements-file-shipping.png){width="600" zoomable="yes"}
