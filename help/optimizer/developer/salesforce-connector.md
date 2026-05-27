@@ -3,25 +3,11 @@ title: Salesforce Commerce Connector
 description: Erfahren Sie mehr über  [!DNL Commerce Optimizer SFCC Connector] , das einen Ausgangspunkt für die Integration von Salesforce Commerce B2C mit  [!DNL Adobe Commerce Optimizer] bietet, um Katalogdaten zu synchronisieren und den Connector zu implementieren und anzupassen, um Geschäftsvorgänge zu unterstützen.
 role: Admin, Developer
 TQID: https://experienceleague.adobe.com/pbzScjaJ7FybdPP06QIhKlowmMbkDHTxUSJUw6eG6JY
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1177
@@ -35,7 +21,7 @@ Die auf der Adobe App Builder-Technologie aufbauende [!DNL Commerce Optimizer Sa
 
 Standardmäßig bietet der Connector zuverlässige Datensynchronisierungsfunktionen und die Flexibilität, Workflows an Ihre Geschäftsanforderungen anzupassen.
 
-Eine vollständige Video-Tutorial-Reihe finden Sie unter [Informationen zum Salesforce Commerce Cloud Starter Kit](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+Eine vollständige Video-Tutorial-Reihe finden Sie unter [Informationen zum Salesforce Commerce Cloud Starter Kit](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 >[!NOTE]
 >

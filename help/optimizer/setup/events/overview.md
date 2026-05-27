@@ -5,22 +5,10 @@ role: Admin, Developer
 recommendations: noCatalog
 exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
 TQID: https://experienceleague.adobe.com/7GSnvyld0t1w3j86HIty1DiQgR8AxYZys3YcGXQ16yQ
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1411
@@ -81,7 +69,7 @@ In dieser Tabelle werden die von der Produkterkennung verwendeten Ereignisse [Ra
 
 #### Erforderliche Dashboard-Ereignisse
 
-Einige Ereignisse sind erforderlich, um das Dashboard [Suchleistung“ &#x200B;](../../manage-results/search-performance.md)
+Einige Ereignisse sind erforderlich, um das Dashboard [Suchleistung“ ](../../manage-results/search-performance.md)
 
 | Dashboard-Bereich | Ereignisse | Feld verbinden |
 | ------------------- | ------------- | ---------- |
@@ -120,11 +108,11 @@ Andere Variablen, die sich auf die für das Training benötigte Zeit auswirken k
 - Einige Empfehlungstypen trainieren schneller als andere
 - [!DNL Adobe Commerce Optimizer] berechnet die Verhaltensdaten alle vier Stunden neu. Empfehlungen werden umso genauer, je länger sie auf Ihrer Site verwendet werden.
 
-Auf der Seite „Empfehlung erstellen[&#x200B; werden Bereitschaftsindikatoren angezeigt, damit Sie den Trainings-Fortschritt &#x200B;](../../merchandising/recommendations/create.md#readiness-indicators) jeden Empfehlungstyp visualisieren können.
+Auf der Seite „Empfehlung erstellen[ werden Bereitschaftsindikatoren angezeigt, damit Sie den Trainings-Fortschritt ](../../merchandising/recommendations/create.md#readiness-indicators) jeden Empfehlungstyp visualisieren können.
 
 Während Daten auf Ihrer Live-Site erfasst werden und die Modelle für maschinelles Lernen trainiert werden, können Sie andere Test- und Konfigurationsaufgaben abschließen, die zum Einrichten von Empfehlungen erforderlich sind. Wenn Sie mit dieser Arbeit fertig sind, verfügen die Modelle über genügend Daten, um nützliche Empfehlungen zu erstellen, sodass Sie sie in Ihrer Storefront bereitstellen können.
 
-Wenn auf Ihrer Site nicht genügend Traffic (Ansichten, Käufe, Trends) für die meisten Produkt-SKUs vorhanden ist, sind möglicherweise nicht genügend Daten vorhanden, um den Lernprozess abzuschließen. Dadurch kann der Bereitschaftsindikator im Recommendations-Arbeitsbereich hängen bleiben. Die Bereitschaftsindikatoren sollen Händlern einen weiteren Datenpunkt bei der Auswahl des Recommendations-Typs bieten, der für ihren Store besser ist. Die Zahlen sind Richtwerte und erreichen möglicherweise nie 100 %. [Weitere &#x200B;](../../merchandising/recommendations/create.md#readiness-indicators) zu Bereitschaftsindikatoren.
+Wenn auf Ihrer Site nicht genügend Traffic (Ansichten, Käufe, Trends) für die meisten Produkt-SKUs vorhanden ist, sind möglicherweise nicht genügend Daten vorhanden, um den Lernprozess abzuschließen. Dadurch kann der Bereitschaftsindikator im Recommendations-Arbeitsbereich hängen bleiben. Die Bereitschaftsindikatoren sollen Händlern einen weiteren Datenpunkt bei der Auswahl des Recommendations-Typs bieten, der für ihren Store besser ist. Die Zahlen sind Richtwerte und erreichen möglicherweise nie 100 %. [Weitere ](../../merchandising/recommendations/create.md#readiness-indicators) zu Bereitschaftsindikatoren.
 
 #### Empfehlungen für Backups
 
@@ -153,7 +141,7 @@ In der folgenden Tabelle sind die Ereignisse aufgeführt, die ausgelöst werden,
 
 #### Erforderliche Dashboard-Ereignisse
 
-Die folgenden Ereignisse sind erforderlich, um das [Recommendations-Performance-Dashboard“ &#x200B;](../../manage-results/recommendation-performance.md)
+Die folgenden Ereignisse sind erforderlich, um das [Recommendations-Performance-Dashboard“ ](../../manage-results/recommendation-performance.md)
 
 | Dashboard-Spalte | Ereignisse | Feld verbinden |
 | ---------------- | --------- | ----------- |
@@ -191,4 +179,4 @@ In dieser Tabelle werden die von den einzelnen Empfehlungstypen verwendeten Erei
 
 ## Support
 
-Wenn Sie Datendiskrepanzen feststellen oder Empfehlungen und Suchergebnisse nicht erwartungsgemäß funktionieren, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Wenn Sie Datendiskrepanzen feststellen oder Empfehlungen und Suchergebnisse nicht erwartungsgemäß funktionieren, [ Sie ein Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

@@ -30,7 +30,7 @@ Suchtext und beide Dropdown-Listen gelten zusammen (logisches UND). Um die volls
 
 ## Mobile App erwerben
 
-**[!UICONTROL Acquire App]** öffnet eine neue Browser-Registerkarte (oder eine separate Browser-Ansicht) für [Adobe Exchange](https://exchange.adobe.com/experiencecloud){target="_blank"}, auf der Sie Commerce-bezogene Marktplatzlisten entdecken und Programme zu Ihrer Adobe IMS-Organisation hinzufügen können. Sobald die App erworben, genehmigt und bereitgestellt wurde, wird sie in [!DNL App Management] für ([&#x200B; und Installation) &#x200B;](#associate-an-app).
+**[!UICONTROL Acquire App]** öffnet eine neue Browser-Registerkarte (oder eine separate Browser-Ansicht) für [Adobe Exchange](https://exchange.adobe.com/experiencecloud){target="_blank"}, auf der Sie Commerce-bezogene Marktplatzlisten entdecken und Programme zu Ihrer Adobe IMS-Organisation hinzufügen können. Sobald die App erworben, genehmigt und bereitgestellt wurde, wird sie in [!DNL App Management] für ([ und Installation) ](#associate-an-app).
 
 ## Voraussetzungen
 
@@ -46,7 +46,7 @@ Bevor Sie eine App verknüpfen, stellen Sie Folgendes sicher:
 
 In diesem Video erfahren Sie, wie Sie eine App mit einer Commerce-Instanz verknüpfen und Einstellungen konfigurieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478964?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## App verknüpfen
 

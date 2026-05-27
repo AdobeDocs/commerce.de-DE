@@ -5,13 +5,9 @@ seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: d1bf3879-3e86-4665-a55c-494963c87f90
 TQID: https://experienceleague.adobe.com/dfZjgp5wR6H4c7WkNNhjLYUgKNTPIqPWxKiShlTU1yA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 398
@@ -23,7 +19,7 @@ ht-degree: 0%
 
 Die SaaS-Preisindizierung optimiert die Site-Performance, indem ressourcenintensive Aufgaben wie Indizierung und Preisberechnung von der Commerce-Anwendung auf die Cloud-Infrastruktur von Adobe verlagert werden. Dieser Ansatz ermöglicht es Händlern, Ressourcen schnell zu skalieren, um die Indexierungszeiten zu beschleunigen und Preisaktualisierungen schneller für die Storefront und verbundene Commerce-Services bereitzustellen.
 
-Das folgende Diagramm zeigt den Indizierungsdatenfluss zu SaaS-Services, wenn Commerce den im Commerce-Programm enthaltenen [Preisindizierungs](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers)-Prozess verwendet:
+Das folgende Diagramm zeigt den Indizierungsdatenfluss zu SaaS-Services, wenn Commerce den im Commerce-Programm enthaltenen [Preisindizierungs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)-Prozess verwendet:
 
 ![Standarddatenfluss](assets/old_way.png)
 
@@ -56,7 +52,7 @@ Die SaaS-Preisindizierung wird bei der Installation von Adobe Commerce Services 
 
 >[!NOTE]
 >
->Bei Bedarf kann der standardmäßige Preisindexer in der Commerce-Anwendung über den [Catalog Adapter“ deaktiviert &#x200B;](catalog-adapter.md).
+>Bei Bedarf kann der standardmäßige Preisindexer in der Commerce-Anwendung über den [Catalog Adapter“ deaktiviert ](catalog-adapter.md).
 
 ## Preise mit SaaS-Preisindizierung synchronisieren
 
