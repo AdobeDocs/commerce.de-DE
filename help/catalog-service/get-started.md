@@ -35,14 +35,14 @@ Nachdem die [!DNL Catalog Service] aktiviert wurde, können Sie auf den Service 
 
 Die [!DNL Catalog Service] ist als GraphQL-API verfügbar, auf die Sie über Commerce Admin oder ein beliebiges Frontend-Programm zugreifen können, das GraphQL-Abfragen unterstützt. Der Service ist sowohl in SaaS- als auch in PaaS-Umgebungen verfügbar.
 
-[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 
 | Umgebung | Endpunkt |
 | ------------ | ----------: |
 | **Testen** | `https://catalog-service-sandbox.adobe.io/graphql` |
 | **Produktion** | `https://catalog-service.adobe.io/graphql` |
 
-[!BADGE nur SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."}
+[!BADGE nur SaaS]{type=Positive url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."}
 
 | Umgebung | Endpunkt |
 | ----------- | --------:|
@@ -65,7 +65,7 @@ Weitere Informationen zur Verwendung der Catalog Service GraphQL-API finden Sie 
 
 Zur Integration mit einer Headless-Storefront müssen Sie die Storefront-Konfiguration aktualisieren, um die Kommunikation zwischen der Storefront und dem [!DNL Catalog Service] zum Abrufen von Produkt- und Kategoriedaten zu ermöglichen.
 
-Wenn Sie die Adobe Commerce-Storefront auf Edge Delivery Services verwenden, fügen Sie den Catalog Service-Endpunkt zur Storefront-Konfiguration hinzu. Weitere Informationen finden Sie in der Dokumentation zu [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/#storefront-configuration).
+Wenn Sie die Adobe Commerce-Storefront auf Edge Delivery Services verwenden, fügen Sie den Catalog Service-Endpunkt zur Storefront-Konfiguration hinzu. Weitere Informationen finden Sie in der Dokumentation zu [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=de#storefront-configuration).
 
 Für andere Integrationen finden Sie Details zum Konfigurieren von Integrationen zwischen dem Service und Backend-Datenquellen in der Dokumentation zu Projekteinstellungen .
 
@@ -83,10 +83,10 @@ Informationen zur Installation [[!DNL Catalog Service]  Konfiguration finden Sie
 
 Commerce Admin bietet Tools zur Überwachung und Fehlerbehebung beim Datenexport aus Commerce in Connected Services:
 
-- **[Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** - Überwachen der Datensynchronisation zwischen dem [!DNL Catalog Service] und Ihrer Adobe Commerce-Instanz. Das Dashboard zeigt den allgemeinen Synchronisierungsstatus an und listet alle synchronisierten Produkte auf.
+- **[Data Management Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** - Überwachen der Datensynchronisation zwischen dem [!DNL Catalog Service] und Ihrer Adobe Commerce-Instanz. Das Dashboard zeigt den allgemeinen Synchronisierungsstatus an und listet alle synchronisierten Produkte auf.
 
-- **[Seite „Synchronisierungsstatus für Daten-Feeds](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** - Verfolgen Sie den Exportstatus aller Daten-Feeds, um die Konsistenz der Daten sicherzustellen. Auf dieser Seite werden Sie über Probleme informiert, die während des Exportvorgangs auftreten, damit Sie sie schnell beheben können. Der Status „Erfolgreich abgeschlossen“ zeigt an, dass Daten exportiert wurden und nach Abschluss des Datensynchronisierungsprozesses in den verbundenen Commerce-Services verfügbar sein werden.
+- **[Seite „Synchronisierungsstatus für Daten-Feeds](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** - Verfolgen Sie den Exportstatus aller Daten-Feeds, um die Konsistenz der Daten sicherzustellen. Auf dieser Seite werden Sie über Probleme informiert, die während des Exportvorgangs auftreten, damit Sie sie schnell beheben können. Der Status „Erfolgreich abgeschlossen“ zeigt an, dass Daten exportiert wurden und nach Abschluss des Datensynchronisierungsprozesses in den verbundenen Commerce-Services verfügbar sein werden.
 
 >[!NOTE]
 >
->Wenn die Seite Synchronisierungsstatus für Daten-Feeds nicht in der Commerce Admin für Commerce in Cloud- oder lokalen Bereitstellungen verfügbar ist, befolgen Sie die [Installationsanweisungen für Erweiterungen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension), um sie zu aktivieren.
+>Wenn die Seite Synchronisierungsstatus für Daten-Feeds nicht in der Commerce Admin für Commerce in Cloud- oder lokalen Bereitstellungen verfügbar ist, befolgen Sie die [Installationsanweisungen für Erweiterungen](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension), um sie zu aktivieren.
