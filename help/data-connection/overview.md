@@ -4,10 +4,23 @@ description: Erfahren Sie, wie Sie Adobe Commerce-Daten mit Adobe Experience Pla
 recommendations: noCatalog
 exl-id: 660f9337-cad8-47fb-a959-0770f0fd813c
 TQID: https://experienceleague.adobe.com/-wfkGM2isTVmAaJokndxVy0-UtZ4pM9msYXmh2IE-Hc
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1935
@@ -54,7 +67,7 @@ Nachdem Sie die Verbindung zwischen Commerce zu Experience Platform und Experien
 
 Für die Datenfreigabe zwischen diesen beiden Systemen müssen Sie mehrere Konzepte verstehen.
 
-- **Daten** - Die Daten, die für Experience Platform freigegeben werden, sind Daten, die aus Browser-Ereignissen in Ihrer Storefront, Back-Office-Ereignissen auf dem Server und Profildatensatzdaten erfasst werden. Storefront-Ereignisse werden aus den Interaktionen von Käufern auf der Website erfasst und umfassen Ereignisse wie `addToCart`, `pageView`, `createAccount`, `editAccount`, `startCheckout`, `completeCheckout`, `signIn`, `signOut` usw. Siehe [Storefront-Ereignisse](events.md#storefront-events) für die vollständige Liste der Storefront-Ereignisse. Server-seitige oder Back-Office-Ereignisse umfassen [Bestellstatus](events-backoffice.md#order-status) Informationen wie [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled) usw. Siehe [Backoffice-Ereignisse](events-backoffice.md) für die vollständige Liste der Backoffice-Ereignisse. Profildatensatzdaten enthalten Informationen, wenn ein neues Profil erstellt, aktualisiert oder gelöscht wird. Weitere Informationen [ Sie unter ](events-profilerecord.md) von Profildatensätzen .
+- **Daten** - Die Daten, die für Experience Platform freigegeben werden, sind Daten, die aus Browser-Ereignissen in Ihrer Storefront, Back-Office-Ereignissen auf dem Server und Profildatensatzdaten erfasst werden. Storefront-Ereignisse werden aus den Interaktionen von Käufern auf der Website erfasst und umfassen Ereignisse wie `addToCart`, `pageView`, `createAccount`, `editAccount`, `startCheckout`, `completeCheckout`, `signIn`, `signOut` usw. Siehe [Storefront-Ereignisse](events.md#storefront-events) für die vollständige Liste der Storefront-Ereignisse. Server-seitige oder Back-Office-Ereignisse umfassen [Bestellstatus](events-backoffice.md#order-status) Informationen wie [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled) usw. Siehe [Backoffice-Ereignisse](events-backoffice.md) für die vollständige Liste der Backoffice-Ereignisse. Profildatensatzdaten enthalten Informationen, wenn ein neues Profil erstellt, aktualisiert oder gelöscht wird. Weitere Informationen [&#x200B; Sie unter &#x200B;](events-profilerecord.md) von Profildatensätzen .
 
 - **Experience Platform und Edge Network** - Das Data Warehouse für die meisten Adobe DX-Produkte. Daten, die an Experience Platform gesendet werden, werden über Experience Platform Edge Network an Adobe DX-Produkte weitergegeben. Sie können beispielsweise Journey Optimizer starten, Ihre spezifischen Commerce-Ereignisdaten vom Edge abrufen und in Journey Optimizer eine E-Mail zu einem Transaktionsabbruch erstellen. Journey Optimizer kann diese E-Mail dann senden, wenn sich im Commerce-Store Transaktionsabbrüche befinden. Weitere Informationen über die [Experience Platform und die Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
 
@@ -90,8 +103,8 @@ Um die [!DNL Data Connection]-Erweiterung verwenden zu können, müssen Sie übe
 Die Aktivierung der [!DNL Data Connection]-Erweiterung umfasst auf allgemeiner Ebene die folgenden Schritte:
 
 1. [Installieren](install.md) der [!DNL Data Connection].
-1. [Melden Sie sich bei ](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) Adobe-Konto an und [ Sie Ihre Organisations](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)ID an, um sie zu bestätigen. Die Organisations-ID ist die ID, die Ihrem bereitgestellten Experience Cloud-Unternehmen zugeordnet ist. Diese ID besteht aus einer 24-stelligen alphanumerischen Zeichenfolge gefolgt von `@AdobeOrg` (zwingend erforderlich).
-1. Stellen Sie sicher[ dass Sie über die Berechtigung für die Datenerfassung in Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html).
+1. [Melden Sie sich bei &#x200B;](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) Adobe-Konto an und [&#x200B; Sie Ihre Organisations](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)ID an, um sie zu bestätigen. Die Organisations-ID ist die ID, die Ihrem bereitgestellten Experience Cloud-Unternehmen zugeordnet ist. Diese ID besteht aus einer 24-stelligen alphanumerischen Zeichenfolge gefolgt von `@AdobeOrg` (zwingend erforderlich).
+1. Stellen Sie sicher[&#x200B; dass Sie über die Berechtigung für die Datenerfassung in Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html).
 1. Überprüfen Sie die [Datentypen](data-ingestion.md) die Sie erfassen und senden können.
 1. Erstellen oder aktualisieren Sie Ihr [Zeitreihen](update-xdm.md)Ereignisschema oder [Profildatensatzdatenschema](profile-data.md) mit Commerce-spezifischen Feldergruppen.
 1. [Erstellen eines Datensatzes](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) basierend auf dem von Ihnen erstellten oder aktualisierten Schema. Dieser Datensatz enthält die Commerce-Daten, die an Experience Platform Edge gesendet werden.
@@ -103,7 +116,7 @@ Der Rest dieses Handbuchs führt Sie durch alle diese Schritte, um sich mit der 
 
 >[!NOTE]
 >
->Entwickler von Mobilgeräten erfahren, wie [ Adobe Experience Platform Mobile SDK ](./mobile-sdk-epc.md) Commerce integrieren.
+>Entwickler von Mobilgeräten erfahren, wie [&#x200B; Adobe Experience Platform Mobile SDK &#x200B;](./mobile-sdk-epc.md) Commerce integrieren.
 
 ## HIPAA-Bereitschaft
 
