@@ -97,7 +97,7 @@ Lesen Sie diesen Abschnitt **vorher**, bevor Sie einen Namen für die Katalogebe
 
 ## Onboarding
 
-Um die AEM Assets-Integration mit [!DNL Commerce Optimizer] zu integrieren, müssen [&#x200B; ein Support-Ticket erstellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Um die AEM Assets-Integration mit [!DNL Commerce Optimizer] zu integrieren, müssen [&#x200B; ein Support-Ticket erstellen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 Der Adobe-Support verwendet die Informationen in Ihrem Ticket, um Ihren Mandanten beim Assets Integration Service zu registrieren und die Integration zu konfigurieren.
 
@@ -123,7 +123,7 @@ Sobald das Onboarding abgeschlossen ist:
    * AEM Assets-Ereignisse (Asset genehmigt, aktualisiert, entfernt)
    * [!DNL Commerce Optimizer] Katalogereignisse (Produkt erstellt, aktualisiert)
 
-Konfigurieren Sie Ihre [Katalogansicht](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) so, dass Storefront und APIs AEM-gesteuerte Bilddaten enthalten:
+Konfigurieren Sie Ihre [Katalogansicht](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-view) so, dass Storefront und APIs AEM-gesteuerte Bilddaten enthalten:
 
 * **Katalogquelle (Gebietsschema)** - Wählen Sie dasselbe Gebietsschema aus, das Sie in Ihrem Support-Ticket angegeben haben (z. B. **`en-US`**). Die Integration registriert ein Gebietsschema pro Mandant. Eine Nichtübereinstimmung verhindert, dass synchronisierte Bilder in der beabsichtigten Katalogansicht angezeigt werden.
 * **Katalogebene** - Weisen Sie dieser Katalogansicht die **`AEM-Assets`** Ebene (oder Ihren benutzerdefinierten Ebenennamen aus dem Ticket) zu.
