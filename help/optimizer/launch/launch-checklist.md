@@ -138,7 +138,7 @@ Bestätigen der Erweiterungskonfiguration für die Produktion.
 
 ▢ Der Arbeitsbereich Produktion enthält alle erforderlichen Konfigurationen und Services.
 ▢ Die Produktions-App durchläuft Tests für verschiedene Build-Szenarien.
-▢ Produktbeschränkungen und -grenzen wurden anhand der [Adobe Developer App Builder-Produktbeschreibung und der {](https://helpx.adobe.com/de/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}}Systemeinstellungen und -beschränkungen von App Builder überprüft und [&#128279;](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
+▢ Produktbeschränkungen und -grenzen wurden anhand der [Adobe Developer App Builder-Produktbeschreibung und der](https://helpx.adobe.com/de/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}Systemeinstellungen und -beschränkungen von App Builder überprüft und [&#128279;](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
 ▢ Die Produktions-App verwendet App Builder-Produktionsendpunkte.
 ▢ benutzerdefinierte *Admin*-Bedienfelderweiterungen werden im Produktionsarbeitsbereich bereitgestellt.
 
