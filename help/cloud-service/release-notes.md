@@ -70,7 +70,7 @@ Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen s
 
 * Es wurde ein Fehler „Verbraucher ist nicht autorisiert“ behoben, der die Gastanmeldung bei GraphQL verhindern konnte, wenn der `X-Adobe-Company`-Header in der Anfrage vorhanden war. <!-- ACCS-949 -->
 
-* Fehlerkorrektur - Das Bearbeiten oder Löschen eines Unternehmens in der [!DNL Commerce Admin] schlägt jetzt nicht mehr fehl, wenn dem Unternehmen über den REST-Endpunkt von PUT `V1/customers/companies` ein Kunde zugewiesen wird. <!-- ACCS-856 -->
+* Fehlerkorrektur - Das Bearbeiten oder Löschen einer Firma in der [!DNL Commerce Admin] schlägt jetzt nicht mehr fehl, nachdem über den REST-Endpunkt PUT `V1/customers/companies` REST eine Kundin oder ein Kunde der Firma zugewiesen wurde. <!-- ACCS-856 -->
 
 * Es wurde ein Problem mit veralteten Auftragsrasterstatus behoben. <!-- CCSAAS-4915 -->
 

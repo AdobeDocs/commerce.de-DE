@@ -7,7 +7,7 @@ exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
 source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
-source-wordcount: '3209'
+source-wordcount: '3360'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ Mit [!DNL Apple Pay] können Händler in Safari ein sicheres, schnelles und naht
 
 >[!IMPORTANT]
 >
-> Apple lehnt Zahlungen von nicht verifizierten Domains ab. Händler müssen alle Domains überprüfen, in denen die Apple-Pay-Buttons verwendet werden. Es gelten Länderbeschränkungen. Weitere Informationen zu den Anforderungen für die Domain-[&#x200B; finden Sie in der Dokumentation zu Apple Pay .](https://developer.apple.com/documentation/apple_pay_on_the_web)
+> Apple lehnt Zahlungen von nicht verifizierten Domains ab. Händler müssen alle Domains überprüfen, in denen die Apple-Pay-Buttons verwendet werden. Es gelten Länderbeschränkungen. Weitere Informationen zu den Anforderungen für die Domain-[&#128279;](https://developer.apple.com/documentation/apple_pay_on_the_web) finden Sie in der Dokumentation zu Apple Pay .
 
 Weitere Informationen finden [&#x200B; unter &#x200B;](payments-options.md#apple-pay-button).
 
@@ -248,7 +248,7 @@ Weitere Informationen finden [&#x200B; unter &#x200B;](payments-options.md#googl
 | [!UICONTROL Button Color] | Shop-Ansicht | Farbe der Schaltfläche &quot;[!DNL Google Pay]&quot; definieren. Optionen: `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
 | [!UICONTROL Button Type] | Shop-Ansicht | Typ der [!DNL Google Pay]-Schaltfläche definieren. Optionen: `[!UICONTROL buy]` / `[!UICONTROL checkout]` / `[!UICONTROL order]` / `[!UICONTROL pay]` / `[!UICONTROL plain]` |
 
-Weitere Informationen finden Sie in der Dokumentation zu den Objektoptionen für die Google Pay[API-Anfrage .](https://developers.google.com/pay/api/web/reference/request-objects)
+Weitere Informationen finden Sie in der Dokumentation zu den Objektoptionen für die Google Pay[&#128279;](https://developers.google.com/pay/api/web/reference/request-objects)API-Anfrage .
 
 ## [!DNL PayPal Payment Buttons]
 

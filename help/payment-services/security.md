@@ -6,7 +6,7 @@ feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html?lang=de
 source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---

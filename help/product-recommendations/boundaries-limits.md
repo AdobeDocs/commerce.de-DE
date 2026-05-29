@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Grenzen und Einschränkungen von  [!DNL
 role: Admin, Developer
 source-git-commit: 66830c9d950a27269aca1bda0dcc7d0d86f05647
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## Page Builder
 
-- **Metriken und Store-**: Metriken für Page Builder-Empfehlungseinheiten werden nur in der standardmäßigen Store-Ansicht im Arbeitsbereich „Produktempfehlungen“ angezeigt. Um Page Builder-Empfehlungsmetriken in einer nicht standardmäßigen Store-Ansicht anzuzeigen, müssen Sie die Page Builder[Empfehlungseinheit in dieser Store-Ansicht öffnen und &#x200B;](edit.md)bearbeiten) und speichern. Die Metriken werden dann für diese Store-Ansicht angezeigt. Siehe [Page Builder-Integration](page-builder.md).
+- **Metriken und Store-**: Metriken für Page Builder-Empfehlungseinheiten werden nur in der standardmäßigen Store-Ansicht im Arbeitsbereich „Produktempfehlungen“ angezeigt. Um Page Builder-Empfehlungsmetriken in einer nicht standardmäßigen Store-Ansicht anzuzeigen, müssen Sie die Page Builder[&#128279;](edit.md)Empfehlungseinheit in dieser Store-Ansicht öffnen und bearbeiten) und speichern. Die Metriken werden dann für diese Store-Ansicht angezeigt. Siehe [Page Builder-Integration](page-builder.md).
 
 ## B2B
 

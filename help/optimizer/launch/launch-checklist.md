@@ -11,7 +11,7 @@ recommendations: noCatalog
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 source-git-commit: 37b8b8a334ca11daacfd3da03b0441e77329e2e1
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '2194'
 ht-degree: 0%
 
 ---
@@ -138,8 +138,7 @@ Bestätigen der Erweiterungskonfiguration für die Produktion.
 
 ▢ Der Arbeitsbereich Produktion enthält alle erforderlichen Konfigurationen und Services.
 ▢ Die Produktions-App durchläuft Tests für verschiedene Build-Szenarien.
-▢ Produktbeschränkungen und -grenzen wurden anhand der [Adobe Developer App Builder-Produktbeschreibung und der &lbrace;](https://helpx.adobe.com/de/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}&rbrace;Systemeinstellungen und -beschränkungen von App Builder überprüft und [&#128279;](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings).
-{target="_blank"}
+▢ Produktbeschränkungen und -grenzen wurden anhand der [Adobe Developer App Builder-Produktbeschreibung und der](https://helpx.adobe.com/de/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}Systemeinstellungen und -beschränkungen von App Builder überprüft und [&#128279;](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
 ▢ Die Produktions-App verwendet App Builder-Produktionsendpunkte.
 ▢ benutzerdefinierte *Admin*-Bedienfelderweiterungen werden im Produktionsarbeitsbereich bereitgestellt.
 
@@ -160,7 +159,6 @@ Polnische Inhalte, SEO, Leistung, Sicherheit und CDN-Verhalten vor dem Launch.
 Bestätigen des Authoring-Workflows und der Storefront-Komponenten
 
 ▢ Die Prüfung der Go-Live-Checkliste für &lbrace;1[&#128279;](https://www.aem.live/docs/go-live-checklist) AEM/EDS ist abgeschlossen.
-
 ▢ Die Authoring-Quelle ist ein dokumentbasierter oder universeller Editor (und konfiguriert).
 ▢ Inhalte werden mit dem Vorschau- → Veröffentlichungszyklus veröffentlicht.
 ▢ Inhalts- und Design-QA ist in der `.aem.live` Domain abgeschlossen.

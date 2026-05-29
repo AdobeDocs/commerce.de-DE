@@ -7,7 +7,7 @@ feature: Payments, Checkout, Install, Upgrade, Paas
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Um mit Payment Services für [!DNL Adobe Commerce] und [!DNL Magento Open Source
 
 >[!INFO]
 >
-> Adobe Commerce Weitere Informationen finden [&#x200B; in  [!DNL Payment Services]  Video „Konfigurieren für &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services)&quot;.
+> Weitere Informationen finden [&#x200B; in  [!DNL Payment Services]  Video „Konfigurieren für &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services)&quot;.
 
 Das Herunterladen und Installieren der [!DNL Payment Services]-Erweiterung für [!DNL Adobe Commerce] und [!DNL Magento Open Source] ist ein erforderlicher Schritt für die Verwendung von [!DNL Payment Services].
 

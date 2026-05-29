@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 6a3bacace012153f6b8f7c87192d19bf349a2446
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 729
 ht-degree: 0%
 
 ---
@@ -52,8 +52,7 @@ In den folgenden Abschnitten werden diese Schritte detailliert beschrieben.
 
 Das Tool für die Massendatenmigration ist wie folgt verfügbar:
 
-- **1. Quartal 2026** (noch nicht verfügbar) - Nach der ersten Version des Tools für die Massendatenmigration können Sie durch Senden eines Support-Tickets darauf zugreifen.
-- **1. Quartal 2026** (noch nicht verfügbar) - Nach der öffentlichen Veröffentlichung des Tools für die Massendatenmigration ist es von dieser Seite aus zugänglich.
+Dieses Tool ist derzeit über bereitgestellte technische Interaktionen verfügbar. Wenn Sie an der Verwendung dieses Tools interessiert sind, wenden Sie sich an den Adobe-Support.
 
 ## Erstellen einer Zielumgebung
 
