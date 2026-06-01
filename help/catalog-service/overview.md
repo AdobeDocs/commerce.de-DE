@@ -5,21 +5,13 @@ role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
 TQID: https://experienceleague.adobe.com/CEbJ8-hkc0AGQ4RnRNMDXA6mMijvhPGAfsxyC4eT39Y
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 70990a7bb7e8926a171ea6d2148542b7b73f4dba
 workflow-type: tm+mt
-source-wordcount: 1398
+source-wordcount: 1405
 ht-degree: 0%
 
 ---
@@ -52,7 +44,7 @@ Die umfangreichen Ansichtsmodelldaten, die von der [!DNL Catalog Service] bereit
 
 >[!NOTE]
 >
->Wenn Sie Ihren Katalog mithilfe des zusammenstellbaren Katalogs mit Adobe Commerce Optimizer oder Adobe Commerce Optimizer Connector implementieren, lesen Sie das [Adobe Commerce Optimizer-](../optimizer/overview.md#architecture) und Merchandising Services-Entwicklerhandbuch.
+>Wenn Sie Ihren Katalog mithilfe des zusammenstellbaren Katalogs mit Adobe Commerce Optimizer oder Adobe Commerce Optimizer Connector implementieren, lesen Sie das [Adobe Commerce Optimizer-](../optimizer/overview.md#architecture) und [Merchandising Services-Entwicklerhandbuch](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/).
 
 Der [!DNL Catalog Service] verwendet [GraphQL](https://graphql.org/), um Katalogdaten, einschließlich Produkte, Produktattribute, Bestand und Preise, anzufordern und zu empfangen. GraphQL ist eine Abfragesprache, die ein Frontend-Client verwendet, um mit der in einem Backend wie Adobe Commerce definierten Anwendungsprogrammierschnittstelle (API) zu kommunizieren. GraphQL ist eine beliebte Kommunikationsmethode, da sie einfach ist und es einem Systemintegrator ermöglicht, den Inhalt und die Reihenfolge jeder Antwort anzugeben.
 
@@ -134,13 +126,13 @@ Der Katalog-Service sorgt für genaue Preisaktualisierungen und Berechnungen, in
 
 >[!NOTE]
 >
-> Commerce-Kunden mit [!DNL Catalog Service] können mit dem SaaS-Preisindexer [&#x200B; schnellere Preisänderungen und Synchronisierungszeiten auf ihren Websites &#x200B;](../price-index/price-indexing.md).
+> Commerce-Kunden mit [!DNL Catalog Service] können mit dem SaaS-Preisindexer [ schnellere Preisänderungen und Synchronisierungszeiten auf ihren Websites ](../price-index/price-indexing.md).
 
 ## Implementierung
 
 Der Implementierungsprozess umfasst Folgendes:
 
-1. [!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."} **[Installieren und Konfigurieren des Katalog-Service](installation.md)** - Installieren und konfigurieren Sie die Catalog-Service-Erweiterung und richten Sie die SaaS-Verbindung mithilfe der [!DNL Commerce Services Connector] ein.
+1. [!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."} **[Installieren und Konfigurieren des Katalog-Service](installation.md)** - Installieren und konfigurieren Sie die Catalog-Service-Erweiterung und richten Sie die SaaS-Verbindung mithilfe der [!DNL Commerce Services Connector] ein.
 2. **Storefront-Code aktualisieren**: Integrieren Sie GraphQL-Abfragen des Katalog-Services in Ihr Frontend.
 3. **Routing-Abfragen**: Alle Abfragen des Katalog-Services gehen über das GraphQL-Gateway (die URL wird beim Onboarding angegeben)
 4. **Überwachung und Fehlerbehebung bei der Datensynchronisation**: Überprüfen Sie die verbesserte Leistung und überwachen Sie die Ergebnisse.

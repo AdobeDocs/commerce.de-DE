@@ -5,11 +5,11 @@ solution: Commerce
 feature: Integration, Catalog Management
 role: Developer, Admin
 level: Beginner
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für  [!DNL Adobe Commerce Optimizer]  (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für  [!DNL Adobe Commerce Optimizer]  (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
-source-git-commit: d8cd6f543353e1b11f3aa14b3b97b02155d23809
+source-git-commit: a404c2ff7cec5e72ce65d3670330b1f3f3c4702d
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 0%
 # [!DNL Adobe Commerce Optimizer] Integrationen
 
 [!DNL Adobe Commerce Optimizer] umfasst Integrationen, mit denen Sie Daten aus Adobe Commerce in der Cloud oder lokal synchronisieren, Assets verwalten, Storefront-Erlebnisse verbessern und externe Systeme verbinden können. In den folgenden Abschnitten wird beschrieben, wie jede Integration mit [!DNL Adobe Commerce Optimizer] funktioniert. Folgen Sie den Links für die Einrichtung, Konfiguration und tägliche Verwendung.
+
+{{aco-integration-environment-alignment}}
 
 ## Adobe Commerce Optimizer-Connector {#aco-connector}
 
