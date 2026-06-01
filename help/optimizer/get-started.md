@@ -22,9 +22,9 @@ topic_v2:
   - id: dba482e5-29a8-4127-afa2-c4b913512ef8
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 423b35b15e845e49b1cf36910ffbad775de9758c
 workflow-type: tm+mt
-source-wordcount: 1181
+source-wordcount: 1332
 ht-degree: 0%
 
 ---
@@ -32,6 +32,17 @@ ht-degree: 0%
 # Erste Schritte
 
 Diese Anleitung führt Sie durch die Einrichtung von [!DNL Adobe Commerce Optimizer] von Anfang bis Ende. Dieses Handbuch deckt zwar alle Rollen ab, doch finden [&#x200B; in der &#x200B;](https://developer.adobe.com/commerce/services/optimizer/) für Entwickler detaillierte Informationen zu den jeweiligen Inhalten.
+
+## Instanztypen und Umgebungsisolierung
+
+Adobe Commerce Optimizer verwendet separate Instanzen für verschiedene Umgebungen wie **Sandbox** und **Produktion**. Jede Instanz verfügt über eine eigene Instanz-ID und eigene isolierte Daten, einschließlich Katalogansichten, Richtlinien, Suchkonfiguration und Produktempfehlungen.
+
+Bei der Integration mit Adobe Commerce as a Cloud Service stimmen Commerce-Plattformen von Drittanbietern oder Edge Delivery Services-Storefronts immer mit den Umgebungen überein:
+
+- Verbinden Sie **Sandbox Optimizer-**) mit Nicht-Produktions-Commerce- und Storefront-Umgebungen.
+- Verbinden **Produktions-Optimizer-Instanzen** mit Produktions-Commerce- und Storefront-Umgebungen.
+
+Das Mischen von Sandbox-Umgebungen mit Produktionsumgebungen führt zu inkonsistenten Katalogdaten, unerwartetem Such- und Merchandising-Verhalten und unzuverlässigen Metriken. Verwenden Sie bei der Konfiguration von Integrationen den Instanztyp und die Instanz-ID in Commerce Cloud Manager als Informationsquelle.
 
 ## Voraussetzungen
 
@@ -140,21 +151,23 @@ Die Spalte Produkt gibt an, für welche Commerce-Anwendung die Instanz bereitges
 
 Verwenden Sie die Filter- und Suchwerkzeuge, um bestimmte Instanzen schnell nach Erstellungsdatum, Region, Ersteller, Produkttyp, Umgebung oder Status zu finden.
 
-### Zugriff auf die [!DNL Adobe Commerce Optimizer]
+### Zugriff auf die [!DNL Adobe Commerce Optimizer Studio] Admin-Benutzeroberfläche
 
 Sobald die App geöffnet ist, können Sie einfach zwischen Umgebungen wie Sandbox und Produktion wechseln, um Daten und Einstellungen für jede Umgebung anzuzeigen, ohne zum Commerce Cloud Manager zurückzukehren.
 
-1. Klicken Sie in Commerce Cloud Manager auf den Instanznamen, um die [!DNL Adobe Commerce Optimizer]-Anwendung zu öffnen.
+1. Klicken Sie in Commerce Cloud Manager auf den Instanznamen, um [!DNL Adobe Commerce Optimizer Studio] zu öffnen.
 
 1. Wechseln Sie zwischen [!DNL Adobe Commerce Optimizer] Instanzen, ohne die Anwendung zu verlassen.
 
-   In der Dropdown-Liste Instanz werden alle in der Organisation verfügbaren Optimizer-Instanzen aufgelistet. Anzuzeigende Instanz auswählen.
+   - Klicken Sie auf die Dropdown-Liste Instanz , um alle in der Organisation verfügbaren Optimizer-Instanzen anzuzeigen.
 
-   ![Dropdown-Liste „Instanzwechsel“ zur Auswahl [!DNL Adobe Commerce Optimizer] Umgebungen](./assets/context-switcher.png){zoomable="yes"}
+     ![Dropdown-Liste „Instanzwechsel“ zur Auswahl [!DNL Adobe Commerce Optimizer] Umgebungen](./assets/context-switcher.png){zoomable="yes"}
+
+- Anzuzeigende Instanz auswählen.
 
 >[!NOTE]
 >
->Wenn Sie zum Commerce Cloud Manager zurückkehren müssen, um Instanzdetails anzuzeigen oder Instanzen zu verwalten, klicken Sie auf das Apps-Symbol ![Symbol zum Öffnen von Experience Cloud](./assets/apps-icon.png) in der oberen linken Ecke des oberen Navigationsbereichs von Commerce Optimizer.
+>Um zu Commerce Cloud Manager zurückzukehren, um Instanzdetails anzuzeigen oder Instanzen zu verwalten, klicken Sie auf das Symbol ![Symbol zum Öffnen von Experience Cloud Applications](./assets/apps-icon.png) (Apps) in der oberen linken Ecke des oberen Navigationsbereichs von Commerce Optimizer.
 
 ### Instanzdetails abrufen
 
@@ -164,10 +177,10 @@ Bedienfeld mit Details zur ![[!DNL Adobe Commerce Optimizer]-Instanz, das Endpun
 
 Beachten Sie die folgenden wichtigen Informationen:
 
-- **GraphQL-Endpunkt** zum Abrufen von Commerce-Katalogdaten mithilfe der Merchandising-API
-- **Catalog Endpoint** für die Aufnahme von Katalogdaten in Commerce Optimizer mithilfe der REST-API
-- **Commerce Optimizer-URL** für den Zugriff auf die [!DNL Adobe Commerce Optimizer]
-- **Instanz-ID**: Die eindeutige ID, die die Instanz identifiziert. Die Instanz-ID wird auch als &quot;*_id“*.
+- **GraphQL-Endpunkt** GraphQL-Endpunkt, den Ihre Storefront verwendet, um Katalog- und Merchandising-Daten von dieser Instanz mithilfe der [Merchandising Service-API abzufragen](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=„_blank}
+- **Katalog-Endpunkt** REST-API-Endpunkt, mit dem Sie Produkte und Preise aus Ihrem Commerce- oder PIM-System in Adobe Commerce Optimizer aufnehmen. Siehe [Datenaufnahme-API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)
+- **Commerce Optimizer-URL** Öffnet die Admin-Benutzeroberfläche von [Adobe Commerce Optimizer &#x200B;](overview.md)Studio&rbrace; zum Konfigurieren und Verwalten von Katalogansichten, Richtlinien und Merchandising.
+- **Instanz-ID**: Eindeutiger Bezeichner (Mandanten-ID) für diese Adobe Commerce Optimizer-Instanz, der von Storefronts, APIs und Tools zur Verbindung mit der richtigen Umgebung verwendet wird.
 
 Wenn Sie Entwickler sind, benötigen Sie diese Details, um Ihre Entwicklungsumgebung einzurichten und eine Verbindung zu den [!DNL Adobe Commerce Optimizer]-APIs herzustellen.
 

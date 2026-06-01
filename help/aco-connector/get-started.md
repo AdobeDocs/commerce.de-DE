@@ -3,9 +3,9 @@ title: Erste Schritte mit dem Adobe Commerce Optimizer-Connector
 description: Erfahren Sie, wie Sie den Connector installieren und konfigurieren, die Exportkonfiguration anpassen, eine Verbindung zu Adobe Commerce Optimizer herstellen und den Datensynchronisierungsstatus überwachen.
 feature: Personalization, Integration, Configuration
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
-source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
+source-git-commit: f041c315da8bf20af7ecc2c869eaf578a767f66d
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 # Erste Schritte
 
 Installieren und konfigurieren Sie den Commerce Optimizer-Connector, um Ihre Adobe Commerce-Katalogdaten mit [!DNL Adobe Commerce Optimizer] zu synchronisieren, und überwachen Sie dann den Datensynchronisierungsstatus, um sicherzustellen, dass Ihre Storefront auf dem neuesten Stand ist.
+
+{{aco-integration-environment-alignment}}
 
 ## Voraussetzungen für die Verwendung der Integration
 

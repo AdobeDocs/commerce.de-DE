@@ -1,11 +1,18 @@
 ---
-source-git-commit: aaefe284749df25953c2581f000af2989bcc8fb2
+source-git-commit: edc47115830f5ca7ec1e485de1ddf9939de2586d
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 # Commerce Snippets
+
+
+## Ausrichtung der ACO-Integrationsumgebung {#aco-integration-environment-alignment}
+
+>[!IMPORTANT]
+>
+>Verbinden Sie Sandbox Optimizer-Instanzen immer mit Nicht-Produktionsumgebungen und Produktionsinstanzen mit Produktionsumgebungen. Nicht übereinstimmende Umgebungen führen zu inkonsistenten Katalogdaten, Suchergebnissen und Empfehlungen.
 
 
 ## Merchandising-Services für Optimizer {#aco-merchandising-services}
