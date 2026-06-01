@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 4288998fdae56112dc9ddcebfc42b85b9f5d8c00
+source-git-commit: be8fbcd77dc56b2193eee20d7a06a315ac1abb9f
 workflow-type: tm+mt
-source-wordcount: 4032
+source-wordcount: 4189
 ht-degree: 0%
 
 ---
@@ -42,15 +42,19 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 >
 >Wenn Sie Adobe Commerce On-Premise oder Adobe Commerce in der Cloud-Infrastruktur verwenden, lesen Sie die [Versionshinweise zu Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview).
 
-## Mai 2026 - #2 {#latest}
+## Juni 2026 - #1 {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
 [!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
 
-Die folgenden Elemente werden am 21. Mai 2026 in Produktionsumgebungen veröffentlicht.
+Die folgenden Elemente werden am 4. Juni 2026 in Produktionsumgebungen veröffentlicht.
 
 >[!BEGINSHADEBOX]
+
+### Hinzufügen und Bearbeiten von benutzerdefinierten Gutscheincodes in der Admin Console
+
+Händler können jetzt benutzerdefinierte Gutscheincodes direkt über die [!DNL Commerce Admin] für manuelle Warenkorbpreisregeln erstellen und bearbeiten. Eine neue Schaltfläche [!UICONTROL **Benutzerdefinierten Gutschein hinzufügen**] ist im Abschnitt [!UICONTROL **Verwalten von Gutscheincodes**] verfügbar, wenn Sie eine Warenkorb-Preisregel bearbeiten. <!-- CCSAAS-4508 -->
 
 ### Verfolgen von Sendungen mit standardmäßigen und benutzerdefinierten Spediteuren
 
@@ -59,6 +63,14 @@ Die Nachverfolgung von Bestellungen ist jetzt zuverlässig für standardmäßige
 ### Anzeigen von Attributeingabetypen im Raster „Produktattribute“
 
 Eine neue Spalte [!UICONTROL **Attributtyp**] ist jetzt im Raster Produktattribute in ([!UICONTROL **Stores**] > _[!UICONTROL Attributes]_>[!UICONTROL **Product**]) sichtbar, die den Eingabetyp (z. B. Textfeld, Dropdown oder Ja/Nein) für jedes Produktattribut anzeigt, einschließlich der von Erweiterungen bereitgestellten Typen. Dies erleichtert die Identifizierung und Verwaltung von Attributen bei der Arbeit mit großen Attributsätzen. <!-- ACCS-925 -->
+
+### Anpassen der Antwortkopfzeile für benutzerdefinierte E-Mails
+
+Händler können jetzt den Header [!UICONTROL **Antwort an**] konfigurieren, der vom Endpunkt [POST /rest/V1/custom-email/send](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/) verwendet wird, sodass Antworten von Kunden an eine andere Adresse als den Absender weitergeleitet werden können. <!-- ACCS-1037 -->
+
+### Zeigen Sie die Stufenpreise auf der Seite „Produktbearbeitung“ in großen freigegebenen Katalogumgebungen an.
+
+Händler mit einer großen Anzahl freigegebener Kataloge können jetzt auf die schreibgeschützte Registerkarte [!UICONTROL **Stufenpreise**] auf der Seite „Produktbearbeitung“ im [!DNL Commerce Admin] zugreifen. <!-- CCSAAS-4922 -->
 
 ### Verbesserungen und Fehlerbehebungen
 
@@ -79,6 +91,10 @@ Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen s
 * Fehlerkorrektur - Beim Erstellen einer Sendung für eine Bestellung, die konfigurierbare Produkte enthält, tritt jetzt kein Fehler mehr wegen des „Undefined Array Key &#39;simple_sku&#39;&quot; mehr auf. <!-- CCSAAS-4877 -->
 
 * Die `guestOrderByToken` GraphQL-Abfrage gibt jetzt eine aussagekräftigere Fehlermeldung zurück, wenn sie mit einem falsch formatierten Token statt mit einem internen Server-Fehler aufgerufen wird. <!-- CCSAAS-4921 -->
+
+* Die `customer` GraphQL-Abfrage gibt jetzt eine informativere Fehlermeldung zurück, wenn Kundenbestellungen nicht geladen werden können. <!-- ACCS-867 -->
+
+* Der GET- `V1/customers/{customerId}` REST-Endpunkt gibt jetzt das `assistance_allowed` Konfigurationsfeld zurück. <!-- USF-4132 -->
 
 {{accs-release}}
 
@@ -355,7 +371,7 @@ Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen s
 
 * Fehlerkorrektur - Bei der Produktbearbeitung tritt jetzt kein Timeout mehr auf, wenn große freigegebene Kataloge verwendet werden. <!-- CCSAAS-4657 -->
 
-* Die GET `/V1/directory/countries`- und GET `/V1/directory/countries/:countryId` REST-API-Endpunkte für Admin-Integrationen wurden erneut aktiviert, sodass Clients gültige Länder- und Regionsdaten nachschlagen können. <!-- ACCS-518 -->
+* Die Endpunkte GET `/V1/directory/countries` und GET `/V1/directory/countries/:countryId` REST API für Admin-Integrationen wurden erneut aktiviert, sodass Kunden gültige Länder- und Regionsdaten nachschlagen können. <!-- ACCS-518 -->
 
 * Fehlerkorrektur - In der REST-API tritt jetzt kein Timeout mehr auf, wenn ein Benutzer über einen großen freigegebenen Katalog verfügt. <!-- ACCS-4657 -->
 
