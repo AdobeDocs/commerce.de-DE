@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 8f424228d96072636ac24a2d50dd58e5c8d655da
+source-git-commit: d35a3ad39c504c5c6eb1073737babae252a3127d
 workflow-type: tm+mt
-source-wordcount: 2868
+source-wordcount: 2818
 ht-degree: 0%
 
 ---
@@ -40,6 +40,14 @@ Zu den Aktualisierungen gehören:
 >Die SaaS-Datenexporterweiterung ist eine Sammlung von Modulen, die automatisch mit der Live-Suche, Produktempfehlungen und dem Katalog-Service installiert werden. Sie können die auf Ihrem System installierte Version mit dem Composer überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Versionen 2026
+
+### Version 103.4.26
+
+_2. Juni 2026_
+
+![Korrigieren](../assets/fix.svg) **Produkt-Feed-Aktualisierungen nach Währungsänderungen**-Wenn Sie die Store-Währungseinstellungen ändern, werden die betroffenen Produkte jetzt erneut zum Export in die Warteschlange gestellt, sodass Live Search, Catalog Service, Product Recommendations und andere verbundene Commerce-Services aktualisierte Preise anzeigen. <!--MDEE-1376-->
+
+![Beheben](../assets/fix.svg) **Untergeordnete Kategorien spiegeln den deaktivierten übergeordneten Status wider**-Wenn Sie eine Kategorie der obersten Ebene deaktivieren, werden untergeordnete Kategorien jetzt als inaktiv exportiert, sodass verbundene Commerce-Services Produkte in diesen Kategorien nicht als erkennbar behandeln. <!--MDEE-1369-->
 
 ### Version 103.4.25
 
