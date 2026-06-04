@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d35a3ad39c504c5c6eb1073737babae252a3127d
+source-git-commit: f472cadb124207b04b158b410b7fe1db8f5a9f7d
 workflow-type: tm+mt
-source-wordcount: 2818
+source-wordcount: 2855
 ht-degree: 0%
 
 ---
@@ -40,6 +40,13 @@ Zu den Aktualisierungen gehören:
 >Die SaaS-Datenexporterweiterung ist eine Sammlung von Modulen, die automatisch mit der Live-Suche, Produktempfehlungen und dem Katalog-Service installiert werden. Sie können die auf Ihrem System installierte Version mit dem Composer überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Versionen 2026
+
+### Version 103.4.27
+
+_4. Juni 2026_
+
+![Beheben](../assets/fix.svg) **Bundle-Produkte bleiben nach gleichzeitigen Katalogaktualisierungen sichtbar**-Es wurde ein Problem behoben, bei dem Bundle-Produkte nicht in der Storefront angezeigt wurden, wenn konfigurierbare und Bundle-Produkte gleichzeitig aktualisiert wurden. Nach dem Upgrade von `magento/module-data-exporter` auf Version 103.4.27 wird der Produkt-Feed automatisch neu synchronisiert, um bestehende Inkonsistenzen bei den Bundle-Daten in [!DNL Catalog Service], [!DNL Live Search] und anderen verbundenen Commerce-Services zu beheben.
+<!--MDEE-1379-->
 
 ### Version 103.4.26
 
