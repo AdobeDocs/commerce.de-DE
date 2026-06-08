@@ -22,9 +22,9 @@ topic_v2:
   - id: dba482e5-29a8-4127-afa2-c4b913512ef8
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 423b35b15e845e49b1cf36910ffbad775de9758c
+source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
 workflow-type: tm+mt
-source-wordcount: 1332
+source-wordcount: 1349
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ Merchandiser optimieren und personalisieren das Einkaufserlebnis durch Produkter
 | Aufgabe | Beschreibung | Link |
 |---|---|---|
 | **Produkterkennung** | Konfigurieren von Suche und Filterung | [Merchandising - Übersicht](./merchandising/overview.md) |
+| **Sucheinstellungen** | Verwalten der semantischen Suche (standardmäßig aktiviert) und der optionalen Optimierung | [Einstellungen — Erweiterte Suche](./settings.md#advanced-search) und [Semantische Suche](./setup/semantic-search.md) |
 | **Recommendations** | Einrichten von KI-gestützten Produktempfehlungen | [Produktempfehlungen](./merchandising/recommendations/overview.md) |
 | **Leistungsverfolgung** | Überwachen von Erfolgsmetriken | [Erfolgsmetriken](./manage-results/success-metrics.md) |
 
@@ -167,7 +168,7 @@ Sobald die App geöffnet ist, können Sie einfach zwischen Umgebungen wie Sandbo
 
 >[!NOTE]
 >
->Um zu Commerce Cloud Manager zurückzukehren, um Instanzdetails anzuzeigen oder Instanzen zu verwalten, klicken Sie auf das Symbol ![Symbol zum Öffnen von Experience Cloud Applications](./assets/apps-icon.png) (Apps) in der oberen linken Ecke des oberen Navigationsbereichs von Commerce Optimizer.
+>Um zu Commerce Cloud Manager zurückzukehren, um Instanzdetails anzuzeigen oder Instanzen zu verwalten, klicken Sie auf das Symbol ![Symbol zum Öffnen von Experience Cloud](./assets/apps-icon.png)Programmen) in der oberen linken Ecke der oberen Navigationsleiste von Commerce Optimizer.
 
 ### Instanzdetails abrufen
 

@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
-source-wordcount: 1863
+source-wordcount: 1905
 ht-degree: 0%
 
 ---
@@ -64,6 +64,7 @@ Im folgenden Abschnitt finden Sie Strategien, mit denen Sie Ihre Site-Suchfunkti
 Die Relevanz und Effektivität von Suchergebnissen hängt von mehreren Schlüsselfaktoren ab:
 
 - Durch gut strukturierte Produktdaten wird sichergestellt, dass Suchalgorithmen Produkte effektiv Abfragen zuordnen können. Produktdaten von geringer Qualität führen zu weniger relevanten Suchergebnissen. So wirken Sie sich direkt auf den Erfolg Ihrer Merchandising-Strategie aus:
+   - Konfigurieren Sie [semantische Suche](../setup/semantic-search.md) für die Zuordnung von natürlicher Sprache und Absichten.
    - Richten Sie die richtigen [Attribute als durchsuchbar](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) mit der entsprechenden Gewichtung ein.
    - Stellen Sie sicher, dass Daten innerhalb dieser Attribute relevant sind.
 - Ein gut gestaltetes Sucherlebnis schafft Vertrauen bei den Kunden und gibt ihnen die Zuversicht, das zu finden, was sie brauchen.
@@ -92,6 +93,7 @@ Um Suchergebnisse mit [!DNL Adobe Commerce Optimizer] zu optimieren, überwachen
 
   Um die Nullergebnisrate zu reduzieren, haben Sie folgende Möglichkeiten:
 
+   - Bestätigen Sie[&#x200B; dass &#x200B;](../setup/semantic-search.md)semantische Suche“ auf der Registerkarte **[Erweiterte Suche](../settings.md#advanced-search)** in den Einstellungen aktiviert ist. Die semantische Suche ist für [!DNL Adobe Commerce Optimizer] Kunden standardmäßig aktiviert. Es sind keine Änderungen an der Storefront oder am Entwickler erforderlich. Ergebnisse werden nach Abschluss der Indizierung aktualisiert.
    - Bieten Sie alternative oder verwandte Suchbegriffe an, z[&#x200B; B. &quot;](../merchandising/synonyms/overview.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
    - Überprüfen Sie regelmäßig Nullergebnisabfragen, um Muster zu identifizieren und notwendige Anpassungen an Ihrem Produktkatalog und Ihren Sucheinstellungen vorzunehmen.
 

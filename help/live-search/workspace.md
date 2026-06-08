@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
-source-wordcount: 2317
+source-wordcount: 2318
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Anfangs ist [Umfang](https://experienceleague.adobe.com/docs/commerce-admin/star
 | [Merchandising suchen](rules.md) | Gestalten Sie das Sucherlebnis mit logischen Regeln, die den Trigger geplanter Aktionen festlegen. Produkte optimieren, vergraben, anheften oder ausblenden, um Suchergebnisse zu kalibrieren und so Ihre Geschäftsziele zu unterstützen. |
 | [Kategorie Merchandising](category-merch.md) | Wenden Sie Regeln und intelligentes Merchandising auf Kategorieebene an. |
 | [GraphQL](graphql.md) | Entwickler, die beim Administrator Ihres Stores angemeldet sind, können Abfragen mit tatsächlichen Katalogdaten erstellen und testen. Weitere Informationen finden Sie unter [Übersicht über GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) in der [!DNL Live Search] Entwicklerdokumentation. |
-| [Einstellungen](settings.md) | Ermitteln Sie, wie die Facettenwerte des Preises nach Preisbereich in der Storefront gruppiert werden, und legen Sie die Indizierungssprache fest. |
+| [Einstellungen](settings.md) | Verwalten Sie die semantische Suche (standardmäßig für [!DNL Adobe Commerce as a Cloud Service] aktiviert), konfigurieren Sie die Preisfacetten-Gruppierung für die Storefront und legen Sie die Indizierungssprache fest. |
 
 ## Festlegen von Attributen als durchsuchbar
 
