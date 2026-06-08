@@ -86,7 +86,7 @@ Unter [Erweiterte Suche](../settings.md#advanced-search) finden Sie Steuerungsbe
 
 - Verwenden Sie klare, beschreibende Produktnamen und Beschreibungen (idealerweise 50-100 Wörter), damit sowohl Keyword- als auch semantische Übereinstimmungen mit starkem Katalogtext arbeiten können.
 - Beginnen Sie mit der **[!UICONTROL Enable semantic search]** Standardeinstellung und passen Sie **[!UICONTROL Semantic boost]** oder **[!UICONTROL Similarity threshold]** nur an, wenn die Ergebnisse zu breit oder zu schmal sind.
-- Halten Sie markenspezifische oder hochtechnische [Synonyme) bei, ](../merchandising/synonyms/overview.md) die semantische Suche möglicherweise keine Fachbegriffe abdeckt.
+- Halten Sie markenspezifische oder hochtechnische [Synonyme) bei, &#x200B;](../merchandising/synonyms/overview.md) die semantische Suche möglicherweise keine Fachbegriffe abdeckt.
 
 ## Fehlerbehebung
 

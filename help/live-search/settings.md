@@ -3,8 +3,10 @@ title: Einstellungen
 description: Konfigurieren Sie die semantische Suche, die Preisfacettenbereiche und die standardmäßige Indizierungssprache für den  [!DNL Live Search] .
 exl-id: 6387a365-7e23-4023-95ac-27908164d81c
 TQID: https://experienceleague.adobe.com/Dn4x8Boo-1F5RQgMXVx6Dpt7iYWFIlqOlO5QwhJrjVU
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
 source-wordcount: 650
