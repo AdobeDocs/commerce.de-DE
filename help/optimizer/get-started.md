@@ -3,35 +3,24 @@ title: Erste Schritte
 description: Erfahren Sie mehr über die ersten Schritte mit [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
 TQID: https://experienceleague.adobe.com/1dcKMjOut1GtiOevvGJECsaU7URFmYg-mQ-m9wi7n4Y
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: dba482e5-29a8-4127-afa2-c4b913512ef8
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 423b35b15e845e49b1cf36910ffbad775de9758c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: dba482e5-29a8-4127-afa2-c4b913512ef8id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
 workflow-type: tm+mt
-source-wordcount: 1332
+source-wordcount: 1349
 ht-degree: 0%
 
 ---
 
 # Erste Schritte
 
-Diese Anleitung führt Sie durch die Einrichtung von [!DNL Adobe Commerce Optimizer] von Anfang bis Ende. Dieses Handbuch deckt zwar alle Rollen ab, doch finden [&#x200B; in der &#x200B;](https://developer.adobe.com/commerce/services/optimizer/) für Entwickler detaillierte Informationen zu den jeweiligen Inhalten.
+Diese Anleitung führt Sie durch die Einrichtung von [!DNL Adobe Commerce Optimizer] von Anfang bis Ende. Dieses Handbuch deckt zwar alle Rollen ab, doch finden [ in der ](https://developer.adobe.com/commerce/services/optimizer/) für Entwickler detaillierte Informationen zu den jeweiligen Inhalten.
 
 ## Instanztypen und Umgebungsisolierung
 
@@ -84,7 +73,7 @@ Führen Sie die folgenden Schritte aus, um Ihre [!DNL Adobe Commerce Optimizer]-
 Nach dem Erstellen der Instanz:
 
 1. [Instanz verwalten](#manage-instances) über Commerce Cloud Manager.
-1. Konfigurieren Sie den Benutzerzugriff mithilfe des [Benutzerhandbuchs für die &#x200B;](./user-management.md)&quot;
+1. Konfigurieren Sie den Benutzerzugriff mithilfe des [Benutzerhandbuchs für die ](./user-management.md)&quot;
 
 ### Schritt 3. Beispieldaten hinzufügen (optional)
 
@@ -124,6 +113,7 @@ Merchandiser optimieren und personalisieren das Einkaufserlebnis durch Produkter
 | Aufgabe | Beschreibung | Link |
 |---|---|---|
 | **Produkterkennung** | Konfigurieren von Suche und Filterung | [Merchandising - Übersicht](./merchandising/overview.md) |
+| **Sucheinstellungen** | Verwalten der semantischen Suche (standardmäßig aktiviert) und der optionalen Optimierung | [Einstellungen — Erweiterte Suche](./settings.md#advanced-search) und [Semantische Suche](./setup/semantic-search.md) |
 | **Recommendations** | Einrichten von KI-gestützten Produktempfehlungen | [Produktempfehlungen](./merchandising/recommendations/overview.md) |
 | **Leistungsverfolgung** | Überwachen von Erfolgsmetriken | [Erfolgsmetriken](./manage-results/success-metrics.md) |
 
@@ -167,7 +157,7 @@ Sobald die App geöffnet ist, können Sie einfach zwischen Umgebungen wie Sandbo
 
 >[!NOTE]
 >
->Um zu Commerce Cloud Manager zurückzukehren, um Instanzdetails anzuzeigen oder Instanzen zu verwalten, klicken Sie auf das Symbol ![Symbol zum Öffnen von Experience Cloud Applications](./assets/apps-icon.png) (Apps) in der oberen linken Ecke des oberen Navigationsbereichs von Commerce Optimizer.
+>Um zu Commerce Cloud Manager zurückzukehren, um Instanzdetails anzuzeigen oder Instanzen zu verwalten, klicken Sie auf das Symbol ![Symbol zum Öffnen von Experience Cloud](./assets/apps-icon.png)Programmen) in der oberen linken Ecke der oberen Navigationsleiste von Commerce Optimizer.
 
 ### Instanzdetails abrufen
 
@@ -179,7 +169,7 @@ Beachten Sie die folgenden wichtigen Informationen:
 
 - **GraphQL-Endpunkt** GraphQL-Endpunkt, den Ihre Storefront verwendet, um Katalog- und Merchandising-Daten von dieser Instanz mithilfe der [Merchandising Service-API abzufragen](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=„_blank}
 - **Katalog-Endpunkt** REST-API-Endpunkt, mit dem Sie Produkte und Preise aus Ihrem Commerce- oder PIM-System in Adobe Commerce Optimizer aufnehmen. Siehe [Datenaufnahme-API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)
-- **Commerce Optimizer-URL** Öffnet die Admin-Benutzeroberfläche von [Adobe Commerce Optimizer &#x200B;](overview.md)Studio&rbrace; zum Konfigurieren und Verwalten von Katalogansichten, Richtlinien und Merchandising.
+- **Commerce Optimizer-URL** Öffnet die Admin-Benutzeroberfläche von [Adobe Commerce Optimizer ](overview.md)Studio} zum Konfigurieren und Verwalten von Katalogansichten, Richtlinien und Merchandising.
 - **Instanz-ID**: Eindeutiger Bezeichner (Mandanten-ID) für diese Adobe Commerce Optimizer-Instanz, der von Storefronts, APIs und Tools zur Verbindung mit der richtigen Umgebung verwendet wird.
 
 Wenn Sie Entwickler sind, benötigen Sie diese Details, um Ihre Entwicklungsumgebung einzurichten und eine Verbindung zu den [!DNL Adobe Commerce Optimizer]-APIs herzustellen.
@@ -208,7 +198,7 @@ Die Beispieldaten basieren auf dem [Carvelo-Geschäftsszenario](./use-case/admin
 
 **Beispieldaten laden:**
 
-1. GitHub[Repository für die Datenaufnahme &#x200B;](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion) Beispielkatalogs.
+1. GitHub[Repository für die Datenaufnahme ](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion) Beispielkatalogs.
 
 1. Befolgen Sie die Setup-Anweisungen in der README-Datei des Repositorys, um die folgenden Aufgaben auszuführen:
 
@@ -251,6 +241,6 @@ Nach Abschluss der Einrichtung:
 ### Hilfe erhalten
 
 - **Entwicklerressourcen**: [Entwicklerdokumentation](https://developer.adobe.com/commerce/services/optimizer/)
-- **Storefront-Ressourcen**: [Dokumentation zur Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)
-- **Tutorials**: [Commerce Optimizer-Tutorials](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Support**: [Adobe Commerce-Support-Ressourcen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/overview)
+- **Storefront-Ressourcen**: [Dokumentation zur Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Tutorials**: [Commerce Optimizer-Tutorials](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Support**: [Adobe Commerce-Support-Ressourcen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
