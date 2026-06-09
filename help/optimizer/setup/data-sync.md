@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: 483
+source-wordcount: 484
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Wenn bestimmte Produkte nicht auf der Seite **Datensynchronisierung** angezeigt 
 
 ## Überwachen des Synchronisierungsstatus von Daten
 
-Bei Projekten, die Adobe Commerce als Upstream-Datenquelle über den Commerce Optimizer Connector verwenden, können Sie den Datenexportvorgang überwachen und Resynchronisierungsvorgänge über die Seite [Synchronisierungsstatus für Daten-Feeds](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in Commerce Admin starten.
+Bei Projekten, die Adobe Commerce als Upstream-Datenquelle über den Adobe Commerce Optimizer Connector verwenden, können Sie den Datenexportvorgang überwachen und Resynchronisierungsvorgänge über die Seite [Synchronisierungsstatus für Daten-Feeds](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in Commerce Admin starten.
 
 ## Verwandte Themen
 

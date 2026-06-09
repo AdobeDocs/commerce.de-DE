@@ -19,9 +19,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 4d08de7974c79dc6fe20366e0164f6078e83be5f
 workflow-type: tm+mt
-source-wordcount: 1384
+source-wordcount: 1216
 ht-degree: 0%
 
 ---
@@ -37,23 +37,13 @@ Katalogansichten definieren, wie Ihr Produktkatalog organisiert und angezeigt wi
 - **Welche Produkte sichtbar sind** basierend auf der Unternehmensstruktur (Marken, Regionen, Händler)
 - **Welche Preise werden angezeigt** durch verknüpfte Preisbücher
 - **Filterung von Produkten** Verwendung von Richtlinien (Attribute wie Marke, Modell, Kategorie)
-- **Welche Katalogquelle verwendet wird** basierend auf Attributen wie „locale“
+- **Was [Katalogquelle](catalog-source.md) wird basierend** Attributen wie „locale“ verwendet
 
 Stellen Sie sich Katalogansichten als verschiedene „Linsen“ vor, durch die Kunden Ihren Katalog sehen. Beispiel:
 
 - In einer Händlerkatalogansicht werden möglicherweise nur Produkte angezeigt, die für diesen Händler verfügbar sind
 - In einer regionalen Katalogansicht können Produkte und Preise angezeigt werden, die für ein geografisches Gebiet spezifisch sind
 - In einer Markenkatalogansicht werden möglicherweise nur Produkte einer bestimmten Marke angezeigt
-
-### Katalogansicht versus Katalogquelle
-
-Im Folgenden wird der Unterschied zwischen einer Katalogansicht und einer Katalogquelle erläutert:
-
-- **Katalogansicht** - Eine konfigurierte Ansicht Ihres Katalogs für eine bestimmte Geschäftsanforderung. Wenn Sie eine Katalogansicht erstellen, wählen Sie die zu verwendende Katalogquelle (oder das zu verwendende Gebietsschema) aus und fügen dann [Richtlinien](policies.md) hinzu, um zu filtern, welche Produkte sichtbar sind, und verknüpfen [Preislisten](pricebooks.md) um die Preise zu steuern. Eine einzelne Katalogquelle kann für viele Katalogansichten verwendet werden (z. B. eine `en-US` mit separaten Katalogansichten für verschiedene Marken oder Regionen). Stellen Sie sich eine Katalogansicht wie *vor* wie Sie diese Daten einer Storefront, einem Kanal oder einer Zielgruppe bereitstellen.
-
-- **Katalogquelle** - Der zugrunde liegende Datenkontext, der Produktinformationen bereitstellt. Eine Katalogquelle ist normalerweise ein Gebietsschema (z. B. `en-US`, `fr-CA`) oder ein externes System wie ein PIM oder ERP. [!DNL Adobe Commerce Optimizer] nimmt Produktdaten aus einer oder mehreren Katalogquellen in einen einheitlichen Basiskatalog auf. Stellen Sie sich eine Katalogquelle vor *aus* die Rohkatalogdaten stammen.
-
-Zusammenfassend lässt sich sagen, **Katalogquelle** der Datenkontext ist, aus dem Sie Daten abrufen. **Katalogansicht** ist der gefilterte, preisliche und organisierte Kontext, den Sie Käufern oder Kanälen präsentieren.
 
 ## Erstellen einer Katalogansicht
 
@@ -74,7 +64,7 @@ Bevor Sie eine Katalogansicht erstellen, stellen Sie sicher, dass Sie Folgendes 
 1. Konfigurieren Sie die Details der Katalogansicht:
 
    - **Name** - Geben Sie den Namen der Katalogansicht ein, z. B. `Celport`. &#x200B;
-   - **Katalogquellen** - Wählen Sie die Katalogquelle (Gebietsschema) aus, z. B. `en-US`.
+   - **Katalogquellen** - Wählen Sie die [Katalogquelle](catalog-source.md), z. B. `en-US`.
    - **Katalogebenen** Überprüfen der aufgenommenen Ebenen und der Priorität.
    - **Richtlinien** - Wählen Sie in der Dropdown-Liste die entsprechenden Richtlinien aus. Beispiel: „Marke“, „Modell“. &#x200B;Stellen Sie sicher, dass Sie bereits [eine Richtlinie erstellt haben](policies.md).
 
@@ -217,6 +207,7 @@ Die gefilterten Katalogdaten werden für verschiedene Ziele bereitgestellt, eins
 
 ## Ähnliche Themen
 
+- [Katalogquellen](catalog-source.md) - Definieren des maßgeblichen Umfangs von Produkten, Attributen und Kategorien für das Verhalten bei Suche, Filterung und Sortierung
 - [Katalogebenen](catalog-layer.md) Erfahren Sie, wie Sie Produktdaten ändern, ohne die ursprüngliche Quelle zu ändern
 - [Richtlinien](policies.md) - Erstellen von Richtlinien zum Filtern von Produkten in Katalogansichten
 - [Preisbücher](pricebooks.md) - Verwalten von Preisstrukturen für verschiedene Kundensegmente

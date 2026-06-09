@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie AEM Assets für Produktbilder in  [!DNL Adobe
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Die Integration umfasst zwei Hauptflüsse:
 
 * **Von AEM Assets**: Wenn ein Asset genehmigt, abgelehnt oder entfernt wird, fließt das Ereignis über die Adobe-Pipeline zum Assets Integration Service. Der Service ordnet Assets Produkten mithilfe einer `match-by-SKU` oder einer benutzerdefinierten Zuordnungsstrategie zu und sendet dann die `product-asset` Zuordnungen an die [!DNL Commerce Optimizer], wo sie als Produktebenen gespeichert werden.
 
-* **Von ACO**: Wenn ein Produkt im [!DNL Commerce Optimizer] aktualisiert wird, fließt das Ereignis über die Adobe-Pipeline zum Assets Integration Service. Der Service synchronisiert alle übereinstimmenden Asset-Zuordnungen zurück mit ACO.
+* **Von[!DNL Commerce Optimizer]**: Wenn ein Produkt im [!DNL Commerce Optimizer] aktualisiert wird, fließt das Ereignis über die Adobe-Pipeline zum Assets Integration Service. Der Service synchronisiert alle übereinstimmenden Asset-Zuordnungen zurück mit [!DNL Commerce Optimizer].
 
 Die aktualisierten Bilder sind über Storefront-APIs (Katalog-Service, Live-Suche, Produktempfehlungen) verfügbar.
 

@@ -1,14 +1,14 @@
 ---
-source-git-commit: edc47115830f5ca7ec1e485de1ddf9939de2586d
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
 # Commerce Snippets
 
 
-## Ausrichtung der ACO-Integrationsumgebung {#aco-integration-environment-alignment}
+## Ausrichtung der Adobe Commerce Optimizer-Integrationsumgebung {#aco-integration-environment-alignment}
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ ht-degree: 0%
 >
 >Wenn Sie den [Adobe Commerce Optimizer-Connector](../aco-connector/overview.md) installiert haben, um Katalogdaten nach Adobe Commerce Optimizer zu exportieren, verwenden Sie die Seite [Daten-Feed-Synchronisierungsstatus](../optimizer/setup/data-sync.md) in Commerce Optimizer Studio, um Daten zu überprüfen, die erfolgreich mit Adobe Commerce Optimizer synchronisiert wurden, anstatt mit dem Daten-Management-Dashboard.
 
-## ACO-Dropdown-Hinweis für API-Aktualisierungen {#aco-api-updates-and-dropins}
+## Adobe Commerce Optimizer-Dropdown-Hinweis für API-Aktualisierungen {#aco-api-updates-and-dropins}
 
 >[!NOTE]
 >

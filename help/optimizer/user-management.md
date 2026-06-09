@@ -19,7 +19,7 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
 source-wordcount: 816
 ht-degree: 0%
@@ -69,7 +69,7 @@ Es gibt zwei verschiedene Möglichkeiten, Produktadministratorbenutzer zu [!DNL 
 
 1. Klicken Sie auf **+**, um Produkte hinzuzufügen.
 
-1. Wählen Sie die bestehende Commerce Optimizer-Instanz aus, der der Administrator hinzugefügt werden soll. Commerce Optimizer-Instanzen verwenden das folgende Format: `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
+1. Wählen Sie die bestehende Commerce Optimizer-Instanz aus, der der Administrator hinzugefügt werden soll. Commerce Optimizer-Instanzen verwenden das folgende Format: `Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`.
 
 1. Wählen Sie das Produktprofil aus.
 
@@ -115,7 +115,7 @@ Mit den folgenden Anweisungen können Sie erfahren, wie Sie Benutzende zum [!DNL
 
 1. Wählen Sie das [!UICONTROL **Adobe Commerce**]-Produkt aus.
 
-1. Wählen Sie das Commerce Cloud Manager-Produkt aus, wenn Sie den Anwender zur Benutzeroberfläche von Cloud Manager hinzufügen möchten, wo er Commerce Optimizer-Instanzen erstellen und verwalten kann, oder wählen Sie die vorhandene Commerce Optimizer-Instanz aus, um den Anwender hinzuzufügen. Commerce Optimizer-Instanzen verwenden das folgende Format: `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
+1. Wählen Sie das Commerce Cloud Manager-Produkt aus, wenn Sie den Anwender zur Benutzeroberfläche von Cloud Manager hinzufügen möchten, wo er Commerce Optimizer-Instanzen erstellen und verwalten kann, oder wählen Sie die vorhandene Commerce Optimizer-Instanz aus, um den Anwender hinzuzufügen. Commerce Optimizer-Instanzen verwenden das folgende Format: `Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`.
 
 1. Wählen Sie die Registerkarte [!UICONTROL **Benutzer**] und klicken Sie auf [!UICONTROL **Benutzer hinzufügen**].
 

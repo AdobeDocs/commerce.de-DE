@@ -21,9 +21,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: be4140fb3305b354e8a11463131182a3b571d2f2
+source-git-commit: b954ce1acf338978acad4fbb2ec5e01db174bbf9
 workflow-type: tm+mt
-source-wordcount: 1177
+source-wordcount: 1167
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Commerce bleibt Ihr Aufzeichnungssystem für Produkte, Preise und Katalogstruktu
 
 Das folgende Diagramm veranschaulicht die End-to-End-Architektur für den Connector, von Adobe Commerce über Commerce Optimizer und Out bis hin zu Storefronts und Checkout-Systemen.
 
-![Diagramm zur End-to-End-Architektur des Commerce Optimizer-Connectors für Commerce](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
+![Diagramm zur End-to-End-Architektur des Adobe Commerce Optimizer-Connectors](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
 
 In dieser Architektur:
 
@@ -89,31 +89,18 @@ Diese Workflows beschreiben, wie Teams den Adobe Commerce Optimizer-Connector ei
 
 ### Ersteinrichtung und -konfiguration {#initial-setup}
 
-1. **Installieren Sie das Connector-Paket in Adobe Commerce** mithilfe von Composer:
 
-   `composer require adobe-commerce/commerce-data-export-aco-adapter`
+Die allgemeinen Schritte zur Einrichtung und Konfiguration:
 
-1. **Konfigurieren der Authentifizierung und Umgebungsdetails** in Commerce Admin oder über CLI:
+1. Installieren Sie das Connector-Paket für Adobe Commerce.
 
-   ```terminal
-   bin/magento aco:config:init \
-     --org_id=<your-org> \
-     --tenant_id=<your-tenant> \
-     --client_id=<your-client-id> \
-     --client_secret=<your-secret> \
-     --region=na1 \
-     --type=production
-   ```
+1. Konfigurieren Sie die Authentifizierung und Umgebungsdetails.
 
-1. **Zuordnen von Commerce-Bereichen zu Commerce Optimizer:**
+1. Zuordnen von Commerce-Bereichen zu Commerce Optimizer.
 
-   - Bestätigen, welche Websites und Store-Ansichten im Umfang sein müssen
-   - Stellen Sie sicher, dass Kundengruppen und Preisregeln wie erwartet modelliert werden
+1. Überprüfen Sie die Verbindung.
 
-1. **Überprüfen Sie die Konnektivität:**
-
-   - Führen Sie eine Testsynchronisierung durch und überprüfen Sie, ob Katalogquellen, Preislisten und Anfangsprodukte in Commerce Optimizer angezeigt werden.
-   - Verwenden Sie die Seite „Status der Daten-Feed-Synchronisierung“ in Commerce und die Dashboards zur Datensynchronisierung in Commerce Optimizer zur Validierung
+Detaillierte Anweisungen finden Sie unter [Konfigurationsschritte](./get-started.md#configuration-steps) im _Erste Schritte_.
 
 ### Laufende Datensynchronisation {#ongoing-sync}
 
@@ -121,11 +108,16 @@ Nach der ersten Konfiguration unterstützt der Connector Folgendes:
 
 - **Vollständige Katalogsynchronisierung** für die Erstmigration oder große strukturelle Änderungen
 - **Delta-Synchronisationen** für laufende Aktualisierungen, wenn sich Produkte oder Preise ändern
-- **Befehle neu synchronisieren** für zielgerichtete Feeds (einschließlich Kategorien ab Version 1.0.12):
+- **Befehle neu synchronisieren** für Feeds
 
-   - `bin/magento saas:resync --feed=products`
-   - `bin/magento saas:resync --feed=prices`
-   - `bin/magento saas:resync --feed=categories`
+Die folgenden Feeds sind für den Adobe Commerce Optimizer-Connector verfügbar:
+
+- `products` - Produktdaten
+- `productAttributes` - Metadaten für Produktattribute
+- `priceBooks` - Preisbücher
+- `prices` - Produktpreise
+- `categories` - Daten zu Kategorien
+Weitere Informationen zur Verwendung der Commerce-Befehlszeilenschnittstelle (CLI) für Resynchronisierungsvorgänge finden Sie unter [CLI resync command](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="blank"}.
 
 ### Konfigurieren von Merchandising und Storefronts {#merchandising-storefronts}
 
