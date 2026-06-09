@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4bd744e26afca4519fb1c04edcb7d2a118369ff9
+source-git-commit: acc520f67bdd1bdafd34b356b59bb32145192497
 workflow-type: tm+mt
-source-wordcount: 2782
+source-wordcount: 2682
 ht-degree: 0%
 
 ---
@@ -607,6 +607,16 @@ Aktualisierungen des Katalog-Service PHP-Metapakets (`magento/catalog-service`).
 - Für Kunden von Adobe Commerce as a Cloud Service wird die neueste Version in Ihrer Umgebung installiert.
 
 - Für Adobe Commerce in der Cloud oder On-Premise empfiehlt Adobe die Verwendung von Composer , um das Catalog Service-Metapaket in Ihren Cloud-Umgebungen auf die neueste Version zu aktualisieren.
+
+### Version v3.4.0
+
+**Veröffentlichungsdatum:**. Juni 2026
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
+
+![Neu](../assets/new.svg) **Unterstützung für die Überwachung des Synchronisierungsstatus von Daten-Feeds** - Die Abhängigkeiten des Metapakets für den Katalog-Service wurden aktualisiert und enthalten nun die Data Exporter Status-Erweiterung (`magento/module-data-exporter-status`). Dies ermöglicht [Überwachung des Status der Daten-Feed](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)Synchronisierung durch den Commerce-Administrator, ohne dass zusätzliche Installations- oder Konfigurationsschritte erforderlich sind
+
+![Neu](../assets/new.svg) Abhängigkeiten wurden aktualisiert, um die Kompatibilität zwischen dem Katalog-Service und Ihrem Commerce-Stack zu gewährleisten.
 
 ### Version v3.3.0
 
