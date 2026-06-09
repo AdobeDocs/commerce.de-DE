@@ -58,7 +58,7 @@ Unterstützung wird für die neueste Version bereitgestellt. Versionshinweise f�
 **Veröffentlichungsdatum:**. Mai 2026
 <!-- v1.55 -->
 
-![Neu](../assets/new.svg) Erzwungenes Limit von maximal 100 SKUs pro Anfrage für Adobe Commerce- und Adobe Commerce as a Cloud Service-Clients gemäß [dokumentierten Limits und Begrenzungen](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
+![Neu](../assets/new.svg) Erzwungenes Limit von maximal 100 SKUs pro Anfrage für Adobe Commerce- und Adobe Commerce as a Cloud Service-Clients gemäß [dokumentierten Limits und Begrenzungen](https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits).
 <!--DATA-7163-->
 
 **Veröffentlichungsdatum:**. Mai 2026
@@ -78,7 +78,7 @@ Unterstützung wird für die neueste Version bereitgestellt. Versionshinweise f�
 <!--v1.52-->
 
 ![Neu](../assets/new.svg) Erzwungenes Limit von maximal 100 SKUs pro Anfrage für Adobe Commerce Optimizer und Adobe Commerce as a Cloud Service
-Clients gemäß [dokumentierte Beschränkungen und &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)<!--DATA-7156-->
+Clients gemäß [dokumentierte Beschränkungen und &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits)<!--DATA-7156-->
 
 **Veröffentlichungsdatum:**. April 2026
 <!--v1.51-->
@@ -262,7 +262,7 @@ Gilt für:
 **Veröffentlichungsdatum:**. Juni 2025
 <!-- v1.37 -->
 
-![Neu](../assets/new.svg) **Hierarchische Preisbuchkonfiguration** - Präzise Preisbereiche für über- und untergeordnete Preisbücher. Berechnungen berücksichtigen Hierarchie und übernommene Regeln; reduziert Preisfehler, wenn mehrere Preisbücher verknüpft sind. Nur Adobe Commerce Optimizer. Siehe [Preisbücher](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
+![Neu](../assets/new.svg) **Hierarchische Preisbuchkonfiguration** - Präzise Preisbereiche für über- und untergeordnete Preisbücher. Berechnungen berücksichtigen Hierarchie und übernommene Regeln; reduziert Preisfehler, wenn mehrere Preisbücher verknüpft sind. Nur Adobe Commerce Optimizer. Siehe [Preisbücher](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/pricebooks).
 
 ![Neu](../assets/new.svg) **Schlüssel ohne Unterscheidung von Groß- und Kleinschreibung** - Bei Schlüsselsuchen in Abfragen wird jetzt nicht mehr zwischen Groß- und Kleinschreibung unterschieden, wodurch Fehler durch Schlüsselschreibungen reduziert werden. <!--DATA-6494, DCAT-2495-->
 
@@ -399,7 +399,7 @@ Hauptversion: [Zusammensetzbares Katalogdatenmodell](https://developer.adobe.com
 
 <!--DATA-5033-->
 
-![Fix](../assets/fix.svg) Es wurde Unterstützung für Produktpreise mit bis zu 16 Stellen und 4 Dezimalstellen hinzugefügt. Synchronisieren Sie über das [Data Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) oder [CLI](../data-export/data-export-cli-commands.md) neu, um Aktualisierungen anzuwenden.
+![Fix](../assets/fix.svg) Es wurde Unterstützung für Produktpreise mit bis zu 16 Stellen und 4 Dezimalstellen hinzugefügt. Synchronisieren Sie über das [Data Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) oder [CLI](../data-export/data-export-cli-commands.md) neu, um Aktualisierungen anzuwenden.
 <!--DATA-5033-->
 
 #### Bekannte Einschränkungen
@@ -436,7 +436,7 @@ Weitere Informationen und Beispiele finden Sie unter [Katalog-Service und API-Me
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) ist jetzt für Datenströme verfügbar (Produktempfehlungen, Live-Suche, Katalog-Service). Erfordert `catalog-service` Metapaket v3.1.0+.
+![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=de) ist jetzt für Datenströme verfügbar (Produktempfehlungen, Live-Suche, Katalog-Service). Erfordert `catalog-service` Metapaket v3.1.0+.
 
 **Veröffentlichungsdatum**: 13. Februar 2024
 <!-- v1.16 -->
@@ -614,7 +614,7 @@ Aktualisierungen des Katalog-Service PHP-Metapakets (`magento/catalog-service`).
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) **Unterstützung für die Überwachung des Synchronisierungsstatus von Daten-Feeds** - Die Abhängigkeiten des Metapakets für den Katalog-Service wurden aktualisiert und enthalten nun die Data Exporter Status-Erweiterung (`magento/module-data-exporter-status`). Dies ermöglicht [Überwachung des Status der Daten-Feed](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)Synchronisierung durch den Commerce-Administrator, ohne dass zusätzliche Installations- oder Konfigurationsschritte erforderlich sind
+![Neu](../assets/new.svg) **Unterstützung für die Überwachung des Synchronisierungsstatus von Daten-Feeds** - Die Abhängigkeiten des Metapakets für den Katalog-Service wurden aktualisiert und enthalten nun die Data Exporter Status-Erweiterung (`magento/module-data-exporter-status`). Dies ermöglicht [Überwachung des Status der Daten-Feed](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)Synchronisierung durch den Commerce-Administrator, ohne dass zusätzliche Installations- oder Konfigurationsschritte erforderlich sind
 
 ![Neu](../assets/new.svg) Abhängigkeiten wurden aktualisiert, um die Kompatibilität zwischen dem Katalog-Service und Ihrem Commerce-Stack zu gewährleisten.
 
