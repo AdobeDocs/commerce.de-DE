@@ -2,28 +2,16 @@
 title: Adobe Commerce Optimizer-Connector
 description: Erfahren Sie, wie Sie Ihre Daten aus Ihrem Commerce Cloud- oder lokalen Projekt mit Adobe Commerce Optimizer verbinden
 feature: Personalization, Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 TQID: https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: be4140fb3305b354e8a11463131182a3b571d2f2
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: b954ce1acf338978acad4fbb2ec5e01db174bbf9
 workflow-type: tm+mt
-source-wordcount: 1177
+source-wordcount: 1167
 ht-degree: 0%
 
 ---
@@ -52,7 +40,7 @@ Commerce bleibt Ihr Aufzeichnungssystem für Produkte, Preise und Katalogstruktu
 
 Das folgende Diagramm veranschaulicht die End-to-End-Architektur für den Connector, von Adobe Commerce über Commerce Optimizer und Out bis hin zu Storefronts und Checkout-Systemen.
 
-![Diagramm zur End-to-End-Architektur des Commerce Optimizer-Connectors für Commerce](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
+![Diagramm zur End-to-End-Architektur des Adobe Commerce Optimizer-Connectors](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
 
 In dieser Architektur:
 
@@ -89,31 +77,18 @@ Diese Workflows beschreiben, wie Teams den Adobe Commerce Optimizer-Connector ei
 
 ### Ersteinrichtung und -konfiguration {#initial-setup}
 
-1. **Installieren Sie das Connector-Paket in Adobe Commerce** mithilfe von Composer:
 
-   `composer require adobe-commerce/commerce-data-export-aco-adapter`
+Die allgemeinen Schritte zur Einrichtung und Konfiguration:
 
-1. **Konfigurieren der Authentifizierung und Umgebungsdetails** in Commerce Admin oder über CLI:
+1. Installieren Sie das Connector-Paket für Adobe Commerce.
 
-   ```terminal
-   bin/magento aco:config:init \
-     --org_id=<your-org> \
-     --tenant_id=<your-tenant> \
-     --client_id=<your-client-id> \
-     --client_secret=<your-secret> \
-     --region=na1 \
-     --type=production
-   ```
+1. Konfigurieren Sie die Authentifizierung und Umgebungsdetails.
 
-1. **Zuordnen von Commerce-Bereichen zu Commerce Optimizer:**
+1. Zuordnen von Commerce-Bereichen zu Commerce Optimizer.
 
-   - Bestätigen, welche Websites und Store-Ansichten im Umfang sein müssen
-   - Stellen Sie sicher, dass Kundengruppen und Preisregeln wie erwartet modelliert werden
+1. Überprüfen Sie die Verbindung.
 
-1. **Überprüfen Sie die Konnektivität:**
-
-   - Führen Sie eine Testsynchronisierung durch und überprüfen Sie, ob Katalogquellen, Preislisten und Anfangsprodukte in Commerce Optimizer angezeigt werden.
-   - Verwenden Sie die Seite „Status der Daten-Feed-Synchronisierung“ in Commerce und die Dashboards zur Datensynchronisierung in Commerce Optimizer zur Validierung
+Detaillierte Anweisungen finden Sie unter [Konfigurationsschritte](./get-started.md#configuration-steps) im _Erste Schritte_.
 
 ### Laufende Datensynchronisation {#ongoing-sync}
 
@@ -121,11 +96,16 @@ Nach der ersten Konfiguration unterstützt der Connector Folgendes:
 
 - **Vollständige Katalogsynchronisierung** für die Erstmigration oder große strukturelle Änderungen
 - **Delta-Synchronisationen** für laufende Aktualisierungen, wenn sich Produkte oder Preise ändern
-- **Befehle neu synchronisieren** für zielgerichtete Feeds (einschließlich Kategorien ab Version 1.0.12):
+- **Befehle neu synchronisieren** für Feeds
 
-   - `bin/magento saas:resync --feed=products`
-   - `bin/magento saas:resync --feed=prices`
-   - `bin/magento saas:resync --feed=categories`
+Die folgenden Feeds sind für den Adobe Commerce Optimizer-Connector verfügbar:
+
+- `products` - Produktdaten
+- `productAttributes` - Metadaten für Produktattribute
+- `priceBooks` - Preisbücher
+- `prices` - Produktpreise
+- `categories` - Daten zu Kategorien
+Weitere Informationen zur Verwendung der Commerce-Befehlszeilenschnittstelle (CLI) für Resynchronisierungsvorgänge finden Sie unter [CLI resync command](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="blank"}.
 
 ### Konfigurieren von Merchandising und Storefronts {#merchandising-storefronts}
 
@@ -189,7 +169,7 @@ Commerce ist die wahre Informationsquelle für Produkte, Preise und Kundengruppe
 
 **Bevor Sie beginnen:**
 
-- Stellen Sie sicher, dass Commerce die Mindestanforderungen an Version und Services-Connector erfüllt. Weitere Informationen [&#x200B; Sie unter &#x200B;](get-started.md#prerequisites) Schritte .
+- Stellen Sie sicher, dass Commerce die Mindestanforderungen an Version und Services-Connector erfüllt. Weitere Informationen [ Sie unter ](get-started.md#prerequisites) Schritte .
 - Stellen Sie sicher, dass Sie Zugriff auf die IMS-Organisation, eine [!DNL Adobe Commerce Optimizer]-Instanz und die erforderlichen Anmeldeinformationen und Regionsdetails haben.
 
 ## Verwandte Dokumentation {#related-documentation}

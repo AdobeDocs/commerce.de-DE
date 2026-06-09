@@ -1,25 +1,15 @@
 ---
 title: Benutzer und Identity Management
 description: Erfahren Sie, wie Sie Benutzer erstellen und verwalten und Benutzerrollen für [!DNL Adobe Commerce Optimizer] zuweisen.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 9ab2118d-b7e3-4e2e-adac-8f3950fe1824
 TQID: https://experienceleague.adobe.com/ORS8H-GM48FMaTL7ywENU6lJnPrz7PULLhlu5AVlzDc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-  - id: ce84ce08-883f-4337-ae83-6bb1855ca732
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c4f010fa-1478-4300-a88d-706fbc036a7aid: cc250cf1-34eb-4863-80d0-d170d45ea067id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: a743e5dc-8f37-4b5d-a848-03c32ca30598id: ce84ce08-883f-4337-ae83-6bb1855ca732
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
 source-wordcount: 816
 ht-degree: 0%
@@ -28,16 +18,16 @@ ht-degree: 0%
 
 # Benutzerverwaltung
 
-Um den Zugriff auf [!DNL Adobe Commerce Optimizer] zu aktivieren, fügen Sie Benutzer aus der [Adobe Admin Console &#x200B;](https://adminconsole.adobe.com){target="_blank"} und stellen Sie sicher, dass sie Zugriff auf das Commerce-Produkt haben.
+Um den Zugriff auf [!DNL Adobe Commerce Optimizer] zu aktivieren, fügen Sie Benutzer aus der [Adobe Admin Console ](https://adminconsole.adobe.com){target="_blank"} und stellen Sie sicher, dass sie Zugriff auf das Commerce-Produkt haben.
 
 Sie können Benutzer einer der folgenden Rollen zuweisen:
 
 - **Benutzer** - Benutzer haben Zugriff auf die [!DNL Adobe Commerce Optimizer]-Benutzeroberfläche, um Katalogansichten und Merchandising-Regeln anzuzeigen und zu verwalten und Leistungsmetriken zu verfolgen.
 
-- [**Entwickler**](https://helpx.adobe.com/de/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} - Entwicklerinnen und Entwickler haben Benutzerberechtigungen und Zugriff auf die Adobe Developer Console. Das bedeutet, dass sie Projekte erstellen und Anmeldeinformationen konfigurieren können, um Entwickler-Tools wie die [!DNL Adobe Commerce Optimizer]-APIs und -SDKs zusammen mit Adobe-Erweiterbarkeits-Tools wie App Builder und API Mesh zu verwenden.
+- [**Entwickler**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} - Entwicklerinnen und Entwickler haben Benutzerberechtigungen und Zugriff auf die Adobe Developer Console. Das bedeutet, dass sie Projekte erstellen und Anmeldeinformationen konfigurieren können, um Entwickler-Tools wie die [!DNL Adobe Commerce Optimizer]-APIs und -SDKs zusammen mit Adobe-Erweiterbarkeits-Tools wie App Builder und API Mesh zu verwenden.
 
 - **Admin** - Es gibt drei verschiedene Arten von Administratorrollen:
-   - [Systemadmins](https://helpx.adobe.com/de/enterprise/using/admin-roles.html){target="_blank"} - Der Systemadmin hat über die Adobe Admin Console Zugriff auf alle Produkte und Produktprofile in der Organisation.
+   - [Systemadmins](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - Der Systemadmin hat über die Adobe Admin Console Zugriff auf alle Produkte und Produktprofile in der Organisation.
    - [Produktadministratoren](#add-a-product-admin) - Produktadministratoren können [Benutzer, Rollen und Berechtigungen für das Produkt verwalten](#add-users) in der [!DNL Adobe Admin Console].
    - [Produktprofil-Administrierende](#add-developers-and-product-profile-admins) - Produktprofil-Administrierende können Benutzende für das Produkt in der [!DNL Adobe Admin Console] verwalten.
 
@@ -69,7 +59,7 @@ Es gibt zwei verschiedene Möglichkeiten, Produktadministratorbenutzer zu [!DNL 
 
 1. Klicken Sie auf **+**, um Produkte hinzuzufügen.
 
-1. Wählen Sie die bestehende Commerce Optimizer-Instanz aus, der der Administrator hinzugefügt werden soll. Commerce Optimizer-Instanzen verwenden das folgende Format: `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
+1. Wählen Sie die bestehende Commerce Optimizer-Instanz aus, der der Administrator hinzugefügt werden soll. Commerce Optimizer-Instanzen verwenden das folgende Format: `Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`.
 
 1. Wählen Sie das Produktprofil aus.
 
@@ -115,7 +105,7 @@ Mit den folgenden Anweisungen können Sie erfahren, wie Sie Benutzende zum [!DNL
 
 1. Wählen Sie das [!UICONTROL **Adobe Commerce**]-Produkt aus.
 
-1. Wählen Sie das Commerce Cloud Manager-Produkt aus, wenn Sie den Anwender zur Benutzeroberfläche von Cloud Manager hinzufügen möchten, wo er Commerce Optimizer-Instanzen erstellen und verwalten kann, oder wählen Sie die vorhandene Commerce Optimizer-Instanz aus, um den Anwender hinzuzufügen. Commerce Optimizer-Instanzen verwenden das folgende Format: `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
+1. Wählen Sie das Commerce Cloud Manager-Produkt aus, wenn Sie den Anwender zur Benutzeroberfläche von Cloud Manager hinzufügen möchten, wo er Commerce Optimizer-Instanzen erstellen und verwalten kann, oder wählen Sie die vorhandene Commerce Optimizer-Instanz aus, um den Anwender hinzuzufügen. Commerce Optimizer-Instanzen verwenden das folgende Format: `Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`.
 
 1. Wählen Sie die Registerkarte [!UICONTROL **Benutzer**] und klicken Sie auf [!UICONTROL **Benutzer hinzufügen**].
 
@@ -149,7 +139,7 @@ Mit den folgenden Anweisungen können Sie erfahren, wie Sie Benutzende zum [!DNL
 
 ### Hinzufügen von Entwicklern und Produktprofil-Administrierenden
 
-Um Entwickler und Produktprofil-Administrierende hinzuzufügen, wiederholen Sie den [Benutzer hinzufügen](#add-users), wählen Sie jedoch die Registerkarte [!UICONTROL **&#x200B;**] oder [!UICONTROL **Administratoren**] anstelle der Registerkarte [!UICONTROL **Benutzer**] aus.
+Um Entwickler und Produktprofil-Administrierende hinzuzufügen, wiederholen Sie den [Benutzer hinzufügen](#add-users), wählen Sie jedoch die Registerkarte [!UICONTROL ****] oder [!UICONTROL **Administratoren**] anstelle der Registerkarte [!UICONTROL **Benutzer**] aus.
 
 >[!NOTE]
 >
@@ -161,8 +151,8 @@ Um Entwickler und Produktprofil-Administrierende hinzuzufügen, wiederholen Sie 
 
 Sie können mit einer der folgenden Methoden mehrere Benutzer effizienter hinzufügen:
 
-- Verwenden Sie die **Benutzer nach CSV hinzufügen** in der Adobe Admin Console, um einen [CSV-Massen-Upload](https://helpx.adobe.com/de/enterprise/using/bulk-upload-users.html){target="_blank"} durchzuführen.
-- Fügen Sie einer Rolle mehrere Benutzer hinzu, indem Sie eine [Benutzergruppe](https://helpx.adobe.com/de/enterprise/using/user-groups.html){target="_blank"} erstellen. Anschließend können Sie der Benutzergruppe die entsprechenden Produkte hinzufügen.
+- Verwenden Sie die **Benutzer nach CSV hinzufügen** in der Adobe Admin Console, um einen [CSV-Massen-Upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"} durchzuführen.
+- Fügen Sie einer Rolle mehrere Benutzer hinzu, indem Sie eine [Benutzergruppe](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"} erstellen. Anschließend können Sie der Benutzergruppe die entsprechenden Produkte hinzufügen.
 
 ## Identitätsverwaltung und Single-Sign-on-Konfiguration
 
