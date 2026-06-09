@@ -107,7 +107,7 @@ In der folgenden Tabelle wird beschrieben, welche Daten auf jeder Bereichsebene 
 
 | Umfang | Daten exportiert | Notizen |
 |----------------------------| --------------- |-------|
-| Website und Kundengruppe | Preise und Preisbücher | Jede Preisgruppe wird als „Preisbuch[ exportiert, wobei ](../optimizer/setup/pricebooks.md) Namenskonvention `<website>::<SHA1 of customer group ID>` verwendet wird. Alle Kundengruppen für die Website sind enthalten. |
+| Website und Kundengruppe | Preise und Preisbücher | Jede Preisgruppe wird als „Preisbuch[&#x200B; exportiert, wobei &#x200B;](../optimizer/setup/pricebooks.md) Namenskonvention `<website>::<SHA1 of customer group ID>` verwendet wird. Alle Kundengruppen für die Website sind enthalten. |
 | Shop-Ansicht | Produkte und Produktattribute | Jede Shop-Ansicht erstellt eine separate [Katalogquelle](../optimizer/setup/catalog-source.md) in [!DNL Adobe Commerce Optimizer]. |
 
 ![Raster mit Commerce Optimizer-Synchronisierungseinstellungen speichern](./assets/aco-connector-storeviews-list.png){width="600" zoomable="yes"}
@@ -151,7 +151,7 @@ Speichern Sie die folgenden Werte auf der Seite mit den Anmeldedaten:
 
 ### [!DNL Adobe Commerce Optimizer]-Instanzdetails abrufen
 
-Rufen Sie die _Mandanten_ ID) aus dem Feld _[!DNL Instance Id]_auf der [!DNL Adobe Commerce Optimizer]-Instanz [[!DNL Instance details] Seite](../optimizer/get-started.md#manage-instances) oder aus der URL ab, die für den Zugriff auf die Instanz verwendet wird. Zum Beispiel in `https://experience.adobe.com/#/@<your organization>/in:<tenant ID>/commerce-optimizer-studio/home`.
+Rufen Sie die _Mandanten_ ID) aus dem Feld _[!DNL Instance Id]_&#x200B;auf der [!DNL Adobe Commerce Optimizer]-Instanz [[!DNL Instance details] Seite](../optimizer/get-started.md#manage-instances) oder aus der URL ab, die für den Zugriff auf die Instanz verwendet wird. Zum Beispiel in `https://experience.adobe.com/#/@<your organization>/in:<tenant ID>/commerce-optimizer-studio/home`.
 
 1. Wählen Sie in Commerce Admin die Option **[!UICONTROL Adobe Commerce Optimizer]** aus, um die Konfigurationsseite mit Anweisungen anzuzeigen.
 
@@ -171,7 +171,7 @@ bin/magento aco:config:init --org_id=your-org --tenant_id=your-tenant --client_i
 
 ## Überprüfen, ob die Datensynchronisation funktioniert
 
-Sie können über die Seite [Daten-Feed-Synchronisierungsstatus“ in Admin überwachen ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) überprüfen, ob die Synchronisierung funktioniert.
+Sie können über die Seite [Daten-Feed-Synchronisierungsstatus“ in Admin überwachen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) überprüfen, ob die Synchronisierung funktioniert.
 
 1. **Überprüfen Sie den Synchronisierungsstatus im Commerce Admin-**:
 

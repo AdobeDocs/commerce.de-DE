@@ -56,9 +56,9 @@ Stellen Sie vor der Aktivierung von Produktbildern sicher, dass Sie die [Vorauss
 
 ## Setup
 
-Um die Integration zu aktivieren[ erstellen Sie ein Support-Ticket ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) Ihren [!DNL Commerce Optimizer]- und AEM Assets-Details. Der Adobe-Support konfiguriert die Integration und registriert Ihren Mandanten beim Assets Integration Service.
+Um die Integration zu aktivieren[&#x200B; erstellen Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) Ihren [!DNL Commerce Optimizer]- und AEM Assets-Details. Der Adobe-Support konfiguriert die Integration und registriert Ihren Mandanten beim Assets Integration Service.
 
-Weitere [ finden Sie unter „Konfigurieren von AEM Assets ](../../aem-assets-integration/get-started/configure-aco.md) Commerce Optimizer&quot;.
+Weitere [&#x200B; finden Sie unter „Konfigurieren von AEM Assets &#x200B;](../../aem-assets-integration/get-started/configure-aco.md) Commerce Optimizer&quot;.
 
 ### Konfigurieren von AEM Assets-Metadaten
 
@@ -82,7 +82,7 @@ Nachdem die Integration konfiguriert ist, verwalten Sie Ihre Produktbilder über
 
 ### Anwenden der AEM-Assets-Ebene
 
-Um AEM Assets-Bilder auf Ihrer Storefront anzuzeigen[ weisen Sie die `AEM-Assets` Ihrer Katalogansicht zu](catalog-layer.md#assign-the-aem-assets-layer-to-a-catalog-view).
+Um AEM Assets-Bilder auf Ihrer Storefront anzuzeigen[&#x200B; weisen Sie die `AEM-Assets` Ihrer Katalogansicht zu](catalog-layer.md#assign-the-aem-assets-layer-to-a-catalog-view).
 
 ## Ähnliche Themen
 

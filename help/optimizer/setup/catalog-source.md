@@ -28,9 +28,9 @@ Wenn Sie verstehen, wie eine Katalogquelle mit anderen [!DNL Adobe Commerce Opti
 
 ## Regeln und Einschränkungen
 
-* Eine Katalogquelle wird erstellt, indem ein Produkt über die Datenaufnahme-API aufgenommen wird. Weitere Informationen finden [ unter ](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) - Datenaufnahme .
+* Eine Katalogquelle wird erstellt, indem ein Produkt über die Datenaufnahme-API aufgenommen wird. Weitere Informationen finden [&#x200B; unter &#x200B;](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) - Datenaufnahme .
 * Die Einzigartigkeit des Produkts wird durch die SKU und die Katalogquelle bestimmt.
-* Käufer greifen nicht direkt auf Katalogquellen zu. Katalogdaten werden über (Katalogansichten[ der Storefront ](catalog-view.md).
+* Käufer greifen nicht direkt auf Katalogquellen zu. Katalogdaten werden über (Katalogansichten[&#x200B; der Storefront &#x200B;](catalog-view.md).
 
 ## Modellierungsanleitung
 
