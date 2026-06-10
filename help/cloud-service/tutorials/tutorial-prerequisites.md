@@ -7,16 +7,12 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
-TQID: https://experienceleague.adobe.com/UvtVXuUjbanuVWqNG3-bYQh6IzY1OuDjGYpojtXHMHY
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+TQID: 'https://experienceleague.adobe.com/aF6iiuFf5sCDyT0gmYmh8h94ZhMWr0DbIKrG1pI0G6I'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
 source-wordcount: 1291
 ht-degree: 0%
@@ -25,7 +21,7 @@ ht-degree: 0%
 
 # Voraussetzungen für das Tutorial
 
-Auf dieser Seite werden die Voraussetzungen und Einrichtungsschritte für [!DNL Adobe Commerce as a Cloud Service] Tutorials aufgelistet, z. B[&#x200B; das Tutorial zur Erweiterung von Bewertungen &#x200B;](./ratings-extension.md) das Tutorial [Erweiterung der Versandmethode](./shipping-method-extension.md).
+Auf dieser Seite werden die Voraussetzungen und Einrichtungsschritte für [!DNL Adobe Commerce as a Cloud Service] Tutorials aufgelistet, z. B[ das Tutorial zur Erweiterung von Bewertungen ](./ratings-extension.md) das Tutorial [Erweiterung der Versandmethode](./shipping-method-extension.md).
 
 ## Allgemeine Voraussetzungen
 
@@ -407,7 +403,7 @@ Die folgenden Elemente sind erforderlich, um den Abschnitt [Storefront](./rating
 
 * [Google Chrome](https://www.google.com/chrome/) - Zum Testen der Storefront erforderlich
 
-* Ein Storefront-Projekt, das mit Ihrer [!DNL Commerce] verbunden ist. Wenn Sie kein Storefront-Projekt haben, führen Sie die Schritte in [Storefront erstellen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=de){target="_blank"} aus, einschließlich des Abschnitts [Repo mit Commerce-Daten verknüpfen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=de#link-repo-to-commerce-data){target="_blank"}.
+* Ein Storefront-Projekt, das mit Ihrer [!DNL Commerce] verbunden ist. Wenn Sie kein Storefront-Projekt haben, führen Sie die Schritte in [Storefront erstellen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"} aus, einschließlich des Abschnitts [Repo mit Commerce-Daten verknüpfen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}.
 
 ### Klonen des Storefront-Repositorys
 

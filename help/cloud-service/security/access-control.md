@@ -2,10 +2,14 @@
 title: Identitäts- und Zugriffsverwaltung
 description: Erfahren Sie mehr über die Funktionen zur Identitäts- und Zugriffsverwaltung für Adobe Commerce as a Cloud Service.
 role: Admin, Developer, Leader
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: feb48068137c6a63e6594167fe969c3aa4b044c4
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+TQID: 'https://experienceleague.adobe.com/lbI3nsLtafel6GtquXnkZmXD2Z3b-rRGPOyr8EqzrjE'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: 419
 ht-degree: 0%
 
 ---
@@ -15,7 +19,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service] nutzt die Identitätsinfrastruktur von Adobe im Unternehmensmaßstab, um eine sichere, skalierbare und zentralisierte Zugriffskontrolle über alle Umgebungen hinweg sicherzustellen. Die Identitäts- und Zugriffsverwaltung (IAM) in [!DNL Adobe Commerce as a Cloud Service] vereinfacht die Benutzerbereitstellung, erzwingt den Zugriff mit geringsten Rechten und unterstützt die Einhaltung globaler Sicherheitsstandards.
 
-- **[!DNL Adobe Identity Management Services (IMS)]**: [!DNL Adobe Commerce as a Cloud Service] verwendet [Adobe Identity Management Services (IMS)](https://experienceleague.adobe.com/de/docs/commerce-admin/start/admin/ims/adobe-ims-integration-overview) um Benutzende zu authentifizieren und Berechtigungen zu verwalten. Dazu gehört die Unterstützung von Anbietern zusammengeführter Identitäten und [rollenbasierte Zugriffssteuerung](../user-management.md).
+- **[!DNL Adobe Identity Management Services (IMS)]**: [!DNL Adobe Commerce as a Cloud Service] verwendet [Adobe Identity Management Services (IMS)](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-integration-overview) um Benutzende zu authentifizieren und Berechtigungen zu verwalten. Dazu gehört die Unterstützung von Anbietern zusammengeführter Identitäten und [rollenbasierte Zugriffssteuerung](../user-management.md).
 
 - **Admin Console Governance**: Administratoren verwalten den Zugriff auf die Storefront und das Backend über die [!DNL Adobe Admin Console]. Berechtigungen können auf bestimmte Funktionen und Rollen beschränkt werden, um den Zugriff mit den geringsten Rechten sicherzustellen.
 
@@ -36,7 +40,7 @@ Der [!DNL Adobe Admin Console] ist der zentrale Hub für die Verwaltung des Benu
 - **Produktprofile**: Definieren Sie Zugriffsbereiche für verschiedene Umgebungen wie Staging und Produktion.
 - **Delegierte Administration**: Systemadministratoren und Produktadministratoren können den Benutzerzugriff ohne IT-Beteiligung verwalten.
 
-Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/user-management)Benutzerverwaltung“.
+Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)Benutzerverwaltung“.
 
 ## API-Authentifizierung und Integrationssicherheit
 
@@ -50,4 +54,4 @@ Die REST-API-Authentifizierung von [!DNL Adobe Commerce as a Cloud Service] wird
 - **API-Zugriff im Umfang**: Beschränken des API-Zugriffs auf bestimmte Ressourcen und Vorgänge.
 - **Auditprotokollierung**: Verfolgen Sie Authentifizierungsereignisse und Zugriffsänderungen, um die Compliance und die Fehlerbehebung sicherzustellen.
 
-Weitere Informationen finden [&#x200B; unter &#x200B;](https://developer.adobe.com/commerce/webapi/rest/authentication/)-Authentifizierung .
+Weitere Informationen finden [ unter ](https://developer.adobe.com/commerce/webapi/rest/authentication/)-Authentifizierung .

@@ -8,9 +8,13 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
+TQID: 'https://experienceleague.adobe.com/vsy2xSV-3oVjPNc0JUzsunl3ooiWjWrWo1poXHB1TgY'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '2533'
+source-wordcount: 2533
 ht-degree: 0%
 
 ---
@@ -52,8 +56,8 @@ Wenn einer der vorherigen Befehle nicht die erwarteten Ergebnisse zurückgibt, f
 
 Überprüfen Sie außerdem Folgendes:
 
-- Sie haben eine [!DNL Adobe Commerce as a Cloud Service] mit Produktdaten. Siehe [Commerce Cloud Service-Instanzen](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/overview){target="_blank"}.
-- Sie haben ein Storefront-Projekt mit Ihrer [!DNL Commerce] verbunden. Wenn Sie noch keine haben, führen Sie die Schritte in [Erstellen einer Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=de){target="_blank"} aus.
+- Sie haben eine [!DNL Adobe Commerce as a Cloud Service] mit Produktdaten. Siehe [Commerce Cloud Service-Instanzen](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Sie haben ein Storefront-Projekt mit Ihrer [!DNL Commerce] verbunden. Wenn Sie noch keine haben, führen Sie die Schritte in [Erstellen einer Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"} aus.
 - Die `aem` CLI wird installiert:
 
   ```bash
@@ -387,7 +391,7 @@ Während der Implementierung erstellt und ändert der Agent Blockdateien. Beobac
 
 Fügen Sie den Produktüberprüfungsblock zur Produktseitenvorlage hinzu, damit er in allen PDPs angezeigt wird. Verwenden Sie den Document Authoring-Service (da.live), um den Block hinzuzufügen und zu konfigurieren.
 
-1. Öffnen Sie den Dokumenterstellungsdienst, z. B[&#x200B; „da.live](https://da.live/)
+1. Öffnen Sie den Dokumenterstellungsdienst, z. B[ „da.live](https://da.live/)
 
 1. Klicken Sie auf Ihren Projektbereich, öffnen Sie den Ordner **Produkte** und wählen Sie **Standard** (`products/default`) aus.
 

@@ -5,36 +5,15 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-TQID: https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-  - id: f236e2a1-90d4-477d-92e1-5996b5e92bff
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+TQID: 'https://experienceleague.adobe.com/RWF0BsS24AJtkoPNxRtvTNyM971IBEEt-NTbPT5Nub8'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: a743e5dc-8f37-4b5d-a848-03c32ca30598id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f236e2a1-90d4-477d-92e1-5996b5e92bffid: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12bid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: d095671a-1355-40aa-8b5f-06c33c68080bid: da3860b0-d637-47df-bef0-273751180266id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
 source-wordcount: 1444
 ht-degree: 0%
@@ -86,7 +65,7 @@ In der folgenden Tabelle sind die Produkte aufgeführt, die [!DNL Adobe Commerce
 
 Im folgenden Video finden Sie eine kurze Einführung in die [!DNL Adobe Commerce as a Cloud Service]. Diagramme, die die Architektur veranschaulichen, werden unter dem Video bereitgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443276?captions=ger&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 Dieses Diagramm zeigt den Datenfluss zwischen [!DNL Adobe Commerce as a Cloud Service] und allen Adobe Experience Cloud-Lösungen.
 
@@ -94,13 +73,13 @@ Dieses Diagramm zeigt den Datenfluss zwischen [!DNL Adobe Commerce as a Cloud Se
 
 ## Commerce-Storefront
 
-Nutzen Sie die [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront?lang=de) von Adobe, die von [!DNL Edge Delivery Services] unterstützt werden, um in Minutenschnelle umfassende Erlebnisse mit einfacher, dokumentbasierter Bearbeitung oder visueller Bearbeitung mit [!DNL Storefront Builder] zu erstellen.
+Nutzen Sie die [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront) von Adobe, die von [!DNL Edge Delivery Services] unterstützt werden, um in Minutenschnelle umfassende Erlebnisse mit einfacher, dokumentbasierter Bearbeitung oder visueller Bearbeitung mit [!DNL Storefront Builder] zu erstellen.
 
 [!DNL Commerce Storefront] ist vollständig Headless mit einer entkoppelten Architektur, die alle Merchandising-Services und -Daten über eine GraphQL-API-Ebene bereitstellt. Diese Architektur ermöglicht es Teams, ihre Frontends unabhängig von der Commerce Foundation zu entwickeln, und bietet die Agilität, neue Touchpoints mit neuen Technologien zu erstellen und zu testen.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] unterstützt keine Luma-Storefronts. Wenn Sie von Adobe Commerce in der Cloud oder lokal migrieren, finden Sie unter [Vorhandene Storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=de#existing-storefronts) Anleitungen zum Übergang.
+>[!DNL Adobe Commerce as a Cloud Service] unterstützt keine Luma-Storefronts. Wenn Sie von Adobe Commerce in der Cloud oder lokal migrieren, finden Sie unter [Vorhandene Storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) Anleitungen zum Übergang.
 
 ## Merchandising- und Zahlungsdienste
 
@@ -121,7 +100,7 @@ Die Integration stellt sicher, dass digitale Assets, wie Produktbilder oder Mark
 
 Alternativ bieten die nativen Funktionen in [!DNL Adobe Commerce as a Cloud Service] grundlegende Asset-Management-Tools zum Speichern und Verwalten digitaler Assets.
 
-Weitere Informationen zur Integration von [&#128279;](../aem-assets-integration/overview.md) mit [!DNL Adobe Commerce as a Cloud Service] finden Sie im Handbuch zur Integration von [!DNL Product Visuals powered by AEM Assets] mit.
+Weitere Informationen zur Integration von ](../aem-assets-integration/overview.md) mit [!DNL Adobe Commerce as a Cloud Service] finden Sie im Handbuch zur [Integration von [!DNL Product Visuals powered by AEM Assets] mit.
 
 ### [!DNL Product Visuals] oder [!DNL AEM Assets]
 
@@ -226,7 +205,7 @@ Entwickler können umfassende [GraphQL](https://developer.adobe.com/commerce/web
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->
