@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
+source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
 workflow-type: tm+mt
-source-wordcount: 1191
+source-wordcount: 1319
 ht-degree: 0%
 
 ---
@@ -31,6 +31,22 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 * Aktualisierungen der [Datenaufnahme-REST-API](https://developer.adobe.com/commerce/services/reference/rest/) und der [GraphQL-API für den Datenabruf im Storefront-](https://developer.adobe.com/commerce/services/reference/graphql/).
 
   {{aco-api-updates-and-dropins}}
+
+## Juni 2026
+
+>[!BEGINSHADEBOX]
+
+### Semantische Suche
+
+[!DNL Adobe Commerce Optimizer] unterstützt jetzt **[semantische Suche]** auf der Registerkarte [**Erweiterte Suche**](./settings.md#advanced-search) in **[!UICONTROL Settings]**. Die semantische Suche verwendet KI, um Produkte anhand von Bedeutung und Kontext neben der Keyword-Suche abzugleichen, wodurch die Anzahl leerer Suchseiten für Abfragen in natürlicher Sprache reduziert wird. Sie ist standardmäßig für geeignete englische Kataloge aktiviert. Sie können optional **[!UICONTROL Semantic boost]**, **[!UICONTROL Similarity threshold]** und **[!UICONTROL Fuzzy search]** auf derselben Registerkarte anpassen. Es sind keine Änderungen an der Attributeinrichtung oder der Storefront erforderlich. [Weitere Informationen](./setup/semantic-search.md).
+
+### Preisfilter für Empfehlungen (Betaversion)
+
+Produktempfehlungseinheiten unterstützen jetzt [**Preisfilter**](./merchandising/recommendations/filters.md#price) im **[!UICONTROL Filter products]**. Schließen Sie Kandidaten mithilfe von **static** Mindest- und Höchstbereichen oder **dynamic**-Regeln auf der Produktdetailseite ein, die empfohlene Produkte mit dem aktuell angezeigten Produkt (**berechneten Endpreis** aus dem aktiven Preisbuch der Storefront vergleichen. Preisregeln filtern das Kandidatenset. Produkte werden nicht neu eingestuft. [Weitere Informationen](./merchandising/recommendations/filters.md#price).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## Mai 2026
 

@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
+source-git-commit: 4377f9dc2b7e4c8f358d00b50187c8cbf091e19e
 workflow-type: tm+mt
-source-wordcount: 3098
+source-wordcount: 2168
 ht-degree: 1%
 
 ---
@@ -40,6 +40,17 @@ Zu den Aktualisierungen gehören:
 ## Gehostete Service-Aktualisierungen
 
 Diese Hinweise beschreiben Aktualisierungen, die außerhalb einer versionierten Version veröffentlicht wurden, oder Verbesserungen am gehosteten Service.
+
+_8. Juni 2026_
+
+![Neu](../assets/new.svg) [!DNL Live Search] unterstützt jetzt die semantische Suche, die über den Arbeitsbereich [**Einstellungen**](./settings.md#semantic-search) konfiguriert werden kann. Im Gegensatz zur Keyword-Suche verwendet die semantische Suche KI, um Produkte nach Bedeutung und Kontext abzugleichen - und hilft so, die ergebnisfreie Suche nach Abfragen in natürlicher Sprache wie „etwas Warmes für eine Winterwanderung“ zu reduzieren. [Weitere Informationen](./semantic-search.md).
+
+**Setup**: Aktivieren mit einem einzigen Umschalter. Keine Änderungen an der Attributkonfiguration oder Storefront erforderlich.
+
+**Verfügbarkeit** (nur englische Kataloge):
+
+- [!DNL Adobe Commerce as a Cloud Service] - Standardmäßig aktiviert.
+- Adobe Commerce in der Cloud und lokal - Muss manuell aktiviert werden.
 
 _22. Mai 2026_
 
