@@ -5,11 +5,19 @@ feature: Storefront, Integration, GraphQL
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 autotag-review: '2026-06-09T16:27:30.102Z'
 TQID: 'https://experienceleague.adobe.com/Orif1rROglTQ-3ZkRj5LMF90Y-AdpfTnOgPmJXQjYgc'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: c32adafa-ed01-4b31-997e-2413013911b0
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
 workflow-type: tm+mt
 source-wordcount: 237
@@ -25,7 +33,7 @@ Allgemeine Anweisungen zum Einrichten von Storefronts finden Sie unter [Konfigur
 
 ## GraphQL: Abfrage `commerceOptimizer` {#graphql-commerceoptimizer-query}
 
-Headless-Storefronts rufen die `commerceOptimizer` GraphQL-Abfrage auf, um die `priceBookId` für die aktuelle Kundensitzung abzurufen. Übergeben Sie diesen Wert beim Abrufen der Preise ](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api){target="_blank"} die [[!DNL Adobe Commerce Optimizer] GraphQL-API.
+Headless-Storefronts rufen die `commerceOptimizer` GraphQL-Abfrage auf, um die `priceBookId` für die aktuelle Kundensitzung abzurufen. Übergeben Sie diesen Wert beim Abrufen der Preise [&#128279;](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api){target="_blank"} die [!DNL Adobe Commerce Optimizer] GraphQL-API.
 
 ```graphql
 {
