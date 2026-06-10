@@ -3,7 +3,7 @@ title: Feldzuordnung für  [!DNL Adobe Commerce Optimizer Connector] -Feeds
 description: Erfahren Sie mehr über  [!DNL Adobe Commerce Optimizer Connector]  Zuordnung von  [!DNL Adobe Commerce] -Katalogdaten zu Aufnahme [!DNL Adobe Commerce Optimizer] API-Formaten für alle Feeds.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
