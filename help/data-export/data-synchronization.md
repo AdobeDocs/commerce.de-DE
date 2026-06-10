@@ -18,9 +18,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 1037
+source-wordcount: 1104
 ht-degree: 0%
 
 ---
@@ -41,6 +41,10 @@ Zu den Hauptkomponenten des SaaS-Datenexportflusses gehören:
 - SaaS-Datenexportmodule, die die Daten für Feeds aus Adobe Commerce erfassen, Feed-Elemente zusammenstellen, auf Aktualisierungen warten und den Feed-Status beibehalten.
 - SaaS exportieren Module, die Daten exportieren, Routing konfigurieren und die Feeds an verbundene Services veröffentlichen.
 - Der Adobe Commerce-Service verwaltet den Datenaufnahmeprozess, um eingehende Feeds zu validieren und Aktualisierungen für verbundene Services beizubehalten.
+
+>[!NOTE]
+>
+>Für [!DNL Adobe Commerce Optimizer Connector] Bereitstellungen übernimmt [!DNL SaaS Data Export] die Erkennung von Entitätsänderungen und die Feed-Assembly. Der Connector ordnet dann Feeds dem [!DNL Catalog Data Ingestion API]-Format zu und sendet sie an [!DNL Adobe Commerce Optimizer]. Siehe [Connector-Synchronisierungs](../aco-connector/connector-sync-pipeline.md)Pipeline für die Umfangskontrolle, Übermittlung und Fehlerbehandlung.
 
 >[!NOTE]
 >
@@ -79,6 +83,8 @@ Der Datenexportprozess verwendet die folgenden Cron-Aufträge, um den Vorgang de
 
 Diese Aufträge werden jede Minute ausgeführt.
 
+Dieselben partiellen Synchronisierungs-Cron-Aufträge werden für [!DNL Adobe Commerce Optimizer Connector]-Feeds ausgeführt. Informationen zur Connector-spezifischen Übermittlung und Fehlerbehandlung finden Sie unter [Connector-Sync-Pipeline](../aco-connector/connector-sync-pipeline.md).
+
 Damit die partielle Synchronisierung funktioniert, benötigt die Commerce-Anwendung die folgende Konfiguration:
 
 - [Die Aufgabenplanung wird über Cron-Aufträge aktiviert](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=de)
@@ -106,7 +112,7 @@ Die meisten Synchronisierungsaktivitäten werden automatisch auf Grundlage der A
 
 >[!NOTE]
 >
->Das Daten-Management-Dashboard ist nur verfügbar, wenn Sie die Live Search, Produktempfehlungen oder den Katalog-Service installiert haben. Das Dashboard für den Synchronisierungsstatus von Daten-Feeds ist verfügbar, wenn diese Services oder der [Adobe Commerce Optimizer Connector](../aco-connector/overview.md) installiert sind.
+>Das Daten-Management-Dashboard ist nur verfügbar, wenn Sie die Live Search, Produktempfehlungen oder den Katalog-Service installiert haben. Das Dashboard für den Synchronisierungsstatus von Daten-Feeds ist verfügbar, wenn diese Services oder der [Adobe Commerce Optimizer Connector](../aco-connector/overview.md) installiert sind. Informationen zum Verhalten der Optimizer-Connector-Pipeline, einschließlich Umfangskontrolle und Übermittlungsfehlern, finden Sie unter [Connector-Synchronisierungs-Pipeline](../aco-connector/connector-sync-pipeline.md).
 
 ### Konfiguration der Commerce-Anwendung überprüfen
 

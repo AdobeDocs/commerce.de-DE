@@ -15,20 +15,20 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 569
+source-wordcount: 571
 ht-degree: 0%
 
 ---
 
 # Handbuch zu [!DNL SaaS Data Export]
 
-[!DNL SaaS data export] synchronisiert Daten zwischen einer Adobe Commerce-Instanz und verbundenen Commerce Services. Wenn Sie Live Search, Produktempfehlungen oder den Katalog-Service zu einer Adobe Commerce-Installation hinzufügen, wird die [!DNL Data export] automatisch installiert.
+[!DNL SaaS data export] synchronisiert Daten zwischen einer Adobe Commerce-Instanz und verbundenen Commerce Services. Beim Hinzufügen von Live Search, Produktempfehlungen, dem Katalog-Service oder der [!DNL Adobe Commerce Optimizer Connector] zu einer Adobe Commerce-Installation wird die [!DNL Data export] automatisch installiert.
 
 >[!NOTE]
 >
->Wenn Sie den Adobe Commerce Optimizer-Connector installieren, wird dieselbe Datenexporterweiterung verwendet, um Katalog- und Preis-Feeds mithilfe des Composable Catalog Data Model (CCDM) an Adobe Commerce Optimizer zu senden. Architektur- und Konfigurationsdetails finden Sie im [&#128279;](../aco-connector/overview.md) zum Adobe Commerce Optimizer-Connector .
+>Wenn Sie die [!DNL Adobe Commerce Optimizer Connector] installieren, erfasst dieselbe [!DNL Data Export]-Erweiterung Katalog- und Preis-Feeds von [!DNL Adobe Commerce]. Der Connector ordnet diese Feeds dann [!DNL Adobe Commerce Optimizer] zu und übermittelt sie mithilfe des Composable Catalog Data Model (CCDM). In der [[!DNL Adobe Commerce Optimizer Connector] Übersicht](../aco-connector/overview.md) finden Sie Informationen zum Setup und zur Architektur sowie [Connector-Sync](../aco-connector/connector-sync-pipeline.md)Pipeline) für das Synchronisierungsverhalten nach dem Export.
 
 SaaS-Datenexport erfasst und exportiert verschiedene Datentypen, so genannte _Feeds_, mit denen bestimmte Arten von Informationen aggregiert werden. Je nachdem, welche Commerce-Services installiert sind, umfassen die SaaS-Datenexport-Feeds Folgendes:
 
