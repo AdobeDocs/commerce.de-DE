@@ -4,31 +4,24 @@ description: Erfahren Sie mehr über die Verwendung  [!DNL data export]  Erweite
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
 TQID: https://experienceleague.adobe.com/OHE1GBUEd8hHFPwFlO9fJa3Y0wK2xZ0HOYnwUn0-DSk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 569
+source-wordcount: 571
 ht-degree: 0%
 
 ---
 
 # Handbuch zu [!DNL SaaS Data Export]
 
-[!DNL SaaS data export] synchronisiert Daten zwischen einer Adobe Commerce-Instanz und verbundenen Commerce Services. Wenn Sie Live Search, Produktempfehlungen oder den Katalog-Service zu einer Adobe Commerce-Installation hinzufügen, wird die [!DNL Data export] automatisch installiert.
+[!DNL SaaS data export] synchronisiert Daten zwischen einer Adobe Commerce-Instanz und verbundenen Commerce Services. Beim Hinzufügen von Live Search, Produktempfehlungen, dem Katalog-Service oder der [!DNL Adobe Commerce Optimizer Connector] zu einer Adobe Commerce-Installation wird die [!DNL Data export] automatisch installiert.
 
 >[!NOTE]
 >
->Wenn Sie den Adobe Commerce Optimizer-Connector installieren, wird dieselbe Datenexporterweiterung verwendet, um Katalog- und Preis-Feeds mithilfe des Composable Catalog Data Model (CCDM) an Adobe Commerce Optimizer zu senden. Architektur- und Konfigurationsdetails finden Sie im [&#128279;](../aco-connector/overview.md) zum Adobe Commerce Optimizer-Connector .
+>Wenn Sie die [!DNL Adobe Commerce Optimizer Connector] installieren, erfasst dieselbe [!DNL Data Export]-Erweiterung Katalog- und Preis-Feeds von [!DNL Adobe Commerce]. Der Connector ordnet diese Feeds dann [!DNL Adobe Commerce Optimizer] zu und übermittelt sie mithilfe des Composable Catalog Data Model (CCDM). In der [[!DNL Adobe Commerce Optimizer Connector] Übersicht](../aco-connector/overview.md) finden Sie Informationen zum Setup und zur Architektur sowie [Connector-Sync](../aco-connector/connector-sync-pipeline.md)Pipeline) für das Synchronisierungsverhalten nach dem Export.
 
 SaaS-Datenexport erfasst und exportiert verschiedene Datentypen, so genannte _Feeds_, mit denen bestimmte Arten von Informationen aggregiert werden. Je nachdem, welche Commerce-Services installiert sind, umfassen die SaaS-Datenexport-Feeds Folgendes:
 
@@ -41,13 +34,13 @@ SaaS-Datenexport wird als PHP-Erweiterung bereitgestellt. Es unterstützt mehrer
 
 - **Manuelle Synchronisierung über Admin oder die Befehlszeile**
 
-   - Das [Daten-Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) in Commerce Admin bietet eine grafische Ansicht des Synchronisierungsstatus, der die erfolgreich mit Commerce-Services synchronisierten Produktdaten anzeigt. Sie können das Dashboard verwenden, um eine vollständige Resynchronisation (_vollständige_) aller Feeds durchzuführen. Adobe empfiehlt jedoch nur dann eine vollständige Synchronisierung, wenn Sie Adobe Commerce zum ersten Mal mit einem Commerce-Service verbinden. Siehe [Synchronisierungsprozess](data-synchronization.md).
+   - Das [Daten-Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) in Commerce Admin bietet eine grafische Ansicht des Synchronisierungsstatus, der die erfolgreich mit Commerce-Services synchronisierten Produktdaten anzeigt. Sie können das Dashboard verwenden, um eine vollständige Resynchronisation (_vollständige_) aller Feeds durchzuführen. Adobe empfiehlt jedoch nur dann eine vollständige Synchronisierung, wenn Sie Adobe Commerce zum ersten Mal mit einem Commerce-Service verbinden. Siehe [Synchronisierungsprozess](data-synchronization.md).
 
      {{aco-data-sync-verification}}
 
-   - Die Seite [Status der Daten-Feed](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)Synchronisierung) bietet Echtzeiteinblicke in den Zustand und die Leistung von Datenexport-Feeds, die Produkt- und Kategoriedaten von Commerce an externe Services wie Produktempfehlungen, Live-Suche und Katalog-Service oder Adobe Commerce Optimizer übertragen.
+   - Die Seite [Status der Daten-Feed](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)Synchronisierung) bietet Echtzeiteinblicke in den Zustand und die Leistung von Datenexport-Feeds, die Produkt- und Kategoriedaten von Commerce an externe Services wie Produktempfehlungen, Live-Suche und Katalog-Service oder Adobe Commerce Optimizer übertragen.
 
-   - Das [Adobe Commerce-Befehlszeilen-Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) bietet Befehle zum Synchronisieren bestimmter Feeds und zusätzliche Optionen zum Anpassen der Feed-Verarbeitung.
+   - Das [Adobe Commerce-Befehlszeilen-Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) bietet Befehle zum Synchronisieren bestimmter Feeds und zusätzliche Optionen zum Anpassen der Feed-Verarbeitung.
 
 - **Automatisierte Synchronisation mit Cron-Aufträgen**
 
