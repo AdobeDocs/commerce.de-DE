@@ -14,9 +14,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 964
+source-wordcount: 958
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Erfahren Sie, wie [&#x200B; eine neue Empfehlung erstellen oder eine vorhandene 
 
 | Spalte | Beschreibung |
 |---|---|
-| -Name | Der Name der Empfehlung. |
+| Name | Der Name der Empfehlung. |
 | Seite | Die Seite, auf der die Empfehlung angezeigt wird. |
 | Typ | Der Empfehlungstyp. |
 | Status | Der Empfehlungsstatus. Optionen: inaktiv/aktiv/Entwurf |
@@ -96,10 +96,6 @@ Erfahren Sie, wie [&#x200B; eine neue Empfehlung erstellen oder eine vorhandene 
 | vCTR | (Sichtbare Clickthrough-Rate) Misst Klicks nur auf der Grundlage von sichtbaren Impressions (Empfehlungen, die tatsächlich im sichtbaren Teil des Käuferbildschirms erschienen sind) und bietet so einen genaueren Maßstab für die Interaktion mit Kunden. |
 
 ## Katalogansicht auswählen
-
->[!IMPORTANT]
->
->Diese Funktion befindet sich derzeit in der Betaphase.
 
 Die **[!UICONTROL Catalog view]**-Auswahl auf der **Recommendations**-Seite hat zwei Aufgaben:
 

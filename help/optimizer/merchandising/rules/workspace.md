@@ -12,10 +12,10 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 969
-ht-degree: 0%
+source-wordcount: 963
+ht-degree: 1%
 
 ---
 
@@ -70,7 +70,7 @@ Im Detailbereich werden der Regelname, der Status, Bedingungen und Ereignisse, d
 
 | Spalte | Beschreibung |
 |--- |--- |
-| -Name | Der Name der Regel. |
+| Name | Der Name der Regel. |
 | Zuletzt aktualisiert | Das Datum der letzten Aktualisierung der Regel. |
 | Startdatum | Das Startdatum einer geplanten Regel. |
 | Enddatum | Das Enddatum einer geplanten Regel. |
@@ -100,10 +100,6 @@ Im Detailbereich werden der Regelname, der Status, Bedingungen und Ereignisse, d
 | Aktiviert | Ein Steuerelement, das den Status der Regel ändert. Optionen: aktiviert/deaktiviert |
 
 ## Katalogansicht auswählen
-
->[!IMPORTANT]
->
->Diese Funktion befindet sich derzeit in der Betaphase.
 
 Der **[!UICONTROL Catalog view]**-Selektor auf der Seite „Merchandising-Regeln“ hat zwei Aufgaben:
 

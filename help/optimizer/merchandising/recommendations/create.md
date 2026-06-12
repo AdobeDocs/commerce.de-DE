@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1615
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -35,10 +35,6 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 1. Wechseln Sie in der _[!DNL Adobe Commerce Optimizer]_&#x200B;Seitenleiste zu_ Merchandising _>**Recommendations**, um den_ Recommendations _-Arbeitsbereich anzuzeigen.
 
 1. Wählen **im Feld** Katalogansicht“ die Katalogansicht aus, in der die Empfehlung verfügbar sein soll. Weitere Informationen über [Verwenden von Katalogansichten für Recommendations](../../manage-results/recommendation-performance.md#select-catalog-view).
-
-   >[!IMPORTANT]
-   >
-   >Diese Funktion befindet sich derzeit in der [Betaversion](https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Beta-Teilnehmer müssen alle vorhandenen Empfehlungseinheiten neu erstellen, um den neuen Katalogansichtsumfang nutzen zu können.
 
 1. Klicken Sie **Empfehlung erstellen**.
 
@@ -85,7 +81,7 @@ Um eine Empfehlung beim Arbeiten in einer Nicht-Produktionsumgebung zu testen, k
 | Feld | Beschreibung |
 |---|---|
 | Katalogansicht |  |
-| -Name | Der Name des Produkts. |
+| Name | Der Name des Produkts. |
 | SKU | Die dem Produkt zugewiesene Lagerhaltungseinheit |
 | Preis | Der Preis des Produkts. |
 | Ergebnistyp | Primär - Gibt an, dass genügend Schulungsdaten gesammelt wurden, um eine Empfehlung anzuzeigen.<br />Backup - Gibt an, dass nicht genügend Schulungsdaten erfasst wurden und daher eine Sicherungsempfehlung für das Füllen des Slots verwendet wird. Unter [Verhaltensdaten](../../setup/events/overview.md) erfahren Sie mehr über Modelle für maschinelles Lernen und Empfehlungen für Backups. |

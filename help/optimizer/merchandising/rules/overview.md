@@ -14,16 +14,16 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 838
+source-wordcount: 760
 ht-degree: 0%
 
 ---
 
 # Merchandising-Regeln
 
-Merchandising-Regeln kombinieren Logik mit Aktionen, um das Erscheinungsbild von Produkten **Suchergebnisse** auf **Standardproduktlisten** (**Alle Produktlisten**) und auf **Kategorieseiten** ([Kategorienregeln](#category-rules) befinden sich in der Beta-Phase) zu gestalten. Sie können Produkte ankurbeln, vergraben, anheften oder ausblenden und **intelligentes Ranking** anwenden, sodass die Listeneinträge Ihre Geschäftsziele widerspiegeln.
+Merchandising-Regeln kombinieren Logik mit Aktionen, um die Darstellung von Produkten **Suchergebnisse** auf **Standardproduktlisten** (**Alle Produktlisten**) und auf **Kategorieseiten**. Sie können Produkte ankurbeln, vergraben, anheften oder ausblenden und **intelligentes Ranking** anwenden, sodass die Listeneinträge Ihre Geschäftsziele widerspiegeln.
 
 Jede **Suchregel** besteht aus drei Hauptkomponenten:
 
@@ -36,10 +36,6 @@ Jede **Suchregel** besteht aus drei Hauptkomponenten:
 Sie können mehrere Bedingungen und Aktionen für Suchregeln kombinieren und jede Regel so planen, dass sie für einen Zeitraum aktiv ist. Sie können auch eine **Standardregel** festlegen (**Alle Produktlisten**), die gilt, wenn keine spezifischere Such- oder Kategorieregel gilt.
 
 ## Kategorieregeln {#category-rules}
-
->[!IMPORTANT]
->
->Kategorieregeln befinden sich in der Beta-Phase.
 
 **Kategorieregeln** Steuern der Produktreihenfolge auf **Kategorieseiten**. Sie wählen eine oder mehrere Kategorien aus und wenden dann intelligentes Ranking (z. B. am häufigsten angezeigt, Trend) und manuelle Aktionen wie Pin, Boost und Bury an. Sie verwenden keine Suchabfragebedingungen. Informationen zu Einrichtungsschritten, Regeltypen und der Art und Weise, wie die Rangfolge für Kategorie und Suche gilt, finden Sie unter [Regeln erstellen und verwalten](add.md).
 

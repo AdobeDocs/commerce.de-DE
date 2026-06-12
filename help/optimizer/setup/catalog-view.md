@@ -19,9 +19,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 4d08de7974c79dc6fe20366e0164f6078e83be5f
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1216
+source-wordcount: 1210
 ht-degree: 0%
 
 ---
@@ -82,10 +82,6 @@ Nachdem Sie diese Schritte ausgeführt haben, ist die Katalogansicht jetzt so ko
 
 ### Angeben von Katalogansichten für Recommendations und Regeln zur Produkterkennung
 
->[!IMPORTANT]
->
->Diese Funktion befindet sich derzeit in der Betaphase.
-
 Sie können eine Katalogansicht angeben, wenn Sie [Empfehlungseinheiten erstellen](../merchandising/recommendations/create.md) oder [Merchandisingregeln](../merchandising/rules/add.md).
 
 ## Katalogebenen
@@ -131,7 +127,7 @@ Suchen Sie im Arbeitsbereich *Katalogansichten* die Katalogansicht in dem Raster
 Von hier aus können Sie Konfigurationsdetails der Katalogansicht sehen, z. B.:
 
 - Ansichts-ID
-- -Name
+- Name
 - Katalogquellen
 - Richtlinien
 - Erstellt am

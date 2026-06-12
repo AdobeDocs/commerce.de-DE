@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1319
+source-wordcount: 1316
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Produktempfehlungseinheiten unterstützen jetzt [**Preisfilter**](./merchandisin
 
 ### Intelligente Ranking-Optimierung
 
-[Merchandising-Regeln](./merchandising/rules/add.md#intelligent-ranking-boost) für Suche, Standardproduktlisten und [Kategorieseiten](./merchandising/rules/add.md#rule-types) (Beta) enthalten jetzt **[!UICONTROL Intelligent Ranking Boost]**. Sie können anpassen, wie stark Strategien wie **Am häufigsten angezeigt** oder **Trend** die Produktreihenfolge in Bezug auf die textliche Relevanz bei Such- und Verhaltenssignalen in Kategorielisten beeinflussen. Die Regelvorschau spiegelt Ihre Einstellung wider. Die Steigerung wird zur Abfragezeit angewendet, sodass Sie keine erneute Synchronisierung des Katalogs benötigen, wenn Sie Änderungen daran vornehmen.
+[Merchandising-Regeln](./merchandising/rules/add.md#intelligent-ranking-boost) für Suche, Standardproduktlisten und [Kategorieseiten](./merchandising/rules/add.md#rule-types) enthalten jetzt **[!UICONTROL Intelligent Ranking Boost]**. Sie können anpassen, wie stark Strategien wie **Am häufigsten angezeigt** oder **Trend** die Produktreihenfolge in Bezug auf die textliche Relevanz bei Such- und Verhaltenssignalen in Kategorielisten beeinflussen. Die Regelvorschau spiegelt Ihre Einstellung wider. Die Steigerung wird zur Abfragezeit angewendet, sodass Sie keine erneute Synchronisierung des Katalogs benötigen, wenn Sie Änderungen daran vornehmen.
 
 ### API-Aktualisierungen
 
@@ -89,7 +89,7 @@ _4. Mai 2026_
 
 >[!BEGINSHADEBOX]
 
-### Katalogregeln (Betaversion)
+### Katalogregeln
 
 [Kategorieregeln](./merchandising/rules/add.md) Erweitern Sie Merchandising-Regeln, damit Sie Kategorien auswählen und die Produktreihenfolge auf Kategorieseiten mit demselben Ranking und denselben Aktionen (Pin, Boost, Bury) wie die Suche steuern können.
 
@@ -145,7 +145,7 @@ Dynamische Pakete geben jetzt eine berechnete Preisspanne zurück. <!--DATA-7014
 
 >[!BEGINSHADEBOX]
 
-### Katalogansicht für Merchandising-Regeln und -Empfehlungen (Beta)
+### Katalogansicht für Merchandising-Regeln und -Empfehlungen
 
 Sie können jetzt eine Katalogansicht angeben, wenn Sie [Empfehlungseinheiten erstellen](./merchandising/recommendations/create.md) oder [Merchandisingregeln](./merchandising/rules/add.md).
 
