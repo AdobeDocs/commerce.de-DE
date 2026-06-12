@@ -4,9 +4,17 @@ description: Erfahren Sie [!DNL Live Search]  wie exakte und Beinahe-Übereinsti
 role: Admin, Developer
 recommendations: noCatalog
 hide: true
-source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
+autotag-review: '2026-06-12T19:48:33.569Z'
+TQID: 'https://experienceleague.adobe.com/v4T99FG9mFhlgbb-xDqR-C1tVvCmHDry5lxhSDaKg-4'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+subfeature_v2: id: faf75e43-5608-48b8-8169-3f8a9b8a5caf
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: da5950c0f2071f48f163dd02f6c38953804ae152
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: 914
 ht-degree: 0%
 
 ---
@@ -15,7 +23,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Die folgende Funktion befindet sich in der [privaten Betaversion](https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta).
+>Die folgende Funktion befindet sich in der [privaten Betaversion](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
 
 [!DNL Live Search] werden die Ergebnisse so sortiert, dass Käufer die relevantesten Produkte zuerst sehen. Der Service steigert am meisten die Produkte, deren Katalogtext **eng mit dem** Kunden übereinstimmt), bevorzugt dann Übereinstimmungen, bei denen Abfragebegriffe sinnvoll zusammenpassen, und schließlich breitere Übereinstimmungen (einschließlich Verhaltensweisen, die eine automatische Vervollständigung unterstützen).
 
@@ -66,7 +74,7 @@ Die Relevanz wird nicht allein durch die Übereinstimmung der Phrasen bestimmt. 
 - Verstärken durch **exakte/** Phrasenübereinstimmung
 - Verstärken, wenn **alle Abfragebegriffe** im **Feld** werden
 - **Intelligentes Ranking** (wenn aktiviert), das textliche Relevanz mit Verhaltenssignalen verbindet - siehe [Funktionsweise der intelligenten Rangfolgenbewertung](rules-add.md#how-intelligent-ranking-scoring-works)
-- **[Suchgewichtung](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results)** für jedes Attribut und andere textliche Relevanzfaktoren (z. B. wie oft Begriffe vorkommen und Name oder Länge der Beschreibung). Konfigurieren Sie in der [!DNL Adobe Commerce] Admin **In der Suche verwenden** und **Suchgewichtung** für Produktattribute.
+- **[Suchgewichtung](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** für jedes Attribut und andere textliche Relevanzfaktoren (z. B. wie oft Begriffe vorkommen und Name oder Länge der Beschreibung). Konfigurieren Sie in der [!DNL Adobe Commerce] Admin **In der Suche verwenden** und **Suchgewichtung** für Produktattribute.
 - **[Merchandising-Regeln suchen](rules.md)** z. B. Pin, Boost und Bury
 
 Da diese Signale interagieren, kann ein Produkt, das nur auf der breitesten Ebene übereinstimmt, manchmal einen engeren Übereinstimmungsgrad erreichen, z. B. wenn **Suchgewichte** oder die Häufigkeit von Begriffen in einem Feld mit hoher Gewichtung eine schwächere Übereinstimmung der Phrasen an anderer Stelle überwiegen.
