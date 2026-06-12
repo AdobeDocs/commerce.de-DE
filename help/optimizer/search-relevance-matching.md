@@ -3,7 +3,7 @@ title: Abgleich und Rangfolge suchen
 description: Erfahren Sie [!DNL Adobe Commerce Optimizer]  wie exakte und Beinahe-Übereinstimmungen, Übereinstimmungen mit gleichen Feldern und feldübergreifende Übereinstimmungen priorisiert und wie das Ranking mit Suchgewichten, intelligenten Rangfolgen und Merchandising-Regeln interagiert.
 role: Admin, Leader, User
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 hide: true
 source-git-commit: 678b8e06102d473bef66649a0f09865ecf0cbaae
 workflow-type: tm+mt
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Die folgende Funktion befindet sich in der [privaten Betaversion](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
+>Die folgende Funktion befindet sich in der [privaten Betaversion](https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta).
 
 [!DNL Adobe Commerce Optimizer] werden die Ergebnisse so sortiert, dass Käufer die relevantesten Produkte zuerst sehen. Der Service steigert am meisten die Produkte, deren Katalogtext **eng mit dem** Kunden übereinstimmt), bevorzugt dann Übereinstimmungen, bei denen Abfragebegriffe sinnvoll zusammenpassen, und schließlich breitere Übereinstimmungen (einschließlich Verhaltensweisen, die eine automatische Vervollständigung unterstützen).
 
@@ -67,7 +67,7 @@ Die Relevanz wird nicht allein durch die Übereinstimmung der Phrasen bestimmt. 
 - Verstärken durch **exakte/** Phrasenübereinstimmung
 - Verstärken, wenn **alle Abfragebegriffe** im **Feld** werden
 - **Intelligentes Ranking** (wenn aktiviert), das textliche Relevanz mit Verhaltenssignalen verbindet - siehe [Funktionsweise der intelligenten Rangfolgenbewertung](./merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[Suchgewichtung](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** für jedes Attribut und andere textliche Relevanzfaktoren (z. B. wie oft Begriffe vorkommen und Name oder Länge der Beschreibung). Konfigurieren Sie *Einstellungen*, welche Attribute an der Keyword-Suche beteiligt sind, und ihre relativen **[Keyword-Suchgewichte](./settings.md)**.
+- **[Suchgewichtung](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results)** für jedes Attribut und andere textliche Relevanzfaktoren (z. B. wie oft Begriffe vorkommen und Name oder Länge der Beschreibung). Konfigurieren Sie *Einstellungen*, welche Attribute an der Keyword-Suche beteiligt sind, und ihre relativen **[Keyword-Suchgewichte](./settings.md)**.
 - **[Merchandising-Regeln](./merchandising/rules/overview.md)** z. B. Pin, Boost und Bury
 
 Da diese Signale interagieren, kann ein Produkt, das nur auf der breitesten Ebene übereinstimmt, manchmal einen engeren Übereinstimmungsgrad erreichen, z. B. wenn **Suchgewichte** oder die Häufigkeit von Begriffen in einem Feld mit hoher Gewichtung eine schwächere Übereinstimmung der Phrasen an anderer Stelle überwiegen.

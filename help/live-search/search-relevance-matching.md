@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Die folgende Funktion befindet sich in der [privaten Betaversion](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
+>Die folgende Funktion befindet sich in der [privaten Betaversion](https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta).
 
 [!DNL Live Search] werden die Ergebnisse so sortiert, dass Käufer die relevantesten Produkte zuerst sehen. Der Service steigert am meisten die Produkte, deren Katalogtext **eng mit dem** Kunden übereinstimmt), bevorzugt dann Übereinstimmungen, bei denen Abfragebegriffe sinnvoll zusammenpassen, und schließlich breitere Übereinstimmungen (einschließlich Verhaltensweisen, die eine automatische Vervollständigung unterstützen).
 
@@ -66,7 +66,7 @@ Die Relevanz wird nicht allein durch die Übereinstimmung der Phrasen bestimmt. 
 - Verstärken durch **exakte/** Phrasenübereinstimmung
 - Verstärken, wenn **alle Abfragebegriffe** im **Feld** werden
 - **Intelligentes Ranking** (wenn aktiviert), das textliche Relevanz mit Verhaltenssignalen verbindet - siehe [Funktionsweise der intelligenten Rangfolgenbewertung](rules-add.md#how-intelligent-ranking-scoring-works)
-- **[Suchgewichtung](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** für jedes Attribut und andere textliche Relevanzfaktoren (z. B. wie oft Begriffe vorkommen und Name oder Länge der Beschreibung). Konfigurieren Sie in der [!DNL Adobe Commerce] Admin **In der Suche verwenden** und **Suchgewichtung** für Produktattribute.
+- **[Suchgewichtung](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results)** für jedes Attribut und andere textliche Relevanzfaktoren (z. B. wie oft Begriffe vorkommen und Name oder Länge der Beschreibung). Konfigurieren Sie in der [!DNL Adobe Commerce] Admin **In der Suche verwenden** und **Suchgewichtung** für Produktattribute.
 - **[Merchandising-Regeln suchen](rules.md)** z. B. Pin, Boost und Bury
 
 Da diese Signale interagieren, kann ein Produkt, das nur auf der breitesten Ebene übereinstimmt, manchmal einen engeren Übereinstimmungsgrad erreichen, z. B. wenn **Suchgewichte** oder die Häufigkeit von Begriffen in einem Feld mit hoher Gewichtung eine schwächere Übereinstimmung der Phrasen an anderer Stelle überwiegen.
