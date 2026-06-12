@@ -1,24 +1,16 @@
 ---
 title: Regeln erstellen und verwalten
 description: Erfahren Sie, wie Sie Merchandising-Regeln für Suchvorgänge, Standardproduktlisten und Kategorieseiten erstellen und verwalten.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 3222
+source-wordcount: 3074
 ht-degree: 0%
 
 ---
@@ -30,11 +22,7 @@ Um eine Regel zu erstellen, öffnen Sie den Regeleditor, wählen Sie einen **Reg
 ## Erstellen einer Regel {#create-a-rule}
 
 1. Navigieren Sie in der linken Leiste zu _Merchandising_ > **Merchandising-Regeln**.
-1. (Optional) Verwenden Sie das **Katalogansicht**, um die Katalogansicht auszuwählen, in der die Regel angewendet werden soll. Die von Ihnen erstellte Regel wird auf die ausgewählte Ansicht beschränkt (oder auf alle Katalogansichten, wenn **Alle Ansichten** ausgewählt ist). Siehe [Auswählen der &#x200B;](workspace.md#select-catalog-view)), wie der Umfang der Katalogansicht funktioniert.
-
-   >[!IMPORTANT]
-   >
-   >Katalogansichten befinden sich derzeit in der [Beta](https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Beta-Teilnehmer müssen alle vorhandenen Merchandising-Regeln neu erstellen, um den neuen Umfang der Katalogansicht nutzen zu können.
+1. (Optional) Verwenden Sie das **Katalogansicht**, um die Katalogansicht auszuwählen, in der die Regel angewendet werden soll. Die von Ihnen erstellte Regel wird auf die ausgewählte Ansicht beschränkt (oder auf alle Katalogansichten, wenn **Alle Ansichten** ausgewählt ist). Siehe [Auswählen der ](workspace.md#select-catalog-view)), wie der Umfang der Katalogansicht funktioniert.
 
 1. Klicken Sie auf **[!UICONTROL Create rule]** , um den Regeleditor zu starten.
 
@@ -47,7 +35,7 @@ Jeder Regeltyp verfügt im Editor über ein Informationssymbol mit einer kurzen 
 | Regeltyp | Zweck |
 | --- | --- |
 | **Regel „Alle Produkte“** | Standard-Ranking und Merchandising in allen Produktlisten, wenn keine spezifischere Such- oder Kategorieregel gilt. Sie können nur eine solche Regel erstellen; sie kann keine Bedingungen enthalten. |
-| **Kategorieregel** (Beta) | Wendet Merchandising und Ranking auf eine oder mehrere ausgewählte Kategorien an und steuert die Produktbestellung auf diesen Kategorieseiten. |
+| **Kategorieregel** | Wendet Merchandising und Ranking auf eine oder mehrere ausgewählte Kategorien an und steuert die Produktbestellung auf diesen Kategorieseiten. |
 | **Suchregel** | Wendet Merchandising und Ranking an, wenn Käufer eine Suche ausführen, die den Abfragebedingungen der Regel entspricht. |
 
 Im Abschnitt **Regel erstellen** definieren Sie den Regelnamen, den Zeitplan, unabhängig davon, ob die Regel für alle Listen oder für bestimmte Suchbedingungen gilt, sowie Ranking-Typen.
@@ -103,10 +91,6 @@ Eine Regel kann bis zu zehn Bedingungen enthalten. Der logische Operator, der zw
 1. Legen Sie [Intelligente Rangfolge](#intelligent-ranking) und [Manuelle Rangfolge](#manual-ranking) wie in den folgenden Abschnitten beschrieben fest. Die gleichen Steuerelemente gelten für Kategorieseiten, wobei alle Unterschiede hervorgehoben werden.
 
 >[!TAB Kategorieregel]
-
->[!IMPORTANT]
->
->Kategorieregeln befinden sich in der Beta-Phase.
 
 Kategorieregeln steuern, wie Produkte auf (Kategorieseiten **bestellt**. Sie kombinieren **Kategorieregeln** mit **intelligentem Ranking** (einschließlich KI-gesteuerter Signale) und **manuellen** Aktionen wie Pin, Boost und Bury. So können Sie Discovery kuratieren, Promotions ausführen und Kategorieseiten an Ihrer Strategie ausrichten, ohne sich auf externe Tools verlassen zu müssen.
 
@@ -244,7 +228,7 @@ Oder Ereignisse können manuell festgelegt werden:
 
 >[!NOTE]
 >
->Regeln und manuell sortierte Produkte werden auf **Suchergebnisse** angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sodass sie etwa nach Namen sortiert wird, sind Regeln und manuelle Rankings nicht mehr wirksam. Für **category**-Listen wird das Standardsortierverhalten unter „Manuelles [&quot; &#x200B;](#manual-ranking).
+>Regeln und manuell sortierte Produkte werden auf **Suchergebnisse** angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sodass sie etwa nach Namen sortiert wird, sind Regeln und manuelle Rankings nicht mehr wirksam. Für **category**-Listen wird das Standardsortierverhalten unter „Manuelles [&quot; ](#manual-ranking).
 
 ## Regeln bearbeiten, anzeigen und löschen {#edit-view-and-delete-rules}
 
@@ -317,7 +301,7 @@ Diese Option bietet eine schnelle Möglichkeit, alle Regelparameter anzuzeigen, 
 
 | Feld | Beschreibung |
 |--- |--- |
-| -Name | Der Name der Regel. Regelnamen müssen eindeutig sein. |
+| Name | Der Name der Regel. Regelnamen müssen eindeutig sein. |
 | Regeltyp | **Standard** (alle Produktlisten), **Abfrage** (spezifische Suchbedingungen) oder **Kategorie** (Kategorieseiten), je nachdem, für **Regel gilt**. |
 | Startdatum | Das Startdatum der Regel, falls geplant. |
 | Enddatum | Das Enddatum der Regel, falls geplant. |
