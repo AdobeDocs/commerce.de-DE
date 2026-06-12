@@ -4,9 +4,14 @@ description: Lernen Sie den Arbeitsbereich „Merchandising-Regeln“ kennen.
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 3deac529-731d-44b9-87f3-3c9cb36e28e7
 TQID: https://experienceleague.adobe.com/YTwJtajv57YUgirNdUi174VyCkZozV79V3AW1bRktJY
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
 source-wordcount: 963
@@ -16,7 +21,7 @@ ht-degree: 1%
 
 # Merchandising-Regeln - Workspace
 
-Der *Merchandising-Regeln*-Arbeitsbereich listet die aktuelle Auswahl von Regeln und deren Status auf und bietet Zugriff auf Tools, die Sie zum Erstellen und Verwalten von Regeln benötigen. Sie können Regeln auf alle [Katalogansichten](../../setup/catalog-view.md) (global) oder auf eine einzelne Katalogansicht beschränken. Informationen [ Filtern nach Katalogansicht und ](#select-catalog-view) Erstellen von Regeln pro Katalogansicht finden Sie unter „Auswählen Katalogansicht“. Im Arbeitsbereich haben Sie folgende Möglichkeiten:
+Der *Merchandising-Regeln*-Arbeitsbereich listet die aktuelle Auswahl von Regeln und deren Status auf und bietet Zugriff auf Tools, die Sie zum Erstellen und Verwalten von Regeln benötigen. Sie können Regeln auf alle [Katalogansichten](../../setup/catalog-view.md) (global) oder auf eine einzelne Katalogansicht beschränken. Informationen [&#x200B; Filtern nach Katalogansicht und &#x200B;](#select-catalog-view) Erstellen von Regeln pro Katalogansicht finden Sie unter „Auswählen Katalogansicht“. Im Arbeitsbereich haben Sie folgende Möglichkeiten:
 
 - Nach Regeln suchen
 - Regeldetails anzeigen
@@ -53,7 +58,7 @@ Der *Merchandising-Regeln*-Arbeitsbereich listet die aktuelle Auswahl von Regeln
 
 Im Detailbereich werden der Regelname, der Status, Bedingungen und Ereignisse, das Start- und Enddatum, die Beschreibung und das Datum der letzten Bearbeitung angezeigt. Regeln können im Detailbereich aktiviert, bearbeitet und gelöscht werden.
 
-1. Suchen Sie im Arbeitsbereich *Merchandising* Regeln“ die Regel in dem Raster, das Sie anzeigen möchten, und klicken Sie auf das Symbol (![Weitere ](../../assets/btn-more.png)).
+1. Suchen Sie im Arbeitsbereich *Merchandising* Regeln“ die Regel in dem Raster, das Sie anzeigen möchten, und klicken Sie auf das Symbol (![Weitere &#x200B;](../../assets/btn-more.png)).
 
    Im Menü können Sie eine der folgenden Aktionen ausführen:
 
@@ -114,7 +119,7 @@ Erstellen Sie Regeln pro Katalogansicht, wenn verschiedene Storefronts, Regionen
 - **Multi-Region** - Separate Katalogansichten für die EU, die USA oder andere Regionen mit regionsspezifischen Merchandising-Regeln.
 - **Mehrmarken** - Jede Marke verfügt über eine eigene Katalogansicht und Sie möchten markenspezifische Regeln (z. B. unterschiedliche Standard-Rankings oder beworbene Produkte pro Marke).
 
-Verhaltensdaten, die [intelligentes Ranking“ ](add.md#intelligent-ranking) (z. B. am häufigsten angezeigt, am häufigsten gekauft, Trends), werden standardmäßig pro Katalogansicht berechnet. Regeln, die ein intelligentes Ranking verwenden, spiegeln daher das Käuferverhalten dieser Katalogansicht wider. Wenn Ihr Konto über eine große Anzahl von Katalogansichten verfügt, kann das System Verhaltensdaten global aggregieren, um die Leistung aufrechtzuerhalten. In diesem Fall kann das Ranking stärker durch Katalogansichten mit hohem Traffic beeinflusst werden, und die Relevanz für Ansichten mit niedrigerem Traffic kann reduziert werden. Siehe [Beschränkungen und Grenzen](../../boundaries-limits.md) für aktuelle Beschränkungen.
+Verhaltensdaten, die [intelligentes Ranking“ &#x200B;](add.md#intelligent-ranking) (z. B. am häufigsten angezeigt, am häufigsten gekauft, Trends), werden standardmäßig pro Katalogansicht berechnet. Regeln, die ein intelligentes Ranking verwenden, spiegeln daher das Käuferverhalten dieser Katalogansicht wider. Wenn Ihr Konto über eine große Anzahl von Katalogansichten verfügt, kann das System Verhaltensdaten global aggregieren, um die Leistung aufrechtzuerhalten. In diesem Fall kann das Ranking stärker durch Katalogansichten mit hohem Traffic beeinflusst werden, und die Relevanz für Ansichten mit niedrigerem Traffic kann reduziert werden. Siehe [Beschränkungen und Grenzen](../../boundaries-limits.md) für aktuelle Beschränkungen.
 
 ### Einrichten einer Regel pro Katalogansicht
 

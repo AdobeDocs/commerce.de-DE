@@ -4,9 +4,16 @@ description: Die Seite Recommendations-Performance zeigt insight die Leistung Ih
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
 TQID: https://experienceleague.adobe.com/YDgbC964pr7YI4Yas7pHTgnzDY2oxk-uR-eM6eVJE1w
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
 source-wordcount: 958
@@ -57,7 +64,7 @@ Auf der Seite Recommendations-Performance wird eine Liste der konfigurierten Rec
 
 ## Empfehlungen erstellen oder verwalten
 
-Erfahren Sie, wie [ eine neue Empfehlung erstellen oder eine vorhandene ](../merchandising/recommendations/create.md) verwalten können.
+Erfahren Sie, wie [&#x200B; eine neue Empfehlung erstellen oder eine vorhandene &#x200B;](../merchandising/recommendations/create.md) verwalten können.
 
 ## Workspace-Steuerelemente
 
@@ -66,7 +73,7 @@ Erfahren Sie, wie [ eine neue Empfehlung erstellen oder eine vorhandene ](../mer
 | ![Datumsbereich](../assets/rec-perf-date-range.png) | Bestimmt den Zeitbereich, der für Metrikberechnungen verwendet wird. |
 | ![Spaltenauswahl](../assets/icon-show-hide-columns.png) | Bestimmt die Spalten, die in der Recommendations-Tabelle angezeigt werden. |
 | Empfehlung erstellen | Öffnet die Seite [Neue Empfehlung erstellen](../merchandising/recommendations/create.md). |
-| [Katalogansicht](#select-catalog-view) | Wählen Sie die Katalogansicht aus, um die Tabelle so zu filtern, dass nur die Empfehlungen angezeigt werden, die für die ausgewählte Katalogansicht gelten. Diese Auswahl wird auch als Katalogansicht verwendet, wenn Sie [ neue Empfehlung ](../merchandising/recommendations/create.md) (erstellen). Die Optionen sind *Alle*) oder eine bestimmte [Katalogansicht](../setup/catalog-view.md). |
+| [Katalogansicht](#select-catalog-view) | Wählen Sie die Katalogansicht aus, um die Tabelle so zu filtern, dass nur die Empfehlungen angezeigt werden, die für die ausgewählte Katalogansicht gelten. Diese Auswahl wird auch als Katalogansicht verwendet, wenn Sie [&#x200B; neue Empfehlung &#x200B;](../merchandising/recommendations/create.md) (erstellen). Die Optionen sind *Alle*) oder eine bestimmte [Katalogansicht](../setup/catalog-view.md). |
 
 ## Spaltenbeschreibungen
 
@@ -107,7 +114,7 @@ Durch Festlegen einer Katalogansicht für jede Empfehlung haben Sie folgende Mö
 
 ### Filtern von Produkten in der Katalogansicht
 
-Die Produktverfügbarkeit wird pro Katalogansicht auch für Empfehlungseinheiten unter der Auswahl **Alle Ansichten** erzwungen. Dies funktioniert zusätzlich zu allen (Ein- [ Ausschlussfiltern), ](../merchandising/recommendations/filters.md) Sie auf der Empfehlungseinheit festgelegt haben.
+Die Produktverfügbarkeit wird pro Katalogansicht auch für Empfehlungseinheiten unter der Auswahl **Alle Ansichten** erzwungen. Dies funktioniert zusätzlich zu allen (Ein- [&#x200B; Ausschlussfiltern), &#x200B;](../merchandising/recommendations/filters.md) Sie auf der Empfehlungseinheit festgelegt haben.
 
 **Beispiel: Empfehlung mit Einschlussfiltern unter der Auswahl Alle Ansichten**
 

@@ -5,9 +5,13 @@ role: Admin, Developer
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
 TQID: https://experienceleague.adobe.com/DrdrBBXeMyqQr16h1LrlSoet3F6ihn57LBmPFBUXmTs
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
 source-wordcount: 398
@@ -29,7 +33,7 @@ Es ist von entscheidender Bedeutung, eine gut durchdachte **Standardregel“**. 
 - Produkte mit höheren Gewinnspannen leicht priorisieren, ohne die Relevanz zu beeinträchtigen.
 - Heben Sie Produkte hervor, die zum Verkauf stehen oder Teil von Sonderaktionen sind.
 - Legen Sie Suchregeln während der Promotion oder des Verkaufszeitraums automatisch fest, indem Sie den Datumsbereich während des Promotion-Zeitraums verwenden.
-- Passen Sie Suchergebnisse mithilfe von „Intelligent Ranking[ wie &quot;](add.md#intelligent-ranking) für Sie empfohlen“, „Am häufigsten angezeigt“ usw. an das individuelle Kundenverhalten an.
+- Passen Sie Suchergebnisse mithilfe von „Intelligent Ranking[&#x200B; wie &quot;](add.md#intelligent-ranking) für Sie empfohlen“, „Am häufigsten angezeigt“ usw. an das individuelle Kundenverhalten an.
 - Wenn eine andere intelligente Strategie als **Keine** ausgewählt ist, stimmen Sie **[Intelligente Rangverstärkung](add.md#intelligent-ranking-boost)** pro Regel ab und validieren Sie **Testen Sie Ihre Regel** vor der Veröffentlichung.
 - Verwenden Sie immer das Bedienfeld „Regel testen“, um eine Vorschau anzuzeigen, wie sich Ihre intelligente Rangfolgestrategie auf die tatsächlichen Suchergebnisse für verschiedene Abfragen auswirkt.
 
