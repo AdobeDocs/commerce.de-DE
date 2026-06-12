@@ -4,20 +4,12 @@ description: Erfahren Sie mehr über die Best Practices für die Implementierung
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
 TQID: https://experienceleague.adobe.com/X9zgHooEzDJe-zzmLLXHdVVVFUHVX4be47dOUaJyUXU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
-source-wordcount: 3008
+source-wordcount: 3006
 ht-degree: 0%
 
 ---
@@ -34,6 +26,8 @@ Die Relevanz und Effektivität von Suchergebnissen hängt von mehreren Schlüsse
 - Ein gut gestaltetes Sucherlebnis schafft Vertrauen bei den Kunden und schafft Vertrauen, dass sie das finden, was sie brauchen.
 - Suchregeln sind wichtig, da sie die Sichtbarkeit bestimmter Produkte basierend auf Popularität, Neuankömmlingen, Werbekriterien oder einer anderen Merchandising-Strategie erhöhen können, um Ihre Geschäftsanforderungen zu erfüllen.
 - Die Facettennavigation ermöglicht es Kunden, ihre Suche zu verfeinern und schnell relevante Ergebnisse zu erhalten.
+
+Um zu verstehen, wie [!DNL Live Search] Prioritäten **exakte und Beinahe-Übereinstimmungen, Übereinstimmungen mit gleichen Feldern und feldübergreifende Übereinstimmungen** setzt und wie diese Faktoren mit Gewichtung und Regeln der Suche interagieren, siehe [Suchabgleich und -ranking](search-relevance-matching.md).
 
 Um [!DNL Live Search] zu verwalten, gehen Sie **Marketing** > *SEO &amp; Search* > **[!DNL Live Search]** im Adobe [!DNL Commerce] Admin. 
 
@@ -73,7 +67,7 @@ Weitere Informationen zu Synonymen:
 
 Die Filter- und Facettenfunktionalität ist eine wichtige Komponente Ihrer [!DNL Commerce]-Site, die das Käufererlebnis verbessert, indem sie es Käufern ermöglicht, die Suchergebnisse einzugrenzen und Produkte effizienter zu finden. Diese Funktion hilft Käufern, große Kataloge von Artikeln zu sortieren, indem sie bestimmte Kriterien anwendet, was den Einkaufsprozess schneller, einfacher und befriedigender macht. Durch die Implementierung effektiver, käuferfreundlicher Filter und Facetten können Sie Kunden dabei unterstützen, schnell und effizient genau das zu finden, was sie benötigen, was letztendlich die Zufriedenheit und die Konversionsraten steigert.
 
-Um ein Produktattribut als Facette einzurichten, müssen die folgenden [Eigenschaften“ festgelegt &#x200B;](facets-add.md#step-1-add-a-facet):
+Um ein Produktattribut als Facette einzurichten, müssen die folgenden [Eigenschaften“ festgelegt ](facets-add.md#step-1-add-a-facet):
 
 - **[!UICONTROL Use in Search]** -  `Yes`
 - **[!UICONTROL Use in Layered Navigation]** -  `Filterable (with results)`
@@ -81,7 +75,7 @@ Um ein Produktattribut als Facette einzurichten, müssen die folgenden [Eigensch
 
 #### Tipps zum Optimieren von Facetten
 
-- Bestimmen Sie die relevantesten und nützlichsten Attribute für Ihre Produkte, wie Titel, Kategorie, Marke, Preisspanne, Farbe und Größe und legen Sie sie als [dynamische Facetten“ &#x200B;](facets-type.md). 
+- Bestimmen Sie die relevantesten und nützlichsten Attribute für Ihre Produkte, wie Titel, Kategorie, Marke, Preisspanne, Farbe und Größe und legen Sie sie als [dynamische Facetten“ ](facets-type.md). 
 - Legen Sie Produktattribute fest und sortieren Sie sie, die in Ihrem gesamten Katalog konsistent und für Ihre Produkte äußerst relevant sind, um die Relevanz und Filtermöglichkeiten für Ihre Kunden zu verbessern.
 - Stellen Sie sicher, dass Facettenbeschriftungen leicht verständlich sind und auf der gesamten Site konsistent benannt werden. Verwenden Sie beispielsweise „Preisspanne“ anstelle von „Kosten“.
 - Vermeiden Sie es, Käufer zu überfordern, indem Sie die Anzahl der Facetten auf die wichtigsten beschränken. Zu viele Optionen können zu Entscheidungsermüdung führen. Standardmäßig ist [!DNL Live Search] auf maximal 100 Attribute beschränkt, die als Facetten konfiguriert sind, und auf 30 Buckets, die innerhalb jeder Facette zurückgegeben werden. Weitere Informationen zu [Facettenbegrenzungen](boundaries-limits.md#facets). 
@@ -125,7 +119,7 @@ Es ist von entscheidender Bedeutung, eine gut durchdachte Standard-Suchregel fes
 - Legen Sie Suchregeln während der Promotion oder des Verkaufszeitraums automatisch fest, indem Sie den Datumsbereich während des Promotion-Zeitraums verwenden.
 - Verwenden Sie immer das Bedienfeld „Regel testen“, um eine Vorschau anzuzeigen, wie sich Ihre intelligente Rangfolgestrategie auf die tatsächlichen Suchergebnisse für verschiedene Abfragen auswirkt.
 - Wenn Sie intelligentes Ranking aktivieren, **[Sie](rules-add.md#intelligent-ranking-boost)** Regeleditor die intelligente Ranking-Optimierung an, um Beliebtheitssignale mit Textrelevanz auszugleichen und die Ergebnisse für Zielabfragen in **Testen Sie Ihre Regel** zu überprüfen. Der intelligente Ranking-Boost ist für die **None**-Strategie nicht verfügbar.
-- Passen Sie Suchergebnisse mithilfe von „Intelligent Ranking[&#x200B; wie &quot;](rules-add.md#intelligent-ranking) für Sie empfohlen“, „Am häufigsten angezeigt“ usw. an das individuelle Kundenverhalten an. Um das Kundenverhalten anzupassen, müssen Sie sicherstellen, dass das Eventing korrekt implementiert ist. Für Händler in Luma ist das Eventing vorkonfiguriert verfügbar. Bei Headless- oder benutzerdefinierten Implementierungen müssen Sie [Ereignis implementieren](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) basierend auf Ihren spezifischen Anforderungen.
+- Passen Sie Suchergebnisse mithilfe von „Intelligent Ranking[ wie &quot;](rules-add.md#intelligent-ranking) für Sie empfohlen“, „Am häufigsten angezeigt“ usw. an das individuelle Kundenverhalten an. Um das Kundenverhalten anzupassen, müssen Sie sicherstellen, dass das Eventing korrekt implementiert ist. Für Händler in Luma ist das Eventing vorkonfiguriert verfügbar. Bei Headless- oder benutzerdefinierten Implementierungen müssen Sie [Ereignis implementieren](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) basierend auf Ihren spezifischen Anforderungen.
 
 Weitere Informationen zu Suchregeln:
 
@@ -142,7 +136,7 @@ Weitere Informationen zu Suchregeln:
 
 ### Verwenden von Produktmetadaten
 
-Stellen Sie sicher, dass genaue und detaillierte Produktattribute [als durchsuchbar eingerichtet) &#x200B;](workspace.md#set-attributes-as-searchable). Beachten Sie, dass die Attribute „SKU“, „Name“ und „Kategorie“ standardmäßig durchsuchbar sind und nicht von der Suche ausgeschlossen werden können. Verwenden Sie für optimale Ergebnisse keine Leerzeichen in Ihren SKUs.
+Stellen Sie sicher, dass genaue und detaillierte Produktattribute [als durchsuchbar eingerichtet) ](workspace.md#set-attributes-as-searchable). Beachten Sie, dass die Attribute „SKU“, „Name“ und „Kategorie“ standardmäßig durchsuchbar sind und nicht von der Suche ausgeschlossen werden können. Verwenden Sie für optimale Ergebnisse keine Leerzeichen in Ihren SKUs.
 
 Die Auswahl der Attribute, die durchsuchbar gemacht werden sollen, hat einen großen Einfluss auf die Suchqualität. Wenn Sie zu viele Attribute durchsuchbar machen, kann dies die Relevanz reduzieren und zu unerwarteten Übereinstimmungen führen, selbst wenn es die Anzahl der zurückgegebenen Ergebnisse erhöht. In diesem Abschnitt wird erläutert, wie Sie durchsuchbare Attribute bewusst auswählen, um ein Gleichgewicht zwischen Abdeckung und Relevanz herzustellen.
 
@@ -222,13 +216,13 @@ Wenn Suchergebnisse zufällig oder irrelevant sind, verwenden Sie diese Checklis
 Weitere Informationen zu Produktattributen für die Suche:
 
 - [Festlegen von Attributen als durchsuchbar](workspace.md#set-attributes-as-searchable)
-- [Attributen Gewichtung zuweisen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Attributen Gewichtung zuweisen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Suchergebnisse überwachen
 
 Um Suchergebnisse mit [!DNL Live Search] zu optimieren, überwachen Sie relevante Key Performance Indicators (KPIs) wie eindeutige Abfragen, durchschnittliche Klickposition, Clickthrough-Raten, Konversionsrate und Nullergebnisrate, um zu verstehen, wie Käufer mit Ihrer Suchfunktion interagieren. Diese Daten helfen Ihnen, Ihre Suchregeln regelmäßig zu aktualisieren und zu verfeinern.
 
-Sie können diese KPIs im [!DNL Live Search]Arbeitsbereich Leistung[&#x200B; überwachen](performance.md) in dem die folgenden Metriken zu finden sind: 
+Sie können diese KPIs im [!DNL Live Search]Arbeitsbereich Leistung[ überwachen](performance.md) in dem die folgenden Metriken zu finden sind: 
 
 - **Eindeutige Suchvorgänge** - Die Anzahl der einzelnen Suchabfragen, die auf Ihrer [!DNL Commerce]-Site durchgeführt wurden. Jede einzelne Suche wird nur einmal gezählt, auch wenn sie mehrere Male von ein und demselben oder verschiedenen Erstkäufern wiederholt wird. Diese Metrik hilft Ihnen, die Vielfalt der von Kundinnen und Kunden verwendeten Suchbegriffe zu verstehen, und bietet Einblicke in die Produkte oder Informationen, die Kundinnen und Kunden suchen. Das Tracking einzelner Suchvorgänge ermöglicht Folgendes:
 
@@ -248,7 +242,7 @@ Sie können diese KPIs im [!DNL Live Search]Arbeitsbereich Leistung[&#x200B; üb
 
   Um die Nullergebnisrate zu reduzieren, haben Sie folgende Möglichkeiten:
 
-   - Bieten Sie alternative oder verwandte Suchbegriffe an, z[&#x200B; B. &quot;](synonyms.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
+   - Bieten Sie alternative oder verwandte Suchbegriffe an, z[ B. &quot;](synonyms.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
    - Überprüfen Sie regelmäßig Nullergebnisabfragen, um Muster zu identifizieren und notwendige Anpassungen an Ihrem Produktkatalog und Ihren Sucheinstellungen vorzunehmen.
 
 - **Beliebte Ergebnisse** - Kann Ihre Suchergebnisse erheblich verbessern, indem es sie an den Vorlieben und Verhaltensweisen der Käufer ausrichtet.
