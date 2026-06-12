@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: fad62add01dfb6155f30bcfe791eb66de210b7a1
 workflow-type: tm+mt
-source-wordcount: 2857
+source-wordcount: 2903
 ht-degree: 0%
 
 ---
@@ -40,6 +40,12 @@ Zu den Aktualisierungen gehören:
 >Die SaaS-Datenexporterweiterung ist eine Sammlung von Modulen, die automatisch mit der Live-Suche, Produktempfehlungen und dem Katalog-Service installiert werden. Sie können die auf Ihrem System installierte Version mit dem Composer überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Versionen 2026
+
+### Version 103.4.28
+
+_11. Juni 2026_
+
+![Beheben](../assets/fix.svg) **Präzise Kategorie-URLs nach geplanten Aktualisierungen**-Es wurde ein Problem behoben, bei dem geplante Änderungen an Kategorie-URLs doppelte oder veraltete Plug-ins in verbundenen Commerce-Services hinterlassen konnten. Links zur Kategoriennavigation und zur Produktkategorie zeigen jetzt nach Anwendung der Änderung die aktualisierte URL an.
 
 ### Version 103.4.27
 
