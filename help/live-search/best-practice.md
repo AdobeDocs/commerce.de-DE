@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
+source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
-source-wordcount: 3008
+source-wordcount: 3006
 ht-degree: 0%
 
 ---
@@ -34,6 +34,8 @@ Die Relevanz und Effektivität von Suchergebnissen hängt von mehreren Schlüsse
 - Ein gut gestaltetes Sucherlebnis schafft Vertrauen bei den Kunden und schafft Vertrauen, dass sie das finden, was sie brauchen.
 - Suchregeln sind wichtig, da sie die Sichtbarkeit bestimmter Produkte basierend auf Popularität, Neuankömmlingen, Werbekriterien oder einer anderen Merchandising-Strategie erhöhen können, um Ihre Geschäftsanforderungen zu erfüllen.
 - Die Facettennavigation ermöglicht es Kunden, ihre Suche zu verfeinern und schnell relevante Ergebnisse zu erhalten.
+
+Um zu verstehen, wie [!DNL Live Search] Prioritäten **exakte und Beinahe-Übereinstimmungen, Übereinstimmungen mit gleichen Feldern und feldübergreifende Übereinstimmungen** setzt und wie diese Faktoren mit Gewichtung und Regeln der Suche interagieren, siehe [Suchabgleich und -ranking](search-relevance-matching.md).
 
 Um [!DNL Live Search] zu verwalten, gehen Sie **Marketing** > *SEO &amp; Search* > **[!DNL Live Search]** im Adobe [!DNL Commerce] Admin. 
 

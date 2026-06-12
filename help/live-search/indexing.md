@@ -12,9 +12,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
-source-wordcount: 787
+source-wordcount: 812
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ Der Client ruft den Suchdienst von der Storefront auf, um (filterbare, sortierba
 Um eine dynamische Abfrage zu erstellen, muss der Suchdienst wissen, welche Attribute durchsuchbar sind und welche ([) &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] berücksichtigt die Gewichtung der Adobe Commerce-Suche (1-10, wobei 10 die höchste Priorität hat). Die Liste der Daten, die mit dem Katalog-Service synchronisiert und freigegeben werden, finden Sie im Schema , das definiert ist in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+Informationen dazu, wie durchsuchbare Attribute und Gewichtungen mit **exakt**, **nah**, Gleichfeld- und Feldübergreifendem Abgleich zur Abfragezeit interagieren, finden Sie unter [Suchabgleich und -ranking](search-relevance-matching.md).
 
 ![[!DNL Live Search] Index-Client-Suchdiagramm](assets/indexing-pipeline.svg)
 

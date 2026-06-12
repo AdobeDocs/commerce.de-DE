@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: b9b57bb7279354c9d5c2a7efc6e1ba14c1c36598
 workflow-type: tm+mt
-source-wordcount: 1905
+source-wordcount: 1936
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ Die *Suchleistung* liefert insight zu den Suchbegriffen, die Käufer verwenden. 
 >[!IMPORTANT]
 >
 >Wenn keine Suchleistungsmetriken angezeigt werden, stellen Sie sicher, dass Suchereignisdaten [erfasst](../setup/events/overview.md).
+
+>[!NOTE]
+>
+>Um zu verstehen, wie die Produkterkennung **exakte und** Übereinstimmungen), Übereinstimmungen mit gleichen Feldern und weiter gefasste Übereinstimmungen einordnet (und wie dies mit Schlüsselwortgewichten und Merchandising-Regeln interagiert), siehe [Suchabgleich und -ranking](../search-relevance-matching.md).
 
 ## Wählen Sie die **Katalogansicht**
 
