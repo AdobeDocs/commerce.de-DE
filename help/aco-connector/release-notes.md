@@ -3,23 +3,14 @@ title: '[!DNL Adobe Commerce Optimizer Connector] Versionshinweise'
 description: Erfahren Sie  [!DNL Adobe Commerce Optimizer Connector]  Versionshinweise, einschließlich neuer Funktionen, Fehlerbehebungen und bekannter Probleme bei der Katalogsynchronisierung und beim Export.
 feature: Release Notes
 TQID: 'https://experienceleague.adobe.com/6NeLAfThvIWIyV4Y6OWtL8V9mC7lPy7UH-Zli8E-WEk'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-subfeature_v2:
-  - id: dad884f1-e840-49a1-970e-2f965bdbc410
-  - id: a40ebd6b-b542-4432-a730-1803ef74518d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: f08fa0de-a550-4acd-b570-f81cf1d03aafid: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+subfeature_v2: id: dad884f1-e840-49a1-970e-2f965bdbc410id: a40ebd6b-b542-4432-a730-1803ef74518d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: af45543a52d1c88149574dc22cdef37af01404c8
 workflow-type: tm+mt
-source-wordcount: 267
+source-wordcount: 353
 ht-degree: 0%
 
 ---
@@ -33,6 +24,18 @@ In diesen Versionshinweisen werden alle Versionen für die [!DNL Adobe Commerce 
 ![Bekanntes Problem](../assets/bug.svg) Bekannte Probleme
 
 ## Versionen 2026
+
+### Version 1.0.14
+
+_11. Juni 2026_
+
+![Fix](../assets/fix.svg) Kompatibilität mit **PHP 8.5** - Die [!DNL Adobe Commerce Optimizer Connector] unterstützt jetzt PHP 8.5, sodass Sie Ihre [!DNL Adobe Commerce] Umgebung aktualisieren können, ohne die Connector-Funktionalität oder die Katalogsynchronisierung zu unterbrechen. <!--MDEE-1388-->
+
+![Korrigieren](../assets/fix.svg) **Preislisten werden nach Währungsänderungen aktualisiert** - Aktualisierte Preise werden nach Währungsänderungen automatisch in Adobe Commerce Optimizer übernommen. <!--MDEE-1384-->
+
+![Beheben](../assets/fix.svg) **Die Navigation berücksichtigt deaktivierte oder ausgeblendete übergeordnete Kategorien** - Produkte aus deaktivierten oder ausgeblendeten Kategoriehierarchien werden in Navigationserlebnissen nicht mehr unerwartet angezeigt.<!--MDEE-1385-->
+
+![Korrigieren](../assets/fix.svg) **Konsistente Kategorie-URLs nach Staging-Aktualisierungen** - Kategorie-Links und Navigation bleiben nach der Anwendung von Staging-Aktualisierungen korrekt. <!--MDEE-1395-->
 
 ### Version 1.0.13
 
@@ -57,7 +60,7 @@ bin/magento saas:resync --feed=categories
 
 _10. März 2026_
 
-![Es wurde &#x200B;](../assets/fix.svg) Kompatibilitätsproblem behoben, durch das der Zugriff auf die Seite &quot;[!DNL Commerce Services Connector]-Konfiguration“ über die Menüs &quot;Commerce Admin **[!UICONTROL System]**&quot; und &quot;**[!UICONTROL Configuration]**&quot; blockiert wurde, wenn die [!DNL Adobe Commerce Optimizer Connector] auf einer [!DNL Adobe Commerce]-Instanz installiert ist.  Jetzt können Sie auf die Seite [!DNL Commerce Services Connector]-Konfiguration zugreifen, wenn beide Erweiterungen installiert sind. <!--MDEE-1322-->
+![Es wurde ](../assets/fix.svg) Kompatibilitätsproblem behoben, durch das der Zugriff auf die Seite &quot;[!DNL Commerce Services Connector]-Konfiguration“ über die Menüs &quot;Commerce Admin **[!UICONTROL System]**&quot; und &quot;**[!UICONTROL Configuration]**&quot; blockiert wurde, wenn die [!DNL Adobe Commerce Optimizer Connector] auf einer [!DNL Adobe Commerce]-Instanz installiert ist.  Jetzt können Sie auf die Seite [!DNL Commerce Services Connector]-Konfiguration zugreifen, wenn beide Erweiterungen installiert sind. <!--MDEE-1322-->
 
 
 ### Version 1.0.10
