@@ -2,9 +2,9 @@
 title: Was ist [!DNL Adobe Commerce Optimizer]?
 description: Erfahren Sie mehr über  [!DNL Adobe Commerce Optimizer]  und seine wichtigsten Funktionen.
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: e68d731bbcc168439c9a56a7cb778648a7c473e9
+source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 0%
@@ -21,12 +21,12 @@ Mit [!DNL Adobe Commerce Optimizer] können Sie:
 - Nehmen Sie Katalogdaten aus einer beliebigen Quelle auf.
 - Definieren Sie Geschäftskatalogansichten und Richtlinien.
 - Personalisierte Suche und Empfehlungen mit KI und ML erstellen.
-- Die Relevanz der Produkterkennung mit einer Rangfolge verbessern, bei der **(exakte und** Übereinstimmungen) und Übereinstimmungen mit gleichen Feldern priorisiert werden; siehe [Suchabgleich und Rangfolge](search-relevance-matching.md).
+- Die Relevanz der Produkterkennung mit einer Rangfolge verbessern, bei der **(exakte und** Übereinstimmungen) und Übereinstimmungen mit gleichen Feldern priorisiert werden; siehe [Suchabgleich und Rangfolge](./manage-results/search-relevance-matching.md).
 - Zeigen Sie wichtige Produktdatenverfügbarkeit an, einschließlich Synchronisierungsstatus und Storefront-Ereignisdaten für eine genaue Implementierung und Fehlerbehebung.
 
 Sehen Sie sich das folgende Video an, um einen allgemeinen Überblick über [!DNL Adobe Commerce Optimizer] zu erhalten:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450472?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Wer profitiert am meisten von [!DNL Adobe Commerce Optimizer]?
 
@@ -70,7 +70,7 @@ Erstellen Sie personalisierte Erlebnisse für Ihre Kunden durch Produktentdeckun
 Definieren Sie Ihre Katalogansichten und Richtlinien. Der Katalog enthält nicht nur Ihre Produktdaten, sondern hilft Ihnen auch bei der Definition Ihrer Geschäftsstruktur. Außerdem können Sie wertvolle Einblicke in die Verfügbarkeit von Produktdaten für Ihre Storefront erhalten, um sicherzustellen, dass sie Ihren Käufern sofort angezeigt werden können.
 
 - **Katalogansichten** - Hilft Ihnen, Ihre Einzelhandelsstruktur in aussagekräftige Geschäftsgruppen zu definieren. Zum Beispiel Händler für die Automobilindustrie, Tochtergesellschaften für Mehrmarkenkonglomerate oder Produktionsstandorte für Zulieferer.
-- **Katalogebenen** - Ändern von Produktdaten ohne Änderung der Quelldaten. Wenn Sie AEM Assets für Produktbilder verwenden, wird die AEM-Assets-Ebene über &quot;[&quot; &#x200B;](setup/product-visuals.md). Weitere Informationen [&#x200B; Sie unter &#x200B;](setup/catalog-layer.md)Katalogebenen).
+- **Katalogebenen** - Ändern von Produktdaten ohne Änderung der Quelldaten. Wenn Sie AEM Assets für Produktbilder verwenden, wird die AEM-Assets-Ebene über &quot;[&quot; ](setup/product-visuals.md). Weitere Informationen [ Sie unter ](setup/catalog-layer.md)Katalogebenen).
 - **Richtlinien** - Datenzugriffsfilter, die in Katalogansichten untergebracht sind. Richtlinien helfen sicherzustellen, dass der richtige Inhalt an das richtige Ziel gesendet wird. Zum Beispiel physische Ladengeschäfte, Marktplätze, Werbeleitungen (Google, Facebook, Instagram).
 - **Datensynchronisation**: Zeigt einen Überblick über den Synchronisationsstatus für Produktdaten an, die aus ihrer Datenquelle (PIM, ERP usw.) in [!DNL Adobe Commerce Optimizer] übertragen wurden. Diese Produktdaten werden auf den Registerkarten **[!UICONTROL Catalog Service]**, **[!UICONTROL Search]** und **[!UICONTROL Recommendations]** angezeigt.
 - **Ereignisse** - Zeigt Ereignisdaten für die Storefront an, die die Produkterkennung und Empfehlungen ermöglichen. Auf **Seite „Ereignisse** kann der Händler überprüfen, ob er das Storefront-Ereignis korrekt implementiert hat und ob Ereignisse erfolgreich erfasst werden. Händler können diese Seite verwenden, um potenzielle Probleme zu identifizieren und Schritte zum Beheben von Eventing-Problemen zu unternehmen.
