@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: a0f9ddbf3d0f291855cb51fd70a782c48b8efc6c
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1373'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Bericht zu Auszahlungen
 
 [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen ein umfassendes Reporting, damit Sie einen klaren Überblick über die Transaktionen, Bestellungen und Zahlungen Ihres Stores erhalten.
+
+>[!NOTE]
+>
+>Die folgenden Auszahlungsansichten sind in [!DNL Payment Services] **[!UICONTROL Home]** in Adobe Commerce on Cloud und On-Premise verfügbar. Sie werden im [!DNL Payment Services]-Dashboard für [!DNL Adobe Commerce as a Cloud Service] oder [!DNL Adobe Commerce Optimizer] nicht angezeigt. Siehe [[!DNL Payment Services] Startseite](payments-home.md).
 
 Es gibt zwei verfügbare Auszahlungs-Berichtsansichten, mit denen Sie detaillierte Informationen zu allen Ihren Auszahlungen sehen können:
 
@@ -27,7 +31,7 @@ Sie können [Auszahlungstransaktionen](#download-transactions) im CSV-Dateiforma
 
 >[!NOTE]
 >
->Auszahlungsberichte zeigen nur Bestellungen an, die erfasst (Zahlungsaktion ist auf [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html?lang=de#set-payment-services-as-payment-method) eingestellt) - oder [&#x200B; als `Invoiced`](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) markiert sind.
+>Auszahlungsberichte zeigen nur Bestellungen an, die erfasst (Zahlungsaktion ist auf [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method) eingestellt) - oder [ als `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) markiert sind.
 
 ## Datenvisualisierungsansicht für Auszahlungen
 
@@ -89,12 +93,12 @@ In der Berichtsansicht „Zahlungen“ können Sie die Datenquelle (**[!UICONTRO
 
 ![Datenquellenauswahl](assets/datasource.png){width="300" zoomable="yes"}
 
-Wenn _[!UICONTROL Live]_&#x200B;die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Stores im Produktionsmodus anzeigen. Wenn&#x200B;_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie Berichtsinformationsspeicher im Sandbox-Modus sehen.
+Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Stores im Produktionsmodus anzeigen. Wenn_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie Berichtsinformationsspeicher im Sandbox-Modus sehen.
 
 Die Auswahl von Datenquellen funktioniert wie folgt:
 
-* Wenn Sie keine Stores haben, die sich im Live-Modus befinden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Sandbox]_&#x200B;eingestellt.
-* Wenn Sie Stores (einen oder mehrere) im Live-Modus haben, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Live]_&#x200B;eingestellt.
+* Wenn Sie keine Stores haben, die sich im Live-Modus befinden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Sandbox]_eingestellt.
+* Wenn Sie Stores (einen oder mehrere) im Live-Modus haben, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Live]_eingestellt.
 * Berichtsexporte berücksichtigen immer die Auswahl der Datenquelle.
 
 So wählen Sie die Datenquelle für die Auswertung „Zahlungsstatus der Bestellung“ aus:
@@ -150,12 +154,12 @@ Auszahlungsberichte enthalten die folgenden Informationen.
 | [!UICONTROL Provider] | Zahlungsdienstleister |
 | [!UICONTROL Provider trans] | Transaktions-ID |
 | [!UICONTROL Trans date] | Datum und Uhrzeit der Initiierung der Transaktion |
-| [!UICONTROL Type] | Transaktionstyp: *[!UICONTROL PAYMENT]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]* *[!UICONTROL WITHDRAWAL]*, <br> <br>Siehe [Transaktionstypen](#transaction-types) für weitere Informationen. |
+| [!UICONTROL Type] | Transaktionstyp: *[!UICONTROL PAYMENT]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL REFUND]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REVERSAL]* *[!UICONTROL WITHDRAWAL]*, <br> <br>Siehe [Transaktionstypen](#transaction-types) für weitere Informationen. |
 | [!UICONTROL Status] | Aktueller Status der Transaktion - *[!UICONTROL SUCCESS]*, *[!UICONTROL DENIED]*, *[!UICONTROL PENDING]* |
 | [!UICONTROL Code] | Transaktionscode, der entweder „Guthaben“ (*CR*) oder „Soll“ (*DR*) angibt |
 | [!UICONTROL Reference ID] | Ursprüngliche Transaktions-ID, mit der dieses Ereignis verknüpft ist |
 | [!UICONTROL Invoice] | Rechnungskennung (eine pro Bestellung) der Transaktion |
-| [!UICONTROL Commerce order] | Commerce-Auftrags-ID <br> <br>Um zugehörige [Bestellinformationen) anzuzeigen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/orders) klicken Sie auf die ID. |
+| [!UICONTROL Commerce order] | Commerce-Auftrags-ID <br> <br>Um zugehörige [Bestellinformationen) anzuzeigen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) klicken Sie auf die ID. |
 | [!UICONTROL Commerce trans] | Commerce Transaktions-ID |
 | [!UICONTROL Pay method] | Kreditkartenart - *[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]* - und dazugehöriger Kartenanbieter (z. B *Visa* oder *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Transaktionsbetrag |
@@ -185,19 +189,19 @@ Diese Transaktionstypen können in den Auszahlungstransaktionen vermerkt werden.
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | Geld zwischen einem Käufer und einem Verkäufer für eine Bestellung verschoben |
 | [!UICONTROL AUTH] | Autorisierung und Autorisierung ungültiger Transaktionen |
-| [!UICONTROL BONUS] | — |
+| [!UICONTROL BONUS] | -- |
 | [!UICONTROL CHARGEBACK] | Rückbelastungsgebühren und Rückbelastungsgebühren-Rückbuchungen |
-| [!UICONTROL CORRECTION] | — |
-| [!UICONTROL CURRENCY_CONVERSION] | — |
-| [!UICONTROL DEPOSIT] | — |
-| [!UICONTROL DISBURSEMENT] | — |
-| [!UICONTROL DISPUTE] | — |
+| [!UICONTROL CORRECTION] | -- |
+| [!UICONTROL CURRENCY_CONVERSION] | -- |
+| [!UICONTROL DEPOSIT] | -- |
+| [!UICONTROL DISBURSEMENT] | -- |
+| [!UICONTROL DISPUTE] | -- |
 | [!UICONTROL FEES] | Partnergebühren, Zahlungsgebühren und Gebührenumkehrtransaktionen |
-| [!UICONTROL HOLD] | — |
-| [!UICONTROL HOLD_RELEASE] | — |
-| [!UICONTROL INCENTIVES] | — |
-| [!UICONTROL OTHERS] | — |
+| [!UICONTROL HOLD] | -- |
+| [!UICONTROL HOLD_RELEASE] | -- |
+| [!UICONTROL INCENTIVES] | -- |
+| [!UICONTROL OTHERS] | -- |
 | [!UICONTROL RECOUP] | Rückzahlungen aus Bank- oder Verlustkonten |
-| [!UICONTROL REFUND] | — |
-| [!UICONTROL REVERSAL] | — |
-| [!UICONTROL WITHDRAWAL] | — |
+| [!UICONTROL REFUND] | -- |
+| [!UICONTROL REVERSAL] | -- |
+| [!UICONTROL WITHDRAWAL] | -- |
