@@ -40,7 +40,7 @@ In dieser Startansicht können Sie auf _Startseite_, _Erfahren_ über [!DNL Paym
 
 >[!NOTE]
 >
->In [!DNL Adobe Commerce as a Cloud Service] und [!DNL Adobe Commerce Optimizer] macht das [!DNL Payment Services] **Dashboard** nur **ausgewählte** Berichte verfügbar: Sie erhalten den [](reporting.md)Bericht von **[!UICONTROL Home]** (siehe SaaS-Tabelle unten). Die Bereiche **[!UICONTROL Orders]** und **[!UICONTROL Payouts]** auf der Startseite - sowie deren Diagramme und verknüpfte Berichte - gelten nur für Adobe Commerce on Cloud und On-Premise [PaaS](#home). Einen Überblick über Cashflow-Berichte in verschiedenen Bereitstellungen finden Sie unter [Finanzberichte](financial-reporting.md).
+>In [!DNL Adobe Commerce as a Cloud Service] und [!DNL Adobe Commerce Optimizer] macht das [!DNL Payment Services] **Dashboard** nur **ausgewählte** Berichte verfügbar: Sie erhalten den [&#128279;](reporting.md)Bericht von **[!UICONTROL Home]** (siehe SaaS-Tabelle unten). Die Bereiche **[!UICONTROL Orders]** und **[!UICONTROL Payouts]** auf der Startseite - sowie deren Diagramme und verknüpfte Berichte - gelten nur für Adobe Commerce on Cloud und On-Premise [PaaS](#home). Einen Überblick über Cashflow-Berichte in verschiedenen Bereitstellungen finden Sie unter [Finanzberichte](financial-reporting.md).
 
 ## Startseite
 
@@ -74,6 +74,6 @@ In dieser Startansicht können Sie auf _Startseite_, _Erfahren_ über [!DNL Paym
 
 ## Einstellungen
 
-Klicken Sie in der Startansicht auf **[!UICONTROL Settings]**. Weitere Informationen finden [[!DNL Payment Services]  unter ](configure-admin.md)Konfiguration“.
+Klicken Sie in der Startansicht auf **[!UICONTROL Settings]**. Weitere Informationen finden [[!DNL Payment Services]  unter &#x200B;](configure-admin.md)Konfiguration“.
 
 In der Fußzeile des Bereichs Zahlungsdienste werden die Versionsbezeichnungen **Zahlungsdienste** und **Zahlungsdienste-Dashboard** angezeigt, z. B. wenn Sie Details für den Support erfassen.
