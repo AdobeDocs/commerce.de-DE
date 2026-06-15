@@ -23,7 +23,7 @@ level_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 7a5ca0f5e76be50481447e6a17fc327562f7c3bf
+source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
 workflow-type: tm+mt
 source-wordcount: 1184
 ht-degree: 0%
@@ -227,3 +227,4 @@ Sie können über die Seite [[!UICONTROL Data Feed Sync Status]](https://experie
 1. **Einrichten einer Commerce-Storefront auf[!DNL Edge Delivery Services]**
 
    Befolgen Sie die [Dokumentation zur Einrichtung von Storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=de){target="_blank"}, um Ihre Storefront mit der [!DNL Adobe Commerce Optimizer]-Instanz zu verbinden und mit der Bereitstellung personalisierter Commerce-Erlebnisse zu beginnen.
+

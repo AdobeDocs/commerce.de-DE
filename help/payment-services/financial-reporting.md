@@ -4,9 +4,9 @@ description: '[!DNL Payment Services] bietet umfassende Berichte, damit Sie eine
 role: User
 feature: Payments, Checkout, Paas, Saas
 level: Intermediate
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 13160864673baae7043463d4596f3464a0c7ec5e
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '130'
 ht-degree: 0%
 
 ---
@@ -18,3 +18,7 @@ ht-degree: 0%
 ![Finanzberichte anzeigen](assets/reports-view.png){width="600" zoomable="yes"}
 
 Die Cashflow-Management-Berichte - Auszahlungen, Transaktionen und Auftragszahlungsstatus - synchronisieren Zahlungsdetails mit Auftragsinformationen, um Ihnen volle Transparenz über verarbeitetes Volumen, Zahlungssaldo und detaillierte Berichte auf Transaktionsebene für die finanzielle Abstimmung zu bieten.
+
+>[!NOTE]
+>
+>Ihre Bereitstellung bestimmt, welche dieser Berichte im [!DNL Payment Services] (**) angezeigt**. Auf [!DNL Adobe Commerce as a Cloud Service] und [!DNL Adobe Commerce Optimizer] zeigt das Dashboard **ausgewählte** Berichte (einschließlich [Transaktionen](reporting.md) von der Startseite) an. [Bestellzahlstatus](order-payment-status.md) und [Auszahlungen](payouts.md) Startansichten und verknüpfte Berichte sind in Adobe Commerce in der Cloud und On-Premise verfügbar, wie in diesen Themen beschrieben. Siehe [[!DNL Payment Services] Home](payments-home.md).

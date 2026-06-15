@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---
@@ -37,6 +37,10 @@ Nach Abschluss des Onboarding (oder auf einer bereits konfigurierten Instanz) ze
 >[!ENDTABS]
 
 In dieser Startansicht können Sie auf _Startseite_, _Erfahren_ über [!DNL Payment Services] zugreifen, die Erweiterung _Einstellungen_ konfigurieren oder _Hilfe_. Verwenden Sie **[!UICONTROL View Report]** (SaaS) oder die **[!UICONTROL Orders]** und **[!UICONTROL Payouts]** Einstiegspunkte (Adobe Commerce on Cloud und On-Premise), um das Reporting zu öffnen; siehe [Reporting](reporting.md).
+
+>[!NOTE]
+>
+>In [!DNL Adobe Commerce as a Cloud Service] und [!DNL Adobe Commerce Optimizer] macht das [!DNL Payment Services] **Dashboard** nur **ausgewählte** Berichte verfügbar: Sie erhalten den [&#128279;](reporting.md)Bericht von **[!UICONTROL Home]** (siehe SaaS-Tabelle unten). Die Bereiche **[!UICONTROL Orders]** und **[!UICONTROL Payouts]** auf der Startseite - sowie deren Diagramme und verknüpfte Berichte - gelten nur für Adobe Commerce on Cloud und On-Premise [PaaS](#home). Einen Überblick über Cashflow-Berichte in verschiedenen Bereitstellungen finden Sie unter [Finanzberichte](financial-reporting.md).
 
 ## Startseite
 

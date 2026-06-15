@@ -1,11 +1,13 @@
 ---
 title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
+role: Admin, User
+level: Intermediate
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 379345261bebe5bee9cdbcb6fd3b0ce6275df6ea
 workflow-type: tm+mt
-source-wordcount: '1728'
+source-wordcount: '2326'
 ht-degree: 0%
 
 ---
@@ -63,17 +65,38 @@ Weitere Informationen finden [&#x200B; unter „Fastlane &#x200B;](https://www.p
 
 ### [!DNL Apple Pay]
 
-Mit [!DNL Apple Pay] können Händler ein sicheres, optimiertes Checkout-Erlebnis in Safari bereitstellen (für bis zu 99 Domains pro Händlerkonto), was die Konversionen erhöhen kann. Mit der [!DNL Apple Pay] Schaltfläche werden die gespeicherten Zahlungs-, Kontakt- und Versanddetails von den iOS- oder macOS-Geräten des Kunden automatisch ausgefüllt, was ein schnelles, einmaliges Kauferlebnis ermöglicht.
+Mit [!DNL Apple Pay] können Händler ein sicheres, optimiertes Checkout-Erlebnis (für bis zu 99 Domains pro Händlerkonto) bereitstellen, das Konversionen steigern kann.
+
+* **Safari (macOS und iOS)** - Mit der [!DNL Apple Pay]-Schaltfläche werden gespeicherte Zahlungs-, Kontakt- und Versanddetails direkt vom Apple-Gerät des Kunden ausgefüllt, sowohl zu Beginn des Checkouts (Express) als auch auf der endgültigen Checkout-Seite.
+* **Chrome, Firefox und Microsoft Edge** - Käufer können [!DNL Apple Pay] sowohl während des **Express-Checkouts** als auch beim **letzten Checkout-Schritt** verwenden. Auf dem Desktop wird ein **QR-Code** angezeigt, sodass der Käufer die Zahlung auf dem Apple-Zahlungsblatt auf einer **iPhone** (iOS 18 oder höher) mit der Kamera-App abschließt, um den Geldbörsenfluss zu öffnen.
+
+Unter [Neue Funktionen in Wallet und  [!DNL Apple Pay]](https://developer.apple.com/videos/play/wwdc2024/10108/?time=35){target=_blank} (Apple Developer, WWDC24) finden Sie eine Übersicht über diesen Vorgang in Apple.
 
 ![Apple-Pay-Schaltfläche im Mini-Warenkorb](assets/applepay-button.png){width="500" zoomable="yes"}
 
 Wenn diese Option aktiviert ist, wird die Schaltfläche [!DNL Apple Pay] auf der Produktseite, im Mini-Warenkorb, im Warenkorb und in den Checkout-Ansichten angezeigt. Sie können [!DNL Apple Pay] in der Store-Konfiguration oder auf der Startseite der Erweiterung konfigurieren.
 
+Kunden können **einen einzelnen Warenkorb-Preisregel-(Coupon-)Code anwenden oder** der [!DNL Apple Pay] Express-Kasse entfernen.
+
 >[!NOTE]
 >
->  Das Apple Pay-Domain-Verifizierungszertifikat ist bereits im Payment Services-Code enthalten. Vergewissern Sie sich, dass der Pfad `/.well-known/apple-developer-merchantid-domain-association` einen Antwort-Code 200 zurückgibt. Weitere [&#x200B; zum &#x200B;](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file)Apple Pay Domain-Verifizierungszertifikat finden Sie in der **Entwicklerdokumentation zu PayPal für die Integration mit**.
+> Das Apple Pay Domain-Verifizierungszertifikat ist bereits im [!DNL Payment Services] enthalten. Vergewissern Sie sich, dass der Pfad `/.well-known/apple-developer-merchantid-domain-association` einen Antwort-Code 200 zurückgibt. Weitere [&#x200B; zum **Apple Pay Domain-Verifizierungszertifikat finden Sie in der &#x200B;](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file)Entwicklerdokumentation zu PayPal für die Integration mit**.
 
 Weitere Informationen finden [&#x200B; unter &#x200B;](configure-admin.md#apple-pay).
+
+#### Einschränkungen für [!DNL Apple Pay] Express
+
+**Werbe-Codes im [!DNL Apple Pay] Lohnbogen**
+
+* Die in der [!DNL Apple Pay] ausgewiesenen Werbungscodes gelten nur für den Eilzufluss. Sie werden nicht angewendet, wenn [!DNL Apple Pay] auf der standardmäßigen Kaufbestätigungsseite ausgewählt ist.
+* Pro [!DNL Apple Pay]-Lohnbogen kann nur **ein** Promotion-Code angewendet werden.
+* Es gibt keine [!DNL Apple Pay] Überprüfungsseite. Der Käufer schließt den Kauf direkt aus der Zahlungsliste ab.
+* Wenn der Käufer die [!DNL Apple Pay]-Lohntabelle schließt und erneut öffnet, wird der zuvor eingegebene Aktionscode nicht gespeichert. Nur der Rabattbetrag bleibt in den Summen erhalten.
+
+**Nicht-Safari-Browser**
+
+* [!DNL Apple Pay] Schaltflächen werden auf Android-Geräten weder im Express- noch im standardmäßigen Checkout-Ablauf gerendert.
+* Bei **virtuellen Produkten** wird in der [!DNL Apple Pay] Zahlungsaufstellung weiterhin eine Lieferadresse angezeigt. Die Adresse wird als bestmögliche Schätzung der Rechnungsadresse für die Berechnung der Gesamtsummen verwendet, da Apple die Rechnungsadresse erst dann bereitstellt, wenn der Käufer die Zahlung autorisiert hat.
 
 ### [!DNL Google Pay]
 
@@ -85,9 +108,28 @@ Durch die Integration von [!DNL Google Pay] in Ihr Checkout-Erlebnis können Hä
 
 Wenn diese Option aktiviert ist, wird die Schaltfläche [!DNL Google Pay] auf der Produktseite, im Mini-Warenkorb, im Warenkorb und in den Checkout-Ansichten angezeigt. Weitere Informationen finden [&#x200B; unter &#x200B;](configure-admin.md).
 
+[!DNL Google Pay] **Express**-Checkout kann **Versandmethoden im Google-** anzeigen, einen optionalen **Überprüfungsschritt** (Konfigurieren **[Überprüfung überspringen](configure-admin.md#google-pay)**) unterstützen und während des Checkouts ein **Werbe-Code**-Feld einfügen.
+
 >[!NOTE]
 >
 > Die [!DNL Google Pay]-API kann nur auf Websites in einem sicheren Kontext verwendet werden. Weitere Informationen finden [&#x200B; in &#x200B;](https://developers.google.com/pay/api/web/support/troubleshooting) Dokumentation zur Fehlerbehebung .
+
+#### Einschränkungen für [!DNL Google Pay] Express
+
+**Versand in der Lohnliste**
+
+* Das **Shipping-in-Sheet**-Verhalten (Client-seitiger Versandrückruf) ist nur verfügbar, wenn **[!UICONTROL Skip Review]** in der [Google Pay-Konfiguration auf `Yes` gesetzt &#x200B;](configure-admin.md#google-pay).
+
+**Werbe-Codes im [!DNL Google Pay] Lohnbogen**
+
+* Die in der [!DNL Google Pay] ausgewiesenen Werbungscodes gelten nur für den Eilzufluss. Sie werden nicht angewendet, wenn [!DNL Google Pay] auf der standardmäßigen Kaufbestätigungsseite ausgewählt ist.
+* Nur **1**-Werbe-Code kann pro [!DNL Google Pay]-Lohnbogen angewendet werden, auch wenn Ihr Geschäft mehrere Coupons pro Bestellung zulässt. (Mehrere Coupons werden im Standardwarenkorb und im Checkout weiterhin unterstützt.)
+* Werbecodes können nicht auf Geschenkkartenprodukte angewendet werden.
+* Das Feld Werbe-Code wird **auf Android-Geräten nicht unterstützt**.
+* Im [!DNL Google Pay]-Lohnbogen hinzugefügte Codes können nur aus dem Lohnbogen entfernt werden, nicht aber aus dem Commerce-Warenkorb.
+* Bei Adobe Commerce 2.4.4-2.4.6 kann es sein, dass die Rabattposition in der [!DNL Google Pay] aufgrund einer Plattformbeschränkung keinen Wert aufweist.
+* In Adobe Commerce 2.4.7 wird der Rabattwert möglicherweise aufgrund einer Plattformbegrenzung in der GraphQL-Antwort für einige Produkte (hauptsächlich herunterladbare Produkte) nicht in der [!DNL Google Pay]-Zahlungsliste angezeigt.
+* Wenn eine automatische [Warenkorb-Preisregel](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html?lang=de) angewendet wird (z. B. „50 $ Rabatt bei Ausgaben über 200 $„), wird sie mit jedem Code kombiniert, den der Käufer in der Zahlungsliste anwendet. Die in der [!DNL Google Pay] ausgewiesenen Summen können daher von der Auftragszusammenfassung abweichen.
 
 ### [!DNL PayPal Payment Buttons]
 
@@ -131,7 +173,7 @@ Erfahren Sie, wie Sie [!DNL Pay Later]-Messaging deaktivieren oder aktivieren, i
 
 ##### Optional. Konfigurieren von Pay Later Messaging
 
-**Messaging konfigurieren** für [Später bezahlen](configure-admin.md#paypal-payment-buttons) ermöglicht es Händlern, die Standardstile für diese Zahlungsoption zu ändern. Wenn Sie **[!UICONTROL Display Pay Later Message]** in Ihrer Konfiguration `Yes`Einstellungen[&#x200B; auf &#x200B;](configure-admin.md#paypal-payment-buttons) setzen, wird eine **[!UICONTROL Configure Messaging]** modale Schaltfläche angezeigt, über die Sie die Stile für die **[!UICONTROL PayPal Pay Later messaging]** festlegen können.
+**Messaging konfigurieren** für [Später bezahlen](configure-admin.md#paypal-payment-buttons) ermöglicht es Händlern, die Standardstile für diese Zahlungsoption zu ändern. Wenn Sie **[!UICONTROL Display Pay Later Message]** in Ihrer Konfiguration [Einstellungen](configure-admin.md#paypal-payment-buttons) auf `Yes` setzen, wird eine **[!UICONTROL Configure Messaging]** modale Schaltfläche angezeigt, über die Sie die Stile für die **[!UICONTROL PayPal Pay Later messaging]** festlegen können.
 
 ![Spätere Nachrichten bezahlen](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
@@ -147,7 +189,7 @@ Dieser Server-seitige Ansatz ermöglicht es [!DNL Payment Services], das Popup-F
 
 ### Nur PayPal-Zahlungs-Buttons verwenden
 
-Um Ihren Shop schnell in den Produktionsmodus zu versetzen, können Sie _nur_ PayPal-Zahlungsschaltflächen (Venmo, PayPal usw.) konfigurieren.- anstatt auch die PayPal Kreditkartenzahlungsoption zu verwenden.
+Um Ihren Shop schnell in den Produktionsmodus zu versetzen, können Sie _nur_ PayPal-Zahlungsschaltflächen (Venmo, PayPal usw.) konfigurieren, anstatt auch die PayPal-Kreditkartenzahlungsoption zu verwenden.
 
 Auf diese Weise können Sie:
 

@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '2188'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Bericht zum Status der Bestellzahlung
 
 [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen ein umfassendes Reporting, damit Sie einen klaren Überblick über die [Transaktionen](reporting.md) Bestellungen und Zahlungen Ihres Geschäfts erhalten.
+
+>[!NOTE]
+>
+>Die folgenden Ansichten zum Status der Bestellzahlung sind in [!DNL Payment Services] **[!UICONTROL Home]** auf Adobe Commerce in der Cloud und On-Premise verfügbar. Sie werden im [!DNL Payment Services]-Dashboard für [!DNL Adobe Commerce as a Cloud Service] oder [!DNL Adobe Commerce Optimizer] nicht angezeigt. Siehe [[!DNL Payment Services] Startseite](payments-home.md).
 
 Es gibt zwei verfügbare Berichtsansichten zum Zahlungsstatus von Bestellungen, mit denen Sie den Zahlungsstatus Ihrer Bestellungen schnell anzeigen können:
 
@@ -256,7 +260,7 @@ Die Berichte zum Status der Bestellzahlung enthalten die folgenden Informationen
 | [!UICONTROL Pay Status] | Status der Zahlung für einen bestimmten Auftrag |
 | [!UICONTROL Paid Amt] | Für eine Bestellung gezahlter Betrag |
 | [!UICONTROL Cur] | Währungstyp des für eine Bestellung gezahlten Betrags |
-| [!UICONTROL Refund Status] | Status einer Rückerstattung bei einer Bestellung (z. B. Informationen aus Rücksendungen, RMAs und Gutschriften)—   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]* oder *[!UICONTROL Voided]* |
+| [!UICONTROL Refund Status] | Status einer Rückerstattung bei einer Bestellung (z. B. Informationen aus Rücksendungen, RMAs und Gutschriften) - *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]* oder *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | Summe des zurückerstatteten Betrags für eine Bestellung |
 | [!UICONTROL Cur] | Währungstyp des für eine Bestellung zurückgezahlten Betrags |
 | [!UICONTROL Disputes] | Status aller Streitigkeiten über eine Bestellung (Informationen aus Streitigkeiten und Rückbelastungen) - *[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]* oder *[!UICONTROL Other]* |

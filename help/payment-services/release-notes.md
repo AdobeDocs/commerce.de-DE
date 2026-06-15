@@ -1,11 +1,13 @@
 ---
 title: '[!DNL Payment Services] Versionshinweise'
 description: Informationen zu allen Versionen finden  [!DNL Payment Services]  in den Versionshinweisen .
+role: Admin, User
+level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: e0f8437d1d4592e8bff2f718352977832d64a100
+source-git-commit: 29747e38a2800997c251f24f70b6356aada9fab9
 workflow-type: tm+mt
-source-wordcount: '5019'
+source-wordcount: '5401'
 ht-degree: 0%
 
 ---
@@ -32,6 +34,10 @@ Weitere Informationen zu kommenden Versionen, zum Produkt-Support und dazu, welc
 In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschrieben, die außerhalb der regulären Funktionsversionen für den gehosteten Service stattfanden und veröffentlicht wurden.
 
 +++Gehostete Service-Aktualisierungen
+
+_8. Juni 2026_
+
+![Neues Problem](../assets/new.svg)<!-- Issue PAY-6510 --> Zum [!DNL Adobe Commerce as a Cloud Service] können Händler über die Benutzeroberfläche des [!DNL Payment Services]-Dashboards im [!DNL Commerce Admin] den [Transaktionsbericht](reporting.md#transactions-report-view) direkt über das Dashboard öffnen. Dieses SaaS-Dashboard stellt nur **ausgewählte**-Berichte bereit (nicht alle Berichte oder Home-Einstiegspunkte, die in Adobe Commerce in der Cloud und lokal verfügbar sind); siehe [[!DNL Payment Services] Startseite](payments-home.md). ACS-Versionshinweise und -zeitpunkte finden Sie unter [Zahlungsdiensttransaktionen anzeigen](../cloud-service/release-notes.md#view-the-payment-services-transactions-report).
 
 _21. Januar 2026_
 
@@ -77,7 +83,7 @@ _9. Juni 2023_
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-4486--> Zuvor wurde die Schaltfläche PayPal PayLater für Händler in Großbritannien nicht an der Kasse angezeigt. Dieses Problem wurde behoben.
 
-![Es wurde &#x200B;](../assets/fix.svg)<!-- Issue PAY-4485-->, dass Berichtsdatenvisualisierungsansichten jetzt auf [!DNL Payment Services] Startseite angezeigt werden, wenn[!DNL Payment Services] deaktiviert ist.
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-4485--> Berichtsdatenvisualisierungsansichten werden jetzt auf [!DNL Payment Services] Startseite angezeigt, wenn [!DNL Payment Services] deaktiviert ist.
 
 _25. Januar 2023_
 
@@ -110,6 +116,28 @@ _28. Juni 2021_
 >[!NOTE]
 >
 > Es werden häufig Versionen veröffentlicht, um bei Bedarf neue Funktionen und Fehlerbehebungen bereitzustellen. Der Veröffentlichungszeitplan ist nicht festgelegt.
+
+## v2.15.0
+
+_15. Juni 2026_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
+
+![Neu](../assets/new.svg)<!-- PAY-6564 --> Jetzt kann [!DNL Google Pay] Express-Checkout Versandmethoden in der Google-Pay-Tabelle mithilfe von Client-seitigen Versandrückrufen anzeigen, sodass Käufer den Versand auswählen, bevor sie die Zahlung bestätigen. Händler können einen separaten Google-Pay-Überprüfungsschritt mithilfe von **[!UICONTROL Skip Review]** in der [Google Pay-Konfiguration ein- oder &#x200B;](configure-admin.md#google-pay). Wenn der Überprüfungsschritt übersprungen wird, bleiben Versandoptionen im Blatt, wenn sich die Adresse der Brieftasche oder die Versandmethode ändert.
+
+![Neu](../assets/new.svg)<!-- PAY-6565 --> Jetzt können Käuferinnen und Käufer einen Werbe-Code in der [!DNL Google Pay] Express-Lohnliste anwenden, unabhängig davon, ob der Überprüfungsschritt &quot;Google Pay“ angezeigt wird oder nicht. Pro Lohnzettel kann nur ein Code angewendet werden, auch in Geschäften, in denen mehrere Coupons pro Bestellung möglich sind. Weitere Informationen finden [&#x200B; unter &#x200B;](payments-options.md#google-pay-button)Zahlungsoptionen“.
+
+![Neu](../assets/new.svg)<!-- PAY-6567 --> Jetzt ist [!DNL Apple Pay] Express-Checkout neben Safari auch in Chrome, Firefox und Microsoft Edge verfügbar. Auf Desktop-Computern können Käufer einen QR-Code mit einem iPhone scannen, auf dem iOS 18 oder höher ausgeführt wird, um die Zahlung auf dem Apple-Zahlungsblatt abzuschließen. Express-Platzierungen (z. B. auf der Produktdetailseite) müssen in der [Apple Pay-Konfiguration aktiviert &#x200B;](configure-admin.md#apple-pay).
+
+![Neu](../assets/new.svg)<!-- PAY-6566 --> Jetzt können Käufer einen einzelnen Rabattcode in der [!DNL Apple Pay] Express-Lohntabelle anwenden oder entfernen und die Gesamtsummen in der Tabelle aktualisiert werden. Erstellen und aktivieren Sie wie gewohnt Warenkorbpreisregeln im Admin-Bereich.
+
+![Neu](../assets/new.svg)<!-- PAY-6151 --> Jetzt werden [!DNL Apple Pay] auf den Produktdetailseiten und Checkout-Seiten von Luma über die Payments-SDK gerendert, sodass das Erlebnis mit der neuesten PayPal-Integration übereinstimmt, die für den Express-Checkout verwendet wird.
+
+![Neu](../assets/new.svg)<!-- PAY-6611 --> Auf der Seite mit den [!DNL Adobe Commerce] Auftragsdetails werden nun zusätzliche Zahlungsdetails für über [!DNL Payment Services] verarbeitete Transaktionen angezeigt, einschließlich [!DNL PayPal] Transaktions-ID, PayPal-Debug-ID, Zahler-E-Mail, Berechtigung für den Handelsschutz und AVS/CVV-Bestätigungs-Codes. Weitere Informationen finden Sie [3DS](security.md#3ds).
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-6513 --> Es wurde ein Problem behoben, bei dem nach einem fehlgeschlagenen Zahlungsversuch und einem späteren erfolgreichen Checkout weiterhin eine [!DNL Apple Pay] Fehlermeldung auf der Auftragserfolgsseite angezeigt werden konnte.
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-6585 --> Es wurde ein Problem behoben, bei dem in der [!DNL Apple Pay]-Express-Gehaltsabrechnung ein **[!UICONTROL Please select a state/region]** für britische und europäische Adressen angezeigt wurde, bei denen Bundesland/Region kein Pflichtfeld ist.
 
 ## v2.14.0
 
