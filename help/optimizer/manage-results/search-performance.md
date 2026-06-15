@@ -15,7 +15,7 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b9b57bb7279354c9d5c2a7efc6e1ba14c1c36598
+source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
 workflow-type: tm+mt
 source-wordcount: 1936
 ht-degree: 0%
@@ -40,7 +40,7 @@ Die *Suchleistung* liefert insight zu den Suchbegriffen, die Käufer verwenden. 
 
 >[!NOTE]
 >
->Um zu verstehen, wie die Produkterkennung **exakte und** Übereinstimmungen), Übereinstimmungen mit gleichen Feldern und weiter gefasste Übereinstimmungen einordnet (und wie dies mit Schlüsselwortgewichten und Merchandising-Regeln interagiert), siehe [Suchabgleich und -ranking](../search-relevance-matching.md).
+>Um zu verstehen, wie die Produkterkennung **exakte und** Übereinstimmungen), Übereinstimmungen mit gleichen Feldern und weiter gefasste Übereinstimmungen einordnet (und wie dies mit Schlüsselwortgewichten und Merchandising-Regeln interagiert), siehe [Suchabgleich und -ranking](search-relevance-matching.md).
 
 ## Wählen Sie die **Katalogansicht**
 

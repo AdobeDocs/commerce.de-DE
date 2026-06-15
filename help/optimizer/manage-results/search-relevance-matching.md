@@ -20,7 +20,7 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: da5950c0f2071f48f163dd02f6c38953804ae152
+source-git-commit: 717ecbc9c6aa41f8a504579de8ce55f514cc4307
 workflow-type: tm+mt
 source-wordcount: 946
 ht-degree: 0%
@@ -71,7 +71,7 @@ Für einen Suchbegriff wie `Brauseschlauch chrom`:
 - **Alle Wörter im selben Feld** — Sucht nach **brauseschlauch** und **chrom** im **same** durchsuchbaren Attribut, noch ohne Zerlegung (z. B. beide in **name**).
 - **Wörter über verschiedene Felder hinweg** — Zerlegt **Brauseschlauch** in **brause** und **schlauch**. Diese Token müssen im **Feld angezeigt werden** nicht unbedingt als angrenzende Phrase). **chrom** kann in einem Feld **anders** übereinstimmen (z. B. **Brause** und **Schlauch** in **name**, **chrom** in **color**).
 
-Legen Sie **Sprache** auf **Deutsch** auf der Registerkarte [Sprache](./settings.md#language) in [Einstellungen](./settings.md) fest, sodass Zerlegungsregeln gelten. Validieren Sie hochwertige deutsche Abfragen in einer Staging-Storefront, bevor Sie Änderungen in der Produktion aktivieren.
+Legen Sie **Sprache** auf **Deutsch** auf der Registerkarte [Sprache](../settings.md#language) in [Einstellungen](../settings.md) fest, sodass Zerlegungsregeln gelten. Validieren Sie hochwertige deutsche Abfragen in einer Staging-Storefront, bevor Sie Änderungen in der Produktion aktivieren.
 
 Die Dekomprimierung ist regelbasiert und kann auf dieser Ebene Randfälle hinzufügen. Wenn ein Unterwort im Wörterbuch fehlt, kann die Tokenisierung unvollständig sein und breitere Übereinstimmungen zurückgeben, als erwartet - z. B. kann **gas** fehlt im **gaszähler** nur **zahl** oder **stat** fehlt im **thermostat**. Die Stemmer können auch unerwartete Wurzeln produzieren (z. B **„schrauber** stemming to **schraub** oder **schelle** to **schell**). Adobe aktualisiert das Wörterbuch und die Abstammungsüberschreibungen für bekannte Fälle, wenn Probleme erkannt werden.
 
@@ -81,9 +81,9 @@ Die Relevanz wird nicht allein durch die Übereinstimmung der Phrasen bestimmt. 
 
 - Verstärken durch **exakte/** Phrasenübereinstimmung
 - Verstärken, wenn **alle Abfragebegriffe** im **Feld** werden
-- **Intelligentes Ranking** (wenn aktiviert), das textliche Relevanz mit Verhaltenssignalen verbindet - siehe [Funktionsweise der intelligenten Rangfolgenbewertung](./merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[Suchgewichtung](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results)** für jedes Attribut und andere textliche Relevanzfaktoren (z. B. wie oft Begriffe vorkommen und Name oder Länge der Beschreibung). Konfigurieren Sie *Einstellungen*, welche Attribute an der Keyword-Suche beteiligt sind, und ihre relativen **[Keyword-Suchgewichte](./settings.md)**.
-- **[Merchandising-Regeln](./merchandising/rules/overview.md)** z. B. Pin, Boost und Bury
+- **Intelligentes Ranking** (wenn aktiviert), das textliche Relevanz mit Verhaltenssignalen verbindet - siehe [Funktionsweise der intelligenten Rangfolgenbewertung](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
+- **[Suchgewichtung](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results)** für jedes Attribut und andere textliche Relevanzfaktoren (z. B. wie oft Begriffe vorkommen und Name oder Länge der Beschreibung). Konfigurieren Sie *Einstellungen*, welche Attribute an der Keyword-Suche beteiligt sind, und ihre relativen **[Keyword-Suchgewichte](../settings.md)**.
+- **[Merchandising-Regeln](../merchandising/rules/overview.md)** z. B. Pin, Boost und Bury
 
 Da diese Signale interagieren, kann ein Produkt, das nur auf der breitesten Ebene übereinstimmt, manchmal einen engeren Übereinstimmungsgrad erreichen, z. B. wenn **Suchgewichte** oder die Häufigkeit von Begriffen in einem Feld mit hoher Gewichtung eine schwächere Übereinstimmung der Phrasen an anderer Stelle überwiegen.
 
@@ -97,8 +97,8 @@ Attribute, die mit der **Mindestsuchgewichtung** (Gewichtung **1**) und **Nicht*
 
 ## Verwandte Themen
 
-- [Einstellungen](./settings.md)
-- [Suchleistung](./manage-results/search-performance.md)
-- [Übersicht über Merchandising-Regeln](./merchandising/rules/overview.md)
-- [Suchregeln hinzufügen](./merchandising/rules/add.md)
-- [Übersicht über Synonyme](./merchandising/synonyms/overview.md)
+- [Einstellungen](../settings.md)
+- [Suchleistung](search-performance.md)
+- [Übersicht über Merchandising-Regeln](../merchandising/rules/overview.md)
+- [Suchregeln hinzufügen](../merchandising/rules/add.md)
+- [Übersicht über Synonyme](../merchandising/synonyms/overview.md)
