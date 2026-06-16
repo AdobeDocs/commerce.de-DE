@@ -5,19 +5,12 @@ feature: Cloud, Migration
 role: Developer, Admin
 level: Intermediate
 TQID: 'https://experienceleague.adobe.com/-OrsBVtHRcEV5EzgHzzP0JVf0aQWfSO2Fu1R5F5jtAw'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 62f30cb267191c76f77d077b9ea07022c9cc9abe
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: fcbf661a05f5d7ff33a885e3f86dbb3a551d09df
 workflow-type: tm+mt
-source-wordcount: 2365
+source-wordcount: 2505
 ht-degree: 0%
 
 ---
@@ -25,17 +18,17 @@ ht-degree: 0%
 
 # Migrationsbewertung
 
->[!TIP]
+>[!IMPORTANT]
 >
->Wenden Sie sich an Ihren Solution Account Manager, um eine Migrationsbewertung Ihrer bestehenden Instanz anzufordern.
+> Die Migrationsbewertung ist nur bei der Migration von [!DNL Adobe Commerce on Cloud Infrastructure] oder [!DNL Adobe Commerce on-premises] Projekten nach [!DNL Adobe Commerce as a Cloud Service] verfügbar.
 
 Eine Commerce-Migrationsbewertung ist eine automatisierte Analyse Ihrer bestehenden Adobe Commerce-Implementierung. Die Tools von Adobe scannen Ihre Commerce-Codebasis und erzeugen einen strukturierten Bericht, der alle erstellten, angepassten oder geänderten Elemente auflistet. Der Bericht zeigt dann an, wie sich die Anpassungen an Ihrer Code-Basis auf Ihre Migration nach [!DNL Adobe Commerce as a Cloud Service] auswirken.
 
 Der Bericht wird als HTML-Datei bereitgestellt, die Sie in jedem Browser öffnen können. Es ist kein Zugriff auf die Produktionsumgebung erforderlich, es sei denn, Sie geben zunächst die Code-Basis Ihres Projekts frei.
 
->[!IMPORTANT]
+>[!TIP]
 >
-> Die Migrationsbewertung ist nur bei der Migration von [!DNL Adobe Commerce on Cloud Infrastructure] oder [!DNL Adobe Commerce on-premises] Projekten nach [!DNL Adobe Commerce as a Cloud Service] verfügbar.
+>Wenden Sie sich an Ihren Solution Account Manager, um eine Migrationsbewertung Ihrer bestehenden Instanz anzufordern.
 
 **Die Bewertung sieht Folgendes vor:**
 
@@ -68,6 +61,8 @@ Der Abschnitt Migrationskomplexität enthält die Bewertungsbewertung für Ihren
 
 **Migrationskomplexität und -komplexitätswert**
 
+![Abschnitt „Migrationskomplexität“ mit gewichtetem Score, primären Risikotreibern und Schlüsselmetriken](../assets/assessment-migration-complexity.png){width="600" zoomable="yes"}
+
 Der Komplexitätswert gewichtet jede Eingabe nach der Schwierigkeit der Migration. Der Score ist einer Bewertung der Migrationskomplexität unter Verwendung fester Schwellenwerte zugeordnet:
 
 | Bewertung | Bewertungsbereich | Typischer Migrationsansatz |
@@ -78,6 +73,8 @@ Der Komplexitätswert gewichtet jede Eingabe nach der Schwierigkeit der Migratio
 
 **Custom Module Ratio**
 
+![Zeile mit Metriken zum benutzerdefinierten Modulverhältnis, in der der benutzerdefinierte Modulprozentsatz, Drittanbietermodule, die Anzahl benutzerdefinierter Designs, kritische Erweiterungspunkte, Gesamtdateien und die PHP-Codebasisgröße angezeigt werden](../assets/assessment-custom-module-ratio.png){width="600" zoomable="yes"}
+
 Der Prozentsatz Ihrer Module, die speziell für Ihre Implementierung erstellt wurden. Ein höheres Verhältnis bedeutet, dass mehr benutzerdefinierter Code geprüft und migriert werden muss. Das durchschnittliche Verhältnis von benutzerdefinierten Modulen beim Kunden beträgt etwa 62 %.
 
 >[!TIP]
@@ -86,13 +83,19 @@ Der Prozentsatz Ihrer Module, die speziell für Ihre Implementierung erstellt wu
 
 **Aufschlüsselung des Dateityps**
 
+![Dateityp-Aufschlüsselungstabelle mit Dateierweiterungen mit Dateianzahl und Codezeilen](../assets/assessment-file-type-breakdown.png){width="600" zoomable="yes"}
+
 Eine Liste der Dateien in Ihrer Codebasis, sortiert nach Typ.
 
 **Module mit der größten Auswirkung**
 
+![Liste der Module mit der größten Auswirkung mit Modulnamen, Beschreibungen, Auswirkungsbewertungen und Anzahl der Hooks](../assets/assessment-highest-impact-modules.png){width="600" zoomable="yes"}
+
 Eine kuratierte Liste der spezifischen Module in Ihrem Store, die die meiste Aufmerksamkeit auf die Migration erfordern. Bei diesen Modulen handelt es sich häufig um Module, die mit Checkout, Zahlung oder Bestellverwaltung interagieren. Jedes Modul mit hoher Auswirkung benötigt einen eigenen Migrationsplan. Diese Liste ist der beste Ausgangspunkt für Gespräche mit Ihrem technischen Team.
 
 ### Komplexität der Storefront
+
+![Abschnitt „Storefront-Komplexität“ mit benutzerdefinierten Design-Namespaces, Gesamtblockanzahl, Layout-XML-Dateien, Überschreibungen der Core-Handles und verwertbaren Signalen](../assets/assessment-storefront-complexity.png){width="600" zoomable="yes"}
 
 Im Abschnitt „Komplexität der Storefront“ wird der Aufwand angezeigt, der für die Migration der Frontend-Präsentationsebene Ihres Stores erforderlich ist. Dieser Arbeitsablauf ist ein anderer als die Backend-Code-Migration, die von Frontend-Entwicklern durchgeführt wird und normalerweise separate Planungsgespräche erfordert.
 
@@ -110,8 +113,9 @@ Im Abschnitt „Komplexität der Storefront“ wird der Aufwand angezeigt, der f
 | 100-300 | Medium - Planen einer strukturierten Frontend-Phase |
 | Über 300 | Hoch - Priorisierung als dedizierter Arbeitsablauf |
 
-
 ### Migrationstreiber
+
+![Abschnitt „Migrationstreiber“ mit Anpassungsabdruck, Plug-ins und Beobachtern und Karten mit Klassenvoreinstellungen und Aufwandsbewertungen](../assets/assessment-migration-drivers.png){width="600" zoomable="yes"}
 
 Im Abschnitt Migrationstreiber werden die wichtigsten Faktoren für Ihre Komplexitätsbewertung angezeigt.
 
@@ -127,6 +131,8 @@ Jeder Treiber wird mit einem hohen, einem Medium-Wert oder einem niedrigen Aufwa
 
 ### Datenmodell
 
+![Abschnitt „Datenmodell“ mit der Anzahl benutzerdefinierter Tabellen, Änderungen der Kerntabelle und kritischer EAV-Attribute](../assets/assessment-data-model.png){width="600" zoomable="yes"}
+
 Im Abschnitt Datenmodell wird die Anzahl der benutzerdefinierten Tabellen, Änderungen an den [!DNL Adobe Commerce] Datenbankkerntabellen und kritischen Entitätenattribut-Wert (EAV)-Attributen angezeigt.
 
 Änderungen an Kerntabellen sind die am schwierigsten zu migrierende Kategorie, da sie Abhängigkeiten von einer bestimmten Plattform-Schemaversion schaffen und große Auswirkungen auf die Formel zur Komplexitätsbewertung haben.
@@ -136,6 +142,8 @@ Im Abschnitt Datenmodell wird die Anzahl der benutzerdefinierten Tabellen, Ände
 >Wenn Ihr Bericht mehr als 15 Änderungen an der Kerntabelle auflistet, planen Sie einen dedizierten Datenmigrations-Workstream vor der Migration des Backend-Moduls.
 
 ## Aufschlüsselung der Anpassung
+
+![Aufschlüsselung der Anpassung mit einer Liste aller Anpassungskategorien mit Zahlen und Wirkungsindikatoren](../assets/assessment-customization-breakdown.png){width="600" zoomable="yes"}
 
 Der Abschnitt Aufschlüsselung der Anpassung enthält detaillierte Metriken für jede Anpassungskategorie in Ihrem Geschäft.
 
@@ -197,6 +205,8 @@ Das Feld [!UICONTROL Drop-in migration required] gibt an, welche Storefront-Bere
 
 ## Registerkarte „Modulberichte“
 
+![Registerkarte „Modulberichte“ mit einer durchsuchbaren Modulliste mit Auswirkungsfiltern und einem detaillierten Bedienfeld zur Modulanalyse](../assets/assessment-module-reports-tab.png){width="600" zoomable="yes"}
+
 Die Registerkarte **[!UICONTROL Module Reports]** enthält einen dedizierten Eintrag für jedes benutzerdefinierte Modul in Ihrem Store. Geben Sie diese Informationen an Ihr technisches Team weiter.
 
 Für jedes Modul zeigt der Bericht Folgendes an:
@@ -249,7 +259,7 @@ Adobes [KI-Entwickler-Tools für die Commerce](https://developer.adobe.com/comme
 
 #### Installieren von KI-Tools
 
-Vollständige Anweisungen [&#x200B; spezifische IDE-Konfigurationen finden Sie unter „Installieren &#x200B;](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools) Entwickler-Tools für die KI“.
+Vollständige Anweisungen [ spezifische IDE-Konfigurationen finden Sie unter „Installieren ](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools) Entwickler-Tools für die KI“.
 
 **Voraussetzungen:** Node.js 22.x, npm 9.0.0 oder höher, Adobe I/O CLI.
 
@@ -296,10 +306,10 @@ Manages custom shipping rate calculations based on customer account tier and ord
       - [Kenntnisse und Eingabeaufforderungen](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
       - [Anwendungsszenarien](https://developer.adobe.com/commerce/extensibility/developer-agent/use-cases)
    - [Übersicht über App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
-   - [App Builder für Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
+   - [App Builder für Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
    - Starter Kits
       - [Backend-Integrations-Starter-Kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
       - [Checkout-Starterkit](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - Storefront-Entwicklung
-   - [Überblick](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)
-   - [Storefront AI-Kenntnisse](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=de)
+   - [Überblick](https://experienceleague.adobe.com/developer/commerce/storefront/)
+   - [Storefront AI-Kenntnisse](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/)
