@@ -313,10 +313,10 @@ Manages custom shipping rate calculations based on customer account tier and ord
       - [Kenntnisse und Eingabeaufforderungen](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
       - [Anwendungsszenarien](https://developer.adobe.com/commerce/extensibility/developer-agent/use-cases)
    - [Übersicht über App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
-   - [App Builder für Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
+   - [App Builder für Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
    - Starter Kits
       - [Backend-Integrations-Starter-Kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
       - [Checkout-Starterkit](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - Storefront-Entwicklung
-   - [Überblick](https://experienceleague.adobe.com/developer/commerce/storefront/)
-   - [Storefront AI-Kenntnisse](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/)
+   - [Überblick](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)
+   - [Storefront AI-Kenntnisse](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=de)
