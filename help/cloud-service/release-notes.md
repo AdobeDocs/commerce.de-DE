@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
+source-git-commit: 776aa6f6d887c93686539897e936fe8d3898e462
 workflow-type: tm+mt
-source-wordcount: 4182
+source-wordcount: 4485
 ht-degree: 0%
 
 ---
@@ -47,7 +47,45 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 >
 >Wenn Sie Adobe Commerce On-Premise oder Adobe Commerce in der Cloud-Infrastruktur verwenden, lesen Sie die [Versionshinweise zu Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview).
 
-## Juni 2026 - #1 {#latest}
+## Juni 2026 - #2 {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
+
+Die folgenden Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar und werden voraussichtlich im Juli in Produktionsumgebungen verschoben.
+
+>[!BEGINSHADEBOX]
+
+### Bestellungen und Rechnungen nach Firma filtern
+
+Die `GET /V1/orders`- und `GET /V1/invoices`-REST-API-Endpunkte unterstützen jetzt die Filterung nach `company_id` und `company_name`, sodass B2B-Integrationen Bestellungen oder Rechnungen für ein bestimmtes Unternehmen in einer einzigen Anfrage abrufen können. <!-- ACCS-1111, CCSAAS-5076 -->
+
+### Anzeigen des Auftragsänderungsverlaufs in der Admin Console
+
+Auf der Seite mit den [!DNL Commerce Admin] Auftragsdetails wird nun die vollständige Änderungskette für eine Bestellung angezeigt, die die ursprüngliche Bestellung und alle durch nachfolgende Bearbeitungen erstellten untergeordneten Bestellungen enthält. Händler können innerhalb der Kettenansicht zwischen Bestellungen navigieren, die Sichtbarkeit stornierter Bestellungen umschalten und auf alle zugehörigen Rechnungen, Lieferungen, Gutschriften und Bestellkommentare zugreifen.<!-- ACCS-968 -->
+
+>[!NOTE]
+>
+>Wenden Sie sich zur Aktivierung dieser Funktion an Ihren Adobe Commerce Customer Success Manager.
+
+### Anzeigen synchronisierter Assets in [!DNL AEM Assets]
+
+Die [!DNL AEM Assets]-Integration enthält jetzt eine Seite [!UICONTROL **Synchronisierungsstatus**] ([!UICONTROL **Stores**] > [!UICONTROL **AEM Assets**] > [!UICONTROL **Synchronisierungsstatus**]) mit einer Asset-orientierten Listenansicht aller synchronisierten Assets, einschließlich Filtern, sortierbarer Spalten wie dem letzten Synchronisierungsdatum und Fehlerdetails für fehlgeschlagene Synchronisierungen.<!-- ACAP-1246 -->
+
+### Verbesserungen und Fehlerbehebungen
+
+Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen sind in dieser Version enthalten:
+
+* Große freigegebene Kataloge sind jetzt im Admin-Bereich einfacher zu verwalten, mit verbesserten Ladezeiten und geringerer Wahrscheinlichkeit von Zeitüberschreitungen. <!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
+
+* Fehlerkorrektur - Bei der Erstellung von Lieferungen für Bestellungen mit konfigurierbaren Produkten tritt jetzt kein Fehler mehr bei der Sendungserstellung auf. <!-- ACCS-1095 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Juni 2026 - #1
 
 [!BADGE Produktion]{type=Neutral tooltip="Die aufgelisteten Elemente sind derzeit in Produktionsumgebungen verfügbar."}
 
@@ -532,10 +570,10 @@ An den B2B-Drop-in-Komponenten wurden die folgenden Änderungen vorgenommen:
 * [!DNL Commerce Storefront on Edge Delivery Services] enthält jetzt [B2B-Drop-in-Komponenten](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=de). Die folgenden B2B-Drop-ins sind jetzt verfügbar:
 
    * **[Unternehmensverwaltung](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=de)** - Ermöglicht die Verwaltung von Unternehmensprofilen und rollenbasierte Berechtigungen für Adobe Commerce-Storefronts.
-   * **[Unternehmens-](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=de)**: Bietet eine UI-Komponente, mit der Benutzende zwischen mehreren Unternehmen wechseln können, denen sie zugeordnet sind.
+   * **[Unternehmens-](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/)**: Bietet eine UI-Komponente, mit der Benutzende zwischen mehreren Unternehmen wechseln können, denen sie zugeordnet sind.
    * **[Bestellungen](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=de)** - Verwaltet Bestellungen-Workflows, Genehmigungsregeln und den Bestellverlauf für B2B-Transaktionen.
-   * **[Angebotsverwaltung](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=de)** - Ermöglicht verhandelbare Angebote für B2B-Kunden mit Angebotsanfrage-, Verhandlungs- und Genehmigungs-Workflows.
-   * **[Anforderungslisten](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=de)**: Bietet Tools zum Erstellen und Verwalten von Anforderungslisten für Wiederholungskäufe und Massenbestellungen.
+   * **[Angebotsverwaltung](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/)** - Ermöglicht verhandelbare Angebote für B2B-Kunden mit Angebotsanfrage-, Verhandlungs- und Genehmigungs-Workflows.
+   * **[Anforderungslisten](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/)**: Bietet Tools zum Erstellen und Verwalten von Anforderungslisten für Wiederholungskäufe und Massenbestellungen.
 
 * Das Kompatibilitätspaket für die B2B-Storefront wurde veröffentlicht. Dieses Paket erweitert das [!DNL Adobe Commerce] B2B-GraphQL-Schema , um die Entwicklung auf B2B-Systemen zu verbessern.
 
