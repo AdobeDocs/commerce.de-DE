@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
+source-git-commit: 09630af055b4d59f37fba2d3c398042161a7afa0
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2254'
 ht-degree: 0%
 
 ---
@@ -108,9 +108,22 @@ Beim Kunden-Checkout oder wenn ein Administrator eine Rechnung für eine zuvor a
 
 Erkennen, wann eine ausstehende Erfassungstransaktion in einen `Completed` eingeht, damit Händler die Verarbeitung der betroffenen Bestellung fortsetzen können.
 
-Um sicherzustellen, dass dieser Prozess erwartungsgemäß funktioniert, müssen Händler einen neuen Cron-Auftrag konfigurieren. Sobald der Auftrag so konfiguriert ist, dass er automatisch ausgeführt wird, werden keine weiteren Eingriffe vom Händler erwartet.
+>[!NOTE]
+>
+>Die asynchrone Überwachung ist standardmäßig deaktiviert. Wenn diese Option deaktiviert ist, werden Bestellungen mit einer `Pending` nicht automatisch in `Payment Review` verschoben. Um dieses Verhalten zu aktivieren, aktivieren Sie die asynchrone Überwachung, indem Sie die folgenden Schritte ausführen.
 
-Siehe [Konfigurieren von Cron-Aufträgen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=de). Nach der Konfiguration wird der neue Auftrag alle 30 Minuten ausgeführt, um Aktualisierungen für Bestellungen abzurufen, die sich im Status `Payment Review` befinden.
+Asynchrone Überwachung aktivieren: [!BADGE nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+
+1. Aktivieren Sie die `async_status_updates`. Da diese Einstellung in Admin nicht verfügbar ist, aktivieren Sie sie über die Befehlszeile:
+
+   ```bash
+   bin/magento config:set payment/payment_services/async_status_updates 1
+   ```
+
+1. Aktivieren und planen Sie den `sync_order_payment_status` Cron-Auftrag, damit Statusaktualisierungen automatisch abgerufen werden. Siehe [Konfigurieren von Cron-Aufträgen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=de).
+
+Sobald die Einstellung und der Cron-Auftrag aktiviert sind, wird der Cron-Auftrag alle 10 Minuten ausgeführt, um Aktualisierungen für Bestellungen mit `Payment Review` Status abzurufen. Nach der Einrichtung ist im Normalbetrieb keine weitere Aktion des Händlers erforderlich.
+
 
 Händler können den aktualisierten Zahlungsstatus über die Berichtsansicht „Bestellzahlungsstatus“ überprüfen.
 
