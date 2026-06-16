@@ -3,9 +3,9 @@ title: Semantische Suche
 description: Aktivieren Sie die KI-Semantische Suche nach [!DNL Live Search] aus den Einstellungen. Es sind keine Attributeinstellungen oder Änderungen an der Storefront erforderlich.
 role: Admin
 recommendations: noCatalog
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Händler, die Adobe Commerce in der Cloud und lokal nutzen, müssen die semantis
 
    Aktualisierung der Suchergebnisse nach Abschluss der Indizierung. Bei einem mittelgroßen Katalog kann die Indizierung bis zu einer halben Stunde dauern. Bei großen Katalogen mit Millionen von Produkten kann es ein paar Stunden dauern.
 
-### Für ACS-Kunden
+### Für [!DNL Adobe Commerce as a Cloud Service] Kunden
 
 [!DNL Adobe Commerce as a Cloud Service] Kunden verwenden denselben Arbeitsbereich **Einstellungen** in der [!DNL Live Search] Admin. Die semantische Suche ist **standardmäßig aktiviert** für geeignete englische Kataloge. Bestätigen Sie, dass **[!UICONTROL Semantic search]** aktiviert ist, oder deaktivieren Sie sie, wenn Sie keine semantischen Übereinstimmungen in der Storefront wünschen.
 

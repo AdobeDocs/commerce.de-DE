@@ -2,9 +2,9 @@
 title: Konfigurieren von IMS-Benutzerberechtigungen für die AEM Assets-Integration
 description: Erfahren Sie, wie die IMS-Identität und Admin Console-Profile den Zugriff auf AEM Assets-Bereitstellungen, den Asset-Selektor und automatisch ausgefüllte Commerce-Konfigurationsfelder ermöglichen.
 feature: CMS, Media, Configuration
-source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 **IMS** (Adobe Identity Management System) ist die Authentifizierungsebene. Für Adobe Commerce as a Cloud Service ist die IMS-Authentifizierung standardmäßig im Admin-Bereich aktiviert. Für Adobe Commerce in der Cloud oder lokal ist IMS optional. [Aktivieren von IMS für Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html?lang=de){target=_blank} bietet eine erweiterte Konfigurationsoberfläche (Asset-Selektor, automatisch ausgefüllte Dropdown-Listen). Sie können die Integration jedoch auch ohne IMS konfigurieren, indem Sie **Programm-ID** und **Umgebungs-ID** manuell eingeben.
 
-Die AEM Assets-Integration erfordert auch bestimmte **Adobe Admin Console-Produktprofile** wenn Sie IMS verwenden. Benutzende, die die Integration in Commerce Admin konfigurieren, benötigen das Produktprofil **AEM Assets DM OpenAPI Users - delivery** oder das Produktprofil **author** als Fallback. Dies wird über Admin Console-Produktprofile in der IMS-Organisation des Benutzers gesteuert und ermöglicht:
+Die AEM Assets-Integration erfordert auch bestimmte **Adobe Admin Console-Produktprofile** wenn Sie IMS verwenden. Benutzende, die die Integration in Commerce Admin konfigurieren, benötigen das Produktprofil **AEM Assets DM OpenAPI Users - delivery** oder das Produktprofil **author** als Fallback. Dies wird über Admin Console-Produktprofile in der IMS-Organisation der Benutzenden gesteuert und ermöglicht:
 
 * **Asset-Selektor** ermöglicht die Auswahl von Bildern aus AEM Assets beim Verwalten von Kategoriebildern oder Page Builder-Inhalten.
 * **Automatisch ausgefüllte Konfigurationsfelder** wie **Programm-ID**, **Umgebungs-ID** und **Domain-Zuordnung** Dropdown-Listen, die basierend auf ihren Admin Console-Produktprofilen (Versand oder Autor) Werte aus der IMS-Sitzung des Benutzers abrufen.
@@ -80,5 +80,5 @@ Ohne IMS können Sie die Integration weiterhin konfigurieren, indem Sie die Prog
 
 * [Konfigurieren von IMS-Benutzerberechtigungen für die AEM Assets-Integration](setup-synchronization.md) - Verbinden Sie Commerce mit AEM Assets und konfigurieren Sie übereinstimmende Regeln.
 * [Manuelle Asset-Auswahl](../synchronize/asset-selector-integration.md) - Verwenden Sie den Asset-Selektor für Kategoriebilder und Page Builder.
-* [Benutzer zu AEM Assets oder Produktvisualisierungen hinzufügen](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} - Fügen Sie ACCS zuerst Benutzer zu Commerce und AEM Cloud Manager (Geschäftsinhaber, Bereitstellungs-Manager) hinzu. Das Profil **AEM Assets DM OpenAPI Users - delivery** (oder **author**-Profil als Fallback) ist eine zusätzliche Anforderung für die Asset-Wähler- und Auto-Ausfüllen-Funktionen.
+* [Benutzer zu AEM Assets oder Produktvisualisierungen hinzufügen](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} - Fügen Sie [!DNL Adobe Commerce as a Cloud Service] zuerst Benutzer zu Commerce und AEM Cloud Manager (Geschäftsinhaber, Bereitstellungs-Manager) hinzu. Das Profil **AEM Assets DM OpenAPI Users - delivery** (oder **author**-Profil als Fallback) ist eine zusätzliche Anforderung für die Asset-Wähler- und Auto-Ausfüllen-Funktionen.
 * [Weisen Sie Team-Mitglieder der AEM-Bereitstellungsebene zu](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}. AEM-Dokumentation für den Versandzugriff.

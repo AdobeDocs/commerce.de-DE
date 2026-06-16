@@ -2,9 +2,9 @@
 title: Konfigurieren von AEM Assets für Commerce Optimizer
 description: Erfahren Sie, wie Sie die AEM Assets-Integration für  [!DNL Adobe Commerce Optimizer] konfigurieren.
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 42f0e0cb72c6429eb6f08f1922c4171195a78d2b
+source-git-commit: 2cc7b70a6923687c74fe3f4b88448eaada6d16af
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1453'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Die AEM Assets Integration for [!DNL Adobe Commerce Optimizer] ermöglicht Händlern die Verwendung von AEM Assets als zentralisierte Digital Asset Management-Lösung für Produktbilder. In diesem Handbuch wird die für [!DNL Commerce Optimizer] spezifische Konfiguration beschrieben.
 
-Im Gegensatz zu Adobe Commerce (PaaS) oder Adobe Commerce as a Cloud Service (ACCS) verfügt [!DNL Commerce Optimizer] über keine Benutzeroberfläche mit Administratorkonfiguration. Um die Integration zu aktivieren, erstellen Sie ein Support-Ticket mit Ihren [!DNL Adobe Commerce Optimizer]- und AEM Assets-Details. Der Adobe-Support konfiguriert die Integration und registriert Ihren Mandanten beim Assets Integration Service.
+Im Gegensatz zu Adobe Commerce (PaaS) oder [!DNL Adobe Commerce as a Cloud Service] verfügt [!DNL Commerce Optimizer] über keine Benutzeroberfläche für die Admin-Konfiguration. Um die Integration zu aktivieren, erstellen Sie ein Support-Ticket mit Ihren [!DNL Adobe Commerce Optimizer]- und AEM Assets-Details. Der Adobe-Support konfiguriert die Integration und registriert Ihren Mandanten beim Assets Integration Service.
 
 **Bereiten Sie AEM Assets vor dem Senden des Tickets vor.** Bei der Mandantenregistrierung wird davon ausgegangen, dass die AEM-Seite für Commerce verwendet werden kann. Ein Beispiel: Nach der Bereitstellung des AEM Commerce `assets-commerce`-Pakets funktionieren Metadaten und Ereignisse wie beschrieben. **Das Öffnen eines Tickets vor der Konfiguration von AEM kann das Onboarding verzögern.**
 

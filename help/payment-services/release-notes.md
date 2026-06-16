@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 29747e38a2800997c251f24f70b6356aada9fab9
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '5401'
+source-wordcount: '5400'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschri
 
 _8. Juni 2026_
 
-![Neues Problem](../assets/new.svg)<!-- Issue PAY-6510 --> Zum [!DNL Adobe Commerce as a Cloud Service] können Händler über die Benutzeroberfläche des [!DNL Payment Services]-Dashboards im [!DNL Commerce Admin] den [Transaktionsbericht](reporting.md#transactions-report-view) direkt über das Dashboard öffnen. Dieses SaaS-Dashboard stellt nur **ausgewählte**-Berichte bereit (nicht alle Berichte oder Home-Einstiegspunkte, die in Adobe Commerce in der Cloud und lokal verfügbar sind); siehe [[!DNL Payment Services] Startseite](payments-home.md). ACS-Versionshinweise und -zeitpunkte finden Sie unter [Zahlungsdiensttransaktionen anzeigen](../cloud-service/release-notes.md#view-the-payment-services-transactions-report).
+![Neues Problem](../assets/new.svg)<!-- Issue PAY-6510 --> Zum [!DNL Adobe Commerce as a Cloud Service] können Händler über die Benutzeroberfläche des [!DNL Payment Services]-Dashboards im [!DNL Commerce Admin] den [Transaktionsbericht](reporting.md#transactions-report-view) direkt über das Dashboard öffnen. Dieses SaaS-Dashboard stellt nur **ausgewählte**-Berichte bereit (nicht alle Berichte oder Home-Einstiegspunkte, die in Adobe Commerce in der Cloud und lokal verfügbar sind); siehe [[!DNL Payment Services] Startseite](payments-home.md). [!DNL Adobe Commerce as a Cloud Service] Versionshinweise und den zeitlichen Ablauf finden Sie unter [Zahlungsdiensttransaktionen anzeigen](../cloud-service/release-notes.md#view-the-payment-services-transactions-report).
 
 _21. Januar 2026_
 
