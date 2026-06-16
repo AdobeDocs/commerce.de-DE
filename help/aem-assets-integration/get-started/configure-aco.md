@@ -26,7 +26,7 @@ Die folgende Abbildung zeigt einen Überblick über die Produktsynchronisierung 
 
 Diese Integration umfasst zwei Hauptflüsse:
 
-* **Von AEM Assets**: Wenn ein Asset genehmigt, abgelehnt oder entfernt wird, fließt das Ereignis über die Adobe-Pipeline zum Assets Integration Service. Der Service ordnet Assets Produkten mithilfe von `match-by-SKU` (Metadatengesteuert) oder einem [benutzerdefinierten Matcher (App Builder) zu ](../synchronize/custom-match.md){target=_blank} sendet dann die `product-asset` Zuordnungen an die Commerce Optimizer, wo sie als Produktebenen gespeichert werden.
+* **Von AEM Assets**: Wenn ein Asset genehmigt, abgelehnt oder entfernt wird, fließt das Ereignis über die Adobe-Pipeline zum Assets Integration Service. Der Service ordnet Assets Produkten mithilfe von `match-by-SKU` (Metadatengesteuert) oder einem [benutzerdefinierten Matcher (App Builder) zu &#x200B;](../synchronize/custom-match.md){target=_blank} sendet dann die `product-asset` Zuordnungen an die Commerce Optimizer, wo sie als Produktebenen gespeichert werden.
 
 * **Von[!DNL Adobe Commerce Optimizer]**: Wenn ein Produkt in [!DNL Commerce Optimizer] aktualisiert wird, fließt das Ereignis über die Adobe-Pipeline zum Assets Integration Service. Der Service synchronisiert alle übereinstimmenden Asset-Zuordnungen zurück mit der [!DNL Adobe Commerce Optimizer].
 
@@ -37,7 +37,7 @@ Stellen Sie vor dem Konfigurieren der Integration Folgendes sicher:
 * Eine aktive [!DNL Adobe Commerce Optimizer] mit Berechtigung für Produktvisualisierungen oder eine beliebige AEM Assets-Lizenz mit Dynamic Media.
 * Zugriff auf eine AEM Assets as a Cloud Service-Umgebung.
 * Sowohl [!DNL Commerce Optimizer] als auch AEM Assets in derselben Adobe IMS-Organisation.
-* Dynamic Media mit aktivierter OpenAPI in Ihrer AEM Assets-Umgebung (die Aktivierungsschritte finden [ unter „Konfigurieren ](configure-aem.md#prerequisites) AEM Assets-Projekts„).
+* Dynamic Media mit aktivierter OpenAPI in Ihrer AEM Assets-Umgebung (die Aktivierungsschritte finden [&#x200B; unter „Konfigurieren &#x200B;](configure-aem.md#prerequisites) AEM Assets-Projekts„).
 
 ## AEM Assets zuerst konfigurieren
 
@@ -59,7 +59,7 @@ Unter [Installieren des `assets-commerce`-](configure-aem.md#step-1-install-the-
 
 ### Schritt 2: Aktivieren von Dynamic Media mit OpenAPI
 
-Dynamic Media mit OpenAPI-Funktionen muss in Ihrer AEM Assets-Umgebung aktiviert werden. Self-Service-Pfade (z. B. Cloud Manager für Produktvisualisierungen) und Adobe-Support-Routen werden unter &quot;[ des AEM Assets-Projekts“ ](configure-aem.md#prerequisites).
+Dynamic Media mit OpenAPI-Funktionen muss in Ihrer AEM Assets-Umgebung aktiviert werden. Self-Service-Pfade (z. B. Cloud Manager für Produktvisualisierungen) und Adobe-Support-Routen werden unter &quot;[&#x200B; des AEM Assets-Projekts“ &#x200B;](configure-aem.md#prerequisites).
 
 ### Schritt 3: Anwenden von Commerce-Metadaten und Genehmigen von Assets
 
@@ -97,7 +97,7 @@ Lesen Sie diesen Abschnitt **vorher**, bevor Sie einen Namen für die Katalogebe
 
 ## Onboarding
 
-Um die AEM Assets-Integration mit [!DNL Commerce Optimizer] zu integrieren, müssen [ ein Support-Ticket erstellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Um die AEM Assets-Integration mit [!DNL Commerce Optimizer] zu integrieren, müssen [&#x200B; ein Support-Ticket erstellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 Der Adobe-Support verwendet die Informationen in Ihrem Ticket, um Ihren Mandanten beim Assets Integration Service zu registrieren und die Integration zu konfigurieren.
 
@@ -134,7 +134,7 @@ Wenn das Gebietsschema oder die Ebene nicht korrekt zugewiesen ist, werden Bildd
 
 Nach der Konfiguration synchronisiert die Integration `product-asset` automatisch.
 
-Weitere Informationen finden [ unter ](../synchronize/custom-match.md)Benutzerdefinierter automatischer Abgleich“.
+Weitere Informationen finden [&#x200B; unter &#x200B;](../synchronize/custom-match.md)Benutzerdefinierter automatischer Abgleich“.
 
 ### Beispiel für Übereinstimmung nach SKU-Workflow
 
