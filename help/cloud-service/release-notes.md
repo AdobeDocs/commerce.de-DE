@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 776aa6f6d887c93686539897e936fe8d3898e462
+source-git-commit: 469111676c7ac8bdf66f8f42bd26745ce7f88928
 workflow-type: tm+mt
-source-wordcount: 4485
+source-wordcount: 4489
 ht-degree: 0%
 
 ---
@@ -60,6 +60,10 @@ Die folgenden Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar und wer
 ### Bestellungen und Rechnungen nach Firma filtern
 
 Die `GET /V1/orders`- und `GET /V1/invoices`-REST-API-Endpunkte unterstützen jetzt die Filterung nach `company_id` und `company_name`, sodass B2B-Integrationen Bestellungen oder Rechnungen für ein bestimmtes Unternehmen in einer einzigen Anfrage abrufen können. <!-- ACCS-1111, CCSAAS-5076 -->
+
+### Auflisten benutzerdefinierter E-Mail-Vorlagen über die API
+
+Der neue `GET /V1/custom-email/templates` REST-API-Endpunkt gibt Ihre [benutzerdefinierten E-Mail-Vorlagen](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/) einschließlich der ID, des Codes und des Betreffs jeder Vorlage zurück. Integrationen können eine zurückgegebene Vorlagen-ID mit dem `POST /V1/custom-email/send`-Endpunkt verwenden, anstatt die ID manuell nachzuschlagen. <!-- CCSAAS-5089 -->
 
 ### Anzeigen des Auftragsänderungsverlaufs in der Admin Console
 
@@ -570,10 +574,10 @@ An den B2B-Drop-in-Komponenten wurden die folgenden Änderungen vorgenommen:
 * [!DNL Commerce Storefront on Edge Delivery Services] enthält jetzt [B2B-Drop-in-Komponenten](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=de). Die folgenden B2B-Drop-ins sind jetzt verfügbar:
 
    * **[Unternehmensverwaltung](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=de)** - Ermöglicht die Verwaltung von Unternehmensprofilen und rollenbasierte Berechtigungen für Adobe Commerce-Storefronts.
-   * **[Unternehmens-](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/)**: Bietet eine UI-Komponente, mit der Benutzende zwischen mehreren Unternehmen wechseln können, denen sie zugeordnet sind.
+   * **[Unternehmens-](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=de)**: Bietet eine UI-Komponente, mit der Benutzende zwischen mehreren Unternehmen wechseln können, denen sie zugeordnet sind.
    * **[Bestellungen](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=de)** - Verwaltet Bestellungen-Workflows, Genehmigungsregeln und den Bestellverlauf für B2B-Transaktionen.
    * **[Angebotsverwaltung](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/)** - Ermöglicht verhandelbare Angebote für B2B-Kunden mit Angebotsanfrage-, Verhandlungs- und Genehmigungs-Workflows.
-   * **[Anforderungslisten](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/)**: Bietet Tools zum Erstellen und Verwalten von Anforderungslisten für Wiederholungskäufe und Massenbestellungen.
+   * **[Anforderungslisten](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=de)**: Bietet Tools zum Erstellen und Verwalten von Anforderungslisten für Wiederholungskäufe und Massenbestellungen.
 
 * Das Kompatibilitätspaket für die B2B-Storefront wurde veröffentlicht. Dieses Paket erweitert das [!DNL Adobe Commerce] B2B-GraphQL-Schema , um die Entwicklung auf B2B-Systemen zu verbessern.
 
