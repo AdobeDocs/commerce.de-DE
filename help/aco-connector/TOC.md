@@ -1,25 +1,31 @@
 ---
 user-guide-title: '[!DNL Adobe Commerce Optimizer Connector] Integrationshandbuch'
 breadcrumb-title: '[!DNL Optimizer Connector]'
-user-guide-description: Verwenden Sie das  [!DNL Adobe Commerce Optimizer Connector] -Handbuch, um Katalogdaten zu exportieren, Preise zu synchronisieren und  [!DNL Edge Delivery Services] -Storefronts mithilfe von  [!DNL Adobe Commerce Optimizer].
+user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen für die Verwendung von  [!DNL Adobe Commerce Optimizer Connector] zum Exportieren von Katalogdaten, Synchronisieren von Preisen und Bereitstellen  [!DNL Edge Delivery Services]  Storefronts mithilfe von [!DNL Adobe Commerce Optimizer].
 role: Developer, Admin
-feature: Integration, Configuration
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+feature: Integration, Storefront, Configuration
+nudge: true
+source-git-commit: 3624bb934c25e04ae2f08b0d78ed4602df89d3eb
 workflow-type: tm+mt
-source-wordcount: '39'
-ht-degree: 7%
+source-wordcount: '65'
+ht-degree: 6%
 
 ---
 
 
-# Adobe Commerce Optimizer-Connector {#aco-optimizer-connector}
+# [!DNL Adobe Commerce Optimizer Connector] Integrationshandbuch {#aco-optimizer-connector}
 
 - [[!DNL Adobe Commerce Optimizer Connector]](overview.md)
 - [Erste Schritte](get-started.md)
 - [Connector-Synchronisierungs-Pipeline](connector-sync-pipeline.md)
+- [Synchronisierung verwalten](data-sync-manage.md)
 - [Headless-Storefront-Integration](headless-storefront.md)
-- [Fehlerbehebung](troubleshooting.md)
+- Fehlerbehebung {#troubleshooting}
+   - [Überblick](troubleshooting.md)
+   - [Fehlerbehebungsszenarien](troubleshooting/troubleshooting-scenarios.md)
 - Verweis {#reference}
-   - [Connector-Module und Feed-Endpunkte](./reference/connector-reference.md)
-   - [Feldzuordnung für Connector-Feeds](./reference/field-mapping.md)
+   - [Connector-Module und Feed-Endpunkte](reference/connector-reference.md)
+   - [Feldzuordnung für Connector-Feeds](reference/field-mapping.md)
+   - [Schätzen des Datenvolumens und der Synchronisierungszeit](reference/estimate-data-volume-sync-time.md)
 - [Versionshinweise](release-notes.md)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
