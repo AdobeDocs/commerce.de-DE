@@ -3,39 +3,18 @@ title: Migrieren nach [!DNL Adobe Commerce as a Cloud Service]
 description: Erfahren Sie, wie Sie zu  [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 level: Intermediate
-TQID: 'https://experienceleague.adobe.com/qGoDL49v3KtjduEVoHsxgqnleCSiX4SOG4--ZBmxJaA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
+autotag-review: '2026-06-18T16:12:28.840Z'
+TQID: 'https://experienceleague.adobe.com/GmxaQdGKvAIDpZ2jvmlLFSYw0IFQysIMOT0lUnsJBsI'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f56d26ed-050b-4fb7-b29b-8e6e994e80a2id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: eb30f47f-d87a-400f-8f78-63ce7979ff56id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 3150
 ht-degree: 0%
@@ -54,8 +33,8 @@ ht-degree: 0%
 
 **Die wichtigsten Unterschiede**
 
-* [!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."} **PaaS (aktuell)**: Händler verwalten Anwendungs-Code, Upgrades, Patches und Infrastrukturkonfigurationen in der gehosteten Umgebung von Adobe. [Modell der gemeinsamen Verantwortung](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility) für Dienste (MySQL, Elasticsearch und andere).
-* [!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} **SaaS (Neu - [!DNL Adobe Commerce as a Cloud Service])**: Adobe verwaltet die Kernanwendung, -infrastruktur und -aktualisierungen vollständig. Händler konzentrieren sich auf die Anpassung über Erweiterungspunkte (APIs, App Builder, UI-SDKs). Der Code der Hauptanwendung ist gesperrt.
+* [!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."} **PaaS (aktuell)**: Händler verwalten Anwendungs-Code, Upgrades, Patches und Infrastrukturkonfigurationen in der gehosteten Umgebung von Adobe. [Modell der gemeinsamen Verantwortung](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) für Dienste (MySQL, Elasticsearch und andere).
+* [!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} **SaaS (Neu - [!DNL Adobe Commerce as a Cloud Service])**: Adobe verwaltet die Kernanwendung, -infrastruktur und -aktualisierungen vollständig. Händler konzentrieren sich auf die Anpassung über Erweiterungspunkte (APIs, App Builder, UI-SDKs). Der Code der Hauptanwendung ist gesperrt.
 
 **Auswirkungen auf die Architektur**
 
@@ -68,7 +47,7 @@ ht-degree: 0%
 
 * [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) und [API Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway)
 * [Commerce Optimizer](../../optimizer/overview.md)
-* [Edge-Bereitstellungsdienste](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)
+* [Edge-Bereitstellungsdienste](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * Self-Service-Bereitstellung mit dem [Commerce Cloud Manager](../getting-started.md#create-an-instance)
 
 ## Migrationspfade
@@ -198,7 +177,7 @@ Diese Option dient als Übergangsschritt, der auf einer vorhandenen Integration 
 
 * **Synchronisierung von Katalogdaten**: Stellen Sie sicher, dass Ihre Adobe Commerce PaaS-Instanz weiterhin Produkt- und Katalogdaten mit Ihrem bestehenden Adobe Commerce Catalog SaaS-Service synchronisiert. Dies beruht in der Regel auf etablierten Connectoren oder Modulen innerhalb Ihrer PaaS-Instanz. Der Katalog-SaaS-Service bleibt die maßgebliche Quelle für Such- und Merchandising-Funktionen und leitet seine Daten aus Ihrem PaaS-Backend ab.
 * **API Mesh für die**: Während die Headless-Storefront (auf Edge Delivery Services) und andere Services Daten direkt aus dem Katalog-SaaS-Service nutzen können, empfiehlt Adobe dringend die Verwendung von API Mesh (innerhalb von App Builder). API Mesh kann APIs aus dem Katalog-SaaS-Service mit anderen erforderlichen APIs aus Ihrem PaaS-Backend (z. B. Echtzeit-Inventarprüfungen aus der Transaktionsdatenbank oder benutzerdefinierte Produktattribute, die nicht vollständig auf den Katalog-SaaS-Service repliziert wurden) zu einem einzigen, leistungsstarken GraphQL-Endpunkt vereinheitlichen. Dies ermöglicht auch eine zentralisierte Zwischenspeicherung, Authentifizierung und Antwortumwandlung.
-* **Live-Suche und Produktempfehlungen integrieren**: Konfigurieren Sie Live-Suche und Produktempfehlungen mit SaaS-Services, um [Katalogdaten aufzunehmen](https://experienceleague.adobe.com/de/docs/commerce/live-search/install#configure-the-data) direkt aus Ihrem bestehenden Adobe Commerce Catalog SaaS-Service, der wiederum von Ihrem PaaS-Backend gefüllt wird.
+* **Live-Suche und Produktempfehlungen integrieren**: Konfigurieren Sie Live-Suche und Produktempfehlungen mit SaaS-Services, um [Katalogdaten aufzunehmen](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data) direkt aus Ihrem bestehenden Adobe Commerce Catalog SaaS-Service, der wiederum von Ihrem PaaS-Backend gefüllt wird.
 
 **Vorteil**: Dies bietet einen schnelleren Weg zu einer Headless-Storefront und erweiterten SaaS-Merchandising-Funktionen, indem ein vorhandener und betrieblicher Katalog-SaaS-Service und dessen Integrations-Pipeline mit Ihrem PaaS-Backend genutzt werden. Es behält jedoch die Abhängigkeit vom PaaS-Backend für die primäre Katalogdatenquelle bei und bietet nicht die Aggregationsfunktionen für mehrere Quellen, die dem neuen zusammensetzbaren Katalogdatenmodell inhärent sind. Diese Option ist ein gültiger Schritt auf dem Weg zu einer umfassenderen zusammensetzbaren Architektur.
 

@@ -4,16 +4,16 @@ description: Erfahren Sie, wie Sie Dateien wie PDFs, Handbücher und Datenblätt
 feature: Catalog Management, Products, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+autotag-review: '2026-06-18T16:03:48.301Z'
 TQID: 'https://experienceleague.adobe.com/fFbsXGO54L1lSuQULqfP7A-BJKSYggdt7cy-GDvaSzU'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
+product_v2: id: de2e2e68-c5d7-4efe-be7b-27528698f06bid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 753
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Hinzufügen von Dateien zu Produkten
 
-[!DNL Adobe Commerce as a Cloud Service] unterstützt einen &quot;[&quot; (Produktattribut-Eingabetyp), &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"} es Händlern ermöglicht, Dateien wie PDFs, Handbücher, Zertifikate und Datenblätter direkt an Produkte anzuhängen. Dateien werden im Amazon S3-Medienspeicher gespeichert und können über die Storefront mithilfe von GraphQL oder über Integrationen mithilfe der REST-API aufgerufen werden.
+[!DNL Adobe Commerce as a Cloud Service] unterstützt einen &quot;[&quot; (Produktattribut-Eingabetyp), ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"} es Händlern ermöglicht, Dateien wie PDFs, Handbücher, Zertifikate und Datenblätter direkt an Produkte anzuhängen. Dateien werden im Amazon S3-Medienspeicher gespeichert und können über die Storefront mithilfe von GraphQL oder über Integrationen mithilfe der REST-API aufgerufen werden.
 
 Es gibt drei Möglichkeiten, Dateien in Produktdateiattribute hochzuladen:
 
@@ -34,15 +34,15 @@ Es gibt drei Möglichkeiten, Dateien in Produktdateiattribute hochzuladen:
 
 Vor dem Hochladen von Dateien müssen Sie ein Dateiattribut erstellen und es einem Attributsatz zuweisen.
 
-* [Dateiattribut erstellen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} - **[!UICONTROL Catalog Input Type for Store Owner]** auf &quot;**[!UICONTROL File]**&quot; festlegen.
+* [Dateiattribut erstellen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} - **[!UICONTROL Catalog Input Type for Store Owner]** auf &quot;**[!UICONTROL File]**&quot; festlegen.
 
-* [Attribut einem Attributsatz zuweisen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} - Ziehen Sie das neue Dateiattribut in die gewünschte Gruppe.
+* [Attribut einem Attributsatz zuweisen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} - Ziehen Sie das neue Dateiattribut in die gewünschte Gruppe.
 
-* Konfigurieren Sie zulässige Dateitypen und deren Größe in der Konfiguration [Produktdateiattribute](https://experienceleague.adobe.com/de/docs/commerce-admin/config/catalog/product-file-attributes).
+* Konfigurieren Sie zulässige Dateitypen und deren Größe in der Konfiguration [Produktdateiattribute](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes).
 
 ## Hochladen von Dateien über den Administrator
 
-Nachdem Sie [Dateiattribut erstellen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} und es einem Attributsatz zuweisen, können Sie Dateien direkt über die Produktbearbeitungsseite hochladen.
+Nachdem Sie [Dateiattribut erstellen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} und es einem Attributsatz zuweisen, können Sie Dateien direkt über die Produktbearbeitungsseite hochladen.
 
 1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Catalog]** > **[!UICONTROL Products]**.
 
@@ -69,7 +69,7 @@ Der Prozess umfasst vier Schritte:
 
 ## Hochladen durch Produktimport
 
-Sie können Dateien mithilfe der „Import-API[&#x200B; oder der Admin](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}Import-Benutzeroberfläche stapelweise an Produkte anhängen. Produktdateiattribute unterstützen nur den Import aus externen URLs, der demselben Ansatz folgt wie [Methode 2 für den Produktbildimport](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}. Commerce lädt die Datei von der angegebenen URL herunter und speichert sie im S3-Medienspeicher.
+Sie können Dateien mithilfe der „Import-API[ oder der Admin](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}Import-Benutzeroberfläche stapelweise an Produkte anhängen. Produktdateiattribute unterstützen nur den Import aus externen URLs, der demselben Ansatz folgt wie [Methode 2 für den Produktbildimport](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}. Commerce lädt die Datei von der angegebenen URL herunter und speichert sie im S3-Medienspeicher.
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ sku,name,additional_attributes
 ADB112,"My Product",file_upload=https://example.com/files/manual.pdf
 ```
 
-In beiden Fällen muss die URL öffentlich zugänglich sein und die Dateierweiterung und -größe müssen den [konfigurierten Einschränkungen“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}.
+In beiden Fällen muss die URL öffentlich zugänglich sein und die Dateierweiterung und -größe müssen den [konfigurierten Einschränkungen“ ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}.
 
 ## Abrufen von Dateien über GraphQL
 
