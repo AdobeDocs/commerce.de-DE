@@ -5,12 +5,27 @@ role: Admin, Developer, Leader
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 autotag-review: '2026-06-18T16:14:06.699Z'
 TQID: 'https://experienceleague.adobe.com/lbI3nsLtafel6GtquXnkZmXD2Z3b-rRGPOyr8EqzrjE'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-subfeature_v2: id: e126554b-28f9-4290-b58c-10b888b88174
-role_v2: id: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+subfeature_v2:
+  - id: e126554b-28f9-4290-b58c-10b888b88174
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 419
@@ -44,7 +59,7 @@ Der [!DNL Adobe Admin Console] ist der zentrale Hub für die Verwaltung des Benu
 - **Produktprofile**: Definieren Sie Zugriffsbereiche für verschiedene Umgebungen wie Staging und Produktion.
 - **Delegierte Administration**: Systemadministratoren und Produktadministratoren können den Benutzerzugriff ohne IT-Beteiligung verwalten.
 
-Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)Benutzerverwaltung“.
+Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)Benutzerverwaltung“.
 
 ## API-Authentifizierung und Integrationssicherheit
 
@@ -58,4 +73,4 @@ Die REST-API-Authentifizierung von [!DNL Adobe Commerce as a Cloud Service] wird
 - **API-Zugriff im Umfang**: Beschränken des API-Zugriffs auf bestimmte Ressourcen und Vorgänge.
 - **Auditprotokollierung**: Verfolgen Sie Authentifizierungsereignisse und Zugriffsänderungen, um die Compliance und die Fehlerbehebung sicherzustellen.
 
-Weitere Informationen finden [ unter ](https://developer.adobe.com/commerce/webapi/rest/authentication/)-Authentifizierung .
+Weitere Informationen finden [&#x200B; unter &#x200B;](https://developer.adobe.com/commerce/webapi/rest/authentication/)-Authentifizierung .
