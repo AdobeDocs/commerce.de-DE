@@ -6,13 +6,11 @@ recommendations: noCatalog
 roles: Admin, Developer
 exl-id: d4dd0288-8853-43fe-9103-1aead8d3b56e
 TQID: https://experienceleague.adobe.com/btPlBYpdRdf-gMfqSv2px6iMfiI3FfXJSN40j61HXOU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: d5e10c1b3014d2b74c323d6a34e5f73a97d494ce
 workflow-type: tm+mt
-source-wordcount: 193
+source-wordcount: 218
 ht-degree: 0%
 
 ---
@@ -33,6 +31,12 @@ Zu den Aktualisierungen gehören:
 >Die [Catalog Adapter-Erweiterung](catalog-adapter.md) deaktiviert die Adobe Commerce-Preisindizierung. Wenn Sie es installiert haben, können Sie die auf Ihrem System installierte Version mit dem Composer überprüfen. In einigen Fällen empfiehlt es sich, die Katalogadaptererweiterung auf dem System zu aktualisieren, um Fehlerbehebungen oder neue Funktionen aufzunehmen, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Aktuelle Hauptversion
+
+## Version 1.0.11
+
+_18. Juni 2026_
+
+![Fix](../assets/fix.svg) **PHP 8.5-Kompatibilität** - Der Adobe Commerce Catalog Adapter unterstützt jetzt PHP 8.5, um die Kompatibilität mit Adobe Commerce ab Version 2.4.9 zu gewährleisten. <!--MDEE-1368-->
 
 ## Version 1.0.10
 
