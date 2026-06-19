@@ -41,7 +41,7 @@ Jeder Feed-Synchronisierungsvorgang - unabhängig davon, ob er durch einen Cron-
 1. Wenn die Sperre **erworben** wird, zeichnet der Prozess ihren Namen und ihre PID zu Diagnosezwecken auf und führt dann die Synchronisierung aus.
 1. Wenn die Synchronisierung abgeschlossen wird oder fehlschlägt, wird die Sperre bedingungslos aufgehoben, sodass der nächste geplante Cron-Auftrag normal fortgesetzt werden kann.
 
-Die Feed-Sperre kann immer nur von einem Synchronisierungsvorgang gehalten werden, unabhängig davon, ob dieser von Cron oder der CLI gestartet wurde. Die Feed-Sperre wird über die `LockManagerInterface` von [!DNL Adobe Commerce] implementiert. Das Standard-Backend ist MySQL, das `GET_LOCK`- und `RELEASE_LOCK` verwendet. Informationen zum Konfigurieren eines anderen Sperranbieters finden Sie unter [Konfigurieren des Sperranbieters](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}.
+Die Feed-Sperre kann immer nur von einem Synchronisierungsvorgang gehalten werden, unabhängig davon, ob dieser von Cron oder der CLI gestartet wurde. Die Feed-Sperre wird über die `LockManagerInterface` von [!DNL Adobe Commerce] implementiert. Das Standard-Backend ist MySQL, das `GET_LOCK`- und `RELEASE_LOCK` verwendet. Informationen zum Konfigurieren eines anderen Sperranbieters finden Sie unter [Konfigurieren des Sperranbieters](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}.
 
 ## Erwartete Protokollmeldungen
 
@@ -62,4 +62,4 @@ Diese Meldung wird angezeigt, wenn eine durch Cron ausgelöste partielle Synchro
 > - [Synchronisieren von Daten mit dem SaaS-Datenexport](sync-overview.md)
 > - [Synchronisieren Sie Feeds mithilfe der Commerce-CLI](data-export-cli-commands.md)
 > - [Connector-Synchronisierungs-Pipeline](../aco-connector/connector-sync-pipeline.md)
-> - [Konfigurieren des Sperranbieters](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}
+> - [Konfigurieren des Sperranbieters](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}

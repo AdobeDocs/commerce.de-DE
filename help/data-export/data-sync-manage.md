@@ -36,7 +36,7 @@ Bei Adobe Commerce-On-Cloud-, On-Premise- oder Adobe Commerce as a Cloud Service
 
 - **[Seite „Daten-Feed-Synchronisierungsstatus](../optimizer/setup/data-sync.md)** - Überprüfen Sie den Feed-Exportstatus für Bereitstellungen, die mit [!DNL Live Search], [!DNL Product Recommendations] oder [!DNL Catalog Service] verbunden sind. Dieses Dashboard zeigt den Status des Feed-Exports für jeden Feed einschließlich aller aufgetretenen Fehler an. In einer Detailansicht wird der Status des Feed-Exports für einzelne Feed-Elemente angezeigt.
 
-- **[Daten-Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** - Admin-Benutzer können Daten anzeigen und verfolgen, die erfolgreich exportiert und mit verbundenen Commerce Services synchronisiert wurden. In diesem Dashboard werden die mit Commerce Services synchronisierten Produktdaten angezeigt.
+- **[Daten-Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** - Admin-Benutzer können Daten anzeigen und verfolgen, die erfolgreich exportiert und mit verbundenen Commerce Services synchronisiert wurden. In diesem Dashboard werden die mit Commerce Services synchronisierten Produktdaten angezeigt.
 
 >[!NOTE]
 >

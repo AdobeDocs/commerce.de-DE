@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie ein unerwartetes  [!DNL SaaS Data Export] -Ve
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -84,9 +84,9 @@ Die sofortige Lösung für dieses Problem ist eine Problemumgehung: Konfiguriere
 1. Öffnen Sie in der Commerce-Storefront die Suchergebnisse. Wählen Sie dann das betreffende Produkt aus, um seine Detailansicht zu öffnen.
 1. Kopieren Sie die JSON-Ausgabe und überprüfen Sie, ob sie mit dem übereinstimmt, was Sie im [!DNL Commerce] Katalog haben.
 1. Wenn der Inhalt nicht übereinstimmt, nehmen Sie eine geringfügige Änderung am Produkt in Ihrem Katalog vor, z. B. das Hinzufügen eines Leerzeichens oder eines Punkts, um die Erkennung der Änderung zu erzwingen.
-1. Warten Sie auf eine Neusynchronisierung oder einen Trigger oder eine manuelle Neusynchronisierung der CLI oder [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) Seite im Admin Console.
+1. Warten Sie auf eine Neusynchronisierung oder einen Trigger oder eine manuelle Neusynchronisierung der CLI oder [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) Seite im Admin Console.
 
-Weitere Informationen zur Fehlerbehebung bei Katalogdaten in [!DNL Product Recommendations] finden Sie unter [Fehlerbehebung beim Modul „Produktempfehlungen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) in der Commerce Knowledge Base.
+Weitere Informationen zur Fehlerbehebung bei Katalogdaten in [!DNL Product Recommendations] finden Sie unter [Fehlerbehebung beim Modul „Produktempfehlungen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) in der Commerce Knowledge Base.
 
 ## Datensynchronisation läuft nicht planmäßig {#sync-not-on-schedule}
 
@@ -96,8 +96,8 @@ Weitere Informationen zur Fehlerbehebung bei Katalogdaten in [!DNL Product Recom
 
 **Lösung:**
 
-- [Bestätigen Sie, dass Cron-Aufträge ausgeführt werden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
-- Stellen Sie sicher, dass die Indexer für die folgenden Feeds auf **[!UICONTROL Update by Schedule]** eingestellt sind: Katalogattribute, Produkt, Produktüberschreibungen und Produktvariante. Führen Sie eine Überprüfung von [[!UICONTROL Index Management]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) in Commerce Admin durch oder verwenden Sie die CLI: `bin/magento indexer:show-mode | grep -i feed`.
+- [Bestätigen Sie, dass Cron-Aufträge ausgeführt werden](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- Stellen Sie sicher, dass die Indexer für die folgenden Feeds auf **[!UICONTROL Update by Schedule]** eingestellt sind: Katalogattribute, Produkt, Produktüberschreibungen und Produktvariante. Führen Sie eine Überprüfung von [[!UICONTROL Index Management]](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/index-management) in Commerce Admin durch oder verwenden Sie die CLI: `bin/magento indexer:show-mode | grep -i feed`.
 
 ## Katalogsynchronisierung hat den Status Fehlgeschlagen . {#catalog-sync-failed}
 
@@ -110,7 +110,7 @@ Weitere Informationen zur Fehlerbehebung bei Katalogdaten in [!DNL Product Recom
 1. Überprüfen Sie die Fehlerprotokolle zu Datenexporten, um Details zum Fehler zu erhalten. Siehe [Überprüfen von Protokollen und Fehlerbehebung](logging.md) für Protokollformat und erweiterte Protokollierungsoptionen:
    - `var/log/commerce-data-export-errors.log` auf Fehler bei der Datenerfassung.
    - `var/log/saas-export-errors.log` auf Fehler bei der Datenübermittlung.
-1. Wenn der Fehler nicht mit der Konfiguration oder einer Erweiterung eines Drittanbieters zusammenhängt, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) den entsprechenden Protokolleinträgen.
+1. Wenn der Fehler nicht mit der Konfiguration oder einer Erweiterung eines Drittanbieters zusammenhängt, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) den entsprechenden Protokolleinträgen.
 
 ## Protokoll zeigt Meldungen vom Typ „Vorgang übersprungen - Prozess gesperrt“ {#process-locked}
 
