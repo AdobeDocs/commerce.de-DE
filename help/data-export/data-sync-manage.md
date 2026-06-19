@@ -3,20 +3,10 @@ title: Synchronisierungsprozess anzeigen und verwalten
 description: Erfahren Sie, wie Sie den  [!DNL SaaS Data Export]  mithilfe des Daten-Management-Dashboards und der Seite „Status der Daten-Feed-Synchronisierung“ anzeigen und verwalten können.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 652
@@ -36,7 +26,7 @@ Bei Adobe Commerce-On-Cloud-, On-Premise- oder Adobe Commerce as a Cloud Service
 
 - **[Seite „Daten-Feed-Synchronisierungsstatus](../optimizer/setup/data-sync.md)** - Überprüfen Sie den Feed-Exportstatus für Bereitstellungen, die mit [!DNL Live Search], [!DNL Product Recommendations] oder [!DNL Catalog Service] verbunden sind. Dieses Dashboard zeigt den Status des Feed-Exports für jeden Feed einschließlich aller aufgetretenen Fehler an. In einer Detailansicht wird der Status des Feed-Exports für einzelne Feed-Elemente angezeigt.
 
-- **[Daten-Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** - Admin-Benutzer können Daten anzeigen und verfolgen, die erfolgreich exportiert und mit verbundenen Commerce Services synchronisiert wurden. In diesem Dashboard werden die mit Commerce Services synchronisierten Produktdaten angezeigt.
+- **[Daten-Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** - Admin-Benutzer können Daten anzeigen und verfolgen, die erfolgreich exportiert und mit verbundenen Commerce Services synchronisiert wurden. In diesem Dashboard werden die mit Commerce Services synchronisierten Produktdaten angezeigt.
 
 >[!NOTE]
 >

@@ -2,28 +2,14 @@
 title: Katalog-Sync-Pipeline
 description: Erfahren Sie, wie  [!DNL Adobe Commerce Optimizer Connector]  Pipeline „sync“ funktioniert, einschließlich Feed-Transformation, Cron-Zeitpläne, Umfangskontrolle und Fehlerbehandlung.
 feature: Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: cc250cf1-34eb-4863-80d0-d170d45ea067id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 662
@@ -33,7 +19,7 @@ ht-degree: 1%
 
 # Connector-Synchronisierungs-Pipeline
 
-Die auf [[!DNL SaaS Data Export]](https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/overview) basierende **[!DNL Adobe Commerce Optimizer Connector]** ordnet die von [!DNL SaaS Data Export] Indexern erfassten Daten dem Format zu, das für die [!DNL Adobe Commerce Optimizer]-[!DNL Catalog Data Ingestion API] erforderlich ist, und verarbeitet Authentifizierung, Batch-Übermittlung und bereichsbasierte Synchronisierungssteuerung. In den folgenden Abschnitten wird beschrieben, wie diese Synchronisierung funktioniert.
+Die auf [[!DNL SaaS Data Export]](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview) basierende **[!DNL Adobe Commerce Optimizer Connector]** ordnet die von [!DNL SaaS Data Export] Indexern erfassten Daten dem Format zu, das für die [!DNL Adobe Commerce Optimizer]-[!DNL Catalog Data Ingestion API] erforderlich ist, und verarbeitet Authentifizierung, Batch-Übermittlung und bereichsbasierte Synchronisierungssteuerung. In den folgenden Abschnitten wird beschrieben, wie diese Synchronisierung funktioniert.
 
 Verwandter Kontext:
 
@@ -70,7 +56,7 @@ Die **[!DNL SaaS Data Export]**-Erweiterung verarbeitet die Feed-Erfassung und d
 
 #### Anforderungen
 
-- [Commerce Cron muss ausgeführt werden](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}.
+- [Commerce Cron muss ausgeführt werden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}.
 - Feed-Indexer müssen den **[!UICONTROL Update by Schedule]** verwenden. Siehe [Teilsynchronisierung](../data-export/sync-overview.md#partial-sync){target="_blank"}.
 
 ## Bereichsbasierte Synchronisierungssteuerung
@@ -93,7 +79,7 @@ Einzelheiten zum Anpassen des Synchronisierungsbereichs finden Sie unter [Anpass
 | Vorübergehende Fehler | Alle 5 Minuten erneut versucht |
 | Vollständige Synchronisierung für große Kataloge | Minuten bis Stunden |
 
-Überwachen Sie den Status der einzelnen Feeds über die Seite [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in Commerce Admin. Siehe [Überprüfen, ob die Datensynchronisation funktioniert](./data-sync-manage.md#verify-that-the-data-sync-is-working).
+Überwachen Sie den Status der einzelnen Feeds über die Seite [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in Commerce Admin. Siehe [Überprüfen, ob die Datensynchronisation funktioniert](./data-sync-manage.md#verify-that-the-data-sync-is-working).
 
 ## Feed-Übermittlung und Fehlerbehandlung
 

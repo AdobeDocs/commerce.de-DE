@@ -1,29 +1,17 @@
 ---
 title: Dokumentations-RAG-Service
 description: Erfahren Sie, wie Sie den KI-gestützten Dokumentationssuchdienst für die Adobe Commerce-Entwicklung verwenden.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 hide: true
 autotag-review: '2026-06-18T16:12:14.031Z'
 TQID: 'https://experienceleague.adobe.com/eGNktkTH-i2HV8iEFTfSFtGlsyr4ZUVuRXxj9XcwbZk'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 1027
@@ -41,7 +29,7 @@ Der Dokumentations-RAG-Service (Retrieval-Augmented Generation) bietet KI-gestü
 
 Dieses ARG bietet eine IDE-Oberfläche für Fragen zu Adobe Commerce und kann Sie bei Best Practices für die Entwicklung von Anwendungen und anderen Migrationsaufgaben beraten.
 
-Der RAG-Service ist Teil des MCP-Servers (Model Context Protocol) [&#128279;](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} Commerce-Erweiterungstools, der mit Cursor und anderen MCP-kompatiblen KI-Assistenten integriert wird.
+Der RAG-Service ist Teil des MCP-Servers (Model Context Protocol) ](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} [Commerce-Erweiterungstools, der mit Cursor und anderen MCP-kompatiblen KI-Assistenten integriert wird.
 
 ## Verfügbare Dokumentation
 
@@ -49,9 +37,9 @@ In der folgenden Tabelle wird beschrieben, welche Dokumentation derzeit vom RAG-
 
 | Kategorie | Index | Enthaltene Inhalte | Schlüsselwörter |
 |-------|---------|---------|------------------------|
-| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de) | commerce-storefront-docs | Edge Delivery Services, Dropdown-Listen, Storefront-Komponenten | Storefront, Dropin, EDS, Produktliste, Checkout |
+| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, Dropdown-Listen, Storefront-Komponenten | Storefront, Dropin, EDS, Produktliste, Checkout |
 | [Erweiterbarkeit](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, Ereignisse, Erweiterungen, Integrationen | Webhook, Ereignis, Erweiterung, API-Mesh, GraphQL |
-| [Commerce](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce (Katalog, Kunden, Bestellungen) | Katalog, Produkt, Kunde, Bestellung, Bestand |
+| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce (Katalog, Kunden, Bestellungen) | Katalog, Produkt, Kunde, Bestellung, Bestand |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, Laufzeitaktionen, Benutzeroberflächenerweiterungen | App Builder, Laufzeitaktion, React Spectrum |
 
 Weitere Informationen zur Indexauswahl finden Sie unter [Automatische Indexauswahl](#automatic-index-selection-recommended) und [Explizite Indexauswahl](#explicit-index-selection).
@@ -72,7 +60,7 @@ Der Produktions-Endpunkt wird durch [Azure Front Door](https://learn.microsoft.c
 * DDoS-Schutz am Edge
 * API-Management-Backend gesperrt, um nur Traffic von der Haustür zu akzeptieren
 
-Für verschiedene Sicherheitsanforderungen können Sie einen benutzerdefinierten Endpunkt verwenden. Weitere Informationen [&#x200B; Sie unter &#x200B;](#custom-front-door-endpoint)-Endpunkt für benutzerdefinierte Fronttüren .
+Für verschiedene Sicherheitsanforderungen können Sie einen benutzerdefinierten Endpunkt verwenden. Weitere Informationen [ Sie unter ](#custom-front-door-endpoint)-Endpunkt für benutzerdefinierte Fronttüren .
 
 ## Voraussetzungen
 
@@ -146,7 +134,7 @@ Stellen Sie vor der Installation Folgendes sicher:
 
 ## Nutzung
 
-Nach der Installation können Sie die Indizes ([) &#x200B;](#automatic-index-selection-recommended) [explizit](#explicit-index-selection) aufrufen. Sie können auch den Befehl [`/search-commerce-docs` verwenden](#command-based-search).
+Nach der Installation können Sie die Indizes ([) ](#automatic-index-selection-recommended) [explizit](#explicit-index-selection) aufrufen. Sie können auch den Befehl [`/search-commerce-docs` verwenden](#command-based-search).
 
 >[!NOTE]
 >

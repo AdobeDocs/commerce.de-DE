@@ -28,4 +28,4 @@ ht-degree: 6%
    - [Feldzuordnung für Connector-Feeds](reference/field-mapping.md)
    - [Schätzen des Datenvolumens und der Synchronisierungszeit](reference/estimate-data-volume-sync-time.md)
 - [Versionshinweise](release-notes.md)
-- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=de)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
