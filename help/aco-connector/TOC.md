@@ -4,8 +4,8 @@ breadcrumb-title: '[!DNL Optimizer Connector]'
 user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen für die Verwendung von  [!DNL Adobe Commerce Optimizer Connector] zum Exportieren von Katalogdaten, Synchronisieren von Preisen und Bereitstellen  [!DNL Edge Delivery Services]  Storefronts mithilfe von [!DNL Adobe Commerce Optimizer].
 role: Developer, Admin
 feature: Integration, Storefront, Configuration
-nudge: true
-source-git-commit: 3624bb934c25e04ae2f08b0d78ed4602df89d3eb
+nudge: false
+source-git-commit: 83218416c513412f2ff6328aa8a23e915cbb8750
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 6%
@@ -28,4 +28,4 @@ ht-degree: 6%
    - [Feldzuordnung für Connector-Feeds](reference/field-mapping.md)
    - [Schätzen des Datenvolumens und der Synchronisierungszeit](reference/estimate-data-volume-sync-time.md)
 - [Versionshinweise](release-notes.md)
-- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=de)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

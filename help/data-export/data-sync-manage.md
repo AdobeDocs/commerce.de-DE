@@ -3,23 +3,13 @@ title: Synchronisierungsprozess anzeigen und verwalten
 description: Erfahren Sie, wie Sie den  [!DNL SaaS Data Export]  mithilfe des Daten-Management-Dashboards und der Seite „Status der Daten-Feed-Synchronisierung“ anzeigen und verwalten können.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: e7d9c056ef8d565b4a143b05ff4e06d607fbfa8e
 workflow-type: tm+mt
-source-wordcount: 652
+source-wordcount: 544
 ht-degree: 0%
 
 ---
@@ -34,9 +24,9 @@ Die meisten Synchronisierungsaktivitäten werden automatisch mit vollständiger 
 
 Bei Adobe Commerce-On-Cloud-, On-Premise- oder Adobe Commerce as a Cloud Service-Bereitstellungen können Sie den Synchronisierungsprozess über diese Commerce-Admin-Ressourcen anzeigen und verwalten:
 
-- **[Seite „Daten-Feed-Synchronisierungsstatus](../optimizer/setup/data-sync.md)** - Überprüfen Sie den Feed-Exportstatus für Bereitstellungen, die mit [!DNL Live Search], [!DNL Product Recommendations] oder [!DNL Catalog Service] verbunden sind. Dieses Dashboard zeigt den Status des Feed-Exports für jeden Feed einschließlich aller aufgetretenen Fehler an. In einer Detailansicht wird der Status des Feed-Exports für einzelne Feed-Elemente angezeigt.
+- **[Seite „Daten-Feed-Synchronisierungsstatus](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** - Überprüfen Sie den Feed-Exportstatus für Bereitstellungen, die mit [!DNL Live Search], [!DNL Product Recommendations] oder [!DNL Catalog Service] verbunden sind. Dieses Dashboard zeigt den Status des Feed-Exports für jeden Feed einschließlich aller aufgetretenen Fehler an. In einer Detailansicht wird der Status des Feed-Exports für einzelne Feed-Elemente angezeigt.
 
-- **[Daten-Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** - Admin-Benutzer können Daten anzeigen und verfolgen, die erfolgreich exportiert und mit verbundenen Commerce Services synchronisiert wurden. In diesem Dashboard werden die mit Commerce Services synchronisierten Produktdaten angezeigt.
+- **[Daten-Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** - Admin-Benutzer können Daten anzeigen und verfolgen, die erfolgreich exportiert und mit verbundenen Commerce Services synchronisiert wurden. In diesem Dashboard werden die mit Commerce Services synchronisierten Produktdaten angezeigt.
 
 >[!NOTE]
 >
@@ -46,7 +36,7 @@ Bei Adobe Commerce-On-Cloud-, On-Premise- oder Adobe Commerce as a Cloud Service
 
 Bei Commerce-On-Cloud- oder -On-Premise-Bereitstellungen, die in [!DNL Commerce Optimizer] integriert sind, können Sie den Synchronisierungsprozess mithilfe der folgenden Ressourcen anzeigen und verwalten:
 
-- **[Seite „Synchronisierungsstatus für Daten-Feeds](../optimizer/setup/data-sync.md)** - Überprüfen Sie für Commerce-Projekte, die [!DNL Commerce Optimizer] verwenden, die Verfügbarkeit von Katalogdaten für Ihre Storefront auf der Seite „Synchronisierungsstatus für Daten-Feeds“ in [!DNL Commerce Optimizer]. Dieses Dashboard zeigt den Synchronisierungsstatus der Datenexport-Feeds an.
+- **[Seite „Synchronisierungsstatus für Daten-Feeds](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** - Überwachen Sie den Exportstatus des Connector-Feeds über die Commerce-Admin. Auf dieser Seite wird angezeigt, ob Katalogdaten erfolgreich aus [!DNL Adobe Commerce] exportiert wurden, einschließlich Fehlerdetails pro Feed und pro Element.
 
 - **[Datensynchronisierungsseite](../optimizer/setup/data-sync.md)** - Die Datensynchronisierungsseite bietet einen Überblick über den Synchronisierungsstatus für Produktdaten, die von Ihrer Upstream-Katalogquelle in [!DNL Commerce Optimizer] stammen.
 
@@ -56,29 +46,8 @@ Weitere Informationen dazu, wie Sie diese Dashboards verwenden, um zu überprüf
 
 ## Überprüfen, ob die Datensynchronisation funktioniert {#verify-that-the-data-sync-is-working}
 
-Um sicherzustellen, dass die Datensynchronisierung funktioniert, überprüfen Sie, ob die Daten erfolgreich aus [!DNL Adobe Commerce] exportiert und erfolgreich an den verbundenen Commerce-Service übermittelt wurden. Verwenden Sie die Dashboards für Ihre Bereitstellung, um beide Schritte zu überprüfen.
 
-Mit Export beginnen und dann Versand bestätigen.
-
-1. Überprüfen Sie den Synchronisierungsstatus in der Commerce Admin Console.
-
-   Navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**.
-
-   ![Seite „Daten-Feed-Synchronisierungsstatus“ mit Reporting zum Feed-Elementstatus](./assets/data-feed-sync-status.png){width="800" zoomable="yes"}
-
-   Wenn die Synchronisierung ausgeführt wird, zeigen die Feed-Daten erfolgreich gesendete Datensätze an. Feed auswählen, um Details anzuzeigen oder Synchronisierungsprobleme zu beheben.
-
-1. Vergewissern Sie sich, dass die Daten an verbundene Commerce Services gesendet wurden.
-
-   Navigieren Sie vom Commerce-Administrator aus zu **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**.
-
-   ![Daten-Management-Dashboard mit synchronisierten Katalogdaten in Connected Commerce Services](./assets/data-management-dashboard.png){width="700" zoomable="yes"}
-
-   Überprüfen Sie, ob die erwarteten Produkte, Preise und Attribute angezeigt werden.
-
->[!TIP]
->
->Wenn Sie Probleme mit der Datensynchronisation haben, lesen Sie den Abschnitt [Protokolle überprüfen und Fehler beheben](troubleshooting/logging.md).
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
 ## Daten manuell neu synchronisieren
 
@@ -100,5 +69,3 @@ Verwenden Sie die folgenden Optionen, um Feed-Daten manuell neu zu synchronisier
 > - [Feeds über die Commerce-CLI synchronisieren](data-export-cli-commands.md) - Verwenden Sie den Befehl `saas:resync` für die Resynchronisierung gezielter Feeds.
 > - [Überprüfen von Protokollen und Fehlerbehebung](troubleshooting/logging.md) - Diagnostizieren von Datenexport- und SaaS-Exportfehlern.
 > - [Synchronisierung mit verwalten [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md) - Überprüfen Sie die Synchronisierung von Katalogdaten und synchronisieren Sie Connector-Feeds manuell neu.
-
-
