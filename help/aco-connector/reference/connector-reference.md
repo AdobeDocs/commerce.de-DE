@@ -2,7 +2,7 @@
 title: '[!DNL Adobe Commerce Optimizer Connector] Module und Feed-Endpunkte'
 description: Erfahren Sie  [!DNL Adobe Commerce Optimizer Connector]  über -Module, Katalog-Feed-API-Endpunkte, Batch-Beschränkungen und core_config_data-Konfigurationspfade für  [!DNL Adobe Commerce].
 feature: Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 autotag-review: '2026-06-09T15:48:19.494Z'
 TQID: 'https://experienceleague.adobe.com/UM6Y-xoQpUDzWpaMe1GRPp4XoAtHBLBsHw388kumN8g'
 product_v2:
