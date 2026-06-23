@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die Synchronisierung von Katalogdaten überpr
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -54,5 +54,5 @@ Wenn Synchronisierungsprobleme durch teilweise Synchronisierung und automatische
 > - [Geschätztes Datenvolumen und Synchronisierungszeit](reference/estimate-data-volume-sync-time.md) — Berechnet die erwartete Synchronisierungsdauer.
 > - [Fehlerbehebung](troubleshooting.md) - Diagnose von Problemen mit Berechtigungen, Synchronisierung und dem Umfang von Exportvorgängen
 > - [Connector-Module und Feed-](reference/connector-reference.md): Überprüfungsmodule, API-Endpunkte und unterstützte Feeds
-> - [Seite „Synchronisierungsstatus für Daten-Feeds“ in der Commerce-](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} - Erfahren Sie mehr über die Felder und Funktionen, die zur Überwachung des Feed-Status verfügbar sind
+> - [Seite „Synchronisierungsstatus für Daten-Feeds“ in der Commerce-](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} - Erfahren Sie mehr über die Felder und Funktionen, die zur Überwachung des Feed-Status verfügbar sind
 > - [Datensynchronisations-Dashboard in [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce-optimizer/data-sync/data-sync){target="_blank"} - Referenzdokumentation für Felder und Aktionen, die zur Überwachung der Katalogdaten-Synchronisierung verfügbar sind
