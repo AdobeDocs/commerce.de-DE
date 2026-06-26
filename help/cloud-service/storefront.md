@@ -6,9 +6,11 @@ role: Developer
 level: Beginner
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-TQID: https://experienceleague.adobe.com/LoeNTJ-evBJB-TaJV0mEQpD2G2MwxHX7cYHx67kP0cA
+autotag-review: '2026-06-18T16:05:19.363Z'
+TQID: 'https://experienceleague.adobe.com/LoeNTJ-evBJB-TaJV0mEQpD2G2MwxHX7cYHx67kP0cA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -20,7 +22,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 300
 ht-degree: 0%

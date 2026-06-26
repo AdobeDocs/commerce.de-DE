@@ -8,6 +8,8 @@ autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -22,9 +24,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
-source-git-commit: 1f901b4a72c10dc4e710742b98c03e88cbc8739f
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 465
+source-wordcount: 665
 ht-degree: 0%
 
 ---
@@ -35,6 +37,8 @@ ht-degree: 0%
 Auf dieser Seite wird dokumentiert, wie die [!DNL Adobe Commerce Optimizer Connector] [!DNL Adobe Commerce] Katalogfelder in das für die [!DNL Commerce Optimizer]-[!DNL Catalog Data Ingestion API] erforderliche Format umwandelt. Unter [Connector-Referenz](connector-reference.md#supported-feeds) finden Sie die Liste der unterstützten Feeds und ihrer API-Endpunkte.
 
 ## PRODUCT
+
+Der `products`-Feed sendet Daten an den Endpunkt [products](https://developer.adobe.com/commerce/services/reference/rest/#tag/Products){target="_blank"}.
 
 | [!DNL Adobe Commerce] | API-Feld [!DNL Commerce Optimizer] | Notizen |
 | ----------------------------------------------- | -------------- | ------- |
@@ -62,6 +66,9 @@ Auf dieser Seite wird dokumentiert, wie die [!DNL Adobe Commerce Optimizer Conne
 
 ## Metadaten der Produktattribute
 
+Der `productAttributes`-Feed sendet Daten an den [Metadaten-Endpunkt](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata){target="_blank"}.
+
+
 | [!DNL Adobe Commerce] | API-Feld [!DNL Commerce Optimizer] | Notizen |
 | --------------- | -------------- | ------- |
 | `attributeCode` | `code` | |
@@ -78,7 +85,9 @@ Auf dieser Seite wird dokumentiert, wie die [!DNL Adobe Commerce Optimizer Conne
 | `searchWeight` | `searchWeight` | |
 | `searchTypes` | `searchTypes` | |
 
-**Datentypkonvertierung:**
+### Datentypkonvertierung
+
+Der Connector leitet die API-`dataType` von den `dataType`- und `frontendInput`-Feldern in der obigen Zuordnungstabelle ab. Die folgende Tabelle zeigt die Konversionsregeln, die der Connector anwendet.
 
 | [!DNL Adobe Commerce] `dataType` | [!DNL Adobe Commerce] `frontendInput` | [!DNL Commerce Optimizer] API-`dataType` |
 | -------------------- | -------------------------- | ------------------- |
@@ -90,7 +99,13 @@ Auf dieser Seite wird dokumentiert, wie die [!DNL Adobe Commerce Optimizer Conne
 | `OBJECT` | - | `OBJECT` |
 | Beliebige andere | - | `TEXT` |
 
+>[!NOTE]
+>
+>Wenn die `dataType` für ein Attribut auf `OBJECT` festgelegt ist, behandelt [Produkt-API](https://developer.adobe.com/commerce/services/reference/graphql/#products){target="_blank"} den Attributwert als strukturiertes Objekt und nicht als einfache Zeichenfolge. Zur Abfragezeit versucht die API, den gespeicherten Wert als JSON zu parsen. Wenn das Analysieren erfolgreich ist, wird das Ergebnis als verschachteltes -Objekt in der Antwort zurückgegeben. **Dieses Verhalten ist besonders**, wenn Sie benutzerdefinierte Attribute dynamisch bereitstellen, z. B. um strukturierte Daten oder Daten mit mehreren Feldern zu übertragen, die nicht als Skalarwert dargestellt werden können. Anweisungen finden Sie [Produktattribute dynamisch hinzufügen](../../data-export/add-attribute-dynamically.md).
+
 ## Preisbücher
+
+Der `priceBooks`-Feed sendet Daten an den [Preisbuchendpunkt](https://developer.adobe.com/commerce/services/reference/rest/#tag/Price-Books){target="_blank"}.
 
 Im Gegensatz zu den anderen Connector-Feeds wird der `priceBooks`-Feed nicht von einem [!DNL SaaS Data Export] Indexer in [!DNL Adobe Commerce] erfasst. Der Connector generiert diesen Feed aus der Website- und Kundengruppenkonfiguration im Admin-Bereich.
 
@@ -112,6 +127,8 @@ Der Preis-Feed verwendet dieselbe Formel, wenn er festlegt, zu welchem Preisbuch
 
 ## Preise
 
+Der `prices`-Feed sendet Daten an den Endpunkt [Preise](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}.
+
 | [!DNL Adobe Commerce] | API-Feld [!DNL Commerce Optimizer] | Notizen |
 | --------------- | -------------- | ------------------------------------------------------------------------------- |
 | `sku` | `sku` | |
@@ -121,6 +138,8 @@ Der Preis-Feed verwendet dieselbe Formel, wenn er festlegt, zu welchem Preisbuch
 | `tierPrices[]` | `tierPrices[]` | |
 
 ## Kategorien
+
+Der `categories`-Feed sendet Daten an den [Categories-Endpunkt](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
 Elemente mit einem leeren `urlPath` (logische Stammkategorien) werden übersprungen und nie gesendet.
 

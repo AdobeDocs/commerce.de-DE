@@ -1,6 +1,7 @@
 ---
 title: Erste Schritte mit [!DNL Live Search]
 description: Erfahren Sie mehr über die Systemanforderungen und Installationsschritte für  [!DNL Live Search]  von Adobe Commerce.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
@@ -24,9 +25,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 2934
+source-wordcount: 2842
 ht-degree: 0%
 
 ---
@@ -67,7 +68,7 @@ Dieser Artikel richtet sich an Entwicklerinnen und Entwickler oder Systemintegra
 >
 > **HIPAA-Bereitschaft**
 >
->Wenn Sie Adobe Commerce mit der HIPAA-fähigen Erweiterung und dem Add-on für das Gesundheitswesen verwenden, verarbeiten Sie keine geschützten Gesundheitsinformationen (PHI) über LiveSearch> Die Live-Suche ist kein HIPAA-fähiger Service.
+>Wenn Sie Adobe Commerce mit der HIPAA-fähigen Erweiterung und dem Add-on für das Gesundheitswesen verwenden, verarbeiten Sie keine geschützten Gesundheitsinformationen (Protected Health Information, PHI) über LiveSearch> Live Search ist kein HIPAA-fähiger Dienst.
 >
 >Weitere Informationen finden Sie unter [HIPAA-Bereitschaft auf Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) und in der [Operations](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/hipaa-ready-service/operations)-Anleitung, in der die Live-Suche unter den nicht HIPAA-fähigen Commerce-Services aufgeführt ist.
 
@@ -234,21 +235,19 @@ Wenn Sie diese Befehle ausführen, beginnt die erste Synchronisierung Ihrer Kata
 
 ### Fortschritt der Synchronisierung überwachen
 
-Verwenden Sie das [Daten-Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard), um den Synchronisierungsfortschritt zu überwachen. Dieses Dashboard bietet wertvolle Einblicke in die Verfügbarkeit von Produktdaten in Ihrer Storefront, sodass sie den Kunden sofort angezeigt werden können.
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-![Daten-Management-Dashboard](assets/data-management-dashboard.png)
+{{install-data-sync-feed-status}}
 
-Sie können auch Synchronisierungsbefehle ausführen und mithilfe der [Commerce-CLI](../data-export/data-export-cli-commands.md#troubleshooting) und der Protokolle der Datenexporterweiterung eine Fehlerbehebung beim Synchronisierungsprozess durchführen.
-
-#### Künftige Produktaktualisierungen
+### Künftige Produktaktualisierungen
 
 Nach der ersten Synchronisierung kann es bis zu 15 Minuten dauern, bis inkrementelle Produktaktualisierungen für die Storefront-Suche verfügbar werden. Weitere Informationen finden Sie unter [Streaming von Produktaktualisierungen](indexing.md) in der Dokumentation zur Indizierung.
 
 ## &#x200B;4. Überprüfen, ob die Daten exportiert wurden {#verify}
 
-Um zu überprüfen, ob Ihre Katalogdaten aus Adobe Commerce exportiert und mit [!DNL Live Search] synchronisiert wurden, haben Sie einige Optionen:
+Zusätzlich zur Verwendung der Seite Daten-Feed-Synchronisierungsstatus und des Daten-Management-Dashboards können Sie auch direkt in der Datenbank aus Adobe Commerce exportierte Katalogdaten überprüfen und mithilfe des [!DNL Live Search] Arbeitsbereichs von GraphQL bestätigen, dass Daten erfolgreich mit [!DNL Live Search] synchronisiert wurden.
 
-- Suchen Sie nach Einträgen in den folgenden Tabellen:
+- Verwenden Sie in der Datenbank SQL-Abfragen, um nach Einträgen in den folgenden Tabellen zu suchen:
 
    - `cde_products_feed`
    - `cde_product_attributes_feed`

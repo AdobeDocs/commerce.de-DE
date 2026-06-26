@@ -1,11 +1,15 @@
 ---
 title: Hinzufügen von Attributen für Steuerklasse, Attributsatz und Bestand
 description: Erfahren Sie, wie Sie die Produkt-Feed-Daten erweitern, um Attribute für die Steuerklassifizierung, den Attributsatz und erweiterte Inventareinstellungen einzuschließen.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/
 TQID: https://experienceleague.adobe.com/AWc-yAn-TyiBXQONoF2ZG9SFjj2u92CKbKvAY8mEVEE
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
@@ -21,9 +25,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 812
+source-wordcount: 822
 ht-degree: 0%
 
 ---
@@ -231,5 +235,9 @@ Weitere Informationen finden Sie im [Inventory management-Handbuch](https://expe
 
 Das Modul protokolliert Exportfehler und -warnungen in das standardmäßige Commerce-Protokollierungssystem. Wenn bei der Produktsynchronisierung Probleme auftreten, überprüfen Sie die Datenexportprotokolle.
 
-Weitere Informationen finden Sie unter [Überprüfen von Protokollen und Fehlerbehebung](troubleshooting-logging.md).
+>[!MORELIKETHIS]
+>
+> * [Überprüfen Sie die Protokolle und führen Sie eine Fehlerbehebung durch](troubleshooting/logging.md)
+> * [Erweitern und Anpassen von SaaS-Datenexport-Feeds](extensibility-and-customizations.md)
+> * [Synchronisieren Sie Feeds mithilfe der Commerce-CLI](data-export-cli-commands.md)
 

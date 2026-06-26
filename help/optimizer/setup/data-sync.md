@@ -14,7 +14,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: c7633056caec2fcec318f8ebcc9664cfc7b3b9b4
 workflow-type: tm+mt
 source-wordcount: 484
 ht-degree: 0%
@@ -34,7 +34,7 @@ Die **Datensynchronisation** befindet sich unter *Setup* > **Datensynchronisatio
 Die **Datensynchronisation** enthält die folgenden Felder:
 
 | Feld | Beschreibung |
-|--- |--- |
+| --- | --- |
 | Katalogquelle | Spezifisches Gebietsschema für die synchronisierten Daten. |
 | [!DNL Catalog Service] | Zeigt das neueste Synchronisierungsupdate, die Gesamtzahl der empfangenen Produkte, ein Suchfeld und eine Tabelle der synchronisierten Produkte für [!DNL Catalog Service] an. |
 | Produkterkennung | Zeigt das neueste Synchronisierungsupdate, die Gesamtzahl der empfangenen Produkte, ein Suchfeld und eine Tabelle der synchronisierten Produkte für die Suche an. |
@@ -61,12 +61,11 @@ Wenn bestimmte Produkte nicht auf der Seite **Datensynchronisierung** angezeigt 
 >
 >Die Dauer der Synchronisierung hängt von der Größe Ihres Katalogs und der Menge der aktualisierten Daten ab.
 
-## Überwachen des Synchronisierungsstatus von Daten
+## Überprüfen, ob die Datensynchronisierung funktioniert
 
-Bei Projekten, die Adobe Commerce als Upstream-Datenquelle über den Adobe Commerce Optimizer Connector verwenden, können Sie den Datenexportvorgang überwachen und Resynchronisierungsvorgänge über die Seite [Synchronisierungsstatus für Daten-Feeds](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in Commerce Admin starten.
+Bei Projekten, die Adobe Commerce als Upstream-Datenquelle über den Adobe Commerce Optimizer Connector verwenden, können Sie den Datenexportvorgang überwachen und Resynchronisierungsvorgänge über die Seite Daten-Feed-Synchronisierungsstatus initiieren. Weitere Informationen finden Sie unter [Überprüfen, ob die Datensynchronisierung funktioniert](../../aco-connector/data-sync-manage.md#verify-that-the-data-sync-is-working) in der Dokumentation zum _Adobe Commerce Optimizer Connector_.
 
 ## Verwandte Themen
 
 - [Adobe Commerce Optimizer-Connector](../../aco-connector/overview.md){target="_blank"}
-
 

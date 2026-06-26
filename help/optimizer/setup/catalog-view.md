@@ -1,6 +1,7 @@
 ---
 title: Katalogansicht
 description: Erfahren Sie, was Katalogansichten sind und wie Sie sie erstellen, um Ihren Produktkatalog nach Geschäftsstruktur, Richtlinien und Preisen zu organisieren.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
@@ -19,7 +20,7 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 1210
 ht-degree: 0%
@@ -37,7 +38,7 @@ Katalogansichten definieren, wie Ihr Produktkatalog organisiert und angezeigt wi
 - **Welche Produkte sichtbar sind** basierend auf der Unternehmensstruktur (Marken, Regionen, Händler)
 - **Welche Preise werden angezeigt** durch verknüpfte Preisbücher
 - **Filterung von Produkten** Verwendung von Richtlinien (Attribute wie Marke, Modell, Kategorie)
-- **Was [Katalogquelle](catalog-source.md) wird basierend** Attributen wie „locale“ verwendet
+- **Was [Katalogquelle](catalog-sources.md) wird basierend** Attributen wie „locale“ verwendet
 
 Stellen Sie sich Katalogansichten als verschiedene „Linsen“ vor, durch die Kunden Ihren Katalog sehen. Beispiel:
 
@@ -64,7 +65,7 @@ Bevor Sie eine Katalogansicht erstellen, stellen Sie sicher, dass Sie Folgendes 
 1. Konfigurieren Sie die Details der Katalogansicht:
 
    - **Name** - Geben Sie den Namen der Katalogansicht ein, z. B. `Celport`. &#x200B;
-   - **Katalogquellen** - Wählen Sie die [Katalogquelle](catalog-source.md), z. B. `en-US`.
+   - **Katalogquellen** - Wählen Sie die [Katalogquelle](catalog-sources.md), z. B. `en-US`.
    - **Katalogebenen** Überprüfen der aufgenommenen Ebenen und der Priorität.
    - **Richtlinien** - Wählen Sie in der Dropdown-Liste die entsprechenden Richtlinien aus. Beispiel: „Marke“, „Modell“. &#x200B;Stellen Sie sicher, dass Sie bereits [eine Richtlinie erstellt haben](policies.md).
 
@@ -203,7 +204,7 @@ Die gefilterten Katalogdaten werden für verschiedene Ziele bereitgestellt, eins
 
 ## Ähnliche Themen
 
-- [Katalogquellen](catalog-source.md) - Definieren des maßgeblichen Umfangs von Produkten, Attributen und Kategorien für das Verhalten bei Suche, Filterung und Sortierung
+- [Katalogquellen](catalog-sources.md) - Definieren des maßgeblichen Umfangs von Produkten, Attributen und Kategorien für das Verhalten bei Suche, Filterung und Sortierung
 - [Katalogebenen](catalog-layer.md) Erfahren Sie, wie Sie Produktdaten ändern, ohne die ursprüngliche Quelle zu ändern
 - [Richtlinien](policies.md) - Erstellen von Richtlinien zum Filtern von Produkten in Katalogansichten
 - [Preisbücher](pricebooks.md) - Verwalten von Preisstrukturen für verschiedene Kundensegmente

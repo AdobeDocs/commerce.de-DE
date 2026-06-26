@@ -1,6 +1,7 @@
 ---
 title: Installation
 description: Erfahren Sie, wie Sie installieren [!DNL Catalog Service]
+autotag-review: '2026-06-17T15:08:59.000Z'
 exl-id: 3f8492c3-f76d-49b7-a201-35deace36a1d
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 TQID: https://experienceleague.adobe.com/qVI-zFFljrUZzjSMmBxs5jRCsKbxfivQV1xzzpBS2uw
@@ -13,9 +14,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 972
+source-wordcount: 958
 ht-degree: 0%
 
 ---
@@ -179,4 +180,8 @@ So stellen Sie sicher, dass der Katalogexport ordnungsgemäß ausgeführt wird:
 
 ### Überwachen und Fehlerbehebung bei der Datensynchronisation
 
-Vom Commerce-Administrator aus können Sie den Synchronisierungsprozess mithilfe des [Daten-Management-Dashboards“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Verwenden Sie die [Commerce-CLI](../data-export/data-export-cli-commands.md#troubleshooting) und Protokolle, um den Prozess zu verwalten und Fehler zu beheben.
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
+
+Verwenden Sie die [Commerce CLI](../data-export/data-export-cli-commands.md) um Feeds bei Bedarf manuell neu zu synchronisieren. Informationen zu Resynchronisierungsoptionen und zusätzlichen Schritten zur Fehlerbehebung finden Sie unter [Synchronisierung verwalten](../data-export/data-sync-manage.md) im _SaaS-Datenexporthandbuch_.
+
+{{install-data-sync-feed-status}}

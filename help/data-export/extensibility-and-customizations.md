@@ -1,11 +1,15 @@
 ---
 title: Erweitern und Anpassen von SaaS-Datenexport-Feed-Daten
 description: Erfahren Sie, wie Sie die Feed [!DNL SaaS Data Export] Daten erweitern und anpassen.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
 TQID: https://experienceleague.adobe.com/T71zNl7WOrqzEsz4H8A8arx--q6w1B0h33CF2Q0VI4A
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -14,9 +18,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 542
+source-wordcount: 815
 ht-degree: 0%
 
 ---
@@ -25,7 +29,7 @@ ht-degree: 0%
 
 Die [!DNL Commerce Data Export] bietet eine Möglichkeit, Daten aus der [!DNL Commerce]-Anwendung in Commerce-Services wie Live Search, Catalog Service und Product Recommendations zu exportieren. Bei Bedarf können Sie die Feed-Daten erweitern und anpassen, um zusätzliche Attributdaten einzuschließen, oder die erfassten Daten ändern.
 
-Nachdem Sie Attributdaten hinzugefügt haben, können Sie über das Feld [Attribute](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) im GraphQL-Schema für den Storefront-Service darauf zugreifen.
+Nachdem Sie Attributdaten hinzugefügt haben, können Sie über das Feld [Attribute](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) im GraphQL-Schema für Storefront-Services darauf zugreifen.
 
 >[!NOTE]
 >
@@ -85,4 +89,99 @@ Informationen zum Erstellen von Daten-Patches finden Sie [Daten- und Schema-Patc
 
 ### Dynamisches Hinzufügen des Produktattributs
 
-Weitere Informationen zum dynamischen Erstellen von Produktattributen ohne Einführung neuer EAV-Attribute finden Sie unter [Attribut dynamisch hinzufügen](add-attribute-dynamically.md).
+Weitere Informationen zum dynamischen Erstellen von Produktattributen ohne Einführung neuer EAV-Attribute finden Sie [Produktattribute dynamisch hinzufügen](add-attribute-dynamically.md).
+
+## Übersicht über das Feed-Schema (`et_schema.xml`) {#feed-schema-overview}
+
+Jede Feed-Datenstruktur wird in `etc/et_schema.xml` mit einer einfachen XML-DSL deklariert. Das Framework liest diese Datei, um zu bestimmen, welche Felder gesammelt werden sollen und welche PHP-Provider-Klassen aufgerufen werden sollen.
+
+```xml
+<record name="Product">
+  <field name="sku" type="ID" />
+  <field name="name" type="String" />
+  <field name="attributes" type="Attribute" repeated="true"
+         provider="Magento\CatalogDataExporter\Model\Provider\Product\Attributes">
+    <using field="productId" />
+    <using field="storeViewCode" />
+  </field>
+</record>
+```
+
+Schlüsselelemente:
+
+- `<record>` - Definiert die Feed-Entität
+- `<field>` - Deklariert ein Datenfeld; das `provider`-Attribut verweist auf eine PHP-Klasse, die `DataProcessorInterface` implementiert, die die Daten abruft
+- `repeated="true"` : Das Feld ist ein Array von Objekten
+- `<using>` - Eingabeparameter, die vom übergeordneten Datensatzkontext an den Anbieter übergeben werden
+
+>[!IMPORTANT]
+>
+>Durch Hinzufügen eines neuen Felds zum `et_schema.xml` wird nur das geändert, was [!DNL Adobe Commerce] lokal erfasst. Der empfangende SaaS-Service muss ebenfalls aktualisiert werden, um das neue Feld zu akzeptieren und zu verarbeiten, bevor es Auswirkungen auf die Storefront hat.
+
+## Beobachten von Daten nach der Übermittlung {#observe-data-after-submission}
+
+[!DNL SaaS Data Export] sendet das `data_sent_outside` nach jeder erfolgreichen Batch-Übermittlung an einen SaaS-Service. Verwenden Sie dieses Ereignis für Auditprotokollierung, Webhook-Trigger oder die Erfassung von Metriken.
+
+**event:** `data_sent_outside`
+
+**Verfügbare Daten:**
+
+| Schlüssel | Beschreibung |
+|---|---|
+| `timestamp` | Unix-Zeitstempel der Übermittlung |
+| `type` | Feed-Name (z. B. `products`, `prices`) |
+| `data` | Die gesendete Feed-Payload |
+
+**Beispiel: Beobachter:**
+
+```php
+<?php
+namespace My\Module\Observer;
+
+use Magento\Framework\Event\Observer;
+use Magento\Framework\Event\ObserverInterface;
+
+class DataSentOutsideObserver implements ObserverInterface
+{
+    public function execute(Observer $observer): void
+    {
+        $feedName = $observer->getData('type');
+        $timestamp = $observer->getData('timestamp');
+        $data = $observer->getData('data');
+
+        // Custom logic: audit logging, webhook, metrics
+    }
+}
+```
+
+Registrieren Sie den Beobachter in `etc/events.xml`:
+
+```xml
+<event name="data_sent_outside">
+    <observer name="my_module_data_sent_outside"
+              instance="My\Module\Observer\DataSentOutsideObserver" />
+</event>
+```
+
+Allgemeine Informationen zu Ereignissen und Beobachtern finden Sie unter [Ereignisse und Beobachter](https://developer.adobe.com/commerce/php/development/components/events-and-observers){target="_blank"} in der Adobe Commerce Developer-Dokumentation.
+
+## Daten vor der Übermittlung filtern
+
+Verwenden Sie den `Magento\SaaSCommon\Model\DataFilter` Erweiterungspunkt, um sensible Felder zu redigieren oder bestimmte Entitäten zu überspringen, bevor Daten an den SaaS-Service gesendet werden. Dies ist nützlich für Compliance-Anforderungen wie die DSGVO oder PCI, bei denen bestimmte Felder die Commerce-Instanz nicht verlassen dürfen.
+
+Implementieren Sie die -Schnittstelle und vernetzen Sie sie über eine ID-Voreinstellung in `etc/di.xml`:
+
+```xml
+<preference for="Magento\SaaSCommon\Model\DataFilter"
+            type="My\Module\Model\MyDataFilter" />
+```
+
+>[!NOTE]
+>
+>Die Filterung wird nach der Datenerfassung angewendet. Wenn `PERSIST_EXPORTED_FEED=1` festgelegt ist, speichert die Feed-Tabelle die ungefilterte Payload, bevor die Filterung erfolgt.
+
+>[!MORELIKETHIS]
+>
+> - [Produktattribut dynamisch hinzufügen](add-attribute-dynamically.md)
+> - [Hinzufügen von Steuerklasse, Attributsatz und Bestandsmetadaten](add-tax-attribute-set-inventory-attributes.md)
+> - [Funktionsweise der Synchronisierung](sync-overview.md)

@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: f1c7779558406641972e9c690d0f508d46da3e0c
 workflow-type: tm+mt
-source-wordcount: 1316
+source-wordcount: 1328
 ht-degree: 0%
 
 ---
@@ -35,6 +35,13 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 ## Juni 2026
 
 >[!BEGINSHADEBOX]
+
+_24. Juni 2026_
+
+<!-- v1.3 -->
+
+![Neu](../assets/new.svg) **Neues `canEditQuantity`** - `canEditQuantity` zu `ProductViewOptionValueProduct` in Catalog Service GraphQL hinzugefügt. Sie stellt die optionale Mengeneinstellung **Benutzerdefiniert** für die Bundle-Auswahl aus der Commerce Admin bereit, sodass Storefront-Kunden bestimmen können, ob die Menge einer Bundle-Auswahl bearbeitbar ist.
+<!--COMOPT-2050-->
 
 ### Semantische Suche
 

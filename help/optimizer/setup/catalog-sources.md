@@ -1,5 +1,5 @@
 ---
-title: Katalogquelle
+title: Katalogquellen
 description: Erfahren Sie, was Katalogquellen sind und wie sie den autorisierenden Umfang von Produkten, Attributen und Kategorien für das Such-, Filter- und Sortierverhalten definieren.
 role: Admin, Developer
 recommendations: noCatalog
@@ -23,20 +23,20 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
+source-git-commit: 94ba07437d532d0d101c166f58114c2aa0bd4be4
 workflow-type: tm+mt
-source-wordcount: 450
+source-wordcount: 446
 ht-degree: 0%
 
 ---
 
-# Katalogquelle
+# Katalogquellen
 
-Eine Katalogquelle stellt einen zulässigen Umfang von Produkten, Attributen und Kategorien dar. Katalogquellen werden in der Regel Sprach-, Zielgruppen- oder Ursprungsgrenzen zugeordnet und bestimmen das Such-, Filter- und Sortierverhalten.
+Katalogquellen stellen autoritative Bereiche von Produkten, Attributen und Kategorien dar. Sie werden normalerweise Sprachgrenzen, Zielgruppen- oder Systemgrenzen zugeordnet und bestimmen das Such-, Filter- und Sortierverhalten.
 
-## Katalogquelle und verwandte Konzepte im Vergleich
+## Katalogquellen im Vergleich zu verwandten Konzepten
 
-Wenn Sie verstehen, wie eine Katalogquelle mit anderen [!DNL Adobe Commerce Optimizer] Konzepten in Beziehung steht, können Sie Ihre Daten korrekt modellieren:
+Wenn Sie verstehen, wie Katalogquellen mit anderen [!DNL Adobe Commerce Optimizer] Konzepten zusammenhängen, können Sie Ihre Daten korrekt modellieren:
 
 * **Katalogquelle** - Der zugrunde liegende Datenkontext, der Produktinformationen bereitstellt. Eine Katalogquelle ist normalerweise ein Gebietsschema (z. B. `en-US`, `fr-CA`) oder ein externes System wie ein PIM oder ERP. Produkte, Attribute, Metadaten und Kategorien sind alle pro Katalogquelle enthalten. Stellen Sie sich eine Katalogquelle vor *aus* die Rohkatalogdaten stammen und *wie* sie sich auf die Produkterkennung auswirken (Suchergebnisse, Filterung und Sortierverhalten).
 
@@ -46,7 +46,7 @@ Wenn Sie verstehen, wie eine Katalogquelle mit anderen [!DNL Adobe Commerce Opti
 
 ## Regeln und Einschränkungen
 
-* Eine Katalogquelle wird erstellt, indem ein Produkt über die Datenaufnahme-API aufgenommen wird. Weitere Informationen finden [&#x200B; unter &#x200B;](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) - Datenaufnahme .
+* Jede Katalogquelle wird durch Aufnahme eines Produkts über die Datenaufnahme-API erstellt. Weitere Informationen finden [&#x200B; unter &#x200B;](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) - Datenaufnahme .
 * Die Einzigartigkeit des Produkts wird durch die SKU und die Katalogquelle bestimmt.
 * Käufer greifen nicht direkt auf Katalogquellen zu. Katalogdaten werden über (Katalogansichten[&#x200B; der Storefront &#x200B;](catalog-view.md).
 
@@ -54,7 +54,7 @@ Wenn Sie verstehen, wie eine Katalogquelle mit anderen [!DNL Adobe Commerce Opti
 
 Verwenden Sie die folgenden Anleitungen, wenn Sie entscheiden, wie Sie Ihre Katalogquellen strukturieren möchten:
 
-* Erstellen Sie eine separate Katalogquelle für eine andere Katalogsprache.
+* Erstellen Sie für jede Katalogsprache eine separate Katalogquelle.
 * Verwenden Sie separate Katalogquellen, wenn Produkt- und Attributunterschiede das Such-, Filter- oder Sortierverhalten beeinflussen müssen (z. B. unterschiedliche Durchsuchbarkeit, Filterbarkeit oder Facettenkonfiguration für dasselbe Attribut).
 * Verwenden Sie [Katalogebenen](catalog-layer.md) wenn Produkt- und Attributunterschiede nur die Anzeige in der Storefront betreffen sollen, nicht die Produkterkennung.
 

@@ -7,6 +7,8 @@ autotag-review: '2026-06-09T15:48:19.494Z'
 TQID: 'https://experienceleague.adobe.com/UM6Y-xoQpUDzWpaMe1GRPp4XoAtHBLBsHw388kumN8g'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
   - id: c32adafa-ed01-4b31-997e-2413013911b0
@@ -18,14 +20,14 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+source-git-commit: 19de20caafd45e3a00896d0d4b29b7e96dfe94e1
 workflow-type: tm+mt
-source-wordcount: 289
+source-wordcount: 301
 ht-degree: 1%
 
 ---
 
-# Connector-Module und Feed-Endpunkte
+# Connector-Module und Feed-Endpunkte für Adobe Commerce Optimizer Connector
 
 Diese Referenz listet die [!DNL Adobe Commerce Optimizer Connector], unterstützten Feed-API-Endpunkte und Konfigurationsschlüsselpfade auf, die in `core_config_data` gespeichert sind. Informationen zur Zusammenarbeit dieser Komponenten während der Synchronisierung finden Sie unter [Connector-Synchronisierungs-Pipeline](../connector-sync-pipeline.md).
 
@@ -45,7 +47,7 @@ Der Connector enthält mehrere Magento-Module, die Katalogdaten erfassen, Feed-D
 
 ## Unterstützte Feeds
 
-Der Connector sendet mehrere Feed-Typen an die [!DNL Commerce Optimizer] [!DNL Catalog Data Ingestion API]. In der folgenden Tabelle sind alle Feeds mit ihrem Endpunkt, ihrer Batch-Grenze, ihrem Indexernamen und ihrer Feed-Tabelle in [!DNL Adobe Commerce] aufgeführt.
+Der Connector sendet mehrere Feed-Typen an die [!DNL Commerce Optimizer] [[!DNL Catalog Data Ingestion API]](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}. In der folgenden Tabelle sind alle Feeds mit ihrem Endpunkt, ihrer Batch-Grenze, ihrem Indexernamen und ihrer Feed-Tabelle in [!DNL Adobe Commerce] aufgeführt.
 
 | Futter | API-Endpunkt [!DNL Commerce Optimizer] | Batch-Limit | AC-Indexname | Vorschubtisch |
 | ---- | ----------------------------------- | ----------- | ------------- | ---------- |
@@ -58,6 +60,7 @@ Der Connector sendet mehrere Feed-Typen an die [!DNL Commerce Optimizer] [!DNL C
 Die `products`-, `productAttributes`-, `categories`- und `prices`-Feeds verwenden von [!DNL SaaS Data Export]-Indexern erfasste Daten wieder. Der Connector generiert den `priceBooks`-Feed aus der Website- und Kundengruppenkonfiguration und verlässt sich nicht auf einen [!DNL SaaS Data Export].
 
 Details zur Zuordnung auf Feldebene für jeden Feed finden Sie unter [Feldzuordnung für  [!DNL Commerce Optimizer Connector] -Feeds](field-mapping.md).
+Informationen zur Schätzung der Dauer einer Synchronisierung basierend auf Ihrer Kataloggröße finden Sie unter [Schätzen des Datenvolumens und der Synchronisierungszeit](estimate-data-volume-sync-time.md).
 
 ## Konfigurationspfade
 

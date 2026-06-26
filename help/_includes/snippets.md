@@ -1,11 +1,17 @@
 ---
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
 # Commerce Snippets
+
+## Installationshinweis für die Erweiterung „Status der Daten-Feed-Synchronisierung“ {#install-data-sync-feed-status}
+
+>[!NOTE]
+>
+>Wenn die Seite Synchronisierungsstatus für Daten-Feeds nicht in der Commerce Admin für Commerce in Cloud- oder lokalen Bereitstellungen verfügbar ist, befolgen Sie die [Installationsanweisungen für Erweiterungen](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"}, um sie zu aktivieren.
 
 
 ## Ausrichtung der Adobe Commerce Optimizer-Integrationsumgebung {#aco-integration-environment-alignment}
@@ -25,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Wenn Sie den [Adobe Commerce Optimizer-Connector](../aco-connector/overview.md) installiert haben, um Katalogdaten nach Adobe Commerce Optimizer zu exportieren, verwenden Sie die Seite [Daten-Feed-Synchronisierungsstatus](../optimizer/setup/data-sync.md) in Commerce Optimizer Studio, um Daten zu überprüfen, die erfolgreich mit Adobe Commerce Optimizer synchronisiert wurden, anstatt mit dem Daten-Management-Dashboard.
+>Bei Bereitstellungen, die den [[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md) zum Exportieren von Katalogdaten nach [!DNL Adobe Commerce Optimizer] verwenden, überprüfen Sie die Synchronisierung von Katalogdaten auf der [Seite „Status der Daten-Feed-](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)&quot; in der Commerce Admin- und [Datensynchronisierungsseite](../optimizer/setup/data-sync.md) in [!DNL Adobe Commerce Optimizer Studio], nicht im [Daten-Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
 
 ## Adobe Commerce Optimizer-Dropdown-Hinweis für API-Aktualisierungen {#aco-api-updates-and-dropins}
 

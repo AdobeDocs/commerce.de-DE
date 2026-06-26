@@ -6,13 +6,17 @@ role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-TQID: https://experienceleague.adobe.com/4L-M8vsEkT6uuafrOISankRaarQ-OVHDWLXwoVLaUZQ
+autotag-review: '2026-06-18T16:06:00.993Z'
+TQID: 'https://experienceleague.adobe.com/4L-M8vsEkT6uuafrOISankRaarQ-OVHDWLXwoVLaUZQ'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
@@ -22,7 +26,7 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 1464
 ht-degree: 0%
@@ -174,7 +178,7 @@ Stellen Sie sich ein Szenario vor, in dem Sie den Hintergrund eines Produktbilds
 
 1. Öffnen Sie die [Storefront](./storefront.md) die Sie in den Voraussetzungen erstellt haben, und navigieren Sie zu einem Element, das Sie ändern möchten. Beachten Sie die Artikel-SKU oder den Produkt-Code.
 
-1. Öffnen Sie [!DNL AEM Assets], indem Sie es in der [Adobe Experience Cloud &#x200B;](https://experience.adobe.com/#/home).
+1. Öffnen Sie [!DNL AEM Assets], indem Sie es in der [Adobe Experience Cloud“ &#x200B;](https://experience.adobe.com/#/home).
 
    ![[!DNL AEM Assets]-Selektor, der die [!DNL Adobe Experience Cloud] anzeigt](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 

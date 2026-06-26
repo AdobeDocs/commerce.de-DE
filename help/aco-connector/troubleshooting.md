@@ -8,6 +8,8 @@ autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/ei86QuJ3nQ2d-6NRoAeJslgDxjGlZRejD-Nx-6SAVdc'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
   - id: c32adafa-ed01-4b31-997e-2413013911b0
@@ -22,14 +24,14 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 1f901b4a72c10dc4e710742b98c03e88cbc8739f
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 273
+source-wordcount: 331
 ht-degree: 0%
 
 ---
 
-# Fehlerbehebung beim Adobe Commerce Optimizer-Connector
+# Fehlerbehebung bei der [!DNL Adobe Commerce Optimizer Connector]
 
 Verwenden Sie dieses Handbuch, um häufige Probleme mit dem [!DNL Adobe Commerce Optimizer Connector] während der Ersteinrichtung, der Synchronisierung von Katalog-Feeds und der Konfiguration des Umfangs-Exports zu diagnostizieren und zu beheben. In den folgenden Abschnitten werden die Validierung von Berechtigungen und Mandanten, Fehler bei der Datensynchronisierung und die Diagnose im Zusammenhang mit [!DNL SaaS Data Export] behandelt.
 
@@ -39,14 +41,13 @@ Wenn die `aco:config:init` bei der Überprüfung der Berechtigung fehlschlägt:
 
 - Führen Sie den `bin/magento aco:config:show` [!DNL Adobe Commerce] CLI-Befehl aus, um die gespeicherten Werte zu überprüfen.
 - Vergewissern Sie sich, dass die Mandanten-ID zu der IMS-Organisation gehört, die zum Abrufen der Anmeldeinformationen verwendet wird.
-- Überprüfen Sie, ob der OAuth-Client über die erforderlichen Bereiche für den [!DNL Commerce Optimizer]-Aufnahme-Service verfügt (siehe [Abrufen von IMS-Anmeldeinformationen](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)).
+- Überprüfen Sie, ob der OAuth-Client über die erforderlichen Bereiche für den [!DNL Adobe Commerce Optimizer]-Aufnahme-Service verfügt (siehe [Abrufen von IMS-Anmeldeinformationen](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)).
 
 ## Daten werden nicht synchronisiert
 
 **Fehlerdetails auf Elementebene überprüfen:**
 
-1. Navigieren Sie vom Commerce-Administrator aus zu **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**.
-2. Wählen Sie den fehlgeschlagenen Feed aus, um Fehlerdetails pro Element anzuzeigen.
+Unter [Überprüfen, ob die Datensynchronisation funktioniert](./data-sync-manage.md#verify-that-the-data-sync-is-working) finden Sie Schritte zum Öffnen von **[!UICONTROL Data Feed Sync Status]** in Commerce Admin. Wählen Sie den fehlgeschlagenen Feed aus, um Fehlerdetails pro Element anzuzeigen.
 
 Wichtige Punkte zur Fehlerbehandlung:
 
@@ -55,8 +56,16 @@ Wichtige Punkte zur Fehlerbehandlung:
 
 **Konfiguration des Umfangs überprüfen:**
 
-Wenn das Problem nur eine bestimmte Katalogquelle (Shop-Ansicht-Code) oder ein bestimmtes Preisbuch betrifft, überprüfen Sie, ob die Synchronisierung der entsprechenden Website oder Shop-Ansicht deaktiviert ist. Siehe [Anpassen der Datenexportkonfiguration](./get-started.md#customize-the-commerce-scopes-export-configuration).
+Wenn das Problem nur eine bestimmte Katalogquelle (Shop-Ansicht-Code) oder ein bestimmtes Preisbuch betrifft, überprüfen Sie, ob die Synchronisierung der entsprechenden Website oder Shop-Ansicht deaktiviert ist. Siehe [Anpassen der Exportkonfiguration für Commerce](./get-started.md#customize-the-commerce-scopes-export-configuration).
+
+**Nach Lösung:**
+
+Connector-Feeds zeigen in **[!UICONTROL Data Feed Sync Status]** den Status Erfolgreich an, und die erwarteten Produkte, Preise und Attribute werden auf der Seite **[!UICONTROL Data Sync]** in [!DNL Commerce Optimizer] angezeigt.
+
+## Fehlkonfiguration und Ergebnisauswertung
+
+Einen Katalog spezifischer Verhaltensweisen, die durch eine falsche Konfiguration oder Interpretation von Synchronisierungsergebnissen verursacht werden - wie fehlende Produkte, falsche Preise oder Datenlücken auf Bereichsebene - finden Sie unter [Fehlerbehebungsszenarien](troubleshooting/troubleshooting-scenarios.md).
 
 ## [!DNL SaaS Data Export]
 
-Informationen zu [!DNL SaaS Data Export] auf niedrigerer Ebene, einschließlich Protokollspeicherorten und Befehlen zur Resynchronisierung des Feeds, finden Sie im [[!DNL SaaS Data Export]  zur Fehlerbehebung](https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging){target="_blank"}.
+Informationen zu [!DNL SaaS Data Export] auf niedrigerer Ebene, einschließlich Protokollspeicherorten und Befehlen zur Resynchronisierung des Feeds, finden Sie im [[!DNL SaaS Data Export]  zur Fehlerbehebung](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.

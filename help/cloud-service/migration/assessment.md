@@ -4,19 +4,29 @@ description: Erfahren Sie, wie Sie einen Adobe Commerce PaaS-Migrationsbewertung
 feature: Cloud, Migration
 role: Developer, Admin
 level: Intermediate
+nudge: true1
+autotag-review: '2026-06-18T16:09:41.112Z'
 TQID: 'https://experienceleague.adobe.com/-OrsBVtHRcEV5EzgHzzP0JVf0aQWfSO2Fu1R5F5jtAw'
 product_v2:
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
   - id: c32adafa-ed01-4b31-997e-2413013911b0
   - id: cc250cf1-34eb-4863-80d0-d170d45ea067
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-nudge: true
-source-git-commit: 48171a525ad5e5f4b02da89753df6ea7e7ff9926
+source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 2505
 ht-degree: 0%
@@ -33,10 +43,6 @@ ht-degree: 0%
 Eine Commerce-Migrationsbewertung ist eine automatisierte Analyse Ihrer bestehenden Adobe Commerce-Implementierung. Die Tools von Adobe scannen Ihre Commerce-Codebasis und erzeugen einen strukturierten Bericht, der alle erstellten, angepassten oder geänderten Elemente auflistet. Der Bericht zeigt dann an, wie sich die Anpassungen an Ihrer Code-Basis auf Ihre Migration nach [!DNL Adobe Commerce as a Cloud Service] auswirken.
 
 Der Bericht wird als HTML-Datei bereitgestellt, die Sie in jedem Browser öffnen können. Es ist kein Zugriff auf die Produktionsumgebung erforderlich, es sei denn, Sie geben zunächst die Code-Basis Ihres Projekts frei.
-
->[!TIP]
->
->Wenden Sie sich an Ihren Solution Account Manager, um eine Migrationsbewertung Ihrer bestehenden Instanz anzufordern.
 
 **Die Bewertung sieht Folgendes vor:**
 
@@ -319,5 +325,9 @@ Manages custom shipping rate calculations based on customer account tier and ord
       - [Backend-Integrations-Starter-Kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
       - [Checkout-Starterkit](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - Storefront-Entwicklung
-   - [Überblick](https://experienceleague.adobe.com/developer/commerce/storefront/)
+   - [Überblick](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)
    - [Storefront AI-Kenntnisse](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=de)
+
+>[!TIP]
+>
+>Wenden Sie sich an Ihren Solution Account Manager, um eine Migrationsbewertung Ihrer bestehenden Instanz anzufordern.

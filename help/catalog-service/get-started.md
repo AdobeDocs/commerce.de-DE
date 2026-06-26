@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 586
+source-wordcount: 437
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ https://<region>-<environment>.api.commerce.adobe.com/<tenantId>/graphql
 
 - `<region>` ist die Cloud-Region, in der Ihre Instanz bereitgestellt wird.
 - `<environment>` ist der Umgebungstyp, z. B. `sandbox`. Wenn es sich bei der Umgebung um eine Produktionsumgebung handelt, wird dieser Wert weggelassen.
-- `<tenantId>` ist die eindeutige Kennung für die spezifische Instanz Ihres Unternehmens in der Adobe Experience Cloud.
+- `<tenantId>` ist die eindeutige Kennung für die spezifische Instanz Ihres Unternehmens in Adobe Experience Cloud.
 
 Weitere Informationen zur Verwendung der Catalog Service GraphQL-API finden Sie im [Handbuch zu Catalog Service für Adobe Commerce](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/) in der *Dokumentation für Adobe Commerce*.
 
@@ -81,12 +81,8 @@ Informationen zur Installation [[!DNL Catalog Service]  Konfiguration finden Sie
 
 ## Überwachen und Fehlerbehebung beim Datenexport
 
-Commerce Admin bietet Tools zur Überwachung und Fehlerbehebung beim Datenexport aus Commerce in Connected Services:
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-- **[Data Management Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** - Überwachen der Datensynchronisation zwischen dem [!DNL Catalog Service] und Ihrer Adobe Commerce-Instanz. Das Dashboard zeigt den allgemeinen Synchronisierungsstatus an und listet alle synchronisierten Produkte auf.
+Verwenden Sie die [Commerce CLI](../data-export/data-export-cli-commands.md) um Feeds bei Bedarf manuell neu zu synchronisieren. Informationen zu Resynchronisierungsoptionen und zusätzlichen Schritten zur Fehlerbehebung finden Sie unter [Synchronisierung verwalten](../data-export/data-sync-manage.md) im _SaaS-Datenexporthandbuch_.
 
-- **[Seite „Synchronisierungsstatus für Daten-Feeds](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** - Verfolgen Sie den Exportstatus aller Daten-Feeds, um die Konsistenz der Daten sicherzustellen. Auf dieser Seite werden Sie über Probleme informiert, die während des Exportvorgangs auftreten, damit Sie sie schnell beheben können. Der Status „Erfolgreich abgeschlossen“ zeigt an, dass Daten exportiert wurden und nach Abschluss des Datensynchronisierungsprozesses in den verbundenen Commerce-Services verfügbar sein werden.
-
->[!NOTE]
->
->Wenn die Seite Synchronisierungsstatus für Daten-Feeds nicht in der Commerce Admin für Commerce in Cloud- oder lokalen Bereitstellungen verfügbar ist, befolgen Sie die [Installationsanweisungen für Erweiterungen](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension), um sie zu aktivieren.
+{{install-data-sync-feed-status}}

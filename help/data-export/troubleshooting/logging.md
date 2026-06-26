@@ -1,11 +1,15 @@
 ---
 title: Überprüfen von Protokollen und Fehlerbehebung
 description: Erfahren Sie, wie Sie  [!DNL data export]  Fehler mithilfe der Protokolle „data-export“ und „saas-export“ beheben können.
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
 TQID: https://experienceleague.adobe.com/PkV4L0RpfA-jeja0Fd6JCDriE6wwjd25Qou0JhG5o8E
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -14,9 +18,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 1155
+source-wordcount: 1007
 ht-degree: 0%
 
 ---
@@ -46,7 +50,7 @@ Wenn keine erwarteten Daten für einen Adobe Commerce-Service angezeigt werden, 
 
 Jeder Protokolldatensatz weist die folgende Struktur auf.
 
-```
+```text
 [<log record datetime>] report.<log level>:
 {
    "feed": "<feed name>",
@@ -99,7 +103,7 @@ In diesem Beispiel geben die `status` Informationen zum Synchronisierungsvorgang
 
 +++ **Beispiel: Vollständiges Resynchronisierungsprotokoll für den Preis-Feed**
 
-```
+```text
 Price feed full resync:
 
 [2024-03-05T21:00:51.754687+00:00] report.INFO: {"feed":"prices","operation":"full sync","status":"Initialize","elapsed":"383 ms","pid":"14469","caller":"bin\/magento saas:resync --feed=prices"} [] []
@@ -148,22 +152,7 @@ Wenn Sie Fehler sehen, die nicht mit der Konfiguration oder Erweiterungen von Dr
 
 ### Beheben von Katalogsynchronisierungsproblemen {#resolvesync}
 
-Beim Trigger einer erneuten Synchronisierung von Daten kann es bis zu einer Stunde dauern, bis die Daten aktualisiert sind und in Benutzeroberflächenkomponenten wie Live-Suche und Empfehlungseinheiten angezeigt werden. Wenn weiterhin Diskrepanzen zwischen Ihrem Katalog und den Daten in der Commerce-Storefront auftreten oder die Katalogsynchronisierung fehlgeschlagen ist, gehen Sie wie folgt vor:
-
-#### Datendiskrepanz
-
-1. Zeigt die detaillierte Ansicht des betreffenden Produkts in den Suchergebnissen an.
-1. Kopieren Sie die JSON-Ausgabe und überprüfen Sie, ob der Inhalt mit dem übereinstimmt, was Sie im [!DNL Commerce] Katalog haben.
-1. Wenn der Inhalt nicht übereinstimmt, nehmen Sie eine geringfügige Änderung am Produkt in Ihrem Katalog vor, z. B. das Hinzufügen eines Leerzeichens oder eines Punkts.
-1. Warten Sie auf eine erneute Synchronisierung oder auf einen Trigger oder eine manuelle Neusynchronisierung von der CLI oder dem Admin-Dashboard.
-
-#### Synchronisierung läuft nicht
-
-Wenn die Synchronisierung nicht nach einem Zeitplan ausgeführt wird oder nichts synchronisiert wird, lesen Sie diesen [KnowledgeBase](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)Artikel.
-
-#### Synchronisierung fehlgeschlagen
-
-Wenn der Status der Katalogsynchronisierung &quot;**&quot; lautet** senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Informationen zur problembasierten Fehlerbehebung bei Katalogsynchronisierungsproblemen - einschließlich Datendiskrepanzen, nicht ausgeführte Synchronisierung und fehlgeschlagener Synchronisierungsstatus - finden Sie unter [Fehlerbehebungsszenarien](troubleshooting-scenarios.md).
 
 ## Erweiterte Protokollierung
 
@@ -173,7 +162,7 @@ Verwenden Sie Umgebungsvariablen, um Protokolle mit zusätzlichen Daten für Tra
 
 Schließen Sie die Feed-Payload in das SaaS-Exportprotokoll ein, indem Sie die `EXPORTER_EXTENDED_LOG=1` Umgebungsvariable hinzufügen, wenn Sie den Feed neu synchronisieren.
 
-```shell script
+```shell
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 ```
 
@@ -185,7 +174,7 @@ Für die Commerce SaaS-Datenexporterweiterung (`magento/module-data-exporter`) 1
 
 Die Beibehaltung von Payload-Daten in der Indextabelle wird in Produktionsumgebungen nicht empfohlen, kann aber in einer Entwicklungsumgebung nützlich sein. Schließen Sie die Feed-Payload in den Index ein, indem Sie die `PERSIST_EXPORTED_FEED=1` Umgebungsvariable hinzufügen, wenn Sie den Feed neu synchronisieren.
 
-```shell script
+```shell
 PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 ```
 
@@ -195,12 +184,18 @@ Wenn der Neuindizierungsprozess eines bestimmten Feeds unangemessen lange dauert
 
 Führen Sie den Profiler aus, indem Sie beim Ausführen des Befehls „reindex“ die `EXPORTER_PROFILER=1` Umgebungsvariable hinzufügen.
 
-```
+```shell
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
 ```
 
 Profildaten werden im Datenexportprotokoll (`var/log/commerce-data-export.log`) in folgendem Format gespeichert:
 
-```
+```text
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
+
+>[!MORELIKETHIS]
+>
+> - [Fehlerbehebungsszenarien](troubleshooting-scenarios.md) - Beheben von Problemen bei der Katalogsynchronisierung und Datendiskrepanzen.
+> - [Protokollcode-Referenz](log-codes-reference.md) - Suchen Sie nach Export-Protokollcodes.
+> - [Synchronisieren von Feeds mit der Commerce CLI](../data-export-cli-commands.md) — Führen Sie gezielte Feed-Resynchronisierungen aus.

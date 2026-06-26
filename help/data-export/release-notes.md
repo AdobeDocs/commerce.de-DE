@@ -1,12 +1,16 @@
 ---
 title: '[!DNL SaaS Data Export Extension] Versionshinweise'
 description: Die neuesten Versionsinformationen für  [!DNL Data Export Extension]  für Adobe Commerce.
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -18,7 +22,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 2903
 ht-degree: 0%
@@ -72,7 +76,7 @@ _19. Mai 2026_
 
 _5. Mai 2026_
 
-![Beheben](../assets/fix.svg) **Einfachere Fehlerbehebung aus Exportprotokollen** Viele exportbezogene Fehler und Warnungen enthalten jetzt konsistente Protokollcodes. Diese Codes helfen Ihnen, Probleme beim Arbeiten mit Support oder Dokumentation schneller zu verfolgen. Weitere Informationen finden Sie in der Protokollcode-Referenz.
+![Beheben](../assets/fix.svg) **Einfachere Fehlerbehebung aus Exportprotokollen** Viele exportbezogene Fehler und Warnungen enthalten jetzt konsistente Protokollcodes. Diese Codes helfen Ihnen, Probleme beim Arbeiten mit Support oder Dokumentation schneller zu verfolgen. Weitere Informationen finden Sie unter [Protokollcodes-Referenz](troubleshooting/log-codes-reference.md).
 <!--MDEE-1276-->
 
 ![Korrigieren](../assets/fix.svg) **Automatische Neusynchronisierung, wenn sich Attributoptionenbeschriftungen ändern** Ändern von Produktattribut-Optionsbeschriftungen für eine Store-Ansicht (einschließlich Mehrfachauswahlattributen) stellen die betroffenen Produkte jetzt erneut in die Warteschlange für den Export, sodass Live Search, Product Recommendations, Catalog Service und andere verbundene Commerce-Services die aktualisierten Facetten- und Filterbeschriftungen in den Käuferansichten anzeigen. Zuvor konnten SaaS-Kataloge, die nur auf Bezeichnungen bearbeitet wurden, veraltete Formulierungen aufweisen, bis eine umfassendere Produktänderung eine Synchronisierung auslöste.

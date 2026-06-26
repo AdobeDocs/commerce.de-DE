@@ -4,9 +4,12 @@ breadcrumb-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Verwendung von  [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 48171a525ad5e5f4b02da89753df6ea7e7ff9926
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+source-git-commit: f25630f9c6f118e6dd714757ed068f2d2e6e9e15
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: 188
 ht-degree: 4%
 
 ---

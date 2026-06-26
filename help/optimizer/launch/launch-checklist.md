@@ -1,6 +1,7 @@
 ---
 title: Checkliste starten
 description: Erfahren Sie, wie Sie Konfiguration, Storefront, SEO, CDN, Integrationen, Sicherheit, Analysen und Tests für die Produktion  [!DNL Adobe Commerce Optimizer] .
+autotag-review: '2026-06-17T15:08:59.000Z'
 solution: Commerce
 feature: Integration, Storefront, Search, Catalog Management, Personalization
 feature-set: Commerce
@@ -9,9 +10,25 @@ level: Intermediate
 topic: Administration
 recommendations: noCatalog
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 37b8b8a334ca11daacfd3da03b0441e77329e2e1
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: '2194'
+source-wordcount: 880
 ht-degree: 0%
 
 ---
@@ -75,7 +92,7 @@ Führen Sie diese Prüfungen in Ihrem Cloud-Projekt durch.
 ▢ Der Commerce Optimizer-Connector ist [installiert und konfiguriert](../../aco-connector/get-started.md).
 ▢ Der `aco:conf:show` CLI-Befehl bestätigt die Verbindung zur Commerce Optimizer-Produktionsinstanz. Die Organisations-ID, die Client-ID, die Aufnahme-URL und die Commerce Optimizer-URL stimmen mit der Produktion überein.
 ▢ Synchronisierungsumfänge in [Exportkonfiguration](../../aco-connector/get-started.md) entsprechen Ihren Anforderungen.
-▢ [Status der Daten-Feed-](../../aco-connector/get-started.md)) bestätigt den Datenexport aus der Cloud-Instanz.
+▢ [Status der Daten-Feed-](../../aco-connector/data-sync-manage.md)) bestätigt den Datenexport aus der Cloud-Instanz.
 
 ### In Commerce Optimizer
 
@@ -138,9 +155,9 @@ Bestätigen der Erweiterungskonfiguration für die Produktion.
 
 ▢ Der Arbeitsbereich Produktion enthält alle erforderlichen Konfigurationen und Services.
 ▢ Die Produktions-App durchläuft Tests für verschiedene Build-Szenarien.
-▢ Produktbeschränkungen und -grenzen wurden anhand der [Adobe Developer App Builder-Produktbeschreibung und der](https://helpx.adobe.com/de/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}Systemeinstellungen und -beschränkungen von App Builder überprüft und [&#128279;](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
+▢ Produktbeschränkungen und -grenzen wurden anhand der [Adobe Developer App Builder-Produktbeschreibung und der](https://helpx.adobe.com/de/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}Systemeinstellungen und -beschränkungen von App Builder überprüft und &rbrack;(https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
 ▢ Die Produktions-App verwendet App Builder-Produktionsendpunkte.
-▢ benutzerdefinierte *Admin*-Bedienfelderweiterungen werden im Produktionsarbeitsbereich bereitgestellt.
+▢ benutzerdefinierte *Admin*-Bedienfelderweiterungen werden im Produktionsarbeitsbereich bereitgestellt.&lbrack;
 
 ### API-Mesh
 
@@ -158,14 +175,14 @@ Polnische Inhalte, SEO, Leistung, Sicherheit und CDN-Verhalten vor dem Launch.
 
 Bestätigen des Authoring-Workflows und der Storefront-Komponenten
 
-▢ Die Prüfung der Go-Live-Checkliste für &lbrace;1[&#128279;](https://www.aem.live/docs/go-live-checklist) AEM/EDS ist abgeschlossen.
+▢ Die Prüfung der Go-Live-Checkliste für &lbrace;1&rbrack;(https://www.aem.live/docs/go-live-checklist) AEM/EDS ist abgeschlossen.
 ▢ Die Authoring-Quelle ist ein dokumentbasierter oder universeller Editor (und konfiguriert).
 ▢ Inhalte werden mit dem Vorschau- → Veröffentlichungszyklus veröffentlicht.
 ▢ Inhalts- und Design-QA ist in der `.aem.live` Domain abgeschlossen.
 ▢ Ein Favicon ist konfiguriert und wird von der Site korrekt bereitgestellt.
 ▢ „da.live“ und „product visuals“ verwenden [konfigurierte](https://docs.da.live/administrators/guides/permissions) dedizierte Anmeldeinformationen.
 ▢ Dropins (Warenkorb, Checkout, PDP, PLP, Auth, Konto) werden [angepasst](../storefront.md) getestet.
-▢ Storefront-Branding spiegelt CSS-Design-Token, Typografie und Farben wider.
+▢ Storefront-Branding spiegelt CSS-Design-Token, Typografie und Farben wider.&lbrack;
 
 ### SEO und Indizierung
 

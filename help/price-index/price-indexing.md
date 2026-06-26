@@ -1,6 +1,7 @@
 ---
 title: SaaS-Preisindizierung
 description: Verwenden der SaaS-Preisindizierung zur Leistungsverbesserung
+autotag-review: '2026-06-17T15:08:59.000Z'
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: d1bf3879-3e86-4665-a55c-494963c87f90
@@ -12,9 +13,11 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 029d78d5c87bf75ccc26b8af462081f8e08d1176
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: 475
 ht-degree: 0%
 
 ---
@@ -27,7 +30,7 @@ Das folgende Diagramm zeigt den Indizierungsdatenfluss zu SaaS-Services, wenn Co
 
 ![Standarddatenfluss](assets/old_way.png)
 
-Wenn die SaaS-Preisindizierung aktiviert ist, ändert sich der Datenfluss. Die Preisindizierung erfolgt mithilfe des [Commerce SaaS-](../data-export/data-synchronization.md).
+Wenn die SaaS-Preisindizierung aktiviert ist, ändert sich der Datenfluss. Die Preisindizierung erfolgt mithilfe des [Commerce SaaS-](../data-export/sync-overview.md).
 
 ![SaaS-Preisindizierungs-Datenfluss](assets/new_way.png)
 
@@ -68,7 +71,17 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-### Preise für benutzerdefinierte Produktarten
+## Fortschritt der Synchronisierung überwachen
+
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
+
+Verwenden Sie die [Commerce CLI](../data-export/data-export-cli-commands.md) um Feeds bei Bedarf manuell neu zu synchronisieren. Informationen zu Resynchronisierungsoptionen und zusätzlichen Schritten zur Fehlerbehebung finden Sie unter [Synchronisierung verwalten](../data-export/data-sync-manage.md) im _SaaS-Datenexporthandbuch_.
+
+>[!NOTE]
+>
+>Wenn die Seite Synchronisierungsstatus für Daten-Feeds nicht in der Commerce Admin für Commerce in Cloud- oder lokalen Bereitstellungen verfügbar ist, befolgen Sie die [Installationsanweisungen für Erweiterungen](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension), um sie zu aktivieren.
+
+## Preise für benutzerdefinierte Produktarten
 
 Preisberechnungen werden für benutzerdefinierte Produktarten wie Basispreis, Sonderpreis, Gruppenpreis, Katalogregelpreis usw. unterstützt.
 
@@ -99,7 +112,7 @@ Wenn Sie über einen benutzerdefinierten Produkttyp verfügen, der eine bestimmt
        */
        public function afterGet(ProductPrice $subject, array $result, array $values) : array
        {
-           // Override the output $result with your data for the corresponding products (see original method for details) 
+           // Override the output $result with your data for the corresponding products (see original method for details)
            return $result;
        }
    }
