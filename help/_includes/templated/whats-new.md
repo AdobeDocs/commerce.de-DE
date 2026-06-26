@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7a4031966113a9131b85a7d0bfc4a3add606d2f7
+source-git-commit: b5e8f023260bd5bfffb76084c175a01cd6a61ff3
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 1%
+source-wordcount: '1783'
+ht-degree: 0%
 
 ---
 # Neue Vorlage
@@ -10,6 +10,36 @@ ht-degree: 1%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;23. Juni 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Aktualisierte Anleitung zur Überprüfung der Katalogdatensynchronisierung in der Dokumentation zum Commerce-Service. Service-Installations- und Konfigurationsthemen verwenden jetzt einen konsistenten zweistufigen Workflow: Bestätigen des Exports auf der Seite <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">Status der Daten-Feed-Synchronisierung</a> und Bestätigen der Bereitstellung auf dem <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">Data Management Dashboard</a> - mit aktualisierten Anweisungen in <a href="https://experienceleague.adobe.com/de/docs/commerce/catalog-service/get-started#monitor-and-troubleshoot-data-export">Catalog Service Erste Schritte</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce/live-search/install#monitor-sync-progress">Live Search-Installation</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce/product-recommendations/getting-started/install-configure#monitor-and-troubleshoot-data-synchronization">Product Recommendations-Installation</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/data-synchronization/data-sync-manage#verify-that-the-data-sync-is-working">Synchronisierung verwalten</a> im <em>SaaS-Datenexporthandbuch</em>.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/82bdfd342d2d745721ed2b35f2dbfd8fa394ab5a">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Es wurde eine neue Schemareferenz für den <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/reference/feed-table-reference">Adobe Commerce Optimizer-Connector-Feed</a> hinzugefügt und die <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/data-synchronization/sync-overview">SaaS-Datenexportsynchronisierung</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/data-synchronization/data-sync-manage">manuelle Synchronisierungsverwaltung</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/reference/data-export-cli-commands">Commerce CLI-</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/reference/feed-table-reference">Feed-Tabellenschema</a> aktualisiert.</p>
+</td>
+      <td>
+        Größere Aktualisierung, neues Thema
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/601d02435f388096d59ce7f8e2a9e3e7c8bec65b">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;17. Juni 2026
 
@@ -23,7 +53,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die Dokumentation zur Verwaltung der Synchronisierung von Katalogdaten zwischen Adobe Commerce und verbundenen Commerce-Services wurde aktualisiert.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/data-sync-manage">Anzeigen und Verwalten des Synchronisierungsprozesses</a> Thema zum <em>SaaS-Datenexporthandbuch</em> zur Überwachung des Exportstatus, zur Bestätigung der Datenbereitstellung und zur manuellen Neusynchronisierung von Feeds für Commerce-Services und Adobe Commerce Optimizer-Integrationen.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/troubleshooting-scenarios">Fehlerbehebungsszenarien</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/reference/manage-extension">Feed-Tabellenschemareferenz</a> und andere Informationen zur Fehlerbehebung und Referenz zum <em>SaaS-Datenexporthandbuch</em> <br />- Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/get-started">Erste Schritte mit dem Adobe Commerce Optimizer-Connector</a> und <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/data-sync-manage">Synchronisierung mit Commerce Optimizer verwalten</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/reference/connector-reference"></a> </em> Connector-Module und Feed-Endpunkte</a> und Anweisungen zum Schätzen der Datenmenge und der Synchronisierungszeit mit dem <em>Adobe Commerce Optimizer Connector-Handbuch<a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/troubleshooting/troubleshooting"></p>
+      <td><p>Die Dokumentation zur Verwaltung der Synchronisierung von Katalogdaten zwischen Adobe Commerce und verbundenen Commerce-Services wurde aktualisiert.<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/data-synchronization/data-sync-manage">Anzeigen und Verwalten des Synchronisierungsprozesses</a> Thema zum <em>SaaS-Datenexporthandbuch</em> zur Überwachung des Exportstatus, zur Bestätigung der Datenbereitstellung und zur manuellen Neusynchronisierung von Feeds für Commerce-Services und Adobe Commerce Optimizer-Integrationen.<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/troubleshooting/troubleshooting-scenarios">Fehlerbehebungsszenarien</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/reference/manage-extension">Feed-Tabellenschemareferenz</a> und andere Informationen zur Fehlerbehebung und Referenz zum <em>SaaS-Datenexporthandbuch</em> <br />- Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/get-started">Erste Schritte mit dem Adobe Commerce Optimizer-Connector</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/data-sync-manage">Synchronisierung mit Commerce Optimizer verwalten</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/reference/connector-reference"></a> </em> Connector-Module und Feed-Endpunkte</a> und Anweisungen zum Schätzen der Datenmenge und der Synchronisierungszeit mit dem <em>Adobe Commerce Optimizer Connector-Handbuch<a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/troubleshooting/troubleshooting"></p>
 </td>
       <td>
         Größere Aktualisierung, neues Thema
@@ -97,7 +127,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Dokumentierte Priorisierung von Such-Matches (exakte/Beinahe-Phrase, gleiches Feld, feldübergreifende Phrase) und Ranking-Zielkonflikte in <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching">Suchabgleich und -ranking (Live-Suche)</a> und <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/search-relevance-matching">Suchabgleich und -ranking (Adobe Commerce Optimizer)</a> mit Links aus den Themen Übersicht, Indizierung, Best Practices und Suchleistung.</p>
+      <td><p>Dokumentierte Priorisierung von Such-Matches (exakte/Beinahe-Phrase, gleiches Feld, feldübergreifende Phrase) und Ranking-Zielkonflikte in <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching">Suchabgleich und -ranking (Live-Suche)</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/manage-results/search-relevance-matching">Suchabgleich und -ranking (Adobe Commerce Optimizer)</a> mit Links aus den Themen Übersicht, Indizierung, Best Practices und Suchleistung.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -127,7 +157,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Das Handbuch zur Adobe Commerce Optimizer Connector-Integration wurde um neue technische und operative Themen erweitert: <br />- <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/connector-sync-pipeline">Connector-Sync-Pipeline</a> - Cron-Aufträge, Initialisierung, Feed-Übermittlung und Fehlerbehandlung<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/headless-storefront">Headless-Storefront-Integration</a> - Abfrage- und Bundle-Produktcodierung von GraphQL <code>commerceOptimizer</code><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/troubleshooting/troubleshooting">Fehlerbehebung</a> - Probleme mit der Berechtigung, Synchronisierung und dem Umfang der Konfiguration<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/reference/connector-reference">Connector-Referenz</a> - Module, Feed-Endpunkte, Batch-Beschränkungen und Konfigurationspfade<br /><a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/reference/field-mapping"> Feldzuordnungen</a> - Commerce-to-Optimizer für alle Feeds</p>
+      <td><p>Das Handbuch zur Adobe Commerce Optimizer Connector-Integration wurde um neue technische und operative Themen erweitert: <br />- <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/connector-sync-pipeline">Connector-Sync-Pipeline</a> - Cron-Aufträge, Initialisierung, Feed-Übermittlung und Fehlerbehandlung<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/headless-storefront">Headless-Storefront-Integration</a> - Abfrage- und Bundle-Produktcodierung von GraphQL <code>commerceOptimizer</code><br />- <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/troubleshooting/troubleshooting">Fehlerbehebung</a> - Probleme mit der Berechtigung, Synchronisierung und dem Umfang der Konfiguration<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/reference/connector-reference">Connector-Referenz</a> - Module, Feed-Endpunkte, Batch-Beschränkungen und Konfigurationspfade<br /><a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/reference/field-mapping"> Feldzuordnungen</a> - Commerce-to-Optimizer für alle Feeds</p>
 </td>
       <td>
         Größere Aktualisierung, neues Thema
@@ -189,7 +219,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde eine neue Referenzseite hinzugefügt, auf der detailliertere Informationen zu Adobe Commerce Optimizer <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-sources">Katalogquellen</a> und deren Erstellung bereitgestellt werden.</p>
+      <td><p>Es wurde eine neue Referenzseite hinzugefügt, auf der detailliertere Informationen zu Adobe Commerce Optimizer <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-sources">Katalogquellen</a> und deren Erstellung bereitgestellt werden.</p>
 </td>
       <td>
         Feedback, neues Thema, technisches
@@ -229,7 +259,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8ec59cfc8c9d4d1e804adefe7f88806843e3caa3">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Es wurde <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/feed-lock-mechanism">Feed-Sperrmechanismus für SaaS-Datenexport</a> hinzugefügt, um zu erklären, wie Feed-Sperren gleichzeitige Synchronisierungskonflikte verhindern und wie normale Überspringungsmeldungen interpretiert werden, die im Commerce-Datenexportprotokoll (<code>commerce-data-export.log</code>) enthalten sind.</p>
+      <td><p>Es wurde <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/data-synchronization/feed-lock-mechanism">Feed-Sperrmechanismus für SaaS-Datenexport</a> hinzugefügt, um zu erklären, wie Feed-Sperren gleichzeitige Synchronisierungskonflikte verhindern und wie normale Überspringungsmeldungen interpretiert werden, die im Commerce-Datenexportprotokoll (<code>commerce-data-export.log</code>) enthalten sind.</p>
 </td>
       <td>
         Neues Thema
@@ -385,66 +415,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Feedback, große Aktualisierung
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fc4ac765d4bcbb8b2a0217f33b6f8a4b353e5b33">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;27. April 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurde eine <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/overview">Observability</a> für Adobe Commerce as a Cloud Service hinzugefügt.</p>
-</td>
-      <td>
-        Feedback, neues Thema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf83f213d1774845c4c99f3b154e9fb3220c3cd1">verpflichten</a></td>
-    </tr>
-    <tr>
-      <td><p>Der Abschnitt <a href="https://experienceleague.adobe.com/de/docs/commerce/app-management/manage-app/manage-app">Verwalten Ihrer App</a> wurde aktualisiert. Darin wurde beschrieben, wie Sie Programme in den Filtern „Admin“ (Suche, Status und Erweiterbarkeitsmuster) und „Abrufen des App-Pfads zu Adobe Exchange" finden, einschließlich Links aus der Übersicht über <a href="https://experienceleague.adobe.com/de/docs/commerce/app-management/overview">App-</a>" und <a href="https://experienceleague.adobe.com/de/docs/commerce/app-management/install">Installieren und Zugreifen auf die App-Verwaltung</a>.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/780cef7af3574cd846fd7ee82d7814f2ebe9d6cc">verpflichten</a></td>
-    </tr>
-    <tr>
-      <td><p>Produktions- <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/41035e75111d370e5dc40c17607337ae75f11fa0">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;24. April 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Sandbox <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/eb10bd0ff636f70360e1ca35e51b6643ad1f70d4">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
