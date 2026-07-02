@@ -4,18 +4,13 @@ description: Die neuesten Versionsinformationen für  [!DNL Catalog Service]  f�
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
 TQID: https://experienceleague.adobe.com/-yxW4sTuk7LPjGy5YsQ65phtkBLiByg8SmBaQPHMevM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: c87bcff49f3c17379331e18fb9a0e890a5b9717c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: ff5d3ee7f421c8fee9a40a71ea1de366fd5e6d47
 workflow-type: tm+mt
-source-wordcount: 2682
+source-wordcount: 2946
 ht-degree: 0%
 
 ---
@@ -29,7 +24,7 @@ In diesen Versionshinweisen werden die neuesten Aktualisierungen des Commerce Ca
    - Verbesserungen des Catalog Service-API-Schemas für einen verbesserten Datenabruf
    - Verbesserungen der Sicherheit, Leistung und Zuverlässigkeit für die Catalog Service-API und die zugrunde liegende Infrastruktur.
 
-  Weitere [&#x200B; zu diesen APIs finden &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/) in der Commerce Developer-Dokumentation unter „Schema für Storefront-Services“.
+  Weitere [ zu diesen APIs finden ](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/) in der Commerce Developer-Dokumentation unter „Schema für Storefront-Services“.
 
 - **[Catalog Service Metapaket-Versionen](#catalog-service-metapackage)**
 
@@ -53,19 +48,25 @@ Unterstützung wird für die neueste Version bereitgestellt. Versionshinweise f�
 
 ## Storefront Catalog Service
 
+## Juni 2026
+
+**Veröffentlichungsdatum:**. Juli 2026
+
+![Neu](../assets/new.svg) **Neues `canEditQuantity`** - `canEditQuantity` zu `ProductViewOptionValueProduct` in Catalog Service GraphQL hinzugefügt. Sie stellt die optionale Mengeneinstellung **Benutzerdefiniert** für die Bundle-Auswahl aus der Commerce Admin bereit, sodass Storefront-Kunden bestimmen können, ob die Menge einer Bundle-Auswahl bearbeitbar ist.
+
 ### Mai 2026
 
 **Veröffentlichungsdatum:**. Mai 2026
 <!-- v1.55 -->
 
-![Neu](../assets/new.svg) Erzwungenes Limit von maximal 100 SKUs pro Anfrage für Adobe Commerce- und Adobe Commerce as a Cloud Service-Clients gemäß [dokumentierten Limits und Begrenzungen](https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits).
-<!--DATA-7163-->
+![Neu](../assets/new.svg) Erzwungenes Limit von maximal 100 SKUs pro Anfrage für Adobe Commerce- und Adobe Commerce as a Cloud Service-Clients gemäß [dokumentierten Limits und Begrenzungen](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
+
 
 **Veröffentlichungsdatum:**. Mai 2026
-<!--v1.54-->
+
 
 ![Neu](../assets/new.svg) **Kategoriesortierreihenfolge in GraphQL** - Der `CategoryView` GraphQL-Typ enthält jetzt ein Positionsfeld, sodass Storefronts Kategorien in der Reihenfolge anzeigen können, die Händler in der Kataloghierarchie konfigurieren.
-<!--DATA-7166-->
+
 
 **Veröffentlichungsdatum**: 4. Mai 2026
 <!-- v1.53 -->
@@ -75,13 +76,13 @@ Unterstützung wird für die neueste Version bereitgestellt. Versionshinweise f�
 ### April 2026
 
 **Veröffentlichungsdatum:**. April 2026
-<!--v1.52-->
+
 
 ![Neu](../assets/new.svg) Erzwungenes Limit von maximal 100 SKUs pro Anfrage für Adobe Commerce Optimizer und Adobe Commerce as a Cloud Service
-Clients gemäß [dokumentierte Beschränkungen und &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits)<!--DATA-7156-->
+Clients gemäß [dokumentierte Beschränkungen und ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)<!--DATA-7156-->
 
 **Veröffentlichungsdatum:**. April 2026
-<!--v1.51-->
+
 
 ![Neu](../assets/new.svg) Es wurde eine neue `searchCategory` GraphQL-Abfrage hinzugefügt, mit der Kunden Kategorien anhand des Namens mit paginierten Ergebnissen suchen können. Die Abfrage akzeptiert eine erforderliche `searchTerm` (mindestens 3 Zeichen) und optionale `family`-, `pageSize`- und `currentPage`. Zu den Ergebnissen gehören der Abgleich von `CategoryTreeView` mit vollständigen Kategoriemetadaten, ein `totalCount` und `pageInfo` für die Paginierung. <!--COMOPT-1819-->
 
@@ -90,10 +91,10 @@ Diese Abfrage ist nur für Kunden verfügbar, die Adobe Commerce Optimizer Merch
 ### März 2026
 
 **Veröffentlichungsdatum**: 24. März 2026
-<!--v1.49-->
+
 
 ![Neu](../assets/new.svg) Es wurde Unterstützung für die Berechnung und Rückgabe der Preisspanne für dynamische Pakete hinzugefügt.
-<!--DATA-7115-->
+
 
 ### Dezember 2025
 
@@ -101,7 +102,7 @@ Diese Abfrage ist nur für Kunden verfügbar, die Adobe Commerce Optimizer Merch
 <!-- v1.46 -->
 
 ![Fix](../assets/fix.svg) Verbesserungen auf Systemebene und Infrastrukturverbesserungen zur Verbesserung von Leistung und Stabilität.
-<!--DATA-6852, DATA-6864-->
+
 
 ### November 2025
 
@@ -262,7 +263,7 @@ Gilt für:
 **Veröffentlichungsdatum:**. Juni 2025
 <!-- v1.37 -->
 
-![Neu](../assets/new.svg) **Hierarchische Preisbuchkonfiguration** - Präzise Preisbereiche für über- und untergeordnete Preisbücher. Berechnungen berücksichtigen Hierarchie und übernommene Regeln; reduziert Preisfehler, wenn mehrere Preisbücher verknüpft sind. Nur Adobe Commerce Optimizer. Siehe [Preisbücher](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/pricebooks).
+![Neu](../assets/new.svg) **Hierarchische Preisbuchkonfiguration** - Präzise Preisbereiche für über- und untergeordnete Preisbücher. Berechnungen berücksichtigen Hierarchie und übernommene Regeln; reduziert Preisfehler, wenn mehrere Preisbücher verknüpft sind. Nur Adobe Commerce Optimizer. Siehe [Preisbücher](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
 
 ![Neu](../assets/new.svg) **Schlüssel ohne Unterscheidung von Groß- und Kleinschreibung** - Bei Schlüsselsuchen in Abfragen wird jetzt nicht mehr zwischen Groß- und Kleinschreibung unterschieden, wodurch Fehler durch Schlüsselschreibungen reduziert werden. <!--DATA-6494, DCAT-2495-->
 
@@ -310,7 +311,7 @@ Gilt für:
 ![Beheben](../assets/fix.svg) Attribute ohne Rollen werden für den zusammenstellbaren Katalog nicht mehr standardmäßig indiziert. Dies verbessert die Indizierungszeit und reduziert den Speicher. Altes Verhalten kann über ein Feature Flag wieder aktiviert werden.
 
 ![Beheben](../assets/fix.svg) Verbesserungen auf Systemebene und in der Infrastruktur, um Sicherheit, Leistung und Stabilität zu verbessern.
-<!--DATA-6348, DATA-6440, DATA-6446, DATA-6641-->
+
 
 ### Februar 2025
 
@@ -349,7 +350,7 @@ Hauptversion: [Zusammensetzbares Katalogdatenmodell](https://developer.adobe.com
 <!-- v1.28 -->
 
 ![Beheben](../assets/fix.svg) Verbesserungen auf Systemebene und in der Infrastruktur, um Sicherheit, Leistung und Stabilität zu verbessern.
-<!--DATA-6180, DATA-6230, DATA-6254, DATA-6257-->
+
 
 ### Oktober 2024
 
@@ -359,7 +360,7 @@ Hauptversion: [Zusammensetzbares Katalogdatenmodell](https://developer.adobe.com
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Neu](../assets/new.svg) Das GraphQL-Schema enthält jetzt `lastModifiedAt` in Produktinformationen für genaue Sitemaps und die Neuindizierung von Suchmaschinen (z. B. Google).
-<!--DATA-6209-->
+
 
 ### September 2024
 
@@ -367,7 +368,7 @@ Hauptversion: [Zusammensetzbares Katalogdatenmodell](https://developer.adobe.com
 <!-- v1.27 -->
 
 ![Beheben](../assets/fix.svg) Verbesserungen auf Systemebene und in der Infrastruktur, um Sicherheit, Leistung und Stabilität zu verbessern.
-<!--DATA-6243-->
+
 
 ### August 2024
 
@@ -376,8 +377,7 @@ Hauptversion: [Zusammensetzbares Katalogdatenmodell](https://developer.adobe.com
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Fix](../assets/fix.svg) Produktinformationen können jetzt ohne Produktüberschreibungsdaten (Preise) abgerufen werden. Zuvor haben diese Abfragen Folgendes zurückgegeben: `The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.`
-<!--DATA-6121-->
+![Fix](../assets/fix.svg) Produktinformationen können jetzt ohne Produktüberschreibungsdaten (Preise) abgerufen werden. Zuvor haben diese Abfragen Folgendes zurückgegeben: 
 
 **Veröffentlichungsdatum:**. August 2024
 <!-- v1.22 -->
@@ -385,7 +385,6 @@ Hauptversion: [Zusammensetzbares Katalogdatenmodell](https://developer.adobe.com
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Neu](../assets/new.svg) Unterstützung zum Abrufen aller Varianten nach Produkt-SKU hinzugefügt. Siehe die [Catalog Service API-Referenz](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/).
-<!--DATA-6067-->
 
 ### Mai 2024
 
@@ -399,8 +398,7 @@ Hauptversion: [Zusammensetzbares Katalogdatenmodell](https://developer.adobe.com
 
 <!--DATA-5033-->
 
-![Fix](../assets/fix.svg) Es wurde Unterstützung für Produktpreise mit bis zu 16 Stellen und 4 Dezimalstellen hinzugefügt. Synchronisieren Sie über das [Data Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) oder [CLI](../data-export/data-export-cli-commands.md) neu, um Aktualisierungen anzuwenden.
-<!--DATA-5033-->
+![Fix](../assets/fix.svg) Es wurde Unterstützung für Produktpreise mit bis zu 16 Stellen und 4 Dezimalstellen hinzugefügt. Synchronisieren Sie über das [Data Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) oder [CLI](../data-export/data-export-cli-commands.md) neu, um Aktualisierungen anzuwenden.
 
 #### Bekannte Einschränkungen
 
@@ -436,15 +434,14 @@ Weitere Informationen und Beispiele finden Sie unter [Katalog-Service und API-Me
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=de) ist jetzt für Datenströme verfügbar (Produktempfehlungen, Live-Suche, Katalog-Service). Erfordert `catalog-service` Metapaket v3.1.0+.
+![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) ist jetzt für Datenströme verfügbar (Produktempfehlungen, Live-Suche, Katalog-Service). Erfordert `catalog-service` Metapaket v3.1.0+.
 
 **Veröffentlichungsdatum**: 13. Februar 2024
 <!-- v1.16 -->
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) Produktvideos werden jetzt von der Catalog Service-API unterstützt.
-![Beheben](../assets/fix.svg) Nicht vorrätige Optionen werden jetzt im PDP-Widget angezeigt.
+![Neu](../assets/new.svg) Produktvideos werden jetzt von der Catalog Service-API unterstützt.![Beheben](../assets/fix.svg) Nicht vorrätige Optionen werden jetzt im PDP-Widget angezeigt.
 
 #### Bekannte Einschränkungen
 
@@ -466,9 +463,7 @@ Verwenden Sie API Mesh und die GraphQL-Kern-API für:
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) Der Katalog-Service unterstützt das `inStock`-Flag für Produktvarianten.
-![Neu](../assets/new.svg) Die Felder `urlKey` und `externalId` wurden zum GraphQL-Schema hinzugefügt.
-![Neu](../assets/new.svg) Herunterladbare Produkte und Geschenkkarten werden jetzt unterstützt.
+![Neu](../assets/new.svg) Der Katalog-Service unterstützt das `inStock`-Flag für Produktvarianten.![Neu](../assets/new.svg) Die Felder `urlKey` und `externalId` wurden zum GraphQL-Schema hinzugefügt.![Neu](../assets/new.svg) Herunterladbare Produkte und Geschenkkarten werden jetzt unterstützt.
 
 ### September 2023
 
@@ -477,8 +472,7 @@ Verwenden Sie API Mesh und die GraphQL-Kern-API für:
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) Der Katalog-Service verwendet jetzt [SaaS-Preisindizierung](../price-index/price-indexing.md).
-![Behebung](../assets/fix.svg) Diese Version enthält Fehlerbehebungen und Verbesserungen auf der Service-Seite.
+![Neu](../assets/new.svg) Der Katalog-Service verwendet jetzt [SaaS-Preisindizierung](../price-index/price-indexing.md).![Behebung](../assets/fix.svg) Diese Version enthält Fehlerbehebungen und Verbesserungen auf der Service-Seite.
 
 ### Juli 2023
 
@@ -505,8 +499,7 @@ Verwenden Sie API Mesh und die GraphQL-Kern-API für:
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) Der Katalog-Service bereinigt jetzt gelöschte Produktvarianten.
-![Behebung](../assets/fix.svg) Infrastrukturskalierbarkeit und Leistungsverbesserungen.
+![Neu](../assets/new.svg) Der Katalog-Service bereinigt jetzt gelöschte Produktvarianten.![Behebung](../assets/fix.svg) Infrastrukturskalierbarkeit und Leistungsverbesserungen.
 
 ### März 2023
 
@@ -515,16 +508,14 @@ Verwenden Sie API Mesh und die GraphQL-Kern-API für:
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) Zur [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) Abfrage wurden Farbfelder hinzugefügt.
-![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt, `entityId` mithilfe von [API Mesh) &#x200B;](mesh.md).
+![Neu](../assets/new.svg) Zur [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) Abfrage wurden Farbfelder hinzugefügt.![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt, `entityId` mithilfe von [API Mesh) ](mesh.md).
 
 **Veröffentlichungsdatum:**. März 2023
 <!-- v1.5 -->
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) Funktion [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL hinzugefügt.
-![Behebung](../assets/fix.svg) Verbesserte Leistung und API-Skalierbarkeit.
+![Neu](../assets/new.svg) Funktion [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL hinzugefügt.![Behebung](../assets/fix.svg) Verbesserte Leistung und API-Skalierbarkeit.
 
 ### Februar 2023
 
@@ -533,8 +524,7 @@ Verwenden Sie API Mesh und die GraphQL-Kern-API für:
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
-![Neu](../assets/new.svg) Veröffentlichtes Katalog-Service-Metapaket zur Vereinfachung der Installationsschritte.
-![Fix](../assets/fix.svg) API-Skalierbarkeit und Leistungsverbesserungen.
+![Neu](../assets/new.svg) Veröffentlichtes Katalog-Service-Metapaket zur Vereinfachung der Installationsschritte.![Fix](../assets/fix.svg) API-Skalierbarkeit und Leistungsverbesserungen.
 
 ### Januar 2023
 
@@ -543,10 +533,7 @@ Verwenden Sie API Mesh und die GraphQL-Kern-API für:
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
-![Neu](../assets/new.svg) Das Onboarding wurde vereinfacht und verbessert.
-![Neu](../assets/new.svg) Neue Kunden-Sandbox-Endpunkte sind für Vorproduktionstests verfügbar.
-![Neu](../assets/new.svg) Unterstützung für virtuelle Produkte hinzugefügt.
-![Fix](../assets/fix.svg) API-Skalierbarkeit und Leistungsverbesserungen.
+![Neu](../assets/new.svg) Das Onboarding wurde vereinfacht und verbessert.![Neu](../assets/new.svg) Neue Kunden-Sandbox-Endpunkte sind für Vorproduktionstests verfügbar.![Neu](../assets/new.svg) Unterstützung für virtuelle Produkte hinzugefügt.![Fix](../assets/fix.svg) API-Skalierbarkeit und Leistungsverbesserungen.
 
 ### November 2022
 
@@ -555,8 +542,7 @@ Verwenden Sie API Mesh und die GraphQL-Kern-API für:
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
-![Neu](../assets/new.svg) Der Katalog-Service unterstützt jetzt das Adobe [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
-![Fix](../assets/fix.svg) Verbesserte API-Skalierbarkeit und Gesamtleistung.
+![Neu](../assets/new.svg) Der Katalog-Service unterstützt jetzt das Adobe [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).![Fix](../assets/fix.svg) Verbesserte API-Skalierbarkeit und Gesamtleistung.
 
 ### Oktober 2022
 
@@ -565,9 +551,7 @@ Verwenden Sie API Mesh und die GraphQL-Kern-API für:
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
-![Neu](../assets/new.svg) Unterstützung für gebündelte und gruppierte Produkte.
-![Neu](../assets/new.svg) Es wurden Überschreibungen der B2B-Sichtbarkeit hinzugefügt. Produkte können jetzt durchsucht und für bestimmte Kundengruppen zum Warenkorb hinzugefügt werden.
-![Fix](../assets/fix.svg) Service ist jetzt stabiler und hat die Leistung verbessert.
+![Neu](../assets/new.svg) Unterstützung für gebündelte und gruppierte Produkte.![Neu](../assets/new.svg) Es wurden Überschreibungen der B2B-Sichtbarkeit hinzugefügt. Produkte können jetzt durchsucht und für bestimmte Kundengruppen zum Warenkorb hinzugefügt werden.![Fix](../assets/fix.svg) Service ist jetzt stabiler und hat die Leistung verbessert.
 
 ### September 2022
 
@@ -576,10 +560,7 @@ Verwenden Sie API Mesh und die GraphQL-Kern-API für:
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
-![Neu](../assets/new.svg) Variantenbilder: Produktbilder werden basierend auf ausgewählten Optionen zurückgegeben.
-![Neu](../assets/new.svg) Preisrollen: Nur Mitglieder bestimmter Kundengruppen können Produktpreise sehen.
-![Behebung](../assets/fix.svg) Verbesserte Stabilität und Leistung des Service.
-![Neu](../assets/new.svg) Aktualisierungen werden empfangen, wenn Produkte aus dem Katalog gelöscht werden.
+![Neu](../assets/new.svg) Variantenbilder: Produktbilder werden basierend auf ausgewählten Optionen zurückgegeben.![Neu](../assets/new.svg) Preisrollen: Nur Mitglieder bestimmter Kundengruppen können Produktpreise sehen.![Behebung](../assets/fix.svg) Verbesserte Stabilität und Leistung des Service.![Neu](../assets/new.svg) Aktualisierungen werden empfangen, wenn Produkte aus dem Katalog gelöscht werden.
 
 ### August 2022
 
@@ -614,7 +595,7 @@ Aktualisierungen des Katalog-Service PHP-Metapakets (`magento/catalog-service`).
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) **Unterstützung für die Überwachung des Synchronisierungsstatus von Daten-Feeds** - Die Abhängigkeiten des Metapakets für den Katalog-Service wurden aktualisiert und enthalten nun die Data Exporter Status-Erweiterung (`magento/module-data-exporter-status`). Dies ermöglicht [Überwachung des Status der Daten-Feed](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)Synchronisierung durch den Commerce-Administrator, ohne dass zusätzliche Installations- oder Konfigurationsschritte erforderlich sind
+![Neu](../assets/new.svg) **Unterstützung für die Überwachung des Synchronisierungsstatus von Daten-Feeds** - Die Abhängigkeiten des Metapakets für den Katalog-Service wurden aktualisiert und enthalten nun die Data Exporter Status-Erweiterung (`magento/module-data-exporter-status`). Dies ermöglicht [Überwachung des Status der Daten-Feed](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)Synchronisierung durch den Commerce-Administrator, ohne dass zusätzliche Installations- oder Konfigurationsschritte erforderlich sind
 
 ![Neu](../assets/new.svg) Abhängigkeiten wurden aktualisiert, um die Kompatibilität zwischen dem Katalog-Service und Ihrem Commerce-Stack zu gewährleisten.
 
@@ -655,7 +636,7 @@ Das Installationsprogramm wird mit der Catalog Service-Erweiterung bereitgestell
 
 - Für **Kunden von Adobe Commerce** as a Cloud Service) wird die neueste Installationsprogrammversion in Ihrer Umgebung installiert.
 
-- Halten Sie bei **Adobe Commerce in der Cloud** Infrastruktur oder **On-Premise** das Installationsprogramm mit dem Metapaket [Katalog-Service) &#x200B;](#catalog-service-metapackage).
+- Halten Sie bei **Adobe Commerce in der Cloud** Infrastruktur oder **On-Premise** das Installationsprogramm mit dem Metapaket [Katalog-Service) ](#catalog-service-metapackage).
 
 Jedes Mal, wenn Sie Composer zum Aktualisieren des `magento/catalog-service` verwenden, wird das Installationspaket automatisch auf die neueste Version aktualisiert. Sie können Composer auch verwenden, um `magento/catalog-service-installer` separat zu aktualisieren, wenn diese Versionshinweise eine Änderung beschreiben, die Sie benötigen, z. B. Unterstützung für eine neue PHP-Version. Auf diese Weise bleiben Ihre Installations-Tools mit der von Ihnen ausgeführten Version des Katalog-Service kompatibel.
 
