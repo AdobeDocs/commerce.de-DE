@@ -6,9 +6,9 @@ role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
-source-git-commit: 3624bb934c25e04ae2f08b0d78ed4602df89d3eb
+source-git-commit: 08581e17d291b1900ff8826a36edeaf97a9c0d3c
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '155'
 ht-degree: 12%
 
 ---
@@ -30,7 +30,6 @@ ht-degree: 12%
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=de)
    - [[!DNL App Management]](https://experienceleague.adobe.com/de/docs/commerce/app-management/overview)
    - [Services-Connector](/help/landing/saas.md)
-   - [Integrieren  [!DNL Adobe Commerce] mit [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html?lang=de)
 - Daten-Tools {#data-services}
    - [SaaS-Datenexport](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=de)
    - [SaaS-Preisindizierung](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=de)
