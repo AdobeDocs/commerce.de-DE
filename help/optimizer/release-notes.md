@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: f1c7779558406641972e9c690d0f508d46da3e0c
+source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
 workflow-type: tm+mt
-source-wordcount: 1328
+source-wordcount: 1404
 ht-degree: 0%
 
 ---
@@ -41,7 +41,6 @@ _24. Juni 2026_
 <!-- v1.3 -->
 
 ![Neu](../assets/new.svg) **Neues `canEditQuantity`** - `canEditQuantity` zu `ProductViewOptionValueProduct` in Catalog Service GraphQL hinzugefügt. Sie stellt die optionale Mengeneinstellung **Benutzerdefiniert** für die Bundle-Auswahl aus der Commerce Admin bereit, sodass Storefront-Kunden bestimmen können, ob die Menge einer Bundle-Auswahl bearbeitbar ist.
-<!--COMOPT-2050-->
 
 ### Semantische Suche
 
@@ -70,13 +69,10 @@ _28. Mai 2026_
 <!-- v1.2 -->
 
 ![Korrigieren](../assets/fix.svg) **Vollständige Navigationsbäume** - Getaggte untergeordnete Kategorien werden jetzt korrekt in familiengefilterten `navigation` eingefügt, wenn ein nicht getaggter Zwischenknoten im Pfad vorhanden ist. Diese Fehlerbehebung stellt sicher, dass Käufern alle relevanten Kategorien in der Navigation angezeigt werden, sodass sie leichter durchsuchen und Artikel finden können.
-<!--DATA-7183-->
 
 ![Beheben](../assets/fix.svg) **Leere Slug-Verarbeitung in `categoryTree`-**: Es wurde ein Problem behoben, bei dem die [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)-Abfrage einen internen Server-Fehler zurückgab, wenn das `slugs`-Argument eine leere Zeichenfolge enthielt. Leere Slug-Werte werden jetzt ignoriert, sodass Storefronts und Integrationen Kategoriedaten ohne fehlgeschlagene Anfragen auflösen können.
-<!--DATA-7184-->
 
 ![Beheben](../assets/fix.svg) **`searchCategory`Anfragen geben Ergebnisse zurück, bei denen nicht zwischen Groß- und Kleinschreibung unterschieden wird** - Die `searchCategory` Abfrage sortiert Suchergebnisse jetzt alphabetisch ohne Unterscheidung zwischen Groß- und Kleinschreibung, was eine konsistente und vorhersehbare Reihenfolge gewährleistet. Kategorien mit kürzeren Präfixen werden zuerst angezeigt, wenn die Namen ansonsten identisch sind.
-<!--COMOPT-2142-->
 
 _4. Mai 2026_
 
@@ -316,3 +312,4 @@ Die Basis-Produktions-URLs für die Region der Europäischen Union lauten:
 {{aco-release}}
 
 >[!ENDSHADEBOX]
+
