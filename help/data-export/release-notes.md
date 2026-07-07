@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 55d4fefaa15a09e475bcda93f23801319b56db70
 workflow-type: tm+mt
-source-wordcount: 2903
+source-wordcount: 3115
 ht-degree: 0%
 
 ---
@@ -45,6 +45,13 @@ Zu den Aktualisierungen gehören:
 
 ## Versionen 2026
 
+### Version 103.4.29
+
+_6. Juli 2026_
+
+![Korrigieren](../assets/fix.svg) Sortieren Sie Produktlinks, um eine zufällige Synchronisierung zu vermeiden. <!--MDEE-1391-->
+![Fix](../assets/fix.svg) Der Preis-Feed sendet für UTC-negative Websites nach Mitternacht UTC den Grundpreis anstelle des Katalogregelpreises. <!--MDEE-1401-->
+
 ### Version 103.4.28
 
 _11. Juni 2026_
@@ -56,7 +63,6 @@ _11. Juni 2026_
 _4. Juni 2026_
 
 ![Beheben](../assets/fix.svg) **Bundle-Produkte bleiben nach gleichzeitigen Katalogaktualisierungen sichtbar**-Es wurde ein Problem behoben, bei dem Bundle-Produkte nicht in der Storefront angezeigt wurden, wenn konfigurierbare und Bundle-Produkte gleichzeitig aktualisiert wurden. Nach dem Upgrade von `magento/module-data-exporter` auf Version 103.4.27 wird der Produkt-Feed automatisch neu synchronisiert, um bestehende Inkonsistenzen bei den Bundle-Daten in [!DNL Catalog Service], [!DNL Live Search] und anderen verbundenen Commerce-Services zu beheben.
-<!--MDEE-1379-->
 
 ### Version 103.4.26
 
@@ -77,10 +83,8 @@ _19. Mai 2026_
 _5. Mai 2026_
 
 ![Beheben](../assets/fix.svg) **Einfachere Fehlerbehebung aus Exportprotokollen** Viele exportbezogene Fehler und Warnungen enthalten jetzt konsistente Protokollcodes. Diese Codes helfen Ihnen, Probleme beim Arbeiten mit Support oder Dokumentation schneller zu verfolgen. Weitere Informationen finden Sie unter [Protokollcodes-Referenz](troubleshooting/log-codes-reference.md).
-<!--MDEE-1276-->
 
 ![Korrigieren](../assets/fix.svg) **Automatische Neusynchronisierung, wenn sich Attributoptionenbeschriftungen ändern** Ändern von Produktattribut-Optionsbeschriftungen für eine Store-Ansicht (einschließlich Mehrfachauswahlattributen) stellen die betroffenen Produkte jetzt erneut in die Warteschlange für den Export, sodass Live Search, Product Recommendations, Catalog Service und andere verbundene Commerce-Services die aktualisierten Facetten- und Filterbeschriftungen in den Käuferansichten anzeigen. Zuvor konnten SaaS-Kataloge, die nur auf Bezeichnungen bearbeitet wurden, veraltete Formulierungen aufweisen, bis eine umfassendere Produktänderung eine Synchronisierung auslöste.
-<!--MDEE-1337-->
 
 ![Korrigieren](../assets/fix.svg) **Verlässlicher Status und Sichtbarkeit, wenn Standardbereichsdaten fehlen** Der Produktexport behandelt Lücken im Standardadministratorbereich, damit verbundene Services korrekt aktiviert, deaktiviert und das Sichtbarkeitsverhalten angezeigt wird. Store-spezifische Werte, die Sie festgelegt haben, haben weiterhin Vorrang.
 
@@ -98,9 +102,7 @@ _5. Mai 2026_
 _20. April 2026_
 
 ![Beheben](../assets/fix.svg) **Behobene SQL-Fehler beim Löschen statischer EAV-Attribute**-Das Plug-in ProductAttributeDelete generiert beim Löschen statischer EAV-Attribute keine SQL-Fehler mehr, was eine reibungslosere Attributverwaltung und eine verbesserte Systemzuverlässigkeit gewährleistet. <!--MDEE-1336-->
-![Korrigieren](../assets/fix.svg) **Export fester Kategoriepfade nach Kategorieverschiebungen**- Stellt sicher, dass der Kategorienfeed die `url_path` korrekt aktualisiert, wenn eine Kategorie in ein anderes übergeordnetes Element verschoben wird, und verhindert fehlende oder veraltete Kategoriepfade in verbundenen Commerce-Services.<!--MDEE-1331-->
-![Behebung](../assets/fix.svg) **Verbesserte geplante Kategorieaktualisierungen für verwandte Produkte** Geplante Aktualisierungen der Kategorie-URLs wirken sich jetzt nur noch auf die beabsichtigten Kategorien aus, um die Datenintegrität zu wahren und unbeabsichtigte Änderungen an verwandten Produkten zu verhindern. Jetzt werden geplante Änderungen an Kategorie-URLs korrekt in exportierten Daten übernommen, sodass die Navigation in der Storefront und die verknüpften Services mit Ihrem aktuellen Katalog übereinstimmen.
-<!--MDEE-1321-->
+![Korrigieren](../assets/fix.svg) **Export fester Kategoriepfade nach Kategorieverschiebungen**- Stellt sicher, dass der Kategorienfeed die `url_path` korrekt aktualisiert, wenn eine Kategorie in ein anderes übergeordnetes Element verschoben wird, und verhindert fehlende oder veraltete Kategoriepfade in verbundenen Commerce-Services.![Behebung](../assets/fix.svg) **Verbesserte geplante Kategorieaktualisierungen für verwandte Produkte** Geplante Aktualisierungen der Kategorie-URLs wirken sich jetzt nur noch auf die beabsichtigten Kategorien aus, um die Datenintegrität zu wahren und unbeabsichtigte Änderungen an verwandten Produkten zu verhindern. Jetzt werden geplante Änderungen an Kategorie-URLs korrekt in exportierten Daten übernommen, sodass die Navigation in der Storefront und die verknüpften Services mit Ihrem aktuellen Katalog übereinstimmen.
 
 ### Version 103.4.22
 
