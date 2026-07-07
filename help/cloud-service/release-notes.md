@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 7ab609a2da3173f4be31bb0927418c4b9ec05ff4
 workflow-type: tm+mt
-source-wordcount: 4489
+source-wordcount: 4655
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 >
 >Wenn Sie Adobe Commerce On-Premise oder Adobe Commerce in der Cloud-Infrastruktur verwenden, lesen Sie die [Versionshinweise zu Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview).
 
-## Juni 2026 - #2 {#latest}
+## Juli 2026 - #1 {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
@@ -64,6 +64,27 @@ Die `GET /V1/orders`- und `GET /V1/invoices`-REST-API-Endpunkte unterstützen je
 ### Auflisten benutzerdefinierter E-Mail-Vorlagen über die API
 
 Der neue `GET /V1/custom-email/templates` REST-API-Endpunkt gibt Ihre [benutzerdefinierten E-Mail-Vorlagen](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/) einschließlich der ID, des Codes und des Betreffs jeder Vorlage zurück. Integrationen können eine zurückgegebene Vorlagen-ID mit dem `POST /V1/custom-email/send`-Endpunkt verwenden, anstatt die ID manuell nachzuschlagen. <!-- CCSAAS-5089 -->
+
+### Verwalten der gesamten Bestellkette über die REST-API
+
+>[!IMPORTANT]
+>
+>Diese Funktion ist experimentell und muss aktiviert werden, indem Sie sich an Ihren Adobe Commerce Customer Success Manager wenden oder ein Support-Ticket erstellen.
+
+Neue `orderChain`-REST-API-Endpunkte ermöglichen es Integrationen, eine Bestellung mithilfe der zugehörigen ID zu ändern und die gesamte Kette bearbeiteter Bestellungen automatisch aufzulösen:
+
+| Methode | Endpunkt | Beschreibung |
+| --- | --- | --- |
+| `POST` | `/V1/orderChain/{orderId}/invoice` | Erstellen Sie eine Rechnung für die Bestellung, wobei die Artikel über die Bestellkette hinweg zur Rechnung aufgelöst werden. |
+| `POST` | `/V1/orderChain/{id}/cancel` | Bricht die aktuelle Bestellung ab. |
+| `POST` | `/V1/orderChain/{id}/hold` | Bestellung zurückstellen. |
+| `POST` | `/V1/orderChain/{id}/unhold` | Entfernen Sie die Sperre aus der Bestellung. |
+| `POST` | `/V1/orderChain/{id}/emails` | Senden Sie eine E-Mail-Benachrichtigung zur Bestellung. |
+| `POST` | `/V1/orderChain/{id}/comments` | Fügen Sie der Bestellung einen Kommentar hinzu. |
+| `GET` | `/V1/orderChain/{id}/comments` | Abrufen der Bestellkommentare. |
+| `GET` | `/V1/orderChain/{id}/statuses` | Abrufen des aktuellen Bestellstatus. |
+
+`GET` Endpunkte, die das Filtern von Rechnungen, Sendungen, Gutschriften und Rücksendungen unterstützen, unterstützen jetzt das Filtern nach `order_original_id`. Die Filterung nach `order_original_id` gibt Details zur gesamten Bestellkette zurück, nicht nur zur einzelnen Bestellung. Ein Beispiel-Endpunkt, der diese Funktion unterstützt, ist `GET /V1/invoices`. <!-- ACCS-1004, ACCS-1005 -->
 
 ### Anzeigen des Auftragsänderungsverlaufs in der Admin Console
 
@@ -84,6 +105,10 @@ Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen s
 * Große freigegebene Kataloge sind jetzt im Admin-Bereich einfacher zu verwalten, mit verbesserten Ladezeiten und geringerer Wahrscheinlichkeit von Zeitüberschreitungen. <!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
 
 * Fehlerkorrektur - Bei der Erstellung von Lieferungen für Bestellungen mit konfigurierbaren Produkten tritt jetzt kein Fehler mehr bei der Sendungserstellung auf. <!-- ACCS-1095 -->
+
+* Fehlerkorrektur - Das linke Navigationsmenü in der [!DNL Commerce Admin] kann jetzt nicht mehr ausgeblendet werden. <!-- ACCS-1035 -->
+
+* Die Leistung beim Zuweisen und Aufheben der Zuweisung in freigegebenen Katalogen wurde verbessert. <!-- ACCS-1324, CCSAAS-5177, CCSAAS-5190, CCSAAS-5192 -->
 
 {{accs-release}}
 
