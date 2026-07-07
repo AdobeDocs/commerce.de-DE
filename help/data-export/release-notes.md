@@ -6,25 +6,13 @@ feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 55d4fefaa15a09e475bcda93f23801319b56db70
 workflow-type: tm+mt
-source-wordcount: 2903
+source-wordcount: 3115
 ht-degree: 0%
 
 ---
@@ -45,6 +33,13 @@ Zu den Aktualisierungen gehören:
 
 ## Versionen 2026
 
+### Version 103.4.29
+
+_6. Juli 2026_
+
+![Korrigieren](../assets/fix.svg) Sortieren Sie Produktlinks, um eine zufällige Synchronisierung zu vermeiden. <!--MDEE-1391-->
+![Fix](../assets/fix.svg) Der Preis-Feed sendet für UTC-negative Websites nach Mitternacht UTC den Grundpreis anstelle des Katalogregelpreises. <!--MDEE-1401-->
+
 ### Version 103.4.28
 
 _11. Juni 2026_
@@ -56,7 +51,6 @@ _11. Juni 2026_
 _4. Juni 2026_
 
 ![Beheben](../assets/fix.svg) **Bundle-Produkte bleiben nach gleichzeitigen Katalogaktualisierungen sichtbar**-Es wurde ein Problem behoben, bei dem Bundle-Produkte nicht in der Storefront angezeigt wurden, wenn konfigurierbare und Bundle-Produkte gleichzeitig aktualisiert wurden. Nach dem Upgrade von `magento/module-data-exporter` auf Version 103.4.27 wird der Produkt-Feed automatisch neu synchronisiert, um bestehende Inkonsistenzen bei den Bundle-Daten in [!DNL Catalog Service], [!DNL Live Search] und anderen verbundenen Commerce-Services zu beheben.
-<!--MDEE-1379-->
 
 ### Version 103.4.26
 
@@ -77,10 +71,8 @@ _19. Mai 2026_
 _5. Mai 2026_
 
 ![Beheben](../assets/fix.svg) **Einfachere Fehlerbehebung aus Exportprotokollen** Viele exportbezogene Fehler und Warnungen enthalten jetzt konsistente Protokollcodes. Diese Codes helfen Ihnen, Probleme beim Arbeiten mit Support oder Dokumentation schneller zu verfolgen. Weitere Informationen finden Sie unter [Protokollcodes-Referenz](troubleshooting/log-codes-reference.md).
-<!--MDEE-1276-->
 
 ![Korrigieren](../assets/fix.svg) **Automatische Neusynchronisierung, wenn sich Attributoptionenbeschriftungen ändern** Ändern von Produktattribut-Optionsbeschriftungen für eine Store-Ansicht (einschließlich Mehrfachauswahlattributen) stellen die betroffenen Produkte jetzt erneut in die Warteschlange für den Export, sodass Live Search, Product Recommendations, Catalog Service und andere verbundene Commerce-Services die aktualisierten Facetten- und Filterbeschriftungen in den Käuferansichten anzeigen. Zuvor konnten SaaS-Kataloge, die nur auf Bezeichnungen bearbeitet wurden, veraltete Formulierungen aufweisen, bis eine umfassendere Produktänderung eine Synchronisierung auslöste.
-<!--MDEE-1337-->
 
 ![Korrigieren](../assets/fix.svg) **Verlässlicher Status und Sichtbarkeit, wenn Standardbereichsdaten fehlen** Der Produktexport behandelt Lücken im Standardadministratorbereich, damit verbundene Services korrekt aktiviert, deaktiviert und das Sichtbarkeitsverhalten angezeigt wird. Store-spezifische Werte, die Sie festgelegt haben, haben weiterhin Vorrang.
 
@@ -98,9 +90,7 @@ _5. Mai 2026_
 _20. April 2026_
 
 ![Beheben](../assets/fix.svg) **Behobene SQL-Fehler beim Löschen statischer EAV-Attribute**-Das Plug-in ProductAttributeDelete generiert beim Löschen statischer EAV-Attribute keine SQL-Fehler mehr, was eine reibungslosere Attributverwaltung und eine verbesserte Systemzuverlässigkeit gewährleistet. <!--MDEE-1336-->
-![Korrigieren](../assets/fix.svg) **Export fester Kategoriepfade nach Kategorieverschiebungen**- Stellt sicher, dass der Kategorienfeed die `url_path` korrekt aktualisiert, wenn eine Kategorie in ein anderes übergeordnetes Element verschoben wird, und verhindert fehlende oder veraltete Kategoriepfade in verbundenen Commerce-Services.<!--MDEE-1331-->
-![Behebung](../assets/fix.svg) **Verbesserte geplante Kategorieaktualisierungen für verwandte Produkte** Geplante Aktualisierungen der Kategorie-URLs wirken sich jetzt nur noch auf die beabsichtigten Kategorien aus, um die Datenintegrität zu wahren und unbeabsichtigte Änderungen an verwandten Produkten zu verhindern. Jetzt werden geplante Änderungen an Kategorie-URLs korrekt in exportierten Daten übernommen, sodass die Navigation in der Storefront und die verknüpften Services mit Ihrem aktuellen Katalog übereinstimmen.
-<!--MDEE-1321-->
+![Korrigieren](../assets/fix.svg) **Export fester Kategoriepfade nach Kategorieverschiebungen**- Stellt sicher, dass der Kategorienfeed die `url_path` korrekt aktualisiert, wenn eine Kategorie in ein anderes übergeordnetes Element verschoben wird, und verhindert fehlende oder veraltete Kategoriepfade in verbundenen Commerce-Services.![Behebung](../assets/fix.svg) **Verbesserte geplante Kategorieaktualisierungen für verwandte Produkte** Geplante Aktualisierungen der Kategorie-URLs wirken sich jetzt nur noch auf die beabsichtigten Kategorien aus, um die Datenintegrität zu wahren und unbeabsichtigte Änderungen an verwandten Produkten zu verhindern. Jetzt werden geplante Änderungen an Kategorie-URLs korrekt in exportierten Daten übernommen, sodass die Navigation in der Storefront und die verknüpften Services mit Ihrem aktuellen Katalog übereinstimmen.
 
 ### Version 103.4.22
 
@@ -111,7 +101,7 @@ _13. April 2026_
 - Es wurde ein Problem behoben, bei dem gelöschte Produkte nicht ordnungsgemäß aus den verbundenen Commerce-Services entfernt wurden, wenn der Exportservice beim Löschen nicht verfügbar war. Wiederholungs- und Neusynchronisierungsvorgänge stellen jetzt sicher, dass gelöschte Produkte in SaaS korrekt angezeigt werden. <!--MDEE-1319-->
 - Katalogentitäten (Produkte und Kategorien) können jetzt in verbundene Commerce-Services exportiert werden, auch wenn in der Admin Store-Ansicht Attributwerte fehlen. Dies verbessert die Kompatibilität mit Erweiterungen von Drittanbietern und reduziert Exportfehler aufgrund fehlender Standardwerte. <!--MDEE-1333-->
 
-![Behebung](../assets/fix.svg) Es wurde ein Fehler auf der Seite „Status der Daten-Feed-Synchronisierung“ behoben, der auftreten konnte, wenn Feed-Datensätze unerwartete oder fehlende Daten enthielten. Das System kann nun problemlos mit solchen Fällen umgehen, wodurch die Stabilität verbessert und Abstürze verhindert werden. Wenn Sie den Adobe Commerce Optimizer-Connector zum Synchronisieren von Daten aus Adobe Commerce mit Adobe Commerce Optimizer verwenden, aktualisieren Sie zur Behebung auf [Adobe Commerce Optimizer-Connector &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/release-notes)Version 1.0.11 oder höher.<!--MDEE-1327-->
+![Behebung](../assets/fix.svg) Es wurde ein Fehler auf der Seite „Status der Daten-Feed-Synchronisierung“ behoben, der auftreten konnte, wenn Feed-Datensätze unerwartete oder fehlende Daten enthielten. Das System kann nun problemlos mit solchen Fällen umgehen, wodurch die Stabilität verbessert und Abstürze verhindert werden. Wenn Sie den Adobe Commerce Optimizer-Connector zum Synchronisieren von Daten aus Adobe Commerce mit Adobe Commerce Optimizer verwenden, aktualisieren Sie zur Behebung auf [Adobe Commerce Optimizer-Connector ](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes)Version 1.0.11 oder höher.<!--MDEE-1327-->
 
 ### Version 103.4.21
 
@@ -137,7 +127,7 @@ _6. Februar 2026_
 
 _2. Februar 2026_
 
-![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem Element-Batches während Aktualisierungen das zulässige Limit überschreiten konnten, was zu `items_limit_exceeded`-Fehlern beim Synchronisieren von Daten mit [Commerce-](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home) oder [Adobe Commerce Optimizer](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/data-sync) führte. <!--MDEE-1264-->
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem Element-Batches während Aktualisierungen das zulässige Limit überschreiten konnten, was zu `items_limit_exceeded`-Fehlern beim Synchronisieren von Daten mit [Commerce-](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) oder [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync) führte. <!--MDEE-1264-->
 
 ![Korrektur](../assets/fix.svg) Verbesserte Zuverlässigkeit von Produktdatenexporten durch Hinzufügen von Logik zum Registrieren fehlgeschlagener Elemente während der Sammlung von Bundle-Produktoptionen. <!--CCSAAS-4458-->
 
@@ -165,7 +155,7 @@ _24. November 2025_
 
 _22. Oktober 2025_
 
-![Neu](../assets/new.svg) Es wurde Unterstützung für die Erweiterung „Status der Daten-Feed-Synchronisierung“ hinzugefügt, um Datenübertragungen von Adobe Commerce zu Connected Services (Katalog-Service, Live-Suche und Produktempfehlungen) zu überwachen und Fehler zu beheben. Weitere Informationen zur Installation und Verwendung dieser Erweiterung finden Sie [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=de) im *Commerce Admin Guide*. <!--MDEE-954-->
+![Neu](../assets/new.svg) Es wurde Unterstützung für die Erweiterung „Status der Daten-Feed-Synchronisierung“ hinzugefügt, um Datenübertragungen von Adobe Commerce zu Connected Services (Katalog-Service, Live-Suche und Produktempfehlungen) zu überwachen und Fehler zu beheben. Weitere Informationen zur Installation und Verwendung dieser Erweiterung finden Sie [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) im *Commerce Admin Guide*. <!--MDEE-954-->
 
 ### Version 103.4.14
 
@@ -191,7 +181,7 @@ _18. September 2025_
 
 _29. August 2025_
 
-![Neu](../assets/new.svg) [!BADGE nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+![Neu](../assets/new.svg) [!BADGE nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 Es wurde Unterstützung für zusätzliche Produktattribute hinzugefügt, um Steuerklasse-, Attributsatz- und Bestandsdaten aus Commerce-Produktkonfigurationen im Produkt-Feed einzuschließen. Kunden, die diese Attribute in Produktexport-Feeds einbeziehen möchten, müssen das Modul Zusätzliche Produktattribute zu ihrem Adobe Commerce-Projekt hinzufügen. Siehe [Hinzufügen von Steuerklassen-, Attributsatz- und Bestandsattributen](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 
 ![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, das zu einer falschen Synchronisierung gelöschter Produktaktualisierungen führte, wenn während eines vollständigen Produktindex ein Fehler auftrat. Jetzt werden alle Produktlöschungen korrekt synchronisiert, selbst wenn während des Indizierungsprozesses ein Fehler auftritt. <!--MDEE-1144-->
