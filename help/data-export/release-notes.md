@@ -6,10 +6,22 @@ feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 55d4fefaa15a09e475bcda93f23801319b56db70
 workflow-type: tm+mt
 source-wordcount: 3115
@@ -101,7 +113,7 @@ _13. April 2026_
 - Es wurde ein Problem behoben, bei dem gelöschte Produkte nicht ordnungsgemäß aus den verbundenen Commerce-Services entfernt wurden, wenn der Exportservice beim Löschen nicht verfügbar war. Wiederholungs- und Neusynchronisierungsvorgänge stellen jetzt sicher, dass gelöschte Produkte in SaaS korrekt angezeigt werden. <!--MDEE-1319-->
 - Katalogentitäten (Produkte und Kategorien) können jetzt in verbundene Commerce-Services exportiert werden, auch wenn in der Admin Store-Ansicht Attributwerte fehlen. Dies verbessert die Kompatibilität mit Erweiterungen von Drittanbietern und reduziert Exportfehler aufgrund fehlender Standardwerte. <!--MDEE-1333-->
 
-![Behebung](../assets/fix.svg) Es wurde ein Fehler auf der Seite „Status der Daten-Feed-Synchronisierung“ behoben, der auftreten konnte, wenn Feed-Datensätze unerwartete oder fehlende Daten enthielten. Das System kann nun problemlos mit solchen Fällen umgehen, wodurch die Stabilität verbessert und Abstürze verhindert werden. Wenn Sie den Adobe Commerce Optimizer-Connector zum Synchronisieren von Daten aus Adobe Commerce mit Adobe Commerce Optimizer verwenden, aktualisieren Sie zur Behebung auf [Adobe Commerce Optimizer-Connector ](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes)Version 1.0.11 oder höher.<!--MDEE-1327-->
+![Behebung](../assets/fix.svg) Es wurde ein Fehler auf der Seite „Status der Daten-Feed-Synchronisierung“ behoben, der auftreten konnte, wenn Feed-Datensätze unerwartete oder fehlende Daten enthielten. Das System kann nun problemlos mit solchen Fällen umgehen, wodurch die Stabilität verbessert und Abstürze verhindert werden. Wenn Sie den Adobe Commerce Optimizer-Connector zum Synchronisieren von Daten aus Adobe Commerce mit Adobe Commerce Optimizer verwenden, aktualisieren Sie zur Behebung auf [Adobe Commerce Optimizer-Connector &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes)Version 1.0.11 oder höher.<!--MDEE-1327-->
 
 ### Version 103.4.21
 
