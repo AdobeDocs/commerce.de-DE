@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ff5d3ee7f421c8fee9a40a71ea1de366fd5e6d47
+source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
 workflow-type: tm+mt
-source-wordcount: 2946
+source-wordcount: 3024
 ht-degree: 0%
 
 ---
@@ -593,6 +593,16 @@ Aktualisierungen des Katalog-Service PHP-Metapakets (`magento/catalog-service`).
 - Für Kunden von Adobe Commerce as a Cloud Service wird die neueste Version in Ihrer Umgebung installiert.
 
 - Für Adobe Commerce in der Cloud oder On-Premise empfiehlt Adobe die Verwendung von Composer , um das Catalog Service-Metapaket in Ihren Cloud-Umgebungen auf die neueste Version zu aktualisieren.
+
+### Version v3.5.0
+
+**Veröffentlichungsdatum**: 10. Juli 2026
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
+
+![Neu](../assets/new.svg) **URL-Schlüsselsynchronisierung für Staging-Kategorien** Die Abhängigkeiten des Metapakets des Katalog-Services wurden aktualisiert und enthalten jetzt das Modul „Catalog Staging Data Exporter“ (`magento/module-catalog-staging-data-exporter`). Dieses Modul exportiert Produkt-Feeds erneut, wenn eine Änderung in der Staging-Kategorie `url_key` wird, sodass gestaffelte Katalogänderungen korrekt in den SaaS-Katalog übertragen werden (Katalog-Service, Live-Suche und Produktempfehlungen).
+
+![Neu](../assets/new.svg) Abhängigkeiten wurden aktualisiert, um die Kompatibilität zwischen dem Katalog-Service und Ihrem Commerce-Stack zu gewährleisten.
 
 ### Version v3.4.0
 
