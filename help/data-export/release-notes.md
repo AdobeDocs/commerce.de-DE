@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 55d4fefaa15a09e475bcda93f23801319b56db70
+source-git-commit: ee2211b243171ebfc9ca744f169c786943c40ad9
 workflow-type: tm+mt
-source-wordcount: 3115
+source-wordcount: 3256
 ht-degree: 0%
 
 ---
@@ -45,12 +45,19 @@ Zu den Aktualisierungen gehören:
 
 ## Versionen 2026
 
+### Version 103.4.30
+
+_10. Juli 2026_
+
+![Korrigieren](../assets/fix.svg) Die Funktion Feed-Status-Rasterfilter nach ID wurde auf der Seite Daten-Feed-Synchronisierungsstatus in der Commerce Admin behoben, sodass übereinstimmende Feed-Datensätze korrekt angezeigt werden, wenn Sie nach Feed-ID filtern. <!--MDEE-1396-->
+![Neu](../assets/new.svg) Dem `bin/magento saas:resync`-Befehl wurde eine `--force` Option hinzugefügt, mit der alle ausgewählten Daten-Feeds neu synchronisiert werden können, auch wenn sie bereits als synchronisiert angezeigt werden. So werden vollständige Neusynchronisierung und Wiederherstellungsszenarien vereinfacht. <!--MDEE-1334-->
+
 ### Version 103.4.29
 
 _6. Juli 2026_
 
-![Korrigieren](../assets/fix.svg) Sortieren Sie Produktlinks, um eine zufällige Synchronisierung zu vermeiden. <!--MDEE-1391-->
-![Fix](../assets/fix.svg) Der Preis-Feed sendet für UTC-negative Websites nach Mitternacht UTC den Grundpreis anstelle des Katalogregelpreises. <!--MDEE-1401-->
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem die Reihenfolge verwandter, Upsell- und Crosssell-Produkt-Links im Produkt-Feed zwischen den Ausführungen variieren konnte, was dazu führte, dass unveränderte Produkte bei jedem `bin/magento saas:resync --feed products` erneut übermittelt wurden. Diese Links werden jetzt in einer konsistenten Reihenfolge exportiert, sodass Produkte erst dann neu synchronisiert werden, wenn sie sich tatsächlich ändern. <!--MDEE-1391-->
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem der Preis-Feed für Websites in Zeitzonen hinter UTC (z. B. USA und Kanada) während der frühen Morgenstunden in UTC vollständige Basispreise anstelle von Katalogregelpreisen verschickte. Die Katalogregel-Preise werden nun korrekt bereitgestellt, unabhängig von der Zeitzone einer Website. <!--MDEE-1401-->
 
 ### Version 103.4.28
 
