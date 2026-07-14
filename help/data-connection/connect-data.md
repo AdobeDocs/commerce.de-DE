@@ -24,9 +24,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
-source-wordcount: 3071
+source-wordcount: 3511
 ht-degree: 0%
 
 ---
@@ -54,9 +54,36 @@ Nachdem Sie den Commerce Services-Connector konfiguriert haben, konfigurieren Si
 
 In diesem Abschnitt erfahren Sie, wie Sie die [!DNL Data Connection]-Erweiterung konfigurieren.
 
+### Konfigurationsumfang {#configuration-scope}
+
+[!DNL Data Connection] Einstellungen verwenden eine Mischung aus globalen und Website-spezifischen Werten. Die globalen Einstellungen gelten für Ihre gesamte Adobe Commerce-Instanz. Mit Einstellungen für Websites können Händler, die mehrere Marken und mehrere Websites verwenden, Daten an verschiedene Adobe Experience Platform-Sandboxes und -Datensätze pro Website weiterleiten.
+
+Bevor Sie die Storefront-, Back-Office- oder Profildatenerfassung konfigurieren, legen Sie die Dropdown-Liste **[!UICONTROL Scope]** auf der Registerkarte **[!UICONTROL Settings]** auf die Website fest, die Sie konfigurieren möchten. Wiederholen Sie die Konfiguration für jede Website, für die ein anderes Experience Platform-Routing erforderlich ist.
+
+| Einstellung oder Feld | Umfang | Notizen |
+| --- | --- | --- |
+| Organisations-ID | Global | Eine Organisations-ID pro Adobe Commerce-Instanz. Bereits im [Commerce Services-Connector konfiguriert](../landing/saas.md#organizationid). |
+| Anmeldedaten für Service-Konto | Global | Einmalige Eingabe der Details des Service-Kontos. Dieselben Anmeldeinformationen authentifizieren Experience Platform-API-Aufrufe für alle Websites, sofern Ihre Bereitstellung nichts anderes erfordert. |
+| Sandbox-Name | Website | Wählen Sie die Experience Platform-Sandbox für die im Umfang enthaltene Website aus. Primäre Einstellung für den Umfang der Website für [!DNL Data Connection] Back-Office-Ereignisse. |
+| **[!UICONTROL Test connection]** | Website | Validiert die Anmeldedaten für das Service-Konto und die Sandbox für die aktuell unter „Umfang **ausgewählte Website**. |
+| Datenstrom-ID | Website | Leitet Verhaltens- und Backoffice-Ereignisdaten für die ausgewählte Website weiter. |
+| Datensatz-ID | Website | Identifiziert den Datensatz, der Commerce-Daten für die ausgewählte Website speichert. |
+| Storefront-Ereignisse, Backoffice-Ereignisse, Kundenprofile | Website | Die Datenerfassungsoptionen gelten für die unter „Umfang **ausgewählte Website**. |
+
+#### Beispiel für mehrere Websites {#multi-website-example}
+
+Ein Händler betreibt zwei Websites von einer Adobe Commerce-Instanz aus:
+
+- **Website A (Marke A)** sendet Storefront- und Backoffice-Daten an eine **Produktions-)** von Experience Platform.
+- **Website B (Marke B)** sendet Daten zum Testen an eine **Entwicklungs** Experience Platform-Sandbox.
+
+Der Händler gibt die Anmeldedaten für das Service-Konto einmal auf der **[!UICONTROL Service Account/Credential details]** ein. Auf der Registerkarte **[!UICONTROL Settings]** setzt der Händler **[!UICONTROL Scope]** auf **Website A**, wählt den Namen der Produktions-Sandbox aus und speichert. Der Händler setzt dann **[!UICONTROL Scope]** auf **Website B**, wählt den Namen der Entwicklungs-Sandbox aus und speichert. **[!UICONTROL Test connection]** wird für jede Website ausgeführt, um die richtige Sandbox und die richtigen Anmeldeinformationen zu bestätigen.
+
 ### Hinzufügen von Details zum Service-Konto und zu den Anmeldedaten
 
 Wenn Sie (historische [) oder (Kundenprofildaten](#send-historical-order-data) [&#x200B; erfassen und senden möchten](#send-customer-profile-data) müssen Sie Details zum Service-Konto und zu den Anmeldedaten hinzufügen. Wenn Sie die Erweiterung [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=de) konfigurieren, müssen Sie außerdem die folgenden Schritte ausführen.
+
+Anmeldedaten für Service-Konten werden im **Standardkonfiguration“ konfiguriert** global angewendet. Siehe [Konfigurationsbereich](#configuration-scope) für Einstellungen im Website-Bereich, z. B. für den Sandbox-Namen.
 
 Wenn Sie nur Storefront- oder Back-Office-Daten erfassen und senden, können Sie zum Abschnitt [Allgemein](#general) wechseln.
 
@@ -86,9 +113,9 @@ Laden Sie die [Workspace-Konfigurationsdatei](https://developer.adobe.com/commer
 
 1. Kopieren Sie den Inhalt der `<workspace-name>.json`-Datei in die Felder **Service-Konto/**-Details“, z. B. `"client_id"`, `"client_secrets"`, `"technical_account_email"`, `"technical_account_id"` usw.
 
-1. Klicken Sie **Konfiguration speichern**.
+1. Klicken Sie auf **[!UICONTROL Save Config]**.
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Test connection]** , um sicherzustellen, dass die eingegebenen Service-Konto- und Anmeldeinformationen korrekt sind.
+   Schließen Sie nach dem Speichern die Konfiguration für die gesamte Website, einschließlich **[!UICONTROL Sandbox name]** und **[!UICONTROL Test connection]**, auf der Registerkarte **[!UICONTROL Settings]** ab. Siehe [Allgemein](#general).
 
 ### Allgemein
 
@@ -96,9 +123,13 @@ Laden Sie die [Workspace-Konfigurationsdatei](https://developer.adobe.com/commer
 
    ![[!DNL Data Connection] Einstellungen](./assets/epc-settings.png){width="700" zoomable="yes"}
 
-1. Überprüfen Sie auf **Registerkarte** unter **Allgemein** die mit Ihrem Adobe Experience Platform-Konto verknüpfte ID, wie im [Commerce Services Connector konfiguriert](../landing/saas.md#organizationid). Die Organisations-ID ist global. Pro Adobe Commerce-Instanz kann nur eine Organisations-ID zugeordnet werden.
+1. Überprüfen Sie auf der Registerkarte **[!UICONTROL Settings]** unter **[!UICONTROL General]** die mit Ihrem Adobe Experience Platform-Konto verknüpfte ID, wie im [Commerce Services Connector konfiguriert](../landing/saas.md#organizationid). Die Organisations-ID ist global. Pro Adobe Commerce-Instanz kann nur eine Organisations-ID zugeordnet werden.
 
-1. Legen Sie in **Dropdown** Bereich“ den Kontext auf &quot;**&quot;**.
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Scope]** für den Kontext **Website** aus. Siehe [Konfigurationsbereich](#configuration-scope), für die die Einstellungen global und pro Website gelten.
+
+1. Geben Sie den **[!UICONTROL Sandbox name]** für die Website im Umfang ein.
+
+1. Klicken Sie auf **[!UICONTROL Test connection]** , um die Anmeldeinformationen für das Service-Konto und die Sandbox für die derzeit in **[!UICONTROL Scope]** ausgewählte Website zu überprüfen. Wiederholen Sie den Vorgang für jede Website, die eine andere Sandbox verwendet.
 
 1. (Optional) Wenn Sie bereits eine [AEP Web SDK (Legierung)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de) auf Ihrer Site bereitgestellt haben, aktivieren Sie das Kontrollkästchen und fügen Sie den Namen Ihrer AEP Web SDK hinzu. Andernfalls lassen Sie diese Felder leer und die [!DNL Data Connection]-Erweiterung stellt eine für Sie bereit.
 
@@ -118,7 +149,7 @@ In diesem Abschnitt geben Sie den Datentyp an, den Sie erfassen und an Experienc
 
 Um sicherzustellen, dass Ihre Adobe Commerce-Instanz mit der Datenerfassung beginnen kann, überprüfen Sie die [Voraussetzungen](overview.md#prerequisites).
 
-Unter dem Thema „Ereignisse“ erfahren Sie mehr über [Storefront](events.md#storefront-events)-, [Back-Office](events-backoffice.md)- und [profile](events-backoffice.md#customer-profile-events)-Ereignisse.
+Weitere Informationen zu Daten von [Storefront](events.md#storefront-events), [Backoffice](events-backoffice.md) und [Profildatensätzen](events-profilerecord.md) finden Sie unter dem Thema Ereignisse . Zeitreihen [Profilereignisse](events-backoffice.md#customer-profile-events) finden Sie in der Referenz zu Back-Office-Ereignissen .
 
 >[!NOTE]
 >
@@ -162,16 +193,18 @@ Unter dem Thema „Ereignisse“ erfahren Sie mehr über [Storefront](events.md#
 
 | Feld | Beschreibung |
 |--- |--- |
-| Umfang | Spezifische Website, auf die die Konfigurationseinstellungen angewendet werden sollen. |
-| Organisations-ID (global) | ID, die zu dem Unternehmen gehört, das das Adobe DX-Produkt erworben hat. Diese ID verknüpft Ihre Adobe Commerce-Instanz mit Adobe Experience Platform. |
+| Umfang | Website, auf die die Einstellungen für die Website angewendet werden. Wechseln Sie den Bereich, um die Optionen für den Sandbox-Namen, die Datenstrom-ID, die Datensatz-ID und die Datenerfassung für jede Website zu konfigurieren. |
+| Organisations-ID (global) | ID, die zu dem Unternehmen gehört, das das Adobe DX-Produkt erworben hat. Diese ID verknüpft Ihre Adobe Commerce-Instanz mit Adobe Experience Platform. Global konfiguriert; nicht pro Website festgelegt. |
+| Sandbox-Name (Website) | Name der Experience Platform-Sandbox, an die Commerce Daten für die ausgewählte Website sendet. Konfigurieren Sie für jede Website separat, wenn Multi-Brand- oder Multi-Website-Bereitstellungen Daten an verschiedene Sandboxes weiterleiten. |
 | Ist die AEP Web SDK bereits auf Ihrer Site bereitgestellt? | Aktivieren Sie dieses Kontrollkästchen, wenn Sie Ihre eigene AEP Web SDK auf Ihrer Site bereitgestellt haben |
 | Name von AEP Web SDK (global) | Wenn Sie bereits eine Experience Platform Web SDK auf Ihrer Site bereitgestellt haben, geben Sie den Namen dieser SDK in diesem Feld an. Dadurch können Storefront Event Collector und Storefront Event SDK Ihre Experience Platform Web SDK anstelle der von der [!DNL Data Connection] bereitgestellten Version verwenden. Wenn Sie keine Experience Platform Web SDK auf Ihrer Site bereitgestellt haben, lassen Sie dieses Feld leer, und die [!DNL Data Connection] stellt eine Erweiterung für Sie bereit. |
 | Storefront-Ereignisse | Ist standardmäßig aktiviert, solange die Organisations-ID und die Datenstrom-ID gültig sind. Storefront-Ereignisse erfassen anonymisierte Verhaltensdaten von Ihren Kundinnen und Kunden, während sie Ihre Site durchsuchen. |
 | Back-Office-Ereignisse | Wenn diese Option aktiviert ist, enthält die Ereignis-Payload anonymisierte Bestellstatusinformationen, z. B. ob eine Bestellung aufgegeben, storniert, zurückerstattet oder versandt wurde. |
 | Datenstrom-ID (Website) | ID, die den Datenfluss von Adobe Experience Platform zu anderen Adobe DX-Produkten ermöglicht. Diese ID muss mit einer bestimmten Website innerhalb Ihrer spezifischen Adobe Commerce-Instanz verknüpft sein. Wenn Sie Ihre eigene Experience Platform Web SDK angeben, geben Sie in diesem Feld keine Datenstrom-ID an. Die [!DNL Data Connection]-Erweiterung verwendet die mit dieser SDK verknüpfte Datenstrom-ID und ignoriert alle in diesem Feld angegebenen Datenstrom-ID (falls vorhanden). |
 | Datensatz-ID (Website) | ID des Datensatzes, der Ihre Commerce-Daten enthält. Dieses Feld ist erforderlich, es sei denn, Sie haben die Kontrollkästchen **Storefront-Ereignisse** oder **Backoffice-Ereignisse** deaktiviert. Wenn Sie außerdem Ihre eigene Experience Platform Web SDK verwenden und daher keine Datenstrom-ID angegeben haben, müssen Sie dennoch die mit Ihrem Datenstrom verknüpfte Datensatz-ID hinzufügen. Andernfalls können Sie dieses Formular nicht speichern. |
+| **[!UICONTROL Test connection]** | Validiert die Anmeldedaten für das Service-Konto und den Sandbox-Namen für die aktuell unter „Umfang **ausgewählte Website**. Führen Sie den Test aus, nachdem Sie die Anmeldeinformationen konfiguriert haben und nachdem Sie den Sandbox-Namen oder -Bereich für eine Website geändert haben. |
 
-Nach dem Onboarding fließen Storefront-Daten an den Experience Platform Edge. Back-Office-Daten benötigen etwa fünf Minuten, bis sie am Edge angezeigt werden. Nachfolgende Aktualisierungen sind basierend auf dem Cron-Zeitplan am Edge sichtbar.
+Nachdem Sie die Erweiterung konfiguriert haben, werden Storefront-Daten an Experience Platform Edge übertragen. Back-Office-Daten benötigen etwa fünf Minuten, bis sie am Edge angezeigt werden. Nachfolgende Aktualisierungen sind basierend auf dem Cron-Zeitplan am Edge sichtbar.
 
 ### Senden von Kundenprofildaten
 
@@ -301,9 +334,9 @@ Erfahren Sie mehr über das [Einrichten benutzerdefinierter Attribute](custom-at
 | Experience Platform | Zeigt alle benutzerdefinierten Attribute an, die in Ihrem [!DNL Commerce] in Experience Platform angegeben sind. |
 | Aktualisieren | Ruft alle benutzerdefinierten Attributnamen aus dem [!DNL Commerce] in Experience Platform ab. |
 
-## Überprüfen, ob Ereignisdaten erfasst werden
+## Überprüfen, ob Ereignisdaten erfasst werden {#confirm-that-event-data-is-collected}
 
-Um zu bestätigen, dass Daten aus Ihrem Commerce-Store erfasst werden, verwenden Sie den [Adobe Experience Platform-Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=de), um Ihre Commerce-Site zu untersuchen. Nachdem Sie bestätigt haben, dass Daten erfasst werden, können Sie überprüfen, ob Ihre Storefront- und Backoffice-Ereignisdaten am Edge angezeigt werden, indem Sie eine Abfrage ausführen, die Daten aus dem von [&#x200B; erstellten Datensatz &#x200B;](overview.md#prerequisites).
+Um zu bestätigen, dass Daten aus Ihrem Commerce-Store erfasst werden, verwenden Sie den [Adobe Experience Platform-Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=de), um Ihre Commerce-Site zu untersuchen. Nachdem Sie bestätigt haben, dass Daten erfasst werden, können Sie überprüfen, ob Ihre Storefront- und Backoffice-Ereignisdaten am Edge angezeigt werden, indem Sie eine Abfrage ausführen, die Daten aus dem [Datensatz zurückgibt, den Sie während der Konfiguration erstellt haben](overview.md#enable-extension).
 
 1. Wählen **im** Navigationsbereich von Experience Platform „Abfragen“ aus und klicken Sie auf [!UICONTROL Create Query].
 
@@ -329,8 +362,8 @@ Wenn die Ergebnisse nicht Ihren Erwartungen entsprechen, öffnen Sie Ihren Daten
 
 ### Überprüfen, ob Profildaten in der Experience Platform angezeigt werden
 
-Wenn keine Profildaten in der Experience Platform angezeigt werden, finden Sie in der [Commerce KnowledgeBase](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) Vorschläge zur Fehlerbehebung.
+Empfehlungen zur Fehlerbehebung finden Sie unter dem Tipp in [Senden von Kundenprofildaten](#send-customer-profile-data).
 
 ## Nächste Schritte
 
-Wenn Commerce-Daten an Experience Platform Edge gesendet werden, können diese Daten von anderen Adobe Experience Cloud-Produkten wie Adobe Journey Optimizer verwendet werden. Sie können beispielsweise Journey Optimizer so konfigurieren, dass es auf bestimmte Ereignisse wartet. Basierend auf diesen Ereignisdaten können Sie dann eine E-Mail an einen Erstbenutzer senden oder den Trigger verlassen. Erfahren Sie, wie Sie Ihre Commerce-Plattform durch [Erstellen von Kunden-Journey](using-ajo.md) in Journey Optimizer erweitern können.
+Wenn Commerce-Daten an Experience Platform Edge gesendet werden, können andere Adobe Experience Cloud-Produkte wie Adobe Journey Optimizer diese Daten verwenden. Sie können beispielsweise Journey Optimizer so konfigurieren, dass es auf bestimmte Ereignisse wartet. Basierend auf diesen Ereignisdaten können Sie dann eine E-Mail an einen Erstbenutzer senden oder den Trigger verlassen. Erfahren Sie, wie Sie Ihre Commerce-Plattform durch [Erstellen von Kunden-Journey](using-ajo.md) in Journey Optimizer erweitern können.

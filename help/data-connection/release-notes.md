@@ -19,9 +19,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 1ea84a6455006dd16a7f321dc150f741db6f0898
 workflow-type: tm+mt
-source-wordcount: 1350
+source-wordcount: 1490
 ht-degree: 2%
 
 ---
@@ -56,9 +56,7 @@ _7. August 2025_
 
 _2. August 2024_
 
-![Korrigieren](../assets/fix.svg) - Feste Summe der Zahlungen, wenn die Bestellsumme so konfiguriert ist, dass Steuern enthalten sind.
-![Neu](../assets/new.svg) - Ein `taxAmount` Feld wurde hinzugefügt, um Kaufereignisse zu bestellen.
-![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt, benutzerdefinierten Daten zu Ereignissen hinzuzufügen. Im Folgenden finden Sie ein [Beispiel](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md).
+![Korrigieren](../assets/fix.svg) - Feste Summe der Zahlungen, wenn die Bestellsumme so konfiguriert ist, dass Steuern enthalten sind.![Neu](../assets/new.svg) - Ein `taxAmount` Feld wurde hinzugefügt, um Kaufereignisse zu bestellen.![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt, benutzerdefinierten Daten zu Ereignissen hinzuzufügen. Im Folgenden finden Sie ein [Beispiel](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md).
 
 _24. Januar 2024_
 
@@ -66,37 +64,35 @@ _24. Januar 2024_
 
 _16. November 2023_
 
-![Behebung](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem fälschlicherweise eine Fehlermeldung angezeigt wurde, wenn eine Bestellung mit mehreren Versandadressen aufgegeben wurde.
-![Korrigieren](../assets/fix.svg) - Es wurde ein Problem im `productPageView` behoben, bei dem das Feld &quot;`productListItems.priceTotal`-Ereignis“ den Preis nicht konvertierte, nachdem die Währung in der Store-Ansicht gewechselt wurde.
-![Korrigieren](../assets/fix.svg) - Es wurde ein Problem im Feld &quot;`productListItems`&quot; behoben, bei dem der Währungscode nicht aktualisiert wurde, als der Händler die Store-Ansicht wechselte.
+![Behebung](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem fälschlicherweise eine Fehlermeldung angezeigt wurde, wenn eine Bestellung mit mehreren Versandadressen aufgegeben wurde.![Korrigieren](../assets/fix.svg) - Es wurde ein Problem im `productPageView` behoben, bei dem das Feld &quot;`productListItems.priceTotal`-Ereignis“ den Preis nicht konvertierte, nachdem die Währung in der Store-Ansicht gewechselt wurde.![Korrigieren](../assets/fix.svg) - Es wurde ein Problem im Feld &quot;`productListItems`&quot; behoben, bei dem der Währungscode nicht aktualisiert wurde, als der Händler die Store-Ansicht wechselte.
 
 _10. Oktober 2023_
 
-![Neu](../assets/new.svg) - Neues Bestellstatusereignis hinzugefügt: [Bestellung fakturiert](events-backoffice.md#orderinvoiced), [Bestellartikelrücksendung eingeleitet](events-backoffice.md#orderitemsreturninitiated) und [Bestellartikelrücksendung abgeschlossen](events-backoffice.md#orderitemreturncompleted).
-![Beheben](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem Änderungen an der Währungskonfiguration nach der Aktualisierung des Caches nicht in den Ereignissen widergespiegelt wurden.
-![Behebung](../assets/fix.svg) - Es wurde ein Fehler behoben, der auftrat, wenn die Bestellbestätigungsmeldung nicht angezeigt wurde, wenn die asynchrone Bestellplatzierung aktiviert war.
-![Neu](../assets/new.svg) - Es wurden Daten zu `addToRequisitionList` Ereignis für einfache Produkte auf der Kategorieansichtsseite hinzugefügt.
-![Beheben](../assets/fix.svg) - Es wurde ein Problem in den `selectedOptions` im `addToRequisitionList` behoben, das auftrat, wenn Produkte von der Bestellbestätigungsseite hinzugefügt wurden.
-![Neu](../assets/new.svg) - Produktdaten zu `addToRequisitionList` Ereignis hinzugefügt, wenn Produkte von der Kategorieansichtsseite zur Anforderungsliste hinzugefügt werden.
-![Neu](../assets/new.svg) - Ereignis `addToRequisitionList` hinzugefügt, wenn konfigurierbare Produkte auf der Seite Produktansicht zur Anforderungsliste hinzugefügt werden.
-![Neu](../assets/new.svg) - `addToRequisitionList` und `removeFromRequisitionList` Ereignisse hinzugefügt, wenn die Produktmenge aus einer Anforderungsliste erhöht und/oder verringert wird.
+![Neu](../assets/new.svg) - Neues Bestellstatusereignis hinzugefügt: [Bestellung fakturiert](events-backoffice.md#orderinvoiced), [Bestellartikelrücksendung eingeleitet](events-backoffice.md#orderitemsreturninitiated) und [Bestellartikelrücksendung abgeschlossen](events-backoffice.md#orderitemreturncompleted).![Beheben](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem Änderungen an der Währungskonfiguration nach der Aktualisierung des Caches nicht in den Ereignissen widergespiegelt wurden.![Behebung](../assets/fix.svg) - Es wurde ein Fehler behoben, der auftrat, wenn die Bestellbestätigungsmeldung nicht angezeigt wurde, wenn die asynchrone Bestellplatzierung aktiviert war.![Neu](../assets/new.svg) - Es wurden Daten zu `addToRequisitionList` Ereignis für einfache Produkte auf der Kategorieansichtsseite hinzugefügt.![Beheben](../assets/fix.svg) - Es wurde ein Problem in den `selectedOptions` im `addToRequisitionList` behoben, das auftrat, wenn Produkte von der Bestellbestätigungsseite hinzugefügt wurden.![Neu](../assets/new.svg) - Produktdaten zu `addToRequisitionList` Ereignis hinzugefügt, wenn Produkte von der Kategorieansichtsseite zur Anforderungsliste hinzugefügt werden.![Neu](../assets/new.svg) - Ereignis `addToRequisitionList` hinzugefügt, wenn konfigurierbare Produkte auf der Seite Produktansicht zur Anforderungsliste hinzugefügt werden.![Neu](../assets/new.svg) - `addToRequisitionList` und `removeFromRequisitionList` Ereignisse hinzugefügt, wenn die Produktmenge aus einer Anforderungsliste erhöht und/oder verringert wird.
 
 _10. Juni 2023_
 
-![Beheben](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem `orderId` aufgrund von Präfixen in der Commerce-Bestellkennung im Kontext nicht übergeben wurde.
-![Beheben](../assets/fix.svg) - Aktualisierte Konfigurationen der Content Security Policy.
+![Beheben](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem `orderId` aufgrund von Präfixen in der Commerce-Bestellkennung im Kontext nicht übergeben wurde.![Beheben](../assets/fix.svg) - Aktualisierte Konfigurationen der Content Security Policy.
 
 _30. März 2023_
 
-![Neu](../assets/new.svg) - Es wurde eine Erweiterung namens `data-services-b2b` hinzugefügt, die [Anforderungslisten-Ereignisse](events.md#b2b-events) für B2B-Händler enthält.
-![Neu](../assets/new.svg) - Das `uniqueIdentifier` Feld wurde zu [search](events.md#search-events)-Ereignissen hinzugefügt. Dieses neue Feld ermöglicht Händlern Querverweise auf Suchanfragen und Suchantworten.
+![Neu](../assets/new.svg) - Es wurde eine Erweiterung namens `data-services-b2b` hinzugefügt, die [Anforderungslisten-Ereignisse](events.md#b2b-events) für B2B-Händler enthält.![Neu](../assets/new.svg) - Das `uniqueIdentifier` Feld wurde zu [search](events.md#search-events)-Ereignissen hinzugefügt. Dieses neue Feld ermöglicht Händlern Querverweise auf Suchanfragen und Suchantworten.
 
 _12. Oktober 2022_
 
-![Neu](../assets/new.svg) - Zwei [Storefront-Ereignisse](events.md), `openCart` und `removeFromCart`, wurden zum SDK und Collector für Adobe Commerce Storefront-Ereignisse hinzugefügt.
-![Neu](../assets/new.svg) - Unterstützung für eine [AEM-Storefront hinzugefügt](overview.md#supported-architecture).
+![Neu](../assets/new.svg) - Zwei [Storefront-Ereignisse](events.md), `openCart` und `removeFromCart`, wurden zum SDK und Collector für Adobe Commerce Storefront-Ereignisse hinzugefügt.![Neu](../assets/new.svg) - Unterstützung für eine [AEM-Storefront hinzugefügt](overview.md#supported-architecture).
 
 +++
+
+## 3.6.0
+
+_Juli 2026_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"} Adobe Commerce-Versionen 2.4.4 und höher
+
+![Neu](../assets/new.svg) Es wurde Konfigurationsunterstützung für Websites für die entsprechenden [!DNL Data Connection] hinzugefügt, einschließlich der Experience Platform-Sandbox-Auswahl für Bereitstellungen mit mehreren Websites. Siehe [Konfigurationsbereich](connect-data.md#configuration-scope).
+
+![Korrigieren](../assets/fix.svg) Die Verbindungsvalidierung wurde aktualisiert, sodass **[!UICONTROL Test connection]** Anmeldedaten für Service-Konten und Sandbox-Einstellungen für die aktuell unter „Umfang **ausgewählte Website**.
 
 ## 3.5.0
 
@@ -128,8 +124,7 @@ _17. Januar 2025_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"} Adobe Commerce-Versionen 2.4.4 und höher
 
-![Neu](../assets/new.svg) - [!DNL Data Connection] wurde die [HIPAA-fähige Erweiterung](hipaa-readiness.md) hinzugefügt, damit Händler [!DNL Commerce] Backoffice-Ereignisdaten mit Experience Platform teilen und die HIPAA-Konformität aufrechterhalten können.
-![Beheben](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem die [!DNL Data Connection]-Erweiterung `eventForwarding` Daten überschrieb und das `HIPAA`-Flag für alle Kunden setzte. Jetzt setzt die Erweiterung nur noch das Flag für HIPAA-Kunden.
+![Neu](../assets/new.svg) - [!DNL Data Connection] wurde die [HIPAA-fähige Erweiterung](hipaa-readiness.md) hinzugefügt, damit Händler [!DNL Commerce] Backoffice-Ereignisdaten mit Experience Platform teilen und die HIPAA-Konformität aufrechterhalten können.![Beheben](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem die [!DNL Data Connection]-Erweiterung `eventForwarding` Daten überschrieb und das `HIPAA`-Flag für alle Kunden setzte. Jetzt setzt die Erweiterung nur noch das Flag für HIPAA-Kunden.
 
 ## 3.2.0
 
@@ -137,9 +132,7 @@ _7. Oktober 2024_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"} Adobe Commerce-Versionen 2.4.4 und höher
 
-![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt, [benutzerdefinierte Bestellattribute](custom-attributes.md) zu Back-Office-Daten zu erstellen.
-![Neu](../assets/new.svg) - Es wurde eine neue Tabelle [Benutzerdefinierte Bestellattribute](connect-data.md#data-customization) hinzugefügt, in der Sie alle benutzerdefinierten Attribute anzeigen können, die in [!DNL Commerce] konfiguriert und an Experience Platform gesendet wurden.
-![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt[&#x200B; Profildatensätze &#x200B;](connect-data.md#send-customer-profile-data) Daten zu erfassen und an Experience Platform zu senden.
+![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt, [benutzerdefinierte Bestellattribute](custom-attributes.md) zu Back-Office-Daten zu erstellen.![Neu](../assets/new.svg) - Es wurde eine neue Tabelle [Benutzerdefinierte Bestellattribute](connect-data.md#data-customization) hinzugefügt, in der Sie alle benutzerdefinierten Attribute anzeigen können, die in [!DNL Commerce] konfiguriert und an Experience Platform gesendet wurden.![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt[&#x200B; Profildatensätze &#x200B;](connect-data.md#send-customer-profile-data) Daten zu erfassen und an Experience Platform zu senden.
 
 ## 3.2.0-beta3
 
@@ -147,8 +140,7 @@ _27. August 2024_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"} Adobe Commerce-Versionen 2.4.4 und höher
 
-![Neu](../assets/new.svg) - Wenn Sie die Betaversion verwenden, stellen Sie sicher, dass Ihre `composer.json`-Datei auf der Stammebene Folgendes enthält: `"minimum-stability": "beta"`. Fügen Sie außerdem `composer require "magento/customers-connector: ^1.2.0"` hinzu, um Kundenprofile von Ihrer Commerce-Instanz an SaaS zu senden.
-![Neu](../assets/new.svg) - Diese Version enthält die Patches, die in 3.1.1, 3.1.2, 3.1.3 und 3.1.4 veröffentlicht wurden.
+![Neu](../assets/new.svg) - Wenn Sie die Betaversion verwenden, stellen Sie sicher, dass Ihre `composer.json`-Datei auf der Stammebene Folgendes enthält: `"minimum-stability": "beta"`. Fügen Sie außerdem `composer require "magento/customers-connector: ^1.2.0"` hinzu, um Kundenprofile von Ihrer Commerce-Instanz an SaaS zu senden.![Neu](../assets/new.svg) - Diese Version enthält die Patches, die in 3.1.1, 3.1.2, 3.1.3 und 3.1.4 veröffentlicht wurden.
 
 ## 3.1.4
 
@@ -172,8 +164,7 @@ _5. Juni 2024_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"} Adobe Commerce-Versionen 2.4.4 und höher
 
-![Korrigieren](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem beim Initiieren einer [Verlaufssynchronisierung) das falsche &#x200B;](connect-data.md#specify-order-history-date-range) verwendet wurde.
-![Beheben](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem das `startCheckout`-Ereignis in Adobe Commerce 2.4.7 nicht gesendet wurde.
+![Korrigieren](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem beim Initiieren einer [Verlaufssynchronisierung) das falsche &#x200B;](connect-data.md#specify-order-history-date-range) verwendet wurde.![Beheben](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem das `startCheckout`-Ereignis in Adobe Commerce 2.4.7 nicht gesendet wurde.
 
 ## 3.1.1
 
@@ -181,8 +172,7 @@ _4. April 2024_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"} Adobe Commerce-Versionen 2.4.4 und höher
 
-![Neu](../assets/new.svg) - PHP 8.3 wird nun für alle [!DNL Data Connection] Erweiterungen unterstützt.
-![Neu](../assets/new.svg) - Es wurde ein Artikel zur [&#x200B; (Integration](mobile-sdk-epc.md) der Adobe Experience Platform Mobile SDK mit Commerce hinzugefügt.
+![Neu](../assets/new.svg) - PHP 8.3 wird nun für alle [!DNL Data Connection] Erweiterungen unterstützt.![Neu](../assets/new.svg) - Es wurde ein Artikel zur [&#x200B; (Integration](mobile-sdk-epc.md) der Adobe Experience Platform Mobile SDK mit Commerce hinzugefügt.
 
 ## 3.2.0-beta2
 
@@ -190,9 +180,7 @@ _4. März 2024_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"} Adobe Commerce-Versionen 2.4.4 und höher
 
-![Neu](../assets/new.svg) - Wenn Sie die Betaversion verwenden, stellen Sie sicher, dass Ihre `composer.json`-Datei auf der Stammebene Folgendes enthält: `"minimum-stability": "beta"`. Fügen Sie außerdem `composer require "magento/customers-connector: ^1.2.0"` hinzu, um Kundenprofile von Ihrer Commerce-Instanz an SaaS zu senden.
-![Neu](../assets/new.svg) - Es wurde die Möglichkeit zum [Hinzufügen benutzerdefinierter Attribute“ &#x200B;](custom-attributes.md).
-![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt[&#x200B; Profildatensätze &#x200B;](connect-data.md#send-customer-profile-data) Daten zu erfassen und an Experience Platform zu senden.
+![Neu](../assets/new.svg) - Wenn Sie die Betaversion verwenden, stellen Sie sicher, dass Ihre `composer.json`-Datei auf der Stammebene Folgendes enthält: `"minimum-stability": "beta"`. Fügen Sie außerdem `composer require "magento/customers-connector: ^1.2.0"` hinzu, um Kundenprofile von Ihrer Commerce-Instanz an SaaS zu senden.![Neu](../assets/new.svg) - Es wurde die Möglichkeit zum [Hinzufügen benutzerdefinierter Attribute“ &#x200B;](custom-attributes.md).![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt[&#x200B; Profildatensätze &#x200B;](connect-data.md#send-customer-profile-data) Daten zu erfassen und an Experience Platform zu senden.
 
 ## 3.1.0
 
@@ -200,9 +188,7 @@ _16. November 2023_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"} Adobe Commerce-Versionen 2.4.4 und höher
 
-![Neu](../assets/new.svg) - Der Experience Platform-Connector wurde in [!DNL Data Connection] umbenannt.
-![Behebung](../assets/fix.svg) - Es wurde die Möglichkeit hinzugefügt, eine Fehlerantwort zu protokollieren, wenn Adobe IMS das Zugriffstoken nicht generieren kann.
-![Korrektur](../assets/fix.svg) - Es wurde eine Benachrichtigung hinzugefügt, wenn Sie versuchen, historische Bestellungen zu synchronisieren, aber keine Kontoanmeldeinformationen angegeben haben.
+![Neu](../assets/new.svg) - Der Experience Platform-Connector wurde in [!DNL Data Connection] umbenannt.![Behebung](../assets/fix.svg) - Es wurde die Möglichkeit hinzugefügt, eine Fehlerantwort zu protokollieren, wenn Adobe IMS das Zugriffstoken nicht generieren kann.![Korrektur](../assets/fix.svg) - Es wurde eine Benachrichtigung hinzugefügt, wenn Sie versuchen, historische Bestellungen zu synchronisieren, aber keine Kontoanmeldeinformationen angegeben haben.
 
 ## 3.0.0
 
@@ -212,9 +198,7 @@ _10. Oktober 2023_
 
 Dies ist eine Hauptversion. [Bearbeiten](install.md#update) Sie die Datei „composer.json“ im Stammverzeichnis Ihres Projekts.
 
-![Neu](../assets/new.svg) - Allgemeine Verfügbarkeit zum [Senden von historischen &#x200B;](connect-data.md#send-historical-order-data) und Status an die Experience Platform.
-![Neu](../assets/new.svg) - Es wurde Unterstützung für OAuth 2.0 beim [&#x200B; (Konfigurieren](connect-data.md#connect-commerce-data-to-adobe-experience-platform) der [!DNL Data Connection] hinzugefügt.
-![Neu](../assets/new.svg) - Beendet die Unterstützung für Adobe Commerce 2.4.3.
+![Neu](../assets/new.svg) - Allgemeine Verfügbarkeit zum [Senden von historischen &#x200B;](connect-data.md#send-historical-order-data) und Status an die Experience Platform.![Neu](../assets/new.svg) - Es wurde Unterstützung für OAuth 2.0 beim [&#x200B; (Konfigurieren](connect-data.md#connect-commerce-data-to-adobe-experience-platform) der [!DNL Data Connection] hinzugefügt.![Neu](../assets/new.svg) - Beendet die Unterstützung für Adobe Commerce 2.4.3.
 
 ## 2.3.0
 
@@ -222,10 +206,7 @@ _27. Juni 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.3 und neuer
 
-![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt[&#x200B; „Storefront-Ereignisse zu senden](connect-data.md#data-collection) an die Experience Platform zu deaktivieren.
-![Beheben](../assets/fix.svg) - Aktualisierte Konfigurationen der Content Security Policy.
-![Fix](../assets/fix.svg) - Die Unterstützung für Backoffice-Ereignisse in Commerce 2.4.7 wurde korrigiert.
-![Neu](../assets/new.svg) - Es wurde eine Benachrichtigung zur Cache-Invalidierung hinzugefügt, wenn Sie Änderungen am [!DNL Data Connection]-Erweiterungsformular speichern.
+![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt[&#x200B; „Storefront-Ereignisse zu senden](connect-data.md#data-collection) an die Experience Platform zu deaktivieren.![Beheben](../assets/fix.svg) - Aktualisierte Konfigurationen der Content Security Policy.![Fix](../assets/fix.svg) - Die Unterstützung für Backoffice-Ereignisse in Commerce 2.4.7 wurde korrigiert.![Neu](../assets/new.svg) - Es wurde eine Benachrichtigung zur Cache-Invalidierung hinzugefügt, wenn Sie Änderungen am [!DNL Data Connection]-Erweiterungsformular speichern.
 
 ## 3.0.0-beta1 (nur intern)
 
@@ -241,8 +222,7 @@ _30. März 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.3 und neuer
 
-![Neu](../assets/new.svg) - Die `commerce-data-export` und `saas-export` Abhängigkeiten wurden mit der `experience-platform-connector`-Erweiterung gebündelt. Zuvor mussten Sie diese Abhängigkeiten separat installieren. Diese Abhängigkeiten ermöglichen zusammen mit der Konfiguration von Händlern die Server-seitige Verarbeitung von [Back-Office-Ereignissen](events-backoffice.md).
-![Neu](../assets/new.svg) - Neues Backoffice-Ereignis namens [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted) hinzugefügt.
+![Neu](../assets/new.svg) - Die `commerce-data-export` und `saas-export` Abhängigkeiten wurden mit der `experience-platform-connector`-Erweiterung gebündelt. Zuvor mussten Sie diese Abhängigkeiten separat installieren. Diese Abhängigkeiten ermöglichen zusammen mit der Konfiguration von Händlern die Server-seitige Verarbeitung von [Back-Office-Ereignissen](events-backoffice.md).![Neu](../assets/new.svg) - Neues Backoffice-Ereignis namens [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted) hinzugefügt.
 
 ## 2.1.1
 
@@ -258,8 +238,7 @@ _17. Januar 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.3 und neuer
 
-![Neu](../assets/new.svg) - Die Erweiterung [[!DNL Data Connection] Admin](connect-data.md) wurde aktualisiert, sodass Sie eine eigene AEP Web SDK-Legierung angeben können.
-![Behebung](../assets/fix.svg) Geändert in Verwendung von `identityMap` anstelle von `personID` beim Festlegen der primären Identität für alle Daten, die an den Edge gepusht werden.
+![Neu](../assets/new.svg) - Die Erweiterung [[!DNL Data Connection] Admin](connect-data.md) wurde aktualisiert, sodass Sie eine eigene AEP Web SDK-Legierung angeben können.![Behebung](../assets/fix.svg) Geändert in Verwendung von `identityMap` anstelle von `personID` beim Festlegen der primären Identität für alle Daten, die an den Edge gepusht werden.
 
 ## 2.0.1
 
@@ -275,8 +254,7 @@ _12. Oktober 2022_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.3 und neuer
 
-![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt, beim [Verbinden](connect-data.md) Ihrer Adobe Commerce-Instanz mit der Experience Platform Ihre eigene AEP Web SDK anzugeben.
-![Korrigieren](../assets/fix.svg) - Die Anforderung an den Datenstrombereich wurde aktualisiert, sodass Datenstrom-IDs für die Website und nicht für die Storeview gültig sind.
+![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt, beim [Verbinden](connect-data.md) Ihrer Adobe Commerce-Instanz mit der Experience Platform Ihre eigene AEP Web SDK anzugeben.![Korrigieren](../assets/fix.svg) - Die Anforderung an den Datenstrombereich wurde aktualisiert, sodass Datenstrom-IDs für die Website und nicht für die Storeview gültig sind.
 
 ## 1.0.0
 

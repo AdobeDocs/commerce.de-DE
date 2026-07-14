@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 1132
+source-wordcount: 1107
 ht-degree: 0%
 
 ---
@@ -37,16 +37,7 @@ Erstellen Sie Zielgruppen in Real-Time CDP mithilfe von Daten aus Storefront-, B
 
 ## Was haben andere Kunden erreicht?
 
-Adobe [!DNL Commerce]-Kunden haben durch die Aktivierung von in Real-Time CDP erstellten Zielgruppen und deren Bereitstellung in ihrer [!DNL Commerce]-Instanz erhebliche geschäftliche Vorteile erzielt.
-
-Ein globales, markenübergreifendes Bekleidungsgeschäft mit retailer:
-
-- Eine Quelle der Wahrheit mit 10 Millionen von einheitlichen Kundenprofilen
-- Es wurden mehr als 40 einzigartige Zielgruppen von „Kunden mit hohen Absichten“ erstellt, um kanalübergreifend zu interagieren
-
-Ein globales Getränkeunternehmen sammelte:
-
-- 98 Millionen Kundenprofile aus über 100 Ländern
+Adobe [!DNL Commerce]-Kunden haben durch die Aktivierung von in Real-Time CDP erstellten Zielgruppen und deren Bereitstellung in ihrer [!DNL Commerce]-Instanz erhebliche geschäftliche Vorteile erzielt. Weitere Informationen zu verwandten Kundenergebnissen aus Commerce-Ereignisdaten finden Sie unter [Verwenden von Adobe Journey Optimizer zum Senden einer E-Mail zu einem Transaktionsabbruch](using-ajo.md#what-have-other-customers-achieved).
 
 ## Fangen wir an
 

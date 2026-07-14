@@ -17,7 +17,7 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
 source-wordcount: 616
 ht-degree: 2%
@@ -384,6 +384,6 @@ Gehen Sie in [&#x200B; Admin zur Registerkarte &#x200B;](connect-data.md#data-cu
 
 Wenn die Meldung `No custom order attributes found.` auf der Registerkarte **[!UICONTROL Data Customization]** angezeigt wird, bestätigen Sie Folgendes:
 
-1. Sie haben die Voraussetzungen zum Aktivieren der [Data Connector-Erweiterung](overview.md#prerequisites) erfüllt.
+1. Sie haben die Voraussetzungen erfüllt, um die [!DNL Data Connection]-Erweiterung zu aktivieren. Siehe [Voraussetzungen](overview.md#prerequisites).
 1. Sie haben [benutzerdefinierte Bestellattribute“ &#x200B;](#add-custom-attributes-to-orders).
 1. Mindestens ein Auftragsereignis wurde generiert.

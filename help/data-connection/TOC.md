@@ -6,7 +6,7 @@ role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
-source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 1%
@@ -17,20 +17,20 @@ ht-degree: 1%
 # [!DNL Data Connection] für Adobe Commerce {#data-connection}
 
 - [[!DNL Data Connection]](overview.md)
-- [HIPAA-Bereitschaft für Commerce Services](hipaa-readiness.md)
-- [Handhabung von Datenschutzanfragen durch Commerce Services](handle-privacy-request.md)
-- [Versionshinweise](release-notes.md)
 - Grundlagen {#fundamentals}
    - [Installieren der  [!DNL Data Connection] -Erweiterung](install.md)
-   - [Verbindung mit Adobe Experience Platform herstellen](connect-data.md)
    - [Typen von Commerce-Daten](data-ingestion.md)
    - [Zeitreihen-Ereignisschema aktualisieren](update-xdm.md)
    - [Profildatensatzschema aktualisieren](profile-data.md)
+   - [Profileinträge](events-profilerecord.md)
+   - [Verbindung mit Adobe Experience Platform herstellen](connect-data.md)
    - [Verwenden der Adobe Experience Platform Mobile SDK](mobile-sdk-epc.md)
+- [HIPAA-Bereitschaft für Commerce Services](hipaa-readiness.md)
+- [Handhabung von Datenschutzanfragen durch Commerce Services](handle-privacy-request.md)
+- [Versionshinweise](release-notes.md)
 - Erfassen von Daten {#event-forwarding}
    - [Verhaltensereignisse](events.md)
    - [Back-Office-Ereignisse](events-backoffice.md)
-   - [Profileinträge](events-profilerecord.md)
    - [Verwenden von Adobe Experience Platform-Tags](using-tags.md)
 - Anpassen der Datenerfassung {#customize-data}
    - [Hinzufügen benutzerdefinierter Attribute zu Bestellungen](custom-attributes.md)

@@ -16,7 +16,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
 source-wordcount: 1395
 ht-degree: 0%
@@ -36,7 +36,7 @@ Erstellen Sie einen Transaktionsabbruch, durchsuchen Sie E-Mails oder Benachrich
 | **Definition** | Klicks oder Aktionen, die Kunden auf Ihrer Site durchführen. | Informationen über den Lebenszyklus und Details jeder Bestellung (vergangene und aktuelle). |
 | **Von Adobe Commerce erfasste Ereignisse** | [pageView](https://experienceleague.adobe.com/de/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/de/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/de/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/de/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/de/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/de/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/de/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Order history](https://experienceleague.adobe.com/de/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
 
-### Was haben andere Kunden erreicht?
+### Was haben andere Kunden erreicht? {#what-have-other-customers-achieved}
 
 Adobe [!DNL Commerce]-Kunden haben durch die Implementierung personalisierter Abbruchkampagnen mit Adobe [!DNL Commerce], Adobe [!DNL Journey Optimizer] und Adobe [!DNL Real-Time CDP] erhebliche geschäftliche Vorteile erzielt.
 

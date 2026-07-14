@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 2655
+source-wordcount: 2684
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ So erfassen Sie Commerce-Ereignisdaten:
 
   >[!NOTE]
   >
-  > **&#x200B;**&#x200B;nicht[konfigurieren](connect-data.md) die Organisations-ID und die Datenstrom-ID.
+  > **Sie** Organisations[ID und Datenstrom](connect-data.md)ID im Commerce Admin, wenn Sie Tags für die Sammlung verwenden. Händler, die mehrere Websites betreiben, konfigurieren Datenströme nach Eigenschaft oder Umgebung in Tags. Informationen zum Commerce-Administratorbereichsverhalten finden Sie unter [Konfigurationsbereich](connect-data.md#configuration-scope).
 
 ## Zuordnen von Commerce-Storefront-Daten zu Adobe Experience Platform
 
@@ -75,7 +75,7 @@ Fügen wir beispielsweise das Adobe Commerce-`signOut`-Ereignis zu Adobe Experie
 
 1. Erstellen Sie ein Datenelement:
 
-   ![Neues Datenelement erstellen](assets/create-new-data-elements.png)
+   !&lbrack;Neues Datenelement erstellen
    _Neues Datenelement erstellen_
 
 1. Legen Sie **Name** auf `sign out` fest.
@@ -88,14 +88,14 @@ Fügen wir beispielsweise das Adobe Commerce-`signOut`-Ereignis zu Adobe Experie
 
 1. Legen **unter** > **abmelden** den **Wert** in **Besucher-Abmeldung** auf `1` fest.
 
-   ![Abmeldewert aktualisieren](assets/signout-value.png)
+   !&lbrack;Abmeldewert aktualisieren
    _Abmeldewert aktualisieren_
 
 1. Wählen Sie **Speichern** aus.
 
 1. Erstellen Sie eine Regel:
 
-   ![Neue Regel erstellen](assets/create-new-rule.png)
+   !&lbrack;Neue Regel erstellen
    _Neue Regel erstellen_
 
 1. Wählen **Hinzufügen** unter **EREIGNISSE** aus.
@@ -1351,7 +1351,7 @@ Die folgenden Schritte zeigen, wie Sie ein `pageView`-Ereignis mit `identityMap`
 
 1. Konfigurieren des Datenelements mit benutzerdefiniertem Code für ECID:
 
-   ![Konfigurieren des Datenelements mit benutzerdefiniertem Code](assets/set-custom-code-ecid.png)
+   !&lbrack;Konfigurieren des Datenelements mit benutzerdefiniertem Code
    _Konfigurieren des Datenelements mit benutzerdefiniertem Code_
 
 1. Wählen Sie [!UICONTROL Open Editor] aus und fügen Sie den folgenden benutzerdefinierten Code hinzu:
@@ -1378,12 +1378,12 @@ Die folgenden Schritte zeigen, wie Sie ein `pageView`-Ereignis mit `identityMap`
 
 1. Aktualisieren Sie das XDM-Schema mit `identityMap` als ECID:
 
-   ![identityMap als ECID festlegen](assets/identity-map-data-element.png)
+   !&lbrack;identityMap als ECID festlegen
    _identityMap als ECID festlegen_
 
 1. Definieren Sie Regelaktionen, die ECID abrufen:
 
-   ![ECID abrufen](assets/rule-retrieve-ecid.png)
+   !&lbrack;ECID abrufen
    _ECID abrufen_
 
 ## Festlegen der Identität in Back-Office-Ereignissen
@@ -1392,7 +1392,7 @@ Im Gegensatz zu Storefront-Ereignissen, die ECID verwenden, um Profilinformation
 
 1. Erstellen Sie ein Identitätszuordnungselement.
 
-   ![Identitätszuordnung für Backoffice](assets/custom-code-backoffice.png)
+   !&lbrack;Identitätszuordnung für Backoffice
    _Back-Office-Identitätszuordnung erstellen_
 
 1. Wählen Sie [!UICONTROL Open Editor] aus und fügen Sie den folgenden benutzerdefinierten Code hinzu:
@@ -1420,7 +1420,7 @@ return IdentityMap;
 
 1. Fügen Sie jedes `identityMap` Feld dieses neue Element hinzu.
 
-   ![Aktualisieren jeder identityMap](assets/add-element-back-office.png)
+   !&lbrack;Aktualisieren jeder identityMap
    _Aktualisieren jeder identityMap_
 
 ## Einverständnis wird festgelegt
@@ -1429,17 +1429,17 @@ Wenn Sie die [!DNL Data Connection]-Erweiterung in Adobe Commerce installieren, 
 
 1. Erstellen Sie ein **Core Custom Code**-Datenelement (`%do not track cookie%`) für das `mg_dnt` Cookie:
 
-   ![Datenelement erstellen/nicht verfolgen](assets/element-dnt-cookie.png)
+   !&lbrack;Datenelement erstellen/nicht verfolgen
    _Erstellen verfolgt kein Datenelement_
 
 1. Erstellen Sie ein **Core Custom Code**-Datenelement (`%consent%`), das `out` zurückgibt, wenn das Cookie gesetzt ist, und andernfalls `in`:
 
-   ![Einverständnisdatenelement erstellen](assets/element-consent-dnt-cookie.png)
+   !&lbrack;Einverständnisdatenelement erstellen
    _Einverständnisdatenelement erstellen_
 
 1. Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung mit `%consent%` Datenelement:
 
-   ![Aktualisieren von SDK mit Einverständnis](assets/config-sdk-consent.png)
+   !&lbrack;Aktualisieren von SDK mit Einverständnis
    _Aktualisieren von SDK mit Einverständnis_
 
 ## Warnungen

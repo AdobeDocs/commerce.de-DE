@@ -14,21 +14,23 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
-source-wordcount: 1019
+source-wordcount: 1028
 ht-degree: 0%
 
 ---
 
 # Aktualisieren von Zeitreihen-Ereignisschemata für die Datenaufnahme in Commerce
 
-Einer der [&#x200B; Onboarding-Schritte &#x200B;](overview.md#onboarding-steps) Verwendung der [!DNL Data Connection]-Erweiterung besteht darin, auf den Arbeitsbereich Datenstrom zuzugreifen und [einen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=de) zu erstellen), der speziell für Adobe Commerce gilt. Wenn Sie diesen Datenstrom erstellen, müssen Sie auch ein Schema auswählen, das die Daten beschreibt, die Sie aufnehmen möchten. Dieses Schema muss Commerce-spezifische Feldergruppen enthalten.
+Wenn Sie die Erweiterung [aktivieren [!DNL Data Connection]](overview.md#enable-extension) müssen, besteht einer der Schritte darin, auf den Arbeitsbereich Datenstrom zuzugreifen und [einen Datenstrom zu erstellen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=de) der speziell für Adobe Commerce gilt. Wenn Sie diesen Datenstrom erstellen, müssen Sie auch ein Schema auswählen, das die Daten beschreibt, die Sie aufnehmen möchten. Dieses Schema muss Commerce-spezifische Feldergruppen enthalten.
 
 In diesem Artikel erhalten Sie die Feldergruppen, die Ihr Schema enthalten muss, um die folgenden von den Adobe Commerce-Ereignissen bereitgestellten Zeitreihendaten erfolgreich zu erfassen:
 
-- [Verhalten](events.md) - Umfasst Storefront, Profil, Suche und B2B-Ereignisse.
-- [Back Office](events-backoffice.md) - Enthält den Bestellstatus und Profilereignisse.
+- [Verhalten](events.md) - Umfasst Storefront, Suche und B2B-Ereignisse.
+- [Back Office](events-backoffice.md) - Enthält den Bestellstatus und Zeitreihen [Profilereignisse](events-backoffice.md#customer-profile-events).
+
+Informationen zu *Datensätzen* finden Sie unter [Aktualisieren des Profildatensatzschemas](profile-data.md).
 
 Weitere Informationen zu [Zeitreihendaten](data-ingestion.md).
 
