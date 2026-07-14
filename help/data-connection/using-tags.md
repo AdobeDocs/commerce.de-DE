@@ -5,10 +5,18 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dab333e8-5f71-4f3e-9660-6363b0e230c8
 TQID: https://experienceleague.adobe.com/7HNafiIenZfLrAhILPMwuUzRDzBVuClvDchJBGEg6bs
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
 source-wordcount: 2684
@@ -39,7 +47,7 @@ So erfassen Sie Commerce-Ereignisdaten:
 
 Um Daten einer Commerce-Storefront Adobe Experience Platform zuzuordnen, konfigurieren und installieren Sie Folgendes in Adobe Experience Platform Tags:
 
-1. [Richten Sie eine Tag-Eigenschaft ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) der Datenerfassung in Adobe Experience Platform ein.
+1. [Richten Sie eine Tag-Eigenschaft &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) der Datenerfassung in Adobe Experience Platform ein.
 
 1. Wählen **unter** die Option **Erweiterungen** aus und installieren und konfigurieren Sie die folgenden Erweiterungen:
 
@@ -67,7 +75,7 @@ Fügen wir beispielsweise das Adobe Commerce-`signOut`-Ereignis zu Adobe Experie
 
 1. Erstellen Sie ein Datenelement:
 
-   ![Neues Datenelement erstellen
+   !&lbrack;Neues Datenelement erstellen
    _Neues Datenelement erstellen_
 
 1. Legen Sie **Name** auf `sign out` fest.
@@ -80,14 +88,14 @@ Fügen wir beispielsweise das Adobe Commerce-`signOut`-Ereignis zu Adobe Experie
 
 1. Legen **unter** > **abmelden** den **Wert** in **Besucher-Abmeldung** auf `1` fest.
 
-   ![Abmeldewert aktualisieren
+   !&lbrack;Abmeldewert aktualisieren
    _Abmeldewert aktualisieren_
 
 1. Wählen Sie **Speichern** aus.
 
 1. Erstellen Sie eine Regel:
 
-   ![Neue Regel erstellen
+   !&lbrack;Neue Regel erstellen
    _Neue Regel erstellen_
 
 1. Wählen **Hinzufügen** unter **EREIGNISSE** aus.
@@ -1334,7 +1342,7 @@ Storefront-Ereignisse enthalten Profilinformationen, die auf den Feldern `person
 >
 >Wenn Sie eine frühere Einrichtung haben, die sich auf verschiedene Felder stützt, können Sie diese weiterhin verwenden.
 
-- `personalEmail` - Gilt nur für Kontoereignisse. Führen Sie die oben beschriebenen Schritte, Regeln und [ aus](#createaccount)
+- `personalEmail` - Gilt nur für Kontoereignisse. Führen Sie die oben beschriebenen Schritte, Regeln und [&#x200B; aus](#createaccount)
 - `identityMap` - Gilt für alle anderen Storefront-Ereignisse. Siehe folgendes Beispiel.
 
 ### Beispiel
@@ -1343,7 +1351,7 @@ Die folgenden Schritte zeigen, wie Sie ein `pageView`-Ereignis mit `identityMap`
 
 1. Konfigurieren des Datenelements mit benutzerdefiniertem Code für ECID:
 
-   ![Konfigurieren des Datenelements mit benutzerdefiniertem Code
+   !&lbrack;Konfigurieren des Datenelements mit benutzerdefiniertem Code
    _Konfigurieren des Datenelements mit benutzerdefiniertem Code_
 
 1. Wählen Sie [!UICONTROL Open Editor] aus und fügen Sie den folgenden benutzerdefinierten Code hinzu:
@@ -1370,12 +1378,12 @@ Die folgenden Schritte zeigen, wie Sie ein `pageView`-Ereignis mit `identityMap`
 
 1. Aktualisieren Sie das XDM-Schema mit `identityMap` als ECID:
 
-   ![identityMap als ECID festlegen
+   !&lbrack;identityMap als ECID festlegen
    _identityMap als ECID festlegen_
 
 1. Definieren Sie Regelaktionen, die ECID abrufen:
 
-   ![ECID abrufen
+   !&lbrack;ECID abrufen
    _ECID abrufen_
 
 ## Festlegen der Identität in Back-Office-Ereignissen
@@ -1384,7 +1392,7 @@ Im Gegensatz zu Storefront-Ereignissen, die ECID verwenden, um Profilinformation
 
 1. Erstellen Sie ein Identitätszuordnungselement.
 
-   ![Identitätszuordnung für Backoffice
+   !&lbrack;Identitätszuordnung für Backoffice
    _Back-Office-Identitätszuordnung erstellen_
 
 1. Wählen Sie [!UICONTROL Open Editor] aus und fügen Sie den folgenden benutzerdefinierten Code hinzu:
@@ -1412,7 +1420,7 @@ return IdentityMap;
 
 1. Fügen Sie jedes `identityMap` Feld dieses neue Element hinzu.
 
-   ![Aktualisieren jeder identityMap
+   !&lbrack;Aktualisieren jeder identityMap
    _Aktualisieren jeder identityMap_
 
 ## Einverständnis wird festgelegt
@@ -1421,17 +1429,17 @@ Wenn Sie die [!DNL Data Connection]-Erweiterung in Adobe Commerce installieren, 
 
 1. Erstellen Sie ein **Core Custom Code**-Datenelement (`%do not track cookie%`) für das `mg_dnt` Cookie:
 
-   ![Datenelement erstellen/nicht verfolgen
+   !&lbrack;Datenelement erstellen/nicht verfolgen
    _Erstellen verfolgt kein Datenelement_
 
 1. Erstellen Sie ein **Core Custom Code**-Datenelement (`%consent%`), das `out` zurückgibt, wenn das Cookie gesetzt ist, und andernfalls `in`:
 
-   ![Einverständnisdatenelement erstellen
+   !&lbrack;Einverständnisdatenelement erstellen
    _Einverständnisdatenelement erstellen_
 
 1. Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung mit `%consent%` Datenelement:
 
-   ![Aktualisieren von SDK mit Einverständnis
+   !&lbrack;Aktualisieren von SDK mit Einverständnis
    _Aktualisieren von SDK mit Einverständnis_
 
 ## Warnungen

@@ -5,9 +5,15 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: c933a1bc-3d6f-4f80-944f-8c3e212aaeb6
 TQID: https://experienceleague.adobe.com/8u3lSBPoreIZuu107QbR7FNvVx6Lw3TJsKUU6LCQ1Gs
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
 source-wordcount: 1028
@@ -36,11 +42,11 @@ In diesem Abschnitt erfahren Sie, wie Sie Ihr vorhandenes Schema aktualisieren o
 
 >[!NOTE]
 >
->Informationen [ Hinzufügen profilspezifischer Felder finden ](#time-series-profile-event-data) unter von Zeitreihen-Profilereignisdaten .
+>Informationen [&#x200B; Hinzufügen profilspezifischer Felder finden &#x200B;](#time-series-profile-event-data) unter von Zeitreihen-Profilereignisdaten .
 
-1. Wenn Sie noch kein Schema haben, erstellen [ eines](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) wobei die Klasse auf &quot;**&quot;**.
+1. Wenn Sie noch kein Schema haben, erstellen [&#x200B; eines](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) wobei die Klasse auf &quot;**&quot;**.
 
-1. [Fügen Sie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) folgenden Commerce-spezifischen Feldergruppen hinzu (oder bearbeiten Sie Ihr vorhandenes Schema und fügen Sie diese Feldergruppen hinzu):
+1. [Fügen Sie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) folgenden Commerce-spezifischen Feldergruppen hinzu (oder bearbeiten Sie Ihr vorhandenes Schema und fügen Sie diese Feldergruppen hinzu):
 
    - Site-Suche
    - Web-Seite besuchen
@@ -69,7 +75,7 @@ In diesem Abschnitt erfahren Sie, wie Sie Ihr vorhandenes Schema aktualisieren o
 
    Der Datenstrom leitet die erfassten Daten an den Datensatz weiter. Die Daten werden im Datensatz basierend auf dem ausgewählten Schema dargestellt.
 
-Mit den Schemata, Datensätzen und Datenströmen, die für Verhaltens- und Backoffice-Daten konfiguriert sind, können [ Ihre Commerce](connect-data.md#data-collection)Instanz so konfigurieren, dass diese Daten erfasst und an Experience Platform gesendet werden.
+Mit den Schemata, Datensätzen und Datenströmen, die für Verhaltens- und Backoffice-Daten konfiguriert sind, können [&#x200B; Ihre Commerce](connect-data.md#data-collection)Instanz so konfigurieren, dass diese Daten erfasst und an Experience Platform gesendet werden.
 
 Informationen zum Einschließen der Profilinformationen Ihres Kunden finden Sie unter [Zeitreihen-Profilereignisdaten](#time-series-profile-event-data).
 
@@ -85,7 +91,7 @@ Wenn Sie die Profilereignisdaten Ihres Kunden in die Experience Platform aufnehm
 
 ### Senden von Zeitreihen-Profilereignisdaten an Experience Platform mithilfe Ihres vorhandenen Datenstroms
 
-Wenn Sie Zeitreihen ([ Profilereignisdaten) zu ](events-backoffice.md#customer-profile-events) vorhandenen Commerce-Datenstrom hinzufügen möchten, fügen Sie die `Demographic Details` Feldergruppe zu Ihrem Schema hinzu. Ihr Schema enthält jetzt die folgenden Commerce-spezifischen Feldergruppen:
+Wenn Sie Zeitreihen ([&#x200B; Profilereignisdaten) zu &#x200B;](events-backoffice.md#customer-profile-events) vorhandenen Commerce-Datenstrom hinzufügen möchten, fügen Sie die `Demographic Details` Feldergruppe zu Ihrem Schema hinzu. Ihr Schema enthält jetzt die folgenden Commerce-spezifischen Feldergruppen:
 
 - Site-Suche
 - Web-Seite besuchen
@@ -101,9 +107,9 @@ Durch Hinzufügen der `Demographic Details` Feldergruppe in Ihrem bestehenden Co
 
 ### Senden von Zeitreihen-Profilereignisdaten an Experience Platform in einem separaten Datenstrom
 
-Wenn Sie ([ Profilereignisdaten) zu ](events-backoffice.md#customer-profile-events) neuen profilspezifischen Datenstrom und Schema hinzufügen möchten, führen Sie die folgenden Schritte aus.
+Wenn Sie ([&#x200B; Profilereignisdaten) zu &#x200B;](events-backoffice.md#customer-profile-events) neuen profilspezifischen Datenstrom und Schema hinzufügen möchten, führen Sie die folgenden Schritte aus.
 
-1. [Erstellen Sie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) Schema und legen Sie die Klasse auf **Erlebnisereignis** fest.
+1. [Erstellen Sie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) Schema und legen Sie die Klasse auf **Erlebnisereignis** fest.
 
 1. [Hinzufügen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) die folgenden profilspezifischen Feldergruppen:
 
@@ -116,7 +122,7 @@ Wenn Sie ([ Profilereignisdaten) zu ](events-backoffice.md#customer-profile-even
 
    Wenn ein Schema für das Profil aktiviert ist, werden alle Datensätze, die aus diesem Schema erstellt werden, in Real-Time CDP einbezogen, wobei Daten aus unterschiedlichen Quellen zusammengeführt werden, um eine vollständige Ansicht jedes Kunden zu erstellen.
 
-1. [Erstellen Sie einen ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) basierend auf dem von Ihnen erstellten Schema.
+1. [Erstellen Sie einen &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) basierend auf dem von Ihnen erstellten Schema.
 
    Ein Datensatz ist ein Konstrukt zur Datenspeicherung und -verwaltung, normalerweise eine Tabelle, die ein Schema (Spalten) und Felder (Zeilen) enthält. Datensätze enthalten auch Metadaten, die verschiedene Aspekte der in ihnen gespeicherten Daten beschreiben.
 
@@ -124,6 +130,6 @@ Wenn Sie ([ Profilereignisdaten) zu ](events-backoffice.md#customer-profile-even
 
    Der Datenstrom leitet die erfassten Daten an den Datensatz weiter. Die Daten werden im Datensatz basierend auf dem ausgewählten Schema dargestellt.
 
-Mit den Schemata, Datensätzen und Datenströmen, die für Kundenprofildaten konfiguriert sind, können [ Ihre Commerce](connect-data.md#data-collection)Instanz so konfigurieren, dass diese Daten erfasst und an Experience Platform gesendet werden.
+Mit den Schemata, Datensätzen und Datenströmen, die für Kundenprofildaten konfiguriert sind, können [&#x200B; Ihre Commerce](connect-data.md#data-collection)Instanz so konfigurieren, dass diese Daten erfasst und an Experience Platform gesendet werden.
 
 Informationen zum Erstellen eines Schemas, Datensatzes und Datenstroms für Profildatensatzdaten finden Sie unter [Senden von Profildatensatzdaten an Experience Platform](profile-data.md).

@@ -90,7 +90,7 @@ Nachdem die semantische Suche aktiv ist und die Indizierung abgeschlossen ist, e
 ## Best Practices
 
 - Verwenden Sie klare, beschreibende Produktnamen und Beschreibungen (idealerweise 50-100 Wörter), damit sowohl Keyword- als auch semantische Übereinstimmungen mit starkem Katalogtext arbeiten können.
-- Halten Sie markenspezifische oder hochtechnische [Synonyme) bei, ](synonyms.md) die semantische Suche möglicherweise keine Fachbegriffe abdeckt.
+- Halten Sie markenspezifische oder hochtechnische [Synonyme) bei, &#x200B;](synonyms.md) die semantische Suche möglicherweise keine Fachbegriffe abdeckt.
 
 ## Fehlerbehebung
 
