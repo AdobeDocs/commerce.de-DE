@@ -3,14 +3,18 @@ title: Semantische Suche
 description: Aktivieren Sie die KI-Semantische Suche nach [!DNL Live Search] aus den Einstellungen. Es sind keine Attributeinstellungen oder Änderungen an der Storefront erforderlich.
 role: Admin
 recommendations: noCatalog
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 33d9172b2d0455a061c00781128a9f2fe804af7b
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
 
 # Semantische Suche
+
+>[!AVAILABILITY]
+>
+>Die semantische Suche ist für Händler verfügbar, die die Adobe Commerce-Versionen 2.4.4 und höher verwenden.
 
 Die semantische Suche verwendet KI, um zu verstehen, was Käufer meinen, und nicht nur die genauen Wörter, die sie eingeben. Abfragen wie „Kleid für eine Strandhochzeit“ oder „bequeme Schuhe für den ganzen Tag stehen“ können relevante Produkte zurückgeben, auch wenn Ihr Katalog nicht genau diese Phrasen verwendet.
 
@@ -86,7 +90,7 @@ Nachdem die semantische Suche aktiv ist und die Indizierung abgeschlossen ist, e
 ## Best Practices
 
 - Verwenden Sie klare, beschreibende Produktnamen und Beschreibungen (idealerweise 50-100 Wörter), damit sowohl Keyword- als auch semantische Übereinstimmungen mit starkem Katalogtext arbeiten können.
-- Halten Sie markenspezifische oder hochtechnische [Synonyme) bei, &#x200B;](synonyms.md) die semantische Suche möglicherweise keine Fachbegriffe abdeckt.
+- Halten Sie markenspezifische oder hochtechnische [Synonyme) bei, ](synonyms.md) die semantische Suche möglicherweise keine Fachbegriffe abdeckt.
 
 ## Fehlerbehebung
 

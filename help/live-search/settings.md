@@ -3,13 +3,11 @@ title: Einstellungen
 description: Konfigurieren Sie die semantische Suche, die Preisfacettenbereiche und die standardmäßige Indizierungssprache für den  [!DNL Live Search] .
 exl-id: 6387a365-7e23-4023-95ac-27908164d81c
 TQID: https://experienceleague.adobe.com/Dn4x8Boo-1F5RQgMXVx6Dpt7iYWFIlqOlO5QwhJrjVU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 1f5246b6f5853f8b53a356ae2d6d58077b07a9a5
 workflow-type: tm+mt
-source-wordcount: 650
+source-wordcount: 679
 ht-degree: 0%
 
 ---
@@ -21,6 +19,10 @@ Verwenden Sie den **Einstellungen**, um die semantische Suche, die Bereiche und 
 ![Einstellungen](assets/settings.png)
 
 ## Semantische Suche {#semantic-search}
+
+>[!AVAILABILITY]
+>
+>Die semantische Suche ist für Händler verfügbar, die die Adobe Commerce-Versionen 2.4.4 und höher verwenden.
 
 Die semantische Suche verwendet KI, um Produkte anhand von Bedeutung und Kontext abzugleichen, nicht nur anhand exakter Keywords. Wenn **[!UICONTROL Semantic search]** aktiviert ist, können Käufer, die eine natürliche Sprache oder Formulierung verwenden, die nicht wörtlich mit Ihrem Katalog übereinstimmt, dennoch relevante Produkte finden. [!DNL Live Search] bietet Keyword- und semantische Übereinstimmungen in einem einheitlichen Sucherlebnis auf der Storefront. Die semantische Suche funktioniert neben Ihrer vorhandenen Konfiguration. [Suchregeln](rules.md), [Synonyme](synonyms.md), [Facetten](facets.md), Boosts und [Kategorie-](category-merch.md) gelten weiterhin.
 
@@ -72,8 +74,7 @@ Sie können die Anzahl der Preisbereichsgruppen und die Verteilung der Preiswert
 
 Die Spracheinstellung gibt an, [!DNL Live Search] welche Sprache beim Lesen des Katalogs und Schreiben des Index erwartet wird.
 
-Sprachen haben unterschiedliche Grammatikregeln: wie Wörter getrennt werden, Verbformen und Wortformen zum Beispiel.
-Die Spracheinstellung stellt sicher, dass der richtige Regelsatz auf den Indizierungsmechanismus angewendet wird.
+Sprachen haben unterschiedliche Grammatikregeln: wie Wörter getrennt werden, Verbformen und Wortformen zum Beispiel.Die Spracheinstellung stellt sicher, dass der richtige Regelsatz auf den Indizierungsmechanismus angewendet wird.
 
 Legen Sie die Spracheinstellung auf die primäre Sprache des Katalogs fest. Beim Ändern der Sprache des Index kann es je nach Größe und Komplexität des Katalogs zwischen 5 und 60 Minuten dauern, bis die Änderung an der Storefront widergespiegelt wird.
 

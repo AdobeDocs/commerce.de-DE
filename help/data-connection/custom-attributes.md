@@ -5,19 +5,11 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
 TQID: https://experienceleague.adobe.com/L0LoTkKV0LCiO3mj8W1cKyK-A0HO0z32zu1ZSNC9GR4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
 source-wordcount: 616
 ht-degree: 2%
@@ -30,7 +22,7 @@ In diesem Artikel erfahren Sie, wie Sie Backoffice-Ereignissen benutzerdefiniert
 
 >[!NOTE]
 >
->Erfahren Sie, wie [&#x200B; Profile „benutzerdefinierte Identitäten &#x200B;](custom-identities.md)&quot; können.
+>Erfahren Sie, wie [ Profile „benutzerdefinierte Identitäten ](custom-identities.md)&quot; können.
 
 Benutzerdefinierte Attribute werden auf zwei Ebenen unterstützt:
 
@@ -362,7 +354,7 @@ ComponentRegistrar::register(
 
 Um sicherzustellen, dass die neuen benutzerdefinierten Sortierattribute von Ihrem [!DNL Commerce] in Experience Platform aufgenommen werden können, müssen Sie das Schema erweitern, um diese benutzerdefinierten Felder einzuschließen.
 
-Informationen zum Erweitern eines vorhandenen XDM-Schemas um diese benutzerdefinierten Felder finden Sie im Artikel [Erstellen und Bearbeiten von Schemas in der Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) in der Experience Platform-Dokumentation. Das Feld Mandanten-ID wird dynamisch generiert. Die Feldstruktur sollte jedoch dem Beispiel in der Experience Platform-Dokumentation ähneln.
+Informationen zum Erweitern eines vorhandenen XDM-Schemas um diese benutzerdefinierten Felder finden Sie im Artikel [Erstellen und Bearbeiten von Schemas in der Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) in der Experience Platform-Dokumentation. Das Feld Mandanten-ID wird dynamisch generiert. Die Feldstruktur sollte jedoch dem Beispiel in der Experience Platform-Dokumentation ähneln.
 
 >[!IMPORTANT]
 >
@@ -378,12 +370,12 @@ Fügen Sie `productListItems` Felder für die Bestellartikelebene hinzu:
 
 ## Schritt 12: Bestätigen Sie, dass Daten erfasst werden
 
-Gehen Sie in [&#x200B; Admin zur Registerkarte &#x200B;](connect-data.md#data-customization)Datenanpassung“, um zu bestätigen, dass benutzerdefinierte Attributdaten erfasst und an die Experience Platform gesendet werden.
+Gehen Sie in [ Admin zur Registerkarte ](connect-data.md#data-customization)Datenanpassung“, um zu bestätigen, dass benutzerdefinierte Attributdaten erfasst und an die Experience Platform gesendet werden.
 
 ### Fehlerbehebung
 
 Wenn die Meldung `No custom order attributes found.` auf der Registerkarte **[!UICONTROL Data Customization]** angezeigt wird, bestätigen Sie Folgendes:
 
-1. Sie haben die Voraussetzungen zum Aktivieren der [Data Connector-Erweiterung](overview.md#prerequisites) erfüllt.
-1. Sie haben [benutzerdefinierte Bestellattribute“ &#x200B;](#add-custom-attributes-to-orders).
+1. Sie haben die Voraussetzungen erfüllt, um die [!DNL Data Connection]-Erweiterung zu aktivieren. Siehe [Voraussetzungen](overview.md#prerequisites).
+1. Sie haben [benutzerdefinierte Bestellattribute“ ](#add-custom-attributes-to-orders).
 1. Mindestens ein Auftragsereignis wurde generiert.
