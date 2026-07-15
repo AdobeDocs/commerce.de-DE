@@ -41,7 +41,7 @@ Um die Integration in Commerce-Storefronts mit Edge Delivery Services zu aktivie
 
 Die Commerce-Dropdown-Menüs erkennen automatisch die `commerce-assets-enabled`-Konfiguration und passen die Bildverarbeitung entsprechend an.
 
-Weitere Informationen zur Verwendung von AEM Assets mit der Commerce-Storefront mit Edge Delivery Services finden Sie unter [AEM Assets-Integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) in der Dokumentation zu *Adobe Commerce Storefront*.
+Weitere Informationen zur Verwendung von AEM Assets mit der Commerce-Storefront mit Edge Delivery Services finden Sie unter [AEM Assets-Integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=de) in der Dokumentation zu *Adobe Commerce Storefront*.
 
 >[!TIP]
 >
@@ -57,7 +57,7 @@ Führen Sie die folgenden Schritte aus, um AEM Assets mit einer Storefront für 
 
 >[!NOTE]
 >
->Detaillierte Setup-Anweisungen finden Sie unter [Einrichten von AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank} in der Dokumentation zu Da.live und [Integrieren von AEM Assets beim Erstellen von Inhalten für Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} in der Dokumentation zu AEM Assets.
+>Detaillierte Setup-Anweisungen finden Sie unter [Einrichten von AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank} in der Dokumentation zu Da.live und [Integrieren von AEM Assets beim Erstellen von Inhalten für Edge Delivery Services](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} in der Dokumentation zu AEM Assets.
 
 ### Schritt 1: Öffnen Sie Ihre Site-Konfiguration in Da.live
 
@@ -104,8 +104,8 @@ Ihre Storefront ist jetzt mit AEM Assets verbunden. Sie können Assets direkt au
 
 ## Verwandte Dokumentation
 
-* [AEM Assets-Integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/){target=_blank} in der Dokumentation zu *Adobe Commerce* Storefront - Storefront-Konfiguration und Bildverarbeitungsverhalten.
+* [AEM Assets-Integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=de){target=_blank} in der Dokumentation zu *Adobe Commerce* Storefront - Storefront-Konfiguration und Bildverarbeitungsverhalten.
 
-* [Integrieren Sie AEM Assets beim Erstellen von Inhalten für Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} in der *AEM Assets*-Dokumentation.
+* [Integrieren Sie AEM Assets beim Erstellen von Inhalten für Edge Delivery Services](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} in der *AEM Assets*-Dokumentation.
 
 * [Einrichten von AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank} und [Arbeiten mit Medien](https://docs.da.live/authors/guides/adding-media){target=_blank} in der Dokumentation zu Da.live .

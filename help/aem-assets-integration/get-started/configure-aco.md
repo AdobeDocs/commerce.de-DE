@@ -56,7 +56,7 @@ Die [!DNL Commerce Optimizer]-Integration hat die folgenden Einschränkungen:
 
 Stellen Sie vor dem Konfigurieren der Integration Folgendes sicher:
 
-* Eine aktive [!DNL Adobe Commerce Optimizer] mit der Berechtigung **Produktvisualisierungen** (bündelt Dynamic Media mit OpenAPI-Funktionen + [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)) oder eine vom Kunden bereitgestellte AEM Assets-Lizenz (z. B. **AEM Assets Ultimate**) mit aktivierter Dynamic Media-Funktion.
+* Eine aktive [!DNL Adobe Commerce Optimizer] mit der Berechtigung **Produktvisualisierungen** (bündelt Dynamic Media mit OpenAPI-Funktionen + [AEM Assets Prime](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-prime)) oder eine vom Kunden bereitgestellte AEM Assets-Lizenz (z. B. **AEM Assets Ultimate**) mit aktivierter Dynamic Media-Funktion.
 * Zugriff auf eine AEM Assets as a Cloud Service-Umgebung.
 * Sowohl [!DNL Commerce Optimizer] als auch AEM Assets in derselben Adobe IMS-Organisation.
 * Dynamic Media mit aktivierter OpenAPI in Ihrer AEM Assets-Umgebung (die Aktivierungsschritte finden [&#x200B; unter „Konfigurieren &#x200B;](configure-aem.md#prerequisites) AEM Assets-Projekts„).
@@ -85,7 +85,7 @@ Um die AEM Assets-Integration mit [!DNL Commerce Optimizer] zu integrieren, muss
 * AEM Assets-Ereignisse (Asset genehmigt, aktualisiert, entfernt)
 * [!DNL Commerce Optimizer] Katalogereignisse (Produkt erstellt, aktualisiert)
 
-Um diesen Prozess einzuleiten, erstellen [ein Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) das die folgenden Informationen enthält:
+Um diesen Prozess einzuleiten, erstellen [ein Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) das die folgenden Informationen enthält:
 
 * **[!DNL Adobe Commerce Optimizer]Mandanten-ID** (Instanz-ID) in Ihrer [!DNL Commerce Optimizer]-URL oder in der Benutzeroberfläche von Commerce Cloud Manager.
 * **AEM-Programm-ID und Umgebungs** ID, die Sie beim Konfigurieren von [AEM Assets](#configure-aem-assets-first) für die Integration eingerichtet haben.
