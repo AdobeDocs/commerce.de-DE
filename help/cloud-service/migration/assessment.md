@@ -7,28 +7,15 @@ level: Intermediate
 nudge: true1
 autotag-review: '2026-06-18T16:09:41.112Z'
 TQID: 'https://experienceleague.adobe.com/-OrsBVtHRcEV5EzgHzzP0JVf0aQWfSO2Fu1R5F5jtAw'
-product_v2:
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-role_v2:
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: de2e2e68-c5d7-4efe-be7b-27528698f06bid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2: id: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 4cd054b64c3b95fd50ab9bb682469ace7cc871a3
 workflow-type: tm+mt
-source-wordcount: 2505
+source-wordcount: 2497
 ht-degree: 0%
 
 ---
@@ -42,7 +29,7 @@ ht-degree: 0%
 
 Eine Commerce-Migrationsbewertung ist eine automatisierte Analyse Ihrer bestehenden Adobe Commerce-Implementierung. Die Tools von Adobe scannen Ihre Commerce-Codebasis und erzeugen einen strukturierten Bericht, der alle erstellten, angepassten oder geänderten Elemente auflistet. Der Bericht zeigt dann an, wie sich die Anpassungen an Ihrer Code-Basis auf Ihre Migration nach [!DNL Adobe Commerce as a Cloud Service] auswirken.
 
-Der Bericht wird als HTML-Datei bereitgestellt, die Sie in jedem Browser öffnen können. Es ist kein Zugriff auf die Produktionsumgebung erforderlich, es sei denn, Sie geben zunächst die Code-Basis Ihres Projekts frei.
+Verarbeitete Migrationsbewertungsberichte sind unter `https://experience.adobe.com/@<ims-org-name>/commerce-migration-assessment/shared-assessments` verfügbar. Es ist kein Zugriff auf die Produktionsumgebung erforderlich, es sei denn, Sie geben zunächst die Code-Basis Ihres Projekts frei.
 
 **Die Bewertung sieht Folgendes vor:**
 
@@ -273,7 +260,7 @@ Adobes [KI-Entwickler-Tools für die Commerce](https://developer.adobe.com/comme
 
 #### Installieren von KI-Tools
 
-Vollständige Anweisungen [&#x200B; spezifische IDE-Konfigurationen finden Sie unter „Installieren &#x200B;](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools) Entwickler-Tools für die KI“.
+Vollständige Anweisungen [ spezifische IDE-Konfigurationen finden Sie unter „Installieren ](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools) Entwickler-Tools für die KI“.
 
 **Voraussetzungen:** Node.js 22.x, npm 9.0.0 oder höher, Adobe I/O CLI.
 
@@ -320,13 +307,13 @@ Manages custom shipping rate calculations based on customer account tier and ord
       - [Kenntnisse und Eingabeaufforderungen](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
       - [Anwendungsszenarien](https://developer.adobe.com/commerce/extensibility/developer-agent/use-cases)
    - [Übersicht über App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
-   - [App Builder für Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
+   - [App Builder für Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
    - Starter Kits
       - [Backend-Integrations-Starter-Kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
       - [Checkout-Starterkit](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - Storefront-Entwicklung
-   - [Überblick](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)
-   - [Storefront AI-Kenntnisse](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=de)
+   - [Überblick](https://experienceleague.adobe.com/developer/commerce/storefront/)
+   - [Storefront AI-Kenntnisse](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/)
 
 >[!TIP]
 >
