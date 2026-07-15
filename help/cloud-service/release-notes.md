@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 7ab609a2da3173f4be31bb0927418c4b9ec05ff4
+source-git-commit: eb561a73951ba42542a8b08340a7df9cc30477d3
 workflow-type: tm+mt
-source-wordcount: 4655
+source-wordcount: 4657
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 
 [!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
 
-Die folgenden Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar und werden voraussichtlich im Juli in Produktionsumgebungen verschoben.
+Die folgenden Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar und werden voraussichtlich am 28. Juli 2026 in Produktionsumgebungen verschoben.
 
 >[!BEGINSHADEBOX]
 
