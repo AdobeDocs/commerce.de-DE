@@ -2,10 +2,15 @@
 title: Commerce-Metadaten in AEM Assets
 description: Erfahren Sie mehr über den Commerce-Namespace, das Metadatenschema und den Alternativtext, den die AEM Assets-Integration in Ihre AEM Assets-Autorenumgebung einfügt.
 feature: CMS, Media, Integration
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
 source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
 source-wordcount: 749
@@ -62,11 +67,11 @@ Dieser Paket-Code fügt die folgenden Ressourcen zur Authoring-Umgebung von AEM 
 
 >[!NOTE]
 >
-> Weitere Informationen zum {[}AEM Commerce-Package-Code} finden Sie auf ](https://github.com/ankumalh/assets-commerce) Seite zu GitHub ****
+> Weitere Informationen zum {[}AEM Commerce-Package-Code&rbrace; finden Sie auf &#x200B;](https://github.com/ankumalh/assets-commerce) Seite zu GitHub **&#x200B;**
 
 ## Lokalisierter ALT-Text in AEM Assets-Metadaten
 
-Das _[!UICONTROL Alt texts]_Multifield ist im Metadaten-Editor für AEM Assets-Assets auf der Registerkarte **[!UICONTROL Commerce]**verfügbar, wenn Sie ein geeignetes Bild bearbeiten.
+Das _[!UICONTROL Alt texts]_&#x200B;Multifield ist im Metadaten-Editor für AEM Assets-Assets auf der Registerkarte **[!UICONTROL Commerce]**&#x200B;verfügbar, wenn Sie ein geeignetes Bild bearbeiten.
 
 >[!IMPORTANT]
 >
@@ -82,7 +87,7 @@ Wählen Sie **[!UICONTROL Add]** aus, um weitere Zeilen für zusätzliche Shop-A
 
 ![Mehrfachfeld „Alt-Texte“ mit Code für Store-Ansicht und Eingabe von Alt-Text](assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
 
-Beim Speichern blockiert die Client-seitige Validierung die Übermittlung, wenn eine Zeile einen leeren _[!UICONTROL Store View Code]_hat oder wenn zwei Zeilen denselben Code für die Store-Ansicht verwenden (ignoriert Groß-/Kleinschreibung).
+Beim Speichern blockiert die Client-seitige Validierung die Übermittlung, wenn eine Zeile einen leeren _[!UICONTROL Store View Code]_&#x200B;hat oder wenn zwei Zeilen denselben Code für die Store-Ansicht verwenden (ignoriert Groß-/Kleinschreibung).
 
 Alternativtexteinträge werden in JCR-Asset-Metadaten als zwei indexorientierte `String[]` beibehalten:
 

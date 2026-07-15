@@ -62,9 +62,9 @@ Stellen Sie vor der Aktivierung von Produktbildern sicher, dass Sie die [Vorauss
 
 ## Setup
 
-Um die Integration zu aktivieren[ erstellen Sie ein Support-Ticket ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) Ihren [!DNL Commerce Optimizer]- und AEM Assets-Details. Der Adobe-Support konfiguriert die Integration und registriert Ihren Mandanten beim Assets Integration Service.
+Um die Integration zu aktivieren[&#x200B; erstellen Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) Ihren [!DNL Commerce Optimizer]- und AEM Assets-Details. Der Adobe-Support konfiguriert die Integration und registriert Ihren Mandanten beim Assets Integration Service.
 
-Weitere [ finden Sie unter „Konfigurieren von AEM Assets ](../../aem-assets-integration/get-started/configure-aco.md) Commerce Optimizer&quot;.
+Weitere [&#x200B; finden Sie unter „Konfigurieren von AEM Assets &#x200B;](../../aem-assets-integration/get-started/configure-aco.md) Commerce Optimizer&quot;.
 
 ### Konfigurieren von AEM Assets-Metadaten
 
@@ -76,7 +76,7 @@ Unter [Konfigurieren von AEM Assets](../../aem-assets-integration/get-started/co
 
 Bevor Sie Produktvisualisierungen verwenden, sollten Sie sich mit den [Integrationsbeschränkungen](../../aem-assets-integration/get-started/configure-aco.md#limitations) befassen, d. h. den schichtbezogenen Einschränkungen, die sich darauf auswirken, wie AEM Assets-Daten mit Ihrem Basiskatalog zusammengeführt werden.
 
-Informationen zu Kapazitäts- und Nutzungszuweisungen (Asset-Speicher, Dynamic Media-Vorgänge, Benutzerlizenzen) finden Sie unter [Produktvisuelle ](../boundaries-limits.md#product-visuals-limits)) im _Boundaries and Limits_.
+Informationen zu Kapazitäts- und Nutzungszuweisungen (Asset-Speicher, Dynamic Media-Vorgänge, Benutzerlizenzen) finden Sie unter [Produktvisuelle &#x200B;](../boundaries-limits.md#product-visuals-limits)) im _Boundaries and Limits_.
 
 ## Verwenden von Produktbildern
 
@@ -96,7 +96,7 @@ Nachdem die Integration konfiguriert ist, verwalten Sie Ihre Produktbilder über
 
 ### Anwenden der AEM-Assets-Ebene
 
-Um AEM Assets-Bilder auf Ihrer Storefront anzuzeigen[ weisen Sie die `AEM-Assets` Ihrer Katalogansicht zu](catalog-layer.md#assign-the-aem-assets-layer-to-a-catalog-view).
+Um AEM Assets-Bilder auf Ihrer Storefront anzuzeigen[&#x200B; weisen Sie die `AEM-Assets` Ihrer Katalogansicht zu](catalog-layer.md#assign-the-aem-assets-layer-to-a-catalog-view).
 
 ## Ähnliche Themen
 
