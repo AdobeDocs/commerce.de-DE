@@ -15,7 +15,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 41c5b4267888595926ae1bae48f73c928e6547ad
 workflow-type: tm+mt
 source-wordcount: 1675
 ht-degree: 0%
@@ -246,7 +246,7 @@ Sie generieren die Anmeldeinformationen, indem Sie die Integration zur Commerce-
 
 1. Überprüfen Sie Ihre Identität, indem Sie auf **Identität bestätigen** klicken.
 
-   Das System überprüft Ihre Identität, indem es sich mit Ihrer Adobe-ID bei Experience Cloud authentifiziert.
+   Das System überprüft Ihre Identität, indem es sich mit Ihrer Adobe ID bei Experience Cloud authentifiziert.
 
 1. Konfigurieren von API-Ressourcen.
 

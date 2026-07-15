@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: a6a91fbd6cc6907d070998f67eb0b9c8171dda23
+source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
-source-wordcount: 948
+source-wordcount: 965
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ Stellen Sie vor dem Konfigurieren der AEM Assets-Integration sicher, dass Sie di
 
 * [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} [Installieren von Adobe Commerce-](configure-commerce.md), um die Erweiterung hinzuzufügen und die erforderlichen Anmeldeinformationen und Verbindungen zur Verwendung der Erweiterung zu generieren.
 
-* [Benutzerberechtigungen und IMS](permissions.md) - Erforderlich für die Asset-Wähler- und automatisch ausgefüllten Konfigurationsfelder (Programm-ID, Umgebungs-ID, Domain-Zuordnung).
+* [Benutzerberechtigungen und IMS](permissions.md) - Konfigurieren Sie die erforderlichen Berechtigungen für die Asset-Wähler und die automatisch ausgefüllten Konfigurationsfelder (Programm-ID, Umgebungs-ID, Domain-Zuordnung).
 
 ## Konfigurieren der Verbindung
 
@@ -63,11 +63,11 @@ Stellen Sie vor dem Konfigurieren der AEM Assets-Integration sicher, dass Sie di
 
 1. Wählen Sie die **[!UICONTROL Program ID]** und **[!UICONTROL Environment ID]** der AEM Assets-Umgebung aus den Dropdown-Menüs aus.
 
-   Die Selektoren werden angezeigt, wenn Ihr Commerce-Admin-Benutzer [Benutzerberechtigungen und IMS](permissions.md#user-permissions-and-ims) für das Erlebnis erfüllt: **Integrationen von Adobe Commerce as a Cloud Service**, **Adobe Commerce Optimizer** und **Adobe Commerce in der Cloud-** können diese Felder automatisch aus Ihrer IMS-verknüpften Sitzung ausfüllen, anstatt sich auf eingefügte IDs zu verlassen.
+   Die Selektoren werden angezeigt, wenn Ihr Commerce-Admin-Benutzer über die erforderlichen [Benutzerberechtigungen](permissions.md#user-permissions-and-ims) für das Erlebnis verfügt: **Adobe Commerce as a Cloud Service**-, **Adobe Commerce Optimizer**- und **Adobe Commerce in der Cloud-** können diese Felder automatisch aus Ihrer IMS-verknüpften Sitzung ausfüllen, anstatt sich auf eingefügte IDs zu verlassen.
 
-   Wenn die Selektoren nicht verfügbar sind, kopieren Sie **[!UICONTROL Program ID]** und **[!UICONTROL Environment ID]** aus AEM Cloud Manager oder leiten Sie sie von Ihrer Autoren-URL ab: `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` (ersetzen Sie Platzhalter durch Ihre Kennungen).
+   Wenn die Selektoren nicht verfügbar sind, kopieren Sie die **[!UICONTROL Program ID]** und **[!UICONTROL Environment ID]** aus AEM Cloud Manager oder leiten Sie sie von Ihrer Autoren-URL ab: `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` (ersetzen Sie Platzhalter durch Ihre Kennungen).
 
-   Löschen Sie die **[!UICONTROL Use system value]** für eines der Felder, bevor Sie die neuen Werte manuell einfügen oder auswählen.
+   Sie müssen die **[!UICONTROL Use system value]** für beide Felder löschen, bevor Sie neue Werte manuell einfügen oder auswählen können.
 
    ![AEM Assets-Integrationsformular mit den Selektoren „Programm-ID“ und „Umgebungs-ID“](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
@@ -90,13 +90,13 @@ Stellen Sie vor dem Konfigurieren der AEM Assets-Integration sicher, dass Sie di
 
 ### Synchronisierung mit SLA
 
-Die Integration gewährleistet die folgenden Synchronisierungsleistungsstufen:
+Der service level agreement (SLA) für die Integration garantiert die folgenden Synchronisierungsleistungsstufen:
 
 * `< 5 minutes for 99% of updates`
 
 * `< 30 minutes for 99.9% of updates`
 
-Dadurch wird sichergestellt, dass Produktseiten immer die aktuellsten Bilder anzeigen und so der Inhalt der Storefront korrekt und visuell ansprechend bleibt.
+Mit diesem Service wird sichergestellt, dass Produktseiten stets die aktuellsten Bilder anzeigen und so der Inhalt der Storefront präzise und visuell ansprechend bleibt.
 
 ### Visualisierungsbesitzer konfigurieren
 

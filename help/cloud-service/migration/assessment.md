@@ -26,9 +26,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 4cd054b64c3b95fd50ab9bb682469ace7cc871a3
 workflow-type: tm+mt
-source-wordcount: 2505
+source-wordcount: 2497
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 Eine Commerce-Migrationsbewertung ist eine automatisierte Analyse Ihrer bestehenden Adobe Commerce-Implementierung. Die Tools von Adobe scannen Ihre Commerce-Codebasis und erzeugen einen strukturierten Bericht, der alle erstellten, angepassten oder geänderten Elemente auflistet. Der Bericht zeigt dann an, wie sich die Anpassungen an Ihrer Code-Basis auf Ihre Migration nach [!DNL Adobe Commerce as a Cloud Service] auswirken.
 
-Der Bericht wird als HTML-Datei bereitgestellt, die Sie in jedem Browser öffnen können. Es ist kein Zugriff auf die Produktionsumgebung erforderlich, es sei denn, Sie geben zunächst die Code-Basis Ihres Projekts frei.
+Verarbeitete Migrationsbewertungsberichte sind unter `https://experience.adobe.com/@<ims-org-name>/commerce-migration-assessment/shared-assessments` verfügbar. Es ist kein Zugriff auf die Produktionsumgebung erforderlich, es sei denn, Sie geben zunächst die Code-Basis Ihres Projekts frei.
 
 **Die Bewertung sieht Folgendes vor:**
 

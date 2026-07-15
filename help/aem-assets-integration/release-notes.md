@@ -3,9 +3,9 @@ title: Versionshinweise zur AEM Assets-Integration
 description: Informationen zu allen AEM Assets-Integrationsversionen finden Sie in den Versionshinweisen .
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e055a3d44eda7e7f082a884c316ad437ea9ac15e
+source-git-commit: e269b5a3bbd246530ba77d8c50467e2b0f4e2f7e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ _14. Mai 2026_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
 
-![Neues Problem](../assets/new.svg)<!-- Issue ACAP-1268 --> Wenn Bilder oder Assets aus AEM in eine Commerce-Produktmediensammlung importiert werden, wird Alternativtext jetzt im Rahmen der Synchronisierung übernommen. Alt-Text kann für jede Store-Ansicht in AEM Assets festgelegt werden. Siehe [ALT-Text in AEM Assets-Metadaten](configure-aem.md#alt-text-in-aem-assets-metadata){target=_blank}.
+![Neues Problem](../assets/new.svg)<!-- Issue ACAP-1268 --> Wenn Bilder oder Assets aus AEM in eine Commerce-Produktmediensammlung importiert werden, wird Alternativtext jetzt im Rahmen der Synchronisierung übernommen. Alt-Text kann für jede Store-Ansicht in AEM Assets festgelegt werden. Siehe [Lokalisierter ALT-Text in AEM Assets-](metadata.md#localized-alt-text-in-aem-assets-metadata){target=_blank}.
 
 ## v1.3.5
 

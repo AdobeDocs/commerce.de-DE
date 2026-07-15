@@ -20,9 +20,9 @@ topic_v2:
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
+source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
-source-wordcount: 805
+source-wordcount: 1081
 ht-degree: 1%
 
 ---
@@ -31,15 +31,15 @@ ht-degree: 1%
 
 Die Nachfrage nach personalisierten Inhalten steigt rapide, während die Marketing-Budgets unter Druck geraten. Einzelhändler und Marken tun sich schwer, mit dem wachsenden Bedarf an Variationen in der Produktdarstellung Schritt zu halten, der durch regionale, saisonale und segmentspezifische Anforderungen bedingt ist.
 
-Nehmen wir einen retailer mit 1.000 Produkten. Noch bevor Attributvarianten berücksichtigt werden, steigt die Anzahl der erforderlichen digitalen Assets erheblich, wenn verschiedene Regionen, Kundensegmente und Personalisierungsbemühungen berücksichtigt werden. Dies kann zu einer überwältigenden Anzahl von Asset-Varianten führen, die bis in die Millionen reichen.
+Nehmen wir einen retailer mit 1.000 Produkten. Die Anzahl der erforderlichen digitalen Assets nimmt erheblich zu, wenn verschiedene Regionen, Kundensegmente und Personalisierungsinitiativen berücksichtigt werden. Diese Situation kann zu einer überwältigenden Anzahl von Asset-Variationen führen, die bis in die Millionen reichen.
 
 ![Übersicht](assets/product-visuals-example.png){width="700" zoomable="yes"}
 
-Die AEM Assets-Integration löst diese Herausforderung durch die Automatisierung von Asset-Management-Workflows. Die Integration stellt sicher, dass digitale Assets, wie Produktbilder und Marketing-Inhalte, basierend auf der SKU oder anderen Schlüsselattributen dynamisch mit den entsprechenden Merchandising-Entitäten verknüpft werden, einschließlich Produkten und Kategorien in Adobe Commerce. Dieser Prozess optimiert den Betrieb und steigert die Effizienz, indem er Folgendes ermöglicht:
+Die AEM Assets-Integration löst diese Herausforderung durch die Automatisierung von Asset-Management-Workflows. Die Integration verknüpft digitale Assets dynamisch mit den entsprechenden Adobe Commerce-Produkten und -Kategorien und basiert auf der SKU oder anderen Schlüsselattributen. Dieser Prozess optimiert den Betrieb und steigert die Effizienz, indem er Folgendes ermöglicht:
 
 * **Nahtlose Installation und Konfiguration** - Merchandising-Teams und -Entwickler können die Integration schnell mit den bekannten Adobe-Tools und -Workflows einrichten.
 
-* **Dynamic Asset Updates** Produktbilder und Marketing-Assets spiegeln automatisch die neuesten Änderungen in AEM Assets wider, sodass Storefronts präzise und relevant bleiben.
+* **Dynamic Asset Updates** - Produktbilder und Marketing-Assets spiegeln automatisch die neuesten Änderungen in AEM Assets wider, sodass Storefronts präzise und relevant bleiben.
 
 * **Optimiertes Katalogmanagement** Automatisiert die Aktualisierung und Bereinigung von Assets, minimiert den manuellen Aufwand und stellt einen konsistenten, gepflegten Produktkatalog sicher.
 
@@ -73,13 +73,13 @@ Der Adobe Commerce-Benutzer, der die Integration konfiguriert, muss Zugriff auf 
 
 ## Die wichtigsten geschäftlichen Vorteile
 
-![check](assets/icon-check.png) **No Additional Cost**-Diese Integration wird für Händler, die die Lizenzanforderungen erfüllen, kostenlos bereitgestellt.
+![check](assets/icon-check.png) **No Additional Cost** - Diese Integration wird für Händler, die die Lizenzanforderungen erfüllen, kostenlos bereitgestellt.
 
-![check](assets/icon-check.png) **Official Adobe Solution** Von Adobe entwickelt, gepflegt und vollständig unterstützt, um Stabilität und Abstimmung mit zukünftigen Plattformverbesserungen sicherzustellen.
+![check](assets/icon-check.png) **Official Adobe Solution** - Von Adobe entwickelt, gepflegt und vollständig unterstützt, um Stabilität und Abstimmung mit zukünftigen Plattformverbesserungen sicherzustellen.
 
-![Überprüfen](assets/icon-check.png) **Die Unterstützung und Fehlerbehebung durch das Adobe Managed Support-** werden direkt von Adobe durchgeführt, sodass Sie sich beruhigt auf Ihre Arbeit konzentrieren und Probleme effizient beheben können.
+![Überprüfen](assets/icon-check.png) **Adobe Managed Support Model** - Adobe übernimmt die direkte Unterstützung und Fehlerbehebung, bietet zuverlässigen Support und optimierte Problembehebung.
 
-![check](assets/icon-check.png) **Funktionen von Adobe Storefront Builder**-Die DAM-Lösung (Digital Asset Management) ermöglicht die Verwendung von Assets wie Bildern, Videos und anderen Medien in [Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=de#userlabs-commerce-genai-product-visuals).
+![check](assets/icon-check.png) **Funktionen von Adobe Storefront Builder** - Die DAM-Lösung (Digital Asset Management) ermöglicht die Verwendung von Assets wie Bildern, Videos und anderen Medien in [Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=de#userlabs-commerce-genai-product-visuals).
 
 >[!ENDSHADEBOX]
 
@@ -89,7 +89,7 @@ Sehen Sie sich diese Videos an, um zu erfahren, wie Sie die AEM Assets-Integrati
 
 >[!BEGINTABS]
 
->[!TAB PaaS-Tutorial]
+>[!TAB Tutorial zu Adobe Commerce in der Cloud oder vor Ort]
 
 In diesem Video erfahren Sie, wie Adobe Commerce und AEM Assets zusammenarbeiten, um Inhalts-Workflows zu optimieren:
 
@@ -105,17 +105,58 @@ Erfahren Sie, wie Sie Adobe Commerce as a Cloud Service mit der AEM Assets-Integ
 
 ## Nächste Schritte
 
-Die Aktivierung der Commerce-Integration mit Experience Manager Assets ist ein dreistufiger Prozess:
+Der Prozess zum Installieren und Konfigurieren der AEM Assets-Integration hängt von Ihrer Adobe Commerce-Bereitstellung ab. In allen Fällen müssen Sie zunächst AEM Assets konfigurieren und dann Commerce damit verbinden.
 
-1. [Konfigurieren Sie Ihr AEM Assets-Projekt zur Unterstützung von Commerce-Metadaten](get-started/configure-aem.md).
+Um den Namespace, das Metadatenschema und **[!UICONTROL Commerce]** Registerkarte zu verstehen, die die Integration in Ihrer AEM Assets-Umgebung hinzufügt, lesen Sie [Commerce-Metadaten in AEM Assets](metadata.md) bevor Sie beginnen.
 
-1. [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} [Adobe Commerce-Pakete installieren](get-started/configure-commerce.md).
+Wählen Sie Ihre Bereitstellung aus, um die erforderlichen Schritte in der richtigen Reihenfolge auszuführen:
 
-1. Konfigurieren Sie die Integration für Ihre Umgebung:
+>[!BEGINTABS]
 
-   * [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} [Adobe Commerce](get-started/setup-synchronization.md)
-   * [!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} [Adobe Commerce Optimizer](get-started/configure-aco.md)
+>[!TAB Adobe Commerce as a Cloud Service]
+
+[!BADGE nur SaaS]{type=Positive tooltip="Gilt nur für Adobe Commerce as a Cloud Service-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."}
+
+1. Um Commerce-Metadaten zu unterstützen, [&#x200B; Sie das AEM Assets-Projekt &#x200B;](get-started/configure-aem.md). Verwenden Sie ab AEM-Version `2026.5.26309` das [Self-Service-Onboarding](get-started/configure-aem.md#enable-aem-commerce-self-service); installieren Sie das `assets-commerce`-Paket in früheren Versionen manuell.
+
+1. [Konfigurieren Sie die IMS](get-started/permissions.md)Benutzerberechtigungen, damit der Asset-Wähler und die automatisch ausgefüllten **[!UICONTROL Program ID]** und **[!UICONTROL Environment ID]** Felder verfügbar sind.
+
+1. [Konfigurieren der Integration im Commerce Admin](get-started/setup-synchronization.md).
+
+1. Optional. [Anzeige von Produktbildern aktivieren](get-started/configure-storefront.md#enable-product-images) sodass eine Storefront mit Edge Delivery Services von AEM verwaltete Produktbilder rendert.
+
+>[!TAB Adobe Commerce on Cloud (PaaS)]
+
+[!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."}
+
+1. Um Commerce-Metadaten zu unterstützen, [&#x200B; Sie das AEM Assets-Projekt &#x200B;](get-started/configure-aem.md). Verwenden Sie ab AEM-Version `2026.5.26309` das [Self-Service-Onboarding](get-started/configure-aem.md#enable-aem-commerce-self-service); installieren Sie das `assets-commerce`-Paket in früheren Versionen manuell.
+
+1. [Installieren Sie Adobe Commerce-](get-started/configure-commerce.md), um die Erweiterung hinzuzufügen und die erforderlichen Anmeldeinformationen und Verbindungen zu generieren.
+
+1. [Konfigurieren Sie die IMS](get-started/permissions.md)Benutzerberechtigungen, damit der Asset-Wähler und die automatisch ausgefüllten **[!UICONTROL Program ID]** und **[!UICONTROL Environment ID]** Felder verfügbar sind.
+
+1. [Konfigurieren der Integration im Commerce Admin](get-started/setup-synchronization.md).
+
+1. Optional. [Anzeige von Produktbildern aktivieren](get-started/configure-storefront.md#enable-product-images) sodass eine Storefront mit Edge Delivery Services von AEM verwaltete Produktbilder rendert.
+
+>[!TAB Adobe Commerce Optimizer]
+
+[!BADGE nur SaaS]{type=Positive tooltip="Gilt nur für Adobe Commerce Optimizer-Projekte."}
+
+[!DNL Adobe Commerce Optimizer] Es hat keine Benutzeroberfläche für die Admin-Konfiguration. Der Adobe-Support konfiguriert die Integration über Ihr Onboarding-Ticket. Bereiten Sie AEM Assets also zuerst vor.
+
+1. Um Commerce-Metadaten zu unterstützen, [&#x200B; Sie das AEM Assets-Projekt &#x200B;](get-started/configure-aem.md). Verwenden Sie ab AEM-Version `2026.5.26309` das [Self-Service-Onboarding](get-started/configure-aem.md#enable-aem-commerce-self-service); installieren Sie das `assets-commerce`-Paket in früheren Versionen manuell.
+
+1. [Senden Sie das Onboarding-Support](get-started/configure-aco.md#onboarding)Ticket mit Ihrer Mandanten-ID, AEM-Programm-ID, AEM-Umgebungs-ID, übereinstimmender Regel, Ebene und Gebietsschema.
+
+1. [Konfigurieren Sie Ihre &#x200B;](get-started/configure-aco.md#onboarding) mit demselben Gebietsschema und derselben Ebene, die Sie im Ticket registriert haben.
+
+1. Optional. [Anzeige von Produktbildern aktivieren](get-started/configure-storefront.md#enable-product-images) sodass eine Storefront mit Edge Delivery Services von AEM verwaltete Produktbilder rendert.
+
+   Das vollständige Verfahren, die Einschränkungen und die Ebenenanleitung finden Sie unter [Konfigurieren von AEM Assets für Commerce Optimizer](get-started/configure-aco.md).
+
+>[!ENDTABS]
 
 ## Support
 
-Wenn Sie Informationen benötigen oder Fragen haben, die nicht in diesem Handbuch behandelt werden, wenden Sie sich an Ihren AEM Assets Integration-Vertriebsmitarbeiter oder erstellen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um zusätzliche Hilfe zu erhalten.
+Wenn Sie Informationen benötigen oder Fragen haben, die nicht in diesem Handbuch behandelt werden, wenden Sie sich an Ihren AEM Assets Integration-Vertriebsmitarbeiter oder erstellen Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case), um zusätzliche Hilfe zu erhalten.

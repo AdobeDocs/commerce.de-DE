@@ -2,28 +2,34 @@
 title: Konfigurieren von IMS-Benutzerberechtigungen für die AEM Assets-Integration
 description: Erfahren Sie, wie die IMS-Identität und Admin Console-Profile den Zugriff auf AEM Assets-Bereitstellungen, den Asset-Selektor und automatisch ausgefüllte Commerce-Konfigurationsfelder ermöglichen.
 feature: CMS, Media, Configuration
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
 
 # Benutzerberechtigungen und IMS
 
-**IMS** (Adobe Identity Management System) ist die Authentifizierungsebene. Für Adobe Commerce as a Cloud Service ist die IMS-Authentifizierung standardmäßig im Admin-Bereich aktiviert. Für Adobe Commerce in der Cloud oder lokal ist IMS optional. [Aktivieren von IMS für Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html?lang=de){target=_blank} bietet eine erweiterte Konfigurationsoberfläche (Asset-Selektor, automatisch ausgefüllte Dropdown-Listen). Sie können die Integration jedoch auch ohne IMS konfigurieren, indem Sie **Programm-ID** und **Umgebungs-ID** manuell eingeben.
+**IMS** (Adobe Identity Management System) ist die Authentifizierungsebene.
 
-Die AEM Assets-Integration erfordert auch bestimmte **Adobe Admin Console-Produktprofile** wenn Sie IMS verwenden. Benutzende, die die Integration in Commerce Admin konfigurieren, benötigen das Produktprofil **AEM Assets DM OpenAPI Users - delivery** oder das Produktprofil **author** als Fallback. Dies wird über Admin Console-Produktprofile in der IMS-Organisation der Benutzenden gesteuert und ermöglicht:
+* Für Adobe Commerce as a Cloud Service aktiviert der Administrator standardmäßig die IMS-Authentifizierung.
+* Bei Adobe Commerce in der Cloud oder On-Premise ist IMS optional.
+
+  [Aktivieren von IMS für Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} bietet eine erweiterte Konfigurationsoberfläche (Asset-Selektor, automatisch ausgefüllte Dropdown-Listen). Sie können die Integration jedoch auch ohne IMS konfigurieren, indem Sie **Programm-ID** und **Umgebungs-ID** manuell eingeben.
+
+Bei Verwendung von IMS erfordert die AEM Assets-Integration auch bestimmte **Adobe Admin Console-Produktprofile**. Benutzende, die die Integration in Commerce Admin konfigurieren, benötigen das Produktprofil **AEM Assets DM OpenAPI Users - delivery** oder das Produktprofil **author** als Fallback. Dieser Zugriff wird über Admin Console-Produktprofile in der IMS-Organisation des Benutzers gesteuert und ermöglicht:
 
 * **Asset-Selektor** ermöglicht die Auswahl von Bildern aus AEM Assets beim Verwalten von Kategoriebildern oder Page Builder-Inhalten.
-* **Automatisch ausgefüllte Konfigurationsfelder** wie **Programm-ID**, **Umgebungs-ID** und **Domain-Zuordnung** Dropdown-Listen, die basierend auf ihren Admin Console-Produktprofilen (Versand oder Autor) Werte aus der IMS-Sitzung des Benutzers abrufen.
+* **Automatisch ausgefüllte Konfigurationsfelder** wie **Programm-ID**, **Umgebungs-ID** und **Domain-Zuordnung** Dropdown-Listen, die Werte aus der IMS-Sitzung des Benutzers abrufen.
 
 Ohne die richtigen Berechtigungen ist der Asset-Wähler nicht verfügbar und diese Felder erscheinen leer oder müssen manuell eingegeben werden.
+
 >[!BEGINSHADEBOX]
 
-**So arbeiten IMS und Berechtigungen zusammen**
+**Interaktion von IMS und Berechtigungen**
 
-Adobe IMS stellt die Benutzeridentität und den Organisationskontext bereit, während Adobe Admin Console definiert **welche (Produktprofile**(Berechtigungen) es hat. Die AEM Assets-Integration verwendet die IMS-Details plus das zugewiesene Profil, um zu bestimmen, ob Konfigurationsfelder automatisch ausgefüllt und der Asset-Selektor aktiviert werden kann.
+Adobe IMS stellt die Benutzeridentität und den Organisationskontext bereit, während Adobe Admin Console definiert, welche **Produktprofile** (Berechtigungen) sie haben. Die AEM Assets-Integration verwendet die IMS-Details plus das zugewiesene Profil, um zu bestimmen, ob Konfigurationsfelder automatisch ausgefüllt und der Asset-Selektor aktiviert werden kann.
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +56,9 @@ Wenn keines der Profile konfiguriert ist, können Benutzer **Programm-ID** und *
 
 [!BADGE nur SaaS]{type=Positive tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."}
 
-Die IMS-Authentifizierung ist standardmäßig aktiviert. Fügen Sie den Benutzer dem Produktprofil **AEM Assets DM OpenAPI Users - delivery** in der [Adobe Admin Console](https://adminconsole.adobe.com/) oder dem Produktprofil **author** (z. B. `<environment-name> - author - <program-id> - <environment-id>`) als Ausweichlösung hinzu, wenn der Benutzer das Produktprofil AEM-Versand nicht in der Admin Console hat.
+Das System aktiviert standardmäßig die IMS-Authentifizierung.
+
+Fügen Sie den Benutzer dem Produktprofil **AEM Assets DM OpenAPI Users -**, im Produktprofil [Adobe Admin Console](https://adminconsole.adobe.com/) oder dem Produktprofil **author** als Fallback hinzu.
 
 >[!NOTE]
 >
@@ -66,11 +74,11 @@ Die **IMS-Client-**) ist für PaaS erforderlich, um den Asset-Wähler zu aktivie
 
 So verwenden Sie den Asset-Selektor und automatisch ausgefüllte Konfigurationsfelder (Programm-ID, Umgebungs-ID, Domain-Zuordnung):
 
-1. [Adobe IMS für Commerce aktivieren](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html?lang=de){target=_blank} sodass der Commerce-Administrator die IMS-Authentifizierung verwendet und die Admin Console-Produktprofile der Benutzenden lesen kann.
+1. [Adobe IMS für Commerce aktivieren](https://experienceleague.adobe.com/de/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} sodass der Commerce-Administrator die IMS-Authentifizierung verwendet und die Admin Console-Produktprofile der Benutzenden lesen kann.
 
-1. [Öffnen Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases), um eine benutzerdefinierte IMS-Client-ID für den Asset-Wähler anzufordern.
+1. Um eine benutzerdefinierte IMS-Client-ID für den Asset-Wähler anzufordern [Öffnen Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
-1. Fügen Sie in der [Adobe Admin Console](https://adminconsole.adobe.com/) den Benutzer dem Produktprofil **AEM Assets DM OpenAPI Users - delivery** oder dem Produktprofil **author** (z. B. `<environment-name> - author - <program-id> - <environment-id>`) als Ausweichlösung hinzu, wenn der Benutzer nicht über das Produktprofil AEM-Versand in seiner Admin Console verfügt.
+1. Fügen Sie in der [Adobe Admin Console](https://adminconsole.adobe.com/) den Benutzer dem Produktprofil **AEM Assets DM OpenAPI Users -**, oder dem Produktprofil **author** als Fallback hinzu.
 
 Ohne IMS können Sie die Integration weiterhin konfigurieren, indem Sie die Programm-ID und die Umgebungs-ID im Commerce Admin manuell eingeben.
 

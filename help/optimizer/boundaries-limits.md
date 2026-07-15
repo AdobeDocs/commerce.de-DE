@@ -5,9 +5,9 @@ role: Admin, Developer
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
-source-git-commit: 6ae571dd77206859e69e57100e80bb01416a36cd
+source-git-commit: 172fcbd659f4fe8868059d29ed335a5136af8d33
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,9 @@ Die Verwendung von Dynamic Media verfolgt API-Anfragen, die innerhalb von [!DNL 
 
 >[!ENDSHADEBOX]
 
+>[!NOTE]
+>
+>Die oben genannten Beschränkungen betreffen die Zuweisung von Kapazität und Nutzung. Eine Übersicht über die Produktvisualisierungsfunktionen und funktionale Einschränkungen finden Sie unter [Produktvisualisierung mit AEM Assets](setup/product-visuals.md).
 
 ### Katalogansichten und Richtlinien
 
