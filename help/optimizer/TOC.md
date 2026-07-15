@@ -5,7 +5,8 @@ user-guide-description: Dokumentation und Ressourcen für [!DNL Adobe Commerce O
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 94ba07437d532d0d101c166f58114c2aa0bd4be4
+nudge: true
+source-git-commit: de2af14a02ba21bfedd4fa6841f0f8b544b013cc
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 11%

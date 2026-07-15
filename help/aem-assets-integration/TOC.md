@@ -3,9 +3,10 @@ user-guide-title: '[!DNL AEM Assets] Integrationshandbuch'
 breadcrumb-title: '[!DNL AEM Assets] Integration'
 user-guide-description: Umfassende Informationen zur AEM Assets-Integration für Adobe Commerce- und Magento Open Source-Administratoren und E-Commerce-Marketing-Experten.
 feature: CMS, Page Content
-source-git-commit: 04c1717905367549d2818b1842f05a6a1488ccfd
+nudge: true
+source-git-commit: de2af14a02ba21bfedd4fa6841f0f8b544b013cc
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '102'
 ht-degree: 3%
 
 ---
@@ -15,8 +16,9 @@ ht-degree: 3%
 
 - [AEM Assets-Integration](overview.md)
 - [Versionshinweise](release-notes.md)
+- [Commerce-Metadaten in AEM Assets](metadata.md)
 - Erste Schritte {#get-started}
-   - [Konfigurieren des AEM Assets-Projekts zur Unterstützung von Commerce-Metadaten](get-started/configure-aem.md)
+   - [Konfigurieren des AEM Assets-Projekts](get-started/configure-aem.md)
    - [Installieren von Adobe Commerce-Paketen](get-started/configure-commerce.md)
    - [Integration konfigurieren](get-started/setup-synchronization.md)
    - [Konfigurieren von IMS-Benutzerberechtigungen](get-started/permissions.md)
@@ -31,4 +33,4 @@ ht-degree: 3%
    - [Benutzerdefinierter automatischer Abgleich](synchronize/custom-match.md)
    - [Manuelle Asset-Auswahl](synchronize/asset-selector-integration.md)
 - [Verwalten von Commerce Media-Assets](manage-assets.md)
-- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

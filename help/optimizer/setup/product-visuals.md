@@ -3,10 +3,10 @@ title: Produktvisualisierung mit AEM Assets
 description: Erfahren Sie, wie Sie AEM Assets für Produktbilder in  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+source-git-commit: 264658bee09a22cfd55828c6960153cc1239d3fb
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 0%
 # Produktvisualisierung mit AEM Assets
 
 Mit Product Visuals können [!DNL Adobe Commerce Optimizer] Produktbilder über Adobe Experience Manager (AEM) Assets verwalten. Diese Integration bietet einen nahtlosen Workflow zum Synchronisieren von hochwertigen Produktbildern aus AEM Assets mit Ihrem [!DNL Commerce Optimizer] mithilfe von Katalogschichten.
+
+>[!NOTE]
+>
+>**Produktvisualisierungen** ist der Name des Bundles, das mit [!DNL Adobe Commerce as a Cloud Service] und [!DNL Adobe Commerce Optimizer] bereitgestellt wird. Sie kombiniert [Dynamic Media mit OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)Funktionen und [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime).
+>
+>Kunden mit einer anderen AEM Assets-Lizenz (z. B. **AEM Assets Ultimate**) können dieselbe Integration verwenden. Nur die AEM-Version wirkt sich auf die Onboarding-Schritte aus, nicht auf den Lizenztyp.
 
 ## Die wichtigsten Vorteile
 
@@ -25,11 +31,11 @@ Mit Product Visuals können [!DNL Adobe Commerce Optimizer] Produktbilder über 
 
 ## Funktionsweise
 
-Die Integration umfasst zwei Hauptflüsse:
+Die Integration verfügt über zwei unabhängige Ereignisflüsse. Beide verwenden [Adobe I/O Events](https://developer.adobe.com/events/docs/), um Ereignisse an den Assets-Integrationsdienst zu übertragen, aber jede Richtung verwendet einen eigenen Ereignisanbieter:
 
-* **Von AEM Assets**: Wenn ein Asset genehmigt, abgelehnt oder entfernt wird, fließt das Ereignis über die Adobe-Pipeline zum Assets Integration Service. Der Service ordnet Assets Produkten mithilfe einer `match-by-SKU` oder einer benutzerdefinierten Zuordnungsstrategie zu und sendet dann die `product-asset` Zuordnungen an die [!DNL Commerce Optimizer], wo sie als Produktebenen gespeichert werden.
+* **Von AEM Assets zum Assets-Integrationsdienst**: Wenn ein Asset genehmigt, abgelehnt oder entfernt wird, wird das Ereignis an den Assets-Integrationsdienst gesendet. Der Service ordnet Assets mithilfe einer `match-by-SKU` oder einer benutzerdefinierten Zuordnungsstrategie Produkten zu und sendet dann die `product-asset` Zuordnungen an [!DNL Commerce Optimizer], wo sie als Produktebenen gespeichert werden.
 
-* **Von[!DNL Commerce Optimizer]**: Wenn ein Produkt im [!DNL Commerce Optimizer] aktualisiert wird, fließt das Ereignis über die Adobe-Pipeline zum Assets Integration Service. Der Service synchronisiert alle übereinstimmenden Asset-Zuordnungen zurück mit [!DNL Commerce Optimizer].
+* **Vom [!DNL Commerce Optimizer] zum Assets Integration Service**: Wenn ein Produkt in [!DNL Commerce Optimizer] aktualisiert wird, wird das Ereignis an den Assets Integration Service gesendet. Der Service synchronisiert alle übereinstimmenden Asset-Zuordnungen zurück mit [!DNL Commerce Optimizer].
 
 Die aktualisierten Bilder sind über Storefront-APIs (Katalog-Service, Live-Suche, Produktempfehlungen) verfügbar.
 
@@ -56,15 +62,21 @@ Stellen Sie vor der Aktivierung von Produktbildern sicher, dass Sie die [Vorauss
 
 ## Setup
 
-Um die Integration zu aktivieren[&#x200B; erstellen Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) Ihren [!DNL Commerce Optimizer]- und AEM Assets-Details. Der Adobe-Support konfiguriert die Integration und registriert Ihren Mandanten beim Assets Integration Service.
+Um die Integration zu aktivieren[ erstellen Sie ein Support-Ticket ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) Ihren [!DNL Commerce Optimizer]- und AEM Assets-Details. Der Adobe-Support konfiguriert die Integration und registriert Ihren Mandanten beim Assets Integration Service.
 
-Weitere [&#x200B; finden Sie unter „Konfigurieren von AEM Assets &#x200B;](../../aem-assets-integration/get-started/configure-aco.md) Commerce Optimizer&quot;.
+Weitere [ finden Sie unter „Konfigurieren von AEM Assets ](../../aem-assets-integration/get-started/configure-aco.md) Commerce Optimizer&quot;.
 
 ### Konfigurieren von AEM Assets-Metadaten
 
 Um den automatischen Produktabgleich zu aktivieren, konfigurieren Sie Ihre Assets in AEM Assets mit Commerce-Metadaten.
 
-Unter [Konfigurieren von AEM Assets](../../aem-assets-integration/get-started/configure-aco.md#configure-aem-assets) finden Sie die erforderlichen Metadatenfelder und Schritte.
+Unter [Konfigurieren von AEM Assets](../../aem-assets-integration/get-started/configure-aco.md#configure-aem-assets-first) finden Sie die erforderlichen Metadatenfelder und Schritte.
+
+## Einschränkungen
+
+Bevor Sie Produktvisualisierungen verwenden, sollten Sie sich mit den [Integrationsbeschränkungen](../../aem-assets-integration/get-started/configure-aco.md#limitations) befassen, d. h. den schichtbezogenen Einschränkungen, die sich darauf auswirken, wie AEM Assets-Daten mit Ihrem Basiskatalog zusammengeführt werden.
+
+Informationen zu Kapazitäts- und Nutzungszuweisungen (Asset-Speicher, Dynamic Media-Vorgänge, Benutzerlizenzen) finden Sie unter [Produktvisuelle ](../boundaries-limits.md#product-visuals-limits)) im _Boundaries and Limits_.
 
 ## Verwenden von Produktbildern
 
@@ -74,7 +86,9 @@ Nachdem die Integration konfiguriert ist, verwalten Sie Ihre Produktbilder über
 
 1. Laden Sie Bilder in Ihr AEM Assets-Repository hoch.
 
-1. Fügen Sie dem Asset Commerce-Metadaten hinzu. Siehe [Anwenden von Metadaten auf Assets](../../aem-assets-integration/get-started/configure-aco.md#step-3-apply-metadata-to-assets).
+1. Fügen Sie dem Asset Commerce-Metadaten hinzu.
+
+   Siehe [Standardmäßiger automatischer Abgleich](../../aem-assets-integration/synchronize/default-match.md) und [Benutzerdefinierter automatischer Abgleich](../../aem-assets-integration/synchronize/custom-match.md).
 
 1. Genehmigen Sie das Asset für die Bereitstellung. Das Asset muss sich im Status **Genehmigt** für die Synchronisierung mit dem Trigger befinden.
 
@@ -82,7 +96,7 @@ Nachdem die Integration konfiguriert ist, verwalten Sie Ihre Produktbilder über
 
 ### Anwenden der AEM-Assets-Ebene
 
-Um AEM Assets-Bilder auf Ihrer Storefront anzuzeigen[&#x200B; weisen Sie die `AEM-Assets` Ihrer Katalogansicht zu](catalog-layer.md#assign-the-aem-assets-layer-to-a-catalog-view).
+Um AEM Assets-Bilder auf Ihrer Storefront anzuzeigen[ weisen Sie die `AEM-Assets` Ihrer Katalogansicht zu](catalog-layer.md#assign-the-aem-assets-layer-to-a-catalog-view).
 
 ## Ähnliche Themen
 
