@@ -1,7 +1,7 @@
 ---
-source-git-commit: 65313a91d28d199c142e33f9b77b7e59bbb512ac
+source-git-commit: 94514c6b52ed78e6f739e3067a206e69fa05bed5
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -11,10 +11,11 @@ Dieses Verzeichnis enthält Pre-Commit-Hooks, die Bilder automatisch optimieren,
 
 ## Was die Haken tun
 
-- **Staging** Bilddateien (PNG, JPG, JPEG, GIF) automatisch erkennen
-- **`image_optim`** ausführen, um Bilder zu komprimieren und zu optimieren
+- **Staging** Bilddateien (PNG, JPEG, GIF, SVG) automatisch erkennen
+- **Ausführen von`image_optim`** zum Komprimieren und Optimieren von Rasterbildern (PNG, JPEG, GIF)
 - **Optimierte Bilder automatisch neu**.
-- **Sicherstellen, dass alle übergebenen Bilder** optimiert sind
+- **Sicherstellen, dass alle übergebenen Rasterbilder** optimiert sind
+- **Überprüfen Sie bereitgestellte SVGs** anhand einer Größenbeschränkung und brechen Sie den Commit ab, wenn eine SVG diese überschreitet
 
 ## Vorteile
 
@@ -87,9 +88,16 @@ Image optimization complete!
 - **PNG**: Für Screenshots und Benutzeroberflächenelemente verwenden (wird automatisch optimiert)
 - **JPEG**: Für Fotos verwenden (wird automatisch optimiert)
 - **GIF**: Für Animationen verwenden (wird automatisch optimiert)
-- **SVG**: Für Symbole und einfache Grafiken verwenden (nicht von Hooks verarbeitet, Commit unverändert)
+- **SVG**: Für Symbole und einfache Grafiken verwenden (nicht optimiert, aber auf eine Größenbeschränkung geprüft; Commit schlägt fehl, wenn die Grenze überschritten wird)
 
-Die Pre-Commit-Hooks optimieren beim Commit automatisch PNG-, JPEG- und GIF-Bilder.
+Die Pre-Commit-Hooks optimieren beim Commit automatisch PNG-, JPEG- und GIF-Bilder und überprüfen gestaffelte SVGs mit einer Größenbeschränkung (140 KB).
+
+Wenn eine gestaffelte SVG das Limit überschreitet, wird der Commit abgebrochen. Konvertieren Sie sie stattdessen in PNG:
+
+```bash
+cd _jekyll
+bundle exec rake images:svg_to_png path=path/to/image.svg
+```
 
 ## Manuelle Optimierung
 
@@ -107,7 +115,7 @@ Die Erweiterungspunkte verwenden die Konfigurationsdatei `_jekyll/.image_optim.y
 - **PNG**: Verwendet `advpng`, `optipng` und `pngquant`
 - **JPEG**: Verwendet `jhead`, `jpegoptim` und `jpegtran`
 - **GIF**: Verwendet `gifsicle`
-- **SVG**: Nicht verarbeitet (von der Erkennung ausgeschlossen, um Vektorgrafiken und Animationen beizubehalten)
+- **SVG**: Nicht optimiert (von der `image_optim` ausgeschlossen, um Vektorgrafiken und Animationen beizubehalten), aber mit einer Größenbeschränkung von 140 KB überprüft
 
 ## Fehlerbehebung
 
@@ -123,6 +131,12 @@ Die Erweiterungspunkte verwenden die Konfigurationsdatei `_jekyll/.image_optim.y
 - Überprüfen Sie, ob der `adobe-comdox-exl-rake-tasks` Gem installiert ist (bietet `image_optim`)
 - Überprüfen der `.image_optim.yml` Konfigurationsdatei
 
+### SVG überschreitet Größenbeschränkung
+
+- Der Commit wird abgebrochen, wenn ein gestaffelter SVG 140 KB überschreitet
+- Konvertieren des SVGS in PNG: `cd _jekyll && bundle exec rake images:svg_to_png path=path/to/image.svg`
+- Staging Sie dann das PNG anstelle des SVGS und übertragen Sie erneut
+
 ### Leistungsprobleme
 
 - Anpassen der Thread-Anzahl in `_jekyll/.image_optim.yml`
@@ -132,16 +146,17 @@ Die Erweiterungspunkte verwenden die Konfigurationsdatei `_jekyll/.image_optim.y
 
 1. **Pre-commit-Trigger**: Wenn Sie `git commit` ausführen, wird der Hook automatisch ausgeführt
 2. **Bilderkennung**: Durchsucht gestaffelte Dateien nach Bilderweiterungen
-3. **Optimierung**: Führt `image_optim` für jedes Staging-Bild aus
+3. **Optimierung**: Wird `image_optim` für jedes bereitgestellte PNG, jede JPEG oder jede GIF ausgeführt
 4. **Re-Staging**: Fügt dem Staging-Bereich automatisch optimierte Bilder zurück
-5. **Commit wird fortgesetzt**: Wenn die Optimierung erfolgreich ist, wird der Commit normal fortgesetzt
+5. **Größenüberprüfung für SVG**: Prüft jedes bereitgestellte SVG anhand der Größenbeschränkung von 140 KB
+6. **Commit wird fortgesetzt**: Wenn die Optimierung erfolgreich ist und kein SVG die Größenbeschränkung überschreitet, wird der Commit normal fortgesetzt. Andernfalls wird der Commit abgebrochen
 
 ## Unterstützte Bildformate
 
 - **PNG** (`.png`) - Verlustfreie und verlustbehaftete Komprimierung
 - **JPEG** (`.jpg`, `.jpeg`) - Verlustbehaftete Komprimierung mit Metadatenbereinigung
 - **GIF** (`.gif`) - Animation und statische Optimierung
-- **SVG** (`.svg`) - Nicht von Hooks verarbeitet (unverändert übernehmen, um die Qualität zu erhalten)
+- **SVG** (`.svg`) - Nicht optimiert (Commit unverändert, um die Qualität zu erhalten), aber mit einer Größenbeschränkung von 140 KB verglichen. Der Commit wird abgebrochen, wenn der Grenzwert überschritten wird
 
 ## Best Practices
 
