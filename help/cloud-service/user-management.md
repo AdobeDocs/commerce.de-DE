@@ -8,12 +8,20 @@ exl-id: 9bc80fe6-6dfd-4bb3-8dc5-d5efd8a8d90c
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 autotag-review: '2026-06-18T16:07:29.468Z'
 TQID: 'https://experienceleague.adobe.com/kaQ6N23X6S9zNjDpcq5BsDJnUpke3mjPpzxElMGwqL0'
-product_v2: id: de2e2e68-c5d7-4efe-be7b-27528698f06bid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2: id: d9ced453-36f4-4eb5-b2f3-1d593e32476b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: d9ced453-36f4-4eb5-b2f3-1d593e32476b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 09692e5e2630568a48d14f727930d324c6932ca6
 workflow-type: tm+mt
 source-wordcount: 1816
@@ -37,7 +45,7 @@ Für diesen Prozess ist eine IMS-Organisation mit Zugriff auf [!DNL Adobe Commer
 
 Die folgenden Rollen sind für [!DNL Adobe Commerce as a Cloud Service] verfügbar. Um diese Rollen anzuzeigen oder zu bearbeiten, navigieren Sie in der Commerce-Admin zu [!UICONTROL **System**] > [!UICONTROL **Berechtigungen**] > [!UICONTROL **Benutzerrollen**].
 
-* **Benutzer**: Benutzer haben Administratorzugriff auf Commerce Admin, können jedoch nicht den Zugriff auf Produktebene in Admin Console verwalten. Benutzer können auch Punktzahlen verwenden, um [ Instanzen ](./getting-started.md#create-an-instance) der [!DNL Commerce Cloud Manager] zu erstellen.
+* **Benutzer**: Benutzer haben Administratorzugriff auf Commerce Admin, können jedoch nicht den Zugriff auf Produktebene in Admin Console verwalten. Benutzer können auch Punktzahlen verwenden, um [&#x200B; Instanzen &#x200B;](./getting-started.md#create-an-instance) der [!DNL Commerce Cloud Manager] zu erstellen.
 
   >[!NOTE]
   >
@@ -169,11 +177,11 @@ Es gibt zwei verschiedene Möglichkeiten, Produktadministratorbenutzer zu Adobe 
 
 ### Hinzufügen von Entwicklern und Produktprofil-Administrierenden
 
-Um Entwickler und Produktprofil-Administrierende hinzuzufügen, wiederholen Sie den [Benutzer hinzufügen](#add-users), wählen Sie jedoch die Registerkarte [!UICONTROL ****] oder [!UICONTROL **Administratoren**] anstelle der Registerkarte [!UICONTROL **Benutzer**] aus.
+Um Entwickler und Produktprofil-Administrierende hinzuzufügen, wiederholen Sie den [Benutzer hinzufügen](#add-users), wählen Sie jedoch die Registerkarte [!UICONTROL **&#x200B;**] oder [!UICONTROL **Administratoren**] anstelle der Registerkarte [!UICONTROL **Benutzer**] aus.
 
 >[!NOTE]
 >
->Produktprofil-Administrierende haben keinen Zugriff auf Commerce Admin. Weitere Informationen finden [ unter ](#understanding-roles) von Rollen .
+>Produktprofil-Administrierende haben keinen Zugriff auf Commerce Admin. Weitere Informationen finden [&#x200B; unter &#x200B;](#understanding-roles) von Rollen .
 >
 >Weisen Sie Entwicklern die Benutzerrolle zu, bevor Sie sie als Entwickler hinzufügen. Die Benutzerrolle ist für grundlegende Commerce-Berechtigungen erforderlich.
 
@@ -277,7 +285,7 @@ Wenn Ihr Konto Zugriff auf [[!DNL Adobe Experience Manager as a Cloud Service]](
    >
    >Weitere Informationen dazu, wie sich diese Berechtigungen auf Ihren Zugriff auf [!DNL AEM Assets] auswirken, finden Sie unter [Cloud Manager-Produktprofile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}.
 
-   Für die Asset-Wähler- und automatisch ausgefüllten Konfigurationsfelder (Programm-ID, Umgebungs-ID, Domain-Zuordnung) in der Commerce Admin benötigen Benutzende auch das Produktprofil **AEM Assets DM OpenAPI Users - delivery** . Weitere Informationen finden [ unter „Benutzerberechtigungen ](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"} IMS“.
+   Für die Asset-Wähler- und automatisch ausgefüllten Konfigurationsfelder (Programm-ID, Umgebungs-ID, Domain-Zuordnung) in der Commerce Admin benötigen Benutzende auch das Produktprofil **AEM Assets DM OpenAPI Users - delivery** . Weitere Informationen finden [&#x200B; unter „Benutzerberechtigungen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"} IMS“.
 
 1. Klicken Sie [!UICONTROL **Apply**].
 
@@ -293,7 +301,7 @@ Nachdem ein Benutzer zu [!DNL AEM Assets] hinzugefügt wurde, kann er auf die [!
 
 1. Klicken Sie im [!UICONTROL **Schnellzugriff**]-Abschnitt auf [!UICONTROL **Experience Manager**] oder klicken Sie auf [!UICONTROL **Alle anzeigen**] wenn [!UICONTROL **Experience Manager nicht angezeigt**]. Klicken Sie dann auf [!UICONTROL **Cloud Manager**] oder navigieren Sie direkt zu [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}.
 
-1. Klicken Sie auf der Seite [!UICONTROL ****] auf [!UICONTROL **Programm hinzufügen**], um zu beginnen.
+1. Klicken Sie auf der Seite [!UICONTROL **&#x200B;**] auf [!UICONTROL **Programm hinzufügen**], um zu beginnen.
 
 1. [Erstellen Sie ein neues Programm](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}.
 
