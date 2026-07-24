@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 09692e5e2630568a48d14f727930d324c6932ca6
 workflow-type: tm+mt
-source-wordcount: 1822
+source-wordcount: 1816
 ht-degree: 0%
 
 ---
@@ -58,10 +58,10 @@ Die folgenden Rollen sind für [!DNL Adobe Commerce as a Cloud Service] verfügb
 * [**Entwickler**](https://helpx.adobe.com/de/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}: Entwicklerinnen und Entwickler verfügen über Benutzerberechtigungen und werden der Commerce-Instanz als Entwicklerperson hinzugefügt. Sie können die [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"} verwenden, [Ereignisse konfigurieren](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"} und [Webhooks erstellen](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
 
 * Administratoren : Es gibt verschiedene Arten von Administratorrollen:
-   * [Systemadmins](https://helpx.adobe.com/de/enterprise/using/admin-roles.html){target="_blank"} - Der Systemadmin hat über die Admin Console Zugriff auf alle Produkte und Produktprofile in der Organisation.
-   * [Produktadministrierende](#add-a-product-admin) - Produktadministrierende können [Benutzende, Rollen und Berechtigungen für das Produkt verwalten](#add-users) in der [!DNL Adobe Admin Console] und [Benutzende im Commerce Admin verwalten](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
-   * [Produktprofil-Administrierende](#add-developers-and-product-profile-admins) - Produktprofil-Administrierende haben keinen Zugriff auf den Adobe Commerce-Admin, können jedoch Benutzende für das Produkt im [!DNL Adobe Admin Console] verwalten.
-   * Support-Administratoren : Support-Administratoren können Support-Tickets erstellen und verwalten.
+  * [Systemadmins](https://helpx.adobe.com/de/enterprise/using/admin-roles.html){target="_blank"} - Der Systemadmin hat über die Admin Console Zugriff auf alle Produkte und Produktprofile in der Organisation.
+  * [Produktadministrierende](#add-a-product-admin) - Produktadministrierende können [Benutzende, Rollen und Berechtigungen für das Produkt verwalten](#add-users) in der [!DNL Adobe Admin Console] und [Benutzende im Commerce Admin verwalten](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
+  * [Produktprofil-Administrierende](#add-developers-and-product-profile-admins) - Produktprofil-Administrierende haben keinen Zugriff auf den Adobe Commerce-Admin, können jedoch Benutzende für das Produkt im [!DNL Adobe Admin Console] verwalten.
+  * Support-Administratoren : Support-Administratoren können Support-Tickets erstellen und verwalten.
 
 >[!NOTE]
 >
@@ -194,49 +194,49 @@ In der folgenden Liste werden die Ressourcen beschrieben, für die Standardrolle
 **Benutzer**
 
 * Katalog
-   * Inventar
-      * PRODUCT
-         * Produktpreis lesen
+  * Inventar
+    * PRODUCT
+      * Produktpreis lesen
 
 **Entwickler**
 
 * Katalog
-   * Inventar
-      * PRODUCT
-         * Produktpreis lesen
+  * Inventar
+    * PRODUCT
+      * Produktpreis lesen
 * System
-   * Datenübertragung
-      * Importverlauf
+  * Datenübertragung
+    * Importverlauf
 * Adobe IO-Ereigniskonfiguration
-   * Konfigurationsprüfung
-   * Ereignisanbieter erstellen
-   * Konfigurationsaktualisierung
-   * Ereignisse synchronisieren
-   * Ereignisanbieterliste abrufen
+  * Konfigurationsprüfung
+  * Ereignisanbieter erstellen
+  * Konfigurationsaktualisierung
+  * Ereignisse synchronisieren
+  * Ereignisanbieterliste abrufen
 * Eventing Framework
-   * Ereignisliste
-   * Eventing-Verbindung testen
-   * Ereignis abonnieren
-   * Abo von einem Ereignis kündigen
-   * Ereignisstatus
-   * API zum Abrufen von Ereignisabonnements
-   * Admin-Benutzeroberfläche für Ereignisabonnements anzeigen
-   * Admin-Benutzeroberfläche für Ereignisabonnements erstellen
-   * Neue Ereignis-Admin-Benutzeroberfläche anfordern
+  * Ereignisliste
+  * Eventing-Verbindung testen
+  * Ereignis abonnieren
+  * Abo von einem Ereignis kündigen
+  * Ereignisstatus
+  * API zum Abrufen von Ereignisabonnements
+  * Admin-Benutzeroberfläche für Ereignisabonnements anzeigen
+  * Admin-Benutzeroberfläche für Ereignisabonnements erstellen
+  * Neue Ereignis-Admin-Benutzeroberfläche anfordern
 * Webhooks
-   * Webhooks für digitale Signatur
-      * Webhooks - Einstellungen für digitale Signaturen
-      * Webhooks - Generieren von Schlüsseln mit digitalen Signaturen
-   * Webhooks-Verwaltung
-      * Webhooks-Raster
-      * Webhooks bearbeiten
-      * Webhooks testen
-      * Webhook-API abonnieren
-      * API-Abo von Webhook kündigen
-      * Webhooks-Liste
-      * Neuen Webhook anfordern
-      * Webhooks-Protokolle
-      * Liste der Webhooks abrufen
+  * Webhooks für digitale Signatur
+    * Webhooks - Einstellungen für digitale Signaturen
+    * Webhooks - Generieren von Schlüsseln mit digitalen Signaturen
+  * Webhooks-Verwaltung
+    * Webhooks-Raster
+    * Webhooks bearbeiten
+    * Webhooks testen
+    * Webhook-API abonnieren
+    * API-Abo von Webhook kündigen
+    * Webhooks-Liste
+    * Neuen Webhook anfordern
+    * Webhooks-Protokolle
+    * Liste der Webhooks abrufen
 
 **Administratoren**
 
@@ -256,13 +256,13 @@ Wenn Ihr Konto Zugriff auf [[!DNL Adobe Experience Manager as a Cloud Service]](
 >
 >Um mehrere Benutzer gleichzeitig hinzuzufügen, können Sie einen [CSV-Upload](https://helpx.adobe.com/de/enterprise/using/bulk-upload-users.html){target="_blank"} durchführen.
 >
->Sie können einer Rolle auch mehrere Benutzer hinzufügen, indem Sie eine [Benutzergruppe](https://helpx.adobe.com/de/enterprise/using/user-groups.html){target="_blank"} erstellen. Anschließend können Sie das Produkt [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**] zur Benutzergruppe hinzufügen.
+>Sie können einer Rolle auch mehrere Benutzer hinzufügen, indem Sie eine [Benutzergruppe](https://helpx.adobe.com/de/enterprise/using/user-groups.html){target="_blank"} erstellen. Anschließend können Sie das Produkt [!DNL **Adobe Experience Manager as a Cloud Service**] zur Benutzergruppe hinzufügen.
 
 1. Navigieren Sie zu <https://adminconsole.adobe.com> und melden Sie sich mit Ihrer Adobe ID an.
 
 1. Wählen Sie Ihre Organisation aus.
 
-1. Wählen Sie auf [!UICONTROL **Registerkarte**] Produkte [!UICONTROL **unter „Produkte und**]&quot; das Produkt [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**].
+1. Wählen Sie auf [!UICONTROL **Registerkarte**] Produkte [!UICONTROL **unter „Produkte und**]&quot; das [!UICONTROL **Adobe Experience Manager as a Cloud Service**] Produkt aus.
 
    ![AEM Cloud Manager-Produktauswahl in Admin Console](./assets/backend-aem.png){width="600" zoomable="yes"}
 
@@ -291,7 +291,7 @@ Wenn Ihr Konto Zugriff auf [[!DNL Adobe Experience Manager as a Cloud Service]](
 
 1. Klicken Sie [!UICONTROL **Speichern**].
 
-Um zu bestätigen, dass der Benutzer Zugriff hat, klicken Sie auf den Namen des Benutzers, um dessen Profilseite zu öffnen. Im Abschnitt [!UICONTROL **Produkte**] sollte es &quot;[!UICONTROL **&quot;**] das Produkt [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**] lauten. Es kann einige Sekunden dauern, nachdem der/die Benutzende hinzugefügt wurde, bis der Status in seinem/ihrem Profil aktualisiert wird. Aktualisieren Sie die Seite, um den aktualisierten Status anzuzeigen.
+Um zu bestätigen, dass der Benutzer Zugriff hat, klicken Sie auf den Namen des Benutzers, um dessen Profilseite zu öffnen. Im Abschnitt [!UICONTROL **Produkte**] sollte es &quot;[!UICONTROL **&quot;**] das Produkt [!UICONTROL **Adobe Experience Manager as a Cloud Service**] lauten. Es kann einige Sekunden dauern, nachdem der/die Benutzende hinzugefügt wurde, bis der Status in seinem/ihrem Profil aktualisiert wird. Aktualisieren Sie die Seite, um den aktualisierten Status anzuzeigen.
 
 ![Benutzerprofil mit abgeschlossenem Produktzugriffsstatus](./assets/product-access.png){width="600" zoomable="yes"}
 

@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: eb561a73951ba42542a8b08340a7df9cc30477d3
+source-git-commit: b05e2183cc0e4b8352a150df9dabfc9dfdb31750
 workflow-type: tm+mt
-source-wordcount: 4657
+source-wordcount: 5265
 ht-degree: 0%
 
 ---
@@ -57,13 +57,42 @@ Die folgenden Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar und wer
 
 >[!BEGINSHADEBOX]
 
+### Bestellungen mit REST bearbeiten
+
+>[!IMPORTANT]
+>
+>Diese Funktion ist standardmäßig deaktiviert. Wenden Sie sich zur Aktivierung an Ihren Adobe Commerce Customer Success Manager oder erstellen Sie ein Support-Ticket.
+
+Neue REST-API-Endpunkte replizieren die [!DNL Commerce Admin] [!UICONTROL **Bestellung bearbeiten**] mit der Integrationen eine Bestellung programmgesteuert bearbeiten können:
+
+| Methode | Endpunkt | Beschreibung |
+| --- | --- | --- |
+| `POST` | `/V1/orders/{orderId}/edit/start` | Kopieren Sie die Bestellung in einen neuen bearbeitbaren Warenkorb und geben Sie die Warenkorb-ID zurück. |
+| `POST` | `/V1/orders/{orderId}/edit/submit` | Senden Sie den geänderten Warenkorb als neue Bestellung und stornieren Sie die ursprüngliche Bestellung. |
+
+Ändern Sie nach dem Aufruf von `edit/start` den zurückgegebenen Warenkorb mit den standardmäßigen Warenkorb-REST-Endpunkten und rufen Sie dann `edit/submit` auf. Die neue Bestellung übernimmt die Zahlungsmethode der ursprünglichen Bestellung, es sei denn, Sie überschreiben sie über den Warenkorb, und sie wird als verknüpfter Ersatz für das stornierte Original erstellt. Für beide Endpunkte ist die `Magento_Sales::actions_edit` ACL-Ressource erforderlich. <!-- ACCS-1284 -->
+
 ### Bestellungen und Rechnungen nach Firma filtern
 
 Die `GET /V1/orders`- und `GET /V1/invoices`-REST-API-Endpunkte unterstützen jetzt die Filterung nach `company_id` und `company_name`, sodass B2B-Integrationen Bestellungen oder Rechnungen für ein bestimmtes Unternehmen in einer einzigen Anfrage abrufen können. <!-- ACCS-1111, CCSAAS-5076 -->
 
-### Auflisten benutzerdefinierter E-Mail-Vorlagen über die API
+### Importieren Sie mehr Couponcodes pro Datei
 
-Der neue `GET /V1/custom-email/templates` REST-API-Endpunkt gibt Ihre [benutzerdefinierten E-Mail-Vorlagen](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/) einschließlich der ID, des Codes und des Betreffs jeder Vorlage zurück. Integrationen können eine zurückgegebene Vorlagen-ID mit dem `POST /V1/custom-email/send`-Endpunkt verwenden, anstatt die ID manuell nachzuschlagen. <!-- CCSAAS-5089 -->
+Die Obergrenze für den Massenimport von Gutscheinen pro Datei kann angepasst werden, indem Sie sich an Ihren Adobe Commerce Customer Success Manager wenden oder ein Support-Ticket erstellen. <!-- CCSAAS-5176 -->
+
+### Verwalten von benutzerdefinierten E-Mail-Vorlagen über die API
+
+Mit den folgenden neuen REST-API-Endpunkten können Integrationen (benutzerdefinierte E-Mail[Vorlagen) auflisten, abrufen und erstellen](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/):
+
+| Methode | Endpunkt | Beschreibung |
+| --- | --- | --- |
+| `GET` | `/V1/custom-email/templates` | Listen Sie Ihre benutzerdefinierten E-Mail-Vorlagen auf und geben Sie die ID, den Code, den Betreff und den Typ jeder Vorlage zurück. |
+| `GET` | `/V1/custom-email/templates/{id}` | Rufen Sie eine einzelne Vorlage ab, einschließlich ihres Textkörpers und Stils. |
+| `POST` | `/V1/custom-email/templates` | Erstellen Sie eine benutzerdefinierte E-Mail-Vorlage und geben Sie deren Server-zugewiesene ID zurück. |
+
+Verwenden Sie eine zurückgegebene Vorlagen-ID mit dem `POST /V1/custom-email/send`-Endpunkt, anstatt die ID manuell zu suchen.
+
+Alle `custom-email`-Endpunkte erfordern Zugriff auf die `Marketing > Communications > Email template` [Rollenressource](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources). <!-- CCSAAS-5089, CCSAAS-5090 -->
 
 ### Verwalten der gesamten Bestellkette über die REST-API
 
@@ -85,6 +114,26 @@ Neue `orderChain`-REST-API-Endpunkte ermöglichen es Integrationen, eine Bestell
 | `GET` | `/V1/orderChain/{id}/statuses` | Abrufen des aktuellen Bestellstatus. |
 
 `GET` Endpunkte, die das Filtern von Rechnungen, Sendungen, Gutschriften und Rücksendungen unterstützen, unterstützen jetzt das Filtern nach `order_original_id`. Die Filterung nach `order_original_id` gibt Details zur gesamten Bestellkette zurück, nicht nur zur einzelnen Bestellung. Ein Beispiel-Endpunkt, der diese Funktion unterstützt, ist `GET /V1/invoices`. <!-- ACCS-1004, ACCS-1005 -->
+
+### Suchen des Sortierrasters nach benutzerdefinierten Attributwerten
+
+>[!IMPORTANT]
+>
+>Diese Funktion ist standardmäßig deaktiviert. Wenden Sie sich zur Aktivierung an Ihren Adobe Commerce Customer Success Manager oder erstellen Sie ein Support-Ticket.
+
+Händler können jetzt das [!DNL Commerce Admin] Raster nach den Werten filtern, die in benutzerdefinierten Sortierattributen gespeichert sind. In [!UICONTROL **Filterzeile für das Sortierraster ist**] Filter „Benutzerdefinierte Attribute“ verfügbar.<!-- ACCS-923 -->
+
+### Eine nominierte Lagerquelle für Warenkorbartikel festlegen
+
+Die neue `setNominatedSourceOnCartItems` GraphQL-Mutation weist den Artikeln des Warenkorbs eine bestimmte Inventarquelle zu und unterstützt Szenarien wie eine Ladenaufnahme (BOPIS) und eine Lieferung aus dem Geschäft. Die Mutation akzeptiert eine `cart_id` und eine Liste von Elementen mit jeweils einem `cart_item_uid` und einem `source_code` und gibt alle `rejected_items` mit einem strukturierten Fehler-Code zurück: `UNKNOWN_SOURCE`, `SOURCE_DISABLED`, `NOT_ENOUGH_QTY` oder `SKU_SOURCE_CONFLICT`. Jede SKU in einem Warenkorb wird in eine einzelne nominierte Quelle aufgelöst. Die Übergabe einer Null- oder leeren `source_code` löscht die Nominierung. <!-- ACCS-932 -->
+
+### Ereignis für Warenkörbe abonnieren, die mit Erinnerungsregeln übereinstimmen
+
+Ein neues `observer.reminder_matched_carts`-Ereignis wird ausgegeben, nachdem die E-Mail-Erinnerungsregeln ihre entsprechende Logik ausgeführt haben und Informationen zu den übereinstimmenden Warenkörben enthalten. Integrationen können dieses Ereignis abonnieren und die Daten an ein externes System wie eine Marketing-Plattform weiterleiten, anstatt sich auf die nativen Erinnerungs-E-Mails zu verlassen. <!-- CCSAAS-5173 -->
+
+### Transaktions-E-Mails nach Bereich oder Vorlage unterdrücken
+
+Eine neue Konfiguration [!UICONTROL **E-Mail**] Unterdrückung) ([!UICONTROL **Stores**] > [!UICONTROL **Konfiguration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **E-Mail-Unterdrückung**]) ermöglicht es Admins, [!DNL Commerce] selektiv vom Versand von Transaktions-E-Mails abzuhalten. E-Mails können nach Funktionsbereichen (z. B. Kundenkonto, Order Management, Rückgabe, Checkout, Marketing oder B2B) oder nach einer exakten Liste von Vorlagenkennungen unterdrückt werden.<!-- ACCS-1025 -->
 
 ### Anzeigen des Auftragsänderungsverlaufs in der Admin Console
 
@@ -109,6 +158,28 @@ Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen s
 * Fehlerkorrektur - Das linke Navigationsmenü in der [!DNL Commerce Admin] kann jetzt nicht mehr ausgeblendet werden. <!-- ACCS-1035 -->
 
 * Die Leistung beim Zuweisen und Aufheben der Zuweisung in freigegebenen Katalogen wurde verbessert. <!-- ACCS-1324, CCSAAS-5177, CCSAAS-5190, CCSAAS-5192 -->
+
+* Verbesserte Leistung bei der [!DNL AEM Assets]. <!-- ACAP-1242 -->
+
+* Fehlerkorrektur - Beim Hinzufügen einer einfachen Produkt-SKU zu einem konfigurierbaren Produkt im [!DNL Commerce Admin] tritt jetzt kein Fehler mehr auf. <!-- ACCS-1132 -->
+
+* Fehlerkorrektur - Die Nachrichtenwarteschlange verarbeitet jetzt keine neuen Nachrichten mehr, wenn zu viele veraltete Datensätze gesammelt werden. <!-- ACCS-1292 -->
+
+* Es wurde ein Problem behoben, bei dem die Erstellung eines Admin-Auftrags mit dem Fehler „SKU nicht im freigegebenen Katalog verfügbar“ fehlschlug. <!-- ACCS-1318 -->
+
+* Es wurde ein Absturz behoben, der beim Erstellen oder Bearbeiten gebündelter Produkte auftrat. <!-- CCSAAS-5211 -->
+
+* Es wurde ein Problem behoben, bei dem bei der Bestellplatzierung kein Inventar an der angegebenen Quelle für Artikel reserviert wurde, die eine Ladenabholung oder einen Versand aus dem Geschäft verwendeten. <!-- ACCS-1374 -->
+
+* Veraltete benutzerdefinierte Gebühren werden jetzt aus der Antwort auf die Warenkorbabfrage gelöscht. <!-- ACCS-1400 -->
+
+* Es wurde ein Problem in der [!DNL AEM Assets]-Integration behoben, bei dem Produkt-Asset-Rollenattribute Gebietsschemadaten beim Katalogexport verloren haben. <!-- ACCS-1401 -->
+
+* Die beim Speichern einer Integration erhaltene Warnung, die darauf hinweist, dass [!DNL Dynamic Media] nicht aktiviert ist, wurde verbessert. <!-- ACAP-1298 -->
+
+* Die Felder Ereignisname und Alias werden jetzt beim Abonnieren eines Ereignisses in Kleinbuchstaben überprüft. <!-- CEXT-6164 -->
+
+* Webhook-Regex-Regelmuster werden jetzt beim Speichern eines bedingten Webhooks validiert. <!-- CEXT-6287 -->
 
 {{accs-release}}
 
@@ -598,11 +669,11 @@ An den B2B-Drop-in-Komponenten wurden die folgenden Änderungen vorgenommen:
 
 * [!DNL Commerce Storefront on Edge Delivery Services] enthält jetzt [B2B-Drop-in-Komponenten](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=de). Die folgenden B2B-Drop-ins sind jetzt verfügbar:
 
-   * **[Unternehmensverwaltung](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=de)** - Ermöglicht die Verwaltung von Unternehmensprofilen und rollenbasierte Berechtigungen für Adobe Commerce-Storefronts.
-   * **[Unternehmens-](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=de)**: Bietet eine UI-Komponente, mit der Benutzende zwischen mehreren Unternehmen wechseln können, denen sie zugeordnet sind.
-   * **[Bestellungen](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=de)** - Verwaltet Bestellungen-Workflows, Genehmigungsregeln und den Bestellverlauf für B2B-Transaktionen.
-   * **[Angebotsverwaltung](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=de)** - Ermöglicht verhandelbare Angebote für B2B-Kunden mit Angebotsanfrage-, Verhandlungs- und Genehmigungs-Workflows.
-   * **[Anforderungslisten](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=de)**: Bietet Tools zum Erstellen und Verwalten von Anforderungslisten für Wiederholungskäufe und Massenbestellungen.
+  * **[Unternehmensverwaltung](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=de)** - Ermöglicht die Verwaltung von Unternehmensprofilen und rollenbasierte Berechtigungen für Adobe Commerce-Storefronts.
+  * **[Unternehmens-](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=de)**: Bietet eine UI-Komponente, mit der Benutzende zwischen mehreren Unternehmen wechseln können, denen sie zugeordnet sind.
+  * **[Bestellungen](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=de)** - Verwaltet Bestellungen-Workflows, Genehmigungsregeln und den Bestellverlauf für B2B-Transaktionen.
+  * **[Angebotsverwaltung](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=de)** - Ermöglicht verhandelbare Angebote für B2B-Kunden mit Angebotsanfrage-, Verhandlungs- und Genehmigungs-Workflows.
+  * **[Anforderungslisten](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=de)**: Bietet Tools zum Erstellen und Verwalten von Anforderungslisten für Wiederholungskäufe und Massenbestellungen.
 
 * Das Kompatibilitätspaket für die B2B-Storefront wurde veröffentlicht. Dieses Paket erweitert das [!DNL Adobe Commerce] B2B-GraphQL-Schema , um die Entwicklung auf B2B-Systemen zu verbessern.
 
