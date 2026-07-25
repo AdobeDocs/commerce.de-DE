@@ -1,7 +1,7 @@
 ---
-source-git-commit: 26e80644cd94f01e0cd310ff2197dc01de6c6819
+source-git-commit: 64d5e1d1ee41241bce36faa31db7c436e018037c
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1665'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;23. Juli 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Die Sandbox <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise</a> für Adobe Commerce as a Cloud Service wurde aktualisiert.</p>
+</td>
+      <td>
+        Größere Aktualisierung
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed8bf2044f77432eb38df3c3cbb13b7708f3c33b">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;15. Juli 2026
 
@@ -399,66 +421,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Größere Aktualisierung
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de94aaad29313b3e8254d11d8801ba0d7efff3dc">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;22. Mai 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Für die Version vom 20. Mai 2026 wurden Versionshinweise für API-Updates zu <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a> und Commerce <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/release-notes">Catalog Service</a> hinzugefügt, mit denen nun das dokumentierte Limit von 100 SKU pro Anfrage beim Abrufen von Produktdaten durchgesetzt wird.</p>
-</td>
-      <td>
-        Technisch
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/342a3015f743e12b7089e4d430a517804a7cd40c">verpflichten</a></td>
-    </tr>
-    <tr>
-      <td><p>Dokumentierte intelligente Ranking-Steigerung (konfigurierbare Verhaltensgewichtung pro Regel, Standard 5.0) für [!DNL Live Search] in <a href="https://experienceleague.adobe.com/de/docs/commerce/live-search/live-search-admin/rules/rules-add#intelligent-ranking-boost">Regeln hinzufügen</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce/live-search/best-practice">Best Practices</a> mit einem Querverweis aus <a href="https://experienceleague.adobe.com/de/docs/commerce/live-search/live-search-admin/category-merch">Kategorie-Merchandising</a>. Es wurde dieselbe Anleitung für [!DNL Adobe Commerce Optimizer] in <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">Erstellen und Verwalten</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/best-practice">Best Practices für Merchandising-Regeln“ </a>.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/40b4528d417a4df09ac9ae9fb0d97b0f678b55ac">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;19. Mai 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Im AEM Assets-Integrationshandbuch wird beschrieben, wie Editoren <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/get-started/configure-aem#localized-alt-text-in-aem-assets-metadata">Alternativtext</a> in der </a> für die <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/release-notes">AEM Assets-Integration v1.3.6 festlegen.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d3dfbc59e72c00c3552af5805b57c69e60b38b4">verpflichten</a></td>
-    </tr>
-    <tr>
-      <td><p>Sandbox <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/14aa082c1f0f8ce4c51328eb8ee9f4af25adf859">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
