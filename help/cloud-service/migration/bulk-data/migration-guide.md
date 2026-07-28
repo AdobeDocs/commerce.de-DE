@@ -54,7 +54,7 @@ Bevor Sie beginnen, vergewissern Sie sich, dass Sie alle Elemente in der [Checkl
 
 Einrichten der Umgebung für die Massendatenmigration:
 
->[!VIDEO](https://video.tv.adobe.com/v/3496121)
+>[!VIDEO](https://video.tv.adobe.com/v/3496129?captions=ger)
 
 1. Extrahieren Sie den Inhalt von `ccsaas-migration-tools.tar.gz`.
 
@@ -97,7 +97,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### Konfigurieren der OAuth-Quellberechtigungen
 
->[!VIDEO](https://video.tv.adobe.com/v/3496142)
+>[!VIDEO](https://video.tv.adobe.com/v/3496149?captions=ger)
 
 Diese vier Werte signieren Anfragen vom Migrations-Tool an die Quell-Store-APIs. Um sie zu erhalten, öffnen Sie die [!UICONTROL Admin] und navigieren Sie zu [!UICONTROL **System**] > [!UICONTROL **Erweiterungen**] > [!UICONTROL **Integrationen**]. Erstellen oder öffnen Sie eine Integration und kopieren Sie dann die Werte in `.env`:
 
@@ -142,7 +142,7 @@ Stellen Sie vor der Migration sicher, dass die folgenden Einstellungen zwischen 
 
 ### Target SaaS- und IMS-Anmeldedaten konfigurieren
 
->[!VIDEO](https://video.tv.adobe.com/v/3496167)
+>[!VIDEO](https://video.tv.adobe.com/v/3496174?captions=ger)
 
 Dies sind die [!DNL Adobe Commerce as a Cloud Service] IMS- und API-Einstellungen für das Ziel. Sie benötigen die Mandanten-ID, die Organisations-ID, die IMS-OAuth-Server-zu-Server-Anmeldeinformationen und den richtigen IMS-Host für Ihre Umgebung. Abstimmung mit Ihrem Adobe-Team für Organisations-, Mandanten- und Profilzugriff. Versuchen Sie nicht, vertrauliche Werte abzuleiten oder zu schätzen.
 
@@ -247,7 +247,7 @@ CDMS_PORT=443
 
 ## Datenbankverbindungsdatei konfigurieren
 
->[!VIDEO](https://video.tv.adobe.com/v/3496152)
+>[!VIDEO](https://video.tv.adobe.com/v/3496164?captions=ger)
 
 Die `.my.cnf`-Datei enthält [!DNL MySQL] Verbindungseinstellungen für die Extraktionsseite des Migrations-Tools. Erstellen Sie sie durch Kopieren von `.my.cnf.example` nach `.my.cnf` im Projektstamm. Der Abschnittsname muss mit `SOURCE_CONNECTION_NAME` in `.env` übereinstimmen.
 
