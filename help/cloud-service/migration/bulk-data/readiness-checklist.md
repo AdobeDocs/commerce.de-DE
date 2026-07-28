@@ -7,12 +7,23 @@ role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:18.443Z'
 TQID: 'https://experienceleague.adobe.com/728hkK-dzIPzyuBhuNyOqEE9FxlVGdVc9R2wIRcXobk'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
-subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 670b6214b28be93a16130552a226a8cadb487324
 workflow-type: tm+mt
 source-wordcount: 1171
@@ -53,7 +64,7 @@ Das Migrations-Tool wird auf einem von Ihnen gesteuerten Computer ausgeführt, z
 - **Schreibfähiger Arbeitsordner** - Das Verzeichnis, in das das Migrations-Tool extrahiert wird, muss vom Migrationsbenutzer vollständig schreibbar sein. Das Tool schreibt Protokolle, Cache, [!DNL Composer] und generierte Dateien während der Ausführung.
 - **Ausreichend Speicherplatz** - Stellen Sie sicher, dass ausreichend freier Speicherplatz für extrahierte Daten, [!DNL Docker] Bilder und Protokollausgaben vorhanden ist. Der erforderliche Speicherplatz hängt von der Größe der Quelldatenbank ab.
 - **On-Premise-Quellen: Direkte Datenbankkonnektivität vom Migrationsrechner** - Für lokale Quellinstanzen muss der Migrationsrechner über direkten Netzwerkzugriff auf die Quelldatenbank verfügen. Das Tool stellt nicht automatisch eine lokale Datenbankkonnektivität her. Vergewissern Sie sich, dass der Host, der Port und die Anmeldeinformationen vom Migrationscomputer aus erreichbar sind, bevor Sie einen Migrationsbefehl ausführen.
-- **Cloud-CLI installiert und SSH-Schlüssel registriert** - Für [!DNL Adobe Commerce on Cloud] Quellinstanzen muss die [Cloud-CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) auf dem Migrationsrechner installiert sein. Ihr öffentlicher SSH-Schlüssel muss ebenfalls in Ihrem Konto registriert sein. Anweisungen finden Sie [ „Handbuch ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) gesicherter Verbindungen“.
+- **Cloud-CLI installiert und SSH-Schlüssel registriert** - Für [!DNL Adobe Commerce on Cloud] Quellinstanzen muss die [Cloud-CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) auf dem Migrationsrechner installiert sein. Ihr öffentlicher SSH-Schlüssel muss ebenfalls in Ihrem Konto registriert sein. Anweisungen finden Sie [&#x200B; „Handbuch &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) gesicherter Verbindungen“.
 
 ### Source-Instanz
 
@@ -71,7 +82,7 @@ Das Migrations-Tool wird auf einem von Ihnen gesteuerten Computer ausgeführt, z
 - **IMS OAuth Server-zu-Server-Anmeldeinformationen** - Erforderlich, damit sich das Migrations-Tool beim Ziel authentifizieren kann. Generiert über die [Adobe Developer Console](https://developer.adobe.com/console/). Sie benötigen [!UICONTROL Developer] oder [!UICONTROL Admin] Zugriff auf Ihre Adobe-Organisation, da der einfache Benutzerzugriff zum Erstellen von Anmeldeinformationen nicht ausreicht. Stimmen Sie sich mit Ihrem Adobe-Team ab, um das richtige Produktprofil auszuwählen, und halten Sie die Client-ID (`ADOBE_IMS_CLIENT_ID`) und das Client-Geheimnis (`ADOBE_IMS_CLIENT_SECRET`) bereit.
 - **CDMS-Endpunkt-URL** - von Ihrem Adobe-Team bereitgestellt. Versuchen Sie nicht, diesen Wert abzuleiten. Sie benötigen sowohl den Vorproduktions-Endpunkt für Sandbox- und Testmigrationen als auch den Produktions-Endpunkt für Live-Cutover-Migrationen.
 - **Kernkonfiguration, die zwischen Quelle und Ziel abgestimmt ist** - Kernkonfigurationsdaten wie Store-Einstellungen und Systemkonfiguration werden vom Tool nicht migriert. Richten Sie sie vor der Migration manuell auf dem Ziel so ein, dass sie mit der Quelle übereinstimmt.
-- **B2B-Stores: B2B-Funktionen konsistent konfiguriert** - Wenn die Quelle ein B2B-fähiger Store ist, stellen Sie sicher, dass die relevanten B2B-[!UICONTROL Admin]-Einstellungen vor der Migration sowohl auf der Quelle als auch auf dem Ziel konsistent konfiguriert sind. Die [ erforderlichen Einstellungen finden Sie ](migration-guide.md) Migrationshandbuch .
+- **B2B-Stores: B2B-Funktionen konsistent konfiguriert** - Wenn die Quelle ein B2B-fähiger Store ist, stellen Sie sicher, dass die relevanten B2B-[!UICONTROL Admin]-Einstellungen vor der Migration sowohl auf der Quelle als auch auf dem Ziel konsistent konfiguriert sind. Die [&#x200B; erforderlichen Einstellungen finden Sie &#x200B;](migration-guide.md) Migrationshandbuch .
 
 ### Migrationsplanung
 
