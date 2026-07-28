@@ -2,7 +2,7 @@
 title: Überprüfen des Zugriffs auf den Migrationsdienst
 description: Erfahren Sie, wie Sie den End-to-End-Zugriff auf die Commerce Data Migration Service-API überprüfen und so die Erreichbarkeit des Netzwerks, die IMS-Authentifizierung und die Mandantenautorisierung bestätigen.
 feature: Cloud
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:18:53.554Z'

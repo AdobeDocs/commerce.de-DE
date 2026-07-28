@@ -2,7 +2,7 @@
 title: Massendatenmigration ausführen
 description: Erfahren Sie, wie Sie mit der CLI eine Massendatenmigration von einer Adobe Commerce PaaS- oder On-Premise-Instanz zu Adobe Commerce as a Cloud Service konfigurieren und ausführen.
 feature: Cloud
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:07.600Z'
@@ -130,7 +130,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 >[!NOTE]
 >
->Wenn Sie die Cloud-CLI zum ersten Mal verwenden, müssen Sie auch Ihren öffentlichen SSH-Schlüssel zu Ihrem Konto hinzufügen. Anweisungen finden Sie [&#x200B; „Handbuch &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) gesicherter Verbindungen“.
+>Wenn Sie die Cloud-CLI zum ersten Mal verwenden, müssen Sie auch Ihren öffentlichen SSH-Schlüssel zu Ihrem Konto hinzufügen. Anweisungen finden Sie [&#x200B; „Handbuch &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/secure-connections) gesicherter Verbindungen“.
 
 ### Commerce-Admin-Einstellungen ausrichten
 
