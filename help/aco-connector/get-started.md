@@ -2,7 +2,7 @@
 title: Erste Schritte mit dem [!DNL Adobe Commerce Optimizer Connector]
 description: Erfahren Sie, wie Sie die  [!DNL Adobe Commerce Optimizer Connector] installieren, die Einstellungen für den Bereichsexport konfigurieren, die IMS-Authentifizierung aktivieren und die Katalogsynchronisierung überprüfen.
 feature: Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 autotag-review: '2026-06-09T16:55:50.934Z'
 TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
 product_v2:
@@ -41,11 +41,11 @@ Installieren und konfigurieren Sie die [!DNL Adobe Commerce Optimizer Connector]
 
 ## Voraussetzungen für die Verwendung der Integration {#requirements-to-use-the-integration}
 
-* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.7+. Detaillierte Anforderungen finden Sie unter [Systemanforderungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
+* [Adobe Commerce](https://business.adobe.com/de/products/magento/magento-commerce.html) 2.4.7+. Detaillierte Anforderungen finden Sie unter [Systemanforderungen](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements).
 
 * [!DNL Commerce Optimizer] Lizenz mit einer bereitgestellten Sandbox-Instanz.
 
-* [Authentifizierungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) zum Herunterladen des Connector-Metapakets mit Composer.
+* [Authentifizierungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) zum Herunterladen des Connector-Metapakets mit Composer.
 
 * Administratorzugriff auf eine [[!DNL Commerce Optimizer] Sandbox-Instanz](../optimizer/get-started.md).
 
@@ -53,9 +53,9 @@ Der [!DNL Adobe Commerce] Benutzer, der die Integration konfiguriert, muss über
 
 * Administratorzugriff auf den Commerce Admin.
 
-* [Befehlszeilenzugriff auf den  [!DNL Adobe Commerce] -Server](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access).
+* [Befehlszeilenzugriff auf den  [!DNL Adobe Commerce] -Server](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/user-access).
 
-* Entwicklerzugriff auf die [IMS-Organisation](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?), in der das [!DNL Commerce Optimizer] bereitgestellt wird.
+* Entwicklerzugriff auf die [IMS-Organisation](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations?), in der das [!DNL Commerce Optimizer] bereitgestellt wird.
 
 >[!BEGINSHADEBOX]
 
@@ -68,7 +68,7 @@ Wenn Sie eine der folgenden Erweiterungen installiert haben, deinstallieren Sie 
 * [!DNL Adobe Commerce Catalog Service] (`magento/catalog-service`, `magento/catalog-service-installer`)
 * **[!UICONTROL Data Management Dashboard]** (`magento-catalog-sync-admin`)
 
-Daten, die mit diesen Erweiterungen verknüpft sind, sind weiterhin in der Commerce-Datenbank verfügbar. Er wird jedoch nicht nach [!DNL Commerce Optimizer] exportiert, wenn der Connector aktiviert ist. Um die Adobe Commerce-Such- und Merchandising-Funktionen zu implementieren, die von diesen Erweiterungen nach der Aktivierung des Connectors bereitgestellt werden, konfigurieren Sie sie über die [[!DNL Commerce Optimizer] Admin-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour).
+Daten, die mit diesen Erweiterungen verknüpft sind, sind weiterhin in der Commerce-Datenbank verfügbar. Er wird jedoch nicht nach [!DNL Commerce Optimizer] exportiert, wenn der Connector aktiviert ist. Um die Adobe Commerce-Such- und Merchandising-Funktionen zu implementieren, die von diesen Erweiterungen nach der Aktivierung des Connectors bereitgestellt werden, konfigurieren Sie sie über die [[!DNL Commerce Optimizer] Admin-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/commerce/optimizer/overview#quick-tour).
 
 >[!IMPORTANT]
 >
@@ -108,9 +108,9 @@ Das [!DNL Adobe Commerce Optimizer Connector] wird als Composer-Metapaket bereit
 >
 >Detaillierte Installationsanweisungen für Erweiterungen finden Sie in den folgenden Handbüchern:
 >
->[Installieren der Erweiterung in  [!DNL Adobe Commerce]  Cloud-Infrastruktur](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>[Installieren der Erweiterung in  [!DNL Adobe Commerce]  Cloud-Infrastruktur](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/extensions)
 >
->[Installieren einer Erweiterung  [!DNL Adobe Commerce]  On-Premise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
+>[Installieren einer Erweiterung  [!DNL Adobe Commerce]  On-Premise](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## Anpassen der Exportkonfiguration für Commerce-Bereiche {#customize-the-commerce-scopes-export-configuration}
 
@@ -181,7 +181,7 @@ Rufen Sie die _Mandanten_ ID) aus dem Feld _[!DNL Instance Id]_&#x200B;auf der [
 
    ![[!DNL Commerce Optimizer] Konfigurationsseite](./assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
 
-1. Verwenden Sie in der Befehlszeile [SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections), um eine Verbindung zur [!DNL Adobe Commerce] Staging-Umgebung herzustellen.
+1. Verwenden Sie in der Befehlszeile [SSH](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/secure-connections), um eine Verbindung zur [!DNL Adobe Commerce] Staging-Umgebung herzustellen.
 
 1. Um die Integration zu konfigurieren, führen Sie den folgenden [!DNL Adobe Commerce] CLI-Befehl aus. Ersetzen Sie dabei die Platzhalterwerte durch die Werte für Ihr [!DNL Commerce Optimizer]:
 
@@ -205,4 +205,4 @@ Rufen Sie die _Mandanten_ ID) aus dem Feld _[!DNL Instance Id]_&#x200B;auf der [
 
 1. **Einrichten einer Commerce-Storefront auf[!DNL Edge Delivery Services]**
 
-   Um Ihre Storefront mit der [!DNL Commerce Optimizer]-Instanz zu verbinden und personalisierte Commerce-Erlebnisse bereitzustellen, folgen Sie der [Storefront-Setup-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}.
+   Um Ihre Storefront mit der [!DNL Commerce Optimizer]-Instanz zu verbinden und personalisierte Commerce-Erlebnisse bereitzustellen, folgen Sie der [Storefront-Setup-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=de){target="_blank"}.
