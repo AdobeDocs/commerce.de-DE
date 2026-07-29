@@ -1,7 +1,7 @@
 ---
-source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
+source-git-commit: 039f848c37235195a3ffcc90238dad77513a9ec3
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -104,3 +104,9 @@ Informationen zu den Konfigurationsoptionen für Identitäten, einschließlich A
 | Dienste | Schaufenster |
 | --- | --- |
 | [AEM Assets-Integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer-Connector](../aco-connector/release-notes.md) | [Storefront-Versionsinformationen](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=de)<br>[Storefront-Änderungsprotokoll](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=de) |
+
+## Tool für die Massendatenmigration - Early Access {#bulk-data-early-access}
+
+>[!IMPORTANT]
+>
+>Das Tool für die Massendatenmigration befindet sich derzeit im Early Access-Modus. Der Zugriff wird ausschließlich über den Interaktionsprozess mit dem von Commerce bereitgestellten Engineering (CDE) bereitgestellt. Einen Überblick über das Tool und seine Eignungsanforderungen finden Sie unter [Tool für die Massendatenmigration](../cloud-service/migration/bulk-data/migration-tool.md).

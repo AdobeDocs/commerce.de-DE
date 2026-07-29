@@ -35,9 +35,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 2e43a6abbca117cef5dc559a9f6881980d2d934c
 workflow-type: tm+mt
-source-wordcount: 3150
+source-wordcount: 3153
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Weitere Informationen zu Migrations-Tools finden Sie unter [Tool für die Massendatenmigration](./bulk-data.md).
+>Weitere Informationen zu Migrations-Tools finden Sie unter [Tool für die Massendatenmigration](./bulk-data/migration-tool.md).
 
 ## Die Verschiebung verstehen - PaaS und SaaS vergleichen
 
@@ -101,7 +101,7 @@ Die folgende Tabelle bietet einen Überblick über den Migrationsprozess für ve
 
 Wie aus der Tabelle ersichtlich, bestehen die Abhilfemaßnahmen für jede Migration aus:
 
-* **Datenmigration** - Verwenden der bereitgestellten [Migrations-Tools](./bulk-data.md) um Daten von Ihrer vorhandenen Instanz zu [!DNL Adobe Commerce as a Cloud Service] zu migrieren.
+* **Datenmigration** - Verwenden der bereitgestellten [Migrations-Tools](./bulk-data/migration-tool.md) um Daten von Ihrer vorhandenen Instanz zu [!DNL Adobe Commerce as a Cloud Service] zu migrieren.
 * **Storefront** - Bestehende Commerce-Storefronts mit Edge Delivery und Headless-Storefronts erfordern keine Abschwächung, aber für Luma-Storefronts ist eine Migration zu Commerce Storefronts mit Edge Delivery erforderlich. PWA Studio-Storefronts können zu Commerce Storefronts migriert werden, die von Edge Delivery unterstützt werden oder in ihrem aktuellen Status beibehalten werden. Adobe stellt Accelerators zur Verfügung, die Sie bei der Migration von Storefronts unterstützen.
 * **[API-](https://developer.adobe.com/graphql-mesh-gateway)**: Erstellen Sie ein neues Netz oder ändern Sie das vorhandene. Adobe stellt vorkonfigurierte Meshes zur Verfügung, um diesen Prozess zu unterstützen.
 * **Integrationen** - Alle Integrationen müssen entweder das [Integrations-Starter-Kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) oder die [[!DNL Adobe Commerce as a Cloud Service] REST-API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/) nutzen.
@@ -150,11 +150,11 @@ Diese Phase ist wichtig, um Risiken zu minimieren, einen klaren Migrationspfad f
 
 * **Schrittweise vs. gleichzeitige Migration:** Bewerten Sie die Vor- und Nachteile der einzelnen Ansätze.
 * **Identifizieren Sie die wichtigsten Geschäftsprozesse:** Priorisieren Sie Funktionen, die zuerst migriert werden müssen, z. B.:
-   * Komplexe Preisregeln
-   * Benutzerdefinierte Geschäftsregeln werden angewendet, bevor eine Bestellung offiziell aufgegeben oder verarbeitet wird
-   * Komplexe Steuerberechnungen
-   * Adressenvalidierungen
-   * Benutzerdefinierte Logik, die nach der Bestellung ausgelöst wird
+  * Komplexe Preisregeln
+  * Benutzerdefinierte Geschäftsregeln werden angewendet, bevor eine Bestellung offiziell aufgegeben oder verarbeitet wird
+  * Komplexe Steuerberechnungen
+  * Adressenvalidierungen
+  * Benutzerdefinierte Logik, die nach der Bestellung ausgelöst wird
 * **Headless vs. monolithische Storefront:** Entscheidungspunkt für die Entwicklung neuer Storefronts oder die Anpassung vorhandener Storefronts.
 * **Integrationsstrategie:** bestimmen, wie bestehende Integrationen neu platziert werden (API Mesh, App Builder, Direct API).
 * **Datenmigrationsstrategie:** Sie mithilfe vollständiger historischer Daten, partieller Daten oder ohne migrierte Daten, ob Sie migrieren möchten.
@@ -209,12 +209,12 @@ Diese Option dient als Übergangsschritt, der auf einer vorhandenen Integration 
 Dies ist der strategische, zukunftssichere Ansatz zur Nutzung von Adobe Commerce Optimizer. CCDM bietet einen flexiblen, skalierbaren und einheitlichen Katalog-Service, der für die Datenaggregation aus mehreren Quellen und dynamisches Merchandising entwickelt wurde.
 
 * **Datenaufnahme und -vereinheitlichung**
-   * Nehmen Sie zunächst Produkt- und Katalogdaten aus Ihrer bestehenden Adobe Commerce PaaS-Instanz (und/oder anderen PIM/ERP-Systemen) in das neue zusammensetzbare Katalogdatenmodell (CCDM) auf.
-   * Ordnen Sie vorhandene Produktattribute dem flexiblen Schema des CDM zu. Priorisieren Sie kritische Produktdaten für die erste Aufnahme.
-   * Erstellen Sie robuste Datenpipelines für die kontinuierliche Synchronisierung. Dies kann Folgendes beinhalten:
-      * **Ereignisgesteuert** (über App Builder): Verwenden Sie Adobe I/O Events von Ihrer PaaS-Instanz aus, um öffentlich verfügbare oder benutzerdefinierte Adobe App Builder-Programme im Trigger zu halten. Diese Programme transformieren und übertragen Datenänderungen (Erstellen, Aktualisieren und Löschen) über die APIs in das CDM.
-      * **Batch-Aufnahme**: Verwenden Sie für große anfängliche Lasten oder periodische Massenaktualisierungen sichere Dateiübertragungen (z. B. CSV oder JSON) in einen Staging-Bereich, die von Adobe Experience Platform (AEP)-Aufnahme-Services in CDM verarbeitet werden.
-      * **Direkte API-Integration** (mit App Builder-Orchestrierung): Bei komplexeren Szenarien kann App Builder als Orchestrierungsschicht fungieren, indem es direkte API-Aufrufe an Ihr PaaS-Backend sendet, die Daten transformiert und an das CDM sendet.
+  * Nehmen Sie zunächst Produkt- und Katalogdaten aus Ihrer bestehenden Adobe Commerce PaaS-Instanz (und/oder anderen PIM/ERP-Systemen) in das neue zusammensetzbare Katalogdatenmodell (CCDM) auf.
+  * Ordnen Sie vorhandene Produktattribute dem flexiblen Schema des CDM zu. Priorisieren Sie kritische Produktdaten für die erste Aufnahme.
+  * Erstellen Sie robuste Datenpipelines für die kontinuierliche Synchronisierung. Dies kann Folgendes beinhalten:
+    * **Ereignisgesteuert** (über App Builder): Verwenden Sie Adobe I/O Events von Ihrer PaaS-Instanz aus, um öffentlich verfügbare oder benutzerdefinierte Adobe App Builder-Programme im Trigger zu halten. Diese Programme transformieren und übertragen Datenänderungen (Erstellen, Aktualisieren und Löschen) über die APIs in das CDM.
+    * **Batch-Aufnahme**: Verwenden Sie für große anfängliche Lasten oder periodische Massenaktualisierungen sichere Dateiübertragungen (z. B. CSV oder JSON) in einen Staging-Bereich, die von Adobe Experience Platform (AEP)-Aufnahme-Services in CDM verarbeitet werden.
+    * **Direkte API-Integration** (mit App Builder-Orchestrierung): Bei komplexeren Szenarien kann App Builder als Orchestrierungsschicht fungieren, indem es direkte API-Aufrufe an Ihr PaaS-Backend sendet, die Daten transformiert und an das CDM sendet.
 * **Katalogansicht und Richtliniendefinition**: Konfigurieren Sie Katalogansichten (logische Gruppierungen für die eindeutige Katalogdarstellung, wie Shop-Ansichten, Regionen und B2B/B2C-Segmente) und definieren Sie Richtlinien (Regelsätze für die Produktdarstellung, Filterung und Merchandising) im CDM. Dies ermöglicht die dynamische Steuerung von Produktsortimenten und die Anzeigelogik pro Katalogansicht.
 * **Live-Suche und Produktempfehlungen integrieren**: Sobald Katalogdaten im CCDM vorhanden sind, integrieren Sie die SaaS-basierte Live-Suche und die Produktempfehlungs-Services von Adobe. Diese nutzen KI- und maschinelle Lernmodelle von Adobe AI für überlegene Suchrelevanz und personalisierte Empfehlungen, wobei Daten direkt aus dem CDM genutzt werden.
 
@@ -228,14 +228,14 @@ Nachdem Merchandising-Daten-Pipelines eingerichtet und Anpassungen externalisier
 
 * **Ersteinrichtung**: Richten Sie Ihr Projekt mit dem Textbaustein der Adobe Commerce-Storefront für Edge Delivery Services ein. Dies bietet ein grundlegendes Headless-Frontend, das auf modernen Web-Technologien basiert.
 * **Verbindung zu Katalog-Services und API-Mesh herstellen**: Ihre Commerce-Storefront nutzt Daten hauptsächlich über GraphQL-APIs:
-   * **Option 1**: Vom vorhandenen Katalog-SaaS-Service (über API-Mesh) für Produktinformationen und Merchandising-Regeln.
-   * **Option 2**: Vom CCDM für Produktinformationen und Merchandising-Regeln.
-   * Aus API Mesh für alle orchestrierten Daten aus Ihrem alten Backend (PaaS-Instanz) oder benutzerdefinierten App Builder-Services (z. B. Echtzeit-Inventar, benutzerdefinierte Produktattribute und Treuepunkte).
+  * **Option 1**: Vom vorhandenen Katalog-SaaS-Service (über API-Mesh) für Produktinformationen und Merchandising-Regeln.
+  * **Option 2**: Vom CCDM für Produktinformationen und Merchandising-Regeln.
+  * Aus API Mesh für alle orchestrierten Daten aus Ihrem alten Backend (PaaS-Instanz) oder benutzerdefinierten App Builder-Services (z. B. Echtzeit-Inventar, benutzerdefinierte Produktattribute und Treuepunkte).
 * **Inhaltsmigration (AEM Services)**: Migrieren Sie Ihre vorhandenen statischen Inhalte (z. B. „Über uns“-Seiten, Blog-Posts und Marketing-Banner) in AEM Services, die die Commerce-Storefront unterstützen. Nutzen Sie die Inhaltserstellungsfunktionen von AEM und stellen Sie sicher, dass Assets für Edge Delivery Services optimiert sind.
 * **Entwickeln von UI-Kernkomponenten**: Erstellen Sie wichtige Komponenten der Benutzeroberfläche für Produktdetailseiten (PDPs), Produktlistenseiten (PLPs) und allgemeine Inhaltsseiten mithilfe von Edge Delivery Services-Dropdown-Komponenten und benutzerdefinierten React-/Vue-Komponenten. Priorisieren Sie die wichtigsten Commerce-Flüsse.
 * **Integration mit vorhandenem Warenkorb/Checkout**: Zunächst koordiniert die Edge Delivery Services-Storefront eine Übergabe an Ihre bestehenden Adobe Commerce PaaS (oder eine andere Drittanbieterplattform) für die Warenkorbverwaltung und den Checkout. Dazu gehören in der Regel:
-   * **Umleitung**: Umleitung des Benutzers zu den nativen Warenkorb- und Checkout-URLs der alten Plattform, Übergabe der erforderlichen Sitzungs- und Warenkorbkennungen.
-   * **Direkte API-** (mit App Builder-Orchestrierung): Erstellen benutzerdefinierter Warenkorb- und Checkout-UI-Komponenten in Edge Delivery Services, die direkt mit dem Warenkorb und den Checkout-APIs Ihres PaaS-Backends interagieren. Dazu gehört oft App Builder as a Backend-for-Frontend (BFF), um Aufrufe an mehrere Backend-Services zu orchestrieren (z. B. PaaS-Warenkorb, Zahlungs-Gateways und Versandrechner).
+  * **Umleitung**: Umleitung des Benutzers zu den nativen Warenkorb- und Checkout-URLs der alten Plattform, Übergabe der erforderlichen Sitzungs- und Warenkorbkennungen.
+  * **Direkte API-** (mit App Builder-Orchestrierung): Erstellen benutzerdefinierter Warenkorb- und Checkout-UI-Komponenten in Edge Delivery Services, die direkt mit dem Warenkorb und den Checkout-APIs Ihres PaaS-Backends interagieren. Dazu gehört oft App Builder as a Backend-for-Frontend (BFF), um Aufrufe an mehrere Backend-Services zu orchestrieren (z. B. PaaS-Warenkorb, Zahlungs-Gateways und Versandrechner).
 
 **Vorteil**: Bietet ein unglaublich schnelles, SEO-optimiertes und hochflexibles Storefront-Erlebnis. Diese Phase trägt direkt zu einem überlegenen Kundenerlebnis bei und schafft die Grundlage für zukünftige Frontend-Innovationen.
 
@@ -249,13 +249,13 @@ Datenmigration ist ein kritischer und facettenreicher Prozess, der gleichzeitig 
 
 Bei der Massendatenmigration müssen Sie einen vollständigen Daten-Dump aus Ihrer Adobe Commerce PaaS-Instanz erstellen, diesen gesamten Datensatz transformieren und ihn gleichzeitig in Adobe Commerce as a Cloud Service importieren. Diese Methode wird normalerweise für die anfängliche Datenpopulation verwendet.
 
-* **Toolingverfügbarkeit**: Dedizierte [Tools für die Massendatenmigration](./bulk-data.md) zur Verwendung durch Kunden für Massendatenmigrationen von First-Party-Commerce werden auf Anfrage im 1. Quartal 2026 verfügbar sein. Wenn Kundinnen und Kunden vorab Hilfe bei der Massendatenmigration benötigen, kann Adobe die Datenübertragung in ihrem Namen auf Anfrage erleichtern.
+* **Tooling-Verfügbarkeit**: Dedizierte [Tools für die Massendatenmigration](./bulk-data/migration-tool.md) zur Verwendung durch Kunden für Massendatenmigrationen von Erstanbietern von Commerce befinden sich in der Frühphase des Zugriffs. Das geplante GA-Datum ist das 1. Quartal 2027. Wenn Kundinnen und Kunden vorab Hilfe bei der Massendatenmigration benötigen, kann Adobe die Datenübertragung in ihrem Namen auf Anfrage erleichtern.
 
 * **Prozess**:
-   * **Vollständiger Datenexport**: Extrahieren Sie einen vollständigen Datensatz aus Ihrer Adobe Commerce PaaS-Instanz (z. B. Produkte, Kategorien, Kundenkonten, historische Bestelldaten, statische Blöcke und Seiteninhalte).
-   * **Datenumwandlung**: Wenden Sie die erforderlichen Umwandlungen an, um die extrahierten Daten an die Schemaanforderungen der neuen Adobe Commerce as a Cloud Service-Komponenten anzupassen, einschließlich des Composable Catalog Data Model (CCDM), falls aktiviert, und aller anderen relevanten Adobe-Services oder -Datenbanken. Dies kann benutzerdefinierte Skripte oder spezielle Datenzuordnungs-Tools umfassen.
-   * **Erstimport**: Importieren Sie den umgewandelten vollständigen Datensatz in die entsprechenden Komponenten von Adobe Commerce as a Cloud Service. Für Produkt- und Kategoriedaten wird der ausgewählte Katalog-Service (CDM oder vorhandene Katalog-SaaS) ausgefüllt. Für Kunden- und Bestelldaten werden dadurch das Transaktions-Backend oder die zugehörigen Services ausgefüllt.
-   * **Validierung**: Strenge Validierung der importierten Daten, um Vollständigkeit, Genauigkeit und Konsistenz in allen neuen Systemen sicherzustellen.
+  * **Vollständiger Datenexport**: Extrahieren Sie einen vollständigen Datensatz aus Ihrer Adobe Commerce PaaS-Instanz (z. B. Produkte, Kategorien, Kundenkonten, historische Bestelldaten, statische Blöcke und Seiteninhalte).
+  * **Datenumwandlung**: Wenden Sie die erforderlichen Umwandlungen an, um die extrahierten Daten an die Schemaanforderungen der neuen Adobe Commerce as a Cloud Service-Komponenten anzupassen, einschließlich des Composable Catalog Data Model (CCDM), falls aktiviert, und aller anderen relevanten Adobe-Services oder -Datenbanken. Dies kann benutzerdefinierte Skripte oder spezielle Datenzuordnungs-Tools umfassen.
+  * **Erstimport**: Importieren Sie den umgewandelten vollständigen Datensatz in die entsprechenden Komponenten von Adobe Commerce as a Cloud Service. Für Produkt- und Kategoriedaten wird der ausgewählte Katalog-Service (CDM oder vorhandene Katalog-SaaS) ausgefüllt. Für Kunden- und Bestelldaten werden dadurch das Transaktions-Backend oder die zugehörigen Services ausgefüllt.
+  * **Validierung**: Strenge Validierung der importierten Daten, um Vollständigkeit, Genauigkeit und Konsistenz in allen neuen Systemen sicherzustellen.
 
 **Iterative Datenmigrationen**
 
@@ -264,11 +264,11 @@ Iterative Datenmigrationen konzentrieren sich auf die Synchronisierung inkrement
 * **Tooling-Verfügbarkeit**: Tools, die speziell für iterative Datenmigrationen entwickelt wurden, sind ab 2026 verfügbar.
 
 * **Prozess**:
-   * **Delta-Identifizierung**: Richten Sie Mechanismen ein, um Änderungen (Erstellen, Aktualisieren und Löschen) in wichtigen Datensätzen in Ihrer PaaS-Umgebung seit der letzten Synchronisierung zu identifizieren. Dies kann Änderungsdatenerfassung (CDC), Zeitstempelvergleiche oder ereignisbasierte Trigger umfassen.
-   * **Fortlaufende Synchronisierung** Implementieren Sie robuste Mechanismen für die kontinuierliche, inkrementelle Datensynchronisierung von Ihrer PaaS-Umgebung zu den neuen Cloud Service-Komponenten (z. B. CCDM und Transaktions-Backend). Dies ist für die Aufrechterhaltung der Datenfrische und die Minimierung von Ausfallzeiten während der Umstellung von entscheidender Bedeutung.
-   * **Nutzen von Ereignissen**: Nutzen Sie nach Möglichkeit Adobe I/O Events, um App Builder-Aktionen für Echtzeit- oder nahezu Echtzeit-Updates von Ihrer PaaS-Instanz auf die neuen Services Trigger. Beispielsweise könnte bei einer Produktaktualisierung in PaaS ein Ereignis Trigger werden, das den entsprechenden Eintrag in CCDM aktualisiert.
-   * **API-gesteuerte Updates**: Verwenden Sie für Daten, die nicht ereignisgesteuert sind, geplante API-Aufrufe (über App Builder oder andere Integrationsplattformen), um Änderungen von PaaS abzurufen und sie auf die neuen Systeme zu übertragen.
-   * **Fehlerbehandlung und -überwachung** Implementieren Sie eine robuste Fehlerbehandlung, -protokollierung und -überwachung für alle iterativen Datenpipelines, um sicherzustellen, dass die Datenintegrität während des gesamten Prozesses erhalten bleibt.
+  * **Delta-Identifizierung**: Richten Sie Mechanismen ein, um Änderungen (Erstellen, Aktualisieren und Löschen) in wichtigen Datensätzen in Ihrer PaaS-Umgebung seit der letzten Synchronisierung zu identifizieren. Dies kann Änderungsdatenerfassung (CDC), Zeitstempelvergleiche oder ereignisbasierte Trigger umfassen.
+  * **Fortlaufende Synchronisierung** Implementieren Sie robuste Mechanismen für die kontinuierliche, inkrementelle Datensynchronisierung von Ihrer PaaS-Umgebung zu den neuen Cloud Service-Komponenten (z. B. CCDM und Transaktions-Backend). Dies ist für die Aufrechterhaltung der Datenfrische und die Minimierung von Ausfallzeiten während der Umstellung von entscheidender Bedeutung.
+  * **Nutzen von Ereignissen**: Nutzen Sie nach Möglichkeit Adobe I/O Events, um App Builder-Aktionen für Echtzeit- oder nahezu Echtzeit-Updates von Ihrer PaaS-Instanz auf die neuen Services Trigger. Beispielsweise könnte bei einer Produktaktualisierung in PaaS ein Ereignis Trigger werden, das den entsprechenden Eintrag in CCDM aktualisiert.
+  * **API-gesteuerte Updates**: Verwenden Sie für Daten, die nicht ereignisgesteuert sind, geplante API-Aufrufe (über App Builder oder andere Integrationsplattformen), um Änderungen von PaaS abzurufen und sie auf die neuen Systeme zu übertragen.
+  * **Fehlerbehandlung und -überwachung** Implementieren Sie eine robuste Fehlerbehandlung, -protokollierung und -überwachung für alle iterativen Datenpipelines, um sicherzustellen, dass die Datenintegrität während des gesamten Prozesses erhalten bleibt.
 
 ### Nach der Migration und laufender Betrieb
 

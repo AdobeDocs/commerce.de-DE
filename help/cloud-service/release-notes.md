@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: b05e2183cc0e4b8352a150df9dabfc9dfdb31750
+source-git-commit: 155703001fc049470266874e0f519ab060248b31
 workflow-type: tm+mt
-source-wordcount: 5265
+source-wordcount: 5259
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 
 ## Juli 2026 - #1 {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produktion]{type=Neutral tooltip="Die aufgelisteten Elemente sind derzeit in Produktionsumgebungen verfügbar."}
 
-[!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-Die folgenden Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar und werden voraussichtlich am 28. Juli 2026 in Produktionsumgebungen verschoben.
+Ab dem 28. Juli 2026 sind die folgenden Elemente in Produktionsumgebungen verfügbar.
 
 >[!BEGINSHADEBOX]
 
@@ -63,7 +63,7 @@ Die folgenden Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar und wer
 >
 >Diese Funktion ist standardmäßig deaktiviert. Wenden Sie sich zur Aktivierung an Ihren Adobe Commerce Customer Success Manager oder erstellen Sie ein Support-Ticket.
 
-Neue REST-API-Endpunkte replizieren die [!DNL Commerce Admin] [!UICONTROL **Bestellung bearbeiten**] mit der Integrationen eine Bestellung programmgesteuert bearbeiten können:
+Neue [REST-API](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management)Endpunkte replizieren die [!DNL Commerce Admin]-Funktion [!UICONTROL **Bestellung bearbeiten**] mit der Integrationen eine Bestellung programmgesteuert bearbeiten können:
 
 | Methode | Endpunkt | Beschreibung |
 | --- | --- | --- |
@@ -100,7 +100,7 @@ Alle `custom-email`-Endpunkte erfordern Zugriff auf die `Marketing > Communicati
 >
 >Diese Funktion ist experimentell und muss aktiviert werden, indem Sie sich an Ihren Adobe Commerce Customer Success Manager wenden oder ein Support-Ticket erstellen.
 
-Neue `orderChain`-REST-API-Endpunkte ermöglichen es Integrationen, eine Bestellung mithilfe der zugehörigen ID zu ändern und die gesamte Kette bearbeiteter Bestellungen automatisch aufzulösen:
+Neue [`orderChain`-REST-API](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management)Endpunkte: Ermöglicht Integrationen die Änderung einer Bestellung anhand der zugehörigen ID und die automatische Auflösung der gesamten Kette bearbeiteter Bestellungen:
 
 | Methode | Endpunkt | Beschreibung |
 | --- | --- | --- |
@@ -133,7 +133,7 @@ Ein neues `observer.reminder_matched_carts`-Ereignis wird ausgegeben, nachdem di
 
 ### Transaktions-E-Mails nach Bereich oder Vorlage unterdrücken
 
-Eine neue Konfiguration [!UICONTROL **E-Mail**] Unterdrückung) ([!UICONTROL **Stores**] > [!UICONTROL **Konfiguration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **E-Mail-Unterdrückung**]) ermöglicht es Admins, [!DNL Commerce] selektiv vom Versand von Transaktions-E-Mails abzuhalten. E-Mails können nach Funktionsbereichen (z. B. Kundenkonto, Order Management, Rückgabe, Checkout, Marketing oder B2B) oder nach einer exakten Liste von Vorlagenkennungen unterdrückt werden.<!-- ACCS-1025 -->
+Eine neue Konfiguration [E-Mail](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/email-suppression)Unterdrückung) ([!UICONTROL **Stores**] > [!UICONTROL **Konfiguration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **E-Mail-Unterdrückung**]) ermöglicht es Admins, [!DNL Commerce] selektiv vom Versand von Transaktions-E-Mails abzuhalten. E-Mails können nach Funktionsbereichen (z. B. Kundenkonto, Order Management, Rückgabe, Checkout, Marketing oder B2B) oder nach einer exakten Liste von Vorlagenkennungen unterdrückt werden.<!-- ACCS-1025 -->
 
 ### Anzeigen des Auftragsänderungsverlaufs in der Admin Console
 
