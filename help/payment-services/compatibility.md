@@ -14,9 +14,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 88c74f789dc398afa8f40ee2258450e83f134d87
 workflow-type: tm+mt
-source-wordcount: 454
+source-wordcount: 506
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Siehe [Verbinden](connect.md) für weitere Informationen zum Einrichten der [!DN
 
 ![check](assets/icon-check.png) Standardpreise
 
-![check](assets/icon-check.png) **Verfügbar in XX Ländern**
+![check](assets/icon-check.png) **Verfügbar in über 200 Ländern**
 
 [![Weitere Informationen](assets/learn-more-button.svg)](onboard.md)
 
@@ -99,7 +99,7 @@ Siehe [Verbinden](connect.md) für weitere Informationen zum Einrichten der [!DN
 
 ![check](assets/icon-check.png) (Preisfindungsfunktionen für L2/L3 - nur USA)
 
-![check](assets/icon-check.png) **Nur verfügbar in USA, Kanada (CA), Australien (AUS). Frankreich (FR), Vereinigtes Königreich (UK)**
+![check](assets/icon-check.png) Verfügbar in 37 Ländern. Australien, Belgien, Bulgarien, Deutschland, Estland, Finnland, Frankreich, Griechenland, Hongkong, Irland, Italien, Japan, Kanada, Lettland, Liechtenstein, Litauen, Luxemburg, Malta, Mexiko, Niederlande, Norwegen, Österreich, Polen, Portugal, Rumänien, Singapur, Slowakei, Slowenien, Spanien, Schweden, Vereinigtes Königreich, Tschechische Republik, Ungarn, Vereinigte Staaten, Zypern. **Verfügbare ausgehandelte Preise in den Vereinigten Staaten (USA), Kanada (CA), Australien (AU), Frankreich (FR), Großbritannien (GB), Italien (IT), Niederlande (NL), Deutschland (DE)**
 
 [![Weitere Informationen](assets/learn-more-button.svg)](onboard.md)
 

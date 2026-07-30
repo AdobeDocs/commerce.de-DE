@@ -6,7 +6,7 @@ feature: Payments, Paas, Saas
 exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
 source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Stufe 1 ist die häufigste, erfordert weniger Informationen und verursacht daher
 * Betrug verhindern, Prozessorisiken senken
 * Verbesserung der Transaktionssicherheit
 
-Siehe [Was ist IC++?Weitere Informationen finden Sie in der Entwicklerdokumentation zu PayPal &#x200B;](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank}.
+Siehe [Was ist IC+?](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank} Weitere Informationen finden Sie in der Entwicklerdokumentation zu PayPal .
 
 ## Kartenzahlungstransaktionen der Stufen 2 und 3 in [!DNL Payment Services]
 

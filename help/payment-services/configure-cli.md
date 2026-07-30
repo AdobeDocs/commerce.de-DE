@@ -8,7 +8,7 @@ feature: Payments, Checkout, Configuration, Integration, Paas
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Bestelldaten werden exportiert und im Zahlungsdienst gespeichert, wobei einer vo
 
 Die folgenden Indizes sind für [!DNL Payment Services]:
 
-| Code | -Name | Beschreibung |
+| Code | Name | Beschreibung |
 |    ---    |  ---  |  ---  |
 | `sales_order_data_exporter` | Kundenauftrags-Feed | Erstellt einen Index der Bestelldaten |
 | `sales_order_status_data_exporter` | Feed für Auftragsstatus | Erstellt einen Index der Auftragsstatusdaten |
