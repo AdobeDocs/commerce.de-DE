@@ -15,9 +15,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 029d78d5c87bf75ccc26b8af462081f8e08d1176
+source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
 workflow-type: tm+mt
-source-wordcount: 475
+source-wordcount: 491
 ht-degree: 0%
 
 ---
@@ -36,9 +36,9 @@ Wenn die SaaS-Preisindizierung aktiviert ist, ändert sich der Datenfluss. Die P
 
 Alle Händler können von der SaaS-Preisindizierung profitieren, aber Händler, die Projekte mit folgenden Merkmalen haben, können die größten Gewinne erzielen:
 
-* **Konstante Preisänderungen** Händler, die wiederholte Preisänderungen benötigen, um strategische Ziele wie häufige Werbeaktionen, saisonale Rabatte oder Bestandsmarkdowns zu erreichen.
-* **Mehrere Websites und/oder Kundengruppen** Händler mit freigegebenen Produktkatalogen über mehrere Websites (Domains/Marken) und/oder Kundengruppen hinweg.
-* **Viele einzigartige Preise über Websites oder Kundengruppen hinweg**-Händler mit umfangreichen gemeinsamen Produktkatalogen, die einzigartige Preise über Websites oder Kundengruppen hinweg enthalten. Beispiele sind B2B-Händler mit vorab ausgehandelten Preisen oder Marken mit unterschiedlichen Preisstrategien.
+* **Konstante Preisänderungen** - Händler, die wiederholte Preisänderungen benötigen, um strategische Ziele wie häufige Werbeaktionen, saisonale Rabatte oder Bestandsmarkdowns zu erreichen.
+* **Mehrere Websites und/oder Kundengruppen** - Händler mit freigegebenen Produktkatalogen über mehrere Websites (Domains/Marken) und/oder Kundengruppen hinweg.
+* **Viele einzigartige Preise über Websites oder Kundengruppen hinweg** - Händler mit umfangreichen gemeinsamen Produktkatalogen, die einzigartige Preise über Websites oder Kundengruppen hinweg enthalten. Beispiele sind B2B-Händler mit vorab ausgehandelten Preisen oder Marken mit unterschiedlichen Preisstrategien.
 
 ## SaaS-Preisindizierung verwenden
 
@@ -46,16 +46,15 @@ Die SaaS-Preisindizierung wird bei der Installation von Adobe Commerce Services 
 
 ### Anforderungen
 
-* Adobe Commerce 2.4.4+
+* [Adobe Commerce](https://business.adobe.com/de/products/magento/magento-commerce.html) 2.4.4+. Weitere Informationen finden Sie [Systemanforderungen](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 
 ### Voraussetzungen
 
 * Einer der folgenden Commerce-Services muss mit der neuesten Version der Commerce-Erweiterung installiert sein:
 
-   * [Katalog-Service](../catalog-service/overview.md)
-   * [Live Search](../live-search/overview.md)
-   * [Produkt Recommendations](../product-recommendations/guide-overview.md)
-
+  * [Katalog-Service](../catalog-service/overview.md)
+  * [Live Search](../live-search/overview.md)
+  * [Produkt Recommendations](../product-recommendations/guide-overview.md)
 
 >[!NOTE]
 >
@@ -79,11 +78,11 @@ Verwenden Sie die [Commerce CLI](../data-export/data-export-cli-commands.md) um 
 
 >[!NOTE]
 >
->Wenn die Seite Synchronisierungsstatus für Daten-Feeds nicht in der Commerce Admin für Commerce in Cloud- oder lokalen Bereitstellungen verfügbar ist, befolgen Sie die [Installationsanweisungen für Erweiterungen](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension), um sie zu aktivieren.
+>Um die Seite Status der Daten-Feed-Synchronisierung zu aktivieren, wenn sie nicht in der Commerce Admin für Commerce in Cloud- oder lokalen Bereitstellungen verfügbar ist, folgen Sie den [Installationsanweisungen für Erweiterungen](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension).
 
 ## Preise für benutzerdefinierte Produktarten
 
-Preisberechnungen werden für benutzerdefinierte Produktarten wie Basispreis, Sonderpreis, Gruppenpreis, Katalogregelpreis usw. unterstützt.
+Preisberechnungen werden für benutzerdefinierte Produktarten wie Basis-, Spezial-, Gruppen- und Katalogregelpreise unterstützt.
 
 Wenn Sie über einen benutzerdefinierten Produkttyp verfügen, der eine bestimmte Formel zur Berechnung des Endpreises verwendet, können Sie das Verhalten des Produktpreis-Feeds erweitern.
 

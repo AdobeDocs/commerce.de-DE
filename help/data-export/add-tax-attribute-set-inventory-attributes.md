@@ -25,9 +25,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 7c592b78454fdfafb377b101e366c8213ce43a0a
 workflow-type: tm+mt
-source-wordcount: 822
+source-wordcount: 835
 ht-degree: 0%
 
 ---
@@ -53,11 +53,11 @@ Nach der Installation funktioniert das Modul automatisch. Die zusätzlichen Attr
 
 Das Modul fügt Ihren vorhandenen Produktdaten-Feeds drei zusätzliche Attribute hinzu:
 
-* `ac_tax_class`
-* `ac_attribute_set`
-* `ac_inventory`
+* `[ac_tax_class](#tax-class-information-ac_tax_class)`
+* `[ac_attribute_set](attribute-set-information-ac_attribute_set)`
+* `[ac_inventory](advanced-inventory-data-ac_inventory)`
 
-### &#x200B;1. Steuerklasseninformationen (`ac_tax_class`)
+### Steuerklasseninformationen (`ac_tax_class`) {#tax-class-information-ac_tax_class}
 
 **Zweck**: Stellt Informationen zur Steuerklassifizierung für jedes Produkt bereit
 
@@ -84,7 +84,7 @@ Wenn Sie Steuerklassendaten in Commerce Catalog Services exportieren, werden die
 * Integration mit externen Steuerberechnungs-Services
 * Produktkategorisierung für Buchhaltungssysteme
 
-### &#x200B;2. Informationen zu Attributsätzen (`ac_attribute_set`)
+### Informationen zu Attributsätzen (`ac_attribute_set`) {#attribute-set-information-ac_attribute_set}
 
 **Zweck**: Gibt an, welcher Attributsatz jedem Produkt zugewiesen ist
 
@@ -113,7 +113,7 @@ Wenn Sie Attributsatzdaten in Commerce Catalog Services exportieren, werden erwe
 * Katalogverwaltung und -organisation
 * Integration von Drittanbietersystemen, für die Attributsatzkontext erforderlich ist
 
-### &#x200B;3. Erweiterte Inventardaten (`ac_inventory`)
+### Erweiterte Inventardaten (`ac_inventory`) {#advanced-inventory-data-ac_inventory}
 
 **Zweck**: Liefert für jedes Produkt die Bestandsverwaltungseinstellungen
 
@@ -125,9 +125,9 @@ Wenn Sie Attributsatzdaten in Commerce Catalog Services exportieren, werden erwe
 * `cartMinQty` (Float): Minimale zulässige Menge im Warenkorb
 * `cartMaxQty` (Float): Maximal zulässige Menge im Warenkorb
 * `backorders` (Zeichenfolge): Rückstandsrichtlinie. Der Wert ist einer der folgenden:
-   * `"no"`: Keine Nachbestellungen zulässig
-   * `"allow"`: Menge unter 0 zulassen
-   * `"allow_notify"`: Menge unter 0 zulassen und Kunde benachrichtigen
+  * `"no"`: Keine Nachbestellungen zulässig
+  * `"allow"`: Menge unter 0 zulassen
+  * `"allow_notify"`: Menge unter 0 zulassen und Kunde benachrichtigen
 * `enableQtyIncrements` (Boolesch): Ob Mengeninkremente aktiviert sind
 * `qtyIncrements` (Gleitkommazahl): Erforderlicher Inkrementwert für die Menge
 
@@ -161,22 +161,21 @@ Das Modul Zusätzliche Produktattribute erweitert die vorhandenen Produkt-Feeds.
 
 * **Produkt-Feed** (`products`): Mit den drei zusätzlichen Attributen erweitert
 
-   * Fügt jedem Produktdatensatz die Attribute `ac_tax_class`, `ac_attribute_set` und `ac_inventory` hinzu
-   * Behält die ursprünglichen Produktdaten bei
-   * Behält die Abwärtskompatibilität mit vorhandenen Feed-Verbrauchern bei
+  * Fügt jedem Produktdatensatz die Attribute `ac_tax_class`, `ac_attribute_set` und `ac_inventory` hinzu
+  * Behält die ursprünglichen Produktdaten bei
+  * Behält die Abwärtskompatibilität mit vorhandenen Feed-Verbrauchern bei
 
 * **Feed „Produktattribute** (`productAttributes`): Mit Attributmetadaten für die neuen Attribute erweitert
 
-   * registriert automatisch Metadaten für die drei neuen Attribute im `productAttributes`-Feed
-   * Enthält Details zur Attributkonfiguration (Datentypen, Sichtbarkeitseinstellungen usw.)
-   * Hilft externen Systemen, das neue Attributschema zu verstehen
+  * registriert automatisch Metadaten für die drei neuen Attribute im `productAttributes`-Feed
+  * Enthält Details zur Attributkonfiguration (Datentypen, Sichtbarkeitseinstellungen usw.)
+  * Hilft externen Systemen, das neue Attributschema zu verstehen
 
 ## Installieren der Erweiterung
 
 **Anforderungen**
 
-* PHP 8.1, 8.2, 8.3 oder 8.4
-* Adobe Commerce 2.4.4+
+* [Adobe Commerce](https://business.adobe.com/de/products/magento/magento-commerce.html) 2.4.4+. Weitere Informationen finden Sie [Systemanforderungen](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements).
 * [Adobe Commerce-Datenexporterweiterung](manage-extension.md#update-a-module-to-a-specific-version), Version 103.4.11 oder höher
 * Zugriff auf [repo.magento.com](https://repo.magento.com)
 
@@ -193,8 +192,8 @@ composer require adobe-commerce/module-extra-product-attributes
 
 Detaillierte Informationen zu den Installationsschritten finden Sie in den folgenden Handbüchern:
 
-* [Installieren der Erweiterung auf Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/extensions)
-* [Installieren der Erweiterung Adobe Commerce On-Premise](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/extensions)
+* [Installieren der Erweiterung für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+* [Installieren der Erweiterung auf Adobe Commerce On-Premise](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## Produktdaten synchronisieren
 
@@ -215,7 +214,7 @@ bin/magento saas:resync --feed=productAttributes
 **Produkte ohne zusätzliche Attribute:**
 
 * Stellen Sie sicher, dass das Modul ordnungsgemäß installiert und aktiviert ist
-* Führen Sie die Befehle zur Neusynchronisierung aus, um die Produktdaten zu aktualisieren
+* Um die Produktdaten zu aktualisieren, führen Sie die Befehle zur erneuten Synchronisierung aus
 * Überprüfen, ob Produkte gültige Steuerklassen- und Attributsatzzuweisungen haben
 
 **Inventardaten erscheinen falsch:**
