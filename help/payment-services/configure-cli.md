@@ -5,10 +5,10 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 feature: Payments, Checkout, Configuration, Integration, Paas
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Informationen zu den in [!DNL Payment Services] Berichten verwendeten Daten find
 
 ### Konfigurieren von Cron auf [!DNL Magento Open Source]
 
-Wenn Sie einen `BY SCHEDULE` Indexmodus für [!DNL Magento Open Source] verwenden möchten, müssen Sie Cron konfigurieren. Siehe [Konfigurieren und Ausführen von cron](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
+Wenn Sie einen `BY SCHEDULE` Indexmodus für [!DNL Magento Open Source] verwenden möchten, müssen Sie Cron konfigurieren. Siehe [Konfigurieren und Ausführen von cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 ### Festlegen von Indexern
 
@@ -33,7 +33,7 @@ Bestelldaten werden exportiert und im Zahlungsdienst gespeichert, wobei einer vo
 
 Die folgenden Indizes sind für [!DNL Payment Services]:
 
-| Code | -Name | Beschreibung |
+| Code | Name | Beschreibung |
 |    ---    |  ---  |  ---  |
 | `sales_order_data_exporter` | Kundenauftrags-Feed | Erstellt einen Index der Bestelldaten |
 | `sales_order_status_data_exporter` | Feed für Auftragsstatus | Erstellt einen Index der Auftragsstatusdaten |
@@ -49,13 +49,13 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Wenn Sie in Ihrem Befehl keine Indexer angeben, werden alle Indexer auf denselben Wert aktualisiert. Wenn Sie einen bestimmten Indexer ändern möchten, müssen Sie ihn in Ihrem Befehl auflisten.
 
-Weitere Informationen zum manuellen Ändern des Modus eines Indexers finden Sie unter [Konfigurieren von Indexern](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"} in der Entwicklerdokumentation. Informationen zum Ändern im Admin-Bereich finden Sie unter [Indexverwaltung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"} im Benutzerhandbuch zu Core.
+Weitere Informationen zum manuellen Ändern des Modus eines Indexers finden Sie unter [Konfigurieren von Indexern](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"} in der Entwicklerdokumentation. Informationen zum Ändern im Admin-Bereich finden Sie unter [Indexverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"} im Benutzerhandbuch zu Core.
 
 ### Daten manuell neu indizieren
 
-Sie können Daten manuell neu indizieren, anstatt darauf zu warten, dass sie automatisch auftreten. Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"} in [Verwalten &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"} Indexer“.
+Sie können Daten manuell neu indizieren, anstatt darauf zu warten, dass sie automatisch auftreten. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"} in [Verwalten ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"} Indexer“.
 
-Wenn `BY SCHEDULE` Modus festgelegt ist, verfolgt das System geänderte Entitäten und der Cron-Auftrag aktualisiert den Index für sie basierend auf einem festgelegten Zeitplan. Unter [Ausführen von cron über die Befehlszeile](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) in [Konfigurieren und Ausführen von cron](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)) erfahren Sie, wie Sie die Trigger-Indizierung mithilfe von Cron-Aufträgen manuell durchführen.
+Wenn `BY SCHEDULE` Modus festgelegt ist, verfolgt das System geänderte Entitäten und der Cron-Auftrag aktualisiert den Index für sie basierend auf einem festgelegten Zeitplan. Unter [Ausführen von cron über die Befehlszeile](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) in [Konfigurieren und Ausführen von cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)) erfahren Sie, wie Sie die Trigger-Indizierung mithilfe von Cron-Aufträgen manuell durchführen.
 
 ### Senden von neu indizierten Daten an den Zahlungsdienst
 
@@ -89,11 +89,11 @@ Alle für die Berichte erforderlichen Daten werden automatisch an [!DNL Payment 
 bin/magento cron:run --group payment_services_data_export
 ```
 
-Weitere Informationen zur Neuindizierung und Indizierung finden Sie unter [Verwalten der &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers)&quot; in der Entwicklerdokumentation.
+Weitere Informationen zur Neuindizierung und Indizierung finden Sie unter [Verwalten der ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)&quot; in der Entwicklerdokumentation.
 
 ## Konfigurieren des Umfangs über CLI
 
-[!DNL Payment Services] können Händler ([&#x200B; PayPal-Konten) &#x200B;](configure-admin.md#use-multiple-paypal-accounts). Jetzt können Sie die Bereiche für diese Konten über die CLI ändern.
+[!DNL Payment Services] können Händler ([ PayPal-Konten) ](configure-admin.md#use-multiple-paypal-accounts). Jetzt können Sie die Bereiche für diese Konten über die CLI ändern.
 
 Um den Bereich auf die `website` zu setzen, führen Sie Folgendes aus:
 
@@ -123,7 +123,7 @@ bin/magento cache:clean:payment_services_merchant_scopes
 
 >[!WARNING]
 >
-> Die Integration mit Level 2 und Level 3 Verarbeitung mit PayPal ist nur für US Händler verfügbar. Weitere Informationen finden [&#x200B; in der &#x200B;](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank}-Dokumentation für PayPal-Entwickler unter „Zahlungsabwicklung“.
+> Die Integration mit Level 2 und Level 3 Verarbeitung mit PayPal ist nur für US Händler verfügbar. Weitere Informationen finden [ in der ](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank}-Dokumentation für PayPal-Entwickler unter „Zahlungsabwicklung“.
 
 Wenn Sie L2/L3-Verarbeitungsdaten für [!DNL Payment Services] verwenden möchten oder Fragen haben, wenden Sie sich bitte an Ihren [!DNL Payment Services] Account Manager.
 
