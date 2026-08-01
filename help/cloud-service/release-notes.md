@@ -133,7 +133,7 @@ Ein neues `observer.reminder_matched_carts`-Ereignis wird ausgegeben, nachdem di
 
 ### Transaktions-E-Mails nach Bereich oder Vorlage unterdrücken
 
-Eine neue Konfiguration [E-Mail](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/email-suppression)Unterdrückung) ([!UICONTROL **Stores**] > [!UICONTROL **Konfiguration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **E-Mail-Unterdrückung**]) ermöglicht es Admins, [!DNL Commerce] selektiv vom Versand von Transaktions-E-Mails abzuhalten. E-Mails können nach Funktionsbereichen (z. B. Kundenkonto, Order Management, Rückgabe, Checkout, Marketing oder B2B) oder nach einer exakten Liste von Vorlagenkennungen unterdrückt werden.<!-- ACCS-1025 -->
+Eine neue Konfiguration [E-Mail](https://experienceleague.adobe.com/de/docs/commerce-admin/config/services/email-suppression)Unterdrückung) ([!UICONTROL **Stores**] > [!UICONTROL **Konfiguration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **E-Mail-Unterdrückung**]) ermöglicht es Admins, [!DNL Commerce] selektiv vom Versand von Transaktions-E-Mails abzuhalten. E-Mails können nach Funktionsbereichen (z. B. Kundenkonto, Order Management, Rückgabe, Checkout, Marketing oder B2B) oder nach einer exakten Liste von Vorlagenkennungen unterdrückt werden.<!-- ACCS-1025 -->
 
 ### Anzeigen des Auftragsänderungsverlaufs in der Admin Console
 
