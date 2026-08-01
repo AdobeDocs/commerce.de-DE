@@ -30,9 +30,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: ee8113dcf4e6d4d91fdf6cc69078d6104315a33f
+last-update: 2026-07-24
+source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
 workflow-type: tm+mt
-source-wordcount: 1314
+source-wordcount: 1221
 ht-degree: 0%
 
 ---
@@ -77,7 +78,7 @@ Storefront-Services sind eine Gruppe von KI-gestützten Funktionen, die die Prod
       <div>
          <a href="../catalog-service/overview.md">
          <strong>Katalog-Service</strong>
-         
+         </a>
       </div>
       <p>
          <em>Bieten Sie Ihren Kunden ein optimiertes Produkterlebnis und steigern Sie gleichzeitig die Leistung, die Skalierbarkeit und die Konversionen.</em>
@@ -103,7 +104,7 @@ Storefront-Services sind eine Gruppe von KI-gestützten Funktionen, die die Prod
       <div>
          <a href="../product-recommendations/overview.md">
          <strong>Produktempfehlungen</strong>
-         
+         </a>
       </div>
       <p>
          <em>Fügen Sie KI-gestützte Empfehlungen hinzu, die auf dem Käuferverhalten, beliebten Trends, Produktähnlichkeit und mehr basieren.</em>
@@ -116,7 +117,7 @@ Storefront-Services sind eine Gruppe von KI-gestützten Funktionen, die die Prod
       <div>
          <a href="../payment-services/guide-overview.md">
          <strong>Zahlungsdienste</strong>
-         
+         </a>
       </div>
       <p>
          <em>Steigern Sie die Kundenzufriedenheit mit verschiedenen Zahlungsmethoden, einschließlich zinsfreier Raten und optimierter Ansichten der Zahlungsabwicklung, Bestellungen und Rechnungen.</em>
@@ -151,7 +152,7 @@ Integrations-Services beziehen sich auf Funktionen, die Ihre Commerce-Instanz mi
       <div>
           <a href="../aem-assets-integration/overview.md">
          <strong>AEM Assets-Integration</strong>
-         
+         </a>
       </div>
       <p>
          <em>Vereinfachen Sie die Verwaltung digitaler Assets mithilfe eines Systems, das für die Verwaltung von Rich-Media-Inhalten mit Adobe Experience Manager integriert ist.</em>
@@ -164,7 +165,7 @@ Integrations-Services beziehen sich auf Funktionen, die Ihre Commerce-Instanz mi
       <div>
          <a href="../app-management/overview.md">
          <strong>App-Verwaltung</strong>
-         
+         </a>
       </div>
       <p>
          <em>Verknüpfen, Konfigurieren und Verwalten von App Builder-Anwendungen mit Ihrer Commerce-Instanz über die Admin-Benutzeroberfläche.</em>
@@ -189,7 +190,8 @@ Mit Daten-Tools können Sie den Informationsfluss zwischen Ihrer Commerce-Instan
          </a>
       </div>
       <p>
-         <em>Automatische Synchronisierung von Katalog-, Auftrags- und Inventardaten aus Adobe Commerce mit Connected Services. Verwenden Sie Commerce-CLI-Befehle oder das <strong>Data Management Dashboard</strong> um die Synchronisierungsverarbeitung zu verwalten.</em></p>
+         <em>Automatische Synchronisierung von Katalog-, Auftrags- und Inventardaten aus Adobe Commerce mit Connected Services. Verwenden Sie Commerce-CLI-Befehle oder das <strong>Data Management Dashboard</strong> um die Synchronisierungsverarbeitung zu verwalten.</em>
+      </p>
    </td>
    <td valign="top">
       <a href="../price-index/price-indexing.md">
@@ -198,7 +200,7 @@ Mit Daten-Tools können Sie den Informationsfluss zwischen Ihrer Commerce-Instan
       <div>
           <a href="../price-index/price-indexing.md">
          <strong>SaaS-Preisindexer</strong>
-         
+         </a>
       </div>
       <p>
          <em>Optimieren Sie die Site-Performance, indem Sie ressourcenintensive Aufgaben wie Indexierung und Preisberechnung von der Commerce-Anwendung auf die Cloud-Infrastruktur von Adobe auslagern.</em>
@@ -211,10 +213,11 @@ Mit Daten-Tools können Sie den Informationsfluss zwischen Ihrer Commerce-Instan
       <div>
           <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>Daten-Management-Dashboard</strong>
-         
+         </a>
       </div>
       <p>
-         <em>Einfaches Tracking der Commerce-Datensynchronisation und der Trigger-Resynchronisation über ein einheitliches Dashboard in der Commerce Admin Console. Erhalten Sie wertvolle Einblicke in die Datenverfügbarkeit, damit Sie sie Ihren Kunden rechtzeitig anzeigen können.</em></p>
+         <em>Einfaches Tracking der Commerce-Datensynchronisation und der Trigger-Resynchronisation über ein einheitliches Dashboard in der Commerce Admin Console. Erhalten Sie wertvolle Einblicke in die Datenverfügbarkeit, damit Sie sie Ihren Kunden rechtzeitig anzeigen können.</em>
+      </p>
    </td>
 </table>
 
