@@ -1,20 +1,15 @@
 ---
 title: Empfehlungsfilter
 description: Erfahren Sie, wie Sie mit Filtern steuern können, welche Produkte in  [!DNL Adobe Commerce Optimizer]  Recommendations angezeigt werden.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 116d8bd804df364ddc9cb1175525f08fd32c01bf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: c5a8861614fbf0e8d719305e239f926d5232ac49
 workflow-type: tm+mt
-source-wordcount: 1919
+source-wordcount: 1932
 ht-degree: 0%
 
 ---
@@ -98,7 +93,7 @@ Verwenden Sie einen **statischen** Preisfilter, wenn Sie ein festes Minimum oder
 
 Verwenden Sie einen **dynamischen** Preisfilter, wenn die Recommendations in Bezug auf das **aktuell angezeigte Produkt** auf einer Produktdetailseite (PDP) beschränkt sein sollen. Der Filter verwendet den Endpreis dieses Produkts als **Anker** und vergleicht empfohlene Produkte mit den von Ihnen definierten Grenzen.
 
-Dynamische Operatoren sind nur für [SKU-bezogene Empfehlungstypen](types.md) verfügbar, die in einem Produktkontext ausgeführt werden, z. B.:
+Dynamische Operatoren sind nur für [SKU-bezogene Empfehlungstypen](types.md) verfügbar, die in einem Produktkontext ausgeführt werden:
 
 - hat dieses angezeigt, hat Folgendes angezeigt
 - Das hier angesehen, das gekauft
@@ -106,7 +101,16 @@ Dynamische Operatoren sind nur für [SKU-bezogene Empfehlungstypen](types.md) ve
 - Ähnliche Themen
 - Visuelle Ähnlichkeit
 
-Sie sind **nicht** für populäritätsbasierte Typen verfügbar (z. B. **Am häufigsten angezeigt** oder **Am häufigsten gekauft**), da diese Einheiten nicht über ein einziges aktuelles Produkt verfügen, um den Filter zu verankern.
+Sie sind **nicht** für populäritätsbasierte Typen verfügbar, da diese Einheiten nicht über ein einziges aktuelles Produkt verfügen, um den Filter zu verankern:
+
+- Am häufigsten angezeigt
+- Am häufigsten gekauft
+- Am häufigsten zum Warenkorb hinzugefügt
+- Trend
+- Empfohlen
+- Zuletzt angesehen
+- Konvertierung von Ansicht in Warenkorb
+- Konvertierung für Kauf anzeigen
 
 In der Storefront liest das Recommendations-Dropdown-Menü den Preis des aktuellen Produkts aus dem PDP-Kontext und sendet ihn zusammen mit der Recommendations-Anfrage. [!DNL Adobe Commerce Optimizer] verwendet diesen Wert als Anker bei der Bewertung dynamischer Preisregeln. Bei konfigurierbaren Produkten ist der Anker der **niedrigste Variante** Endpreis (`priceRange.minimum`).
 
