@@ -5,10 +5,17 @@ level: Intermediate
 recommendations: noCatalog
 role: Admin, Developer
 feature: Services, Catalog Service
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c32adafa-ed01-4b31-997e-2413013911b0
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 15aaeadde61b9d70ec107db2ed4c118d1f8ee731
 workflow-type: tm+mt
 source-wordcount: 1567
@@ -288,7 +295,7 @@ Wenn Katalogereignisse fehlen oder sich verzögern, führen Sie die folgenden Sc
 
    Katalogereignisse erfordern aktuelle Daten in [!DNL Catalog Service]. Bestätigen Sie beide Schritte des Exportpfads:
 
-   * **Feed-Export aus Commerce** - Bestätigen Sie auf der Seite [Status der ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) des Daten-Feeds) oder in `var/log/saas-export.log`, dass [!DNL Catalog Service] Feeds erfolgreich aus [!DNL Commerce] exportiert wurden.
+   * **Feed-Export aus Commerce** - Bestätigen Sie auf der Seite [Status der &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) des Daten-Feeds) oder in `var/log/saas-export.log`, dass [!DNL Catalog Service] Feeds erfolgreich aus [!DNL Commerce] exportiert wurden.
 
    * **Mit verbundenen Commerce SaaS-Services synchronisieren** - Bestätigen Sie im [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard), [Catalog Sync](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) oder in den Exportprotokollen, dass die Daten erfolgreich mit [!DNL Catalog Service] synchronisiert wurden.
 
