@@ -39,11 +39,11 @@ ht-degree: 4%
       - [Checkliste für die Kundenbereitschaft](migration/bulk-data/readiness-checklist.md)
       - [Überprüfen des Zugriffs auf den Migrationsdienst](migration/bulk-data/cdms-access.md)
       - [Ausführen einer Massendatenmigration](migration/bulk-data/migration-guide.md)
-      - [Videoanleitung](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
+      - [Videoanleitung](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
     - [Migrationsbewertungswerkzeug](migration/assessment.md)
     - [Kodierwerkzeuge](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
   - {hide-from-toc}[Dokumentations-RAG-Service](migration/doc-rag.md)
-- [Als Kunde anmelden](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [Als Kunde anmelden](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Geschenkkartenkonto-REST-Endpunkte](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [E-Mail-Auslösung durch REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - Tutorials {#tutorials}
@@ -57,6 +57,6 @@ ht-degree: 4%
   - [GraphQL-Schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
   - [REST-API-Schema](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [Commerce-Entwickleragent](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [Videoschulungen](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Videoschulungen](https://experienceleague.adobe.com/de/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Versionshinweise](release-notes.md)
-- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
