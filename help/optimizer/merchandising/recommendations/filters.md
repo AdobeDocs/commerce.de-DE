@@ -12,9 +12,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 116d8bd804df364ddc9cb1175525f08fd32c01bf
+source-git-commit: c5a8861614fbf0e8d719305e239f926d5232ac49
 workflow-type: tm+mt
-source-wordcount: 1919
+source-wordcount: 1932
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Verwenden Sie einen **statischen** Preisfilter, wenn Sie ein festes Minimum oder
 
 Verwenden Sie einen **dynamischen** Preisfilter, wenn die Recommendations in Bezug auf das **aktuell angezeigte Produkt** auf einer Produktdetailseite (PDP) beschränkt sein sollen. Der Filter verwendet den Endpreis dieses Produkts als **Anker** und vergleicht empfohlene Produkte mit den von Ihnen definierten Grenzen.
 
-Dynamische Operatoren sind nur für [SKU-bezogene Empfehlungstypen](types.md) verfügbar, die in einem Produktkontext ausgeführt werden, z. B.:
+Dynamische Operatoren sind nur für [SKU-bezogene Empfehlungstypen](types.md) verfügbar, die in einem Produktkontext ausgeführt werden:
 
 - hat dieses angezeigt, hat Folgendes angezeigt
 - Das hier angesehen, das gekauft
@@ -106,7 +106,16 @@ Dynamische Operatoren sind nur für [SKU-bezogene Empfehlungstypen](types.md) ve
 - Ähnliche Themen
 - Visuelle Ähnlichkeit
 
-Sie sind **nicht** für populäritätsbasierte Typen verfügbar (z. B. **Am häufigsten angezeigt** oder **Am häufigsten gekauft**), da diese Einheiten nicht über ein einziges aktuelles Produkt verfügen, um den Filter zu verankern.
+Sie sind **nicht** für populäritätsbasierte Typen verfügbar, da diese Einheiten nicht über ein einziges aktuelles Produkt verfügen, um den Filter zu verankern:
+
+- Am häufigsten angezeigt
+- Am häufigsten gekauft
+- Am häufigsten zum Warenkorb hinzugefügt
+- Trend
+- Empfohlen
+- Zuletzt angesehen
+- Konvertierung von Ansicht in Warenkorb
+- Konvertierung für Kauf anzeigen
 
 In der Storefront liest das Recommendations-Dropdown-Menü den Preis des aktuellen Produkts aus dem PDP-Kontext und sendet ihn zusammen mit der Recommendations-Anfrage. [!DNL Adobe Commerce Optimizer] verwendet diesen Wert als Anker bei der Bewertung dynamischer Preisregeln. Bei konfigurierbaren Produkten ist der Anker der **niedrigste Variante** Endpreis (`priceRange.minimum`).
 
