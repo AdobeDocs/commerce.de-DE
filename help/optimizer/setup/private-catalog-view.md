@@ -4,10 +4,19 @@ description: Erfahren Sie, wie Sie eine private Katalogansicht erstellen, indem 
 role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
 source-wordcount: 467
@@ -21,7 +30,7 @@ Standardmäßig ist eine [Katalogansicht](catalog-view.md) öffentlich. Aktivier
 
 Der Katalogschutz gilt nur für die ausgewählte Katalogansicht. Die Richtlinien, Ebenen oder Preisbücher der Ansicht werden dadurch nicht geändert.
 
-Beispiele für [ zum Schutz einer Katalogansicht finden Sie ](restricted-access-keys.md#restricted-access-key-use-cases) Anwendungsfällen für „Schlüssel mit eingeschränktem Zugriff“.
+Beispiele für [&#x200B; zum Schutz einer Katalogansicht finden Sie &#x200B;](restricted-access-keys.md#restricted-access-key-use-cases) Anwendungsfällen für „Schlüssel mit eingeschränktem Zugriff“.
 
 ## Erläuterung der Schutzgrenze
 
@@ -31,7 +40,7 @@ Das verbundene Commerce-Backend muss die Kaufberechtigung unabhängig durchsetze
 
 ## Schützen einer Katalogansicht
 
-Bevor Sie beginnen, [ Sie aus dem öffentlichen Schlüssel, den Ihre Client](restricted-access-keys.md)Anwendung generiert, einen Schlüssel mit eingeschränktem Zugriff.
+Bevor Sie beginnen, [&#x200B; Sie aus dem öffentlichen Schlüssel, den Ihre Client](restricted-access-keys.md)Anwendung generiert, einen Schlüssel mit eingeschränktem Zugriff.
 
 1. Schalten Sie in der Katalogansicht Formular erstellen oder bearbeiten **[!UICONTROL Catalog Protection]** zu **[!UICONTROL Enabled]** um.
 

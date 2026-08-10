@@ -7,10 +7,19 @@ recommendations: noCatalog
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 nudge: true
 source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
@@ -73,9 +82,9 @@ In diesem Abschnitt erstellen Sie eine Katalogansicht, wählen eine [Richtlinie]
 
    >[!NOTE]
    >
-   >Eine Preisbuch-ID steuert, welche Preisfindung angefordert wird. Der Zugriff auf die Katalogansicht wird dadurch nicht eingeschränkt. Um den Zugriff einzuschränken, aktivieren Sie den Katalogschutz, um eine [private Katalogansicht“ ](private-catalog-view.md) erstellen.
+   >Eine Preisbuch-ID steuert, welche Preisfindung angefordert wird. Der Zugriff auf die Katalogansicht wird dadurch nicht eingeschränkt. Um den Zugriff einzuschränken, aktivieren Sie den Katalogschutz, um eine [private Katalogansicht“ &#x200B;](private-catalog-view.md) erstellen.
 
-1. (Optional) Schalten Sie **[!UICONTROL Catalog Protection]** auf **[!UICONTROL Enabled]** um, um die Daten dieser Katalogansicht auf Clients mit einem gültigen signierten Token zu beschränken. Siehe [Schützen einer ](private-catalog-view.md#protect-a-catalog-view)) für Einrichtungsschritte.
+1. (Optional) Schalten Sie **[!UICONTROL Catalog Protection]** auf **[!UICONTROL Enabled]** um, um die Daten dieser Katalogansicht auf Clients mit einem gültigen signierten Token zu beschränken. Siehe [Schützen einer &#x200B;](private-catalog-view.md#protect-a-catalog-view)) für Einrichtungsschritte.
 
 1. Klicken Sie auf **[!UICONTROL Add]** , um die Katalogansicht mit den verknüpften Preisbüchern und Richtlinien zu erstellen.
 
