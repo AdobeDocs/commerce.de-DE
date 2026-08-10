@@ -3,7 +3,7 @@ title: Private Katalogansichten
 description: Erfahren Sie, wie Sie eine private Katalogansicht erstellen, indem Sie den Katalogschutz aktivieren, sodass nur Anfragen mit einem gültigen signierten Token die Produkt- und Preisdaten abrufen können.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 feature_v2:

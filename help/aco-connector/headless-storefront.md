@@ -2,7 +2,7 @@
 title: '[!DNL Adobe Commerce Optimizer Connector] Headless-Storefront-Integration'
 description: Erfahren Sie, wie Sie Headless-Storefronts mit der  [!DNL Adobe Commerce Optimizer Connector] GraphQL-API, Preisbuch-IDs und der Bundle-Add-to-Cart-Kodierung integrieren.
 feature: Storefront, Integration, GraphQL
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 autotag-review: '2026-06-09T16:27:30.102Z'
 TQID: 'https://experienceleague.adobe.com/Orif1rROglTQ-3ZkRj5LMF90Y-AdpfTnOgPmJXQjYgc'
 product_v2:
