@@ -1,39 +1,30 @@
 ---
-title: Katalogebene
+title: Katalogebenen
 description: Erfahren Sie, wie Sie mit Katalogebenen Produktdaten ändern können, ohne die ursprünglichen Quelldaten zu ändern, sodass Sie Änderungen jederzeit sicher anpassen und rückgängig machen können.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 TQID: https://experienceleague.adobe.com/aeuD7Ev8AhkzIspV08x4ZTA9knMjZ3EObSZJpidY8QI
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 1555
+source-wordcount: 1533
 ht-degree: 0%
 
 ---
 
-# Katalogebene
+# Katalogebenen
 
-Mit Katalogschichten können Sie Produktdaten ändern, ohne die ursprünglichen Quelldaten zu ändern. Ebenen wenden Änderungen an bestimmten Produktattributen an, z. B. Name, Beschreibung, Bilder, Links und Metadaten, indem eine Ebene über Ihrem Basiskatalog erstellt wird. Ihre ursprünglichen Produktdaten bleiben intakt, sodass Sie Produkte sicher anpassen und Änderungen jederzeit rückgängig machen können.
+Mit Katalogschichten können Sie Produktdaten ändern, ohne die ursprünglichen Quelldaten zu ändern. Ebenen ändern Produktattribute wie Namen, Beschreibung, Bilder, Links und Metadaten, indem über dem Basiskatalog eine Ebene erstellt wird. Ihre ursprünglichen Produktdaten bleiben intakt, sodass Sie Produkte sicher anpassen und Änderungen jederzeit rückgängig machen können.
 
 ![Katalogebenen](../assets/catalog-layers.png)
 
 ## Funktionsweise von Katalogebenen
 
-Wenn ein Kunde Ihre Storefront aufruft, kombiniert das System Ihre Basiskatalogdaten mit aktiven Katalogebenen, um die endgültigen Produktinformationen anzuzeigen. So funktioniert der Prozess:
+Wenn ein Kunde Ihre Storefront aufruft, kombiniert das System Ihre Basiskatalogdaten mit aktiven Katalogebenen, um die endgültigen Produktinformationen anzuzeigen. Der Prozess läuft wie folgt ab:
 
 1. **Ebenenanwendung** - Wenn eine Anfrage mit einer Kanal-ID und einer Umgebungs-ID erfolgt, ruft der Store-Service die entsprechende Katalogansicht ab.
 
@@ -41,7 +32,7 @@ Wenn ein Kunde Ihre Storefront aufruft, kombiniert das System Ihre Basiskatalogd
 
 1. **Feldbehandlung** - Verschiedene Feldtypen werden unterschiedlich verarbeitet:
 
-   * **Felder überschreiben** - Textfelder wie Name, Beschreibung und Meta-Titel werden durch die in der Ebene definierten Werte ersetzt, wobei die Ebene mit der höheren Priorität Vorrang hat.
+   * **Felder überschreiben** - Textfelder wie Name, Beschreibung und Meta-Titel werden durch Ebenenwerte ersetzt, wobei die Ebene mit der höheren Priorität Vorrang hat.
    * **Felder zusammenführen** - Array-Felder wie Bilder, Links und Attribute werden aus mehreren Ebenen kombiniert, um eine einheitliche Antwort zu erzielen.
 
 1. **Prioritätsauflösung** - Das Reihenfolgenfeld bestimmt, welche Ebene Vorrang hat. Wenn mehrere Ebenen dasselbe Feld ändern, hat die Ebene mit der höheren Ordnungszahl eine höhere Priorität (z. B. ist Reihenfolge 10 die höchste).
@@ -59,7 +50,7 @@ Katalogebenen werden häufig für Folgendes verwendet:
 
 ## AEM-Assets-Ebene
 
-Wenn Sie [Produktvisualisierung](product-visuals.md) aktivieren, erstellt und verwaltet die AEM Assets-Integration automatisch eine Katalogebene, die ausschließlich AEM Assets-Inhalten gewidmet ist. Der standardmäßige Ebenenname lautet `AEM-Assets`. Sie können jedoch während des Onboardings [&#x200B; der AEM Assets-Integration einen benutzerdefinierten Namen &#x200B;](../../aem-assets-integration/get-started/configure-aco.md).
+Wenn Sie [Produktvisualisierung](product-visuals.md) aktivieren, erstellt und verwaltet die AEM Assets-Integration automatisch eine Katalogebene, die ausschließlich AEM Assets-Inhalten gewidmet ist. Der standardmäßige Ebenenname lautet `AEM-Assets`. Sie können jedoch während des Onboardings in [ AEM Assets-Integration einen benutzerdefinierten Namen ](../../aem-assets-integration/get-started/configure-aco.md).
 
 Diese Ebene enthält Produktbilder, die aus AEM Assets synchronisiert wurden. Wie andere Katalogebenen wird es über die [Product Layers-API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank} gefüllt. Der Assets Integration Service transformiert AEM-Asset-Metadaten und Bereitstellungs-URLs in das API-Format und sendet die Daten automatisch, wenn Assets in AEM Assets genehmigt wurden.
 
@@ -67,7 +58,7 @@ Die Integration unterstützt eine Quelle pro Mandant (ein Gebietsschema + eine E
 
 >[!CAUTION]
 >
-> Weisen Sie die AEM-Assets-Ebene Ihrer Katalogansicht zu. Wenn die Ebene nicht zugewiesen ist, können Produktbilddaten unerwartet überschrieben werden.
+> Weisen Sie die AEM-Assets-Ebene Ihrer Katalogansicht zu. Wenn die Ebene nicht zugewiesen ist, werden Produktbilddaten unerwartet überschrieben.
 
 ### Funktionsweise der AEM-Assets-Ebene
 
@@ -81,13 +72,13 @@ Die Integration unterstützt eine Quelle pro Mandant (ein Gebietsschema + eine E
 
 So zeigen Sie AEM Assets-Bilder in Ihrer Storefront an:
 
-1. Navigieren Sie zu _Store-Setup_ und klicken Sie auf **[!UICONTROL Catalog views]**.
+1. Navigieren Sie zu **[!UICONTROL Store setup]** und klicken Sie auf **[!UICONTROL Catalog views]**.
 
 1. Wählen Sie die Katalogansicht aus, in der Sie die Ebene anwenden möchten.
 
 1. Suchen Sie im Abschnitt Katalogebenen die Ebene **AEM-Assets**.
 
-1. Aktivieren Sie die Ebene, um sie für diese Katalogansicht zu aktivieren.
+1. Um die Ebene für diese Katalogansicht zu aktivieren, aktivieren Sie sie.
 
 1. Klicken Sie auf **[!UICONTROL Save]** , um die Änderungen anzuwenden.
 
@@ -101,7 +92,7 @@ Sie können Ihren Produkten während der Datenaufnahme Katalogebenen hinzufügen
 
 >[!NOTE]
 >
->Sie importieren Katalogebenen mit der Aufnahme-API, aber [&#x200B; Festlegen der Reihenfolge &#x200B;](#manage-layer-priorities) Ebenen erfolgt über die Benutzeroberfläche.
+>Sie importieren Katalogebenen mit der Aufnahme-API, aber [ Festlegen der Reihenfolge ](#manage-layer-priorities) Ebenen erfolgt über die Benutzeroberfläche.
 
 **Voraussetzungen:**
 
@@ -136,7 +127,7 @@ Die Benutzeroberfläche für die Katalogansicht ermöglicht die manuelle Erstell
 
 **So erstellen Sie eine manuelle Ebene:**
 
-1. Navigieren Sie **Store-Setup** > **Katalogansichten**.
+1. Navigieren Sie zu **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
 
 1. Wählen Sie die Katalogansicht aus, in der Sie die Ebene anwenden möchten.
 
@@ -149,7 +140,7 @@ Die Benutzeroberfläche für die Katalogansicht ermöglicht die manuelle Erstell
    * **Attribute** - Wählen Sie aus, welche Produktattribute geändert werden sollen (Name, Beschreibung, Bilder, Meta-Tags usw.).
    * **Werte** - Geben Sie die neuen Werte für jedes ausgewählte Attribut ein.
 
-1. Klicken Sie auf **Speichern**, um die Ebene zu erstellen.
+1. Klicken Sie auf **[!UICONTROL Save]** , um die Ebene zu erstellen.
 
 Die neue Ebene wird der Katalogansicht hinzugefügt und automatisch der nächsten verfügbaren Bestellnummer zugewiesen.
 
@@ -163,7 +154,7 @@ Bevor Sie Ebenen aktivieren oder Prioritäten ändern, können Sie sich eine Vor
 
 **Vorschau von Ebenenänderungen anzeigen:**
 
-1. Navigieren Sie **Store-Setup** > **Katalogansichten**.
+1. Navigieren Sie zu **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
 
 1. Wählen Sie die Katalogansicht mit den Ebenen aus, die Sie in der Vorschau anzeigen möchten.
 
@@ -173,13 +164,13 @@ Bevor Sie Ebenen aktivieren oder Prioritäten ändern, können Sie sich eine Vor
 
 1. Nehmen Sie nach Bedarf Anpassungen am Ebeneninhalt oder an der Prioritätsreihenfolge vor.
 
-## Aktivieren, Deaktivieren oder Löschen von Ebenen
+## Verwalten der Aktivierung und Löschung von Ebenen
 
 Sie können Katalogebenen aktivieren oder deaktivieren, ohne sie zu löschen, sodass Sie steuern können, wann bestimmte Anpassungen angewendet werden.
 
 **So aktivieren oder deaktivieren Sie eine Ebene:**
 
-1. Navigieren Sie **Store-Setup** > **Katalogansichten**.
+1. Navigieren Sie zu **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
 
 1. Wählen Sie die Katalogansicht aus, die die Ebene enthält.
 
@@ -210,7 +201,7 @@ Die Reihenfolge, in der Ebenen angewendet werden, bestimmt, welche Werte in Ihre
 
 **So ordnen Sie die Ebenenprioritäten neu an:**
 
-1. Navigieren Sie **Store-Setup** > **Katalogansichten**.
+1. Navigieren Sie zu **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
 
 1. Wählen Sie die Katalogansicht mit den Ebenen aus, die Sie neu anordnen möchten.
 
@@ -220,25 +211,24 @@ Die Reihenfolge, in der Ebenen angewendet werden, bestimmt, welche Werte in Ihre
 
 1. Das System aktualisiert die Bestellnummern automatisch auf der Grundlage der neuen Reihenfolge.
 
-1. Klicken Sie **Speichern**, um die neue Prioritätsreihenfolge anzuwenden.
+1. Klicken Sie auf **[!UICONTROL Save]** , um die neue Prioritätsreihenfolge anzuwenden.
 
 >[!IMPORTANT]
 >
->Änderungen an der Ebenenpriorität werden sofort wirksam und können sich auf das auswirken, was Kunden in Ihrer Storefront sehen. Überprüfen Sie die Vorschau vor dem Speichern, um sicherzustellen, dass die richtigen Werte angewendet werden **Vorschau ist noch nicht verfügbar**.
+>Änderungen an der Ebenenpriorität werden sofort wirksam und wirken sich auf das aus, was Kunden in Ihrer Storefront sehen. Überprüfen Sie die Vorschau vor dem Speichern, um sicherzustellen, dass die richtigen Werte angewendet werden **Vorschau ist noch nicht verfügbar**.
 
 ## Best Practices
 
 Befolgen Sie beim Arbeiten mit Katalogebenen die folgenden Empfehlungen:
 
-* **Beschreibende Namen verwenden** - Namensebenen, um ihren Zweck deutlich anzugeben (z. B. „Holiday 2025-Kampagne“ oder „SEO-Optimierung - Produktseiten„).
+* **Beschreibende Namen verwenden** - Namensebenen, um ihren Zweck deutlich anzugeben (z. B. „Holiday 2025 Campaign“ oder „SEO-Optimierung - Produktseiten„).
 
 * **Ebenen begrenzen** - Während das System mehrere Ebenen unterstützt, kann die Verwendung zu vieler Ebenen die Leistung beeinträchtigen. Konsolidieren Sie Ebenen nach Möglichkeit.
 
-<!--- **Test before activating**—Always preview layer effects before activating them on your live storefront. !!!REMOVE IF PREVIEW NOT AVAILABLE FOR GA!!!-->
 
-* **Dokumentprioritätslogik** - Verfolgen Sie, welche Ebenen Vorrang haben sollten, um unbeabsichtigte Überschreibungen zu vermeiden.
+* **Dokumentprioritätslogik** - Verfolgen Sie, welche Ebenen Vorrang haben, um unbeabsichtigte Überschreibungen zu vermeiden.
 
-* **Sites Optimizer-Ebenen überprüfen** - Bei Verwendung der automatischen Fehlerbehebung in Sites Optimizer erstellt das System Ebenen mit der höchsten Priorität. Achten Sie beim Hinzufügen manueller Ebenen, die KI-Empfehlungen überschreiben können. Weitere Informationen zur Verwendung von [Sites Optimizer](../manage-results/opportunities.md).
+* **Sites Optimizer-Ebenen überprüfen** - Bei Verwendung der automatischen Fehlerbehebung in Sites Optimizer erstellt das System Ebenen mit der höchsten Priorität. Achten Sie beim Hinzufügen manueller Ebenen, die KI-Empfehlungen überschreiben. Weitere Informationen zur Verwendung von [Sites Optimizer](../manage-results/opportunities.md).
 
 * **Überwachen der Leistung** - Wenn Sie langsame Ladevorgänge der Produktseite bemerken, überprüfen Sie Ihre Ebenenkonfiguration und erwägen Sie die Konsolidierung von Ebenen.
 
@@ -246,4 +236,5 @@ Befolgen Sie beim Arbeiten mit Katalogebenen die folgenden Empfehlungen:
 
 * [Katalogansichten](catalog-view.md) - Konfigurieren von Katalogansichten für verschiedene Storefronts
 * [Produktvisualisierungen](product-visuals.md) - Verwenden von AEM Assets für Produktbilder
-* [Opportunities](../manage-results/opportunities.md) - Erfahren Sie mehr über die KI-gestützte Optimierung mithilfe von Katalogschichten
+* [Opportunities](../manage-results/opportunities.md) - Erfahren Sie mehr über KI-gestützte Optimierung mithilfe von Katalogschichten
+* [Eingeschränkte Zugriffsschlüssel](restricted-access-keys.md) - Schützen einer Katalogansicht mit Authentifizierung mit signierten Token

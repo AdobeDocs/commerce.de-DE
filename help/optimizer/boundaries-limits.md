@@ -2,12 +2,12 @@
 title: Adobe Commerce Optimizer-Beschränkungen und -Grenzen
 description: Erfahren Sie mehr über Adobe Commerce Optimizer-Lizenzbeschränkungen und Systemgrenzen. Planen Sie die Kapazität, verfolgen Sie die Nutzung und vermeiden Sie Latenz und Drosselung bei Überschreitung der Grenzwerte.
 role: Admin, Developer
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
-source-git-commit: 172fcbd659f4fe8868059d29ed335a5136af8d33
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1494'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Ihre Nutzung muss innerhalb dieser Grenzen bleiben. Sie zu überschreiten kann z
 
 Lizenzbeschränkungen können erhöht werden, indem Sie die Lizenzpakete erwerben, die im Abschnitt [Lizenzbeschränkungen und Systemgrenzen](#license-limits-and-system-boundaries) beschrieben sind, oder indem Sie benutzerdefinierte Lizenzen für eindeutige Anwendungsfälle aushandeln. Wenden Sie sich an Ihren Adobe-Kundenbetreuer, um Ihre Anforderungen zu besprechen.
 
-Wenden Sie sich bei Fragen zu Systemgrenzen an den [Adobe-Support](https://experienceleague.adobe.com/home?lang=de#support).
+Wenden Sie sich bei Fragen zu Systemgrenzen an den [Adobe-Support](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Leistungsprobleme verhindern
 
@@ -93,8 +93,8 @@ In den folgenden Tabellen sind die Lizenzbeschränkungen und Systemgrenzen nach 
 Die Verwendung von Dynamic Media verfolgt API-Anfragen, die innerhalb von [!DNL Adobe Commerce Optimizer] in die Komponenten für visuelle Produktinformationen gelangen, um eine der folgenden Aktionen zu erleichtern:
 
 - **Die Bildbereitstellung verbraucht einen Dynamic Media** Vorgang für jedes Vorkommen der folgenden:
-   - **Grundlegende Bildumwandlung** eines digitalen Assets, z. B. Größenänderungs-, Skalierungs-, Formatkonvertierungs-, Komprimierungs- oder Zuschneidevorgänge.
-   - **statische Bildbereitstellung oder Download** der digitalen Assets oder Ausgabedarstellung digitaler Assets (außer Video)
+  - **Grundlegende Bildumwandlung** eines digitalen Assets, z. B. Größenänderungs-, Skalierungs-, Formatkonvertierungs-, Komprimierungs- oder Zuschneidevorgänge.
+  - **statische Bildbereitstellung oder Download** der digitalen Assets oder Ausgabedarstellung digitaler Assets (außer Video)
 - **Die Bereitstellung intelligenter Bilder verbraucht 20 Dynamic Media-Vorgänge** für jede optimierte Bereitstellung eines einzelnen digitalen Assets, indem automatisch die am besten geeignete Bildausgabedarstellung für das Gerät und den Browser eines Endbenutzers generiert wird.
 - **Die Videobereitstellung beansprucht 20 Dynamic Media** Vorgänge für eine einzelne Bereitstellung oder einen einzelnen Download eines Videos oder einer umgewandelten Variante eines Videos.
 
@@ -111,6 +111,10 @@ Die Verwendung von Dynamic Media verfolgt API-Anfragen, die innerhalb von [!DNL 
 | Katalogansichten | Anzahl der konfigurierbaren Teilmengen des Hauptkatalogs | Basierend auf der Anzahl der [Katalogvarianten](#catalog) | Ja<br>Katalogvarianten erhöhen |
 | Richtlinien pro Katalogansicht | Anzahl der zulässigen Datenfilter | 10 | Nein |
 | Attributwerte in einer Richtlinie | Anzahl der Produktmerkmale, die für die Filterung konfiguriert werden können | 100 | Nein |
+| [Tastenzuweisung für eingeschränkten Zugriff](setup/private-catalog-view.md) | Anzahl der eingeschränkten Zugriffsschlüssel, die einer einzelnen Katalogansicht zugewiesen werden können | 3 | Nein |
+| [Schlüssel mit eingeschränktem Zugriff](setup/restricted-access-keys.md) | Anzahl der Schlüssel pro Umgebung | Maximal 100 | Nein |
+| RSA-Schlüsselgröße (eingeschränkte Zugriffsschlüssel) | Minimale und maximale Schlüsselstärke, die für einen eingeschränkten Zugriffsschlüssel akzeptiert wird | Minimum 2048 Bit, Maximum 8192 Bit | Nein |
+| Schlüssel für eingeschränkten Zugriff | Verzögerung der Schlüsselsperrweitergabe | Bis zu 5 Minuten aufgrund des Caching. Von einem entfernten Schlüssel signierte Token werden verweigert, sobald die Verzögerung abgelaufen ist. | Nicht zutreffend |
 
 {style="table-layout:auto"}
 
@@ -162,7 +166,7 @@ Die folgenden Funktionen sind für Produktempfehlungen verfügbar. Einige in and
 
 | **Funktion** | **Beschreibung** | **Basiszuweisung** | **Erweiterbar?** | **Hinweise** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Kapazität zum Erstellen Cloud-nativer Erweiterungen und Integrationen | Basierend auf GMV-Stufe<p>Mindestzuweisung: 1 Packung/Jahr</p> | Ja<p>Zusätzliche Packs hinzufügen</p> | Für die pro Packung definierten Grenzwerte siehe:<ul><li>[App Builder-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-developer-app-builder.html) für pro Pack definierte Beschränkungen.</li><li>[Systemeinstellungen und Einschränkungen](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in den *App Builder Runtime Guides*.</li><li>[Speicheranforderungen für App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Kapazität zum Erstellen Cloud-nativer Erweiterungen und Integrationen | Basierend auf GMV-Stufe<p>Mindestzuweisung: 1 Packung/Jahr</p> | Ja<p>Zusätzliche Packs hinzufügen</p> | Für die pro Packung definierten Grenzwerte siehe:<ul><li>[App Builder-Produktbeschreibung](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) für pro Pack definierte Beschränkungen.</li><li>[Systemeinstellungen und Einschränkungen](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in den *App Builder Runtime Guides*.</li><li>[Speicheranforderungen für App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
