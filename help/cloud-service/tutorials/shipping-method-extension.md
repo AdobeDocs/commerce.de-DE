@@ -266,10 +266,10 @@ Führen Sie nach der Bereitstellung die folgenden Schritte aus, um den Pseudo-Pr
 
    - Navigieren Sie **Stores** > Einstellungen > **Konfiguration** > **Adobe Services** > **Commerce Webhooks**.
    - Webhook hinzufügen:
-      - **Webhook-Methode:** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
-      - **Webhook-Typ:** **after**
-      - **URL:** die bereitgestellte **shipping-methods**-Web-Aktions-URL (aus der Bereitstellungsausgabe oder der [!DNL Adobe Developer Console]).
-      - **Erforderlich:** **Optional** - Dadurch kann das Auschecken weiterhin funktionieren, wenn die externe API keine Raten zurückgibt.
+     - **Webhook-Methode:** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
+     - **Webhook-Typ:** **after**
+     - **URL:** die bereitgestellte **shipping-methods**-Web-Aktions-URL (aus der Bereitstellungsausgabe oder der [!DNL Adobe Developer Console]).
+     - **Erforderlich:** **Optional** - Dadurch kann das Auschecken weiterhin funktionieren, wenn die externe API keine Raten zurückgibt.
 
    ![Commerce Admin Webhook-Konfiguration für Pseudo-Versandraten](../assets/admin-webhook-shipping.png){width="600" zoomable="yes"}
 
@@ -287,9 +287,9 @@ Führen Sie nach der Bereitstellung die folgenden Schritte aus, um den Pseudo-Pr
    - Öffnen Sie **Apps** und wählen Sie Ihre App aus.
    - Öffnen Sie die **Pseudo-**&quot; (oder eine entsprechende Option).
    - Geben Sie die folgenden Details ein:
-      - **Service-URL:** die Pipedream-Workflow-URL, die Sie kopiert haben (z. B. `https://123456.m.pipedream.net`).
-      - **API-Schlüssel** Beliebiger nicht leerer Wert für die Nachahmung, z. B. `tutorial-key`.
-      - **Warehouse (Lieferadresse):**, Telefon, Straße, Stadt, Bundesland, Postleitzahl, Land.
+     - **Service-URL:** die Pipedream-Workflow-URL, die Sie kopiert haben (z. B. `https://123456.m.pipedream.net`).
+     - **API-Schlüssel** Beliebiger nicht leerer Wert für die Nachahmung, z. B. `tutorial-key`.
+     - **Warehouse (Lieferadresse):**, Telefon, Straße, Stadt, Bundesland, Postleitzahl, Land.
    - Klicken Sie **Speichern**. Die Konfiguration wird im Laufzeitstatus gespeichert und von der Aktion „shipping-methods“ verwendet.
 
    ![Pseudo-Versandkonfigurationsformular mit Service-URL, API-Schlüssel und Warehouse-Adresse](../assets/admin-ui-mock-shipping.png){width="600" zoomable="yes"}
