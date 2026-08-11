@@ -23,7 +23,7 @@ topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
 source-wordcount: 1445
 ht-degree: 0%
@@ -167,7 +167,7 @@ Führen Sie die folgenden Schritte aus, um eine von KI vorgeschlagene Optimierun
 
 ### Funktionsweise von Katalogebenen mit automatischer Korrektur
 
-Wenn in Ihrer Katalogansicht keine Adobe Sites Optimizer-Ebene vorhanden ist, wird automatisch eine erstellt und ihr die höchste Priorität (höchste Zahl) zugewiesen. Wenn Sie diese Ebene löschen, wird sie bei der nächsten Ausführung der automatischen Fehlerbehebung neu erstellt und die vorhandenen Ebenen werden auf niedrigere Ordnungszahlen verschoben. Wenn die Adobe Sites Optimizer-Ebene bereits mit einer anderen Bestellnummer vorhanden ist, ändert die automatische Fehlerbehebung ihre Priorität nicht. Wenn Sie eine Ebene für die automatische Fehlerbehebung beibehalten, sie jedoch nicht sofort verwenden möchten, können Sie die Ebene deaktivieren. Weitere Informationen zum Verwalten von [Katalogebenen](../setup/catalog-layer.md#activate-deactivate-or-delete-layers).
+Wenn in Ihrer Katalogansicht keine Adobe Sites Optimizer-Ebene vorhanden ist, wird automatisch eine erstellt und ihr die höchste Priorität (höchste Zahl) zugewiesen. Wenn Sie diese Ebene löschen, wird sie bei der nächsten Ausführung der automatischen Fehlerbehebung neu erstellt und die vorhandenen Ebenen werden auf niedrigere Ordnungszahlen verschoben. Wenn die Adobe Sites Optimizer-Ebene bereits mit einer anderen Bestellnummer vorhanden ist, ändert die automatische Fehlerbehebung ihre Priorität nicht. Wenn Sie eine Ebene für die automatische Fehlerbehebung beibehalten, sie jedoch nicht sofort verwenden möchten, können Sie die Ebene deaktivieren. Weitere Informationen zum Verwalten von [Katalogebenen](../setup/catalog-layer.md#manage-layer-activation-and-deletion).
 
 ![Katalogebenen](../assets/catalog-layers.png)
 

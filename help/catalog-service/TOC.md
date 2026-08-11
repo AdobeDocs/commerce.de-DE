@@ -5,9 +5,10 @@ user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Ve
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 9ddf8f7eab84df90972f2d540e8607f52d3adf4e
+nudge: true
+source-git-commit: 29133334b0491ed2d3f72253834546287a57dcf1
 workflow-type: tm+mt
-source-wordcount: '61'
+source-wordcount: '60'
 ht-degree: 8%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 8%
 - [Erste Schritte mit dem [!DNL Catalog Service]](get-started.md)
 - [Abrufen von Katalogdaten](graphql-queries.md)
 - Integration mit anderen Anwendungen {#integration}
-  - [Integration von Katalog und Adobe I/O Events](catalog-events-guide.md)
+  - [Handbuch zur Einrichtung und Integration von Katalogereignissen](catalog-events-guide.md)
   - [Katalog-Service und API-Mesh](mesh.md)
   - [Anwendungsfall: Steuern anzeigen](taxes.md)
 - [Versionshinweise](release-notes.md)

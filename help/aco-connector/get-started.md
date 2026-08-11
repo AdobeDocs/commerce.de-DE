@@ -26,10 +26,10 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 last-update: 2026-07-29
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: fb025e5232902ba9fea7e858085ea85abeb11720
 workflow-type: tm+mt
-source-wordcount: 1059
-ht-degree: 0%
+source-wordcount: 1106
+ht-degree: 3%
 
 ---
 
@@ -202,7 +202,7 @@ Rufen Sie die _Mandanten_ ID) aus dem Feld _[!DNL Instance Id]_&#x200B;auf der [
 
 1. **Konfigurieren [!DNL Commerce Optimizer] Katalogansichten und Richtlinien**
 
-   Erstellen Sie Katalogansichten und Richtlinien in der [!DNL Commerce Optimizer]-Benutzeroberfläche. Beachten Sie, dass Preislisten automatisch aus [!DNL Adobe Commerce] Kundengruppen erstellt werden. Anweisungen finden Sie in der [Katalogansichten](../optimizer/setup/catalog-view.md) und [Richtlinien](../optimizer/setup/policies.md) im *[!DNL Commerce Optimizer]-Benutzerhandbuch*.
+   Erstellen Sie Katalogansichten und Richtlinien in der [!DNL Commerce Optimizer]-Benutzeroberfläche. Beachten Sie, dass Preislisten automatisch aus [!DNL Adobe Commerce] Kundengruppen erstellt werden. Anweisungen finden Sie in der [Katalogansichten](../optimizer/setup/catalog-view.md) und [Richtlinien](../optimizer/setup/policies.md) im *[!DNL Commerce Optimizer]-Benutzerhandbuch*. Informationen zum Beschränken des Zugriffs auf eine Katalogansicht finden Sie [Private Katalogansichten](../optimizer/setup/private-catalog-view.md).
 
 1. **Einrichten einer Commerce-Storefront auf[!DNL Edge Delivery Services]**
 

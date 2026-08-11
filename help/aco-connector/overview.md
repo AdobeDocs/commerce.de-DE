@@ -26,9 +26,10 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+nudge: true
+source-git-commit: 83120d472ea7838a255c7767cd0bbe9085dff013
 workflow-type: tm+mt
-source-wordcount: 1075
+source-wordcount: 1087
 ht-degree: 0%
 
 ---
@@ -127,7 +128,7 @@ Weitere Informationen finden Sie in den folgenden Themen:
 
 Sobald [!DNL Adobe Commerce] Daten in [!DNL Adobe Commerce Optimizer] verfügbar sind, verwenden Sie [[!DNL Adobe Commerce Optimizer] Studio](/help/optimizer/overview.md#quick-tour), um Merchandising- und Storefront-Erlebnisse mit Ihrem synchronisierten Katalog zu verbinden. Zu den typischen nächsten Schritten gehören:
 
-- **Katalogansichten und -richtlinien** - Definieren von Regions-, Marken- oder kundenspezifischen Untergruppen und Zugriffsregeln über das Menü [!UICONTROL Store setup] .
+- **Katalogansichten und Richtlinien** - Definieren Sie im Menü &quot;[!UICONTROL Store setup]&quot; regions-, marken- oder kundenspezifische Untergruppen und Zugriffsregeln. Informationen dazu, wer eine Katalogansicht abfragen kann, finden Sie unter [Private Katalogansichten](/help/optimizer/setup/private-catalog-view.md)
 - **Produkterkennung und Empfehlungen** - Konfigurieren von Suche, Facetten, Merchandising-Regeln, Synonymen und Empfehlungseinheiten im [!UICONTROL Merchandising]. Das Verhalten bei Suchen und Empfehlungen wird in [!DNL Adobe Commerce Optimizer] verwaltet. Die [!DNL Live Search]- und [!DNL Product Recommendations]-Einstellungen in der [!DNL Adobe Commerce] Admin gelten für diese Flüsse nicht mehr.
 - **Storefront-Verbindungen** - Verweisen Sie Commerce-Storefronts auf Headless-Builds von [!DNL Edge Delivery Services] oder Drittanbietern auf die richtigen [!DNL Adobe Commerce Optimizer]-Mandanten-, Katalogansichts- und Merchandising-API-Endpunkte. Informationen zu benutzerdefinierten Headless-Integrationen finden Sie unter [Headless-Storefront-Integration](/help/aco-connector/headless-storefront.md). Ein Beispiel für eine Drittanbieterintegration finden Sie unter [Salesforce Commerce Connector für [!DNL Adobe Commerce Optimizer]](/help/optimizer/developer/salesforce-connector.md)
 - **Checkout** - Warenkorb, Checkout, Bestellverwaltung und Kundenkonten auf [!DNL Adobe Commerce] oder einer verbundenen Drittanbieterplattform aufbewahren. Verwenden Sie bei Bedarf [!DNL App Builder] und [!DNL API Mesh] für die Übergabe an den Warenkorb

@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: ee42a1e02e4057ff324808133a533a198d390980
 workflow-type: tm+mt
-source-wordcount: 880
+source-wordcount: 2296
 ht-degree: 0%
 
 ---
@@ -102,6 +102,7 @@ Führen Sie diese Prüfungen in der [!DNL Adobe Commerce Optimizer]-Benutzerober
 ▢ [Preisverzeichnisse](../setup/pricebooks.md) werden automatisch aus Kundengruppen in der Cloud erstellt.
 ▢ [Katalogansichten](../setup/catalog-view.md) sind vorhanden und Sie kennen ihre IDs.
 ▢ [Richtlinien](../setup/policies.md) sind vorhanden und Sie kennen ihre IDs.
+▢ Jeder [privaten Katalogansicht](../setup/private-catalog-view.md#protect-a-catalog-view) wird ein nicht abgelaufener [eingeschränkter Zugriffsschlüssel](../setup/restricted-access-keys.md) zugewiesen und ein Besitzer wird für die Schlüsselrotation identifiziert.
 ▢ [Facetten](../merchandising/facets/overview.md) werden konfiguriert.
 ▢ [Synonyme](../merchandising/synonyms/overview.md) sind konfiguriert.
 ▢ [Merchandising-Regeln](../merchandising/rules/overview.md) sind konfiguriert.
@@ -155,9 +156,9 @@ Bestätigen der Erweiterungskonfiguration für die Produktion.
 
 ▢ Der Arbeitsbereich Produktion enthält alle erforderlichen Konfigurationen und Services.
 ▢ Die Produktions-App durchläuft Tests für verschiedene Build-Szenarien.
-▢ Produktbeschränkungen und -grenzen wurden anhand der [Adobe Developer App Builder-Produktbeschreibung und der](https://helpx.adobe.com/de/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}Systemeinstellungen und -beschränkungen von App Builder überprüft und &rbrack;(https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
+▢ Produktbeschränkungen und -grenzen wurden anhand der [Adobe Developer App Builder-Produktbeschreibung und der {](https://helpx.adobe.com/de/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}&#x200B;}Systemeinstellungen und -beschränkungen von App Builder überprüft und [&#128279;](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
 ▢ Die Produktions-App verwendet App Builder-Produktionsendpunkte.
-▢ benutzerdefinierte *Admin*-Bedienfelderweiterungen werden im Produktionsarbeitsbereich bereitgestellt.&lbrack;
+▢ benutzerdefinierte *Admin*-Bedienfelderweiterungen werden im Produktionsarbeitsbereich bereitgestellt.
 
 ### API-Mesh
 
@@ -175,14 +176,14 @@ Polnische Inhalte, SEO, Leistung, Sicherheit und CDN-Verhalten vor dem Launch.
 
 Bestätigen des Authoring-Workflows und der Storefront-Komponenten
 
-▢ Die Prüfung der Go-Live-Checkliste für &lbrace;1&rbrack;(https://www.aem.live/docs/go-live-checklist) AEM/EDS ist abgeschlossen.
+▢ Die Prüfung der Go-Live-Checkliste für &lbrace;1[&#128279;](https://www.aem.live/docs/go-live-checklist) AEM/EDS ist abgeschlossen.
 ▢ Die Authoring-Quelle ist ein dokumentbasierter oder universeller Editor (und konfiguriert).
 ▢ Inhalte werden mit dem Vorschau- → Veröffentlichungszyklus veröffentlicht.
 ▢ Inhalts- und Design-QA ist in der `.aem.live` Domain abgeschlossen.
 ▢ Ein Favicon ist konfiguriert und wird von der Site korrekt bereitgestellt.
 ▢ „da.live“ und „product visuals“ verwenden [konfigurierte](https://docs.da.live/administrators/guides/permissions) dedizierte Anmeldeinformationen.
 ▢ Dropins (Warenkorb, Checkout, PDP, PLP, Auth, Konto) werden [angepasst](../storefront.md) getestet.
-▢ Storefront-Branding spiegelt CSS-Design-Token, Typografie und Farben wider.&lbrack;
+▢ Storefront-Branding spiegelt CSS-Design-Token, Typografie und Farben wider.
 
 ### SEO und Indizierung
 

@@ -23,9 +23,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -69,6 +69,17 @@ Auf dieser Seite werden Verhaltensweisen beschrieben, die Sie beim Arbeiten mit 
 
 - Stellen Sie sicher, dass die Website in der Exportkonfiguration des Connectors für die Synchronisierung konfiguriert ist. Siehe [Anpassen der Datenexportkonfiguration](../get-started.md#customize-the-commerce-scopes-export-configuration).
 - Vergewissern Sie sich, dass die in [!DNL Commerce Optimizer] verwendete Preisbuch-ID in der Konfiguration [Katalogansicht](../../optimizer/setup/catalog-view.md){target="_blank"} vorhanden ist, die für die Produktabfrage verwendet wird.
+
+## Storefront-Anfragen geben einen Fehler „Zugriff verweigert“ zurück oder Katalogdaten verschwinden vollständig
+
+**Problem** Anfragen an die Merchandising-API für eine Katalogansicht, die zuvor zurückgegebene Daten zurückgegeben hat, schlagen jetzt mit einem `access-key-invalid` Fehler fehl oder eine funktionierende Storefront zeigt keine Katalogdaten mehr an.
+
+**Ursache:** In der Katalogansicht ist [Katalogschutz](../../optimizer/setup/private-catalog-view.md) aktiviert, und entweder fehlt in der Anfrage die erforderliche `AC-Catalog-View-Access-Token`-Kopfzeile oder alle der Ansicht zugewiesenen eingeschränkten Zugriffsschlüssel sind abgelaufen. Die [!DNL Adobe Commerce Optimizer Connector] erstellt, weist eingeschränkte Zugriffsschlüssel nicht automatisch zu und dreht sie nicht. Die Schlüsselverwaltung erfolgt vollständig durch Ihre Client-Anwendung.
+
+**Lösung:**
+
+- Vergewissern Sie sich, dass der Katalogansicht weiterhin mindestens ein nicht abgelaufener [eingeschränkter Zugriffsschlüssel](../../optimizer/setup/restricted-access-keys.md) zugewiesen ist, und drehen Sie ihn bei Bedarf oder fügen Sie einen Schlüssel hinzu.
+- Überprüfen Sie, ob die Storefront oder der Client bei jeder Anfrage eine gültige signierte `AC-Catalog-View-Access-Token`-Kopfzeile sendet. Siehe [Private Katalogansichten](../../optimizer/setup/private-catalog-view.md).
 
 ## Daten in [!DNL Adobe Commerce Optimizer] werden nach der Synchronisierung überschrieben oder unerwartet geändert
 

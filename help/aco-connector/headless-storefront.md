@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 237
+source-wordcount: 263
 ht-degree: 0%
 
 ---
@@ -65,6 +65,10 @@ Wie `priceBookId` behoben wird:
 | Angemeldeter Kunde | `websiteCode::sha1(customerGroupId)` |
 
 Der Header der `Store`-Anfrage bestimmt den Umfang der Website und damit die `websiteCode`. Die `sha1(customerGroupId)` entspricht der Preisbuch-ID-Formel, die bei der Datensynchronisation verwendet wird. Siehe [Preisbücher](reference/field-mapping.md#price-books).
+
+>[!NOTE]
+>
+>Wenn die Zielkatalogansicht aktiviert [!UICONTROL Catalog Protection], fügen Sie in Merchandising-API-Anfragen eine signierte `AC-Catalog-View-Access-Token`-Kopfzeile neben `AC-View-ID` und `AC-Price-Book-ID` ein, oder die Anfrage wird abgelehnt. Siehe [Private Katalogansichten](../optimizer/setup/private-catalog-view.md).
 
 ## Bundle-Produkte: Format „In den Warenkorb legen“ {#bundle-products-add-to-cart-format}
 

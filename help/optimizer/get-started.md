@@ -22,9 +22,9 @@ topic_v2:
   - id: dba482e5-29a8-4127-afa2-c4b913512ef8
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 1349
+source-wordcount: 1368
 ht-degree: 0%
 
 ---
@@ -59,9 +59,9 @@ Führen Sie die folgenden Schritte aus, um Ihre [!DNL Adobe Commerce Optimizer]-
 
 ### Schritt 1. Instanz erstellen
 
-1. Anmelden bei [Adobe Experience Cloud](https://experience.adobe.com/).
-1. Navigieren Sie zu **Commerce** > **Commerce Cloud Manager**.
-1. Klicken Sie **Instanz hinzufügen** > **Commerce Optimizer**.
+1. Melden Sie sich bei [Adobe Experience Cloud](https://experience.adobe.com/) an.
+1. Navigieren Sie zu **[!UICONTROL Commerce]** > **[!UICONTROL Commerce Cloud Manager]**.
+1. Klicken Sie auf **[!UICONTROL Add Instance]** > **[!UICONTROL Commerce Optimizer]**.
 
    ![Adobe Commerce Cloud Manager-Bildschirm „Instanz hinzufügen“ zum Erstellen einer Commerce Optimizer-Umgebung](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
@@ -71,7 +71,7 @@ Führen Sie die folgenden Schritte aus, um Ihre [!DNL Adobe Commerce Optimizer]-
    - **Umgebungstyp**: Beginnen Sie zum Testen mit **Sandbox**-Umgebung
    - **Region**: Wählen Sie Ihre bevorzugte Region aus
 
-1. Klicken Sie **Instanz hinzufügen**.
+1. Klicken Sie auf **[!UICONTROL Add Instance]**.
 
    Die Cloud Manager wird aktualisiert und enthält jetzt auch Ihre neue Instanz. Weitere Informationen zum Zugriff und zur Verwaltung finden Sie unter [Verwalten einer Instanz](#manage-instances).
 
@@ -105,7 +105,7 @@ Administratoren verwalten Instanzen, Benutzer und Unternehmenseinstellungen.
 | **Benutzer verwalten** | Hinzufügen von Benutzern, Entwicklern und Administratoren | [Benutzerverwaltung](./user-management.md) |
 | **Instanzen erstellen** | Einrichten von Sandbox- und Produktionsumgebungen | [Instanz erstellen](#step-1-create-an-instance) |
 | **Verwalten von Instanzen** | Status überprüfen, Instanznamen und Beschreibung aktualisieren und wichtige URLs für den Anwendungs- und API-Zugriff abrufen | [Verwalten von Instanzen](#manage-instances) |
-| **Zugriff konfigurieren** | Einrichten von Katalogansichten und Richtlinien | [Katalogansichten](./setup/catalog-view.md) |
+| **Zugriff konfigurieren** | Richten Sie Katalogansichten und Richtlinien ein und erstellen Sie optional eine [private Katalogansicht](./setup/private-catalog-view.md) um den Zugriff zu beschränken | [Katalogansichten](./setup/catalog-view.md) |
 
 ### Entwickleraufgaben
 
@@ -136,11 +136,11 @@ Verwalten von Instanzen über Commerce Cloud Manager.
 >
 >Nicht alle [!DNL Adobe Commerce Optimizer] haben Zugriff auf Cloud Manager. Der Zugriff hängt von der Rolle und den Berechtigungen ab, die dem Benutzerkonto zugewiesen sind.
 
-1. Anmelden bei [Adobe Experience Cloud](https://experience.adobe.com/).
+1. Melden Sie sich bei [Adobe Experience Cloud](https://experience.adobe.com/) an.
 
 1. Öffnen Sie Commerce Cloud Manager:
 
-   - Klicken **unter &quot;**&quot; auf **Commerce**.
+   - Klicken Sie unter **[!UICONTROL Quick access]** auf **[!UICONTROL Commerce]**.
    - Verfügbare Instanzen anzeigen.
 
 ### Instanzen suchen und filtern
@@ -178,7 +178,7 @@ Bedienfeld mit Details zur ![[!DNL Adobe Commerce Optimizer]-Instanz, das Endpun
 
 Beachten Sie die folgenden wichtigen Informationen:
 
-- **GraphQL-Endpunkt** GraphQL-Endpunkt, den Ihre Storefront verwendet, um Katalog- und Merchandising-Daten von dieser Instanz mithilfe der [Merchandising Service-API abzufragen](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=„_blank}
+- **GraphQL-Endpunkt** GraphQL-Endpunkt, den Ihre Storefront verwendet, um Katalog- und Merchandising-Daten aus dieser Instanz mithilfe der [Merchandising Service-API abzufragen](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target="_blank"}
 - **Katalog-Endpunkt** REST-API-Endpunkt, mit dem Sie Produkte und Preise aus Ihrem Commerce- oder PIM-System in Adobe Commerce Optimizer aufnehmen. Siehe [Datenaufnahme-API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)
 - **Commerce Optimizer-URL** Öffnet die Admin-Benutzeroberfläche von [Adobe Commerce Optimizer &#x200B;](overview.md)Studio&rbrace; zum Konfigurieren und Verwalten von Katalogansichten, Richtlinien und Merchandising.
 - **Instanz-ID**: Eindeutiger Bezeichner (Mandanten-ID) für diese Adobe Commerce Optimizer-Instanz, der von Storefronts, APIs und Tools zur Verbindung mit der richtigen Umgebung verwendet wird.
@@ -193,9 +193,9 @@ Wenn Sie Entwickler sind, benötigen Sie diese Details, um Ihre Entwicklungsumge
 
 Aktualisieren Sie den Instanznamen und die Beschreibung nach Bedarf.
 
-1. Klicken Sie auf **Bearbeiten**-Symbol neben einem Instanznamen.
-1. Aktualisieren Sie den **Instanznamen** und **Beschreibung** nach Bedarf.
-1. Klicken Sie **Speichern**.
+1. Klicken Sie auf das Symbol **[!UICONTROL Edit]** neben einem Instanznamen.
+1. Aktualisieren Sie die **[!UICONTROL Instance name]** und **[!UICONTROL Description]** nach Bedarf.
+1. Klicken Sie auf **[!UICONTROL Save]**.
 
 ## Beispieldaten hinzufügen
 

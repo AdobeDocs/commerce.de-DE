@@ -7,9 +7,9 @@ role: Developer, Admin
 level: Beginner
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für  [!DNL Adobe Commerce Optimizer]  (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
-source-git-commit: a404c2ff7cec5e72ce65d3670330b1f3f3c4702d
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Adobe Commerce Optimizer-Connector {#aco-connector}
 
-Der Adobe Commerce Optimizer-Connector ist die Brücke, die Katalog- und Preisdaten zwischen Adobe Commerce (Cloud oder On-Premise) und [!DNL Adobe Commerce Optimizer] synchronisiert. Wenn Sie den Connector aktivieren, bleibt Commerce das Aufzeichnungssystem für Produktdaten, während [!DNL Adobe Commerce Optimizer] die Produkterkennung, Empfehlungen, Merchandising-Regeln, Analysen und Headless-Storefront-Erlebnisse unterstützt.
+Der Adobe Commerce Optimizer-Connector ist die Brücke, die Katalog- und Preisdaten zwischen Adobe Commerce (Cloud oder On-Premise) und [!DNL Adobe Commerce Optimizer] synchronisiert. Wenn Sie den Connector aktivieren, bleibt Commerce das Aufzeichnungssystem für Produktdaten, während [!DNL Adobe Commerce Optimizer] die Produkterkennung, Empfehlungen, Merchandising-Regeln, Analysen und Headless-Storefront-Erlebnisse unterstützt. Informationen dazu, wer eine synchronisierte Katalogansicht abfragen kann, finden Sie unter [Private Katalogansichten](../setup/private-catalog-view.md).
 
 - [Übersicht über den Adobe Commerce Optimizer-Connector](../../aco-connector/overview.md){target="_blank"}
 - [Erste Schritte mit dem Connector](../../aco-connector/get-started.md){target="_blank"}

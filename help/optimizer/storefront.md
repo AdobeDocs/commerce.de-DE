@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 1562
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -37,20 +37,20 @@ Dieses Handbuch führt Sie durch die Einrichtung einer Storefront für Ihre [!DN
 
 * **GitHub-Konto** das Repositorys erstellen kann und für die lokale Entwicklung konfiguriert ist (github.com)
 * **[!DNL Adobe Commerce Optimizer]-Instanz** mit Beispieldaten und konfigurierten Katalogansichten und Richtlinien
-   * Siehe [Hinzufügen von Beispieldaten](get-started.md#add-sample-data) für Einrichtungsanweisungen.
+  * Siehe [Hinzufügen von Beispieldaten](get-started.md#add-sample-data) für Einrichtungsanweisungen.
 
 ### Erforderliche Instanzdaten
 
 Bevor Sie beginnen, erfassen Sie die folgenden Informationen aus Ihrer [!DNL Adobe Commerce Optimizer]:
 
 * **Mandanten-ID** (auch als Instanz-ID bezeichnet)
-   * Verfügbar auf der [Detailseite der Instanz](get-started.md#manage-instances)
+  * Verfügbar auf der [Detailseite der Instanz](get-started.md#manage-instances)
 * **GraphQL-Endpunkt** für Ihre Instanz
-   * Verfügbar auf der [Detailseite der Instanz](get-started.md#manage-instances)
+  * Verfügbar auf der [Detailseite der Instanz](get-started.md#manage-instances)
 * **Katalogansicht-ID** für die globale Katalogansicht
-   * Auf der Seite [Katalogdetails“ &#x200B;](./setup/catalog-view.md#manage-catalog-view)
+  * Auf der Seite [Katalogdetails“ &#x200B;](./setup/catalog-view.md#manage-catalog-views)
 * **Source-Gebietsschema** für Ihre Katalogansicht
-   * Die Standardeinstellung für Beispieldaten ist `en-US`
+  * Die Standardeinstellung für Beispieldaten ist `en-US`
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ Das Tool Site Creator erstellt ein vollständiges Storefront-Projekt mit den fol
 
    ![[!DNL Site Creator tool]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-1. Wählen **Neue Site erstellen (Code und Inhalt)** aus.
+1. Wählen Sie **[!UICONTROL Create New Site (Code & Content)]** aus.
 
 1. Abschließen der Site-Konfiguration:
 
@@ -89,7 +89,7 @@ Das Tool Site Creator erstellt ein vollständiges Storefront-Projekt mit den fol
    * **Site-**: Wählen Sie einen beschreibenden Namen für Ihre Storefront
    * **Commerce GraphQL-Endpunkt (optional)**: Geben Sie den GraphQL-Endpunkt für Ihre [!DNL Adobe Commerce Optimizer] ein
 
-1. Klicken Sie **Site erstellen**, um das GitHub-Repository mit dem Textbausteincode für die Storefront zu erstellen.
+1. Klicken Sie auf **[!UICONTROL Create Site]** , um das GitHub-Repository mit dem Textbausteincode für die Storefront zu erstellen.
 
    Wenn das Repository erstellt wird, werden Sie vom Site Creator aktualisiert und aufgefordert, die Code Sync -App zu installieren.
 
@@ -103,7 +103,7 @@ Das Tool Site Creator erstellt ein vollständiges Storefront-Projekt mit den fol
    * Klicken Sie auf das Menü **[!UICONTROL Select repositories]** und wählen Sie dann das von Ihnen erstellte Code-Repository für die Storefront aus.
    * Klicken Sie auf **[!UICONTROL Save]** , um Ihr Repository zu registrieren.
 
-1. Kehren Sie zum Browser-Fenster zurück, in dem der Site-Ersteller geöffnet ist, und klicken Sie auf **Site erstellen**.
+1. Kehren Sie zum Browser-Fenster zurück, in dem Site Creator geöffnet ist, und klicken Sie auf **[!UICONTROL Create Site]**.
 
    Der Site Creator kopiert den Textbausteininhalt der Storefront in die Dokumentautorenumgebung. Dieser Vorgang dauert 1-2 Minuten.
 
@@ -115,7 +115,7 @@ Das Tool Site Creator erstellt ein vollständiges Storefront-Projekt mit den fol
 
    Verwenden Sie diese Links, um Code, Inhalt und Konfiguration Ihrer Storefront zu verwalten.
 
-1. Kopieren Sie diese Links und speichern Sie sie dann zur späteren Verwendung: Klicken Sie auf **[!UICONTROL Copy].
+1. Kopieren Sie diese Links und speichern Sie sie dann zur späteren Verwendung: Klicken Sie auf **[!UICONTROL Copy]**.
 
 ## Konfigurieren der Storefront
 
@@ -140,6 +140,10 @@ Aktualisieren Sie Ihre Storefront-Konfiguration, um eine Verbindung zu Ihrer [!D
    >[!NOTE]
    >
    >Um die Preisbuch-ID zu finden, überprüfen Sie die [Konfigurationsdetails der Katalogansicht](./setup/catalog-view.md) in [!DNL Adobe Commerce Optimizer] um die zugewiesenen Preisbücher anzuzeigen. Wenn keine Preisverzeichnisse zugewiesen sind, können Sie diese Kopfzeile aus der Konfigurationsdatei entfernen. Fügen Sie sie wieder hinzu, wenn der Katalogansicht ein Preisbuch zugewiesen wurde.
+
+   >[!NOTE]
+   >
+   >Wenn die Katalogansicht aktiviert [!UICONTROL Catalog Protection], fügen Sie eine `AC-Catalog-View-Access-Token`-Kopfzeile mit einem gültigen signierten Token hinzu, oder Storefront-Anfragen an diese Katalogansicht werden abgelehnt. Siehe [Private Katalogansichten](./setup/private-catalog-view.md).
 
 1. Speichern Sie die Konfigurationsdatei.
 
@@ -228,7 +232,7 @@ Bevor Sie mit den nächsten Schritten fortfahren, stellen Sie sicher, dass Ihre 
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Auf mindestens einer Produktdetailseite werden vollständige Informationen angezeigt<br>
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Die Suchfunktion gibt relevante Ergebnisse zurück<br>
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Produktbilder werden korrekt geladen<br>
-![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Konfigurationswerte stimmen mit Ihren Instanzeinstellungen überein<br>
+<br>
 
 ### Hilfe erhalten
 

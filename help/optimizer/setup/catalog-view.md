@@ -1,5 +1,5 @@
 ---
-title: Katalogansicht
+title: Katalogansichten
 description: Erfahren Sie, was Katalogansichten sind und wie Sie sie erstellen, um Ihren Produktkatalog nach Geschäftsstruktur, Richtlinien und Preisen zu organisieren.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
@@ -20,16 +20,17 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+nudge: true
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 1210
+source-wordcount: 1276
 ht-degree: 0%
 
 ---
 
 # Katalogansichten für Merchandising-Services
 
-Katalogansichten sind die Grundlage [!DNL Adobe Commerce Optimizer] Merchandising-Services, mit denen Sie Ihren Produktkatalog nach Geschäftsstruktur, Richtlinien und Preisen organisieren können. Dieses flexible Datenmodell unterstützt Szenarien mit mehreren Marken, mehreren Geschäftseinheiten und mehreren Sprachen bei gleichzeitiger Wahrung der betrieblichen Effizienz.
+Eine Katalogansicht definiert die Produkte und Preise, die ein Kunde abrufen kann. Es kombiniert Katalogquellen, Katalogschichten, Richtlinien und Preisbücher, um verschiedene Marken, Regionen, Geschäftseinheiten oder Kanäle zu unterstützen.
 
 ## Was sind Katalogansichten?
 
@@ -39,26 +40,30 @@ Katalogansichten definieren, wie Ihr Produktkatalog organisiert und angezeigt wi
 - **Welche Preise werden angezeigt** durch verknüpfte Preisbücher
 - **Filterung von Produkten** Verwendung von Richtlinien (Attribute wie Marke, Modell, Kategorie)
 - **Was [Katalogquelle](catalog-sources.md) wird basierend** Attributen wie „locale“ verwendet
+- **Wer kann auf die Daten der Ansicht zugreifen** über [Katalogschutz](private-catalog-view.md) und [eingeschränkte Zugriffsschlüssel](restricted-access-keys.md)
 
-Stellen Sie sich Katalogansichten als verschiedene „Linsen“ vor, durch die Kunden Ihren Katalog sehen. Beispiel:
+Sie können beispielsweise separate Katalogansichten erstellen für:
 
-- In einer Händlerkatalogansicht werden möglicherweise nur Produkte angezeigt, die für diesen Händler verfügbar sind
-- In einer regionalen Katalogansicht können Produkte und Preise angezeigt werden, die für ein geografisches Gebiet spezifisch sind
-- In einer Markenkatalogansicht werden möglicherweise nur Produkte einer bestimmten Marke angezeigt
+- Eine Marke oder Geschäftseinheit
+- Eine geografische Region
+- Ein Händler- oder Partnerkanal
+- Ein Kundensegment mit bestimmten Preisen
 
 ## Erstellen einer Katalogansicht
 
+Bereiten Sie vor dem Erstellen einer Katalogansicht die folgenden Elemente nach Bedarf vor:
+
+- Eine [Katalogquelle](catalog-sources.md)
+- [Richtlinien](policies.md) die Produktfilter definieren
+- [Katalogebenen](catalog-layer.md) wenn Sie Produktattribute überschreiben müssen
+- [Preisbücher](pricebooks.md) für die in der Ansicht angezeigten Preise
+- [Schlüssel mit eingeschränktem Zugriff](restricted-access-keys.md) wenn Sie eine private Katalogansicht erstellen möchten
+
+### Konfiguration
+
 In diesem Abschnitt erstellen Sie eine Katalogansicht, wählen eine [Richtlinie](policies.md) und ein [Preisbuch](pricebooks.md).
 
-Bevor Sie eine Katalogansicht erstellen, stellen Sie sicher, dass Sie Folgendes haben:
-
-- [Erstellte Richtlinien](policies.md) um Produktfilter zu definieren.
-
-- [Definierte Katalogebenen](catalog-layer.md) um Varianten Ihrer Produkte zu definieren.
-
-- [Aufgenommene Preisbücher](pricebooks.md) für die Preisgestaltung.
-
-1. Navigieren Sie im linken Menü zu _Store-Einrichtung_ und klicken Sie auf **[!UICONTROL Catalog views]**.
+1. Gehen Sie im linken Menü zu **[!UICONTROL Store setup]** und klicken Sie auf **[!UICONTROL Catalog views]**.
 
 1. Klicken Sie auf **[!UICONTROL Create catalog view]**. &#x200B;
 
@@ -66,14 +71,20 @@ Bevor Sie eine Katalogansicht erstellen, stellen Sie sicher, dass Sie Folgendes 
 
    - **Name** - Geben Sie den Namen der Katalogansicht ein, z. B. `Celport`. &#x200B;
    - **Katalogquellen** - Wählen Sie die [Katalogquelle](catalog-sources.md), z. B. `en-US`.
-   - **Katalogebenen** Überprüfen der aufgenommenen Ebenen und der Priorität.
+   - **Katalogebenen** - Überprüfen Sie aufgenommene Ebenen und deren Priorität.
    - **Richtlinien** - Wählen Sie in der Dropdown-Liste die entsprechenden Richtlinien aus. Beispiel: „Marke“, „Modell“. &#x200B;Stellen Sie sicher, dass Sie bereits [eine Richtlinie erstellt haben](policies.md).
 
 1. Wählen Sie das Preisbuch aus, das mit der Katalogansicht verknüpft werden soll.
 
-   - **Alle verfügbaren Preisverzeichnisse verwenden** - Mit dieser Option werden die Preisdaten aus allen verfügbaren Preisverzeichnissen abgerufen.
-   - **Nur ausgewählte Preisbücher zulassen** - Mit dieser Option wird das Dialogfeld **Zulässige Preisbücher hinzufügen** angezeigt, in dem Sie auswählen können, welches spezifische Preisbuch für die Katalogansicht verwendet werden soll.
-   - **Preise deaktivieren**-Diese Option ist derzeit nicht verfügbar.
+   - **Alle verfügbaren Preislisten verwenden** - Mit dieser Option werden Preisdaten aus allen verfügbaren Preislisten abgerufen.
+   - **Nur ausgewählte Preisbücher zulassen** - Diese Option zeigt das Dialogfeld **Zulässige Preisbücher hinzufügen** an. In diesem Dialog können Sie auswählen, welches Preisbuch für die Katalogansicht verwendet werden soll.
+   - **Preise deaktivieren** - Diese Option ist derzeit nicht verfügbar.
+
+   >[!NOTE]
+   >
+   >Eine Preisbuch-ID steuert, welche Preisfindung angefordert wird. Der Zugriff auf die Katalogansicht wird dadurch nicht eingeschränkt. Um den Zugriff einzuschränken, aktivieren Sie den Katalogschutz, um eine [private Katalogansicht“ &#x200B;](private-catalog-view.md) erstellen.
+
+1. (Optional) Schalten Sie **[!UICONTROL Catalog Protection]** auf **[!UICONTROL Enabled]** um, um die Daten dieser Katalogansicht auf Clients mit einem gültigen signierten Token zu beschränken. Siehe [Schützen einer &#x200B;](private-catalog-view.md#protect-a-catalog-view)) für Einrichtungsschritte.
 
 1. Klicken Sie auf **[!UICONTROL Add]** , um die Katalogansicht mit den verknüpften Preisbüchern und Richtlinien zu erstellen.
 
@@ -87,41 +98,42 @@ Sie können eine Katalogansicht angeben, wenn Sie [Empfehlungseinheiten erstelle
 
 ## Katalogebenen
 
-Mit Katalogebenen können Sie Produktdaten in einer Katalogansicht ändern, ohne die ursprünglichen Quelldaten zu ändern. Ebenen wenden Änderungen an bestimmten Produktattributen an, z. B. Name, Beschreibung, Bilder, Links und Metadaten, indem eine Ebene über Ihrem Basiskatalog erstellt wird. Ihre ursprünglichen Produktdaten bleiben intakt, sodass Sie Produkte sicher anpassen und Änderungen jederzeit rückgängig machen können.
+Mit Katalogschichten können Sie ausgewählte Produktattribute überschreiben, ohne die Quellkatalogdaten zu ändern. Verwenden Sie Ebenen, um Namen, Beschreibungen, Bilder, Links oder Metadaten für eine Katalogansicht anzupassen.
 
-Häufige Anwendungsfälle für Katalogebenen sind:
+Siehe [Katalogebenen](catalog-layer.md).
 
-- **SEO-Optimierung** - Überschreiben von Produktmetadaten-Titeln und -Beschreibungen basierend auf KI-Empfehlungen von [Sites Optimizer](../manage-results/opportunities.md)
-- **Saisonale Kampagnen** - Aktualisieren Sie vorübergehend Produktnamen, Beschreibungen oder Bilder für Werbeaktionen
-- **Regionale Anpassung** - Anzeige unterschiedlicher Produktinformationen basierend auf geografischem Standort oder Sprache
-- **A/B-Tests** - Testen Sie verschiedene Produktpräsentationen, um die Konversionsraten zu optimieren
-- **Mehrmarken-Management** - Passen Sie Produktattribute für verschiedene Ansichten des Markenkatalogs an.
+## Erstellen einer privaten Katalogansicht
 
-Weitere Informationen zum Erstellen, Verwalten und Priorisieren von Katalogebenen finden Sie unter [Katalogebenen](catalog-layer.md).
+Standardmäßig ist eine Katalogansicht für Client-Programme öffentlich, die auf die GraphQL-Merchandising-API zugreifen können. Um den Zugriff einzuschränken, konfigurieren Sie eine private Katalogansicht, indem Sie **[!UICONTROL Catalog Protection]** aktivieren.
 
-## Katalogansicht verwalten
+Informationen zum Schützen einer Katalogansicht und zum Überprüfen, ob der Zugriff erzwungen wird, finden Sie unter [Private Katalogansichten](private-catalog-view.md).
 
-Befolgen Sie diese Anweisungen, um die Eigenschaften vorhandener Katalogansichten zu aktualisieren oder anzuzeigen.
+## Katalogansichten verwalten
 
-### Katalogansicht bearbeiten
+Gehen Sie wie folgt vor, um die Eigenschaften vorhandener Katalogansichten zu aktualisieren oder anzuzeigen.
 
-1. Suchen Sie im Arbeitsbereich *Katalogansichten* die Katalogansicht in dem Raster, das Sie bearbeiten möchten, und klicken Sie auf **…**, um das Aktionsmenü zu öffnen.
-1. Klicken Sie **Bearbeiten**, um auf den Editor für die Katalogansicht zuzugreifen.
-1. Aktualisieren Sie den Namen, die Katalogquellen, Richtlinien und Preisbuchinformationen nach Bedarf.
-1. Speichern Sie die Änderungen.
+### Bearbeiten einer Katalogansicht
 
-### Katalogansicht löschen
+1. Suchen Sie im **[!UICONTROL Catalog views]** Arbeitsbereich die Katalogansicht.
+1. Um das Menü Aktionen zu öffnen, wählen Sie (**[!UICONTROL ...]**) aus.
+1. Wählen Sie **[!UICONTROL Edit]** aus, um auf den Editor für die Katalogansicht zuzugreifen.
+1. Aktualisieren Sie den Namen, die Katalogquellen, die Richtlinien, die Preisbuchinformationen und die **[!UICONTROL Catalog Protection]** (einschließlich zugewiesener eingeschränkter Zugriffsschlüssel) nach Bedarf.
+1. Klicken Sie auf **[!UICONTROL Save]**.
 
-1. Suchen Sie im Arbeitsbereich *Katalogansichten* die Katalogansicht in dem Raster, das Sie bearbeiten möchten, und klicken Sie auf **…**, um das Aktionsmenü zu öffnen.
-1. Klicken Sie **Löschen**.
+### Löschen einer Katalogansicht
+
+1. Suchen Sie im **[!UICONTROL Catalog views]** Arbeitsbereich die Katalogansicht.
+1. Um das Menü Aktionen zu öffnen, wählen Sie (**[!UICONTROL ...]**) aus.
+1. Wählen Sie **[!UICONTROL Delete]** aus.
+1. Bestätigen Sie den Löschvorgang.
 
    Wenn das Bestätigungsdialogfeld angezeigt wird, klicken Sie auf **[!UICONTROL Delete]**.
 
-### Details anzeigen
+### Details zur Katalogansicht anzeigen
 
-Diese Option bietet eine schnelle Möglichkeit, alle Parameter der Katalogansicht anzuzeigen, während Sie in der Tabelle *Katalogansichten* bleiben.
+Diese Option bietet eine schnelle Möglichkeit, alle Parameter der Katalogansicht anzuzeigen, während Sie auf der **[!UICONTROL Catalog views]** bleiben.
 
-Suchen Sie im Arbeitsbereich *Katalogansichten* die Katalogansicht in dem Raster, das Sie bearbeiten möchten, und klicken Sie auf das Symbol ![Informationen](../assets/info-icon.png).
+Wählen Sie im Arbeitsbereich **[!UICONTROL Catalog views]** das Symbol ![Informationen](../assets/info-icon.png), damit eine Katalogansicht ihre Konfigurationsdetails anzeigt.
 
 ![Details zur Katalogansicht](../assets/catalog-view-details.png)
 
@@ -154,7 +166,9 @@ Die erfassten Daten erstellen einen einheitlichen Basiskatalog in der Katalog-Se
 Mehrere Katalogansichten stellen verschiedene Geschäftseinheiten dar (z. B. „Texas Retail“, „Texas Retail Seasonal„). Gebietsschemata, Richtlinien und Preisverzeichnisse können aus Gründen der Flexibilität über Katalogansichten hinweg gemeinsam genutzt werden.
 
 **4. Multi-Channel-Versand**
-Die gefilterten Katalogdaten werden für verschiedene Ziele bereitgestellt, einschließlich Edge Delivery Services-Storefronts, Marktplätzen, Werbeplattformen und benutzerdefinierten Mikro-Storefronts. Weitere Informationen zur Bereitstellung von Katalogdaten finden Sie unter [Entwicklerdokumentation](https://developer.adobe.com/commerce/services/optimizer/).
+Die gefilterten Katalogdaten werden an Ziele wie Edge Delivery Services, Marktplätze, Werbeplattformen und benutzerdefinierte Mikro-Storefronts bereitgestellt. Weitere Informationen zur Bereitstellung von Katalogdaten finden Sie unter [Entwicklerdokumentation](https://developer.adobe.com/commerce/services/optimizer/).
+
+Wenn eine Katalogansicht aktiviert **[!UICONTROL Catalog Protection]**, erfordert der Versand an dieses Ziel ein gültiges signiertes Token von einem zugewiesenen [eingeschränkten Zugriffsschlüssel](restricted-access-keys.md). Nicht autorisierte Anfragen werden abgelehnt, anstatt Katalogdaten zu erhalten.
 
 ### Schlüsselkomponenten
 
@@ -164,6 +178,7 @@ Die gefilterten Katalogdaten werden für verschiedene Ziele bereitgestellt, eins
 | **Richtlinie** | Produktfilter basierend auf Attributen | Marke, Modell, Kategorie |
 | **Gebietsschema** | Einstellung für Sprache/Region | en-US, fr-CA, es-MX |
 | **Preisbuch** | Preisstruktur | Einzelhandel, Großhandel, Mitarbeiter |
+| **Schlüssel für eingeschränkten Zugriff** | Anmeldedaten mit signiertem Token, die Zugriff auf eine geschützte Katalogansicht gewähren | Partner-Portal-Schlüssel, B2B-Preisschlüssel |
 
 ### Datenfluss
 
@@ -180,6 +195,7 @@ Die gefilterten Katalogdaten werden für verschiedene Ziele bereitgestellt, eins
 | **skalierbar** | Effiziente Verwaltung von mehr als 200 Millionen SKUs |
 | **Multi-Channel** | Kataloge für Storefronts, Marktplätze und Werbeplattformen bereitstellen |
 | **Echtzeit-Updates** | Schnelles Aktualisieren von Katalogdaten für Promotions und Kampagnen |
+| **Private Katalogansichten** | Katalogansicht mithilfe der Validierung signierter Token auf autorisierte Clients beschränken |
 
 ## Anwendungsszenarien
 
@@ -198,7 +214,7 @@ Die gefilterten Katalogdaten werden für verschiedene Ziele bereitgestellt, eins
 **Challenge**: Unterschiedliche Preise und Lagerbestände pro Standort<br>
 **Lösung**: Standortbasierte Katalogansichten mit regionsspezifischen Richtlinien
 
->[!INFO]
+>[!NOTE]
 >
 >Detaillierte Informationen zur Aufnahme und Bereitstellung von Katalogdaten finden Sie unter [Entwicklerdokumentation](https://developer.adobe.com/commerce/services/optimizer/).
 
@@ -206,5 +222,7 @@ Die gefilterten Katalogdaten werden für verschiedene Ziele bereitgestellt, eins
 
 - [Katalogquellen](catalog-sources.md) - Definieren des maßgeblichen Umfangs von Produkten, Attributen und Kategorien für das Verhalten bei Suche, Filterung und Sortierung
 - [Katalogebenen](catalog-layer.md) Erfahren Sie, wie Sie Produktdaten ändern, ohne die ursprüngliche Quelle zu ändern
+- [Private Katalogansichten](private-catalog-view.md) - Erstellen Sie eine private Katalogansicht, um den Zugriff auf autorisierte Clients zu beschränken
+- [Schlüssel mit eingeschränktem Zugriff](restricted-access-keys.md) - Erstellen, Zuweisen und Drehen der Schlüssel zum Signieren von Token für den Katalogschutz
 - [Richtlinien](policies.md) - Erstellen von Richtlinien zum Filtern von Produkten in Katalogansichten
 - [Preisbücher](pricebooks.md) - Verwalten von Preisstrukturen für verschiedene Kundensegmente

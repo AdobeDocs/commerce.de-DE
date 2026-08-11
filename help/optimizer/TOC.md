@@ -6,10 +6,10 @@ role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
 nudge: true
-source-git-commit: de2af14a02ba21bfedd4fa6841f0f8b544b013cc
+source-git-commit: de75e0c9be95ff421af438dd6dc491732e2effb5
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 11%
+source-wordcount: '128'
+ht-degree: 10%
 
 ---
 
@@ -22,53 +22,55 @@ ht-degree: 11%
 - [Geteilte Verantwortung](shared-responsibility.md)
 - [Beschränkungen und Grenzen](boundaries-limits.md)
 - Ergebnisse verwalten {#manage-results}
-   - [Opportunities](./manage-results/opportunities.md)
-   - [Erfolgsmetriken](./manage-results/success-metrics.md)
-   - [Suchleistung](./manage-results/search-performance.md)
-   - {hide-from-toc}[Suche nach Abgleich und Rangfolge](./manage-results/search-relevance-matching.md)
-   - [Recommendations-Leistung](./manage-results/recommendation-performance.md)
+  - [Opportunities](./manage-results/opportunities.md)
+  - [Erfolgsmetriken](./manage-results/success-metrics.md)
+  - [Suchleistung](./manage-results/search-performance.md)
+  - {hide-from-toc}[Suche nach Abgleich und Rangfolge](./manage-results/search-relevance-matching.md)
+  - [Recommendations-Leistung](./manage-results/recommendation-performance.md)
 - Verkauf von Waren {#merchandising}
-   - [Überblick](./merchandising/overview.md)
-   - Recommendations {#recommendations}
-      - [Überblick](./merchandising/recommendations/overview.md)
-      - [Erstellen und verwalten](./merchandising/recommendations/create.md)
-      - [Filter](./merchandising/recommendations/filters.md)
-      - [Typen](./merchandising/recommendations/types.md)
-      - [Best Practices](./merchandising/recommendations/best-practice.md)
-   - Merchandising-Regeln {#rules}
-      - [Überblick](./merchandising/rules/overview.md)
-      - [Workspace](./merchandising/rules/workspace.md)
-      - [Erstellen und verwalten](./merchandising/rules/add.md)
-      - [Best Practices](./merchandising/rules/best-practice.md)
-   - Facetten {#facets}
-      - [Überblick](./merchandising/facets/overview.md)
-      - [Workspace](./merchandising/facets/workspace.md)
-      - [Erstellen und verwalten](./merchandising/facets/add.md)
-      - [Typen](./merchandising/facets/type.md)
-      - [Best Practices](./merchandising/facets/best-practice.md)
-   - Synonyme {#synonyms}
-      - [Überblick](./merchandising/synonyms/overview.md)
-      - [Erstellen und verwalten](./merchandising/synonyms/add.md)
-      - [Typen](./merchandising/synonyms/type.md)
-      - [Best Practices](./merchandising/synonyms/best-practice.md)
+  - [Überblick](./merchandising/overview.md)
+  - Recommendations {#recommendations}
+    - [Überblick](./merchandising/recommendations/overview.md)
+    - [Erstellen und verwalten](./merchandising/recommendations/create.md)
+    - [Filter](./merchandising/recommendations/filters.md)
+    - [Typen](./merchandising/recommendations/types.md)
+    - [Best Practices](./merchandising/recommendations/best-practice.md)
+  - Merchandising-Regeln {#rules}
+    - [Überblick](./merchandising/rules/overview.md)
+    - [Workspace](./merchandising/rules/workspace.md)
+    - [Erstellen und verwalten](./merchandising/rules/add.md)
+    - [Best Practices](./merchandising/rules/best-practice.md)
+  - Facetten {#facets}
+    - [Überblick](./merchandising/facets/overview.md)
+    - [Workspace](./merchandising/facets/workspace.md)
+    - [Erstellen und verwalten](./merchandising/facets/add.md)
+    - [Typen](./merchandising/facets/type.md)
+    - [Best Practices](./merchandising/facets/best-practice.md)
+  - Synonyme {#synonyms}
+    - [Überblick](./merchandising/synonyms/overview.md)
+    - [Erstellen und verwalten](./merchandising/synonyms/add.md)
+    - [Typen](./merchandising/synonyms/type.md)
+    - [Best Practices](./merchandising/synonyms/best-practice.md)
 - Store-Einrichtung {#setup}
-   - [Katalogquellen](./setup/catalog-sources.md)
-   - [Katalogansichten](./setup/catalog-view.md)
-   - [Katalogebenen](./setup/catalog-layer.md)
-   - [Richtlinien](./setup/policies.md)
-   - [Preisbücher](./setup/pricebooks.md)
-   - [Produktvisualisierung](./setup/product-visuals.md)
-   - [Datensynchronisation](./setup/data-sync.md)
-   - [Semantische Suche](./setup/semantic-search.md)
-   - Ereignisse {#events}
-      - [Überblick](./setup/events/overview.md)
+  - [Katalogquellen](./setup/catalog-sources.md)
+  - [Katalogansichten](./setup/catalog-view.md)
+  - [Private Katalogansichten](./setup/private-catalog-view.md)
+  - [Schlüssel für eingeschränkten Zugriff](./setup/restricted-access-keys.md)
+  - [Katalogebenen](./setup/catalog-layer.md)
+  - [Richtlinien](./setup/policies.md)
+  - [Preisbücher](./setup/pricebooks.md)
+  - [Produktvisualisierung](./setup/product-visuals.md)
+  - [Datensynchronisation](./setup/data-sync.md)
+  - [Semantische Suche](./setup/semantic-search.md)
+  - Ereignisse {#events}
+    - [Überblick](./setup/events/overview.md)
 - [Schaufenster](storefront.md)
 - [Einstellungen](settings.md)
 - Anwendungsfall {#use-case}
-   - [End-to-End-Anwendungsfall für Storefront- und Katalog-Admin](./use-case/admin-use-case.md)
+  - [End-to-End-Anwendungsfall für Storefront- und Katalog-Admin](./use-case/admin-use-case.md)
 - Launch-Site {#launch}
-   - [Checkliste starten](./launch/launch-checklist.md)
+  - [Checkliste starten](./launch/launch-checklist.md)
 - Ressourcen für Entwickler {#developer}
-   - [Entwicklerhandbuch und API-Referenzen](https://developer.adobe.com/commerce/services/optimizer/)
-   - [Salesforce Commerce Connector](./developer/salesforce-connector.md)
+  - [Entwicklerhandbuch und API-Referenzen](https://developer.adobe.com/commerce/services/optimizer/)
+  - [Salesforce Commerce Connector](./developer/salesforce-connector.md)
 - [Versionshinweise](release-notes.md)

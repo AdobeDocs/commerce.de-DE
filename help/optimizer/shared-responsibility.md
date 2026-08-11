@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 278
+source-wordcount: 290
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ Die folgenden Zusammenfassungstabellen verwenden das RACI-Modell, um die gemeins
 | Durchführen von PCI-ASV-Scans | RA | I |
 | Wiederherstellen [!DNL Adobe Commerce Optimizer] PCI-Scans | R | |
 | Verwalten von Betriebssystem- und Plattformgeheimnissen | RA | |
+| Generieren, Drehen und Widerrufen [eingeschränkten Zugriffsschlüsseln](setup/restricted-access-keys.md) und Signieren von Token für [!UICONTROL Catalog Protection] | | RA |
 | Überwachen von Backend-Sicherheitsprotokollen | RA | |
 | Steuerung des Kunden-Supports und des Zugriffs | A | R |
 | Jährliche Tests und Dokumentation des Adobe DR-Plans sowie der Sicherung und Wiederherstellung | RA | |
