@@ -30,7 +30,7 @@ Für Commerce-Instanzen mit **mehreren Websites** benötigen Sie möglicherweise
 
 Onboarding auf Website-Ebene ist nur verfügbar, wenn Ihr Store diese Anforderungen erfüllt:
 
-- [Commerce Services-Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) Einrichtung ist abgeschlossen.
+- [Commerce Services-Connector](https://experienceleague.adobe.com/de/docs/commerce/user-guides/integration-services/saas) Einrichtung ist abgeschlossen.
 - Ein PayPal-Konto ist im globalen Umfang (Standardkonfiguration) verbunden.
 
 Sie können dies bestätigen, indem Sie überprüfen, ob die folgenden Felder im Standardbereich ausgefüllt sind:
