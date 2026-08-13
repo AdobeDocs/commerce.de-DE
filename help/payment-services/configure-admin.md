@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 379345261bebe5bee9cdbcb6fd3b0ce6275df6ea
+source-git-commit: 882a39a5b0eeb616c7ca1d9e64c3fae76760afad
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3778'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 Sie können [!DNL Payment Services] mit hilfreichen Konfigurationsoptionen im Admin an Ihre Anforderungen anpassen.
 
 Wenn Sie [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] im Admin-Bereich konfigurieren, gelten diese Konfigurationen nur für die Umgebung, die im Feld _[!UICONTROL Method]_&#x200B;von&#x200B;_[!UICONTROL General Configuration]_ festgelegt ist. Alle Änderungen, die Sie in den Konfigurationsfeldern vornehmen, sind unabhängig davon, ob Sie die _[!UICONTROL Method]_&#x200B;wechseln. Wenn Sie die Methode wechseln, werden Ihre Auswahlen nicht zurückgesetzt.
+
+Wenn Sie eine einzelne Commerce-Instanz mit **mehreren Websites** (und Store-Ansichten) ausführen, benötigen Sie möglicherweise ein **anderes PayPal-Händlerkonto** für einige Websites. [!DNL Payment Services] können Sie das PayPal **Onboarding im Administrator abschließen,** die Instanz eingerichtet und im (**)** globalen) Umfang integriert wurde. Unter [Verbinden eines anderen PayPal-Kontos für eine Website](connect-website-account.md) finden Sie die Voraussetzungen und Schritte zum Onboarding eines PayPal-Kontos für eine Website.
 
 ## Allgemeine Konfiguration
 
@@ -56,11 +58,11 @@ Sie können [!DNL Payment Services] für Ihren Store und Ihre _[!UICONTROL Merch
 
 Wenn Sie eine einzelne Commerce-Instanz mit **mehreren Websites** (und Store-Ansichten) ausführen, benötigen Sie möglicherweise ein **anderes PayPal-Händlerkonto** für einige Websites. [!DNL Payment Services] können Sie das PayPal **Onboarding im Administrator abschließen,** die Instanz eingerichtet und im (**)** globalen) Umfang integriert wurde.
 
-In früheren Versionen erforderte die Zuordnung von PayPal-Konten auf Website-Ebene normalerweise, dass Sie [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#Solution) oder Ihren Adobe-Support kontaktieren. Verwenden Sie die Aktion **[!UICONTROL Connect different account for website]** , wenn Sie die folgenden Voraussetzungen erfüllen.
+In früheren Versionen erforderte die Zuordnung von PayPal-Konten auf Website-Ebene normalerweise, dass Sie [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#Solution) oder Ihren Adobe-Support kontaktieren. Verwenden Sie die Aktion **[!UICONTROL Connect different account]** , wenn Sie die folgenden Voraussetzungen erfüllen.
 
 ### Voraussetzungen (globaler Umfang)
 
-Das **[!UICONTROL Connect different account for website]**-Steuerelement ist nur in einem **Website**-Bereich verfügbar und aktiviert **wenn** der folgenden Bedingungen bereits für die Instanz in der Konfiguration **default/global** zutreffen:
+Das **[!UICONTROL Connect different account]**-Steuerelement ist nur in einem **Website**-Bereich verfügbar und aktiviert **wenn** der folgenden Bedingungen bereits für die Instanz in der Konfiguration **default/global** zutreffen:
 
 1. [Commerce Services-Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas) Einrichtung ist abgeschlossen.
 
@@ -70,7 +72,7 @@ Das **[!UICONTROL Connect different account for website]**-Steuerelement ist nur
 
 1. Ein **global** PayPal-Händlerkonto ist **verbunden** und Sie haben **PayPal-Onboarding abgeschlossen** für diesen Standardbereich (die **[!UICONTROL PayPal Merchant ID]** und zugehörigen Felder werden für den globalen Bereich ausgefüllt, wie unter [Allgemeine Konfiguration](#general-configuration)).
 
-   Wenn das globale Onboarding nicht abgeschlossen ist, schalten Sie den Konfigurationsbereich auf eine **[!UICONTROL Website]** um, öffnen Sie **[!UICONTROL Payment Services]** in **[!UICONTROL Payment Methods]** und die **[!UICONTROL Connect different account for website]**-Schaltfläche ist **deaktiviert**; schließen Sie zuerst die Connector-Einrichtung und **global** das Onboarding mit PayPal ab.
+   Wenn das globale Onboarding nicht abgeschlossen ist, schalten Sie den Konfigurationsbereich auf eine **[!UICONTROL Website]** um, öffnen Sie **[!UICONTROL Payment Services]** in **[!UICONTROL Payment Methods]** und die **[!UICONTROL Connect different account]**-Schaltfläche ist **deaktiviert**; schließen Sie zuerst die Connector-Einrichtung und **global** das Onboarding mit PayPal ab.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -444,6 +446,6 @@ In [!UICONTROL Payment Services] können Sie mehrere PayPal-Konten innerhalb von
 
 Weitere [&#x200B; zur Hierarchie von Websites, Stores und Store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de)Ansichten finden Sie unter „Site, Store und View Scope“.
 
-Um ein (**) anderes PayPal-Konto mit einer einzelnen Website** verbinden, verwenden Sie vom Administrator nach Abschluss **global** Commerce Services und des PayPal-Onboarding-Vorgangs **[!UICONTROL Connect different account for website]** auf **[!UICONTROL Website]**. Siehe [Verbinden eines anderen PayPal-Kontos für eine Website](#connect-a-different-paypal-account-for-a-website).
+Um ein (**) anderes PayPal-Konto mit einer einzelnen Website** verbinden, verwenden Sie vom Administrator nach Abschluss **global** Commerce Services und des PayPal-Onboarding-Vorgangs **[!UICONTROL Connect different account]** auf **[!UICONTROL Website]**. Siehe [Verbinden eines anderen PayPal-Kontos für eine Website](#connect-a-different-paypal-account-for-a-website).
 
 Siehe [Befehlszeilenkonfiguration](configure-cli.md#configure-scope-via-cli) für weitere Informationen zur Konfiguration von Bereichen für mehrere PayPal-Konten über die CLI.

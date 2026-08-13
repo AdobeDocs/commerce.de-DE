@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 477802467d8f60f05137d60e0d703c0302de5144
+source-git-commit: ecaeba0d36376bf7f9ac864135cbf225c7fd8634
 workflow-type: tm+mt
-source-wordcount: 5371
+source-wordcount: 5345
 ht-degree: 0%
 
 ---
@@ -50,11 +50,11 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 
 ## August 2026 - #1 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produktion]{type=Neutral tooltip="Die aufgelisteten Elemente sind derzeit in Produktionsumgebungen verfügbar."}
 
-Die folgenden Elemente werden am 11. August 2026 in der Produktionsumgebung veröffentlicht.
+Die folgenden Artikel wurden am 12. August 2026 in der Produktionsumgebung veröffentlicht.
 
 >[!BEGINSHADEBOX]
 

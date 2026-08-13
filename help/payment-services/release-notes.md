@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 2abebf247603b37a28eb6f4653d63e83aa5d9fd5
 workflow-type: tm+mt
-source-wordcount: '5400'
+source-wordcount: '5483'
 ht-degree: 0%
 
 ---
@@ -116,6 +116,19 @@ _28. Juni 2021_
 >[!NOTE]
 >
 > Es werden häufig Versionen veröffentlicht, um bei Bedarf neue Funktionen und Fehlerbehebungen bereitzustellen. Der Veröffentlichungszeitplan ist nicht festgelegt.
+
+
+## v2.16.1
+
+_10. August 2026_
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-6769 --> Es wurde ein zeitweiliges Problem auf EDS-Storefronts behoben, die PayPal-Smart-Buttons verwenden und dazu führten, dass einige Zahlungsmethoden auf der Checkout-Seite nicht verfügbar waren.
+
+## v2.16.0
+
+_27. Juli 2026_
+
+![Neues Problem](../assets/new.svg)<!-- Issue PAY-6510 --> Händler können jetzt das Onboarding eines anderen PayPal-Kontos auf der Website direkt von der [!DNL Commerce Admin] aus selbst bedienen. [!DNL Payment Services] Die Startseite enthält jetzt eine **[!UICONTROL Connect a different PayPal account for a website]**-Schaltfläche, die für Zahlungsmethoden zur Seite „Admin-Konfiguration“ weiterleitet. Weitere [&#x200B; finden Sie unter „Verbinden eines anderen PayPal](connect-website-account.md)Kontos für eine Website“.
 
 ## v2.15.0
 
