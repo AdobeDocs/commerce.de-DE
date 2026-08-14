@@ -3,9 +3,9 @@ title: Versionshinweise zur AEM Assets-Integration
 description: Informationen zu allen AEM Assets-Integrationsversionen finden Sie in den Versionshinweisen .
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e269b5a3bbd246530ba77d8c50467e2b0f4e2f7e
+source-git-commit: afef108e512c69047a0420566a498dab164c207e
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1491'
 ht-degree: 0%
 
 ---
@@ -38,13 +38,29 @@ _11. Februar 2025_
 
 +++
 
+## v1.4.4
+
+_30. Juli 2026_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
+
+![Neues Problem](../assets/new.svg) Jetzt können Händler bestimmte Shop-Ansichten für ein AEM-Asset ausblenden. Wenn AEM Assets ein Bild für eine oder mehrere Store-Ansichten als ausgeblendet markiert, schließt Commerce dieses Bild in diesen Store-Ansichten aus der Storefront aus. Die Admin-Produktmediensammlung enthält jetzt ein **[!UICONTROL Store View Visibility]**, das anzeigt, in welchen Store-Ansichten das Bild ausgeblendet wird. <!-- Issue ACAP-1308 -->
+
+## v1.4.2
+
+_10. Juli 2026_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
+
+![Problem behoben](../assets/fix.svg) Es wurde ein Problem behoben, bei dem Asset-Rollenattribute (Bild, kleines Bild, Miniaturansicht und Farbfeld-Bild) leere Werte auf Speicheransichts-Ebene ansammeln konnten, was dazu führte, dass Bilder in nicht standardmäßigen Speicheransichten fehlten. Diese Attribute haben nun einen globalen Umfang und vorhandene leere Speicheransichtszeilen werden entfernt, sodass Bilder korrekt von der standardmäßigen Speicheransicht erben. <!-- Issue ACCS-1401 -->
+
 ## v1.4.1
 
 _15. Juni 2026_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
 
-![Problem behoben](../assets/fix.svg) Es wurde ein Problem behoben, bei dem die Kopfzeile des **[!UICONTROL OBSERVABILITY]** Abschnitts im Menü Admin **[!UICONTROL System]** fehlte, als die AEM Assets-Integration aktiviert wurde, sodass der **[!UICONTROL Subscription List]** Link ohne Überschrift angezeigt wurde. <!--ACAP-1302 -->
+![Problem behoben](../assets/fix.svg) Es wurde ein Problem behoben, bei dem die Kopfzeile des **[!UICONTROL OBSERVABILITY]** Abschnitts im Menü Admin **[!UICONTROL System]** fehlte, als die AEM Assets-Integration aktiviert wurde, sodass der **[!UICONTROL Subscription List]** Link ohne Überschrift angezeigt wurde. <!-- Issue ACAP-1302 -->
 
 ![Problem behoben](../assets/fix.svg) Es wurde ein Problem behoben, bei dem beim Speichern der AEM Assets-Integrationskonfiguration in Instanzen, in denen die Dynamic Media Open API nicht aktiviert ist, eine PHP-Rohwarnung anstelle einer klaren Meldung angezeigt wurde. Jetzt wird eine klare, allgemeine Fehlermeldung angezeigt. <!-- ACAP-1298 -->
 
