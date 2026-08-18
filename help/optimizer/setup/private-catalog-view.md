@@ -3,23 +3,14 @@ title: Private Katalogansichten
 description: Erfahren Sie, wie Sie eine private Katalogansicht erstellen, indem Sie den Katalogschutz aktivieren, sodass nur Anfragen mit einem gültigen signierten Token die Produkt- und Preisdaten abrufen können.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 16e3405e1500dfd39603b1e300f4625e5a57cf02
 workflow-type: tm+mt
-source-wordcount: 467
+source-wordcount: 642
 ht-degree: 0%
 
 ---
@@ -28,19 +19,34 @@ ht-degree: 0%
 
 Standardmäßig ist eine [Katalogansicht](catalog-view.md) öffentlich. Aktivieren Sie den Katalogschutz für eine Katalogansicht, um den Zugriff auf Anfragen zu beschränken, die ein gültiges signiertes Token enthalten.
 
-Der Katalogschutz gilt nur für die ausgewählte Katalogansicht. Die Richtlinien, Ebenen oder Preisbücher der Ansicht werden dadurch nicht geändert.
+Der Katalogschutz gilt nur für die ausgewählte Katalogansicht. Die Richtlinien oder Ebenen der Ansicht werden dadurch nicht geändert. Sie beschränkt die Ansicht auf ein einzelnes Preisbuch - siehe [Preisbucheinschränkung bei privaten Katalogansichten](#price-book-restriction-on-private-catalog-views).
 
-Beispiele für [&#x200B; zum Schutz einer Katalogansicht finden Sie &#x200B;](restricted-access-keys.md#restricted-access-key-use-cases) Anwendungsfällen für „Schlüssel mit eingeschränktem Zugriff“.
+Beispiele für [ zum Schutz einer Katalogansicht finden Sie ](restricted-access-keys.md#restricted-access-key-use-cases) Anwendungsfällen für „Schlüssel mit eingeschränktem Zugriff“.
 
 ## Erläuterung der Schutzgrenze
 
-Der Katalogschutz gilt nur für die Katalogansicht, in der er aktiviert ist. Es schützt Katalog- und Suchanfragen, ändert jedoch nicht die Richtlinien oder Preislisten der Ansicht, schützt andere Katalogansichten oder sichert Warenkorb-, Checkout- oder Bestellvorgänge.
+Der Katalogschutz gilt nur für die Katalogansicht, in der er aktiviert ist. Es schützt Katalog- und Suchanfragen, ändert jedoch nicht die Richtlinien oder Ebenen der Ansicht, schützt andere Katalogansichten oder sichere Warenkorb-, Checkout- oder Bestellvorgänge.
 
 Das verbundene Commerce-Backend muss die Kaufberechtigung unabhängig durchsetzen.
 
+## Preisbuchbeschränkung für private Katalogansichten
+
+Eine private Katalogansicht kann nur auf ein Preisbuch verweisen. Dies unterscheidet sich von einer öffentlichen Katalogansicht, für die mehrere Preisbücher verwendet werden können.
+
+Wenn [!UICONTROL Catalog Protection] aktiviert ist, wechselt die Preisbuchauswahl im Katalogansichtsformular von einem Mehrfachauswahl-Steuerelement zu einem Einzelauswahl-Steuerelement (Optionsfeld).
+
+![Preisbuchbeschränkung für private Katalogansicht](../assets/catalog-view-private-pricebook-restrictions.png)
+
+- Wenn Sie [!UICONTROL Catalog Protection] für eine Katalogansicht aktivieren, der mehrere Preisbücher zugewiesen sind, können Sie die Ansicht erst speichern, wenn Sie alle Preisbücher bis auf ein entfernen.
+- Wenn Sie zuvor eine private Katalogansicht mit mehreren Preisbuchzuweisungen gespeichert haben, bevor diese Einschränkung bestand, wird die Konfiguration der Katalogansicht nicht automatisch geändert. Wenn Sie die Ansicht jedoch das nächste Mal bearbeiten, müssen Sie bis auf ein Preisbuch alle Änderungen entfernen, bevor Sie die Aktualisierungen speichern können.
+
+In jedem dieser Fälle zeigt [!DNL Adobe Commerce Optimizer] die folgende Validierungsmeldung an: `A protected catalog view can use only one price book. Select 'Single price book only' to continue.`
+
+Öffentliche Katalogansichten sind von dieser Einschränkung nicht betroffen und können weiterhin auf mehrere Preisbücher verweisen.
+
 ## Schützen einer Katalogansicht
 
-Bevor Sie beginnen, [&#x200B; Sie aus dem öffentlichen Schlüssel, den Ihre Client](restricted-access-keys.md)Anwendung generiert, einen Schlüssel mit eingeschränktem Zugriff.
+Bevor Sie beginnen, [ Sie aus dem öffentlichen Schlüssel, den Ihre Client](restricted-access-keys.md)Anwendung generiert, einen Schlüssel mit eingeschränktem Zugriff.
 
 1. Schalten Sie in der Katalogansicht Formular erstellen oder bearbeiten **[!UICONTROL Catalog Protection]** zu **[!UICONTROL Enabled]** um.
 
