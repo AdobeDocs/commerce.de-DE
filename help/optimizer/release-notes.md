@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 27cbf66e4851f0d21ecc039fd53aa838b4c211ba
+source-git-commit: 413d0932d402615c9e155e1650a7c8aba2c082a1
 workflow-type: tm+mt
-source-wordcount: 1365
+source-wordcount: 1522
 ht-degree: 0%
 
 ---
@@ -31,6 +31,22 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 * Aktualisierungen der [Datenaufnahme-REST-API](https://developer.adobe.com/commerce/services/reference/rest/) und der [GraphQL-API für den Datenabruf im Storefront-](https://developer.adobe.com/commerce/services/reference/graphql/).
 
   {{aco-api-updates-and-dropins}}
+
+## August 2026
+
+>[!BEGINSHADEBOX]
+
+_7. August 2026_
+
+![Neu](../assets/new.svg) **Neues `externalIds`** - Dem Catalog Service GraphQL `externalIds` hinzugefügt, sodass die mit einem Produkt verknüpfte externe Datenquelle verfügbar gemacht wird, damit Kunden der Storefront und Integration die Ursprungsdatenquelle identifizieren können. Siehe [Rückgabe externer IDs für ein Produkt](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
+<!--DATA-7307-->
+
+![Beheben](../assets/fix.svg) **Korrigieren `refineProduct` Antwort für konfigurierbare Produkte** - Es wurde ein Problem behoben, bei dem die `refineProduct` Abfrage `priceRange: null` und `roles: ["hidden"]` für bestimmte konfigurierbare Produkte zurückgab, um genaue Preis- und Sichtbarkeitsinformationen für Kunden der Storefront sicherzustellen.
+<!--COMOPT-2367-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## Juli 2026
 
@@ -95,7 +111,7 @@ _4. Mai 2026_
 
 <!--v1.53-->
 
-**Korrekte Währungsanzeige** - Die Produktpreise der Storefront zeigen jetzt den korrekten Währungscode (z. B. USD) für alle Produkttypen an. Zuvor zeigten einige Produkte `NONE` anstelle der erwarteten Währung, was zu fehlenden Preisen führte.
+**Korrekte Währungsanzeige** - Die Produktpreise der Storefront zeigen jetzt für alle Produkttypen den korrekten Währungscode an (z. B. USD). Zuvor zeigten einige Produkte `NONE` anstelle der erwarteten Währung, was zu fehlenden Preisen führte.
 
 <!--DATA-7115-->
 

@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
+source-git-commit: 1375139292fb11df9406948010916dbd2507ef4e
 workflow-type: tm+mt
-source-wordcount: 3024
+source-wordcount: 3063
 ht-degree: 0%
 
 ---
@@ -53,7 +53,13 @@ Unterstützung wird für die neueste Version bereitgestellt. Versionshinweise f�
 
 ## Storefront Catalog Service
 
-## Juni 2026
+### August 2026
+
+**Veröffentlichungsdatum:**. August 2026
+
+![Behebung](../assets/fix.svg) Es wurde ein Problem mit der `products` GraphQL-Abfrage behoben, bei dem das `title` für anpassbare Optionen (`inputOptions` und `options`) fälschlicherweise `null` anstelle des eigenen Titels der Option zurückgab, wenn das `sku` der Option leer oder nicht indiziert war. <!--DATA-7304-->
+
+### Juli 2026
 
 **Veröffentlichungsdatum:**. Juli 2026
 
@@ -77,7 +83,7 @@ Unterstützung wird für die neueste Version bereitgestellt. Versionshinweise f�
 **Veröffentlichungsdatum**: 4. Mai 2026
 <!-- v1.53 -->
 
-![Fix](../assets/fix.svg) Die Preise für Storefront-Produkte zeigen jetzt den korrekten Währungscode (z. B. USD) für alle Produkttypen an. Zuvor zeigten einige Produkte `NONE` anstelle der erwarteten Währung, was zu fehlenden Preisen führte. Diese Aktualisierung gewährleistet ein konsistentes und genaues Preis-Rendering in der Storefront.<!--DATA-7115-->
+![Fix](../assets/fix.svg) Die Preise für Storefront-Produkte zeigen jetzt für alle Produkttypen den richtigen Währungscode an (z. B. USD). Zuvor zeigten einige Produkte `NONE` anstelle der erwarteten Währung, was zu fehlenden Preisen führte. Diese Aktualisierung gewährleistet ein konsistentes und genaues Preis-Rendering in der Storefront.<!--DATA-7115-->
 
 ### April 2026
 
