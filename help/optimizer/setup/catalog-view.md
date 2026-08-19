@@ -21,9 +21,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 nudge: true
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 1276
+source-wordcount: 1317
 ht-degree: 0%
 
 ---
@@ -78,6 +78,7 @@ In diesem Abschnitt erstellen Sie eine Katalogansicht, wählen eine [Richtlinie]
 
    - **Alle verfügbaren Preislisten verwenden** - Mit dieser Option werden Preisdaten aus allen verfügbaren Preislisten abgerufen.
    - **Nur ausgewählte Preisbücher zulassen** - Diese Option zeigt das Dialogfeld **Zulässige Preisbücher hinzufügen** an. In diesem Dialog können Sie auswählen, welches Preisbuch für die Katalogansicht verwendet werden soll.
+   - **Nur ein Preisbuch** - Wählen Sie diese Option, wenn nur ein Preisbuch gilt. Diese Option ist erforderlich, wenn Sie eine private Katalogansicht konfigurieren möchten, die nur auf ein Preisbuch verweisen kann. Siehe [Preisbuchbeschränkung für private Katalogansichten](private-catalog-view.md#price-book-restriction-on-private-catalog-views).
    - **Preise deaktivieren** - Diese Option ist derzeit nicht verfügbar.
 
    >[!NOTE]

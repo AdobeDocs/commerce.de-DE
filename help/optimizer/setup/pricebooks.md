@@ -13,9 +13,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 384
+source-wordcount: 405
 ht-degree: 0%
 
 ---
@@ -36,6 +36,10 @@ Preisverzeichnisse werden mit der Preisbuch-API zu [!DNL Adobe Commerce Optimize
 
 Nachdem Sie Preisbücher in [!DNL Adobe Commerce Optimizer] aufgenommen haben, können Sie die Liste der Preisbücher und die entsprechenden IDs auf der Seite **Katalogansicht“**.
 
+>[!NOTE]
+>
+>Eine private Katalogansicht (mit aktiviertem [!UICONTROL Catalog Protection]) kann nur auf ein Preisbuch verweisen. Siehe [Preisbuchbeschränkung für private Katalogansichten](private-catalog-view.md#price-book-restriction-on-private-catalog-views).
+
 1. Navigieren Sie zu _Store-Setup_ und klicken Sie auf **[!UICONTROL Catalog views]**.
 
 1. Klicken Sie auf **[!UICONTROL Create catalog view]**. &#x200B;
@@ -52,6 +56,6 @@ Nachdem Sie Preisbücher in [!DNL Adobe Commerce Optimizer] aufgenommen haben, k
 | **Fallback-Preisbuch** | Das beste Preisbuch in einer Hierarchie. Es hat kein übergeordnetes Element und ist das *einzige* Preisbuch, das die Währung für sich selbst und alle seine untergeordneten Preisbücher definiert.<br/><br/>Wenn bei der Erstellung des Preisbuchs (über die API) kein übergeordnetes Element definiert wird, wird ein neues Fallback-Preisbuch erstellt. |
 | **Übergeordnetes Preisbuch** | Ein übergeordnetes Preisbuch, aus dem ein untergeordnetes Preisbuch Preise übernehmen kann, wenn diese nicht explizit im Kind festgelegt sind. |
 | **Hierarchietiefe** | Maximal drei Ebenen (Fallback -> Untergeordnet -> Enkelkind), <br/><br/> bei der Aufnahme nicht erzwungen werden. |
-| **Währung** | Wird nur für das Fallback-Preisbuch definiert. Von allen untergeordneten Preisbüchern übernommen.<br/><br/>Wenn die Währung bei der Erstellung des Fallback-Preisbuchs (über die API) nicht angegeben wird, ist die Währung standardmäßig USD. |
+| **Währung** | Wird nur für das Fallback-Preisbuch definiert. Von allen untergeordneten Preisbüchern übernommen.<br/><br/>Wenn die Währung bei der Erstellung des Fallback-Preisbuchs (über die API) nicht angegeben wird, wird die Währung standardmäßig auf USD festgelegt. |
 | **Produktpreis** | Der spezifische Preis, der einem Produkt (SKU) innerhalb eines bestimmten Preisbuchs zugewiesen ist. |
 | **Rabatte** | Rabatte sind im Produktpreis definiert. Nicht vererbt. |
