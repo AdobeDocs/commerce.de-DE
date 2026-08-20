@@ -1,24 +1,16 @@
 ---
 title: Regeln erstellen und verwalten
 description: Erfahren Sie, wie Sie Merchandising-Regeln für Suchvorgänge, Standardproduktlisten und Kategorieseiten erstellen und verwalten.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 3ee9822b069504343f69f5b1dd36713e7dcbf3d8
 workflow-type: tm+mt
-source-wordcount: 3074
+source-wordcount: 3378
 ht-degree: 0%
 
 ---
@@ -30,7 +22,7 @@ Um eine Regel zu erstellen, öffnen Sie den Regeleditor, wählen Sie einen **Reg
 ## Erstellen einer Regel {#create-a-rule}
 
 1. Navigieren Sie in der linken Leiste zu _Merchandising_ > **Merchandising-Regeln**.
-1. (Optional) Verwenden Sie das **Katalogansicht**, um die Katalogansicht auszuwählen, in der die Regel angewendet werden soll. Die von Ihnen erstellte Regel wird auf die ausgewählte Ansicht beschränkt (oder auf alle Katalogansichten, wenn **Alle Ansichten** ausgewählt ist). Siehe [Auswählen der &#x200B;](workspace.md#select-catalog-view)), wie der Umfang der Katalogansicht funktioniert.
+1. (Optional) Verwenden Sie das **Katalogansicht**, um die Katalogansicht auszuwählen, in der die Regel angewendet werden soll. Die von Ihnen erstellte Regel wird auf die ausgewählte Ansicht beschränkt (oder auf alle Katalogansichten, wenn **Alle Ansichten** ausgewählt ist). Siehe [Auswählen der ](workspace.md#select-catalog-view)), wie der Umfang der Katalogansicht funktioniert.
 
 1. Klicken Sie auf **[!UICONTROL Create rule]** , um den Regeleditor zu starten.
 
@@ -42,7 +34,7 @@ Jeder Regeltyp verfügt im Editor über ein Informationssymbol mit einer kurzen 
 
 | Regeltyp | Zweck |
 | --- | --- |
-| **Regel „Alle Produkte“** | Standard-Ranking und Merchandising in allen Produktlisten, wenn keine spezifischere Such- oder Kategorieregel gilt. Sie können nur eine solche Regel erstellen; sie kann keine Bedingungen enthalten. |
+| **Alle Produktlisten** | Standard-Ranking und Merchandising in allen Produktlisten, wenn keine spezifischere Such- oder Kategorieregel gilt. Sie können nur eine solche Regel erstellen; sie kann keine Bedingungen enthalten. |
 | **Kategorieregel** | Wendet Merchandising und Ranking auf eine oder mehrere ausgewählte Kategorien an und steuert die Produktbestellung auf diesen Kategorieseiten. |
 | **Suchregel** | Wendet Merchandising und Ranking an, wenn Käufer eine Suche ausführen, die den Abfragebedingungen der Regel entspricht. |
 
@@ -102,13 +94,32 @@ Eine Regel kann bis zu zehn Bedingungen enthalten. Der logische Operator, der zw
 
 Kategorieregeln steuern, wie Produkte auf (Kategorieseiten **bestellt**. Sie kombinieren **Kategorieregeln** mit **intelligentem Ranking** (einschließlich KI-gesteuerter Signale) und **manuellen** Aktionen wie Pin, Boost und Bury. So können Sie Discovery kuratieren, Promotions ausführen und Kategorieseiten an Ihrer Strategie ausrichten, ohne sich auf externe Tools verlassen zu müssen.
 
-1. Wählen **unter** die Kategorie(n) aus, für die die Regel gelten soll. Ausgewählte Kategorien werden unter dem Steuerelement angezeigt, sodass Sie den Umfang bestätigen können.
-1. Sie können in der angezeigten Liste der Kategorien auf die drei Punkte klicken und Folgendes auswählen:
+**Kategorien auswählen**
+
+Wählen **unter** eine oder mehrere Kategorien aus, auf die die Regel angewendet werden soll. Ausgewählte Kategorien werden unter dem Steuerelement angezeigt, sodass Sie den Umfang bestätigen können. Wählen Sie Kategorien auf eine der folgenden Arten aus:
+
+- **Kategoriestruktur durchsuchen** - Eine Kategorie erweitern, um ihre unmittelbar untergeordneten Kategorien zu laden. Um zu einer tieferen Ebene zu navigieren, erweitern Sie die untergeordnete Kategorie. Die Struktur wird jeweils nur eine Ebene geladen.
+- **Suche nach Kategoriename** - Geben Sie einen Kategorienamen in das Feld **Suchen und Kategorien auswählen** ein. Die Suchergebnisse enthalten übereinstimmende Kategorienamen aus dem gesamten Katalog, einschließlich Kategorien außerhalb der aktuell erweiterten Verzweigung. Die Suche stimmt nicht mit dem Kategoriepfadtext überein.
+
+Wenn mehrere Kategorien ähnliche Namen haben, verwenden Sie den mit jedem Ergebnis angezeigten Kategoriepfad (z. B. `brakes/aurora`), um die richtige Kategorie auszuwählen.
+
+>[!NOTE]
+>
+>Beim Erweitern einer Kategorie werden nur die untergeordneten Kategorien zum Durchsuchen geladen. Die Kategorie wird nicht ausgewählt und die Regel wird nicht auf die Unterkategorien angewendet. Wählen Sie eine Kategorie aus, um sie der Regel hinzuzufügen. Um die Regel auf die Unterkategorien einer Kategorie anzuwenden, verwenden Sie **Auf Unterkategorien anwenden** aus dem Aktionsmenü der Kategorie, das unten beschrieben wird.
+
+>[!TIP]
+>
+>Wenn eine untergeordnete Kategorie nicht sichtbar ist, erweitern Sie die übergeordnete Kategorie, um die nächste Ebene zu laden. Wenn Sie den Kategorienamen kennen, verwenden Sie das Suchfeld, anstatt durch die Baumstruktur zu navigieren. Dies ist für große Kataloge nützlich, da Kategorieebenen bei Bedarf geladen werden.
+
+1. Klicken Sie in der Liste der ausgewählten Kategorien auf die drei Punkte neben einer Kategorie und wählen Sie Folgendes aus:
 
    - **Löschen** - Entfernt die Kategorie aus der Regel.
    - **Auf Unterkategorien anwenden** - Wendet die Regel auf Unterkategorien an, für die noch keine aktive Merchandising-Regel definiert ist.
    - **Vorschau** - Zeigt an, wie die Kategorieseite in Ihrer Storefront angezeigt würde.
 
+   ![Menü Kategorieaktion](../../assets/category-action-menu.png)
+
+1. Überprüfen Sie den für jede ausgewählte Kategorie angezeigten Kategoriepfad, um zu bestätigen, dass Sie die richtige ausgewählt haben.
 1. Legen Sie [Intelligente Rangfolge](#intelligent-ranking) und [Manuelle Rangfolge](#manual-ranking) wie in den folgenden Abschnitten beschrieben fest. Die gleichen Steuerelemente gelten für Suchregeln, wobei alle Unterschiede hervorgehoben werden.
 
 >[!ENDTABS]
@@ -165,8 +176,8 @@ Für **Suchergebnisse** (und die Testabfrage im Regeleditor) bestimmt ein intell
 
 - **Textrelevanz**: Der dominante Faktor bei der Bewertung. Dadurch wird gemessen, wie gut der Name, die Beschreibung und die Attribute eines Produkts mit der Suchanfrage übereinstimmen. Die Textrelevanz-Bewertung ist unbegrenzt (hat keine bestimmte Obergrenze) und wird durch Faktoren wie folgende beeinflusst:
 
-   - Häufigkeit des Auftretens von übereinstimmenden Wörtern.
-   - Länge (in Worten) der Produktnamen/-beschreibungen.
+  - Häufigkeit des Auftretens von übereinstimmenden Wörtern.
+  - Länge (in Worten) der Produktnamen/-beschreibungen.
 
 - **Verhaltenssignale**: Ein begrenzter Verstärker, der zusätzlich zum Textrelevanzwert angewendet wird. Wenn Sie eine intelligente Rangfolgestrategie wie „Am häufigsten angezeigt“ oder „Am häufigsten gekauft“ auswählen, erhalten Produkte mit höheren Verhaltenssignalen eine höhere relative Gewichtung. Die Stärke dieser Gewichtung wird durch **[!UICONTROL Intelligent Ranking Boost]** gesteuert (siehe [Intelligente Rangverstärkung](#intelligent-ranking-boost)). Die Steigerung bleibt begrenzt, aber Sie können erhöhen, wie viel sie der Reihenfolge nach verschiebt.
 
@@ -236,7 +247,7 @@ Oder Ereignisse können manuell festgelegt werden:
 
 >[!NOTE]
 >
->Regeln und manuell sortierte Produkte werden auf **Suchergebnisse** angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sodass sie etwa nach Namen sortiert wird, sind Regeln und manuelle Rankings nicht mehr wirksam. Für **category**-Listen wird das Standardsortierverhalten unter „Manuelles [&quot; &#x200B;](#manual-ranking).
+>Regeln und manuell sortierte Produkte werden auf **Suchergebnisse** angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sodass sie etwa nach Namen sortiert wird, sind Regeln und manuelle Rankings nicht mehr wirksam. Für **category**-Listen wird das Standardsortierverhalten unter „Manuelles [&quot; ](#manual-ranking).
 
 ## Regeln bearbeiten, anzeigen und löschen {#edit-view-and-delete-rules}
 
