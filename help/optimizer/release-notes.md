@@ -4,21 +4,15 @@ description: Monatliche Versionsinformationen für [!DNL Adobe Commerce Optimize
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 413d0932d402615c9e155e1650a7c8aba2c082a1
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 1522
+source-wordcount: 1506
 ht-degree: 0%
 
 ---
@@ -101,7 +95,7 @@ _28. Mai 2026_
 ![Korrigieren](../assets/fix.svg) **Vollständige Navigationsbäume** - Getaggte untergeordnete Kategorien werden jetzt korrekt in familiengefilterten `navigation` eingefügt, wenn ein nicht getaggter Zwischenknoten im Pfad vorhanden ist. Diese Fehlerbehebung stellt sicher, dass Käufern alle relevanten Kategorien in der Navigation angezeigt werden, sodass sie leichter durchsuchen und Artikel finden können.
 <!--DATA-7183-->
 
-![Beheben](../assets/fix.svg) **Leere Slug-Verarbeitung in `categoryTree`-**: Es wurde ein Problem behoben, bei dem die [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)-Abfrage einen internen Server-Fehler zurückgab, wenn das `slugs`-Argument eine leere Zeichenfolge enthielt. Leere Slug-Werte werden jetzt ignoriert, sodass Storefronts und Integrationen Kategoriedaten ohne fehlgeschlagene Anfragen auflösen können.
+![Beheben](../assets/fix.svg) **Leere Slug-Verarbeitung in `categoryTree`-**: Es wurde ein Problem behoben, bei dem die [`categoryTree`](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree)-Abfrage einen internen Server-Fehler zurückgab, wenn das `slugs`-Argument eine leere Zeichenfolge enthielt. Leere Slug-Werte werden jetzt ignoriert, sodass Storefronts und Integrationen Kategoriedaten ohne fehlgeschlagene Anfragen auflösen können.
 <!--DATA-7184-->
 
 ![Beheben](../assets/fix.svg) **`searchCategory`Anfragen geben Ergebnisse zurück, bei denen nicht zwischen Groß- und Kleinschreibung unterschieden wird** - Die `searchCategory` Abfrage sortiert Suchergebnisse jetzt alphabetisch ohne Unterscheidung zwischen Groß- und Kleinschreibung, was eine konsistente und vorhersehbare Reihenfolge gewährleistet. Kategorien mit kürzeren Präfixen werden zuerst angezeigt, wenn die Namen ansonsten identisch sind.
@@ -139,7 +133,7 @@ _29. April 2026_
 
 <!--v1.52 release-->
 
-**Anfrage-Batching erforderlich** - Die GraphQL-API erzwingt jetzt maximal 100 SKUs pro Anfrage, wenn Sie Katalogdaten abrufen. Siehe [dokumentierte Beschränkungen und &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Anfrage-Batching erforderlich** - Die GraphQL-API erzwingt jetzt maximal 100 SKUs pro Anfrage, wenn Sie Katalogdaten abrufen. Siehe [dokumentierte Beschränkungen und ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
@@ -153,7 +147,7 @@ _7. April 2026_
 
 <!--v1.50 release-->
 
-**Einfachere Kategoriesuche** - Die [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)-Abfrage behandelt `family` als optional, sodass Sie Kategorien durch einen Slug auflösen können, ohne eine Familie bereitzustellen.
+**Einfachere Kategoriesuche** - Die [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree)-Abfrage behandelt `family` als optional, sodass Sie Kategorien durch einen Slug auflösen können, ohne eine Familie bereitzustellen.
 
 {{aco-release}}
 
@@ -191,13 +185,13 @@ _19. Februar 2026_
 
 <!--v1.48-->
 
-**Inhalte mit umfangreicheren Kategorien für Storefronts** - Die [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)-Abfrage gibt jetzt Beschreibungen, Bilder und SEO-Meta-Tags zurück, damit Storefronts Seiten mit umfangreicheren Kategorien rendern können.<!--DATA-6933-->
+**Inhalte mit umfangreicheren Kategorien für Storefronts** - Die [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree)-Abfrage gibt jetzt Beschreibungen, Bilder und SEO-Meta-Tags zurück, damit Storefronts Seiten mit umfangreicheren Kategorien rendern können.<!--DATA-6933-->
 
 _12. Februar 2026_
 
 <!--v1.49-->
 
-**Erweiterte Produktdaten nach Kategorie** - Die GraphQL-API fügt den [`CategoryProductView`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#definition-CategoryProductView){target="blank"} hinzu, damit Sie Produkte mit weniger Roundtrips nach Kategorie abfragen und filtern können.
+**Erweiterte Produktdaten nach Kategorie** - Die GraphQL-API fügt den [`CategoryProductView`](https://developer.adobe.com/commerce/services/reference/graphql/#categoryproductview){target="blank"} hinzu, damit Sie Produkte mit weniger Roundtrips nach Kategorie abfragen und filtern können.
 
 {{aco-release}}
 
@@ -333,7 +327,7 @@ _23. September 2025_
 
 ### EU-Region jetzt verfügbar
 
-Für IMS-Organisationen steht die EU **Produktionsregion** eu1) zur Verfügung. Wenn Sie [eine [!DNL Commerce Optimizer] Instanz“ &#x200B;](./get-started.md#step-1-create-an-instance) Cloud Manager hinzufügen, wählen Sie **[!UICONTROL European Union]** als **[!UICONTROL Region]** aus (nur Produktion).
+Für IMS-Organisationen steht die EU **Produktionsregion** eu1) zur Verfügung. Wenn Sie [eine [!DNL Commerce Optimizer] Instanz“ ](./get-started.md#step-1-create-an-instance) Cloud Manager hinzufügen, wählen Sie **[!UICONTROL European Union]** als **[!UICONTROL Region]** aus (nur Produktion).
 
 Die Basis-Produktions-URLs für die Region der Europäischen Union lauten:
 

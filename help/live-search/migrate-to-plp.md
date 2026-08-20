@@ -2,30 +2,20 @@
 title: Migration vom Suchadapter zum PLP-Widget
 description: Erfahren Sie, wie Sie vom veralteten Suchadapter zum Widget  [!DNL Live Search] Produktlistenseite“ migrieren.
 TQID: https://experienceleague.adobe.com/YAwhAbTVeYpGYKh4dTe1umcfgoRUOg8QPZNIiGFjKVo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 2102
+source-wordcount: 2105
 ht-degree: 0%
 
 ---
 
 # Migration vom Suchadapter zum PLP-Widget
 
-Der Suchadapter ist seit [!DNL Live Search] 4[0.0 &#x200B;](release-notes.md#live-search-400). Das [Widget „Produktlistenseite (PLP)](plp-styling.md) ist die unterstützte Lösung für alle [!DNL Live Search] Implementierungen, die in Zukunft durchgeführt werden. Dieser Leitfaden hilft Ihnen zu verstehen, wann die Migration einfach ist und wann zusätzliche Arbeit erforderlich ist.
+Der Suchadapter ist seit [!DNL Live Search] 4[0.0 ](release-notes.md#live-search-400). Das [Widget „Produktlistenseite (PLP)](plp-styling.md) ist die unterstützte Lösung für alle [!DNL Live Search] Implementierungen, die in Zukunft durchgeführt werden. Dieser Leitfaden hilft Ihnen zu verstehen, wann die Migration einfach ist und wann zusätzliche Arbeit erforderlich ist.
 
 ## Voraussetzungen
 
@@ -333,7 +323,7 @@ In diesem Szenario gibt es ein bekanntes Problem, bei dem die Aktivierung des PL
 
 **Option 3: GTM durch Adobe Analytics ersetzen**
 
-- Ziehen Sie ggf. eine Migration zu [Adobe Analytics](https://business.adobe.com/de/products/adobe-analytics.html) in Betracht.
+- Ziehen Sie ggf. eine Migration zu [Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html) in Betracht.
 - Wenden Sie sich an den Customer Engineering.
 
 **An wen wenden**: Senden eines Support-Tickets für GTM-Kompatibilitätsaktualisierungen oder Customer Engineering-Unterstützung.
@@ -358,11 +348,11 @@ In diesem Szenario verfügen Sie über eine Headless- oder PWA-Storefront, für 
 1. **Implementieren der Ereignissammlung**:
    - Siehe [Dokumentation zu Storefront-](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search).
    - Implementieren Sie die erforderlichen Ereignisse:
-      - `search-request-sent`
-      - `search-response-received`
-      - `search-results-view`
-      - `product-page-view`
-      - `add-to-cart`
+     - `search-request-sent`
+     - `search-response-received`
+     - `search-results-view`
+     - `product-page-view`
+     - `add-to-cart`
    - Testen von Ereignisdatenflüssen an Adobe Commerce.
 
 1. **Facettensortierung konfigurieren**:
@@ -458,7 +448,7 @@ Der **Adobe-Support** kann bei Folgendem helfen:
 - Headless- oder PWA-Implementierung
 - Benutzerdefinierte Ereignisverfolgung
 
-Informationen zum Adobe-Support finden Sie im [Hilfezentrum-Benutzerhandbuch](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Informationen zum Adobe-Support finden Sie im [Hilfezentrum-Benutzerhandbuch](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 ## FAQs
 

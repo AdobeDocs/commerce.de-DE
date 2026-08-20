@@ -5,9 +5,9 @@ user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen für d
 role: Developer, Admin
 feature: Integration, Storefront, Configuration
 nudge: true
-source-git-commit: 83120d472ea7838a255c7767cd0bbe9085dff013
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '69'
+source-wordcount: '70'
 ht-degree: 5%
 
 ---
@@ -29,4 +29,4 @@ ht-degree: 5%
   - [Feldzuordnung für Connector-Feeds](reference/field-mapping.md)
   - [Schätzen des Datenvolumens und der Synchronisierungszeit](reference/estimate-data-volume-sync-time.md)
 - [Versionshinweise](release-notes.md)
-- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=de)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

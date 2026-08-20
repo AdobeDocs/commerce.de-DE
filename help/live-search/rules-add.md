@@ -3,18 +3,13 @@ title: Regeln hinzufügen
 description: Erfahren Sie, wie Sie Merchandising-Suchregeln erstellen.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
 TQID: https://experienceleague.adobe.com/QnJ-q-Y-ccQ7HKEt2RgPYQFeWcBnhjwSDOtKjlF7Rp0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 657c4b3123407580dfeb2c021a5a1ba515e82115
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 2547
+source-wordcount: 2561
 ht-degree: 0%
 
 ---
@@ -26,7 +21,7 @@ Um eine Regel zu erstellen, müssen Sie zunächst mit dem Regeleditor die Beding
 ## Regel hinzufügen
 
 1. Gehen Sie im Admin zu **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Legen Sie den **Bereich** fest, um die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings) zu identifizieren, für die die Regel gilt.
+1. Legen Sie den **Bereich** fest, um die [Store-Ansicht](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) zu identifizieren, für die die Regel gilt.
 1. Klicken Sie auf den **Merchandising suchen**-Arbeitsbereich.
 1. Klicken Sie **Regel hinzufügen**, um den Regeleditor zu starten.
 
@@ -136,8 +131,8 @@ Für **Suchregeln** (und die Testabfrage im Regeleditor) bestimmt ein intelligen
 
 * **Textrelevanz**: Der dominante Faktor bei der Bewertung. Dadurch wird gemessen, wie gut der Name, die Beschreibung und die Attribute eines Produkts mit der Suchanfrage übereinstimmen. Die Textrelevanz-Bewertung ist unbegrenzt (hat keine bestimmte Obergrenze) und wird durch Faktoren wie folgende beeinflusst:
 
-   * Häufigkeit des Auftretens von übereinstimmenden Wörtern.
-   * Länge (in Worten) der Produktnamen/-beschreibungen.
+  * Häufigkeit des Auftretens von übereinstimmenden Wörtern.
+  * Länge (in Worten) der Produktnamen/-beschreibungen.
 
 * **Verhaltenssignale**: Ein begrenzter Verstärker, der zusätzlich zum Textrelevanzwert angewendet wird. Wenn Sie eine intelligente Rangfolgestrategie wie „Am häufigsten angezeigt“ oder „Am häufigsten gekauft“ auswählen, erhalten Produkte mit höheren Verhaltenssignalen eine höhere relative Gewichtung. Die Stärke dieser Gewichtung wird durch **[!UICONTROL Intelligent Ranking Boost]** gesteuert (siehe [Intelligente Rangverstärkung](#intelligent-ranking-boost)). Die Steigerung bleibt begrenzt, aber Sie können erhöhen, wie viel sie der Reihenfolge nach verschiebt.
 
@@ -164,11 +159,11 @@ Unter [Suchregeln](./best-practice.md#search-rules) erfahren Sie, wie Sie die Au
 * Apostrophe und Anführungszeichen in Abfragen können zu einigen kleineren Problemen mit Rangfolge und Relevanz in einigen Sprachen führen.
 * Um sicherzustellen, dass das intelligente Ranking ordnungsgemäß funktioniert, stellen Sie sicher, dass **Suchgewichtung** für alle Produktattribute, die für die Suche oder Filterung (Facetten) verwendet werden, `5` oder kleiner ist. So finden Sie diese Einstellung im [!DNL Commerce] Admin:
 
-   1. Wählen Sie **Stores** > _Attribute_ > **product** aus.
-   1. Suchen Sie nach dem Attribut, z. B. „name“.
-   1. Legen Sie auf der **Attributinformationen** > **Storefront-Eigenschaften** die Suchgewichtung auf kleiner oder gleich `5` fest.
+  1. Wählen Sie **Stores** > _Attribute_ > **product** aus.
+  1. Suchen Sie nach dem Attribut, z. B. „name“.
+  1. Legen Sie auf der **Attributinformationen** > **Storefront-Eigenschaften** die Suchgewichtung auf kleiner oder gleich `5` fest.
 
-      ![Produkt - Suchgewichtung](assets/set-search-weight.png)
+     ![Produkt - Suchgewichtung](assets/set-search-weight.png)
 
 >[!NOTE]
 >
@@ -271,7 +266,7 @@ Die hier eingegebenen Informationen werden im Bedienfeld [Regeldetails](rules-wo
 
 | Feld | Beschreibung |
 |--- |--- |
-| -Name | Der Name der Regel. Regelnamen müssen eindeutig sein. |
+| Name | Der Name der Regel. Regelnamen müssen eindeutig sein. |
 | Regeltyp | Standard oder Abfrage. Der Standardwert wird auf alle Regeln angewendet, es sei denn, es ist eine spezifischere Abfrageregel definiert. |
 | Startdatum | Das Startdatum der Regel, falls geplant. |
 | Enddatum | Das Enddatum der Regel, falls geplant. |

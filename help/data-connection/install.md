@@ -5,23 +5,19 @@ role: Admin, Developer
 feature: Install
 exl-id: 853ef2d1-85cb-41a8-9b07-887a758ed401
 TQID: https://experienceleague.adobe.com/EbYHB6L9Q7bZNnoz3-yT4aaBcRiLiatvjO-hQyGOwoo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 491
+source-wordcount: 493
 ht-degree: 0%
 
 ---
 
 # Installieren von [!DNL Data Connection]
 
-Bevor Sie die Erweiterung installieren, [&#x200B; Sie die Voraussetzungen &#x200B;](overview.md#prerequisites).
+Bevor Sie die Erweiterung installieren, [ Sie die Voraussetzungen ](overview.md#prerequisites).
 
 ## Installieren der Erweiterung
 
@@ -89,7 +85,7 @@ Die Installation kann je nach Bereitstellungstyp abgeschlossen werden: Adobe Com
 
 #### Über die Cloud-Infrastruktur
 
-Aktivieren Sie in Adobe Commerce auf der Cloud-Infrastruktur die globale Variable `ENABLE_EVENTING` in `.magento.env.yaml`. [Weitere Informationen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html?lang=de#enable_eventing).
+Aktivieren Sie in Adobe Commerce auf der Cloud-Infrastruktur die globale Variable `ENABLE_EVENTING` in `.magento.env.yaml`. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-global#enable_eventing).
 
 ```bash
 stage:
@@ -177,4 +173,4 @@ Um auf eine Hauptversion zu aktualisieren, z. B. von 2.0.0 auf 3.0.0, bearbeiten
 
 ## Deinstallieren der [!DNL Data Connection] {#uninstall}
 
-Informationen zum Deinstallieren der [!DNL Data Connection]-Erweiterung finden Sie unter [Module deinstallieren](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=de).
+Informationen zum Deinstallieren der [!DNL Data Connection]-Erweiterung finden Sie unter [Module deinstallieren](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).

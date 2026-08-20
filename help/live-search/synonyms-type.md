@@ -3,13 +3,11 @@ title: Typen von Synonymen
 description: Ein- und Zwei-Wege [!DNL Live Search] Synonyme erweitern die Definition von Keywords.
 exl-id: f5522428-c7cc-4627-a09b-d9148918c127
 TQID: https://experienceleague.adobe.com/n0ON02CVlSTTOdRCPFRGVIVPWbGRltq4B0INC-U3ldo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 617
+source-wordcount: 620
 ht-degree: 0%
 
 ---
@@ -54,10 +52,10 @@ Konsistenz mit der Verwendung der Terminologie in Ihrem Katalog Beachten Sie, da
 
 ## Synonymverhalten für mehrere Wörter
 
-Bei Synonymen mit mehreren Wörtern betrachtet Commerce das Synonym als eine Phrase. Wenn Sie beispielsweise ein Zwei-Wege-Synonym **Esszimmertisch** ![Zwei-Wege-Selektor](assets/btn-two-way.png) **&#x200B;**&#x200B;Küchentisch![Zwei-Wege-Selektor](assets/btn-two-way.png)**Esstisch** erstellen, durchsucht Commerce alle Felder, die auf Durchsuchbar eingestellt sind, nach **Esszimmertisch** oder **Küchentisch** oder **Esstisch**.
+Bei Synonymen mit mehreren Wörtern betrachtet Commerce das Synonym als eine Phrase. Wenn Sie beispielsweise ein Zwei-Wege-Synonym **Esszimmertisch** ![Zwei-Wege-Selektor](assets/btn-two-way.png) **** Küchentisch![Zwei-Wege-Selektor](assets/btn-two-way.png)**Esstisch** erstellen, durchsucht Commerce alle Felder, die auf Durchsuchbar eingestellt sind, nach **Esszimmertisch** oder **Küchentisch** oder **Esstisch**.
 
 Wenn kein Synonym erstellt wird und ein Käufer nach **Küchentabelle** sucht, sucht Commerce in den durchsuchbaren Feldern nach den Begriffen, auch über verschiedene Felder hinweg, z. B. **table** im Namensfeld und **küche** im Meta-Schlüsselwort.
 
 Nachdem Sie ein Synonym erstellt haben, ändert sich das Suchverhalten, sodass Sie nach der exakten Phrase **Küchentabelle)**. Dadurch kann die Anzahl der Ergebnisse reduziert werden, da nur Produkte mit der exakten Phrase angezeigt werden.
 
-Wenn Sie möchten, dass nach den Begriffen separat gesucht wird, können Sie [ein Support-Ticket erstellen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Wenn genügend Bedarf besteht, wird Commerce in einer zukünftigen Version erwägen, diese Funktion zum Produkt hinzuzufügen.
+Wenn Sie möchten, dass nach den Begriffen separat gesucht wird, können Sie [ein Support-Ticket erstellen](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Wenn genügend Bedarf besteht, wird Commerce in einer zukünftigen Version erwägen, diese Funktion zum Produkt hinzuzufügen.

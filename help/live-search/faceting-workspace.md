@@ -3,17 +3,13 @@ title: Faceting Workspace
 description: Lernen Sie den Facettenarbeitsbereich  [!DNL Live Search] .
 exl-id: 7108e41b-44a7-4943-b20f-6ee544d099e9
 TQID: https://experienceleague.adobe.com/LsVM4inUqk2EozfVN--FH1Ukggt8A8QBIQXW-SmnxZs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 229
+source-wordcount: 230
 ht-degree: 0%
 
 ---
@@ -26,7 +22,7 @@ Der Arbeitsbereich *Facettieren* listet alle derzeit verfügbaren Facetten auf u
 
 ## Festlegen des Umfangs
 
-Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, setzen Sie **Umfang** auf die [Store-](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings), für die Ihre Facetteneinstellungen gelten.
+Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, setzen Sie **Umfang** auf die [Store-](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings), für die Ihre Facetteneinstellungen gelten.
 
 ## Filtern der Liste
 
@@ -40,7 +36,7 @@ Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, setzen S
 ## Facette hinzufügen
 
 1. Klicken Sie **Facetten hinzufügen**.
-1. Detaillierte Anweisungen finden [&#x200B; unter &#x200B;](facets-add.md) von Facetten hinzufügen .
+1. Detaillierte Anweisungen finden [ unter ](facets-add.md) von Facetten hinzufügen .
 
 ## Spaltenbeschreibungen
 

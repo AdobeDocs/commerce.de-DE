@@ -5,20 +5,11 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: d5ed7497-4be1-440a-a567-81b64fdc54fc
 TQID: https://experienceleague.adobe.com/SZWtLSvxb-w-968f4wqWrPTBn1c9IEuthvhIv86Pvss
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 267
 ht-degree: 0%
@@ -31,13 +22,13 @@ Sie können Produktattribute erweitern, ohne sie in [!DNL Adobe Commerce] zu reg
 
 >[!NOTE]
 >
->Die beste Möglichkeit, Produktattribute zu erweitern, besteht darin[&#x200B; sie zu  [!DNL Adobe Commerce]](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce) where you can configure and manage them from the Commerce Admin. Only add them dynamically if you need them solely for Commerce storefront services and do not want to register them in [!DNL Adobe Commerce]. You also have the option to manage custom attributes using [[!DNL API Mesh] mit [!DNL Catalog Service]](../catalog-service/mesh.md) hinzuzufügen, um das [!DNL Catalog Service] [!DNL GraphQL] Schema zu erweitern.
+>Die beste Möglichkeit, Produktattribute zu erweitern, besteht darin[ sie zu  [!DNL Adobe Commerce]](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce) where you can configure and manage them from the Commerce Admin. Only add them dynamically if you need them solely for Commerce storefront services and do not want to register them in [!DNL Adobe Commerce]. You also have the option to manage custom attributes using [[!DNL API Mesh] mit [!DNL Catalog Service]](../catalog-service/mesh.md) hinzuzufügen, um das [!DNL Catalog Service] [!DNL GraphQL] Schema zu erweitern.
 
 ## Produktattribute hinzufügen
 
 Erstellen Sie ein Plug-in, das der `Magento\CatalogDataExporter\Model\Provider\Product\Attributes`-Klasse einen `customer_attribute` hinzufügt.
 
-1. Aktualisieren Sie die [Konfigurationsdatei für die Abhängigkeitseinspeisung](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`), um das Plug-in zu definieren.
+1. Aktualisieren Sie die [Konfigurationsdatei für die Abhängigkeitseinspeisung](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`), um das Plug-in zu definieren.
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\Product\Attributes">
@@ -110,7 +101,7 @@ Erstellen Sie ein Plug-in, das der `Magento\CatalogDataExporter\Model\Provider\P
 
 Wenn Sie ein benutzerdefiniertes Produktattribut dynamisch erstellen und es für die Anzeige, Suche oder Filterung in Storefront-Services verwenden möchten, fügen Sie die Metadaten des Produktattributs hinzu, um das Verhalten der Storefront zu konfigurieren.
 
-1. Aktualisieren Sie die [Konfigurationsdatei für Abhängigkeitseinfügungen](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`), um das Plug-in für die Metadaten des Produktattributs zu definieren.
+1. Aktualisieren Sie die [Konfigurationsdatei für Abhängigkeitseinfügungen](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`), um das Plug-in für die Metadaten des Produktattributs zu definieren.
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\ProductMetadata">

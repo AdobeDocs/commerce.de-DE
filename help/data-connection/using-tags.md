@@ -5,28 +5,20 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dab333e8-5f71-4f3e-9660-6363b0e230c8
 TQID: https://experienceleague.adobe.com/7HNafiIenZfLrAhILPMwuUzRDzBVuClvDchJBGEg6bs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 2684
+source-wordcount: 2697
 ht-degree: 0%
 
 ---
 
 # Erfassen von Commerce-Daten mithilfe von Adobe Experience Platform Tags
 
-Sie können die [!DNL Data Connection]-Erweiterung zwar verwenden, um Storefront-Ereignisse zu veröffentlichen und zu abonnieren, einige Händler verwenden jedoch möglicherweise bereits eine Datenerfassungslösung, z. B. die [Adobe Experience Platform-Tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=de). Für diese Händler bietet Adobe Commerce in der [!DNL Data Connection]-Erweiterung eine Veröffentlichungsoption, die die Adobe Commerce Event SDK verwendet.
+Sie können die [!DNL Data Connection]-Erweiterung zwar verwenden, um Storefront-Ereignisse zu veröffentlichen und zu abonnieren, einige Händler verwenden jedoch möglicherweise bereits eine Datenerfassungslösung, z. B. die [Adobe Experience Platform-Tags](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/tags/create-a-property). Für diese Händler bietet Adobe Commerce in der [!DNL Data Connection]-Erweiterung eine Veröffentlichungsoption, die die Adobe Commerce Event SDK verwendet.
 
 Datenfluss der ![[!DNL Data Connection]](assets/tags-data-flow.png)
 Datenfluss der _[!DNL Data Connection]mit Tags_
@@ -47,15 +39,15 @@ So erfassen Sie Commerce-Ereignisdaten:
 
 Um Daten einer Commerce-Storefront Adobe Experience Platform zuzuordnen, konfigurieren und installieren Sie Folgendes in Adobe Experience Platform Tags:
 
-1. [Richten Sie eine Tag-Eigenschaft &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=de) der Datenerfassung in Adobe Experience Platform ein.
+1. [Richten Sie eine Tag-Eigenschaft ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/configure-tags/create-a-property) der Datenerfassung in Adobe Experience Platform ein.
 
 1. Wählen **unter** die Option **Erweiterungen** aus und installieren und konfigurieren Sie die folgenden Erweiterungen:
 
-   - [Adobe Client-Datenschicht](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html?lang=de)
+   - [Adobe Client-Datenschicht](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/client-data-layer/overview)
 
-   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=de)
+   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)
 
-1. [Tag veröffentlichen](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=de) in Ihrer Entwicklungsumgebung.
+1. [Tag veröffentlichen](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) in Ihrer Entwicklungsumgebung.
 
 1. Gehen Sie wie **folgt vor** um Datenelemente und Regeln für bestimmte Ereignisse zu konfigurieren.
 
@@ -71,11 +63,11 @@ Da sich die Datenerfassung mithilfe von Tags von der Verwendung der Adobe Commer
 
 Wenn Sie die Datenelemente und Regeln in Adobe Experience Platform Tags mit Adobe Commerce-spezifischen Ereignisdaten aktualisieren, werden Sie einige allgemeine Schritte ausführen.
 
-Fügen wir beispielsweise das Adobe Commerce-`signOut`-Ereignis zu Adobe Experience Platform-Tags hinzu. Die folgenden Schritte beschreiben mit Ausnahme der von Ihnen festgelegten spezifischen Werte, wie [Datenelemente](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#data-element) und [Regeln](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#create-a-rule) hinzugefügt werden. Diese gelten für alle Adobe Commerce-Ereignisse, die Sie Tags hinzufügen.
+Fügen wir beispielsweise das Adobe Commerce-`signOut`-Ereignis zu Adobe Experience Platform-Tags hinzu. Die folgenden Schritte beschreiben mit Ausnahme der von Ihnen festgelegten spezifischen Werte, wie [Datenelemente](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements#create-a-data-element) und [Regeln](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules#create-a-rule) hinzugefügt werden. Diese gelten für alle Adobe Commerce-Ereignisse, die Sie Tags hinzufügen.
 
 1. Erstellen Sie ein Datenelement:
 
-   !&lbrack;Neues Datenelement erstellen
+   ![Neues Datenelement erstellen](assets/create-new-data-elements.png)
    _Neues Datenelement erstellen_
 
 1. Legen Sie **Name** auf `sign out` fest.
@@ -88,14 +80,14 @@ Fügen wir beispielsweise das Adobe Commerce-`signOut`-Ereignis zu Adobe Experie
 
 1. Legen **unter** > **abmelden** den **Wert** in **Besucher-Abmeldung** auf `1` fest.
 
-   !&lbrack;Abmeldewert aktualisieren
+   ![Abmeldewert aktualisieren](assets/signout-value.png)
    _Abmeldewert aktualisieren_
 
 1. Wählen Sie **Speichern** aus.
 
 1. Erstellen Sie eine Regel:
 
-   !&lbrack;Neue Regel erstellen
+   ![Neue Regel erstellen](assets/create-new-rule.png)
    _Neue Regel erstellen_
 
 1. Wählen **Hinzufügen** unter **EREIGNISSE** aus.
@@ -1342,7 +1334,7 @@ Storefront-Ereignisse enthalten Profilinformationen, die auf den Feldern `person
 >
 >Wenn Sie eine frühere Einrichtung haben, die sich auf verschiedene Felder stützt, können Sie diese weiterhin verwenden.
 
-- `personalEmail` - Gilt nur für Kontoereignisse. Führen Sie die oben beschriebenen Schritte, Regeln und [&#x200B; aus](#createaccount)
+- `personalEmail` - Gilt nur für Kontoereignisse. Führen Sie die oben beschriebenen Schritte, Regeln und [ aus](#createaccount)
 - `identityMap` - Gilt für alle anderen Storefront-Ereignisse. Siehe folgendes Beispiel.
 
 ### Beispiel
@@ -1351,7 +1343,7 @@ Die folgenden Schritte zeigen, wie Sie ein `pageView`-Ereignis mit `identityMap`
 
 1. Konfigurieren des Datenelements mit benutzerdefiniertem Code für ECID:
 
-   !&lbrack;Konfigurieren des Datenelements mit benutzerdefiniertem Code
+   ![Konfigurieren des Datenelements mit benutzerdefiniertem Code](assets/set-custom-code-ecid.png)
    _Konfigurieren des Datenelements mit benutzerdefiniertem Code_
 
 1. Wählen Sie [!UICONTROL Open Editor] aus und fügen Sie den folgenden benutzerdefinierten Code hinzu:
@@ -1378,12 +1370,12 @@ Die folgenden Schritte zeigen, wie Sie ein `pageView`-Ereignis mit `identityMap`
 
 1. Aktualisieren Sie das XDM-Schema mit `identityMap` als ECID:
 
-   !&lbrack;identityMap als ECID festlegen
+   ![identityMap als ECID festlegen](assets/identity-map-data-element.png)
    _identityMap als ECID festlegen_
 
 1. Definieren Sie Regelaktionen, die ECID abrufen:
 
-   !&lbrack;ECID abrufen
+   ![ECID abrufen](assets/rule-retrieve-ecid.png)
    _ECID abrufen_
 
 ## Festlegen der Identität in Back-Office-Ereignissen
@@ -1392,7 +1384,7 @@ Im Gegensatz zu Storefront-Ereignissen, die ECID verwenden, um Profilinformation
 
 1. Erstellen Sie ein Identitätszuordnungselement.
 
-   !&lbrack;Identitätszuordnung für Backoffice
+   ![Identitätszuordnung für Backoffice](assets/custom-code-backoffice.png)
    _Back-Office-Identitätszuordnung erstellen_
 
 1. Wählen Sie [!UICONTROL Open Editor] aus und fügen Sie den folgenden benutzerdefinierten Code hinzu:
@@ -1420,26 +1412,26 @@ return IdentityMap;
 
 1. Fügen Sie jedes `identityMap` Feld dieses neue Element hinzu.
 
-   !&lbrack;Aktualisieren jeder identityMap
+   ![Aktualisieren jeder identityMap](assets/add-element-back-office.png)
    _Aktualisieren jeder identityMap_
 
 ## Einverständnis wird festgelegt
 
-Wenn Sie die [!DNL Data Connection]-Erweiterung in Adobe Commerce installieren, ist das Einverständnis zur Datenerfassung standardmäßig aktiviert. Das Opt-out wird über das [`mg_dnt`-Cookie verwaltet](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=de). Sie können die hier beschriebenen Schritte ausführen, wenn Sie `mg_dnt` zur Einverständnisverwaltung verwenden. Die [Dokumentation zu Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=de) bietet mehrere zusätzliche Optionen zum Verwalten des Einverständnisses.
+Wenn Sie die [!DNL Data Connection]-Erweiterung in Adobe Commerce installieren, ist das Einverständnis zur Datenerfassung standardmäßig aktiviert. Das Opt-out wird über das [`mg_dnt`-Cookie verwaltet](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law). Sie können die hier beschriebenen Schritte ausführen, wenn Sie `mg_dnt` zur Einverständnisverwaltung verwenden. Die [Dokumentation zu Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) bietet mehrere zusätzliche Optionen zum Verwalten des Einverständnisses.
 
 1. Erstellen Sie ein **Core Custom Code**-Datenelement (`%do not track cookie%`) für das `mg_dnt` Cookie:
 
-   !&lbrack;Datenelement erstellen/nicht verfolgen
+   ![Datenelement erstellen/nicht verfolgen](assets/element-dnt-cookie.png)
    _Erstellen verfolgt kein Datenelement_
 
 1. Erstellen Sie ein **Core Custom Code**-Datenelement (`%consent%`), das `out` zurückgibt, wenn das Cookie gesetzt ist, und andernfalls `in`:
 
-   !&lbrack;Einverständnisdatenelement erstellen
+   ![Einverständnisdatenelement erstellen](assets/element-consent-dnt-cookie.png)
    _Einverständnisdatenelement erstellen_
 
 1. Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung mit `%consent%` Datenelement:
 
-   !&lbrack;Aktualisieren von SDK mit Einverständnis
+   ![Aktualisieren von SDK mit Einverständnis](assets/config-sdk-consent.png)
    _Aktualisieren von SDK mit Einverständnis_
 
 ## Warnungen

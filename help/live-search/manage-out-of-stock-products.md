@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie nicht vorrätige Produkte in  [!DNL Live Sear
 feature: Services, Search
 role: Admin, Developer
 level: Intermediate
-source-git-commit: bc8f35434c9f01f1a920745fe42617df2003ca60
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -57,14 +57,14 @@ query productSearchInStockOnly {
 }
 ```
 
-Verwenden Sie diesen Ansatz, wenn Sie die Anfrage nicht über das [Live Search PLP Widget) &#x200B;](plp-styling.md).
+Verwenden Sie diesen Ansatz, wenn Sie die Anfrage nicht über das [Live Search PLP Widget) ](plp-styling.md).
 
 ### Nicht vorrätige Ergebnisse nach Lagerbestand anzeigen
 
 Um nicht vorrätige Produkte im Ergebnissatz, aber bei der Sortierung nach Relevanz immer nach vorrätigen Produkten zu behalten, kann Adobe eine interne Feature Flag für Ihre Umgebung aktivieren.
 
 - Dieses Feature Flag wird nicht in der Admin-Benutzeroberfläche von [!DNL Live Search] angezeigt.
-- Um diese anzufordern, [kontaktieren Sie den Adobe](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"}Support und verweisen Sie auf die Funktion, um nicht vorrätige Produkte an das Ende der Suchergebnisse zu verschieben.
+- Um diese anzufordern, [kontaktieren Sie den Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}Support und verweisen Sie auf die Funktion, um nicht vorrätige Produkte an das Ende der Suchergebnisse zu verschieben.
 
 >[!NOTE]
 >
@@ -87,4 +87,4 @@ Um nicht vorrätige Produkte im gesamten Katalog auszublenden oder zu priorisier
 >[!MORELIKETHIS]
 >
 > - [Merchandising-Regeln suchen](rules.md)
-> - [Globale Inventory management-Optionen konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/configuration/configuration)
+> - [Globale Inventory management-Optionen konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/configuration)

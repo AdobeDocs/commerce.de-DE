@@ -5,14 +5,10 @@ seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
 exl-id: e42101fa-9c30-482c-a649-44dc35376abb
 TQID: https://experienceleague.adobe.com/WnL4dJbZV0acHT5kpEAOyTVjhzW23RjHbQFVdDl4HDk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
 source-wordcount: 775
 ht-degree: 0%
@@ -30,14 +26,14 @@ Wenn Sie die [!DNL Catalog Adapter] aktivieren, werden Preisindizierung und -vor
 - Der im Adobe Commerce-Programm enthaltene Preisindizer ist deaktiviert.
 - Die Preisverwaltung erfolgt über den SaaS-Datenexport und den [SaaS-Preisindex](price-indexing.md).
 - Wenn ein Kunde ein Produkt, eine Kategorie oder eine andere Seite öffnet, die Produktpreise anzeigt, werden die Preise über den Adobe Commerce-Service abgerufen.
-- Die Preise werden an den Adobe Commerce-Service gesendet, indem Daten aus dem [SaaS-Datenexport“ &#x200B;](../data-export/overview.md) werden.
+- Die Preise werden an den Adobe Commerce-Service gesendet, indem Daten aus dem [SaaS-Datenexport“ ](../data-export/overview.md) werden.
 - Checkout berechnet Preise dynamisch neu.
 
 Sie können die Preisindizierung in der Commerce-Anwendung erneut aktivieren, indem Sie die Katalogadaptererweiterung entfernen oder deaktivieren.
 
 ## Anforderungen
 
-- [Adobe Commerce](https://business.adobe.com/de/products/magento/magento-commerce.html) 2.4.4+. Weitere Informationen finden Sie [Systemanforderungen](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
+- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. Weitere Informationen finden Sie [Systemanforderungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 - In Ihrer Adobe Commerce-Umgebung muss einer der folgenden Commerce-Services aktiviert und konfiguriert sein:
 
   - [Live Search](../live-search/install.md)
@@ -64,7 +60,7 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Adapter] für eine Commerce Cl
 
    >[!NOTE]
    >
-   >Informationen zur lokalen Verwaltung von Commerce-Projektumgebungen finden Sie unter [Verwalten von Verzweigungen mit der CLI](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/cli-branches) im _Benutzerhandbuch für Adobe Commerce auf Cloud-Infrastruktur_.
+   >Informationen zur lokalen Verwaltung von Commerce-Projektumgebungen finden Sie unter [Verwalten von Verzweigungen mit der CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/cli-branches) im _Benutzerhandbuch für Adobe Commerce auf Cloud-Infrastruktur_.
 
 1. Checken Sie die Umgebungsverzweigung aus, um sie mithilfe der Adobe Commerce Cloud-CLI zu aktualisieren.
 
@@ -94,7 +90,7 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Adapter] für eine Commerce Cl
    git push origin <branch-name>
    ```
 
-   Durch Pushen der Aktualisierungen in die Cloud-Umgebung wird der [Commerce-Cloud-Bereitstellungsprozess](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/deploy/process) gestartet, um die Änderungen anzuwenden. Überprüfen Sie den Bereitstellungsstatus im [Bereitstellungsprotokoll](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log).
+   Durch Pushen der Aktualisierungen in die Cloud-Umgebung wird der [Commerce-Cloud-Bereitstellungsprozess](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process) gestartet, um die Änderungen anzuwenden. Überprüfen Sie den Bereitstellungsstatus im [Bereitstellungsprotokoll](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB On-Premises]
 
