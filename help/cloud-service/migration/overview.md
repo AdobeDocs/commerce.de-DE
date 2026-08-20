@@ -3,41 +3,20 @@ title: Migrieren nach [!DNL Adobe Commerce as a Cloud Service]
 description: Erfahren Sie, wie Sie zu  [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:12:28.840Z'
 TQID: 'https://experienceleague.adobe.com/GmxaQdGKvAIDpZ2jvmlLFSYw0IFQysIMOT0lUnsJBsI'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: e03840ea9e0e43a005f385914e8599804383e79d
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f56d26ed-050b-4fb7-b29b-8e6e994e80a2id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: eb30f47f-d87a-400f-8f78-63ce7979ff56id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 3305
+source-wordcount: 3302
 ht-degree: 0%
 
 ---
@@ -73,15 +52,15 @@ Dieser freigegebene Workflow konsolidiert die Erkennung, stimmt die Engineering-
 
 **Die wichtigsten Unterschiede**
 
-- [!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+- [!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 - **[!DNL Adobe Commerce on Cloud Infrastructure]**: Händler verwalten Anwendungs-Code, Upgrades, Patches und Infrastrukturkonfiguration.
 - **[!DNL Adobe Commerce]On-Premise**: Händler verwaltet Anwendungs-Code, Upgrades, Patches und Infrastrukturkonfigurationen in der gehosteten Umgebung von Adobe.
 
   >[!NOTE]
   >
-  >[Modell der gemeinsamen Verantwortung](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility) für Dienste (MySQL, Elasticsearch und andere).
+  >[Modell der gemeinsamen Verantwortung](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) für Dienste (MySQL, Elasticsearch und andere).
 
-- [!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} **SaaS (Neu - [!DNL Adobe Commerce as a Cloud Service])**: Adobe verwaltet die Kernanwendung, -infrastruktur und -aktualisierungen vollständig. Händler konzentrieren sich auf die Anpassung durch Erweiterungspunkte (APIs, App Builder, UI-SDKs). Der Code der Hauptanwendung ist gesperrt.
+- [!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} **SaaS (Neu — [!DNL Adobe Commerce as a Cloud Service])**: Adobe verwaltet die Kernanwendung, -infrastruktur und -aktualisierungen vollständig. Händler konzentrieren sich auf die Anpassung durch Erweiterungspunkte (APIs, App Builder, UI-SDKs). Der Code der Hauptanwendung ist gesperrt.
 
 **Auswirkungen auf die Architektur**
 
@@ -94,7 +73,7 @@ Dieser freigegebene Workflow konsolidiert die Erkennung, stimmt die Engineering-
 
 - [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) und [API Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)
 - [Commerce Optimizer](../../optimizer/overview.md)
-- [Edge-Bereitstellungsdienste](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de)
+- [Edge-Bereitstellungsdienste](https://experienceleague.adobe.com/developer/commerce/storefront/)
 - Self-Service-Bereitstellung mit dem [Commerce Cloud Manager](../getting-started.md#create-an-instance)
 
 ### Die Migrations-Journey
@@ -169,11 +148,11 @@ Die Bewertung ist nicht nur ein Ausgangspunkt. Das nachgelagerte Migrations-Tool
 
 ### Prüfungsumfang
 
-Das Migrationsbewertungs-Tool konzentriert sich auf das Verständnis der gesamten Migrationslandschaft. Es analysiert benutzerdefinierte Module, Plug-ins, Ereignisse, APIs, Cron-Aufträge, Warteschlangen, Integrationen mit externen Systemen, Storefront-Merkmale und das Datenbankschema, von dem diese Anpassungen abhängen. Die Bewertung ordnet die Ergebnisse den verfügbaren [!DNL Adobe Commerce as a Cloud Service]-Funktionen zu und identifiziert, wo Funktionen mithilfe von [!DNL App Builder] modernisiert oder für die SaaS-Architektur neu entwickelt werden sollten.
+Das Migrationsbewertungs-Tool konzentriert sich auf das Verständnis der gesamten Migrationslandschaft. Es analysiert benutzerdefinierte Module, Plug-ins, Ereignisse, APIs, Cron-Aufträge, Warteschlangen, Integrationen mit externen Systemen, Storefront-Merkmale und das Datenbankschema, von dem diese Anpassungen abhängen. Die Bewertung ordnet die Ergebnisse den verfügbaren [!DNL Adobe Commerce as a Cloud Service] zu und ermittelt, wo Sie die SaaS-Architektur neu gestalten oder die Funktionalität mithilfe von [!DNL App Builder] modernisieren sollten.
 
 Die Bewertung ist eher ein Planungs- als ein Ausführungswerkzeug. Er ermittelt, was modernisiert werden sollte, schätzt die Komplexität der Implementierung ein und gibt Empfehlungen. Implementierungsentscheidungen und Architekturvalidierung bleiben gemeinsame Aktivitäten von Adobe, Partnern und Customer-Engineering-Teams.
 
-Daten, die in benutzerdefinierten Tabellen von Erweiterungen von Drittanbietern gespeichert werden, werden als Überlegungen zur Migration angezeigt. Bei der standardmäßigen Datenmigration werden diese Daten nicht automatisch migriert. Zur Unterstützung dieser Szenarien könnten benutzerdefinierte [!DNL App Builder] erforderlich sein. Weitere Informationen finden [&#x200B; im &#x200B;](#data-migration-commerce-data-migration-service) zur Datenmigration .
+Daten, die in benutzerdefinierten Tabellen von Erweiterungen von Drittanbietern gespeichert werden, werden als Überlegungen zur Migration angezeigt. Bei der standardmäßigen Datenmigration werden diese Daten nicht automatisch migriert. Zur Unterstützung dieser Szenarien könnten benutzerdefinierte [!DNL App Builder] erforderlich sein. Weitere Informationen finden [ im ](#data-migration-commerce-data-migration-service) zur Datenmigration .
 
 Die Bewertung bietet Analysen für die Workflows zur Anpassung der Storefront und Datenmigration:
 
@@ -184,7 +163,7 @@ Sie können Bewertungen auch bei der Weiterentwicklung Ihrer Anwendungen erneut 
 
 ### Nächste Schritte
 
-Jede [!DNL Adobe Commerce as a Cloud Service] Migration sollte mit einer Bewertung beginnen. Dies ist eine kostengünstige Methode, um den Umfang festzulegen, die Unsicherheit zu reduzieren und einen gemeinsamen Migrationsplan zu erstellen, bevor die Implementierung beginnt.
+Jede [!DNL Adobe Commerce as a Cloud Service] Migration beginnt mit einer Bewertung. Dies ist eine kostengünstige Methode, den Umfang festzulegen, Unsicherheiten zu reduzieren und einen gemeinsamen Migrationsplan zu erstellen, bevor die Implementierung beginnt.
 
 Weitere Informationen zu den Bewertungs-Tools und zum nachgelagerten Entwickler-Workflow finden Sie unter [Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/).
 
@@ -216,7 +195,7 @@ Anhand der Ergebnisse der [Migrationsbewertung](#migration-assessment-tool) wand
 
 ### Modernisierung der Storefront
 
-Im Frontend modernisiert der Commerce Developer MCP [Storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de) auf Edge Delivery Services (EDS) für Commerce mithilfe der Adobe Commerce-Textbausteine, Dropdown-Komponenten und EDS-Blöcke.
+Im Frontend modernisiert der Commerce Developer MCP [Storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/) auf Edge Delivery Services (EDS) für Commerce mithilfe der Adobe Commerce-Textbausteine, Dropdown-Komponenten und EDS-Blöcke.
 
 Das Commerce Developer MCP lädt vorhandene Storefront-Projekte basierend auf dem Commerce-Textbaustein. Es modernisiert Ihre Storefront durch:
 
@@ -263,7 +242,7 @@ Weitere Informationen zur Installation und Verwendung des MCP finden Sie in der 
 
 ## Datenmigration (Commerce Data Migration Service)
 
-Für die Migration zu [!DNL Adobe Commerce as a Cloud Service] müssen u. U. jahrelange Daten migriert werden, darunter: Kataloge, Bestellungen, Kunden und Konfigurationen.
+Für die Migration zu [!DNL Adobe Commerce as a Cloud Service] müssen Daten aus mehreren Jahren migriert werden, einschließlich Katalogen, Bestellungen, Kunden und Konfiguration.
 
 Der Commerce-Datenmigrations-Service ersetzt eine manuelle Migration durch einen einzigen, wiederholbaren, automatisierten Prozess. Dies macht komplexe Datenbankmigrationen vorhersehbarer und effizienter.
 
@@ -311,8 +290,8 @@ Da jede Erweiterung ihre Daten unterschiedlich modelliert, kann ein Migrationspf
 
 ### Nächste Schritte
 
-Wenn Sie bereit für die Migration sind, füllen Sie den [Fragebogen zur Datenmigration](../assets/data-migration-scoping-questionnaire.xlsx) aus, der die Quelltopologie, den Entitätsbereich, die Volumes, Compliance-Beschränkungen, die Umstellungsmechanik und alle [benutzerdefinierten Tabellen) &#x200B;](#custom-and-third-party-data), die für die Migrationsplanung erforderlich sind. Durch das Ausfüllen dieses Fragebogens kann Adobe Ihre Umgebung bewerten und ein Migrationsfenster planen.
+Wenn Sie bereit für die Migration sind, füllen Sie den [Fragebogen zur Datenmigration](../assets/data-migration-scoping-questionnaire.xlsx) aus, der die Quelltopologie, den Entitätsbereich, die Volumes, Compliance-Beschränkungen, die Umstellungsmechanik und alle [benutzerdefinierten Tabellen) ](#custom-and-third-party-data), die für die Migrationsplanung erforderlich sind. Durch das Ausfüllen dieses Fragebogens kann Adobe Ihre Umgebung bewerten und ein Migrationsfenster planen.
 
 Lesen Sie die [Handbuch zum Tool für die Massendatenmigration](bulk-data/migration-tool.md), um mehr über den Workflow, die unterstützten Daten und die Verifizierung zu erfahren.
 
-Systemintegratoren, die eine Quellumgebung vorbereiten, können auch die standardmäßige [Adobe Commerce Cloud-CLI](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) und die [Adobe Developer Console](https://developer.adobe.com) für IMS-Anmeldeinformationen verwenden.
+Systemintegratoren, die eine Quellumgebung vorbereiten, können auch die standardmäßige [Adobe Commerce Cloud-CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) und die [Adobe Developer Console](https://developer.adobe.com) für IMS-Anmeldeinformationen verwenden.
