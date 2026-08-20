@@ -42,7 +42,7 @@ Dieses Flussdiagramm zeigt den Onboarding-Sandbox-Prozess mit einer Adobe Commer
 1. [Einrichten des Sandbox-Service](sandbox.md#sandbox-onboarding)
 1. Testen von Zahlungen in einer [Sandbox](sandbox.md#test-in-sandbox-environment)-Umgebung.
 
-[![Weitere Informationen](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![Weitere Informationen](assets/learn-more-button.svg)](https://helpx.adobe.com/de/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB Produktion]
 
@@ -83,7 +83,7 @@ Dieses Flussdiagramm zeigt die Sandbox-Schritte, die für das Onboarding von [!D
 1. [Einrichten des Sandbox-Service](sandbox.md#sandbox-onboarding)
 1. Testen von Zahlungen in einer [Sandbox](sandbox.md#test-in-sandbox-environment)-Umgebung.
 
-[![Weitere Informationen](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![Weitere Informationen](assets/learn-more-button.svg)](https://helpx.adobe.com/de/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB Produktion]
 
@@ -110,8 +110,8 @@ Dieses Flussdiagramm zeigt den allgemeinen Prozess zum Aktivieren von [!DNL Paym
 
 >[!MORELIKETHIS]
 >
-> * [Fehlerbehebung [!DNL Payment Services] Installation](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26826)
-> * [PayPal-Sandbox-Konto nicht verifiziert](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26836)
-> * [Verzögerte [!DNL Payment Services] Berichtsdaten](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26837)
-> * [Testkreditkarte schlägt mit PayPal bei der Verarbeitung von Zahlungen in einer Sandbox-Umgebung fehl](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26825)
-> * [Deaktivieren der  [!DNL Payment Services] -Erweiterung](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)
+> * [Fehlerbehebung [!DNL Payment Services] Installation](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26826)
+> * [PayPal-Sandbox-Konto nicht verifiziert](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26836)
+> * [Verzögerte [!DNL Payment Services] Berichtsdaten](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26837)
+> * [Testkreditkarte schlägt mit PayPal bei der Verarbeitung von Zahlungen in einer Sandbox-Umgebung fehl](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26825)
+> * [Deaktivieren der  [!DNL Payment Services] -Erweiterung](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)

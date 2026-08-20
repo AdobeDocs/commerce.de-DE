@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Die [Datenverbindungserweiterung](overview.md) verbindet Ihre Commerce-Daten mit Experience Platform. Daten, die in Experience Platform verwendet werden können, sind in zwei Verhaltenstypen unterteilt: Zeitreihendaten, die zur Klasse **Erlebnisereignis** gehören, und Datensatzdaten, die zur Klasse **Individuelles Profil** gehören.
 
-Weitere Informationen über [Datenverhalten](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#data-behaviors) und [Klassen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#class) in Experience Platform.
+Weitere Informationen über [Datenverhalten](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#data-behaviors) und [Klassen](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#class) in Experience Platform.
 
 ## Zeitreihendaten
 
@@ -39,7 +39,7 @@ Erfahren Sie, wie [ein Schema erstellen](update-xdm.md) das Verhaltens- und Back
 
 ## Datensatzdaten
 
-Datensatzdaten liefern Informationen über die Attribute eines Subjekts. Ein Subjekt kann eine Organisation oder eine Einzelperson sein. Beispiel: Ein Käufer auf Ihrer Site erstellt ein Konto, das Datensatzdaten generiert. Diese Daten werden mithilfe eines Schemas in die Experience Platform aufgenommen, bei dem die Klasse auf &quot;**&quot; festgelegt**. Sie können diese Datensatzdaten an den Profilverwaltungs- und Segmentierungs-Service von Adobe senden: [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
+Datensatzdaten liefern Informationen über die Attribute eines Subjekts. Ein Subjekt kann eine Organisation oder eine Einzelperson sein. Beispiel: Ein Käufer auf Ihrer Site erstellt ein Konto, das Datensatzdaten generiert. Diese Daten werden mithilfe eines Schemas in die Experience Platform aufgenommen, bei dem die Klasse auf &quot;**&quot; festgelegt**. Sie können diese Datensatzdaten an den Profilverwaltungs- und Segmentierungs-Service von Adobe senden: [Real-Time CDP](https://experienceleague.adobe.com/de/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
 
 ### Erfasste Profildatensatzdaten
 

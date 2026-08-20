@@ -60,4 +60,4 @@ Wenn kein Synonym erstellt wird und ein Käufer nach **Küchentabelle** sucht, s
 
 Nachdem Sie ein Synonym erstellt haben, ändert sich das Suchverhalten, sodass Sie nach der exakten Phrase **Küchentabelle)**. Dadurch kann die Anzahl der Ergebnisse reduziert werden, da nur Produkte mit der exakten Phrase angezeigt werden.
 
-Wenn Sie möchten, dass nach den Begriffen separat gesucht wird, können Sie [ein Support-Ticket erstellen](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Wenn genügend Bedarf besteht, wird Commerce in einer zukünftigen Version erwägen, diese Funktion zum Produkt hinzuzufügen.
+Wenn Sie möchten, dass nach den Begriffen separat gesucht wird, können Sie [ein Support-Ticket erstellen](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Wenn genügend Bedarf besteht, wird Commerce in einer zukünftigen Version erwägen, diese Funktion zum Produkt hinzuzufügen.

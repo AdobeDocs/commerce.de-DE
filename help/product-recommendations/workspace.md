@@ -48,7 +48,7 @@ Wenn Sie eine Headless-Storefront verwenden, finden Sie in der folgenden Dokumen
 
 ## Festlegen des Umfangs
 
-Zunächst wird [Umfang](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) aller Empfehlungseinstellungen auf `Default Store View` festgelegt. Wenn Ihre Commerce-Installation mehrere Store-Ansichten enthält, setzen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings), für die Ihre Empfehlungen gelten.
+Zunächst wird [Umfang](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/websites-stores-views) aller Empfehlungseinstellungen auf `Default Store View` festgelegt. Wenn Ihre Commerce-Installation mehrere Store-Ansichten enthält, setzen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/websites-stores-views#scope-settings), für die Ihre Empfehlungen gelten.
 
 ## Festlegen des Datumsbereichs von Metriken
 

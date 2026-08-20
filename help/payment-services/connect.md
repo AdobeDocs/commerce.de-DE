@@ -3,7 +3,7 @@ title: Instanz verbinden
 description: Verbinden Sie Ihre Commerce-Instanz mit einem API-Schlüssel und einem privaten Schlüssel und geben Sie den Datenspeicher in der Konfiguration an.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Paas
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
 source-wordcount: '698'
@@ -20,7 +20,7 @@ Sie verbinden Ihre Commerce-Instanz mithilfe eines API-Schlüssels und eines pri
 
 >[!INFO]
 >
-> Weitere Informationen finden Sie in unserem [[!DNL Adobe Commerce] Services](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)Connector)-Video.
+> Weitere Informationen finden Sie in unserem [[!DNL Adobe Commerce] Services](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)Connector)-Video.
 
 * Wenn Sie *bereits mit Ihrer Instanz verbunden* Ihre API-Anmeldeinformationen abgerufen und verwendet und Commerce Services konfiguriert haben, können Sie mit dem Schritt &quot;[&#x200B; Ihrer Test-Sandbox einrichten“ &#x200B;](sandbox.md).
 * Wenn Sie weiterhin *Ihre Instanz verbinden müssen* finden Sie weitere Informationen in diesem Thema zum [&#x200B; von API-Anmeldeinformationen &#x200B;](#obtain-api-credentials) zum [&#x200B; von Commerce Services](#configure-commerce-services).
@@ -32,11 +32,11 @@ Sie verbinden Ihre Commerce-Instanz mithilfe eines API-Schlüssels und eines pri
 
 ## Abrufen von API-Anmeldeinformationen
 
-Um einen Commerce SaaS-Service zu nutzen, müssen Sie die API-Schlüssel Ihrer Instanz (den öffentlichen Commerce-API-Schlüssel und einen privaten Schlüssel) sowohl für die Sandbox als auch für die Produktion verwenden, die in Ihrem [Mein Konto-Dashboard“ erstellt und verwaltet &#x200B;](https://account.magento.com/customer/account/login). [Das Schlüsselpaar](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) kann für ein Commerce-Konto erstellt werden - eines für eine Sandbox und eines für die Produktion - obwohl jeweils nur ein Paar aktiv verwendet werden kann.
+Um einen Commerce SaaS-Service zu nutzen, müssen Sie die API-Schlüssel Ihrer Instanz (den öffentlichen Commerce-API-Schlüssel und einen privaten Schlüssel) sowohl für die Sandbox als auch für die Produktion verwenden, die in Ihrem [Mein Konto-Dashboard“ erstellt und verwaltet &#x200B;](https://account.magento.com/customer/account/login). [Das Schlüsselpaar](https://experienceleague.adobe.com/de/docs/commerce-admin/config/services/saas) kann für ein Commerce-Konto erstellt werden - eines für eine Sandbox und eines für die Produktion - obwohl jeweils nur ein Paar aktiv verwendet werden kann.
 
 >[!NOTE]
 >
->Benötigen Sie Hilfe beim Zugriff auf Ihr [!UICONTROL My Account]-Dashboard? Siehe [Erstellen eines Commerce-](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create).
+>Benötigen Sie Hilfe beim Zugriff auf Ihr [!UICONTROL My Account]-Dashboard? Siehe [Erstellen eines Commerce-](https://experienceleague.adobe.com/de/docs/commerce-admin/start/commerce-account/commerce-account-create).
 
 Nach der Erstellung ist ein öffentlicher API-Schlüssel immer in Ihrem My Account Dashboard verfügbar. Sie kann bei Bedarf kopiert oder gelöscht werden. Der private API-Schlüssel wird sichtbar, wenn Sie einen öffentlichen API-Schlüssel für die Sandbox oder die Produktion erstellen. Er steht nur zum Kopieren oder Speichern im daraufhin angezeigten Dialogfeld zur Verfügung und kann später nicht mehr aufgerufen werden.
 
@@ -73,7 +73,7 @@ Nachdem Sie Ihre Anmeldedaten erhalten haben, können Sie Ihr SaaS-Projekt und I
 
    >[!INFO]
    >
-   > Weitere Informationen finden Sie in unserem [[!DNL Adobe Commerce] Services](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs)Connector)-Video.
+   > Weitere Informationen finden Sie in unserem [[!DNL Adobe Commerce] Services](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs)Connector)-Video.
 
 ## Endpunkt
 

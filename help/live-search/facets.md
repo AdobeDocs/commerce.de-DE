@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Facetten
 
-Facettierung ist eine Methode zur Hochleistungsfilterung, bei der mehrere Dimensionen von Attributwerten als Suchkriterien verwendet werden. Die Facettensuche ist ähnlich, aber erheblich „intelligenter“ als die standardmäßige [Layered Navigation](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-layered). Die Liste der verfügbaren Filter wird durch die [filterbaren Attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-layered#filterable-attributes) der in den Suchergebnissen zurückgegebenen Produkte bestimmt.
+Facettierung ist eine Methode zur Hochleistungsfilterung, bei der mehrere Dimensionen von Attributwerten als Suchkriterien verwendet werden. Die Facettensuche ist ähnlich, aber erheblich „intelligenter“ als die standardmäßige [Layered Navigation](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/navigation/navigation-layered). Die Liste der verfügbaren Filter wird durch die [filterbaren Attribute](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/navigation/navigation-layered#filterable-attributes) der in den Suchergebnissen zurückgegebenen Produkte bestimmt.
 
 [!DNL Live Search] verwendet die `productSearch`-Abfrage, die Facetten- und andere Daten zurückgibt, die spezifisch für [!DNL Live Search] sind. Code-Beispiele finden Sie [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) der Entwicklerdokumentation unter `productSearch` Abfrage .
 
@@ -45,8 +45,8 @@ Wenn Sie mit einer großen Anzahl von Attributen zu kämpfen haben, sollten Sie 
 
 | Einstellung | Beschreibung |
 |--- |--- |
-| [Einstellungen für Kategorieanzeige](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/categories-display-settings) | Anker - `Yes` |
-| [Attributeigenschaften](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) | [Katalogeingabetyp](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (nur Widget), `Text swatch` (nur Widget) |
+| [Einstellungen für Kategorieanzeige](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/categories/create/categories-display-settings) | Anker - `Yes` |
+| [Attributeigenschaften](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) | [Katalogeingabetyp](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/attributes-input-types) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (nur Widget), `Text swatch` (nur Widget) |
 | Eigenschaften der Storefront-Attribute | Verwendung in Suchergebnissen - mehrschichtige Navigation - `Yes` |
 
 ## Facettenaggregation

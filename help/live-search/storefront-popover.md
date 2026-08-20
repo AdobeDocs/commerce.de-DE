@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # [!DNL Storefront Popover]
 
-Wenn [!DNL Live Search] [installiert](install.md) wird, wird eine [!DNL popover] in der Storefront angezeigt, wenn Käufer in das Feld [Suche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search#quick-search) eingeben. Mit jedem eingegebenen Zeichen wird die [!DNL popover] mit vorgeschlagenen Produkten und Miniaturbildern der wichtigsten Suchergebnisse aktualisiert.
+Wenn [!DNL Live Search] [installiert](install.md) wird, wird eine [!DNL popover] in der Storefront angezeigt, wenn Käufer in das Feld [Suche](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search#quick-search) eingeben. Mit jedem eingegebenen Zeichen wird die [!DNL popover] mit vorgeschlagenen Produkten und Miniaturbildern der wichtigsten Suchergebnisse aktualisiert.
 
 [!DNL Live Search] gibt Ergebnisse für eine Abfrage mit mindestens zwei Zeichen zurück. Bei einer Teilübereinstimmung beträgt die maximale Anzahl von Zeichen pro Wort 20. Die Anzahl der Zeichen in einer Abfrage vom Typ „Suche während der Eingabe“ ist nicht konfigurierbar.
 
@@ -33,7 +33,7 @@ Wenn [!DNL Live Search] [installiert](install.md) wird, wird eine [!DNL popover]
 
 ## [!DNL Popover] Seitengröße
 
-Die Seitengröße der [!DNL popover] bestimmt, wie viele Zeilen von automatisch vervollständigten Produkten zurückgegeben werden können. Während der Live Search-Installation ändert sich der `page_size`-Wert in den aktuellen Wert der Einstellung [Katalogsuche](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/catalog) - `Autocomplete Limit`.
+Die Seitengröße der [!DNL popover] bestimmt, wie viele Zeilen von automatisch vervollständigten Produkten zurückgegeben werden können. Während der Live Search-Installation ändert sich der `page_size`-Wert in den aktuellen Wert der Einstellung [Katalogsuche](https://experienceleague.adobe.com/de/docs/commerce-admin/config/catalog/catalog) - `Autocomplete Limit`.
 
 Standardmäßig ist der Grenzwert für Katalogsuche - automatische Vervollständigung auf acht Zeilen (oder Zeilen) festgelegt. Gehen Sie wie folgt vor, um die Seitengröße der [!DNL popover] zu ändern:
 
@@ -129,7 +129,7 @@ Sie können die [!DNL storefront popover] mit einem benutzerdefinierten [Design�
 
 ## Deaktivieren der [!DNL popover]
 
-Um die [!DNL popover] zu deaktivieren und die standardmäßige [Schnellsuche“ wiederherzustellen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search#quick-search) geben Sie den folgenden Befehl ein:
+Um die [!DNL popover] zu deaktivieren und die standardmäßige [Schnellsuche“ wiederherzustellen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search#quick-search) geben Sie den folgenden Befehl ein:
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

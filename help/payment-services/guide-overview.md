@@ -113,11 +113,11 @@ Einen Überblick über vordefinierte Zahlungslösungen, einschließlich Funktion
 
 >[!MORELIKETHIS]
 >
-> * [[!DNL Adobe Commerce] 2.4-Benutzerhandbuch](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) - Händlerorientierte Dokumentation für [!DNL Adobe Commerce] und [!DNL Magento Open Source]
-> * [[!DNL Adobe Commerce] 2.4-Benutzerhandbuch](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) - Entwicklerorientierte Dokumentation zum Erstellen und Anpassen von [!DNL Adobe Commerce] oder [!DNL Magento Open Source]
+> * [[!DNL Adobe Commerce] 2.4-Benutzerhandbuch](https://experienceleague.adobe.com/de/docs/commerce-admin/user-guides/home) - Händlerorientierte Dokumentation für [!DNL Adobe Commerce] und [!DNL Magento Open Source]
+> * [[!DNL Adobe Commerce] 2.4-Benutzerhandbuch](https://experienceleague.adobe.com/de/docs/commerce-admin/user-guides/home) - Entwicklerorientierte Dokumentation zum Erstellen und Anpassen von [!DNL Adobe Commerce] oder [!DNL Magento Open Source]
 > * [Versionshinweise](release-notes.md) - Erfahren Sie mehr über bevorstehende Versionen, Produktdetails und darüber, welche Adobe Commerce-Versionen die [!DNL Payment Services] unterstützen
-> * [Hilfezentrum](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) - Suchen Sie in der Wissensdatenbank nach [!DNL Payment Services] Artikeln zur Fehlerbehebung
-> * [Support-Tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) - Commerce-Kunden können ein Ticket einreichen, um zusätzliche Hilfe zu erhalten
+> * [Hilfezentrum](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/overview) - Suchen Sie in der Wissensdatenbank nach [!DNL Payment Services] Artikeln zur Fehlerbehebung
+> * [Support-Tickets](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) - Commerce-Kunden können ein Ticket einreichen, um zusätzliche Hilfe zu erhalten
 
 ## Support
 

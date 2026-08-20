@@ -45,7 +45,7 @@ Informationen zum Konfigurieren von [&#x200B; und Gruppierungen finden &#x200B;]
 
 1. Führen Sie einen der folgenden Schritte aus, um die Facettenbeschriftung zu bearbeiten:
 
-   * Bearbeiten Sie für eine [!DNL Commerce] Storefront die [Attributbezeichnung](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes).
+   * Bearbeiten Sie für eine [!DNL Commerce] Storefront die [Attributbezeichnung](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/product-attributes).
    * Klicken Sie bei einer Headless-Implementierung auf den Wert in der ersten Spalte und bearbeiten Sie den Text nach Bedarf.
 
    ![Bezeichnung bearbeiten](assets/facet-edit-label.png)

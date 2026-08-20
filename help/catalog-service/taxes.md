@@ -29,8 +29,8 @@ In diesem Thema wird API Mesh verwendet, um Produktpreise auf einer Produktdetai
 
 Sie müssen Steuern dafür konfiguriert haben, damit sie auf der Produktdetailseite angezeigt werden.
 
-1. [Steuersätze einrichten](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules).
-1. Aktivieren Sie die Anzeige [im Katalog](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/display-settings#step-1%3A-configure-catalog-prices-display-settings) und legen Sie dafür entweder `Including and Excluding Tax` oder `Including Tax` fest.
+1. [Steuersätze einrichten](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules).
+1. Aktivieren Sie die Anzeige [im Katalog](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/taxes/display-settings#step-1%3A-configure-catalog-prices-display-settings) und legen Sie dafür entweder `Including and Excluding Tax` oder `Including Tax` fest.
 
 Überprüfen Sie, ob der Katalog-Service funktioniert, indem Sie eine Produktdetailseite prüfen.
 
