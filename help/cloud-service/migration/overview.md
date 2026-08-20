@@ -8,12 +8,33 @@ role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:12:28.840Z'
 TQID: 'https://experienceleague.adobe.com/GmxaQdGKvAIDpZ2jvmlLFSYw0IFQysIMOT0lUnsJBsI'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f56d26ed-050b-4fb7-b29b-8e6e994e80a2id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: eb30f47f-d87a-400f-8f78-63ce7979ff56id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
 source-wordcount: 3302
@@ -152,7 +173,7 @@ Das Migrationsbewertungs-Tool konzentriert sich auf das Verständnis der gesamte
 
 Die Bewertung ist eher ein Planungs- als ein Ausführungswerkzeug. Er ermittelt, was modernisiert werden sollte, schätzt die Komplexität der Implementierung ein und gibt Empfehlungen. Implementierungsentscheidungen und Architekturvalidierung bleiben gemeinsame Aktivitäten von Adobe, Partnern und Customer-Engineering-Teams.
 
-Daten, die in benutzerdefinierten Tabellen von Erweiterungen von Drittanbietern gespeichert werden, werden als Überlegungen zur Migration angezeigt. Bei der standardmäßigen Datenmigration werden diese Daten nicht automatisch migriert. Zur Unterstützung dieser Szenarien könnten benutzerdefinierte [!DNL App Builder] erforderlich sein. Weitere Informationen finden [ im ](#data-migration-commerce-data-migration-service) zur Datenmigration .
+Daten, die in benutzerdefinierten Tabellen von Erweiterungen von Drittanbietern gespeichert werden, werden als Überlegungen zur Migration angezeigt. Bei der standardmäßigen Datenmigration werden diese Daten nicht automatisch migriert. Zur Unterstützung dieser Szenarien könnten benutzerdefinierte [!DNL App Builder] erforderlich sein. Weitere Informationen finden [&#x200B; im &#x200B;](#data-migration-commerce-data-migration-service) zur Datenmigration .
 
 Die Bewertung bietet Analysen für die Workflows zur Anpassung der Storefront und Datenmigration:
 
@@ -290,7 +311,7 @@ Da jede Erweiterung ihre Daten unterschiedlich modelliert, kann ein Migrationspf
 
 ### Nächste Schritte
 
-Wenn Sie bereit für die Migration sind, füllen Sie den [Fragebogen zur Datenmigration](../assets/data-migration-scoping-questionnaire.xlsx) aus, der die Quelltopologie, den Entitätsbereich, die Volumes, Compliance-Beschränkungen, die Umstellungsmechanik und alle [benutzerdefinierten Tabellen) ](#custom-and-third-party-data), die für die Migrationsplanung erforderlich sind. Durch das Ausfüllen dieses Fragebogens kann Adobe Ihre Umgebung bewerten und ein Migrationsfenster planen.
+Wenn Sie bereit für die Migration sind, füllen Sie den [Fragebogen zur Datenmigration](../assets/data-migration-scoping-questionnaire.xlsx) aus, der die Quelltopologie, den Entitätsbereich, die Volumes, Compliance-Beschränkungen, die Umstellungsmechanik und alle [benutzerdefinierten Tabellen) &#x200B;](#custom-and-third-party-data), die für die Migrationsplanung erforderlich sind. Durch das Ausfüllen dieses Fragebogens kann Adobe Ihre Umgebung bewerten und ein Migrationsfenster planen.
 
 Lesen Sie die [Handbuch zum Tool für die Massendatenmigration](bulk-data/migration-tool.md), um mehr über den Workflow, die unterstützten Daten und die Verifizierung zu erfahren.
 
