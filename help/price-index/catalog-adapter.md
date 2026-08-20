@@ -5,9 +5,13 @@ seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
 exl-id: e42101fa-9c30-482c-a649-44dc35376abb
 TQID: https://experienceleague.adobe.com/WnL4dJbZV0acHT5kpEAOyTVjhzW23RjHbQFVdDl4HDk
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
 source-wordcount: 775
@@ -26,7 +30,7 @@ Wenn Sie die [!DNL Catalog Adapter] aktivieren, werden Preisindizierung und -vor
 - Der im Adobe Commerce-Programm enthaltene Preisindizer ist deaktiviert.
 - Die Preisverwaltung erfolgt über den SaaS-Datenexport und den [SaaS-Preisindex](price-indexing.md).
 - Wenn ein Kunde ein Produkt, eine Kategorie oder eine andere Seite öffnet, die Produktpreise anzeigt, werden die Preise über den Adobe Commerce-Service abgerufen.
-- Die Preise werden an den Adobe Commerce-Service gesendet, indem Daten aus dem [SaaS-Datenexport“ ](../data-export/overview.md) werden.
+- Die Preise werden an den Adobe Commerce-Service gesendet, indem Daten aus dem [SaaS-Datenexport“ &#x200B;](../data-export/overview.md) werden.
 - Checkout berechnet Preise dynamisch neu.
 
 Sie können die Preisindizierung in der Commerce-Anwendung erneut aktivieren, indem Sie die Katalogadaptererweiterung entfernen oder deaktivieren.

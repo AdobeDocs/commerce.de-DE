@@ -5,10 +5,16 @@ feature: CMS, Media
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 exl-id: c0fb59e1-daf8-4f48-a7a7-b48e8782dfad
 TQID: https://experienceleague.adobe.com/z4WBMzUa6Jn8EjUH1e5oojV4I3bTDZJylwtQ7LZ4wPE
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 1675
@@ -134,7 +140,7 @@ Verwenden Sie diese Methode, um die [!DNL AEM Assets Integration]-Erweiterung f�
 
 >[!NOTE]
 >
-> Die Einrichtung des Commerce Services-Connectors ist ein einmaliger Prozess, der für die Verwendung von [Adobe Commerce SaaS-Services erforderlich ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#availableservices). Wenn Sie den Connector bereits für einen anderen Service konfiguriert haben, können Sie die vorhandene Konfiguration über den Commerce-Admin anzeigen, indem Sie **[!UICONTROL Systems]** > [!UICONTROL Services] > **[!UICONTROL Commerce Services Connector]** auswählen.
+> Die Einrichtung des Commerce Services-Connectors ist ein einmaliger Prozess, der für die Verwendung von [Adobe Commerce SaaS-Services erforderlich &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#availableservices). Wenn Sie den Connector bereits für einen anderen Service konfiguriert haben, können Sie die vorhandene Konfiguration über den Commerce-Admin anzeigen, indem Sie **[!UICONTROL Systems]** > [!UICONTROL Services] > **[!UICONTROL Commerce Services Connector]** auswählen.
 
 Um Daten zwischen Ihrer Adobe Commerce-Instanz und den Services zu übertragen, die die AEM Assets-Integration aktivieren, konfigurieren Sie den Commerce Services Connector über die Admin Console (**[!UICONTROL System]** > [!UICONTROL Services] > **[!UICONTROL Commerce Services Connector]**).
 
@@ -159,7 +165,7 @@ Bevor Sie Adobe I/O Events konfigurieren, überprüfen Sie die RabbitMQ- und Cro
 - Stellen Sie sicher, dass RabbitMQ aktiviert ist und auf Ereignisse wartet.
   - [RabbitMQ-Setup für Adobe Commerce On-Premise](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)
   - [RabbitMQ-Setup für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)
-  - Stellen Sie sicher[ dass Cron-Aufträge aktiviert ](https://developer.adobe.com/commerce/extensibility/events/configure-commerce/#check-cron-and-message-queue-configuration). Cron-Aufträge sind für die Kommunikation und Workflows für die AEM Assets-Integration erforderlich.
+  - Stellen Sie sicher[&#x200B; dass Cron-Aufträge aktiviert &#x200B;](https://developer.adobe.com/commerce/extensibility/events/configure-commerce/#check-cron-and-message-queue-configuration). Cron-Aufträge sind für die Kommunikation und Workflows für die AEM Assets-Integration erforderlich.
 
 >[!NOTE]
 >
@@ -212,7 +218,7 @@ Bevor Sie einen Ausschnitt basierend auf diesem Beispiel erstellen, überprüfen
 
 - `dynamic`: Legt die Ausschnittversion fest. Dieses Beispiel verwendet `0`. Detaillierte Informationen zu Datenmodellen finden Sie [Fastly VCL](https://www.fastly.com/documentation/reference/api/vcl-services/snippet/)Snippets).
 
-- `type`: Gibt den Typ des VCL-Ausschnitts an, der die Position des Ausschnitts im generierten VCL-Code bestimmt. Dieses Beispiel verwendet `recv`. Eine Liste der Snippet[Typen finden Sie ](https://www.fastly.com/documentation/reference/api/#api-section-snippet) der Snippet-Referenz Fastly VCL .
+- `type`: Gibt den Typ des VCL-Ausschnitts an, der die Position des Ausschnitts im generierten VCL-Code bestimmt. Dieses Beispiel verwendet `recv`. Eine Liste der Snippet[Typen finden Sie &#x200B;](https://www.fastly.com/documentation/reference/api/#api-section-snippet) der Snippet-Referenz Fastly VCL .
 
 - `priority`: Bestimmt, wann der VCL-Snippet ausgeführt wird. In diesem Beispiel wird die `5` verwendet, um sofort auszuführen und zu überprüfen, ob eine Admin-Anfrage von einer zulässigen IP-Adresse stammt.
 

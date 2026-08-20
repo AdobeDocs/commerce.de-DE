@@ -22,8 +22,8 @@ Sie verbinden Ihre Commerce-Instanz mithilfe eines API-Schlüssels und eines pri
 >
 > Weitere Informationen finden Sie in unserem [[!DNL Adobe Commerce] Services](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)Connector)-Video.
 
-* Wenn Sie *bereits mit Ihrer Instanz verbunden* Ihre API-Anmeldeinformationen abgerufen und verwendet und Commerce Services konfiguriert haben, können Sie mit dem Schritt &quot;[ Ihrer Test-Sandbox einrichten“ ](sandbox.md).
-* Wenn Sie weiterhin *Ihre Instanz verbinden müssen* finden Sie weitere Informationen in diesem Thema zum [ von API-Anmeldeinformationen ](#obtain-api-credentials) zum [ von Commerce Services](#configure-commerce-services).
+* Wenn Sie *bereits mit Ihrer Instanz verbunden* Ihre API-Anmeldeinformationen abgerufen und verwendet und Commerce Services konfiguriert haben, können Sie mit dem Schritt &quot;[&#x200B; Ihrer Test-Sandbox einrichten“ &#x200B;](sandbox.md).
+* Wenn Sie weiterhin *Ihre Instanz verbinden müssen* finden Sie weitere Informationen in diesem Thema zum [&#x200B; von API-Anmeldeinformationen &#x200B;](#obtain-api-credentials) zum [&#x200B; von Commerce Services](#configure-commerce-services).
 * Wenn Sie sich nicht sicher *, ob Ihre Instanz verbunden ist*, navigieren Sie zu **System** > Services > **Commerce Services Connector** und zeigen Sie die öffentlichen und privaten API-Schlüsselwerte in den Abschnitten [!UICONTROL Sandbox Keys] und [!UICONTROL Production Keys] sowie die Felder *Projekt* und *Datenraum* im Abschnitt [!UICONTROL SaaS Identifier] an. Wenn diese Werte vorhanden sind, ist Ihre Instanz verbunden.
 
 >[!NOTE]
@@ -32,7 +32,7 @@ Sie verbinden Ihre Commerce-Instanz mithilfe eines API-Schlüssels und eines pri
 
 ## Abrufen von API-Anmeldeinformationen
 
-Um einen Commerce SaaS-Service zu nutzen, müssen Sie die API-Schlüssel Ihrer Instanz (den öffentlichen Commerce-API-Schlüssel und einen privaten Schlüssel) sowohl für die Sandbox als auch für die Produktion verwenden, die in Ihrem [Mein Konto-Dashboard“ erstellt und verwaltet ](https://account.magento.com/customer/account/login). [Das Schlüsselpaar](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) kann für ein Commerce-Konto erstellt werden - eines für eine Sandbox und eines für die Produktion - obwohl jeweils nur ein Paar aktiv verwendet werden kann.
+Um einen Commerce SaaS-Service zu nutzen, müssen Sie die API-Schlüssel Ihrer Instanz (den öffentlichen Commerce-API-Schlüssel und einen privaten Schlüssel) sowohl für die Sandbox als auch für die Produktion verwenden, die in Ihrem [Mein Konto-Dashboard“ erstellt und verwaltet &#x200B;](https://account.magento.com/customer/account/login). [Das Schlüsselpaar](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) kann für ein Commerce-Konto erstellt werden - eines für eine Sandbox und eines für die Produktion - obwohl jeweils nur ein Paar aktiv verwendet werden kann.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Nach der Erstellung ist ein öffentlicher API-Schlüssel immer in Ihrem My Accou
 
 Ein bestimmtes API-Schlüsselpaar gilt für alle Commerce-Services in einer Umgebung. Wenn Sie also bereits Commerce-Services für Ihre Instanz konfiguriert haben, ist Ihr API-Schlüsselpaar bereits im Commerce Services Connector vorhanden.
 
-Wenn Ihr API-Schlüssel verloren geht, muss ein neues API-Schlüsselpaar [ (generiert](../landing/saas.md#genapikey) und [angewendet](../landing/saas.md#createsaasenv) auf die Commerce Services Connector-Konfiguration in der Admin Console angewendet werden. Wenn die falschen Schlüssel konfiguriert sind oder keine in der Konfiguration vorhanden sind, wird in Payment Services ein Fehlerdialogfeld angezeigt, das Sie darüber informiert, dass das Konto nicht verifiziert wurde.
+Wenn Ihr API-Schlüssel verloren geht, muss ein neues API-Schlüsselpaar [&#x200B; (generiert](../landing/saas.md#genapikey) und [angewendet](../landing/saas.md#createsaasenv) auf die Commerce Services Connector-Konfiguration in der Admin Console angewendet werden. Wenn die falschen Schlüssel konfiguriert sind oder keine in der Konfiguration vorhanden sind, wird in Payment Services ein Fehlerdialogfeld angezeigt, das Sie darüber informiert, dass das Konto nicht verifiziert wurde.
 
 Siehe eine [Liste der verfügbaren Commerce-Services, die die -API verwenden](../landing/saas.md#availableservices).
 
@@ -67,9 +67,9 @@ Nachdem Sie Ihre Anmeldedaten erhalten haben, können Sie Ihr SaaS-Projekt und I
 
    Diese Option ist sichtbar, wenn Sie Commerce Services noch nicht für Ihr Konto konfiguriert haben.
 
-   Sie werden zum Konfigurationsbereich im Admin-Bereich, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**weitergeleitet, um Ihren Commerce Services-Connector zu konfigurieren.
+   Sie werden zum Konfigurationsbereich im Admin-Bereich, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**&#x200B;weitergeleitet, um Ihren Commerce Services-Connector zu konfigurieren.
 
-1. Gehen Sie zur Konfiguration Ihrer Commerce-Services wie unter [SaaS-Konfiguration“ ](../landing/saas.md#saasenv).
+1. Gehen Sie zur Konfiguration Ihrer Commerce-Services wie unter [SaaS-Konfiguration“ &#x200B;](../landing/saas.md#saasenv).
 
    >[!INFO]
    >
