@@ -18,9 +18,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1415
+source-wordcount: 1421
 ht-degree: 0%
 
 ---
@@ -49,9 +49,9 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 ## Indizierung
 
 - [!DNL Live Search] [indizes](indexing.md) bis zu insgesamt 450 Produktattribute pro Shop-Ansicht. Diese sind wie folgt verteilt:
-   - 50 sortierbare Attribute
-   - 200 filterbare Attribute
-   - 200 durchsuchbare Attribute
+  - 50 sortierbare Attribute
+  - 200 filterbare Attribute
+  - 200 durchsuchbare Attribute
 - [!DNL Live Search] indiziert nur Produkte aus der Adobe Commerce-Datenbank.
 - CMS-Seiten sind nicht indiziert.
 - Attribute für SKU, Name und Kategorie sind standardmäßig durchsuchbar und können nicht von der Suche ausgeschlossen werden. Heben Sie die Zuweisung der Produkte zu den Kategorien auf, wenn sie nicht zu diesen Kategorien gehören sollen.
@@ -59,7 +59,7 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 ## Facetten
 
 - Aus dem Satz definierter filterbarer Attribute können Sie bis zu 100 Attribute als Facetten konfigurieren.
-- Innerhalb einer Facette können maximal 100 Buckets zurückgegeben werden. Wenn Sie mehr als 100 Behälter zurückgeben müssen, erstellen [ein Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide), damit Adobe die Leistungsauswirkungen analysieren und ermitteln kann, ob es möglich ist, diesen Grenzwert für Ihre Umgebung zu erhöhen.
+- Innerhalb einer Facette können maximal 100 Buckets zurückgegeben werden. Wenn Sie mehr als 100 Behälter zurückgeben müssen, erstellen [ein Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide), damit Adobe die Leistungsauswirkungen analysieren und ermitteln kann, ob es möglich ist, diesen Grenzwert für Ihre Umgebung zu erhöhen.
 - Dynamische Facetten können Leistungsprobleme bei großen Indizes und Indizes mit hoher Ordinalität verursachen. Wenn Sie dynamische Facetten erstellt haben und eine Leistungsbeeinträchtigung oder das Laden einer Seite mit Zeitüberschreitungsfehlern bemerken, versuchen Sie, Ihre Facetten zu ändern und anzuheften, um festzustellen, ob dies Ihr Leistungsproblem behebt.
 - Lagerstatus (`quantity_and_stock_status`) wird nicht als Facette unterstützt. In Admin können Sie [!UICONTROL Display Out of Stock Products] = [!UICONTROL No] festlegen, um nicht vorrätige Produkte zu filtern. Dies wird im `[PLP Widget](plp-styling.md)`-Modul standardmäßig unterstützt. Weitere Informationen finden Sie [Verwalten von nicht vorrätigen Produkten](manage-out-of-stock-products.md).
 - Datentypattribute werden nicht als Facette unterstützt.
@@ -100,9 +100,9 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 
 - Produkte werden nicht angezeigt, wenn sie nicht zu einem freigegebenen Standardkatalog hinzugefügt werden.
 - So beschränken Sie Kundengruppen mithilfe von [Kategorieberechtigungen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/categories/category-permissions):
-   - Produkte müssen der Stammkategorie zugewiesen werden. (**Hinweis:** Sie können diese Einschränkung entfernen, indem Sie die SaaS-Datenexporterweiterung auf Version 103.4.0 oder höher aktualisieren. Siehe [Verwalten der Datenexporterweiterung](../data-export/manage-extension.md).
-   - Die Kundengruppe „Nicht angemeldet“ muss über „Erlauben“-Browserberechtigungen verfügen.
-   - Um Produkte auf die Kundengruppe „Nicht angemeldet“ zu beschränken, gehen Sie zu jeder Kategorie und legen Sie die Berechtigungen für jede [Kundengruppe“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
+  - Produkte müssen der Stammkategorie zugewiesen werden. (**Hinweis:** Sie können diese Einschränkung entfernen, indem Sie die SaaS-Datenexporterweiterung auf Version 103.4.0 oder höher aktualisieren. Siehe [Verwalten der Datenexporterweiterung](../data-export/manage-extension.md).
+  - Die Kundengruppe „Nicht angemeldet“ muss über „Erlauben“-Browserberechtigungen verfügen.
+  - Um Produkte auf die Kundengruppe „Nicht angemeldet“ zu beschränken, gehen Sie zu jeder Kategorie und legen Sie die Berechtigungen für jede [Kundengruppe“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - Vorkonfigurierte Unterstützung für B2B mit dem PLP-Widget auf PWA Studio wird derzeit nicht unterstützt. Sie können jedoch [die API verwenden](install.md#pwa-support) um diese Funktion zu implementieren.
 - Kategoriefacetten in [!DNL Live Search] zeigen möglicherweise Kategorien an, die für eine bestimmte [&#x200B; (Kundengruppe) nicht &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) werden können.
 - [!DNL Live Search] können bis zu 1.000 Kundengruppen unterstützen.
@@ -123,4 +123,4 @@ Hilfe bei der Fehlerbehebung bei häufigen Problemen in [!DNL Live Search] finde
 - [[!DNL Live Search] Dashboard und Suchergebnis-Ranking ist falsch](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect) - Behebt Probleme, bei denen die im Dashboard der Live-Suche angezeigten Suchergebnisse oder Leistungsmetriken nicht wie erwartet angezeigt werden. In diesem Artikel wird erläutert, wie Sie bei Ranking-Diskrepanzen und Inkonsistenzen von Dashboard-Daten helfen können.
 - [[!DNL Live Search] Facetten sind nicht alphabetisch sortiert](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted) - Löst das Problem, dass Facettenwerte in unerwarteter Reihenfolge anstatt alphabetisch angezeigt werden. In diesem Artikel finden Sie Schritte zum Konfigurieren und Korrigieren des Facettensortierverhaltens in Ihrer Storefront.
 
-Wenn Sie zusätzliche Hilfe benötigen, wenden Sie sich an [Support](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Wenn Sie zusätzliche Hilfe benötigen, wenden Sie sich an [Support](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

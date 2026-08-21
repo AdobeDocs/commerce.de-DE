@@ -26,9 +26,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1019
+source-wordcount: 1076
 ht-degree: 0%
 
 ---
@@ -229,7 +229,7 @@ In der folgenden Tabelle werden die Funktionen der Plattform und die Erweiterung
 >Adobe empfiehlt bei der Migration auf SaaS Folgendes:
 >
 >- Verschieben Sie nach Möglichkeit geeignete Funktionen auf die prozessexterne Erweiterbarkeit.
->- Verkleinern Sie die Fläche, für die ein Übergang erforderlich ist.
+>- Den Umfang reduzieren, der einen Übergang erfordert.
 >- Erwägen Sie [!DNL API Mesh] für die Erweiterung der API-Funktionalität.
 >- Überwachen Sie die fortlaufende Plattformentwicklung und neue Funktionsveröffentlichungen von Adobe.
 >- Bewerten Sie branchenspezifische Datenmodellanforderungen anhand der verfügbaren Erweiterungsoptionen.

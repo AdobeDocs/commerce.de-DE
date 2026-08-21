@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1007
+source-wordcount: 1010
 ht-degree: 0%
 
 ---
@@ -98,8 +98,8 @@ In diesem Beispiel geben die `status` Informationen zum Synchronisierungsvorgang
 - **`"Progress 2/5"`** zeigt an, dass zwei von fünf Iterationen abgeschlossen wurden. Die Anzahl der Iterationen hängt von der Anzahl der exportierten Entitäten ab.
 - **`"processed: 200"`** gibt an, dass 200 Elemente verarbeitet wurden.
 - **`"synced: 100"`** gibt an, dass 100 Artikel an SaaS gesendet wurden. Es wird erwartet, dass `"synced"` nicht gleich `"processed"` ist. Beispiel:
-   - **`"synced" < "processed"`** bedeutet, dass die Feed-Tabelle im Vergleich zur zuvor synchronisierten Version keine Änderungen am Element erkannt hat. Solche Elemente werden beim Synchronisierungsvorgang ignoriert.
-   - **`"synced" > "processed"`** dieselbe Entitäts-ID (z. B. `Product ID`) kann mehrere Werte in verschiedenen Bereichen haben. Beispielsweise kann ein Produkt fünf Websites zugewiesen werden. In diesem Fall sind möglicherweise „1 verarbeitetes“ Element und „5 synchronisierte“ Elemente vorhanden.
+  - **`"synced" < "processed"`** bedeutet, dass die Feed-Tabelle im Vergleich zur zuvor synchronisierten Version keine Änderungen am Element erkannt hat. Solche Elemente werden beim Synchronisierungsvorgang ignoriert.
+  - **`"synced" > "processed"`** dieselbe Entitäts-ID (z. B. `Product ID`) kann mehrere Werte in verschiedenen Bereichen haben. Beispielsweise kann ein Produkt fünf Websites zugewiesen werden. In diesem Fall sind möglicherweise „1 verarbeitetes“ Element und „5 synchronisierte“ Elemente vorhanden.
 
 +++ **Beispiel: Vollständiges Resynchronisierungsprotokoll für den Preis-Feed**
 
@@ -148,7 +148,7 @@ Wenn Daten in Commerce Services fehlen oder falsch sind, überprüfen Sie die Pr
 - Das Datenexportfehlerprotokoll (`commerce-data-export-errors.log`) erfasst Fehler, die während der Erfassungsphase auftreten.
 - Das SaaS-Exportfehlerprotokoll (`saas-export-errors.log`) erfasst Fehler, die während der Übertragungsphase auftreten.
 
-Wenn Sie Fehler sehen, die nicht mit der Konfiguration oder Erweiterungen von Drittanbietern in Zusammenhang stehen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) mit so vielen Informationen wie möglich.
+Wenn Sie Fehler sehen, die nicht mit der Konfiguration oder Erweiterungen von Drittanbietern in Zusammenhang stehen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) mit so vielen Informationen wie möglich.
 
 ### Beheben von Katalogsynchronisierungsproblemen {#resolvesync}
 

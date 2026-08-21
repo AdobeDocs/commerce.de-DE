@@ -24,9 +24,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 991
+source-wordcount: 983
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Die sofortige Lösung für dieses Problem ist eine Problemumgehung: Konfiguriere
 1. Wenn der Inhalt nicht übereinstimmt, nehmen Sie eine geringfügige Änderung am Produkt in Ihrem Katalog vor, z. B. das Hinzufügen eines Leerzeichens oder eines Punkts, um die Erkennung der Änderung zu erzwingen.
 1. Warten Sie auf eine Neusynchronisierung oder einen Trigger oder eine manuelle Neusynchronisierung der CLI oder [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) Seite im Admin Console.
 
-Weitere Informationen zur Fehlerbehebung bei Katalogdaten in [!DNL Product Recommendations] finden Sie unter [Fehlerbehebung beim Modul „Produktempfehlungen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) in der Commerce Knowledge Base.
+Weitere Informationen zur Fehlerbehebung bei Katalogdaten in [!DNL Product Recommendations] finden Sie unter [Fehlerbehebung beim Modul „Produktempfehlungen](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-40095) in der Commerce Knowledge Base.
 
 ## Datensynchronisation läuft nicht planmäßig {#sync-not-on-schedule}
 
@@ -96,7 +96,7 @@ Weitere Informationen zur Fehlerbehebung bei Katalogdaten in [!DNL Product Recom
 
 **Lösung:**
 
-- [Bestätigen Sie, dass Cron-Aufträge ausgeführt werden](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- [Bestätigen Sie, dass Cron-Aufträge ausgeführt werden](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-39832).
 - Stellen Sie sicher, dass die Indexer für die folgenden Feeds auf **[!UICONTROL Update by Schedule]** eingestellt sind: Katalogattribute, Produkt, Produktüberschreibungen und Produktvariante. Führen Sie eine Überprüfung von [[!UICONTROL Index Management]](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/index-management) in Commerce Admin durch oder verwenden Sie die CLI: `bin/magento indexer:show-mode | grep -i feed`.
 
 ## Katalogsynchronisierung hat den Status Fehlgeschlagen . {#catalog-sync-failed}
@@ -110,7 +110,7 @@ Weitere Informationen zur Fehlerbehebung bei Katalogdaten in [!DNL Product Recom
 1. Überprüfen Sie die Fehlerprotokolle zu Datenexporten, um Details zum Fehler zu erhalten. Siehe [Überprüfen von Protokollen und Fehlerbehebung](logging.md) für Protokollformat und erweiterte Protokollierungsoptionen:
    - `var/log/commerce-data-export-errors.log` auf Fehler bei der Datenerfassung.
    - `var/log/saas-export-errors.log` auf Fehler bei der Datenübermittlung.
-1. Wenn der Fehler nicht mit der Konfiguration oder einer Erweiterung eines Drittanbieters zusammenhängt, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) den entsprechenden Protokolleinträgen.
+1. Wenn der Fehler nicht mit der Konfiguration oder einer Erweiterung eines Drittanbieters zusammenhängt, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) den entsprechenden Protokolleinträgen.
 
 ## Protokoll zeigt Meldungen vom Typ „Vorgang übersprungen - Prozess gesperrt“ {#process-locked}
 

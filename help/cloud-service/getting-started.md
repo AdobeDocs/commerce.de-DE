@@ -29,16 +29,16 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1343
+source-wordcount: 1337
 ht-degree: 0%
 
 ---
 
 # Erste Schritte
 
-[!DNL Adobe Commerce as a Cloud Service] bietet die meisten vorkonfigurierten Konfigurationen. Nach Abschluss einiger grundlegender Einrichtungsprozesse ist Ihr Store in kürzester Zeit betriebsbereit. Dieses Handbuch führt Sie durch die Erstellung und Arbeit mit einer -Instanz und hilft Ihnen beim Einrichten Ihrer Organisation für den Erfolg. Dadurch wird sichergestellt, dass Ihre Teams angemessenen Zugriff auf [!DNL Adobe Commerce as a Cloud Service] und die Tools haben, die Sie für den Einstieg benötigen.
+[!DNL Adobe Commerce as a Cloud Service] bietet standardmäßig die meisten Konfigurationen. Nach Abschluss einiger grundlegender Einrichtungsprozesse ist Ihr Store in kürzester Zeit betriebsbereit. Dieses Handbuch führt Sie durch die Erstellung und Arbeit mit einer -Instanz und hilft Ihnen beim Einrichten Ihrer Organisation für den Erfolg. Dadurch wird sichergestellt, dass Ihre Teams angemessenen Zugriff auf [!DNL Adobe Commerce as a Cloud Service] und die Tools haben, die Sie für den Einstieg benötigen.
 
 [!DNL Adobe Commerce as a Cloud Service] ist eine Cloud-native Commerce-Plattform, die Flexibilität, Skalierbarkeit und Effizienz für die Bereitstellung digitaler Commerce-Erlebnisse bietet. Dieses SaaS-Angebot ist eine vollständig verwaltete, versionslose Plattform, die ein nahtloses Upgrade ohne manuelles Eingreifen ermöglicht.
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 [!DNL Adobe Commerce as a Cloud Service] besteht aus den folgenden Komponenten:
 
 * **[[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)** - Ihr zentraler Einstiegspunkt für alle [!DNL Adobe Commerce] Produkte unter [experience.adobe.com](https://experience.adobe.com/)
-   * Klicken Sie unter „Schnellzugriff **auf {[!UICONTROL **}Commerce &#x200B;**], um Commerce Cloud Manager zu öffnen**
+  * Klicken Sie unter „Schnellzugriff **auf {[!UICONTROL **}Commerce &#x200B;**], um Commerce Cloud Manager zu öffnen**
 * **[[!DNL Commerce Cloud Manager]](https://experience.adobe.com/#/commerce/cloud-service)**: Erstellen und Verwalten von Instanzen, Zugreifen auf API-URLs und Commerce-Admin
 * **[[!DNL Adobe Admin Console]](https://adminconsole.adobe.com/)** - Verwalten von Benutzern und Rollen
 * **Commerce Admin** - Produkte, Bestellungen, Kunden und Store-Konfiguration verwalten
@@ -83,7 +83,7 @@ Wählen Sie eine Registerkarte unten aus, um allgemeine Workflow-Grafiken für d
 
 >[!TAB Systemadministrator und Händler-Workflow]
 
-Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Systemadministratoren und Händler auf [!DNL Adobe Commerce as a Cloud Service]-Instanzen zugreifen und diese verwalten. Weitere Informationen zu Administrator-Workflows finden [&#128279;](https://helpx.adobe.com/de/enterprise/admin-guide.html) im Handbuch zu Adobe Admin Console .
+Dieses Diagramm bietet einen allgemeinen Überblick darüber, wie Systemadministratoren und Händler auf [!DNL Adobe Commerce as a Cloud Service]-Instanzen zugreifen und diese verwalten. Weitere Informationen zu Administrator-Workflows finden [&#128279;](https://helpx.adobe.com/de/business/enterprise.html) im Handbuch zu Adobe Admin Console .
 
 ![Workflow-Diagramm für Systemadministrator und Händler für Adobe Commerce as a Cloud Service](./assets/merchant-flow.png){zoomable="yes"}
 
@@ -143,7 +143,7 @@ Nach Abschluss der rollenspezifischen Setup-Aufgaben:
 
 * **Systemadministratoren**: Lesen Sie die Richtlinien [gemeinsame Verantwortung](./security/shared-responsibility.md)
 * **Händler**: Erkunden Sie [Anwendungsfälle](use-cases.md) für gängige Geschäftsszenarien
-* **Entwickler**: Lesen Sie die [Entwicklerdokumentation für Adobe Commerce](https://developer.adobe.com/commerce/docs)
+* **Entwickler**: Lesen Sie die [Entwicklerdokumentation für Adobe Commerce](https://developer.adobe.com/commerce/docs/)
 
 ## Grundlagen zu Adobe Commerce as a Cloud Service
 
@@ -173,7 +173,7 @@ In den folgenden Abschnitten werden die grundlegenden Prozesse beschrieben, die 
 
 1. Wählen Sie den [!UICONTROL **Umgebungstyp**] für Ihre Instanz aus. Sie können zwischen den folgenden Optionen wählen:
 
-   * [!UICONTROL **Sandbox**] - Nur für Design- und Testzwecke. Sie sollten Ihren [!DNL Adobe Commerce as a Cloud Service]-Journey mit der Sandbox-Umgebung beginnen.
+   * [!UICONTROL **Sandbox**] - Nur für Design- und Testzwecke. Adobe empfiehlt, den [!DNL Adobe Commerce as a Cloud Service]-Journey mit der Sandbox-Umgebung zu starten.
 
    >[!NOTE]
    >
@@ -215,18 +215,18 @@ Nachdem Sie eine Instanz erstellt haben, können Sie über die [!UICONTROL Comme
 
 >[!TIP]
 >
->Um Informationen zu Ihrer -Instanz, einschließlich der REST- und GraphQL-Endpunkte und der Admin-URL, anzuzeigen, klicken Sie auf das Informationssymbol neben dem Instanznamen.
+>Um Instanzinformationen, einschließlich REST- und GraphQL-Endpunkten und der Admin-URL, anzuzeigen, klicken Sie auf das Informationssymbol neben dem Instanznamen.
 
 Die Basis-URLs für Ihre Admin- und -Endpunkte unterscheiden sich je nach Region und Umgebung. Verwenden Sie dazu das folgende Muster:
 
 * Administrator
-   * Produktionsadministrator in Nordamerika: `https://na1.admin.commerce.adobe.com`
-   * Sandbox-Admin in Nordamerika: `https://na1-sandbox.admin.commerce.adobe.com`
-   * Produktionsadministrator in Europa: `https://eu1.admin.commerce.adobe.com`
+  * Produktionsadministrator in Nordamerika: `https://na1.admin.commerce.adobe.com`
+  * Sandbox-Admin in Nordamerika: `https://na1-sandbox.admin.commerce.adobe.com`
+  * Produktionsadministrator in Europa: `https://eu1.admin.commerce.adobe.com`
 * REST und GraphQL
-   * Nordamerika-Produktion GraphQL: `https://na1.api.commerce.adobe.com`
-   * Nordamerika Sandbox GraphQL: `https://na1-sandbox.api.commerce.adobe.com`
-   * Europa-Produktion GraphQL: `https://eu1.api.commerce.adobe.com`
+  * Nordamerika-Produktion GraphQL: `https://na1.api.commerce.adobe.com`
+  * Nordamerika Sandbox GraphQL: `https://na1-sandbox.api.commerce.adobe.com`
+  * Europa-Produktion GraphQL: `https://eu1.api.commerce.adobe.com`
 
 ### Importieren des Katalogs
 

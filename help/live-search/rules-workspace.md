@@ -7,9 +7,9 @@ product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 586
+source-wordcount: 583
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Der *Merchandising durchsuchen*-Arbeitsbereich listet die aktuelle Auswahl von R
 
 ## Festlegen des Umfangs
 
-Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, legen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings) fest, für die Ihre Regeln gelten.
+Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, legen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) fest, für die Ihre Regeln gelten.
 
 ## Spalten ein-/ausblenden
 
@@ -78,7 +78,7 @@ Sie können einen der folgenden Schritte im Bedienfeld Details anzeigen ausführ
 
 | Spalte | Beschreibung |
 |--- |--- |
-| -Name | Der Name der Regel. |
+| Name | Der Name der Regel. |
 | Zuletzt aktualisiert | Das Datum der letzten Aktualisierung der Regel. |
 | Startdatum | Das Startdatum einer geplanten Regel. |
 | Enddatum | Das Enddatum einer geplanten Regel. |

@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: d7623f5d42eaa50b95a2f36c244b8a3e78d4c7a9
 workflow-type: tm+mt
-source-wordcount: 1738
+source-wordcount: 1737
 ht-degree: 0%
 
 ---
@@ -233,7 +233,7 @@ Bereiten Sie Ihre lokale Storefront-Umgebung für die Entwicklung vor.
 
 1. Öffnen Sie den Ordner „Storefront“ in einem neuen Cursor-Fenster.
 
-   Alternativ können Sie, wenn Sie die [Cursor-CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands) installiert haben, das Fenster öffnen, indem Sie den folgenden Befehl an Ihrem Terminal verwenden:
+   Alternativ können Sie, wenn Sie die [Cursor-CLI](https://cursor.com/help/customization/keyboard-shortcuts#installing-cli-commands) installiert haben, das Fenster öffnen, indem Sie den folgenden Befehl an Ihrem Terminal verwenden:
 
    ```bash
    cursor .
@@ -266,8 +266,8 @@ Verwenden Sie den Agenten, um die Bewertungs-API in die Produktdetailseite der S
 1. Der Agent bewertet die Aufgabenkomplexität und ruft einen stufenweisen Workflow auf. Während **Phase 1 (Anforderungserfassung)** erstellt der Agent ein Anforderungsdokument und stellt klärende Fragen wie:
 
    * Wo in der PDP sollten die Bewertungen erscheinen?
-   * Sollte es sich um einen neuen eigenständigen Block oder eine Steckplatzanpassung innerhalb der vorhandenen Dropdown-Komponente von PDP handeln?
-   * Was sollte der Fallback sein, wenn die API nicht verfügbar ist oder keine Daten zurückgibt?
+   * Handelt es sich um einen neuen eigenständigen Block oder um eine Steckplatzanpassung innerhalb der vorhandenen Dropdown-Komponente „PDP“?
+   * Was ist das Fallback, wenn die API nicht verfügbar ist oder keine Daten zurückgibt?
    * Sollen Bewertungen auch auf der PLP (Produktliste) oder nur auf PDP erscheinen?
    * Gibt es Designspezifikationen oder Mockups?
 
@@ -318,7 +318,7 @@ Verwenden Sie den Agenten, um die Bewertungs-API in die Produktdetailseite der S
    In Ihrer Entwicklungsumgebung und Ihrem Browser sollten die folgenden Änderungen angezeigt werden:
 
    * Eine Produktbewertungskomponente wird automatisch erstellt.
-   * Die Komponente wird je nach ausgewählter Architektur mit [Drop-In-Steckplätzen](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=de) oder als eigenständiger Block in die PDP integriert.
+   * Die Komponente wird je nach ausgewählter Architektur mit [Drop-In-Steckplätzen](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/?lang=de) oder als eigenständiger Block in die PDP integriert.
    * Sterne werden mit korrekten Füllverhältnissen basierend auf den Bewertungswerten aus Ihrer API angezeigt.
 
    ![Produktdetailseite mit unter dem Produkttitel integrierten Sternebewertungen](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

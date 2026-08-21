@@ -9,9 +9,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 775
+source-wordcount: 778
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Das Feld Kategorie zeigt Kategorien an, die zur aktuellen Storeview gehören.
 
 >[!NOTE]
 >
->Für B2B-Händler entspricht der Kategoriefilter allen [kundenspezifischen Produktkategorien](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=de) die Sie konfiguriert haben.
+>Für B2B-Händler entspricht der Kategoriefilter allen [kundenspezifischen Produktkategorien](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/categories/category-permissions) die Sie konfiguriert haben.
 
 Adobe Commerce empfiehlt die Verwendung der folgenden Kategoriefilterkonfiguration, wenn Sie Empfehlungen für Ihre Seitentypen bereitstellen:
 
@@ -85,11 +85,11 @@ Filtert Produkte nach Sichtbarkeit, z. B. _Katalog_, _Suche_ oder beides.
 
 ### Preis
 
-Ein auf dem Produktpreis basierender Filter verwendet den Endpreis, um den Vergleich durchzuführen. Im Endpreis sind alle Rabatte enthalten, die anonymen Käufern gewährt werden. Für B2B-Händler entspricht der angezeigte Preis dem [kundenspezifischen Gruppenpreis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=de) den Sie konfiguriert haben.
+Ein auf dem Produktpreis basierender Filter verwendet den Endpreis, um den Vergleich durchzuführen. Im Endpreis sind alle Rabatte enthalten, die anonymen Käufern gewährt werden. Für B2B-Händler entspricht der angezeigte Preis dem [kundenspezifischen Gruppenpreis](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/pricing/pricing-advanced) den Sie konfiguriert haben.
 
 ### Bestandsstatus
 
 Die folgenden Ausschlussfilter können verwendet werden, um Produkte anhand des Lagerstatus herauszufiltern:
 
 - Nicht vorrätig - (Nur Ausschluss) Ausgeschlossen sind nicht vorrätige Produkte.
-- Niedrig auf Lager - (Nur Ausschlüsse) Ausgeschlossen sind Produkte, die niedrig auf Lager sind. Der niedrige Lagerstatus basiert auf dem Wert _Nur noch x Schwellenwert_ in der [Bestandskonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=de).
+- Niedrig auf Lager - (Nur Ausschlüsse) Ausgeschlossen sind Produkte, die niedrig auf Lager sind. Der niedrige Lagerstatus basiert auf dem Wert _Nur noch x Schwellenwert_ in der [Bestandskonfiguration](https://experienceleague.adobe.com/de/docs/commerce-admin/config/catalog/inventory).

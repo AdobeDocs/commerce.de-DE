@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 413d0932d402615c9e155e1650a7c8aba2c082a1
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 1522
+source-wordcount: 1506
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ _28. Mai 2026_
 ![Korrigieren](../assets/fix.svg) **Vollständige Navigationsbäume** - Getaggte untergeordnete Kategorien werden jetzt korrekt in familiengefilterten `navigation` eingefügt, wenn ein nicht getaggter Zwischenknoten im Pfad vorhanden ist. Diese Fehlerbehebung stellt sicher, dass Käufern alle relevanten Kategorien in der Navigation angezeigt werden, sodass sie leichter durchsuchen und Artikel finden können.
 <!--DATA-7183-->
 
-![Beheben](../assets/fix.svg) **Leere Slug-Verarbeitung in `categoryTree`-**: Es wurde ein Problem behoben, bei dem die [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)-Abfrage einen internen Server-Fehler zurückgab, wenn das `slugs`-Argument eine leere Zeichenfolge enthielt. Leere Slug-Werte werden jetzt ignoriert, sodass Storefronts und Integrationen Kategoriedaten ohne fehlgeschlagene Anfragen auflösen können.
+![Beheben](../assets/fix.svg) **Leere Slug-Verarbeitung in `categoryTree`-**: Es wurde ein Problem behoben, bei dem die [`categoryTree`](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree)-Abfrage einen internen Server-Fehler zurückgab, wenn das `slugs`-Argument eine leere Zeichenfolge enthielt. Leere Slug-Werte werden jetzt ignoriert, sodass Storefronts und Integrationen Kategoriedaten ohne fehlgeschlagene Anfragen auflösen können.
 <!--DATA-7184-->
 
 ![Beheben](../assets/fix.svg) **`searchCategory`Anfragen geben Ergebnisse zurück, bei denen nicht zwischen Groß- und Kleinschreibung unterschieden wird** - Die `searchCategory` Abfrage sortiert Suchergebnisse jetzt alphabetisch ohne Unterscheidung zwischen Groß- und Kleinschreibung, was eine konsistente und vorhersehbare Reihenfolge gewährleistet. Kategorien mit kürzeren Präfixen werden zuerst angezeigt, wenn die Namen ansonsten identisch sind.
@@ -153,7 +153,7 @@ _7. April 2026_
 
 <!--v1.50 release-->
 
-**Einfachere Kategoriesuche** - Die [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)-Abfrage behandelt `family` als optional, sodass Sie Kategorien durch einen Slug auflösen können, ohne eine Familie bereitzustellen.
+**Einfachere Kategoriesuche** - Die [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree)-Abfrage behandelt `family` als optional, sodass Sie Kategorien durch einen Slug auflösen können, ohne eine Familie bereitzustellen.
 
 {{aco-release}}
 
@@ -191,13 +191,13 @@ _19. Februar 2026_
 
 <!--v1.48-->
 
-**Inhalte mit umfangreicheren Kategorien für Storefronts** - Die [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)-Abfrage gibt jetzt Beschreibungen, Bilder und SEO-Meta-Tags zurück, damit Storefronts Seiten mit umfangreicheren Kategorien rendern können.<!--DATA-6933-->
+**Inhalte mit umfangreicheren Kategorien für Storefronts** - Die [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree)-Abfrage gibt jetzt Beschreibungen, Bilder und SEO-Meta-Tags zurück, damit Storefronts Seiten mit umfangreicheren Kategorien rendern können.<!--DATA-6933-->
 
 _12. Februar 2026_
 
 <!--v1.49-->
 
-**Erweiterte Produktdaten nach Kategorie** - Die GraphQL-API fügt den [`CategoryProductView`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#definition-CategoryProductView){target="blank"} hinzu, damit Sie Produkte mit weniger Roundtrips nach Kategorie abfragen und filtern können.
+**Erweiterte Produktdaten nach Kategorie** - Die GraphQL-API fügt den [`CategoryProductView`](https://developer.adobe.com/commerce/services/reference/graphql/#categoryproductview){target="blank"} hinzu, damit Sie Produkte mit weniger Roundtrips nach Kategorie abfragen und filtern können.
 
 {{aco-release}}
 

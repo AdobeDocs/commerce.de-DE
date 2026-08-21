@@ -15,9 +15,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-07-29
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 971
+source-wordcount: 966
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Um Produktdaten von einer Commerce-Instanz mithilfe der [Catalog Service GraphQL
 >
 >Wenn Sie Adobe Commerce as a Cloud Service verwenden, ist die neueste Version des Metapakets in Ihrer Umgebung verfügbar. Informationen zum Einstieg in die Verwendung der [&#x200B; finden Sie unter „Erste Schritte mit dem Katalog-Service](get-started.md).
 >
->Implementierungen von Commerce-Storefronts mit Adobe Commerce Optimizer finden Sie im [Merchandising Services-Entwicklerhandbuch für Adobe Commerce Optimizer](https://developer-stage.adobe.com/commerce/services/optimizer/).
+>Implementierungen von Commerce-Storefronts mit Adobe Commerce Optimizer finden Sie im [Merchandising Services-Entwicklerhandbuch für Adobe Commerce Optimizer](https://developer.adobe.com/commerce/services/optimizer/).
 
 
 ## Systemanforderungen
@@ -91,7 +91,7 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Service] für eine Commerce Cl
 
    >[!NOTE]
    >
-   >Informationen zur lokalen Verwaltung von Commerce-Projektumgebungen finden Sie unter [Verwalten von Verzweigungen mit der CLI](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/cli-branches) im _Benutzerhandbuch für Adobe Commerce auf Cloud-Infrastruktur_.
+   >Informationen zur lokalen Verwaltung von Commerce-Projektumgebungen finden Sie unter [Verwalten von Verzweigungen mit der CLI](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/cli-branches) im _Benutzerhandbuch für Adobe Commerce auf Cloud-Infrastruktur_.
 
 1. Checken Sie die Umgebungsverzweigung aus, um sie mithilfe der Adobe Commerce Cloud-CLI zu aktualisieren.
 
@@ -173,7 +173,7 @@ Führen Sie die folgenden Schritte aus, um den Katalog-Service nach der Installa
 
 So stellen Sie sicher, dass der Katalogexport ordnungsgemäß ausgeführt wird:
 
-- [Bestätigen Sie, dass Cron-Aufträge ausgeführt werden](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- [Bestätigen Sie, dass Cron-Aufträge ausgeführt werden](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-39832).
 - Stellen Sie sicher, dass die Indexer vom [Admin](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/index-management) oder mithilfe des Commerce CLI-`bin/magento indexer:info` ausgeführt werden.
 - Stellen Sie sicher, dass die `Catalog Attributes Feed, Product Feed, Product Overrides Feed`- und `Product Variant Feed`-Indexer auf `Update by Schedule` eingestellt sind.
 

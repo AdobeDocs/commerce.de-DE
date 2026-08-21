@@ -36,7 +36,7 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: c5b10a715f64a220fc965328a7c913951d44dedc
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
 source-wordcount: 1456
 ht-degree: 0%
@@ -98,13 +98,13 @@ Dieses Diagramm zeigt den Datenfluss zwischen [!DNL Adobe Commerce as a Cloud Se
 
 Um in Minutenschnelle umfassende Erlebnisse mit einfacher dokumentbasierter Bearbeitung oder visueller Bearbeitung mit [!DNL Storefront Builder] zu erstellen, verwenden Sie die [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de) von Adobe, die von [!DNL Edge Delivery Services] unterstützt wird.
 
-[!DNL Commerce Storefront] ist vollständig Headless mit einer entkoppelten Architektur, die alle Merchandising-Services und -Daten über eine GraphQL-API-Ebene bereitstellt. Diese Architektur ermöglicht es Teams, ihre Frontends unabhängig von der Commerce Foundation zu entwickeln, und bietet die Agilität, neue Touchpoints mit neuen Technologien zu erstellen und zu testen.
+[!DNL Commerce Storefront] ist vollständig Headless mit einer entkoppelten Architektur, die alle Adobe Merchandising-Services und -Daten über eine GraphQL-API-Ebene bereitstellt. Diese Architektur ermöglicht es Teams, ihre Frontends unabhängig von der Commerce Foundation zu entwickeln, und bietet die Agilität, neue Touchpoints mit neuen Technologien zu erstellen und zu testen.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] unterstützt keine Luma-Storefronts. Wenn Sie von Adobe Commerce in der Cloud oder lokal migrieren, finden Sie unter [Vorhandene Storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=de#existing-storefronts) Anleitungen für den Übergang.
+>[!DNL Adobe Commerce as a Cloud Service] unterstützt keine Luma-Storefronts. Wenn Sie von [!DNL Adobe Commerce on Cloud] oder On-Premise migrieren, finden Sie unter [Vorhandene Storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=de#existing-storefronts) Anleitungen für den Übergang.
 
-## Merchandising- und Zahlungsdienste
+## Adobe Merchandising-Services und Zahlungsdienste
 
 Adobe bietet eine breite Palette intelligenter, zusammenstellbarer Merchandising-Services, mit denen Sie Ihre wichtigsten Geschäftsziele unterstützen können. Diese Services bieten auch APIs, die für die skalierte Leistungsoptimierung von entscheidender Bedeutung sind.
 
@@ -116,7 +116,7 @@ Adobe bietet eine breite Palette intelligenter, zusammenstellbarer Merchandising
   >
   >Der Katalog-Service ist in [!DNL Live Search] und [!DNL Product Recommendations] automatisch enthalten.
 
-- [Payment Services](../payment-services/guide-overview.md) - Steigern Sie die Kundenzufriedenheit, indem Sie verschiedene Zahlungsmethoden anbieten, einschließlich zinsfreier Zahlungsraten und einer einzigen Ansicht der Zahlungsabwicklung, Bestellungen und Rechnungen. Konfigurationsanweisungen finden Sie unter [Payment Services Home](../payment-services/payments-home.md).
+- [Payment Services](../payment-services/guide-overview.md) - Steigern Sie die Kundenzufriedenheit, indem Sie verschiedene Zahlungsmethoden, einschließlich zinsfreier Raten, und einen einzigen Überblick über die Verarbeitung, Bestellungen und Rechnungen anbieten. Konfigurationsanweisungen finden Sie unter [Payment Services Home](../payment-services/payments-home.md).
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -224,7 +224,7 @@ Der typische Upgrade-Prozess für Adobe Commerce in Cloud umfasste das Erstellen
 
 >[!NOTE]
 >
->Adobe garantiert Abwärtskompatibilität für alle Updates. Das bedeutet, dass Aktualisierungen, die angewendet werden, nicht die vorhandenen Funktionen oder Anpassungen beeinträchtigen, die dem Modell der &quot;[-First-Erweiterbarkeit](https://developer.adobe.com/commerce/extensibility/) entsprechen.
+>Adobe garantiert Abwärtskompatibilität für alle Updates. Das bedeutet, dass Aktualisierungen, die angewendet werden, vorhandene Funktionen oder Anpassungen, die dem Modell der „API-First[Erweiterbarkeit“ &#x200B;](https://developer.adobe.com/commerce/extensibility/), nicht beeinträchtigen.
 
 ### Integrationen von Drittanbietern
 
@@ -247,11 +247,11 @@ In den folgenden Abschnitten finden Sie Informationen zu den Vorteilen, die [!DN
 - **Umsatz steigern**: Steigern Sie den organischen Traffic mit einer leistungsstarken Storefront, die SEO steigert. Erstellen Sie personalisierte Erlebnisse, die mit umfangreichen Daten die Konversionsrate steigern.
 - **Skalierungsvorgänge**: Automatische Skalierungsdienste erfüllen die Spitzenanforderungen Ihres Unternehmens mit einer Verfügbarkeit von 99,9 %. Rollout mehrerer Marken und Regionen und Unterstützung für B2B und B2C von einer einzigen Instanz aus. Unterstützung großer und komplexer Produktkataloge mit flexibler Datenmodellierung.
 - **Merchandiser-Produktivität steigern**: Verwenden Sie KI-gestützte Merchandising-Services, um die Konversion zu verbessern. Experimentieren Sie nativ, direkt in der Storefront. Verwalten Sie das Storefront-Erlebnis, um in Minutenschnelle umfassende Erlebnisse mit einfacher dokumentbasierter Bearbeitung oder einem visuellen Editor zu erstellen.
-- **Niedrigere Gesamtbetriebskosten (TCO) und schnellere Innovation**: Immer aktuelle Services bieten Ihnen sofort Zugriff auf neue Funktionen. Aktivieren Sie neue Funktionen, indem Sie Apps einfach vom Markt installieren. Freisetzung von Ressourcen aus langwierigen Wartungsarbeiten, um sich auf den Aufbau neuer Funktionen zu konzentrieren.
+- **Niedrigere Gesamtbetriebskosten (TCO) und schnellere Innovation**: Immer aktuelle Services bieten Ihnen sofort Zugriff auf neue Funktionen. Aktivieren Sie neue Funktionen, indem Sie Apps einfach vom Markt installieren. Ressourcen aus der Routinewartung neu zuweisen, um sich auf den Aufbau neuer Funktionen zu konzentrieren.
 
 ### Führende Unternehmen im Bereich Informationstechnologie
 
 - **Schnelle Bereitstellung**: Starten Sie schnell mit der Self-Service-Bereitstellung in Minuten. Alle Services sind für eine nahtlose Zusammenarbeit vorkonfiguriert, um schneller loszulegen. Stellen Sie bei Bedarf Sandboxes für Entwicklerexperimente bereit.
 - **Niedrige Betriebskosten**: Keine weiteren Upgrades mit stets aktuellen Services. Bleiben Sie sicher und konform mit den neuesten automatisch für Sie angewendeten Sicherheits-Patches. Automatische Skalierung für anspruchsvollste Arbeitslasten.
 - **Hochleistungs-Storefront**: Erstellen Sie innerhalb von Minuten umfangreiche Erlebnisse mit einfacher dokumentbasierter Bearbeitung oder einem visuellen Editor. Verwenden Sie KI-gestützte Merchandising-Services, um die Konvertierung zu verbessern. Native Experimente in der Storefront integriert.
-- **Schnellere Innovation**: Freisetzen Sie Ressourcen von mühsamen Wartungsarbeiten und konzentrieren Sie sich auf den Aufbau neuer Funktionen, die geschäftlichen Nutzen bieten. Verwenden Sie umfassende Erweiterbarkeit und standardbasierte Technologien (JavaScript, HTML, CSS und Low-Code-Tools), um differenzierte Erlebnisse zu erstellen. Installieren Sie Apps von Drittanbietern mit einem Klick, um Ihrer Commerce-Plattform neue Funktionen hinzuzufügen.
+- **Schnellere Innovation**: Ressourcen aus der Routinewartung neu zuweisen, um sich auf den Aufbau neuer Funktionen zu konzentrieren, die geschäftlichen Nutzen bieten. Verwenden Sie umfassende Erweiterbarkeit und standardbasierte Technologien (JavaScript, HTML, CSS und Low-Code-Tools), um differenzierte Erlebnisse zu erstellen. Installieren Sie Apps von Drittanbietern mit einem Klick, um Ihrer Commerce-Plattform neue Funktionen hinzuzufügen.

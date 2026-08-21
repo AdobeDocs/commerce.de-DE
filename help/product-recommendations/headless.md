@@ -15,9 +15,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: 372
+source-wordcount: 363
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Sie können [!DNL Product Recommendations] entweder mit [PWA Studio](https://dev
 
 Benutzerdefinierte und Headless-Integratoren sollten diese Anweisungen für Luma und PWA als Implementierungsvorschlag heranziehen. Es gibt viele Möglichkeiten, Produktempfehlungen in Headless-Lösungen zu implementieren. Diese Dokumentation deckt nicht alle Szenarien ab. Integratoren müssen das Entwickeln, Entwerfen und Testen für ihre -Implementierungen abdecken.
 
-[!DNL Product Recommendations] benötigen [Verhaltens- und Katalogdaten](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=de) um zu funktionieren. Der Synchronisierungsprozess für Katalogdaten bleibt in einer Headless-Implementierung unverändert, für die Erfassung von Verhaltensdaten sind jedoch Änderungen erforderlich.
+[!DNL Product Recommendations] benötigen [Verhaltens- und Katalogdaten](development-overview.md) um zu funktionieren. Der Synchronisierungsprozess für Katalogdaten bleibt in einer Headless-Implementierung unverändert, für die Erfassung von Verhaltensdaten sind jedoch Änderungen erforderlich.
 
 >[!NOTE]
 >

@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 1375139292fb11df9406948010916dbd2507ef4e
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: 3063
+source-wordcount: 3064
 ht-degree: 0%
 
 ---
@@ -449,7 +449,7 @@ Weitere Informationen und Beispiele finden Sie unter [Katalog-Service und API-Me
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=de) ist jetzt für Datenströme verfügbar (Produktempfehlungen, Live-Suche, Katalog-Service). Erfordert `catalog-service` Metapaket v3.1.0+.
+![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) ist jetzt für Datenströme verfügbar (Produktempfehlungen, Live-Suche, Katalog-Service). Erfordert `catalog-service` Metapaket v3.1.0+.
 
 **Veröffentlichungsdatum**: 13. Februar 2024
 <!-- v1.16 -->
@@ -694,9 +694,9 @@ Jedes Mal, wenn Sie Composer zum Aktualisieren des `magento/catalog-service` ver
 
   - [Handbuch zum Katalog-Service](overview.md)
   - [Catalog Service GraphQL-API-Referenz](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
-  - [Adobe Commerce-Administratorhandbuch](https://experienceleague.adobe.com/en/docs/commerce-admin/)
-  - [Handbuch zu Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
-  - [Handbuch zu Adobe Commerce in Cloud Manager](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
+  - [Adobe Commerce-Administratorhandbuch](https://experienceleague.adobe.com/de/docs/commerce-admin/user-guides/home)
+  - [Handbuch zu Adobe Commerce as a Cloud Service](../cloud-service/overview.md)
+  - [Handbuch zu Adobe Commerce in Cloud Manager](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview)
 
 - Informationen zu Projekten, die **Adobe Commerce Optimizer** oder **Adobe Commerce Optimizer Connector** verwenden, finden Sie in der folgenden Dokumentation:
 

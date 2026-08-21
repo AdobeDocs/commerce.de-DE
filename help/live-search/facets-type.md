@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: 429
 ht-degree: 0%
 
 ---
@@ -42,11 +42,11 @@ Zum Zeitpunkt der Abfrage generiert [!DNL Live Search] die Suchergebnisse in Gru
 
 Facetten, die für die [!DNL Commerce] Storefront gerendert werden, werden vom Suchadapter verarbeitet, der Anfragen weiterleitet und die Ergebnisse in der Storefront rendert. Alle [!DNL Commerce] Facetten der Storefront werden alphabetisch mit Einzelauswahloptionen sortiert, unabhängig vom Eingabetyp, der dem entsprechenden Attribut zugewiesen ist. In der Storefront verfügbare Facetten werden entsprechend dem aktuellen Design gerendert und spiegeln alle Anpassungen wider, die an der Präsentation der mehrschichtigen Navigation vorgenommen wurden.
 
-Im Gegensatz dazu werden [Headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/)-Implementierungen von der API verarbeitet und unterstützen zusätzliche Optionen. Headless-Facetten können alphabetisch oder nach Anzahl sortiert werden und entweder Einzel- oder Mehrfachauswahl-Optionen haben.
+Im Gegensatz dazu werden [Headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api)-Implementierungen von der API verarbeitet und unterstützen zusätzliche Optionen. Headless-Facetten können alphabetisch oder nach Anzahl sortiert werden und entweder Einzel- oder Mehrfachauswahl-Optionen haben.
 
 ### Facettenbeschriftungen
 
-Bei [!DNL Commerce] Storefronts wird die Facettenbeschriftung durch die [*Attributeigenschaften*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=de) bestimmt. Für Stores mit mehreren Ansichten können zusätzliche Beschriftungen unter *Verwalten von Beschriftungen* definiert werden. Bei Headless-Implementierungen werden Beschriftungen aus dem [Facettenarbeitsbereich“ &#x200B;](faceting-workspace.md).
+Bei [!DNL Commerce] Storefronts wird die Facettenbeschriftung durch die [*Attributeigenschaften*](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) bestimmt. Für Stores mit mehreren Ansichten können zusätzliche Beschriftungen unter *Verwalten von Beschriftungen* definiert werden. Bei Headless-Implementierungen werden Beschriftungen aus dem [Facettenarbeitsbereich“ &#x200B;](faceting-workspace.md).
 
 ### Sortiertyp
 

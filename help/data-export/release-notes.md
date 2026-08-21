@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 0c38384dc0b8c9c964402cd3d363ff784d7a0cf5
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 3270
+source-wordcount: 3271
 ht-degree: 0%
 
 ---
@@ -186,7 +186,7 @@ _24. November 2025_
 
 _22. Oktober 2025_
 
-![Neu](../assets/new.svg) Es wurde Unterstützung für die Erweiterung „Data Feed Sync Status“ hinzugefügt, um Datenübertragungen von [!DNL Adobe Commerce] zu verbundenen Services ([!DNL Catalog Service], [!DNL Live Search] und [!DNL Product Recommendations]) zu überwachen und Fehler zu beheben. Weitere Informationen zur Installation und Verwendung dieser Erweiterung finden Sie [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=de) im *Commerce Admin Guide*. <!--MDEE-954-->
+![Neu](../assets/new.svg) Es wurde Unterstützung für die Erweiterung „Data Feed Sync Status“ hinzugefügt, um Datenübertragungen von [!DNL Adobe Commerce] zu verbundenen Services ([!DNL Catalog Service], [!DNL Live Search] und [!DNL Product Recommendations]) zu überwachen und Fehler zu beheben. Weitere Informationen zur Installation und Verwendung dieser Erweiterung finden Sie [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) im *Commerce Admin Guide*. <!--MDEE-954-->
 
 ### Version 103.4.14
 

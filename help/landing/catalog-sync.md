@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 565
+source-wordcount: 567
 ht-degree: 0%
 
 ---
@@ -28,9 +28,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Das Dashboard zur Katalogsynchronisierung wird jetzt zum Dashboard für das Daten-Management. Dieses überarbeitete Dashboard unterstützt jetzt [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+, [[!DNL Live Search]](../live-search/overview.md) v4.1.0+ und [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+. Kunden können das Daten-Management-Dashboard erhalten, indem sie auf die neueste Version eines dieser Services aktualisieren. Weitere Informationen hierzu finden Sie in der Dokumentation [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=de) . Dieses aktuelle Thema bleibt für die Benutzer übrig, die noch kein Upgrade durchgeführt haben und noch über das Dashboard zur Katalogsynchronisierung verfügen.
+> Das Dashboard zur Katalogsynchronisierung wird jetzt zum Dashboard für das Daten-Management. Dieses überarbeitete Dashboard unterstützt jetzt [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+, [[!DNL Live Search]](../live-search/overview.md) v4.1.0+ und [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+. Kunden können das Daten-Management-Dashboard erhalten, indem sie auf die neueste Version eines dieser Services aktualisieren. Weitere Informationen hierzu finden Sie in der Dokumentation [Data Management Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) . Dieses aktuelle Thema bleibt für die Benutzer übrig, die noch kein Upgrade durchgeführt haben und noch über das Dashboard zur Katalogsynchronisierung verfügen.
 
-Adobe Commerce verwendet Indexer, um Katalogdaten in Tabellen zu kompilieren. Der Prozess wird automatisch durch [Ereignisse](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html?lang=de#events-that-trigger-full-reindexing) wie eine Änderung des Produktpreises oder des Lagerbestands ausgelöst.
+Adobe Commerce verwendet Indexer, um Katalogdaten in Tabellen zu kompilieren. Der Prozess wird automatisch durch [Ereignisse](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/index-management#events-that-trigger-full-reindexing) wie eine Änderung des Produktpreises oder des Lagerbestands ausgelöst.
 
 Der Katalog-Synchronisierungs-Service verschiebt Produktdaten laufend von einer [!DNL Adobe Commerce]-Instanz zur [!DNL Commerce Services]-Plattform, um die Daten auf dem neuesten Stand zu halten. Beispielsweise erfordert [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) aktuelle Kataloginformationen, um Empfehlungen mit korrekten Namen, Preisen und Verfügbarkeit genau zurückzugeben. Verwenden Sie das _Catalog Sync_-Dashboard, um den Synchronisierungsprozess oder die Befehlszeilenschnittstelle zu beobachten und zu verwalten, um eine Katalogsynchronisierung Trigger und Produktdaten für die Nutzung durch [!DNL Commerce Services] neu zu indizieren. Siehe [Referenz zur Befehlszeilenschnittstelle](../data-export/data-export-cli-commands.md) im _SaaS-_.
 

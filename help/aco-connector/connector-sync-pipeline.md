@@ -24,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 662
+source-wordcount: 673
 ht-degree: 1%
 
 ---
@@ -64,13 +64,13 @@ Die folgenden Cron-Aufträge automatisieren die Pipeline nach einem festen Zeitp
 | `index` | `indexer_update_all_views` | Lauscht auf Entitätsaktualisierungen, stellt Feed-Elemente zusammen, behält den Feed-Status bei | Alle 1 Minute |
 | `index` | `indexer_reindex_all_invalid` | Vollständige Neusynchronisierung für Feed-Indizes durchführen, die als „Neuindizierung erforderlich“ markiert sind | Alle 1 Minute |
 | `resync_failed_feeds_data_exporter` | `*_resend_failed_items` | Prüft auf fehlgeschlagene Feed-Elemente und sendet sie erneut an [!DNL Commerce Optimizer] | Alle 5 Minuten |
-| `commerce_data_export` | `cleanup_deleted_feed_items` | Bereinigt synchronisierte gelöschte Feed-Elemente nach dem Aufbewahrungszeitraum (7 Tage) | Jeden Tag um 2:00 h |
+| `commerce_data_export` | `cleanup_deleted_feed_items` | Bereinigt synchronisierte gelöschte Feed-Elemente nach dem Aufbewahrungszeitraum (7 Tage) | Jeden Tag um 2:00 Uhr |
 
 Die **[!DNL SaaS Data Export]**-Erweiterung verarbeitet die Feed-Erfassung und die Statusverfolgung. Die Connector-Ebene ordnet Entitäten und Bereiche dem Format zu, das für die [!DNL Commerce Optimizer]-API erforderlich ist, und übermittelt sie über `POST /v1/catalog/<feed name>`.
 
 #### Anforderungen
 
-- [Commerce Cron muss ausgeführt werden](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}.
+- [Commerce Cron muss ausgeführt werden](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}.
 - Feed-Indexer müssen den **[!UICONTROL Update by Schedule]** verwenden. Siehe [Teilsynchronisierung](../data-export/sync-overview.md#partial-sync){target="_blank"}.
 
 ## Bereichsbasierte Synchronisierungssteuerung

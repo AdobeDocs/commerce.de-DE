@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 236
+source-wordcount: 249
 ht-degree: 0%
 
 ---
@@ -43,12 +43,12 @@ Dieses Handbuch behandelt nicht die Kernfunktionen von Adobe Commerce und Magent
 
 | Handbuch | Beschreibung |
 |------ | ----------- |
-| [Benutzerhandbuch für Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html?lang=de) | Händlerorientierte Dokumentation für Adobe Commerce und Magento Open Source |
+| [Benutzerhandbuch für Adobe Commerce 2.4](https://experienceleague.adobe.com/de/docs/commerce-admin/user-guides/home) | Händlerorientierte Dokumentation für Adobe Commerce und Magento Open Source |
 | [Adobe Commerce 2.4-Entwicklerhandbuch](https://developer.adobe.com/commerce/docs) | Entwicklerorientierte Dokumentation zum Erstellen und Anpassen von Adobe Commerce oder Magento Open Source |
 
 ## Support
 
 Wenn Sie Informationen benötigen oder Fragen haben, die in diesem Handbuch nicht behandelt werden, verwenden Sie die folgenden Ressourcen:
 
-* [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-tickets){target="_blank"} - Siehe die [!DNL Product Recommendations] Artikel zur Fehlerbehebung.
-* [Support-](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket){target="_blank"}: Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
+* [Hilfezentrum](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-cases){target="_blank"} - Siehe die [!DNL Product Recommendations] Artikel zur Fehlerbehebung.
+* [Support-](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case){target="_blank"}: Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.

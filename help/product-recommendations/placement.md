@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 500
+source-wordcount: 501
 ht-degree: 0%
 
 ---
@@ -68,4 +68,4 @@ In der folgenden Tabelle sind die Storefront-Seiten aufgeführt, auf denen Sie E
 | Produktdetails | Am Ende des Hauptinhalts (Standard) | Am häufigsten angezeigt<br>am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>angezeigt, angezeigt, <br>, gekauft, gekauft, <br>, gekauft, <br>Ähnliches<br>Trending<br> |
 | Warenkorb | Am Ende des Hauptinhalts (Standard) | Am häufigsten angezeigt<br>am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Anzeigen, angezeigt, <br>, gekauft, <br>, gekauft, <br>, Ähnliche Artikel<br>Trend |
 | Bestätigung | Am Ende des Hauptinhalts (Standard) | Am häufigsten angezeigt<br>am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Anzeigen, angezeigt, <br>, gekauft, <br>, gekauft, <br>, Ähnliche Artikel<br>Trend |
-| Page Builder | [Drag-and](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=de)Drop, um Inhaltstyp zu positionieren | Am häufigsten angezeigt<br>Am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Empfohlen für Sie<br>Trend |
+| Page Builder | [Drag-and](https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/add-content/recommendations)Drop, um Inhaltstyp zu positionieren | Am häufigsten angezeigt<br>Am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Empfohlen für Sie<br>Trend |

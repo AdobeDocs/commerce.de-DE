@@ -22,9 +22,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 907
+source-wordcount: 921
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Nachdem Sie eine Adobe Commerce-Instanz mit dem Commerce-Service verbunden haben
 Bei teilweiser Synchronisierung sendet der SaaS-Datenexport automatisch Aktualisierungen aus der Commerce-Anwendung, z. B. Änderungen des Produktnamens oder Preisaktualisierungen, an verbundene Commerce-Services.
 Damit die partielle Synchronisierung funktioniert, benötigt die Commerce-Anwendung die folgende Konfiguration:
 
-- [Die Aufgabenplanung wird über Cron-Aufträge aktiviert](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=de)
+- [Die Aufgabenplanung wird über Cron-Aufträge aktiviert](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/next-steps/configuration)
 - Alle SaaS-Datenexportindizierer sind im `Update by Schedule`-Modus konfiguriert.
 
 ### Synchronisierung fehlgeschlagener Elemente wiederholen {#retry-failed-items-sync}
@@ -103,7 +103,7 @@ Die folgenden Cron-Gruppen automatisieren die Pipeline nach einem festen Zeitpla
 | `index` | `indexer_reindex_all_invalid` | Führt eine vollständige Neusynchronisierung für Feed-Indizes durch, die als „Neuindizierung erforderlich“ markiert sind | Alle 1 Minute |
 | `resync_failed_feeds_data_exporter` | `*_resend_failed_items` | Erkennt fehlgeschlagene Feed-Elemente und sendet sie erneut | Alle 5 Minuten |
 | `commerce_data_export` | `saas_data_exporter` | Übermittelt Daten für Feeds des alten Modus (Bestellungen, Bereiche) | Alle 5 Minuten |
-| `commerce_data_export` | `cleanup_deleted_feed_items` | Bereinigt synchronisierte gelöschte Feed-Elemente nach dem Aufbewahrungszeitraum (7 Tage) | Jeden Tag um 2:00 h |
+| `commerce_data_export` | `cleanup_deleted_feed_items` | Bereinigt synchronisierte gelöschte Feed-Elemente nach dem Aufbewahrungszeitraum (7 Tage) | Jeden Tag um 2:00 Uhr |
 
 ## Feed-Übermittlung und HTTP-Fehlerbehandlung {#feed-submission-and-http-error-handling}
 

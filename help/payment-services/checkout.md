@@ -3,9 +3,9 @@ title: Checkout in [!DNL Payment Services]
 description: Passen Sie  [!DNL Payment Services]  Checkout an die Bedürfnisse Ihrer Kunden an.
 feature: Payments, Checkout, Paas, Saas
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Auf der Kaufbestätigungsseite wird eine Fehlermeldung für den Käufer angezeig
 
 ![Fehler beim Überprüfen](assets/user-checkout-error.png "Fehler beim Auschecken"){width="600" zoomable="yes"}
 
-Ein Kommentar zur stornierten Bestellung wird auch im Administrator für eine bestimmte [Bestellung](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=de) angezeigt.
+Ein Kommentar zur stornierten Bestellung wird auch im Administrator für eine bestimmte [Bestellung](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/orders?lang=en) angezeigt.
 
 ![Stornierter Bestellkommentar in Admin für Bestellung](assets/admin-checkout-error.png "Stornierter Bestellkommentar in Admin für Bestellung"){width="600" zoomable="yes"}
 

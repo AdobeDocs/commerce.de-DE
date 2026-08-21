@@ -20,7 +20,7 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 607
 ht-degree: 0%
@@ -83,7 +83,7 @@ Die [`@adobe/aio-lib-telemetry`](https://github.com/adobe/aio-lib-telemetry/blob
 
 ### API-Mesh-Protokollierung
 
-[API Mesh-Protokollierung](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/logging/) ermöglicht die Überwachung und Fehlerbehebung von Anfragen, die über Ihr Mesh geleitet werden, mithilfe von Graph-IDs. Protokolle stapelweise exportieren oder zur zentralen Analyse an Plattformen wie [!DNL New Relic] weiterleiten.
+[API Mesh-Protokollierung](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/logging) ermöglicht die Überwachung und Fehlerbehebung von Anfragen, die über Ihr Mesh geleitet werden, mithilfe von Graph-IDs. Protokolle stapelweise exportieren oder zur zentralen Analyse an Plattformen wie [!DNL New Relic] weiterleiten.
 
 ## Schaufenster
 

@@ -3,9 +3,9 @@ title: Kreditkartenabrechnung
 description: Käufer können ihre Kreditkartendetails für zukünftige Käufe Vault-fähig machen (speichern).
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Angemeldete Kunden können eine Zahlungsmethode im Dashboard „Mein Konto **wie
    ![Neue Karte hinzufügen](assets/add-new-card.png){width="400" zoomable="yes"}
 
    Der Kunde muss alle erforderlichen Details wie Karten- und Rechnungsinformationen angeben, um die Zahlungsmethode zu tresoren.
-Alle Vault-Zahlungsmethoden verwenden die Rechnungsadresse, die beim Vault der Karte festgelegt wurde und auf dem PayPal-Konto des Käufers gespeichert wird. Der Kunde sieht möglicherweise eine andere Rechnungsadresse als die in Commerce angezeigte.
+   Alle Vault-Zahlungsmethoden verwenden die Rechnungsadresse, die beim Vault der Karte festgelegt wurde und auf dem PayPal-Konto des Käufers gespeichert wird. Der Kunde sieht möglicherweise eine andere Rechnungsadresse als die in Commerce angezeigte.
 
 1. **[!UICONTROL Save New Card]** klicken
 
@@ -73,10 +73,10 @@ Sie können in Admin nur dann Vault-Karten verwenden, wenn der Kunde sowohl übe
 
 So erstellen Sie in der Admin eine Bestellung für einen Kunden mit seiner Tresor-Kreditkarte:
 
-1. [Bestellung erstellen und Produkte hinzufügen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=de).
+1. [Bestellung erstellen und Produkte hinzufügen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
 1. Wählen Sie _[!UICONTROL Payment & Shipping Information]_&#x200B;**[!UICONTROL Stored Cards]**&#x200B;als Zahlungsmethode aus.
 1. Wählen Sie die gewünschte Zahlungsmethode mit Vault-Kreditkarte aus.
-1. Nachdem Sie alle anderen erforderlichen Schritte für die Bestellung ausgeführt haben, [&#x200B; Sie sie &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=de#step-3%3A-submit-the-order).
+1. Nachdem Sie alle anderen erforderlichen Schritte für die Bestellung ausgeführt haben, [&#x200B; Sie sie &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
 
    ![Verwenden Sie eine Vault-Kreditkarte in Admin für den Kunden](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 

@@ -22,7 +22,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
 source-wordcount: 1183
 ht-degree: 0%
@@ -35,7 +35,7 @@ Die auf der Adobe App Builder-Technologie aufbauende [!DNL Commerce Optimizer Sa
 
 Standardmäßig bietet der Connector zuverlässige Datensynchronisierungsfunktionen und die Flexibilität, Workflows an Ihre Geschäftsanforderungen anzupassen.
 
-Eine vollständige Video-Tutorial-Reihe finden Sie unter [Informationen zum Salesforce Commerce Cloud Starter Kit](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+Eine vollständige Video-Tutorial-Reihe finden Sie unter [Informationen zum Salesforce Commerce Cloud Starter Kit](https://experienceleague.adobe.com/de/docs/commerce-learn/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 >[!NOTE]
 >
@@ -48,13 +48,13 @@ Eine vollständige Video-Tutorial-Reihe finden Sie unter [Informationen zum Sale
 * **Unterstützt mehrere Datentypen:**, Preise und Katalogstrukturen, um komplexe Merchandising-Konfigurationen widerzuspiegeln.
 
 * **Flexible Synchronisations-Workflows**
-   * **Geplante Synchronisationen:** Automatisieren von Aktualisierungen mithilfe der Cron-Auftragsplanung, kein manueller Aufwand erforderlich.
-   * **On-Demand-Updates:** Sofortiger Trigger von Aktualisierungen auf SKU-Ebene für dringende Änderungen, Korrekturen oder Produkteinführungen.
+  * **Geplante Synchronisationen:** Automatisieren von Aktualisierungen mithilfe der Cron-Auftragsplanung, kein manueller Aufwand erforderlich.
+  * **On-Demand-Updates:** Sofortiger Trigger von Aktualisierungen auf SKU-Ebene für dringende Änderungen, Korrekturen oder Produkteinführungen.
 
 * **Für Erweiterbarkeit entwickelt**
-   * Verwendet benutzerdefinierte [Salesforce Commerce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) (SCAPI)-Endpunkte für die Kompatibilität und einfache Anpassung an individuelle oder erweiterte Anwendungsfälle.
-   * Skalierbar durch Katalog- und Preissynchronisierung und anschließende Erweiterung der Workflows zur Unterstützung zusätzlicher Integrationen oder Business-Logik.
-   * Konfigurieren und Entwickeln von Workflows, ohne die Kernintegrationen neu zu erstellen.
+  * Verwendet benutzerdefinierte [Salesforce Commerce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) (SCAPI)-Endpunkte für die Kompatibilität und einfache Anpassung an individuelle oder erweiterte Anwendungsfälle.
+  * Skalierbar durch Katalog- und Preissynchronisierung und anschließende Erweiterung der Workflows zur Unterstützung zusätzlicher Integrationen oder Business-Logik.
+  * Konfigurieren und Entwickeln von Workflows, ohne die Kernintegrationen neu zu erstellen.
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ Dieser primäre Anwendungsfall zeigt den vollständigen Datenfluss von Salesforc
 Nutzung der B2C-Lokalisierungsfunktionen von Salesforce Commerce:
 
 * Synchronisieren Sie lokalisierte Versionen von Produkttextfeldern (Namen, Beschreibungen) aus Salesforce Commerce B2C für verschiedene Gebietsschemata.
-* Ordnen Sie Salesforce-Gebietsschemakonzepte 1:1 den [!DNL Commerce Optimizer] Gebietsschemata zu.
+* Ordnen Sie Salesforce-Gebietsschemakonzepte 1:1 [!DNL Commerce Optimizer] Gebietsschemata zu.
 * Unterstützung mehrerer Produktaufnahmezyklen für verschiedene Lokalisierungen.
 * Konsistenz über globale Produktkataloge hinweg gewährleisten.
 

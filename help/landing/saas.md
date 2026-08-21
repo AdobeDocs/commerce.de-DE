@@ -21,9 +21,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 1662
+source-wordcount: 1665
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ In den folgenden Abschnitten werden diese Elemente ausführlicher behandelt.
 
 ## Anmeldeinformationen {#apikey}
 
-Die Produktions- und Sandbox-API-Schlüssel werden aus dem [!DNL Commerce] Konto des [Lizenzinhabers](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/start/onboarding) generiert. Das Commerce-Konto wird durch eine eindeutige [!DNL Commerce]-ID (MageID) identifiziert. Der Lizenzinhaber für die Organisation des Händlers kann API-Schlüssel für Services wie Produktempfehlungen oder Live Search generieren, solange das Konto gut aufgestellt ist.
+Die Produktions- und Sandbox-API-Schlüssel werden aus dem [!DNL Commerce] Konto des [Lizenzinhabers](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/start/onboarding) generiert. Das Commerce-Konto wird durch eine eindeutige [!DNL Commerce]-ID (MageID) identifiziert. Der Lizenzinhaber für die Organisation des Händlers kann API-Schlüssel für Services wie Produktempfehlungen oder Live Search generieren, solange das Konto gut aufgestellt ist.
 
 Die Schlüssel können auf einer „Need-to-know“-Basis mit dem Systemintegrator oder dem Entwicklungsteam geteilt werden, das Projekte und Umgebungen im Namen des Lizenzinhabers verwaltet. Entwickler, denen vom Lizenzinhaber [!DNL Shared Access] erteilt wurde, können die Schlüssel nicht im Namen des Lizenzinhabers generieren, selbst wenn die Organisation des Händlers in der Dropdown-Liste &quot;[!DNL Switch Accounts]&quot; auf ihrem Konto vorhanden ist.
 
@@ -153,7 +153,7 @@ Um ein SaaS-Projekt auszuwählen oder zu erstellen, fordern Sie die [!DNL Commer
 
 1. Wählen Sie **Datenspeicher** aus, der für die aktuelle Konfiguration Ihres [!DNL Commerce] verwendet werden soll.
 
-   Wenn Sie über separate Instanzen verfügen, die in Commerce Services integriert werden können, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket), um für jede weitere Instanz ein neues SaaS-Projekt anzufordern. Nachdem der Support das SaaS-Projekt erstellt hat, konfigurieren Sie den Commerce Services Connector für die Instanz **mit denselben API-Schlüsseln** und wählen Sie das neue SaaS-Projekt und den neuen Datenspeicher aus.
+   Wenn Sie über separate Instanzen verfügen, die in Commerce Services integriert werden können, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case), um für jede weitere Instanz ein neues SaaS-Projekt anzufordern. Nachdem der Support das SaaS-Projekt erstellt hat, konfigurieren Sie den Commerce Services Connector für die Instanz **mit denselben API-Schlüsseln** und wählen Sie das neue SaaS-Projekt und den neuen Datenspeicher aus.
 
 >[!WARNING]
 >

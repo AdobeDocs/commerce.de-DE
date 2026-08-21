@@ -26,9 +26,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: e7840a7b-a94f-4256-aed0-4e94b08e157b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: 1289
 ht-degree: 0%
 
 ---
@@ -55,8 +55,8 @@ In diesem Tutorial sind die folgenden Tools für die Entwicklung von Erweiterung
   ```
 
 * Bash-Shell
-   * macOS/Linux: Keine Installation erforderlich
-   * Windows: Verwenden Sie [Git Bash](https://git-scm.com/install) oder [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
+  * macOS/Linux: Keine Installation erforderlich
+  * Windows: Verwenden Sie [Git Bash](https://git-scm.com/install) oder [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 * Laden Sie eine KI-unterstützte IDE herunter, z. B[Cursor](https://cursor.com/download) (empfohlen). Andere IDEs wie Claude Code, Gemini CLI oder Copilot werden ebenfalls unterstützt, erfordern jedoch möglicherweise Änderungen an den Eingabeaufforderungen und anderen Schritten im Tutorial.
 
@@ -74,7 +74,7 @@ In diesem Tutorial sind die folgenden Tools für die Entwicklung von Erweiterung
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
-Richten Sie nach der Installation des [!DNL Adobe I/O CLI] und der erforderlichen Plug-ins Ihren Erweiterbarkeitsarbeitsbereich ein. Adobe empfiehlt die Verwendung des automatisierten Setups für ein schnelleres Erlebnis.
+Richten Sie nach der Installation des [!DNL Adobe I/O CLI] und der erforderlichen Plug-ins Ihren Erweiterbarkeitsarbeitsbereich ein. Adobe empfiehlt die Verwendung des automatisierten Setups, um ein möglichst effizientes Erlebnis zu gewährleisten.
 
 * **[Automatisierte Einrichtung](#automated-setup) (empfohlen)** - Führen Sie einen einzelnen Befehl aus, um Ihren Arbeitsbereich automatisch zu konfigurieren.
 * **[Manuelles Setup](#manual-setup)** - Folgen Sie den schrittweisen Anweisungen, um jede Komponente einzeln zu konfigurieren.
@@ -202,7 +202,7 @@ Richten Sie in der Adobe Developer Console ein Projekt mit den erforderlichen AP
 
 #### Neues Projekt erstellen
 
-Erstellen Sie ein App Builder-Projekt in der Adobe Developer Console, um Ihre Erweiterung zu hosten.
+Um Ihre Erweiterung zu hosten, erstellen Sie ein [!DNL App Builder] in der Adobe Developer Console.
 
 1. Navigieren Sie zu [Adobe Developer Console](https://developer.adobe.com/).
 1. Klicken Sie auf **[!UICONTROL Create project from a template]**.
@@ -227,10 +227,10 @@ Fügen Sie Ihrem Staging-Arbeitsbereich die erforderlichen APIs für die Ereigni
 1. Wählen Sie eine der folgenden APIs aus. Wiederholen Sie diesen Vorgang für jede unten aufgeführte API:
 
    * **[!UICONTROL Adobe Services]**:
-      * **[!UICONTROL I/O Management API]**
-      * **[!UICONTROL I/O Events]** API
+     * **[!UICONTROL I/O Management API]**
+     * **[!UICONTROL I/O Events]** API
    * **[!UICONTROL Experience Cloud]**:
-      * **[!UICONTROL Adobe I/O Events for Adobe Commerce]** API
+     * **[!UICONTROL Adobe I/O Events for Adobe Commerce]** API
 
 1. Klicken Sie auf **[!UICONTROL Next]**.
 
@@ -342,7 +342,7 @@ EVENT_PREFIX=test
 
 ### Herunterladen der Workspace-Konfiguration
 
-Führen Sie den folgenden Befehl aus, um die Workspace-Konfigurationsdatei herunterzuladen:
+Um die Workspace-Konfigurationsdatei herunterzuladen, führen Sie den folgenden Befehl aus:
 
 ```bash
 aio console workspace download workspace.json
@@ -407,7 +407,7 @@ Dieser Prozess erstellt die MCP-Konfiguration (`.<agent>/mcp.json`), das Skills-
 
 ## Manuelle Einrichtung der Storefront
 
-In diesem Abschnitt wird beschrieben, wie Sie Ihre Storefront für das [Tutorial zu Bewertungserweiterungen](./ratings-extension.md) und andere Storefront-Tutorials manuell konfigurieren.
+In diesem Abschnitt wird beschrieben, wie Sie Ihre Storefront manuell für das [Tutorial zu Bewertungserweiterungen](./ratings-extension.md) und andere Storefront-Tutorials konfigurieren.
 
 Um Ihre Storefront automatisch zu konfigurieren, führen Sie den `app-setup` Befehl aus, der im Abschnitt [Automatisiertes Setup](#automated-setup) beschrieben ist, und wählen Sie das [!DNL AEM Boilerplate Commerce] Starter Kit aus.
 

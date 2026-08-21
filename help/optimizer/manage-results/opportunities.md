@@ -23,9 +23,9 @@ topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: 1445
+source-wordcount: 1448
 ht-degree: 0%
 
 ---
@@ -201,8 +201,8 @@ Detaillierte Informationen zu den Funktionen und Leistungsmerkmalen von Sites Op
 
 Zusätzliche Ressourcen:
 
-- [Opportunity-Typen](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/opportunities) - Erfahren Sie mehr über verfügbare Optimierungsmöglichkeiten.
-- [Sites Optimizer-Funktionen](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/capabilities) - Erfahren Sie, was Sites Optimizer tun kann.
+- [Opportunity-Typen](https://experienceleague.adobe.com/de/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) - Erfahren Sie mehr über verfügbare Optimierungsmöglichkeiten.
+- [Sites Optimizer-Funktionen](https://experienceleague.adobe.com/de/docs/experience-manager-sites-optimizer/content/documentation/basics) - Erfahren Sie, was Sites Optimizer tun kann.
 
 ## Ähnliche Themen
 

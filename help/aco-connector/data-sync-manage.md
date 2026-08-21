@@ -24,9 +24,9 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 last-update: 2026-06-23
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: 349
+source-wordcount: 348
 ht-degree: 0%
 
 ---
@@ -56,4 +56,4 @@ Wenn Synchronisierungsprobleme durch teilweise Synchronisierung und automatische
 > - [Fehlerbehebung](troubleshooting.md) - Diagnose von Problemen mit Berechtigungen, Synchronisierung und dem Umfang von Exportvorgängen
 > - [Connector-Module und Feed-](reference/connector-reference.md): Überprüfungsmodule, API-Endpunkte und unterstützte Feeds
 > - [Seite „Synchronisierungsstatus für Daten-Feeds“ in der Commerce-](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} - Erfahren Sie mehr über die Felder und Funktionen, die zur Überwachung des Feed-Status verfügbar sind
-> - [Datensynchronisations-Dashboard in [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce-optimizer/data-sync/data-sync){target="_blank"} - Referenzdokumentation für Felder und Aktionen, die zur Überwachung der Katalogdaten-Synchronisierung verfügbar sind
+> - [Datensynchronisations-Dashboard in [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/data-sync){target="_blank"} - Referenzdokumentation für Felder und Aktionen, die zur Überwachung der Katalogdaten-Synchronisierung verfügbar sind

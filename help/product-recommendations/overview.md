@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 738
+source-wordcount: 744
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 Die Datenerfassung für [!DNL Product Recommendations] umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. Weitere Informationen finden Sie in der [Adobe-Datenschutzrichtlinie](https://www.adobe.com/privacy/policy.html).
 
-Weitere Informationen zur Datensynchronisation finden Sie unter [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=de).
+Weitere Informationen zur Datensynchronisation finden Sie unter [Data Management Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
 
 ## Wo Empfehlungen erscheinen
 
@@ -58,7 +58,7 @@ Wählen Sie die Dokumentation aus, die Ihrer Storefront entspricht:
 
 ## Produktempfehlungen versus Produktbeziehungen
 
-Angesichts der sich ständig verändernden Komplexität von Online-Shopping, ist das, was am besten für Ihre Storefront funktioniert, oft eine Kombination aus mehreren Schlüsseltechnologien. Die Verwendung von [!DNL Product Recommendations]- [Produktbeziehungen](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html?lang=de) bietet Ihnen mehr Flexibilität bei der Promotion von Produkten. Sie können [!DNL Product Recommendations] mit Adobe AI nutzen, um Ihre Empfehlungen im benötigten Umfang intelligent zu automatisieren. Anschließend können Sie &quot;[&#x200B; Produktregeln“ nutzen](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html?lang=de) wenn Sie manuell eingreifen müssen und sicherstellen müssen, dass eine bestimmte Empfehlung an ein Zielkunden-Segment gesendet wird oder wenn bestimmte Geschäftsziele erfüllt werden müssen.
+Angesichts der sich ständig verändernden Komplexität von Online-Shopping, ist das, was am besten für Ihre Storefront funktioniert, oft eine Kombination aus mehreren Schlüsseltechnologien. Die Verwendung von [!DNL Product Recommendations]- [Produktbeziehungen](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships) bietet Ihnen mehr Flexibilität bei der Promotion von Produkten. Sie können [!DNL Product Recommendations] mit Adobe AI nutzen, um Ihre Empfehlungen im benötigten Umfang intelligent zu automatisieren. Anschließend können Sie &quot;[&#x200B; Produktregeln“ nutzen](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules) wenn Sie manuell eingreifen müssen und sicherstellen müssen, dass eine bestimmte Empfehlung an ein Zielkunden-Segment gesendet wird oder wenn bestimmte Geschäftsziele erfüllt werden müssen.
 
 Produktempfehlungen ermöglichen Ihnen Folgendes:
 
@@ -82,4 +82,4 @@ Wenn Ihre Umgebung 45 Tage nach **Erstellung einen** Katalog hat, werden die Kat
 
 ### Reaktivieren von Katalogdaten
 
-Um Katalogdaten nach dem Ruhezustand wiederherzustellen[&#x200B; senden Sie eine Support-Anfrage &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) dem Titel &quot;[!DNL Product Recommendations] erneut aktivieren“ und schließen Sie die Umgebungs-IDs ein. Katalogdaten sollten innerhalb weniger Stunden wiederhergestellt werden.
+Um Katalogdaten nach dem Ruhezustand wiederherzustellen[&#x200B; senden Sie eine Support-Anfrage &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) dem Titel &quot;[!DNL Product Recommendations] erneut aktivieren“ und schließen Sie die Umgebungs-IDs ein. Katalogdaten sollten innerhalb weniger Stunden wiederhergestellt werden.

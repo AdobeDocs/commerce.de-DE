@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: 09630af055b4d59f37fba2d3c398042161a7afa0
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '2254'
+source-wordcount: '2255'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Asynchrone Überwachung aktivieren: [!BADGE nur PaaS]{type=Informative tooltip="
    bin/magento config:set payment/payment_services/async_status_updates 1
    ```
 
-1. Aktivieren und planen Sie den `sync_order_payment_status` Cron-Auftrag, damit Statusaktualisierungen automatisch abgerufen werden. Siehe [Konfigurieren von Cron-Aufträgen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=de).
+1. Aktivieren und planen Sie den `sync_order_payment_status` Cron-Auftrag, damit Statusaktualisierungen automatisch abgerufen werden. Siehe [Konfigurieren von Cron-Aufträgen](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 Sobald die Einstellung und der Cron-Auftrag aktiviert sind, wird der Cron-Auftrag alle 10 Minuten ausgeführt, um Aktualisierungen für Bestellungen mit `Payment Review` Status abzurufen. Nach der Einrichtung ist im Normalbetrieb keine weitere Aktion des Händlers erforderlich.
 

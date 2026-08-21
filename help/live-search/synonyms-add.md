@@ -9,9 +9,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 410
+source-wordcount: 434
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Erhöhen Sie die Kundeninteraktion, indem Sie Ihre eigene kuratierte Liste [!DNL
 ## Schritt 1: Synonym hinzufügen
 
 1. Gehen Sie im Admin zu **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Setzen Sie bei mehreren Stores **Bereich** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings), für die die Synonymeinstellungen gelten.
+1. Setzen Sie bei mehreren Stores **Bereich** auf die [Store-Ansicht](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/websites-stores-views#scope-settings), für die die Synonymeinstellungen gelten.
 1. Klicken Sie auf die **Synonyme**.
 1. Klicken Sie auf **Schaltfläche „Synonyme**&quot;.
 

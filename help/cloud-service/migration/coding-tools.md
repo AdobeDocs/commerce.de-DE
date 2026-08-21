@@ -20,9 +20,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 2634
+source-wordcount: 2611
 ht-degree: 0%
 
 ---
@@ -52,22 +52,22 @@ Nach [Installation der Entwickler-Tools für die KI](#installation)Codierung) k�
 aio commerce extensibility tools-setup
 ```
 
-Dadurch werden die Tools auf die neueste Version aktualisiert.
+Dieser Befehl aktualisiert die Tools auf die neueste Version.
 
 ## Voraussetzungen
 
 * Jeder Codierungsagent, der [Agentenfähigkeiten“ unterstützt](https://agentskills.io/home#adoption) z. B.:
 
-   * [Cursor](https://cursor.com/download)
-   * [Claude Code](https://www.claude.com/product/claude-code)
-   * [GitHub-Copilot](https://github.com/features/copilot)
-   * [Windsurfen](https://windsurf.com)
-   * [Gemini-CLI](https://github.com/google-gemini/gemini-cli)
-   * [OpenAI-Code](https://openai.com/index/introducing-codex/)
-   * [Cline](https://cline.bot)
+  * [Cursor](https://cursor.com/download)
+  * [Claude Code](https://claude.com/product/claude-code)
+  * [GitHub-Copilot](https://github.com/features/copilot)
+  * [Desktop entwickeln](https://devin.ai/desktop)
+  * [Gemini-CLI](https://github.com/google-gemini/gemini-cli)
+  * [OpenAI-Code](https://openai.com/index/introducing-codex/)
+  * [Cline](https://cline.bot)
 
 * [Node.](https://nodejs.org/en/download): LTS-Version
-* Package Manager: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) oder [arn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
+* Package Manager: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/) oder [arn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): Für das Klonen von Repositorys und die Versionskontrolle
 
 ## Installation
@@ -114,7 +114,7 @@ Dadurch werden die Tools auf die neueste Version aktualisiert.
    aio commerce extensibility tools-setup
    ```
 
-   Der Einrichtungsprozess fragt Sie nach den Konfigurationsoptionen. Befolgen Sie die Anweisungen, um die Installation abzuschließen. Die Tools werden im ausgewählten Verzeichnis installiert.
+   Der Einrichtungsprozess fragt Sie nach den Konfigurationsoptionen. Um die Installation abzuschließen, folgen Sie den Anweisungen. Die Tools werden im ausgewählten Verzeichnis installiert.
 
    * Wählen Sie das Starter Kit aus, das Sie für Ihr Projekt verwenden möchten.
 
@@ -138,7 +138,7 @@ Dadurch werden die Tools auf die neueste Version aktualisiert.
         ...
      ```
 
-   * Das Installationsprogramm erkennt, ob NPM oder Garn installiert ist, und wählt die entsprechende Einstellung automatisch aus. Wenn Sie jedoch keines der beiden Programme installiert haben, werden Sie aufgefordert, Ihren Package Manager auszuwählen. Adobe empfiehlt aus Konsistenzgründen die Verwendung von `npm`:
+   * Das Installationsprogramm erkennt, ob NPM oder Yarn installiert ist und wählt die entsprechende Einstellung automatisch aus. Wenn Sie keines der beiden Programme installiert haben, werden Sie aufgefordert, Ihren Package Manager auszuwählen. Adobe empfiehlt aus Konsistenzgründen die Verwendung von `npm`:
 
      ```shell-session
      ? Which package manager would you like to use?
@@ -156,13 +156,13 @@ Dadurch werden die Tools auf die neueste Version aktualisiert.
 
 >[!NOTE]
 >
->Vor der Bereitstellung des Projekts müssen Sie die folgenden Konfigurationsaufgaben durchführen:
+>Führen Sie vor der Bereitstellung des Projekts die folgenden Konfigurationsaufgaben aus:
 >
 >* Melden Sie sich über die Adobe I/O-CLI [&#128279;](https://developer.adobe.com/console) Adobe Developer Console an.
 >* Erstellen Sie ein App Builder-Projekt (siehe [Projekt-Setup](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Einrichten von Umgebungsvariablen in einer `.env`.
 >
->Sie können diese Konfigurationsschritte manuell durchführen oder die KI-Kodierungs-Tools nutzen, um Sie durch den Prozess zu führen. Siehe [Erstellen einer Integration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) für detaillierte Konfigurationsanweisungen.
+>Sie können diese Konfigurationsaufgaben manuell durchführen oder die KI-Kodierungs-Tools nutzen, um Sie durch den Prozess zu führen. Siehe [Erstellen einer Integration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration) für detaillierte Konfigurationsanweisungen.
 
 ## Konfiguration nach der Installation
 
@@ -204,7 +204,7 @@ aio auth login
    * Suchen Sie **Commerce-Extensibility MCP Server** in der Liste.
    * Schalten Sie den Server **EIN** um, um die Kodierungstools zu aktivieren
 
-1. Überprüfen Sie den Serverstatus. Der Commerce Extensibility MCP-Server sollte wie folgt aussehen:
+1. Überprüfen Sie den Serverstatus. Der Commerce Extensibility MCP-Server wird wie folgt angezeigt:
 
    ```shell-session
    Status: Connected/Active
@@ -231,7 +231,7 @@ aio auth login
    * Klicken Sie auf das Zahnradsymbol neben [!UICONTROL **Commerce-Extensibility MCP Server**] und wählen Sie [!UICONTROL **Server starten**], wenn der Server angehalten wird.
    * Klicken Sie erneut auf das Zahnradsymbol und wählen Sie [!UICONTROL **Ausgabe anzeigen**].
 
-1. Überprüfen Sie den Serverstatus. Die `MCP:commerce-extensibility` sollte wie folgt aussehen:
+1. Überprüfen Sie den Serverstatus. Die `MCP:commerce-extensibility`-Ausgabe stimmt mit Folgendem überein:
 
    ```shell-session
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
@@ -299,15 +299,15 @@ Während die Fähigkeiten automatisch aufgerufen werden, wenn Sie mit Ihrem Codi
 
 ## Best Practices
 
-Adobe empfiehlt bei der Verwendung der KI-Kodierungs-Tools die folgenden Best Practices:
+Adobe empfiehlt die folgenden Best Practices bei der Verwendung der KI-Kodierungs-Tools:
 
 ### Planungsmodus
 
-Wählen Sie beim Chat mit Ihrem Codierungsagenten den Modus **Plan** aus, um einen detaillierten Implementierungsplan für Ihr Projekt zu erstellen.
+Wählen Sie beim Chat mit Ihrem Codierungsagenten den **Plan**-Modus aus, um einen detaillierten Implementierungsplan für Ihr Projekt zu erstellen.
 
 Die Methode zur Auswahl des **Plan**-Modus variiert je nach verwendetem Agenten. Anweisungen hierzu finden Sie in der Dokumentation Ihres Agenten. Beispiel:
 
-* [Cursor](https://cursor.com/docs/agent/modes)
+* [Cursor](https://cursor.com/docs/agent/plan-mode)
 * [Claude Code](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
 * [Gemini-CLI](https://geminicli.com/docs/cli/plan-mode/)
 
@@ -340,7 +340,7 @@ Beim Starten eines neuen Chats:
 
 ### Workflow
 
-Beginnen Sie bei der Entwicklung mit den KI-Kodierungs-Tools mit Beispiel-Code oder Strukturvorlagen-Projekten. Dieser Ansatz stellt sicher, dass Sie auf einer soliden Grundlage aufbauen, anstatt aus dem Nichts zu beginnen, und optimiert gleichzeitig Ihren KI-Entwicklungs-Workflow.
+Beginnen Sie bei der Entwicklung mit den KI-Kodierungs-Tools mit Beispiel-Code oder Strukturvorlagen-Projekten. Dieser Ansatz stellt sicher, dass Sie auf einer etablierten Grundlage aufbauen, anstatt aus dem Nichts zu beginnen, und optimiert gleichzeitig Ihren KI-Entwicklungs-Workflow.
 
 Auf diese Weise können Sie auch die Vorlagen von Adobe nutzen und auf bewährten Mustern und Architekturen aufbauen, während Sie etablierte Verzeichnisstrukturen und Konventionen beibehalten.
 
@@ -349,10 +349,10 @@ Lesen Sie die folgenden Ressourcen, um loszulegen:
 * [Integrations-Starter-Kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Checkout-Starterkit](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Adobe Commerce Starter Kit-Vorlagen](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
-* [Beispielanwendungen für App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
+* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Beispielanwendungen für App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps/)
 
-#### Warum Sie diese Ressourcen verwenden sollten
+#### Wozu dienen diese Ressourcen?
 
 * **Bewährte Muster**: Starter Kits enthalten Best Practices und architektonische Entscheidungen von Adobe
 * **Schnellere Entwicklung**: Reduziert den Zeitaufwand für Textbaustein und Konfiguration
@@ -365,12 +365,12 @@ Lesen Sie die folgenden Ressourcen, um loszulegen:
 
 ### Protokoll
 
-Das folgende Vierphasenprotokoll wird automatisch von den installierten Kenntnissen durchgesetzt. Die Tools sollten bei der Entwicklung von Anwendungen diesem Protokoll automatisch folgen:
+Die installierten Fähigkeiten erzwingen automatisch das folgende Vierphasenprotokoll. Die Tools befolgen dieses Protokoll automatisch bei der Entwicklung von Anwendungen:
 
 * Phase 1: Anforderungsanalyse und -klärung
-   * Wenn Sie Fragen zur Klärung stellen, geben Sie vollständige Antworten.
+  * Wenn Sie Fragen zur Klärung stellen, geben Sie vollständige Antworten.
 * Phase 2: Architektonische Planung und Anwendergenehmigung
-   * Wenn ein Plan vorgelegt wird, prüfen Sie ihn sorgfältig, bevor Sie ihn genehmigen.
+  * Wenn ein Plan vorgelegt wird, prüfen Sie ihn sorgfältig, bevor Sie ihn genehmigen.
 * Phase 3: Code-Erstellung und -Implementierung
 * Phase 4: Dokumentation und Validierung
 
@@ -435,7 +435,7 @@ Verwenden Sie beim Testen die folgenden Best Practices:
 Nach Abschluss der Entwicklung einer Funktion im Implementierungsplan sollten Sie diese sofort testen. Frühzeitige Tests verhindern zusammengesetzte Probleme und erleichtern das Debugging.
 
 * Nicht warten, bis alle Funktionen abgeschlossen sind
-* Inkrementelles Testen zur frühzeitigen Erkennung von Problemen
+* Um Probleme frühzeitig zu erkennen, führen Sie schrittweise Tests durch.
 * Validieren der Funktionalität vor dem Übergang zur nächsten Funktion
 
 #### Erst lokal testen
@@ -522,7 +522,7 @@ Help me debug why this action is returning 500 errors
 
 ### Debugging
 
-Stoppen und beurteilen, wann etwas schief geht. Wenn Probleme auftreten:
+Beenden Sie den Vorgang und bewerten Sie, wann Fehler auftreten. Wenn Probleme auftreten:
 
 * Beenden und bewerten - Nicht in beschädigtem Zustand fortfahren
 * Protokolle überprüfen - Verwenden Sie Aktivierungsprotokolle, um Probleme zu identifizieren.
@@ -606,7 +606,7 @@ Mit diesem Befehl können Sie Text-Feedback geben und Protokolle an Adobe senden
 
 >[!TIP]
 >
->Das Benutzererlebnis hängt von der verwendeten IDE ab. Im folgenden Prozess wird das Erlebnis in Cursor beschrieben.
+>Das Benutzererlebnis variiert je nach verwendeter IDE geringfügig. Im folgenden Prozess wird das Erlebnis in Cursor beschrieben.
 
 1. Geben Sie in Ihrem Agenten `/feedback` ein und wählen Sie den Befehl `commerce-extensibility/feedback` aus.
 
@@ -624,4 +624,4 @@ Mit diesem Befehl können Sie Text-Feedback geben und Protokolle an Adobe senden
 
 >[!NOTE]
 >
->Wenn der Befehl `/feedback` nicht angezeigt wird, müssen Sie möglicherweise [auf die neueste Version aktualisieren](#updating-to-the-latest-version).
+>Wenn der Befehl `/feedback` nicht angezeigt wird, [&#x200B; Sie auf die neueste Version &#x200B;](#updating-to-the-latest-version).

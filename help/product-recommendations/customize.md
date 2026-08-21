@@ -10,9 +10,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 645
+source-wordcount: 646
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Wenn Sie das Modul Produktempfehlungen installieren, erstellt Adobe Commerce das
 
 `<your theme>/Magento_ProductRecommendationsLayout/web/template/recommendations.html`
 
-Weitere Informationen zum Ändern von Vorlagendateien finden Sie unter [Vorlagenanpassung](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) im Frontend-Entwicklerhandbuch.
+Weitere Informationen zum Ändern von Vorlagendateien finden Sie unter [Vorlagenanpassung](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough) im Frontend-Entwicklerhandbuch.
 
 Wenn Sie die `recommendations.html` ändern, müssen Sie die folgenden Tags in der Datei beibehalten, um sicherzustellen, dass Adobe Commerce Empfehlungsmetriken aus Ihrer Storefront erfassen kann:
 
@@ -121,7 +121,7 @@ Wenn Ihr Geschäft beispielsweise Bio-Produkte verkauft, können Sie ein benutze
 
 ![Abzeichen hinzufügen](assets/unit-custom.png)
 
-Um sicherzustellen, dass beim Rendern der Empfehlungseinheit auf der Seite ein benutzerdefiniertes Produktattribut verfügbar ist, legen Sie die `Used in Product Listing` Eigenschaft auf der Seite &quot;[&quot; &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=de) Admin auf `Yes` fest.
+Um sicherzustellen, dass beim Rendern der Empfehlungseinheit auf der Seite ein benutzerdefiniertes Produktattribut verfügbar ist, legen Sie die `Used in Product Listing` Eigenschaft auf der Seite &quot;[&quot; &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) Admin auf `Yes` fest.
 
 Wenn diese Eigenschaft festgelegt ist, enthält die JSON-Payload ein `attributes`-Objekt, das ein Array von Attributcodes und -werten enthält. Sie können dann einen benutzerdefinierten Storefront-Stil anwenden, der auf diesen Attributwerten basiert, z. B. das Hinzufügen spezieller visueller Behandlungen oder Abzeichen wie zuvor erwähnt.
 

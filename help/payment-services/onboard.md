@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -110,8 +110,8 @@ Dieses Flussdiagramm zeigt den allgemeinen Prozess zum Aktivieren von [!DNL Paym
 
 >[!MORELIKETHIS]
 >
-> * [Fehlerbehebung [!DNL Payment Services] Installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=de)
-> * [PayPal-Sandbox-Konto nicht verifiziert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=de)
-> * [Verzögerte [!DNL Payment Services] Berichtsdaten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=de)
-> * [Testkreditkarte schlägt mit PayPal bei der Verarbeitung von Zahlungen in einer Sandbox-Umgebung fehl](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=de)
+> * [Fehlerbehebung [!DNL Payment Services] Installation](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26826)
+> * [PayPal-Sandbox-Konto nicht verifiziert](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26836)
+> * [Verzögerte [!DNL Payment Services] Berichtsdaten](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26837)
+> * [Testkreditkarte schlägt mit PayPal bei der Verarbeitung von Zahlungen in einer Sandbox-Umgebung fehl](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26825)
 > * [Deaktivieren der  [!DNL Payment Services] -Erweiterung](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)

@@ -12,10 +12,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 339
-ht-degree: 2%
+source-wordcount: 342
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 Die [Datenverbindungserweiterung](overview.md) verbindet Ihre Commerce-Daten mit Experience Platform. Daten, die in Experience Platform verwendet werden können, sind in zwei Verhaltenstypen unterteilt: Zeitreihendaten, die zur Klasse **Erlebnisereignis** gehören, und Datensatzdaten, die zur Klasse **Individuelles Profil** gehören.
 
-Weitere Informationen über [Datenverhalten](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de#data-behaviors) und [Klassen](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de#class) in Experience Platform.
+Weitere Informationen über [Datenverhalten](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#data-behaviors) und [Klassen](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#class) in Experience Platform.
 
 ## Zeitreihendaten
 
@@ -39,7 +39,7 @@ Erfahren Sie, wie [ein Schema erstellen](update-xdm.md) das Verhaltens- und Back
 
 ## Datensatzdaten
 
-Datensatzdaten liefern Informationen über die Attribute eines Subjekts. Ein Subjekt kann eine Organisation oder eine Einzelperson sein. Beispiel: Ein Käufer auf Ihrer Site erstellt ein Konto, das Datensatzdaten generiert. Diese Daten werden mithilfe eines Schemas in die Experience Platform aufgenommen, bei dem die Klasse auf &quot;**&quot; festgelegt**. Sie können diese Datensatzdaten an den Profilverwaltungs- und Segmentierungs-Service von Adobe senden: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=de).
+Datensatzdaten liefern Informationen über die Attribute eines Subjekts. Ein Subjekt kann eine Organisation oder eine Einzelperson sein. Beispiel: Ein Käufer auf Ihrer Site erstellt ein Konto, das Datensatzdaten generiert. Diese Daten werden mithilfe eines Schemas in die Experience Platform aufgenommen, bei dem die Klasse auf &quot;**&quot; festgelegt**. Sie können diese Datensatzdaten an den Profilverwaltungs- und Segmentierungs-Service von Adobe senden: [Real-Time CDP](https://experienceleague.adobe.com/de/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
 
 ### Erfasste Profildatensatzdaten
 

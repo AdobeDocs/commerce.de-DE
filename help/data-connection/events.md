@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 467
+source-wordcount: 469
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 0%
 
 Im Folgenden sind die Commerce-Verhaltensereignisse aufgeführt, die bei der Installation der [!DNL Data Connection] verfügbar sind. Die von diesen Ereignissen erfassten Daten werden an die Adobe Experience Platform gesendet. Sie können auch [benutzerspezifische Ereignisse](custom-events.md) erstellen, um zusätzliche Daten zu erfassen, die nicht vorkonfiguriert bereitgestellt werden.
 
-Zusätzlich zu den Daten, die die folgenden Ereignisse erfassen, erhalten Sie auch [andere Daten](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=de) bereitgestellt von der Adobe Experience Platform Web SDK.
+Zusätzlich zu den Daten, die die folgenden Ereignisse erfassen, erhalten Sie auch [andere Daten](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/js-overview) bereitgestellt von der Adobe Experience Platform Web SDK.
 
 Die Verhaltensereignisse erfassen anonymisierte Verhaltensdaten von Ihren Kundinnen und Kunden, während sie Ihre Website durchsuchen. Sie können die von diesen Ereignissen erfassten Daten verwenden, um Werbeaktionen und Kampagnen für eine bestimmte Gruppe von Käufern zu erstellen.
 
 >[!NOTE]
 >
->Alle Verhaltensereignisse umfassen das Feld [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=de) , das die E-Mail-Adresse des Käufers (sofern verfügbar) und die ECID enthält.
+>Alle Verhaltensereignisse umfassen das Feld [`identityMap`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/profile/identitymap) , das die E-Mail-Adresse des Käufers (sofern verfügbar) und die ECID enthält.
 
 ## Storefront-Ereignisse
 
@@ -58,6 +58,6 @@ Weitere Informationen zu Suchereignissen finden [&#x200B; in &#x200B;](https://d
 
 ![B2B für Adobe Commerce](../assets/b2b.svg) Für B2B-Händler müssen [&#x200B; die `experience-platform-connector-b2b`-Erweiterung &#x200B;](install.md#install-the-b2b-extension)installieren“, um auf diese Ereignisse zugreifen zu können.
 
-Die B2B-Ereignisse enthalten [Anforderungsliste](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html?lang=de) Informationen, z. B. ob eine Anforderungsliste erstellt, hinzugefügt oder gelöscht wurde. Durch die Verfolgung von für Anforderungslisten spezifischen Ereignissen können Sie sehen, welche Produkte Ihre Kunden häufig kaufen, und auf dieser Grundlage Kampagnen erstellen.
+Die B2B-Ereignisse enthalten [Anforderungsliste](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/requisition-lists/requisition-lists) Informationen, z. B. ob eine Anforderungsliste erstellt, hinzugefügt oder gelöscht wurde. Durch die Verfolgung von für Anforderungslisten spezifischen Ereignissen können Sie sehen, welche Produkte Ihre Kunden häufig kaufen, und auf dieser Grundlage Kampagnen erstellen.
 
 Weitere Informationen zu B2B[Ereignissen finden &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection) in der Entwicklerdokumentation .

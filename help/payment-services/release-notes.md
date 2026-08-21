@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 2abebf247603b37a28eb6f4653d63e83aa5d9fd5
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '5483'
+source-wordcount: '5478'
 ht-degree: 0%
 
 ---
@@ -447,7 +447,7 @@ _20. März 2024_
 
 ![Neu](../assets/new.svg)<!-- PAY-4868 --> Händler können [Google Pay während des gesamten Kauferlebnisses konfigurieren](payments-options.md) ähnlich wie andere Zahlungsschaltflächen in [!DNL Payment Services] über den Administrator.
 
-![Neu](../assets/new.svg)<!-- PAY-4381 --> [Payment Services unterstützt Google Pay über GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) sodass Händler ein Headless-Commerce-Erlebnis mit der Google Pay-Zahlungsmethode haben.
+![Neu](../assets/new.svg)<!-- PAY-4381 --> [Payment Services unterstützt Google Pay über GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/) sodass Händler ein Headless-Commerce-Erlebnis mit der Google Pay-Zahlungsmethode haben.
 
 ![Neu](../assets/new.svg)<!-- PAY-4878 --> Jetzt ist die [!DNL Payment Services] grundlegende Checkout-Funktion für Adobe Commerce- und Magento Open Source-Händler gebündelt.[!DNL Payment Services] kann jetzt Händler mit Unternehmen in 200 Regionen weltweit unterstützen.[!DNL Payment Services] Beim einfachen Checkout stehen die Optionen „Debit/Credit“, „PayPal“, „Venmo“ (falls verfügbar) und „PayLater“ (falls verfügbar) in einem Self-Service-Onboarding zur Verfügung.
 
@@ -491,7 +491,7 @@ _7. Dezember 2023_
 
 - Die Seite mit der Kundenbestellung in der Storefront
 - Die E-Mail zur Bestellbestätigung, die an den Einkäufer gesendet wurde
-- In der [&#x200B; „Auftragsdetails“ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html?lang=de#view-an-order) Commerce Admin.
+- In der [&#x200B; „Auftragsdetails“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/order-processing#view-an-order) Commerce Admin.
 
 ## v2.3.0
 
@@ -499,7 +499,7 @@ _1. Dezember 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg)<!-- PAY-4381 --> [Payment Services unterstützt jetzt die Integration von GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). Dank GraphQL-Unterstützung für PayPal-Zahlungsschaltflächen, gehostete Felder und Apple Pay unterstützt [!DNL Payment Services] jetzt die Einrichtung von Headless-Commerce.
+![Neu](../assets/new.svg)<!-- PAY-4381 --> [Payment Services unterstützt jetzt die Integration von GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/). Dank GraphQL-Unterstützung für PayPal-Zahlungsschaltflächen, gehostete Felder und Apple Pay unterstützt [!DNL Payment Services] jetzt die Einrichtung von Headless-Commerce.
 
 ## v2.2.1
 
@@ -615,7 +615,7 @@ _18. November 2022_
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-3880 --> Ein Käufer kann jetzt [&#x200B; Kreditkarteninformationen während des Checkouts Vault (speichern), &#x200B;](vaulting.md) sie bei einem späteren Kauf für dasselbe oder ein anderes Geschäft innerhalb desselben Händlerkontos zu verwenden.
 
-![Neu](../assets/new.svg)<!-- Issue PAY-3950 --> Händler können jetzt die Funktion [Instant Purchase Commerce](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html?lang=de) für ihre Stores aktivieren, sodass Käufer ([Vault-Kreditkarteninformationen) &#x200B;](vaulting.md) können, um den Checkout zu beschleunigen.
+![Neu](../assets/new.svg)<!-- Issue PAY-3950 --> Händler können jetzt die Funktion [Instant Purchase Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase) für ihre Stores aktivieren, sodass Käufer ([Vault-Kreditkarteninformationen) &#x200B;](vaulting.md) können, um den Checkout zu beschleunigen.
 
 ## v1.4.1
 
@@ -673,7 +673,7 @@ _29. Juni 2022_
 
 ![Es wurde ein Problem &#x200B;](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 -->. Wenn Commerce Services-Anmeldeinformationen ungültig sind, werden Sie jetzt [!DNL Payment Services], indem auf der [!DNL Payment Services]-Startseite in Admin ein Fehler bezüglich der Anmeldeinformationen angezeigt wird.
 
-![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] ist nicht kompatibel mit `commerce-data-export` Version 101.20 und höher, weshalb die Kompatibilität mit der [[!DNL Channel manager] Erweiterung](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html?lang=de) gegeben ist.
+![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] ist nicht kompatibel mit `commerce-data-export` Version 101.20 und höher, weshalb sie nicht mehr kompatibel mit der [[!DNL Channel manager] Erweiterung](https://experienceleague.adobe.com/de/docs/discontinued/using/commerce-channels) (eingestellt) ist.
 
 ## v1.1.0
 
@@ -701,7 +701,7 @@ _31. März 2022_
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-2561 --> Zuvor entfernte Produkte werden nicht im Warenkorb auf der Seite _Bestellung überprüfen_ angezeigt.
 
-![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2842 --> Testen von Kreditkartentransaktionen [kann mit PayPal fehlschlagen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=de) wenn Zahlungen in einer Sandbox-Umgebung verarbeitet werden.
+![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2842 --> Testen von Kreditkartentransaktionen [kann mit PayPal fehlschlagen](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26825) wenn Zahlungen in einer Sandbox-Umgebung verarbeitet werden.
 
 ## v1.0.0
 
@@ -725,9 +725,9 @@ _29. November 2021_
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-1443 --> Sie können [&#x200B; Aussehen und Verhalten &#x200B;](payments-options.md) PayPal-Zahlungs-Buttons und Kreditkartenfelder für die [!DNL Payment Services]-Erweiterung einfach anpassen.
 
-![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2473 --> Die Verwendung [falschen Composer-Schlüsseln](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=de) während der Installation der Erweiterung verhindert, dass der Benutzer sich [&#x200B; mit &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) richtigen `MAGEID` authentifiziert.
+![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2473 --> Die Verwendung [falschen Composer-Schlüsseln](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26826) während der Installation der Erweiterung verhindert, dass der Benutzer sich [&#x200B; mit &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) richtigen `MAGEID` authentifiziert.
 
-![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] Berichte [werden möglicherweise nicht sofort synchronisiert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=de).
+![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] Berichte [werden möglicherweise nicht sofort synchronisiert](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26837).
 
-![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2475 --> Ihr [PayPal-Sandbox-](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=de) für [!DNL Payment Services] kann nicht überprüft werden, wenn Sie dieses Konto beim Onboarding erstellen.
+![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2475 --> Ihr [PayPal-Sandbox-](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26836) für [!DNL Payment Services] kann nicht überprüft werden, wenn Sie dieses Konto beim Onboarding erstellen.
 

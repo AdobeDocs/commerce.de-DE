@@ -18,7 +18,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 267
 ht-degree: 0%
@@ -37,7 +37,7 @@ Sie können Produktattribute erweitern, ohne sie in [!DNL Adobe Commerce] zu reg
 
 Erstellen Sie ein Plug-in, das der `Magento\CatalogDataExporter\Model\Provider\Product\Attributes`-Klasse einen `customer_attribute` hinzufügt.
 
-1. Aktualisieren Sie die [Konfigurationsdatei für die Abhängigkeitseinspeisung](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`), um das Plug-in zu definieren.
+1. Aktualisieren Sie die [Konfigurationsdatei für die Abhängigkeitseinspeisung](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`), um das Plug-in zu definieren.
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\Product\Attributes">
@@ -110,7 +110,7 @@ Erstellen Sie ein Plug-in, das der `Magento\CatalogDataExporter\Model\Provider\P
 
 Wenn Sie ein benutzerdefiniertes Produktattribut dynamisch erstellen und es für die Anzeige, Suche oder Filterung in Storefront-Services verwenden möchten, fügen Sie die Metadaten des Produktattributs hinzu, um das Verhalten der Storefront zu konfigurieren.
 
-1. Aktualisieren Sie die [Konfigurationsdatei für Abhängigkeitseinfügungen](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`), um das Plug-in für die Metadaten des Produktattributs zu definieren.
+1. Aktualisieren Sie die [Konfigurationsdatei für Abhängigkeitseinfügungen](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`), um das Plug-in für die Metadaten des Produktattributs zu definieren.
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\ProductMetadata">

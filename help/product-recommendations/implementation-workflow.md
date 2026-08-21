@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: 563
+source-wordcount: 546
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Bei der Installation des `magento/product-recommendations module` aggregiert Ado
 
    Für die Bereitstellung von [!DNL Product Recommendations] sind zwei [Datenquellen](type.md) Kataloge und Verhaltensdaten erforderlich. Da die Produktion die einzige Umgebung ist, in der die Aktionen Ihrer Kunden erfasst und analysiert werden, können Sie so früh wie möglich mit der Datenerfassung in der Produktion beginnen. [Erfahren Sie](events.md) wie Adobe AI Modelle für maschinelles Lernen trainiert, die zu qualitativ hochwertigeren Empfehlungen führen. Wenn Sie mit der Erfassung von Verhaltensdaten in der Produktion beginnen, können Sie [Empfehlungen abrufen](staging-environment.md#fetch-recommendations-from-production-environment-recommended) die auf diesen Produktionsdaten basieren, während Sie in Nicht-Produktionsumgebungen arbeiten. Anschließend können Sie mit verschiedenen Empfehlungen testen und experimentieren, die auf der Grundlage der in der Produktion erfassten echten Kundendaten berechnet werden.
 
-   Um die Datenerfassung für die Produktion bereitzustellen, müssen [&#x200B; das [!DNL Product Recommendations]-Modul installieren &#x200B;](install-configure.md) konfigurieren, indem Sie einen [API-Schlüssel](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=de) bereitstellen.
+   Um die Datenerfassung für die Produktion bereitzustellen, müssen [&#x200B; das [!DNL Product Recommendations]-Modul installieren &#x200B;](install-configure.md) konfigurieren, indem Sie einen [API-Schlüssel](../landing/saas.md) bereitstellen.
 
    >[!TIP]
    >
@@ -57,7 +57,7 @@ Bei der Installation des `magento/product-recommendations module` aggregiert Ado
    >
    > Durch Anpassen der Vorlage können Sie Ihr Stylesheet angeben, überschreiben, wo eine Empfehlungseinheit auf einer Seite angezeigt wird usw.
 
-   Siehe [Anpassen](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html?lang=de) in der Entwicklerdokumentation, um zu erfahren, wie Sie diesen Schritt durchführen.
+   Siehe [Anpassen](customize.md) in der Entwicklerdokumentation, um zu erfahren, wie Sie diesen Schritt durchführen.
 
 1. **Testen von Recommendations in Ihrer produktionsfremden Umgebung**
 

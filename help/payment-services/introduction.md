@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 334
+source-wordcount: 335
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Die Nachfrage nach einem qualitativ hochwertigen Commerce-Erlebnis ist hoch, und
 
 1. **Angepasste Checkout-Abläufe** - Bieten Sie Checkout-Optionen in verschiedenen Phasen der Commerce-Journey an, um Reibungen während des Kaufprozesses zu reduzieren und die Konversionsraten zu erhöhen.
 
-1. **[Headless-Kompatibilität mit GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/)** - Händler haben Alternativen zu REST- und SOAP-Web-APIs für die Frontend-Entwicklung.
+1. **[Headless-Kompatibilität mit GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/)** - Händler haben Alternativen zu REST- und SOAP-Web-APIs für die Frontend-Entwicklung.
 
 1. **Finanzberichterstattung** - Synchronisieren Sie [Zahlungsdetails](order-payment-status.md) mit Bestellungen, um vollständige Transparenz hinsichtlich des verarbeiteten Volumens, des Zahlungssaldos, [Auszahlungen](payouts.md) und detaillierter [Berichte auf Transaktionsebene](reporting.md) für die finanzielle Abstimmung und die maximale Sichtbarkeit der Transaktionen zu erhalten.
 

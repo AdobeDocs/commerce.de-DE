@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1195
+source-wordcount: 1201
 ht-degree: 1%
 
 ---
@@ -121,10 +121,10 @@ Wenn Sie an 90 aufeinander folgenden Tagen keine Suchanfrage für die Katalogdat
 
 ### Inaktive Testumgebung
 
-Um die Katalogdaten in Ihrer Testumgebung erneut zu aktivieren, [&#x200B; Sie „eine Support-Anfrage &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Live Search] erneut aktivieren“ und fügen Sie die Umgebungs-IDs hinzu. Die Katalogdaten in Ihrer Testumgebung sollten innerhalb weniger Stunden wiederhergestellt werden.
+Um die Katalogdaten in Ihrer Testumgebung erneut zu aktivieren, [&#x200B; Sie „eine Support-Anfrage &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Live Search] erneut aktivieren“ und fügen Sie die Umgebungs-IDs hinzu. Die Katalogdaten in Ihrer Testumgebung sollten innerhalb weniger Stunden wiederhergestellt werden.
 
 ### Leerer Katalog
 
 Wenn Ihre Umgebung 45 Tage nach der Erstellung einen leeren Katalog hat, werden die Katalogdaten auf den Ruhezustand eingestellt und es werden keine Daten für eine Suchabfrage zurückgegeben. Dies umfasst sowohl Produktions- als auch Testumgebungen.
 
-Um die Katalogdaten in Ihrer Umgebung wieder zu aktivieren, [&#x200B; Sie „eine Support-Anfrage &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Live Search] erneut aktivieren“ und geben Sie die Umgebungs-IDs an. Die Katalogdaten in Ihrer Umgebung sollten innerhalb weniger Stunden wiederhergestellt werden.
+Um die Katalogdaten in Ihrer Umgebung wieder zu aktivieren, [&#x200B; Sie „eine Support-Anfrage &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Live Search] erneut aktivieren“ und geben Sie die Umgebungs-IDs an. Die Katalogdaten in Ihrer Umgebung sollten innerhalb weniger Stunden wiederhergestellt werden.

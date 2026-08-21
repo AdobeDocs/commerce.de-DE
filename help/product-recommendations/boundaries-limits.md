@@ -2,9 +2,9 @@
 title: Grenzen und Beschränkungen
 description: Erfahren Sie mehr über die Grenzen und Einschränkungen von  [!DNL Product Recommendations] , um sicherzustellen, dass es den Anforderungen Ihres Unternehmens entspricht.
 role: Admin, Developer
-source-git-commit: 66830c9d950a27269aca1bda0dcc7d0d86f05647
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ## B2B
 
-- Product Recommendations berücksichtigt [Kategorieberechtigungen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions.html), [freigegebene Kataloge](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) und kundengruppenspezifische Preise. Käufer sehen nur Empfehlungen für Produkte, auf die sie entsprechend ihrer Segment- und Katalogzuweisung zugreifen können. Siehe [Onboarding](onboarding.md)
+- Product Recommendations berücksichtigt [Kategorieberechtigungen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/categories/category-permissions), [freigegebene Kataloge](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) und kundengruppenspezifische Preise. Käufer sehen nur Empfehlungen für Produkte, auf die sie entsprechend ihrer Segment- und Katalogzuweisung zugreifen können. Siehe [Onboarding](onboarding.md)
 
 ## Daten und Bereitschaft
 
@@ -63,4 +63,4 @@ ht-degree: 0%
 
 ## Fehlerbehebung
 
-Suchen Sie in der [Commerce-Wissensdatenbank nach Hilfe bei Katalogsynchronisierung, nicht angezeigten Empfehlungen oder anderen häufigen Problemen &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/overview) wenden Sie sich an den [Support](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Suchen Sie in der [Commerce-Wissensdatenbank nach Hilfe bei Katalogsynchronisierung, nicht angezeigten Empfehlungen oder anderen häufigen Problemen &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/overview) wenden Sie sich an den [Support](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
