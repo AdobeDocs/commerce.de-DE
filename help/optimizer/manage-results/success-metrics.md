@@ -24,9 +24,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2cb4bac8e36ce8b945eabf31e562a5e7fd097c2a
 workflow-type: tm+mt
-source-wordcount: 2627
+source-wordcount: 2835
 ht-degree: 0%
 
 ---
@@ -70,6 +70,26 @@ Die wichtigsten Leistungsindikatoren sind:
    Die **Top-**, **Umsatz**, **Konversion**, **Interaktion**, **Akquise** und **Absprungrate** werden alle auf Grundlage Ihrer Berichtskonfiguration aktualisiert.
 
 1. Klicken Sie auf **[!UICONTROL Export]** , um den Bericht als PDF zu speichern.
+
+## C2PA-Metadaten in exportierten Berichten {#c2pa-metadata-on-exported-reports}
+
+Der Bericht zu Erfolgsmetriken enthält Highlights und Zusammenfassungen unter Verwendung von generativer KI. Beim Exportieren eines Berichts in PDF hängt Adobe automatisch C2PA-Metadaten an die exportierte Datei an.
+
+C2PA-Metadaten sind manipulationssichere, maschinenlesbare Metadaten, die auf dem offenen [C2PA-Standard](https://c2pa.org/) basieren. Die Metadaten zeichnen auf, dass generative KI zum Erstellen von Inhalten im Bericht verwendet wurde, zusammen mit Informationen wie dem verwendeten KI-System, ob Inhalte mit generativer KI generiert oder bearbeitet wurden, und einem Zeitstempel.
+
+>[!NOTE]
+>
+>C2PA-Metadaten werden automatisch angehängt. Es ist keine zusätzliche Aktion erforderlich, und dieses Verhalten kann nicht deaktiviert werden. C2PA-Metadaten ändern nichts am Aussehen des Berichts. Es handelt sich um unsichtbare Metadaten, die innerhalb der PDF übertragen werden.
+
+**Was bedeutet dies für Ihre exportierten Berichte**
+
+- Wenn Sie einen Bericht zu Erfolgsmetriken nach PDF exportieren, enthält die exportierte Datei C2PA-Metadaten.
+- C2PA-Metadaten werden zusammen mit dem PDF übermittelt, wenn Sie sie freigeben oder herunterladen. Drittanbieterplattformen, die C2PA-Metadaten unterstützen, können diese Metadaten lesen und Transparenzinformationen für Betrachter anzeigen.
+- Sie können die an eine Datei angehängten C2PA-Metadaten überprüfen, indem Sie sie in &quot;[&quot; &#x200B;](https://contentauthenticity.adobe.com/inspect).
+
+![Muster überprüfen](../assets/inspect-sample.png)
+
+Weitere Informationen zu [Inhaltstransparenz mit generativer KI](https://experienceleague.adobe.com/de/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
 
 ## Gemeinsam Erfolgsmetriken und Sites Optimizer verwenden
 

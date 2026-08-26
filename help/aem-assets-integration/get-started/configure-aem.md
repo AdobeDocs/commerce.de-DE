@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 9fce350099392041ec9f648ae2d67a459ff53d91
 workflow-type: tm+mt
-source-wordcount: 1744
+source-wordcount: 1784
 ht-degree: 1%
 
 ---
@@ -34,6 +34,10 @@ Sie haben zwei Möglichkeiten, das AEM Assets-Projekt zu konfigurieren:
 >[!TIP]
 >
 >Sie können die aktuelle AEM-Version über das Menü oben rechts überprüfen: **[!UICONTROL Help]** > **[!UICONTROL About AEM]**.
+
+>[!IMPORTANT]
+>
+>Unabhängig davon, welche Option Sie verwenden[&#x200B; konfigurieren Sie im Metadatenschema](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets#configuration)Editor von AEM das Metadatenschema für die Asset-Genehmigung, damit Sie Commerce-Assets genehmigen können.
 
 ## Aktivieren der Commerce-Integration (Self-Service) {#enable-aem-commerce-self-service}
 
@@ -53,7 +57,7 @@ In unterstützten AEM-Versionen aktivieren Sie die Commerce-Integration von Clou
 
 ### Schritt 1: Erstellen des Programms und der Umgebungen
 
-Das Erstellen eines Programms in Cloud Manager ist ein einzelner Assistentenprozess: Das Programm und seine Umgebungen werden in mehreren Schritten konfiguriert und am Ende gemeinsam gespeichert.
+Das Erstellen eines Programms in Cloud Manager ist ein mehrstufiger Prozess - das Programm und seine Umgebungen werden über mehrere Schritte konfiguriert und zusammen gespeichert.
 
 1. Wählen Sie in Cloud Manager **[!UICONTROL Add Program]** aus.
 
@@ -231,7 +235,7 @@ Die Komponente Produktdaten-Benutzeroberfläche wird automatisch auf Grundlage d
 
    ![AEM Assets-Authoring](../assets/aem-assets-authoring.png){width="600" zoomable="yes"}
 
-1. Öffnen Sie die Administrator-Tools, indem Sie auf das Hammersymbol klicken.
+1. Öffnen Sie die Verwaltungstools, indem Sie auf das Hammersymbol klicken.
 
    ![AEM-Autoren-Admin zur Verwaltung von Metadatenprofilen](../assets/aem-manage-metadata-profiles.png){width="600" zoomable="yes"}
 
@@ -267,17 +271,17 @@ Die Komponente Produktdaten-Benutzeroberfläche wird automatisch auf Grundlage d
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Optional. Um genehmigte Commerce-Assets beim Hochladen in die AEM Assets-Umgebung automatisch zu synchronisieren, setzen Sie den Standardwert für das _[!UICONTROL Review Status]_&#x200B;auf der Registerkarte `Basic` auf `approved`.
+1. Optional. Um genehmigte Commerce Assets beim Hochladen in die AEM Assets-Umgebung automatisch zu synchronisieren, setzen Sie den Standardwert für das _[!UICONTROL Review Status]_&#x200B;auf der Registerkarte `Basic` auf `approved`.
 
 1. Speichern Sie die Aktualisierung.
 
-### Anwenden des Metadatenprofils auf den Commerce Assets-Quellordner
+### Anwenden des Metadatenprofils auf den Quellordner von Commerce Assets
 
 1. Wählen Sie auf der Seite **[!UICONTROL Metadata Profiles]** das Integrationsprofil Commerce aus.
 
 1. Wählen Sie im Menü Aktion die Option **[!UICONTROL Apply Metadata Profiles to Folders]** aus.
 
-1. Wählen Sie den Ordner aus, der Commerce-Assets enthält.
+1. Wählen Sie den Ordner aus, der Commerce Assets enthält.
 
    Erstellen Sie einen Commerce-Ordner, wenn er noch nicht vorhanden ist.
 
