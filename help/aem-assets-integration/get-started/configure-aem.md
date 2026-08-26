@@ -4,10 +4,16 @@ description: Erfahren Sie, wie Sie Assets zwischen Adobe Commerce und AEM Assets
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
 TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 9fce350099392041ec9f648ae2d67a459ff53d91
 workflow-type: tm+mt
 source-wordcount: 1784
@@ -31,7 +37,7 @@ Sie haben zwei Möglichkeiten, das AEM Assets-Projekt zu konfigurieren:
 
 >[!IMPORTANT]
 >
->Unabhängig davon, welche Option Sie verwenden[ konfigurieren Sie im Metadatenschema](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets#configuration)Editor von AEM das Metadatenschema für die Asset-Genehmigung, damit Sie Commerce-Assets genehmigen können.
+>Unabhängig davon, welche Option Sie verwenden[&#x200B; konfigurieren Sie im Metadatenschema](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets#configuration)Editor von AEM das Metadatenschema für die Asset-Genehmigung, damit Sie Commerce-Assets genehmigen können.
 
 ## Aktivieren der Commerce-Integration (Self-Service) {#enable-aem-commerce-self-service}
 
@@ -265,7 +271,7 @@ Die Komponente Produktdaten-Benutzeroberfläche wird automatisch auf Grundlage d
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Optional. Um genehmigte Commerce Assets beim Hochladen in die AEM Assets-Umgebung automatisch zu synchronisieren, setzen Sie den Standardwert für das _[!UICONTROL Review Status]_auf der Registerkarte `Basic` auf `approved`.
+1. Optional. Um genehmigte Commerce Assets beim Hochladen in die AEM Assets-Umgebung automatisch zu synchronisieren, setzen Sie den Standardwert für das _[!UICONTROL Review Status]_&#x200B;auf der Registerkarte `Basic` auf `approved`.
 
 1. Speichern Sie die Aktualisierung.
 
