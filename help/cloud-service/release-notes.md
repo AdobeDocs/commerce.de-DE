@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 8f993feaea79eaca19f6ebd3dc5195e287fc4a36
+source-git-commit: 9d128fd11c1b83276f8a2158f1f2fb98a49bf6c5
 workflow-type: tm+mt
-source-wordcount: 5345
+source-wordcount: 6100
 ht-degree: 0%
 
 ---
@@ -48,7 +48,127 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 >
 >Wenn Sie Adobe Commerce On-Premise oder Adobe Commerce in der Cloud-Infrastruktur verwenden, lesen Sie die [Versionshinweise zu Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview).
 
-## August 2026 - #1 {#latest}
+## September 2026 - #1 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+Die folgenden Elemente werden am 1. September 2026 in der Produktionsumgebung veröffentlicht.
+
+>[!BEGINSHADEBOX]
+
+### Adobe Commerce as a Cloud Service auf 2.4.9 aktualisiert
+
+[!DNL Adobe Commerce as a Cloud Service] enthält jetzt alle Änderungen ab [!DNL Adobe Commerce] Version 2.4.9.
+
+Weitere Informationen finden Sie in den Versionshinweisen zu [Adobe Commerce &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/adobe-commerce/2-4-9).4.9.
+
+### Synchronisieren von Sandbox- und Produktionskonfigurationen über die REST-API
+
+Neue `GET`- und `PUT /V1/system/config`-REST-API-Endpunkte ermöglichen es Integrationen, Commerce-Systemkonfigurationswerte zu lesen und zu aktualisieren, einschließlich:
+
+* Informationen speichern
+* Versand- und Steuereinstellungen
+* Einstellungen für Zahlungsmethoden
+* B2B- und Unternehmenseinstellungen
+
+Diese Endpunkte ermöglichen es Admins, die Konfiguration in Umgebungen programmgesteuert zu synchronisieren, anstatt die [!DNL Commerce Admin] manuell neu zu konfigurieren. Wenn Sie `GET /V1/system/config` in Ihrer Sandbox-Umgebung ausführen und dann `PUT /V1/system/config` mit der zuvor abgerufenen Sandbox-Konfiguration ausführen, können Sie Konfigurationsänderungen von Sandbox mit der Produktion synchronisieren. <!-- ACCS-607, CCSAAS-5346 -->
+
+### Verfügbarkeit des Abfrageinventars über GraphQL
+
+Eine neue `sourceAvailability` GraphQL-Abfrage gibt die Lagerverfügbarkeit pro Quelle für eine oder mehrere SKUs zurück, sodass Storefronts wie Produkt- und Kategorieseiten genaue Lagerinformationen für jede Lagerquelle anzeigen können. <!-- ACCS-933 -->
+
+### Lesen persistenter Wunschlisten- und Kontofreigabeeinstellungen über GraphQL
+
+Die `storeConfig` GraphQL-Abfrage gibt jetzt `persistent_enabled`-, `persistent_shopping_cart`-, `persistent_options_wishlist`- und `share_customer_accounts_scope`-Konfigurationswerte zurück, sodass Storefronts ohne Kontaktaufnahme mit dem Support auf die persistenten Warenkorb- und Wunschlisteneinstellungen des Händlers zugreifen können. <!-- USF-4051 -->
+
+### Kundenbestellungen nach Produkt, SKU oder Auftrags-ID suchen
+
+Die `CustomerOrdersFilterInput` GraphQL-Eingabe unterstützt jetzt ein optionales `search`, das mit der Bestellnummer, der Artikel-SKU oder dem Artikelnamen in Kombination mit anderen von Ihnen bereitgestellten Filtern übereinstimmt. <!-- USF-4290 -->
+
+### Aktualisieren und Löschen benutzerdefinierter E-Mail-Vorlagen über die API
+
+Mit den neuen `PUT`- und `DELETE`-Endpunkten [benutzerdefinierte E-Mail](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)-Vorlagen können Integrationen benutzerdefinierte E-Mail-Vorlagen aktualisieren und löschen. <!-- CCSAAS-5091 -->
+
+### Anzeigen von Produktoptionengruppen und -kennungen über die REST-API
+
+Der `GET /V1/products/:sku/options` REST-Aufruf gibt jetzt für jede Option `group`- und `option_uids`-Felder zurück, die mit den bereits über GraphQL verfügbaren Kennungen übereinstimmen. <!-- ACCS-1370 -->
+
+### Neue freigegebene Katalogereignisse
+
+Die folgenden freigegebenen Katalogereignisse können jetzt mit [!DNL Adobe I/O Events] abonniert werden:<!-- ACCS-1532 -->
+
+* Kategoriezuweisung (`observer.shared_catalog_assign_categories`)
+* Zuweisung von Kategorien aufheben (`observer.shared_catalog_unassign_categories`)
+* Unternehmenszuweisung (`plugin.magento.shared_catalog.api.company_management.assign_companies`)
+* Zuweisung von Unternehmen aufheben (`plugin.magento.shared_catalog.api.company_management.unassign_companies`)
+* Zuweisung von Firma für alle aufheben (`plugin.magento.shared_catalog.api.company_management.unassign_all_companies`)
+* Freigegebener Katalog gespeichert (`plugin.magento.shared_catalog.api.shared_catalog_repository.save`)
+* Löschen eines freigegebenen Katalogs (`plugin.magento.shared_catalog.api.shared_catalog_repository.delete`)
+
+### Verwenden von Unternehmensadressen für Bestellungen, Angebote und Rücksendungen
+
+Die Adressbücher des Unternehmens sind jetzt in zusätzliche B2B-Workflows integriert. Unternehmen, die ein freigegebenes Adressbuch verwenden, sehen konsistente Adressen für das gesamte Unternehmen:
+
+* Bestellungen
+* Sofortiger Kauf
+* Geschenkgutschein
+* nachbestellen
+* Rückgaben und RMAs
+* Rechnungen
+* Sendungen
+* Gutschriften
+* Verhandelbare Angebote
+* Angebotsvorlagen
+
+Detaillierte Informationen, einschließlich GraphQL-Mutationen und REST-Endpunkten, finden Sie im Änderungsprotokoll [Storefront-Kompatibilität B2B-Paket](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=de) und im Abschnitt **Storefront-Kompatibilität B2B-Paket v1.0.24** .
+
+<!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
+
+### Ausblenden von Bildern in Store-Ansichten in [!DNL AEM Assets]
+
+[!DNL AEM Assets] Integration unterstützt jetzt einen `hiddenStoreViews`, sodass importierte Bilder in bestimmten Store-Ansichten als ausgeblendet angezeigt werden können. Auf diese Weise können Sie verschiedene Produktbilder für verschiedene regionale oder demografische Storefronts anzeigen. <!-- ACAP-1308 -->
+
+### Onboarding von PayPal-Konten im Website-Umfang
+
+Händler können das Onboarding eines anderen PayPal-Kontos auf der Website jetzt direkt von der [!DNL Commerce Admin] aus selbst bearbeiten. Payment Services Home enthält jetzt eine Schaltfläche **Verbinden eines anderen PayPal-Kontos für eine Website**, die zur Admin-Konfigurationsseite für Zahlungsmethoden weiterleitet. Weitere [&#x200B; finden Sie unter „Verbinden eines anderen PayPal](https://experienceleague.adobe.com/de/docs/commerce/payment-services/configure/connect-website-account)Kontos für eine Website“. <!-- PAY-6961 -->
+
+### Kostenlose Preisregeln für Geschenkwagen
+
+Die **Kostenlose Geschenk**-Preisregel ist jetzt in der [!DNL Commerce Admin] für Storefronts verfügbar. <!-- AC-17678 -->
+
+Mit dieser Regel können Sie ein kostenloses Geschenkprodukt zum Warenkorb hinzufügen, wenn die Regelbedingungen erfüllt sind.
+
+<!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+
+### Verbesserungen und Fehlerbehebungen
+
+Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen sind in dieser Version enthalten:
+
+* Fehlerkorrektur - Es tritt jetzt kein Fehler mehr auf, wenn mit der E-Mail-Adresse eines registrierten Kunden Gastbestellungen aufgegeben werden. <!-- CCSAAS-5313 -->
+
+* Es wurde ein Problem behoben, bei dem wiederholte Datenexportausführungen zu Ressourcenproblemen führen konnten. <!-- CCSAAS-5275 -->
+
+* Es wurde ein Fallback-Problem mit GraphQL-Mediensammlungs-Beschriftungen in der [!DNL AEM Assets]-Integration behoben. <!-- ACAP-1308 -->
+
+* Es wurde ein Problem mit [!DNL PayPal] SDK-Parametern behoben, das sich auf das Checkout-Rendering auswirken konnte. <!-- PAY-6961 -->
+
+* Es wurde ein Problem behoben, bei dem nicht unterstützte [!DNL Payment Services]-Zahlungsmethoden an der Kasse angezeigt wurden. <!-- PAY-6976 -->
+
+* Es wurde ein Problem behoben, bei dem Ereignis-Payloads mit Feldern mit Array-Werten, wie freigegebene Katalogkategorie- und Unternehmenszuweisungsereignisse, leere Objekte anstelle der erwarteten Daten enthalten konnten. <!-- CEXT-6554 -->
+
+* Es wurde ein Problem behoben, bei dem die Konfiguration mehrerer durchsuchbarer Kunden- oder Kundenadressenattribute zu Anzeigefehlern führen konnte. Das Kundenraster benachrichtigt Sie jetzt, wenn Sie das Limit erreichen. <!-- CCSAAS-5303 -->
+
+* Es wurde ein Problem behoben, bei dem Kategoriebild-URLs im Kategoriedaten-Export-Feed beschädigt wurden. <!-- ACCS-1571 -->
+
+* Es wurde ein Problem behoben, bei dem die gleichzeitige Zuweisung oder das Aufheben der Zuweisung von Produkten in verschiedenen freigegebenen Katalogen gelegentlich fehlschlagen konnte. <!-- CCSAAS-5287 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## August 2026 - #1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
@@ -67,8 +187,6 @@ Bei der Aufzeichnung einer Rechnungszahlung wird ein neues `observer.sales_order
 Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen sind in dieser Version enthalten:
 
 * Es wurde ein Problem behoben, bei dem das Abrufen der einem Kunden zugewiesenen Unternehmen über GraphQL langsam sein konnte. <!-- ACCS-1425 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
@@ -206,8 +324,6 @@ Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen s
 
 * Webhook-Regex-Regelmuster werden jetzt beim Speichern eines bedingten Webhooks validiert. <!-- CEXT-6287 -->
 
-{{accs-release}}
-
 >[!ENDSHADEBOX]
 
 ## Juni 2026 - #1
@@ -264,8 +380,6 @@ Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen s
 
 * Der GET- `V1/customers/{customerId}` REST-Endpunkt gibt jetzt das `assistance_allowed` Konfigurationsfeld zurück. <!-- USF-4132 -->
 
-{{accs-release}}
-
 >[!ENDSHADEBOX]
 
 ## #1 Mai 2026
@@ -301,8 +415,6 @@ Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen s
 * Es wurden Seitenladeprobleme behoben, die nach dem Senden einer Bestellung im [!DNL Commerce Admin] auftreten konnten. <!-- CCSAAS-4413 -->
 
 * Es wurde ein Problem behoben, bei dem Bestellungen mit demselben Zeitstempel veraltete Bestellstatusinformationen im Auftragsraster anzeigen konnten. <!-- CCSAAS-4890 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 

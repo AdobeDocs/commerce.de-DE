@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+source-git-commit: 5964358bb4370fa4fb0c2f4c447bacb3603d0f5e
 workflow-type: tm+mt
-source-wordcount: 3271
+source-wordcount: 3356
 ht-degree: 0%
 
 ---
@@ -44,6 +44,14 @@ Zu den Aktualisierungen gehören:
 >Die [!DNL SaaS data export]-Erweiterung ist eine Sammlung von Modulen, die automatisch mit [!DNL Live Search], [!DNL Product Recommendations] und [!DNL Catalog Service] installiert werden. Sie können die auf Ihrem System installierte Version mithilfe von [!DNL Composer] überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Versionen 2026 {#release-notes-2026}
+
+### Version 103.4.32
+
+_25. August 2026_
+
+![Neu](../assets/new.svg) **Anpassbare Optionen im Produkt-Feed enthalten** Vom Produkt anpassbare Optionen wie Farbfelder, Größenauswahlen oder Personalisierungsfelder werden jetzt als `customizable_options` Produktattribut exportiert. Das -Attribut enthält den Titel jeder Option, ob sie erforderlich ist, und ihre verfügbaren Werte, damit verbundene Commerce-Services präzise anpassbare Optionsdaten in der Storefront anzeigen können. <!--MDEE-1029-->
+
+![Beheben](../assets/fix.svg) **Synchronisierung zuverlässiger Kategorieberechtigungen**-Es wurde ein Problem behoben, bei dem der Feed der Kategorieberechtigungen für Konfigurationen, denen eine Website-ID fehlt, nicht vollständig neu synchronisiert werden konnte, was zu Synchronisierungsfehlern führte. <!--MDEE-1411-->
 
 ### Version 103.4.31
 

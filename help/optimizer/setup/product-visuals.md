@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie AEM Assets für Produktbilder in  [!DNL Adobe
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
 badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 264658bee09a22cfd55828c6960153cc1239d3fb
+source-git-commit: bf87cbdc38a17ea3f5ad339cb7b4f4f030317450
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -103,3 +103,4 @@ Um AEM Assets-Bilder auf Ihrer Storefront anzuzeigen[&#x200B; weisen Sie die `AE
 * [Katalogebenen](catalog-layer.md)
 * [Katalogansichten](catalog-view.md)
 * [AEM Assets-Integrationshandbuch](../../aem-assets-integration/overview.md)
+* [Visuelle Grenzen und Grenzen von Produkten](https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
