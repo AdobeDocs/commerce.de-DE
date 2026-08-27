@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
+source-git-commit: 4b3bf2c28d4570141497bf6aa514152311fa4a37
 workflow-type: tm+mt
-source-wordcount: 3064
+source-wordcount: 3099
 ht-degree: 0%
 
 ---
@@ -54,6 +54,10 @@ Unterstützung wird für die neueste Version bereitgestellt. Versionshinweise f�
 ## Storefront Catalog Service
 
 ### August 2026
+
+**Versionsdaten**: 24. August 2026
+
+![Neu](../assets/new.svg) **Unterstützung für die `categoryTree` Abfrage in Adobe Commerce as a Cloud Service** - Die `categoryTree` GraphQL-Abfrage ist jetzt für [!DNL Adobe Commerce as a Cloud Service] verfügbar, sodass Storefronts Kategorien nach Slug- und Render-Kategoriestrukturen auflösen können. <!-- DATA-7299 -->
 
 **Veröffentlichungsdatum:**. August 2026
 
