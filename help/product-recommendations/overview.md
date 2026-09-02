@@ -26,23 +26,23 @@ ht-degree: 0%
 
 # Was sind [!DNL Product Recommendations]?
 
-[!DNL Product Recommendations] verwenden [Adobe AI](https://business.adobe.com/ai.html) und maschinelles Lernen, die auf aggregiertem Käuferverhalten und Katalogdaten geschult wurden, um personalisierte Empfehlungen für Adobe Commerce-Storefronts bereitzustellen. In dieser Übersicht werden Service-Einschränkungen (einschließlich HIPAA), Datenschutz, Platzierung von Recommendations-Einheiten, Implementierungsoptionen für Storefronts, Integration von Produktbeziehungen und Aufbewahrung von Katalogdaten behandelt.
+[!DNL Product Recommendations] verwenden [Adobe AI](https://business.adobe.com/de/ai.html) und maschinelles Lernen, die auf aggregiertem Käuferverhalten und Katalogdaten geschult wurden, um personalisierte Empfehlungen für Adobe Commerce-Storefronts bereitzustellen. In dieser Übersicht werden Service-Einschränkungen (einschließlich HIPAA), Datenschutz, Platzierung von Recommendations-Einheiten, Implementierungsoptionen für Storefronts, Integration von Produktbeziehungen und Aufbewahrung von Katalogdaten behandelt.
 
 >[!IMPORTANT]
 >
 >**[!DNL Product Recommendations]ist kein HIPAA-fähiger Service.** Aktivieren oder verwenden Sie [!DNL Product Recommendations] in keiner Adobe Commerce-Implementierung, die das HIPAA-fähige Angebot verwendet oder anderweitig geschützte Gesundheitsinformationen (Protected Health Information, PHI) verarbeitet. [!DNL Product Recommendations] gehört zu den Commerce SaaS-Services, die derzeit als nicht HIPAA-fähig eingestuft sind.
 >
->Weitere Informationen dazu, welche Adobe Commerce-Funktionen HIPAA-fähig sind und welche Services nicht mit PHI verwendet werden dürfen, finden Sie unter [HIPAA-Bereitschaft für Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) und [Vorgänge](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
+>Weitere Informationen dazu, welche Adobe Commerce-Funktionen HIPAA-fähig sind und welche Services nicht mit PHI verwendet werden dürfen, finden Sie unter [HIPAA-Bereitschaft für Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) und [Vorgänge](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
 
 ## Umgang mit Daten und Datenschutz
 
 Die Datenerfassung für [!DNL Product Recommendations] umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. Weitere Informationen finden Sie in der [Adobe-Datenschutzrichtlinie](https://www.adobe.com/privacy/policy.html).
 
-Weitere Informationen zur Datensynchronisation finden Sie unter [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
+Weitere Informationen zur Datensynchronisation finden Sie unter [Data Management Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
 
 ## Wo Empfehlungen erscheinen
 
-Empfehlungen werden in der Storefront als Einheiten mit Beschriftungen angezeigt, z. B. „Kunden, die dieses Produkt angesehen haben, haben auch Folgendes angesehen“. Sie können Empfehlungen für Ihre Store-Ansichten über den Adobe Commerce-Admin erstellen, verwalten und bereitstellen. Wenn Ihr Commerce-Projekt den [Adobe Commerce Optimizer-Connector](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview) verwendet, können Sie Empfehlungen über [Adobe Commerce Optimizer erstellen, verwalten und bereitstellen](../optimizer/overview.md).
+Empfehlungen werden in der Storefront als Einheiten mit Beschriftungen angezeigt, z. B. „Kunden, die dieses Produkt angesehen haben, haben auch Folgendes angesehen“. Sie können Empfehlungen für Ihre Store-Ansichten über den Adobe Commerce-Admin erstellen, verwalten und bereitstellen. Wenn Ihr Commerce-Projekt den [Adobe Commerce Optimizer-Connector](https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/overview) verwendet, können Sie Empfehlungen über [Adobe Commerce Optimizer erstellen, verwalten und bereitstellen](../optimizer/overview.md).
 
 ## Storefront-Implementierungen
 
@@ -50,7 +50,7 @@ Wählen Sie die Dokumentation aus, die Ihrer Storefront entspricht:
 
 - **PWA Studio** - [Dokumentation zu PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
 - **Benutzerdefinierte Frontends (z. B. React oder Vue.js)** - [Integration [!DNL Product Recommendations]](headless.md) in eine Headless-Storefront
-- **Commerce Edge Delivery Services (EDS)** — [Dokumentation zur Adobe Commerce-Storefront für EDS](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
+- **Commerce Edge Delivery Services (EDS)** — [Dokumentation zur Adobe Commerce-Storefront für EDS](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=de)
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Wählen Sie die Dokumentation aus, die Ihrer Storefront entspricht:
 
 ## Produktempfehlungen versus Produktbeziehungen
 
-Angesichts der sich ständig verändernden Komplexität von Online-Shopping, ist das, was am besten für Ihre Storefront funktioniert, oft eine Kombination aus mehreren Schlüsseltechnologien. Die Verwendung von [!DNL Product Recommendations]- [Produktbeziehungen](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships) bietet Ihnen mehr Flexibilität bei der Promotion von Produkten. Um Ihre Empfehlungen im benötigten Umfang zu automatisieren, können Sie [!DNL Product Recommendations] mit Adobe AI nutzen. Anschließend können Sie &quot;[&#x200B; Produktregeln“ nutzen](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules) wenn Sie manuell eingreifen müssen und sicherstellen müssen, dass eine bestimmte Empfehlung an ein Zielkunden-Segment gesendet wird oder wenn bestimmte Geschäftsziele erfüllt werden müssen.
+Angesichts der sich ständig verändernden Komplexität von Online-Shopping, ist das, was am besten für Ihre Storefront funktioniert, oft eine Kombination aus mehreren Schlüsseltechnologien. Die Verwendung von [!DNL Product Recommendations]- [Produktbeziehungen](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships) bietet Ihnen mehr Flexibilität bei der Promotion von Produkten. Um Ihre Empfehlungen im benötigten Umfang zu automatisieren, können Sie [!DNL Product Recommendations] mit Adobe AI nutzen. Anschließend können Sie &quot;[&#x200B; Produktregeln“ nutzen](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules) wenn Sie manuell eingreifen müssen und sicherstellen müssen, dass eine bestimmte Empfehlung an ein Zielkunden-Segment gesendet wird oder wenn bestimmte Geschäftsziele erfüllt werden müssen.
 
 Produktempfehlungen ermöglichen Ihnen Folgendes:
 
@@ -82,4 +82,4 @@ Wenn Ihre Umgebung 45 **nach der Erstellung einen** leeren Katalog“ hat, werde
 
 ### Reaktivieren von Katalogdaten
 
-Um Katalogdaten nach der Inaktivität wiederherzustellen, [&#x200B; Sie „eine Support-Anfrage &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Product Recommendations] erneut aktivieren“ und fügen Sie die Umgebungs-IDs hinzu. Katalogdaten sollten innerhalb von zwei Stunden wiederhergestellt werden.
+Um Katalogdaten nach der Inaktivität wiederherzustellen, [&#x200B; Sie „eine Support-Anfrage &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Product Recommendations] erneut aktivieren“ und fügen Sie die Umgebungs-IDs hinzu. Katalogdaten sollten innerhalb von zwei Stunden wiederhergestellt werden.

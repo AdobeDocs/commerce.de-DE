@@ -39,7 +39,7 @@ Weitere Informationen zu den Verhaltensdaten, die von den [!DNL Product Recommen
 
 Wenn Sie Kundschaft im Gesundheitswesen sind und die [Data Services HIPAA-Erweiterung](../data-connection/hipaa-readiness.md#installation) installiert haben, die in der [Data Connection](../data-connection/overview.md)-Erweiterung enthalten ist, erfasst [!DNL Product Recommendations] keine Storefront-Ereignisdaten mehr, da sie Client-seitig generiert werden.
 
-Um mit dem Erfassen und Senden von Storefront-Ereignisdaten fortzufahren, aktivieren Sie die Ereigniserfassung für [!DNL Product Recommendations] erneut. Weitere Informationen finden Sie unter [Allgemeine Konfiguration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services).
+Um mit dem Erfassen und Senden von Storefront-Ereignisdaten fortzufahren, aktivieren Sie die Ereigniserfassung für [!DNL Product Recommendations] erneut. Weitere Informationen finden Sie unter [Allgemeine Konfiguration](https://experienceleague.adobe.com/de/docs/commerce-admin/config/general/general#data-services).
 
 ## Datentypen und Ereignisse
 
@@ -104,4 +104,4 @@ Wenn die Erfassung der Eingabedaten nicht ausreicht, greifen die folgenden Empfe
 
 >[!NOTE]
 >
->Wenn [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law) aktiviert ist, erfasst Adobe Commerce keine Verhaltensdaten, bis der Käufer der Verwendung von Cookies zustimmt. Wenn der Cookie-Einschränkungsmodus deaktiviert ist, erfasst Adobe Commerce standardmäßig Verhaltensdaten.
+>Wenn [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law) aktiviert ist, erfasst Adobe Commerce keine Verhaltensdaten, bis der Käufer der Verwendung von Cookies zustimmt. Wenn der Cookie-Einschränkungsmodus deaktiviert ist, erfasst Adobe Commerce standardmäßig Verhaltensdaten.
