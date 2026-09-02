@@ -3,36 +3,32 @@ title: Kategorie-Merchandising
 description: Verwenden  [!DNL Live Search]  Kategorie-Merchandising für ein schnelleres Einkaufserlebnis.
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 1171
+source-wordcount: 1143
 ht-degree: 0%
 
 ---
 
 # Kategorie-Merchandising
 
-Mit dem Kategorie-Merchandising können Store-Besitzer [!DNL Live Search] intelligente [&#x200B; (Regeln](rules.md) auf Produktkategorien und Unterkategorien anwenden.
+Mit dem Kategorie-Merchandising können Store-Besitzer [!DNL Live Search] intelligente [ (Regeln](rules.md) auf Produktkategorien und Unterkategorien anwenden.
 
 Dieses Video ist eine Einführung in das Kategorie-Merchandising.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448860?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 Die Funktion ist im Administrator unter **Marketing** > SEO &amp; Search > **[!DNL Live Search]** > (Kategorie **Merchandising** verfügbar.
 
 >[!NOTE]
 >
->Kategorie-Merchandising ist ab Version [!DNL Live Search] [.0.0 &#x200B;](release-notes.md). Wenn Sie die Kategorie Merchandising-Arbeitsbereich sehen, sie jedoch nicht mit Daten gefüllt ist, aktualisieren Sie das [!DNL Live Search].
+>Kategorie-Merchandising ist ab Version [!DNL Live Search] [.0.0 ](release-notes.md). Wenn Sie die Kategorie Merchandising-Arbeitsbereich sehen, sie jedoch nicht mit Daten gefüllt ist, aktualisieren Sie das [!DNL Live Search].
 
 ![Merchandising-Arbeitsbereich für Kategorie](assets/category_workspace.png)
 
@@ -51,32 +47,32 @@ Sie können im Feld „Suche nach Kategorie“ nach einer Kategorie oder Unterka
 Kategorie-Merchandising verwendet dieselben Ranking-Typen wie bei [einzelnen Produkten](rules-workspace.md).
 Es gibt zwei Arten von Rankings: Intelligent und Manual.
 
-**Intelligent Ranking** nutzt die Verhaltensdatenanalyse der Storefront durch [Adobe AI](https://business.adobe.com/de/ai.html) um alle Produkte innerhalb ausgewählter Kategorien nach einem bestimmten Algorithmus zu sortieren. Sobald ein Intelligent-Ranking ausgewählt wurde, wird erwartet, dass sich die spezifische Produktreihenfolge im Laufe der Zeit ändert, da die zugrunde liegenden Daten von Adobe AI laufend neu analysiert werden. Die beliebtesten Produkte ändern sich beispielsweise automatisch im Laufe der Zeit, wenn sich die Kundenpräferenzen ändern.
+**Intelligent Ranking** nutzt die Verhaltensdatenanalyse der Storefront durch [Adobe AI](https://business.adobe.com/ai.html) um alle Produkte innerhalb ausgewählter Kategorien nach einem bestimmten Algorithmus zu sortieren. Wenn Sie ein intelligentes Ranking auswählen, ändert sich die spezifische Produktreihenfolge im Laufe der Zeit, da [!DNL Adobe AI] die zugrunde liegenden Daten laufend neu analysiert. Die beliebtesten Produkte ändern sich beispielsweise automatisch im Laufe der Zeit, wenn sich die Kundenpräferenzen ändern.
 Intelligente Ranking-Methoden sind:
 
-* Am häufigsten gekauft: Sortiert Produkte nach der Häufigkeit, mit der sie von Käufern in den letzten sieben Tagen gekauft wurden.
-* Am häufigsten zum Warenkorb hinzugefügt: Sortiert Produkte nach der Häufigkeit, mit der sie von Käufern in den letzten sieben Tagen zum Warenkorb hinzugefügt wurden.
-* Am häufigsten angezeigt: Sortiert Produkte nach der Häufigkeit, mit der sie von Käufern in den letzten sieben Tagen angezeigt wurden.
+* Am häufigsten gekauft: Sortiert Produkte nach der Häufigkeit, mit der Käufer sie in den letzten sieben Tagen gekauft haben.
+* Am häufigsten zum Warenkorb hinzugefügt: Sortiert Produkte nach der Häufigkeit, mit der Käufer sie in den letzten sieben Tagen zum Warenkorb hinzugefügt haben.
+* Am häufigsten angezeigt: Sortiert Produkte nach der Häufigkeit, mit der Käufer sie in den letzten sieben Tagen angesehen haben.
 * Empfohlen: Anhand des vorherigen und aktuellen Onsite-Verhaltens jedes Käufers werden Produkte nach der Wahrscheinlichkeit geordnet, mit der der Käufer mit jedem Kontakt interagiert.
 * Trends: Sortiert Produkte nach den jüngsten Popularitätsaufschwüngen auf der Grundlage von Ansichten.
 * Keine: Produkte werden nach ihrer Standardreihenfolge sortiert.
 
 
-Für jede intelligente Ranking-Methode außer **Keine** können Sie **[!UICONTROL Intelligent Ranking Boost]** im Regeleditor festlegen, um abzustimmen, wie stark sich Verhaltenssignale auf die Produktreihenfolge auswirken. Weitere Informationen zu Standardwerten, Beschränkungen, dem Vorschauverhalten und dem Vergleich von &quot;**Ranking“ finden** unter [Intelligent Ranking Boost](rules-add.md#intelligent-ranking-boost).
+Um anzupassen, wie stark sich Verhaltenssignale auf die Produktreihenfolge auswirken, legen Sie für jede intelligente Rangfolgenmethode außer **Keine** im Regeleditor **[!UICONTROL Intelligent Ranking Boost]** fest. Weitere Informationen zu Standardwerten, Beschränkungen, dem Vorschauverhalten und dem Vergleich von &quot;**Ranking“ finden** unter [Intelligent Ranking Boost](rules-add.md#intelligent-ranking-boost).
 
 **Manuelles Ranking** Ermöglicht es Benutzern, die automatische Produktsortierreihenfolge durch Definieren von manuellen Pin-, Boost-, Bury- und Hide-Regeln außer Kraft zu setzen.
 
 ## Übernommene Rangfolge
 
-Als Merchandiser möchten Sie vielleicht alle Damenbekleidungskategorien nach „Trend“ sortieren. Dazu gehören die Unterkategorien „Damenhosen“, „Damenhemden“ und „Damenaccessoires“. Kategorien von Männern sollten nicht betroffen sein. Sie können übernommene Ranglisten verwenden, um dies zu erreichen.
+Wählen Sie als Merchandiser alle Damenbekleidungskategorien aus, um sie nach „Trend“ zu sortieren. Dazu gehören die Unterkategorien „Damenhosen“, „Damenhemden“ und „Damenaccessoires“. Kategorien für Männer sollten nicht betroffen sein. Sie können übernommene Ranglisten verwenden, um dies zu erreichen.
 
 Wenn Sie eine intelligente Rangfolgenmethode für eine Kategorie oder Unterkategorie mit Unterkategorien auswählen, können Sie die Option **Intelligente Rangfolgen auf Unterkategorien anwenden** aktivieren. Dies wendet die Rangfolgenmethode auf alle Unterkategorien an.
 
 Diese Unterkategorien übernehmen diese Regel jetzt von der übergeordneten Kategorie („Ja“ in der Spalte „Übernommenes Ranking„). In der Spalte Aktion sind nur die Optionen **Regel bearbeiten** und **Details anzeigen** verfügbar. Die **Löschen**-Option ist für übernommene Regeln für Unterkategorien deaktiviert. Das Löschen der Unterkategorievererbung erfordert das Rückgängigmachen der Vererbung von der übergeordneten Kategorie.
 
-Für jede Kategorie oder Unterkategorie kann jeweils nur eine intelligente Rangfolge angewendet werden. Sie können auch zusätzliche manuelle Rankings anwenden.
+Für jede Kategorie oder Unterkategorie kann jeweils bis zu einer intelligenten Rangfolge angewendet werden. Es kann auch eine oder mehrere manuelle Rangfolgen gleichzeitig angewendet werden.
 
-Wenn Sie eine intelligente Rangfolge auf eine Kategorie anwenden und die Option **Intelligente Rangfolge auf Unterkategorien anwenden** aktivieren, werden alle bereits auf die Unterkategorien angewendeten intelligenten Rangfolgen überschrieben.
+Wenn Sie eine intelligente Rangfolge auf eine Kategorie anwenden und [!UICONTROL Apply intelligent ranking to subcategories] aktivieren, ersetzt die intelligente Rangfolge der Kategorie alle intelligenten Rangfolgen, die bereits auf ihre Unterkategorien angewendet wurden.
 
 ![Unterkategorieliste überschrieben](assets/category_overwite_subs.png){width="700"}
 
@@ -89,7 +85,7 @@ Wenn Sie eine intelligente Rangfolge direkt zu einer Kategorie hinzufügen, die 
 Wenn Sie das intelligente Ranking aus der Kategorie löschen, wird die Vererbung wieder hergestellt.
 In beiden Szenarien werden alle manuellen Rankings beibehalten.
 
-Wenn Sie ein intelligentes Ranking aus einer Kategorie entfernen und die Unterkategorievererbung ausgewählt ist, werden nur die vererbten intelligenten Rankings aus den Unterkategorien entfernt. Manuelle Rankings unterliegen nicht der Vererbung und bleiben erhalten.
+Wenn Sie ein intelligentes Ranking aus einer Kategorie entfernen, während [!UICONTROL Apply intelligent ranking to subcategories] aktiviert ist, werden nur die intelligenten Rangfolgen entfernt, die von den Unterkategorien übernommen werden. Manuelle Rankings bleiben erhalten, da sie nicht vererbt wurden.
 
 Es wird ein Dialogfeld angezeigt, in dem erläutert wird, welche übernommenen Unterkategorien von den Änderungen an einer übergeordneten Kategorie betroffen sind.
 
@@ -143,11 +139,13 @@ Ereignisse sind Aktionen, die die Suchergebnisse ändern, wenn definierte Beding
 
 Manuelle Rangfolge erstellen:
 
-1. Richten Sie wie oben beschrieben eine intelligente Rangfolgenregel für eine Kategorie ein. Die Ergebnisse der Abfrage werden in der Vorschau der Kategorieseite angezeigt. Dabei werden Ihre tatsächlichen Live Search-Daten zur Vorschau der Ergebnisse verwendet.
+1. Richten Sie wie oben beschrieben eine intelligente Rangfolgenregel für eine Kategorie ein.
+
+   Die Ergebnisse der Abfrage werden in der Seitenansicht der Kategorie „Vorschau“ angezeigt. Dabei werden Ihre tatsächlichen Live Search-Daten zur Vorschau der Ergebnisse verwendet.
 
 1. Klicken und ziehen Sie ein Produkt in die Seitenansicht der Kategorie Vorschau . Ziehen Sie sie per Drag-and-Drop an die gewünschte Position. Die Felder Produkt und Position werden automatisch im Bereich Ereignisse ausgefüllt.
 
-Sie können auch auf das Anheften-Symbol klicken, um ein Produkt an seinen aktuellen Speicherort anzuheften. Verwenden Sie das Kontextmenü mit den Auslassungspunkten, um „Nach oben“ oder „Nach unten“ anzuheften.
+Sie können auch auf das Pin-Symbol klicken, um ein Produkt an seinem aktuellen Speicherort zu sperren. Verwenden Sie das Kontextmenü mit den Auslassungspunkten für „An Oben anheften“ oder „An Unten anheften“.
 
 So fügen Sie ein Ereignis manuell hinzu:
 

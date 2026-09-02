@@ -3,26 +3,20 @@ title: Empfehlungstypen
 description: Erfahren Sie mehr über die Recommendations, die Sie auf verschiedenen Seiten auf Ihrer Site bereitstellen können.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
 TQID: https://experienceleague.adobe.com/d2V9aHGQO8jnPXAIlae-GklfACARMrVEttryLOY3Zr8
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: beb7a3c1-66ab-4786-b879-7621375b3c40id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 2045
+source-wordcount: 2001
 ht-degree: 0%
 
 ---
 
 # Empfehlungstypen
 
-Adobe Commerce bietet eine Vielzahl von Empfehlungen, die Sie auf verschiedenen Seiten Ihrer Site bereitstellen können. Alle Empfehlungstypen sind datengesteuert. Sie basieren auf Verhaltensdaten, Produktattributdaten und Metriken. Zur Vereinfachung werden die Empfehlungstypen wie folgt gruppiert:
+Adobe Commerce bietet eine Vielzahl von Empfehlungen, die Sie auf verschiedenen Seiten Ihrer Site bereitstellen können. Alle Empfehlungstypen sind datengesteuert. Verhaltensdaten, Produktattributdaten und Metriken sind die Grundlage für sie. Zur Vereinfachung werden die Empfehlungstypen wie folgt gruppiert:
 
 - [Personalisiert](#personalized)
 - [Crosssell und Up-Sells](#crossup)
@@ -35,7 +29,7 @@ Als Best Practice empfiehlt Adobe bei der Verwendung von Recommendations die fol
 
 - Stellen Sie nicht dieselben Empfehlungen auf Ihrer Warenkorbseite und Bestellbestätigungsseite bereit. Erwägen Sie, `Most Added to Cart` für die Warenkorbseite und `Bought This, Bought That` für die Bestellbestätigungsseite zu verwenden.
 
-- Halten Sie Ihre Website aufgeräumt. Stellen Sie nicht mehr als drei Empfehlungseinheiten auf derselben Seite bereit.
+- Beibehalten der Site-Konfiguration. Stellen Sie nicht mehr als drei Empfehlungseinheiten auf derselben Seite bereit.
 
 - Wenn Ihr Geschäft Kleidung verkauft, kann die `More like this` Empfehlung geschlechtsspezifische Produkte vorschlagen, die nicht mit dem Geschlecht des angezeigten Produkts übereinstimmen. Erwägen, diesen Empfehlungstyp nur für Nicht-Bekleidungskategorien zu verwenden.
 
@@ -49,7 +43,7 @@ Product Recommendations ist ein datengesteuertes System, das auf Verhaltensdaten
 
 >[!IMPORTANT]
 >
->Die meisten Empfehlungstypen erfordern ausreichende Verhaltensdaten (z. B. Produktansichten, Warenkorbaktionen und Käufe), um aussagekräftige Ergebnisse zu generieren. Das System benötigt in der Regel mehrere Tage aktiver Käuferaktivität, um genaue Empfehlungen zu erstellen. Unter [Bereitschaftsindikatoren](create.md#readiness-indicators) erfahren Sie, wie der Website-Traffic dabei hilft, die verschiedenen Empfehlungstypen auszufüllen.
+>Die meisten Empfehlungstypen erfordern ausreichende Verhaltensdaten (z. B. Produktansichten, Warenkorbaktionen und Käufe), um aussagekräftige Ergebnisse zu generieren. Das System benötigt in der Regel mehrere Tage aktiver Käuferaktivität, um genaue Empfehlungen zu erstellen. Informationen dazu, wie der Site-Traffic beim Ausfüllen der verschiedenen Empfehlungstypen hilft, finden Sie unter [Bereitschaftsindikatoren](create.md#readiness-indicators).
 
 ### Was passiert bei unzureichenden Daten?
 
@@ -61,11 +55,11 @@ Wenn nicht genügend Ereignisdaten vorhanden sind, um Empfehlungen zu generieren
 
 ## Personalisiert {#personalized}
 
-Diese Empfehlungstypen empfehlen Produkte basierend auf dem Verhaltensverlauf des jeweiligen Käufers auf Ihrer Site. Wenn ein Käufer beispielsweise zuvor auf Ihrer Site nach einer Jacke gesucht oder eine Jacke gekauft hat, greifen diese Empfehlungen im Wesentlichen dort auf, wo er aufgehört hat, und empfehlen andere Jacken oder ähnliche Produkte.
+Diese Empfehlungstypen empfehlen Produkte basierend auf dem Verhaltensverlauf des jeweiligen Käufers auf Ihrer Site. Wenn beispielsweise ein Käufer zuvor eine Jacke auf Ihrer Site durchsucht oder gekauft hat, setzen diese Empfehlungen ihre vorherige Aktivität fort und empfehlen andere Jacken oder ähnliche Produkte.
 
 >[!NOTE]
 >
->Personalisierte Empfehlungen erfordern, dass die Käufer über eine etablierte Verhaltensgeschichte verfügen. Neuen Besuchern oder Käufern ohne ausreichenden Interaktionsverlauf werden [Sicherungsempfehlungen](events.md#backup-recommendations) wie Am häufigsten angezeigte Produkte angezeigt, bis sie genügend Verhaltenssignale auf Ihrer Site generieren.
+>Personalisierte Empfehlungen erfordern, dass die Käufer über eine etablierte Verhaltensgeschichte verfügen. Neue Besucher oder Käufer ohne ausreichenden Interaktionsverlauf sehen [Sicherungsempfehlungen](events.md#backup-recommendations), z. B. Am häufigsten angezeigte Produkte, bis sie genügend Verhaltenssignale auf Ihrer Site generieren.
 
 | Typ | Beschreibung |
 |---|---|
@@ -74,7 +68,7 @@ Diese Empfehlungstypen empfehlen Produkte basierend auf dem Verhaltensverlauf de
 
 ## Crosssell und Up-Sells {#crossup}
 
-Diese Empfehlungstypen sind sozial abgesichert, um Käufern zu helfen, das zu finden, was anderen gefiel, oder produktgesteuert, um ihnen dabei zu helfen, andere ähnliche Produkte zu finden. Die empfohlenen Produkte ergänzen häufig das ausgewählte Produkt.
+Diese Empfehlungstypen sind sozial abgesichert, um Käufern zu helfen, das zu finden, was anderen gefällt. Sie sind außerdem produktorientiert und helfen ihnen, andere ähnliche Produkte zu finden. Die empfohlenen Produkte ergänzen häufig das ausgewählte Produkt.
 
 ### Seitenkontext für Empfehlungen
 
@@ -82,15 +76,15 @@ Crosssell- und Upsell-Empfehlungstypen verwenden den Kontext der Seite, auf der 
 
 - **Produktdetailseite** - Verwendet die SKU des Produkts, das der Einkäufer anzeigt.
 - **Warenkorbseite** - Verwendet die SKUs der Produkte im Warenkorb des Käufers.
-- **Bestellungsbestätigungsseite** — Verwendet die SKUs aus dem Kauf, den der Einkäufer gerade abgeschlossen hat.
+- **Bestellungsbestätigungsseite** — Verwendet die SKUs des vom Einkäufer abgeschlossenen Kaufs.
 
 Derselbe Empfehlungstyp kann je nach Bereitstellungsort unterschiedliche Ergebnisse liefern. Beispiel: *Angezeigt, angezeigt, dass* auf einer Produktdetailseite das angezeigte Produkt als Kontext verwendet. Auf der Seite „Warenkorb“ wird der Inhalt des Warenkorbs verwendet. Auf der Bestellbestätigungsseite wird die abgeschlossene Bestellung verwendet.
 
 >[!NOTE]
 >
->Die Empfehlungstypen „hat dies angezeigt, gesehen,“ hat dies angezeigt, gekauft, und „hat dies gekauft, hat das gekauft“ verwenden keine Metrik für einfache Vorfälle, sondern einen komplexeren Algorithmus für die kollaborative Filterung, der nach *interessanten Ähnlichkeiten“ sucht* die nicht auf beliebte Produkte ausgerichtet sind. Die für diese Empfehlungstypen verwendeten Daten basieren auf dem aggregierten Verhalten des Käufers, das aus mehreren Sitzungen auf Ihrer Site abgeleitet wurde. Die Daten basieren nicht auf dem Käuferverhalten, das aus einem einzelnen Sitzungsereignis auf Ihrer Site abgeleitet wurde. Diese Empfehlungstypen helfen Käufern dabei, die benachbarten Produkte zu finden, deren Kombination mit dem aktuell angezeigten Produkt möglicherweise nicht offensichtlich ist.
+>Die Empfehlungstypen „hat dies angesehen, gesehen, gesehen, gekauft,“ und „gekauft, gekauft,“ verwenden einen hoch entwickelten Algorithmus zur kollaborativen Filterung, um &quot;_Ähnlichkeiten“ zu identifizieren_ ohne dabei beliebte Produkte überzubewerten. Der Algorithmus verwendet das aggregierte Verhalten der Käuferinnen und Käufer über mehrere Sitzungen auf Ihrer Site hinweg und nicht das Verhalten einer einzigen Interaktion während einer Sitzung. Diese Empfehlungstypen helfen Kundinnen und Kunden dabei, verwandte Produkte zu finden, die möglicherweise nicht offensichtlich mit dem Produkt verknüpft sind, das sie anzeigen.
 >
->Diese Empfehlungstypen erfordern erhebliche produktübergreifende Interaktionsdaten, um aussagekräftige Korrelationen zu identifizieren. Stores mit begrenzter Produktkatalogvielfalt oder geringem Traffic erhalten möglicherweise weniger Empfehlungen, bis ausreichende Verhaltensmuster erkennbar werden.
+>Diese Empfehlungstypen erfordern erhebliche produktübergreifende Interaktionsdaten, um aussagekräftige Korrelationen zu identifizieren. Stores mit begrenzter Produktkatalogvielfalt oder geringem Traffic erhalten weniger Empfehlungen, bis ausreichende Verhaltensmuster erkennbar werden.
 
 | Typ | Beschreibung |
 |---|---|
@@ -106,7 +100,7 @@ Diese Empfehlungstypen empfehlen Produkte, die in den letzten sieben Tagen am be
 
 >[!NOTE]
 >
->Beliebtheitsbasierte Empfehlungen erfordern ausreichende Ereignisdaten aus Ihrer Storefront. Wenn Ihr Store neu ist oder nur geringen Traffic hat, können diese Empfehlungstypen eingeschränkte Ergebnisse oder keine Ergebnisse zurückgeben, bis ausreichende Verhaltensdaten erfasst wurden. Überwachen Sie Ihre [Data Readiness Indicator](workspace.md), um eine optimale Leistung zu gewährleisten.
+>Beliebtheitsbasierte Empfehlungen erfordern ausreichende Ereignisdaten aus Ihrer Storefront. Wenn Ihr Store neu ist oder nur geringen Traffic hat, geben diese Empfehlungstypen begrenzte Ergebnisse oder keine Ergebnisse zurück, bis ausreichende Verhaltensdaten erfasst wurden. Um eine optimale Leistung zu gewährleisten, überwachen Sie [Data Readiness Indicator](workspace.md).
 
 | Typ | Beschreibung |
 |---|---|
@@ -121,7 +115,7 @@ Diese Empfehlungstypen empfehlen, Produkte basierend auf Erfolgskriterien wie Hi
 
 >[!NOTE]
 >
->Leistungsstarke Empfehlungstypen basieren auf Konversionsdaten (Käufe und Aktionen vom Typ „In den Warenkorb legen„). Neue Stores oder Stores mit niedrigen Konversionsvolumina müssen möglicherweise Daten über 7-14 Tage sammeln, bevor diese Empfehlungen in Kraft treten.
+>Leistungsstarke Empfehlungstypen basieren auf Konversionsdaten (Käufe und Aktionen vom Typ „In den Warenkorb legen„). Neue Stores oder Stores mit niedrigen Konversionsvolumina müssen Daten über 7-14 Tage sammeln, bevor diese Empfehlungen in Kraft treten.
 
 | Typ | Beschreibung |
 |---|---|
@@ -153,13 +147,13 @@ Adobe AI verwendet KI, um die Bilder in Ihrem Katalog zu verarbeiten und zu anal
 >
 > Derzeit müssen Produktbilder 10 MB oder weniger groß sein.
 
-Da dieser Empfehlungstyp für die meisten Kataloge nicht anwendbar ist, ist er nicht standardmäßig aktiviert. Sie müssen diesen Empfehlungstyp explizit aktivieren.
+Da dieser Empfehlungstyp für die meisten Kataloge nicht anwendbar ist, aktiviert das System ihn standardmäßig nicht. Diesen Empfehlungstyp explizit aktivieren.
 
 ### Empfehlungstyp für visuelle Ähnlichkeit aktivieren
 
 >[!NOTE]
 >
-> Der Empfehlungstyp _Visuelle Ähnlichkeit_ ist verfügbar, wenn Sie [&#x200B; als optionales &#x200B;](install-configure.md) installieren.
+> Der Empfehlungstyp _Visuelle Ähnlichkeit_ ist verfügbar, wenn Sie [ als optionales ](install-configure.md) installieren.
 
 1. Wechseln Sie in der _Admin_-Seitenleiste zu **Marketing** > _Promotions_ > **Product Recommendations**, um das _Product Recommendations_ Dashboard anzuzeigen.
 
