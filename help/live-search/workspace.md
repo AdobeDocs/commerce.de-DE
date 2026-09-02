@@ -3,10 +3,16 @@ title: Einrichten der Live-Suche
 description: Der  [!DNL Live Search]  wird zum Konfigurieren, Verwalten und Überwachen der Suchleistung verwendet.
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
 TQID: https://experienceleague.adobe.com/RQ6BKo7AknERkwrXylYHNAuD-FDxLvG74nU1YvuVgwE
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 127067a1ef47c7d9e51c5792e03b568dd818fe8e
 workflow-type: tm+mt
 source-wordcount: 2360
@@ -55,7 +61,7 @@ Anfangs ist [Umfang](https://experienceleague.adobe.com/en/docs/commerce-admin/s
 
 ## Festlegen von Attributen als durchsuchbar
 
-Um zielgerichtete Ergebnisse zu erzielen, überprüfen Sie den Satz [ (durchsuchbaren](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`) Produktattribute. Um Relevanz zu gewährleisten, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und knappen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langen Text enthalten, z. B. `description`. Dies kann, obwohl standardmäßig die Suche aktiviert ist, die Genauigkeit der Suchergebnisse verringern. Wenn eine Person beispielsweise nach „kurzen Hosen“ sucht und es Hemden mit einer Beschreibung gibt, die den Begriff „kurze Ärmel“ enthält, werden die Hemden in den Suchergebnissen angezeigt.
+Um zielgerichtete Ergebnisse zu erzielen, überprüfen Sie den Satz [&#x200B; (durchsuchbaren](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`) Produktattribute. Um Relevanz zu gewährleisten, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und knappen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langen Text enthalten, z. B. `description`. Dies kann, obwohl standardmäßig die Suche aktiviert ist, die Genauigkeit der Suchergebnisse verringern. Wenn eine Person beispielsweise nach „kurzen Hosen“ sucht und es Hemden mit einer Beschreibung gibt, die den Begriff „kurze Ärmel“ enthält, werden die Hemden in den Suchergebnissen angezeigt.
 
 Führen Sie die folgenden Schritte aus, damit Attribute durchsuchbar sein können:
 
@@ -96,7 +102,7 @@ Mit der mehrschichtigen Suche können Sie:
 - Ermöglichen Sie es Käufern, innerhalb der Suchergebnisse zu suchen.
 - Um die Ergebnisse weiter zu verfeinern, verwenden Sie `startsWith` und `contains` Suchindizierung in der zweiten Ebene der mehrschichtigen Suche.
 
-Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`productSearch`-Abfrage mithilfe ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search) Operatoren implementiert:
+Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`productSearch`-Abfrage mithilfe &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search) Operatoren implementiert:
 
 - **Mehrschichtige Suche** - Suche in einem anderen Suchkontext - Mit dieser Funktion können Sie bis zu zwei Ebenen der Suche für Ihre Suchanfragen durchführen. Beispiel:
 
@@ -116,13 +122,13 @@ Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`prod
 
     >[!NOTE]
     >
-    >Dieser Suchtyp unterscheidet sich vom vorhandenen Suchbegriff[ der die automatische Vervollständigung durch ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#phrase) der Wortanfänge unterstützt. Wenn ein Produktattributwert beispielsweise „Outdoor Pants“ ist, gibt eine Phrasensuche Ergebnisse für „out pan“ zurück, da „out“ und „pan“ mit den Anfängen der Wörter im Wert übereinstimmen. Es werden keine Ergebnisse für „Arme Ameisen“ zurückgegeben, da diese Zeichenfolgen innerhalb der Wörter auftreten. Eine Suche sucht Text an einer beliebigen Stelle innerhalb eines Wortes, gibt also Ergebnisse für „oder Ameisen“ zurück.
+    >Dieser Suchtyp unterscheidet sich vom vorhandenen Suchbegriff[&#x200B; der die automatische Vervollständigung durch &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#phrase) der Wortanfänge unterstützt. Wenn ein Produktattributwert beispielsweise „Outdoor Pants“ ist, gibt eine Phrasensuche Ergebnisse für „out pan“ zurück, da „out“ und „pan“ mit den Anfängen der Wörter im Wert übereinstimmen. Es werden keine Ergebnisse für „Arme Ameisen“ zurückgegeben, da diese Zeichenfolgen innerhalb der Wörter auftreten. Eine Suche sucht Text an einer beliebigen Stelle innerhalb eines Wortes, gibt also Ergebnisse für „oder Ameisen“ zurück.
 
 Diese neuen Bedingungen verbessern den Filtermechanismus für Suchanfragen, um Suchergebnisse zu verfeinern. Diese neuen Bedingungen wirken sich nicht auf die Hauptsuchabfrage aus.
 
 #### Implementierung
 
-1. Damit ein Produktattribut durchsuchbar ist, wechseln Sie zum Administrator und [ Sie „Produktattribut festlegen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties).
+1. Damit ein Produktattribut durchsuchbar ist, wechseln Sie zum Administrator und [&#x200B; Sie „Produktattribut festlegen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties).
 
    Siehe die Liste der durchsuchbaren [Attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
 

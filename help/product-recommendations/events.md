@@ -4,10 +4,20 @@ description: Erfahren Sie, wie Ereignisse Daten für  [!DNL Product Recommendati
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
 TQID: https://experienceleague.adobe.com/efHRMj3u3w-xvUgMnEYDpX0D-BDCUyjhhrkMaa3n-xg
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: eb30f47f-d87a-400f-8f78-63ce7979ff56id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
 source-wordcount: 937
@@ -23,7 +33,7 @@ Weitere Informationen zu den Verhaltensdaten, die von den [!DNL Product Recommen
 
 >[!NOTE]
 >
->Die Datenerhebung zum Zwecke der [!DNL Product Recommendations] umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. Weitere [ (](https://www.adobe.com/privacy/experience-cloud.html).
+>Die Datenerhebung zum Zwecke der [!DNL Product Recommendations] umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. Weitere [&#x200B; (](https://www.adobe.com/privacy/experience-cloud.html).
 
 ## Healthcare-Kunden
 
@@ -66,11 +76,11 @@ Andere Variablen, die sich auf die für das Training benötigte Zeit auswirken k
 - Einige Empfehlungstypen trainieren schneller als andere
 - Adobe Commerce berechnet die Verhaltensdaten alle vier Stunden neu. Empfehlungen werden umso genauer, je länger sie auf Ihrer Site verwendet werden.
 
-Auf der Seite „Empfehlung erstellen[ werden Bereitschaftsindikatoren angezeigt, damit Sie den Trainings-Fortschritt ](create.md#readiness-indicators) jeden Empfehlungstyp visualisieren können.
+Auf der Seite „Empfehlung erstellen[&#x200B; werden Bereitschaftsindikatoren angezeigt, damit Sie den Trainings-Fortschritt &#x200B;](create.md#readiness-indicators) jeden Empfehlungstyp visualisieren können.
 
 Während Ihre Live-Site Daten erfasst und die Modelle für maschinelles Lernen trainiert, führen Sie die verbleibenden Test- und Konfigurationsaufgaben aus. Sobald die Modelle über genügend Daten verfügen, um nützliche Empfehlungen zu generieren, stellen Sie die Empfehlungseinheiten in Ihrer Storefront bereit.
 
-Wenn Ihre Site für die meisten Produkt-SKUs nicht ausreichend Traffic (Ansichten, Käufe oder Trends) erhält, wird der Lernprozess möglicherweise nicht abgeschlossen, sodass die Bereitschaftsindikatoren im Admin hängen bleiben. Bereitschaftsindikatoren helfen Händlern, den besten Empfehlungstyp für ihren Store auszuwählen, aber sie sind nur ein Leitfaden und erreichen möglicherweise nie 100 %. Weitere Informationen zu Bereitschaftsindikatoren. [Weitere ](create.md#readiness-indicators) zu Bereitschaftsindikatoren.
+Wenn Ihre Site für die meisten Produkt-SKUs nicht ausreichend Traffic (Ansichten, Käufe oder Trends) erhält, wird der Lernprozess möglicherweise nicht abgeschlossen, sodass die Bereitschaftsindikatoren im Admin hängen bleiben. Bereitschaftsindikatoren helfen Händlern, den besten Empfehlungstyp für ihren Store auszuwählen, aber sie sind nur ein Leitfaden und erreichen möglicherweise nie 100 %. Weitere Informationen zu Bereitschaftsindikatoren. [Weitere &#x200B;](create.md#readiness-indicators) zu Bereitschaftsindikatoren.
 
 ### Empfehlungen für Backups {#backuprecs}
 
