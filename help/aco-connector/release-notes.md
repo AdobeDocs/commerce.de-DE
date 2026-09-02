@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 1d14f7827de3274564941765fd2943ecefac5fad
+source-git-commit: 355b319def41c3763bc0dddbe6b32707891bb811
 workflow-type: tm+mt
-source-wordcount: 460
+source-wordcount: 514
 ht-degree: 0%
 
 ---
@@ -40,12 +40,20 @@ In diesen Versionshinweisen werden alle Versionen für die [!DNL Adobe Commerce 
 
 ## Versionen 2026
 
+### Version 1.0.17
+
+_1. September 2026_
+
+![Korrigieren](../assets/fix.svg) **Schnellere Katalogsynchronisierung für Stores mit mehreren Store-Ansichten**-Die [!DNL Adobe Commerce Optimizer Connector] filtert jetzt Produkte und Kategorien nach Store-Ansicht, bevor Feed-Daten extrahiert werden, anstatt jede Store-Ansicht zu extrahieren und die irrelevanten Ergebnisse anschließend zu verwerfen. Diese Aktualisierung reduziert die Zeit für die Synchronisierung und Neusynchronisierung von Katalogen mit vielen Store-Ansichten erheblich. <!--MDEE-1441-->
+
 ### Version 1.0.16
 
 _7. August 2026_
 
 ![Beheben](../assets/fix.svg) **Die Katalogsynchronisierung wird bei ungültiger Konfiguration nicht mehr angehalten**-Es wurde ein Problem behoben, bei dem die Katalogsynchronisierung unbegrenzt ausgeführt werden konnte, wenn die [!DNL Adobe Commerce Optimizer Connector]-Konfiguration fehlte oder ungültig war. Die Synchronisierung wird jetzt abgeschlossen und protokolliert eine Warnung, anstatt fortzufahren. <!--MDEE-1413-->
+
 ![Beheben](../assets/fix.svg) **Zuverlässigere [!DNL Adobe Commerce Optimizer]-Admin-**: Es wurde ein Problem behoben, bei dem der [!DNL Adobe Commerce Optimizer Connector] eine falsche URL für [!DNL Adobe Commerce Optimizer]-Admin-Anfragen verwenden konnte, was dazu führen konnte, dass diese Anfragen fehlschlugen. <!--COMOPT-2288-->
+
 ![Beheben](../assets/fix.svg) **Zuverlässigere Aktualisierungs- und Patch-**: Es wurde ein Problem behoben, bei dem Aktualisierungs- und Patch-Vorgänge auf die falsche Umgebung abzielen konnten, was dazu führen konnte, dass die Anforderungen fehlschlugen. <!--COMOPT-2288-->
 
 ### Version 1.0.15

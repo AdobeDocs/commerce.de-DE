@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 9d128fd11c1b83276f8a2158f1f2fb98a49bf6c5
+source-git-commit: 49a235a3a545b422b0371b53163d7de770df6a38
 workflow-type: tm+mt
-source-wordcount: 6100
+source-wordcount: 6271
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
-Die folgenden Elemente werden am 1. September 2026 in der Produktionsumgebung veröffentlicht.
+Die folgenden Elemente werden am 8. September 2026 in der Produktionsumgebung veröffentlicht.
 
 >[!BEGINSHADEBOX]
 
@@ -122,7 +122,7 @@ Die Adressbücher des Unternehmens sind jetzt in zusätzliche B2B-Workflows inte
 * Verhandelbare Angebote
 * Angebotsvorlagen
 
-Detaillierte Informationen, einschließlich GraphQL-Mutationen und REST-Endpunkten, finden Sie im Änderungsprotokoll [Storefront-Kompatibilität B2B-Paket](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=de) und im Abschnitt **Storefront-Kompatibilität B2B-Paket v1.0.24** .
+Detaillierte Informationen, einschließlich GraphQL-Mutationen und REST-Endpunkten, finden Sie im [Änderungsprotokoll zur Storefront-Kompatibilität des B2B-Pakets](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=de#storefront-compatibility-b2b-package-v1-0-24-2026-07-20).
 
 <!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
 
@@ -141,6 +141,24 @@ Die **Kostenlose Geschenk**-Preisregel ist jetzt in der [!DNL Commerce Admin] f�
 Mit dieser Regel können Sie ein kostenloses Geschenkprodukt zum Warenkorb hinzufügen, wenn die Regelbedingungen erfüllt sind.
 
 <!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+
+### Planen von Warenkorbpreisregeln nach Datum und Uhrzeit
+
+Sie können jetzt die Tageszeit festlegen, zu der eine [Warenkorb-Preisregel](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create) im [!DNL Commerce Admin] beginnen oder enden soll. Das Raster Warenkorbpreisregeln zeigt die geplanten Zeiten an und die REST-API berücksichtigt eine am `from_date` und `to_date` eingereichte Zeit, anstatt die Regel auf Mitternacht festzulegen. <!-- ACCS-970 -->
+
+<!-- commenting this out until the B2B compatibility package version is live. -->
+
+<!-- ### Use a temporary shipping address at B2B checkout -->
+
+<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=de) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
+
+### Bestellbearbeitungen im Bestellverlauf erfassen
+
+>[!IMPORTANT]
+>
+>Diese Funktion ist standardmäßig deaktiviert. Wenden Sie sich zur Aktivierung an Ihren Adobe Commerce Customer Success Manager oder erstellen Sie ein Support-Ticket.
+
+Wenn eine Bestellung bearbeitet wird, kann Commerce jetzt einen für Menschen lesbaren Kommentar zum Verlauf der neuen Bestellung hinzufügen, der zusammenfasst, was sich in Bezug auf die ersetzte Bestellung geändert hat. <!-- ACCS-1157 -->
 
 ### Verbesserungen und Fehlerbehebungen
 
@@ -163,6 +181,12 @@ Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen s
 * Es wurde ein Problem behoben, bei dem Kategoriebild-URLs im Kategoriedaten-Export-Feed beschädigt wurden. <!-- ACCS-1571 -->
 
 * Es wurde ein Problem behoben, bei dem die gleichzeitige Zuweisung oder das Aufheben der Zuweisung von Produkten in verschiedenen freigegebenen Katalogen gelegentlich fehlschlagen konnte. <!-- CCSAAS-5287 -->
+
+* Wenn Sie **In Suchoptionen verwenden** auf Nein setzen, bleibt das Attribut als Rasterspalte sichtbar, zählt jedoch nicht zum 16-Spalten-Limit. <!-- CCSAAS-5370 -->
+
+* Es wurde ein Problem behoben, das sich auf die Admin-Navigation auswirken konnte. <!-- CCSAAS-5232 -->
+
+* Es wurde ein Problem behoben, bei dem leere Warenkörbe Gesamtwerte ungleich null melden konnten. <!-- ACCS-1730 -->
 
 {{accs-release}}
 
@@ -676,7 +700,7 @@ Die folgenden Elemente wurden am 9. März 2026 in Produktionsumgebungen von [!DN
 
 ### App Builder AI-Kodierungstools und -Tutorials
 
-Sie können jetzt das Entwickler-Tool [AI-Codierung](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} verwenden, um neue [!DNL App Builder]-Programme zu erstellen und vorhandene [!DNL Adobe Commerce] PHP-Erweiterungen in [!DNL App Builder]-Programme zu konvertieren. Die folgenden Tutorials zeigen, wie Sie die Tools verwenden:
+Sie können jetzt das Entwickler-Tool [AI-Codierung](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"} verwenden, um neue [!DNL App Builder]-Programme zu erstellen und vorhandene [!DNL Adobe Commerce] PHP-Erweiterungen in [!DNL App Builder]-Programme zu konvertieren. Die folgenden Tutorials zeigen, wie Sie die Tools verwenden:
 
 * [Voraussetzungen für das Tutorial](./tutorials/tutorial-prerequisites.md)
 * [Tutorial zur Bewertungserweiterung](./tutorials/ratings-extension.md)
