@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 3006
+source-wordcount: 2965
 ht-degree: 0%
 
 ---
@@ -28,9 +28,9 @@ Dieser Artikel hilft Merchandisern, ihre Site-Suchfunktion zu verbessern, um ein
 
 Die Relevanz und Effektivität von Suchergebnissen hängt von mehreren Schlüsselfaktoren ab:
 
-- Durch gut strukturierte Produktdaten wird sichergestellt, dass Suchalgorithmen Produkte effektiv Abfragen zuordnen können. Niedrige Produktdaten führen zu schlechten relevanten Suchergebnissen. So wirken Sie sich direkt auf den Erfolg Ihrer Merchandising-Strategie aus:
-   - Richten Sie die richtigen Attribute als durchsuchbar mit der entsprechenden Gewichtung ein.
-   - Stellen Sie sicher, dass die Daten in diesen Attributen relevant sind.
+- Durch gut strukturierte Produktdaten wird sichergestellt, dass Suchalgorithmen Produkte effektiv Abfragen zuordnen können. Produktdaten von geringer Qualität führen zu weniger relevanten Suchergebnissen. So wirken Sie sich direkt auf den Erfolg Ihrer Merchandising-Strategie aus:
+  - Richten Sie die richtigen Attribute als durchsuchbar mit der entsprechenden Gewichtung ein.
+  - Stellen Sie sicher, dass die Daten in diesen Attributen relevant sind.
 - Ein gut gestaltetes Sucherlebnis schafft Vertrauen bei den Kunden und schafft Vertrauen, dass sie das finden, was sie brauchen.
 - Suchregeln sind wichtig, da sie die Sichtbarkeit bestimmter Produkte basierend auf Popularität, Neuankömmlingen, Werbekriterien oder einer anderen Merchandising-Strategie erhöhen können, um Ihre Geschäftsanforderungen zu erfüllen.
 - Die Facettennavigation ermöglicht es Kunden, ihre Suche zu verfeinern und schnell relevante Ergebnisse zu erhalten.
@@ -41,7 +41,7 @@ Um [!DNL Live Search] zu verwalten, gehen Sie **Marketing** > *SEO &amp; Search*
 
 ## Optimieren der Suchfunktion
 
-In diesem Abschnitt erfahren Sie, wie Sie Ihre Suchfunktion optimieren können, indem Sie Funktionen wie die automatische Vervollständigung verwenden, um Echtzeit-Vorschläge wie Käufertyp, Synonyme und Rechtschreibung bereitzustellen, um sicherzustellen, dass Käuferinnen und Käufer Produkte finden, auch wenn sie unterschiedliche Wörter verwenden, und Facetten, damit Käuferinnen und Käufer die Suchergebnisse eingrenzen können.
+In diesem Abschnitt erfahren Sie, wie Sie Ihre Suchfunktion optimieren können, indem Sie Funktionen wie automatische Vervollständigung, Synonyme und Facetten verwenden.
 
 ### AutoVervollständigen
 
@@ -55,14 +55,14 @@ Weitere Informationen über das [Popover](storefront-popover.md)-Widget.
 
 ### Synonyme und Schreibfehler
 
-Die Live Search verwaltet Rechtschreibfehler standardmäßig. Sie können Synonyme einrichten, um Wörter einzuschließen, die Käufer möglicherweise verwenden, die sich von den in Ihrem Katalog angegebenen Wörtern unterscheiden. Sie wollen keinen Verkauf verlieren, weil jemand ein „Sofa“ sucht, während Ihr Produkt als „Couch“ aufgeführt ist. Sie können eine breite Palette von Suchbegriffen erfassen, indem Sie alle möglichen Wörter eingeben, die Kunden verwenden könnten, um Ihre Produkte zu finden. Sie können [Synonyme auf eine oder zwei Arten festlegen](synonyms-add.md#step-2-define-the-synonym-by-type) um die Ergebnisse zu verbessern.
+Die Live Search verwaltet Rechtschreibfehler standardmäßig. Richten Sie Synonyme ein, um Wörter einzubeziehen, die Käuferinnen und Käufer verwenden, und die sich von den in Ihrem Katalog angegebenen Wörtern unterscheiden. Sie wollen keinen Verkauf verlieren, weil jemand nach einem „Sofa“ sucht, während Ihr Produkt als „Couch“ aufgeführt ist. Sie erfassen eine breite Palette von Suchbegriffen, indem Sie alle möglichen Wörter eingeben, die Kunden verwenden, um Ihre Produkte zu finden. Um die Ergebnisse zu verbessern[&#x200B; legen Sie Synonyme auf eine oder zwei Arten &#x200B;](synonyms-add.md#step-2-define-the-synonym-by-type).
 
 #### Tipps zur Optimierung von Synonymen
 
 - Ordnen Sie nun alle Markenbezeichnungen und Abkürzungen ihren vollständigen Namen zu, z. B. „HP“ für „Hewlett-Packard“ und die gebräuchlichen Produktspitznamen, z. B. &quot;iPhone&quot; für &quot;Apple iPhone&quot;.
-- Geben Sie branchenspezifischen Jargon und Begriffe an, die Käufer möglicherweise austauschbar verwenden, z. B. „Sneaker“ und „Laufschuhe“.
+- Hierzu gehören branchenspezifischer Jargon und Begriffe, die von Käufern austauschbar verwendet werden, z. B. „Sneaker“ und „Laufschuhe“.
 - Aktualisieren Sie die Synonym-Liste regelmäßig auf der Grundlage neuer Suchtrends, Produktzusätze und des Käuferverhaltens.
-- Testen Sie die Effektivität von Synonym-Zuordnungen durch die Analyse von Suchergebnissen und Kunden-Feedback. Verfeinern Sie Zuordnungen, um die Genauigkeit und Relevanz zu verbessern.
+- Testen Sie die Effektivität von Synonym-Zuordnungen durch die Analyse von Suchergebnissen und Kunden-Feedback. Um die Genauigkeit und Relevanz zu verbessern, verfeinern Sie Zuordnungen.
 
 Weitere Informationen zu Synonymen:
 
@@ -83,13 +83,13 @@ Um ein Produktattribut als Facette einzurichten, müssen die folgenden [Eigensch
 
 #### Tipps zum Optimieren von Facetten
 
-- Bestimmen Sie die relevantesten und nützlichsten Attribute für Ihre Produkte, wie Titel, Kategorie, Marke, Preisspanne, Farbe und Größe und legen Sie sie als [dynamische Facetten“ &#x200B;](facets-type.md). 
+- Bestimmen Sie die relevantesten Attribute für Ihre Produkte und legen Sie sie als [dynamische Facetten](facets-type.md) fest. 
 - Legen Sie Produktattribute fest und sortieren Sie sie, die in Ihrem gesamten Katalog konsistent und für Ihre Produkte äußerst relevant sind, um die Relevanz und Filtermöglichkeiten für Ihre Kunden zu verbessern.
 - Stellen Sie sicher, dass Facettenbeschriftungen leicht verständlich sind und auf der gesamten Site konsistent benannt werden. Verwenden Sie beispielsweise „Preisspanne“ anstelle von „Kosten“.
 - Vermeiden Sie es, Käufer zu überfordern, indem Sie die Anzahl der Facetten auf die wichtigsten beschränken. Zu viele Optionen können zu Entscheidungsermüdung führen. Standardmäßig ist [!DNL Live Search] auf maximal 100 Attribute beschränkt, die als Facetten konfiguriert sind, und auf 30 Buckets, die innerhalb jeder Facette zurückgegeben werden. Weitere Informationen zu [Facettenbegrenzungen](boundaries-limits.md#facets). 
 - Kunden ermöglichen, mehrere Filterkriterien gleichzeitig auszuwählen, um die Ergebnisse zu verfeinern. Beispielsweise können Käuferinnen und Käufer sowohl die Farben „Rot“ als auch „Blau“ auswählen.
 - Die Anzahl der verfügbaren Produkte neben jeder Facette anzeigen, um Kundinnen und Kunden einen Eindruck von den Suchergebnissen zu vermitteln, die sie erwarten können.
-- Implementieren Sie ausblendbare Facettenabschnitte, um die Oberfläche sauber und verwaltbar zu halten, insbesondere auf mobilen Geräten.
+- Implementieren Sie ausblendbare Facettenabschnitte, um die Schnittstelle sauber und verwaltbar zu halten, insbesondere auf mobilen Geräten.
 - Kunden ermöglichen, einzelne Facetten oder alle ausgewählten Filter zurückzusetzen, um eine neue Suche zu starten.
 
 Weitere Informationen zu Facetten:
@@ -105,11 +105,11 @@ In diesem Abschnitt wird beschrieben, wie Sie die Relevanz der Suchergebnisse ve
 
 ### Bilder
 
-Stellen Sie sicher, dass die untergeordneten Produkte der konfigurierbaren Produkte Bilder mit den richtigen Rollen enthalten. Übergeordnete oder untergeordnete Produkte können dazu führen, dass das Suchergebnis keine Bilder enthält.
+Stellen Sie sicher, dass die untergeordneten Produkte der konfigurierbaren Produkte Bilder mit den richtigen Rollen enthalten. Fehlende übergeordnete oder untergeordnete Produkte führen dazu, dass das Suchergebnis keine Bilder enthält.
 
 >[!NOTE]
 >
->Bilder in Suchergebnissen können je nach Suchbegriff unterschiedlich sein. Wenn der Suchbegriff bestimmt, dass ein untergeordnetes Produkt relevanter ist, werden anstelle von Bildern des übergeordneten Produkts Bilder vom untergeordneten Produkt verwendet.
+>Bilder in Suchergebnissen unterscheiden sich je nach Suchbegriff. Wenn der Suchbegriff bestimmt, dass ein untergeordnetes Produkt relevanter ist, ersetzen Bilder aus dem untergeordneten Produkt die Bilder aus dem übergeordneten Produkt.
 
 ### Suchregeln
 
@@ -127,7 +127,7 @@ Es ist von entscheidender Bedeutung, eine gut durchdachte Standard-Suchregel fes
 - Legen Sie Suchregeln während der Promotion oder des Verkaufszeitraums automatisch fest, indem Sie den Datumsbereich während des Promotion-Zeitraums verwenden.
 - Verwenden Sie immer das Bedienfeld „Regel testen“, um eine Vorschau anzuzeigen, wie sich Ihre intelligente Rangfolgestrategie auf die tatsächlichen Suchergebnisse für verschiedene Abfragen auswirkt.
 - Wenn Sie intelligentes Ranking aktivieren, **[Sie](rules-add.md#intelligent-ranking-boost)** Regeleditor die intelligente Ranking-Optimierung an, um Beliebtheitssignale mit Textrelevanz auszugleichen und die Ergebnisse für Zielabfragen in **Testen Sie Ihre Regel** zu überprüfen. Der intelligente Ranking-Boost ist für die **None**-Strategie nicht verfügbar.
-- Passen Sie Suchergebnisse mithilfe von „Intelligent Ranking[&#x200B; wie &quot;](rules-add.md#intelligent-ranking) für Sie empfohlen“, „Am häufigsten angezeigt“ usw. an das individuelle Kundenverhalten an. Um das Kundenverhalten anzupassen, müssen Sie sicherstellen, dass das Eventing korrekt implementiert ist. Für Händler in Luma ist das Eventing vorkonfiguriert verfügbar. Bei Headless- oder benutzerdefinierten Implementierungen müssen Sie [Ereignis implementieren](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) basierend auf Ihren spezifischen Anforderungen.
+- Passen Sie Suchergebnisse mithilfe von „Intelligent Ranking[&#x200B; wie &quot;](rules-add.md#intelligent-ranking) für Sie empfohlen“, „Am häufigsten angezeigt“ usw. an das individuelle Kundenverhalten an. Um das Kundenverhalten anzupassen, müssen Sie sicherstellen, dass das Eventing korrekt implementiert ist. Für Luma-Händler ist standardmäßig Eventing verfügbar. Bei Headless- oder benutzerdefinierten Implementierungen müssen Sie [Ereignis implementieren](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) basierend auf Ihren spezifischen Anforderungen.
 
 Weitere Informationen zu Suchregeln:
 
@@ -135,12 +135,12 @@ Weitere Informationen zu Suchregeln:
 - [Anforderungen](rules.md#requirements)
 - [Standard-Suchregel](rules.md#default-rule)
 - Verwalten von Suchregeln
-   - [Erstellen](rules-add.md)
-   - [Bearbeiten, Anzeigen, Löschen](rules-manage.md)
+  - [Erstellen](rules-add.md)
+  - [Bearbeiten, Anzeigen, Löschen](rules-manage.md)
 - Datenerfassung
-   - [Ereignisse [!DNL Live Search]](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
-   - [Adobe Commerce Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)
-   - [GitHub-Commerce-Ereignisse](https://github.com/adobe/commerce-events/tree/main/examples) 
+  - [Ereignisse [!DNL Live Search]](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
+  - [Adobe Commerce Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework)
+  - [GitHub-Commerce-Ereignisse](https://github.com/adobe/commerce-events/tree/main/examples) 
 
 ### Verwenden von Produktmetadaten
 
@@ -177,7 +177,7 @@ Wenn Sie die falschen Attribute durchsuchbar machen, kann dies Kundinnen und Kun
 
 #### Durchsuchbare Attribute entsprechend gewichten
 
-Um die Suchrelevanz zu erhöhen, weisen Sie jedem durchsuchbaren Attribut eine Gewichtung zu. Attribute mit einer höheren Gewichtung sollten in den Suchergebnissen höher angezeigt werden. Die Sortierung nach Relevanz wird von mehreren Kriterien beeinflusst, z. B. der Suchgewichtung. Dies bedeutet, dass manchmal Attribute mit niedrigerer Suchgewichtung immer noch mehr Relevanz haben können als Attribute mit höherer Suchgewichtung. Andere Kriterien können die Anzahl der Übereinstimmungen in einem bestimmten Attribut, die Position des gefundenen Suchbegriffs und die Gesamttextstruktur vor und nach einem Suchbegriff sein.
+Um die Suchrelevanz zu erhöhen, weisen Sie jedem durchsuchbaren Attribut eine Gewichtung zu. Attribute mit einer höheren Gewichtung werden in den Suchergebnissen höher angezeigt. Mehrere Kriterien, z. B. die Suchgewichtung, beeinflussen die Relevanzsortierung. Dies bedeutet, dass manchmal Attribute mit niedrigerer Suchgewichtung immer noch mehr Relevanz haben können als Attribute mit höherer Suchgewichtung. Andere Kriterien können die Anzahl der Übereinstimmungen in einem bestimmten Attribut, die Position des gefundenen Suchbegriffs und die Gesamttextstruktur vor und nach einem Suchbegriff sein.
 
 **Gewichtungsprioritäten:**
 
@@ -228,40 +228,40 @@ Weitere Informationen zu Produktattributen für die Suche:
 
 ## Suchergebnisse überwachen
 
-Um Suchergebnisse mit [!DNL Live Search] zu optimieren, überwachen Sie relevante Key Performance Indicators (KPIs) wie eindeutige Abfragen, durchschnittliche Klickposition, Clickthrough-Raten, Konversionsrate und Nullergebnisrate, um zu verstehen, wie Käufer mit Ihrer Suchfunktion interagieren. Diese Daten helfen Ihnen, Ihre Suchregeln regelmäßig zu aktualisieren und zu verfeinern.
+Um Suchergebnisse mit [!DNL Live Search] zu optimieren, überwachen Sie KPIs, um zu verstehen, wie Käufer mit Ihrer Suchfunktion interagieren. Diese Daten helfen Ihnen, Ihre Suchregeln regelmäßig zu aktualisieren und zu verfeinern.
 
 Sie können diese KPIs im [!DNL Live Search]Arbeitsbereich Leistung[&#x200B; überwachen](performance.md) in dem die folgenden Metriken zu finden sind: 
 
-- **Eindeutige Suchvorgänge** - Die Anzahl der einzelnen Suchabfragen, die auf Ihrer [!DNL Commerce]-Site durchgeführt wurden. Jede einzelne Suche wird nur einmal gezählt, auch wenn sie mehrere Male von ein und demselben oder verschiedenen Erstkäufern wiederholt wird. Diese Metrik hilft Ihnen, die Vielfalt der von Kundinnen und Kunden verwendeten Suchbegriffe zu verstehen, und bietet Einblicke in die Produkte oder Informationen, die Kundinnen und Kunden suchen. Das Tracking einzelner Suchvorgänge ermöglicht Folgendes:
+- **Eindeutige Suchvorgänge** - Die Anzahl der einzelnen Suchabfragen, die auf Ihrer [!DNL Commerce]-Site durchgeführt wurden. Das System zählt jede einzelne Suche nur einmal, auch wenn dieselben oder verschiedene Käufer sie mehrmals wiederholen. Diese Metrik hilft Ihnen, die Vielfalt der von Kundinnen und Kunden verwendeten Suchbegriffe zu verstehen, und bietet Einblicke in die Produkte oder Informationen, die Kundinnen und Kunden suchen. Das Tracking einzelner Suchvorgänge ermöglicht Folgendes:
 
-   - Identifizieren Sie beliebte Suchtrends und häufig gesuchte Elemente.
-   - Erkennung potenzieller Lücken in Ihrem Produktkatalog oder Inhalt.
-   - Optimieren Sie Ihre Suchfunktion, indem Sie [Synonyme](synonyms.md) hinzufügen, Suchregeln erstellen oder aktualisieren.
+  - Identifizieren Sie beliebte Suchtrends und häufig gesuchte Elemente.
+  - Erkennung potenzieller Lücken in Ihrem Produktkatalog oder Inhalt.
+  - Optimieren Sie Ihre Suchfunktion, indem Sie [Synonyme](synonyms.md) hinzufügen, Suchregeln erstellen oder aktualisieren.
 
 - **Durchschnittliche Klickposition** - Gibt die durchschnittliche Position der Suchergebnisse an, auf die Käuferinnen und Käufer nach der Durchführung einer Suchabfrage auf Ihrer Site geklickt haben. Diese Metrik bietet Einblicke in die Relevanz und Effektivität Ihrer Suchergebnisse.
 
   Eine niedrigere durchschnittliche Klickposition (näher an 1) deutet darauf hin, dass Käufer relevante Ergebnisse schnell finden, was darauf hinweist, dass Ihre Suchstrategie effektiv ist. Dies hilft Ihnen, das Verhalten der Käufer zu verstehen und zu erkennen, wie weit sie bereit sind, zu scrollen, um das gewünschte Produkt zu finden. Wenn die durchschnittliche Klickposition hoch ist, kann dies darauf hindeuten, dass die relevantesten Ergebnisse nicht oben angezeigt werden, was eine Überprüfung und Optimierung Ihrer Suchstrategie erfordert.
 
-- **Clickthrough-Rate (CTR)** - Misst den Prozentsatz der Käufer, die nach der Durchführung einer Suchanfrage auf ein Suchergebnis klicken. Ein hoher CTR-Wert bedeutet, dass die Suchergebnisse relevant und für Kunden attraktiv sind, da sie auf die Ergebnisse klicken, die sie finden. Die CTR-Überwachung kann dabei helfen, Bereiche zu identifizieren, in denen Verbesserungen erforderlich sind. Eine niedrige CTR kann darauf hindeuten, dass die Suchergebnisse nicht mit den Kundenabsichten übereinstimmen, was dazu führen kann, dass die Suchregeln verfeinert, die Produktdaten verbessert oder die Ergebnisdarstellung verbessert werden muss.
+- **Clickthrough-Rate (CTR)** - Misst den Prozentsatz der Käufer, die nach der Durchführung einer Suchanfrage auf ein Suchergebnis klicken. Ein hoher CTR-Wert bedeutet, dass die Suchergebnisse relevant und für Kunden attraktiv sind, da sie auf die Ergebnisse klicken, die sie finden. Die CTR-Überwachung kann dabei helfen, Bereiche zu identifizieren, in denen Verbesserungen erforderlich sind. Eine niedrige CTR weist darauf hin, dass die Suchergebnisse nicht mit der Kundenabsicht übereinstimmen. Daher müssen die Suchregeln verfeinert, die Produktdaten verbessert oder die Ergebnisdarstellung verbessert werden.
 
-- **Konversionsrate** - Zeigt die Effektivität Ihrer Suchfunktion zur Steigerung des Umsatzes und zum Erreichen von Geschäftszielen an. Sie spiegelt die allgemeine Effektivität Ihrer Suchfunktion bei der Erfüllung der Kundenanforderungen und der Erleichterung eines reibungslosen Einkaufserlebnisses wider. Eine hohe Konversionsrate bedeutet, dass Ihre Suchergebnisse hochrelevant und überzeugend sind, sodass die Käufer ihre Käufe abschließen. Wenn die Konversionsrate niedrig ist, kann dies auf Probleme mit der Suchrelevanz, der Produktverfügbarkeit oder dem gesamten Käufer-Journey von der Suche bis zum Kauf hinweisen.
+- **Konversionsrate** - Zeigt die Effektivität Ihrer Suchfunktion zur Steigerung des Umsatzes und zum Erreichen von Geschäftszielen an. Sie spiegelt die allgemeine Effektivität Ihrer Suchfunktion bei der Erfüllung der Kundenanforderungen und der Erleichterung eines reibungslosen Einkaufserlebnisses wider. Eine hohe Konversionsrate bedeutet, dass Ihre Suchergebnisse hochrelevant und überzeugend sind, sodass die Käufer ihre Käufe abschließen. Wenn die Konversionsrate niedrig ist, weist sie auf Probleme mit der Suchrelevanz, der Produktverfügbarkeit oder dem gesamten Käufer-Journey von der Suche bis zum Kauf hin.
 
 - **Keine Ergebnisse** - Misst den Prozentsatz der Suchanfragen auf Ihrer [!DNL Commerce]-Site, die keine Ergebnisse zurückgeben. Diese Metrik ist wichtig, um zu verstehen, wie oft die Suchvorgänge von Käufern erfolglos sind, und kann Einblicke in potenzielle Lücken in Ihrem Produktkatalog oder Ihrer Sucheinrichtung geben. Eine hohe Ergebnisrate von null kann Käuferinnen und Käufer frustrieren, was zu einem schlechten Einkaufserlebnis und potenziellen Kundenverlust führt. Es kann auf fehlende Produkte oder Kategorien in Ihrem Katalog hinweisen, nach denen Käufer suchen, die Inventar- und Produktlisten-Entscheidungen anleiten.
 
   Um die Nullergebnisrate zu reduzieren, haben Sie folgende Möglichkeiten:
 
-   - Bieten Sie alternative oder verwandte Suchbegriffe an, z[&#x200B; B. &quot;](synonyms.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
-   - Überprüfen Sie regelmäßig Nullergebnisabfragen, um Muster zu identifizieren und notwendige Anpassungen an Ihrem Produktkatalog und Ihren Sucheinstellungen vorzunehmen.
+  - Bieten Sie alternative oder verwandte Suchbegriffe an, z[&#x200B; B. &quot;](synonyms.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
+  - Überprüfen Sie regelmäßig Nullergebnisabfragen, um Muster zu identifizieren und notwendige Anpassungen an Ihrem Produktkatalog und Ihren Sucheinstellungen vorzunehmen.
 
-- **Beliebte Ergebnisse** - Kann Ihre Suchergebnisse erheblich verbessern, indem es sie an den Vorlieben und Verhaltensweisen der Käufer ausrichtet.
+- **Beliebte Ergebnisse** - Verbessern Sie Ihre Suchergebnisse, indem Sie sie an den Präferenzen und Verhaltensweisen der Kundinnen und Kunden ausrichten.
 
 Sie können diese Metrikdaten verwenden, um Ihre Suchfunktion wie folgt zu optimieren:
 
-- Implementieren Sie Regeln, um beliebte Produkte automatisch höher in den Suchergebnissen zu bewerten. Produkte, auf die häufig geklickt oder gekauft wird, können bevorzugt oben angezeigt werden. Kuratieren Sie Listen beliebter Produkte für bestimmte Suchabfragen manuell und stellen Sie sicher, dass diese Elemente gut sichtbar angezeigt werden.
-- Markieren Sie Produkte, die derzeit im Trend liegen oder in letzter Zeit einen Anstieg der Popularität erlebt haben. Dies kann besonders bei saisonalen Veranstaltungen, Feiertagen oder Werbezeiten wirksam sein. Verwenden Sie dazu das intelligente Ranking, das beim Einrichten einer Suchregel Ihrem Anwendungsfall und Ihren Geschäftsanforderungen besser entspricht.
-- Markieren Sie beliebte Filter oder Facetten. Wenn Käufer häufig nach bestimmten Marken oder Preisspannen filtern, heben Sie diese Optionen hervor, indem Sie diese Facetten anheften und entsprechend sortieren.
+- Um beliebte Produkte in Suchergebnissen höher zu bewerten, implementieren Sie Regeln. Produkte, auf die häufig geklickt oder gekauft wird, können bevorzugt oben angezeigt werden. Kuratieren Sie Listen beliebter Produkte für bestimmte Suchabfragen manuell und stellen Sie sicher, dass diese Elemente gut sichtbar angezeigt werden.
+- Markieren Sie Produkte, die derzeit im Trend liegen oder in letzter Zeit einen Anstieg der Popularität erlebt haben. Diese Strategie ist bei saisonalen Veranstaltungen, Feiertagen oder Werbezeiten wirksam. Verwenden Sie dazu beim Einrichten einer Suchregel das intelligente Ranking, das Ihrem Anwendungsfall und Ihren Geschäftsanforderungen besser entspricht.
+- Markieren Sie beliebte Filter oder Facetten. Wenn Käufer häufig nach bestimmten Marken oder Preisbereichen filtern, heben Sie diese Optionen hervor, indem Sie diese Facetten anheften und entsprechend sortieren.
 - Wenn eine Suche keine Ergebnisse liefert, verwenden Sie beliebte Ergebnisdaten, um alternative Produkte oder verwandte Kategorien mit hoher Käuferinteraktion vorzuschlagen.
-- Analysieren Sie beliebte Suchbegriffe und Produktdaten, um wichtige Keywords zu identifizieren. Optimieren Sie die durchsuchbaren Attribute Ihres Produkts mit diesen Keywords, um die Suchrelevanz zu verbessern.
-- Analysieren Sie Ihre Ergebnisdaten regelmäßig, um sich ändernde Trends, Kundenpräferenzen und -verhalten zu verstehen, die wichtigsten Suchbegriffe zu identifizieren und Probleme zu erkennen. Verwenden Sie diese Feedback-Schleife, um Ihre Suchregeln und Produktangebote kontinuierlich zu verfeinern und zu verbessern
+- Um wichtige Keywords zu identifizieren, analysieren Sie beliebte Suchbegriffe und Produktdaten. Um die Suchrelevanz zu verbessern, optimieren Sie Ihre durchsuchbaren Produktattribute mit diesen Keywords.
+- Analysieren Sie Ihre Ergebnisdaten regelmäßig, um sich ändernde Trends, Kundenpräferenzen und -verhalten zu verstehen, die wichtigsten Suchbegriffe zu identifizieren und Probleme zu erkennen. Verwenden Sie diese Feedback-Schleife, um Ihre Suchregeln und Produktangebote kontinuierlich zu verfeinern und zu verbessern.
 
-Um korrekte Daten in Ihrem [!DNL Live Search]-Bericht zu erhalten, müssen Sie sicherstellen, dass das Eventing korrekt implementiert ist. Für Händler in Luma ist das Eventing vorkonfiguriert verfügbar. Bei Headless- oder benutzerdefinierten Implementierungen müssen Sie [Ereignis implementieren](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) basierend auf Ihren spezifischen Anforderungen.
+Um korrekte Daten in Ihrem [!DNL Live Search]-Bericht zu erhalten, müssen Sie sicherstellen, dass das Eventing korrekt implementiert ist. Für Luma-Händler ist standardmäßig Eventing verfügbar. Bei Headless- oder benutzerdefinierten Implementierungen müssen Sie [Ereignis implementieren](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) basierend auf Ihren spezifischen Anforderungen.

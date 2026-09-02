@@ -12,24 +12,26 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 539
+source-wordcount: 524
 ht-degree: 0%
 
 ---
 
 # Widget „Produktlistenseite“
 
-Das [!DNL Live Search Product Listing Page Widget] (PLP) verwendet die Commerce Services-Plattform, um eine leistungsstarke, durchsuchbare und facettenfähige Produktlistenseite bereitzustellen. In diesem Thema wird beschrieben, wie Sie das PLP-Widget aktivieren und gestalten.
+Das [!DNL Live Search Product Listing Page Widget] (PLP) verwendet die Commerce Services-Plattform, um eine leistungsstarke, durchsuchbare und factable Produktlistenseite bereitzustellen. In diesem Thema wird beschrieben, wie Sie das PLP-Widget aktivieren und gestalten.
 
 ## Aktivieren des PLP-Widgets
 
 Wenn der [!DNL Live Search]-Service installiert ist, wird die Standardsuchfunktion automatisch in [!DNL Live Search] konvertiert.
 
-Das [!DNL Live Search] PLP-Widget ist bei Neuinstallationen standardmäßig aktiviert.
+Bei Neuinstallationen ist das [!DNL Live Search] PLP-Widget standardmäßig aktiviert.
 
-Wenn Sie ein Upgrade von [!DNL Live Search] durchführen und das PLP-Widget bereits deaktiviert wurde, wird es so bleiben.
+Wenn Sie [!DNL Live Search] aktualisieren, während das PLP-Widget deaktiviert ist, bleibt es nach dem Upgrade deaktiviert.
+
+
 
 >[!NOTE]
 >
@@ -42,7 +44,7 @@ Aktivieren des PLP-Widgets:
 1. Klicken Sie auf den Abschnitt [!UICONTROL Storefront Features] .
 1. [!UICONTROL Enable Product Listing Widget] = Ja
 1. Konfiguration speichern
-1. Leeren Sie den Cache, wenn Sie dazu aufgefordert werden (navigieren Sie zu System > Tools > Cache-Verwaltung > [!UICONTROL Flush Magento Cache]).
+1. Wenn Sie dazu aufgefordert werden, leeren Sie den Cache (navigieren Sie zu System > Tools > Cache-Verwaltung > [!UICONTROL Flush Magento Cache]).
 
 >[!IMPORTANT]
 >
@@ -50,7 +52,7 @@ Aktivieren des PLP-Widgets:
 
 ## Widget-Funktionen
 
-Das PLP-Widget bietet die folgenden vordefinierten Funktionen:
+Das PLP-Widget bietet die folgenden Standardfunktionen:
 
 - Schaltflächen zum Warenkorb hinzufügen - Nur für einfache Produkte verfügbar.
 - Mehrere Bilder pro Produkt - Das Bild kann sich ändern, wenn für ein konfigurierbares Produkt eine andere Farbe ausgewählt wird.
@@ -58,7 +60,7 @@ Das PLP-Widget bietet die folgenden vordefinierten Funktionen:
 
 ### Anpassen des Widgets
 
-Zusätzlich zu den vordefinierten Funktionen des PLP-Widgets können Sie das Widget weiter anpassen, um die folgenden Funktionen einzuschließen:
+Zusätzlich zu den Standardfunktionen des PLP-Widgets können Sie das Widget weiter anpassen, um die folgenden Funktionen einzuschließen:
 
 - Filtern nach Attributen
 - Unterstützung mehrerer Sprachen
@@ -72,17 +74,17 @@ Informationen zum Anpassen des PLP-Widgets für die oben genannten Funktionen fi
 
 ## Beispiel für einen Stil
 
-Sie können das Erscheinungsbild des PLP-Widgets mit (CSS) an Ihre [&#x200B; anpassen](https://developer.adobe.com/commerce/frontend-core/guide/css/).
+Sie können das Erscheinungsbild des PLP-Widgets mithilfe von [CSS) an Ihre Website &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/css/).
 
 >[!NOTE]
 >
->Elemente mit benutzerdefinierten Klassen in einem Adobe Commerce-Design werden nicht vererbt. Diese Elemente müssen durch ihre spezifische Klasse angesprochen werden, damit sie mit den benutzerdefinierten Klassen übereinstimmen. Primäre Aktionsklassen funktionieren nicht auf einer Widget-Schaltfläche. Generische zielgerichtete Elemente innerhalb des CSS werden übernommen. `button` gilt für Widget-Schaltflächen.
+>Elemente mit benutzerdefinierten Klassen in einem Adobe Commerce-Design werden nicht vererbt. Targeting dieser Elemente anhand ihrer spezifischen Klasse, damit sie mit den benutzerdefinierten Klassen übereinstimmen. Primäre Aktionsklassen sind auf einer Widget-Schaltfläche nicht wirksam. Generische zielgerichtete Elemente innerhalb des CSS werden übernommen. `button` gilt für Widget-Schaltflächen.
 
 Die hervorgehobenen DIVs enthalten die `ds-sdk-product-item__product-name` der Zielklasse.
 
 ![Paginierung](assets/plp-css-example.png)
 
-Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Großbuchstaben zu ändern.
+Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um ihn in Großbuchstaben zu ändern.
 
 ```css
 .ds-sdk-product-item__product-name {
@@ -196,10 +198,10 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 - `.ds-sdk-product-item__product-name`
 - `.ds-sdk-product-item__product-options`
 - `.ds-sdk-product-price`
-   - `.ds-sdk-product-price--no-discount`
-   - `.ds-sdk-product-price--grouped`
-   - `.ds-sdk-product-price--bundle`
-   - `.ds-sdk-product-price--discount`
+  - `.ds-sdk-product-price--no-discount`
+  - `.ds-sdk-product-price--grouped`
+  - `.ds-sdk-product-price--bundle`
+  - `.ds-sdk-product-price--discount`
 
 ![Produkt](assets/plp-css-product.png)
 

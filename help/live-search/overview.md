@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 08c4badb4cae27a2cefb9fcb8eb5589bc8264467
 workflow-type: tm+mt
-source-wordcount: 1201
+source-wordcount: 1170
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Mit [!DNL Live Search] können Sie:
 
 >[!IMPORTANT]
 >
->Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüfen Sie vor der Implementierung die Informationen [Grenzen und &#x200B;](boundaries-limits.md)), um sicherzustellen, dass [!DNL Live Search] zu Ihren Geschäftsanforderungen passt.
+>Um sicherzustellen, dass [!DNL Live Search] zu Ihren Geschäftsanforderungen passt, lesen Sie vor der Implementierung die [Grenzen und &#x200B;](boundaries-limits.md)).
 
 ## Architektur
 
@@ -46,7 +46,7 @@ Der Adobe Commerce-Teil der Architektur umfasst das Hosten der Suche *Admin*, da
 
 ## Schneller Überblick
 
-Mit dem Fokus auf Geschwindigkeit, Relevanz und Benutzerfreundlichkeit ist [!DNL Live Search] ein Wendepunkt für Käufer und Händler gleichermaßen. Sehen Sie sich das folgende Video an und machen Sie dann einen kurzen Überblick über [!DNL Live Search] in der Storefront.
+Mit dem Fokus auf Geschwindigkeit, Relevanz und Benutzerfreundlichkeit ist [!DNL Live Search] eine deutliche Verbesserung sowohl für Kunden als auch für Händler. Sehen Sie sich das folgende Video an und machen Sie dann einen kurzen Überblick über [!DNL Live Search] in der Storefront.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452578?captions=ger&learn=on)
 
@@ -76,11 +76,11 @@ Wenn eine Suche durchgeführt wird, führt [!DNL Live Search] eine Nicht-Fuzzy-S
 | Löschung | Ein Zeichen wird entfernt. | „Warenkorb“ -> „Katze“ |
 | Ersatz | Ein Zeichen durch ein anderes ersetzen. | „Warenkorb“ -> „Guss“ |
 
-Neben der Fuzzy-Suchlogik werden auch Transpositionen berücksichtigt, d.h. bei denen zwei benachbarte Zeichen in einem Wort vertauscht werden, z.B. „the“ anstelle von „the“. Beachten Sie, dass diese Bearbeitungsbeschränkungen pro Wort und nicht die Phrase als Ganzes gelten.
+Zusätzlich zur Fuzzy-Suchlogik werden auch Transpositionen berücksichtigt, d. h. bei denen zwei benachbarte Zeichen in einem Wort vertauscht werden, z. B. „the“ anstelle von „the“. Beachten Sie, dass diese Bearbeitungsbeschränkungen pro Wort und nicht die Phrase als Ganzes gelten.
 
 ### Filter versus Facetten
 
-[!DNL Live Search] können Ergebnisse nach jedem Attribut filtern, das als filterbar indiziert ist. Eine Facette ist einfach ein filterbares Attribut, das so konfiguriert wurde, dass es als kundenorientierter Filter in der Storefront angezeigt wird (z. B. Marke, Farbe, Preis).
+[!DNL Live Search] können Ergebnisse nach jedem Attribut filtern, das als filterbar indiziert ist. Eine Facette ist ein filterbares Attribut, das so konfiguriert wurde, dass es als kundenorientierter Filter in der Storefront angezeigt wird (z. B. Marke, Farbe, Preis).
 
 Einige interne Felder, z. B. `inStock`, können gefiltert, aber nicht facettiert werden:
 
@@ -89,13 +89,13 @@ Einige interne Felder, z. B. `inStock`, können gefiltert, aber nicht facettiert
 
 ### Gefilterte Suche mit Facetten
 
-Die gefilterte Suche verwendet mehrere Dimensionen von Attributwerten [Facetten](facets.md) als Suchkriterien. Die Auswahl der Filter wird vom Händler definiert und ändert sich entsprechend den zurückgegebenen Produkten. Die am häufigsten verwendeten Facetten werden an den Anfang der Liste angeheftet.
+Die gefilterte Suche verwendet mehrere Dimensionen von Attributwerten [Facetten](facets.md) als Suchkriterien. Der Händler definiert die Auswahl der Filter, die sich je nach den zurückgegebenen Produkten ändert, wobei die am häufigsten verwendeten Facetten an den Anfang der Liste angeheftet werden.
 
-Verwenden Sie Facetten als URL-Parameter`http://yourwebsite.com?color=red` und filtern Sie Ergebnisse der Live-Suche basierend auf diesen Attributwerten.
+Verwenden Sie Facetten als URL-Parameter: `https://www.mywebsite.com/?color=red` und Live Search filtern Ergebnisse basierend auf diesen Attributwerten.
 
 ### Synonyme
 
-[Synonyme](synonyms.md) Erweitern Sie die Reichweite und schärfen Sie den Fokus von Abfragen, indem Sie Wörter einschließen, die Käuferinnen und Käufer möglicherweise verwenden, die sich von denen im Katalog unterscheiden. Sie können das Synonym-Wörterbuch optimieren, um Käufern auf dem Laufenden zu halten und auf dem Weg zum Kauf zu bleiben.
+[Synonyme](synonyms.md) Erweitern Sie die Reichweite und schärfen Sie den Fokus von Abfragen, indem Sie Wörter einschließen, die Käuferinnen und Käufer verwenden, die sich von denen im Katalog unterscheiden. Um Käuferinnen und Kunden an einem Projekt zu beteiligen und auf dem Weg zum Kauf zu bleiben, optimieren Sie das Synonym-Wörterbuch.
 
 ### Merchandising-Regeln
 
@@ -103,7 +103,7 @@ Merchandising [Regeln](rules.md) gestalten das Einkaufserlebnis mit If-Then-Anwe
 
 ## Live Search-Komponenten
 
-- [!DNL Live Search] [Popover-](storefront-popover.md)) ist das Feld, das unter dem Suchfeld geöffnet wird, das die Suchergebnisse enthält.
+- [!DNL Live Search] Das [Popover-Widget](storefront-popover.md) ist das Feld, das unter dem Suchfeld geöffnet wird, das die Suchergebnisse enthält.
 - [Produktlistenseite-Widget](plp-styling.md) (PLP) bietet eine durchsuchbare Produktlistenseite mit Facetten und Unterstützung für Synonyme. Das Widget wird in Live Search 4.0.0+ installiert und aktiviert und ersetzt den Suchadapter.
 - (**Veraltet**) Der Suchadapter war der Vorläufer des PLP-Widgets und wurde mit Live Search &lt; 4.0.0 installiert. Wenn Sie eine Version der Live Search vor 4.0.0 verwenden, empfiehlt Commerce ein Upgrade, um die Vorteile der PLP-Widget-Funktionen und zukünftige Verbesserungen zu erhalten. Siehe [Migrationshandbuch](migrate-to-plp.md) für detaillierte Informationen zur Migration zum PLP-Widget.
 
@@ -117,14 +117,14 @@ Der [!DNL Live Search] [Arbeitsbereich](workspace.md) ist der Bereich im Admin-B
 
 ## Richtlinie zur Aufbewahrung von Katalogdaten
 
-Wenn Sie an 90 aufeinander folgenden Tagen keine Suchanfrage für die Katalogdaten in Ihrer Testumgebung senden, werden die Katalogdaten in den Ruhezustand versetzt und es werden keine Daten für eine Suchanfrage zurückgegeben. Katalogdaten in Ihrer Produktionsumgebung sind von dieser Richtlinie nicht betroffen.
+Wenn Sie für 90 Tage keine Suchanfrage für Ihre Testumgebung senden, wechseln die Katalogdaten in den Ruhezustand und geben keine Ergebnisse zurück. Diese Richtlinie hat keine Auswirkungen auf Katalogdaten in Ihrer Produktionsumgebung.
 
 ### Inaktive Testumgebung
 
-Um die Katalogdaten in Ihrer Testumgebung erneut zu aktivieren, [&#x200B; Sie „eine Support-Anfrage &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Live Search] erneut aktivieren“ und fügen Sie die Umgebungs-IDs hinzu. Die Katalogdaten in Ihrer Testumgebung sollten innerhalb weniger Stunden wiederhergestellt werden.
+Um die Katalogdaten in Ihrer Testumgebung erneut zu aktivieren, [&#x200B; Sie „eine Support-Anfrage &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Live Search] erneut aktivieren“ und fügen Sie die Umgebungs-IDs hinzu. Die Katalogdaten in Ihrer Testumgebung sollten innerhalb von zwei Stunden wiederhergestellt werden.
 
 ### Leerer Katalog
 
 Wenn Ihre Umgebung 45 Tage nach der Erstellung einen leeren Katalog hat, werden die Katalogdaten auf den Ruhezustand eingestellt und es werden keine Daten für eine Suchabfrage zurückgegeben. Dies umfasst sowohl Produktions- als auch Testumgebungen.
 
-Um die Katalogdaten in Ihrer Umgebung wieder zu aktivieren, [&#x200B; Sie „eine Support-Anfrage &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Live Search] erneut aktivieren“ und geben Sie die Umgebungs-IDs an. Die Katalogdaten in Ihrer Umgebung sollten innerhalb weniger Stunden wiederhergestellt werden.
+Um die Katalogdaten in Ihrer Umgebung wieder zu aktivieren, [&#x200B; Sie „eine Support-Anfrage &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Live Search] erneut aktivieren“ und geben Sie die Umgebungs-IDs an. Die Katalogdaten in Ihrer Umgebung sollten innerhalb von zwei Stunden wiederhergestellt werden.

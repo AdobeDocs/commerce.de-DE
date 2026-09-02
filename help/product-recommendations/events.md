@@ -18,9 +18,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 1028
+source-wordcount: 937
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 Wenn Sie [[!DNL Product Recommendations]](install-configure.md) installieren und konfigurieren, stellt das Modul die Verhaltensdatenerfassung in Ihrer Storefront bereit. Dieser Mechanismus erfasst anonymisierte Verhaltensdaten von Ihren Käufern und unterstützt [!DNL Product Recommendations]. Beispielsweise wird das `view` Ereignis verwendet, um den `Viewed this, viewed that` Empfehlungstyp zu berechnen, und das `place-order` Ereignis wird verwendet, um den `Bought this, bought that` Empfehlungstyp zu berechnen.
 
-Weitere Informationen zu den Verhaltensdaten[&#x200B; die von [!DNL Product Recommendations]-Ereignissen erfasst werden, finden Sie in der &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)Entwicklerdokumentation“.
+Weitere Informationen zu den Verhaltensdaten, die von den [!DNL Product Recommendations]-Ereignissen erfasst werden, finden Sie unter [Entwicklerdokumentation](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations).
 
 >[!NOTE]
 >
@@ -37,7 +37,9 @@ Weitere Informationen zu den Verhaltensdaten[&#x200B; die von [!DNL Product Reco
 
 ## Healthcare-Kunden
 
-Wenn Sie Kundschaft im Gesundheitswesen sind und die [Data Services HIPAA-Erweiterung](../data-connection/hipaa-readiness.md#installation) installiert haben, die Teil der [Data Connection](../data-connection/overview.md)-Erweiterung ist, werden von [!DNL Product Recommendations] verwendete Storefront-Ereignisdaten nicht mehr erfasst. Dies liegt daran, dass Storefront-Ereignisdaten Client-seitig generiert werden. Um weiterhin Storefront-Ereignisdaten zu erfassen und zu senden, aktivieren Sie die Ereigniserfassung für [!DNL Product Recommendations] erneut. Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/config/general/general#data-services)Allgemeine Konfiguration“.
+Wenn Sie Kundschaft im Gesundheitswesen sind und die [Data Services HIPAA-Erweiterung](../data-connection/hipaa-readiness.md#installation) installiert haben, die in der [Data Connection](../data-connection/overview.md)-Erweiterung enthalten ist, erfasst [!DNL Product Recommendations] keine Storefront-Ereignisdaten mehr, da sie Client-seitig generiert werden.
+
+Um mit dem Erfassen und Senden von Storefront-Ereignisdaten fortzufahren, aktivieren Sie die Ereigniserfassung für [!DNL Product Recommendations] erneut. Weitere Informationen finden Sie unter [Allgemeine Konfiguration](https://experienceleague.adobe.com/de/docs/commerce-admin/config/general/general#data-services).
 
 ## Datentypen und Ereignisse
 
@@ -48,16 +50,16 @@ Es gibt zwei Arten von Daten, die in Produktempfehlungen verwendet werden:
 
 Bei der Installation des `magento/product-recommendations` aggregiert Adobe AI die Verhaltens- und Katalogdaten und erstellt für jeden Empfehlungstyp Produktempfehlungen. Der Produktempfehlungs-Service stellt diese Empfehlungen dann in Form eines Widgets, das das empfohlene Produkt (die empfohlenen _) enthält, in Ihrer Storefront_.
 
-Einige Empfehlungstypen verwenden Verhaltensdaten von Kundinnen und Kunden, um Modelle für maschinelles Lernen zu trainieren, um personalisierte Empfehlungen zu erstellen. Andere Empfehlungstypen verwenden nur Katalogdaten und verwenden keine Verhaltensdaten. Wenn Sie Produktempfehlungen schnell auf Ihrer Site verwenden möchten, können Sie die folgenden, nur für den Katalog geeigneten Empfehlungstypen verwenden:
+Einige Empfehlungstypen verwenden die Verhaltensdaten von Käufern, um Modelle für maschinelles Lernen zu trainieren und personalisierte Empfehlungen zu generieren. Andere verwenden nur Katalogdaten. Um schnell mit der Verwendung von Produktempfehlungen zu beginnen, wählen Sie aus den folgenden Empfehlungstypen auf Katalogbasis:
 
 - `More like this`
 - `Visual similarity`
 
 ### Kaltstart
 
-Ab wann können Empfehlungstypen verwendet werden, die Verhaltensdaten verwenden? Es kommt darauf an. Dies wird als &quot;_&quot;-_ bezeichnet.
+Ab wann können Empfehlungstypen verwendet werden, die Verhaltensdaten verwenden? Es kommt darauf an. Diese Situation wird als &quot;_-Problem_ bezeichnet.
 
-Das _Kaltstart_-Problem bezieht sich auf die Zeit, die ein Modell benötigt, um trainiert und effektiv zu werden. Für Produktempfehlungen bedeutet dies, dass Sie warten müssen, bis Adobe AI genügend Daten gesammelt hat, um seine Modelle für maschinelles Lernen zu trainieren, bevor Sie Empfehlungseinheiten auf Ihrer Site bereitstellen. Je mehr Daten die Modelle haben, desto genauer und nützlicher sind die Empfehlungen. Da die Datenerfassung auf einer Live-Site erfolgt, ist es am besten, diesen Prozess frühzeitig durch die Installation und Einrichtung des `magento/production-recommendations`-Moduls zu starten.
+Das _Kaltstart_-Problem ist die Zeit, die ein Modell für maschinelles Lernen benötigt, um zu trainieren, bevor es effektive Empfehlungen produzieren kann. Für Produktempfehlungen muss Adobe AI genügend Daten erfassen, um seine Modelle zu trainieren, bevor Sie Empfehlungseinheiten bereitstellen. Mehr Daten verbessern im Allgemeinen die Genauigkeit und Nützlichkeit von Empfehlungen. Da die Datenerfassung auf Ihrer Live-Site erfolgt, starten Sie diesen Prozess frühzeitig, indem Sie das `magento/product-recommendations`-Modul installieren und konfigurieren.
 
 Die folgende Tabelle enthält einige allgemeine Hinweise dazu, wie lange es dauert, bis für jeden Empfehlungstyp genügend Daten erfasst sind:
 
@@ -76,15 +78,15 @@ Andere Variablen, die sich auf die für das Training benötigte Zeit auswirken k
 
 Auf der Seite „Empfehlung erstellen[&#x200B; werden Bereitschaftsindikatoren angezeigt, damit Sie den Trainings-Fortschritt &#x200B;](create.md#readiness-indicators) jeden Empfehlungstyp visualisieren können.
 
-Während Daten auf Ihrer Live-Site erfasst werden und die Modelle für maschinelles Lernen trainiert werden, können Sie andere Test- und Konfigurationsaufgaben abschließen, die zum Einrichten von Empfehlungen erforderlich sind. Wenn Sie mit dieser Arbeit fertig sind, verfügen die Modelle über genügend Daten, um nützliche Empfehlungen zu erstellen, sodass Sie sie in Ihrer Storefront bereitstellen können.
+Während Ihre Live-Site Daten erfasst und die Modelle für maschinelles Lernen trainiert, führen Sie die verbleibenden Test- und Konfigurationsaufgaben aus. Sobald die Modelle über genügend Daten verfügen, um nützliche Empfehlungen zu generieren, stellen Sie die Empfehlungseinheiten in Ihrer Storefront bereit.
 
-Wenn auf Ihrer Site nicht genügend Traffic (Ansichten, Käufe, Trends) für die meisten Produkt-SKUs vorhanden ist, sind möglicherweise nicht genügend Daten vorhanden, um den Lernprozess abzuschließen. Dadurch kann der Bereitschaftsindikator im Admin-Bereich hängen bleiben. Die Bereitschaftsindikatoren sollen Händlern einen weiteren Datenpunkt bei der Auswahl des Recommendations-Typs bieten, der für ihren Store besser ist. Die Zahlen sind Richtwerte und erreichen möglicherweise nie 100 %. [Weitere &#x200B;](create.md#readiness-indicators) zu Bereitschaftsindikatoren.
+Wenn Ihre Site für die meisten Produkt-SKUs nicht ausreichend Traffic (Ansichten, Käufe oder Trends) erhält, wird der Lernprozess möglicherweise nicht abgeschlossen, sodass die Bereitschaftsindikatoren im Admin hängen bleiben. Bereitschaftsindikatoren helfen Händlern, den besten Empfehlungstyp für ihren Store auszuwählen, aber sie sind nur ein Leitfaden und erreichen möglicherweise nie 100 %. Weitere Informationen zu Bereitschaftsindikatoren. [Weitere &#x200B;](create.md#readiness-indicators) zu Bereitschaftsindikatoren.
 
 ### Empfehlungen für Backups {#backuprecs}
 
-Wenn die Eingabedaten nicht ausreichen, um alle angeforderten Empfehlungselemente in einer Einheit bereitzustellen, bietet Adobe Commerce Sicherungsempfehlungen zum Ausfüllen von Empfehlungseinheiten. Wenn Sie beispielsweise den `Recommended for you` Empfehlungstyp auf Ihrer Homepage bereitstellen, hat ein Erstkäufer auf Ihrer Site nicht genügend Verhaltensdaten generiert, um personalisierte Produkte korrekt zu empfehlen. In diesem Fall zeigt Adobe Commerce Elemente basierend auf dem `Most viewed` Empfehlungstyp an diesen Käufer an.
+Wenn unzureichende Eingabedaten eine Empfehlungseinheit daran hindern, alle angeforderten Elemente zurückzugeben, füllt Adobe Commerce sie mit Sicherungsempfehlungen. Wenn Sie beispielsweise den `Recommended for you` Empfehlungstyp auf der Homepage bereitgestellt haben, hat ein Erstkäufer möglicherweise nicht genügend Verhaltensdaten für personalisierte Empfehlungen generiert. In diesem Fall zeigt Adobe Commerce Elemente basierend auf dem `Most viewed `Empfehlungstyp“ an.
 
-Bei unzureichender Erfassung von Eingabedaten greifen die folgenden Empfehlungstypen auf `Most viewed` Empfehlungstyp zurück:
+Wenn die Erfassung der Eingabedaten nicht ausreicht, greifen die folgenden Empfehlungstypen auf `Most viewed` Empfehlungstyp zurück:
 
 - `Recommended for you`
 - `Viewed this, viewed that`
@@ -96,9 +98,9 @@ Bei unzureichender Erfassung von Eingabedaten greifen die folgenden Empfehlungst
 
 #### Einschränkungen
 
-- Anzeigenblocker und Datenschutzeinstellungen können verhindern, dass Ereignisse erfasst werden, und können dazu führen, dass die Interaktion und der Umsatz [Metriken](workspace.md#column-descriptions) nicht erfasst werden. Darüber hinaus werden einige Ereignisse möglicherweise nicht gesendet, weil der Käufer die Seite oder das Netzwerk verlassen hat.
+- Anzeigenblocker und Datenschutzeinstellungen können verhindern, dass Ereignisse erfasst werden, und können dazu führen, dass die Interaktion und der Umsatz [Metriken](workspace.md#column-descriptions) nicht erfasst werden. Darüber hinaus werden einige Ereignisse nicht gesendet, da der Käufer die Seite oder das Netzwerk verlassen hat.
 - [Headless-Implementierungen](headless.md) müssen das Eventing implementieren, um das Produktempfehlungs-Dashboard zu unterstützen.
-- Für konfigurierbare Produkte verwenden Produktempfehlungen das Bild des übergeordneten Produkts in der Empfehlungseinheit. Wenn für das konfigurierbare Produkt kein Bild angegeben ist, ist die Empfehlungseinheit für dieses spezifische Produkt leer.
+- Für konfigurierbare Produkte verwenden Produktempfehlungen das Bild des übergeordneten Produkts. Wenn das übergeordnete Produkt kein Bild hat, wird dieses Produkt nicht in der Empfehlungseinheit angezeigt.
 
 >[!NOTE]
 >

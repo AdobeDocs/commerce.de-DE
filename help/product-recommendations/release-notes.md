@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 2233
+source-wordcount: 2260
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Zu den Aktualisierungen gehören:
 ![Fehlerbehebung](../assets/fix.svg) Fehlerbehebungen und Verbesserungen
 ![Bug](../assets/bug.svg) Bekannte Probleme
 
-Informationen zum Produkt-[&#x200B; finden Sie in der Entwicklerdokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability).
+[Weitere Informationen zum Produkt-Support](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability).
 
 ## Gehostete Service-Aktualisierungen
 
@@ -73,11 +73,11 @@ _28. Juni 2024_
 
 _18. Juli 2023_
 
-![Neu](../assets/new.svg) [!DNL Product Recommendations] verfügt jetzt über eine GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/)-Abfrage.
+![Neu](../assets/new.svg) [!DNL Product Recommendations] verfügt jetzt über eine GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations)-Abfrage.
 
 _25. April 2023_
 
-![Neu](../assets/new.svg) [!DNL Product Recommendations] Kunden können jetzt die Vorteile der [SaaS-Preisindizierung](../price-index/price-indexing.md) nutzen.
+![Neu](../assets/new.svg) [!DNL Product Recommendations] Kunden können jetzt die [SaaS-Preisindizierung](../price-index/price-indexing.md) verwenden.
 
 ## Aktuelle Hauptversion
 
@@ -194,7 +194,7 @@ _15. September 2023_
 
 ![Neu](../assets/new.svg) Neue Module zur Unterstützung des [Saas Price Indexer](../price-index/price-indexing.md) hinzugefügt.
 ![Neu](../assets/new.svg) Es wurden neue Datenexportmodule hinzugefügt, die den Export weiterer Produktarten, einschließlich gebündelter Produkte und Geschenkgutscheine, unterstützen.
-![Fix](../assets/fix.svg) Die Tabellengröße der Produkte und der Preis-Feeds wurde stark reduziert. Bei den Tabellen `catalog_data_exporter_products` und `catalog_data_exporter_product_prices` sollte eine erhebliche Größenreduzierung zu verzeichnen sein.
+![Fix](../assets/fix.svg) Die Tabellengröße der Produkte und der Preis-Feeds wurde stark reduziert. Die Tabellen `catalog_data_exporter_products` und `catalog_data_exporter_product_prices` weisen eine erhebliche Größenreduzierung auf.
 
 #### Bekannte Einschränkungen
 
@@ -214,7 +214,7 @@ _20. März 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Korrigieren](../assets/fix.svg) Zuvor zeigte [!DNL Product Recommendations] einen Fehler an, wenn die Anzeigewährung auf eine nicht standardmäßige Währung umgeschaltet wurde. Der Wechsel zwischen Währungen funktioniert jetzt ordnungsgemäß.
+![Korrigieren](../assets/fix.svg) Zuvor wurde bei [!DNL Product Recommendations] ein Fehler angezeigt, wenn die Anzeigewährung auf eine nicht standardmäßige Währung umgeschaltet wurde. Der Wechsel zwischen Währungen funktioniert jetzt ordnungsgemäß.
 
 ### 4.0.0 von Magento/Product-Recommendations
 
@@ -252,9 +252,9 @@ _20. März 2023_
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
 ![Neu](../assets/new.svg) Hinzugefügte [Empfehlungstypen](type.md): Konversion (Ansicht zum Warenkorb), Konversion (Ansicht zum Kauf) und Kürzlich angezeigt. Diese neuen Empfehlungstypen sind ab Version 3.2.2 des `magento/product-recommendations`-Moduls verfügbar.
-![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem Fastly&#39;s Web Application Firewall (WAF) fälschlicherweise ein Cookie blockierte
-![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem Produkte, die der nicht standardmäßigen Store-Ansicht zugewiesen waren, beim Erstellen einer Empfehlung für diese _Store-Ansicht_ Bedienfeld „Recommendations-Produktvorschau“ angezeigt wurden
-![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem bestimmte Namen von Empfehlungseinheiten in Page Builder die Anzeige der Empfehlungseinheit in der Storefront verhinderten
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem Fastly&#39;s Web Application Firewall (WAF) fälschlicherweise ein Cookie blockierte.
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem Produkte, die der nicht standardmäßigen Store-Ansicht zugewiesen waren, beim Erstellen einer Empfehlung für diese _Store-Ansicht_ Bedienfeld „Recommendations-Produktvorschau“ angezeigt wurden.
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem bestimmte Namen von Empfehlungseinheiten in Page Builder verhinderten, dass die Empfehlungseinheit in der Storefront angezeigt wurde.
 
 ### 3.3.2 von Magento/Product-Recommendations
 
@@ -272,7 +272,7 @@ _20. März 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
-![Neu](../assets/new.svg) Es wurde Unterstützung für die Adobe Client-Datenschicht hinzugefügt, um die Erfassung von Verhaltensdaten über Adobe Commerce-Funktionen und -Services hinweg zu standardisieren. Weitere Informationen finden [&#x200B; in der &#x200B;](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md).
+![Neu](../assets/new.svg) Es wurde Unterstützung für die Adobe Client-Datenschicht hinzugefügt, um die Erfassung von Verhaltensdaten über Adobe Commerce-Funktionen und -Services hinweg zu standardisieren. Weitere Informationen finden Sie in der [Readme](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md).
 
 ### 3.2.6 von Magento/Product-Recommendations
 
@@ -297,15 +297,15 @@ _20. März 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
-![Beheben](../assets/fix.svg) Der Fehler „Daten zu konfigurierbaren Produktoptionen können nicht abgerufen werden“ während der Katalogsynchronisierung wurde behoben
-![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem der Store-Code nicht korrekt festgelegt wurde, als Sie die Konfiguration „Store-Code zur URL hinzufügen“ aktiviert hatten
-![Korrektur](../assets/fix.svg) Die Erkennung von Änderungen an der Admin Panel-Konfiguration wurde verbessert, um sicherzustellen, dass diese Änderungen in die Katalogsynchronisierungsdaten übernommen werden
+![Beheben](../assets/fix.svg) Der Fehler „Daten zu konfigurierbaren Produktoptionen können nicht abgerufen werden“ während der Katalogsynchronisierung wurde behoben.
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem der Store-Code nicht korrekt festgelegt wurde, als Sie die Konfiguration „Store-Code zur URL hinzufügen“ aktiviert hatten.
+![Korrektur](../assets/fix.svg) Die Erkennung von Änderungen an der Admin Panel-Konfiguration wurde verbessert, um sicherzustellen, dass diese Änderungen in den Katalogsynchronisierungsdaten widergespiegelt werden.
 
 ### 3.2.2 von Magento/Product-Recommendations
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
-![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt, [Empfehlungsergebnisse in der Vorschau anzuzeigen](create.md) zur Erstellungszeit. Dies kann erfordern, dass Sie Ihr Modul auf die neueste Version aktualisieren.
+![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt, [Empfehlungsergebnisse in der Vorschau anzuzeigen](create.md) zur Erstellungszeit. Diese Aktualisierung erfordert, dass Sie Ihr Modul auf die neueste Version aktualisieren.
 ![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt[&#x200B; den Katalogsynchronisierungsprozess &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/user-guides/data-services/catalog-sync) Admin zu überwachen und zu verwalten.
 ![Neu](../assets/new.svg) Es wurden [Filter](filters.md) hinzugefügt, um zu steuern, welche Produkte in Recommendations angezeigt werden.
 ![Neu](../assets/new.svg) Der Empfehlungstyp [Visuelle &#x200B;](type.md#visualsim)&quot; wurde hinzugefügt.
@@ -346,7 +346,7 @@ _20. März 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
-![Beheben](../assets/fix.svg) Der Fehler „Daten zu Produktoptionen können nicht abgerufen werden“, der beim Katalogexport auftreten konnte, wurde behoben.
+![Beheben](../assets/fix.svg) Der Fehler „Daten zu Produktoptionen können nicht abgerufen werden“, der beim Katalogexport aufgetreten ist, wurde behoben.
 ![Korrigieren](../assets/fix.svg) Das Währungssymbol in der Spalte _Umsatz_ im _[!DNL Product Recommendations]_-Dashboard spiegelt nun die konfigurierte Basiswährung korrekt wider.
 
 ### 3.0.4 von Magento/Product-Recommendations

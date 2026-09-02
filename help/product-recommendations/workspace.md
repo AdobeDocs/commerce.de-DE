@@ -15,7 +15,7 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
 source-wordcount: 921
 ht-degree: 0%
@@ -37,13 +37,13 @@ _Recommendations Workspace_
 
 Um sicherzustellen, dass jeder Funktionsbereich im Arbeitsbereich die richtigen Daten enthält, müssen Sie die Datenerfassung basierend auf der ausgewählten Storefront-Implementierung konfigurieren:
 
-1. Luma - Die Datenerfassung ist vorkonfiguriert verfügbar.
+1. Luma - Die Datenerfassung ist standardmäßig verfügbar.
 1. Headless - Die Datenerfassung muss je nach Storefront-Implementierung manuell konfiguriert werden.
 
-Wenn Sie eine Headless-Storefront verwenden, finden Sie in der folgenden Dokumentation weitere Informationen zu den erforderlichen Ereignissen, die Sie hinzufügen müssen:
+Weitere Informationen zu den erforderlichen Ereignissen, die Sie hinzufügen müssen, wenn Sie eine Headless-Storefront verwenden, finden Sie in der folgenden Dokumentation:
 
 - [Erforderliche Ereignisse](events.md) für das Produktempfehlungs-Dashboard.
-- [Storefront Events Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/), der als Voraussetzung hinzugefügt werden muss.
+- [Storefront Events Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework), der als Voraussetzung hinzugefügt werden muss.
 - [Beispiele](https://github.com/adobe/commerce-events/tree/main/examples) der Ereignisstruktur.
 
 ## Festlegen des Umfangs

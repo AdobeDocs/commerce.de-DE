@@ -14,20 +14,20 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 127067a1ef47c7d9e51c5792e03b568dd818fe8e
 workflow-type: tm+mt
-source-wordcount: 319
+source-wordcount: 300
 ht-degree: 0%
 
 ---
 
 # Entwicklung für Produktempfehlungen-Admins
 
-Produktempfehlungen sind ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, Umsätze steigern und die Kundenbindung steigern können. Produktempfehlungen werden in der Storefront in Form von Einheiten wie „Kunden, die dieses Produkt angesehen haben, haben es auch angesehen“, „Kunden, die dieses Produkt gekauft haben, haben auch gekauft“, „Empfohlen für Sie“ usw. angezeigt. Adobe Commerce-Produktempfehlungen basieren auf [Adobe AI](https://business.adobe.com/de/ai.html), das Algorithmen für künstliche Intelligenz und maschinelles Lernen verwendet, um eine gründliche Analyse der aggregierten Kundendaten durchzuführen. Wenn diese Daten mit Ihrem Commerce-Katalog kombiniert werden, ergeben sich für den Erstkäufer sehr ansprechende, relevante und personalisierte Erlebnisse.
+Produktempfehlungen sind ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, Umsätze steigern und die Kundenbindung steigern können. Produktempfehlungen werden in der Storefront in Form von Einheiten wie „Kunden, die dieses Produkt angesehen haben, haben auch dieses Produkt angesehen“, „Kunden, die dieses Produkt gekauft haben, haben auch gekauft“, „Empfohlen für Sie“ usw. angezeigt. [Adobe AI](https://business.adobe.com/de/ai.html) unterstützt Adobe Commerce Product Recommendations, das Algorithmen für künstliche Intelligenz und maschinelles Lernen verwendet, um eine umfassende Analyse aggregierter Kundendaten durchzuführen. Wenn diese Daten mit Ihrem Commerce-Katalog kombiniert werden, ergeben sich für den Erstkäufer sehr ansprechende, relevante und personalisierte Erlebnisse.
 
 >[!NOTE]
 >
->Wenn Ihre Storefront mit PWA Studio implementiert wird, lesen Sie den Abschnitt [Dokumentation zu PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Wenn Sie eine benutzerdefinierte Frontend-Technologie wie React oder Vue JS verwenden, lesen Sie das Benutzerhandbuch , um zu erfahren, wie Sie Produktempfehlungen in eine &quot;[&quot;-](headless.md) integrieren. Headless-Instanzen müssen Eventing implementieren, um den Arbeitsbereich Produktempfehlungen zu unterstützen.
+>Wenn Ihre Storefront mit PWA Studio implementiert wird, lesen Sie den Abschnitt [Dokumentation zu PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Erfahren Sie, wie Sie Produktempfehlungen in eine [Headless](headless.md)-Umgebung integrieren können, wenn Sie eine benutzerdefinierte Frontend-Technologie wie React oder Vue JS verwenden. Headless-Instanzen müssen Eventing implementieren, um den Arbeitsbereich Produktempfehlungen zu unterstützen.
 
 ## Architektonischer Überblick
 
@@ -35,7 +35,7 @@ Commerce Product Recommendations werden allgemein als SaaS bereitgestellt. Auf d
 
 ![Architekturdiagramm für Produktempfehlungen](assets/arch-diag-sensei.svg)
 
-Sobald die Empfehlungsmodule installiert und konfiguriert sind, beginnt Ihre Storefront mit der Erfassung von Verhaltensdaten. Adobe AI verarbeitet diese Verhaltensdaten zusammen mit Ihren Katalogdaten und berechnet Produktverknüpfungen, die vom Recommendations-Service genutzt werden. An dieser Stelle kann der Händler Produktempfehlungseinheiten direkt über die Admin-Benutzeroberfläche für seine Storefront erstellen, verwalten und bereitstellen.
+Nach der Installation und Konfiguration ermöglichen es die Empfehlungsmodule Ihrer Storefront, Verhaltensdaten zu erfassen. Adobe AI kombiniert diese Daten mit Ihren Katalogdaten, um die vom Recommendations-Service verwendeten Produktverknüpfungen zu berechnen. Anschließend können Sie Einheiten für Produktempfehlungen direkt über die Admin-Benutzeroberfläche erstellen, verwalten und bereitstellen.
 
 ## Nächste Schritte
 

@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-06-23
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 578
+source-wordcount: 554
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Weitere [&#x200B; finden  [!DNL Product Recommendations]  unter „Verwenden &#x
 
 ### Hinzufügen des Empfehlungstyps für visuelle Ähnlichkeit {#vissimsupport}
 
-Mit _Empfehlungstyp &quot;_ Ähnlichkeit“ können Sie eine Empfehlungseinheit auf Ihrer Produktdetailseite bereitstellen, die Produkte anzeigt, die dem angezeigten Produkt [visuell ähnlich](type.md#visualsim) sind. Dieser Empfehlungstyp ist am nützlichsten, wenn Bilder und visuelle Aspekte der Produkte wichtige Teile des Einkaufserlebnisses sind. Installieren Sie _Empfehlungstyp &quot;_ Ähnlichkeit“, indem Sie den folgenden Befehl ausführen:
+Der Empfehlungstyp _Visuelle Ähnlichkeit_ zeigt Produkte [visuell ähnlich](type.md#visualsim) dem Produkt an, das auf einer Produktdetailseite angezeigt wird. Dies ist am nützlichsten, wenn Produktbilder und Erscheinungsbild für das Einkaufserlebnis wichtig sind. Um es zu installieren, führen Sie den folgenden Befehl aus:
 
 ```bash
 composer require magento/module-visual-product-recommendations
@@ -73,11 +73,11 @@ composer require magento/module-visual-product-recommendations
 
 1. Konfigurieren Sie nach der Installation des `magento/product-recommendations` den [Commerce Services-Connector](../landing/saas.md) indem Sie API-Schlüssel angeben und einen SaaS-Datenspeicher auswählen.
 
-   Durch die Konfiguration dieser Verbindung wird die Datensynchronisation und Kommunikation zwischen der Commerce-Instanz, dem Katalog-Service und anderen unterstützenden Services aktiviert. Die Datensynchronisation wird von der [SaaS-Datenexporterweiterung“ &#x200B;](../data-export/overview.md).
+   Durch die Konfiguration dieser Verbindung wird die Datensynchronisation und Kommunikation zwischen der Commerce-Instanz, dem Katalog-Service und anderen unterstützenden Services aktiviert. Die [SaaS-Datenexporterweiterung](../data-export/overview.md) übernimmt die Datensynchronisierung.
 
 1. Um sicherzustellen, dass der Katalogexport ordnungsgemäß ausgeführt werden kann, überprüfen Sie, ob [cron](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)-Vorgänge und [indexers](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers) ausgeführt werden und der `Product Feed`-Indexer auf `Update by Schedule` festgelegt ist.
 
-Nachdem Sie die Commerce-Anwendung erfolgreich mit Commerce Services verknüpft und den [SaaS-Datenspeicher](../landing/saas.md#saas-configuration) angegeben haben, beginnt die Katalogsynchronisierung. Sie können [&#x200B; überprüfen](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) ob Verhaltensdaten an Ihre Storefront gesendet werden.
+Nachdem Sie die Commerce-Anwendung erfolgreich mit Commerce Services verknüpft und den [SaaS-Datenspeicher](../landing/saas.md#saas-configuration) angegeben haben, beginnt die Katalogsynchronisierung. Sie können [&#x200B; überprüfen](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify) ob Verhaltensdaten an Ihre Storefront gesendet werden.
 
 ## Überwachen und Fehlerbehebung bei der Datensynchronisation
 
@@ -103,7 +103,7 @@ Um auf eine Hauptversion zu aktualisieren, z. B. von 5.0 auf 6.0, müssen Sie di
 }
 ```
 
-Lassen Sie uns die Hauptversion von `5.0` auf `6.0` anheben:
+Aktualisieren Sie die Hauptversion von `5.0` auf `6.0`:
 
 ```json
 "require": {

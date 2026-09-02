@@ -26,9 +26,9 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 last-update: 2026-07-29
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 2803
+source-wordcount: 2856
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Dieser Artikel richtet sich an Entwicklerinnen und Entwickler oder Systemintegra
 >
 > **HIPAA-Bereitschaft**
 >
->Wenn Sie Adobe Commerce mit der HIPAA-fähigen Erweiterung und dem Add-on für das Gesundheitswesen verwenden, verarbeiten Sie keine geschützten Gesundheitsinformationen (Protected Health Information, PHI) über Live Search> Live Search ist kein HIPAA-fähiger Dienst.
+>Wenn Sie Adobe Commerce mit der HIPAA-fähigen Erweiterung und dem Add-on für das Gesundheitswesen verwenden, verarbeiten Sie keine geschützten Gesundheitsinformationen (Protected Health Information, PHI) über die Live Search. Die Live-Suche ist kein HIPAA-fähiger Service.
 >
 >Weitere Informationen finden Sie unter [HIPAA-Bereitschaft auf Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) und in der [Operations](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/hipaa-ready-service/operations)-Anleitung, in der die Live-Suche unter den nicht HIPAA-fähigen Commerce-Services aufgeführt ist.
 
@@ -291,7 +291,7 @@ Wenn Sie diese Konfiguration ändern, wird die Meldung `Page cache is invalidate
 
 ### Kategorien zuweisen
 
-In [!DNL Live Search] zurückgegebene Produkte müssen einer [Kategorie“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/categories/categories). In Luma werden Produkte beispielsweise in Kategorien wie „Männer“, „Frauen“ und „Ausrüstung“ unterteilt. Unterkategorien sind auch für „Tops“, „Bottom“ und „Uhren“ eingerichtet. Diese Kategoriezuweisungen verbessern die Granularität beim Filtern.
+In [!DNL Live Search] zurückgegebene Produkte müssen einer [Kategorie“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/categories/categories). In Luma zum Beispiel werden Produkte in Kategorien wie „Männer“, „Frauen“ und „Ausrüstung“ eingeteilt. Unterkategorien sind auch für „Tops“, „Bottoms“ und „Uhren“ eingerichtet. Diese Kategoriezuweisungen verbessern die Granularität beim Filtern.
 
 ## &#x200B;6. Testen der Verbindung {#test}
 
@@ -422,9 +422,9 @@ Da [!DNL Live Search] keinen Zugriff auf die vollständige Produktdatenbank hat,
 Adobe empfiehlt, die SaaS-APIs direkt aufzurufen - insbesondere den Catalog Service-Endpunkt.
 
 - Leistungssteigerung und Reduzierung der Prozessorlast durch Umgehung des Commerce-Datenbank-/GraphQL-Prozesses
-- Nutzen Sie die [!DNL Catalog Service] Federation, um [!DNL Live Search], [!DNL Catalog Service] und [!DNL Product Recommendations] von einem einzigen Endpunkt aus aufzurufen.
+- Um die Leistung zu steigern und die Prozessorlast zu reduzieren, rufen Sie [!DNL Live Search], [!DNL Catalog Service] und [!DNL Product Recommendations] von einem einzelnen Endpunkt aus mithilfe [!DNL Catalog Service] -Verbunds auf.
 
-Für einige Anwendungsfälle ist es möglicherweise besser, [!DNL Catalog Service] für Produktdetails und ähnliche Fälle anzurufen. Weitere Informationen finden [&#x200B; unter &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product).
+Für einige Anwendungsfälle ist es möglicherweise besser, die [!DNL Catalog Service] für Produktdetails und ähnliche Szenarien aufzurufen. Weitere Informationen finden Sie in [&#x200B; GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product)Abfrage „refineProduct“.
 
 Wenn Sie über eine benutzerdefinierte Headless-Implementierung verfügen, finden Sie in den [!DNL Live Search] Referenzimplementierungen weitere Informationen:
 
@@ -486,7 +486,7 @@ Admins können auch die Sprache des [Suchindex](settings.md#language) festlegen,
 
 Der Code für das Widget „Produktlistenseite“ und das Widget &quot;[!DNL Live Search]&quot; kann von GitHub heruntergeladen werden.
 
-Entwickler, die Zugriff auf den Code haben, können seine Funktionsweise und sein Aussehen vollständig anpassen. Sie hosten den Code auf ihren eigenen Servern, verwenden jedoch weiterhin den [!DNL Live Search].
+Entwickler, die Zugriff auf den Code haben, können seine Funktionsweise und sein Aussehen anpassen. Sie hosten den Code auf ihren eigenen Servern, verwenden jedoch weiterhin den [!DNL Live Search].
 
 - [PLP-Widget](https://github.com/adobe/storefront-product-listing-page)
 - [Suchleiste](https://github.com/adobe/storefront-search-as-you-type)
@@ -538,7 +538,7 @@ Dieses Modul fügt zusätzliche Kontexte zu GraphQL-Abfragen hinzu:
 
 ### PWA-Support
 
-[!DNL Live Search] funktioniert mit PWA Studio, aber Storefront-Entwicklerinnen und -Entwickler sehen möglicherweise leichte Unterschiede im Vergleich zu anderen Commerce-Implementierungen, insbesondere in bestimmten GraphQL-basierten Szenarien und allgemeinen Reaktionsmerkmalen.
+[!DNL Live Search] arbeitet mit PWA Studio zusammen, aber Storefront-Entwicklerinnen und -Entwickler sehen Unterschiede im Vergleich zu anderen Commerce-Implementierungen, insbesondere in bestimmten GraphQL-basierten Szenarien und Reaktionsmerkmalen.
 
 - Die aktuelle PWA-Implementierung von [!DNL Live Search] benötigt mehr Verarbeitungszeit, um Suchergebnisse zurückzugeben, als mit der nativen Commerce-Storefront [!DNL Live Search].
 - [!DNL Live Search] in PWA unterstützt nicht [Ereignisverarbeitung](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Daher funktionieren Suchberichte und intelligentes Merchandising nicht in PWA-Storefronts.

@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: 1491
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
    ![Reihenfolge der Empfehlungen](assets/create-recommendation-select-placement.png)
    _Empfehlungsreihenfolge auf Seite_
 
-1. (Optional) Im Abschnitt _Filter_ können Sie [Filter anwenden](filters.md) um zu steuern, welche Produkte in der Empfehlungseinheit angezeigt werden.
+1. (Optional) Um zu steuern, welche Produkte in der Empfehlungseinheit angezeigt werden, [&#x200B; Sie &#x200B;](filters.md) Abschnitt _Filter_ Filter.
 
    ![Empfehlungsfilter](assets/create-recommendation-filter-products.png)
    _Recommendations-Produktfilter_
@@ -100,23 +100,23 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
 ## Bereitschaftsindikatoren
 
-Bereitschaftsindikatoren zeigen, welche Empfehlungstypen basierend auf den verfügbaren Katalog- und Verhaltensdaten am besten abschneiden. Sie können auch Bereitschaftsindikatoren verwenden, um festzustellen, ob Probleme mit Ihrem [Eventing](events.md) vorliegen oder ob Sie nicht über ausreichend Traffic verfügen, um den Empfehlungstyp auszufüllen.
+Bereitschaftsindikatoren zeigen, welche Empfehlungstypen mit Ihren verfügbaren Katalog- und Verhaltensdaten am besten abschneiden. Verwenden Sie sie, um Ereignisprobleme oder unzureichenden Traffic zu identifizieren, um einen Empfehlungstyp auszufüllen.
 
-Bereitschaftsindikatoren werden entweder in [statisch-basiert](#static-based) oder [dynamisch-](#dynamic-based) kategorisiert. Verwenden Sie nur statische Katalogdaten, während dynamische Verhaltensdaten von Ihren Kunden verwendet werden. Diese Verhaltensdaten werden verwendet, um [Modelle für maschinelles Lernen](events.md) zu trainieren, um personalisierte Empfehlungen zu erstellen und ihren Bereitschaftswert zu berechnen.
+Bereitschaftsindikatoren werden in zwei Kategorien unterteilt: [statisch](#static-based) und [dynamisch](#dynamic-based). Statische Empfehlungen verwenden nur Katalogdaten. Dynamische Empfehlungen verwenden die Verhaltensdaten der Käufer, um Modelle für maschinelles Lernen zu trainieren, personalisierte Empfehlungen zu generieren und den Bereitschaftswert jeder Empfehlung zu berechnen.
 
 ### Berechnen der Bereitschaftsindikatoren
 
 Die Bereitschaftsindikatoren geben an, wie viel das Modell trainiert wird. Die Indikatoren hängen von den erfassten Ereignistypen, der Breite der mit ihnen interagierten Produkte und der Größe des Katalogs ab.
 
-Der Bereitschaftsindikator-Prozentsatz wird aus einer Berechnung abgeleitet, die angibt, wie viele Produkte je nach Empfehlungstyp empfohlen werden können. Statistiken werden auf Produkte angewendet, die auf der Gesamtgröße des Katalogs, dem Volumen der Interaktionen (wie Ansichten, Klicks, Warenkorb-Aufnahmen) und dem Prozentsatz der SKUs basieren, die diese Ereignisse innerhalb eines bestimmten Zeitfensters registrieren. So können die Bereitschaftsindikatoren beispielsweise während der Traffic-Zeit an Feiertagen höhere Werte anzeigen als zu Zeiten normalen Volumens.
+Der Bereitschaftsindikator-Prozentsatz schätzt den Anteil der Produkte, die für einen bestimmten Empfehlungstyp empfohlen werden könnten. Er wird anhand der Kataloggröße, des Interaktionsvolumens und des Prozentsatzes der SKUs berechnet, die die relevanten Ereignisse innerhalb eines definierten Zeitfensters aufzeichnen. Beispielsweise können Bereitschaftsindikatoren während des Traffics an Feiertagen höher sein als während normaler Traffic-Zeiten.
 
-Aufgrund dieser Variablen kann der Bereitschaftsindikator in Prozent schwanken. Dies erklärt, warum Sie möglicherweise feststellen, dass Empfehlungstypen immer häufiger „bereit zur Bereitstellung“ sind.
+Aufgrund dieser Variablen kann der Bereitschaftsindikator in Prozent schwanken. Dies erklärt, warum Empfehlungstypen zwischen der „Bereitstellungs-Bereitschaft“ schwanken.
 
-Die Bereitschaftsindikatoren werden auf der Grundlage mehrerer Faktoren berechnet:
+Die Bereitschaftsindikatoren werden anhand von zwei Faktoren berechnet:
 
 * Ausreichende Größe des Ergebnissatzes: Werden in den meisten Szenarien genügend Ergebnisse zurückgegeben, um die Verwendung von [Backup-Empfehlungen](events.md#backuprecs) zu vermeiden?
 
-* Ausreichende Vielfalt der Ergebnismengen: Stellen die zurückgegebenen Produkte eine Vielzahl von Produkten aus Ihrem Katalog dar? Das Ziel bei diesem Faktor ist zu vermeiden, dass eine Minderheit von Produkten die einzigen empfohlenen Elemente auf der Website ist.
+* Stellen die zurückgesandten Produkte eine Vielzahl von Produkten aus Ihrem Katalog dar? Dadurch wird sichergestellt, dass die Empfehlungen auf Ihrer Site nicht auf eine kleine Untergruppe von Produkten beschränkt sind.
 
 Auf der Grundlage der oben genannten Faktoren wird ein Bereitschaftswert wie folgt berechnet und angezeigt:
 
@@ -168,7 +168,7 @@ _Empfehlungstyp_
 >
 >Die Indikatoren werden möglicherweise nie 100 % erreichen.
 
-Der Bereitschaftsindikator Prozent für Empfehlungstypen, die von Katalogdaten abhängen, ändert sich nicht sehr stark, da sich der Katalog des Händlers nicht oft ändert. Der Bereitschaftsindikator für Prozentsätze der Empfehlungstypen, die auf den Verhaltensdaten der Käufer basieren, kann sich jedoch je nach täglicher Käuferaktivität häufig ändern.
+Der Bereitschaftsprozentsatz für katalogbasierte Empfehlungstypen ändert sich in der Regel nur wenig, da Kataloge relativ stabil sind. Im Gegensatz dazu kann sich der Bereitschaftsprozentsatz für Empfehlungstypen, die auf Käuferverhaltensdaten basieren, häufig mit der täglichen Käuferaktivität ändern.
 
 #### Was zu tun ist, wenn der Bereitschaftsindikator in Prozent niedrig ist
 
@@ -180,29 +180,29 @@ Ein niedriger Bereitschaftsprozentsatz zeigt an, dass nicht viele Produkte aus I
 
 Im Folgenden sind mögliche Gründe und Lösungen für häufige Bewertungen der geringen Bereitschaft aufgeführt:
 
-* **Statisch-basiert** - Niedrige Prozentsätze für diese Indikatoren können durch fehlende Katalogdaten für die anzeigbaren Produkte verursacht werden. Wenn sie niedriger sind als erwartet, kann dieses Problem durch eine vollständige Synchronisierung behoben werden.
-* **Dynamisch-basiert** - Niedrige Prozentsätze für dynamisch-basierte Indikatoren können durch Folgendes verursacht werden:
+* **Statisch-basiert** - Fehlende Katalogdaten für die anzeigbaren Produkte führen zu niedrigen Prozentsätzen für diese Indikatoren. Wenn sie niedriger sind als erwartet, kann dieses Problem durch eine vollständige Synchronisierung behoben werden.
+* **Dynamisch-basiert** - Die folgenden Faktoren führen bei dynamischen Indikatoren zu niedrigen Prozentsätzen:
 
-   * Fehlende Felder in den erforderlichen [Storefront-Ereignissen](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) für die entsprechenden Empfehlungstypen (requestId, Produktkontext usw.)
-   * Geringer Traffic im Store, sodass das Volumen der Verhaltensereignisse, die wir erhalten, gering ist.
-   * Die Vielfalt der Verhaltensereignisse der Storefront in verschiedenen Produkten in Ihrem Store ist gering. Wenn beispielsweise nur zehn Prozent Ihrer Produkte die meiste Zeit angesehen oder gekauft werden, sind die entsprechenden Bereitschaftsindikatoren niedrig.
+  * Fehlende Felder in den erforderlichen [Storefront-Ereignissen](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) für die entsprechenden Empfehlungstypen (requestId, Produktkontext usw.)
+  * Geringer Traffic im Store, sodass das Volumen der Verhaltensereignisse, die wir erhalten, gering ist.
+  * Die Vielfalt der Verhaltensereignisse der Storefront in verschiedenen Produkten in Ihrem Store ist gering. Wenn beispielsweise nur zehn Prozent Ihrer Produkte die meiste Zeit angesehen oder gekauft werden, sind die entsprechenden Bereitschaftsindikatoren niedrig.
 
 ## Recommendations-Vorschau {#preview}
 
-Das Bedienfeld _Empfohlene Produktvorschau_ ist immer verfügbar mit einer Auswahl von Produkten, die in der Empfehlungseinheit angezeigt werden können, wenn sie in der Storefront bereitgestellt werden.
+Das Bedienfeld _Empfohlene Produktvorschau_ ist immer mit einer Auswahl von Beispielprodukten verfügbar, die in der Empfehlungseinheit angezeigt werden, wenn sie in der Storefront bereitgestellt werden.
 
 Um eine Empfehlung zu testen, wenn Sie in einer Nicht-Produktionsumgebung arbeiten, können Sie Empfehlungsdaten aus einer ([&#x200B; Quelle) &#x200B;](settings.md). Händler können so mit Regeln experimentieren und eine Vorschau der Recommendations anzeigen, bevor sie sie in der Produktion bereitstellen.
 
 | Feld | Beschreibung |
 |---|---|
-| -Name | Der Name des Produkts. |
+| Name | Der Name des Produkts. |
 | SKU | Die dem Produkt zugewiesene Lagerhaltungseinheit |
 | Preis | Der Preis des Produkts. |
 | Ergebnistyp | Primär - gibt an, dass genügend Schulungsdaten erfasst wurden, um eine Empfehlung anzuzeigen.<br />Backup - gibt an, dass nicht genügend Schulungsdaten erfasst wurden, sodass eine Backup-Empfehlung zum Ausfüllen des Slots verwendet wird. Unter [Verhaltensdaten](events.md) erfahren Sie mehr über Modelle für maschinelles Lernen und Empfehlungen für Backups. |
 
-Experimentieren Sie beim Erstellen Ihrer Empfehlungseinheit mit dem Seitentyp, dem Empfehlungstyp und den Filtern, um sofortiges Echtzeit-Feedback zu den einzuschließenden Produkten zu erhalten. Sobald Sie verstehen, welche Produkte angezeigt werden, können Sie die Empfehlungseinheit an Ihre Geschäftsanforderungen anpassen.
+Um anzuzeigen, welche Produkte eine Empfehlungseinheit in Echtzeit enthält, experimentieren Sie beim Erstellen mit dem Seitentyp, dem Empfehlungstyp und den Filtern. Konfigurieren Sie dann das Gerät je nach den zurückgegebenen Produkten entsprechend Ihren Geschäftsanforderungen.
 
-Adobe Commerce [Filter](filters.md) Empfehlungen, um die Anzeige doppelter Produkte zu vermeiden, wenn mehrere Empfehlungseinheiten auf einer Seite bereitgestellt werden. Daher können sich die Produkte, die im Vorschaubereich angezeigt werden, von denen unterscheiden, die in der Storefront angezeigt werden.
+Wenn mehrere Empfehlungseinheiten auf derselben Seite bereitgestellt werden, verwendet Adobe Commerce [Filter](#filters.md), um doppelte Produkte aus den angezeigten Empfehlungen zu entfernen. Daher kann das Vorschaufenster einen anderen Satz von Produkten anzeigen als die Storefront.
 
 >[!NOTE]
 >

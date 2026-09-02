@@ -18,16 +18,16 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 1421
+source-wordcount: 1409
 ht-degree: 0%
 
 ---
 
 # Grenzen und Beschränkungen
 
-Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüfen Sie die folgenden Grenzen und Beschränkungen, um sicherzustellen, dass [!DNL Live Search] und [!DNL Catalog Service] den Anforderungen Ihres Unternehmens entsprechen. Wenn Sie erweiterte Suchfunktionen wie Inhaltssuche, BYOA (bring-your-own-algorithm) oder attributbasiertes Merchandising benötigen, sollten Sie eine Suchlösung eines Drittanbieters in Betracht ziehen.
+Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Um sicherzustellen, dass [!DNL Live Search] und [!DNL Catalog Service] den Anforderungen Ihres Unternehmens entsprechen, überprüfen Sie die folgenden Grenzen und Einschränkungen. Wenn Sie erweiterte Suchfunktionen wie Inhaltssuche, BYOA (bring-your-own-algorithm) oder attributbasiertes Merchandising benötigen, sollten Sie eine Suchlösung eines Drittanbieters in Betracht ziehen.
 
 ## Allgemein
 
@@ -41,14 +41,14 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 - Der Suchadapter unterstützt keine Produktattribute, die mit einem benutzerdefinierten Quellmodell erstellt und als Facetten verwendet werden. Um diese Funktion zu unterstützen, müssen Sie das Widget [Produktlistenseite“ &#x200B;](plp-styling.md).
 - Benutzerdefinierte Produkttypen werden nicht unterstützt.
 - Benutzerdefinierte Attribute, die programmgesteuert mit `"is_user_defined": false` erstellt wurden, werden nicht unterstützt.
-- Sie können Ergebnisse mithilfe der Bedingungen „Beginnt mit“ oder „Enthält“ mit einigen Einschränkungen filtern, wie in der [Entwicklerdokumentation“ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations).
+- Sie können Ergebnisse mithilfe der Bedingungen „Beginnt mit“ oder „Enthält“ mit einigen Einschränkungen filtern, wie in der [Entwicklerdokumentation“ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#limitations).
 - Sie können Leistungsmetriken nur innerhalb des letzten Jahres verfolgen.
 - Wenn eine Suchabfrage mehrere Wörter enthält, werden diese aufgrund des Leerzeichens zwischen den Wörtern als separate Suchbegriffe behandelt. Verwenden Sie [Synonyme](./synonyms.md) wenn Sie mehrwortige Suchabfragen berücksichtigen möchten.
 - [!DNL Live Search] unterstützt [Suchbegriff-Umleitungen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-terms) nicht nativ. Implementieren Sie Weiterleitungen mithilfe von Fastly oder einer anderen benutzerdefinierten Konfiguration.
 
 ## Indizierung
 
-- [!DNL Live Search] [indizes](indexing.md) bis zu insgesamt 450 Produktattribute pro Shop-Ansicht. Diese sind wie folgt verteilt:
+- [!DNL Live Search] [indizes](indexing.md) bis zu insgesamt 450 Produktattribute pro Shop-Ansicht. Diese Attribute verteilen sich wie folgt:
   - 50 sortierbare Attribute
   - 200 filterbare Attribute
   - 200 durchsuchbare Attribute
@@ -61,28 +61,28 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 - Aus dem Satz definierter filterbarer Attribute können Sie bis zu 100 Attribute als Facetten konfigurieren.
 - Innerhalb einer Facette können maximal 100 Buckets zurückgegeben werden. Wenn Sie mehr als 100 Behälter zurückgeben müssen, erstellen [ein Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide), damit Adobe die Leistungsauswirkungen analysieren und ermitteln kann, ob es möglich ist, diesen Grenzwert für Ihre Umgebung zu erhöhen.
 - Dynamische Facetten können Leistungsprobleme bei großen Indizes und Indizes mit hoher Ordinalität verursachen. Wenn Sie dynamische Facetten erstellt haben und eine Leistungsbeeinträchtigung oder das Laden einer Seite mit Zeitüberschreitungsfehlern bemerken, versuchen Sie, Ihre Facetten zu ändern und anzuheften, um festzustellen, ob dies Ihr Leistungsproblem behebt.
-- Lagerstatus (`quantity_and_stock_status`) wird nicht als Facette unterstützt. In Admin können Sie [!UICONTROL Display Out of Stock Products] = [!UICONTROL No] festlegen, um nicht vorrätige Produkte zu filtern. Dies wird im `[PLP Widget](plp-styling.md)`-Modul standardmäßig unterstützt. Weitere Informationen finden Sie [Verwalten von nicht vorrätigen Produkten](manage-out-of-stock-products.md).
+- Lagerstatus (`quantity_and_stock_status`) wird nicht als Facette unterstützt. In Admin können Sie [!UICONTROL Display Out of Stock Products] = [!UICONTROL No] festlegen, um nicht vorrätige Produkte zu filtern. Diese Funktion wird nativ im `[PLP Widget](plp-styling.md)`-Modul unterstützt. Weitere Informationen finden Sie [Verwalten von nicht vorrätigen Produkten](manage-out-of-stock-products.md).
 - Datentypattribute werden nicht als Facette unterstützt.
 - Änderungen, die an den Attributmetadaten vorgenommen werden, nachdem dieses Attribut als Facette hinzugefügt wurde, werden in der Facette nicht widergespiegelt.
 - Sie können bis zu 50 sortierbare Attribute und 200 durchsuchbare Attribute haben.
 
 ## Abfrage
 
-- [!DNL Live Search] verwendet einen eindeutigen [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)Endpunkt für Abfragen zur Unterstützung von Funktionen wie dynamisches Facettieren und Suche nach eigener Eingabe. Obwohl es der [GraphQL-API](https://developer.adobe.com/commerce/webapi/graphql/) ähnelt, gibt es einige Unterschiede, und einige Felder sind möglicherweise nicht vollständig kompatibel.
+- [!DNL Live Search] verwendet einen eindeutigen [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)Endpunkt für Abfragen zur Unterstützung von Funktionen wie dynamisches Facettieren und Suche nach eigener Eingabe. Obwohl es der [GraphQL-API](https://developer.adobe.com/commerce/webapi/graphql/) ähnelt, gibt es einige Unterschiede, und einige Felder sind nicht vollständig kompatibel.
 - Die maximale Anzahl von Ergebnissen, die in einer Suchanfrage zurückgegeben werden können, beträgt 10.000.
 - Die maximale Anzahl von Ergebnissen pro Seite ist 100.
 - Es ist nicht möglich, Ergebnisse mithilfe eines Attributs vom Typ Datum zu filtern.
 
 >[!NOTE]
 >
->Für die Sortierung nach Position muss ein gültiger `categoryPath` oder `categoryIds` Filter aktiv sein. [Weitere Informationen](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#error-handling-for-categorypath-and-categoryids).
+>Für die Sortierung nach Position muss ein gültiger `categoryPath` oder `categoryIds` Filter aktiv sein. [Weitere Informationen](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#error-handling-for-categorypath-and-categoryids).
 
 ## Merchandising suchen
 
 - Die maximale Anzahl von Merchandising-[&#x200B; (Regeln](rules.md) pro Store-Ansicht ist 50.
 - Die maximale Anzahl von Bedingungen pro Regel ist 10.
 - Die maximale Anzahl von Ereignissen pro Regel ist 25.
-- Regeln und manuell sortierte Produkte werden auf die Suchergebnisse angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sodass sie etwa nach Name oder Preis sortiert wird, sind Regeln und manuelle Rankings nicht mehr wirksam.
+- Regeln und manuell sortierte Produkte werden auf die Suchergebnisse angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sind Regeln und manuelle Rankings nicht mehr wirksam.
 - Um unvorhersehbare Ergebnisse in paginierten Antworten zu vermeiden, sollte die Anzahl der angehefteten Produkte die angeforderte Seitengröße nicht überschreiten.
 
 ## Synonyme
@@ -109,7 +109,7 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 
 ## [!DNL Storefront popover]
 
-- Die [[!DNL popover]](storefront-popover.md) ist nur für Stores verfügbar, die das Design *Luma* verwenden, oder für ein benutzerdefiniertes Design, das auf &quot;*&quot;*. Breadcrumbs auf der Suchergebnisseite haben keinen *Luma*-Stil.
+- Die [[!DNL popover]](storefront-popover.md) ist nur für Stores verfügbar, die das Design *Luma* verwenden, oder für ein benutzerdefiniertes Design, das auf &quot;*&quot;*. Breadcrumbs auf der Suchergebnisseite haben keinen *(Luma*-Stil.
 - Das [!DNL popover] unterstützt das Design &quot;*&quot;*.
 - Die [!DNL popover] wird im Schnellbestellungsformular nicht unterstützt.
 - Wunschlisten und Produktvergleiche werden nicht unterstützt.

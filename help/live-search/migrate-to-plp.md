@@ -16,9 +16,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 2105
+source-wordcount: 2114
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ Vor Beginn der Migration:
 
 1. Sichern Sie Ihre Datenbank und Ihren Code.
 1. Dokumentieren Sie aktuelle Anpassungen.
-1. Überprüfen Sie [Grenzen und Beschränkungen](boundaries-limits.md) um sicherzustellen, dass das PLP-Widget Ihren Anforderungen entspricht.
+1. Um sicherzustellen, dass das PLP-Widget Ihren Anforderungen entspricht, überprüfen Sie [Grenzen und Beschränkungen](boundaries-limits.md).
 1. Planen Sie die Migration in einer Zeit mit geringem Traffic.
-1. Benachrichtigen Sie die Stakeholder über potenzielle Änderungen am Verhalten der Storefront.
+1. Um Stakeholder vorzubereiten, benachrichtigen Sie sie über potenzielle Änderungen am Verhalten der Storefront.
 
 **Überprüfen Sie die aktuelle Implementierung**:
 
@@ -95,7 +95,7 @@ Zusätzliche Arbeit ist erforderlich, wenn Ihre Implementierung eine der folgend
 - Benutzerdefinierte PLP-Layouts, die Luma-Vorlagen überschreiben.
 - Benutzerdefiniertes CSS oder JavaScript für suchadapterspezifische Elemente.
 - Benutzerdefinierte Vorlagenänderungen an PLP oder zugehörigen Dateien.
-- Design erbt nicht von Luma (z. B. benutzerdefiniertes Design von Grund auf).
+- Design erbt nicht von Luma (z. B. wird das benutzerdefinierte Design unabhängig erstellt).
 
 **Benutzerdefinierte Produktattribute**:
 
@@ -131,7 +131,7 @@ Führen Sie für Implementierungen ohne spezielle Anpassungen die folgenden Schr
 
 ### Schritt 1: Upgrade-[!DNL Live Search]
 
-Aktualisieren Sie Ihre [!DNL Live Search]-Erweiterung auf Version 4.0 oder höher, um auf das PLP-Widget zuzugreifen.
+Um auf das PLP-Widget zuzugreifen, aktualisieren Sie Ihre [!DNL Live Search]-Erweiterung auf Version 4.0 oder höher.
 
 **Rolle**: Händler oder Partner
 
@@ -147,7 +147,7 @@ Aktualisieren Sie Ihre [!DNL Live Search]-Erweiterung auf Version 4.0 oder höhe
    bin/magento module:enable Magento_AdvancedSearch
    ```
 
-1. Aktualisieren Sie `composer.json` so, dass [!DNL Live Search] 4.0 oder höher erforderlich ist:
+1. Um [!DNL Live Search] 4.0 oder höher zu benötigen, aktualisieren Sie `composer.json`:
 
    ```json
    "require": {
@@ -180,7 +180,7 @@ Konfigurieren Sie das PLP-Widget in Commerce Admin.
 
 **Rolle**: Händler
 
-Das PLP-Widget ist standardmäßig für Neuinstallationen von [!DNL Live Search] 4.0.0 und höher aktiviert. Beim Upgrade von einer früheren Version:
+[!DNL Live Search] 4.0.0+ aktiviert das PLP-Widget standardmäßig für Neuinstallationen. Beim Upgrade von einer früheren Version:
 
 1. Navigieren Sie zu **[!UICONTROL Stores]** > Einstellungen > **[!UICONTROL Configuration]**.
 1. Navigieren Sie zu **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**.
@@ -280,7 +280,7 @@ In diesem Szenario verfügen Sie über benutzerdefinierte Vorlagen oder Layouts,
 
 ### Produktattribute mit benutzerdefinierten Quellmodellen
 
-In diesem Szenario haben Sie Facetten, die Produktattribute mit benutzerdefinierten Quellmodellen verwenden, die nicht vom Suchadapter unterstützt werden, aber vom PLP-Widget unterstützt werden.
+In diesem Szenario basieren die Facetten auf Produktattributen mit benutzerdefinierten Quellmodellen. Obwohl der Suchadapter diese Quellmodelle nicht unterstützt, unterstützt das PLP-Widget dies nicht.
 
 **Rolle**: Händler (Admin-Konfiguration)
 
@@ -366,7 +366,7 @@ In diesem Szenario verfügen Sie über eine Headless- oder PWA-Storefront, für 
    - Testen von Ereignisdatenflüssen an Adobe Commerce.
 
 1. **Facettensortierung konfigurieren**:
-   - Bei Headless-Implementierungen können Facetten nach Anzahl sortiert werden.
+   - Bei Headless-Implementierungen können Sie Facetten nach Anzahl sortieren.
    - Konfigurieren von in **[!UICONTROL Live Search]** > **[!UICONTROL Facets]** Workspace.
    - Setzen Sie **[!UICONTROL Sort Type]** auf **Count** für bessere Benutzererlebnisse.
 
@@ -423,20 +423,20 @@ Beachten Sie bei der Migration die folgenden Einschränkungen:
 **Funktionsunterschiede zum Suchanschluss**:
 
 - **Farbfelder**: Das `color`-Attribut muss genau wie `color` geschrieben sein (nicht „color“ oder benutzerdefinierte Namen), damit die Farbfelder ordnungsgemäß funktionieren.
-- **Design-Stil**: Benutzerdefinierte Design-Klassen werden nicht vom Widget vererbt; sie müssen auf Widget-spezifische CSS-Klassen abzielen.
+- **Design-Stil**: Das Widget übernimmt keine benutzerdefinierten Design-Klassen. Sie müssen widget-spezifische CSS-Klassen auswählen.
 - **Benutzerdefinierte Produkttypen**: Wird im Widget nicht unterstützt.
 
 **Leistungsaspekte**:
 
-- Bei großen Katalogen (mehr als 50.000 Produkte) kann es zu längeren ersten Seitenladevorgängen kommen.
+- Bei großen Katalogen (über 50.000 Produkte) dauert das Laden der ersten Seite länger.
 - Mehrere Facetten mit vielen Werten können die Leistung beeinträchtigen.
-- Die Leistung von Mobilgeräten kann je nach Kataloggröße variieren.
+- Die Leistung von Mobilgeräten variiert je nach Kataloggröße.
 
 **Kompatibilitätsprobleme**:
 
 - Kompatibilitätsproblem mit Google Tag Manager (siehe [GTM-Szenario](#google-tag-manager-gtm-integration)).
-- Einige Erweiterungen von Drittanbietern können mit dem PLP-Widget in Konflikt stehen.
-- Benutzerdefinierte Checkout-Erweiterungen müssen möglicherweise aktualisiert werden.
+- Einige Erweiterungen von Drittanbietern stehen in Konflikt mit dem PLP-Widget.
+- Benutzerdefinierte Checkout-Erweiterungen müssen aktualisiert werden.
 
 ## Hilfe wird abgerufen
 
@@ -458,7 +458,7 @@ Der **Adobe-Support** kann bei Folgendem helfen:
 - Headless- oder PWA-Implementierung
 - Benutzerdefinierte Ereignisverfolgung
 
-Informationen zum Adobe-Support finden Sie im [Hilfezentrum-Benutzerhandbuch](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Informationen zum Adobe-Support finden Sie im [Benutzerhandbuch für das Adobe Help Center](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 ## FAQs
 
@@ -482,7 +482,7 @@ A.: Ja, alle im Arbeitsbereich &quot;[!DNL Live Search]&quot; konfigurierten Mer
 
 **F: Muss ich meine Facetten neu konfigurieren?**
 
-A: Im Allgemeinen nein, aber wenn Sie durch benutzerdefinierte Quellmodellattribute mit dem Suchadapter eingeschränkt waren, können Sie sie jetzt mit dem PLP-Widget verwenden.
+A: Nein. Sie können die vorhandene Facettenkonfiguration weiterhin verwenden. Wenn der Suchadapter jedoch zuvor die Verwendung von Produktattributen mit benutzerdefinierten Quellmodellen eingeschränkt hat, können Sie diese Attribute jetzt mit dem PLP-Widget verwenden.
 
 **F: Was ist mit meinem benutzerdefinierten CSS?**
 

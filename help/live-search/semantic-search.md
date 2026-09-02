@@ -3,9 +3,9 @@ title: Semantische Suche
 description: Aktivieren Sie die KI-Semantische Suche nach [!DNL Live Search] aus den Einstellungen. Es sind keine Attributeinstellungen oder Änderungen an der Storefront erforderlich.
 role: Admin
 recommendations: noCatalog
-source-git-commit: 33d9172b2d0455a061c00781128a9f2fe804af7b
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >Die semantische Suche ist für Händler verfügbar, die die Adobe Commerce-Versionen 2.4.4 und höher verwenden.
 
-Die semantische Suche verwendet KI, um zu verstehen, was Käufer meinen, und nicht nur die genauen Wörter, die sie eingeben. Abfragen wie „Kleid für eine Strandhochzeit“ oder „bequeme Schuhe für den ganzen Tag stehen“ können relevante Produkte zurückgeben, auch wenn Ihr Katalog nicht genau diese Phrasen verwendet.
+Die semantische Suche verwendet KI, um zu verstehen, was Käufer meinen, und nicht nur die Wörter, die sie eingeben. Abfragen wie „Kleid für eine Strandhochzeit“ oder „bequeme Schuhe für den ganzen Tag stehen“ können relevante Produkte zurückgeben, auch wenn Ihr Katalog nicht genau diese Phrasen verwendet.
 
 [!DNL Live Search] kombiniert Keyword-Matching und semantischen Matching in einem Sucherlebnis. Sie verwalten keine separaten Modi für Keywords und Semantik in der Storefront. [!DNL Live Search] bietet keine erweiterten semantischen Steuerelemente (z. B. Verstärkungs- oder Ähnlichkeitsregler) in Admin. Sie können die semantische Suche aktivieren oder deaktivieren.
 
@@ -33,7 +33,7 @@ Die semantische Suche wird über den **Einstellungen** im [!DNL Live Search] Adm
 
 ## Funktionsweise
 
-Wenn die semantische Suche aktiviert ist, verwendet [!DNL Live Search] vordefinierte Katalogattribute, die vom System ausgewählt wurden (z. B. Produktname und Beschreibung), um die Bedeutung der Abfrage neben der herkömmlichen Keyword-Suche zu interpretieren. Attribute im Admin-Bereich werden nicht ausgewählt oder priorisiert.
+Um die Bedeutung der Abfrage neben der herkömmlichen Keyword-Suche zu interpretieren, wenn die semantische Suche aktiviert ist, verwendet [!DNL Live Search] vordefinierte Katalogattribute, die vom System ausgewählt werden (z. B. Produktname und Beschreibung). Attribute im Admin-Bereich werden nicht ausgewählt oder priorisiert.
 
 Beispiel:
 
@@ -74,13 +74,13 @@ Händler, die Adobe Commerce in der Cloud und lokal nutzen, müssen die semantis
 
 ### Für [!DNL Adobe Commerce as a Cloud Service] Kunden
 
-[!DNL Adobe Commerce as a Cloud Service] Kunden verwenden denselben Arbeitsbereich **Einstellungen** in der [!DNL Live Search] Admin. Die semantische Suche ist **standardmäßig aktiviert** für geeignete englische Kataloge. Bestätigen Sie, dass **[!UICONTROL Semantic search]** aktiviert ist, oder deaktivieren Sie sie, wenn Sie keine semantischen Übereinstimmungen in der Storefront wünschen.
+[!DNL Adobe Commerce as a Cloud Service] Kunden verwenden denselben Arbeitsbereich **Einstellungen** in der [!DNL Live Search] Admin. Adobe Commerce ermöglicht standardmäßig die semantische Suche nach geeigneten englischen Katalogen. Bestätigen Sie, dass **[!UICONTROL Semantic search]** aktiviert ist, oder deaktivieren Sie sie, wenn Sie keine semantischen Übereinstimmungen in der Storefront wünschen.
 
 Nach dem Speichern einer Änderung ist kein separater Veröffentlichungsschritt und keine Storefront-Konfiguration erforderlich.
 
 ## Nach der Aktivierung validieren
 
-Nachdem die semantische Suche aktiv ist und die Indizierung abgeschlossen ist, empfiehlt Adobe, die Suchleistung zu validieren. Verwenden Sie den [Performance](performance.md)-Arbeitsbereich, um Metriken zu überprüfen und Abfragen zu testen, die für Ihr Unternehmen wichtig sind. Dies gilt unabhängig davon, ob die semantische Suche standardmäßig aktiviert ist oder manuell aktiviert wurde.
+Nachdem die semantische Suche aktiv ist und die Indizierung abgeschlossen ist, empfiehlt Adobe, die Suchleistung zu validieren. Verwenden Sie den [Performance](performance.md)-Arbeitsbereich, um Metriken zu überprüfen und Abfragen zu testen, die für Ihr Unternehmen wichtig sind. Dies gilt unabhängig davon, ob das System die semantische Suche standardmäßig aktiviert hat oder ob Sie sie manuell aktiviert haben.
 
 1. Überprüfen Sie Ihre am häufigsten gesuchten Begriffe im Bericht **Eindeutige**&quot;.
 1. Testen Sie historische Abfragen mit null Ergebnissen aus dem Bericht **Null Ergebnisse** in der Storefront.
@@ -90,7 +90,7 @@ Nachdem die semantische Suche aktiv ist und die Indizierung abgeschlossen ist, e
 ## Best Practices
 
 - Verwenden Sie klare, beschreibende Produktnamen und Beschreibungen (idealerweise 50-100 Wörter), damit sowohl Keyword- als auch semantische Übereinstimmungen mit starkem Katalogtext arbeiten können.
-- Halten Sie markenspezifische oder hochtechnische [Synonyme) bei, &#x200B;](synonyms.md) die semantische Suche möglicherweise keine Fachbegriffe abdeckt.
+- Halten Sie markenspezifische oder hochtechnische [Synonyme) &#x200B;](synonyms.md), bei denen die semantische Suche keine Fachbegriffe abdeckt.
 
 ## Fehlerbehebung
 
