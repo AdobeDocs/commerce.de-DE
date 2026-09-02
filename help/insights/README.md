@@ -31,7 +31,7 @@ Sobald das Ticket den Umfang hat, starten Sie den Artikel aus einer Vorlage in `
 
 - **Neuer Abschnitt der obersten Ebene** (z. B. Insights > Katalogverwaltung) erfordert vor dem Hinzufügen eine Überprüfung der Benutzeroberflächenanalyse, da dadurch die Navigationsform des Handbuchs geändert wird. Die Commerce-IA-Prüfung für die Story oder Aufgabe wird von demjenigen durchlaufen, der sie besitzt.
 
-- **Zum Inhaltsverzeichnis hinzufügen** - Zum Inhaltsverzeichnis vor der Veröffentlichung ein neues Thema hinzufügen. Verwenden Sie bei Bedarf Metadaten ausblenden , um einen ausgeblendeten Artikel zu veröffentlichen, der nur für Personen zugänglich ist, die über den Link verfügen. Siehe [Ausblenden von ](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/hiding-files) im ExL-Autorenhandbuch.
+- **Zum Inhaltsverzeichnis hinzufügen** - Zum Inhaltsverzeichnis vor der Veröffentlichung ein neues Thema hinzufügen. Verwenden Sie bei Bedarf Metadaten ausblenden , um einen ausgeblendeten Artikel zu veröffentlichen, der nur für Personen zugänglich ist, die über den Link verfügen. Siehe [Ausblenden von &#x200B;](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/hiding-files) im ExL-Autorenhandbuch.
 
 ## Überprüfungskadenz
 
