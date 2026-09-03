@@ -3,10 +3,16 @@ title: Empfehlungstypen
 description: Erfahren Sie mehr über die Recommendations, die Sie auf verschiedenen Seiten auf Ihrer Site bereitstellen können.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
 TQID: https://experienceleague.adobe.com/d2V9aHGQO8jnPXAIlae-GklfACARMrVEttryLOY3Zr8
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: beb7a3c1-66ab-4786-b879-7621375b3c40id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
 source-git-commit: 0802d0e53a1ed6701318647b7bf78435082ad5f3
 workflow-type: tm+mt
 source-wordcount: 2026
@@ -147,13 +153,13 @@ Adobe AI verwendet KI, um die Bilder in Ihrem Katalog zu verarbeiten und zu anal
 
 - Wenn Sie diesen Empfehlungstyp in einer Nicht-Produktionsumgebung testen, stellen Sie sicher, dass Ihre Bild-URLs öffentlich zugänglich sind.
 - Derzeit müssen Produktbilder 10 MB oder weniger groß sein.
-- Das optionale Modul [Fastly Image Optimization](install-configure.md#fastlysupport) kann Bildoptimierungsparameter von Fastly auf [!DNL Product Recommendations] Bild-URLs anwenden. Weitere [ finden Sie unter „Fastly Image Optimization ](install-configure.md#fastlysupport)&quot;.
+- Das optionale Modul [Fastly Image Optimization](install-configure.md#fastlysupport) kann Bildoptimierungsparameter von Fastly auf [!DNL Product Recommendations] Bild-URLs anwenden. Weitere [&#x200B; finden Sie unter „Fastly Image Optimization &#x200B;](install-configure.md#fastlysupport)&quot;.
 
 ### Empfehlungstyp für visuelle Ähnlichkeit aktivieren
 
 >[!NOTE]
 >
-> Der Empfehlungstyp _Visuelle Ähnlichkeit_ ist verfügbar, wenn Sie [ als optionales ](install-configure.md) installieren.
+> Der Empfehlungstyp _Visuelle Ähnlichkeit_ ist verfügbar, wenn Sie [&#x200B; als optionales &#x200B;](install-configure.md) installieren.
 
 1. Wechseln Sie in der _Admin_-Seitenleiste zu **Marketing** > _Promotions_ > **Product Recommendations**, um das _Product Recommendations_ Dashboard anzuzeigen.
 
