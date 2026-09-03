@@ -4,22 +4,13 @@ description: Die neuesten Versionsinformationen für  [!DNL Product Recommendati
 feature: Services, Recommendations, Release Notes
 exl-id: 37404605-5b62-4c71-90d1-4f09e6105c4b
 TQID: https://experienceleague.adobe.com/cr5tBPTFRNlSTqtFNfUWS6p1LdhSrir28x3N1WC4Zw8
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 77e37e506362498a4ab27cd19152b4e4e742636b
 workflow-type: tm+mt
-source-wordcount: 2260
+source-wordcount: 2322
 ht-degree: 0%
 
 ---
@@ -31,6 +22,7 @@ In den Versionshinweisen werden Aktualisierungen an den folgenden [!DNL Product 
 * [!DNL Product Recommendations]-Metapaket: `magento/product-recommendations`
 * Page Builder-Unterstützung im [!DNL Product Recommendations]-Modul (optional): `magento/module-page-builder-product-recommendations`
 * Unterstützung des Empfehlungstyps für visuelle Ähnlichkeit für [!DNL Product Recommendations] (optionales) Modul: `magento/module-visual-product-recommendations`
+* Unterstützung der Fastly-Bildoptimierung für [!DNL Product Recommendations] (optionales) Modul: `magento/module-fastly-recommendations`
 
 Adobe unterstützt die neueste Version mit Produktempfehlungen . Versionshinweise für ältere Versionen werden als Referenz bereitgestellt.
 
@@ -40,7 +32,7 @@ Zu den Aktualisierungen gehören:
 ![Fehlerbehebung](../assets/fix.svg) Fehlerbehebungen und Verbesserungen
 ![Bug](../assets/bug.svg) Bekannte Probleme
 
-[Weitere Informationen zum Produkt-Support](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability).
+[Weitere Informationen zum Produkt-Support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Gehostete Service-Aktualisierungen
 
@@ -81,6 +73,14 @@ _25. April 2023_
 
 ## Aktuelle Hauptversion
 
+### 6.8.0 von magento/module-fastly-recommendations
+
+_3. September 2026_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
+
+![Neu](../assets/new.svg) Es wurde optionale Unterstützung für Fastly Image Optimization für [!DNL Product Recommendations] hinzugefügt. Dieses Modul wendet [Fastly Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)-Parameter auf [!DNL Product Recommendations] Bild-URLs an. Installationsanweisungen finden [ unter „Fastly Image Optimization ](install-configure.md#fastlysupport)&quot;.
+
 ### 6.7.0 Magento/Product-Recommendations
 
 _17. März 2026_
@@ -97,7 +97,7 @@ _28. Januar 2026_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) Es wurde eine Abhängigkeit zum Dashboard [Überwachung des Status der Daten-Feed-Synchronisation“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status). Dieses Dashboard bietet Echtzeiteinblicke in den Zustand und die Leistung von Datenexport-Feeds, die Produkt- und Kategoriedaten von Commerce an externe Services wie Produktempfehlungen übertragen.
+![Neu](../assets/new.svg) Es wurde eine Abhängigkeit zum Dashboard [Überwachung des Status der Daten-Feed-Synchronisation“ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status). Dieses Dashboard bietet Echtzeiteinblicke in den Zustand und die Leistung von Datenexport-Feeds, die Produkt- und Kategoriedaten von Commerce an externe Services wie Produktempfehlungen übertragen.
 
 ### 6.5.0 Magento/Product-Recommendations
 
@@ -181,7 +181,7 @@ _22. Februar 2024_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Neu](../assets/new.svg) Die [!DNL Catalog Sync Dashboard] ist jetzt die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Dieses überarbeitete Dashboard bietet Einblicke in Datenströme für [!DNL Product Recommendations], [!DNL Live Search] und [!DNL Catalog Service].
+![Neu](../assets/new.svg) Die [!DNL Catalog Sync Dashboard] ist jetzt die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Dieses überarbeitete Dashboard bietet Einblicke in Datenströme für [!DNL Product Recommendations], [!DNL Live Search] und [!DNL Catalog Service].
 ![Beheben](../assets/fix.svg) Es wurde ein Problem behoben, das zu Checkout-Fehlern für [!DNL Product Recommendations] führte.
 
 +++5.0.0 und älter
@@ -208,7 +208,7 @@ _20. März 2023_
 
 ![Neu](../assets/new.svg) Aktualisierte [!DNL Product Recommendations] zur Unterstützung von Adobe Commerce 2.4.6.
 ![Neu](../assets/new.svg) Dies ist eine Hauptversion. [Bearbeiten](install-configure.md#update) Sie die `composer.json` für Ihr Projekt.
-![Neu](../assets/new.svg) [!DNL Product Recommendations] unterstützt jetzt vollständige [Inventory management](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/introduction)-Funktionen in Commerce (ehemals Multi-Source Inventory oder MSI). Um die vollständige Unterstützung zu aktivieren[&#x200B; müssen Sie &#x200B;](install-configure.md#update) Abhängigkeitsmodul-`commerce-data-export` auf Version 102.2.0 oder höher aktualisieren.
+![Neu](../assets/new.svg) [!DNL Product Recommendations] unterstützt jetzt vollständige [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)-Funktionen in Commerce (ehemals Multi-Source Inventory oder MSI). Um die vollständige Unterstützung zu aktivieren[ müssen Sie ](install-configure.md#update) Abhängigkeitsmodul-`commerce-data-export` auf Version 102.2.0 oder höher aktualisieren.
 
 ### 4.0.1 von Magento/Product-Recommendations
 
@@ -221,7 +221,7 @@ _20. März 2023_
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
 ![Neu](../assets/new.svg) Es wurden [Bereitschaftsindikatoren](create.md) hinzugefügt, mit denen Sie den Schulungsfortschritt der einzelnen Empfehlungstypen visualisieren können.
-![Neu](../assets/new.svg) Dies ist eine Hauptversion. [Bearbeiten](install-configure.md#update) Sie die `composer.json` für Ihr Projekt. In dieser Version müssen Sie auch zwei API-Schlüssel bei der Installation und Konfiguration von [!DNL Product Recommendations] angeben[&#x200B; einen Produktionsschlüssel und einen Sandbox-Schlüssel](../landing/saas.md).
+![Neu](../assets/new.svg) Dies ist eine Hauptversion. [Bearbeiten](install-configure.md#update) Sie die `composer.json` für Ihr Projekt. In dieser Version müssen Sie auch zwei API-Schlüssel bei der Installation und Konfiguration von [!DNL Product Recommendations] angeben[ einen Produktionsschlüssel und einen Sandbox-Schlüssel](../landing/saas.md).
 
 #### Bekannte Einschränkungen
 
@@ -245,7 +245,7 @@ _20. März 2023_
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
 ![Neu](../assets/new.svg) Hinzugefügt [B2B-Unterstützung](onboarding.md#b2bsupport) in [!DNL Product Recommendations]
-![Neu](../assets/new.svg) Es wurden neue Feeds zum [Synchronisieren von Katalogdaten](https://experienceleague.adobe.com/de/docs/commerce/user-guides/data-services/catalog-sync) zu Commerce Services über die Befehlszeile hinzugefügt
+![Neu](../assets/new.svg) Es wurden neue Feeds zum [Synchronisieren von Katalogdaten](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) zu Commerce Services über die Befehlszeile hinzugefügt
 
 ### 3.3.3 von Magento/Product-Recommendations
 
@@ -285,7 +285,7 @@ _20. März 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
-![Neu](../assets/new.svg) Umbenannte Magento Services in [Commerce Services](https://experienceleague.adobe.com/de/docs/commerce/user-guides/integration-services/saas) und verbesserte Benutzerfreundlichkeit in Admin
+![Neu](../assets/new.svg) Umbenannte Magento Services in [Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) und verbesserte Benutzerfreundlichkeit in Admin
 
 ### 3.2.4 von Magento/Product-Recommendations
 
@@ -306,9 +306,9 @@ _20. März 2023_
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
 ![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt, [Empfehlungsergebnisse in der Vorschau anzuzeigen](create.md) zur Erstellungszeit. Diese Aktualisierung erfordert, dass Sie Ihr Modul auf die neueste Version aktualisieren.
-![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt[&#x200B; den Katalogsynchronisierungsprozess &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/user-guides/data-services/catalog-sync) Admin zu überwachen und zu verwalten.
+![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt[ den Katalogsynchronisierungsprozess ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) Admin zu überwachen und zu verwalten.
 ![Neu](../assets/new.svg) Es wurden [Filter](filters.md) hinzugefügt, um zu steuern, welche Produkte in Recommendations angezeigt werden.
-![Neu](../assets/new.svg) Der Empfehlungstyp [Visuelle &#x200B;](type.md#visualsim)&quot; wurde hinzugefügt.
+![Neu](../assets/new.svg) Der Empfehlungstyp [Visuelle ](type.md#visualsim)&quot; wurde hinzugefügt.
 
 ### 1.2.1 von magento/module-page-builder-product-recommendations für Page Builder
 
@@ -320,7 +320,7 @@ _20. März 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
-![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt[&#x200B; Ihren Katalog über &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/user-guides/data-services/catalog-sync) Befehlszeile erneut mit SaaS-Services zu synchronisieren.
+![Neu](../assets/new.svg) Es wurde die Möglichkeit hinzugefügt[ Ihren Katalog über ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) Befehlszeile erneut mit SaaS-Services zu synchronisieren.
 ![Neu](../assets/new.svg) Unterstützung für Datenbanktabellen-Präfixe wurde hinzugefügt
 ![Fix](../assets/fix.svg) PHP 7.1-Unterstützung entfernt
 
@@ -389,7 +389,7 @@ Dies ist eine Hauptversion. [Bearbeiten](install-configure.md#update) Sie die Da
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
-![Neu](../assets/new.svg) Page Builder-Unterstützung. Mit der Page Builder-Integration können Sie Empfehlungseinheiten präzise und detailliert an einer beliebigen Stelle in von Page Builder erstellten Inhalten platzieren. Sie können die Überschriften und Empfehlungseinheiten auch selbst gestalten. Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/add-content/recommendations)Page Builder“.
+![Neu](../assets/new.svg) Page Builder-Unterstützung. Mit der Page Builder-Integration können Sie Empfehlungseinheiten präzise und detailliert an einer beliebigen Stelle in von Page Builder erstellten Inhalten platzieren. Sie können die Überschriften und Empfehlungseinheiten auch selbst gestalten. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)Page Builder“.
 
 ### 2.0.0 von Magento/Product-Recommendations
 
@@ -404,4 +404,4 @@ Dies ist eine Hauptversion. [Bearbeiten](install-configure.md#update) Sie die Da
 Weitere Informationen zur [!DNL Product Recommendations]- und [!DNL Product Recommendations]:
 
 * [Benutzerhandbuch](overview.md)
-* [Entwicklerdokumentation](https://experienceleague.adobe.com/de/docs/commerce/product-recommendations/developer/development-overview)
+* [Entwicklerdokumentation](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/developer/development-overview)
