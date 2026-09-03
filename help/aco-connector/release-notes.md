@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 355b319def41c3763bc0dddbe6b32707891bb811
+source-git-commit: 4a3bb899f05e489cbd5b5c46909085e204751dc5
 workflow-type: tm+mt
-source-wordcount: 514
+source-wordcount: 544
 ht-degree: 0%
 
 ---
@@ -39,6 +39,12 @@ In diesen Versionshinweisen werden alle Versionen für die [!DNL Adobe Commerce 
 ![Bekanntes Problem](../assets/bug.svg) Bekannte Probleme
 
 ## Versionen 2026
+
+### Version 1.1.0
+
+_2. September 2026_
+
+![Neu](../assets/new.svg) **Kategorieattribute sind jetzt in der Katalogsynchronisierung enthalten**-Die [!DNL Adobe Commerce Optimizer Connector] synchronisiert jetzt Kategorieattribute und ihre Metadaten mit [!DNL Adobe Commerce Optimizer], sodass benutzerdefinierte Kategorieattribute für das Merchandising verfügbar sind. <!--MDEE-1373-->
 
 ### Version 1.0.17
 
