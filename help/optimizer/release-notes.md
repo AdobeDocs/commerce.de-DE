@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
 workflow-type: tm+mt
-source-wordcount: 1506
+source-wordcount: 1561
 ht-degree: 0%
 
 ---
@@ -31,6 +31,20 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 * Aktualisierungen der [Datenaufnahme-REST-API](https://developer.adobe.com/commerce/services/reference/rest/) und der [GraphQL-API für den Datenabruf im Storefront-](https://developer.adobe.com/commerce/services/reference/graphql/).
 
   {{aco-api-updates-and-dropins}}
+
+## September 2026
+
+>[!BEGINSHADEBOX]
+
+_3. September 2026_
+
+### Attribut-Ranking (Betaversion)
+
+[!DNL Adobe Commerce Optimizer] Merchandising-Regeln unterstützen jetzt [**Attribut-**](./merchandising/rules/add.md#attribute-ranking)) für die **Alle**, **Kategorieregel** und **Suchregel**. Wenden Sie automatisch eine **[!UICONTROL Boost]**-, **[!UICONTROL Bury]**- oder **[!UICONTROL Hide]**-Aktion auf jedes Produkt an, das einer oder mehreren Attributbedingungen wie Marke oder Kategorie entspricht, ohne einzelne SKUs auszuwählen. Das Attribut-Ranking befindet sich in der Beta-Phase. [Weitere Informationen](./merchandising/rules/add.md#attribute-ranking).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## August 2026
 

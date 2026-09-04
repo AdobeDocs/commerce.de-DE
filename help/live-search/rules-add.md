@@ -12,9 +12,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 0a8adc9dc2c13e0f74fa21b0fbdeb3b904a9bcc6
 workflow-type: tm+mt
-source-wordcount: 2561
+source-wordcount: 2878
 ht-degree: 0%
 
 ---
@@ -101,6 +101,20 @@ Store-Inhaber können die folgenden Arten von Rangfolgestrategien einrichten:
 
 Wählen Sie den Strategietyp für die Regel aus. Das **[!UICONTROL Test your rule]** zeigt die erwarteten Ergebnisse an.
 
+### Verhaltenssignale für konfigurierbare Produkte und Varianten {#behavioral-signals-variants}
+
+**[!DNL Live Search]** erfasst Verhaltenssignale wie Ansichten, Warenkorbereignisse und Käufe für das spezifische Produkt, mit dem ein Käufer interagiert. Für ein konfigurierbares Produkt bedeutet dies, dass Signale auf der Ebene **Variante** (einfaches Produkt) aufgezeichnet werden, nicht gegen das konfigurierbare übergeordnete Element.
+
+Beim Einordnen eines konfigurierbaren Produkts aggregiert **[!DNL Live Search]** die Verhaltenssignale, die von allen Varianten erfasst werden, und rollt sie zum konfigurierbaren übergeordneten Element hoch. Die Rangfolge eines konfigurierbaren Produkts spiegelt die kombinierten Signale jeder Variante wider, nicht nur einer.
+
+Diese Aggregation erfolgt innerhalb des Bereichs der durchsuchten Kategorie. Eine Variante trägt ihre Verhaltenssignale nur zum Ranking-Score des konfigurierbaren übergeordneten Elements für Kategorien bei, denen diese **Variante** zugewiesen ist. Wenn eine Variante in einer Kategorie fehlt, werden ihre Signale nicht auf den Rang des übergeordneten Elements in dieser Kategorie angerechnet, auch wenn das konfigurierbare übergeordnete Element selbst dort zugewiesen ist.
+
+**Best Practice:** Überprüfen Sie Kategoriezuweisungen für alle Produktvarianten, insbesondere in Katalogen, die größen-, farbige oder andere variantenspezifische Kategoriestrukturen verwenden, um zu bestätigen, dass jede Variante jeder Kategorie zugewiesen ist, in der sie angezeigt wird und das Ranking beeinflusst.
+
+**Beispiel:**
+
+Ein Merchandiser organisiert einen Katalog in größenspezifische Unterkategorien, wie **200g** und **500g**. Ein konfigurierbares Produkt hat zwei Varianten, eine für jede Größe. Wenn nur die Variante 200g der Kategorie 200g zugewiesen wird, tragen Käufe und Ansichten der Variante 500g nicht zum Ranking-Score des konfigurierbaren Produkts auf der Kategorieseite für 200g bei, auch wenn sich die Variante 500g an anderer Stelle gut verkauft. Das konfigurierbare Produkt kann dann auf der Kategorieseite 200g einen niedrigeren Rang als erwartet oder außerhalb des Bereichs mit der tatsächlichen Verkaufsleistung liegen. Durch die Zuweisung beider Varianten zu ihren jeweiligen Kategorien wird die Nichtübereinstimmung behoben.
+
 ### Intelligente Ranking-Optimierung {#intelligent-ranking-boost}
 
 Für **Empfohlen für Sie**, **Am häufigsten angezeigt**, **Am häufigsten gekauft**, **Am häufigsten zum Warenkorb hinzugefügt** und **Trending** zeigt der Editor **[!UICONTROL Intelligent Ranking Boost]** (den Verstärkungsfaktor) an. Er wird nicht verwendet, wenn Sie &quot;**&quot;**.
@@ -162,6 +176,7 @@ Unter [Suchregeln](./best-practice.md#search-rules) erfahren Sie, wie Sie die Au
 ### Einschränkungen
 
 * Apostrophe und Anführungszeichen in Abfragen können zu einigen kleineren Problemen mit Rangfolge und Relevanz in einigen Sprachen führen.
+* Wenn intelligente Ranking-Ergebnisse nicht mit dem tatsächlichen Umsatz oder der Ansichtsleistung korrelieren, bestätigen Sie, dass alle relevanten Produktvarianten der zu überprüfenden Kategorie zugewiesen sind. Fehlende Variantenkategoriezuweisungen sind eine häufige und leicht zu übersehende Ursache für unerwartetes Ranking-Verhalten. Siehe [Verhaltenssignale für konfigurierbare Produkte und Varianten](#behavioral-signals-variants).
 * Um sicherzustellen, dass das intelligente Ranking ordnungsgemäß funktioniert, stellen Sie sicher, dass **Suchgewichtung** für alle Produktattribute, die für die Suche oder Filterung (Facetten) verwendet werden, `5` oder kleiner ist. So finden Sie diese Einstellung im [!DNL Commerce] Admin:
 
   1. Wählen Sie **Stores** > _Attribute_ > **product** aus.
@@ -178,10 +193,10 @@ Unter [Suchregeln](./best-practice.md#search-rules) erfahren Sie, wie Sie die Au
 
 Manuelles Ranking (früher als „Ereignisse“ bezeichnet) sind Aktionen, die die Suchergebnisse ändern, wenn definierte Bedingungen erfüllt sind. Eine einzelne Regel kann bis zu 25 Ereignisse enthalten.
 
-* Verstärken - Verschiebt ein Produkt in den Suchergebnissen nach oben.
-* Beerdigen - Verschiebt eine SKU in den Suchergebnissen nach unten.
-* Produkt anheften - Das Produkt wird an der ausgewählten „Position“ auf der Seite angezeigt.
-* Produkt ausblenden - Schließt eine SKU aus den Suchergebnissen aus.
+* **[!UICONTROL Boost]** - Verschiebt eine SKU in den Suchergebnissen nach oben.
+* **[!UICONTROL Bury]** - Verschiebt eine SKU in den Suchergebnissen nach unten.
+* **[!UICONTROL Pin a product]** - SKU wird an der ausgewählten „Position“ auf der Seite angezeigt.
+* **[!UICONTROL Hide a product]** - Schließt eine SKU aus den Suchergebnissen aus.
 
 Die einfachste Möglichkeit, ein Produkt anzuheften, besteht darin, es per Drag-and-Drop zu ziehen.
 
@@ -199,7 +214,7 @@ Oder Ereignisse können manuell festgelegt werden:
 
 1. Wählen *unter* die Option **Ereignis** aus, die ausgeführt werden soll, wenn die zugehörigen Bedingungen erfüllt sind.
 
-   Wählen Sie beispielsweise `Hide a product`. Geben Sie dann den Namen des Produkts ein, das Sie ausblenden möchten. Produkte werden bei der Eingabe vorgeschlagen.
+   Wählen Sie beispielsweise **[!UICONTROL Hide a product]**. Geben Sie dann den Namen des Produkts ein, das Sie ausblenden möchten. Produkte werden bei der Eingabe vorgeschlagen.
 
 1. Wählen Sie für mehrere Ereignisse alle anderen Ereignisse aus, die Sie bei Erfüllung der Bedingungen als Trigger festlegen möchten.
 
@@ -262,10 +277,10 @@ Die hier eingegebenen Informationen werden im Bedienfeld [Regeldetails](rules-wo
 
 | Ereignis | Beschreibung |
 |--- |--- |
-| Verstärken | Verschiebt eine SKU oder einen Bereich von SKUs in den Suchergebnissen nach oben. Jedes wird in den Testsuchergebnissen mit einem „erweiterten“ Vorschausymbol gekennzeichnet. |
-| begraben | Verschiebt eine SKU oder einen SKU-Bereich in den Suchergebnissen nach unten. Jeder wird in den Testsuchergebnissen mit einem „Buried“-Vorschauabzeichen gekennzeichnet. |
-| Produkt anheften | Hängt eine einzelne SKU an eine bestimmte Position in den Suchergebnissen an. Das Produkt ist in den Testsuchergebnissen mit einem „angehefteten“ Vorschauabzeichen gekennzeichnet. |
-| Produkt ausblenden | Schließt eine SKU oder einen Bereich von SKUs aus den Suchergebnissen aus. |
+| [!UICONTROL Boost] | Verschiebt eine SKU oder einen Bereich von SKUs in den Suchergebnissen nach oben. Jedes wird in den Testsuchergebnissen mit einem „erweiterten“ Vorschausymbol gekennzeichnet. |
+| [!UICONTROL Bury] | Verschiebt eine SKU oder einen SKU-Bereich in den Suchergebnissen nach unten. Jeder wird in den Testsuchergebnissen mit einem „Buried“-Vorschauabzeichen gekennzeichnet. |
+| [!UICONTROL Pin a product] | Hängt eine einzelne SKU an eine bestimmte Position in den Suchergebnissen an. Das Produkt ist in den Testsuchergebnissen mit einem „angehefteten“ Vorschauabzeichen gekennzeichnet. |
+| [!UICONTROL Hide a product] | Schließt eine SKU oder einen Bereich von SKUs aus den Suchergebnissen aus. |
 
 ### Details
 

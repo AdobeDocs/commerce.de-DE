@@ -16,16 +16,20 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 3ee9822b069504343f69f5b1dd36713e7dcbf3d8
+source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
 workflow-type: tm+mt
-source-wordcount: 3378
+source-wordcount: 4183
 ht-degree: 0%
 
 ---
 
 # Regeln erstellen und verwalten
 
-Um eine Regel zu erstellen, öffnen Sie den Regeleditor, wählen Sie einen **Regeltyp** aus (Suchbedingungen, Standardauflistung oder Kategorieseiten), definieren Sie dann Bedingungen und Rangfolgen, wo sie gelten, testen Sie die Ergebnisse und veröffentlichen Sie die Regel.
+So erstellen und veröffentlichen Sie eine Regel:
+
+1. Öffnen Sie in Optimizer Studio den Regeleditor, wählen Sie einen **Regeltyp** aus (Suchbedingungen, Standardauflistung, Kategorieseiten oder Produktattribute) und definieren Sie dann Bedingungen und Rankings, für die sie gelten.
+1. Testen Sie die Ergebnisse.
+1. Veröffentlichen Sie die Regel.
 
 ## Erstellen einer Regel {#create-a-rule}
 
@@ -77,7 +81,7 @@ Die Bedingungen sind die Voraussetzungen für den Trigger eines Ereignisses. Ein
 1. Um andere Abfragen zu testen, ändern Sie den Abfragetext im Suchfeld *Regel testen* und drücken Sie **Return**.
 Zunächst rendert der Testbereich die Abfrage aus dem Suchfeld Bedingungen . Jetzt wird die Abfrage jedoch aus dem Feld Testabfrage gerendert. Im Testbereich wird jeweils nur eine Abfrage gerendert.
 1. Wenn Ihnen das Ergebnis gefällt, aktualisieren Sie den Text im Suchfeld *Bedingungen* . Klicken Sie dann auf eine beliebige Stelle auf der Seite, um die Ergebnisse im Testbereich zu aktualisieren.
-1. Legen Sie [Intelligente Rangfolge](#intelligent-ranking) und [Manuelle Rangfolge](#manual-ranking) wie in den folgenden Abschnitten beschrieben fest. Die gleichen Steuerelemente gelten für Kategorieseiten, wobei alle Unterschiede hervorgehoben werden.
+1. Wählen Sie optional [Intelligente Rangfolge](#intelligent-ranking), [Manuelle Rangfolge](#manual-ranking) oder [Attributrangfolge](#attribute-ranking) aus, wie in den folgenden Abschnitten beschrieben. Die gleichen Steuerelemente gelten für Kategorieseiten, wobei alle Unterschiede hervorgehoben werden.
 
 **Mehrere Bedingungen**
 
@@ -96,7 +100,7 @@ Eine Regel kann bis zu zehn Bedingungen enthalten. Der logische Operator, der zw
    In diesem Beispiel gibt es zwei separate Abfragen, die nach „Yoga“ oder „Hose“ suchen, anstatt nach „Yoga-Hose“ zu suchen. Diese Regel ist weniger spezifisch und wird häufiger in der Storefront ausgelöst als in der anderen.
 
 1. Um eine weitere Bedingung hinzuzufügen, klicken Sie auf **Bedingung hinzufügen** und wiederholen Sie den Vorgang.
-1. Legen Sie [Intelligente Rangfolge](#intelligent-ranking) und [Manuelle Rangfolge](#manual-ranking) wie in den folgenden Abschnitten beschrieben fest. Die gleichen Steuerelemente gelten für Kategorieseiten, wobei alle Unterschiede hervorgehoben werden.
+1. Wählen Sie optional [Intelligente Rangfolge](#intelligent-ranking), [Manuelle Rangfolge](#manual-ranking) oder [Attributrangfolge](#attribute-ranking) aus, wie in den folgenden Abschnitten beschrieben. Die gleichen Steuerelemente gelten für Kategorieseiten, wobei alle Unterschiede hervorgehoben werden.
 
 >[!TAB Kategorieregel]
 
@@ -125,10 +129,9 @@ Wenn mehrere Kategorien ähnliche Namen haben, verwenden Sie den mit jedem Ergeb
    - **Auf Unterkategorien anwenden** - Wendet die Regel auf Unterkategorien an, für die noch keine aktive Merchandising-Regel definiert ist.
    - **Vorschau** - Zeigt an, wie die Kategorieseite in Ihrer Storefront angezeigt würde.
 
-   ![Menü Kategorieaktion](../../assets/category-action-menu.png)
+1. Wählen Sie optional [Intelligente Rangfolge](#intelligent-ranking), [Manuelle Rangfolge](#manual-ranking) oder [Attributrangfolge](#attribute-ranking) aus, wie in den folgenden Abschnitten beschrieben. Die gleichen Steuerelemente gelten für Suchregeln, wobei alle Unterschiede hervorgehoben werden.
 
-1. Überprüfen Sie den für jede ausgewählte Kategorie angezeigten Kategoriepfad, um zu bestätigen, dass Sie die richtige ausgewählt haben.
-1. Legen Sie [Intelligente Rangfolge](#intelligent-ranking) und [Manuelle Rangfolge](#manual-ranking) wie in den folgenden Abschnitten beschrieben fest. Die gleichen Steuerelemente gelten für Suchregeln, wobei alle Unterschiede hervorgehoben werden.
+   ![Menü Kategorieaktion](../../assets/category-action-menu.png)
 
 >[!ENDTABS]
 
@@ -148,6 +151,20 @@ Store-Inhaber können Strategien wie die folgenden festlegen. Exakte Beschriftun
 - **None** - Für Such- und Standardauflistungen werden die Produkte nach **Relevanz** sortiert. Bei **Kategorieregeln** wird die standardmäßige Merchandising-Reihenfolge für die Kategorie verwendet, wenn Sie keine andere intelligente Strategie auswählen.
 
 Wählen Sie die Strategie für Ihre Regel aus. Im **[!UICONTROL Test your rule]** Bereich werden die erwarteten Ergebnisse für suchorientierte Regeln angezeigt. **Kategorienregeln** verwenden die Kategorievorschau.
+
+#### Verhaltenssignale für konfigurierbare Produkte und Varianten {#behavioral-signals-variants}
+
+Intelligente Rangfolgen erfassen Verhaltenssignale wie Ansichten, Warenkorbereignisse und Käufe für das spezifische Produkt, mit dem ein Käufer interagiert. Für ein konfigurierbares Produkt bedeutet dies, dass Signale auf der Ebene **Variante** (einfaches Produkt) aufgezeichnet werden, nicht gegen das konfigurierbare übergeordnete Element.
+
+Beim Ranking eines konfigurierbaren Produkts aggregiert Intelligent Ranking die Verhaltenssignale, die von allen Varianten erfasst werden, und aggregiert sie zum konfigurierbaren übergeordneten Element. Die Rangfolge eines konfigurierbaren Produkts spiegelt die kombinierten Signale jeder Variante wider, nicht nur einer.
+
+Diese Aggregation erfolgt innerhalb des Bereichs der durchsuchten Kategorie. Eine Variante trägt ihre Verhaltenssignale nur zum Ranking-Score des konfigurierbaren übergeordneten Elements für Kategorien bei, denen diese **Variante** zugewiesen ist. Wenn eine Variante in einer Kategorie fehlt, werden ihre Signale nicht auf den Rang des übergeordneten Elements in dieser Kategorie angerechnet, auch wenn das konfigurierbare übergeordnete Element selbst dort zugewiesen ist.
+
+**Best Practice:** Überprüfen Sie Kategoriezuweisungen für alle Produktvarianten, insbesondere in Katalogen, die größen-, farbige oder andere variantenspezifische Kategoriestrukturen verwenden, um zu bestätigen, dass jede Variante jeder Kategorie zugewiesen ist, in der sie angezeigt wird und das Ranking beeinflusst.
+
+**Beispiel:**
+
+Ein Merchandiser organisiert einen Katalog in größenspezifische Unterkategorien, wie **200g** und **500g**. Ein konfigurierbares Produkt hat zwei Varianten, eine für jede Größe. Wenn der Kategorie 200 g nur die Variante 200 g zugewiesen ist, tragen Käufe und Ansichten der Variante 500 g nicht zum Ranking-Wert des konfigurierbaren Produkts auf dieser Seite bei. Dies gilt auch dann, wenn sich die 500g-Variante anderswo gut verkauft. Das konfigurierbare Produkt kann dann auf der Kategorieseite 200g einen niedrigeren Rang als erwartet oder außerhalb des Bereichs mit der tatsächlichen Verkaufsleistung liegen. Durch die Zuweisung beider Varianten zu ihren jeweiligen Kategorien wird die Nichtübereinstimmung behoben.
 
 #### Intelligente Ranking-Optimierung {#intelligent-ranking-boost}
 
@@ -210,6 +227,7 @@ Unter [Suchregeln](./best-practice.md#tips-to-optimize-search-rules) erfahren Si
 #### Einschränkungen
 
 - Apostrophe und Anführungszeichen in Abfragen können zu einigen kleineren Problemen mit Rangfolge und Relevanz in einigen Sprachen führen.
+- Wenn intelligente Ranking-Ergebnisse nicht mit dem tatsächlichen Umsatz oder der Ansichtsleistung korrelieren, bestätigen Sie, dass alle relevanten Produktvarianten der zu überprüfenden Kategorie zugewiesen sind. Fehlende Variantenkategoriezuweisungen sind eine häufige und leicht zu übersehende Ursache für unerwartetes Ranking-Verhalten. Siehe [Verhaltenssignale für konfigurierbare Produkte und Varianten](#behavioral-signals-variants).
 - Um sicherzustellen, dass das intelligente Ranking für **Suche** ordnungsgemäß funktioniert, stellen Sie sicher, dass **Suchgewichtung** für alle Attribute, die für die Suche oder Filterung (Facetten) verwendet werden, `5` oder kleiner ist. (Diese Anleitung gilt für die Suchindizierung, nicht für Merchandising-Flüsse, die nur einer Kategorie angehören.)
 
 Informationen zum Festlegen der Suchgewichtung finden Sie unter [Metadaten-API](https://developer.adobe.com/commerce/services/reference/rest/).
@@ -218,10 +236,10 @@ Informationen zum Festlegen der Suchgewichtung finden Sie unter [Metadaten-API](
 
 **Manuelle Rangfolge** Ereignisse passen die Produktreihenfolge für **Suchergebnisse** (wenn die Bedingungen Ihrer Regel erfüllt sind), für **Standardproduktlisten** und für **Kategorieseite** an. Eine einzelne Regel kann bis zu 25 Ereignisse enthalten.
 
-- **Verstärken** - Verschiebt ein Produkt in der Liste nach oben.
-- **Bury** - Verschiebt eine SKU weiter unten in der Liste.
-- **Produkt anheften** - Fixiert ein Produkt an der ausgewählten Position in der Auflistung.
-- **Produkt ausblenden** - Schließt eine SKU aus den Ergebnissen aus (suchorientiert; Verhalten für Kategorieregeln im Editor bestätigen).
+- **[!UICONTROL Boost]** - Verschiebt eine SKU in der Liste nach oben.
+- **[!UICONTROL Bury]** - Verschiebt eine SKU weiter unten in der Liste.
+- **[!UICONTROL Pin a product]** - Korrigiert eine SKU an der ausgewählten Position in der Auflistung.
+- **[!UICONTROL Hide a product]** - Schließt eine SKU aus den Ergebnissen aus (suchorientiert; Verhalten für Kategorieregeln im Editor bestätigen).
 
 Die einfachste Möglichkeit, ein Produkt anzuheften, besteht darin, es per Drag-and-Drop zu ziehen.
 
@@ -239,9 +257,48 @@ Oder Ereignisse können manuell festgelegt werden:
 
 1. Wählen *unter* die Option **Ereignis** aus, die ausgeführt werden soll, wenn die zugehörigen Bedingungen erfüllt sind.
 
-   Wählen Sie beispielsweise `Hide a product`. Geben Sie dann den Namen des Produkts ein, das Sie ausblenden möchten. Produkte werden bei der Eingabe vorgeschlagen.
+   Wählen Sie beispielsweise **[!UICONTROL Hide a product]**. Geben Sie dann die Phrase ein, die mit dem Teil oder dem gesamten Namen oder der SKU des Produkts übereinstimmt, das Sie ausblenden möchten.
 
 1. Wählen Sie für mehrere Ereignisse alle anderen Ereignisse aus, die Sie bei Erfüllung der Bedingungen als Trigger festlegen möchten.
+
+### Attribut-Ranking {#attribute-ranking}
+
+>[!AVAILABILITY]
+>
+>Diese Funktion befindet sich in der [Beta](https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+
+**Attribut-Ranking** wendet automatisch eine **[!UICONTROL Boost]**-, **[!UICONTROL Bury]**- oder **[!UICONTROL Hide]**-Aktion auf jedes Produkt an, das einer oder mehreren Attributbedingungen entspricht, ohne dass Sie einzelne SKUs auswählen müssen. Attribut-Ranking wird im Regeleditor neben [Intelligente Rangfolge](#intelligent-ranking) und [Manuelle Rangfolge](#manual-ranking) angezeigt und ist für die **Regel Alle Produkte**, **Suchregeln** und **Kategorieregeln**. Verwenden Sie diese Option, um das Merchandising auf große Kataloge zu skalieren, z. B. um jedes Produkt einer bestimmten Marke zu steigern oder jedes Produkt in einer nicht mehr unterstützten Farbe zu vergraben.
+
+![Attribut-Ranking](../../assets/attribute-rank-rule.png)
+
+1. Erweitern Sie im Regeleditor **[!UICONTROL Attribute ranking]** .
+1. Klicken Sie auf **[!UICONTROL Add attribute]** , um eine Attributbedingung hinzuzufügen.
+1. Wählen Sie aus dem Dropdown-Menü oben in der Bedingung die Aktion aus, die auf die entsprechenden Produkte angewendet werden soll: **[!UICONTROL Boost]**, **[!UICONTROL Bury]** oder **[!UICONTROL Hide]**.
+1. Wählen Sie unter **[!UICONTROL Attribute]** das entsprechende Produktattribut aus, z. B **„Marke**, **Kategorie**, **Land**, **Hersteller** oder **Modell**. Es sind nur filterbare, textbasierte Attribute verfügbar.
+1. Geben Sie unter **[!UICONTROL Value]** einen Wert ein und drücken Sie **Return**, um ihn hinzuzufügen. Wiederholen Sie diesen Vorgang, um weitere Werte hinzuzufügen. Jeder Wert wird als entfernbares Tag unter **[!UICONTROL Selected values]** angezeigt. Ein Produkt entspricht der Bedingung, wenn es einen der aufgelisteten Werte aufweist.
+
+   >[!NOTE]
+   >
+   >Das Feld **[!UICONTROL Value]** akzeptiert freien Text und unterscheidet zwischen Groß- und Kleinschreibung. Nachdem Sie einen Wert hinzugefügt haben, überprüfen Sie den Testbereich, um sicherzustellen, dass er mit den erwarteten Produkten übereinstimmt.
+
+1. Ziehen Sie für **[!UICONTROL Boost]** und **[!UICONTROL Bury]** den Schieberegler **[!UICONTROL Boost strength]** , um festzulegen, wie stark die Aktion passende Produkte bewegt.
+1. Um eine weitere Bedingung hinzuzufügen, klicken Sie auf **[!UICONTROL Add attribute]** und wiederholen Sie die vorherigen Schritte.
+
+Das Anheften ist in der Attributreihenfolge nicht verfügbar, da beim Anheften ein Produkt an eine exakte Position zugewiesen wird, während eine Attributbedingung vielen Produkten gleichzeitig entsprechen kann. Um ein bestimmtes Produkt anzuheften, verwenden Sie [Manuelle Rangfolge](#manual-ranking) direkt für diese SKU.
+
+#### Interaktion zwischen Attribut und Ranking mit intelligentem Ranking
+
+Wenn eine Regel eine intelligente Rangfolgestrategie mit einer oder mehreren Attributbedingungen kombiniert, hat die Attributaktion Priorität für jedes Produkt, mit dem sie übereinstimmt. Das intelligente Ranking bestellt weiterhin die restlichen, unübertroffenen Produkte.
+
+#### Wenn Attributbedingungen miteinander in Konflikt stehen
+
+Ein einzelnes Produkt kann mit mehr als einer Attributbedingung übereinstimmen, unabhängig davon, ob dies in derselben Regel oder über verschiedene Regeln hinweg erfolgt. Wenn übereinstimmende Bedingungen widersprüchliche Aktionen für dasselbe Produkt angeben, hat **[!UICONTROL Hide]** Priorität vor **[!UICONTROL Boost]** und **[!UICONTROL Bury]**.
+
+Beispielsweise blendet eine Bedingung alle Produkte mit `season = Christmas` aus und eine andere blendet alle Produkte mit `brand = Nike` aus. Ein Produkt mit `season = Christmas` und `brand = Nike` wird ausgeblendet, da **[!UICONTROL Hide]** Priorität vor **[!UICONTROL Boost]** hat.
+
+#### Beschränkungen
+
+Eine einzelne Regel kann bis zu 25 Attributbedingungen haben, dieselbe Grenze wie manuelle Ranking-Ereignisse.
 
 ### Regel abschließen {#finalizing-the-rule}
 
@@ -289,7 +346,7 @@ Diese Option bietet eine schnelle Möglichkeit, alle Regelparameter anzuzeigen, 
 ### Bedingungen (falls)
 
 | Bedingung | Beschreibung |
-|--- |--- |
+| --- | --- |
 | Suchanfrage enthält | Ein Zeichen oder eine Zeichenfolge, das bzw. die in der Abfrage des Käufers enthalten ist. Die Abfrage des Käufers muss nur einem einzigen Zeichen entsprechen, um diese Bedingung zu erfüllen. |
 | Suchabfrage ist | Ein Zeichen oder eine Textzeichenfolge, das bzw. die genau mit der Abfrage des Käufers übereinstimmt. Komplexe Abfragen mit mehreren Bedingungen können nicht erstellt werden, wenn diese Bedingung verwendet wird. |
 | Suchanfrage beginnt mit | Die Abfrage des Käufers beginnt mit diesem Zeichen oder dieser Zeichenfolge. |
@@ -298,25 +355,34 @@ Diese Option bietet eine schnelle Möglichkeit, alle Regelparameter anzuzeigen, 
 ### Logische Operatoren
 
 | Benutzerin oder Benutzer | Beschreibung |
-|--- |--- |
+| --- | --- |
 | ODER | (Standard) Der logische Operator `OR` vergleicht zwei Bedingungen und erfüllt die Anforderungen für den Trigger eines Ereignisses, wenn mindestens eine Bedingung erfüllt ist. |
 | UND | Der logische Operator `AND` vergleicht zwei Bedingungen und erfüllt die Anforderungen für den Trigger eines Ereignisses, wenn beide Bedingungen erfüllt sind. |
 
 ### Operatoren abgleichen
 
 | Benutzerin oder Benutzer | Beschreibung |
-|--- |--- |
+| --- | --- |
 | Beliebig | Ändert alle logischen Operatoren in der Regel in `OR` und gibt den Satz übereinstimmender Produkte zurück. |
 | Alle | Ändert alle logischen Operatoren in der Regel in `AND` und gibt den Satz übereinstimmender Produkte zurück. |
 
 ### Manuelle Ranking-Ereignisse
 
 | Ereignis | Beschreibung |
-|--- |--- |
-| Verstärken | Verschiebt eine SKU oder einen Bereich von SKUs in der Liste nach oben (Suche oder Kategorie). Jede Version ist in den Testergebnissen mit einem „erweiterten“ Vorschau-Badge gekennzeichnet. |
-| begraben | Verschiebt eine SKU oder einen Bereich von SKUs in den unteren Bereich der Liste. Jedes wird in den Testergebnissen mit einem „Buried“-Vorschauabzeichen gekennzeichnet. |
-| Produkt anheften | Fügt einer bestimmten Position im Listeneintrag eine einzelne SKU hinzu. Das Produkt ist in den Testergebnissen mit einem „angehefteten“ Vorschauabzeichen gekennzeichnet. |
-| Produkt ausblenden | Schließt eine SKU oder eine Reihe von SKUs aus den Ergebnissen aus (suchorientiert; Kategorieregeln im Editor bestätigen). |
+| --- | --- |
+| [!UICONTROL Boost] | Verschiebt eine SKU oder einen Bereich von SKUs in der Liste nach oben (Suche oder Kategorie). Jede Version ist in den Testergebnissen mit einem „erweiterten“ Vorschau-Badge gekennzeichnet. |
+| [!UICONTROL Bury] | Verschiebt eine SKU oder einen Bereich von SKUs in den unteren Bereich der Liste. Jedes wird in den Testergebnissen mit einem „Buried“-Vorschauabzeichen gekennzeichnet. |
+| [!UICONTROL Pin a product] | Fügt einer bestimmten Position im Listeneintrag eine einzelne SKU hinzu. Das Produkt ist in den Testergebnissen mit einem „angehefteten“ Vorschauabzeichen gekennzeichnet. |
+| [!UICONTROL Hide a product] | Schließt eine SKU oder eine Reihe von SKUs aus den Ergebnissen aus (suchorientiert; Kategorieregeln im Editor bestätigen). |
+
+### Ranking-Bedingungen für Attribute
+
+| Feld | Beschreibung |
+| --- | --- |
+| Aktion | Die Aktion, die auf jedes Produkt angewendet wird, das der Bedingung entspricht: **[!UICONTROL Boost]**, **[!UICONTROL Bury]** oder **[!UICONTROL Hide]**. |
+| [!UICONTROL Attribute] | Das filterbare, textbasierte Produktattribut, auf das sich die Bedingung bezieht, z **B. „Marke**, **Kategorie**, **Land**, **Hersteller** oder **Modell**. |
+| [!UICONTROL Value] | Ein oder mehrere Attributwerte, die ein Produkt aufweisen muss, um der Bedingung zu entsprechen. Geben Sie einen Wert ein und drücken Sie die Eingabetaste , um ihn als Tag hinzuzufügen. Ein Produkt sucht, wenn es einen der aufgelisteten Werte hat. |
+| [!UICONTROL Boost strength] | Für **[!UICONTROL Boost]** und **[!UICONTROL Bury]** ein Schieberegler, der steuert, wie stark die Aktion passende Produkte bewegt. Wird nur für **[!UICONTROL Boost]** und **[!UICONTROL Bury]** angezeigt, nicht für **[!UICONTROL Hide]**. |
 
 ### Intelligente Ranking-Steuerelemente
 
@@ -327,7 +393,7 @@ Diese Option bietet eine schnelle Möglichkeit, alle Regelparameter anzuzeigen, 
 ### Details
 
 | Feld | Beschreibung |
-|--- |--- |
+| --- | --- |
 | Name | Der Name der Regel. Regelnamen müssen eindeutig sein. |
 | Regeltyp | **Standard** (alle Produktlisten), **Abfrage** (spezifische Suchbedingungen) oder **Kategorie** (Kategorieseiten), je nachdem, für **Regel gilt**. |
 | Startdatum | Das Startdatum der Regel, falls geplant. |
