@@ -57,7 +57,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Durch die Aktivierung von [!DNL Product Recommendations] in Page Builder können Sie eine vorhandene, aktive [Empfehlungseinheit](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) zu allen in Page Builder erstellten Inhalten hinzufügen, z. B. Seiten, Blöcke und dynamische Blöcke.
+Durch die Aktivierung von [!DNL Product Recommendations] in Page Builder können Sie eine vorhandene, aktive [Empfehlungseinheit](https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/add-content/recommendations) zu allen in Page Builder erstellten Inhalten hinzufügen, z. B. Seiten, Blöcke und dynamische Blöcke.
 
 Weitere [&#x200B; finden  [!DNL Product Recommendations]  unter „Verwenden &#x200B;](page-builder.md) Page Builder-Inhalten“.
 
@@ -71,7 +71,7 @@ composer require magento/module-visual-product-recommendations
 
 ### Hinzufügen von Fastly-Bildoptimierungsunterstützung {#fastlysupport}
 
-Die Unterstützung der Fastly Image Optimization für [!DNL Product Recommendations] ist ein optionales Modul und wird separat installiert. Dieses Modul wendet [Fastly Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)-Parameter auf [!DNL Product Recommendations] Bild-URLs an. Um es zu installieren, führen Sie den folgenden Befehl aus:
+Die Unterstützung der Fastly Image Optimization für [!DNL Product Recommendations] ist ein optionales Modul und wird separat installiert. Dieses Modul wendet [Fastly Image Optimization](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/fastly)-Parameter auf [!DNL Product Recommendations] Bild-URLs an. Um es zu installieren, führen Sie den folgenden Befehl aus:
 
 ```bash
 composer require magento/module-fastly-recommendations
@@ -83,7 +83,7 @@ composer require magento/module-fastly-recommendations
 
    Durch die Konfiguration dieser Verbindung wird die Datensynchronisation und Kommunikation zwischen der Commerce-Instanz, dem Katalog-Service und anderen unterstützenden Services aktiviert. Die [SaaS-Datenexporterweiterung](../data-export/overview.md) übernimmt die Datensynchronisierung.
 
-1. Um sicherzustellen, dass der Katalogexport ordnungsgemäß ausgeführt werden kann, überprüfen Sie, ob [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)-Vorgänge und [indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) ausgeführt werden und der `Product Feed`-Indexer auf `Update by Schedule` festgelegt ist.
+1. Um sicherzustellen, dass der Katalogexport ordnungsgemäß ausgeführt werden kann, überprüfen Sie, ob [cron](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)-Vorgänge und [indexers](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers) ausgeführt werden und der `Product Feed`-Indexer auf `Update by Schedule` festgelegt ist.
 
 Nachdem Sie die Commerce-Anwendung erfolgreich mit Commerce Services verknüpft und den [SaaS-Datenspeicher](../landing/saas.md#saas-configuration) angegeben haben, beginnt die Katalogsynchronisierung. Sie können [&#x200B; überprüfen](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify) ob Verhaltensdaten an Ihre Storefront gesendet werden.
 
@@ -143,4 +143,4 @@ Um Produktempfehlungen durch eine Firewall zu lassen, fügen Sie `commerce.adobe
 
 ## [!DNL Product Recommendations] deinstallieren {#uninstall}
 
-Bei Bedarf können Sie [&#x200B; Modul &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)product-recommendations“ (deinstallieren).
+Bei Bedarf können Sie [&#x200B; Modul &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)product-recommendations“ (deinstallieren).
