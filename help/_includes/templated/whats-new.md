@@ -1,7 +1,7 @@
 ---
-source-git-commit: 73cfc898b25e731238b049419fe0e964e29e92b6
+source-git-commit: 4a68ab79a6ddbd39efe5825fcbe2137ddf83f471
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '1056'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;2. September 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Das Handbuch <a href="https://experienceleague.adobe.com/de/docs/commerce/insights/overview">Commerce Insights</a> wurde hinzugefügt, eine neue Startseite für strategische Implementierungs- und Sicherheitsanleitungen von Adobe Commerce Product Management and Engineering.</p>
+</td>
+      <td>
+        Neues Thema
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7c82665f7696cab156f6559ade451df937faa3e5">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;28. August 2026
 
@@ -149,7 +171,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Das Adobe Commerce Optimizer-Einrichtungshandbuch wurde aktualisiert, indem Anweisungen zum Aktivieren und Konfigurieren privater Katalogansichten, um den Katalogdatenzugriff mit signierten Token einzuschränken, sowie aktualisierte verwandte Themen, um auf die neue Funktion zu verweisen:<br />- Hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/private-catalog-view">Private Katalogansichten</a>, in der erläutert wird, wie der Katalogschutz aktiviert wird, sodass nur Anforderungen mit einem gültigen signierten Token die Daten einer Katalogansicht abrufen können.<br />- Hinzugefügte <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/restricted-access-keys">eingeschränkte Zugriffsschlüssel</a>, in der erläutert wird, wie die Schlüssel erstellt, zugewiesen und gedreht werden, die zum Signieren von Token für den Katalogschutz verwendet werden.<br />- Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-view">Katalogansichten</a></a>, <a [#$sd1_sf6_tu9]>, Was ist, Was ist, Was ist Adobe Commerce Optimizer?</a>Was ist, <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/get-started"></a>, <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits">Beschränkungen und Grenzen und GrenzenBeschränkungen und GrenzenBeschränkungen und GrenzenBeschränkungen und GrenzenBeschränkungen und Grenzen <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/launch/launch-checklist">Launch-</a> und das <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer-Connector-</a>, um auf die neuen Themen Private Katalogansichten und Schlüssel mit eingeschränktem Zugriff zu verweisen.</p>
+      <td><p>Das Adobe Commerce Optimizer-Einrichtungshandbuch wurde aktualisiert, indem Anweisungen zum Aktivieren und Konfigurieren privater Katalogansichten, um den Katalogdatenzugriff mit signierten Token einzuschränken, sowie aktualisierte verwandte Themen, um auf die neue Funktion zu verweisen:<br />- Hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/private-catalog-view">Private Katalogansichten</a>, in der erläutert wird, wie der Katalogschutz aktiviert wird, sodass nur Anforderungen mit einem gültigen signierten Token die Daten einer Katalogansicht abrufen können.<br />- Hinzugefügte <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/restricted-access-keys">eingeschränkte Zugriffsschlüssel</a>, in der erläutert wird, wie die Schlüssel erstellt, zugewiesen und gedreht werden, die zum Signieren von Token für den Katalogschutz verwendet werden.<br />- Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-view">Katalogansichten</a></a>, <a [#$sd1_sf7_tu9]>, Was ist, Was ist, Was ist Adobe Commerce Optimizer?</a>Was ist, <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/get-started"></a>, <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits">Beschränkungen und Grenzen und GrenzenBeschränkungen und GrenzenBeschränkungen und GrenzenBeschränkungen und GrenzenBeschränkungen und Grenzen <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/launch/launch-checklist">Launch-</a> und das <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer-Connector-</a>, um auf die neuen Themen Private Katalogansichten und Schlüssel mit eingeschränktem Zugriff zu verweisen.</p>
 </td>
       <td>
         Größere Aktualisierung, neues Thema
@@ -353,28 +375,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Größere Aktualisierung
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/976a43b367be87363307dc27c55f98df18271eb1">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;6. Juli 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Die Dokumentation zur Integration von LLM Optimizer und Commerce wurde entfernt. Die Funktion wurde neu zugewiesen und in das <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/catalog-enrichment">Commerce-Administratorhandbuch verschoben</a>.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/edab7c8b3c7965425c5d3008a537f7e4a1fc374b">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
