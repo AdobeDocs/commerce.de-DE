@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 49a235a3a545b422b0371b53163d7de770df6a38
+source-git-commit: 8fdfd3ebfa088fd219c65c86ce99cae838ff5d54
 workflow-type: tm+mt
-source-wordcount: 6271
+source-wordcount: 6358
 ht-degree: 0%
 
 ---
@@ -50,11 +50,11 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 
 ## September 2026 - #1 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produktion]{type=Neutral tooltip="Die aufgelisteten Elemente sind derzeit in Produktionsumgebungen verfügbar."}
 
-Die folgenden Elemente werden am 8. September 2026 in der Produktionsumgebung veröffentlicht.
+Die folgenden Artikel wurden am 8. September 2026 in der Produktionsumgebung veröffentlicht.
 
 >[!BEGINSHADEBOX]
 
@@ -66,7 +66,7 @@ Weitere Informationen finden Sie in den Versionshinweisen zu [Adobe Commerce &#x
 
 ### Synchronisieren von Sandbox- und Produktionskonfigurationen über die REST-API
 
-Neue `GET`- und `PUT /V1/system/config`-REST-API-Endpunkte ermöglichen es Integrationen, Commerce-Systemkonfigurationswerte zu lesen und zu aktualisieren, einschließlich:
+Neue [`GET`- und `PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config)-REST-API-Endpunkte ermöglichen es Integrationen, Commerce-Systemkonfigurationswerte zu lesen und zu aktualisieren, einschließlich:
 
 * Informationen speichern
 * Versand- und Steuereinstellungen
@@ -77,15 +77,17 @@ Diese Endpunkte ermöglichen es Admins, die Konfiguration in Umgebungen programm
 
 ### Verfügbarkeit des Abfrageinventars über GraphQL
 
-Eine neue `sourceAvailability` GraphQL-Abfrage gibt die Lagerverfügbarkeit pro Quelle für eine oder mehrere SKUs zurück, sodass Storefronts wie Produkt- und Kategorieseiten genaue Lagerinformationen für jede Lagerquelle anzeigen können. <!-- ACCS-933 -->
+Eine neue [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL-Abfrage gibt die Lagerverfügbarkeit pro Quelle für eine oder mehrere SKUs zurück, sodass Storefronts wie Produkt- und Kategorieseiten genaue Lagerinformationen für jede Lagerquelle anzeigen können.
+
+[Verfügbarkeit **pro Source**](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/configuration/global-options). <!-- ACCS-933 -->
 
 ### Lesen persistenter Wunschlisten- und Kontofreigabeeinstellungen über GraphQL
 
-Die `storeConfig` GraphQL-Abfrage gibt jetzt `persistent_enabled`-, `persistent_shopping_cart`-, `persistent_options_wishlist`- und `share_customer_accounts_scope`-Konfigurationswerte zurück, sodass Storefronts ohne Kontaktaufnahme mit dem Support auf die persistenten Warenkorb- und Wunschlisteneinstellungen des Händlers zugreifen können. <!-- USF-4051 -->
+Die [`storeConfig`](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/store-config/#query-a-stores-persistent-cart-and-account-sharing-configuration) GraphQL-Abfrage gibt jetzt `persistent_enabled`-, `persistent_shopping_cart`-, `persistent_options_wishlist`- und `share_customer_accounts_scope`-Konfigurationswerte zurück, sodass Storefronts ohne Kontaktaufnahme mit dem Support auf die persistenten Warenkorb- und Wunschlisteneinstellungen des Händlers zugreifen können. <!-- USF-4051 -->
 
 ### Kundenbestellungen nach Produkt, SKU oder Auftrags-ID suchen
 
-Die `CustomerOrdersFilterInput` GraphQL-Eingabe unterstützt jetzt ein optionales `search`, das mit der Bestellnummer, der Artikel-SKU oder dem Artikelnamen in Kombination mit anderen von Ihnen bereitgestellten Filtern übereinstimmt. <!-- USF-4290 -->
+Die [`CustomerOrdersFilterInput`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer) GraphQL-Eingabe unterstützt jetzt ein optionales `search`, das mit der Bestellnummer, der Artikel-SKU oder dem Artikelnamen in Kombination mit anderen von Ihnen bereitgestellten Filtern übereinstimmt. <!-- USF-4290 -->
 
 ### Aktualisieren und Löschen benutzerdefinierter E-Mail-Vorlagen über die API
 
@@ -136,15 +138,14 @@ Händler können das Onboarding eines anderen PayPal-Kontos auf der Website jetz
 
 ### Kostenlose Preisregeln für Geschenkwagen
 
-Die **Kostenlose Geschenk**-Preisregel ist jetzt in der [!DNL Commerce Admin] für Storefronts verfügbar. <!-- AC-17678 -->
+Die [**Kostenlose Geschenk** Warenkorb-Preisregel](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift) ist jetzt in der [!DNL Commerce Admin] für Storefronts verfügbar.
+<!-- AC-17678 -->
 
-Mit dieser Regel können Sie ein kostenloses Geschenkprodukt zum Warenkorb hinzufügen, wenn die Regelbedingungen erfüllt sind.
-
-<!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+Mit dieser Regel können Sie ein kostenloses Geschenkprodukt zum Warenkorb hinzufügen, wenn die Regelbedingungen erfüllt sind. Wenn eine Regel eine Auswahl erfordert, können Käufer eine Geschenk-SKU mit der neuen [`selectFreeGiftForCart`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/select-free-gift) GraphQL-Mutation auswählen, die konfigurierbare und gebündelte Geschenkprodukte unterstützt.
 
 ### Planen von Warenkorbpreisregeln nach Datum und Uhrzeit
 
-Sie können jetzt die Tageszeit festlegen, zu der eine [Warenkorb-Preisregel](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create) im [!DNL Commerce Admin] beginnen oder enden soll. Das Raster Warenkorbpreisregeln zeigt die geplanten Zeiten an und die REST-API berücksichtigt eine am `from_date` und `to_date` eingereichte Zeit, anstatt die Regel auf Mitternacht festzulegen. <!-- ACCS-970 -->
+Sie können jetzt die Tageszeit festlegen, zu der eine [Warenkorb-Preisregel](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#rule-information) im [!DNL Commerce Admin] beginnen oder enden soll. Das Raster Warenkorbpreisregeln zeigt die geplanten Zeiten an und die REST-API berücksichtigt eine am `from_date` und `to_date` eingereichte Zeit, anstatt die Regel auf Mitternacht festzulegen. <!-- ACCS-970 -->
 
 <!-- commenting this out until the B2B compatibility package version is live. -->
 
