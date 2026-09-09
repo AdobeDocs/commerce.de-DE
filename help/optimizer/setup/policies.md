@@ -2,20 +2,15 @@
 title: Richtlinien
 description: Erfahren Sie, wie Sie in Richtlinien erstellen und  [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
 TQID: https://experienceleague.adobe.com/hUwBKWEcFOlkC2WOwBtDDitnj-nu-kixJ9WuencZIe4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4a9bb6c6473680ee7059d1844be5fee718a9ed68
 workflow-type: tm+mt
-source-wordcount: 917
+source-wordcount: 1054
 ht-degree: 0%
 
 ---
@@ -61,6 +56,28 @@ Richtlinien mit einer **Wertquelle** von **TRIGGER** werden als exklusive Richtl
 - `AC-Policy-Model`
 
 Wenn der Käufer auf die Dropdown **Marke** klickt, enthält die Kopfzeile des API-Aufrufs `AC-Policy-Brand`, die so konfiguriert ist, dass nur Produkte angezeigt werden, die für die `AC-Policy-Brand`-Richtlinie spezifisch sind.
+
+### HTTP-Header-Trigger mit mehreren Werten {#multi-value-http-header-triggers}
+
+Eine Trigger-Richtlinie, die den `HTTP_HEADER` Transport-Typ verwendet, kann mehrere Werte in einer Kopfzeile empfangen. Die Werte müssen durch Kommas getrennt werden und der Filteroperator muss `IN` sein. Jeder Wert wird als zulässige Übereinstimmung behandelt. Die Werte werden mit `OR` Semantik ausgewertet.
+
+Beispiel: ein Richtlinienfilter, der `IN` mit der folgenden Kopfzeile verwendet:
+
+```
+AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025
+```
+
+Sucht Produkte, deren `vehicle` entweder `UNIVERSAL` oder `veh-bolt-mammoth-limited-2025` ist.
+
+Ein Filteroperator von `EQUALS`, `GREATER_THAN_EQUAL` oder `LESS_THAN_EQUAL` wird hingegen mit einem Validierungsfehler zurückgewiesen.
+
+#### Hinweise zur Syntax
+
+- Der Kopfzeilenname entspricht dem von Ihnen konfigurierten Trigger-Namen, z. B. `AC-Policy-Vehicle`.
+- Kommas trennen einzelne Werte in der Kopfzeile. Wenn derselbe `AC-Policy-_Name_`-Header mehrmals angezeigt wird, werden seine Werte in einem einzelnen, durch Kommas getrennten Header-Wert kombiniert
+- Der Filteroperator ist `IN`.
+- Ein Richtlinienfilter mit **Wertquelle** auf `TRIGGER` gesetzt.
+- Ein Trigger, dessen **Transport-Typ** `HTTP_HEADER` ist.
 
 ## Richtlinie erstellen
 
