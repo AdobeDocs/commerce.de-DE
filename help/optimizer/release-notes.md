@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+source-git-commit: 631126cc8d9b69c41aed19e30bf1503dd950d7e9
 workflow-type: tm+mt
-source-wordcount: 1561
+source-wordcount: 1626
 ht-degree: 0%
 
 ---
@@ -49,6 +49,11 @@ _3. September 2026_
 ## August 2026
 
 >[!BEGINSHADEBOX]
+
+_9. September 2026_
+
+![Neu](../assets/new.svg) **HTTP-Header-Trigger-Richtlinien mit mehreren Werten** - Trigger-Richtlinien, die den `HTTP_HEADER`-Transporttyp verwenden, können jetzt mehrere kommagetrennte Werte in einer einzelnen Kopfzeile empfangen (z. B. `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). Richtlinienfilter verwenden `IN` werten die Werte mit `OR` Semantik aus. Filter, die `EQUALS`, `GREATER_THAN_EQUAL` oder `LESS_THAN_EQUAL` verwenden, lehnen die Anfrage mit einem Validierungsfehler ab, wenn die Kopfzeile mehrere Werte enthält. Dieses Verhalten gilt nur für Trigger-Richtlinien, die den `HTTP_HEADER` verwenden. [Weitere Informationen](./setup/policies.md#multi-value-http-header-triggers).
+<!--COMOPT-2439-->
 
 _7. August 2026_
 

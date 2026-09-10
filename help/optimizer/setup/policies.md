@@ -13,9 +13,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 4a9bb6c6473680ee7059d1844be5fee718a9ed68
 workflow-type: tm+mt
-source-wordcount: 917
+source-wordcount: 1054
 ht-degree: 0%
 
 ---
@@ -61,6 +61,28 @@ Richtlinien mit einer **Wertquelle** von **TRIGGER** werden als exklusive Richtl
 - `AC-Policy-Model`
 
 Wenn der Käufer auf die Dropdown **Marke** klickt, enthält die Kopfzeile des API-Aufrufs `AC-Policy-Brand`, die so konfiguriert ist, dass nur Produkte angezeigt werden, die für die `AC-Policy-Brand`-Richtlinie spezifisch sind.
+
+### HTTP-Header-Trigger mit mehreren Werten {#multi-value-http-header-triggers}
+
+Eine Trigger-Richtlinie, die den `HTTP_HEADER` Transport-Typ verwendet, kann mehrere Werte in einer Kopfzeile empfangen. Die Werte müssen durch Kommas getrennt werden und der Filteroperator muss `IN` sein. Jeder Wert wird als zulässige Übereinstimmung behandelt. Die Werte werden mit `OR` Semantik ausgewertet.
+
+Beispiel: ein Richtlinienfilter, der `IN` mit der folgenden Kopfzeile verwendet:
+
+```
+AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025
+```
+
+Sucht Produkte, deren `vehicle` entweder `UNIVERSAL` oder `veh-bolt-mammoth-limited-2025` ist.
+
+Ein Filteroperator von `EQUALS`, `GREATER_THAN_EQUAL` oder `LESS_THAN_EQUAL` wird hingegen mit einem Validierungsfehler zurückgewiesen.
+
+#### Hinweise zur Syntax
+
+- Der Kopfzeilenname entspricht dem von Ihnen konfigurierten Trigger-Namen, z. B. `AC-Policy-Vehicle`.
+- Kommas trennen einzelne Werte in der Kopfzeile. Wenn derselbe `AC-Policy-_Name_`-Header mehrmals angezeigt wird, werden seine Werte in einem einzelnen, durch Kommas getrennten Header-Wert kombiniert
+- Der Filteroperator ist `IN`.
+- Ein Richtlinienfilter mit **Wertquelle** auf `TRIGGER` gesetzt.
+- Ein Trigger, dessen **Transport-Typ** `HTTP_HEADER` ist.
 
 ## Richtlinie erstellen
 
