@@ -5,7 +5,7 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 autotag-review: '2026-06-18T16:02:31.185Z'
 TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
 product_v2:
@@ -233,7 +233,7 @@ Entwickler können umfassende [GraphQL](https://developer.adobe.com/commerce/web
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->

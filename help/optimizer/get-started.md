@@ -3,7 +3,7 @@ title: Erste Schritte
 description: Erfahren Sie mehr über die ersten Schritte mit [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
 TQID: https://experienceleague.adobe.com/1dcKMjOut1GtiOevvGJECsaU7URFmYg-mQ-m9wi7n4Y
 product_v2:
@@ -253,5 +253,5 @@ Nach Abschluss der Einrichtung:
 
 - **Entwicklerressourcen**: [Entwicklerdokumentation](https://developer.adobe.com/commerce/services/optimizer/)
 - **Storefront-Ressourcen**: [Dokumentation zur Commerce-Storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/)
-- **Tutorials**: [Commerce Optimizer-Tutorials](https://experienceleague.adobe.com/en/docs/commerce-learn/adobe-commerce-optimizer/overview)
-- **Support**: [Adobe Commerce-Support-Ressourcen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
+- **Tutorials**: [Commerce Optimizer-Tutorials](https://experienceleague.adobe.com/de/docs/commerce-learn/adobe-commerce-optimizer/overview)
+- **Support**: [Adobe Commerce-Support-Ressourcen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/overview)

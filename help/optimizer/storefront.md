@@ -2,7 +2,7 @@
 title: Einrichten der Storefront
 description: Erfahren Sie, wie Sie Ihre Storefront  [!DNL Adobe Commerce Optimizer] .
 role: Developer
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 TQID: https://experienceleague.adobe.com/Jcj-3qVJPXr-t0X8-Y9GVziGj57ksUdWDhCO6pt-94A
 product_v2:
@@ -240,7 +240,7 @@ Wenn die Probleme bestehen bleiben:
 
 * Lesen Sie die Dokumentation zur [Adobe Commerce-Storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/){target="_blank"}
 * Lesen Sie das [Adobe Commerce Optimizer-Entwicklerhandbuch](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
-* Besuchen Sie die [Adobe Commerce Support-Ressourcen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}
+* Besuchen Sie die [Adobe Commerce Support-Ressourcen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/overview){target="_blank"}
 
 ## Nächste Schritte
 

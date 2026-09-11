@@ -3,7 +3,7 @@ title: End-to-End-Anwendungsfall für Storefront- und Katalogadministrator
 description: Erfahren Sie, wie Sie  [!DNL Adobe Commerce Optimizer]  verwenden, um Ihren Katalog mithilfe von Katalogansichten und Richtlinien zu verwalten, und wie Sie Ihre Storefront basierend auf Ihrer Katalogkonfiguration einrichten.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
 TQID: https://experienceleague.adobe.com/sqz0syCSh3ls8F-WIbuzPyqeRguyXdsPw-7OerOnDes
 product_v2:

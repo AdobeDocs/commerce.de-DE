@@ -9,7 +9,7 @@ role: Admin, Developer
 level: Intermediate
 topic: Administration
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 feature_v2:
@@ -55,11 +55,11 @@ Ihre Lösung umfasst in der Regel die folgenden Komponenten:
 
 Vergewissern Sie sich, dass Ihre Adobe Commerce on Cloud-Umgebung produktionsbereit ist.
 
-▢ Die Cloud-Instanz ist [bereitgestellt](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/new-project).
+▢ Die Cloud-Instanz ist [bereitgestellt](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/start/new-project).
 ▢ Test- und Platzhalterdaten werden aus der Instanz entfernt.
 ▢ Produktionsdaten werden in die Instanz geladen.
 ▢ Sie kennen den [GraphQL-Endpunkt](https://developer.adobe.com/commerce/webapi/graphql/).
-▢ Die Instanz erfüllt [ready-for-launch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist)-Anforderungen.
+▢ Die Instanz erfüllt [ready-for-launch](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/launch/checklist)-Anforderungen.
 
 ## Commerce Optimizer-Instanz überprüfen {#verify-optimizer}
 
@@ -156,7 +156,7 @@ Bestätigen der Erweiterungskonfiguration für die Produktion.
 
 ▢ Der Arbeitsbereich Produktion enthält alle erforderlichen Konfigurationen und Services.
 ▢ Die Produktions-App durchläuft Tests für verschiedene Build-Szenarien.
-▢ Produktbeschränkungen und -grenzen wurden anhand der [Adobe Developer App Builder-Produktbeschreibung und der {](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}&#x200B;}Systemeinstellungen und -beschränkungen von App Builder überprüft und [&#128279;](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
+▢ Produktbeschränkungen und -grenzen wurden anhand der [Adobe Developer App Builder-Produktbeschreibung und der {](https://helpx.adobe.com/de/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}&#x200B;}Systemeinstellungen und -beschränkungen von App Builder überprüft und [&#128279;](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
 ▢ Die Produktions-App verwendet App Builder-Produktionsendpunkte.
 ▢ benutzerdefinierte *Admin*-Bedienfelderweiterungen werden im Produktionsarbeitsbereich bereitgestellt.
 
@@ -225,7 +225,7 @@ Bestätigen Sie die Leistungsgrundlagen und die Analytics-Verkabelung.
 Bestätigen Sie Berechtigungen und Geheimnisse.
 
 ▢ entsprechenden Berechtigungen sind für DAM-Inhalte und EDS-Sites konfiguriert. Siehe [DA.live-Berechtigungen](https://da.live/docs/administration/permissions) und [Authentifizierungseinstellungen für das Authoring](https://www.aem.live/docs/authentication-setup-authoring).
-▢ Die Integration von Produktvisualisierungen wird bereitgestellt. Siehe [Übersicht über den Zugriff auf AEM Cloud &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
+▢ Die Integration von Produktvisualisierungen wird bereitgestellt. Siehe [Übersicht über den Zugriff auf AEM Cloud &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/accessing/overview#).
 ▢ Links zum Zurücksetzen des Kennworts in E-Mail-Vorlagen stimmen mit Ihrer Edge Delivery Services-Einrichtung überein. Siehe die häufig gestellten Fragen zur Storefront: [Was sollte ich tun, wenn meine Links zur E-Mail-Vorlage nach der Migration zu Edge Delivery Services oder Helix beschädigt sind?](https://experienceleague.adobe.com/en/tools/commerce-storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}.
 ▢ Produktionsschlüssel für Integrationen und Zahlungsanbieter sind vorhanden.
 ▢ Domains werden auf die Zulassungsliste gesetzt und Backend-Webhooks funktionieren.
