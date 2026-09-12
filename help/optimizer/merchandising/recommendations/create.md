@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: 1574
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Nachdem Sie eine Empfehlung erstellt haben, müssen Sie deren ID abrufen, um die
 
 1. Kopieren Sie **Abschnitt** Recommendations-ID“ die ID.
 
-1. Verwenden Sie diese ID, um das [Empfehlungs-Dropdown-Menü](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=de) in Ihrer Edge Delivery Services-Storefront zu konfigurieren.
+1. Verwenden Sie diese ID, um das [Empfehlungs-Dropdown-Menü](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) in Ihrer Edge Delivery Services-Storefront zu konfigurieren.
 
 ## Verwalten vorhandener Empfehlungen
 
@@ -212,6 +212,6 @@ Im Folgenden sind mögliche Gründe und Lösungen für häufige Bewertungen der 
 - **Statisch-basiert** - Niedrige Prozentsätze für diese Indikatoren können durch fehlende Katalogdaten für die anzeigbaren Produkte verursacht werden. Wenn sie niedriger sind als erwartet, kann dieses Problem durch eine vollständige Synchronisierung behoben werden.
 - **Dynamisch-basiert** - Niedrige Prozentsätze für dynamisch-basierte Indikatoren können durch Folgendes verursacht werden:
 
-   - Fehlende Felder in den erforderlichen [Storefront-Ereignissen](../../setup/events/overview.md) für die entsprechenden Empfehlungstypen (requestId, Produktkontext usw.)
-   - Geringer Traffic zum Store, sodass nur ein geringes Volumen von empfangenen Verhaltensereignissen vorliegt.
-   - Die Vielfalt der Verhaltensereignisse der Storefront in verschiedenen Produkten in Ihrem Store ist gering. Wenn beispielsweise nur zehn Prozent Ihrer Produkte die meiste Zeit angesehen oder gekauft werden, sind die entsprechenden Bereitschaftsindikatoren niedrig.
+  - Fehlende Felder in den erforderlichen [Storefront-Ereignissen](../../setup/events/overview.md) für die entsprechenden Empfehlungstypen (requestId, Produktkontext usw.)
+  - Geringer Traffic zum Store, sodass nur ein geringes Volumen von empfangenen Verhaltensereignissen vorliegt.
+  - Die Vielfalt der Verhaltensereignisse der Storefront in verschiedenen Produkten in Ihrem Store ist gering. Wenn beispielsweise nur zehn Prozent Ihrer Produkte die meiste Zeit angesehen oder gekauft werden, sind die entsprechenden Bereitschaftsindikatoren niedrig.

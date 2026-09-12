@@ -22,10 +22,10 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 2205
-ht-degree: 0%
+source-wordcount: 2232
+ht-degree: 1%
 
 ---
 
@@ -44,23 +44,23 @@ Dieses Anwendungsbeispiel richtet sich an Administratoren und Entwickler, die mi
 Bevor Sie mit diesem Tutorial beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
 - **[!DNL Adobe Commerce Optimizer]Instanz**
-   - Zugriff auf eine Testinstanz in Cloud Manager
-   - Siehe [Erste Schritte](../get-started.md) für Einrichtungsanweisungen
+  - Zugriff auf eine Testinstanz in Cloud Manager
+  - Siehe [Erste Schritte](../get-started.md) für Einrichtungsanweisungen
 
 - **Benutzerberechtigungen**
-   - Admin-Zugriff auf Adobe Admin Console
-   - Siehe [Benutzerverwaltung](../user-management.md) für die Kontoeinrichtung
-   - Wenn Sie keinen Zugriff haben, wenden Sie sich an den Adobe-Kundenbetreuer.
+  - Admin-Zugriff auf Adobe Admin Console
+  - Siehe [Benutzerverwaltung](../user-management.md) für die Kontoeinrichtung
+  - Wenn Sie keinen Zugriff haben, wenden Sie sich an den Adobe-Kundenbetreuer.
 
 - **Beispieldaten**
-   - Carvelo Automobilkatalogdaten werden in Ihre Instanz geladen
-   - Befolgen Sie die Anweisungen im [Datenaufnahme-Repository für den Beispielkatalog](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
-   - Sie können Beispieldaten nach Abschluss mit dem enthaltenen `reset.js`-Skript löschen
+  - Carvelo Automobilkatalogdaten werden in Ihre Instanz geladen
+  - Befolgen Sie die Anweisungen im [Datenaufnahme-Repository für den Beispielkatalog](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
+  - Sie können Beispieldaten nach Abschluss mit dem enthaltenen `reset.js`-Skript löschen
 
 - **Storefront-Umgebung**
-   - Lokale Entwicklungsumgebung mit Node.js
-   - Textbausteinprojekt für Storefront geklont und konfiguriert
-   - Siehe [Storefront-Setup](../storefront.md) für detaillierte Anweisungen
+  - Lokale Entwicklungsumgebung mit Node.js
+  - Textbausteinprojekt für Storefront geklont und konfiguriert
+  - Siehe [Storefront-Setup](../storefront.md) für detaillierte Anweisungen
 
 ## Fangen wir an
 
@@ -72,7 +72,7 @@ In diesem Anwendungsbeispiel verwenden Sie Folgendes:
 
 >[!NOTE]
 >
-> Erfahren Sie mehr über die Konfigurationsdateien für Storefronts, indem Sie das Thema [Erkunden des Textbausteins](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=de) in der Dokumentation zur Adobe Commerce Storefront lesen.
+> Erfahren Sie mehr über die Konfigurationsdateien für Storefronts, indem Sie das Thema [Erkunden des Textbausteins](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/boilerplate-project/) in der Dokumentation zur Adobe Commerce Storefront lesen.
 
 ### ‌Wichtige Erkenntnisse
 
@@ -248,8 +248,8 @@ Erstellen Sie eine neue Katalogansicht für den *Celport*-Händler und verknüpf
 
    - **name** = *Celport*
    - **Catalog sources** = *en-US*
-   - **Richtlinien** (Dropdown verwenden) = *East Coast Inc Brands*; *Celport-Teilekategorien*; *Marke*; *Modell*
-                         
+   - **Richtlinien** (Dropdown verwenden) = *East Coast Inc Brands*; *Celport-Teilekategorien*; *Marke*; *model*
+                              
 1. Klicken Sie auf **[!UICONTROL Add]** , um die Katalogansicht zu erstellen.
 
    Die Seite mit den Katalogansichten wird aktualisiert, um die neue Katalogansicht anzuzeigen.
@@ -466,4 +466,4 @@ So erfahren Sie mehr über [!DNL Adobe Commerce Optimizer]:
 - Erfahren Sie mehr [erweiterte Richtlinienkonfigurationen](../setup/policies.md)
 - ([&#x200B; Katalogansichten) &#x200B;](../setup/catalog-view.md) andere Händler einrichten
 - Lesen Sie die [API-Dokumentation](https://developer.adobe.com/commerce/services/optimizer/) für die programmgesteuerte Katalogverwaltung
-- Erfahren Sie, wie Sie Dropdown-Komponenten für Ihre Edge Delivery Services-Storefront konfigurieren, um benutzerdefinierte Storefront-Erlebnisse für die Produkterkennung, Empfehlungen und andere Storefront-Funktionen zu erstellen. Siehe die [Storefront-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=de)
+- Erfahren Sie, wie Sie Dropdown-Komponenten für Ihre Edge Delivery Services-Storefront konfigurieren, um benutzerdefinierte Storefront-Erlebnisse für die Produkterkennung, Empfehlungen und andere Storefront-Funktionen zu erstellen. Siehe die [Storefront-Dokumentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/)

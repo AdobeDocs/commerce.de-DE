@@ -14,9 +14,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7f901cec90291e264376e3f93e6ebaaccf7c15f0
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: 612
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Um die Integration in Commerce-Storefronts mit Edge Delivery Services zu aktivie
 
 Die Commerce-Dropdown-Menüs erkennen automatisch die `commerce-assets-enabled`-Konfiguration und passen die Bildverarbeitung entsprechend an.
 
-Weitere Informationen zur Verwendung von AEM Assets mit der Commerce-Storefront mit Edge Delivery Services finden Sie unter [AEM Assets-Integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=de) in der Dokumentation zu *Adobe Commerce Storefront*.
+Weitere Informationen zur Verwendung von AEM Assets mit der Commerce-Storefront mit Edge Delivery Services finden Sie unter [AEM Assets-Integration](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) in der Dokumentation zu *Adobe Commerce Storefront*.
 
 >[!TIP]
 >
@@ -104,7 +104,7 @@ Ihre Storefront ist jetzt mit AEM Assets verbunden. Sie können Assets direkt au
 
 ## Verwandte Dokumentation
 
-* [AEM Assets-Integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=de){target=_blank} in der Dokumentation zu *Adobe Commerce* Storefront - Storefront-Konfiguration und Bildverarbeitungsverhalten.
+* [AEM Assets-Integration](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} in der Dokumentation zu *Adobe Commerce* Storefront - Storefront-Konfiguration und Bildverarbeitungsverhalten.
 
 * [Integrieren Sie AEM Assets beim Erstellen von Inhalten für Edge Delivery Services](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} in der *AEM Assets*-Dokumentation.
 

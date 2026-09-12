@@ -36,9 +36,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1456
+source-wordcount: 1458
 ht-degree: 0%
 
 ---
@@ -96,13 +96,13 @@ Dieses Diagramm zeigt den Datenfluss zwischen [!DNL Adobe Commerce as a Cloud Se
 
 ## Commerce-Storefront
 
-Um in Minutenschnelle umfassende Erlebnisse mit einfacher dokumentbasierter Bearbeitung oder visueller Bearbeitung mit [!DNL Storefront Builder] zu erstellen, verwenden Sie die [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de) von Adobe, die von [!DNL Edge Delivery Services] unterstützt wird.
+Um in Minutenschnelle umfassende Erlebnisse mit einfacher dokumentbasierter Bearbeitung oder visueller Bearbeitung mit [!DNL Storefront Builder] zu erstellen, verwenden Sie die [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/en/tools/commerce-storefront/) von Adobe, die von [!DNL Edge Delivery Services] unterstützt wird.
 
 [!DNL Commerce Storefront] ist vollständig Headless mit einer entkoppelten Architektur, die alle Adobe Merchandising-Services und -Daten über eine GraphQL-API-Ebene bereitstellt. Diese Architektur ermöglicht es Teams, ihre Frontends unabhängig von der Commerce Foundation zu entwickeln, und bietet die Agilität, neue Touchpoints mit neuen Technologien zu erstellen und zu testen.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] unterstützt keine Luma-Storefronts. Wenn Sie von [!DNL Adobe Commerce on Cloud] oder On-Premise migrieren, finden Sie unter [Vorhandene Storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=de#existing-storefronts) Anleitungen für den Übergang.
+>[!DNL Adobe Commerce as a Cloud Service] unterstützt keine Luma-Storefronts. Wenn Sie von [!DNL Adobe Commerce on Cloud] oder On-Premise migrieren, finden Sie unter [Vorhandene Storefronts](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts) Anleitungen für den Übergang.
 
 ## Adobe Merchandising-Services und Zahlungsdienste
 

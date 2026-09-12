@@ -26,9 +26,9 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 last-update: 2026-08-10
-source-git-commit: bffd9077e8745de887b0d97c40ec9aa0e520ce8b
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1106
+source-wordcount: 1107
 ht-degree: 3%
 
 ---
@@ -206,4 +206,4 @@ Rufen Sie die _Mandanten_ ID) aus dem Feld _[!DNL Instance Id]_&#x200B;auf der [
 
 1. **Einrichten einer Commerce-Storefront auf[!DNL Edge Delivery Services]**
 
-   Um Ihre Storefront mit der [!DNL Commerce Optimizer]-Instanz zu verbinden und personalisierte Commerce-Erlebnisse bereitzustellen, folgen Sie der [Storefront-Setup-Dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=de){target="_blank"}.
+   Um Ihre Storefront mit der [!DNL Commerce Optimizer]-Instanz zu verbinden und personalisierte Commerce-Erlebnisse bereitzustellen, folgen Sie der [Storefront-Setup-Dokumentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/){target="_blank"}.

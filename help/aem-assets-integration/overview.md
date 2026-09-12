@@ -20,9 +20,9 @@ topic_v2:
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1090
+source-wordcount: 1091
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ Der Adobe Commerce-Benutzer, der die Integration konfiguriert, muss Zugriff auf 
 
 ![Überprüfen](assets/icon-check.png) **Adobe Managed Support Model** - Adobe übernimmt die direkte Unterstützung und Fehlerbehebung, bietet zuverlässigen Support und optimierte Problembehebung.
 
-![check](assets/icon-check.png) **Funktionen von Adobe Storefront Builder** - Die DAM-Lösung (Digital Asset Management) ermöglicht die Verwendung von Assets wie Bildern, Videos und anderen Medien in [Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=de#userlabs-commerce-genai-product-visuals).
+![check](assets/icon-check.png) **Funktionen von Adobe Storefront Builder** - Die DAM-Lösung (Digital Asset Management) ermöglicht die Verwendung von Assets wie Bildern, Videos und anderen Medien in [Storefront Builder](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/storefront-builder/#userlabs-commerce-genai-product-visuals).
 
 >[!ENDSHADEBOX]
 
