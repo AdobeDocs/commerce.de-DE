@@ -12,34 +12,48 @@ autotag-review: '2026-06-18T16:04:15.842Z'
 TQID: 'https://experienceleague.adobe.com/MmwdYWe5Et9m0BvtrVYNK2jiJ3fZBnUe2K6xMdIbMUk'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: d8c738212373283ccf45b16cf91dbafc7a7bd0f8
+source-git-commit: 04f2eddef8abc6843ced0d00368ea19f3626adce
 workflow-type: tm+mt
-source-wordcount: 6365
+source-wordcount: '6842'
 ht-degree: 0%
-
 ---
-
 # Versionshinweise
 
 Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerce as a Cloud Service].
@@ -48,7 +62,77 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 >
 >Wenn Sie Adobe Commerce On-Premise oder Adobe Commerce in der Cloud-Infrastruktur verwenden, lesen Sie die [Versionshinweise zu Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview).
 
-## September 2026 - #1 {#latest}
+## September 2026 - #2 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+Die folgenden Elemente sind am 22. September 2026 in Produktionsumgebungen verfügbar.
+
+>[!BEGINSHADEBOX]
+
+### Anhängen von Dateien und Bildern an Rückgabeanforderungen
+
+Kunden können jetzt Dateien und Bilder hochladen, wenn sie eine Rückgabeanfrage über die Mutation Storefront `requestReturn` GraphQL senden. <!-- CCSAAS-5410 -->
+
+### Darstellung der Lagerbestandsquelle steuern
+
+Jede Inventarquelle enthält jetzt einen Umschalter [!UICONTROL **In Storefront sichtbar**] auf der Seite „Quellbearbeitung“ in der [!DNL Commerce Admin] ([!UICONTROL **Stores**] > [!UICONTROL **Inventory**] > [!UICONTROL **Sources**]). Die [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL-Abfrage gibt nur Stock-Informationen für Quellen zurück, die Sie als sichtbar kennzeichnen. Quellen sind standardmäßig ausgeblendet. <!-- ACCS-1645 -->
+
+### Anleitung für Sendungen aus mehreren Quellen
+
+Wenn ein Auftrag Artikel enthält, die für verschiedene Lagerquellen nominiert sind, werden Sie jetzt automatisch von der Seite [!DNL Commerce Admin] [!UICONTROL **Source-Auswahl**] durch die Auswahl der entsprechenden Herkunft für jeden Artikel geleitet. <!-- ACCS-1832 -->
+
+### Verfügbarkeitsdetails der Abfragenquelle für die Storefront
+
+Die [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL-Abfrage gibt jetzt zusätzliche Informationen für Storefronts zurück:
+
+* Jede Quelle enthält ihre `name` und ein `is_pickup_location_active` Flag, sodass Storefronts Quellnamen anzeigen und aktive Abholorte im Laden identifizieren können. <!-- ACCS-1614 -->
+
+* Der `SourceAvailability` umfasst jetzt `is_saleable`- und `backorder_message`, sodass Storefronts [!UICONTROL Add to Cart] auf echter Verkaufsfähigkeit anstatt auf physischem Bestand prüfen können. <!-- ACCS-1858 -->
+
+### Abrufen von Kundenberechtigungen
+
+Ein neuer [!DNL Commerce]-REST-Endpunkt (`GET /V1/customers/:customerId/companyRoles`) gibt alle Unternehmensrollen und -berechtigungen zurück, die einem Kunden zugewiesen wurden. Der GraphQL-`CompanyBasicInfo` umfasst jetzt auch `role_id`-, `role_name`- und Berechtigungsdaten, sodass Integrationen die Unternehmensrollenzuweisungen eines Benutzers für alle zugehörigen Konten in einer einzigen Anfrage abrufen können. <!-- ACCS-1617 -->
+
+### Webhook zum Speichern einer Rechnung abonnieren
+
+Mit dem `observer.sales_order_invoice_save_after` Webhook können Sie Logik nach dem Speichern einer Rechnung ausführen. <!-- CEXT-6706 -->
+
+### Informationen zu nominierten Quellen anzeigen
+
+Wenn ein Auftrag Artikel mit einer bestimmten Lagerquelle enthält, kennzeichnet der [!DNL Commerce Admin] diese Artikel jetzt auf der Seite „Auftragsansicht“ und im Bildschirm „Auswahl der Lieferquelle“, sodass Händler Bestellungen aus der richtigen Quelle ausführen können. <!-- ACCS-941 -->
+
+### Verbesserungen und Fehlerbehebungen
+
+Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen sind in dieser Version enthalten:
+
+* Das Laden des Warenkorbs und der Checkout-Preisstufe wurde optimiert, um Probleme mit einer großen Anzahl freigegebener Kataloge zu vermeiden. <!-- ACCS-1150 -->
+
+* Es wurde ein Problem behoben, bei dem Änderungen an Dateiattributen nicht berücksichtigt wurden. <!-- CCSAAS-5395 -->
+
+* Es wurde ein Problem behoben, bei dem Produktüberschreibungsdaten inkonsistent sein konnten. <!-- ACCS-1844 -->
+
+* Es wurde ein Problem behoben, bei dem gleichzeitige REST-API-Anfragen zeitweise einen 401-Fehler verursachen konnten. <!-- CCSAAS-5417 -->
+
+* Es wurde ein Problem behoben, bei dem das Start- oder Enddatum einer Warenkorbpreisregel unerwartet funktionieren konnte, wenn keine explizite Zeit festgelegt wurde. <!-- ACCS-1856 -->
+
+* Es wurde ein Problem behoben, bei dem eine Warenkorb-Preisregel nicht vorhandene Start- oder Enddaten akzeptierte. <!-- ACCS-1902 -->
+
+* Fehlerkorrektur - Die [!UICONTROL Catalog]-Konfiguration kann jetzt gespeichert werden. <!-- CCSAAS-5436 -->
+
+* Fehlerkorrektur - Bei gleichzeitigen Anfragen an die Import-API tritt jetzt kein Fehler mehr auf (`POST /V1/import/json`). <!-- ACCS-1053 -->
+
+* Es wurde ein Problem behoben, bei dem die Verkaufsmenge die Verfügbarkeit von Produkten mit einer nominierten Lagerquelle überbewerten konnte. <!-- ACCS-1103 -->
+
+* Es wurde ein Problem behoben, bei dem die Order Comment API (`POST /V1/orders/{id}/comments`) die Groß-/Kleinschreibung nicht berücksichtigte. <!-- ACCS-1752 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## September 2026 - #1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
@@ -188,8 +272,6 @@ Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen s
 * Es wurde ein Problem behoben, das sich auf die Admin-Navigation auswirken konnte. <!-- CCSAAS-5232 -->
 
 * Es wurde ein Problem behoben, bei dem leere Warenkörbe Gesamtwerte ungleich null melden konnten. <!-- ACCS-1730 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
