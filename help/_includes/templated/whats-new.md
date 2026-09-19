@@ -1,15 +1,36 @@
 ---
-source-git-commit: b0fb96805f314ea8e0b89c9e9bd30d5de3501de4
+source-git-commit: 4b9ab9e256edced9a508d08dfcae3589bd27f304
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '998'
 ht-degree: 1%
-
 ---
 # Neue Vorlage
 
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;17. September 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Sandbox <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
+</td>
+      <td>
+        Größere Aktualisierung
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7f70bbf40218de2cec3482e1bc4d135d1a9022ae">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;8. September 2026
 
@@ -193,7 +214,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Das Adobe Commerce Optimizer-Einrichtungshandbuch wurde aktualisiert, indem Anweisungen zum Aktivieren und Konfigurieren privater Katalogansichten, um den Katalogdatenzugriff mit signierten Token einzuschränken, sowie aktualisierte verwandte Themen, um auf die neue Funktion zu verweisen:<br />- Hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/private-catalog-view">Private Katalogansichten</a>, in der erläutert wird, wie der Katalogschutz aktiviert wird, sodass nur Anforderungen mit einem gültigen signierten Token die Daten einer Katalogansicht abrufen können.<br />- Hinzugefügte <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/restricted-access-keys">eingeschränkte Zugriffsschlüssel</a>, in der erläutert wird, wie die Schlüssel erstellt, zugewiesen und gedreht werden, die zum Signieren von Token für den Katalogschutz verwendet werden.<br />- Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-view">Katalogansichten</a></a>, <a [#$sd1_sf8_tu9]>, Was ist, Was ist, Was ist Adobe Commerce Optimizer?</a>Was ist, <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/get-started"></a>, <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits">Beschränkungen und Grenzen und GrenzenBeschränkungen und GrenzenBeschränkungen und GrenzenBeschränkungen und GrenzenBeschränkungen und Grenzen <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/launch/launch-checklist">Launch-</a> und das <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer-Connector-</a>, um auf die neuen Themen Private Katalogansichten und Schlüssel mit eingeschränktem Zugriff zu verweisen.</p>
+      <td><p>Das Adobe Commerce Optimizer-Einrichtungshandbuch wurde aktualisiert, indem Anweisungen zum Aktivieren und Konfigurieren privater Katalogansichten, um den Katalogdatenzugriff mit signierten Token einzuschränken, sowie aktualisierte verwandte Themen, um auf die neue Funktion zu verweisen:<br />- Hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/private-catalog-view">Private Katalogansichten</a>, in der erläutert wird, wie der Katalogschutz aktiviert wird, sodass nur Anforderungen mit einem gültigen signierten Token die Daten einer Katalogansicht abrufen können.<br />- Hinzugefügte <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/restricted-access-keys">eingeschränkte Zugriffsschlüssel</a>, in der erläutert wird, wie die Schlüssel erstellt, zugewiesen und gedreht werden, die zum Signieren von Token für den Katalogschutz verwendet werden.<br />- Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-view">Katalogansichten</a></a>, <a [#$sd1_sf9_tu9]>, Was ist, Was ist, Was ist Adobe Commerce Optimizer?</a>Was ist, <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/get-started"></a>, <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits">Beschränkungen und Grenzen und GrenzenBeschränkungen und GrenzenBeschränkungen und GrenzenBeschränkungen und GrenzenBeschränkungen und Grenzen <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/launch/launch-checklist">Launch-</a> und das <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer-Connector-</a>, um auf die neuen Themen Private Katalogansichten und Schlüssel mit eingeschränktem Zugriff zu verweisen.</p>
 </td>
       <td>
         Größere Aktualisierung, neues Thema
@@ -353,28 +374,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Größere Aktualisierung
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed8bf2044f77432eb38df3c3cbb13b7708f3c33b">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;15. Juli 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Das <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/get-started/configure-aem#enable-aem-commerce-self-service">Self-Service-Onboarding</a> für die AEM Assets-Integration in AEM ab Version <code>2026.5.26309</code> wurde dokumentiert, ein neues <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/metadata">Commerce-Metadaten in AEM Assets</a> hinzugefügt und eine Anleitung <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/get-started/configure-storefront#connect-aem-assets-authoring">Verbinden von AEM Assets mit Ihrer Storefront</a> über Da.live hinzugefügt.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/21d305eaa87cd70d82c530e4ee5a4ea34574d400">verpflichten</a></td>
     </tr>
   </tbody>
 </table>

@@ -1,6 +1,6 @@
 ---
 title: '[!DNL SaaS Data Export Extension] Versionshinweise'
-description: Die neuesten Versionsinformationen für  [!DNL Data Export Extension]  für Adobe Commerce.
+description: Die neuesten Versionsinformationen zu [!DNL Data Export Extension] für Adobe Commerce.
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services, Release Notes
 recommendations: noCatalog
@@ -8,27 +8,37 @@ exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 1c8d6d2d0460df4aa18de4d7d9750b9dda4f6bc5
+    internal-label: Data collection
+source-git-commit: c878b0f46e20fbdcd9771dae36430a814371e0c2
 workflow-type: tm+mt
-source-wordcount: 3429
+source-wordcount: '3464'
 ht-degree: 0%
-
 ---
-
 # [!DNL SaaS Data Export Extension] Versionshinweise
 
 In diesen Versionshinweisen werden die neuesten Versionen der [!DNL SaaS data export]-Erweiterung beschrieben. Unterstützung wird für die aktuelle Hauptversion bereitgestellt. Versionshinweise für ältere Versionen werden als Referenz bereitgestellt.
@@ -44,6 +54,12 @@ Zu den Aktualisierungen gehören:
 >Die [!DNL SaaS data export]-Erweiterung ist eine Sammlung von Modulen, die automatisch mit [!DNL Live Search], [!DNL Product Recommendations] und [!DNL Catalog Service] installiert werden. Sie können die auf Ihrem System installierte Version mithilfe von [!DNL Composer] überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Versionen 2026 {#release-notes-2026}
+
+### Version 103.4.35
+
+_17. September 2026_
+
+![Beheben](../assets/fix.svg) **Fehler bei der Synchronisierung der Beschriftung der Attributoption** - Es wurde ein Problem behoben, bei dem eine ungültige Attribut-Backend-Tabelle zu Fehlern beim Feed-Export während der Neusynchronisierung der Beschriftung führen konnte, um sicherzustellen, dass Attributbeschriftungs-Updates zuverlässig synchronisiert werden.<!--MDEE-1464-->
 
 ### Version 103.4.34
 
