@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 04f2eddef8abc6843ced0d00368ea19f3626adce
+source-git-commit: 9cc9b3270d808102f293609a606ff32a781d084c
 workflow-type: tm+mt
-source-wordcount: '6842'
+source-wordcount: '6869'
 ht-degree: 0%
 ---
 # Versionshinweise
@@ -64,21 +64,21 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 
 ## September 2026 - #2 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produktion]{type=Neutral tooltip="Die aufgelisteten Elemente sind derzeit in Produktionsumgebungen verfügbar."}
 
-Die folgenden Elemente sind am 22. September 2026 in Produktionsumgebungen verfügbar.
+Die folgenden Elemente wurden am 22. September 2026 zu Produktionsumgebungen hinzugefügt.
 
 >[!BEGINSHADEBOX]
 
 ### Anhängen von Dateien und Bildern an Rückgabeanforderungen
 
-Kunden können jetzt Dateien und Bilder hochladen, wenn sie eine Rückgabeanfrage über die Mutation Storefront `requestReturn` GraphQL senden. <!-- CCSAAS-5410 -->
+Kunden können jetzt Dateien und Bilder hochladen, wenn sie eine Rückgabeanfrage über die Mutation Storefront [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQL senden. Verwenden Sie die [`initiateUpload`- und `finishUpload`-](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/), um die Datei hochzuladen, und weisen Sie dann den zurückgegebenen Schlüssel einem benutzerdefinierten Rückgabeelement-Attribut zu. <!-- CCSAAS-5410 -->
 
 ### Darstellung der Lagerbestandsquelle steuern
 
-Jede Inventarquelle enthält jetzt einen Umschalter [!UICONTROL **In Storefront sichtbar**] auf der Seite „Quellbearbeitung“ in der [!DNL Commerce Admin] ([!UICONTROL **Stores**] > [!UICONTROL **Inventory**] > [!UICONTROL **Sources**]). Die [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL-Abfrage gibt nur Stock-Informationen für Quellen zurück, die Sie als sichtbar kennzeichnen. Quellen sind standardmäßig ausgeblendet. <!-- ACCS-1645 -->
+Jede Inventarquelle enthält jetzt einen Umschalter [!UICONTROL **In Storefront sichtbar**] auf der [Quellbearbeitungsseite](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/sources/sources-add) in der [!DNL Commerce Admin] ([!UICONTROL **Stores**] > [!UICONTROL **Inventar**] > [!UICONTROL **Sources**]). Die [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL-Abfrage gibt nur Stock-Informationen für Quellen zurück, die Sie als sichtbar kennzeichnen. Quellen sind standardmäßig ausgeblendet. <!-- ACCS-1645 -->
 
 ### Anleitung für Sendungen aus mehreren Quellen
 
