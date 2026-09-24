@@ -188,7 +188,7 @@ Das Migrationsbewertungs-Tool konzentriert sich auf das Verständnis der gesamte
 
 Die Bewertung ist eher ein Planungs- als ein Ausführungswerkzeug. Er ermittelt, was modernisiert werden sollte, schätzt die Komplexität der Implementierung ein und gibt Empfehlungen. Implementierungsentscheidungen und Architekturvalidierung bleiben gemeinsame Aktivitäten von Adobe, Partnern und Customer-Engineering-Teams.
 
-Daten, die in benutzerdefinierten Tabellen von Erweiterungen von Drittanbietern gespeichert werden, werden als Überlegungen zur Migration angezeigt. Bei der standardmäßigen Datenmigration werden diese Daten nicht automatisch migriert. Zur Unterstützung dieser Szenarien könnten benutzerdefinierte [!DNL App Builder] erforderlich sein. Weitere Informationen finden [ im ](#data-migration-commerce-data-migration-service) zur Datenmigration .
+Daten, die in benutzerdefinierten Tabellen von Erweiterungen von Drittanbietern gespeichert werden, werden als Überlegungen zur Migration angezeigt. Bei der standardmäßigen Datenmigration werden diese Daten nicht automatisch migriert. Zur Unterstützung dieser Szenarien könnten benutzerdefinierte [!DNL App Builder] erforderlich sein. Weitere Informationen finden [&#x200B; im &#x200B;](#data-migration-commerce-data-migration-service) zur Datenmigration .
 
 Die Bewertung bietet Analysen für die Workflows zur Anpassung der Storefront und Datenmigration:
 
@@ -361,7 +361,7 @@ Da jede Erweiterung ihre Daten unterschiedlich modelliert, kann ein Migrationspf
 
 ### Nächste Schritte
 
-Wenn Sie bereit für die Migration sind, füllen Sie den [Fragebogen zur Datenmigration](../assets/data-migration-scoping-questionnaire.xlsx) aus, der die Quelltopologie, den Entitätsbereich, die Volumes, Compliance-Beschränkungen, die Umstellungsmechanik und alle [benutzerdefinierten Tabellen) ](#custom-and-third-party-data), die für die Migrationsplanung erforderlich sind. Durch das Ausfüllen dieses Fragebogens kann Adobe Ihre Umgebung bewerten und ein Migrationsfenster planen.
+Wenn Sie bereit für die Migration sind, füllen Sie den [Fragebogen zur Datenmigration](../assets/data-migration-scoping-questionnaire.xlsx) aus, der die Quelltopologie, den Entitätsbereich, die Volumes, Compliance-Beschränkungen, die Umstellungsmechanik und alle [benutzerdefinierten Tabellen) &#x200B;](#custom-and-third-party-data), die für die Migrationsplanung erforderlich sind. Durch das Ausfüllen dieses Fragebogens kann Adobe Ihre Umgebung bewerten und ein Migrationsfenster planen.
 
 Lesen Sie die [Handbuch zum Tool für die Massendatenmigration](bulk-data/migration-tool.md), um mehr über den Workflow, die unterstützten Daten und die Verifizierung zu erfahren.
 
