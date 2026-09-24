@@ -3,7 +3,7 @@ title: Migrieren nach [!DNL Adobe Commerce as a Cloud Service]
 description: Erfahren Sie, wie Sie zu [!DNL Adobe Commerce as a Cloud Service] migrieren.
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:12:28.840Z'
@@ -95,8 +95,8 @@ Adobe Commerce ist in verschiedenen Bereitstellungsmodellen verfügbar. Die Haup
 | Adobe Commerce-Angebot | Hosting-Modell | Verantwortung für Services und Updates |
 |---|---|---|
 | **[!DNL Adobe Commerce as a Cloud Service]** | SaaS — Adobe-gehostet | Adobe verwaltet die wichtigsten Commerce-Programme, -Infrastrukturen und -Updates. Händler erweitern die Plattform durch unterstützte APIs und Erweiterbarkeits-Services (APIs, [!DNL Adobe Developer App Builder], UI-SDKs). Händler können den Code der Hauptanwendung nicht ändern. |
-| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS - Adobe-verwaltet | [Geteilte Verantwortung](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility): Adobe verwaltet die gehostete Plattform. Der Händler verwaltet Patches auf Anwendungsebene, benutzerdefinierten Code, Konfiguration und aktualisiert Erweiterungen und Plattformdienste auf unterstützte Versionen, einschließlich: Datenbank, Cache, Suche, PHP-Laufzeit, Webserver und Nachrichtenwarteschlange. |
-| **[!DNL Adobe Commerce on-premises]** | Vom Händler oder Hosting-Anbieter gehostet | [Händlerverantwortung](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview#merchant-responsibilities): Der Händler oder sein Hosting-Anbieter verwaltet die Infrastruktur und alle Plattformdienste. |
+| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS - Adobe-verwaltet | [Geteilte Verantwortung](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility): Adobe verwaltet die gehostete Plattform. Der Händler verwaltet Patches auf Anwendungsebene, benutzerdefinierten Code, Konfiguration und aktualisiert Erweiterungen und Plattformdienste auf unterstützte Versionen, einschließlich: Datenbank, Cache, Suche, PHP-Laufzeit, Webserver und Nachrichtenwarteschlange. |
+| **[!DNL Adobe Commerce on-premises]** | Vom Händler oder Hosting-Anbieter gehostet | [Händlerverantwortung](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/overview#merchant-responsibilities): Der Händler oder sein Hosting-Anbieter verwaltet die Infrastruktur und alle Plattformdienste. |
 
 **Auswirkungen auf die Architektur**
 
@@ -365,4 +365,4 @@ Wenn Sie bereit für die Migration sind, füllen Sie den [Fragebogen zur Datenmi
 
 Lesen Sie die [Handbuch zum Tool für die Massendatenmigration](bulk-data/migration-tool.md), um mehr über den Workflow, die unterstützten Daten und die Verifizierung zu erfahren.
 
-Systemintegratoren, die eine Quellumgebung vorbereiten, können auch die standardmäßige [Adobe Commerce Cloud-CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) und die [Adobe Developer Console](https://developer.adobe.com) für IMS-Anmeldeinformationen verwenden.
+Systemintegratoren, die eine Quellumgebung vorbereiten, können auch die standardmäßige [Adobe Commerce Cloud-CLI](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) und die [Adobe Developer Console](https://developer.adobe.com) für IMS-Anmeldeinformationen verwenden.
