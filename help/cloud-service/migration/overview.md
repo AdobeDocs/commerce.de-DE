@@ -1,47 +1,66 @@
 ---
 title: Migrieren nach [!DNL Adobe Commerce as a Cloud Service]
-description: Erfahren Sie, wie Sie zu  [!DNL Adobe Commerce as a Cloud Service].
+description: Erfahren Sie, wie Sie zu [!DNL Adobe Commerce as a Cloud Service] migrieren.
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:12:28.840Z'
 TQID: 'https://experienceleague.adobe.com/GmxaQdGKvAIDpZ2jvmlLFSYw0IFQysIMOT0lUnsJBsI'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
   - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
+    internal-label: Data pipelines
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Data management
+source-git-commit: 464b0d7298bd2a5569b12d0956a84667709e4c3a
 workflow-type: tm+mt
-source-wordcount: 3374
+source-wordcount: '3682'
 ht-degree: 0%
-
 ---
-
 # Migrieren nach [!DNL Adobe Commerce as a Cloud Service]
 
 Dieses Handbuch hilft Entwicklerinnen und Entwicklern beim Übergang von [!DNL Adobe Commerce on Cloud] oder On-Premise zu [!DNL Adobe Commerce as a Cloud Service] (SaaS). Dieses SaaS-Modell bietet eine verbesserte Leistung, Skalierbarkeit und Integration mit dem [!DNL Adobe Experience Cloud].
@@ -76,8 +95,8 @@ Adobe Commerce ist in verschiedenen Bereitstellungsmodellen verfügbar. Die Haup
 | Adobe Commerce-Angebot | Hosting-Modell | Verantwortung für Services und Updates |
 |---|---|---|
 | **[!DNL Adobe Commerce as a Cloud Service]** | SaaS — Adobe-gehostet | Adobe verwaltet die wichtigsten Commerce-Programme, -Infrastrukturen und -Updates. Händler erweitern die Plattform durch unterstützte APIs und Erweiterbarkeits-Services (APIs, [!DNL Adobe Developer App Builder], UI-SDKs). Händler können den Code der Hauptanwendung nicht ändern. |
-| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS - Adobe-verwaltet | [Geteilte Verantwortung](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility): Adobe verwaltet die gehostete Plattform. Der Händler verwaltet Patches auf Anwendungsebene, benutzerdefinierten Code, Konfiguration und aktualisiert Erweiterungen und Plattformdienste auf unterstützte Versionen, einschließlich: Datenbank, Cache, Suche, PHP-Laufzeit, Webserver und Nachrichtenwarteschlange. |
-| **[!DNL Adobe Commerce on-premises]** | Vom Händler oder Hosting-Anbieter gehostet | [Händlerverantwortung](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/overview#merchant-responsibilities): Der Händler oder sein Hosting-Anbieter verwaltet die Infrastruktur und alle Plattformdienste. |
+| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS - Adobe-verwaltet | [Geteilte Verantwortung](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility): Adobe verwaltet die gehostete Plattform. Der Händler verwaltet Patches auf Anwendungsebene, benutzerdefinierten Code, Konfiguration und aktualisiert Erweiterungen und Plattformdienste auf unterstützte Versionen, einschließlich: Datenbank, Cache, Suche, PHP-Laufzeit, Webserver und Nachrichtenwarteschlange. |
+| **[!DNL Adobe Commerce on-premises]** | Vom Händler oder Hosting-Anbieter gehostet | [Händlerverantwortung](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview#merchant-responsibilities): Der Händler oder sein Hosting-Anbieter verwaltet die Infrastruktur und alle Plattformdienste. |
 
 **Auswirkungen auf die Architektur**
 
@@ -111,13 +130,13 @@ Jeder der folgenden Workflows verfügt über ein eigenes Tool. Verwenden Sie sie
 | Workflow | Tool | Beschreibung |
 | --- | --- | --- |
 | [Bewertung](#migration-assessment-tool) | **Migrationsbewertungswerkzeug** | KI-gesteuerte Bewertung der vorhandenen Implementierung, die benutzerdefinierte Module, Erweiterungen von Drittanbietern, Integrationen, Storefront-Beobachtungen, Datenbankschema, benutzerdefinierte Tabellen, Migrationsempfehlungen, Komplexitätsbewertung und Schätzungen des Modernisierungsaufwands inventarisiert. |
-| [Modernisierung von Anwendungen und Storefronts](#code-and-storefront-migration-commerce-developer-mcp) | **Commerce Developer MCP** | KI-gestützte Modernisierung der Commerce-Anwendung, beschleunigte Migration von Anpassungen auf [!DNL App Builder], Unterstützung der Storefront-Transformation auf Edge Delivery Services (EDS) und Anleitung für Entwicklerinnen und Entwickler durch die umfassendere Journey zur Anwendungsmodernisierung mit einer von Entwicklungsteams geprüften und validierten Implementierung. |
+| [Modernisierung von Anwendungen und Storefronts](#code-and-storefront-migration-commerce-developer-agent) | **Commerce Developer Agent und Commerce Developer MCP** | KI-gestützte Modernisierung der Commerce-Anwendung, beschleunigte Migration von Anpassungen auf [!DNL App Builder], Unterstützung der Storefront-Transformation auf Edge Delivery Services (EDS) und Anleitung für Entwicklerinnen und Entwickler durch die umfassendere Journey zur Anwendungsmodernisierung mit einer von Entwicklungsteams geprüften und validierten Implementierung. |
 | [Datenmigration](#data-migration-commerce-data-migration-service) | **Commerce Data Migration Service** | Extraktion, Laden und Integritätsprüfung von Katalog-, Kunden- und Bestelldaten in [!DNL Adobe Commerce as a Cloud Service]. |
 
 Diese Tracks sind nicht eigenständig. Wenn Sie sie in der richtigen Reihenfolge gemeinsam verwenden, wird die Nacharbeit minimiert.
 
 - **Bewertung zuerst ausführen** - Beim ersten Ausführen der Bewertung werden nicht unterstützte Anpassungen identifiziert, der Migrationsaufwand geschätzt, Überlegungen zur Datenmigration aufgezeigt und Integrationsabhängigkeiten vor Beginn der Implementierung hervorgehoben. Die Bewertung wird zum Migrationsplan, der sowohl von den Workflows für die Anwendungsmodernisierung als auch für die Datenmigration verwendet wird.
-- **Anwendungsmodernisierung** - Das Commerce Developer MCP verwendet die Migrationsbewertung, um zu bestimmen, welche Anpassungen wie modernisiert werden sollen. Anschließend generiert der MCP die entsprechenden [!DNL App Builder] Programme und Storefront-Komponenten.
+- **Anwendungsmodernisierung** - Der Commerce Developer Agent und der Commerce Developer MCP verwenden die Migrationsbewertung, um zu bestimmen, welche Anpassungen wie modernisiert werden sollen. Dann generiert der Commerce Developer Agent oder Commerce Developer MCP die entsprechenden [!DNL App Builder] Programme und Storefront-Komponenten.
 - **Datenmigration** - Die Umfrage zum Umfang der Datenmigration erfasst den Umfang, die Volumina und die benutzerdefinierten Tabellen, die von der Bewertung angezeigt wurden.
 - **Benutzerdefinierte Daten und Drittanbieterdaten** - Daten, die von Drittanbietererweiterungen in benutzerdefinierten Tabellen gespeichert werden, werden bei der Bewertung identifiziert, werden jedoch nicht von der standardmäßigen Datenmigration verarbeitet und erfordern eine [!DNL App Builder] Anpassung.
 
@@ -169,7 +188,7 @@ Das Migrationsbewertungs-Tool konzentriert sich auf das Verständnis der gesamte
 
 Die Bewertung ist eher ein Planungs- als ein Ausführungswerkzeug. Er ermittelt, was modernisiert werden sollte, schätzt die Komplexität der Implementierung ein und gibt Empfehlungen. Implementierungsentscheidungen und Architekturvalidierung bleiben gemeinsame Aktivitäten von Adobe, Partnern und Customer-Engineering-Teams.
 
-Daten, die in benutzerdefinierten Tabellen von Erweiterungen von Drittanbietern gespeichert werden, werden als Überlegungen zur Migration angezeigt. Bei der standardmäßigen Datenmigration werden diese Daten nicht automatisch migriert. Zur Unterstützung dieser Szenarien könnten benutzerdefinierte [!DNL App Builder] erforderlich sein. Weitere Informationen finden [&#x200B; im &#x200B;](#data-migration-commerce-data-migration-service) zur Datenmigration .
+Daten, die in benutzerdefinierten Tabellen von Erweiterungen von Drittanbietern gespeichert werden, werden als Überlegungen zur Migration angezeigt. Bei der standardmäßigen Datenmigration werden diese Daten nicht automatisch migriert. Zur Unterstützung dieser Szenarien könnten benutzerdefinierte [!DNL App Builder] erforderlich sein. Weitere Informationen finden [ im ](#data-migration-commerce-data-migration-service) zur Datenmigration .
 
 Die Bewertung bietet Analysen für die Workflows zur Anpassung der Storefront und Datenmigration:
 
@@ -182,23 +201,54 @@ Sie können Bewertungen auch bei der Weiterentwicklung Ihrer Anwendungen erneut 
 
 Jede [!DNL Adobe Commerce as a Cloud Service] Migration beginnt mit einer Bewertung. Dies ist eine kostengünstige Methode, den Umfang festzulegen, Unsicherheiten zu reduzieren und einen gemeinsamen Migrationsplan zu erstellen, bevor die Implementierung beginnt.
 
-Weitere Informationen zu den Bewertungs-Tools und zum nachgelagerten Entwickler-Workflow finden Sie unter [Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/).
+Weitere Informationen zu den Bewertungs-Tools und zum nachgelagerten Entwickler-Workflow finden Sie unter [Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools).
 
 Weitere Informationen zum Commerce Developer Agent, der mit dem Migrationsbewertungs-Tool integriert ist, finden Sie unter [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)
 
-## Migration von Code und Storefront (Commerce Developer MCP)
+## Migration von Code und Storefront (Commerce Developer Agent)
 
 In [!DNL Adobe Commerce on Cloud] oder On-Premise-Anpassungen können prozessinterne PHP-Module, Plug-ins und Ereignisbeobachter verwenden, die innerhalb der Anwendung ausgeführt werden. [!DNL Adobe Commerce as a Cloud Service] ist eine versionslose SaaS-Plattform, und dieses Modell gilt nicht mehr. Anpassungen werden als prozessexterne [!DNL Adobe Developer App Builder] ausgeführt, die über Ereignisse und APIs in Commerce integriert werden können. Die Modernisierung der Anpassungen eines Stores für diese Architektur ist in der Regel der wichtigste technische Aufwand bei einer [!DNL Adobe Commerce as a Cloud Service].
 
+Adobe bietet zwei KI-unterstützte Pfade für diese Arbeit:
+
+- **Commerce Developer Agent** - Ein geführtes, browserbasiertes Erlebnis und der empfohlene Ausgangspunkt für die meisten Migrationen.
+- **Commerce Developer MCP**: Ein IDE-Gesprächserlebnis für Teams, die in ihrer bestehenden Entwicklungsumgebung arbeiten möchten oder eine Modernisierung der Storefront auf Edge Delivery Services (EDS) benötigen.
+
 ### Übersicht über die Code-Migration
 
-Ausgehend von der Migrationsbewertung bietet das Commerce Developer MCP ein dialogorientiertes IDE-Erlebnis für die Modernisierung veralteter PHP-Anpassungen in [!DNL App Builder]. Es bietet auch Unterstützung für den Wiederaufbau von Storefronts auf Edge Delivery Services (EDS). Durch die direkte Nutzung der Ergebnisse des Migrationsbewertungswerkzeugs sorgt das Commerce Developer MCP dafür, dass die Implementierung mit dem genehmigten Migrationsfahrplan im Einklang steht, indem es die manuelle Interpretation reduziert, die Rückverfolgbarkeit aufrechterhält und die Konsistenz des gesamten Prozesses sicherstellt.
+Ausgehend von der Migrationsbewertung bietet der Commerce Developer Agent ein dialogorientiertes agentisches Erlebnis für die Modernisierung veralteter PHP-Anpassungen in [!DNL App Builder]. Durch die direkte Nutzung der Ergebnisse des Migrationsbewertungs-Tools sorgt der Commerce Developer Agent dafür, dass die Implementierung mit der genehmigten Migrationsplanung im Einklang steht, indem er die manuelle Interpretation reduziert, die Rückverfolgbarkeit aufrechterhält und die Konsistenz des gesamten Prozesses sicherstellt.
 
-Während die Migration der Hauptanwendungsfall ist, ist der Commerce Developer MCP als umfassender KI-Entwicklungsagent für [!DNL Adobe Commerce] konzipiert. Das MCP unterstützt Modernisierung, Neuentwicklung, operative Workflows und alle Updates für [!DNL Adobe Commerce as a Cloud Service]. Dank dieser Flexibilität können Teams auch lange nach der Migration Commerce-Anwendungen erstellen und erweitern.
+Während die Migration der Hauptanwendungsfall ist, ist der Commerce Developer Agent als umfassender KI-Entwicklungsagent für [!DNL Adobe Commerce] konzipiert. Der Commerce-Entwickleragent unterstützt Modernisierung, neue Entwicklung, betriebliche Workflows und alle Updates für [!DNL App Builder]. Dank dieser Flexibilität können Teams auch lange nach der Migration Commerce-Anwendungen erstellen und erweitern.
 
-### Commerce Developer MCP
+### Commerce-Entwickleragent
 
-Anhand der Ergebnisse der [Migrationsbewertung](#migration-assessment-tool) wandelt der Commerce Developer MCP identifizierte Anpassungen mithilfe eines iterativen Entwicklungs-Workflows in [!DNL App Builder] Anwendungen um. Beachten Sie bei der Entwicklung mit diesen Tools die folgenden Richtlinien:
+Anhand der Ergebnisse der [Migrationsbewertung](#migration-assessment-tool) wandelt der Commerce-Entwickleragent identifizierte Anpassungen mithilfe eines iterativen Entwicklungs-Workflows in [!DNL App Builder] Anwendungen um. Beachten Sie bei der Entwicklung mit diesen Tools die folgenden Richtlinien:
+
+- **Erste Schritte mit dem Blueprint:** Der Commerce Developer Agent nutzt die Migrationsbewertung und erstellt einen strukturierten Blueprint. Dies ist ein stufenweiser Migrationsplan, der Risiken kennzeichnet und Abhängigkeiten zuordnet, die Sie überprüfen können.
+
+- **Überprüfen und genehmigen:** wird nicht automatisch generiert. Der Blueprint erfordert Ihre ausdrückliche Genehmigung, bevor die Code-Generierung beginnt, und Sie können ihn im Gespräch über mehrere Versionen hinweg verfeinern.
+
+- **Strukturvorlage für App Builder generieren:** Nach der Genehmigung generiert der Agent eine Strukturvorlage [!DNL App Builder] Commerce-Erweiterungen, einschließlich:
+
+  - Ereignis- und Webhook-Infrastruktur
+  - Vom Händler konfigurierbare Einstellungen
+  - Persistenzmuster
+
+  Nach dem Generieren der Strukturvorlage führt der Agent Validierungsprüfungen für die Ausgabe durch.
+
+- **Verfeinern und exportieren oder direkt in [!DNL App Builder] bereitstellen:** Sie können Folgeänderungen in der Entwicklungsphase anfordern und eine ZIP-Datei des generierten Erweiterungs-Codes herunterladen, oder Sie können die Bereitstellung direkt in [!DNL App Builder] über den Commerce Developer Agent durchführen. Projektkontext und Entscheidungen bleiben sitzungsübergreifend bestehen.
+
+Weitere Informationen finden Sie unter [Commerce-](https://developer.adobe.com/commerce/extensibility/developer-agent/) und [Erste Schritte](https://developer.adobe.com/commerce/extensibility/developer-agent/getting-started).
+
+### Commerce Developer MCP (lokale Entwicklung)
+
+>[!NOTE]
+>
+>Der Commerce Developer MCP wurde für die Verwendung in Ihrer IDE entwickelt.
+
+Teams, die lieber in ihrer bestehenden IDE arbeiten oder eine Storefront auf Edge Delivery Services (EDS) modernisieren müssen, können den Commerce Developer MCP verwenden. Wie der Commerce Developer Agent nutzt auch dieser die Migrationsbewertung direkt. Dadurch wird die Implementierung an die genehmigte Migrationsplanung angepasst und die manuelle Interpretation wird reduziert.
+
+Beachten Sie bei der Entwicklung mit diesen Tools die folgenden Richtlinien:
 
 - **Mit dem Blueprint beginnen** - Das Commerce Developer MCP nutzt die Migrationsbewertung und verwendet die identifizierten Anpassungen, Empfehlungen und Migrationsprioritäten als Grundlage für die Implementierungsplanung.
 
@@ -231,19 +281,19 @@ Der MCP unterstützt auch bei:
 - Erlebnisoptimierung
 - Abstimmung mit aktuellen Best Practices für Edge Delivery Services
 
-### MCP-Wert für Entwickler
+### Wert von Commerce Developer Agent und Developer MCP
 
-Der Wechsel von PHP-Anpassungen im laufenden Prozess hin zu zusammenstellbaren [!DNL App Builder]-Anwendungen stellt einen bedeutenden Wandel der Architektur dar. Das Commerce Developer MCP schließt diese Lücke, indem es [!DNL Adobe Commerce], [!DNL App Builder] Implementierungsmuster und Best Practices für Produkte direkt in den Entwicklungs-Workflow einbettet.
+Der Wechsel von PHP-Anpassungen im laufenden Prozess hin zu zusammenstellbaren [!DNL App Builder]-Anwendungen stellt einen bedeutenden Wandel der Architektur dar. Der Commerce Developer Agent und der Developer MCP schließen diese Lücke, indem sie [!DNL Adobe Commerce], [!DNL App Builder] Implementierungsmuster und Best Practices für Produkte direkt in den Entwicklungs-Workflow einbetten.
 
 Die Einbeziehung dieses Kontexts bietet eine verbesserte Konsistenz sowohl bei der Versandgeschwindigkeit als auch bei der technischen Qualität. Teams können Anwendungen schneller modernisieren und gleichzeitig Implementierungen erstellen, die einer konsistenten Architekturanleitung folgen.
 
-Durch die Einbettung empfohlener Implementierungsmuster reduziert das Commerce Developer MCP die Abhängigkeit von individuellem Know-how und hilft Unternehmen, Modernisierungsmaßnahmen in allen Projekten konsistent zu skalieren.
+Durch die Einbettung empfohlener Implementierungsmuster reduzieren der Commerce Developer Agent und der Developer MCP die Abhängigkeit vom individuellen Know-how und helfen Unternehmen dabei, Modernisierungsmaßnahmen in allen Projekten konsistent zu skalieren.
 
 Der Migrationsprozess ist auch eine Möglichkeit, die bestehende Implementierung zu verbessern. Teams können veraltete Anpassungen vereinfachen, veraltete Funktionen einstellen, SaaS-Funktionen übernehmen und die Anwendungsarchitektur modernisieren, anstatt historische technische Schulden voranzutreiben.
 
-Da das Commerce Developer MCP die Migrationsbewertung direkt nutzt, bleibt bei jedem Modernisierungsansatz die Rückverfolgbarkeit bis zur ursprünglichen Bewertung erhalten, sodass die Implementierung weiterhin mit der genehmigten Migrationsplanung übereinstimmt.
+Da der Commerce Developer Agent die Migrationsbewertung direkt nutzt, bleibt bei jedem Modernisierungsansatz die Rückverfolgbarkeit bis zur ursprünglichen Bewertung erhalten, sodass die Implementierung weiterhin mit der genehmigten Migrationsplanung übereinstimmt.
 
-Das Commerce Developer MCP fördert auch das Design zusammensetzbarer Anwendungen, indem es modulare [!DNL App Builder]-Anwendungen fördert, die sich unabhängig von den sich ändernden Geschäftsanforderungen entwickeln können.
+Der Commerce Developer Agent und der Developer MCP fördern auch das Design zusammenstellbarer Anwendungen, indem sie modulare [!DNL App Builder]-Anwendungen fördern, die sich unabhängig von den sich ändernden Geschäftsanforderungen entwickeln können.
 
 ### MCP-Umfang für Entwickler
 
@@ -257,9 +307,9 @@ Die Datenmigration wird vom MCP nicht verarbeitet. Geschäftsdaten werden über 
 
 Die Modernisierung von Code und Storefront beginnt, sobald die Roadmap für das Migrationsbewertungs-Tool den Migrationsbereich und die Prioritäten festgelegt hat.
 
-Weitere Informationen zur Installation und Verwendung des MCP finden Sie in der Dokumentation [Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/) .
-
 Weitere Informationen zum Commerce Developer Agent, der mit dem Migrationsbewertungs-Tool integriert ist, finden Sie unter [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)
+
+Weitere Informationen zur Installation und Verwendung des MCP finden Sie in der Dokumentation [Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools) .
 
 ## Datenmigration (Commerce Data Migration Service)
 
@@ -311,8 +361,8 @@ Da jede Erweiterung ihre Daten unterschiedlich modelliert, kann ein Migrationspf
 
 ### Nächste Schritte
 
-Wenn Sie bereit für die Migration sind, füllen Sie den [Fragebogen zur Datenmigration](../assets/data-migration-scoping-questionnaire.xlsx) aus, der die Quelltopologie, den Entitätsbereich, die Volumes, Compliance-Beschränkungen, die Umstellungsmechanik und alle [benutzerdefinierten Tabellen) &#x200B;](#custom-and-third-party-data), die für die Migrationsplanung erforderlich sind. Durch das Ausfüllen dieses Fragebogens kann Adobe Ihre Umgebung bewerten und ein Migrationsfenster planen.
+Wenn Sie bereit für die Migration sind, füllen Sie den [Fragebogen zur Datenmigration](../assets/data-migration-scoping-questionnaire.xlsx) aus, der die Quelltopologie, den Entitätsbereich, die Volumes, Compliance-Beschränkungen, die Umstellungsmechanik und alle [benutzerdefinierten Tabellen) ](#custom-and-third-party-data), die für die Migrationsplanung erforderlich sind. Durch das Ausfüllen dieses Fragebogens kann Adobe Ihre Umgebung bewerten und ein Migrationsfenster planen.
 
 Lesen Sie die [Handbuch zum Tool für die Massendatenmigration](bulk-data/migration-tool.md), um mehr über den Workflow, die unterstützten Daten und die Verifizierung zu erfahren.
 
-Systemintegratoren, die eine Quellumgebung vorbereiten, können auch die standardmäßige [Adobe Commerce Cloud-CLI](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) und die [Adobe Developer Console](https://developer.adobe.com) für IMS-Anmeldeinformationen verwenden.
+Systemintegratoren, die eine Quellumgebung vorbereiten, können auch die standardmäßige [Adobe Commerce Cloud-CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) und die [Adobe Developer Console](https://developer.adobe.com) für IMS-Anmeldeinformationen verwenden.
