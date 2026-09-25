@@ -1,28 +1,34 @@
 ---
 title: Regeln erstellen und verwalten
 description: Erfahren Sie, wie Sie Merchandising-Regeln für Suchvorgänge, Standardproduktlisten und Kategorieseiten erstellen und verwalten.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+    internal-label: Personalization
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 4183
+source-wordcount: '4182'
 ht-degree: 0%
-
 ---
-
 # Regeln erstellen und verwalten
 
 So erstellen und veröffentlichen Sie eine Regel:
@@ -34,7 +40,7 @@ So erstellen und veröffentlichen Sie eine Regel:
 ## Erstellen einer Regel {#create-a-rule}
 
 1. Navigieren Sie in der linken Leiste zu _Merchandising_ > **Merchandising-Regeln**.
-1. (Optional) Verwenden Sie das **Katalogansicht**, um die Katalogansicht auszuwählen, in der die Regel angewendet werden soll. Die von Ihnen erstellte Regel wird auf die ausgewählte Ansicht beschränkt (oder auf alle Katalogansichten, wenn **Alle Ansichten** ausgewählt ist). Siehe [Auswählen der &#x200B;](workspace.md#select-catalog-view)), wie der Umfang der Katalogansicht funktioniert.
+1. (Optional) Verwenden Sie das **Katalogansicht**, um die Katalogansicht auszuwählen, in der die Regel angewendet werden soll. Die von Ihnen erstellte Regel wird auf die ausgewählte Ansicht beschränkt (oder auf alle Katalogansichten, wenn **Alle Ansichten** ausgewählt ist). Siehe [Auswählen der ](workspace.md#select-catalog-view)), wie der Umfang der Katalogansicht funktioniert.
 
 1. Klicken Sie auf **[!UICONTROL Create rule]** , um den Regeleditor zu starten.
 
@@ -47,7 +53,7 @@ Jeder Regeltyp verfügt im Editor über ein Informationssymbol mit einer kurzen 
 | Regeltyp | Zweck |
 | --- | --- |
 | **Alle Produktlisten** | Standard-Ranking und Merchandising in allen Produktlisten, wenn keine spezifischere Such- oder Kategorieregel gilt. Sie können nur eine solche Regel erstellen; sie kann keine Bedingungen enthalten. |
-| **Kategorieregel** | Wendet Merchandising und Ranking auf eine oder mehrere ausgewählte Kategorien an und steuert die Produktbestellung auf diesen Kategorieseiten. |
+| **Kategorieregel** | Wendet Merchandising und Ranking auf eine einzelne Kategorie an und steuert die Produktbestellung auf dieser Kategorieseite. |
 | **Suchregel** | Wendet Merchandising und Ranking an, wenn Käufer eine Suche ausführen, die den Abfragebedingungen der Regel entspricht. |
 
 Im Abschnitt **Regel erstellen** definieren Sie den Regelnamen, den Zeitplan, unabhängig davon, ob die Regel für alle Listen oder für bestimmte Suchbedingungen gilt, sowie Ranking-Typen.
@@ -265,7 +271,7 @@ Oder Ereignisse können manuell festgelegt werden:
 
 >[!AVAILABILITY]
 >
->Diese Funktion befindet sich in der [Beta](https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Diese Funktion befindet sich in der [Beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **Attribut-Ranking** wendet automatisch eine **[!UICONTROL Boost]**-, **[!UICONTROL Bury]**- oder **[!UICONTROL Hide]**-Aktion auf jedes Produkt an, das einer oder mehreren Attributbedingungen entspricht, ohne dass Sie einzelne SKUs auswählen müssen. Attribut-Ranking wird im Regeleditor neben [Intelligente Rangfolge](#intelligent-ranking) und [Manuelle Rangfolge](#manual-ranking) angezeigt und ist für die **Regel Alle Produkte**, **Suchregeln** und **Kategorieregeln**. Verwenden Sie diese Option, um das Merchandising auf große Kataloge zu skalieren, z. B. um jedes Produkt einer bestimmten Marke zu steigern oder jedes Produkt in einer nicht mehr unterstützten Farbe zu vergraben.
 
@@ -312,7 +318,7 @@ Eine einzelne Regel kann bis zu 25 Attributbedingungen haben, dieselbe Grenze wi
 
 >[!NOTE]
 >
->Regeln und manuell sortierte Produkte werden auf **Suchergebnisse** angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sodass sie etwa nach Namen sortiert wird, sind Regeln und manuelle Rankings nicht mehr wirksam. Für **category**-Listen wird das Standardsortierverhalten unter „Manuelles [&quot; &#x200B;](#manual-ranking).
+>Regeln und manuell sortierte Produkte werden auf **Suchergebnisse** angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sodass sie etwa nach Namen sortiert wird, sind Regeln und manuelle Rankings nicht mehr wirksam. Für **category**-Listen wird das Standardsortierverhalten unter „Manuelles [&quot; ](#manual-ranking).
 
 ## Regeln bearbeiten, anzeigen und löschen {#edit-view-and-delete-rules}
 

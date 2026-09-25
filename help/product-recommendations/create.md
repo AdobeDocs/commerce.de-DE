@@ -5,21 +5,25 @@ exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
 TQID: https://experienceleague.adobe.com/K3cKFg-m22bUzlupyhsHgDVxaJka7xhOvFnOt8wDdII
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
+    internal-label: Machine learning
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 1491
+source-wordcount: '1463'
 ht-degree: 0%
-
 ---
-
 # Neue Empfehlung erstellen
 
 Wenn Sie eine Empfehlung erstellen, erstellen Sie eine _Empfehlungseinheit_ oder ein Widget, das das empfohlene Produkt (_)_.
@@ -35,11 +39,11 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
 1. Wechseln Sie in der _Admin_-Seitenleiste zu **Marketing** > _Promotions_ > **Produktempfehlungen**, um den _Produktempfehlungen_ anzuzeigen.
 
-1. Geben Sie [&#x200B; „Store-](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/websites-stores-views)&quot; an, in der die Empfehlungen angezeigt werden sollen.
+1. Geben Sie [ „Store-](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)&quot; an, in der die Empfehlungen angezeigt werden sollen.
 
    >[!NOTE]
    >
-   > Empfehlungseinheiten von Page Builder müssen in der standardmäßigen Store-Ansicht erstellt werden, können dann aber überall verwendet werden. Weitere Informationen zum Erstellen von Produktempfehlungen mit Page Builder finden Sie unter [Inhalt hinzufügen - Produktempfehlungen](https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/add-content/recommendations).
+   > Empfehlungseinheiten von Page Builder müssen in der standardmäßigen Store-Ansicht erstellt werden, können dann aber überall verwendet werden. Weitere Informationen zum Erstellen von Produktempfehlungen mit Page Builder finden Sie unter [Inhalt hinzufügen - Produktempfehlungen](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Klicken Sie **Empfehlung erstellen**.
 
@@ -49,14 +53,14 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
    >[!NOTE]
    >
-   > Produktempfehlungen werden auf der Warenkorbseite nicht unterstützt, wenn Ihr Store so konfiguriert ist, dass [die Warenkorbseite sofort nach dem Hinzufügen eines Produkts zum Warenkorb angezeigt wird](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > Produktempfehlungen werden auf der Warenkorbseite nicht unterstützt, wenn Ihr Store so konfiguriert ist, dass [die Warenkorbseite sofort nach dem Hinzufügen eines Produkts zum Warenkorb angezeigt wird](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Startseite
    * Kategorie
    * Produktdetails
    * Warenkorb
    * Bestätigung
-   * [Page Builder](https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Sie können für jeden Seitentyp bis zu 50 aktive Empfehlungseinheiten erstellen. Der Seitentyp wird ausgegraut, wenn das Limit erreicht ist.
 
@@ -83,7 +87,7 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
    ![Reihenfolge der Empfehlungen](assets/create-recommendation-select-placement.png)
    _Empfehlungsreihenfolge auf Seite_
 
-1. (Optional) Um zu steuern, welche Produkte in der Empfehlungseinheit angezeigt werden, [&#x200B; Sie &#x200B;](filters.md) Abschnitt _Filter_ Filter.
+1. (Optional) Um zu steuern, welche Produkte in der Empfehlungseinheit angezeigt werden, [ Sie ](filters.md) Abschnitt _Filter_ Filter.
 
    ![Empfehlungsfilter](assets/create-recommendation-filter-products.png)
    _Recommendations-Produktfilter_
@@ -176,7 +180,7 @@ Ein niedriger Bereitschaftsprozentsatz zeigt an, dass nicht viele Produkte aus I
 
 >[!IMPORTANT]
 >
->_Bundle_, _grouped_ und benutzerdefinierte Produkttypen werden nicht unterstützt. Wenn Ihr Katalog eine große Anzahl dieser Produktarten enthält, können Sie mit einer niedrigen Bereitschaft rechnen. Darüber hinaus können alle SKUs mit Leerzeichen die Relevanz der Empfehlungen reduzieren und sollten vermieden werden.
+>Alle SKUs mit Leerzeichen können die Relevanz der Empfehlung reduzieren und sollten vermieden werden.
 
 Im Folgenden sind mögliche Gründe und Lösungen für häufige Bewertungen der geringen Bereitschaft aufgeführt:
 
@@ -191,7 +195,7 @@ Im Folgenden sind mögliche Gründe und Lösungen für häufige Bewertungen der 
 
 Das Bedienfeld _Empfohlene Produktvorschau_ ist immer mit einer Auswahl von Beispielprodukten verfügbar, die in der Empfehlungseinheit angezeigt werden, wenn sie in der Storefront bereitgestellt werden.
 
-Um eine Empfehlung zu testen, wenn Sie in einer Nicht-Produktionsumgebung arbeiten, können Sie Empfehlungsdaten aus einer ([&#x200B; Quelle) &#x200B;](settings.md). Händler können so mit Regeln experimentieren und eine Vorschau der Recommendations anzeigen, bevor sie sie in der Produktion bereitstellen.
+Um eine Empfehlung zu testen, wenn Sie in einer Nicht-Produktionsumgebung arbeiten, können Sie Empfehlungsdaten aus einer ([ Quelle) ](settings.md). Händler können so mit Regeln experimentieren und eine Vorschau der Recommendations anzeigen, bevor sie sie in der Produktion bereitstellen.
 
 | Feld | Beschreibung |
 |---|---|

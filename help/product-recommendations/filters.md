@@ -5,17 +5,18 @@ exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
 TQID: https://experienceleague.adobe.com/IcJh0vfW3tvlyeZT0K9OnyqLqRmHlgfmUOX3lY-50tg
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+    internal-label: Admin
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 778
+source-wordcount: '759'
 ht-degree: 0%
-
 ---
-
 # Produkte filtern
 
 Adobe Commerce wendet nicht konfigurierbare Standardfilter automatisch auf Empfehlungseinheiten an. Wenn mehrere Empfehlungseinheiten auf einer Seite bereitgestellt werden, filtert Adobe Commerce alle Produkte heraus, die in den Einheiten wiederholt werden. Es wird nur der erste Hinweis auf ein wiederholtes Produkt verwendet, um Platz für andere zu empfehlende Produkte zu schaffen. Adobe Commerce filtert auch alle zuvor erworbenen Produkte und diejenigen aus dem Warenkorb heraus.
@@ -41,7 +42,7 @@ Die logischen Operatoren `AND` und `OR` werden verwendet, um mehrere Bedingungen
 
 >[!NOTE]
 >
-> Einschluss- und Ausschlussfilter ersetzen die alten Kategorieausschlüsse in Version 3.2.2 und höher des `magento/product-recommendations`. Weitere Informationen [&#x200B; Adobe Commerce-Versionen finden &#x200B;](release-notes.md) in den Versionshinweisen .
+> Einschluss- und Ausschlussfilter ersetzen die alten Kategorieausschlüsse in Version 3.2.2 und höher des `magento/product-recommendations`. Weitere Informationen [ Adobe Commerce-Versionen finden ](release-notes.md) in den Versionshinweisen .
 
 ## Filtertypen {#filtertypes}
 
@@ -55,7 +56,7 @@ Das Feld Kategorie zeigt Kategorien an, die zur aktuellen Storeview gehören.
 
 >[!NOTE]
 >
->Für B2B-Händler entspricht der Kategoriefilter allen [kundenspezifischen Produktkategorien](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/categories/category-permissions) die Sie konfiguriert haben.
+>Für B2B-Händler entspricht der Kategoriefilter allen [kundenspezifischen Produktkategorien](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions) die Sie konfiguriert haben.
 
 Adobe Commerce empfiehlt die Verwendung der folgenden Kategoriefilterkonfiguration, wenn Sie Empfehlungen für Ihre Seitentypen bereitstellen:
 
@@ -77,7 +78,7 @@ Produktfilter geben an, welche Produkte für die Anzeige in Recommendations infr
 
 ### Typ
 
-Ein Filter, der auf dem Produkttyp basiert, schließt alle Produkte eines bestimmten Typs ein oder aus. Zu den unterstützten Typen _einfach_, _konfigurierbar_, _virtuell_, _herunterladbar_ oder _Geschenkkarte_. _Bundle_, _grouped_ und benutzerdefinierte Produkttypen werden nicht unterstützt.
+Ein Filter, der auf dem Produkttyp basiert, schließt alle Produkte eines bestimmten Typs ein oder aus.
 
 ### Sichtbarkeit
 
@@ -85,11 +86,11 @@ Filtert Produkte nach Sichtbarkeit, z. B. _Katalog_, _Suche_ oder beides.
 
 ### Preis
 
-Ein auf dem Produktpreis basierender Filter verwendet den Endpreis, um den Vergleich durchzuführen. Im Endpreis sind alle Rabatte enthalten, die anonymen Käufern gewährt werden. Für B2B-Händler entspricht der angezeigte Preis dem [kundenspezifischen Gruppenpreis](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/pricing/pricing-advanced) den Sie konfiguriert haben.
+Ein auf dem Produktpreis basierender Filter verwendet den Endpreis, um den Vergleich durchzuführen. Im Endpreis sind alle Rabatte enthalten, die anonymen Käufern gewährt werden. Für B2B-Händler entspricht der angezeigte Preis dem [kundenspezifischen Gruppenpreis](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced) den Sie konfiguriert haben.
 
 ### Bestandsstatus
 
 Die folgenden Ausschlussfilter können verwendet werden, um Produkte anhand des Lagerstatus herauszufiltern:
 
 - Nicht vorrätig - (Nur Ausschluss) Ausgeschlossen sind nicht vorrätige Produkte.
-- Niedrig auf Lager - (Nur Ausschlüsse) Ausgeschlossen sind Produkte, die niedrig auf Lager sind. Der niedrige Lagerstatus basiert auf dem Wert _Nur noch x Schwellenwert_ in der [Bestandskonfiguration](https://experienceleague.adobe.com/de/docs/commerce-admin/config/catalog/inventory).
+- Niedrig auf Lager - (Nur Ausschlüsse) Ausgeschlossen sind Produkte, die niedrig auf Lager sind. Der niedrige Lagerstatus basiert auf dem Wert _Nur noch x Schwellenwert_ in der [Bestandskonfiguration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory).
