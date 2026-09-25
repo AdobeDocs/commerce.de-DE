@@ -1,7 +1,7 @@
 ---
 title: Regeln erstellen und verwalten
 description: Erfahren Sie, wie Sie Merchandising-Regeln für Suchvorgänge, Standardproduktlisten und Kategorieseiten erstellen und verwalten.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
 product_v2:
@@ -271,7 +271,7 @@ Oder Ereignisse können manuell festgelegt werden:
 
 >[!AVAILABILITY]
 >
->Diese Funktion befindet sich in der [Beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Diese Funktion befindet sich in der [Beta](https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **Attribut-Ranking** wendet automatisch eine **[!UICONTROL Boost]**-, **[!UICONTROL Bury]**- oder **[!UICONTROL Hide]**-Aktion auf jedes Produkt an, das einer oder mehreren Attributbedingungen entspricht, ohne dass Sie einzelne SKUs auswählen müssen. Attribut-Ranking wird im Regeleditor neben [Intelligente Rangfolge](#intelligent-ranking) und [Manuelle Rangfolge](#manual-ranking) angezeigt und ist für die **Regel Alle Produkte**, **Suchregeln** und **Kategorieregeln**. Verwenden Sie diese Option, um das Merchandising auf große Kataloge zu skalieren, z. B. um jedes Produkt einer bestimmten Marke zu steigern oder jedes Produkt in einer nicht mehr unterstützten Farbe zu vergraben.
 
