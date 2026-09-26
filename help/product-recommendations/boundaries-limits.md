@@ -1,21 +1,18 @@
 ---
 title: Grenzen und Beschränkungen
-description: Erfahren Sie mehr über die Grenzen und Einschränkungen von  [!DNL Product Recommendations] , um sicherzustellen, dass es den Anforderungen Ihres Unternehmens entspricht.
+description: Erfahren Sie mehr über die Grenzen und Einschränkungen von [!DNL Product Recommendations], um sicherzustellen, dass sie den Anforderungen Ihres Unternehmens entsprechen.
 role: Admin, Developer
-source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '893'
 ht-degree: 0%
-
 ---
-
 # Grenzen und Beschränkungen
 
 Überprüfen Sie die folgenden Grenzen und Beschränkungen, um sicherzustellen, dass [!DNL Product Recommendations] die Anforderungen Ihres Unternehmens erfüllt. Wenn Sie diese Einschränkungen verstehen, können Sie die Implementierung planen, Filter konfigurieren und gängige Probleme vermeiden.
 
 ## Allgemein
 
-- **Produkttypen** - Unterstützte Produkttypen sind _einfach_, _konfigurierbar_, _virtuell_, _herunterladbar_ und _Geschenkkarte_. _Bundle_, _grouped_ und benutzerdefinierte Produkttypen werden nicht unterstützt. Wenn Ihr Katalog eine große Anzahl nicht unterstützter Produkttypen enthält, können Sie mit einem niedrigen [Bereitschaftswert) &#x200B;](create.md#readiness-indicators). Siehe [Filtern nach Produkttyp](filters.md#type).
 - **SKUs mit Leerzeichen** - SKUs, die Leerzeichen enthalten, können die Relevanz von Empfehlungen reduzieren und sollten nach Möglichkeit vermieden werden.
 - **Warenkorbseite** - Produktempfehlungen werden auf der Warenkorbseite nicht unterstützt, wenn Ihr Store so konfiguriert ist, dass [die Warenkorbseite sofort nach dem Hinzufügen eines Produkts zum Warenkorb angezeigt &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Siehe [Erstellen von Empfehlungen](create.md).
 - **Untergeordnete Produkte** - Untergeordnete Produkte eines konfigurierbaren Produkts (Sichtbarkeit _Nicht einzeln sichtbar_) werden nicht in einer Empfehlungseinheit angezeigt. Nur das konfigurierbare (übergeordnete) Produkt kann angezeigt werden. Siehe [Produkte filtern](filters.md#product).
