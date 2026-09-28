@@ -70,7 +70,7 @@ Die Aktualisierungsprüfung liest die Veröffentlichungsmetadaten aus dem Abschn
 ```json
 {
   "extra": {
-    "release_notes_url": "https://experienceleague.adobe.com/...",
+    "release_notes_url": "https://experienceleague.adobe.com/de...",
     "release_type": "feature",
     "compatible_commerce_versions": ">=2.4.7 <2.5.0"
   }
