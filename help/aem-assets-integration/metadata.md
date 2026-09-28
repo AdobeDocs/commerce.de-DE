@@ -70,11 +70,11 @@ Dieser Paket-Code fügt die folgenden Ressourcen zur Authoring-Umgebung von AEM 
 
 >[!NOTE]
 >
-> Weitere Informationen zum {[}AEM Commerce-Package-Code} finden Sie auf ](https://github.com/ankumalh/assets-commerce) Seite zu GitHub ****
+> Weitere Informationen zum {[}AEM Commerce-Package-Code&rbrace; finden Sie auf &#x200B;](https://github.com/ankumalh/assets-commerce) Seite zu GitHub **&#x200B;**
 
 ## Lokalisierter ALT-Text in AEM Assets-Metadaten
 
-Das _[!UICONTROL Alt texts]_Multifield ist im Metadaten-Editor für AEM Assets-Assets auf der Registerkarte **[!UICONTROL Commerce]**verfügbar, wenn Sie ein geeignetes Bild bearbeiten.
+Das _[!UICONTROL Alt texts]_&#x200B;Multifield ist im Metadaten-Editor für AEM Assets-Assets auf der Registerkarte **[!UICONTROL Commerce]**&#x200B;verfügbar, wenn Sie ein geeignetes Bild bearbeiten.
 
 >[!IMPORTANT]
 >
@@ -90,7 +90,7 @@ Wählen Sie **[!UICONTROL Add]** aus, um weitere Zeilen für zusätzliche Shop-A
 
 ![Mehrfachfeld „Alt-Texte“ mit Code für Store-Ansicht und Eingabe von Alt-Text](assets/aem-alt-texts.png){width="600" zoomable="yes"}
 
-Beim Speichern blockiert die Client-seitige Validierung die Übermittlung, wenn eine Zeile einen leeren _[!UICONTROL Store View Code]_hat oder wenn zwei Zeilen denselben Code für die Store-Ansicht verwenden (ignoriert Groß-/Kleinschreibung).
+Beim Speichern blockiert die Client-seitige Validierung die Übermittlung, wenn eine Zeile einen leeren _[!UICONTROL Store View Code]_&#x200B;hat oder wenn zwei Zeilen denselben Code für die Store-Ansicht verwenden (ignoriert Groß-/Kleinschreibung).
 
 Alternativtexteinträge werden in JCR-Asset-Metadaten als zwei indexorientierte `String[]` beibehalten:
 

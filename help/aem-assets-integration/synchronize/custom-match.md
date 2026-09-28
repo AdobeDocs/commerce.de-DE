@@ -330,7 +330,7 @@ Der `asset_matches`-Parameter enthält die folgenden Attribute:
 | Attribut | Datentyp | Beschreibung |
 | --- | --- | --- |
 | `asset_id` | Zeichenfolge | Die Asset-ID. |
-| `asset_roles` | Array | Asset-Rollen. Verwendet die unterstützten Commerce-Asset-Rollen ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)`thumbnail`, `image`, `small_image` und `swatch_image`. [Bei AEM Assets Integration Extension 1.4.6 und höher werden auch benutzerdefinierte Bildrollen (wie `hero` oder `custom_role_1`) akzeptiert. |
+| `asset_roles` | Array | Asset-Rollen. Verwendet die unterstützten Commerce-Asset-Rollen [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)`thumbnail`, `image`, `small_image` und `swatch_image`. Bei AEM Assets Integration Extension 1.4.6 und höher werden auch benutzerdefinierte Bildrollen (wie `hero` oder `custom_role_1`) akzeptiert. |
 | `asset_format` | Zeichenfolge | Das Asset-Format. Mögliche Werte sind `image` und `video`. |
 | `asset_position` | Zahl | Die Position des Assets in der Produktgalerie. |
 
