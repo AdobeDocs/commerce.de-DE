@@ -41,7 +41,7 @@ Sie haben zwei Möglichkeiten, das AEM Assets-Projekt zu konfigurieren:
 
 >[!IMPORTANT]
 >
->Unabhängig davon, welche Option Sie verwenden[ konfigurieren Sie im Metadatenschema](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets#configuration)Editor von AEM das Metadatenschema für die Asset-Genehmigung, damit Sie Commerce-Assets genehmigen können.
+>Unabhängig davon, welche Option Sie verwenden[&#x200B; konfigurieren Sie im Metadatenschema](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets#configuration)Editor von AEM das Metadatenschema für die Asset-Genehmigung, damit Sie Commerce-Assets genehmigen können.
 
 ## Aktivieren der Commerce-Integration (Self-Service) {#enable-aem-commerce-self-service}
 
@@ -279,7 +279,7 @@ Die Komponente Produktdaten-Benutzeroberfläche wird automatisch auf Grundlage d
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Optional. Um genehmigte Commerce Assets beim Hochladen in die AEM Assets-Umgebung automatisch zu synchronisieren, setzen Sie den Standardwert für das _[!UICONTROL Review Status]_auf der Registerkarte `Basic` auf `approved`.
+1. Optional. Um genehmigte Commerce Assets beim Hochladen in die AEM Assets-Umgebung automatisch zu synchronisieren, setzen Sie den Standardwert für das _[!UICONTROL Review Status]_&#x200B;auf der Registerkarte `Basic` auf `approved`.
 
 1. Speichern Sie die Aktualisierung.
 
