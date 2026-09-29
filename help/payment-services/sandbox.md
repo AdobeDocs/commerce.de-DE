@@ -1,17 +1,15 @@
 ---
 title: Einrichten der Test-Sandbox
-description: Verwenden Sie ein PayPal-Sandbox-Konto und Admin-Onboarding, um  [!DNL Payment Services]  Testmodus vor Live-Zahlungen (Adobe Commerce in der Cloud, lokal und SaaS) auszuführen.
+description: Verwenden Sie ein PayPal-Sandbox-Konto und Admin-Onboarding, um [!DNL Payment Services] im Testmodus vor Live-Zahlungen (Adobe Commerce in der Cloud, lokal und SaaS) auszuführen.
 role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 5312d23f050d9007132f7f14b17caf13ab52c7df
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '778'
 ht-degree: 0%
-
 ---
-
 # Einrichten der Test-Sandbox
 
 Bevor Sie mit dem Sandbox-Onboarding beginnen, müssen Sie sich für ein kostenloses PayPal-Entwicklerkonto anmelden und sowohl Händler- (zum Onboarding) als auch Kundenkonten erstellen (zum Testen Ihres Checkouts). Sie können bei Bedarf mehrere Entwicklerkonten erstellen.
@@ -31,7 +29,7 @@ So schließen Sie das Sandbox-Onboarding ab:
       Wenn Sie während des PayPal-Onboarding-Prozesses ein PayPal-Sandbox-Konto erstellt haben, müssen Sie [Ihre Onboarding-Sandbox zurücksetzen](#reset-your-sandbox-account) da Sie sonst Ihre E-Mail nicht verifizieren können.
 
    1. Wählen Sie **[!UICONTROL Business]** als Kontotyp aus und klicken Sie auf **[!UICONTROL Create]**.
-   1. Klicken Sie im Abschnitt _[!UICONTROL Sandbox Accounts]_&#x200B;auf die drei Punkte in der Spalte&#x200B;_[!UICONTROL Manage accounts]_ für das von Ihnen erstellte Sandbox-Konto.
+   1. Klicken Sie im Abschnitt _[!UICONTROL Sandbox Accounts]_auf die drei Punkte in der Spalte_[!UICONTROL Manage accounts]_ für das von Ihnen erstellte Sandbox-Konto.
    1. Klicken Sie auf **[!UICONTROL View/edit account]**.
 
       ![PayPal - Sandbox-Konto anzeigen/bearbeiten](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -57,11 +55,11 @@ So schließen Sie das Sandbox-Onboarding ab:
 
    Die Schaltfläche &quot;**[!UICONTROL Sandbox onboarding]**&quot; ist nicht mehr sichtbar, und es wird der Text „Sandbox-Zahlungen ausstehend“ angezeigt.
 
-Wenn das Onboarding Ihrer PayPal-Sandbox genehmigt wurde, sollte eine Benachrichtigung angezeigt werden, die besagt, dass sich Ihr Zahlungssystem derzeit im Sandbox-Modus befindet und keine Live-Zahlungen verarbeitet.
+   Wenn das Onboarding Ihrer PayPal-Sandbox genehmigt wurde, sollte eine Benachrichtigung angezeigt werden, die besagt, dass sich Ihr Zahlungssystem derzeit im Sandbox-Modus befindet und keine Live-Zahlungen verarbeitet.
 
->[!IMPORTANT]
->
->Wenn Sie die Einwilligung zur [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] zur Abwicklung Ihrer Zahlungen widerrufen (in Ihren PayPal-Kontoeinstellungen), können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services] bearbeitet werden. Auf Ihrer Zahlungsdienste-Startseite wird ein Warnhinweis zur widerrufenen Einwilligung angezeigt. Um den Warnhinweis zu schließen, klicken Sie auf **[!UICONTROL Do not show again]**.
+   >[!IMPORTANT]
+   >
+   >Wenn Sie die Einwilligung zur [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] zur Abwicklung Ihrer Zahlungen widerrufen (in Ihren PayPal-Kontoeinstellungen), können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services] bearbeitet werden. Auf Ihrer Zahlungsdienste-Startseite wird ein Warnhinweis zur widerrufenen Einwilligung angezeigt. Um den Warnhinweis zu schließen, klicken Sie auf **[!UICONTROL Do not show again]**.
 
 ### Sandbox-Konto zurücksetzen
 
@@ -74,7 +72,7 @@ So setzen Sie Ihr Sandbox-Konto zurück:
 
 ## Telefonnummer des Kontakts aktivieren
 
-Mit der Telefonnummer des Kontakts können Sie die Telefonnummern des Kontakts abrufen, die PayPal von Ihren Kunden sammelt. PayPal sammelt immer Kontakt-Telefonnummern von PayPal-Kontoinhabern, um ihre Identität zu bestätigen und sie zu kontaktieren, um Probleme mit ihren Konten zu lösen oder ihre Erfüllungsprozesse abzuschließen. PayPal rät jedoch davon ab, Kontaktnummern direkt vom Händler zu verwenden, da dies negative Auswirkungen auf den Umsatz haben kann. Weitere Informationen finden [&#x200B; in der Dokumentation &#x200B;](https://www.sandbox.paypal.com/businessmanage/preferences/website)PayPal - Telefonnummern für Kontakte“.
+Mit der Telefonnummer des Kontakts können Sie die Telefonnummern des Kontakts abrufen, die PayPal von Ihren Kunden sammelt. PayPal sammelt immer Kontakt-Telefonnummern von PayPal-Kontoinhabern, um ihre Identität zu bestätigen und sie zu kontaktieren, um Probleme mit ihren Konten zu lösen oder ihre Erfüllungsprozesse abzuschließen. PayPal rät jedoch davon ab, Kontaktnummern direkt vom Händler zu verwenden, da dies negative Auswirkungen auf den Umsatz haben kann. Weitere Informationen finden [ in der Dokumentation ](https://www.sandbox.paypal.com/businessmanage/preferences/website)PayPal - Telefonnummern für Kontakte“.
 
 Diese Funktion ist standardmäßig `off`. Wenn Sie diese Option aktivieren, können Store-Administratoren Telefonnummern sehen, wenn ein Kunde einen markenspezifischen Checkout-Fluss außerhalb der Checkout-Seite abschließt.
 
@@ -96,7 +94,7 @@ So konfigurieren Sie das Land des Käufers:
 
 1. Erweitern Sie den Abschnitt _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 
-1. Erweitern Sie im Abschnitt _[!UICONTROL Payment Services]_&#x200B;den Abschnitt&#x200B;_[!UICONTROL General Configuration]_ .
+1. Erweitern Sie im Abschnitt _[!UICONTROL Payment Services]_den Abschnitt_[!UICONTROL General Configuration]_ .
 
 1. Legen Sie **[!UICONTROL Method]** auf `Sandbox` fest.
 
@@ -112,4 +110,4 @@ So konfigurieren Sie das Land des Käufers:
 
 Es wird dringend empfohlen, Testdatenräume für Integrations- und Staging-Umgebungen zu verwenden und Zahlungen in der Produktion mit echten Kreditkarten und Banken zu testen, bevor Sie diese Funktion Käufern bereitstellen.
 
-Weitere Informationen [&#x200B; Sie unter &#x200B;](test-validate.md) und Validieren .
+Weitere Informationen [ Sie unter ](test-validate.md) und Validieren .

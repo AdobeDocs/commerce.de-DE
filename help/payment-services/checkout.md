@@ -1,19 +1,17 @@
 ---
 title: Checkout in [!DNL Payment Services]
-description: Passen Sie  [!DNL Payment Services]  Checkout an die Bedürfnisse Ihrer Kunden an.
+description: Passen Sie [!DNL Payment Services] Checkout an die Bedürfnisse Ihrer Kunden an.
 feature: Payments, Checkout, Paas, Saas
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '343'
 ht-degree: 0%
-
 ---
-
 
 # Checkout in [!DNL Payment Services]
 
-Sie können den Checkout für Adobe Commerce [!DNL Payment Services] so konfigurieren, dass er Ihren Kundinnen und Kunden am besten entspricht. Funktionen wie [automatische &#x200B;](#order-auto-voided-if-error) bestellen) und [Tresor für Kreditkarten](#credit-card-vaulting) stellen sicher, dass Ihre Kunden ein reibungsloses Benutzererlebnis haben.
+Sie können den Checkout für Adobe Commerce [!DNL Payment Services] so konfigurieren, dass er Ihren Kundinnen und Kunden am besten entspricht. Funktionen wie [automatische ](#order-auto-voided-if-error) bestellen) und [Tresor für Kreditkarten](#credit-card-vaulting) stellen sicher, dass Ihre Kunden ein reibungsloses Benutzererlebnis haben.
 
 ## Bei Fehler automatisch storniert bestellen
 
@@ -23,7 +21,7 @@ Auf der Kaufbestätigungsseite wird eine Fehlermeldung für den Käufer angezeig
 
 ![Fehler beim Überprüfen](assets/user-checkout-error.png "Fehler beim Auschecken"){width="600" zoomable="yes"}
 
-Ein Kommentar zur stornierten Bestellung wird auch im Administrator für eine bestimmte [Bestellung](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/orders?lang=en) angezeigt.
+Ein Kommentar zur stornierten Bestellung wird auch im Administrator für eine bestimmte [Bestellung](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders?lang=en) angezeigt.
 
 ![Stornierter Bestellkommentar in Admin für Bestellung](assets/admin-checkout-error.png "Stornierter Bestellkommentar in Admin für Bestellung"){width="600" zoomable="yes"}
 
