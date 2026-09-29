@@ -6,19 +6,21 @@ exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
 TQID: https://experienceleague.adobe.com/z7vpuhsVJnKohiU-bKNrcGnoIQ5WAwcwiccYlvawN0U
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+    internal-label: Metadata
+source-git-commit: cf31a1ed5069095fb3c4c50d99475e60ee61efa9
 workflow-type: tm+mt
-source-wordcount: 317
+source-wordcount: '349'
 ht-degree: 0%
-
 ---
-
 # Standardmäßige automatische Zuordnung
 
 Die AEM Assets-Integration für Commerce bietet einen standardmäßigen automatischen Abgleichmechanismus (**[!UICONTROL Match by product SKU]**), der auf der **AEM Assets**-Metadatenkonfiguration basiert. Diese Regel ermöglicht eine nahtlose Synchronisierung zwischen **Adobe Commerce** und **AEM Assets**, um sicherzustellen, dass Assets automatisch mit den richtigen Merchandising-Entitäten verknüpft werden.
@@ -50,6 +52,8 @@ Wenn die Regel zum Abgleichen von **[!UICONTROL Match by product SKU]** in der C
    ![Beispiel-Metadaten](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
 
 1. Konfigurieren Sie die Metadaten ([!UICONTROL SKU], [!UICONTROL position] und [!UICONTROL role]), die das Asset mit der zugehörigen Produkt-SKU verknüpfen.
+
+   Die vier Standardrollen sind `image`, `small_image`, `thumbnail` und `swatch_image`. Bei der AEM Assets-Integrationserweiterung Version 1.4.6 und höher können Sie auch eine benutzerdefinierte Bildrolle eingeben, z. B. `hero` oder `custom_role_1`. Weitere Informationen [&#x200B; Sie unter &#x200B;](custom-match.md)Benutzerdefinierter automatischer Abgleich“.
 
    >[!NOTE]
    >

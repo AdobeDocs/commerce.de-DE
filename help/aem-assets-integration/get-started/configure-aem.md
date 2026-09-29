@@ -20,9 +20,9 @@ topic_v2:
     internal-label: Digital asset management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 4c27d94eca656c48dd50ba8dc69a905ea141c6fd
+source-git-commit: fda6fa7c9ae80a594f0eb05624030cd6b13f0da2
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1861'
 ht-degree: 1%
 ---
 # Konfigurieren des AEM Assets-Projekts
@@ -205,6 +205,8 @@ Sobald Sie das Support-Ticket gesendet haben, aktiviert Adobe Dynamic Media mit 
 
    * Produkt-SKUs und die `Eligible for Commerce` Felder sind sichtbar.
 
+   * Das **[!UICONTROL Alt texts]** Multifield ist mit **[!UICONTROL Store View Code]** und **[!UICONTROL Alt Text]** Eingängen verfügbar.
+
 ### Registerkarte &quot;Commerce&quot; ist in den Eigenschaften nicht sichtbar
 
 Wenn die Registerkarte **Commerce** nicht in den Eigenschaften angezeigt wird, müssen Sie die folgenden Schritte im Metadatenschema-Editor manuell ausführen:
@@ -220,6 +222,8 @@ Wenn die Registerkarte **Commerce** nicht in den Eigenschaften angezeigt wird, m
 1. Aktivieren Sie das Kontrollkästchen für **Rollen anzeigen** und **Reihenfolge anzeigen**.
 
 1. Ziehen Sie eine **checkbox**-Komponente per Drag-and-Drop auf die Registerkarte {2 **Commerce} und ordnen Sie sie der `commerce:isCommerce` zu.** Definieren Sie **Ja** und **Nein** als Optionen.
+
+1. Fügen Sie das **[!UICONTROL Alt texts]** Multifield zur Registerkarte **Commerce** hinzu. Konfigurieren Sie die beiden indexorientierten Eigenschaften als `commerce:altTextStoreViews` und `commerce:altTextValues`.
 
 Wenn Sie auf andere Probleme stoßen, erstellen Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) oder wenden Sie sich an Ihren AEM Assets Integration-Vertriebsmitarbeiter, um Hilfe zu erhalten.
 

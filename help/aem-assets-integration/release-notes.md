@@ -3,13 +3,11 @@ title: Versionshinweise zur AEM Assets-Integration
 description: Informationen zu allen AEM Assets-Integrationsversionen finden Sie in den Versionshinweisen .
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: afef108e512c69047a0420566a498dab164c207e
+source-git-commit: a0b269f6d4b709dd0aed4c23264928f28b2f5d98
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1784'
 ht-degree: 0%
-
 ---
-
 # Versionshinweise zur AEM Assets-Integration
 
 Diese Versionshinweise beschreiben alle Versionen für die AEM Assets-Integration und umfassen:
@@ -38,6 +36,36 @@ _11. Februar 2025_
 
 +++
 
+## v1.4.7
+
+_18. September 2026_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
+
+![Problem behoben](../assets/fix.svg)<!-- Issue ACAP-1317 --> Es wurde ein Problem behoben, bei dem die für [benutzerdefinierte automatische Zuordnung](synchronize/custom-match.md) hochgeladene `workspace.json`-Datei nicht korrekt beibehalten wurde, wenn die asynchrone Speicherung in Commerce aktiviert ist. Zuvor reihte die Admin-Anfrage nur die Upload-Metadaten in die Warteschlange ein, nicht den Dateiinhalt, sodass die temporäre Upload-Datei zum Zeitpunkt, zu dem der Verbraucher der asynchronen Konfiguration die Speicherung verarbeitet hatte, nicht mehr gelesen werden konnte. Daher schien die Konfiguration erfolgreich gespeichert zu werden, während die OAuth-Werte von App Builder unverändert blieben. Hochgeladene App Builder-Anmeldeinformationen überleben jetzt die Warteschlangenbegrenzung und werden vom asynchronen Verbraucher korrekt verarbeitet.
+
+>[!IMPORTANT]
+>
+>Wenn Sie einen benutzerdefinierten Matcher mit aktivierter Option „Async Config Save“ verwenden, laden Sie Ihre `workspace.json`-Datei nach dem Upgrade auf diese Version erneut hoch. Anweisungen zum Hochladen finden Sie unter [Async Config Save](synchronize/custom-match.md#async-config-save).
+
+## v1.4.6
+
+_8. September 2026_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
+
+![Neues Problem](../assets/new.svg)<!-- Issue ACAP-1272 --> Benutzerdefinierte AEM-Bildrollen werden jetzt während der Synchronisierung beibehalten. Benutzerdefinierte Werte im Metadatenfeld &quot;AEM `commerce:roles`&quot; werden zusätzlich zu den vier Standardrollen (`image`, `small_image`, `thumbnail` und `swatch_image`) aufgenommen und den Daten der Commerce-Produktmediensammlung zugeordnet. Weitere Informationen finden Sie unter [Benutzerdefinierter automatischer Abgleich](synchronize/custom-match.md).
+
+![Neues Problem](../assets/new.svg)<!-- Issue ACAP-1272 --> Adobe Commerce kann jetzt asynchron nach Aktualisierungen der AEM Assets-Integrationserweiterung suchen und Admins im Admin benachrichtigen, wenn eine neue Version verfügbar ist. Administratoren können mit `bin/magento aem:assets:check-update` auch eine manuelle Überprüfung durchführen. Weitere Informationen finden Sie unter [Nach Erweiterungs-Updates suchen](get-started/check-for-updates.md).
+
+## v1.4.5
+
+_3. August 2026_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
+
+![Problem behoben](../assets/fix.svg)<!-- Issue ACAP-1321 --> Es wurde ein Problem mit der Abwärtskompatibilität bei der Sichtbarkeit von Assets in der Store-Ansicht behoben. Vorhandene Asset-Synchronisierungsanfragen, die keine ausgeblendeten Speicheransichten angeben, funktionieren weiterhin ohne Änderungen.
+
 ## v1.4.4
 
 _30. Juli 2026_
@@ -45,6 +73,8 @@ _30. Juli 2026_
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
 
 ![Neues Problem](../assets/new.svg) Jetzt können Händler bestimmte Shop-Ansichten für ein AEM-Asset ausblenden. Wenn AEM Assets ein Bild für eine oder mehrere Store-Ansichten als ausgeblendet markiert, schließt Commerce dieses Bild in diesen Store-Ansichten aus der Storefront aus. Die Admin-Produktmediensammlung enthält jetzt ein **[!UICONTROL Store View Visibility]**, das anzeigt, in welchen Store-Ansichten das Bild ausgeblendet wird. <!-- Issue ACAP-1308 -->
+
+![Es wurde &#x200B;](../assets/fix.svg) Problem behoben, dass das Page Builder-Integrationspaket fälschlicherweise das `magento/module-page-builder`-Paket erforderte und daher nicht unabhängig installiert werden konnte.
 
 ## v1.4.2
 

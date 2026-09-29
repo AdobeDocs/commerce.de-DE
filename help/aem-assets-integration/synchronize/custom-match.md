@@ -6,19 +6,21 @@ exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
 TQID: https://experienceleague.adobe.com/RHRfW99iShMpajrEC8BhvoMEfQ-ABdipWTCdK-KaVH4
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+    internal-label: Metadata
+source-git-commit: 7ecedcc7c17abdeb64507d8f74ec6fc103b361cc
 workflow-type: tm+mt
-source-wordcount: 605
+source-wordcount: '927'
 ht-degree: 0%
-
 ---
-
 # Benutzerdefinierter automatischer Abgleich
 
 Wenn die standardmäßige automatische Abgleichstrategie (**OOTB Automatic Matching**) nicht an Ihren spezifischen Geschäftsanforderungen ausgerichtet ist, wählen Sie die Option Benutzerdefinierte Abgleichung aus. Diese Option unterstützt die Verwendung von [Adobe Developer App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) zum Entwickeln einer benutzerdefinierten Matcher-Anwendung, die komplexe Matching-Logik verarbeitet, oder von Assets, die von einem Drittanbietersystem stammen, das keine Metadaten in AEM Assets einfügen kann.
@@ -120,6 +122,42 @@ Sie können die `workspace.json` Datei von der [Adobe Developer Console herunter
 1. Wählen Sie für jeden Fluss die entsprechenden Laufzeitaktionen aus den Dropdown-Menüs aus.
 
 1. Klicken Sie auf **[!UICONTROL Save Config]**.
+
+## Asynchrone Konfiguration speichern
+
+Wenn in Ihrer Commerce-Instanz die Option [Async Config Save](https://experienceleague.adobe.com/de/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save) aktiviert ist, werden Konfigurationsänderungen von einem asynchronen Verbraucher in die Warteschlange gestellt und angewendet, anstatt sofort in derselben Anfrage gespeichert zu werden. Um in diesem Modus eine `workspace.json`-Datei für die benutzerdefinierte automatische Zuordnung hochzuladen, führen Sie die folgenden Schritte in der richtigen Reihenfolge aus:
+
+1. Bestätigen Sie, dass Commerce Async Config Save [enabled](https://experienceleague.adobe.com/de/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save) ist.
+
+1. Navigieren Sie vom Administrator aus zu **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**.
+
+1. Laden Sie die aktuelle App Builder `workspace.json`-Datei hoch.
+
+1. Speichern Sie die Konfiguration.
+
+1. Warten Sie, bis die Verarbeitung des Speichervorgangs durch den asynchronen Konfigurationsverbraucher abgeschlossen ist.
+
+1. Überprüfen Sie die OAuth-Werte und die abhängige Integrationskonfiguration.
+
+1. Überprüfen Sie, ob die externe Matcher-Registrierung die Aktualisierung widerspiegelt.
+
+>[!NOTE]
+>
+>Wenn „Async Config Save“ deaktiviert ist, gilt das normale synchrone Speicherverhalten, und Sie müssen nicht auf einen Verbraucher in der Warteschlange warten.
+
+### Fehlerbehebung bei der asynchronen Speicherung
+
+| Symptom | Vorgehensweise |
+| --- | --- |
+| OAuth-Werte bleiben nach dem Speichern unverändert | Vergewissern Sie sich, dass Sie die AEM Assets-Integrationserweiterung Version 1.4.7 oder höher ausführen, laden Sie eine neue `workspace.json`-Datei hoch und warten Sie, bis die Warteschlangenverarbeitung abgeschlossen ist, bevor Sie die Werte erneut überprüfen. |
+| Speichern schlägt nach ungültigem Upload fehl | Überprüfen Sie, ob die Datei eine wohlgeformte `workspace.json` ist und die erwarteten App Builder-Anmeldeinformationen enthält. |
+| Keine Datei hochgeladen | Die vorhandene gespeicherte Konfiguration bleibt unverändert. |
+| Die externe Matcher-Registrierung wird nicht aktualisiert | Überprüfen Sie, ob die Verarbeitung durch den Queue Consumer abgeschlossen ist, überprüfen Sie die Commerce-Protokolle und bestätigen Sie den Registrierungsstatus für den externen Matcher. |
+| Async Config Save ist deaktiviert | Es gilt das normale synchrone Speicherverhalten. Dieser Abschnitt zur Fehlerbehebung findet keine Anwendung. |
+
+>[!NOTE]
+>
+>Wenn Sie einen Konfigurationsbeobachter für die AEM Assets-Integration entwickeln, sind Sie nicht von unformatierten HTTP-Anfrageparametern abhängig. Asynchrone Konfigurationsspeicher und andere programmgesteuerte Konfigurationsspeicher können den Beobachter ohne Administratoranforderungskontext ausführen.
 
 ## Benutzerdefinierte Matcher-API-Endpunkte
 
@@ -292,7 +330,7 @@ Der `asset_matches`-Parameter enthält die folgenden Attribute:
 | Attribut | Datentyp | Beschreibung |
 | --- | --- | --- |
 | `asset_id` | Zeichenfolge | Die Asset-ID. |
-| `asset_roles` | Array | Asset-Rollen. Verwendet unterstützte [Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)Asset-Rollen wie `thumbnail`, `image`, `small_image` und `swatch_image`. |
+| `asset_roles` | Array | Asset-Rollen. Verwendet die unterstützten Commerce-Asset-Rollen [&#128279;](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)`thumbnail`, `image`, `small_image` und `swatch_image`. Bei AEM Assets Integration Extension 1.4.6 und höher werden auch benutzerdefinierte Bildrollen (wie `hero` oder `custom_role_1`) akzeptiert. |
 | `asset_format` | Zeichenfolge | Das Asset-Format. Mögliche Werte sind `image` und `video`. |
 | `asset_position` | Zahl | Die Position des Assets in der Produktgalerie. |
 

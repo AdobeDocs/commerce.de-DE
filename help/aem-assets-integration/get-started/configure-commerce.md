@@ -7,21 +7,25 @@ exl-id: c0fb59e1-daf8-4f48-a7a7-b48e8782dfad
 TQID: https://experienceleague.adobe.com/z4WBMzUa6Jn8EjUH1e5oojV4I3bTDZJylwtQ7LZ4wPE
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+    internal-label: Metadata
+source-git-commit: 555a9c9aff3f4d5f60f13374a9f23a70e2111b3b
 workflow-type: tm+mt
-source-wordcount: 1675
+source-wordcount: '1824'
 ht-degree: 0%
-
 ---
-
 # Installieren von Adobe Commerce-Paketen
 
 Diese Integration für Commerce ermöglicht die Synchronisierung von Assets zwischen Adobe Commerce und Adobe Experience Manager Assets (AEM Assets). Die Erweiterung bietet eine Reihe von Tools und Services zum Verwalten von Produktbildern, Videos und anderen Medien-Assets auf beiden Plattformen.
@@ -60,6 +64,12 @@ Installieren Sie das Adobe Commerce-Paket und bereiten Sie die Commerce-Umgebung
 
 Installieren Sie die neueste Version der AEM Assets-Integrationserweiterung (`aem-assets-integration`) auf einer Adobe Commerce-Instanz mit Version Adobe Commerce 2.4.5+. Die Erweiterung wird als Composer-Metapaket aus dem Repository [repo.magento.com](https://repo.magento.com/admin/dashboard) bereitgestellt.
 
+Standardmäßig installiert `composer require magento/aem-assets-integration` die neueste verfügbare Version. Um stattdessen eine exakte Version anzuheften (z. B. um mehrere Umgebungen auf derselben validierten Version zu halten), verwenden Sie eine exakte Einschränkung wie `"magento/aem-assets-integration": "1.4.7"`. Verwenden Sie `^1.4.7` nur, wenn ein kompatibler 1.x-Bereich vorgesehen ist.
+
+>[!NOTE]
+>
+>Wenn Sie von einer Version vor 1.4.6 aktualisieren, empfiehlt Adobe eine direkte Aktualisierung auf 1.4.7 oder höher. In Version 1.4.6 wurden benutzerdefinierte Bildrollen und der Erweiterungs-Update-Checker eingeführt. In Version 1.4.7 wurde ein Problem behoben, bei dem die für die [benutzerdefinierte automatische Zuordnung](../synchronize/custom-match.md) verwendete `workspace.json`-Datei nicht korrekt beibehalten wurde, wenn Commerce Async Config Save aktiviert ist. Wenn Sie einen benutzerdefinierten Matcher mit aktiviertem Speichern der asynchronen Konfiguration verwenden, laden Sie Ihre `workspace.json`-Datei nach dem Upgrade erneut hoch. Siehe [Speichern der asynchronen Konfiguration](../synchronize/custom-match.md#async-config-save).
+
 >[!BEGINTABS]
 
 >[!TAB Cloud-Infrastruktur]
@@ -78,10 +88,10 @@ Verwenden Sie diese Methode, um die [!DNL AEM Assets Integration]-Erweiterung au
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Fügen Sie die Erweiterung AEM Assets Integration for Commerce hinzu.
+1. Fügen Sie die Erweiterung AEM Assets Integration for Commerce hinzu. Lassen Sie die Versionsbeschränkung weg, um die neueste verfügbare Version zu installieren, oder heften Sie eine bestimmte Version an, wie hier gezeigt.
 
    ```shell
-   composer require "magento/aem-assets-integration" "<version-tbd>" --no-update
+   composer require "magento/aem-assets-integration" "^1.4.7" --no-update
    ```
 
 1. Paketabhängigkeiten aktualisieren.
@@ -106,7 +116,7 @@ Verwenden Sie diese Methode, um die [!DNL AEM Assets Integration]-Erweiterung au
 
 Verwenden Sie diese Methode, um die [!DNL AEM Assets Integration]-Erweiterung für eine lokale Instanz zu installieren.
 
-1. Verwenden Sie Composer, um Ihrem Projekt die Erweiterung AEM Assets Integration for Commerce hinzuzufügen:
+1. Verwenden Sie Composer, um Ihrem Projekt die Erweiterung AEM Assets Integration for Commerce hinzuzufügen. Lassen Sie die Versionsbeschränkung weg, um die neueste verfügbare Version zu installieren, oder heften Sie eine bestimmte Version an, z. B. `"^1.4.7"`.
 
    ```shell
    composer require "magento/aem-assets-integration" --no-update
