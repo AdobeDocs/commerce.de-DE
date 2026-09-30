@@ -4,13 +4,11 @@ description: Überprüfen Sie die Sicherheits- und Compliance-Anforderungen für
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html?lang=de
-source-git-commit: f8c44e088fa66ec506934a0155f1ff819a9db7d4
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 0%
-
 ---
-
 # Sicherheit und Compliance
 
 Die Sicherheit ist in [!DNL Payment Services] von größter Wichtigkeit, und es werden keine von der Private oder Payment Card Industry (PCI) regulierten Informationen über Ihre [!DNL Payment Services] weitergegeben.

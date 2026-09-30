@@ -8,26 +8,34 @@ badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.ado
 TQID: https://experienceleague.adobe.com/pWbJSCrV9CcdJXNTkuXyCxh73eUA7nYt1okexwtK7II
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+    internal-label: Data management
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: 1665
+source-wordcount: '1665'
 ht-degree: 0%
-
 ---
-
 # [!DNL Commerce Services Connector]
 
 Einige Funktionen von Adobe Commerce und Magento Open Source basieren auf [!DNL Commerce Services] und werden als SaaS (Software as a Service) bereitgestellt. Um diese Services zu verwenden, müssen Sie Ihre [!DNL Commerce] mithilfe von Produktions- und Sandbox-API-Schlüsseln verbinden und den Datenspeicher in der [Konfiguration“ &#x200B;](#saas-configuration). Sie müssen die Verbindung nur einmal für jede Instanz konfigurieren.
@@ -70,7 +78,7 @@ Der Lizenzinhaber ist in der Regel der Primäre Ansprechpartner im Adobe Commerc
 
 1. Melden Sie sich bei Ihrem [!DNL Commerce] Konto unter [https://account.magento.com](https://account.magento.com/customer/account/login){:target="_blank"} an.
 
-1. Wählen Sie auf der Registerkarte **&#x200B;**&#x200B;Magento **in der** die Option „API-Portal“ aus.
+1. Wählen **auf der Registerkarte** Magento“ in der **die Option** API-Portal“ aus.
 
 1. Wählen Sie im _Umgebung_ die Option **Produktion** oder **Sandbox**.
 
@@ -155,9 +163,9 @@ Um ein SaaS-Projekt auszuwählen oder zu erstellen, fordern Sie die [!DNL Commer
 
    Wenn Sie über separate Instanzen verfügen, die in Commerce Services integriert werden können, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case), um für jede weitere Instanz ein neues SaaS-Projekt anzufordern. Nachdem der Support das SaaS-Projekt erstellt hat, konfigurieren Sie den Commerce Services Connector für die Instanz **mit denselben API-Schlüsseln** und wählen Sie das neue SaaS-Projekt und den neuen Datenspeicher aus.
 
->[!WARNING]
->
-> Wenn Sie neue Schlüssel im API-Portal generieren, aktualisieren Sie die API-Schlüssel in der Admin-Konfiguration sofort. Wenn der Administrator weiterhin alte Schlüssel verwendet, funktionieren Ihre SaaS-Erweiterungen nicht mehr, und die Datenerfassung wird unterbrochen.
+   >[!WARNING]
+   >
+   > Wenn Sie neue Schlüssel im API-Portal generieren, aktualisieren Sie die API-Schlüssel in der Admin-Konfiguration sofort. Wenn der Administrator weiterhin alte Schlüssel verwendet, funktionieren Ihre SaaS-Erweiterungen nicht mehr, und die Datenerfassung wird unterbrochen.
 
 Um die Namen Ihres SaaS-Projekts oder Datenraums zu ändern, klicken Sie neben einem **auf** Umbenennen. Das Ändern des Namens wirkt sich nicht auf Ihren Service aus, da der Name nur eine Bezeichnung ist, die Ihnen dabei hilft, Projekte und Datenräume zu identifizieren und zwischen ihnen zu unterscheiden.
 

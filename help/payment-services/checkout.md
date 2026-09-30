@@ -1,15 +1,13 @@
 ---
 title: Checkout in [!DNL Payment Services]
-description: Passen Sie  [!DNL Payment Services]  Checkout an die Bedürfnisse Ihrer Kunden an.
+description: Passen Sie [!DNL Payment Services] Checkout an die Bedürfnisse Ihrer Kunden an.
 feature: Payments, Checkout, Paas, Saas
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '343'
 ht-degree: 0%
-
 ---
-
 
 # Checkout in [!DNL Payment Services]
 

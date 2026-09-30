@@ -1,17 +1,15 @@
 ---
 title: Einrichten der Test-Sandbox
-description: Verwenden Sie ein PayPal-Sandbox-Konto und Admin-Onboarding, um  [!DNL Payment Services]  Testmodus vor Live-Zahlungen (Adobe Commerce in der Cloud, lokal und SaaS) auszuführen.
+description: Verwenden Sie ein PayPal-Sandbox-Konto und Admin-Onboarding, um [!DNL Payment Services] im Testmodus vor Live-Zahlungen (Adobe Commerce in der Cloud, lokal und SaaS) auszuführen.
 role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 5312d23f050d9007132f7f14b17caf13ab52c7df
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '778'
 ht-degree: 0%
-
 ---
-
 # Einrichten der Test-Sandbox
 
 Bevor Sie mit dem Sandbox-Onboarding beginnen, müssen Sie sich für ein kostenloses PayPal-Entwicklerkonto anmelden und sowohl Händler- (zum Onboarding) als auch Kundenkonten erstellen (zum Testen Ihres Checkouts). Sie können bei Bedarf mehrere Entwicklerkonten erstellen.
@@ -57,11 +55,11 @@ So schließen Sie das Sandbox-Onboarding ab:
 
    Die Schaltfläche &quot;**[!UICONTROL Sandbox onboarding]**&quot; ist nicht mehr sichtbar, und es wird der Text „Sandbox-Zahlungen ausstehend“ angezeigt.
 
-Wenn das Onboarding Ihrer PayPal-Sandbox genehmigt wurde, sollte eine Benachrichtigung angezeigt werden, die besagt, dass sich Ihr Zahlungssystem derzeit im Sandbox-Modus befindet und keine Live-Zahlungen verarbeitet.
+   Wenn das Onboarding Ihrer PayPal-Sandbox genehmigt wurde, sollte eine Benachrichtigung angezeigt werden, die besagt, dass sich Ihr Zahlungssystem derzeit im Sandbox-Modus befindet und keine Live-Zahlungen verarbeitet.
 
->[!IMPORTANT]
->
->Wenn Sie die Einwilligung zur [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] zur Abwicklung Ihrer Zahlungen widerrufen (in Ihren PayPal-Kontoeinstellungen), können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services] bearbeitet werden. Auf Ihrer Zahlungsdienste-Startseite wird ein Warnhinweis zur widerrufenen Einwilligung angezeigt. Um den Warnhinweis zu schließen, klicken Sie auf **[!UICONTROL Do not show again]**.
+   >[!IMPORTANT]
+   >
+   >Wenn Sie die Einwilligung zur [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] zur Abwicklung Ihrer Zahlungen widerrufen (in Ihren PayPal-Kontoeinstellungen), können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services] bearbeitet werden. Auf Ihrer Zahlungsdienste-Startseite wird ein Warnhinweis zur widerrufenen Einwilligung angezeigt. Um den Warnhinweis zu schließen, klicken Sie auf **[!UICONTROL Do not show again]**.
 
 ### Sandbox-Konto zurücksetzen
 
