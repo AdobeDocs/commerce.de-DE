@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## Überblick
 
-[!DNL SaaS Data Export] erkennt die standardmäßigen Adobe Commerce-Produktarten (einfach, konfigurierbar, Bundle usw.), wenn Katalogdaten für verbundene Commerce-Services wie [Live Search](../live-search/overview.md) und [Catalog Service) ](../catalog-service/overview.md). Mit Erweiterungen von Drittanbietern können **benutzerdefinierte Produktarten) eingeführt werden** die [!DNL SaaS Data Export] nativ nicht erkennt.
+[!DNL SaaS Data Export] erkennt die standardmäßigen Adobe Commerce-Produktarten (einfach, konfigurierbar, Bundle usw.), wenn Katalogdaten für verbundene Commerce-Services wie [Live Search](../live-search/overview.md) und [Catalog Service) &#x200B;](../catalog-service/overview.md). Mit Erweiterungen von Drittanbietern können **benutzerdefinierte Produktarten) eingeführt werden** die [!DNL SaaS Data Export] nativ nicht erkennt.
 
 Mit dem Modul zur Aktivierung des MCP-Katalogs der Commerce-Storefront können [!DNL SaaS Data Export] diese nicht erkannten, benutzerdefinierten Produkttypen als &quot;**Produkte“** der Payload des ausgehenden Katalogs darstellen, sodass Käufer, die die [!DNL Commerce Storefront MCP] verwenden, sie über kataloggestützte Services finden können.
 
