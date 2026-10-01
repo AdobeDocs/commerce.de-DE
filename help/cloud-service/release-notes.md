@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 1e03d399d191875186f5839458c3036179cf1b17
+source-git-commit: 6a2300d65c9c77d18813c2eb491bfd02d1fca8ba
 workflow-type: tm+mt
-source-wordcount: '7503'
+source-wordcount: '7581'
 ht-degree: 0%
 ---
 # Versionshinweise
@@ -78,7 +78,16 @@ Die Payload des `plugin.out_of_process_shipping_methods.api.shipping_rate_reposi
 
 ### Verwalten von Katalogpreisregeln in REST
 
-Mit den neuen REST-API-Endpunkten können Integrationen [Katalogpreisregeln) &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog) verwalten und suchen. <!-- ACCS-1621 -->
+Mit den neuen REST-API-Endpunkten können Integrationen [Katalogpreisregeln) &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) verwalten und suchen. <!-- ACCS-1621 -->
+
+Die folgenden Endpunkte sind durch die Berechtigung `Magento_CatalogRule::promo_catalog` geschützt, die auch den Bildschirm „Preisregel für den Admin-Katalog“ schützt. Zugriff auf Admin- oder Integrationsebene ist erforderlich, um diesen Endpunkt zu verwenden.
+
+* `GET /V1/catalogPriceRules/metadata` - Entdecken Sie die zulässigen Rabattaktionen und die Bedingungsattribute mit ihren Operatoren und Wertquellen.
+* `GET /V1/catalogPriceRules/search` : Listen- und Suchregeln mit den standardmäßigen searchCriteria (Filter, Sortierung, Paging).
+* `GET /V1/catalogPriceRules/:ruleId` - Erhalten Sie eine Regel, einschließlich der vollständigen Bedingungsstruktur.
+* `POST /V1/catalogPriceRules` - Regel erstellen.
+* `PUT /V1/catalogPriceRules/:ruleId` - Aktualisieren einer Regel. Senden Sie nur die Felder, die Sie ändern möchten.
+* `DELETE /V1/catalogPriceRules/:ruleId` - Eine Regel löschen.
 
 ### Schutz vordefinierter Uploads mit reCAPTCHA
 
@@ -112,7 +121,7 @@ Das `CustomerOrdersFilterInput` GraphQL-Eingabeobjekt unterstützt jetzt ein `or
 
 ### Planen von Katalogpreisregeln nach Datum und Uhrzeit
 
-Sie können jetzt die Tageszeit für eine [Katalogpreisregel) festlegen, &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog) im [!DNL Commerce Admin] beginnt oder endet. <!-- ACCS-1762 -->
+Sie können jetzt die Tageszeit für eine [Katalogpreisregel) festlegen, &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) im [!DNL Commerce Admin] beginnt oder endet. <!-- ACCS-1762 -->
 
 ### Anwenden benutzerdefinierter Versandrabatte über die Admin-REST-API
 
