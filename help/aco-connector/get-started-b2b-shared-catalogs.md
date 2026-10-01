@@ -1,10 +1,8 @@
 ---
-title: Erste Schritte mit dem [!DNL Adobe Commerce Optimizer Connector]
-description: Erfahren Sie, wie Sie die [!DNL Adobe Commerce Optimizer Connector] installieren, die Einstellungen für den Bereichsexport konfigurieren, die IMS-Authentifizierung aktivieren und die Katalogsynchronisierung überprüfen.
+title: Einrichten des Connectors für B2B-Commerce
+description: Erfahren Sie, wie Sie den B2B-Connector installieren, Commerce-Bereiche auswählen, freigegebene Katalogdaten synchronisieren, Katalogansichten überprüfen und den Projektionsstatus überwachen.
 feature: Integration, Configuration
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
-autotag-review: '2026-06-09T16:55:50.934Z'
-TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -42,25 +40,21 @@ topic_v2:
 last-update: 2026-09-11
 source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '843'
 ht-degree: 0%
 ---
 
-# Erste Schritte
+# Einrichten des Connectors für B2B-Commerce
 
-Installieren und konfigurieren Sie die [!DNL Adobe Commerce Optimizer Connector], um Ihre [!DNL Adobe Commerce] mit [!DNL Adobe Commerce Optimizer] zu synchronisieren, und überwachen Sie dann den Datensynchronisierungsstatus, um sicherzustellen, dass Ihre Storefront auf dem neuesten Stand ist.
+Händler, die [!DNL Adobe Commerce] freigegebene B2B-Kataloge verwenden, können die [!DNL Adobe Commerce Optimizer Connector for B2B] verwenden, um benutzerdefinierte freigegebene Katalogdaten und -konfigurationen mit [!DNL Adobe Commerce Optimizer] zu synchronisieren.
 
 {{aco-integration-environment-alignment}}
 
->[!NOTE]
->
->In diesem Thema wird das [!DNL Adobe Commerce Optimizer Connector] behandelt. Wenn Sie [!DNL Adobe Commerce] freigegebenen B2B-Kataloge verwenden, befolgen Sie die [Erste Schritte mit den [!DNL Adobe Commerce Optimizer Connector for B2B]](get-started-b2b-shared-catalogs.md) Anweisungen. Der B2B-Connector erweitert die Datensynchronisierung des Basiskatalogs, um die Synchronisierung benutzerdefinierter freigegebener Kataloge zu unterstützen.
-
 ## Voraussetzungen für die Verwendung der Integration {#requirements-to-use-the-integration}
 
-* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.7+. Detaillierte Anforderungen finden Sie unter [Systemanforderungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
+* Adobe Commerce 2.4.8+ mit [installierter und aktivierter Commerce B2B-Version 1.5.3+](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install).
 
-* [!DNL Commerce Optimizer] Lizenz mit einer bereitgestellten Sandbox-Instanz.
+* Lizenz mit bereitgestellter Sandbox-Instanz [!DNL Commerce Optimizer].
 
 * [Authentifizierungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) zum Herunterladen des Connector-Metapakets mit Composer.
 
@@ -74,9 +68,15 @@ Der [!DNL Adobe Commerce] Benutzer, der die Integration konfiguriert, muss über
 
 * Entwicklerzugriff auf die [IMS-Organisation](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?), in der das [!DNL Commerce Optimizer] bereitgestellt wird.
 
+### Anwendungsanforderungen
+
+* Commerce Cron und Indexer funktionieren normal.
+* Die erforderlichen Websites und Speicheransichten, die für den Export identifiziert wurden.
+* Freigegebene Kataloge, Unternehmenszuweisungen, Sortimente und B2B-Preise, die in Adobe Commerce konfiguriert oder konfiguriert werden können.
+
 >[!BEGINSHADEBOX]
 
-## Konfliktende Erweiterungen entfernen
+## Konfliktende Erweiterungen entfernen {#remove-conflicting-extensions}
 
 {{$include /help/_includes/aco-connector/remove-conflicting-extensions.md}}
 
@@ -84,26 +84,26 @@ Der [!DNL Adobe Commerce] Benutzer, der die Integration konfiguriert, muss über
 
 ## Konfigurationsschritte {#configuration-steps}
 
-Gehen Sie wie folgt vor, um die [!DNL Adobe Commerce Optimizer Connector] zu aktivieren und mit der Synchronisierung von Daten aus [!DNL Adobe Commerce] mit Ihrer [!DNL Commerce Optimizer]-Instanz zu beginnen.
+Gehen Sie wie folgt vor, um die [!DNL Adobe Commerce Optimizer Connector for B2B] zu aktivieren und mit der Synchronisierung der benutzerdefinierten Konfiguration für einen freigegebenen Katalog von [!DNL Adobe Commerce] mit Ihrer [!DNL Commerce Optimizer] zu beginnen.
 
-1. **[Installieren Sie das  [!DNL Adobe Commerce Optimizer Connector] -Paket](#install-the-adobe-commerce-optimizer-connector-package)** mithilfe von Composer, um Ihre [!DNL Adobe Commerce]-Instanz mit [!DNL Commerce Optimizer] zu verbinden.
+1. **[Installieren Sie das  [!DNL Adobe Commerce Optimizer Connector for B2B] -Paket](#install-the-adobe-commerce-optimizer-connector-for-B2B-package)** mithilfe von Composer, um Ihre [!DNL Adobe Commerce]-Instanz mit [!DNL Commerce Optimizer] zu verbinden.
 
-1. **[Anpassen der Exportkonfiguration für Commerce-Bereiche](#customize-the-commerce-scopes-export-configuration)** vom Administrator.
+1. **[Anpassen der Exportkonfiguration für Commerce-Bereiche](#data-export-and-scope-mapping)** vom Administrator.
 
 1. **[Aktivieren Sie die  [!DNL Commerce Optimizer] -Integration](#enable-the-adobe-commerce-optimizer-integration)**.
 
 1. **[Überprüfen Sie, ob die Datensynchronisation funktioniert](#verify-that-the-data-sync-is-working)**.
 
-## Installieren des [!DNL Adobe Commerce Optimizer Connector] {#install-the-adobe-commerce-optimizer-connector-package}
+## Installieren des [!DNL Adobe Commerce Optimizer Connector for B2B] {#install-the-adobe-commerce-optimizer-connector-for-B2B-package}
 
-Das [!DNL Adobe Commerce Optimizer Connector] wird als Composer-Metapaket bereitgestellt, das für alle Commerce-Händler mit einer aktiven Lizenz für [!DNL Commerce Optimizer] verfügbar ist.
+Das [!DNL Adobe Commerce Optimizer Connector for B2B] wird als Composer-Metapaket bereitgestellt, das für alle Commerce-Händler mit einer aktiven Lizenz für [!DNL Commerce Optimizer] verfügbar ist.
 
 ### Installationsschritte
 
-1. Fügen Sie das Modul `adobe-commerce/commerce-data-export-aco-adapter` mit dem Composer hinzu:
+1. Fügen Sie das Modul `adobe-commerce/commerce-data-export-aco-adapter-b2b` mit dem Composer hinzu:
 
    ```shell
-   composer require adobe-commerce/commerce-data-export-aco-adapter
+   composer require adobe-commerce/commerce-data-export-aco-adapter-b2b
    ```
 
 1. Stellen Sie die Änderungen in Ihrer [!DNL Adobe Commerce] Staging-Umgebung bereit.
@@ -112,22 +112,21 @@ Das [!DNL Adobe Commerce Optimizer Connector] wird als Composer-Metapaket bereit
 
 {{install-extension-links}}
 
-## Anpassen der Exportkonfiguration für Commerce-Bereiche {#customize-the-commerce-scopes-export-configuration}
+### Datenexport und Bereichszuordnung
 
-Standardmäßig ist die Synchronisierung von Katalogdaten für alle Commerce-Bereiche (Websites, Kundengruppen und Store-Ansichten) aktiviert. Sie können die Exporteinstellungen so anpassen, dass Daten nur für bestimmte Bereiche entsprechend Ihren Geschäftsanforderungen synchronisiert werden. Wenn mehrere Store-Ansichten beispielsweise dieselbe Sprache verwenden, können Sie Daten für eine Store-Ansicht exportieren und als [Katalogquelle](../optimizer/setup/catalog-sources.md) für mehrere Catalog-Ansichten in [!DNL Commerce Optimizer] verwenden.
+Wählen Sie die zu synchronisierenden Websites und Store-Ansichten aus und überprüfen Sie dann die anfänglichen Feeds. Für B2B verwendet der Connector die aktivierten Bereiche, wenn er freigegebene Katalogdaten in [!DNL Commerce Optimizer] projiziert.
+
+* **Store-Ansicht** → Katalogquelle mit lokalisierten Produktinhalten
+* **Website und Kundengruppe** → Preisbuch für Website- und Kundengruppenpreise
+* **Freigegebener Katalog** → geschützte Ansicht des privaten Katalogs und erzwungene Richtlinie
+
+Der freigegebene Katalog definiert das Produktsortiment, und jede aktivierte Store-Ansicht liefert die lokalisierte Katalogquelle. Die Website und die Kundengruppe bestimmen das jeweilige Preisbuch. Der Connector projiziert jeden benutzerdefinierten freigegebenen Katalog für jede aktivierte Store-Ansicht, sodass Sie keine separate Bereichseinstellung für die B2B-Projektion benötigen.
+
+Ein benutzerdefinierter freigegebener Katalog kann mehrere geschützte private Katalogansichten generieren, eine für jede aktivierte Store-Ansicht. Der standardmäßige öffentliche freigegebene Katalog wird nicht als private B2B-Katalogansicht dargestellt. Eine ausführliche Beschreibung der Objektzuordnung und des Laufzeitautorisierungsflusses finden Sie unter [B2B-Shared-Catalog-Projektion](b2b-shared-catalog-projection.md).
 
 >[!IMPORTANT]
 >
->Durch Ändern der Exporteinstellungen wird eine vollständige Neuindizierung Trigger, die je nach Kataloggröße längere Zeit in Anspruch nehmen kann. Adobe empfiehlt, die Commerce-Bereiche so zu konfigurieren, dass sie mit [!DNL Commerce Optimizer] synchronisiert werden, bevor die Integration aktiviert und die anfängliche Datensynchronisierung gestartet wird.
-
-In der folgenden Tabelle wird beschrieben, welche Daten auf jeder Bereichsebene exportiert werden:
-
-| Umfang | Daten exportiert | Notizen |
-| ----- | ------------- | ----- |
-| Website und Kundengruppe | Preise und Preisbücher | Jede Preisgruppe wird als „Preisbuch[ exportiert, wobei ](../optimizer/setup/pricebooks.md) Namenskonvention `&lt;website&gt;::&lt;SHA1 of customer group ID&gt;` verwendet wird. Alle Kundengruppen für die Website sind enthalten. |
-| Shop-Ansicht | Produkte und Produktattribute | Jede Shop-Ansicht erstellt eine separate [Katalogquelle](../optimizer/setup/catalog-sources.md) in [!DNL Commerce Optimizer]. |
-
-![Raster mit Commerce Optimizer-Synchronisierungseinstellungen speichern](./assets/aco-connector-storeviews-list.png){width="600" zoomable="yes"}
+>Durch Ändern der Exporteinstellungen wird eine vollständige Neuindizierung Trigger. Dieser Vorgang kann je nach Kataloggröße längere Zeit in Anspruch nehmen. Konfigurieren Sie die Commerce-Bereiche, bevor Sie die Integration aktivieren und die anfängliche Datensynchronisierung starten.
 
 ### So ändern Sie die Exporteinstellungen für Bereiche
 
@@ -137,7 +136,7 @@ In der folgenden Tabelle wird beschrieben, welche Daten auf jeder Bereichsebene 
 
 1. Aktivieren Sie in den **[!DNL Commerce Optimizer]-** das Kontrollkästchen, um die Datensynchronisierung nach Bedarf zu aktivieren oder zu deaktivieren.
 
-   ![Aktualisieren der Datensynchronisierungskonfiguration](./assets/aco-connector-storeview-export-settings.png){width="500" zoomable="yes"}
+   ![Aktualisieren der Datensynchronisierungskonfiguration](./assets/aco-connector-b2b-storeview-list.png){width="500" zoomable="yes"}
 
 1. Speichern Sie Ihre Änderungen.
 
@@ -145,8 +144,16 @@ In der folgenden Tabelle wird beschrieben, welche Daten auf jeder Bereichsebene 
 
 | Aktion | Ergebnis |
 | -------- | -------- |
-| Shop-Ansicht deaktivieren | **Durch Deaktivieren der Synchronisierung werden Katalogdaten aus Ihrer Storefront entfernt.** Die Katalogquelle bleibt in [!DNL Commerce Optimizer], aber alle synchronisierten Daten werden bei der nächsten Cron-Ausführung entfernt. |
+| Shop-Ansicht deaktivieren | **Durch Deaktivieren der Synchronisierung werden Katalogdaten aus Ihrer B2B-Storefront entfernt.** Die Katalogquelle bleibt in [!DNL Adobe Commerce Optimizer], aber alle synchronisierten Daten werden bei der nächsten Cron-Ausführung entfernt. |
 | Deaktivieren und reaktivieren Sie eine Store-Ansicht | Dieselbe Katalogquelle wird erneut mit einer vollständigen Datensynchronisation aufgefüllt. |
+
+### Änderungen des freigegebenen B2B-Katalogs überwachen
+
+Der Connector überwacht Änderungen an freigegebenen Katalogen und Unternehmenszuweisungen. Wenn Sie einen freigegebenen Katalog im Commerce Admin-Bereich entfernen, entfernt der Connector nach einer konfigurierbaren Übergangsphase den Zugriff auf die private Katalogansicht.
+
+>[!NOTE]
+>
+>Die Übergangsphase für die Löschung beträgt standardmäßig sieben Tage. Sie können dies ändern, indem Sie die Konfiguration der Synchronisierungseinstellungen der Katalogansicht aktualisieren. Siehe [Konfiguration der Katalogansicht mit Synchronisierungsstatus](catalog-view-sync-status.md#configure-aco-catalog-view-sync-settings).
 
 ## [!DNL Commerce Optimizer] aktivieren {#enable-the-adobe-commerce-optimizer-integration}
 
@@ -156,7 +163,6 @@ Sie aktivieren die Integration und initiieren die Datensynchronisation, indem Si
 1. Ruft den Commerce Cloud Manager-Service (CCM) unter `https://ccm.api.commerce.adobe.com/api/v1/tenants/{tenantId}/owner/{orgId}` auf, um den Mandanten zu validieren und die Aufnahme-URL und die [!DNL Commerce Optimizer] Studio-URL zu extrahieren.
 1. Speichert alle Konfigurationen (Client-Geheimnis verschlüsselt) in `core_config_data`.
 1. Plant die anfängliche vollständige Synchronisierung durch Invalidierung aller [!DNL Commerce Optimizer]-Indexer.
-
 
 {{aco-data-sync-processing-note}}
 
@@ -174,9 +180,9 @@ Sie aktivieren die Integration und initiieren die Datensynchronisation, indem Si
 
 ## Nächste Schritte
 
-1. **Konfigurieren [!DNL Commerce Optimizer] Katalogansichten und Richtlinien**
+1. **Überwachen der Projektion der B2B-Katalogansicht**
 
-   Erstellen Sie Katalogansichten und Richtlinien in der [!DNL Commerce Optimizer]-Benutzeroberfläche. Beachten Sie, dass Preislisten automatisch aus [!DNL Adobe Commerce] Kundengruppen erstellt werden. Anweisungen finden Sie in der [Katalogansichten](../optimizer/setup/catalog-view.md) und [Richtlinien](../optimizer/setup/policies.md) im *[!DNL Commerce Optimizer]-Benutzerhandbuch*. Informationen zum Beschränken des Zugriffs auf eine Katalogansicht finden Sie [Private Katalogansichten](../optimizer/setup/private-catalog-view.md).
+Verwenden Sie nach der ersten Feed[Synchronisierung mit &quot;](catalog-view-sync-status.md) der Katalogansicht“, um projizierte private Katalogansichten, Richtlinien, Preisbuchreferenzen und die Konfiguration des eingeschränkten Zugriffsschlüssels zu überprüfen. Informationen zum Projektionsmodell und zum Laufzeitautorisierungsfluss finden Sie unter [B2B-Shared-Catalog-Projektion](b2b-shared-catalog-projection.md).
 
 1. **Einrichten einer Commerce-Storefront auf[!DNL Edge Delivery Services]**
 

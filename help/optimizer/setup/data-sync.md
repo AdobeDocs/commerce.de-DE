@@ -1,26 +1,29 @@
 ---
 title: Datensynchronisation
-description: Überprüfen Sie die Katalogdaten, die aus Ihrer Commerce-Datenquelle in synchronisiert werden [!DNL Adobe Commerce Optimizer].
+description: Überprüfen Sie die Katalogdaten, die von Ihrer Commerce-Datenquelle in [!DNL Adobe Commerce Optimizer] synchronisiert werden.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
 TQID: https://experienceleague.adobe.com/ZTMFkch-YNS-CUgCdadmg1kemA8ORXQ7KGCEkI7d-Yw
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c7633056caec2fcec318f8ebcc9664cfc7b3b9b4
+    internal-label: Insights
+source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
 workflow-type: tm+mt
-source-wordcount: 484
+source-wordcount: '485'
 ht-degree: 0%
-
 ---
-
 # Datensynchronisation
 
 Auf der Seite **Datensynchronisierung** wird ein Überblick über den Synchronisierungsstatus für Produktdaten angezeigt, die aus Ihrer Datenquelle (Ihrem bestehenden Commerce-Katalog, PIM-System (Product Information Management), ERP-System (Enterprise Resource Planning) usw.) in [!DNL Adobe Commerce Optimizer] übertragen wurden.
@@ -63,7 +66,7 @@ Wenn bestimmte Produkte nicht auf der Seite **Datensynchronisierung** angezeigt 
 
 ## Überprüfen, ob die Datensynchronisierung funktioniert
 
-Bei Projekten, die Adobe Commerce als Upstream-Datenquelle über den Adobe Commerce Optimizer Connector verwenden, können Sie den Datenexportvorgang überwachen und Resynchronisierungsvorgänge über die Seite Daten-Feed-Synchronisierungsstatus initiieren. Weitere Informationen finden Sie unter [Überprüfen, ob die Datensynchronisierung funktioniert](../../aco-connector/data-sync-manage.md#verify-that-the-data-sync-is-working) in der Dokumentation zum _Adobe Commerce Optimizer Connector_.
+Bei Projekten, die Adobe Commerce als Upstream-Datenquelle über den Adobe Commerce Optimizer Connector verwenden, können Sie den Datenexportvorgang überwachen und Resynchronisierungsvorgänge über die Seite Daten-Feed-Synchronisierungsstatus initiieren. Weitere Informationen finden Sie unter [Überprüfen, ob die Datensynchronisierung funktioniert](../../aco-connector/data-sync-status.md#verify-that-the-data-sync-is-working) in der Dokumentation zum _Adobe Commerce Optimizer Connector_.
 
 ## Verwandte Themen
 

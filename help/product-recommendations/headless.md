@@ -23,7 +23,7 @@ topic_v2:
     internal-label: Behavioral data
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+source-git-commit: 7ab078f4780c25e3bb43479eec1fe18e31faf96c
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Benutzerdefinierte und Headless-Integratoren sollten diese Anweisungen für Luma
 
 Um [!DNL Product Recommendations] in eine Headless-Storefront zu integrieren, müssen Sie:
 
-1. Senden Sie Verhaltensdaten an Adobe AI, um die Ergebnisse der Produktempfehlungen zu analysieren und zu berechnen. Um Produktempfehlungen ([-Berichte) &#x200B;](workspace.md) aktivieren, können Sie auch zusätzliche Daten senden.
+1. Senden Sie Verhaltensdaten an Adobe AI, um die Ergebnisse der Produktempfehlungen zu analysieren und zu berechnen. Um Produktempfehlungen ([-Berichte) ](workspace.md) aktivieren, können Sie auch zusätzliche Daten senden.
 
 1. Rufen Sie Ergebnisse von Produktempfehlungen ab und rendern Sie diese Ergebnisse auf der Seite.
 
@@ -71,8 +71,8 @@ Sie können diese beiden Aktionen mit den verfügbaren SDKs ausführen, wie im f
 
 1. Wenn die Ereignisse ausgelöst werden, verwenden Sie den [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/), um die Ereignisse zu verarbeiten und an Adobe AI zu senden.
 
-1. Nachdem die Verhaltensdaten erfasst wurden, können Sie [&#x200B; Admin &#x200B;](create.md)Erstellen[!DNL Product Recommendations].
+1. Nachdem die Verhaltensdaten erfasst wurden, können Sie [ Admin ](create.md)Erstellen[!DNL Product Recommendations].
 
 1. Verwenden Sie [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/), um die Empfehlungseinheiten aus der Storefront abzurufen. SDK gibt die erforderlichen Produktdaten zum Rendern der Empfehlungseinheiten auf einer Seite zurück.
 
-1. Erfahren Sie, wie Sie mit der [`recommendations` GraphQL-Abfrage &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations) Informationen zu Produktempfehlungsblöcken für eine bestimmte SKU zurückgeben und vieles mehr.
+1. Erfahren Sie, wie Sie mit der [`recommendations` GraphQL-Abfrage ](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations) Informationen zu Produktempfehlungsblöcken für eine bestimmte SKU zurückgeben und vieles mehr.

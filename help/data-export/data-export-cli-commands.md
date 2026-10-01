@@ -24,7 +24,7 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 658401a83acf5bab669f0734100eef99af98c908
+source-git-commit: 1009ae28286a8503511c85726bf44922c7c2575e
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Mit dem `saas:resync`-Befehl im `magento/saas-export` können Sie die Datensynch
 Es wird von Adobe nicht empfohlen, den Befehl `saas:resync` regelmäßig zu verwenden. Typische Szenarien für die Verwendung des Befehls sind:
 
 - Erstsynchronisierung
-- Synchronisieren von Daten mit einem neuen Datenraum nach Änderung der [SaaS-Datenraum-ID](https://experienceleague.adobe.com/de/docs/commerce-admin/config/services/saas)
+- Synchronisieren von Daten mit einem neuen Datenraum nach Änderung der [SaaS-Datenraum-ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Fehlerbehebung
 
 Überwachen von Synchronisierungsvorgängen in der `var/log/saas-export.log`.
@@ -51,7 +51,7 @@ Es wird von Adobe nicht empfohlen, den Befehl `saas:resync` regelmäßig zu verw
 >
 >Die Erstsynchronisierung wird automatisch ausgeführt, wenn die Live Search oder die Produktempfehlungen aktiviert sind. Manuelle Befehle werden nicht benötigt.
 >
->Bei [!DNL Adobe Commerce Optimizer Connector] Bereitstellungen plant der Befehl `aco:config:init` die anfängliche vollständige Synchronisierung, indem alle Connector-Feed-Indexer ungültig gemacht werden. Siehe [Aktivieren der  [!DNL Commerce Optimizer] -Integration](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration) und [Verwalten der Synchronisierung mit [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md).
+>Bei [!DNL Adobe Commerce Optimizer Connector] Bereitstellungen plant der Befehl `aco:config:init` die anfängliche vollständige Synchronisierung, indem alle Connector-Feed-Indexer ungültig gemacht werden. Siehe [Aktivieren der  [!DNL Commerce Optimizer] -Integration](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration) und [Verwalten der Synchronisierung mit [!DNL Commerce Optimizer]](../aco-connector/data-sync-status.md).
 
 Beim Trigger eines `saas:resync` über die Befehlszeile kann es je nach Kataloggröße einige Minuten bis einige Stunden dauern, bis die Daten aktualisiert werden.
 
