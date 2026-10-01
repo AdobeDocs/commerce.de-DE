@@ -3,7 +3,7 @@ title: Fehlerbehebung bei der [!DNL Adobe Commerce Optimizer Connector]
 description: Erfahren Sie, wie Sie Probleme mit [!DNL Adobe Commerce Optimizer Connector], Katalogsynchronisierung und dem Umfang von Exportvorgängen für [!DNL Adobe Commerce] PaaS-Integrationen beheben können.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/ei86QuJ3nQ2d-6NRoAeJslgDxjGlZRejD-Nx-6SAVdc'
 product_v2:
@@ -78,4 +78,4 @@ Einen Katalog spezifischer Verhaltensweisen, die durch eine falsche Konfiguratio
 
 ## [!DNL SaaS Data Export]
 
-Informationen zu [!DNL SaaS Data Export] auf niedrigerer Ebene, einschließlich Protokollspeicherorten und Befehlen zur Resynchronisierung des Feeds, finden Sie im [[!DNL SaaS Data Export]  zur Fehlerbehebung](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.
+Informationen zu [!DNL SaaS Data Export] auf niedrigerer Ebene, einschließlich Protokollspeicherorten und Befehlen zur Resynchronisierung des Feeds, finden Sie im [[!DNL SaaS Data Export]  zur Fehlerbehebung](https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.

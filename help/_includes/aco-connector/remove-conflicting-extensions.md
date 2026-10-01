@@ -14,7 +14,7 @@ Wenn Sie eine der folgenden Erweiterungen installiert haben, deinstallieren Sie 
 * [!DNL Adobe Commerce Catalog Service] (`magento/catalog-service`, `magento/catalog-service-installer`)
 * **[!UICONTROL Data Management Dashboard]** (`magento-catalog-sync-admin`)
 
-Daten, die mit diesen Erweiterungen verknüpft sind, sind weiterhin in der Commerce-Datenbank verfügbar. Er wird jedoch nicht nach [!DNL Commerce Optimizer] exportiert, wenn der Connector aktiviert ist. Um die Adobe Commerce-Such- und Merchandising-Funktionen zu implementieren, die von diesen Erweiterungen nach der Aktivierung des Connectors bereitgestellt werden, konfigurieren Sie sie über die [[!DNL Commerce Optimizer] Admin-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour).
+Daten, die mit diesen Erweiterungen verknüpft sind, sind weiterhin in der Commerce-Datenbank verfügbar. Er wird jedoch nicht nach [!DNL Commerce Optimizer] exportiert, wenn der Connector aktiviert ist. Um die Adobe Commerce-Such- und Merchandising-Funktionen zu implementieren, die von diesen Erweiterungen nach der Aktivierung des Connectors bereitgestellt werden, konfigurieren Sie sie über die [[!DNL Commerce Optimizer] Admin-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/commerce/optimizer/overview#quick-tour).
 
 >[!IMPORTANT]
 >

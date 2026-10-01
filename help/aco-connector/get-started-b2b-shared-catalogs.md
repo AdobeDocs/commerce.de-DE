@@ -2,7 +2,7 @@
 title: Einrichten des Connectors für B2B-Commerce
 description: Erfahren Sie, wie Sie den B2B-Connector installieren, Commerce-Bereiche auswählen, freigegebene Katalogdaten synchronisieren, Katalogansichten überprüfen und den Projektionsstatus überwachen.
 feature: Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -52,11 +52,11 @@ Händler, die [!DNL Adobe Commerce] freigegebene B2B-Kataloge verwenden, können
 
 ## Voraussetzungen für die Verwendung der Integration {#requirements-to-use-the-integration}
 
-* Adobe Commerce 2.4.8+ mit [installierter und aktivierter Commerce B2B-Version 1.5.3+](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install).
+* Adobe Commerce 2.4.8+ mit [installierter und aktivierter Commerce B2B-Version 1.5.3+](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/install).
 
 * Lizenz mit bereitgestellter Sandbox-Instanz [!DNL Commerce Optimizer].
 
-* [Authentifizierungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) zum Herunterladen des Connector-Metapakets mit Composer.
+* [Authentifizierungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) zum Herunterladen des Connector-Metapakets mit Composer.
 
 * Administratorzugriff auf eine [[!DNL Commerce Optimizer] Sandbox-Instanz](../optimizer/get-started.md).
 
@@ -64,9 +64,9 @@ Der [!DNL Adobe Commerce] Benutzer, der die Integration konfiguriert, muss über
 
 * Administratorzugriff auf den Commerce Admin.
 
-* [Befehlszeilenzugriff auf den  [!DNL Adobe Commerce] -Server](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access).
+* [Befehlszeilenzugriff auf den  [!DNL Adobe Commerce] -Server](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/user-access).
 
-* Entwicklerzugriff auf die [IMS-Organisation](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?), in der das [!DNL Commerce Optimizer] bereitgestellt wird.
+* Entwicklerzugriff auf die [IMS-Organisation](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations?), in der das [!DNL Commerce Optimizer] bereitgestellt wird.
 
 ### Anwendungsanforderungen
 

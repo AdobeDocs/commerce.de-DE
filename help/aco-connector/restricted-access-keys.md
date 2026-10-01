@@ -3,7 +3,7 @@ title: Verwalten von eingeschränkten Zugriffsschlüsseln für freigegebene B2B-
 description: Erfahren Sie, wie Sie die eingeschränkten Zugriffsschlüssel verwalten, die der Adobe Commerce Optimizer-Connector verwendet, um Prognosen für den B2B-freigegebenen Katalog zu sichern.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
