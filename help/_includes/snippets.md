@@ -1,9 +1,8 @@
 ---
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '708'
 ht-degree: 0%
-
 ---
 # Commerce Snippets
 
@@ -20,6 +19,11 @@ ht-degree: 0%
 >
 >Verbinden Sie Sandbox Optimizer-Instanzen immer mit Nicht-Produktionsumgebungen und Produktionsinstanzen mit Produktionsumgebungen. Nicht übereinstimmende Umgebungen führen zu inkonsistenten Katalogdaten, Suchergebnissen und Empfehlungen.
 
+## Hinweis zur Verarbeitung der Adobe Commerce Optimizer-Datensynchronisation {#aco-data-sync-processing-note}
+
+>[!IMPORTANT]
+>
+>Die Datensynchronisierungsverarbeitung beginnt im Hintergrund, sobald die Konfiguration abgeschlossen ist. Je nach Größe Ihres Katalogs kann der Datensynchronisierungsprozess einige Minuten bis mehrere Stunden dauern.
 
 ## Merchandising-Services für Optimizer {#aco-merchandising-services}
 
@@ -110,3 +114,13 @@ Informationen zu den Konfigurationsoptionen für Identitäten, einschließlich A
 >[!IMPORTANT]
 >
 >Das Tool für die Massendatenmigration befindet sich derzeit im Early Access-Modus. Der Zugriff wird ausschließlich über den Interaktionsprozess mit dem von Commerce bereitgestellten Engineering (CDE) bereitgestellt. Einen Überblick über das Tool und seine Eignungsanforderungen finden Sie unter [Tool für die Massendatenmigration](../cloud-service/migration/bulk-data/migration-tool.md).
+
+## Installieren von Erweiterungs-Links {#install-extension-links}
+
+>[!NOTE]
+>
+>Detaillierte Installationsanweisungen für Erweiterungen finden Sie in den folgenden Handbüchern:
+>
+>[Installieren der Erweiterung in  [!DNL Adobe Commerce]  Cloud-Infrastruktur](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>
+>[Installieren einer Erweiterung  [!DNL Adobe Commerce]  On-Premise](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/extensions)

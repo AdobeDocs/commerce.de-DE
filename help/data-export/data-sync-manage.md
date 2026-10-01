@@ -1,30 +1,38 @@
 ---
 title: Synchronisierungsprozess anzeigen und verwalten
-description: Erfahren Sie, wie Sie den  [!DNL SaaS Data Export]  mithilfe des Daten-Management-Dashboards und der Seite „Status der Daten-Feed-Synchronisierung“ anzeigen und verwalten können.
+description: Erfahren Sie, wie Sie den [!DNL SaaS Data Export]-Synchronisierungsprozess mithilfe des Daten-Management-Dashboards und der Seite Synchronisierungsstatus von Daten-Feeds anzeigen und verwalten können.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 last-update: 2026-06-23
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
 workflow-type: tm+mt
-source-wordcount: 557
+source-wordcount: '558'
 ht-degree: 0%
-
 ---
-
 # Synchronisierungsprozess anzeigen und verwalten
 
 Die meisten Synchronisierungsaktivitäten werden automatisch mit vollständiger Synchronisierung, teilweiser Synchronisierung oder Wiederholung fehlgeschlagener Elementsynchronisierung verarbeitet. Siehe [Synchronisierungstypen](sync-overview.md#synchronization-types) für Details zum Zeitpunkt der Ausführung der einzelnen Typen. [!DNL SaaS Data Export] bietet außerdem Tools zur Überwachung, Verwaltung und Fehlerbehebung bei diesem Prozess. Sie können den Synchronisierungsstatus anzeigen und den Datensynchronisierungsprozess mithilfe der Dashboards für Ihre Bereitstellung verwalten.
@@ -51,7 +59,7 @@ Bei Commerce-On-Cloud- oder -On-Premise-Bereitstellungen, die in [!DNL Commerce 
 
 - **[Datensynchronisierungsseite](../optimizer/setup/data-sync.md)** - Die Datensynchronisierungsseite bietet einen Überblick über den Synchronisierungsstatus für Produktdaten, die von Ihrer Upstream-Katalogquelle in [!DNL Commerce Optimizer] stammen.
 
-Weitere Informationen dazu, wie Sie diese Dashboards verwenden, um zu überprüfen, ob die Datensynchronisierung funktioniert, und um Daten manuell neu zu synchronisieren, finden Sie unter [Synchronisierung verwalten](../aco-connector/data-sync-manage.md) im _Adobe Commerce Optimizer Connector-Handbuch_.
+Weitere Informationen dazu, wie Sie diese Dashboards verwenden, um zu überprüfen, ob die Datensynchronisierung funktioniert, und um Daten manuell neu zu synchronisieren, finden Sie unter [Synchronisierung verwalten](../aco-connector/data-sync-status.md) im _Adobe Commerce Optimizer Connector-Handbuch_.
 
 >[!ENDTABS]
 
@@ -79,4 +87,4 @@ Verwenden Sie die folgenden Optionen, um Feed-Daten manuell neu zu synchronisier
 > - [Funktionsweise der Synchronisierung](sync-overview.md) - Erfahren Sie mehr über Synchronisierungsmodi, vollständige Synchronisierung, partielle Synchronisierung und Wiederholen fehlgeschlagener Elemente.
 > - [Feeds über die Commerce-CLI synchronisieren](data-export-cli-commands.md) - Verwenden Sie den Befehl `saas:resync` für die Resynchronisierung gezielter Feeds.
 > - [Überprüfen von Protokollen und Fehlerbehebung](troubleshooting/logging.md) - Diagnostizieren von Datenexport- und SaaS-Exportfehlern.
-> - [Synchronisierung mit verwalten [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md) - Überprüfen Sie die Synchronisierung von Katalogdaten und synchronisieren Sie Connector-Feeds manuell neu.
+> - [Synchronisierung mit verwalten [!DNL Commerce Optimizer]](../aco-connector/data-sync-status.md) - Überprüfen Sie die Synchronisierung von Katalogdaten und synchronisieren Sie Connector-Feeds manuell neu.

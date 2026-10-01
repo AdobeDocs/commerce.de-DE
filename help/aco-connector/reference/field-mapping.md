@@ -1,6 +1,6 @@
 ---
-title: Feldzuordnung für  [!DNL Adobe Commerce Optimizer Connector] -Feeds
-description: Erfahren Sie mehr über  [!DNL Adobe Commerce Optimizer Connector]  Zuordnung von  [!DNL Adobe Commerce] -Katalogdaten zu Aufnahme [!DNL Adobe Commerce Optimizer] API-Formaten für alle Feeds.
+title: Feldzuordnung für [!DNL Adobe Commerce Optimizer Connector]-Feeds
+description: Erfahren Sie mehr über [!DNL Adobe Commerce Optimizer Connector] Feldzuordnung von [!DNL Adobe Commerce] Katalogdaten zu [!DNL Adobe Commerce Optimizer] Aufnahme-API-Formaten für alle Feeds.
 role: Admin, Developer
 feature: Integration, Configuration
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
@@ -8,29 +8,40 @@ autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+    internal-label: Data modeling
+source-git-commit: 9c2d0f1c3342d87b1e95a789b905f4a383bc8f5f
 workflow-type: tm+mt
-source-wordcount: 665
-ht-degree: 0%
-
+source-wordcount: '731'
+ht-degree: 3%
 ---
-
 
 # Feldzuordnung für Connector-Feeds
 
@@ -56,6 +67,7 @@ Der `products`-Feed sendet Daten an den Endpunkt [products](https://developer.ad
 | `metaKeyword` | `metaTags/keywords` | Durch Zeilenumbruch getrennte Zeichenfolge in Array aufgeteilt |
 | `inStock`, `lowStock`, `weight`, `weightUnit` | `attributes[].code = "aco_ac_attributes"` | JSON-kodierte `{inStock, lowStock, weight, weightType}`; immer als erster Attributeintrag vorhanden |
 | `attributes[]` | `attributes[]` | Jeder Eintrag, der `{code, values[], variantReferenceId}` zugeordnet ist; `inStock`, `lowStock`, `weight`, `weightType` sind ausgeschlossen (sie gehen in `aco_ac_attributes`) |
+| `(synthesized)` | `attributes[].code = "ac_assortments"` | Array numerischer IDs der benutzerdefinierten freigegebenen Kataloge, zu denen das Produkt gehört, dedupliziert und sortiert. Produkte, die nur im öffentlichen Katalog enthalten sind, haben dieses Attribut nicht. [!DNL Commerce Optimizer] Richtlinien filtern nach diesem Attribut, um eine private Katalogansicht des Sortiments zu erzwingen. |
 | `images[]` | `images[]` | `url`, `label`; Standardrollen zugeordnet: `image`→`BASE`, `small_image`→`SMALL`, `thumbnail`→`THUMBNAIL`, `swatch_image`→`SWATCH`; Nicht-Standardrollen gehen an `customRoles[]` |
 | `categoryData[].categoryPath` | `routes[].path` | |
 | `categoryData[].productPosition` | `routes[].position` | |

@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+source-git-commit: fc9fb7a63e4e7c3dd862ed710acdfa8561c91ec5
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
@@ -57,9 +57,9 @@ So schließen Sie das Sandbox-Onboarding ab:
 
    Wenn das Onboarding Ihrer PayPal-Sandbox genehmigt wurde, sollte eine Benachrichtigung angezeigt werden, die besagt, dass sich Ihr Zahlungssystem derzeit im Sandbox-Modus befindet und keine Live-Zahlungen verarbeitet.
 
-   >[!IMPORTANT]
-   >
-   >Wenn Sie die Einwilligung zur [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] zur Abwicklung Ihrer Zahlungen widerrufen (in Ihren PayPal-Kontoeinstellungen), können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services] bearbeitet werden. Auf Ihrer Zahlungsdienste-Startseite wird ein Warnhinweis zur widerrufenen Einwilligung angezeigt. Um den Warnhinweis zu schließen, klicken Sie auf **[!UICONTROL Do not show again]**.
+>[!IMPORTANT]
+>
+>Wenn Sie die Einwilligung zur [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] zur Abwicklung Ihrer Zahlungen widerrufen (in Ihren PayPal-Kontoeinstellungen), können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services] bearbeitet werden. Auf Ihrer Zahlungsdienste-Startseite wird ein Warnhinweis zur widerrufenen Einwilligung angezeigt. Um den Warnhinweis zu schließen, klicken Sie auf **[!UICONTROL Do not show again]**.
 
 ### Sandbox-Konto zurücksetzen
 
@@ -102,9 +102,9 @@ So konfigurieren Sie das Land des Käufers:
 
 1. Klicken Sie auf **[!UICONTROL Save Config]** , um Ihre Änderungen zu speichern.
 
->[!NOTE]
->
->Die **[!UICONTROL Buyer's country]** wird nur angezeigt, wenn die Methode auf `Sandbox` gesetzt ist. Dies hat keine Auswirkungen auf die Produktionsumgebungen.
+   >[!NOTE]
+   >
+   >Die **[!UICONTROL Buyer's country]** wird nur angezeigt, wenn die Methode auf `Sandbox` gesetzt ist. Dies hat keine Auswirkungen auf die Produktionsumgebungen.
 
 ## Testen in Sandbox-Umgebung
 
