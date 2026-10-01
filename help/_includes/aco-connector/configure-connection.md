@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 # [!DNL Commerce Optimizer]-Instanzdetails abrufen
 
-Rufen Sie die _Mandanten_ ID) aus dem Feld _[!DNL Instance Id]_auf der [!DNL Commerce Optimizer]-Instanz [[!DNL Instance details] Seite](/help/optimizer/get-started.md#manage-instances) oder aus der URL ab, die für den Zugriff auf die Instanz verwendet wird. Zum Beispiel in `https://experience.adobe.com/#/@<your organization>/in:<tenant>/commerce-optimizer-studio/home`.
+Rufen Sie die _Mandanten_ ID) aus dem Feld _[!DNL Instance Id]_&#x200B;auf der [!DNL Commerce Optimizer]-Instanz [[!DNL Instance details] Seite](/help/optimizer/get-started.md#manage-instances) oder aus der URL ab, die für den Zugriff auf die Instanz verwendet wird. Zum Beispiel in `https://experience.adobe.com/#/@<your organization>/in:<tenant>/commerce-optimizer-studio/home`.
 
 1. Wählen Sie in Commerce Admin die Option **[!UICONTROL Adobe Commerce Optimizer]** aus, um die Konfigurationsseite mit Anweisungen anzuzeigen.
 

@@ -102,7 +102,7 @@ Schlüssel sind nach der Erstellung unveränderlich. Um einen beliebigen Wert zu
 
 ## Zuweisen eines Schlüssels zu einer Katalogansicht
 
-Ein eingeschränkter Zugriffsschlüssel authentifiziert den Zugriff erst, nachdem er einer Katalogansicht mit aktiviertem **[!UICONTROL Catalog Protection]** zugewiesen wurde. Siehe [Schützen einer ](private-catalog-view.md#protect-a-catalog-view)) für Einrichtungsschritte.
+Ein eingeschränkter Zugriffsschlüssel authentifiziert den Zugriff erst, nachdem er einer Katalogansicht mit aktiviertem **[!UICONTROL Catalog Protection]** zugewiesen wurde. Siehe [Schützen einer &#x200B;](private-catalog-view.md#protect-a-catalog-view)) für Einrichtungsschritte.
 
 ## Schlüssel löschen
 

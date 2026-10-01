@@ -234,7 +234,7 @@ Entlastung umfangreicher Katalogindizierungen und Suchvorgänge für [!DNL Adobe
 
 **Bevor Sie beginnen:**
 
-- Stellen Sie sicher, dass [!DNL Adobe Commerce] die Mindestanforderungen an Version und [!DNL Adobe Commerce Optimizer Connector] erfüllt. Weitere Informationen [ Sie unter ](/help/aco-connector/get-started.md#requirements-to-use-the-integration) Schritte .
+- Stellen Sie sicher, dass [!DNL Adobe Commerce] die Mindestanforderungen an Version und [!DNL Adobe Commerce Optimizer Connector] erfüllt. Weitere Informationen [&#x200B; Sie unter &#x200B;](/help/aco-connector/get-started.md#requirements-to-use-the-integration) Schritte .
 - Stellen Sie sicher, dass Sie Zugriff auf die IMS-Organisation, eine [!DNL Adobe Commerce Optimizer]-Instanz und die erforderlichen Anmeldeinformationen und Regionsdetails haben.
 
 >[!MORELIKETHIS]
