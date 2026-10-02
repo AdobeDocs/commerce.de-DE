@@ -3,9 +3,9 @@ title: Versionshinweise zur AEM Assets-Integration
 description: Informationen zu allen AEM Assets-Integrationsversionen finden Sie in den Versionshinweisen .
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: a0b269f6d4b709dd0aed4c23264928f28b2f5d98
+source-git-commit: e8b87b4622bf41f6340bf7ddd0f208512e9b09c7
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1738'
 ht-degree: 0%
 ---
 # Versionshinweise zur AEM Assets-Integration
@@ -42,11 +42,11 @@ _18. September 2026_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
 
-![Problem behoben](../assets/fix.svg)<!-- Issue ACAP-1317 --> Es wurde ein Problem behoben, bei dem die für [benutzerdefinierte automatische Zuordnung](synchronize/custom-match.md) hochgeladene `workspace.json`-Datei nicht korrekt beibehalten wurde, wenn die asynchrone Speicherung in Commerce aktiviert ist. Zuvor reihte die Admin-Anfrage nur die Upload-Metadaten in die Warteschlange ein, nicht den Dateiinhalt, sodass die temporäre Upload-Datei zum Zeitpunkt, zu dem der Verbraucher der asynchronen Konfiguration die Speicherung verarbeitet hatte, nicht mehr gelesen werden konnte. Daher schien die Konfiguration erfolgreich gespeichert zu werden, während die OAuth-Werte von App Builder unverändert blieben. Hochgeladene App Builder-Anmeldeinformationen überleben jetzt die Warteschlangenbegrenzung und werden vom asynchronen Verbraucher korrekt verarbeitet.
+![Problem behoben](../assets/fix.svg)<!-- Issue ACAP-1317 --> Es wurde ein Problem behoben, bei dem beim Speichern der **[!UICONTROL AEM Assets Integration]**-Konfiguration, einschließlich des `workspace.json`-Uploads, mit aktiviertem `Commerce Async Config Save` (in Adobe Commerce 2.4.7 eingeführt) der Mandant nicht bei ARES registriert oder aktualisiert werden konnte. Die Konfiguration schien erfolgreich gespeichert zu werden, aber die OAuth-Werte von App Builder blieben unverändert. Hochgeladene Anmeldedaten werden nun vom asynchronen Verbraucher korrekt verarbeitet.
 
 >[!IMPORTANT]
 >
->Wenn Sie einen benutzerdefinierten Matcher mit aktivierter Option „Async Config Save“ verwenden, laden Sie Ihre `workspace.json`-Datei nach dem Upgrade auf diese Version erneut hoch. Anweisungen zum Hochladen finden Sie unter [Async Config Save](synchronize/custom-match.md#async-config-save).
+>Wenn Sie einen benutzerdefinierten Matcher mit aktiviertem Speichern der asynchronen Konfiguration verwenden, laden Sie Ihre `workspace.json`-Datei nach dem Upgrade erneut hoch. Anweisungen finden Sie unter [Async Config Save](synchronize/custom-match.md#async-config-save).
 
 ## v1.4.6
 
