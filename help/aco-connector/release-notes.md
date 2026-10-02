@@ -120,7 +120,7 @@ bin/magento saas:resync --feed=categories
 
 _10. März 2026_
 
-![Es wurde ](../assets/fix.svg) Kompatibilitätsproblem behoben, durch das der Zugriff auf die Seite &quot;[!DNL Commerce Services Connector]-Konfiguration“ über die Menüs &quot;Commerce Admin **[!UICONTROL System]**&quot; und &quot;**[!UICONTROL Configuration]**&quot; blockiert wurde, wenn die [!DNL Adobe Commerce Optimizer Connector] auf einer [!DNL Adobe Commerce]-Instanz installiert ist.  Jetzt können Sie auf die Seite [!DNL Commerce Services Connector]-Konfiguration zugreifen, wenn beide Erweiterungen installiert sind. <!--MDEE-1322-->
+![Es wurde &#x200B;](../assets/fix.svg) Kompatibilitätsproblem behoben, durch das der Zugriff auf die Seite &quot;[!DNL Commerce Services Connector]-Konfiguration“ über die Menüs &quot;Commerce Admin **[!UICONTROL System]**&quot; und &quot;**[!UICONTROL Configuration]**&quot; blockiert wurde, wenn die [!DNL Adobe Commerce Optimizer Connector] auf einer [!DNL Adobe Commerce]-Instanz installiert ist.  Jetzt können Sie auf die Seite [!DNL Commerce Services Connector]-Konfiguration zugreifen, wenn beide Erweiterungen installiert sind. <!--MDEE-1322-->
 
 
 ### Version 1.0.10
