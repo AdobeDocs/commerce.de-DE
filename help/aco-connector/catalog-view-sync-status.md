@@ -66,7 +66,7 @@ Auf der Registerkarte [!UICONTROL Catalog View] stellt jede Zeile eine benutzerd
 | **Einstellung** | Sie haben den freigegebenen Katalog in [!DNL Adobe Commerce] gelöscht. Die Katalogansicht ist weiterhin verfügbar, bis die Übergangsphase für die Löschung abläuft. Die standardmäßige Übergangsphase beträgt sieben Tage. Sie können die Standardeinstellung ändern, indem Sie die [Einstellungen für die Katalogansicht - Synchronisierung](#configure-aco-catalog-view-sync-settings) aktualisieren. |
 | **Verwaist** | Die Katalogansicht bzw. der -Schlüssel wurde direkt in [!DNL Adobe Commerce Optimizer] Studio und nicht vom Connector erstellt. Siehe [Überprüfen verwaister und gelöschter Einträge](#review-orphaned-and-deleted-entries). |
 
-[!UICONTROL Healthy], [!UICONTROL Pending] und [!UICONTROL Deleted] sind Informationszustände, die keine Maßnahmen erfordern. Siehe [Statuswerte synchronisieren](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} im *Commerce Admin Guide* um die vollständige Liste zu erhalten.
+[!UICONTROL Healthy], [!UICONTROL Pending] und [!UICONTROL Deleted] sind Informationszustände, die keine Maßnahmen erfordern. Siehe [Statuswerte synchronisieren](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} im *Commerce Admin Guide* um die vollständige Liste zu erhalten.
 
 ### Konfigurieren der Synchronisierungseinstellungen für die ACO-Katalogansicht {#configure-aco-catalog-view-sync-settings}
 
