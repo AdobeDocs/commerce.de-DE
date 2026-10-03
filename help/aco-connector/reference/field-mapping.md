@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
     internal-label: Data modeling
-source-git-commit: 9c2d0f1c3342d87b1e95a789b905f4a383bc8f5f
+source-git-commit: 1e34df4f07f9043675104fce55c58e0617463b33
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 3%
+source-wordcount: '1023'
+ht-degree: 2%
 ---
 
 # Feldzuordnung für Connector-Feeds
@@ -51,46 +51,42 @@ Auf dieser Seite wird dokumentiert, wie die [!DNL Adobe Commerce Optimizer Conne
 
 Der `products`-Feed sendet Daten an den Endpunkt [products](https://developer.adobe.com/commerce/services/reference/rest/#tag/Products){target="_blank"}.
 
-| [!DNL Adobe Commerce] | API-Feld [!DNL Commerce Optimizer] | Notizen |
+| [!DNL Adobe Commerce] | API-Feld [!DNL Commerce Optimizer] | Zuordnungsdetails |
 | ----------------------------------------------- | -------------- | ------- |
 | `sku` | `sku` | |
 | `storeViewCode` | `source/locale` | |
 | `name` | `name` | |
 | `urlKey` | `slug` | |
-| `productId` | `externalIds[0].id` | `origin` auf `"AdobeCommerce"` festgelegt |
-| `status` | `status` | Hochgestellt; für zusammengesetzte Produkte ohne zugewiesene untergeordnete Elemente auf `DISABLED` gesetzt |
-| `description` | `description` | |
-| `shortDescription` | `shortDescription` | |
-| `visibility` | `visibleIn` | Kommagetrennte Werte, aufgeteilt und zugeordnet: `Catalog`→`CATALOG`, `Search`→`SEARCH`; nicht zugeordnete Werte gelöscht |
+| `productId` | `externalIds[0].id` | Setzt `origin` auf `"AdobeCommerce"` |
+| `status` | `status` | Wandelt den Status in Großbuchstaben um. Verwendet `DISABLED`, wenn der Status fehlt oder wenn ein konfigurierbares oder gebündeltes Produkt keine Optionswerte hat. |
+| `description` | `description` | Verwendet eine leere Zeichenfolge, wenn die Beschreibung fehlt. |
+| `shortDescription` | `shortDescription` | Verwendet eine leere Zeichenfolge, wenn die Kurzbeschreibung fehlt. |
+| `visibility` | `visibleIn` | Teilt den kommagetrennten Wert und ordnet `Catalog` `CATALOG` und `Search` zu `SEARCH` zu. Löscht andere Werte. |
 | `metaTitle` | `metaTags/title` | |
 | `metaDescription` | `metaTags/description` | |
-| `metaKeyword` | `metaTags/keywords` | Durch Zeilenumbruch getrennte Zeichenfolge in Array aufgeteilt |
-| `inStock`, `lowStock`, `weight`, `weightUnit` | `attributes[].code = "aco_ac_attributes"` | JSON-kodierte `{inStock, lowStock, weight, weightType}`; immer als erster Attributeintrag vorhanden |
-| `attributes[]` | `attributes[]` | Jeder Eintrag, der `{code, values[], variantReferenceId}` zugeordnet ist; `inStock`, `lowStock`, `weight`, `weightType` sind ausgeschlossen (sie gehen in `aco_ac_attributes`) |
-| `(synthesized)` | `attributes[].code = "ac_assortments"` | Array numerischer IDs der benutzerdefinierten freigegebenen Kataloge, zu denen das Produkt gehört, dedupliziert und sortiert. Produkte, die nur im öffentlichen Katalog enthalten sind, haben dieses Attribut nicht. [!DNL Commerce Optimizer] Richtlinien filtern nach diesem Attribut, um eine private Katalogansicht des Sortiments zu erzwingen. |
-| `images[]` | `images[]` | `url`, `label`; Standardrollen zugeordnet: `image`→`BASE`, `small_image`→`SMALL`, `thumbnail`→`THUMBNAIL`, `swatch_image`→`SWATCH`; Nicht-Standardrollen gehen an `customRoles[]` |
-| `categoryData[].categoryPath` | `routes[].path` | |
-| `categoryData[].productPosition` | `routes[].position` | |
+| `metaKeyword` | `metaTags/keywords` | Teilt Keywords mit Zeilenumbruch in ein Array auf und kürzt Leerzeichen. |
+| `inStock`, `lowStock`, `weight`, `weightUnit` | `attributes[].code = "aco_ac_attributes"` | Fügt immer einen `aco_ac_attributes` Eintrag als erstes Attribut hinzu. Ihr JSON-Wert enthält `inStock` und `lowStock` als Zeichenfolgen. Sie enthält `weight` und `weightType`, wenn diese Werte verfügbar sind. |
+| `attributes[]` | `attributes[]` | Ordnet jeden Eintrag seinem Attributcode, seinen Zeichenfolgenwerten und, sofern verfügbar, seiner übereinstimmenden Variantenreferenz-ID zu. Überspringt `inStock`, `lowStock`, `categories`, `weight` und `weightType`. Die inventarbezogenen Werte sind in `aco_ac_attributes` enthalten. Kategorien werden als Routen exportiert. |
+| `images[]` | `images[]` | Überspringt Bilder ohne eine URL.<br>Exportiert `url`, `label` (leer, wenn fehlt) und `sortOrder` (Ganzzahl, Standardwert ist `0`).<br>Sortiert Bilder nach `sortOrder` in aufsteigender Reihenfolge.<br>Ordnet Standardrollen zu: `image` zu `BASE`, `small_image` zu `SMALL`, `thumbnail` zu `THUMBNAIL` und `swatch_image` zu `SWATCH`. Exportiert andere Rollen nach `customRoles[]`. |
+| `categoryData[].categoryPath` | `routes[].path` | Einträge mit einem leeren Kategoriepfad werden übersprungen. |
+| `categoryData[].productPosition` | `routes[].position` | Verwendet `0`, wenn die Produktposition fehlt. |
 | `links[].type` + `links[].sku` | `links[]` | `type` in Großbuchstaben; Einträge ohne `sku` werden gelöscht |
-| `parents[].productType` + `parents[].sku` | `links[]` | Zugeordneter Typ: `configurable`→`VARIANT_OF`, `bundle`/`bundle_fixed`→`IN_BUNDLE` |
-| `configurable options` | `configurations[]` | `id`→`attributeCode`, `label`; Optionstyp `SWATCH`, wenn `swatchType` festgelegt ist, andernfalls `CONFIGURABLE`; Standardvariante von `isDefault`; Werte umfassen `variantReferenceId`, `label`, `colorHex`, `imageUrl` |
-| `bundle options` | `bundles[]` | `label`→`group`; `required`; `renderType` `checkbox`/`multi`→`multiSelect: true`; Standard-SKUs von `isDefault`; Elemente umfassen `sku`, `qty`, `userDefinedQty` (`qtyMutability`) |
+| `parents[].productType` + `parents[].sku` | `links[]` | Ordnet `configurable` `VARIANT_OF` und `bundle` oder `bundle_fixed` `IN_BUNDLE` zu. Wandelt andere Produktarten in Großbuchstaben um. Überspringt Eltern ohne SKU. |
+| `configurable options` | `configurations[]` | Exportiert Optionen mit einer ID und mindestens einem Wert.<br>Ordnet `id` `attributeCode` zu. Legt `type` auf `SWATCH` fest, wenn `swatchType` vorhanden ist, und auf andernfalls `CONFIGURABLE`.<br>Verwendet die ID des Standardwerts als `defaultVariantReferenceId`.<br>Ordnet jeden Wert `variantReferenceId`, `label`, `colorHex` und `imageUrl` zu. |
+| `bundle options` | `bundles[]` | Exportiert Optionen, die mindestens ein Element enthalten.<br>Verwendet die Optionsbeschriftung als `group` oder `Bundle group`, wenn die Beschriftung leer ist. Kopiert `required` in die Ausgabe.<br>Setzt `multiSelect` auf `true` für `checkbox` und `multi` Render-Typen.<br>Listet Standard-SKUs in `defaultItemSkus` auf. Jedes Element enthält `sku`, `qty` (standardmäßig `0`) und `userDefinedQty` (ab `qtyMutability` standardmäßig `false`). |
 
 ## Metadaten der Produktattribute
 
 Der `productAttributes`-Feed sendet Daten an den [Metadaten-Endpunkt](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata){target="_blank"}.
 
-
-| [!DNL Adobe Commerce] | API-Feld [!DNL Commerce Optimizer] | Notizen |
+| [!DNL Adobe Commerce] | API-Feld [!DNL Commerce Optimizer] | Zuordnungsdetails |
 | --------------- | -------------- | ------- |
 | `attributeCode` | `code` | |
 | `storeViewCode` | `source/locale` | |
 | `label` | `label` | |
 | `dataType` + `frontendInput` | `dataType` | Siehe Konversionstabelle unten |
-| `visible` | `visibleIn: "PRODUCT_DETAIL"` | Beim `true` zum Array hinzugefügt |
-| `visibleInSearch` | `visibleIn: "SEARCH_RESULTS"` | Beim `true` zum Array hinzugefügt |
-| `visibleInListing` | `visibleIn: "PRODUCT_LISTING"` | Beim `true` zum Array hinzugefügt |
-| `visibleInCompareList` | `visibleIn: "PRODUCT_COMPARE"` | Beim `true` zum Array hinzugefügt |
+| `dataType` und `frontendInput` | `dataType` | Verwendet die unten stehenden Konversionsregeln. |
+| `visible`, `visibleInSearch`, `visibleInListing`, `visibleInCompareList` | `visibleIn[]` | Wenn ein Flag `true` wird, fügt den entsprechenden Wert hinzu: <br>`visible` → `PRODUCT_DETAIL`<br>`visibleInSearch` → `SEARCH_RESULTS`<br>`visibleInListing` → `PRODUCT_LISTING`<br>`visibleInCompareList` → `PRODUCT_COMPARE` |
 | `filterable` | `filterable` | |
 | `sortable` | `sortable` | |
 | `searchable` | `searchable` | |
@@ -99,21 +95,21 @@ Der `productAttributes`-Feed sendet Daten an den [Metadaten-Endpunkt](https://de
 
 ### Datentypkonvertierung
 
-Der Connector leitet die API-`dataType` von den `dataType`- und `frontendInput`-Feldern in der obigen Zuordnungstabelle ab. Die folgende Tabelle zeigt die Konversionsregeln, die der Connector anwendet.
+Wenn `dataType` `int` wird, prüft der Connector `frontendInput`. Bei anderen Datentypen hat `frontendInput` keine Auswirkungen auf die Konvertierung.
 
-| [!DNL Adobe Commerce] `dataType` | [!DNL Adobe Commerce] `frontendInput` | [!DNL Commerce Optimizer] API-`dataType` |
-| -------------------- | -------------------------- | ------------------- |
+| `dataType` | `frontendInput` | `dataType` |
+| ---------------- | --------------------- | ----------------- |
 | `int` | `boolean` | `BOOLEAN` |
 | `int` | `text` oder `select` | `TEXT` |
-| `int` | Beliebige andere | `INTEGER` |
-| `decimal` | - | `DECIMAL` |
-| `text`, `varchar`, `static`, `datetime` | - | `TEXT` |
-| `OBJECT` | - | `OBJECT` |
-| Beliebige andere | - | `TEXT` |
+| `int` | Alle anderen Werte, einschließlich eines fehlenden Werts | `INTEGER` |
+| `decimal` | Nicht verwendet | `DECIMAL` |
+| `text`, `varchar`, `static`, `datetime` | Nicht verwendet | `TEXT` |
+| `OBJECT` | Nicht verwendet | `OBJECT` |
+| Beliebiger anderer Wert | Nicht verwendet | `TEXT` |
 
 >[!NOTE]
 >
->Wenn die `dataType` für ein Attribut auf `OBJECT` festgelegt ist, behandelt [Produkt-API](https://developer.adobe.com/commerce/services/reference/graphql/#products){target="_blank"} den Attributwert als strukturiertes Objekt und nicht als einfache Zeichenfolge. Zur Abfragezeit versucht die API, den gespeicherten Wert als JSON zu parsen. Wenn das Analysieren erfolgreich ist, wird das Ergebnis als verschachteltes -Objekt in der Antwort zurückgegeben. **Dieses Verhalten ist besonders**, wenn Sie benutzerdefinierte Attribute dynamisch bereitstellen, z. B. um strukturierte Daten oder Daten mit mehreren Feldern zu übertragen, die nicht als Skalarwert dargestellt werden können. Anweisungen finden Sie [Produktattribute dynamisch hinzufügen](../../data-export/add-attribute-dynamically.md).
+>Wenn ein Attribut den Datentyp `OBJECT` verwendet, versucht die [Products-API](https://developer.adobe.com/commerce/services/reference/graphql/#products){target="_blank"} seinen gespeicherten Wert als JSON zu analysieren. Wenn das Analysieren erfolgreich ist, gibt die API den Wert als verschachteltes -Objekt zurück. Verwenden Sie `OBJECT` für strukturierte Attributdaten, die nicht als einzelner Wert dargestellt werden können. Anweisungen finden Sie [Produktattribute dynamisch hinzufügen](../../data-export/add-attribute-dynamically.md).
 
 ## Preisbücher
 
@@ -121,51 +117,58 @@ Der `priceBooks`-Feed sendet Daten an den [Preisbuchendpunkt](https://developer.
 
 Im Gegensatz zu den anderen Connector-Feeds wird der `priceBooks`-Feed nicht von einem [!DNL SaaS Data Export] Indexer in [!DNL Adobe Commerce] erfasst. Der Connector generiert diesen Feed aus der Website- und Kundengruppenkonfiguration im Admin-Bereich.
 
-Pro Website wird ein **Grundpreisbuch** erstellt, plus ein **Kinderpreisbuch** pro Website-Kunden-Gruppenpaar.
+Für jede Website erstellt der Connector für jede Kundengruppe ein Basispreisbuch und ein untergeordnetes Preisbuch.
 
-**Preisbuch-ID-Formel:**
+Verwenden Sie diese Formeln für `priceBookId`:
 
-- **Basis** (reguläre Preise): `priceBookId = websiteCode`
-- **Child** (Kundengruppe oder freigegebener Katalog): `priceBookId = websiteCode::sha1(customerGroupId)`, wobei `sha1(customerGroupId)` der SHA-1-Hex-Auszug der Ganzzahl-ID der Kundengruppe ist
+- Grundpreis Bücher für reguläre Preise: `priceBookId = websiteCode`.
+- Untergeordnete Preislisten für Kundengruppen: `priceBookId = websiteCode::sha1(customerGroupId)`, wobei `sha1(customerGroupId)` der SHA-1-Hex-Auszug der Ganzzahl-ID der Kundengruppe ist.
 
-Der Preis-Feed verwendet dieselbe Formel, wenn er festlegt, zu welchem Preisbuch ein Preiseintrag gehört. Informationen dazu, wie Storefronts die `priceBookId` für eine Kundensitzung auflösen, finden Sie unter [Headless-Storefront-Integration](../headless-storefront.md#graphql-commerceoptimizer-query).
+Der Preis-Feed verwendet dieselbe Formel, um jeden Preiseintrag einem Preisbuch zuzuordnen. Informationen dazu, wie eine Storefront `priceBookId` für eine Kundensitzung auflöst, finden Sie unter [Headless-Storefront-Integration](../headless-storefront.md#graphql-commerceoptimizer-query).
 
-| Erzeugtes Feld | API-Feld [!DNL Commerce Optimizer] | Notizen |
+
+| Source-Feld oder -Wert | API-Feld [!DNL Commerce Optimizer] | Zuordnungsdetails |
 | ---------------- | -------------- | ------- |
-| `websiteCode`, `customerGroupId` | `priceBookId` | |
-| Website-Name | `name` | Basispreisbuch: Website-Name. Untergeordnet: `"Group Name (Website Name)"` |
+| `websiteCode` | `parentId` | Fügt dieses Feld den untergeordneten Preisbüchern hinzu. Sein Wert gibt den Grundpreis an. |
+| Website-Name | `name` | Verwendet den Namen der Website für Grundpreisbücher. Verwendet `Customer group name (Website name)` für Kinderpreisbücher. |
 | `websiteCode` | `parentId` | Nur bei untergeordneten Preisbüchern vorhanden; verweist auf das Grundpreisbuch |
-| Website-Basiswährung | `currency` | Nur bei Grundpreisbüchern vorhanden; von Kindern übernommen |
+| Website-Basiswährung | `currency` | Enthält dieses Feld nur für Basispreise. Kinderpreisbücher lassen es aus. |
 
 ## Preise
 
-Der `prices`-Feed sendet Daten an den Endpunkt [Preise](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}.
+Der `prices`-Feed sendet [!DNL Adobe Commerce] Daten an den [Endpunkt Preise](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}.
 
-| [!DNL Adobe Commerce] | API-Feld [!DNL Commerce Optimizer] | Notizen |
+| Eingabefeld für den Feed | API-Feld [!DNL Commerce Optimizer] | Zuordnungsdetails |
 | --------------- | -------------- | ------------------------------------------------------------------------------- |
-| `sku` | `sku` | |
-| `websiteCode`, `customerGroupId` | `priceBookId` | |
-| `regular` | `regular` | |
-| `discounts[]` | `discounts[]` | Beispiel für Rabatte: Sonderpreis, Katalogregel-Preis, Preis für freigegebenen Katalog |
-| `tierPrices[]` | `tierPrices[]` | |
+| `sku` | `sku` | Übergibt die SKU unverändert an . |
+| `websiteCode`, `customerGroupCode` | `priceBookId` | Kombiniert `websiteCode` mit dem SHA-1-Hash der Kundengruppen-ID in `customerGroupCode`. Wenn `customerGroupCode` `0` ist, verwendet `websiteCode` allein. |
+| `regular` | `regular` | Gibt den regulären Preis unverändert weiter. |
+| `discounts[]` | `discounts[]` | Wenn der Quellwert `null` ist, exportiert ein leeres Array.<br>Für Einträge mit `code` auf `special_price` und einem `percentage` setzt `percentage` auf `100 - percentage`, wenn der Wert zwischen `0` und `100` liegt. Legt fest, dass der Wert `0` oder außerhalb dieses Bereichs liegt.<br>Passt andere Einträge, einschließlich preisbasierter Sonderpreise, unverändert an. |
+| `tierPrices[]` | `tierPrices[]` | Verwendet ein leeres Array, wenn der Quellwert fehlt oder `null`. |
 
 ## Kategorien
 
-Der `categories`-Feed sendet Daten an den [Categories-Endpunkt](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
+Der `categories`-Feed sendet [!DNL Adobe Commerce] Daten an den [Categories-Endpunkt](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
 Elemente mit einem leeren `urlPath` (logische Stammkategorien) werden übersprungen und nie gesendet.
 
-| [!DNL Adobe Commerce] | API-Feld [!DNL Commerce Optimizer] | Notizen |
+| [!DNL Adobe Commerce] | API-Feld [!DNL Commerce Optimizer] | Zuordnungsdetails |
 | --------------- | -------------- | ------- |
 | `storeViewCode` | `source/locale` | |
 | `name` | `name` | |
 | `urlPath` | `slug` | |
 | `description` | `description` | |
+| `position` | `position` | Exportiert die Kategorieposition, sofern vorhanden. Lässt das Feld aus, wenn es fehlt. |
 | `metaTitle` | `metaTags/title` | |
 | `metaDescription` | `metaTags/description` | |
 | `metaKeywords` | `metaTags/keywords` | Durch Zeilenumbruch getrennte Zeichenfolge in Array aufgeteilt |
 | `image` | `images[].url` | Array mit einzelnen Elementen; `roles: ["BASE"]` |
 | `isActive` + `includeInMenu` | `families` | `["top_menu"]` wenn beide `true`, `[]` andernfalls |
+
+| `metaKeywords` | `metaTags/keywords` | Teilt mit Zeilenumbruch getrennte Schlüsselwörter in ein Array auf und kürzt Leerzeichen. |
+| `image` | `images[].url` | Wenn `image` vorhanden ist, exportiert ein Bild mit der Rolle `BASE`. Exportiert ein leeres Array, wenn das Bild leer ist oder fehlt. |
+| `isActive` + `includeInMenu` | `families` | Fügt `top_menu` nur hinzu, wenn beide Werte `true` sind. Andernfalls exportiert ein leeres Array. |
+| `attributes[]` | `attributes[]` | Exportiert Einträge mit einer nicht leeren `attributeCode` als `{code, values[]}`. Konvertiert Werte in Zeichenfolgen. `attributes` ausgelassen, wenn keine geeigneten Einträge vorhanden sind. |
 
 >[!MORELIKETHIS]
 >
