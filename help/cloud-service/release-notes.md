@@ -78,7 +78,7 @@ Die Payload des `plugin.out_of_process_shipping_methods.api.shipping_rate_reposi
 
 ### Verwalten von Katalogpreisregeln in REST
 
-Mit den neuen REST-API-Endpunkten können Integrationen [Katalogpreisregeln) ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) verwalten und suchen. <!-- ACCS-1621 -->
+Mit den neuen REST-API-Endpunkten können Integrationen [Katalogpreisregeln) &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) verwalten und suchen. <!-- ACCS-1621 -->
 
 Die folgenden Endpunkte sind durch die Berechtigung `Magento_CatalogRule::promo_catalog` geschützt, die auch den Bildschirm „Preisregel für den Admin-Katalog“ schützt. Zugriff auf Admin- oder Integrationsebene ist erforderlich, um diesen Endpunkt zu verwenden.
 
@@ -91,7 +91,7 @@ Die folgenden Endpunkte sind durch die Berechtigung `Magento_CatalogRule::promo_
 
 ### Schutz vordefinierter Uploads mit reCAPTCHA
 
-Sie können jetzt [!DNL Google reCAPTCHA] Validierung für die [`initiateUpload` GraphQL-Mutation ](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload), um Uploads vordefinierter Dateien zu schützen. Um diese Einstellung im [!DNL Admin] zu aktivieren, navigieren Sie zu [!UICONTROL **Für vorab erstellten Upload aktivieren**] in [!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Security**] > [!UICONTROL **Google reCAPTCHA Storefront**]. <!-- CCSAAS-5490 -->
+Sie können jetzt [!DNL Google reCAPTCHA] Validierung für die [`initiateUpload` GraphQL-Mutation &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload), um Uploads vordefinierter Dateien zu schützen. Um diese Einstellung im [!DNL Admin] zu aktivieren, navigieren Sie zu [!UICONTROL **Für vorab erstellten Upload aktivieren**] in [!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Security**] > [!UICONTROL **Google reCAPTCHA Storefront**]. <!-- CCSAAS-5490 -->
 
 ### Erstellen benutzerdefinierter Attribute für Rückgaben mit REST
 
@@ -121,7 +121,7 @@ Das `CustomerOrdersFilterInput` GraphQL-Eingabeobjekt unterstützt jetzt ein `or
 
 ### Planen von Katalogpreisregeln nach Datum und Uhrzeit
 
-Sie können jetzt die Tageszeit für eine [Katalogpreisregel) festlegen, ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) im [!DNL Commerce Admin] beginnt oder endet. <!-- ACCS-1762 -->
+Sie können jetzt die Tageszeit für eine [Katalogpreisregel) festlegen, &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) im [!DNL Commerce Admin] beginnt oder endet. <!-- ACCS-1762 -->
 
 ### Anwenden benutzerdefinierter Versandrabatte über die Admin-REST-API
 
@@ -289,7 +289,7 @@ Die folgenden Artikel wurden am 8. September 2026 in der Produktionsumgebung ver
 
 [!DNL Adobe Commerce as a Cloud Service] enthält jetzt alle Änderungen ab [!DNL Adobe Commerce] Version 2.4.9.
 
-Weitere Informationen finden Sie in den Versionshinweisen zu [Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9).4.9.
+Weitere Informationen finden Sie in den Versionshinweisen zu [Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9).4.9.
 
 ### Synchronisieren von Sandbox- und Produktionskonfigurationen über die REST-API
 
@@ -361,7 +361,7 @@ Detaillierte Informationen, einschließlich GraphQL-Mutationen und REST-Endpunkt
 
 ### Onboarding von PayPal-Konten im Website-Umfang
 
-Händler können das Onboarding eines anderen PayPal-Kontos auf der Website jetzt direkt von der [!DNL Commerce Admin] aus selbst bearbeiten. Payment Services Home enthält jetzt eine Schaltfläche **Verbinden eines anderen PayPal-Kontos für eine Website**, die zur Admin-Konfigurationsseite für Zahlungsmethoden weiterleitet. Weitere [ finden Sie unter „Verbinden eines anderen PayPal](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/connect-website-account)Kontos für eine Website“. <!-- PAY-6961 -->
+Händler können das Onboarding eines anderen PayPal-Kontos auf der Website jetzt direkt von der [!DNL Commerce Admin] aus selbst bearbeiten. Payment Services Home enthält jetzt eine Schaltfläche **Verbinden eines anderen PayPal-Kontos für eine Website**, die zur Admin-Konfigurationsseite für Zahlungsmethoden weiterleitet. Weitere [&#x200B; finden Sie unter „Verbinden eines anderen PayPal](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/connect-website-account)Kontos für eine Website“. <!-- PAY-6961 -->
 
 ### Kostenlose Preisregeln für Geschenkwagen
 
@@ -698,7 +698,7 @@ Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen s
 
 * Fehlerkorrektur - Die Validierung der Importdatei kann jetzt fehlschlagen. <!-- CCSAAS-4364 -->
 
-* Die **[!UICONTROL Recently Viewed/Compared Products]**-Konfiguration wurde aus dem Abschnitt **[!UICONTROL Catalog]** in **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**entfernt, da sie in [!DNL Adobe Commerce as a Cloud Service] Admin nicht unterstützt wird. <!-- ACCS-793 -->
+* Die **[!UICONTROL Recently Viewed/Compared Products]**-Konfiguration wurde aus dem Abschnitt **[!UICONTROL Catalog]** in **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;entfernt, da sie in [!DNL Adobe Commerce as a Cloud Service] Admin nicht unterstützt wird. <!-- ACCS-793 -->
 
 >[!ENDSHADEBOX]
 
@@ -762,7 +762,7 @@ Ein neuer `numeric` [Eingabetyp für Produktattribute](https://experienceleague.
 
 ### Abfrage einer reCAPTCHA-Konfiguration für mehrere Formulare in einer GraphQL-Anfrage
 
-Die [`recaptchaFormConfigs` Abfrage ](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs) Konfigurationsdetails für mehrere Formulartypen in einer einzigen Anfrage zurückgeben. <!-- ACCS-628 -->
+Die [`recaptchaFormConfigs` Abfrage &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs) Konfigurationsdetails für mehrere Formulartypen in einer einzigen Anfrage zurückgeben. <!-- ACCS-628 -->
 
 ### Alle Firmenbestellungen mit neuer B2B-Berechtigung anzeigen
 
@@ -802,7 +802,7 @@ Anleitungen zur Implementierung dieser Funktion mithilfe von APIs finden Sie in 
 
 ### Trigger-Transaktions-E-Mails über die REST-API
 
-Mit einem neuen REST-API-Endpunkt (`POST /V1/custom-email/send`) können Sie bei Bedarf Transaktions-E-Mails von [Triggern ](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), indem Sie eine E-Mail-Vorlagen-ID, eine Empfänger-E-Mail und Vorlagenvariablen angeben. Die API unterstützt verschachtelte Arrays als Vorlagenvariablen für komplexe E-Mail-Inhalte. <!-- ACCS-325, ACCS-481 -->
+Mit einem neuen REST-API-Endpunkt (`POST /V1/custom-email/send`) können Sie bei Bedarf Transaktions-E-Mails von [Triggern &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), indem Sie eine E-Mail-Vorlagen-ID, eine Empfänger-E-Mail und Vorlagenvariablen angeben. Die API unterstützt verschachtelte Arrays als Vorlagenvariablen für komplexe E-Mail-Inhalte. <!-- ACCS-325, ACCS-481 -->
 
 ### Abonnieren Sie den Webhook „Out-of-Process Shipping Get-Rates“
 
@@ -954,7 +954,7 @@ Der `observer.catalog_category_delete_before` Webhook ist jetzt in [!DNL Adobe C
 
 ### Verfolgen von Gastbestellungen mit einer registrierten E-Mail
 
-Mit einer neuen optionalen Konfiguration auf Store-Ebene können Kunden [ von ihnen ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails) Gastbestellungen verfolgen. Dies gilt, wenn die Bestellung über eine E-Mail-Adresse aufgegeben wurde, die mit einem registrierten Kundenkonto übereinstimmt. <!-- ACCS-289 -->
+Mit einer neuen optionalen Konfiguration auf Store-Ebene können Kunden [&#x200B; von ihnen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails) Gastbestellungen verfolgen. Dies gilt, wenn die Bestellung über eine E-Mail-Adresse aufgegeben wurde, die mit einem registrierten Kundenkonto übereinstimmt. <!-- ACCS-289 -->
 
 ### Verbesserungen und Fehlerbehebungen
 
@@ -1006,7 +1006,7 @@ Die folgenden Elemente wurden am 10. Februar 2026 in Produktionsumgebungen von [
 
 An der [!DNL Commerce Admin] wurden die folgenden Verbesserungen vorgenommen:
 
-* Verbesserte prozessexterne (Versand[Webhook-Payloads), ](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases#payload) benutzerdefinierte Attribute für Versandadressen einzuschließen. Durch diese Änderung können Händler benutzerdefinierte Versandmethoden implementieren. <!-- ACCS-235 -->
+* Verbesserte prozessexterne (Versand[Webhook-Payloads), &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases#payload) benutzerdefinierte Attribute für Versandadressen einzuschließen. Durch diese Änderung können Händler benutzerdefinierte Versandmethoden implementieren. <!-- ACCS-235 -->
 
 * Zugriff auf Admin-Berichte hinzugefügt, einschließlich Berichte für [Kunden](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/customer-reports), [Marketing](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/marketing-reports), [Produkte](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/product-reports) und [Verkauf](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/sales-reports). <!-- CCSAAS-3085 -->
 
@@ -1016,7 +1016,7 @@ An der [!DNL Commerce Admin] wurden die folgenden Verbesserungen vorgenommen:
 
 ### Benutzerdefinierte Rechnungsbeträge über die REST-API erfassen
 
-Die Rechnung-API unterstützt jetzt [benutzerdefinierte ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)) mithilfe von Erweiterungsattributen. <!-- ACCS-186, ACCS-197, ACCS-143 -->
+Die Rechnung-API unterstützt jetzt [benutzerdefinierte &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)) mithilfe von Erweiterungsattributen. <!-- ACCS-186, ACCS-197, ACCS-143 -->
 
 >[!NOTE]
 >
@@ -1080,7 +1080,7 @@ Wandeln Sie die in den Kunden-E-Mails enthaltenen Sendungsverfolgungsnummern aus
 
 ### Instanzspezifischer Admin-Zugriff
 
-Sie können jetzt [ einzelnen [!DNL Adobe Commerce as a Cloud Service]-Instanzen in der Admin Console ](./user-management.md#add-users)Benutzerzugriff zuweisen“. <!-- CCSAAS-4337 -->
+Sie können jetzt [&#x200B; einzelnen [!DNL Adobe Commerce as a Cloud Service]-Instanzen in der Admin Console &#x200B;](./user-management.md#add-users)Benutzerzugriff zuweisen“. <!-- CCSAAS-4337 -->
 <!-- See PR #332 -->
 
 ### Beobachtbarkeit
@@ -1128,7 +1128,7 @@ Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen s
 
 * [Benutzerverwaltung](./user-management.md) - Die Rolle **Produktadministrator** in der Admin Console wurde geändert, um den Benutzerzugriff auf den Commerce-Administrator automatisch zu aktualisieren. <!-- CCSAAS-3012 -->
 
-* Es wurde die Möglichkeit hinzugefügt, verhandelbare Angebotsanhänge sowie Dateien und Bilder, die mit Kunden und Kundenadressen verknüpft sind, mithilfe von vordefinierten URLs in [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/) und [REST3 hochzuladen und ](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads/) abzurufen. Mit REST können Sie auch Kategoriebilder hochladen. <!-- CCSAAS-3250 -->
+* Es wurde die Möglichkeit hinzugefügt, verhandelbare Angebotsanhänge sowie Dateien und Bilder, die mit Kunden und Kundenadressen verknüpft sind, mithilfe von vordefinierten URLs in [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/) und [REST3 hochzuladen und &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads/) abzurufen. Mit REST können Sie auch Kategoriebilder hochladen. <!-- CCSAAS-3250 -->
 
 * Die Endpunkte `POST /V1/customers` und `PUT /V1/customers/{customerId}` wurden der [REST-API“ hinzugefügt](https://developer.adobe.com/commerce/webapi/rest/reference/) um Kunden zu erstellen und zu aktualisieren. Diese Endpunkte erfordern eine IMS-Autorisierung. <!-- CCSAAS-3112 -->
 
