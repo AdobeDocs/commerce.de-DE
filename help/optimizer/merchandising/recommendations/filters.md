@@ -1,24 +1,27 @@
 ---
 title: Empfehlungsfilter
-description: Erfahren Sie, wie Sie mit Filtern steuern können, welche Produkte in  [!DNL Adobe Commerce Optimizer]  Recommendations angezeigt werden.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+description: Erfahren Sie, wie Sie mit Filtern steuern können, welche Produkte in [!DNL Adobe Commerce Optimizer] Recommendations angezeigt werden.
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: c5a8861614fbf0e8d719305e239f926d5232ac49
+    internal-label: Personalization
+source-git-commit: 40374f0aa28d3635fc567c0311e452f92dc5704c
 workflow-type: tm+mt
-source-wordcount: 1932
+source-wordcount: '2334'
 ht-degree: 0%
-
 ---
-
 # Produkte filtern
 
 [!DNL Adobe Commerce Optimizer] wendet nicht konfigurierbare Standardfilter automatisch auf Empfehlungseinheiten an. Wenn mehrere Empfehlungseinheiten auf einer Seite bereitgestellt werden, filtert [!DNL Adobe Commerce Optimizer] alle Produkte heraus, die in den Einheiten wiederholt werden. Es wird nur der erste Hinweis auf ein wiederholtes Produkt verwendet, um Platz für andere zu empfehlende Produkte zu schaffen. [!DNL Adobe Commerce Optimizer] filtert auch alle zuvor gekauften Produkte und diejenigen aus, die sich im Warenkorb befinden.
@@ -207,8 +210,73 @@ Für **Einschlüsse** können nur Produkte empfohlen werden, deren SKUs aufgelis
 >
 >Untergeordnete Produkte eines konfigurierbaren Produkts werden nicht in einer Empfehlungseinheit angezeigt, da diese untergeordneten Produkte die Sichtbarkeit &quot;_einzeln sichtbar“_.
 
-<!--
-### Attribute
+### Attribute {#attributes}
 
-You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.
+>[!NOTE]
+>
+>Die Attributfilterung befindet sich in der Beta-Phase.
+
+Mit Attributfiltern können Sie Produkte basierend auf Produktattributwerten ein- oder ausschließen. Dabei wird dieselbe **[!UICONTROL Filter products]** wie bei [Preis](#price)- und [Produkt](#product)Filtern verwendet.
+
+#### Über Attributfilter
+
+Ein Attributfilter unterscheidet sich von einem [Produktfilter](#product) insofern, als er Produkte nach gemeinsamen Attributwerten und nicht nach einzelnen SKU anstrebt. Anstatt beispielsweise jede SKU aufzulisten, die einer Kategorie zugewiesen ist, können Sie einen einzelnen Attributfilter erstellen, der alle Produkte auflistet, die dieser Kategorie zugewiesen sind.
+
+#### Einrichten eines Attributfilters
+
+Führen Sie die folgenden Schritte aus, um einer Empfehlungseinheit eine Regel zum Einschließen oder Ausschließen von Attributen hinzuzufügen.
+
+1. Beim [Erstellen oder Bearbeiten](create.md) einer Empfehlungseinheit zu **[!UICONTROL Filter products]** wechseln.
+1. Wählen Sie die Registerkarte **[!UICONTROL Inclusions]** oder **[!UICONTROL Exclusions]** aus. Das Badge auf jeder Registerkarte zeigt an, wie viele Filter dieses Typs aktiviert sind.
+1. Wählen Sie in der Liste auf der linken Seite **[!UICONTROL Attributes]**.
+1. Wählen Sie ein Attribut aus dem Selektor aus, z. B **„Kategorie**.
+1. Geben Sie **[!UICONTROL Value]** einen Wert für das Attribut ein, z. B. **pants**.
+1. Drücken Sie **Eingabetaste** oder klicken Sie auf **[!UICONTROL Add inclusion filter]** (oder das entsprechende Ausschlusssteuerelement), um den Attributfilter hinzuzufügen.
+1. Stellen Sie die Konfiguration der Empfehlungseinheit fertig und speichern oder veröffentlichen Sie wie gewohnt, damit der Filter wirksam wird.
+
+![Attributfilter](../../assets/filter-attribute.png)
+
+>[!NOTE]
+>
+>Wenn Sie ein Attribut auswählen, dessen Metadaten auf `true` `number`, z. B **Größe**, zeigt das **Wert**-Feld Bereichseingaben anstelle eines einzelnen Textwerts an.
+
+#### Ein- und Ausschlussbedingungen verwenden
+
+Es dürfen nur Produkte empfohlen werden, die mit Einschlussfiltern übereinstimmen. Produkte, die einem Ausschlussfilter entsprechen, werden nicht empfohlen.
+
+#### Kombinieren von Bedingungen
+
+Wenn ein Attributfilter mehrere Werte enthält oder mit anderen Bedingungen kombiniert wird, gilt die folgende Logik.
+
+- Wenn mehrere Werte für dasselbe Attribut ausgewählt sind, werden die Werte mit `OR` kombiniert.
+- Bedingungen für verschiedene Attribute (z. B. Farbe und Größe) werden mit `AND` kombiniert - ein Produkt muss allen Attributen entsprechen. Wenn Sie dasselbe Attribut als separate Bedingungen hinzufügen, anstatt mehrere Werte in einer Bedingung einzugeben, werden diese Bedingungen ebenfalls mit `AND` kombiniert, nicht mit `OR`.
+- Wenn mehrere Ausschlussbedingungen vorliegen, wird ein Produkt entfernt, wenn es einer der Ausschlussbedingungen entspricht.
+- Wenn Sie sowohl Einschluss- als auch Ausschlussfilter verwenden, finden Sie weitere Informationen unter [Logische Operatoren](#logical-operators).
+
+<!--
+#### Availability by recommendation type
+
+Hiding this for now as we need better clarification on what "limited" means.
+
+Attribute filter support varies by recommendation type.
+
+| Recommendation type | Inclusion support | Exclusion support |
+| --- | --- | --- |
+| Most viewed | Yes | Yes |
+| Most purchased | Yes | Yes |
+| Trending | Yes | Yes |
+| Recommended for you | Limited | Yes |
+| Viewed this, viewed that | Limited | Yes |
+| Viewed this, bought that | Limited | Yes |
+| Bought this, bought that | Limited | Yes |
+| More like this | Limited | Yes |
+| Visual similarity | No | Yes |
+| Recently viewed | No | Limited |
+| Recently purchased | No | Limited |
 -->
+
+#### Verfügbarkeit, Validierung und Fehlerbehebung
+
+- Wenn leere Attributwerte oder ungültige Bedingungen vorhanden sind, werden Empfehlungen nicht in der Storefront oder im Vorschaubereich gerendert.
+- Die Attributwerte müssen genau mit den Werten in Ihrem Katalog übereinstimmen, einschließlich Leerzeichen und Groß-/Kleinschreibung.
+- Wenn keines der Produkte die Filterkriterien erfüllt, werden die Empfehlungen nicht in der Storefront oder im Vorschaubereich gerendert.
