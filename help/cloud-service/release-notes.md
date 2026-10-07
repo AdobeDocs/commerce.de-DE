@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 6a2300d65c9c77d18813c2eb491bfd02d1fca8ba
+source-git-commit: d4f896450e74c62db575ce9798cf27737466eb07
 workflow-type: tm+mt
-source-wordcount: '7581'
+source-wordcount: '8005'
 ht-degree: 0%
 ---
 # Versionshinweise
@@ -129,6 +129,38 @@ Sie können jetzt über die Admin-REST-API einen beliebigen Versandrabatt auf ei
 
 Verwenden Sie `POST /V1/carts/:cartId/shipping-discount`, um den Rabatt festzulegen. Zugriff auf Admin- oder Integrationsebene ist erforderlich, um diesen Endpunkt zu verwenden. <!-- ACCS-1156 -->
 
+### Hinzufügen von Artikeln zum Warenkorb zu einem benutzerdefinierten Preis
+
+Sie können jetzt einen benutzerdefinierten Preis für einen Warenkorb-Artikel festlegen, indem Sie das `custom_price`-Erweiterungsattribut zu den REST-Endpunkten (`POST /V1/carts/:cartId/items` und `PUT /V1/carts/:cartId/items/:itemId`) für das standardmäßige Hinzufügen oder Aktualisieren des Warenkorbs hinzufügen. Sie müssen ein Admin- oder Integrations-Token angeben, um einen benutzerdefinierten Preis festzulegen. Anfragen mit einem negativen Preis oder einem nicht unterstützten Produkttyp, z. B. einem Produktpaket mit dynamischer Preisgestaltung, werden abgelehnt. <!-- ACCS-1155 -->
+
+```json
+{
+  "cartItem": {
+    "sku": "t-shirt",
+    "qty": 1,
+    "quote_id": 17,
+    "extension_attributes": { "custom_price": 15.00 }
+  }
+}
+```
+
+Die Endpunkte `GET /V1/carts/:cartId` und `GET /V1/carts/:cartId/items` geben auch den `custom_price` zurück.
+
+### Vom Administrator erstellte Warenkörbe von Warenkörben in der Storefront isolieren
+
+Eine standardmäßig deaktivierte Opt-in-Funktion isoliert Warenkörbe, die Administratoren und Integrationen über die REST-API erstellen können, vom aktiven Warenkorb der Kunden. Wenn diese Option aktiviert ist, erstellt `POST /V1/customers/:customerId/carts` immer einen neuen inaktiven Warenkorb, den Admin- und Integrationsaufrufer über die REST-Endpunkte des Warenkorbs verwalten können, ohne den Warenkorb des Käufers zu ändern. <!-- ACCS-1153 -->
+
+Wenden Sie sich zur Aktivierung an Ihren Adobe Commerce Customer Success Manager oder erstellen Sie ein Support-Ticket.
+
+### Senden von Transaktions-E-Mails über Plattformen von Drittanbietern
+
+Mit neuen Ereignissen können Sie Transaktions-E-Mails von einer E-Mail-Plattform eines Drittanbieters, wie z. B. [!DNL Salesforce Marketing Cloud], über [!DNL App Builder] senden. Abonnieren Sie die folgenden Ereignisse über [!DNL Adobe I/O Events]: <!-- ACCS-1929 -->
+
+* `observer.customer_balance_save_after` - Ein Ladenguthaben wird gespeichert. Fügen Sie eine Abonnementregel hinzu, bei der `notify_by_email` gleich `1` ist, um ein Ereignis pro E-Mail für die Gutschrift eines Stores zu erhalten.
+* `observer.giftcard_item_email_send_after` - Für einen Bestellartikel wird eine E-Mail mit einer Geschenkkarte gesendet. Die Payload enthält alle Geschenkkartencodes für den Artikel.
+* `plugin.customer.api.account_management.activate` : Ein Kunde bestätigt sein Konto.
+* `plugin.negotiable_quote.api.negotiable_quote_management.decline` - Ein verhandelbares Angebot wird abgelehnt.
+
 ### Verbesserungen und Fehlerbehebungen
 
 Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen sind in dieser Version enthalten:
@@ -152,6 +184,22 @@ Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen s
 * Es wurde ein Problem behoben, bei dem die Anforderung von Warenkorbpreisen oder -summen einen Fehler zurückgeben konnte, wenn der Warenkorb einen nicht vorrätigen Artikel enthielt. <!-- CEXT-6776 -->
 
 * Es wurde ein Problem behoben, bei dem der Inventarbenutzer die Nachrichtenwarteschlange überfordern konnte, wenn er versuchte, eine fehlende SKU zu finden. <!-- ACCS-1976 -->
+
+* Die `customerDownloadableProducts` GraphQL-Abfrage gibt jetzt Dateimetadaten für herunterladbare Produkte zurück, die mit einer externen URL konfiguriert sind, sodass Storefronts den Dateityp bestimmen können und feststellen können, ob das Asset geöffnet oder heruntergeladen werden soll. <!-- ACCS-1735 -->
+
+* Die `sourceAvailability` GraphQL-Abfrage wendet jetzt Berechtigungen für freigegebene B2B-Kataloge und -Kategorien an, sodass Kundinnen und Kunden nur für Produkte pro Quelle erhalten, die sie sehen dürfen. <!-- ACCS-1888 -->
+
+* Es wurde ein Problem behoben, bei dem Kundinnen und Kunden kein Kennwort über den Begrüßungs-E-Mail-Link festlegen konnten und neu erstellte Kundinnen und Kunden nicht im [!DNL Commerce Admin] Kundenraster angezeigt wurden. <!-- ACCS-1979 -->
+
+* Es wurde ein Problem behoben, bei dem über die Auftrags-Bearbeitungs-REST-API bearbeitete Bestellungen Artikel mit dem falschen Preis speichern konnten. <!-- ACCS-1982 -->
+
+* Es wurde ein Problem behoben, bei dem Produkte, die aus dem freigegebenen Katalog eines Unternehmens entfernt wurden, weiterhin in der Storefront sichtbar blieben und unbeaufsichtigt aus dem Warenkorb entfernt wurden. <!-- CCSAAS-5544 -->
+
+* Es wurde ein Problem behoben, bei dem ein freigegebenes Katalogprodukt in einer Kategorie, die der Kundengruppe verweigert wurde, in der Storefront auftauchte, aber nicht zum Warenkorb hinzugefügt werden konnte. Eine Berechtigung zum Ablehnen von Kategorien hat jetzt Vorrang vor der Mitgliedschaft in einem freigegebenen Katalog. <!-- CCSAAS-5549 -->
+
+* Fehlerkorrektur - Bei einer Bestellung über GraphQL tritt jetzt kein Fehler mehr auf, wenn ein Versandsteuerartikel keinen Titel hat. <!-- CCSAAS-5552 -->
+
+* Es wurde ein Problem behoben, bei dem der `GET /V1/customers/:customerId/companyRoles` REST-Endpunkt leere Berechtigungen für einen Unternehmensadministrator zurückgab. <!-- ACCS-1998 -->
 
 {{accs-release}}
 

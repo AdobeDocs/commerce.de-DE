@@ -3,9 +3,9 @@ title: Versionshinweise zur AEM Assets-Integration
 description: Informationen zu allen AEM Assets-Integrationsversionen finden Sie in den Versionshinweisen .
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e8b87b4622bf41f6340bf7ddd0f208512e9b09c7
+source-git-commit: 36e6db0c76b0946c28d1a76d5649757c7f244058
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1847'
 ht-degree: 0%
 ---
 # Versionshinweise zur AEM Assets-Integration
@@ -35,6 +35,22 @@ _11. Februar 2025_
 ![Neues Problem](../assets/new.svg) Jetzt können Händler Bilder für Produkte und Kategorien synchronisieren.
 
 +++
+
+## v1.4.9
+
+_7. Oktober 2026_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
+
+![Problem behoben](../assets/fix.svg)<!-- Issue CCSAAS-5562 --> Es wurde ein zeitweiliges Problem behoben, bei dem beim Erstellen einer Kategorie in der Admin ein `Deprecated Functionality` angezeigt wurde, da `null` als Array-Offset verwendet wurde. Jetzt wird das Formular **Neue Kategorie** ohne den Hinweis auf veraltete Komponenten geladen, und Kategorien können erfolgreich erstellt werden.
+
+## v1.4.8
+
+_5. Oktober 2026_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.5 und höher.
+
+![Problem behoben](../assets/fix.svg)<!-- Issue ACAP-1339 --> Es wurde ein Problem behoben, bei dem Kategoriebilder aus AEM Assets nicht in den Katalog exportiert oder in GraphQL-Antworten zurückgegeben wurden, wenn AEM Assets Visualisierungseigentümer war. Um das Bild zu exportieren, weisen Sie das AEM-Asset nach dem Anwenden der Fehlerbehebung der Kategorie neu zu.
 
 ## v1.4.7
 
