@@ -2,8 +2,9 @@
 title: Erste Schritte mit dem [!DNL Adobe Commerce Optimizer Connector]
 description: Erfahren Sie, wie Sie die [!DNL Adobe Commerce Optimizer Connector] installieren, die Einstellungen für den Bereichsexport konfigurieren, die IMS-Authentifizierung aktivieren und die Katalogsynchronisierung überprüfen.
 feature: Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 autotag-review: '2026-06-09T16:55:50.934Z'
+last-update: 2026-10-01
 TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -21,6 +22,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: e126554b-28f9-4290-b58c-10b888b88174
     internal-label: IMS integration
@@ -39,8 +42,7 @@ topic_v2:
     internal-label: Data integration
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-last-update: 2026-10-01
-source-git-commit: 9ed3a09bc4e26e2ef787909700f51e25de0a18fa
+source-git-commit: c76e776250d9f996daf61d3cf62e2070803e998c
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -58,11 +60,11 @@ Installieren und konfigurieren Sie die [!DNL Adobe Commerce Optimizer Connector]
 
 ## Voraussetzungen für die Verwendung der Integration {#requirements-to-use-the-integration}
 
-* [Adobe Commerce](https://business.adobe.com/de/products/magento/magento-commerce.html) 2.4.7+. Detaillierte Anforderungen finden Sie unter [Systemanforderungen](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements).
+* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.7+. Detaillierte Anforderungen finden Sie unter [Systemanforderungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
 
 * [!DNL Commerce Optimizer] Lizenz mit einer bereitgestellten Sandbox-Instanz.
 
-* [Authentifizierungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) zum Herunterladen des Connector-Metapakets mit Composer.
+* [Authentifizierungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) zum Herunterladen des Connector-Metapakets mit Composer.
 
 * Administratorzugriff auf eine [[!DNL Commerce Optimizer] Sandbox-Instanz](../optimizer/get-started.md).
 
@@ -70,9 +72,9 @@ Der [!DNL Adobe Commerce] Benutzer, der die Integration konfiguriert, muss über
 
 * Administratorzugriff auf den Commerce Admin.
 
-* [Befehlszeilenzugriff auf den  [!DNL Adobe Commerce] -Server](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/user-access).
+* [Befehlszeilenzugriff auf den  [!DNL Adobe Commerce] -Server](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access).
 
-* Entwicklerzugriff auf die [IMS-Organisation](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations?), in der das [!DNL Commerce Optimizer] bereitgestellt wird.
+* Entwicklerzugriff auf die [IMS-Organisation](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?), in der das [!DNL Commerce Optimizer] bereitgestellt wird.
 
 >[!BEGINSHADEBOX]
 
@@ -124,7 +126,7 @@ In der folgenden Tabelle wird beschrieben, welche Daten auf jeder Bereichsebene 
 
 | Umfang | Daten exportiert | Notizen |
 | ----- | ------------- | ----- |
-| Website und Kundengruppe | Preise und Preisbücher | Jede Preisgruppe wird als „Preisbuch[&#x200B; exportiert, wobei &#x200B;](../optimizer/setup/pricebooks.md) Namenskonvention `&lt;website&gt;::&lt;SHA1 of customer group ID&gt;` verwendet wird. Alle Kundengruppen für die Website sind enthalten. |
+| Website und Kundengruppe | Preise und Preisbücher | Jede Preisgruppe wird als „Preisbuch[ exportiert, wobei ](../optimizer/setup/pricebooks.md) Namenskonvention `&lt;website&gt;::&lt;SHA1 of customer group ID&gt;` verwendet wird. Alle Kundengruppen für die Website sind enthalten. |
 | Shop-Ansicht | Produkte und Produktattribute | Jede Shop-Ansicht erstellt eine separate [Katalogquelle](../optimizer/setup/catalog-sources.md) in [!DNL Commerce Optimizer]. |
 
 ![Raster mit Commerce Optimizer-Synchronisierungseinstellungen speichern](./assets/aco-connector-storeviews-list.png){width="600" zoomable="yes"}

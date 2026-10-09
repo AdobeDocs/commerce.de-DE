@@ -4,7 +4,8 @@ description: Erfahren Sie, wie Sie die Synchronisierung von Katalogdaten überpr
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+last-update: 2026-10-01
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -19,6 +20,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -35,8 +38,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-last-update: 2026-10-01
-source-git-commit: 9ed3a09bc4e26e2ef787909700f51e25de0a18fa
+source-git-commit: c76e776250d9f996daf61d3cf62e2070803e998c
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
@@ -66,5 +68,5 @@ Wenn Synchronisierungsprobleme durch teilweise Synchronisierung und automatische
 > - [Fehlerbehebung](troubleshooting.md) - Diagnose von Problemen mit Berechtigungen, Synchronisierung und dem Umfang von Exportvorgängen
 > - [Anpassen der Exportkonfiguration für Commerce-Bereiche](./get-started.md#customize-the-commerce-scopes-export-configuration) — Konfigurieren von Feeds pro Bereichsebene, Aktivieren und Deaktivieren des Verhaltens und von Admin-Schritten
 > - [Connector-Module und Feed-](reference/connector-reference.md): Überprüfungsmodule, API-Endpunkte und unterstützte Feeds
-> - [Seite „Synchronisierungsstatus für Daten-Feeds“ in der Commerce-](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} - Erfahren Sie mehr über die Felder und Funktionen, die zur Überwachung des Feed-Status verfügbar sind
-> - [Datensynchronisations-Dashboard in [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/data-sync){target="_blank"} - Referenzdokumentation für Felder und Aktionen, die zur Überwachung der Katalogdaten-Synchronisierung verfügbar sind
+> - [Seite „Synchronisierungsstatus für Daten-Feeds“ in der Commerce-](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} - Erfahren Sie mehr über die Felder und Funktionen, die zur Überwachung des Feed-Status verfügbar sind
+> - [Datensynchronisations-Dashboard in [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync){target="_blank"} - Referenzdokumentation für Felder und Aktionen, die zur Überwachung der Katalogdaten-Synchronisierung verfügbar sind
