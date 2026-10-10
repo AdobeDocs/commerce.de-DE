@@ -1,7 +1,7 @@
 ---
-source-git-commit: c751dca1a7620b45068a7820054a842b50837bcd
+source-git-commit: b12fd59e97279b78017bee0403a7e7672adb1957
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1113'
 ht-degree: 1%
 ---
 # Neue Vorlage
@@ -9,6 +9,50 @@ ht-degree: 1%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;8. Oktober 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Produktions- <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
+</td>
+      <td>
+        Größere Aktualisierung
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a1aed1cc8a66473e936836aef6a2dee4085c8b3f">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;7. Oktober 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Es wurde ein neuer Abschnitt hinzugefügt, in dem beschrieben wird, wie Empfehlungen nach <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/recommendations/filters#attributes">Produktattributen“ gefiltert </a>.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/16e5c6a7caf2e541bace72b3eb4898eabb13e24a">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;5. Oktober 2026
 
@@ -374,50 +418,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Neues Thema
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e18c82a81c49de8175a8a8d77e9a191fe2af4b46">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;10. August 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Das Adobe Commerce Optimizer-Einrichtungshandbuch wurde aktualisiert, indem Anweisungen zum Aktivieren und Konfigurieren privater Katalogansichten, um den Katalogdatenzugriff mit signierten Token einzuschränken, sowie aktualisierte verwandte Themen, um auf die neue Funktion zu verweisen:<br />- Hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/private-catalog-view">Private Katalogansichten</a>, in der erläutert wird, wie der Katalogschutz aktiviert wird, sodass nur Anforderungen mit einem gültigen signierten Token die Daten einer Katalogansicht abrufen können.<br />- Hinzugefügte <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/restricted-access-keys">eingeschränkte Zugriffsschlüssel</a>, in der erläutert wird, wie die Schlüssel erstellt, zugewiesen und gedreht werden, die zum Signieren von Token für den Katalogschutz verwendet werden.<br />- Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-view">Katalogansichten</a></a>, <a [#$sd1_sf17_tu9]>, Was ist, Was ist, Was ist Adobe Commerce Optimizer?</a>Was ist, <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/get-started"></a>, <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits">Beschränkungen und Grenzen und GrenzenBeschränkungen und GrenzenBeschränkungen und GrenzenBeschränkungen und GrenzenBeschränkungen und Grenzen <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/launch/launch-checklist">Launch-</a> und das <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer-Connector-</a>, um auf die neuen Themen Private Katalogansichten und Schlüssel mit eingeschränktem Zugriff zu verweisen.</p>
-</td>
-      <td>
-        Größere Aktualisierung, neues Thema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de0de805f8ecd4f329ce3afc90e28197186856c2">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;7. August 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Sandbox <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c88ec8730e24220b6dfd32da406d1ba3fd3a2ef2">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
