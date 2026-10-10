@@ -163,7 +163,7 @@ Mit neuen Ereignissen können Sie Transaktions-E-Mails von einer E-Mail-Plattfor
 
 ### Bulk-API-Beschränkungen
 
-Die [Bulk-API](https://developer.adobe.com/commerce/webapi/rest/use-rest/bulk-endpoints) erzwingt jetzt eine maximale Anzahl von Entitäten pro Anfrage. Anfragen, die das Limit überschreiten, geben einen Fehler zurück. Das Feld Nicht konfigurierbare [!UICONTROL Maximum Entities Per Bulk Request] in der [Konfigurationsreferenz](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/bulk-api) zeigt das Limit an. Weitere Informationen finden Sie unter [API-](https://developer.adobe.com/commerce/webapi/get-started/api-security#input-limit-for-rest-endpoints)<!-- ACCS-703 -->
+Die [Bulk-API](https://developer.adobe.com/commerce/webapi/rest/use-rest/bulk-endpoints) erzwingt jetzt eine maximale Anzahl von Entitäten pro Anfrage. Anfragen, die das Limit überschreiten, geben einen Fehler zurück. Das Feld Nicht konfigurierbare [!UICONTROL Maximum Entities Per Bulk Request] in der [Konfigurationsreferenz](https://experienceleague.adobe.com/de/docs/commerce-admin/config/general/bulk-api) zeigt das Limit an. Weitere Informationen finden Sie unter [API-](https://developer.adobe.com/commerce/webapi/get-started/api-security#input-limit-for-rest-endpoints)<!-- ACCS-703 -->
 
 ### Verbesserungen und Fehlerbehebungen
 
