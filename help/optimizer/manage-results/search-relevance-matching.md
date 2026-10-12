@@ -1,37 +1,46 @@
 ---
 title: Abgleich und Rangfolge suchen
-description: Erfahren Sie [!DNL Adobe Commerce Optimizer]  wie exakte und Beinahe-Übereinstimmungen, Übereinstimmungen mit gleichen Feldern und feldübergreifende Übereinstimmungen priorisiert und wie das Ranking mit Suchgewichten, intelligenten Rangfolgen und Merchandising-Regeln interagiert.
+description: Erfahren Sie, wie [!DNL Adobe Commerce Optimizer] exakte und Beinahe-Übereinstimmungen, Übereinstimmungen mit gleichen Feldern und feldübergreifende Übereinstimmungen priorisiert und wie das Ranking mit Suchgewichten, intelligenten Rangfolgen und Merchandising-Regeln interagiert.
 role: Admin, Leader, User
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 hide: true
 autotag-review: '2026-06-12T19:49:25.241Z'
 TQID: 'https://experienceleague.adobe.com/GBfssL1pTVx4FKjsi45mDsTx2XyCr0aViexH3OpPjVo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 subfeature_v2:
   - id: faf75e43-5608-48b8-8169-3f8a9b8a5caf
+    internal-label: Storefront optimizations
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 717ecbc9c6aa41f8a504579de8ce55f514cc4307
+    internal-label: Optimization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 946
+source-wordcount: '948'
 ht-degree: 0%
-
 ---
-
 # Abgleich und Rangfolge suchen
 
 >[!IMPORTANT]
 >
->Die folgende Funktion befindet sich in der [privaten Betaversion](https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta).
+>Die folgende Funktion befindet sich in der [privaten Betaversion](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
 
 [!DNL Adobe Commerce Optimizer] werden die Ergebnisse so sortiert, dass Käufer die relevantesten Produkte zuerst sehen. Der Service steigert am meisten die Produkte, deren Katalogtext **eng mit dem** Kunden übereinstimmt), bevorzugt dann Übereinstimmungen, bei denen Abfragebegriffe sinnvoll zusammenpassen, und schließlich breitere Übereinstimmungen (einschließlich Verhaltensweisen, die eine automatische Vervollständigung unterstützen).
 
@@ -82,7 +91,7 @@ Die Relevanz wird nicht allein durch die Übereinstimmung der Phrasen bestimmt. 
 - Verstärken durch **exakte/** Phrasenübereinstimmung
 - Verstärken, wenn **alle Abfragebegriffe** im **Feld** werden
 - **Intelligentes Ranking** (wenn aktiviert), das textliche Relevanz mit Verhaltenssignalen verbindet - siehe [Funktionsweise der intelligenten Rangfolgenbewertung](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[Suchgewichtung](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results)** für jedes Attribut und andere textliche Relevanzfaktoren (z. B. wie oft Begriffe vorkommen und Name oder Länge der Beschreibung). Konfigurieren Sie *Einstellungen*, welche Attribute an der Keyword-Suche beteiligt sind, und ihre relativen **[Keyword-Suchgewichte](../settings.md)**.
+- **[Suchgewichtung](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** für jedes Attribut und andere textliche Relevanzfaktoren (z. B. wie oft Begriffe vorkommen und Name oder Länge der Beschreibung). Konfigurieren Sie *Einstellungen*, welche Attribute an der Keyword-Suche beteiligt sind, und ihre relativen **[Keyword-Suchgewichte](../settings.md)**.
 - **[Merchandising-Regeln](../merchandising/rules/overview.md)** z. B. Pin, Boost und Bury
 
 Da diese Signale interagieren, kann ein Produkt, das nur auf der breitesten Ebene übereinstimmt, manchmal einen engeren Übereinstimmungsgrad erreichen, z. B. wenn **Suchgewichte** oder die Häufigkeit von Begriffen in einem Feld mit hoher Gewichtung eine schwächere Übereinstimmung der Phrasen an anderer Stelle überwiegen.

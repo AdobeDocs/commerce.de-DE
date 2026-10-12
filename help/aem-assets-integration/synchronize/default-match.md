@@ -3,20 +3,26 @@ title: Standardmäßige automatische Zuordnung
 description: Erfahren Sie, wie die standardmäßige Regel für den automatischen Abgleich eine nahtlose Synchronisierung zwischen Adobe Commerce und der AEM Assets-Integration ermöglicht, um sicherzustellen, dass Assets automatisch mit den richtigen Merchandising-Entitäten verknüpft werden.
 feature: CMS, Media, Integration
 exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
-TQID: https://experienceleague.adobe.com/z7vpuhsVJnKohiU-bKNrcGnoIQ5WAwcwiccYlvawN0U
+TQID: 'https://experienceleague.adobe.com/z7vpuhsVJnKohiU-bKNrcGnoIQ5WAwcwiccYlvawN0U'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: cf31a1ed5069095fb3c4c50d99475e60ee61efa9
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -53,13 +59,13 @@ Wenn die Regel zum Abgleichen von **[!UICONTROL Match by product SKU]** in der C
 
 1. Konfigurieren Sie die Metadaten ([!UICONTROL SKU], [!UICONTROL position] und [!UICONTROL role]), die das Asset mit der zugehörigen Produkt-SKU verknüpfen.
 
-   Die vier Standardrollen sind `image`, `small_image`, `thumbnail` und `swatch_image`. Bei der AEM Assets-Integrationserweiterung Version 1.4.6 und höher können Sie auch eine benutzerdefinierte Bildrolle eingeben, z. B. `hero` oder `custom_role_1`. Weitere Informationen [&#x200B; Sie unter &#x200B;](custom-match.md)Benutzerdefinierter automatischer Abgleich“.
+   Die vier Standardrollen sind `image`, `small_image`, `thumbnail` und `swatch_image`. Bei der AEM Assets-Integrationserweiterung Version 1.4.6 und höher können Sie auch eine benutzerdefinierte Bildrolle eingeben, z. B. `hero` oder `custom_role_1`. Weitere Informationen [ Sie unter ](custom-match.md)Benutzerdefinierter automatischer Abgleich“.
 
    >[!NOTE]
    >
    > Wenn ein Asset für mehrere Produkte verwendet wird, konfigurieren Sie die Metadaten für jede zugehörige SKU.
 
-1. Legen Sie auf der Registerkarte `Basic` den Standardwert für das Feld _[!UICONTROL Review Status]_&#x200B;auf `approved` fest.
+1. Legen Sie auf der Registerkarte `Basic` den Standardwert für das Feld _[!UICONTROL Review Status]_auf `approved` fest.
 
    ![Beispiel-Metadaten](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 

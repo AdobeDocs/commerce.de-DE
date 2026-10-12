@@ -1,27 +1,38 @@
 ---
 title: Testen in der Staging-Umgebung
-description: Erfahren Sie, wie  [!DNL Product Recommendations]  aus Ihrer Produktionsumgebung in Ihrer Staging-Umgebung zu Testzwecken verwenden können.
+description: Erfahren Sie, wie Sie [!DNL Product Recommendations] aus Ihrer Produktionsumgebung in Ihrer Staging-Umgebung zu Testzwecken verwenden.
 feature: Services, Recommendations, Staging
 exl-id: 5b6d7615-6021-4419-98ea-006c8a299fe4
-TQID: https://experienceleague.adobe.com/7e7e3T-vgkN-Pbqx6TwrBAWTEozhzS0h--tguOGe0yI
+TQID: 'https://experienceleague.adobe.com/7e7e3T-vgkN-Pbqx6TwrBAWTEozhzS0h--tguOGe0yI'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: dec06508-d41f-555a-87e8-29e8bcdfa95a
+    internal-label: Recommendations
+  - id: 0054e3a7-7067-583b-bfd2-ab39dada9ab5
+    internal-label: Staging
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+    internal-label: Machine learning
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 436
+source-wordcount: '437'
 ht-degree: 0%
-
 ---
-
 # Testen in der Staging-Umgebung
 
 Bevor Sie Empfehlungen in Ihrer Produktionsumgebung bereitstellen, testen Sie den Service in einer Nicht-Produktionsumgebung, um sicherzustellen, dass alles erwartungsgemäß funktioniert.
@@ -38,7 +49,7 @@ Wie können Ihre Empfehlungen in einer Nicht-Produktionsumgebung mithilfe von Ve
 
 ## Abrufen von Empfehlungen aus der Produktionsumgebung (empfohlen)
 
-Mit Adobe Commerce können Sie Empfehlungen aus Ihrer Produktionsumgebung abrufen und in Ihrer Nicht-Produktionsumgebung in der Vorschau anzeigen, indem Sie [&#x200B; SaaS](settings.md)Datenbereich wechseln.
+Mit Adobe Commerce können Sie Empfehlungen aus Ihrer Produktionsumgebung abrufen und in Ihrer Nicht-Produktionsumgebung in der Vorschau anzeigen, indem Sie [ SaaS](settings.md)Datenbereich wechseln.
 
 Um Empfehlungen aus Ihrer Produktionsumgebung abzurufen, müssen Sie Folgendes sicherstellen:
 

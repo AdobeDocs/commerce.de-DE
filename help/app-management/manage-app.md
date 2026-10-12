@@ -2,13 +2,27 @@
 title: Mobile App verwalten
 description: Verknüpfen, Konfigurieren und Aufheben der Verknüpfung von App Builder-Programmen mit Ihrer Commerce-Instanz.
 feature: App Builder, Extensibility, Integration
-source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 72863f3c-9d27-5dda-afe1-d9f934b1fba0
+    internal-label: Extensibility
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
-
 ---
-
 
 # Mobile App verwalten
 
@@ -30,7 +44,7 @@ Suchtext und beide Dropdown-Listen gelten zusammen (logisches UND). Um die volls
 
 ## Mobile App erwerben
 
-**[!UICONTROL Acquire App]** öffnet eine neue Browser-Registerkarte (oder eine separate Browser-Ansicht) für [Adobe Exchange](https://exchange.adobe.com/experiencecloud){target="_blank"}, auf der Sie Commerce-bezogene Marktplatzlisten entdecken und Programme zu Ihrer Adobe IMS-Organisation hinzufügen können. Sobald die App erworben, genehmigt und bereitgestellt wurde, wird sie in [!DNL App Management] für ([&#x200B; und Installation) &#x200B;](#associate-an-app).
+**[!UICONTROL Acquire App]** öffnet eine neue Browser-Registerkarte (oder eine separate Browser-Ansicht) für [Adobe Exchange](https://exchange.adobe.com/experiencecloud){target="_blank"}, auf der Sie Commerce-bezogene Marktplatzlisten entdecken und Programme zu Ihrer Adobe IMS-Organisation hinzufügen können. Sobald die App erworben, genehmigt und bereitgestellt wurde, wird sie in [!DNL App Management] für ([ und Installation) ](#associate-an-app).
 
 ## Voraussetzungen
 
@@ -46,7 +60,7 @@ Bevor Sie eine App verknüpfen, stellen Sie Folgendes sicher:
 
 In diesem Video erfahren Sie, wie Sie eine App mit einer Commerce-Instanz verknüpfen und Einstellungen konfigurieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478964?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## App verknüpfen
 

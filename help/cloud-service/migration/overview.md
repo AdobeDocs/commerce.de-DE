@@ -3,7 +3,7 @@ title: Migrieren nach [!DNL Adobe Commerce as a Cloud Service]
 description: Erfahren Sie, wie Sie zu [!DNL Adobe Commerce as a Cloud Service] migrieren.
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:12:28.840Z'
@@ -28,6 +28,8 @@ feature_v2:
     internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
     internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
     internal-label: Categories
@@ -56,7 +58,7 @@ topic_v2:
     internal-label: Machine learning
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 464b0d7298bd2a5569b12d0956a84667709e4c3a
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '3682'
 ht-degree: 0%
@@ -95,8 +97,8 @@ Adobe Commerce ist in verschiedenen Bereitstellungsmodellen verfügbar. Die Haup
 | Adobe Commerce-Angebot | Hosting-Modell | Verantwortung für Services und Updates |
 |---|---|---|
 | **[!DNL Adobe Commerce as a Cloud Service]** | SaaS — Adobe-gehostet | Adobe verwaltet die wichtigsten Commerce-Programme, -Infrastrukturen und -Updates. Händler erweitern die Plattform durch unterstützte APIs und Erweiterbarkeits-Services (APIs, [!DNL Adobe Developer App Builder], UI-SDKs). Händler können den Code der Hauptanwendung nicht ändern. |
-| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS - Adobe-verwaltet | [Geteilte Verantwortung](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility): Adobe verwaltet die gehostete Plattform. Der Händler verwaltet Patches auf Anwendungsebene, benutzerdefinierten Code, Konfiguration und aktualisiert Erweiterungen und Plattformdienste auf unterstützte Versionen, einschließlich: Datenbank, Cache, Suche, PHP-Laufzeit, Webserver und Nachrichtenwarteschlange. |
-| **[!DNL Adobe Commerce on-premises]** | Vom Händler oder Hosting-Anbieter gehostet | [Händlerverantwortung](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/overview#merchant-responsibilities): Der Händler oder sein Hosting-Anbieter verwaltet die Infrastruktur und alle Plattformdienste. |
+| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS - Adobe-verwaltet | [Geteilte Verantwortung](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility): Adobe verwaltet die gehostete Plattform. Der Händler verwaltet Patches auf Anwendungsebene, benutzerdefinierten Code, Konfiguration und aktualisiert Erweiterungen und Plattformdienste auf unterstützte Versionen, einschließlich: Datenbank, Cache, Suche, PHP-Laufzeit, Webserver und Nachrichtenwarteschlange. |
+| **[!DNL Adobe Commerce on-premises]** | Vom Händler oder Hosting-Anbieter gehostet | [Händlerverantwortung](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview#merchant-responsibilities): Der Händler oder sein Hosting-Anbieter verwaltet die Infrastruktur und alle Plattformdienste. |
 
 **Auswirkungen auf die Architektur**
 
@@ -188,7 +190,7 @@ Das Migrationsbewertungs-Tool konzentriert sich auf das Verständnis der gesamte
 
 Die Bewertung ist eher ein Planungs- als ein Ausführungswerkzeug. Er ermittelt, was modernisiert werden sollte, schätzt die Komplexität der Implementierung ein und gibt Empfehlungen. Implementierungsentscheidungen und Architekturvalidierung bleiben gemeinsame Aktivitäten von Adobe, Partnern und Customer-Engineering-Teams.
 
-Daten, die in benutzerdefinierten Tabellen von Erweiterungen von Drittanbietern gespeichert werden, werden als Überlegungen zur Migration angezeigt. Bei der standardmäßigen Datenmigration werden diese Daten nicht automatisch migriert. Zur Unterstützung dieser Szenarien könnten benutzerdefinierte [!DNL App Builder] erforderlich sein. Weitere Informationen finden [&#x200B; im &#x200B;](#data-migration-commerce-data-migration-service) zur Datenmigration .
+Daten, die in benutzerdefinierten Tabellen von Erweiterungen von Drittanbietern gespeichert werden, werden als Überlegungen zur Migration angezeigt. Bei der standardmäßigen Datenmigration werden diese Daten nicht automatisch migriert. Zur Unterstützung dieser Szenarien könnten benutzerdefinierte [!DNL App Builder] erforderlich sein. Weitere Informationen finden [ im ](#data-migration-commerce-data-migration-service) zur Datenmigration .
 
 Die Bewertung bietet Analysen für die Workflows zur Anpassung der Storefront und Datenmigration:
 
@@ -361,8 +363,8 @@ Da jede Erweiterung ihre Daten unterschiedlich modelliert, kann ein Migrationspf
 
 ### Nächste Schritte
 
-Wenn Sie bereit für die Migration sind, füllen Sie den [Fragebogen zur Datenmigration](../assets/data-migration-scoping-questionnaire.xlsx) aus, der die Quelltopologie, den Entitätsbereich, die Volumes, Compliance-Beschränkungen, die Umstellungsmechanik und alle [benutzerdefinierten Tabellen) &#x200B;](#custom-and-third-party-data), die für die Migrationsplanung erforderlich sind. Durch das Ausfüllen dieses Fragebogens kann Adobe Ihre Umgebung bewerten und ein Migrationsfenster planen.
+Wenn Sie bereit für die Migration sind, füllen Sie den [Fragebogen zur Datenmigration](../assets/data-migration-scoping-questionnaire.xlsx) aus, der die Quelltopologie, den Entitätsbereich, die Volumes, Compliance-Beschränkungen, die Umstellungsmechanik und alle [benutzerdefinierten Tabellen) ](#custom-and-third-party-data), die für die Migrationsplanung erforderlich sind. Durch das Ausfüllen dieses Fragebogens kann Adobe Ihre Umgebung bewerten und ein Migrationsfenster planen.
 
 Lesen Sie die [Handbuch zum Tool für die Massendatenmigration](bulk-data/migration-tool.md), um mehr über den Workflow, die unterstützten Daten und die Verifizierung zu erfahren.
 
-Systemintegratoren, die eine Quellumgebung vorbereiten, können auch die standardmäßige [Adobe Commerce Cloud-CLI](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) und die [Adobe Developer Console](https://developer.adobe.com) für IMS-Anmeldeinformationen verwenden.
+Systemintegratoren, die eine Quellumgebung vorbereiten, können auch die standardmäßige [Adobe Commerce Cloud-CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) und die [Adobe Developer Console](https://developer.adobe.com) für IMS-Anmeldeinformationen verwenden.

@@ -1,20 +1,42 @@
 ---
 title: Deutlicher Schutz vor Betrug
-description: Automatisierten Betrugsschutz für mit Signifyd  [!DNL Payment Services] .
+description: Automatisierten Betrugsschutz für [!DNL Payment Services] mit Signifyd aktivieren.
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security, Paas, Saas
 exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '421'
 ht-degree: 0%
-
 ---
-
 # Deutlicher Schutz vor Betrug
 
-Mit der Erweiterung „Signifyd[&#x200B; können Sie den automatischen Schutz vor Betrug für [!DNL Payment Services] &#x200B;](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
+Mit der Erweiterung „Signifyd[ können Sie den automatischen Schutz vor Betrug für [!DNL Payment Services] ](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
 
 Adobe Commerce unterstützt Signifyd-Versionen 5.4.0 und höher. [!DNL Payment Services] unterstützt Signifikante Flüsse vor und nach der Authentifizierung.
 
@@ -33,7 +55,7 @@ Sie müssen direkt mit Signifyd kommunizieren, um die Erweiterung für die Verwe
 Beim Onboarding mit Signified müssen Sie:
 
 1. Kontakt Angegeben, um ein neues Konto einzurichten.
-1. Standardmäßig ist Signifyd [auf die Zulassungsliste gesetzt &#x200B;](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md) um sicherzustellen, dass Signifyd keinen Trigger für andere Zahlungsoptionen erzeugt, die es derzeit nicht unterstützt. Wenn Sie eine bestimmte Zahlungsmethode verbieten möchten, müssen Sie Änderungen vornehmen.
+1. Standardmäßig ist Signifyd [auf die Zulassungsliste gesetzt ](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md) um sicherzustellen, dass Signifyd keinen Trigger für andere Zahlungsoptionen erzeugt, die es derzeit nicht unterstützt. Wenn Sie eine bestimmte Zahlungsmethode verbieten möchten, müssen Sie Änderungen vornehmen.
 1. Bestätigen Sie mit Signifyd, dass PayPal keine Bestellungen über die Betrugsschutzeinstellung des Händlers in PayPal zurückweist, die von Signifyd genehmigt werden könnten.
 1. Aktivieren Sie die Signify-Erweiterung, um mit [!DNL Payment Services] kompatibel zu sein:
    * Bei Verwendung von [!DNL Payment Services] im _Live_-Modus muss sich SignifyID im Produktionsmodus befinden.
@@ -45,12 +67,12 @@ Da Signifyd einige Maßnahmen bei Ihren Bestellungen ergreift, ist es notwendig,
 
 Diese Konfigurationsoptionen sind nicht mit den Zahlungsdiensten und der Signified-Integration kompatibel:
 
-* Wenn [!DNL Payment Services] mit der `Authorize` Zahlungsaktion konfiguriert ist _und_ sich im `PostAuth` befindet, wobei die _[!UICONTROL Decline Guarantees]_&#x200B;Option auf **Gutschrift erstellen**&#x200B;gesetzt ist.
+* Wenn [!DNL Payment Services] mit der `Authorize` Zahlungsaktion konfiguriert ist _und_ sich im `PostAuth` befindet, wobei die _[!UICONTROL Decline Guarantees]_Option auf **Gutschrift erstellen**gesetzt ist.
 
   Grund: [!DNL Payment Services] erstellt eine Autorisierungstransaktion, die Signify dann zurückerstatten versucht.
 
 
-* [!DNL Payment Services] wird mit der `Authorize and Capture` Zahlungsaktion konfiguriert _und_ Signifyd befindet sich im `PostAuth`-Modus, wobei die _[!UICONTROL Decline Guarantees]_&#x200B;Option auf **Auftrag stornieren**.
+* [!DNL Payment Services] wird mit der `Authorize and Capture` Zahlungsaktion konfiguriert _und_ Signifyd befindet sich im `PostAuth`-Modus, wobei die _[!UICONTROL Decline Guarantees]_Option auf **Auftrag stornieren**.
 
   Grund: [!DNL Payment Services] erstellt eine Erfassungstransaktion, die Signifyd dann zu annullieren versucht.
 

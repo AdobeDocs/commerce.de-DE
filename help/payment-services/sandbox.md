@@ -5,7 +5,31 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: fc9fb7a63e4e7c3dd862ed710acdfa8561c91ec5
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
@@ -29,7 +53,7 @@ So schließen Sie das Sandbox-Onboarding ab:
       Wenn Sie während des PayPal-Onboarding-Prozesses ein PayPal-Sandbox-Konto erstellt haben, müssen Sie [Ihre Onboarding-Sandbox zurücksetzen](#reset-your-sandbox-account) da Sie sonst Ihre E-Mail nicht verifizieren können.
 
    1. Wählen Sie **[!UICONTROL Business]** als Kontotyp aus und klicken Sie auf **[!UICONTROL Create]**.
-   1. Klicken Sie im Abschnitt _[!UICONTROL Sandbox Accounts]_&#x200B;auf die drei Punkte in der Spalte&#x200B;_[!UICONTROL Manage accounts]_ für das von Ihnen erstellte Sandbox-Konto.
+   1. Klicken Sie im Abschnitt _[!UICONTROL Sandbox Accounts]_auf die drei Punkte in der Spalte_[!UICONTROL Manage accounts]_ für das von Ihnen erstellte Sandbox-Konto.
    1. Klicken Sie auf **[!UICONTROL View/edit account]**.
 
       ![PayPal - Sandbox-Konto anzeigen/bearbeiten](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -72,7 +96,7 @@ So setzen Sie Ihr Sandbox-Konto zurück:
 
 ## Telefonnummer des Kontakts aktivieren
 
-Mit der Telefonnummer des Kontakts können Sie die Telefonnummern des Kontakts abrufen, die PayPal von Ihren Kunden sammelt. PayPal sammelt immer Kontakt-Telefonnummern von PayPal-Kontoinhabern, um ihre Identität zu bestätigen und sie zu kontaktieren, um Probleme mit ihren Konten zu lösen oder ihre Erfüllungsprozesse abzuschließen. PayPal rät jedoch davon ab, Kontaktnummern direkt vom Händler zu verwenden, da dies negative Auswirkungen auf den Umsatz haben kann. Weitere Informationen finden [&#x200B; in der Dokumentation &#x200B;](https://www.sandbox.paypal.com/businessmanage/preferences/website)PayPal - Telefonnummern für Kontakte“.
+Mit der Telefonnummer des Kontakts können Sie die Telefonnummern des Kontakts abrufen, die PayPal von Ihren Kunden sammelt. PayPal sammelt immer Kontakt-Telefonnummern von PayPal-Kontoinhabern, um ihre Identität zu bestätigen und sie zu kontaktieren, um Probleme mit ihren Konten zu lösen oder ihre Erfüllungsprozesse abzuschließen. PayPal rät jedoch davon ab, Kontaktnummern direkt vom Händler zu verwenden, da dies negative Auswirkungen auf den Umsatz haben kann. Weitere Informationen finden [ in der Dokumentation ](https://www.sandbox.paypal.com/businessmanage/preferences/website)PayPal - Telefonnummern für Kontakte“.
 
 Diese Funktion ist standardmäßig `off`. Wenn Sie diese Option aktivieren, können Store-Administratoren Telefonnummern sehen, wenn ein Kunde einen markenspezifischen Checkout-Fluss außerhalb der Checkout-Seite abschließt.
 
@@ -94,7 +118,7 @@ So konfigurieren Sie das Land des Käufers:
 
 1. Erweitern Sie den Abschnitt _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 
-1. Erweitern Sie im Abschnitt _[!UICONTROL Payment Services]_&#x200B;den Abschnitt&#x200B;_[!UICONTROL General Configuration]_ .
+1. Erweitern Sie im Abschnitt _[!UICONTROL Payment Services]_den Abschnitt_[!UICONTROL General Configuration]_ .
 
 1. Legen Sie **[!UICONTROL Method]** auf `Sandbox` fest.
 
@@ -110,4 +134,4 @@ So konfigurieren Sie das Land des Käufers:
 
 Es wird dringend empfohlen, Testdatenräume für Integrations- und Staging-Umgebungen zu verwenden und Zahlungen in der Produktion mit echten Kreditkarten und Banken zu testen, bevor Sie diese Funktion Käufern bereitstellen.
 
-Weitere Informationen [&#x200B; Sie unter &#x200B;](test-validate.md) und Validieren .
+Weitere Informationen [ Sie unter ](test-validate.md) und Validieren .

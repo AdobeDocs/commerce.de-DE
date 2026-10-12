@@ -7,17 +7,35 @@ feature: Payments, Checkout, Configuration, Paas, Saas
 TQID: 'https://experienceleague.adobe.com/U1zGAU6vYKjk2tc2KXnvyqnYdbA2HKTCNZSKhHdS0Vw'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-source-git-commit: d754c71e287d7d9ff297dd7d95efbaaae7ffc2fc
+    internal-label: Configuration
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 393
+source-wordcount: '393'
 ht-degree: 0%
-
 ---
-
 # Verbinden eines anderen PayPal-Kontos für eine Website
 
 Für Commerce-Instanzen mit **mehreren Websites** benötigen Sie möglicherweise **verschiedene PayPal-Händlerkonten**. [!DNL Payment Services] aktiviert **Website-** PayPal-Onboarding nach **global** Onboarding.
@@ -30,7 +48,7 @@ Für Commerce-Instanzen mit **mehreren Websites** benötigen Sie möglicherweise
 
 Onboarding auf Website-Ebene ist nur verfügbar, wenn Ihr Store diese Anforderungen erfüllt:
 
-- [Commerce Services-Connector](https://experienceleague.adobe.com/de/docs/commerce/user-guides/integration-services/saas) Einrichtung ist abgeschlossen.
+- [Commerce Services-Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) Einrichtung ist abgeschlossen.
 - Ein PayPal-Konto ist im globalen Umfang (Standardkonfiguration) verbunden.
 
 Sie können dies bestätigen, indem Sie überprüfen, ob die folgenden Felder im Standardbereich ausgefüllt sind:
@@ -39,11 +57,11 @@ Sie können dies bestätigen, indem Sie überprüfen, ob die folgenden Felder im
 - [!UICONTROL Payment Services Production ID]
 - [!UICONTROL PayPal Merchant ID]
 
-Wenn diese Felder leer sind, müssen Sie zunächst [globales Onboarding &#x200B;](configure-admin.md). Die Schaltfläche **[!UICONTROL Connect different account]** ist deaktiviert, bis Sie die Voraussetzungen erfüllt haben.
+Wenn diese Felder leer sind, müssen Sie zunächst [globales Onboarding ](configure-admin.md). Die Schaltfläche **[!UICONTROL Connect different account]** ist deaktiviert, bis Sie die Voraussetzungen erfüllt haben.
 
 ## Starten der Verbindung auf Website-Ebene
 
-1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Sales]**&#x200B;und wählen Sie **[!UICONTROL Payment Methods]**.
+1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Sales]**und wählen Sie **[!UICONTROL Payment Methods]**.
 1. Wechseln Sie in der Bereichsauswahl in der oberen linken Ecke von **[!UICONTROL Default Config]** zu der **[!UICONTROL Website]**, die Sie integrieren möchten.
 1. Klicken Sie auf **[!UICONTROL Connect different account]**.
 

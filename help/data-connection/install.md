@@ -1,27 +1,31 @@
 ---
-title: Installieren [!DNL Data Connection]
-description: Erfahren Sie, wie Sie die Erweiterung  [!DNL Data Connection]  Adobe Commerce installieren, aktualisieren und deinstallieren.
+title: Installieren von [!DNL Data Connection]
+description: Erfahren Sie, wie Sie die [!DNL Data Connection]-Erweiterung von Adobe Commerce installieren, aktualisieren und deinstallieren.
 role: Admin, Developer
 feature: Install
 exl-id: 853ef2d1-85cb-41a8-9b07-887a758ed401
-TQID: https://experienceleague.adobe.com/EbYHB6L9Q7bZNnoz3-yT4aaBcRiLiatvjO-hQyGOwoo
+TQID: 'https://experienceleague.adobe.com/EbYHB6L9Q7bZNnoz3-yT4aaBcRiLiatvjO-hQyGOwoo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+    internal-label: Developer
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 493
+source-wordcount: '494'
 ht-degree: 0%
-
 ---
-
 # Installieren von [!DNL Data Connection]
 
-Bevor Sie die Erweiterung installieren, [&#x200B; Sie die Voraussetzungen &#x200B;](overview.md#prerequisites).
+Bevor Sie die Erweiterung installieren, [ Sie die Voraussetzungen ](overview.md#prerequisites).
 
 ## Installieren der Erweiterung
 
@@ -89,7 +93,7 @@ Die Installation kann je nach Bereitstellungstyp abgeschlossen werden: Adobe Com
 
 #### Über die Cloud-Infrastruktur
 
-Aktivieren Sie in Adobe Commerce auf der Cloud-Infrastruktur die globale Variable `ENABLE_EVENTING` in `.magento.env.yaml`. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-global#enable_eventing).
+Aktivieren Sie in Adobe Commerce auf der Cloud-Infrastruktur die globale Variable `ENABLE_EVENTING` in `.magento.env.yaml`. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-global#enable_eventing).
 
 ```bash
 stage:
@@ -177,4 +181,4 @@ Um auf eine Hauptversion zu aktualisieren, z. B. von 2.0.0 auf 3.0.0, bearbeiten
 
 ## Deinstallieren der [!DNL Data Connection] {#uninstall}
 
-Informationen zum Deinstallieren der [!DNL Data Connection]-Erweiterung finden Sie unter [Module deinstallieren](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
+Informationen zum Deinstallieren der [!DNL Data Connection]-Erweiterung finden Sie unter [Module deinstallieren](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).

@@ -1,35 +1,47 @@
 ---
-title: Fehlerbehebungsszenarien für den  [!DNL Adobe Commerce Optimizer Connector]
-description: Diagnostizieren und beheben Sie unerwartetes Verhalten in  [!DNL Adobe Commerce Optimizer Connector] , das durch eine falsche Konfiguration oder Fehlinterpretation von Synchronisierungsergebnissen verursacht wurde.
+title: Fehlerbehebungsszenarien für die [!DNL Adobe Commerce Optimizer Connector]
+description: Diagnostizieren und beheben Sie unerwartetes Verhalten in [!DNL Adobe Commerce Optimizer Connector], das durch eine falsche Konfiguration oder Fehlinterpretation von Synchronisierungsergebnissen verursacht wurde.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
+    internal-label: Data Transfer
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
+    internal-label: Troubleshooting
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 645
+source-wordcount: '646'
 ht-degree: 0%
-
 ---
-
 
 # Fehlerbehebungsszenarien für die [!DNL Adobe Commerce Optimizer Connector]
 
@@ -45,7 +57,7 @@ Auf dieser Seite werden Verhaltensweisen beschrieben, die Sie beim Arbeiten mit 
 
 - Warten Sie einige Minuten und aktualisieren Sie die [!DNL Adobe Commerce Optimizer].
 - Vergewissern Sie sich, dass die in [!DNL Adobe Commerce] konfigurierte Mandanten-ID mit der [!DNL Commerce Optimizer] Umgebung übereinstimmt, die Sie überprüfen.
-- Überprüfen Sie, ob [&#x200B; richtige (](../../optimizer/setup/catalog-sources.md)) oder das richtige Preisbuch in [!DNL Commerce Optimizer] ausgewählt ist.
+- Überprüfen Sie, ob [ richtige (](../../optimizer/setup/catalog-sources.md)) oder das richtige Preisbuch in [!DNL Commerce Optimizer] ausgewählt ist.
 
 ## Produkte fehlen im exportierten Katalog
 

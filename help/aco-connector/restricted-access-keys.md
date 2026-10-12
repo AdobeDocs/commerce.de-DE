@@ -3,7 +3,7 @@ title: Verwalten von eingeschränkten Zugriffsschlüsseln für freigegebene B2B-
 description: Erfahren Sie, wie Sie die eingeschränkten Zugriffsschlüssel verwalten, die der Adobe Commerce Optimizer-Connector verwendet, um Prognosen für den B2B-freigegebenen Katalog zu sichern.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -34,7 +36,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 0%
@@ -60,7 +62,7 @@ Sie können der Katalogansicht über das Raster Freigegebener Katalog oder über
 
 >[!NOTE]
 >
->Eine Referenz der Felder auf dieser Seite finden Sie unter [Verwaltung von eingeschränkten Zugriffsschlüsseln](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} im *Commerce Admin Guide*.—>
+>Eine Referenz der Felder auf dieser Seite finden Sie unter [Verwaltung von eingeschränkten Zugriffsschlüsseln](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} im *Commerce Admin Guide*.—>
 
 ## Wenn Sie mehr als den automatischen Schlüssel benötigen {#when-you-need-more-than-the-automatic-key}
 
@@ -159,7 +161,7 @@ Die automatische Tastenrotation ist noch nicht verfügbar.
 
 >[!MORELIKETHIS]
 >
-> - [Verwalten von eingeschränkten Zugriffsschlüsseln](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Vollständiger Feldverweis für diese Seite im *Commerce Admin Guide* —>
+> - [Verwalten von eingeschränkten Zugriffsschlüsseln](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Vollständiger Feldverweis für diese Seite im *Commerce Admin Guide* —>
 > - [Synchronisierung der Katalogansicht überwachen](catalog-view-sync-status.md) — Überwachen der Katalogansichten, die durch diese Schlüssel geschützt werden
 > - [Private Katalogansichten](/help/optimizer/setup/private-catalog-view.md) - Erfahren Sie, was eine von einem Connector verwaltete private Katalogansicht ist
 > - [Eingeschränkte Zugriffsschlüssel](/help/optimizer/setup/restricted-access-keys.md) - Erfahren Sie, wie der manuelle, ACO Studio-basierte Schlüsselfluss für Nicht-B2B-Anwendungsfälle funktioniert

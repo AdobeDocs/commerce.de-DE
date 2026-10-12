@@ -1,16 +1,27 @@
 ---
 title: Verarbeitung der Ebenen 2 und 3
-description: Kartenzahlungsverarbeitungs-Ebenen innerhalb  [!DNL Payment Services]  Transaktionen.
+description: Kartenzahlungsverarbeitungs-Ebenen innerhalb [!DNL Payment Services] Transaktionen.
 role: Admin
 feature: Payments, Paas, Saas
 exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '363'
 ht-degree: 0%
-
 ---
-
 # Verarbeitung der Ebenen 2 und 3
 
 [!DNL Payment Services] bietet erweiterte Kartenverarbeitungsfunktionen, mit denen Händler ihre Zahlungsvorgänge optimieren und Interbankenentgelte senken können. Es stehen drei Ebenen der Kartenverarbeitung zur Verfügung, die jeweils unterschiedliche Anforderungen an Transaktionsdaten aufweisen.
@@ -29,7 +40,7 @@ ht-degree: 0%
 
 ![Kartendetails](assets/cards-details-level-processing.png){width="500" zoomable="yes"}
 
-Weitere Informationen finden [&#x200B; in der &#x200B;](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank}-Dokumentation für PayPal-Entwickler unter „Zahlungsabwicklung“.
+Weitere Informationen finden [ in der ](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank}-Dokumentation für PayPal-Entwickler unter „Zahlungsabwicklung“.
 
 ### Stufe 1
 
@@ -49,11 +60,11 @@ Siehe [Was ist IC+?](https://www.paypal.com/us/brc/article/what-is-interchange-p
 
 Um sich für die Verarbeitung auf Stufe 2 oder Stufe 3 zu qualifizieren, müssen die Händler die vorherigen Informationen übermitteln, obwohl es die Kartennetzwerke sind, die letztendlich bestimmen, für welche Stufe eine Transaktion bei der Verarbeitung qualifiziert ist.
 
-Weitere Informationen finden Sie in der [&#x200B; zu &#x200B;](https://www.paypal.com/us/cshelp/article/ts2278?_ga=1.131773126.875104296.1712843492){target=_blank} in der Entwicklerdokumentation zu PayPal.
+Weitere Informationen finden Sie in der [ zu ](https://www.paypal.com/us/cshelp/article/ts2278?_ga=1.131773126.875104296.1712843492){target=_blank} in der Entwicklerdokumentation zu PayPal.
 
 Die Verarbeitung der Ebenen 2 und 3 ist für [!DNL Payment Services] Händler auf Store-Ebene standardmäßig deaktiviert.
 
-Level 2 und Level 3 Verarbeitung sind verfügbar, wenn Sie bereits IC++ Preise verwenden. Um diese Funktion zu aktivieren, können Sie dies über die [Befehlszeilenschnittstelle (CLI) &#x200B;](configure-cli.md).
+Level 2 und Level 3 Verarbeitung sind verfügbar, wenn Sie bereits IC++ Preise verwenden. Um diese Funktion zu aktivieren, können Sie dies über die [Befehlszeilenschnittstelle (CLI) ](configure-cli.md).
 
 >[!IMPORTANT]
 >

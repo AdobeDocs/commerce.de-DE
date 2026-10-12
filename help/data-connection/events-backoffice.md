@@ -4,34 +4,43 @@ description: Erfahren Sie, welche Daten jedes Back-Office-Ereignis erfasst.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 65cf8150-1a14-4d4c-aa0c-1545109e4fe7
-TQID: https://experienceleague.adobe.com/ARHjckt-D38iqChgfJpiVGXO8Pz2YN6Oj5HFWmwCVEA
+TQID: 'https://experienceleague.adobe.com/ARHjckt-D38iqChgfJpiVGXO8Pz2YN6Oj5HFWmwCVEA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 5594f40c-5dc7-522f-a0e0-f84045197b3c
+    internal-label: Eventing
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+    internal-label: Personalization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 3716
+source-wordcount: '3716'
 ht-degree: 0%
-
 ---
-
 # [!DNL Data Connection] Back-Office-Ereignisse
 
 Im Folgenden sind die Commerce-Backoffice-Ereignisse aufgeführt, die bei der Installation der [!DNL Data Connection]-Erweiterung verfügbar sind. Die von diesen Ereignissen erfassten Daten werden an die Adobe Experience Platform gesendet. Sie können auch [benutzerspezifische Ereignisse](custom-events.md) erstellen, um zusätzliche Daten zu erfassen, die nicht vorkonfiguriert bereitgestellt werden.
 
-Zusätzlich zu den Daten, die die folgenden Ereignisse erfassen, erhalten Sie auch [andere Daten](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/js-overview) bereitgestellt von der Adobe Experience Platform Web SDK.
+Zusätzlich zu den Daten, die die folgenden Ereignisse erfassen, erhalten Sie auch [andere Daten](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) bereitgestellt von der Adobe Experience Platform Web SDK.
 
 Back-Office-Ereignisse enthalten Server-seitige Daten. Diese Daten umfassen [Bestellstatus](#order-status) Informationen wie z. B. ob eine Bestellung aufgegeben, storniert, zurückerstattet, versendet oder abgeschlossen wurde. Server-seitige Daten enthalten auch [Kundenprofilereignisse](#customer-profile-events) Informationen, beispielsweise ob ein Konto erstellt, aktualisiert oder gelöscht wurde.
 
 >[!NOTE]
 >
->Alle Backoffice-Ereignisse enthalten das Feld [`identityMap`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/profile/identitymap) , das die E-Mail-Adresse des Käufers, sofern verfügbar, und die ECID enthält.
+>Alle Backoffice-Ereignisse enthalten das Feld [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) , das die E-Mail-Adresse des Käufers, sofern verfügbar, und die ECID enthält.
 
 ## Bestellstatus
 
@@ -418,7 +427,7 @@ Von der Server-Seite erfasste Profilereignisse enthalten Kontoinformationen wie 
 
 >[!NOTE]
 >
->Jedes Kundenprofilereignis enthält auch das Feld [`identityMap`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/profile/identitymap) , das die vom System generierte Commerce-Kunden-ID als primäre Kennung für das Profil und eine E-Mail-ID enthält, die als sekundäre Kennung verwendet wird. [Erfahren Sie](custom-identities.md) wie Sie benutzerdefinierte Identitätsattribute erstellen, um die Identifizierung von Kundenprofilen zu verbessern.
+>Jedes Kundenprofilereignis enthält auch das Feld [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) , das die vom System generierte Commerce-Kunden-ID als primäre Kennung für das Profil und eine E-Mail-ID enthält, die als sekundäre Kennung verwendet wird. [Erfahren Sie](custom-identities.md) wie Sie benutzerdefinierte Identitätsattribute erstellen, um die Identifizierung von Kundenprofilen zu verbessern.
 
 ### accountCreated
 

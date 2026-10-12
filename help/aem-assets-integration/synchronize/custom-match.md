@@ -3,27 +3,33 @@ title: Benutzerdefinierter automatischer Abgleich
 description: Erfahren Sie, wie die benutzerdefinierte automatische Zuordnung besonders für Händler mit komplexer Abgleichlogik oder für Händler nützlich ist, die auf einem Drittanbietersystem basieren, das keine Metadaten in AEM Assets einfügen kann.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-TQID: https://experienceleague.adobe.com/RHRfW99iShMpajrEC8BhvoMEfQ-ABdipWTCdK-KaVH4
+TQID: 'https://experienceleague.adobe.com/RHRfW99iShMpajrEC8BhvoMEfQ-ABdipWTCdK-KaVH4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 7ecedcc7c17abdeb64507d8f74ec6fc103b361cc
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
 ---
 # Benutzerdefinierter automatischer Abgleich
 
-Wenn die standardmäßige automatische Abgleichstrategie (**OOTB Automatic Matching**) nicht an Ihren spezifischen Geschäftsanforderungen ausgerichtet ist, wählen Sie die Option Benutzerdefinierte Abgleichung aus. Diese Option unterstützt die Verwendung von [Adobe Developer App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) zum Entwickeln einer benutzerdefinierten Matcher-Anwendung, die komplexe Matching-Logik verarbeitet, oder von Assets, die von einem Drittanbietersystem stammen, das keine Metadaten in AEM Assets einfügen kann.
+Wenn die standardmäßige automatische Abgleichstrategie (**OOTB Automatic Matching**) nicht an Ihren spezifischen Geschäftsanforderungen ausgerichtet ist, wählen Sie die Option Benutzerdefinierte Abgleichung aus. Diese Option unterstützt die Verwendung von [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) zum Entwickeln einer benutzerdefinierten Matcher-Anwendung, die komplexe Matching-Logik verarbeitet, oder von Assets, die von einem Drittanbietersystem stammen, das keine Metadaten in AEM Assets einfügen kann.
 
 ## Konfigurieren von benutzerdefiniertem automatischem Abgleich
 
@@ -125,9 +131,9 @@ Sie können die `workspace.json` Datei von der [Adobe Developer Console herunter
 
 ## Asynchrone Konfiguration speichern
 
-Wenn in Ihrer Commerce-Instanz die Option [Async Config Save](https://experienceleague.adobe.com/de/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save) aktiviert ist, werden Konfigurationsänderungen von einem asynchronen Verbraucher in die Warteschlange gestellt und angewendet, anstatt sofort in derselben Anfrage gespeichert zu werden. Um in diesem Modus eine `workspace.json`-Datei für die benutzerdefinierte automatische Zuordnung hochzuladen, führen Sie die folgenden Schritte in der richtigen Reihenfolge aus:
+Wenn in Ihrer Commerce-Instanz die Option [Async Config Save](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save) aktiviert ist, werden Konfigurationsänderungen von einem asynchronen Verbraucher in die Warteschlange gestellt und angewendet, anstatt sofort in derselben Anfrage gespeichert zu werden. Um in diesem Modus eine `workspace.json`-Datei für die benutzerdefinierte automatische Zuordnung hochzuladen, führen Sie die folgenden Schritte in der richtigen Reihenfolge aus:
 
-1. Bestätigen Sie, dass Commerce Async Config Save [enabled](https://experienceleague.adobe.com/de/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save) ist.
+1. Bestätigen Sie, dass Commerce Async Config Save [enabled](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save) ist.
 
 1. Navigieren Sie vom Administrator aus zu **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**.
 
@@ -161,7 +167,7 @@ Wenn in Ihrer Commerce-Instanz die Option [Async Config Save](https://experience
 
 ## Benutzerdefinierte Matcher-API-Endpunkte
 
-Wenn Sie eine benutzerdefinierte Matcher-Anwendung mit [App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} erstellen, muss die Anwendung die folgenden Endpunkte bereitstellen:
+Wenn Sie eine benutzerdefinierte Matcher-Anwendung mit [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} erstellen, muss die Anwendung die folgenden Endpunkte bereitstellen:
 
 * Endpunkt **App Builder-Asset zur Produkt** URL
 * Endpunkt **App Builder-Produkt zu Asset** URL
@@ -330,7 +336,7 @@ Der `asset_matches`-Parameter enthält die folgenden Attribute:
 | Attribut | Datentyp | Beschreibung |
 | --- | --- | --- |
 | `asset_id` | Zeichenfolge | Die Asset-ID. |
-| `asset_roles` | Array | Asset-Rollen. Verwendet die unterstützten Commerce-Asset-Rollen [&#128279;](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)`thumbnail`, `image`, `small_image` und `swatch_image`. Bei AEM Assets Integration Extension 1.4.6 und höher werden auch benutzerdefinierte Bildrollen (wie `hero` oder `custom_role_1`) akzeptiert. |
+| `asset_roles` | Array | Asset-Rollen. Verwendet die unterstützten Commerce-Asset-Rollen ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)`thumbnail`, `image`, `small_image` und `swatch_image`. [Bei AEM Assets Integration Extension 1.4.6 und höher werden auch benutzerdefinierte Bildrollen (wie `hero` oder `custom_role_1`) akzeptiert. |
 | `asset_format` | Zeichenfolge | Das Asset-Format. Mögliche Werte sind `image` und `video`. |
 | `asset_position` | Zahl | Die Position des Assets in der Produktgalerie. |
 

@@ -1,16 +1,27 @@
 ---
-title: Positionen für [!DNL Payment Services]
-description: Erfahren Sie mehr über Zeileneinträge für  [!DNL Payment Services]  und wie Sie Zeileneinträge im Händler-Dashboard anzeigen können.
+title: Zeileneinträge für [!DNL Payment Services]
+description: Erfahren Sie mehr über Zeileneinträge für [!DNL Payment Services] und wie Sie Zeileneinträge im Händler-Dashboard anzeigen können.
 feature: Payments, Paas, Saas
 role: User
 exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
-source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '690'
 ht-degree: 0%
-
 ---
-
 # Zeileneinträge für [!DNL Payment Services]
 
 Die Positionen für [!DNL Payment Services] sind die in einer Bestellung enthaltenen Artikel. Diese Zeileneinträge enthalten u. a. folgende Informationen:
@@ -31,7 +42,7 @@ Zeileneinträge sind standardmäßig für [!DNL Payment Services] aktiviert. So 
 
 1. Erweitern Sie den Abschnitt _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 
-1. Erweitern Sie im Abschnitt _[!UICONTROL Payment Services]_&#x200B;den Abschnitt&#x200B;_[!UICONTROL Line Items]_ .
+1. Erweitern Sie im Abschnitt _[!UICONTROL Payment Services]_den Abschnitt_[!UICONTROL Line Items]_ .
 
 1. Wählen Sie **[!UICONTROL Line Items Enabled]** &quot;`Yes`&quot; aus, um Zeileneinträge zu aktivieren (Standard), oder &quot;`No`&quot;, um sie zu deaktivieren.
 
@@ -145,11 +156,11 @@ Das `upc`-Objekt enthält die folgenden Attribute:
 
 +++
 
-Weitere Informationen [&#x200B; diesen Feldern und deren Einschränkungen finden Sie in der &#x200B;](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank} für PayPal-Entwickler zu Zeileneinträgen .
+Weitere Informationen [ diesen Feldern und deren Einschränkungen finden Sie in der ](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank} für PayPal-Entwickler zu Zeileneinträgen .
 
 ## Zeileneinträge verwalten
 
-Adobe Commerce [berechnet die Steuer auf der Grundlage des Gesamtbetrags für jede Zeile](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank} was zu Rundungsproblemen führen kann, wenn mehrere Mengen desselben Artikels bestellt werden oder wenn im Katalog steuerinklusive Preise angezeigt werden. In solchen Fällen kann die Gesamtmenge in zwei Zeilen aufgeteilt werden, aber die Menge entspricht der Gesamtzahl der bestellten Artikel.
+Adobe Commerce [berechnet die Steuer auf der Grundlage des Gesamtbetrags für jede Zeile](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank} was zu Rundungsproblemen führen kann, wenn mehrere Mengen desselben Artikels bestellt werden oder wenn im Katalog steuerinklusive Preise angezeigt werden. In solchen Fällen kann die Gesamtmenge in zwei Zeilen aufgeteilt werden, aber die Menge entspricht der Gesamtzahl der bestellten Artikel.
 
 > Beispiel für Zeileneinträge mit Rundungsproblemen in der Ansicht „Händler-Dashboard“
 

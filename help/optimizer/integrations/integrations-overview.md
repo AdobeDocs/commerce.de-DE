@@ -5,15 +5,29 @@ solution: Commerce
 feature: Integration, Catalog Management
 role: Developer, Admin
 level: Beginner
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für  [!DNL Adobe Commerce Optimizer]  (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
-source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '410'
 ht-degree: 0%
-
 ---
-
 
 # [!DNL Adobe Commerce Optimizer] Integrationen
 
@@ -43,7 +57,7 @@ Adobe Experience Manager Sites Optimizer analysiert Commerce-Websites und verbes
 >
 >Für diese Funktion ist die **Ultima** Adobe Sites Optimizer-Lizenz erforderlich. Sie können eine Lizenz über Ihren technischen Adobe-Kundenberater anfordern. Sobald Ihr Konto bereitgestellt wurde, ist die Funktion „Opportunitys“ in der [!DNL Adobe Commerce Optimizer] verfügbar und Sie können mit KI-gesteuerten Einblicken beginnen, um Ihre Storefront- und Merchandising-Strategien zu optimieren.
 
-- [Opportunities](../manage-results/opportunities.md)
+- [Möglichkeiten](../manage-results/opportunities.md)
 
 ## Commerce Salesforce Connector {#commerce-salesforce-connector}
 

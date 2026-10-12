@@ -1,16 +1,33 @@
 ---
 title: Verwalten von nicht vorrätigen Produkten in [!DNL Live Search]
-description: Erfahren Sie, wie Sie nicht vorrätige Produkte in  [!DNL Live Search]  für Adobe Commerce verwalten. Konfigurieren Sie die Inventaranzeige, den Lagerfilter und die GraphQL-API-Filterung.
+description: Erfahren Sie, wie Sie in [!DNL Live Search] für Adobe Commerce nicht vorrätige Produkte verwalten. Konfigurieren Sie die Inventaranzeige, den Lagerfilter und die GraphQL-API-Filterung.
 feature: Services, Search
 role: Admin, Developer
 level: Intermediate
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '451'
 ht-degree: 0%
-
 ---
-
 # Verwalten von nicht vorrätigen Produkten
 
 Sie können steuern, wie nicht vorrätige Produkte in [!DNL Live Search] Such- und Kategorieergebnissen angezeigt werden, indem Sie die Inventarkonfiguration, Abfragezeitfilter und optionale Backend-Feature-Flags verwenden. Diese Optionen haben wichtige Einschränkungen, die in diesem Thema erläutert werden.
@@ -57,14 +74,14 @@ query productSearchInStockOnly {
 }
 ```
 
-Verwenden Sie diesen Ansatz, wenn Sie die Anfrage nicht über das [Live Search PLP Widget) &#x200B;](plp-styling.md).
+Verwenden Sie diesen Ansatz, wenn Sie die Anfrage nicht über das [Live Search PLP Widget) ](plp-styling.md).
 
 ### Nicht vorrätige Ergebnisse nach Lagerbestand anzeigen
 
 Um nicht vorrätige Produkte im Ergebnissatz, aber bei der Sortierung nach Relevanz immer nach vorrätigen Produkten zu behalten, kann Adobe eine interne Feature Flag für Ihre Umgebung aktivieren.
 
 - Dieses Feature Flag wird nicht in der Admin-Benutzeroberfläche von [!DNL Live Search] angezeigt.
-- Um diese anzufordern, [kontaktieren Sie den Adobe](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}Support und verweisen Sie auf die Funktion, um nicht vorrätige Produkte an das Ende der Suchergebnisse zu verschieben.
+- Um diese anzufordern, [kontaktieren Sie den Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}Support und verweisen Sie auf die Funktion, um nicht vorrätige Produkte an das Ende der Suchergebnisse zu verschieben.
 
 >[!NOTE]
 >
@@ -87,4 +104,4 @@ Um nicht vorrätige Produkte im gesamten Katalog auszublenden oder zu priorisier
 >[!MORELIKETHIS]
 >
 > - [Merchandising-Regeln suchen](rules.md)
-> - [Globale Inventory management-Optionen konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/configuration/configuration)
+> - [Globale Inventory management-Optionen konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/configuration)

@@ -1,14 +1,27 @@
 ---
 title: Konfigurieren von AEM Assets für Commerce Optimizer
-description: Erfahren Sie, wie Sie die AEM Assets-Integration für  [!DNL Adobe Commerce Optimizer] konfigurieren.
+description: Erfahren Sie, wie Sie die AEM Assets-Integration für [!DNL Adobe Commerce Optimizer] konfigurieren.
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 0%
-
 ---
-
 
 # Konfigurieren von AEM Assets für [!DNL Adobe Commerce Optimizer]
 
@@ -22,7 +35,7 @@ Die folgende Abbildung zeigt einen Überblick über die Produktsynchronisierung 
 
 Diese Integration verfügt über zwei unabhängige Ereignisflüsse. Beide verwenden [Adobe I/O Events](https://developer.adobe.com/events/docs/) zum Übertragen von Ereignissen an den Assets Integration Service, aber jede Richtung verwendet einen eigenen Ereignisanbieter:
 
-* **Von AEM Assets an den Assets-Integrationsdienst**: Wenn ein Asset genehmigt, abgelehnt oder entfernt wird, wird das Ereignis an den Assets-Integrationsdienst gesendet. Der Service ordnet Assets mithilfe von `match-by-SKU` (Metadatengesteuert) oder einem [benutzerdefinierten Matcher (App Builder) Produkten zu &#x200B;](../synchronize/custom-match.md){target=_blank} sendet dann die `product-asset` Zuordnungen an [!DNL Commerce Optimizer], wo sie als Produktebenen gespeichert werden.
+* **Von AEM Assets an den Assets-Integrationsdienst**: Wenn ein Asset genehmigt, abgelehnt oder entfernt wird, wird das Ereignis an den Assets-Integrationsdienst gesendet. Der Service ordnet Assets mithilfe von `match-by-SKU` (Metadatengesteuert) oder einem [benutzerdefinierten Matcher (App Builder) Produkten zu ](../synchronize/custom-match.md){target=_blank} sendet dann die `product-asset` Zuordnungen an [!DNL Commerce Optimizer], wo sie als Produktebenen gespeichert werden.
 
   >[!NOTE]
   >
@@ -56,10 +69,10 @@ Die [!DNL Commerce Optimizer]-Integration hat die folgenden Einschränkungen:
 
 Stellen Sie vor dem Konfigurieren der Integration Folgendes sicher:
 
-* Eine aktive [!DNL Adobe Commerce Optimizer] mit der Berechtigung **Produktvisualisierungen** (bündelt Dynamic Media mit OpenAPI-Funktionen + [AEM Assets Prime](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-prime)) oder eine vom Kunden bereitgestellte AEM Assets-Lizenz (z. B. **AEM Assets Ultimate**) mit aktivierter Dynamic Media-Funktion.
+* Eine aktive [!DNL Adobe Commerce Optimizer] mit der Berechtigung **Produktvisualisierungen** (bündelt Dynamic Media mit OpenAPI-Funktionen + [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)) oder eine vom Kunden bereitgestellte AEM Assets-Lizenz (z. B. **AEM Assets Ultimate**) mit aktivierter Dynamic Media-Funktion.
 * Zugriff auf eine AEM Assets as a Cloud Service-Umgebung.
 * Sowohl [!DNL Commerce Optimizer] als auch AEM Assets in derselben Adobe IMS-Organisation.
-* Dynamic Media mit aktivierter OpenAPI in Ihrer AEM Assets-Umgebung (die Aktivierungsschritte finden [&#x200B; unter „Konfigurieren &#x200B;](configure-aem.md#prerequisites) AEM Assets-Projekts„).
+* Dynamic Media mit aktivierter OpenAPI in Ihrer AEM Assets-Umgebung (die Aktivierungsschritte finden [ unter „Konfigurieren ](configure-aem.md#prerequisites) AEM Assets-Projekts„).
 
 ### AEM Assets zuerst konfigurieren
 
@@ -78,14 +91,14 @@ Folgen Sie [Installieren Sie das Paket assets-commerce manuell](configure-aem.md
 
 >[!IMPORTANT]
 >
->Bevor Sie ein Support-Ticket zur Aktivierung der Integration mit [!DNL Commerce Optimizer] senden, schließen Sie den Prozess zum [&#x200B; von AEM Assets &#x200B;](#configure-aem-assets-first). Für die Unterstützung müssen die AEM Assets-Umgebungen und das -Projekt so konfiguriert sein, dass sie die AEM Commerce-Integration unterstützen, einschließlich der Bereitstellung des `assets-commerce` (oder Self-Service-Äquivalents) für Metadaten und Ereignisse. Das Öffnen eines Tickets vor der Konfiguration von AEM kann die Einführung verzögern.
+>Bevor Sie ein Support-Ticket zur Aktivierung der Integration mit [!DNL Commerce Optimizer] senden, schließen Sie den Prozess zum [ von AEM Assets ](#configure-aem-assets-first). Für die Unterstützung müssen die AEM Assets-Umgebungen und das -Projekt so konfiguriert sein, dass sie die AEM Commerce-Integration unterstützen, einschließlich der Bereitstellung des `assets-commerce` (oder Self-Service-Äquivalents) für Metadaten und Ereignisse. Das Öffnen eines Tickets vor der Konfiguration von AEM kann die Einführung verzögern.
 
 Um die AEM Assets-Integration mit [!DNL Commerce Optimizer] zu integrieren, muss der Adobe-Support Ihre Adobe Commerce Optimizer-Instanz beim Assets Integration Service registrieren und sie abonnieren:
 
 * AEM Assets-Ereignisse (Asset genehmigt, aktualisiert, entfernt)
 * [!DNL Commerce Optimizer] Katalogereignisse (Produkt erstellt, aktualisiert)
 
-Um diesen Prozess einzuleiten, erstellen [ein Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) das die folgenden Informationen enthält:
+Um diesen Prozess einzuleiten, erstellen [ein Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) das die folgenden Informationen enthält:
 
 * **[!DNL Adobe Commerce Optimizer]Mandanten-ID** (Instanz-ID) in Ihrer [!DNL Commerce Optimizer]-URL oder in der Benutzeroberfläche von Commerce Cloud Manager.
 * **AEM-Programm-ID und Umgebungs** ID, die Sie beim Konfigurieren von [AEM Assets](#configure-aem-assets-first) für die Integration eingerichtet haben.
@@ -106,7 +119,7 @@ Wenn das Gebietsschema oder die Ebene nicht korrekt zugewiesen ist, werden **Bil
 
 Nach der Konfiguration synchronisiert die Integration `product-asset` automatisch.
 
-Weitere Informationen finden [&#x200B; unter &#x200B;](../synchronize/custom-match.md)Benutzerdefinierter automatischer Abgleich“.
+Weitere Informationen finden [ unter ](../synchronize/custom-match.md)Benutzerdefinierter automatischer Abgleich“.
 
 ### Beispiel für Übereinstimmung nach SKU-Workflow
 

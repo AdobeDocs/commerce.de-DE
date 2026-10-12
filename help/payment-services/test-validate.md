@@ -1,15 +1,32 @@
 ---
 title: Testen und Validieren
-description: Tests und Validierungen helfen sicherzustellen,  [!DNL Payment Services]  die Funktionen erwartungsgemäß funktionieren und die besten Zahlungsoptionen für Ihre Kunden bereitstellen
+description: Tests und Validierungen tragen dazu bei, dass [!DNL Payment Services] Funktionen erwartungsgemäß funktionieren und Ihren Kunden die besten Zahlungsoptionen bieten
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '806'
 ht-degree: 0%
-
 ---
-
 # Testen und Validieren
 
 Bevor Sie Ihren Käufern [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] zur Verfügung stellen, empfiehlt es sich, diese in Ihrer Sandbox-Umgebung _und)_ Produktion zu testen. Tests und Validierung helfen sicherzustellen, dass [!DNL Payment Services] Funktionen erwartungsgemäß funktionieren und die besten Zahlungsoptionen für Ihr Geschäft und Ihre Kunden bieten.
@@ -18,10 +35,10 @@ Bevor Sie Ihren Käufern [!DNL Payment Services] für [!DNL Adobe Commerce] und 
 
 Das Testen von [!DNL Payment Services] in einer Sandbox-Umgebung ist ein wichtiger Validierungsschritt, auch wenn es sich um eine simulierte Umgebung handelt, die nur mit der PayPal-Sandbox und nicht mit echten Banken und Händlern verbunden ist.
 
-1. Schließen Sie einen erfolgreichen Checkout aus Ihrem Geschäft ab, entweder mit [Kreditkartenfeldern](payments-options.md#credit-card-fields) oder einer der [PayPal-Zahlungsschaltflächen](payments-options.md#paypal-payment-buttons). Weitere Informationen [&#x200B; Verwendung gefälschter Kreditkarten zum Testen finden &#x200B;](#testing-credentials) unter „Testen von Anmeldeinformationen“.
-1. Erfassen Sie (wenn Ihre Zahlungsaktion [auf `Authorize and Capture`](production.md#set-payment-services-as-payment-method) eingestellt), [Rückerstattung](refunds.md) oder [Annullierung](voids.md) die gerade abgeschlossene Bestellung. Sie können auch einfach [Rechnung erstellen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} für eine Bestellung, wenn Ihre Zahlungsaktion auf `Authorize` statt auf `Authorize and Capture` gesetzt ist.
+1. Schließen Sie einen erfolgreichen Checkout aus Ihrem Geschäft ab, entweder mit [Kreditkartenfeldern](payments-options.md#credit-card-fields) oder einer der [PayPal-Zahlungsschaltflächen](payments-options.md#paypal-payment-buttons). Weitere Informationen [ Verwendung gefälschter Kreditkarten zum Testen finden ](#testing-credentials) unter „Testen von Anmeldeinformationen“.
+1. Erfassen Sie (wenn Ihre Zahlungsaktion [auf `Authorize and Capture`](production.md#set-payment-services-as-payment-method) eingestellt), [Rückerstattung](refunds.md) oder [Annullierung](voids.md) die gerade abgeschlossene Bestellung. Sie können auch einfach [Rechnung erstellen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} für eine Bestellung, wenn Ihre Zahlungsaktion auf `Authorize` statt auf `Authorize and Capture` gesetzt ist.
 1. Zeigen Sie die Transaktion und andere Informationen innerhalb von 24-48 Stunden im [Auszahlungsbericht](payouts.md) an.
-1. Weitere Informationen zur Bestellung finden Sie im [Bericht zum Status der &#x200B;](order-payment-status.md).
+1. Weitere Informationen zur Bestellung finden Sie im [Bericht zum Status der ](order-payment-status.md).
 
 ### Testen von lokalen Entwicklungsumgebungen
 
@@ -58,13 +75,13 @@ Für die lokale Entwicklung muss Ihre Umgebung die folgenden Anforderungen erfü
 * **Öffentlich zugänglich** muss Apple in der Lage sein, Ihre Domain über das Internet zu erreichen.
 * **HTTPS-Protokoll** funktioniert Apple Pay nur bei sicheren Verbindungen.
 
-Der Einsatz eines Tunneldienstes wie [ngrok](https://ngrok.com/) erfüllt beide Anforderungen. Nachdem Sie nGrok wie oben beschrieben eingerichtet haben[&#x200B; registrieren Sie Ihre Sandbox-Domain &#x200B;](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains) PayPal über die URL **ngrok**.
+Der Einsatz eines Tunneldienstes wie [ngrok](https://ngrok.com/) erfüllt beide Anforderungen. Nachdem Sie nGrok wie oben beschrieben eingerichtet haben[ registrieren Sie Ihre Sandbox-Domain ](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains) PayPal über die URL **ngrok**.
 
 ### Testen von Anmeldeinformationen
 
 Beim Testen und Validieren Ihrer Sandbox müssen Sie gefälschte Kreditkartennummern verwenden, damit Sie keine echten Gebühren für ein vorhandenes Kreditkartenkonto erstellen.
 
-Verwenden Sie den Kreditkartengenerator von PayPal, um [zufällige Kreditkarteninformationen) zum Testen &#x200B;](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) generieren.
+Verwenden Sie den Kreditkartengenerator von PayPal, um [zufällige Kreditkarteninformationen) zum Testen ](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) generieren.
 
 So testen Sie Apple Pay im Sandbox-Modus:
 

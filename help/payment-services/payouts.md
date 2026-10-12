@@ -5,13 +5,29 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1356'
 ht-degree: 0%
-
 ---
-
 # Bericht zu Auszahlungen
 
 [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen ein umfassendes Reporting, damit Sie einen klaren Überblick über die Transaktionen, Bestellungen und Zahlungen Ihres Stores erhalten.
@@ -31,7 +47,7 @@ Sie können [Auszahlungstransaktionen](#download-transactions) im CSV-Dateiforma
 
 >[!NOTE]
 >
->Auszahlungsberichte zeigen nur Bestellungen an, die erfasst (Zahlungsaktion ist auf [`Authorize and Capture`](production.md#set-payment-services-as-payment-method) eingestellt) - oder [&#x200B; als `Invoiced`](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) markiert sind.
+>Auszahlungsberichte zeigen nur Bestellungen an, die erfasst (Zahlungsaktion ist auf [`Authorize and Capture`](production.md#set-payment-services-as-payment-method) eingestellt) - oder [ als `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) markiert sind.
 
 ## Datenvisualisierungsansicht für Auszahlungen
 
@@ -93,12 +109,12 @@ In der Berichtsansicht „Zahlungen“ können Sie die Datenquelle (**[!UICONTRO
 
 ![Datenquellenauswahl](assets/datasource.png){width="300" zoomable="yes"}
 
-Wenn _[!UICONTROL Live]_&#x200B;die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Stores im Produktionsmodus anzeigen. Wenn&#x200B;_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie Berichtsinformationsspeicher im Sandbox-Modus sehen.
+Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtsinformationen für Stores im Produktionsmodus anzeigen. Wenn_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie Berichtsinformationsspeicher im Sandbox-Modus sehen.
 
 Die Auswahl von Datenquellen funktioniert wie folgt:
 
-* Wenn Sie keine Stores haben, die sich im Live-Modus befinden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Sandbox]_&#x200B;eingestellt.
-* Wenn Sie Stores (einen oder mehrere) im Live-Modus haben, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Live]_&#x200B;eingestellt.
+* Wenn Sie keine Stores haben, die sich im Live-Modus befinden, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Sandbox]_eingestellt.
+* Wenn Sie Stores (einen oder mehrere) im Live-Modus haben, ist die Datenquellenauswahl standardmäßig auf _[!UICONTROL Live]_eingestellt.
 * Berichtsexporte berücksichtigen immer die Auswahl der Datenquelle.
 
 So wählen Sie die Datenquelle für die Auswertung „Zahlungsstatus der Bestellung“ aus:
@@ -159,7 +175,7 @@ Auszahlungsberichte enthalten die folgenden Informationen.
 | [!UICONTROL Code] | Transaktionscode, der entweder „Guthaben“ (*CR*) oder „Soll“ (*DR*) angibt |
 | [!UICONTROL Reference ID] | Ursprüngliche Transaktions-ID, mit der dieses Ereignis verknüpft ist |
 | [!UICONTROL Invoice] | Rechnungskennung (eine pro Bestellung) der Transaktion |
-| [!UICONTROL Commerce order] | Commerce-Auftrags-ID <br> <br>Um zugehörige [Bestellinformationen) anzuzeigen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/orders) klicken Sie auf die ID. |
+| [!UICONTROL Commerce order] | Commerce-Auftrags-ID <br> <br>Um zugehörige [Bestellinformationen) anzuzeigen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) klicken Sie auf die ID. |
 | [!UICONTROL Commerce trans] | Commerce Transaktions-ID |
 | [!UICONTROL Pay method] | Kreditkartenart - *[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]* - und dazugehöriger Kartenanbieter (z. B *Visa* oder *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Transaktionsbetrag |

@@ -1,13 +1,17 @@
 ---
 title: Commerce-Dokumentations-Governance
 description: Erfahren Sie mehr über das interne Governance-Modell für die Commerce Insights. Nicht in Experience League veröffentlicht - wurde absichtlich von TOC.md ausgeschlossen.
-source-git-commit: 1da6d9753acbeadf3a0df5fae86a9386643c6d6d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
-
 ---
-
 
 # Commerce-Dokumentations-Governance
 
@@ -31,7 +35,7 @@ Sobald das Ticket den Umfang hat, starten Sie den Artikel aus einer Vorlage in `
 
 - **Neuer Abschnitt der obersten Ebene** (z. B. Insights > Katalogverwaltung) erfordert vor dem Hinzufügen eine Überprüfung der Benutzeroberflächenanalyse, da dadurch die Navigationsform des Handbuchs geändert wird. Die Commerce-IA-Prüfung für die Story oder Aufgabe wird von demjenigen durchlaufen, der sie besitzt.
 
-- **Zum Inhaltsverzeichnis hinzufügen** - Zum Inhaltsverzeichnis vor der Veröffentlichung ein neues Thema hinzufügen. Verwenden Sie bei Bedarf Metadaten ausblenden , um einen ausgeblendeten Artikel zu veröffentlichen, der nur für Personen zugänglich ist, die über den Link verfügen. Siehe [Ausblenden von &#x200B;](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/hiding-files) im ExL-Autorenhandbuch.
+- **Zum Inhaltsverzeichnis hinzufügen** - Zum Inhaltsverzeichnis vor der Veröffentlichung ein neues Thema hinzufügen. Verwenden Sie bei Bedarf Metadaten ausblenden , um einen ausgeblendeten Artikel zu veröffentlichen, der nur für Personen zugänglich ist, die über den Link verfügen. Siehe [Ausblenden von ](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/hiding-files) im ExL-Autorenhandbuch.
 
 ## Überprüfungskadenz
 

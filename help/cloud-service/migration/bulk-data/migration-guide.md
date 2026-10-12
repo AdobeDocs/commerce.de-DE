@@ -2,43 +2,55 @@
 title: Massendatenmigration ausführen
 description: Erfahren Sie, wie Sie mit der CLI eine Massendatenmigration von einer Adobe Commerce PaaS- oder On-Premise-Instanz zu Adobe Commerce as a Cloud Service konfigurieren und ausführen.
 feature: Cloud
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:07.600Z'
 TQID: 'https://experienceleague.adobe.com/z9659Vnf2JLxJ4U5p3tEEjurj5Mg3bfKj68Gheq2AXY'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
   - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 670b6214b28be93a16130552a226a8cadb487324
+    internal-label: Data management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 2802
+source-wordcount: '2802'
 ht-degree: 0%
-
 ---
-
 # Ausführen einer Massendatenmigration
 
 {{bulk-data-early-access}}
 
 Dieses Handbuch ist eine schrittweise Anleitung zum Ausführen einer Datenmigration von einer [!DNL Adobe Commerce] PaaS- oder On-Premise-Installation zum [!DNL Adobe Commerce as a Cloud Service] mithilfe des Tools für die Massendatenmigration. Die tatsächlichen Konfigurationswerte und umgebungsspezifischen Details variieren je nach Einrichtung.
 
-Bevor Sie beginnen, vergewissern Sie sich, dass Sie alle Elemente in der [Checkliste zur Kundenbereitschaft“ abgeschlossen &#x200B;](readiness-checklist.md) den API-Zugriff mit dem [Migrationsservice-Zugriffshandbuch“ &#x200B;](cdms-access.md) haben.
+Bevor Sie beginnen, vergewissern Sie sich, dass Sie alle Elemente in der [Checkliste zur Kundenbereitschaft“ abgeschlossen ](readiness-checklist.md) den API-Zugriff mit dem [Migrationsservice-Zugriffshandbuch“ ](cdms-access.md) haben.
 
 >[!NOTE]
 >
@@ -54,7 +66,7 @@ Bevor Sie beginnen, vergewissern Sie sich, dass Sie alle Elemente in der [Checkl
 
 Einrichten der Umgebung für die Massendatenmigration:
 
->[!VIDEO](https://video.tv.adobe.com/v/3496129?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3496121)
 
 1. Extrahieren Sie den Inhalt von `ccsaas-migration-tools.tar.gz`.
 
@@ -97,7 +109,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### Konfigurieren der OAuth-Quellberechtigungen
 
->[!VIDEO](https://video.tv.adobe.com/v/3496149?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3496142)
 
 Diese vier Werte signieren Anfragen vom Migrations-Tool an die Quell-Store-APIs. Um sie zu erhalten, öffnen Sie die [!UICONTROL Admin] und navigieren Sie zu [!UICONTROL **System**] > [!UICONTROL **Erweiterungen**] > [!UICONTROL **Integrationen**]. Erstellen oder öffnen Sie eine Integration und kopieren Sie dann die Werte in `.env`:
 
@@ -130,7 +142,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 >[!NOTE]
 >
->Wenn Sie die Cloud-CLI zum ersten Mal verwenden, müssen Sie auch Ihren öffentlichen SSH-Schlüssel zu Ihrem Konto hinzufügen. Anweisungen finden Sie [&#x200B; „Handbuch &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/secure-connections) gesicherter Verbindungen“.
+>Wenn Sie die Cloud-CLI zum ersten Mal verwenden, müssen Sie auch Ihren öffentlichen SSH-Schlüssel zu Ihrem Konto hinzufügen. Anweisungen finden Sie [ „Handbuch ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) gesicherter Verbindungen“.
 
 ### Commerce-Admin-Einstellungen ausrichten
 
@@ -142,7 +154,7 @@ Stellen Sie vor der Migration sicher, dass die folgenden Einstellungen zwischen 
 
 ### Target SaaS- und IMS-Anmeldedaten konfigurieren
 
->[!VIDEO](https://video.tv.adobe.com/v/3496174?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3496167)
 
 Dies sind die [!DNL Adobe Commerce as a Cloud Service] IMS- und API-Einstellungen für das Ziel. Sie benötigen die Mandanten-ID, die Organisations-ID, die IMS-OAuth-Server-zu-Server-Anmeldeinformationen und den richtigen IMS-Host für Ihre Umgebung. Abstimmung mit Ihrem Adobe-Team für Organisations-, Mandanten- und Profilzugriff. Versuchen Sie nicht, vertrauliche Werte abzuleiten oder zu schätzen.
 
@@ -247,7 +259,7 @@ CDMS_PORT=443
 
 ## Datenbankverbindungsdatei konfigurieren
 
->[!VIDEO](https://video.tv.adobe.com/v/3496164?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3496152)
 
 Die `.my.cnf`-Datei enthält [!DNL MySQL] Verbindungseinstellungen für die Extraktionsseite des Migrations-Tools. Erstellen Sie sie durch Kopieren von `.my.cnf.example` nach `.my.cnf` im Projektstamm. Der Abschnittsname muss mit `SOURCE_CONNECTION_NAME` in `.env` übereinstimmen.
 

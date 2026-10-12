@@ -3,26 +3,43 @@ title: Kreditkartenabrechnung
 description: Käufer können ihre Kreditkartendetails für zukünftige Käufe Vault-fähig machen (speichern).
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
-
 ---
-
 # Kreditkartenabrechnung
 
 Konvertieren Sie einmalige Kunden mithilfe von Kreditkartenabrechnungen in treue Kunden. Angemeldete Kunden können ihre Kreditkartendaten speichern (oder in einen Tresor umwandeln), um sie in einem späteren Kauf für dasselbe oder ein anderes Geschäft im selben Händlerkonto zu verwenden.
 
 ## Vaulting aktivieren
 
-Händler können in den [!DNL Payment Services]Einstellungen[&#x200B; Kreditkartenabrechnungen für ihre Geschäfte &#x200B;](configure-admin.md#card-vaulting).
+Händler können in den [!DNL Payment Services]Einstellungen[ Kreditkartenabrechnungen für ihre Geschäfte ](configure-admin.md#card-vaulting).
 
 1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
 1. Klicken Sie auf **[!UICONTROL Settings]**.
 
-1. Schalten Sie die **[!UICONTROL Vault enabled]** ein. Weitere Informationen finden [&#x200B; unter  [!DNL Payment Services]](configure-admin.md#enable-payment-services)Aktivieren“.
+1. Schalten Sie die **[!UICONTROL Vault enabled]** ein. Weitere Informationen finden [ unter  [!DNL Payment Services]](configure-admin.md#enable-payment-services)Aktivieren“.
 
 ## Vaulting ohne Kauf
 
@@ -32,7 +49,7 @@ Angemeldete Kunden können eine Zahlungsmethode im Dashboard „Mein Konto **wie
 
 1. Navigieren Sie im linken Navigationsbereich zu **[!UICONTROL Stored Payment Methods]** , um alle darin gespeicherten Zahlungsmethoden anzuzeigen.
 
-   Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/payments/stored-payment-methods) Zahlungsmethoden.
+   Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) Zahlungsmethoden.
 
 1. Der Kunde klickt auf **[!UICONTROL Add New Card]**, um eine neue Karte zu speichern.
 
@@ -73,10 +90,10 @@ Sie können in Admin nur dann Vault-Karten verwenden, wenn der Kunde sowohl übe
 
 So erstellen Sie in der Admin eine Bestellung für einen Kunden mit seiner Tresor-Kreditkarte:
 
-1. [Bestellung erstellen und Produkte hinzufügen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
-1. Wählen Sie _[!UICONTROL Payment & Shipping Information]_&#x200B;**[!UICONTROL Stored Cards]**&#x200B;als Zahlungsmethode aus.
+1. [Bestellung erstellen und Produkte hinzufügen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
+1. Wählen Sie _[!UICONTROL Payment & Shipping Information]_**[!UICONTROL Stored Cards]**als Zahlungsmethode aus.
 1. Wählen Sie die gewünschte Zahlungsmethode mit Vault-Kreditkarte aus.
-1. Nachdem Sie alle anderen erforderlichen Schritte für die Bestellung ausgeführt haben, [&#x200B; Sie sie &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
+1. Nachdem Sie alle anderen erforderlichen Schritte für die Bestellung ausgeführt haben, [ Sie sie ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
 
    ![Verwenden Sie eine Vault-Kreditkarte in Admin für den Kunden](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 

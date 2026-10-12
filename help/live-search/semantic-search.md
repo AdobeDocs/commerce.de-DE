@@ -1,15 +1,19 @@
 ---
 title: Semantische Suche
-description: Aktivieren Sie die KI-Semantische Suche nach [!DNL Live Search] aus den Einstellungen. Es sind keine Attributeinstellungen oder Änderungen an der Storefront erforderlich.
+description: Aktivieren Sie die KI-semantische Suche nach [!DNL Live Search] in den Einstellungen. Es sind keine Attributeinstellungen oder Änderungen an der Storefront erforderlich.
 role: Admin
 recommendations: noCatalog
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '792'
 ht-degree: 0%
-
 ---
-
 # Semantische Suche
 
 >[!AVAILABILITY]
@@ -90,7 +94,7 @@ Nachdem die semantische Suche aktiv ist und die Indizierung abgeschlossen ist, e
 ## Best Practices
 
 - Verwenden Sie klare, beschreibende Produktnamen und Beschreibungen (idealerweise 50-100 Wörter), damit sowohl Keyword- als auch semantische Übereinstimmungen mit starkem Katalogtext arbeiten können.
-- Halten Sie markenspezifische oder hochtechnische [Synonyme) &#x200B;](synonyms.md), bei denen die semantische Suche keine Fachbegriffe abdeckt.
+- Halten Sie markenspezifische oder hochtechnische [Synonyme) ](synonyms.md), bei denen die semantische Suche keine Fachbegriffe abdeckt.
 
 ## Fehlerbehebung
 

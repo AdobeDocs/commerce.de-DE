@@ -4,25 +4,34 @@ description: Erfahren Sie, wie Sie mit Adobe Journey Optimizer eine E-Mail zu ei
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 229fac48-1c7f-4b3a-8edf-6086b7361911
-TQID: https://experienceleague.adobe.com/p4p0Gde7aPp15kj1KJTiCAijRF7wBnKDqhJN-pHgFKU
+TQID: 'https://experienceleague.adobe.com/p4p0Gde7aPp15kj1KJTiCAijRF7wBnKDqhJN-pHgFKU'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+    internal-label: Administration
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 1404
+source-wordcount: '1404'
 ht-degree: 0%
-
 ---
-
 # Verwenden von Adobe Journey Optimizer zum Senden einer E-Mail zu einem Transaktionsabbruch
 
 Erfahren Sie, wie Sie eine personalisierte E-Mail zur erneuten Interaktion oder Benachrichtigung senden, wenn eine Warenkorb- oder Browser-Sitzung abgebrochen wurde. In diesem Artikel verwenden Sie Daten von Kunden, die eine Reihe von Produkten und Kategorien angesehen, mit einem Produkt interagiert oder Zeit auf einer Seite verbracht haben.
@@ -34,7 +43,7 @@ Erstellen Sie einen Transaktionsabbruch, durchsuchen Sie E-Mails oder Benachrich
 | Datentypen | Storefront-Daten (Verhaltensereignisse) | Back-Office-Daten (Server-seitige Ereignisse) |
 |---|---|---|
 | **Definition** | Klicks oder Aktionen, die Kunden auf Ihrer Site durchführen. | Informationen über den Lebenszyklus und Details jeder Bestellung (vergangene und aktuelle). |
-| **Von Adobe Commerce erfasste Ereignisse** | [pageView](https://experienceleague.adobe.com/de/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/de/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/de/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/de/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/de/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/de/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/de/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Order history](https://experienceleague.adobe.com/de/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
+| **Von Adobe Commerce erfasste Ereignisse** | [pageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Order history](https://experienceleague.adobe.com/en/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
 
 ### Was haben andere Kunden erreicht? {#what-have-other-customers-achieved}
 
@@ -60,7 +69,7 @@ Dieser spezielle Anwendungsfall konzentriert sich auf die Erstellung einer E-Mai
 
 ### Was ist Adobe Journey Optimizer?
 
-Mit [Adobe Journey Optimizer](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/get-started/essentials/get-started) können Sie das Commerce-Erlebnis für Ihre Kunden personalisieren. Sie können Journey Optimizer beispielsweise verwenden, um geplante Marketing-Kampagnen zu erstellen und bereitzustellen, z. B. wöchentliche Werbeaktionen für ein Einzelhandelsgeschäft, oder um eine E-Mail zu generieren, wenn ein Kunde ein Produkt zum Warenkorb hinzugefügt, aber dann den Checkout-Prozess nicht abgeschlossen hat.
+Mit [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/essentials/get-started) können Sie das Commerce-Erlebnis für Ihre Kunden personalisieren. Sie können Journey Optimizer beispielsweise verwenden, um geplante Marketing-Kampagnen zu erstellen und bereitzustellen, z. B. wöchentliche Werbeaktionen für ein Einzelhandelsgeschäft, oder um eine E-Mail zu generieren, wenn ein Kunde ein Produkt zum Warenkorb hinzugefügt, aber dann den Checkout-Prozess nicht abgeschlossen hat.
 
 In diesem Thema erfahren Sie, wie Sie eine E-Mail zu einem Transaktionsabbruch erstellen, indem Sie ein von Ihrer [!DNL Commerce] generiertes `checkout`-Ereignis überwachen und in Journey Optimizer auf dieses Ereignis reagieren.
 
@@ -73,7 +82,7 @@ In diesem Thema erfahren Sie, wie Sie eine E-Mail zu einem Transaktionsabbruch e
 Bevor Sie mit diesen Schritten beginnen, stellen Sie Folgendes sicher:
 
 - Sie haben die Berechtigung zur Verwendung von Adobe [!DNL Journey Optimizer]. Wenn Sie sich nicht sicher sind, wenden Sie sich an Ihren Systemintegrator oder das Entwicklungs-Team, das Projekte und Umgebungen verwaltet.
-- Sie [&#x200B; die [!DNL Data Connection]-Erweiterung in [!DNL Commerce] &#x200B;](install.md) und [&#x200B; &#x200B;](connect-data.md) konfiguriert.
+- Sie [ die [!DNL Data Connection]-Erweiterung in [!DNL Commerce] ](install.md) und [ ](connect-data.md) konfiguriert.
 - Sie [bestätigt](connect-data.md#confirm-that-event-data-is-collected) dass Ihre [!DNL Commerce] Ereignisdaten am Experience Platform Edge eintreffen.
 
 ## Schritt 1: Erstellen Sie einen Benutzer in Ihrer [!DNL Commerce] Sandbox-Umgebung
@@ -96,7 +105,7 @@ Erstellen Sie einen Benutzer in Ihrer Sandbox-Umgebung und vergewissern Sie sich
 
 Trigger von Ereignissen in Ihrer [!DNL Commerce]-Sandbox-Umgebung in Ihrer Storefront, indem Sie Produktseiten anzeigen, Artikel zu einem Warenkorb hinzufügen und verschiedene andere Aktivitäten ausführen, die ein Käufer ausführen würde. Bestätigen Sie dann, dass diese Ereignisse an Journey Optimizer weitergeleitet werden.
 
-1. [Adobe Journey Optimizer starten](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
+1. [Adobe Journey Optimizer starten](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
 1. Wählen Sie **[!UICONTROL Profiles]** aus.
 1. Legen Sie **[!UICONTROL Identity namespace]** auf `Email` fest.
 1. **[!UICONTROL Identity value]** auf Ihre E-Mail-Adresse festlegen.
@@ -125,7 +134,7 @@ Konfigurieren Sie zwei Ereignisse in Journey Optimizer: Das eine Ereignis überw
 
 ### Listener-Ereignis erstellen
 
-1. [Adobe Journey Optimizer starten](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
+1. [Adobe Journey Optimizer starten](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
 
 1. Klicken Sie **[!UICONTROL Configurations]** unter dem Abschnitt **[!UICONTROL Administration]** im linken Bereich.
 
@@ -198,7 +207,7 @@ Erstellen Sie eine E-Mail zu einem Transaktionsabbruch, die gesendet wird, wenn 
 
 1. Doppelklicken Sie auf der oben erstellten Journey auf das Symbol **[!UICONTROL Email]** auf der Arbeitsfläche.
 
-1. Befolgen Sie die [Schritte](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions#configure-email) im Journey Optimizer-Handbuch, um die E-Mail mit dem Transaktionsabbruch zu erstellen.
+1. Befolgen Sie die [Schritte](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions#configure-email) im Journey Optimizer-Handbuch, um die E-Mail mit dem Transaktionsabbruch zu erstellen.
 
 Sie haben jetzt eine Journey in Journey Optimizer, die auf das `commerce.checkouts`-Ereignis aus Ihrem [!DNL Commerce] wartet, und eine E-Mail zu einem Transaktionsabbruch, die nach Ablauf eines bestimmten Zeitraums gesendet wird. Im nächsten Abschnitt erfahren Sie, wie Sie die Journey testen.
 

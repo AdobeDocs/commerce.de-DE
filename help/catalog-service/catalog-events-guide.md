@@ -1,28 +1,40 @@
 ---
 title: Handbuch zur Einrichtung und Integration von Katalogereignissen
-description: Erfahren Sie, wie Sie Katalogdaten überprüfen [!DNL Adobe I/O Events]  für Adobe Commerce konfigurieren, Katalogereignistypen abonnieren und den Versand für Verbraucher validieren können.
+description: Erfahren Sie, wie Sie Katalogdaten überprüfen, [!DNL Adobe I/O Events] für Adobe Commerce konfigurieren, Katalogereignistypen abonnieren und den Versand für Verbraucher validieren können.
 level: Intermediate
 recommendations: noCatalog
 role: Admin, Developer
 feature: Services, Catalog Service
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: 4273989f-0bf2-5361-a17a-6909488d18ab
+    internal-label: Catalog Service
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 818efacb8dbf63e48cdc83506d228c665d7a8b22
+    internal-label: Data management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 1568
+source-wordcount: '1569'
 ht-degree: 0%
-
 ---
-
 # Aktivieren und Konfigurieren von Katalogereignissen mit Adobe I/O
 
 Katalogereignisse sind maschinengenerierte Benachrichtigungen, die unterstützte Katalogänderungen beschreiben, die über [!DNL Catalog Service] bereitgestellt werden. Sie ermöglichen ereignisgesteuerte Workflows, wie etwa:
@@ -157,7 +169,7 @@ Gehen Sie wie folgt vor, um Katalogereignisse End-to-End zu aktivieren.
 >* [Die  [!DNL Adobe I/O]  ist für Adobe Commerce konfiguriert](https://developer.adobe.com/commerce/extensibility/events/configure-commerce).
 >* Zugriff auf [!DNL Adobe Developer Console] in derselben IMS-Organisation, in der die Commerce-Umgebung bereitgestellt wurde.
 >* Um die Synchronisierung mit Commerce SaaS-Services zu überprüfen, verwenden Sie die **[!UICONTROL Data Management Dashboard]** in der Admin Console.
->* Product Recommendations v6.0, [!DNL Live Search] v4.1.0+ oder [!DNL Catalog Service] v1.17+ ist für die Dashboard-Überprüfung erforderlich. Adobe empfiehlt, Ihr Commerce-Projekt auf die neuesten unterstützten Versionen dieser Services zu aktualisieren. Verwenden Sie für frühere Service-Versionen [Katalogsynchronisierung](https://experienceleague.adobe.com/de/docs/commerce/user-guides/data-services/catalog-sync) für die Synchronisierungsüberprüfung.
+>* Product Recommendations v6.0, [!DNL Live Search] v4.1.0+ oder [!DNL Catalog Service] v1.17+ ist für die Dashboard-Überprüfung erforderlich. Adobe empfiehlt, Ihr Commerce-Projekt auf die neuesten unterstützten Versionen dieser Services zu aktualisieren. Verwenden Sie für frühere Service-Versionen [Katalogsynchronisierung](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) für die Synchronisierungsüberprüfung.
 
 
 >[!NOTE]
@@ -172,11 +184,11 @@ Stellen Sie vor der Konfiguration sicher, dass [!DNL Catalog Service] über aktu
 
 1. Bestätigen Sie **erfolgreichen Feed-Export aus Commerce**.
 
-   Öffnen Sie von der [!DNL Adobe Commerce] Admin aus die Seite [Daten-Feed](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)Synchronisierungsstatus) (**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**) und bestätigen Sie, dass der letzte Exportstatus für jeden [!DNL Catalog Service]-Feed erfolgreich ist.
+   Öffnen Sie von der [!DNL Adobe Commerce] Admin aus die Seite [Daten-Feed](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)Synchronisierungsstatus) (**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**) und bestätigen Sie, dass der letzte Exportstatus für jeden [!DNL Catalog Service]-Feed erfolgreich ist.
 
 1. Bestätigen Sie über **Admin die erfolgreiche Synchronisierung mit** verbundenen Commerce-Services[!DNL Adobe Commerce].
 
-   Öffnen Sie vom [!DNL Adobe Commerce] Admin aus das [Daten-Management-Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) (**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**) und überprüfen Sie, ob die synchronisierten Produktdaten die erwarteten Produkte enthalten.
+   Öffnen Sie vom [!DNL Adobe Commerce] Admin aus das [Daten-Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) (**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**) und überprüfen Sie, ob die synchronisierten Produktdaten die erwarteten Produkte enthalten.
 
 ### Registrieren und [!DNL Adobe I/O Events] abonnieren {#register-events}
 
@@ -295,9 +307,9 @@ Wenn Katalogereignisse fehlen oder sich verzögern, führen Sie die folgenden Sc
 
    Katalogereignisse erfordern aktuelle Daten in [!DNL Catalog Service]. Bestätigen Sie beide Schritte des Exportpfads:
 
-   * **Feed-Export aus Commerce** - Bestätigen Sie auf der Seite [Status der &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) des Daten-Feeds) oder in `var/log/saas-export.log`, dass [!DNL Catalog Service] Feeds erfolgreich aus [!DNL Commerce] exportiert wurden.
+   * **Feed-Export aus Commerce** - Bestätigen Sie auf der Seite [Status der ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) des Daten-Feeds) oder in `var/log/saas-export.log`, dass [!DNL Catalog Service] Feeds erfolgreich aus [!DNL Commerce] exportiert wurden.
 
-   * **Mit verbundenen Commerce SaaS-Services synchronisieren** - Bestätigen Sie im [Data Management Dashboard](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard), [Catalog Sync](https://experienceleague.adobe.com/de/docs/commerce/user-guides/data-services/catalog-sync) oder in den Exportprotokollen, dass die Daten erfolgreich mit [!DNL Catalog Service] synchronisiert wurden.
+   * **Mit verbundenen Commerce SaaS-Services synchronisieren** - Bestätigen Sie im [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard), [Catalog Sync](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) oder in den Exportprotokollen, dass die Daten erfolgreich mit [!DNL Catalog Service] synchronisiert wurden.
 
    Informationen zur Fehlerbehebung bei Export- und Synchronisierungsaufträgen finden Sie unter [Synchronisieren von Daten mit dem SaaS](../data-export/data-sync-manage.md)Datenexport und [Protokollierung und Fehlerbehebung](../data-export/troubleshooting/logging.md).
 
@@ -319,7 +331,7 @@ Wenn Katalogereignisse fehlen oder sich verzögern, führen Sie die folgenden Sc
    * [!DNL Adobe I/O Events] Abonnementdetails.
    * Ungefähre Zeit und Beschreibung fehlender Ereignisse.
 
-   Weitere Hilfe finden Sie unter [Support-Tickets](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
+   Weitere Hilfe finden Sie unter [Support-Tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
 >[!MORELIKETHIS]
 >

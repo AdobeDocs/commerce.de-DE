@@ -3,7 +3,7 @@ title: Integration konfigurieren
 description: Erfahren Sie, wie Sie Ihr Adobe Commerce-Projekt mit Experience Manager Assets-Projekten verbinden, um die Synchronisierung von Assets zwischen diesen beiden Systemen zu aktivieren.
 feature: CMS, Media
 exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
-TQID: https://experienceleague.adobe.com/MM-neGrH-N8xBcCwLgnsaIrIjhbX6uYL5kS41QdV79I
+TQID: 'https://experienceleague.adobe.com/MM-neGrH-N8xBcCwLgnsaIrIjhbX6uYL5kS41QdV79I'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -12,6 +12,10 @@ feature_v2:
     internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
     internal-label: Storefront configuration
@@ -23,7 +27,7 @@ topic_v2:
     internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 47b9ea797cbe18bd866159311486ba1b588ffcd3
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 1%
@@ -34,7 +38,7 @@ Konfigurieren Sie die Integration, indem Sie Commerce mit der AEM Assets-Instanz
 
 Nachdem Sie das AEM Assets-Projekt identifiziert haben, wählen Sie die Zuordnungsregel für die Synchronisierung von Assets zwischen Adobe Commerce und AEM Assets aus.
 
-* **[!UICONTROL Match by product SKU]** - Standardregel, die die SKU in den Asset-Metadaten mit der [Commerce-Produkt-SKU](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/glossary#sku) abgleicht, um sicherzustellen, dass Assets mit den richtigen Produkten verknüpft sind.
+* **[!UICONTROL Match by product SKU]** - Standardregel, die die SKU in den Asset-Metadaten mit der [Commerce-Produkt-SKU](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku) abgleicht, um sicherzustellen, dass Assets mit den richtigen Produkten verknüpft sind.
 
 * **[!UICONTROL Custom match]** - Matching-Regel für komplexere Szenarien oder spezifische Geschäftsanforderungen, die eine benutzerdefinierte Matching-Logik erfordern. Für die Implementierung des benutzerdefinierten Abgleichs ist die Entwicklung von benutzerdefiniertem Code in Adobe Developer App Builder erforderlich, um zu definieren, wie Assets mit Produkten abgeglichen werden. Weitere Details folgen in Kürze…
 
@@ -84,8 +88,8 @@ Stellen Sie vor dem Konfigurieren der AEM Assets-Integration sicher, dass Sie di
 
 1. Wählen Sie aus dem Dropdown-Menü &quot;**[!UICONTROL Asset matching rule]**&quot; eine der Asset-Zuordnungsregeln für die Asset-Synchronisierung aus.
 
-   * Wählen Sie **[!UICONTROL Match by SKU]** für [standardmäßige automatische &#x200B;](../synchronize/default-match.md))
-   * Wählen Sie **[!UICONTROL Custom match]** für [benutzerdefinierten automatischen Abgleich](../synchronize/custom-match.md) (erfordert [Adobe Developer App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder).)
+   * Wählen Sie **[!UICONTROL Match by SKU]** für [standardmäßige automatische ](../synchronize/default-match.md))
+   * Wählen Sie **[!UICONTROL Custom match]** für [benutzerdefinierten automatischen Abgleich](../synchronize/custom-match.md) (erfordert [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder).)
 
 1. Fügen Sie den [AEM Assets-Metadatenfeldnamen](configure-aem.md#define-the-metadata-profile) der für Commerce-Produkt-SKUs definiert ist, in das Feld **[!UICONTROL Match by product SKU attribute name]** ein, `commerce:skus` standardmäßig.
 
@@ -129,7 +133,7 @@ Die Einstellung **Visualisierungseigentümer** bestimmt, welches System Produktb
 
 Der Administrator zeigt die verfügbaren Bilder für diesen Eigentümer an, während der Rest der Bilder ausgegraut ist und mit einer **Beschriftung angezeigt**.
 
-Weitere Informationen [&#x200B; Verhalten bei der Anzeige von Bildern finden &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} unter „Festlegen von“.
+Weitere Informationen [ Verhalten bei der Anzeige von Bildern finden ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} unter „Festlegen von“.
 
 >[!TIP]
 >

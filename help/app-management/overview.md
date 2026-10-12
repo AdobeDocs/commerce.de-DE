@@ -2,13 +2,27 @@
 title: Übersicht über [!DNL App Management]
 description: Verwalten Sie App Builder-Programme, die Ihrer Adobe Commerce-Instanz zugeordnet sind, über eine einheitliche Admin-Benutzeroberfläche.
 feature: App Builder, Extensibility, Integration
-source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 72863f3c-9d27-5dda-afe1-d9f934b1fba0
+    internal-label: Extensibility
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
-
 ---
-
 # Übersicht über [!DNL App Management]
 
 [!DNL App Management] in Adobe Commerce vereinfacht die Erkennung, Installation, Konfiguration und den Betrieb von Anwendungen in der gesamten Commerce-Umgebung. Sie bietet ein einheitliches Framework, mit dem Unternehmen Erweiterbarkeit sicher und effizient umsetzen und gleichzeitig betriebliche Reibungen reduzieren können.
@@ -23,7 +37,7 @@ Gemeinsam schaffen diese Funktionen ein skalierbares Erweiterungsmodell, das es 
 
 ## Was [!DNL App Management] bietet
 
-* **Ein Ort für alle Ihre Apps**. Verknüpfen, Konfigurieren und Verwalten von Apps über **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Apps suchen, filtern und &#x200B;](manage-app.md) aus derselben Ansicht.
+* **Ein Ort für alle Ihre Apps**. Verknüpfen, Konfigurieren und Verwalten von Apps über **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Apps suchen, filtern und ](manage-app.md) aus derselben Ansicht.
 * **Einstellungen, die Ihrem Unternehmen entsprechen**. Wenden Sie verschiedene Konfigurationen pro Website, Store oder Store-Ansicht für Multi-Region- oder Multi-Marken-Setups an.
 * **Automatische Speichersynchronisierung**. Websites, Stores und Store-Ansichten aus Commerce werden importiert, wenn Sie eine App verknüpfen.
 * **Natives Admin-**. Arbeiten mit Apps aus Adobe Exchange- oder benutzerdefinierten Bereitstellungen, ohne Commerce verlassen zu müssen.

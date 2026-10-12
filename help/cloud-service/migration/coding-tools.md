@@ -2,31 +2,42 @@
 title: Entwickler-Tools für KI-Codierung für Adobe Commerce App Builder
 description: Erfahren Sie, wie Sie die KI-Tools zum Erstellen von Commerce App Builder-Programmen verwenden.
 feature: App Builder, Cloud
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:11:12.988Z'
 TQID: 'https://experienceleague.adobe.com/ZbqP1MO-QrqAtocvmgFStqaluqQdzMm4LXlY3o4o3xY'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
 subfeature_v2:
   - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
+    internal-label: Implementation
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 2611
+source-wordcount: '2611'
 ht-degree: 0%
-
 ---
-
 # Entwickler-Tools für KI-Codierung für Adobe Commerce App Builder
 
 Bei der Migration zu [!DNL Adobe Commerce as a Cloud Service] können Sie die KI-Kodierungstools verwenden, um vorhandene [!DNL Adobe Commerce] PHP-Erweiterungen in [!DNL Adobe Developer App Builder] Anwendungen zu konvertieren. Sie können diese Tools auch verwenden, um neue [!DNL App Builder]-Programme zu erstellen.
@@ -158,7 +169,7 @@ Dieser Befehl aktualisiert die Tools auf die neueste Version.
 >
 >Führen Sie vor der Bereitstellung des Projekts die folgenden Konfigurationsaufgaben aus:
 >
->* Melden Sie sich über die Adobe I/O-CLI [&#128279;](https://developer.adobe.com/console) Adobe Developer Console an.
+>* Melden Sie sich über die Adobe I/O-CLI ](https://developer.adobe.com/console) [Adobe Developer Console an.
 >* Erstellen Sie ein App Builder-Projekt (siehe [Projekt-Setup](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Einrichten von Umgebungsvariablen in einer `.env`.
 >
@@ -349,7 +360,7 @@ Lesen Sie die folgenden Ressourcen, um loszulegen:
 * [Integrations-Starter-Kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Checkout-Starterkit](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Adobe Commerce Starter Kit-Vorlagen](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events Starter-Vorlagen](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Beispielanwendungen für App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps/)
 
 #### Wozu dienen diese Ressourcen?
@@ -376,7 +387,7 @@ Die installierten Fähigkeiten erzwingen automatisch das folgende Vierphasenprot
 
 ### Anfordern von Implementierungsplänen für die komplexe Entwicklung
 
-Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [&#x200B; hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
+Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [ hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
 
 ```shell-session
 Create a detailed implementation plan for this complex development.
@@ -394,7 +405,7 @@ Komplexe Adobe Commerce-Anwendungen beinhalten oft:
 
 >[!NOTE]
 >
->Stellen Sie vor der Verwendung der MCP-Tools [, dass Sie bei der Adobe I/O CLI angemeldet &#x200B;](#log-in-to-the-adobe-io-cli).
+>Stellen Sie vor der Verwendung der MCP-Tools [, dass Sie bei der Adobe I/O CLI angemeldet ](#log-in-to-the-adobe-io-cli).
 
 Das Tool ist standardmäßig auf MCP-Tools eingestellt, kann jedoch unter bestimmten Umständen stattdessen CLI-Befehle verwenden. Um die Verwendung von MCP-Tools sicherzustellen, fordern Sie diese in Ihrer Eingabeaufforderung explizit an.
 
@@ -624,4 +635,4 @@ Mit diesem Befehl können Sie Text-Feedback geben und Protokolle an Adobe senden
 
 >[!NOTE]
 >
->Wenn der Befehl `/feedback` nicht angezeigt wird, [&#x200B; Sie auf die neueste Version &#x200B;](#updating-to-the-latest-version).
+>Wenn der Befehl `/feedback` nicht angezeigt wird, [ Sie auf die neueste Version ](#updating-to-the-latest-version).
