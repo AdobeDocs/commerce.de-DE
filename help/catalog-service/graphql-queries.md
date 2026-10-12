@@ -48,4 +48,4 @@ Die [!DNL Catalog Service] stellt die folgenden Abfragen bereit:
 
 {style="table-layout:auto"}
 
-Weitere [ zur Verwendung dieser Abfragen finden ](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/){target="_blank"} unter „Storefront Services GraphQL&quot;.
+Weitere [&#x200B; zur Verwendung dieser Abfragen finden &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/){target="_blank"} unter „Storefront Services GraphQL&quot;.

@@ -46,7 +46,7 @@ Füllen Sie dieses Handbuch aus, nachdem Sie alle Elemente in der [Checkliste zu
 
 ## Voraussetzungen
 
-- Eine OAuth 2.0-Server-zu-Server-Anmeldedaten (Client-ID und Client-Geheimnis), die in der [Adobe Developer Console erstellt ](https://developer.adobe.com/console/).
+- Eine OAuth 2.0-Server-zu-Server-Anmeldedaten (Client-ID und Client-Geheimnis), die in der [Adobe Developer Console erstellt &#x200B;](https://developer.adobe.com/console/).
 - Ihre IMS-Organisations-ID im Format `<org>@AdobeOrg`. Die Organisation muss Eigentümer des Ziel-Mandanten sein.
 - Die Ziel-`tenantId`, eine 22-stellige alphanumerische IMS-Mandanten-ID.
 - Ausgehende Ausgangs-IP-Adressen, die an Adobe für das CDMS-Gateway gesendet und von diesem auf die Zulassungsliste gesetzt werden. Stimmen Sie sich mit dem Adobe-Team ab, wenn Sie sich bezüglich der IP-Adressen oder ihres Status nicht sicher sind.

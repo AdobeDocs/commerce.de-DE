@@ -57,11 +57,11 @@ Sie können dies bestätigen, indem Sie überprüfen, ob die folgenden Felder im
 - [!UICONTROL Payment Services Production ID]
 - [!UICONTROL PayPal Merchant ID]
 
-Wenn diese Felder leer sind, müssen Sie zunächst [globales Onboarding ](configure-admin.md). Die Schaltfläche **[!UICONTROL Connect different account]** ist deaktiviert, bis Sie die Voraussetzungen erfüllt haben.
+Wenn diese Felder leer sind, müssen Sie zunächst [globales Onboarding &#x200B;](configure-admin.md). Die Schaltfläche **[!UICONTROL Connect different account]** ist deaktiviert, bis Sie die Voraussetzungen erfüllt haben.
 
 ## Starten der Verbindung auf Website-Ebene
 
-1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Sales]**und wählen Sie **[!UICONTROL Payment Methods]**.
+1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Sales]**&#x200B;und wählen Sie **[!UICONTROL Payment Methods]**.
 1. Wechseln Sie in der Bereichsauswahl in der oberen linken Ecke von **[!UICONTROL Default Config]** zu der **[!UICONTROL Website]**, die Sie integrieren möchten.
 1. Klicken Sie auf **[!UICONTROL Connect different account]**.
 

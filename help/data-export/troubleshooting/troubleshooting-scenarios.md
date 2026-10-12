@@ -123,7 +123,7 @@ Weitere Informationen zur Fehlerbehebung bei Katalogdaten in [!DNL Product Recom
 1. Überprüfen Sie die Fehlerprotokolle zu Datenexporten, um Details zum Fehler zu erhalten. Siehe [Überprüfen von Protokollen und Fehlerbehebung](logging.md) für Protokollformat und erweiterte Protokollierungsoptionen:
    - `var/log/commerce-data-export-errors.log` auf Fehler bei der Datenerfassung.
    - `var/log/saas-export-errors.log` auf Fehler bei der Datenübermittlung.
-1. Wenn der Fehler nicht mit der Konfiguration oder einer Erweiterung eines Drittanbieters zusammenhängt, [ Sie ein Support-Ticket ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) den entsprechenden Protokolleinträgen.
+1. Wenn der Fehler nicht mit der Konfiguration oder einer Erweiterung eines Drittanbieters zusammenhängt, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) den entsprechenden Protokolleinträgen.
 
 ## Protokoll zeigt Meldungen vom Typ „Vorgang übersprungen - Prozess gesperrt“ {#process-locked}
 

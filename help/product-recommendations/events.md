@@ -47,7 +47,7 @@ Weitere Informationen zu den Verhaltensdaten, die von den [!DNL Product Recommen
 
 >[!NOTE]
 >
->Die Datenerhebung zum Zwecke der [!DNL Product Recommendations] umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. Weitere [ (](https://www.adobe.com/privacy/experience-cloud.html).
+>Die Datenerhebung zum Zwecke der [!DNL Product Recommendations] umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. Weitere [&#x200B; (](https://www.adobe.com/privacy/experience-cloud.html).
 
 ## Healthcare-Kunden
 
@@ -90,11 +90,11 @@ Andere Variablen, die sich auf die für das Training benötigte Zeit auswirken k
 - Einige Empfehlungstypen trainieren schneller als andere
 - Adobe Commerce berechnet die Verhaltensdaten alle vier Stunden neu. Empfehlungen werden umso genauer, je länger sie auf Ihrer Site verwendet werden.
 
-Auf der Seite „Empfehlung erstellen[ werden Bereitschaftsindikatoren angezeigt, damit Sie den Trainings-Fortschritt ](create.md#readiness-indicators) jeden Empfehlungstyp visualisieren können.
+Auf der Seite „Empfehlung erstellen[&#x200B; werden Bereitschaftsindikatoren angezeigt, damit Sie den Trainings-Fortschritt &#x200B;](create.md#readiness-indicators) jeden Empfehlungstyp visualisieren können.
 
 Während Ihre Live-Site Daten erfasst und die Modelle für maschinelles Lernen trainiert, führen Sie die verbleibenden Test- und Konfigurationsaufgaben aus. Sobald die Modelle über genügend Daten verfügen, um nützliche Empfehlungen zu generieren, stellen Sie die Empfehlungseinheiten in Ihrer Storefront bereit.
 
-Wenn Ihre Site für die meisten Produkt-SKUs nicht ausreichend Traffic (Ansichten, Käufe oder Trends) erhält, wird der Lernprozess möglicherweise nicht abgeschlossen, sodass die Bereitschaftsindikatoren im Admin hängen bleiben. Bereitschaftsindikatoren helfen Händlern, den besten Empfehlungstyp für ihren Store auszuwählen, aber sie sind nur ein Leitfaden und erreichen möglicherweise nie 100 %. Weitere Informationen zu Bereitschaftsindikatoren. [Weitere ](create.md#readiness-indicators) zu Bereitschaftsindikatoren.
+Wenn Ihre Site für die meisten Produkt-SKUs nicht ausreichend Traffic (Ansichten, Käufe oder Trends) erhält, wird der Lernprozess möglicherweise nicht abgeschlossen, sodass die Bereitschaftsindikatoren im Admin hängen bleiben. Bereitschaftsindikatoren helfen Händlern, den besten Empfehlungstyp für ihren Store auszuwählen, aber sie sind nur ein Leitfaden und erreichen möglicherweise nie 100 %. Weitere Informationen zu Bereitschaftsindikatoren. [Weitere &#x200B;](create.md#readiness-indicators) zu Bereitschaftsindikatoren.
 
 ### Empfehlungen für Backups {#backuprecs}
 

@@ -48,7 +48,7 @@ Allgemeine Anweisungen zum Einrichten von Storefronts finden Sie unter [Konfigur
 
 ## GraphQL: Abfrage `commerceOptimizer` {#graphql-commerceoptimizer-query}
 
-Headless-Storefronts rufen die `commerceOptimizer` GraphQL-Abfrage auf, um die `priceBookId` für die aktuelle Kundensitzung abzurufen. Übergeben Sie diesen Wert beim Abrufen der Preise ](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api){target="_blank"} die [[!DNL Adobe Commerce Optimizer] GraphQL-API.
+Headless-Storefronts rufen die `commerceOptimizer` GraphQL-Abfrage auf, um die `priceBookId` für die aktuelle Kundensitzung abzurufen. Übergeben Sie diesen Wert beim Abrufen der Preise [&#128279;](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api){target="_blank"} die [!DNL Adobe Commerce Optimizer] GraphQL-API.
 
 ```graphql
 {

@@ -40,7 +40,7 @@ In diesem Artikel erfahren Sie, wie Sie Backoffice-Ereignissen benutzerdefiniert
 
 >[!NOTE]
 >
->Erfahren Sie, wie [ Profile „benutzerdefinierte Identitäten ](custom-identities.md)&quot; können.
+>Erfahren Sie, wie [&#x200B; Profile „benutzerdefinierte Identitäten &#x200B;](custom-identities.md)&quot; können.
 
 Benutzerdefinierte Attribute werden auf zwei Ebenen unterstützt:
 
@@ -388,12 +388,12 @@ Fügen Sie `productListItems` Felder für die Bestellartikelebene hinzu:
 
 ## Schritt 12: Bestätigen Sie, dass Daten erfasst werden
 
-Gehen Sie in [ Admin zur Registerkarte ](connect-data.md#data-customization)Datenanpassung“, um zu bestätigen, dass benutzerdefinierte Attributdaten erfasst und an die Experience Platform gesendet werden.
+Gehen Sie in [&#x200B; Admin zur Registerkarte &#x200B;](connect-data.md#data-customization)Datenanpassung“, um zu bestätigen, dass benutzerdefinierte Attributdaten erfasst und an die Experience Platform gesendet werden.
 
 ### Fehlerbehebung
 
 Wenn die Meldung `No custom order attributes found.` auf der Registerkarte **[!UICONTROL Data Customization]** angezeigt wird, bestätigen Sie Folgendes:
 
 1. Sie haben die Voraussetzungen erfüllt, um die [!DNL Data Connection]-Erweiterung zu aktivieren. Siehe [Voraussetzungen](overview.md#prerequisites).
-1. Sie haben [benutzerdefinierte Bestellattribute“ ](#add-custom-attributes-to-orders).
+1. Sie haben [benutzerdefinierte Bestellattribute“ &#x200B;](#add-custom-attributes-to-orders).
 1. Mindestens ein Auftragsereignis wurde generiert.

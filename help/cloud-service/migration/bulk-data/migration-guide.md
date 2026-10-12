@@ -50,7 +50,7 @@ ht-degree: 0%
 
 Dieses Handbuch ist eine schrittweise Anleitung zum Ausführen einer Datenmigration von einer [!DNL Adobe Commerce] PaaS- oder On-Premise-Installation zum [!DNL Adobe Commerce as a Cloud Service] mithilfe des Tools für die Massendatenmigration. Die tatsächlichen Konfigurationswerte und umgebungsspezifischen Details variieren je nach Einrichtung.
 
-Bevor Sie beginnen, vergewissern Sie sich, dass Sie alle Elemente in der [Checkliste zur Kundenbereitschaft“ abgeschlossen ](readiness-checklist.md) den API-Zugriff mit dem [Migrationsservice-Zugriffshandbuch“ ](cdms-access.md) haben.
+Bevor Sie beginnen, vergewissern Sie sich, dass Sie alle Elemente in der [Checkliste zur Kundenbereitschaft“ abgeschlossen &#x200B;](readiness-checklist.md) den API-Zugriff mit dem [Migrationsservice-Zugriffshandbuch“ &#x200B;](cdms-access.md) haben.
 
 >[!NOTE]
 >
@@ -142,7 +142,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 >[!NOTE]
 >
->Wenn Sie die Cloud-CLI zum ersten Mal verwenden, müssen Sie auch Ihren öffentlichen SSH-Schlüssel zu Ihrem Konto hinzufügen. Anweisungen finden Sie [ „Handbuch ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) gesicherter Verbindungen“.
+>Wenn Sie die Cloud-CLI zum ersten Mal verwenden, müssen Sie auch Ihren öffentlichen SSH-Schlüssel zu Ihrem Konto hinzufügen. Anweisungen finden Sie [&#x200B; „Handbuch &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) gesicherter Verbindungen“.
 
 ### Commerce-Admin-Einstellungen ausrichten
 

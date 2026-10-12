@@ -57,7 +57,7 @@ Auf dieser Seite werden Verhaltensweisen beschrieben, die Sie beim Arbeiten mit 
 
 - Warten Sie einige Minuten und aktualisieren Sie die [!DNL Adobe Commerce Optimizer].
 - Vergewissern Sie sich, dass die in [!DNL Adobe Commerce] konfigurierte Mandanten-ID mit der [!DNL Commerce Optimizer] Umgebung übereinstimmt, die Sie überprüfen.
-- Überprüfen Sie, ob [ richtige (](../../optimizer/setup/catalog-sources.md)) oder das richtige Preisbuch in [!DNL Commerce Optimizer] ausgewählt ist.
+- Überprüfen Sie, ob [&#x200B; richtige (](../../optimizer/setup/catalog-sources.md)) oder das richtige Preisbuch in [!DNL Commerce Optimizer] ausgewählt ist.
 
 ## Produkte fehlen im exportierten Katalog
 

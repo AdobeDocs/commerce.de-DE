@@ -259,7 +259,7 @@ Für jedes Modul zeigt der Bericht Folgendes an:
 | Migrationsempfehlung | **Neu erstellen**, **Refaktorieren**, **Ersetzen** durch eine native Funktion oder **Entfernen** |
 | Abhängigkeiten | Mit welchen anderen Modulen dieses Modul interagiert, die Informationen zur Migrationssequenzierung liefern können |
 
-Öffnen Sie die Aufschlüsselung eines Moduls, um seine vollständigen Details anzuzeigen. Module mit einer Migrationsempfehlung **Rebuild** enthalten eine **[!UICONTROL Open in Developer Agent]** Schaltfläche, mit der die Beschreibung des Moduls direkt in den [Commerce Developer Agent kopiert ](https://developer.adobe.com/commerce/extensibility/developer-agent/), damit Sie sofort einen Blueprint für die Ersatzerweiterung erstellen können.
+Öffnen Sie die Aufschlüsselung eines Moduls, um seine vollständigen Details anzuzeigen. Module mit einer Migrationsempfehlung **Rebuild** enthalten eine **[!UICONTROL Open in Developer Agent]** Schaltfläche, mit der die Beschreibung des Moduls direkt in den [Commerce Developer Agent kopiert &#x200B;](https://developer.adobe.com/commerce/extensibility/developer-agent/), damit Sie sofort einen Blueprint für die Ersatzerweiterung erstellen können.
 
 **Workflow**
 
@@ -303,7 +303,7 @@ Adobes [KI-Entwickler-Tools für die Commerce](https://developer.adobe.com/comme
 
 #### Installieren von KI-Tools
 
-Vollständige Anweisungen [ spezifische IDE-Konfigurationen finden Sie unter „Installieren ](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools) Entwickler-Tools für die KI“.
+Vollständige Anweisungen [&#x200B; spezifische IDE-Konfigurationen finden Sie unter „Installieren &#x200B;](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools) Entwickler-Tools für die KI“.
 
 **Voraussetzungen:** Node.js 22.x, npm 9.0.0 oder höher, Adobe I/O CLI.
 
