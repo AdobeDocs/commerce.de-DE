@@ -1,26 +1,36 @@
 ---
 title: Kompatibilität für [!DNL Payment Services]
-description: Erfahren Sie [!DNL Payment Services]  ob in Ihrem Land verfügbar ist und ob es mit Ihrer Adobe Commerce-Version kompatibel ist.
+description: Erfahren Sie, ob [!DNL Payment Services] in Ihrem Land verfügbar ist und mit Ihrer Adobe Commerce-Version kompatibel ist.
 role: User
 level: Intermediate
 feature: Payments, Checkout, Paas, Saas
 exl-id: 4bef8429-5053-424d-806a-9e8b96295b1b
-TQID: https://experienceleague.adobe.com/UUD0IiEiwh0sZKMkclOJtoC2bKYcmDN3WAWD16mfad4
+TQID: 'https://experienceleague.adobe.com/UUD0IiEiwh0sZKMkclOJtoC2bKYcmDN3WAWD16mfad4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 4235bf48bb5f24a076621ee5985e9e7316fcb1cc
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 498
+source-wordcount: '499'
 ht-degree: 0%
-
 ---
-
 # Kompatibilität für [!DNL Payment Services]
 
 [!DNL Payment Services] ist für [!DNL Adobe Commerce as a Cloud Service], alle unterstützten Versionen von [!DNL Adobe Commerce on Cloud] und On-Premise sowie für Magento Open Source verfügbar. Versionsspezifische Informationen finden [&#x200B; auf &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/lifecycle-policy) Seite „Lebenszyklusrichtlinie“.

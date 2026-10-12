@@ -3,13 +3,21 @@ title: Title Case, max. 60 Zeichen, kein Produktname Suffix
 description: 150-160 Zeichen. Konzeptseiten beginnen mit „Mehr erfahren über…“
 role: Admin, Developer, Leader
 recommendations: noCatalog
-source-git-commit: fb4e6ad7fbd2b9ac8aab72180eb1cb77cba1d20e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
-
 ---
-
 
 <!--
 Copy into help/insights/<section>/<slug>.md, fill in the brackets, add

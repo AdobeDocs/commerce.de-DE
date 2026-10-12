@@ -9,28 +9,39 @@ autotag-review: '2026-07-22T19:19:18.443Z'
 TQID: 'https://experienceleague.adobe.com/728hkK-dzIPzyuBhuNyOqEE9FxlVGdVc9R2wIRcXobk'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
   - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 670b6214b28be93a16130552a226a8cadb487324
+    internal-label: Data management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 1171
+source-wordcount: '1171'
 ht-degree: 0%
-
 ---
-
 # Checkliste für die Kundenbereitschaft
 
 {{bulk-data-early-access}}
@@ -70,7 +81,7 @@ Das Migrations-Tool wird auf einem von Ihnen gesteuerten Computer ausgeführt, z
 
 - **Zugriff auf Source Store-APIs** — Der Zugriff auf die REST- und GraphQL-APIs des Quellspeichers muss vom Migrationsrechner aus möglich sein. Stellen Sie sicher, dass keine HTTP-Autorisierungs- oder Netzwerkeinschränkung den API-Traffic an die Quell-URL blockiert.
 - **Source OAuth-Anmeldeinformationen** - Das Migrations-Tool verwendet OAuth zur Authentifizierung beim Quellspeicher. Erstellen oder bestätigen Sie eine Integration in der Quelle [!UICONTROL **Admin**] ([!UICONTROL **System**] > [!UICONTROL **Erweiterungen**] > [!UICONTROL Integrations]) und halten Sie den Consumer Key, das Consumer Secret, das Access Token und das Access Token Secret bereit.
-- **PaaS-Quellen: Magento Cloud-API** Token - Generieren Sie ein [!DNL Cloud]-API-Token aus Ihren [Cloud-Kontoeinstellungen](https://accounts.magento.cloud) unter [!UICONTROL **Kontoeinstellungen**] > [!UICONTROL **API-Token**]. Nur erforderlich, wenn die Quelle eine [!DNL Adobe Commerce on Cloud] ist.
+- **PaaS-Quellen: Magento Cloud API Token** — Generieren Sie ein [!DNL Cloud] API-Token aus Ihren [Cloud-Kontoeinstellungen](https://accounts.magento.cloud) unter [!UICONTROL **Kontoeinstellungen**] > [!UICONTROL **API Token**]. Nur erforderlich, wenn die Quelle eine [!DNL Adobe Commerce on Cloud] ist.
 - **Source-Datenbankanmeldeinformationen** - (nur On-Premise) Die Details der Quell- [!DNL MySQL] Datenbankverbindung müssen konfiguriert werden: `host`, `port`, `user`, `password` und `database`.
 - **Möglichkeit, Cron anzuhalten** - Sie müssen in der Lage sein, Cron auf der Quellinstanz für die Dauer der Datenextraktion zu stoppen, um gleichzeitige Schreibvorgänge zu verhindern.
 - **Möglichkeit, Integrationen und Hintergrundaufträge anzuhalten** - Alle Drittanbieterintegrationen (ERP, OMS, PIM), geplanten Aufträge oder Hintergrundprozesse, die in die Quelldatenbank schreiben, müssen für das Extraktionsfenster angehalten werden.

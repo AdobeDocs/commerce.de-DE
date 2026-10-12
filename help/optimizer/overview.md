@@ -1,16 +1,24 @@
 ---
 title: Was ist [!DNL Adobe Commerce Optimizer]?
-description: Erfahren Sie mehr über  [!DNL Adobe Commerce Optimizer]  und seine wichtigsten Funktionen.
+description: Erfahren Sie mehr über [!DNL Adobe Commerce Optimizer] und seine wichtigsten Funktionen.
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1009'
 ht-degree: 0%
-
 ---
-
 # Was ist [!DNL Adobe Commerce Optimizer]?
 
 [!DNL Adobe Commerce Optimizer] verbessert Ihr E-Commerce-Erlebnis mit einer leistungsstarken Storefront, die organischen Traffic, Kundeninteraktion und Umsatz steigert.

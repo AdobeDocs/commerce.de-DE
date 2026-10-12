@@ -1,29 +1,42 @@
 ---
 title: '[!DNL Product Recommendations] Versionshinweise'
-description: Die neuesten Versionsinformationen für  [!DNL Product Recommendations]  von Adobe Commerce.
+description: Die neuesten Versionsinformationen für [!DNL Product Recommendations] von Adobe Commerce.
 feature: Services, Recommendations, Release Notes
 exl-id: 37404605-5b62-4c71-90d1-4f09e6105c4b
-TQID: https://experienceleague.adobe.com/cr5tBPTFRNlSTqtFNfUWS6p1LdhSrir28x3N1WC4Zw8
+TQID: 'https://experienceleague.adobe.com/cr5tBPTFRNlSTqtFNfUWS6p1LdhSrir28x3N1WC4Zw8'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: dec06508-d41f-555a-87e8-29e8bcdfa95a
+    internal-label: Recommendations
+  - id: adedf70c-c1e1-5734-acdc-c5c43b114964
+    internal-label: Release Notes
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 77e386b2806ea3761009a6ab67e2ea7e879135dd
+    internal-label: Data management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 2321
+source-wordcount: '2322'
 ht-degree: 0%
-
 ---
-
 # [!DNL Product Recommendations] Versionshinweise
 
 In den Versionshinweisen werden Aktualisierungen an den folgenden [!DNL Product Recommendations] beschrieben:
@@ -294,7 +307,7 @@ _20. März 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.x und neuer
 
-![Neu](../assets/new.svg) Umbenannte Magento Services in [Commerce Services](https://experienceleague.adobe.com/de/docs/commerce/user-guides/integration-services/saas) und verbesserte Benutzerfreundlichkeit in Admin
+![Neu](../assets/new.svg) Umbenennung von Magento Services in [Commerce Services](https://experienceleague.adobe.com/de/docs/commerce/user-guides/integration-services/saas) und verbesserte Benutzerfreundlichkeit in der Admin-Instanz
 
 ### 3.2.4 von Magento/Product-Recommendations
 

@@ -1,24 +1,35 @@
 ---
 title: Versteuerte Preise mit dem API-Mesh anzeigen
-description: Verwenden Sie  [!DNL API Mesh]  für Adobe Commerce und Catalog Service, um Preise einschließlich Steuern anzuzeigen.
+description: Verwenden Sie [!DNL API Mesh] für Adobe Commerce und Catalog Service, um Preise einschließlich Steuern anzuzeigen.
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: ca62c653-29b9-45cf-b2d4-8cb693b08aac
-TQID: https://experienceleague.adobe.com/mK-o11X-G7WZgCL9BmVnDMfTDBg3lDemTNkxqkhyMZM
+TQID: 'https://experienceleague.adobe.com/mK-o11X-G7WZgCL9BmVnDMfTDBg3lDemTNkxqkhyMZM'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: 4273989f-0bf2-5361-a17a-6909488d18ab
+    internal-label: Catalog Service
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: ce84ce08-883f-4337-ae83-6bb1855ca732
+    internal-label: API Mesh
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+    internal-label: Developer
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 289
+source-wordcount: '290'
 ht-degree: 0%
-
 ---
-
 # Versteuerte Preise mit API Mesh für Adobe Developer App Builder anzeigen
 
 [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/) ermöglicht Entwicklern die Integration von privaten oder Drittanbieter-APIs und anderen Benutzeroberflächen mit Adobe-Produkten unter Verwendung von Adobe I/O Runtime.

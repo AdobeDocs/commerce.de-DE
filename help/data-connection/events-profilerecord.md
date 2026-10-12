@@ -4,21 +4,30 @@ description: Erfahren Sie, welche Daten ein Profildatensatz erfasst.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: aaa30886-d9c0-4909-81ee-fad3407cac43
-TQID: https://experienceleague.adobe.com/bHKuzUSApLQNW-M8NY1xb6-WZtjACmRRZ0TtsPM55rU
+TQID: 'https://experienceleague.adobe.com/bHKuzUSApLQNW-M8NY1xb6-WZtjACmRRZ0TtsPM55rU'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 5594f40c-5dc7-522f-a0e0-f84045197b3c
+    internal-label: Eventing
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+    internal-label: Personalization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 499
+source-wordcount: '499'
 ht-degree: 0%
-
 ---
-
 # [!DNL Data Connection] Profildatensätze
 
 Im Folgenden werden die Commerce-Profildatensatzdaten beschrieben, die bei der Installation der [!DNL Data Connection] verfügbar sind. Die Daten in Profildatensätzen werden an die Adobe Experience Platform gesendet.
