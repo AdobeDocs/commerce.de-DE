@@ -29,7 +29,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] können Händler die Tracking-Informationen für eine Sendung in ihrem PayPal-Händler-Dashboard einsehen.
 
-Weitere [&#x200B; zum Versandraster für Adobe Commerce finden &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank} unter dem Thema „Sendungen“.
+Weitere [&#x200B; zum Versandraster für Adobe Commerce finden &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank} unter dem Thema „Sendungen“.
 
 ## Funktionsweise der Sendungsverfolgung
 

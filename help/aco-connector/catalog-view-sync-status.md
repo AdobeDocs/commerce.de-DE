@@ -4,7 +4,7 @@ last-update: 2026-09-03T00:00:00.000Z
 description: Verwenden Sie die Seite „Synchronisierungsstatus für Katalogansicht“, um die Katalogansicht, die Richtlinie, die Preisbuchreferenz und die wichtigsten mit Adobe Commerce Optimizer synchronisierten Konfigurationsdaten zu überwachen und abzustimmen.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -68,7 +68,7 @@ Auf der Registerkarte [!UICONTROL Catalog View] stellt jede Zeile eine benutzerd
 | **Einstellung** | Sie haben den freigegebenen Katalog in [!DNL Adobe Commerce] gelöscht. Die Katalogansicht ist weiterhin verfügbar, bis die Übergangsphase für die Löschung abläuft. Die standardmäßige Übergangsphase beträgt sieben Tage. Sie können die Standardeinstellung ändern, indem Sie die [Einstellungen für die Katalogansicht - Synchronisierung](#configure-aco-catalog-view-sync-settings) aktualisieren. |
 | **Verwaist** | Die Katalogansicht bzw. der -Schlüssel wurde direkt in [!DNL Adobe Commerce Optimizer] Studio und nicht vom Connector erstellt. Siehe [Überprüfen verwaister und gelöschter Einträge](#review-orphaned-and-deleted-entries). |
 
-[!UICONTROL Healthy], [!UICONTROL Pending] und [!UICONTROL Deleted] sind Informationszustände, die keine Maßnahmen erfordern. Siehe [Statuswerte synchronisieren](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} im *Commerce Admin Guide* um die vollständige Liste zu erhalten.
+[!UICONTROL Healthy], [!UICONTROL Pending] und [!UICONTROL Deleted] sind Informationszustände, die keine Maßnahmen erfordern. Siehe [Statuswerte synchronisieren](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} im *Commerce Admin Guide* um die vollständige Liste zu erhalten.
 
 ### Konfigurieren der Synchronisierungseinstellungen für die ACO-Katalogansicht {#configure-aco-catalog-view-sync-settings}
 
