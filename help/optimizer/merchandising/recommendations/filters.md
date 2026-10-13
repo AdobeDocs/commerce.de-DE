@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 40374f0aa28d3635fc567c0311e452f92dc5704c
+source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2364'
 ht-degree: 0%
 ---
 # Produkte filtern
@@ -280,3 +280,11 @@ Attribute filter support varies by recommendation type.
 - Wenn leere Attributwerte oder ungültige Bedingungen vorhanden sind, werden Empfehlungen nicht in der Storefront oder im Vorschaubereich gerendert.
 - Die Attributwerte müssen genau mit den Werten in Ihrem Katalog übereinstimmen, einschließlich Leerzeichen und Groß-/Kleinschreibung.
 - Wenn keines der Produkte die Filterkriterien erfüllt, werden die Empfehlungen nicht in der Storefront oder im Vorschaubereich gerendert.
+
+### Nicht vorrätig
+
+Mit dem folgenden Ausschlussfilter können Produkte anhand des Lagerstatus herausgefiltert werden:
+
+- Nicht vorrätig - (Nur Ausschluss) Ausgeschlossen sind nicht vorrätige Produkte.
+
+![Stock-Statusfilter](../../assets/filter-stock-status.png)
