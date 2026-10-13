@@ -1,5 +1,5 @@
 ---
-title: '[!Data Export] Protokollcodes-Referenz'
+title: '[ !Data Export] Protokollcodes-Referenz'
 description: Referenzliste für Datenexport-Log-Codes, Meldungen und Schweregrade, um Synchronisierungsprobleme zu beheben und zu entscheiden, wann eine teilweise oder vollständige Neusynchronisierung erforderlich ist.
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 Auf dieser Seite finden Sie eine Referenz für Datenexport-Protokollmeldungen, die Ihnen helfen, Synchronisierungsprobleme zu beheben und zu bestimmen, wann eine teilweise oder vollständige Neusynchronisierung erforderlich ist. Sie enthält nur Fehler-, Warnungs- und kritische Protokoll-Codes, die von der [!DNL Data Export]-Erweiterung ausgegeben werden.
 
-Informationen [ Protokolldateien und Anleitungen zur Fehlerbehebung finden Sie ](logging.md) „Überprüfen von Protokollen und Fehlerbehebung“.
+Informationen [&#x200B; Protokolldateien und Anleitungen zur Fehlerbehebung finden Sie &#x200B;](logging.md) „Überprüfen von Protokollen und Fehlerbehebung“.
 
 ## Details zum Log-Code
 
