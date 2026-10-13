@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 559efed5340b7076f18a3efc0077f9afd5f8ca48
 workflow-type: tm+mt
-source-wordcount: '3447'
+source-wordcount: '3576'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension] Versionshinweise
@@ -60,6 +60,16 @@ Zu den Aktualisierungen gehören:
 >Die [!DNL SaaS data export]-Erweiterung ist eine Sammlung von Modulen, die automatisch mit [!DNL Live Search], [!DNL Product Recommendations] und [!DNL Catalog Service] installiert werden. Sie können die auf Ihrem System installierte Version mithilfe von [!DNL Composer] überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Versionen 2026 {#release-notes-2026}
+
+### Version 103.5.0
+
+_13. Oktober 2026_
+
+![Beheben](../assets/fix.svg) **Präzise Attributsichtbarkeit in exportierten Metadaten**-Es wurde ein Problem behoben, bei dem das Feld Attributsichtbarkeit die Einstellung Administratorsichtbarkeit anstelle der Einstellung für Storefront-Sichtbarkeit exportierte. Connected Commerce-Services erhalten jetzt für jedes Attribut die richtige Sichtbarkeit. <!--MDEE-932-->
+
+![Neu](../assets/new.svg) **Bereichsfilter für numerische Produktattribute**-Aktualisierte Produktattribute zur Unterstützung des **Zahl**-Eingabetyps. Dieser Eingabetyp gilt für Attribute, die Dezimalwerte, einschließlich negativer Zahlen, speichern, ohne ein Währungssymbol anzuzeigen. Sie werden mit Metadaten exportiert, mit denen [!DNL Live Search] Facettenreichweite generieren können, sodass Käufer nach Messungen wie Betriebstemperatur filtern können. <!--MDEE-1416-->
+
+![Korrigieren](../assets/fix.svg) **Konsistente benutzerdefinierte Preisattributwerte**-Benutzerdefinierte Preisattributwerte werden jetzt mit zwei Dezimalstellen in die Standardwährung des Stores exportiert, sodass die Preisformatierung in der Storefront dem Preisdatenformat entspricht.<!--MDEE-1459-->
 
 ### Version 103.4.35
 
@@ -174,7 +184,7 @@ _13. April 2026_
 - Es wurde ein Problem behoben, bei dem gelöschte Produkte nicht ordnungsgemäß aus den verbundenen Commerce-Services entfernt wurden, wenn der Exportservice beim Löschen nicht verfügbar war. Wiederholungs- und Neusynchronisierungsvorgänge stellen jetzt sicher, dass gelöschte Produkte in SaaS korrekt angezeigt werden. <!--MDEE-1319-->
 - Katalogentitäten (Produkte und Kategorien) können jetzt in verbundene Commerce-Services exportiert werden, auch wenn in der Admin Store-Ansicht Attributwerte fehlen. Dies verbessert die Kompatibilität mit Erweiterungen von Drittanbietern und reduziert Exportfehler aufgrund fehlender Standardwerte. <!--MDEE-1333-->
 
-![Behebung](../assets/fix.svg) Es wurde ein Fehler auf der Seite „Status der Daten-Feed-Synchronisierung“ behoben, der auftreten konnte, wenn Feed-Datensätze unerwartete oder fehlende Daten enthielten. Das System kann nun problemlos mit solchen Fällen umgehen, wodurch die Stabilität verbessert und Abstürze verhindert werden. Wenn Sie den Adobe Commerce Optimizer-Connector zum Synchronisieren von Daten aus Adobe Commerce mit Adobe Commerce Optimizer verwenden, aktualisieren Sie zur Behebung auf [Adobe Commerce Optimizer-Connector &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/release-notes)Version 1.0.11 oder höher.<!--MDEE-1327-->
+![Behebung](../assets/fix.svg) Es wurde ein Fehler auf der Seite „Status der Daten-Feed-Synchronisierung“ behoben, der auftreten konnte, wenn Feed-Datensätze unerwartete oder fehlende Daten enthielten. Das System kann nun problemlos mit solchen Fällen umgehen, wodurch die Stabilität verbessert und Abstürze verhindert werden. Wenn Sie den Adobe Commerce Optimizer-Connector zum Synchronisieren von Daten aus Adobe Commerce mit Adobe Commerce Optimizer verwenden, aktualisieren Sie zur Behebung auf [Adobe Commerce Optimizer-Connector ](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes)Version 1.0.11 oder höher.<!--MDEE-1327-->
 
 ### Version 103.4.21
 
@@ -200,7 +210,7 @@ _6. Februar 2026_
 
 _2. Februar 2026_
 
-![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem Element-Batches während Aktualisierungen das zulässige Limit überschreiten konnten, was zu `items_limit_exceeded`-Fehlern beim Synchronisieren von Daten mit [Commerce-](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home) oder [Adobe Commerce Optimizer](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/data-sync) führte. <!--MDEE-1264-->
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem Element-Batches während Aktualisierungen das zulässige Limit überschreiten konnten, was zu `items_limit_exceeded`-Fehlern beim Synchronisieren von Daten mit [Commerce-](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) oder [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync) führte. <!--MDEE-1264-->
 
 ![Korrektur](../assets/fix.svg) Verbesserte Zuverlässigkeit von Produktdatenexporten durch Hinzufügen von Logik zum Registrieren fehlgeschlagener Elemente während der Sammlung von Bundle-Produktoptionen. <!--CCSAAS-4458-->
 
@@ -228,7 +238,7 @@ _24. November 2025_
 
 _22. Oktober 2025_
 
-![Neu](../assets/new.svg) Es wurde Unterstützung für die Erweiterung „Data Feed Sync Status“ hinzugefügt, um Datenübertragungen von [!DNL Adobe Commerce] zu verbundenen Services ([!DNL Catalog Service], [!DNL Live Search] und [!DNL Product Recommendations]) zu überwachen und Fehler zu beheben. Weitere Informationen zur Installation und Verwendung dieser Erweiterung finden Sie [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) im *Commerce Admin Guide*. <!--MDEE-954-->
+![Neu](../assets/new.svg) Es wurde Unterstützung für die Erweiterung „Data Feed Sync Status“ hinzugefügt, um Datenübertragungen von [!DNL Adobe Commerce] zu verbundenen Services ([!DNL Catalog Service], [!DNL Live Search] und [!DNL Product Recommendations]) zu überwachen und Fehler zu beheben. Weitere Informationen zur Installation und Verwendung dieser Erweiterung finden Sie [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) im *Commerce Admin Guide*. <!--MDEE-954-->
 
 ### Version 103.4.14
 
@@ -254,7 +264,7 @@ _18. September 2025_
 
 _29. August 2025_
 
-![Neu](../assets/new.svg) [!BADGE nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+![Neu](../assets/new.svg) [!BADGE nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 Es wurde Unterstützung für zusätzliche Produktattribute hinzugefügt, um Steuerklasse-, Attributsatz- und Bestandsdaten aus Commerce-Produktkonfigurationen im Produkt-Feed einzuschließen. Kunden, die diese Attribute in Produktexport-Feeds einbeziehen möchten, müssen das Modul Zusätzliche Produktattribute zu ihrem Adobe Commerce-Projekt hinzufügen. Siehe [Hinzufügen von Steuerklassen-, Attributsatz- und Bestandsattributen](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 
 ![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, das zu einer falschen Synchronisierung gelöschter Produktaktualisierungen führte, wenn während eines vollständigen Produktindex ein Fehler auftrat. Jetzt werden alle Produktlöschungen korrekt synchronisiert, selbst wenn während des Indizierungsprozesses ein Fehler auftritt. <!--MDEE-1144-->
