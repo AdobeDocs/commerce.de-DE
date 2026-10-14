@@ -2,7 +2,7 @@
 title: Checkliste für die Kundenbereitschaft
 description: Erfahren Sie, wie Sie sich mit einer Checkliste zur Bereitschaft, die die Interaktion, den Computer, die Quelle und das Ziel abdeckt, auf eine Massendatenmigration zu Adobe Commerce as a Cloud Service vorbereiten.
 feature: Cloud
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:18.443Z'
@@ -75,7 +75,7 @@ Das Migrations-Tool wird auf einem von Ihnen gesteuerten Computer ausgeführt, z
 - **Schreibfähiger Arbeitsordner** - Das Verzeichnis, in das das Migrations-Tool extrahiert wird, muss vom Migrationsbenutzer vollständig schreibbar sein. Das Tool schreibt Protokolle, Cache, [!DNL Composer] und generierte Dateien während der Ausführung.
 - **Ausreichend Speicherplatz** - Stellen Sie sicher, dass ausreichend freier Speicherplatz für extrahierte Daten, [!DNL Docker] Bilder und Protokollausgaben vorhanden ist. Der erforderliche Speicherplatz hängt von der Größe der Quelldatenbank ab.
 - **On-Premise-Quellen: Direkte Datenbankkonnektivität vom Migrationsrechner** - Für lokale Quellinstanzen muss der Migrationsrechner über direkten Netzwerkzugriff auf die Quelldatenbank verfügen. Das Tool stellt nicht automatisch eine lokale Datenbankkonnektivität her. Vergewissern Sie sich, dass der Host, der Port und die Anmeldeinformationen vom Migrationscomputer aus erreichbar sind, bevor Sie einen Migrationsbefehl ausführen.
-- **Cloud-CLI installiert und SSH-Schlüssel registriert** - Für [!DNL Adobe Commerce on Cloud] Quellinstanzen muss die [Cloud-CLI](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) auf dem Migrationsrechner installiert sein. Ihr öffentlicher SSH-Schlüssel muss ebenfalls in Ihrem Konto registriert sein. Anweisungen finden Sie [&#x200B; „Handbuch &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/secure-connections) gesicherter Verbindungen“.
+- **Cloud-CLI installiert und SSH-Schlüssel registriert** - Für [!DNL Adobe Commerce on Cloud] Quellinstanzen muss die [Cloud-CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) auf dem Migrationsrechner installiert sein. Ihr öffentlicher SSH-Schlüssel muss ebenfalls in Ihrem Konto registriert sein. Anweisungen finden Sie [ „Handbuch ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) gesicherter Verbindungen“.
 
 ### Source-Instanz
 
@@ -93,7 +93,7 @@ Das Migrations-Tool wird auf einem von Ihnen gesteuerten Computer ausgeführt, z
 - **IMS OAuth Server-zu-Server-Anmeldeinformationen** - Erforderlich, damit sich das Migrations-Tool beim Ziel authentifizieren kann. Generiert über die [Adobe Developer Console](https://developer.adobe.com/console/). Sie benötigen [!UICONTROL Developer] oder [!UICONTROL Admin] Zugriff auf Ihre Adobe-Organisation, da der einfache Benutzerzugriff zum Erstellen von Anmeldeinformationen nicht ausreicht. Stimmen Sie sich mit Ihrem Adobe-Team ab, um das richtige Produktprofil auszuwählen, und halten Sie die Client-ID (`ADOBE_IMS_CLIENT_ID`) und das Client-Geheimnis (`ADOBE_IMS_CLIENT_SECRET`) bereit.
 - **CDMS-Endpunkt-URL** - von Ihrem Adobe-Team bereitgestellt. Versuchen Sie nicht, diesen Wert abzuleiten. Sie benötigen sowohl den Vorproduktions-Endpunkt für Sandbox- und Testmigrationen als auch den Produktions-Endpunkt für Live-Cutover-Migrationen.
 - **Kernkonfiguration, die zwischen Quelle und Ziel abgestimmt ist** - Kernkonfigurationsdaten wie Store-Einstellungen und Systemkonfiguration werden vom Tool nicht migriert. Richten Sie sie vor der Migration manuell auf dem Ziel so ein, dass sie mit der Quelle übereinstimmt.
-- **B2B-Stores: B2B-Funktionen konsistent konfiguriert** - Wenn die Quelle ein B2B-fähiger Store ist, stellen Sie sicher, dass die relevanten B2B-[!UICONTROL Admin]-Einstellungen vor der Migration sowohl auf der Quelle als auch auf dem Ziel konsistent konfiguriert sind. Die [&#x200B; erforderlichen Einstellungen finden Sie &#x200B;](migration-guide.md) Migrationshandbuch .
+- **B2B-Stores: B2B-Funktionen konsistent konfiguriert** - Wenn die Quelle ein B2B-fähiger Store ist, stellen Sie sicher, dass die relevanten B2B-[!UICONTROL Admin]-Einstellungen vor der Migration sowohl auf der Quelle als auch auf dem Ziel konsistent konfiguriert sind. Die [ erforderlichen Einstellungen finden Sie ](migration-guide.md) Migrationshandbuch .
 
 ### Migrationsplanung
 
