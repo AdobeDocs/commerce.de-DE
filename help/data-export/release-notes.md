@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 559efed5340b7076f18a3efc0077f9afd5f8ca48
 workflow-type: tm+mt
-source-wordcount: '3447'
+source-wordcount: '3576'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension] Versionshinweise
@@ -60,6 +60,16 @@ Zu den Aktualisierungen gehören:
 >Die [!DNL SaaS data export]-Erweiterung ist eine Sammlung von Modulen, die automatisch mit [!DNL Live Search], [!DNL Product Recommendations] und [!DNL Catalog Service] installiert werden. Sie können die auf Ihrem System installierte Version mithilfe von [!DNL Composer] überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Versionen 2026 {#release-notes-2026}
+
+### Version 103.5.0
+
+_13. Oktober 2026_
+
+![Beheben](../assets/fix.svg) **Präzise Attributsichtbarkeit in exportierten Metadaten**-Es wurde ein Problem behoben, bei dem das Feld Attributsichtbarkeit die Einstellung Administratorsichtbarkeit anstelle der Einstellung für Storefront-Sichtbarkeit exportierte. Connected Commerce-Services erhalten jetzt für jedes Attribut die richtige Sichtbarkeit. <!--MDEE-932-->
+
+![Neu](../assets/new.svg) **Bereichsfilter für numerische Produktattribute**-Aktualisierte Produktattribute zur Unterstützung des **Zahl**-Eingabetyps. Dieser Eingabetyp gilt für Attribute, die Dezimalwerte, einschließlich negativer Zahlen, speichern, ohne ein Währungssymbol anzuzeigen. Sie werden mit Metadaten exportiert, mit denen [!DNL Live Search] Facettenreichweite generieren können, sodass Käufer nach Messungen wie Betriebstemperatur filtern können. <!--MDEE-1416-->
+
+![Korrigieren](../assets/fix.svg) **Konsistente benutzerdefinierte Preisattributwerte**-Benutzerdefinierte Preisattributwerte werden jetzt mit zwei Dezimalstellen in die Standardwährung des Stores exportiert, sodass die Preisformatierung in der Storefront dem Preisdatenformat entspricht.<!--MDEE-1459-->
 
 ### Version 103.4.35
 
