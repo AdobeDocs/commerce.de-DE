@@ -1030,7 +1030,7 @@ An der [!DNL Commerce Admin] wurden die folgenden Verbesserungen vorgenommen:
 
 ### Benutzerdefinierte Rechnungsbeträge über die REST-API erfassen
 
-Die Rechnung-API unterstützt jetzt [benutzerdefinierte &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)) mithilfe von Erweiterungsattributen. <!-- ACCS-186, ACCS-197, ACCS-143 -->
+Die Rechnung-API unterstützt jetzt [benutzerdefinierte &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)) mithilfe von Erweiterungsattributen. <!-- ACCS-186, ACCS-197, ACCS-143 -->
 
 >[!NOTE]
 >

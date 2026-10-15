@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
+source-git-commit: 3d21aed1af575d15c2cea4a42c49169a0fe37d7e
 workflow-type: tm+mt
-source-wordcount: '4182'
+source-wordcount: '4111'
 ht-degree: 0%
 ---
 # Regeln erstellen und verwalten
@@ -40,7 +40,7 @@ So erstellen und veröffentlichen Sie eine Regel:
 ## Erstellen einer Regel {#create-a-rule}
 
 1. Navigieren Sie in der linken Leiste zu _Merchandising_ > **Merchandising-Regeln**.
-1. (Optional) Verwenden Sie das **Katalogansicht**, um die Katalogansicht auszuwählen, in der die Regel angewendet werden soll. Die von Ihnen erstellte Regel wird auf die ausgewählte Ansicht beschränkt (oder auf alle Katalogansichten, wenn **Alle Ansichten** ausgewählt ist). Siehe [Auswählen der &#x200B;](workspace.md#select-catalog-view)), wie der Umfang der Katalogansicht funktioniert.
+1. (Optional) Wählen Sie im Dropdown-Menü **Katalogansicht“ die Katalogansicht aus, für** die Regel gilt. Die von Ihnen erstellte Regel wird auf die ausgewählte Ansicht beschränkt (oder auf alle Katalogansichten, wenn **Alle Ansichten** ausgewählt ist). Siehe [Auswählen der &#x200B;](workspace.md#select-catalog-view)), wie der Umfang der Katalogansicht funktioniert.
 
 1. Klicken Sie auf **[!UICONTROL Create rule]** , um den Regeleditor zu starten.
 
@@ -48,7 +48,7 @@ So erstellen und veröffentlichen Sie eine Regel:
 
 ### Regeltypen
 
-Jeder Regeltyp verfügt im Editor über ein Informationssymbol mit einer kurzen Erläuterung. Verwenden Sie den Typ, der entspricht, wo Käufer die Merchandising-Logik sehen sollen:
+Jeder Regeltyp verfügt im Editor über ein Informationssymbol mit einer kurzen Erläuterung. Verwenden Sie den Typ, der dem entspricht, in dem Käufer die Merchandising-Logik sehen:
 
 | Regeltyp | Zweck |
 | --- | --- |
@@ -82,7 +82,7 @@ Die Bedingungen sind die Voraussetzungen für den Trigger eines Ereignisses. Ein
    - Suchabfrage beginnt mit : Geben Sie ein Zeichen oder eine Zeichenfolge ein, die am Anfang der Abfrage des Erstkäufers stehen muss.
    - Suchabfrage endet mit : Geben Sie ein Zeichen oder eine Zeichenfolge ein, die am Ende der Abfrage des Erstkäufers stehen muss.
 
-   Die Ergebnisse werden sofort im Bereich *Regel testen* angezeigt und nach Priorität nummeriert. Mit dem Schieberegler *Ergebnisse pro Zeile* oben rechts können Sie die Anzahl der Produkte in jeder Zeile ändern.
+   Im *Regelbereich testen* werden die Ergebnisse sofort nach Priorität nummeriert angezeigt. Mit dem Schieberegler *Ergebnisse pro Zeile* oben rechts können Sie die Anzahl der Produkte in jeder Zeile ändern.
 
 1. Um andere Abfragen zu testen, ändern Sie den Abfragetext im Suchfeld *Regel testen* und drücken Sie **Return**.
 Zunächst rendert der Testbereich die Abfrage aus dem Suchfeld Bedingungen . Jetzt wird die Abfrage jedoch aus dem Feld Testabfrage gerendert. Im Testbereich wird jeweils nur eine Abfrage gerendert.
@@ -110,13 +110,13 @@ Eine Regel kann bis zu zehn Bedingungen enthalten. Der logische Operator, der zw
 
 >[!TAB Kategorieregel]
 
-Kategorieregeln steuern, wie Produkte auf (Kategorieseiten **bestellt**. Sie kombinieren **Kategorieregeln** mit **intelligentem Ranking** (einschließlich KI-gesteuerter Signale) und **manuellen** Aktionen wie Pin, Boost und Bury. So können Sie Discovery kuratieren, Promotions ausführen und Kategorieseiten an Ihrer Strategie ausrichten, ohne sich auf externe Tools verlassen zu müssen.
+Kategorieregeln steuern, wie Produkte auf (Kategorieseiten **bestellt**. Kombinieren Sie **Kategorieregeln** mit **intelligentem Ranking** und **manuellen**, um Discovery zu kuratieren, Promotions auszuführen und Kategorieseiten an Ihrer Strategie auszurichten.
 
 **Kategorien auswählen**
 
-Wählen **unter** eine oder mehrere Kategorien aus, auf die die Regel angewendet werden soll. Ausgewählte Kategorien werden unter dem Steuerelement angezeigt, sodass Sie den Umfang bestätigen können. Wählen Sie Kategorien auf eine der folgenden Arten aus:
+Wählen **unter** eine oder mehrere Kategorien für die Regel aus. Ausgewählte Kategorien werden unter dem Steuerelement angezeigt, sodass Sie den Umfang bestätigen können. Wählen Sie Kategorien auf eine der folgenden Arten aus:
 
-- **Kategoriestruktur durchsuchen** - Eine Kategorie erweitern, um ihre unmittelbar untergeordneten Kategorien zu laden. Um zu einer tieferen Ebene zu navigieren, erweitern Sie die untergeordnete Kategorie. Die Struktur wird jeweils nur eine Ebene geladen.
+- **Kategoriestruktur durchsuchen** - Um unmittelbar untergeordnete Kategorien zu laden, erweitern Sie eine Kategorie. Um zu einer tieferen Ebene zu navigieren, erweitern Sie die untergeordnete Kategorie. Die Struktur wird jeweils nur eine Ebene geladen.
 - **Suche nach Kategoriename** - Geben Sie einen Kategorienamen in das Feld **Suchen und Kategorien auswählen** ein. Die Suchergebnisse enthalten übereinstimmende Kategorienamen aus dem gesamten Katalog, einschließlich Kategorien außerhalb der aktuell erweiterten Verzweigung. Die Suche stimmt nicht mit dem Kategoriepfadtext überein.
 
 Wenn mehrere Kategorien ähnliche Namen haben, verwenden Sie den mit jedem Ergebnis angezeigten Kategoriepfad (z. B. `brakes/aurora`), um die richtige Kategorie auszuwählen.
@@ -127,13 +127,13 @@ Wenn mehrere Kategorien ähnliche Namen haben, verwenden Sie den mit jedem Ergeb
 
 >[!TIP]
 >
->Wenn eine untergeordnete Kategorie nicht sichtbar ist, erweitern Sie die übergeordnete Kategorie, um die nächste Ebene zu laden. Wenn Sie den Kategorienamen kennen, verwenden Sie das Suchfeld, anstatt durch die Baumstruktur zu navigieren. Dies ist für große Kataloge nützlich, da Kategorieebenen bei Bedarf geladen werden.
+>Wenn eine untergeordnete Kategorie nicht sichtbar ist, erweitern Sie die übergeordnete Kategorie, um die nächste Ebene zu laden. Wenn Sie den Kategorienamen kennen, verwenden Sie das Suchfeld, anstatt durch die Baumstruktur zu navigieren. Dieses Verhalten ist für große Kataloge nützlich, da Kategorieebenen bei Bedarf geladen werden.
 
 1. Klicken Sie in der Liste der ausgewählten Kategorien auf die drei Punkte neben einer Kategorie und wählen Sie Folgendes aus:
 
    - **Löschen** - Entfernt die Kategorie aus der Regel.
    - **Auf Unterkategorien anwenden** - Wendet die Regel auf Unterkategorien an, für die noch keine aktive Merchandising-Regel definiert ist.
-   - **Vorschau** - Zeigt an, wie die Kategorieseite in Ihrer Storefront angezeigt würde.
+   - **Vorschau** - Zeigt an, wie die Kategorieseite in Ihrer Storefront angezeigt wird.
 
 1. Wählen Sie optional [Intelligente Rangfolge](#intelligent-ranking), [Manuelle Rangfolge](#manual-ranking) oder [Attributrangfolge](#attribute-ranking) aus, wie in den folgenden Abschnitten beschrieben. Die gleichen Steuerelemente gelten für Suchregeln, wobei alle Unterschiede hervorgehoben werden.
 
@@ -145,7 +145,7 @@ Wenn mehrere Kategorien ähnliche Namen haben, verwenden Sie den mit jedem Ergeb
 
 Intelligente Rangfolgen bestellen Produkte mithilfe **Verhaltenssignalen** und gegebenenfalls KI. Sie gilt für **Suchregeln**, **alle Produktlisten** (Standardregeln) und **Kategorieregeln** (Kategorieseiten). Bei Einkäufern **Suchvorgängen** wiegt das Ranking auch **textliche Relevanz** für die Abfrage; **Kategorieseiten** verwenden Abfragetext nicht auf die gleiche Weise - der Editor konzentriert sich auf Verhaltensstrategien.
 
-Store-Inhaber können Strategien wie die folgenden festlegen. Exakte Beschriftungen und Zeitfenster stimmen mit dem Regeleditor überein und können je nach Regeltyp leicht abweichen.
+Store-Inhaber können Strategien wie die folgenden festlegen. Exakte Beschriftungen und Zeitfenster stimmen mit dem Regeleditor überein und unterscheiden sich geringfügig je nach Regeltyp.
 
 ![Intelligente Rangfolgen](../../assets/rule-intelligent-ranking.png)
 
@@ -160,13 +160,13 @@ Wählen Sie die Strategie für Ihre Regel aus. Im **[!UICONTROL Test your rule]*
 
 #### Verhaltenssignale für konfigurierbare Produkte und Varianten {#behavioral-signals-variants}
 
-Intelligente Rangfolgen erfassen Verhaltenssignale wie Ansichten, Warenkorbereignisse und Käufe für das spezifische Produkt, mit dem ein Käufer interagiert. Für ein konfigurierbares Produkt bedeutet dies, dass Signale auf der Ebene **Variante** (einfaches Produkt) aufgezeichnet werden, nicht gegen das konfigurierbare übergeordnete Element.
+Intelligent Ranking sammelt Verhaltenssignale für das spezifische Produkt, mit dem ein Käufer interagiert. Für ein konfigurierbares Produkt bedeutet dies, dass Signale auf der Ebene **Variante** (einfaches Produkt) aufgezeichnet werden, nicht gegen das konfigurierbare übergeordnete Element.
 
 Beim Ranking eines konfigurierbaren Produkts aggregiert Intelligent Ranking die Verhaltenssignale, die von allen Varianten erfasst werden, und aggregiert sie zum konfigurierbaren übergeordneten Element. Die Rangfolge eines konfigurierbaren Produkts spiegelt die kombinierten Signale jeder Variante wider, nicht nur einer.
 
 Diese Aggregation erfolgt innerhalb des Bereichs der durchsuchten Kategorie. Eine Variante trägt ihre Verhaltenssignale nur zum Ranking-Score des konfigurierbaren übergeordneten Elements für Kategorien bei, denen diese **Variante** zugewiesen ist. Wenn eine Variante in einer Kategorie fehlt, werden ihre Signale nicht auf den Rang des übergeordneten Elements in dieser Kategorie angerechnet, auch wenn das konfigurierbare übergeordnete Element selbst dort zugewiesen ist.
 
-**Best Practice:** Überprüfen Sie Kategoriezuweisungen für alle Produktvarianten, insbesondere in Katalogen, die größen-, farbige oder andere variantenspezifische Kategoriestrukturen verwenden, um zu bestätigen, dass jede Variante jeder Kategorie zugewiesen ist, in der sie angezeigt wird und das Ranking beeinflusst.
+**Best Practice:** Überprüfen Sie Kategoriezuweisungen für alle Produktvarianten, um sicherzustellen, dass jede Variante jeder Kategorie zugewiesen ist, in der sie das Ranking beeinflusst.
 
 **Beispiel:**
 
@@ -180,8 +180,8 @@ Verwenden Sie diese Steuerung, um abzuwägen, wie stark **Verhaltenssignale** di
 
 | Verhalten | Detail |
 | --- | --- |
-| Standard | `5` (entspricht dem vorherigen festen Verhaltensmultiplikator). |
-| Bereich | Von `1` (sanfter Verhaltenseinfluss) bis `100` (stärkerer Einfluss). Die Obergrenze kann sich in einer zukünftigen Version ändern. |
+| Standard | `50`. |
+| Bereich | Von `1` (sanfter Verhaltenseinfluss) bis `1000` (stärkerer Einfluss). |
 | Umfang | Gilt nur für Abfragen oder Listeneinträge, die das Ziel der Regel sind. Andere Regeln behalten ihre eigenen Verstärkungswerte bei. |
 | Vorschau | Die Regelvorschau verwendet denselben Verstärkungsfaktor wie Live-Ergebnisse für diese Regel. |
 | Indizierung | Wird zur **Abfragezeit** angewendet. Sie benötigen keinen Katalog neu synchronisieren oder vollständig neu indizieren, nur weil Sie diese Einstellung geändert haben. |
@@ -222,7 +222,7 @@ Ein Händler verwendet die „am häufigsten angesehene“ intelligente Rangfolg
 
 - **Texas Candle** (1. Position): Hat einen kürzeren, saubereren Produktnamen, der einen sehr hohen Textrelevanzwert erzeugt. Obwohl es weniger Ansichten als **YAN-K-E-512** hat, überwiegt seine überlegene Textübereinstimmung den Verhaltensschub.
 
-- **YAN-K-E-512** (untere Position): Obwohl der Name das höchste Ansichts-Perzentil in den Verhaltensdaten mit dem Status „Am häufigsten angezeigt“ hat, erzeugt sein komplexer, auf SKU basierender Name einen niedrigeren Textrelevanzwert. Im **[!UICONTROL Intelligent Ranking Boost]** (`5`) reicht der Verhaltenseinfluss möglicherweise nicht aus, um diese Textlücke zu schließen. Bei Produkten, die bereits mit der **übereinstimmen, kann die Steigerung** YAN-K-E-512) höher ausfallen. **YAN-K-E-512** muss auch mit der Abfrage übereinstimmen: Mindestens ein durchsuchbares Attribut für diese SKU muss **candle** enthalten, sonst wird es nicht in den Ergebnissen angezeigt und die Steigerung kann nicht angewendet werden.
+- **YAN-K-E-512** (untere Position): Obwohl der Name das höchste Ansichts-Perzentil in den Verhaltensdaten mit dem Status „Am häufigsten angezeigt“ hat, erzeugt sein komplexer, auf SKU basierender Name einen niedrigeren Textrelevanzwert. Im **[!UICONTROL Intelligent Ranking Boost]** (`50`) reicht der Verhaltenseinfluss möglicherweise nicht aus, um diese Textlücke zu schließen. Bei Produkten, die bereits mit der **übereinstimmen, kann die Steigerung** YAN-K-E-512) höher ausfallen. **YAN-K-E-512** muss auch mit der Abfrage übereinstimmen: Mindestens ein durchsuchbares Attribut für diese SKU muss **candle** enthalten, sonst wird es nicht in den Ergebnissen angezeigt und die Steigerung kann nicht angewendet werden.
 
 **Beispiel (allgemeine Abfrage):**
 
@@ -394,7 +394,7 @@ Diese Option bietet eine schnelle Möglichkeit, alle Regelparameter anzuzeigen, 
 
 | Feld | Beschreibung |
 | --- | --- |
-| [!UICONTROL Intelligent Ranking Boost] | Wenn eine andere intelligente Strategie als **Keine** ausgewählt wird, steuert diese Einstellung, wie stark sich Verhaltenssignale auf das Ranking für diese Regel auswirken. `5`; zulässiger Bereich `1`-`100`. Wird zur Abfragezeit angewendet. Die Regelvorschau entspricht dem Live-Verhalten der konfigurierten Regel. |
+| [!UICONTROL Intelligent Ranking Boost] | Wenn eine andere intelligente Strategie als **Keine** ausgewählt wird, steuert diese Einstellung, wie stark sich Verhaltenssignale auf das Ranking für diese Regel auswirken. `50`; zulässiger Bereich `1`-`1000`. Wird zur Abfragezeit angewendet. Die Regelvorschau entspricht dem Live-Verhalten der konfigurierten Regel. |
 
 ### Details
 
