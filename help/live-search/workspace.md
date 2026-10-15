@@ -1,25 +1,29 @@
 ---
 title: Einrichten der Live-Suche
-description: Der  [!DNL Live Search]  wird zum Konfigurieren, Verwalten und Überwachen der Suchleistung verwendet.
+description: Der Arbeitsbereich [!DNL Live Search] wird zum Konfigurieren, Verwalten und Überwachen der Suchleistung verwendet.
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
 TQID: https://experienceleague.adobe.com/RQ6BKo7AknERkwrXylYHNAuD-FDxLvG74nU1YvuVgwE
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 source-git-commit: 127067a1ef47c7d9e51c5792e03b568dd818fe8e
 workflow-type: tm+mt
-source-wordcount: 2360
+source-wordcount: '2361'
 ht-degree: 0%
-
 ---
-
 # Einrichten der Live-Suche
 
 Im Arbeitsbereich können Sie die Leistung von [!DNL Live Search] konfigurieren, verwalten und überwachen. Das Menü oben bietet Zugriff auf die Werkzeuge in jedem Funktionsbereich. Die verfügbaren Funktionen spiegeln die aktuelle Menüauswahl wider.
@@ -41,11 +45,11 @@ Weitere Informationen zu den erforderlichen Ereignissen, die Sie für eine Headl
 
 ### Healthcare-Kunden
 
-Wenn Sie Kunde im Gesundheitswesen sind und die [Data Services HIPAA-Erweiterung](../data-connection/hipaa-readiness.md#installation) installiert haben, die Teil der [Data Connection](../data-connection/overview.md)-Erweiterung ist, werden [!DNL Live Search] Storefront-Ereignisdaten nicht mehr erfasst. Dies liegt daran, dass Storefront-Ereignisdaten Client-seitig generiert werden. Um weiterhin Storefront-Ereignisdaten zu erfassen und zu senden, aktivieren Sie die Ereigniserfassung für [!DNL Live Search] erneut. Weitere Informationen finden Sie unter [Allgemeine Konfiguration](https://experienceleague.adobe.com/de/docs/commerce-admin/config/general/general#data-services).
+Wenn Sie Kunde im Gesundheitswesen sind und die [Data Services HIPAA-Erweiterung](../data-connection/hipaa-readiness.md#installation) installiert haben, die Teil der [Data Connection](../data-connection/overview.md)-Erweiterung ist, werden [!DNL Live Search] Storefront-Ereignisdaten nicht mehr erfasst. Dies liegt daran, dass Storefront-Ereignisdaten Client-seitig generiert werden. Um weiterhin Storefront-Ereignisdaten zu erfassen und zu senden, aktivieren Sie die Ereigniserfassung für [!DNL Live Search] erneut. Weitere Informationen finden Sie unter [Allgemeine Konfiguration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services).
 
 ## Festlegen des Umfangs
 
-Anfangs ist [Umfang](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) aller [!DNL Live Search] auf `Default Store View` festgelegt. Wenn Ihre [!DNL Commerce] mehrere Store-Ansichten enthält, legen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/websites-stores-views) fest, für die Ihre Facetteneinstellungen gelten.
+Anfangs ist [Umfang](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) aller [!DNL Live Search] auf `Default Store View` festgelegt. Wenn Ihre [!DNL Commerce] mehrere Store-Ansichten enthält, legen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) fest, für die Ihre Facetteneinstellungen gelten.
 
 ## Menüoptionen
 
@@ -61,7 +65,7 @@ Anfangs ist [Umfang](https://experienceleague.adobe.com/de/docs/commerce-admin/s
 
 ## Festlegen von Attributen als durchsuchbar
 
-Um zielgerichtete Ergebnisse zu erzielen, überprüfen Sie den Satz [&#x200B; (durchsuchbaren](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`) Produktattribute. Um Relevanz zu gewährleisten, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und knappen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langen Text enthalten, z. B. `description`. Dies kann, obwohl standardmäßig die Suche aktiviert ist, die Genauigkeit der Suchergebnisse verringern. Wenn eine Person beispielsweise nach „kurzen Hosen“ sucht und es Hemden mit einer Beschreibung gibt, die den Begriff „kurze Ärmel“ enthält, werden die Hemden in den Suchergebnissen angezeigt.
+Um zielgerichtete Ergebnisse zu erzielen, überprüfen Sie den Satz [ (durchsuchbaren](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`) Produktattribute. Um Relevanz zu gewährleisten, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und knappen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langen Text enthalten, z. B. `description`. Dies kann, obwohl standardmäßig die Suche aktiviert ist, die Genauigkeit der Suchergebnisse verringern. Wenn eine Person beispielsweise nach „kurzen Hosen“ sucht und es Hemden mit einer Beschreibung gibt, die den Begriff „kurze Ärmel“ enthält, werden die Hemden in den Suchergebnissen angezeigt.
 
 Führen Sie die folgenden Schritte aus, damit Attribute durchsuchbar sein können:
 
@@ -69,7 +73,7 @@ Führen Sie die folgenden Schritte aus, damit Attribute durchsuchbar sein könne
 1. Wählen Sie das Attribut aus, das durchsuchbar sein soll, z. B. `color`.
 1. Wählen Sie **Storefront-Eigenschaften** aus und setzen **In der Suche verwenden** auf `yes`.
 
-[!DNL Live Search] berücksichtigt auch die [Gewichtung](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search) eines Produktattributs, wie in Adobe Commerce festgelegt. Attribute mit einer höheren Gewichtung werden in den Suchergebnissen höher angezeigt.
+[!DNL Live Search] berücksichtigt auch die [Gewichtung](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search) eines Produktattributs, wie in Adobe Commerce festgelegt. Attribute mit einer höheren Gewichtung werden in den Suchergebnissen höher angezeigt.
 
 Die folgenden Attribute sind immer durchsuchbar:
 
@@ -102,7 +106,7 @@ Mit der mehrschichtigen Suche können Sie:
 - Ermöglichen Sie es Käufern, innerhalb der Suchergebnisse zu suchen.
 - Um die Ergebnisse weiter zu verfeinern, verwenden Sie `startsWith` und `contains` Suchindizierung in der zweiten Ebene der mehrschichtigen Suche.
 
-Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`productSearch`-Abfrage mithilfe &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search) Operatoren implementiert:
+Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`productSearch`-Abfrage mithilfe ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search) Operatoren implementiert:
 
 - **Mehrschichtige Suche** - Suche in einem anderen Suchkontext - Mit dieser Funktion können Sie bis zu zwei Ebenen der Suche für Ihre Suchanfragen durchführen. Beispiel:
 
@@ -122,15 +126,15 @@ Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`prod
 
     >[!NOTE]
     >
-    >Dieser Suchtyp unterscheidet sich vom vorhandenen Suchbegriff[&#x200B; der die automatische Vervollständigung durch &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#phrase) der Wortanfänge unterstützt. Wenn ein Produktattributwert beispielsweise „Outdoor Pants“ ist, gibt eine Phrasensuche Ergebnisse für „out pan“ zurück, da „out“ und „pan“ mit den Anfängen der Wörter im Wert übereinstimmen. Es werden keine Ergebnisse für „Arme Ameisen“ zurückgegeben, da diese Zeichenfolgen innerhalb der Wörter auftreten. Eine Suche sucht Text an einer beliebigen Stelle innerhalb eines Wortes, gibt also Ergebnisse für „oder Ameisen“ zurück.
+    >Dieser Suchtyp unterscheidet sich vom vorhandenen Suchbegriff[ der die automatische Vervollständigung durch ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#phrase) der Wortanfänge unterstützt. Wenn ein Produktattributwert beispielsweise „Outdoor Pants“ ist, gibt eine Phrasensuche Ergebnisse für „out pan“ zurück, da „out“ und „pan“ mit den Anfängen der Wörter im Wert übereinstimmen. Es werden keine Ergebnisse für „Arme Ameisen“ zurückgegeben, da diese Zeichenfolgen innerhalb der Wörter auftreten. Eine Suche sucht Text an einer beliebigen Stelle innerhalb eines Wortes, gibt also Ergebnisse für „oder Ameisen“ zurück.
 
 Diese neuen Bedingungen verbessern den Filtermechanismus für Suchanfragen, um Suchergebnisse zu verfeinern. Diese neuen Bedingungen wirken sich nicht auf die Hauptsuchabfrage aus.
 
 #### Implementierung
 
-1. Damit ein Produktattribut durchsuchbar ist, wechseln Sie zum Administrator und [&#x200B; Sie „Produktattribut festlegen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties).
+1. Damit ein Produktattribut durchsuchbar ist, wechseln Sie zum Administrator und [ Sie „Produktattribut festlegen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties).
 
-   Siehe die Liste der durchsuchbaren [Attribute](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
+   Siehe die Liste der durchsuchbaren [Attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
 
 1. Geben Sie die Suchfunktion für dieses Attribut an, z. B **„Enthält** (Standard) oder **Beginnt mit**. Sie können maximal sechs Attribute angeben, die für &quot;**&quot; aktiviert** sollen, und sechs Attribute, die für „Beginnt **&quot;** werden sollen. Darüber hinaus ist für die **Enthält**-Indizierung die Zeichenfolgenlänge auf 50 Zeichen oder weniger begrenzt.
 
@@ -207,7 +211,7 @@ Die Preise auf der Widget-Produktlistenseite und im Pop-up werden mithilfe der k
 
 ## Standard-Attributwerte
 
-Die folgenden Produktattribute verfügen über [Storefront-Eigenschaften](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/product-attributes) die [!DNL Live Search] standardmäßig verwendet und aktiviert.
+Die folgenden Produktattribute verfügen über [Storefront-Eigenschaften](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) die [!DNL Live Search] standardmäßig verwendet und aktiviert.
 
 | Eigenschaft | Storefront-Eigenschaft | Attribut |
 |---|---|---|

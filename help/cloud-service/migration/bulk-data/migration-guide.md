@@ -2,7 +2,7 @@
 title: Massendatenmigration ausführen
 description: Erfahren Sie, wie Sie mit der CLI eine Massendatenmigration von einer Adobe Commerce PaaS- oder On-Premise-Instanz zu Adobe Commerce as a Cloud Service konfigurieren und ausführen.
 feature: Cloud
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:07.600Z'
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 Dieses Handbuch ist eine schrittweise Anleitung zum Ausführen einer Datenmigration von einer [!DNL Adobe Commerce] PaaS- oder On-Premise-Installation zum [!DNL Adobe Commerce as a Cloud Service] mithilfe des Tools für die Massendatenmigration. Die tatsächlichen Konfigurationswerte und umgebungsspezifischen Details variieren je nach Einrichtung.
 
-Bevor Sie beginnen, vergewissern Sie sich, dass Sie alle Elemente in der [Checkliste zur Kundenbereitschaft“ abgeschlossen &#x200B;](readiness-checklist.md) den API-Zugriff mit dem [Migrationsservice-Zugriffshandbuch“ &#x200B;](cdms-access.md) haben.
+Bevor Sie beginnen, vergewissern Sie sich, dass Sie alle Elemente in der [Checkliste zur Kundenbereitschaft“ abgeschlossen ](readiness-checklist.md) den API-Zugriff mit dem [Migrationsservice-Zugriffshandbuch“ ](cdms-access.md) haben.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Bevor Sie beginnen, vergewissern Sie sich, dass Sie alle Elemente in der [Checkl
 
 Einrichten der Umgebung für die Massendatenmigration:
 
->[!VIDEO](https://video.tv.adobe.com/v/3496129?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3496121)
 
 1. Extrahieren Sie den Inhalt von `ccsaas-migration-tools.tar.gz`.
 
@@ -109,7 +109,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### Konfigurieren der OAuth-Quellberechtigungen
 
->[!VIDEO](https://video.tv.adobe.com/v/3496149?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3496142)
 
 Diese vier Werte signieren Anfragen vom Migrations-Tool an die Quell-Store-APIs. Um sie zu erhalten, öffnen Sie die [!UICONTROL Admin] und navigieren Sie zu [!UICONTROL **System**] > [!UICONTROL **Erweiterungen**] > [!UICONTROL **Integrationen**]. Erstellen oder öffnen Sie eine Integration und kopieren Sie dann die Werte in `.env`:
 
@@ -142,7 +142,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 >[!NOTE]
 >
->Wenn Sie die Cloud-CLI zum ersten Mal verwenden, müssen Sie auch Ihren öffentlichen SSH-Schlüssel zu Ihrem Konto hinzufügen. Anweisungen finden Sie [&#x200B; „Handbuch &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/secure-connections) gesicherter Verbindungen“.
+>Wenn Sie die Cloud-CLI zum ersten Mal verwenden, müssen Sie auch Ihren öffentlichen SSH-Schlüssel zu Ihrem Konto hinzufügen. Anweisungen finden Sie [ „Handbuch ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) gesicherter Verbindungen“.
 
 ### Commerce-Admin-Einstellungen ausrichten
 
@@ -154,7 +154,7 @@ Stellen Sie vor der Migration sicher, dass die folgenden Einstellungen zwischen 
 
 ### Target SaaS- und IMS-Anmeldedaten konfigurieren
 
->[!VIDEO](https://video.tv.adobe.com/v/3496174?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3496167)
 
 Dies sind die [!DNL Adobe Commerce as a Cloud Service] IMS- und API-Einstellungen für das Ziel. Sie benötigen die Mandanten-ID, die Organisations-ID, die IMS-OAuth-Server-zu-Server-Anmeldeinformationen und den richtigen IMS-Host für Ihre Umgebung. Abstimmung mit Ihrem Adobe-Team für Organisations-, Mandanten- und Profilzugriff. Versuchen Sie nicht, vertrauliche Werte abzuleiten oder zu schätzen.
 
@@ -259,7 +259,7 @@ CDMS_PORT=443
 
 ## Datenbankverbindungsdatei konfigurieren
 
->[!VIDEO](https://video.tv.adobe.com/v/3496164?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3496152)
 
 Die `.my.cnf`-Datei enthält [!DNL MySQL] Verbindungseinstellungen für die Extraktionsseite des Migrations-Tools. Erstellen Sie sie durch Kopieren von `.my.cnf.example` nach `.my.cnf` im Projektstamm. Der Abschnittsname muss mit `SOURCE_CONNECTION_NAME` in `.env` übereinstimmen.
 
