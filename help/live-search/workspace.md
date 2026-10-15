@@ -65,7 +65,7 @@ Anfangs ist [Umfang](https://experienceleague.adobe.com/en/docs/commerce-admin/s
 
 ## Festlegen von Attributen als durchsuchbar
 
-Um zielgerichtete Ergebnisse zu erzielen, überprüfen Sie den Satz [ (durchsuchbaren](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`) Produktattribute. Um Relevanz zu gewährleisten, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und knappen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langen Text enthalten, z. B. `description`. Dies kann, obwohl standardmäßig die Suche aktiviert ist, die Genauigkeit der Suchergebnisse verringern. Wenn eine Person beispielsweise nach „kurzen Hosen“ sucht und es Hemden mit einer Beschreibung gibt, die den Begriff „kurze Ärmel“ enthält, werden die Hemden in den Suchergebnissen angezeigt.
+Um zielgerichtete Ergebnisse zu erzielen, überprüfen Sie den Satz [&#x200B; (durchsuchbaren](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`) Produktattribute. Um Relevanz zu gewährleisten, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und knappen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langen Text enthalten, z. B. `description`. Dies kann, obwohl standardmäßig die Suche aktiviert ist, die Genauigkeit der Suchergebnisse verringern. Wenn eine Person beispielsweise nach „kurzen Hosen“ sucht und es Hemden mit einer Beschreibung gibt, die den Begriff „kurze Ärmel“ enthält, werden die Hemden in den Suchergebnissen angezeigt.
 
 Führen Sie die folgenden Schritte aus, damit Attribute durchsuchbar sein können:
 
@@ -106,7 +106,7 @@ Mit der mehrschichtigen Suche können Sie:
 - Ermöglichen Sie es Käufern, innerhalb der Suchergebnisse zu suchen.
 - Um die Ergebnisse weiter zu verfeinern, verwenden Sie `startsWith` und `contains` Suchindizierung in der zweiten Ebene der mehrschichtigen Suche.
 
-Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`productSearch`-Abfrage mithilfe ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search) Operatoren implementiert:
+Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`productSearch`-Abfrage mithilfe &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search) Operatoren implementiert:
 
 - **Mehrschichtige Suche** - Suche in einem anderen Suchkontext - Mit dieser Funktion können Sie bis zu zwei Ebenen der Suche für Ihre Suchanfragen durchführen. Beispiel:
 
@@ -126,13 +126,13 @@ Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`prod
 
     >[!NOTE]
     >
-    >Dieser Suchtyp unterscheidet sich vom vorhandenen Suchbegriff[ der die automatische Vervollständigung durch ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#phrase) der Wortanfänge unterstützt. Wenn ein Produktattributwert beispielsweise „Outdoor Pants“ ist, gibt eine Phrasensuche Ergebnisse für „out pan“ zurück, da „out“ und „pan“ mit den Anfängen der Wörter im Wert übereinstimmen. Es werden keine Ergebnisse für „Arme Ameisen“ zurückgegeben, da diese Zeichenfolgen innerhalb der Wörter auftreten. Eine Suche sucht Text an einer beliebigen Stelle innerhalb eines Wortes, gibt also Ergebnisse für „oder Ameisen“ zurück.
+    >Dieser Suchtyp unterscheidet sich vom vorhandenen Suchbegriff[&#x200B; der die automatische Vervollständigung durch &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#phrase) der Wortanfänge unterstützt. Wenn ein Produktattributwert beispielsweise „Outdoor Pants“ ist, gibt eine Phrasensuche Ergebnisse für „out pan“ zurück, da „out“ und „pan“ mit den Anfängen der Wörter im Wert übereinstimmen. Es werden keine Ergebnisse für „Arme Ameisen“ zurückgegeben, da diese Zeichenfolgen innerhalb der Wörter auftreten. Eine Suche sucht Text an einer beliebigen Stelle innerhalb eines Wortes, gibt also Ergebnisse für „oder Ameisen“ zurück.
 
 Diese neuen Bedingungen verbessern den Filtermechanismus für Suchanfragen, um Suchergebnisse zu verfeinern. Diese neuen Bedingungen wirken sich nicht auf die Hauptsuchabfrage aus.
 
 #### Implementierung
 
-1. Damit ein Produktattribut durchsuchbar ist, wechseln Sie zum Administrator und [ Sie „Produktattribut festlegen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties).
+1. Damit ein Produktattribut durchsuchbar ist, wechseln Sie zum Administrator und [&#x200B; Sie „Produktattribut festlegen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties).
 
    Siehe die Liste der durchsuchbaren [Attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
 
