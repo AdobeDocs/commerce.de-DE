@@ -1,29 +1,33 @@
 ---
 title: Merchandising-Regeln
 description: '[!DNL Adobe Commerce Optimizer] Merchandising-Regeln kombinieren Logik mit Aktionen, um Suchergebnisse, Standardproduktlisten und Kategorieseiten zu gestalten.'
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 TQID: https://experienceleague.adobe.com/1lpaqHx0SaVYLXcTSOToxvbpKzhPJKmhfxjlCvNQLkU
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+    internal-label: Personalization
+source-git-commit: 44fb94ab5d9ba6deab421a15b391294ec0087f38
 workflow-type: tm+mt
-source-wordcount: 760
+source-wordcount: '821'
 ht-degree: 0%
-
 ---
-
 # Merchandising-Regeln
 
-Merchandising-Regeln kombinieren Logik mit Aktionen, um die Darstellung von Produkten **Suchergebnisse** auf **Standardproduktlisten** (**Alle Produktlisten**) und auf **Kategorieseiten**. Sie können Produkte ankurbeln, vergraben, anheften oder ausblenden und **intelligentes Ranking** anwenden, sodass die Listeneinträge Ihre Geschäftsziele widerspiegeln.
+Merchandising-Regeln kombinieren Logik mit Aktionen, um die Darstellung von Produkten **Suchergebnissen** in **Standardproduktlisten** durch die **Standardsuchregel** und auf **Kategorieseiten**. Sie können Produkte ankurbeln, vergraben, anheften oder ausblenden und **intelligentes Ranking** anwenden, sodass die Listeneinträge Ihre Geschäftsziele widerspiegeln.
 
 Jede **Suchregel** besteht aus drei Hauptkomponenten:
 
@@ -31,9 +35,9 @@ Jede **Suchregel** besteht aus drei Hauptkomponenten:
 - **Ereignisse** - Aktionen, die stattfinden, wenn die Bedingungen erfüllt sind (manuelle Rangfolge und zugehörige Ereignisse).
 - **Details** - Der Name der Regel sowie optionaler Zeitrahmen und Beschreibung.
 
-**Kategorieregeln** Verwenden Sie **Kategorieauswahl** anstelle von Suchabfragebedingungen; intelligentes Ranking und manuelles Ranking funktionieren auf die gleiche Weise wie für die Suche, wobei die Unterschiede in „Regeln erstellen [&#x200B; verwalten“ &#x200B;](add.md).
+**Kategorieregeln** Verwenden Sie **Kategorieauswahl** anstelle von Suchabfragebedingungen; intelligentes Ranking und manuelles Ranking funktionieren auf die gleiche Weise wie für die Suche, wobei die Unterschiede in „Regeln erstellen [ verwalten“ ](add.md).
 
-Sie können mehrere Bedingungen und Aktionen für Suchregeln kombinieren und jede Regel so planen, dass sie für einen Zeitraum aktiv ist. Sie können auch eine **Standardregel** festlegen (**Alle Produktlisten**), die gilt, wenn keine spezifischere Such- oder Kategorieregel gilt.
+Sie können mehrere Bedingungen und Aktionen für Suchregeln kombinieren und jede Regel so planen, dass sie für einen Zeitraum aktiv ist. Sie können auch eine **Standard-Suchregel“ festlegen** die gilt, wenn keine spezifischere Such- oder Kategorieregel gilt.
 
 ## Kategorieregeln {#category-rules}
 
@@ -68,7 +72,7 @@ Beim Erstellen einer komplexen Regel kann es hilfreich sein, sie mit Einzügen a
 
 ## Standardregel
 
-Sie können eine Standardregel (**Alle Produktlisten) festlegen** die gilt, wenn kein Suchbegriff angegeben wird oder keine andere Suchregel angewendet werden kann. Wenn Sie die Standardregel auf „Am häufigsten gekauft“ setzen, wird für Abfragen standardmäßig dieser Rangfolgetyp verwendet, es sei denn, sie werden durch einen spezifischeren Suchbegriff ersetzt. Für die Standardregel kann kein Suchbegriff festgelegt werden. **Kategorieregeln** sind separat: Sie gelten nur für die von Ihnen ausgewählten Kategorien und ersetzen nicht die standardmäßige Auflistungsregel.
+Sie können eine **Standard-Suchregel** festlegen, die angewendet wird, wenn kein Suchbegriff angegeben wird oder keine andere Suchregel angewendet werden kann. Wenn Sie die Standardregel auf „Am häufigsten gekauft“ setzen, wird für Abfragen standardmäßig dieser Rangfolgetyp verwendet, es sei denn, sie werden durch einen spezifischeren Suchbegriff ersetzt. Für die Standardregel kann kein Suchbegriff festgelegt werden. **Kategorieregeln** sind separat: Sie gelten nur für die von Ihnen ausgewählten Kategorien und ersetzen nicht die standardmäßige Auflistungsregel.
 
 ## Rangfolge mit mehreren Regeln
 
