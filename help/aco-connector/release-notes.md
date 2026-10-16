@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 1051405a754ac98534b8a27472dccbfb2fff19c7
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '602'
 ht-degree: 0%
 ---
 # Versionshinweise zum Adobe Commerce Optimizer-Connector
@@ -52,6 +52,13 @@ In diesen Versionshinweisen werden alle Versionen für die [!DNL Adobe Commerce 
 ![Bekanntes Problem](../assets/bug.svg) Bekannte Probleme
 
 ## Versionen 2026
+
+### Version 1.2.0
+
+_13. Oktober 2026_
+
+![Beheben](../assets/fix.svg) Aktivieren des Stores-Feeds für den Zahlungsdienst. <!--MDEE-1459-->
+![Korrigieren](../assets/fix.svg) Produktvideos werden jetzt mit [!DNL Adobe Commerce Optimizer] synchronisiert, wobei die konfigurierte Sortierreihenfolge beibehalten wird. <!--DATA-7320-->
 
 ### Version 1.1.1
 
