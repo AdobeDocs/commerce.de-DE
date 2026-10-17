@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 02108257eed58231854947feafc8c48e0a75a8bb
 workflow-type: tm+mt
-source-wordcount: '8064'
+source-wordcount: '8820'
 ht-degree: 0%
 ---
 # Versionshinweise
@@ -74,7 +74,106 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 >
 >Wenn Sie Adobe Commerce On-Premise oder Adobe Commerce in der Cloud-Infrastruktur verwenden, lesen Sie die [Versionshinweise zu Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview).
 
-## Oktober 2026 - #1 {#latest}
+## Oktober 2026 - #2 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+Die folgenden Elemente sind am 20. Oktober 2026 in Produktionsumgebungen verfügbar.
+
+>[!BEGINSHADEBOX]
+
+<!-- CCSAAS-5510, ACCS-1756, ACCS-432, MDEE-1415, PAY-6085 not included due to pending epics and other dependencies -->
+
+### Benutzerdefinierte Länderregionen verwalten
+
+Mit neuen REST-API-Endpunkten können Integrationen benutzerdefinierte Regionen wie Bundesstaaten oder Provinzen für Länder verwalten, die nicht von den Daten der Standardregion abgedeckt werden.
+
+Standardbereiche (System) können nicht geändert oder entfernt werden. Für diese Endpunkte ist die Berechtigung [!UICONTROL Manage Country Regions] erforderlich. <!-- ACCS-1937 -->
+
+* `GET /V1/directory/countries/:countryId/regions` : Listet die Regionen auf und sucht nach einem Land.
+* `POST /V1/directory/countries/:countryId/regions`: Erstellen von bis zu 500 benutzerdefinierten Regionen in einer Anfrage. Wenn die Validierung einer Region fehlschlägt, werden keine Regionen erstellt.
+* `PUT /V1/directory/countries/:countryId/regions/:regionId` - Benutzerdefinierte Region aktualisieren.
+* `DELETE /V1/directory/countries/:countryId/regions/:regionId` - Benutzerdefinierte Region löschen.
+
+### Abonnieren von Kundenadressereignissen
+
+Integrationen können jetzt die folgenden Ereignisse über [!DNL Adobe I/O Events] abonnieren, um Änderungen an registrierten Kundenadressbüchern zu synchronisieren. An den Gast-Checkout-Adressen werden diese Ereignisse nicht Trigger. <!-- ACCS-2095 -->
+
+* `observer.customer_address_delete_commit_after` - Eine Kundenadresse wird gelöscht.
+* `observer.customer_address_save_commit_after` - Eine Kundenadresse wird erstellt oder aktualisiert.
+
+### Hochgeladene und importierte Dateien validieren
+
+Sie können jetzt eine optionale SHA-256-Prüfsumme bereitstellen, wenn Sie eine vordefinierte Upload-URL anfordern. Senden Sie denselben Wert in der `x-amz-checksum-sha256`-Kopfzeile, wenn Sie die Datei hochladen. <!-- ACCS-1464 -->
+
+* GraphQL - Geben Sie das `checksum_sha256` als Eingabe für die `initiateUpload` an.
+* REST - Verwenden Sie den neuen `POST /V1/media/initiate-upload-with-checksum`-Endpunkt mit dem Feld `checksumSha256` .
+
+### Anzeigen der Bestellsummen in einer Kette zur Bearbeitung von Bestellungen
+
+Der `Customer` GraphQL-Typ enthält jetzt ein `chain_totals(filter: CustomerChainTotalsFilterInput)`, das aggregierte Summen für jede Bestellung in einer Reihenfolge-Bearbeitungskette zurückgibt. Mit `original_number` nach einer beliebigen Bestellnummer in der Kette filtern. Es wird nur die `eq` Bedingung unterstützt. Dieses Feld verwendet dasselbe Feature Flag wie der Filter für die `original_number`, das standardmäßig deaktiviert ist. <!-- ACCS-1443 -->
+
+Die [!DNL Commerce Admin] kann auch konsolidierte Summen über eine Auftragsbearbeitungskette hinweg im [!UICONTROL Order Chains] Raster ([!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Order Chains]) und in einer [!UICONTROL Order Chain Totals] Zusammenfassung in der Auftragsketten-Detailansicht anzeigen.
+
+Wenden Sie sich zur Aktivierung dieser Felder an Ihren Adobe Commerce Customer Success Manager oder erstellen Sie ein Support-Ticket.
+
+### Verfügbarkeit auf Lagerebene überprüfen
+
+Die neue `stockAvailability(skus: [String!]!)` GraphQL-Abfrage gibt die Verfügbarkeit auf Lagerebene für bis zu 100 SKUs zurück. <!-- ACCS-2079 -->
+
+### Verbesserungen und Fehlerbehebungen
+
+Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen sind in dieser Version enthalten:
+
+* Produkt-Feeds exportieren jetzt Lagerbestand- und Warenkorbmengeneinstellungen über das benutzerdefinierte Produktattribut `ac_inventory` und die Steuerklasse und das Attribut, die über die benutzerdefinierten Produktattribute `ac_tax_class` und `ac_attribute_set` festgelegt wurden. <!-- ACCS-1981, MDEE-1129 -->
+
+* Es wurde ein Problem behoben, bei dem Kategoriebilder nicht in GraphQL zurückgegeben wurden, wenn [!DNL AEM Assets] Visualisierungsbesitzer war. <!-- ACCS-1943 -->
+
+* Es wurde ein Problem behoben, bei dem das Erstellen einer Kategorie bei Verwendung von [!DNL AEM Assets] einen Fehler zurückgeben konnte. <!-- CCSAAS-5562 -->
+
+* Fehlerkorrektur - E-Mails zur Freigabe der Geschenkregistrierung können jetzt gesendet werden. <!-- CCSAAS-5312 -->
+
+* Es wurde ein Problem behoben, bei dem die `placeOrder` GraphQL-Mutation beim Anfordern von Versandsteuertiteln einen Fehler zurückgeben konnte. <!-- CCSAAS-5569 -->
+
+* Es wurde ein Problem behoben, bei dem die Synchronisierung von Produkt-Feeds beendet werden konnte, wenn Attributoptionen Beschriftungen für gelöschte Stores oder keine Beschriftungen hatten. <!-- ACCS-2097 -->
+
+* Fehlerkorrektur - Die Bestellung aus einem über `PUT /V1/carts/:cartId/order` erstellten Warenkorb schlägt jetzt nach der Zahlungsautorisierung nicht mehr fehl. <!-- ACCS-2091, PAY-6857 -->
+
+* Es wurde ein Problem behoben, bei dem das Erstellen einer Bestellung aus dem Warenkorb eines Kunden in der [!DNL Commerce Admin] die Zahlungsautorisierungssumme ändern und die Adressen aus dem Warenkorb der Kunden entfernen konnte. <!-- ACCS-2100 -->
+
+* Wird ein Versandrabatt über die REST-API angewendet oder entfernt, während eine Bestellung über denselben Warenkorb aufgegeben wird, wird jetzt ein wiederholbarer Fehler zurückgegeben. <!-- ACCS-2077 -->
+
+* Produktspeicherereignisse (`observer.catalog_product_save_commit_after` und `observer.catalog_product_save_after`) umfassen jetzt aktuelle verwandte, Upsell- und Crosssell-Produkte, wenn Produktlinks hinzugefügt, aktualisiert oder entfernt werden. <!-- ACCS-2049 -->
+
+* Die `/V1/returns` REST-Endpunkte speichern jetzt benutzerdefinierte Attribute und geben sie zurück. <!-- CCSAAS-5588 -->
+
+* Fehlerkorrektur - In der `CartAddressInput` GraphQL-Eingabe ist jetzt das `telephone` erforderlich, sodass Versandmethoden beim Checkout nicht angezeigt werden können. <!-- ACCS-1944 -->
+
+* Es wurde ein Problem behoben, bei dem Sonderpreise mit einem Datumsbereich unter Verwendung der standardmäßigen Zeitzone anstelle der Website-Zeitzone exportiert wurden. <!-- ACCS-2101 -->
+
+* Fehlerkorrektur - Bei Bestellungen über GraphQL interagieren Versandkosten und Steuern jetzt korrekt. <!-- ACCS-1995 -->
+
+* Es wurde ein Problem behoben, bei dem das Aktivieren von [!UICONTROL Company] und [!UICONTROL Shared Catalog] im Website-Umfang fehlschlug. <!-- ACCS-1999 -->
+
+* Es wurde ein Problem behoben, bei dem einige konfigurierbare Produkte die Synchronisierung mit dem Katalog beendeten, wenn ein untergeordnetes Produkt einen leeren Wert für ein konfigurierbares Attribut hatte. <!-- ACCS-2107 -->
+
+* Es wurde ein Problem behoben, bei dem [!UICONTROL New Return] E-Mails ohne die zurückgegebenen Elemente gesendet werden konnten, die aufgelistet waren, wenn die Bedingung, Auflösung oder der Grund eines Elements nicht festgelegt war. <!-- CCSAAS-5585 -->
+
+* Es wurde ein Problem behoben, bei dem die Seite [!UICONTROL Catalog] > [!UICONTROL Categories] im [!DNL Commerce Admin] für Stores mit Kategorieattributen ohne Eingabetyp nicht geladen wurde. <!-- CCSAAS-5582 -->
+
+* Es wurde ein Problem behoben, bei dem der [!UICONTROL Global]-Bereich nicht in [!UICONTROL Content] > [!UICONTROL Design] > [!UICONTROL Configuration] geöffnet werden konnte. <!-- CCSAAS-5583 -->
+
+* Es wurde ein Problem behoben, bei dem Admin-Benutzer ohne Berechtigung zum Bearbeiten des Produktpreises oder des Status die [!UICONTROL Add Product] nicht öffnen konnten. <!-- CCSAAS-5584 -->
+
+* Es wurde ein Problem behoben, bei dem das Steuersatzformular nicht im Multi-Store-Modus geöffnet werden konnte. <!-- ACCS-2102 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Oktober 2026 - #1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
@@ -130,6 +229,8 @@ Wenn diese Option aktiviert ist, blockiert [!DNL Commerce] Gastaufrufer sowohl a
 ### Prüfen einer Bestellung über GraphQL
 
 Das `CustomerOrdersFilterInput` GraphQL-Eingabeobjekt unterstützt jetzt ein `original_number`, mit dem Sie nach einer beliebigen Bestellnummer in einer Kette zur Bearbeitung von Bestellungen filtern können. Die Antwort gibt die ursprüngliche Reihenfolge und alle aus nachfolgenden Bearbeitungen erstellten Bestellungen als einzelne Kette zurück, die mit dem `order_original_id` in REST übereinstimmt. <!-- ACCS-1442 -->
+
+Wenden Sie sich zur Aktivierung dieser Funktion an Ihren Adobe Commerce Customer Success Manager oder erstellen Sie ein Support-Ticket.
 
 ### Planen von Katalogpreisregeln nach Datum und Uhrzeit
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: b12fd59e97279b78017bee0403a7e7672adb1957
+source-git-commit: f43710c77d063d923d136b9fda2d9283ede97788
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1250'
 ht-degree: 1%
 ---
 # Neue Vorlage
@@ -9,6 +9,80 @@ ht-degree: 1%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;16. Oktober 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Die Dokumentation zu Merchandising-Regeln wurde aktualisiert, um den Regeltyp Alle Produktauflistungen in Standardsuchregel in <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/overview">Übersicht über Merchandising-Regeln</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add">Regeln erstellen und verwalten</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/release-notes">Versionshinweise</a> umzubenennen, wobei die umbenannte Option im Menü „Regeltyp für Admin“ übereinstimmt.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b5c9b1b4ead9f355cd7438d3a8f1b90ac08b12d1">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;14. Oktober 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Die dokumentierten Standard- und Bereichswerte für [!UICONTROL Intelligent Ranking Boost] in <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">Erstellen und Verwalten von Merchandising-Regeln</a> wurden korrigiert: Der Standardwert ist <code>50</code> (zuvor als <code>5</code> dokumentiert) und der maximale Bereich ist <code>1000</code> (zuvor als <code>100</code> dokumentiert).</p>
+</td>
+      <td>
+        Technisch
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/07fb011b0303ebca11dd3e0948d264c72bd2422e">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;12. Oktober 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Es wurde Dokumentation für den neuen Filter für nicht vorrätige Ausschlüsse für Empfehlungseinheiten in <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/recommendations/filters">Filter</a> hinzugefügt, der nicht vorrätige Produkte von Empfehlungen ausschließt.</p>
+</td>
+      <td>
+        Feedback, große Aktualisierung
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/abba2327d9c678e374a94c5bc5ed091f401c8aff">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Die Referenz <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">Datenexport-Protokollcodes</a> wurde von der neuesten Version <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a> aktualisiert.</p>
+</td>
+      <td>
+        Technisch
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/83acf0b6474920141c0bcc354f7c49ea7d10d29c">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;8. Oktober 2026
 
@@ -388,36 +462,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Größere Aktualisierung
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b6613edbf84681a860b9c71a07f43a7df40e8784">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;12. August 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Produktions- <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed13ed011180fbb9d535f5a228a5f932ebf00689">verpflichten</a></td>
-    </tr>
-    <tr>
-      <td><p>Händler können jetzt das Onboarding eines anderen PayPal-Kontos auf der Website direkt vom Commerce-Administrator selbst durchführen. Weitere <a href="https://experienceleague.adobe.com/de/docs/commerce/payment-services/configure/connect-website-account"> finden Sie unter „Verbinden eines anderen PayPal</a>Kontos für eine Website“.</p>
-</td>
-      <td>
-        Neues Thema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e18c82a81c49de8175a8a8d77e9a191fe2af4b46">verpflichten</a></td>
     </tr>
   </tbody>
 </table>

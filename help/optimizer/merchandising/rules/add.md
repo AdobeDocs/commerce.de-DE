@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3d21aed1af575d15c2cea4a42c49169a0fe37d7e
+source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
 workflow-type: tm+mt
-source-wordcount: '4111'
+source-wordcount: '4108'
 ht-degree: 0%
 ---
 # Regeln erstellen und verwalten
@@ -52,7 +52,7 @@ Jeder Regeltyp verfügt im Editor über ein Informationssymbol mit einer kurzen 
 
 | Regeltyp | Zweck |
 | --- | --- |
-| **Alle Produktlisten** | Standard-Ranking und Merchandising in allen Produktlisten, wenn keine spezifischere Such- oder Kategorieregel gilt. Sie können nur eine solche Regel erstellen; sie kann keine Bedingungen enthalten. |
+| **Standardsuchregel** | Standard-Ranking und Merchandising in allen Produktlisten, wenn keine spezifischere Such- oder Kategorieregel gilt. Sie können nur eine solche Regel erstellen; sie kann keine Bedingungen enthalten. |
 | **Kategorieregel** | Wendet Merchandising und Ranking auf eine einzelne Kategorie an und steuert die Produktbestellung auf dieser Kategorieseite. |
 | **Suchregel** | Wendet Merchandising und Ranking an, wenn Käufer eine Suche ausführen, die den Abfragebedingungen der Regel entspricht. |
 
@@ -143,7 +143,7 @@ Wenn mehrere Kategorien ähnliche Namen haben, verwenden Sie den mit jedem Ergeb
 
 ### Intelligente Rangfolge {#intelligent-ranking}
 
-Intelligente Rangfolgen bestellen Produkte mithilfe **Verhaltenssignalen** und gegebenenfalls KI. Sie gilt für **Suchregeln**, **alle Produktlisten** (Standardregeln) und **Kategorieregeln** (Kategorieseiten). Bei Einkäufern **Suchvorgängen** wiegt das Ranking auch **textliche Relevanz** für die Abfrage; **Kategorieseiten** verwenden Abfragetext nicht auf die gleiche Weise - der Editor konzentriert sich auf Verhaltensstrategien.
+Intelligente Rangfolgen bestellen Produkte mithilfe **Verhaltenssignalen** und gegebenenfalls KI. Sie gilt für **Suchregeln**, **Standardsuchregeln** und **Kategorieregeln** (Kategorieseiten). Bei Einkäufern **Suchvorgängen** wiegt das Ranking auch **textliche Relevanz** für die Abfrage; **Kategorieseiten** verwenden Abfragetext nicht auf die gleiche Weise - der Editor konzentriert sich auf Verhaltensstrategien.
 
 Store-Inhaber können Strategien wie die folgenden festlegen. Exakte Beschriftungen und Zeitfenster stimmen mit dem Regeleditor überein und unterscheiden sich geringfügig je nach Regeltyp.
 
@@ -401,7 +401,7 @@ Diese Option bietet eine schnelle Möglichkeit, alle Regelparameter anzuzeigen, 
 | Feld | Beschreibung |
 | --- | --- |
 | Name | Der Name der Regel. Regelnamen müssen eindeutig sein. |
-| Regeltyp | **Standard** (alle Produktlisten), **Abfrage** (spezifische Suchbedingungen) oder **Kategorie** (Kategorieseiten), je nachdem, für **Regel gilt**. |
+| Regeltyp | **Standardsuchregel**, **Abfrage** (spezifische Suchbedingungen) oder **Kategorie** (Kategorieseiten), je nachdem, für **Regel gilt**. |
 | Startdatum | Das Startdatum der Regel, falls geplant. |
 | Enddatum | Das Enddatum der Regel, falls geplant. |
 | Beschreibung | Eine kurze Beschreibung der Regel. |

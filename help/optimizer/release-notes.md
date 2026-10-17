@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 0%
@@ -47,7 +47,7 @@ _3. September 2026_
 
 ### Attribut-Ranking (Betaversion)
 
-[!DNL Adobe Commerce Optimizer] Merchandising-Regeln unterstützen jetzt [**Attribut-**](./merchandising/rules/add.md#attribute-ranking)) für die **Alle**, **Kategorieregel** und **Suchregel**. Wenden Sie automatisch eine **[!UICONTROL Boost]**-, **[!UICONTROL Bury]**- oder **[!UICONTROL Hide]**-Aktion auf jedes Produkt an, das einer oder mehreren Attributbedingungen wie Marke oder Kategorie entspricht, ohne einzelne SKUs auszuwählen. Das Attribut-Ranking befindet sich in der Beta-Phase. [Weitere Informationen](./merchandising/rules/add.md#attribute-ranking).
+[!DNL Adobe Commerce Optimizer] Merchandising-Regeln unterstützen jetzt [**Attribut**](./merchandising/rules/add.md#attribute-ranking) für die **Standardsuchregel**, **Kategorienregel** und **Suchregel**. Wenden Sie automatisch eine **[!UICONTROL Boost]**-, **[!UICONTROL Bury]**- oder **[!UICONTROL Hide]**-Aktion auf jedes Produkt an, das einer oder mehreren Attributbedingungen wie Marke oder Kategorie entspricht, ohne einzelne SKUs auszuwählen. Das Attribut-Ranking befindet sich in der Beta-Phase. [Weitere Informationen](./merchandising/rules/add.md#attribute-ranking).
 
 {{aco-release}}
 
