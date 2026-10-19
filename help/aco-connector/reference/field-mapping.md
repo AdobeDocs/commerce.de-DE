@@ -153,7 +153,7 @@ Der `prices`-Feed sendet [!DNL Adobe Commerce] Daten an den [Endpunkt Preise](ht
 Der `categories`-Feed sendet [!DNL Adobe Commerce] Daten an den [Categories-Endpunkt](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
 Der Connector identifiziert Kategorie-Feed-Datensätze anhand des URL-Pfads und des Speicheransichts-Codes.
-- 
+- &#x200B;
   - Wenn eine Kategorie in der Kategoriestruktur in ein anderes übergeordnetes Element verschoben wird, sendet die Synchronisierung die neuen Pfade für diese Kategorie und ihre untergeordneten Elemente und entfernt deren vorherige Pfade aus [!DNL Adobe Commerce Optimizer].
 - Elemente mit einem leeren `urlPath` (logische Stammkategorien) werden übersprungen und nie gesendet.
 
