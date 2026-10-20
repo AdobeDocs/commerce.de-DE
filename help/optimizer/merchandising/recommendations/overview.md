@@ -33,6 +33,6 @@ Empfehlungen werden auf der Storefront als Einheiten mit Beschriftungen angezeig
 
 ## DATENSCHUTZ
 
-Die Datenerfassung für die Zwecke von Recommendations umfasst keine personenbezogenen Daten (PII). Außerdem werden alle Benutzerkennungen wie Cookie-IDs und IP-Adressen streng anonymisiert. Weitere Informationen finden Sie in der [Adobe-Datenschutzrichtlinie](https://www.adobe.com/privacy/policy.html).
+Die Datenerfassung für die Zwecke von Recommendations umfasst keine personenbezogenen Daten (PII). Außerdem werden alle Benutzerkennungen wie Cookie-IDs und IP-Adressen streng anonymisiert. Weitere Informationen finden Sie in der [Adobe-Datenschutzrichtlinie](https://www.adobe.com/de/privacy/policy.html).
 
 Recommendations-Benutzer können auf der Seite [Datensynchronisierung](../../setup/data-sync.md) weitere Daten zur Datensynchronisierung aufrufen.
