@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 9ea19181108118892e238ba2ffce4bb7b451ee94
+source-git-commit: 9a378b5e553afb5d96ce79738dab1d32404f4f22
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '3719'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension] Versionshinweise
@@ -60,6 +60,16 @@ Zu den Aktualisierungen gehören:
 >Die [!DNL SaaS data export]-Erweiterung ist eine Sammlung von Modulen, die automatisch mit [!DNL Live Search], [!DNL Product Recommendations] und [!DNL Catalog Service] installiert werden. Sie können die auf Ihrem System installierte Version mithilfe von [!DNL Composer] überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Versionen 2026 {#release-notes-2026}
+
+### Version 103.5.2
+
+_19. Oktober 2026_
+
+![Korrigieren](../assets/fix.svg) **Konsistente Kategorienidentifizierung** - Die Kategorienfeed-Identifizierung wurde mithilfe der Kategorienkennung und des Store-Ansichtscodes in der [Catalog Service GraphQL API für Storefront Services](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/){page="_blank"} wiederhergestellt, die in Adobe Commerce as a Cloud Service, Adobe Commerce on Cloud und On-Premise unterstützt wird. Durch dieses Update wird verhindert, dass Kategorieverschiebungen Kategorien fälschlicherweise als gelöscht kennzeichnen. <!--MDEE-1473-->
+
+![Beheben](../assets/fix.svg) **Zuverlässige Attributoptionenverarbeitung in PHP 8.5** - Fehlerkorrektur bei der Verarbeitung von Attributoptionenwerten, um Fehler beim Export von Produkt-Feeds zu verhindern, wenn Optionsbeschriftungen auf einen fehlenden Speicher verweisen. <!--MDEE-1472-->
+
+![Beheben](../assets/fix.svg) **Zuverlässige konfigurierbare Produktsynchronisierung in PHP 8.5** - Es wurde ein Problem behoben, bei dem Null-untergeordnete Attributwerte verhinderten, dass konfigurierbare Produkte korrekt synchronisiert wurden. <!--MDEE-1474-->
 
 ### Version 103.5.1
 

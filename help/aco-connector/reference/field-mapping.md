@@ -39,9 +39,9 @@ topic_v2:
     internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
     internal-label: Data modeling
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b62a0a272684daa2494017d290a711da8e1746b9
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1065'
 ht-degree: 2%
 ---
 
@@ -152,7 +152,10 @@ Der `prices`-Feed sendet [!DNL Adobe Commerce] Daten an den [Endpunkt Preise](ht
 
 Der `categories`-Feed sendet [!DNL Adobe Commerce] Daten an den [Categories-Endpunkt](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
-Elemente mit einem leeren `urlPath` (logische Stammkategorien) werden übersprungen und nie gesendet.
+Der Connector identifiziert Kategorie-Feed-Datensätze anhand des URL-Pfads und des Speicheransichts-Codes.
+- &#x200B;
+  - Wenn eine Kategorie in der Kategoriestruktur in ein anderes übergeordnetes Element verschoben wird, sendet die Synchronisierung die neuen Pfade für diese Kategorie und ihre untergeordneten Elemente und entfernt deren vorherige Pfade aus [!DNL Adobe Commerce Optimizer].
+- Elemente mit einem leeren `urlPath` (logische Stammkategorien) werden übersprungen und nie gesendet.
 
 | [!DNL Adobe Commerce] | API-Feld [!DNL Commerce Optimizer] | Zuordnungsdetails |
 | --------------- | -------------- | ------- |

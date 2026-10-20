@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 1051405a754ac98534b8a27472dccbfb2fff19c7
+source-git-commit: 4f45ba5b177dfb826c49ae3ddc41cb453c6bb93b
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '647'
 ht-degree: 0%
 ---
 # Versionshinweise zum Adobe Commerce Optimizer-Connector
@@ -52,6 +52,12 @@ In diesen Versionshinweisen werden alle Versionen für die [!DNL Adobe Commerce 
 ![Bekanntes Problem](../assets/bug.svg) Bekannte Probleme
 
 ## Versionen 2026
+
+### Version 1.2.1
+
+_19. Oktober 2026_
+
+![Korrigieren](../assets/fix.svg) **Beibehaltung des Kategoriesynchronisierungsverhaltens** - Der Adobe Commerce Optimizer-Connector behält den URL-Pfad bei und speichert Ansichtscode als Kategorie-Feed-IDs, wodurch die korrekte Synchronisierung aufrechterhalten wird. Wenn sich Kategorien innerhalb einer Kategoriestruktur bewegen, werden neue Pfade synchronisiert und vorherige Pfade entfernt.<!--MDEE-1473-->
 
 ### Version 1.2.0
 
