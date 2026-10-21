@@ -29,14 +29,14 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: e689017374503218dd1100ab1226e7d76fbb7dae
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2693'
 ht-degree: 0%
 ---
 # Erfassen von Commerce-Daten mithilfe von Adobe Experience Platform Tags
 
-Sie können die [!DNL Data Connection]-Erweiterung zwar verwenden, um Storefront-Ereignisse zu veröffentlichen und zu abonnieren, einige Händler verwenden jedoch möglicherweise bereits eine Datenerfassungslösung, z. B. die [Adobe Experience Platform-Tags](https://experienceleague.adobe.com/de/docs/platform-learn/data-collection/tags/create-a-property). Für diese Händler bietet Adobe Commerce in der [!DNL Data Connection]-Erweiterung eine Veröffentlichungsoption, die die Adobe Commerce Event SDK verwendet.
+Sie können die [!DNL Data Connection]-Erweiterung zwar verwenden, um Storefront-Ereignisse zu veröffentlichen und zu abonnieren, einige Händler verwenden jedoch möglicherweise bereits eine Datenerfassungslösung, z. B. die [Adobe Experience Platform-Tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home). Für diese Händler bietet Adobe Commerce in der [!DNL Data Connection]-Erweiterung eine Veröffentlichungsoption, die die Adobe Commerce Event SDK verwendet.
 
 Datenfluss der ![[!DNL Data Connection]](assets/tags-data-flow.png)
 Datenfluss der _[!DNL Data Connection]mit Tags_
@@ -57,15 +57,15 @@ So erfassen Sie Commerce-Ereignisdaten:
 
 Um Daten einer Commerce-Storefront Adobe Experience Platform zuzuordnen, konfigurieren und installieren Sie Folgendes in Adobe Experience Platform Tags:
 
-1. [Richten Sie eine Tag-Eigenschaft &#x200B;](https://experienceleague.adobe.com/de/docs/platform-learn/implement-in-websites/configure-tags/create-a-property) der Datenerfassung in Adobe Experience Platform ein.
+1. [Richten Sie eine Tag-Eigenschaft ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/configure-tags/create-a-property) der Datenerfassung in Adobe Experience Platform ein.
 
 1. Wählen **unter** die Option **Erweiterungen** aus und installieren und konfigurieren Sie die folgenden Erweiterungen:
 
-   - [Adobe Client-Datenschicht](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/client-data-layer/overview)
+   - [Adobe Client-Datenschicht](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/client-data-layer/overview)
 
-   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/js-overview)
+   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)
 
-1. [Tag veröffentlichen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview) in Ihrer Entwicklungsumgebung.
+1. [Tag veröffentlichen](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) in Ihrer Entwicklungsumgebung.
 
 1. Gehen Sie wie **folgt vor** um Datenelemente und Regeln für bestimmte Ereignisse zu konfigurieren.
 
@@ -81,7 +81,7 @@ Da sich die Datenerfassung mithilfe von Tags von der Verwendung der Adobe Commer
 
 Wenn Sie die Datenelemente und Regeln in Adobe Experience Platform Tags mit Adobe Commerce-spezifischen Ereignisdaten aktualisieren, werden Sie einige allgemeine Schritte ausführen.
 
-Fügen wir beispielsweise das Adobe Commerce-`signOut`-Ereignis zu Adobe Experience Platform-Tags hinzu. Die folgenden Schritte beschreiben mit Ausnahme der von Ihnen festgelegten spezifischen Werte, wie [Datenelemente](https://experienceleague.adobe.com/de/docs/experience-platform/tags/ui/data-elements#create-a-data-element) und [Regeln](https://experienceleague.adobe.com/de/docs/experience-platform/tags/ui/rules#create-a-rule) hinzugefügt werden. Diese gelten für alle Adobe Commerce-Ereignisse, die Sie Tags hinzufügen.
+Fügen wir beispielsweise das Adobe Commerce-`signOut`-Ereignis zu Adobe Experience Platform-Tags hinzu. Die folgenden Schritte beschreiben mit Ausnahme der von Ihnen festgelegten spezifischen Werte, wie [Datenelemente](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements#create-a-data-element) und [Regeln](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules#create-a-rule) hinzugefügt werden. Diese gelten für alle Adobe Commerce-Ereignisse, die Sie Tags hinzufügen.
 
 1. Erstellen Sie ein Datenelement:
 
@@ -1352,7 +1352,7 @@ Storefront-Ereignisse enthalten Profilinformationen, die auf den Feldern `person
 >
 >Wenn Sie eine frühere Einrichtung haben, die sich auf verschiedene Felder stützt, können Sie diese weiterhin verwenden.
 
-- `personalEmail` - Gilt nur für Kontoereignisse. Führen Sie die oben beschriebenen Schritte, Regeln und [&#x200B; aus](#createaccount)
+- `personalEmail` - Gilt nur für Kontoereignisse. Führen Sie die oben beschriebenen Schritte, Regeln und [ aus](#createaccount)
 - `identityMap` - Gilt für alle anderen Storefront-Ereignisse. Siehe folgendes Beispiel.
 
 ### Beispiel
@@ -1435,7 +1435,7 @@ return IdentityMap;
 
 ## Einverständnis wird festgelegt
 
-Wenn Sie die [!DNL Data Connection]-Erweiterung in Adobe Commerce installieren, ist das Einverständnis zur Datenerfassung standardmäßig aktiviert. Das Opt-out wird über das [`mg_dnt`-Cookie verwaltet](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law). Sie können die hier beschriebenen Schritte ausführen, wenn Sie `mg_dnt` zur Einverständnisverwaltung verwenden. Die [Dokumentation zu Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/js-overview) bietet mehrere zusätzliche Optionen zum Verwalten des Einverständnisses.
+Wenn Sie die [!DNL Data Connection]-Erweiterung in Adobe Commerce installieren, ist das Einverständnis zur Datenerfassung standardmäßig aktiviert. Das Opt-out wird über das [`mg_dnt`-Cookie verwaltet](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law). Sie können die hier beschriebenen Schritte ausführen, wenn Sie `mg_dnt` zur Einverständnisverwaltung verwenden. Die [Dokumentation zu Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) bietet mehrere zusätzliche Optionen zum Verwalten des Einverständnisses.
 
 1. Erstellen Sie ein **Core Custom Code**-Datenelement (`%do not track cookie%`) für das `mg_dnt` Cookie:
 
