@@ -36,7 +36,7 @@ Ereignisse sind ein wichtiges Tool zur Verbesserung des Einkaufserlebnisses und 
 
 >[!NOTE]
 >
->Die Datenerfassung umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. [Weitere Informationen](https://www.adobe.com/privacy/experience-cloud.html).
+>Die Datenerfassung umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. [Weitere Informationen](https://www.adobe.com/de/privacy/experience-cloud.html).
 
 Auf **Seite** Ereignisse“ können Sie die erfassten Storefront-Ereignisdaten beobachten. Mit einem Blick auf die Ereignisdatenerfassung können Händler überprüfen, ob sie Storefront-Ereignisse korrekt implementiert haben und ob Ereignisse erfolgreich erfasst werden. Händler können diese Seite verwenden, um potenzielle Probleme zu identifizieren und Schritte zum Beheben von Ereignisproblemen zu unternehmen.
 

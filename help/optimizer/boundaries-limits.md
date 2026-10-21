@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1483'
 ht-degree: 0%
 ---
 # Beschränkungen und Grenzen
@@ -118,7 +118,6 @@ Die Verwendung von Dynamic Media verfolgt API-Anfragen, die innerhalb von [!DNL 
 | Richtlinien pro Katalogansicht | Anzahl der zulässigen Datenfilter | 10 | Nein |
 | Attributwerte in einer Richtlinie | Anzahl der Produktmerkmale, die für die Filterung konfiguriert werden können | 100 | Nein |
 | [Tastenzuweisung für eingeschränkten Zugriff](setup/private-catalog-view.md) | Anzahl der eingeschränkten Zugriffsschlüssel, die einer einzelnen Katalogansicht zugewiesen werden können | 3 | Nein |
-| [Schlüssel mit eingeschränktem Zugriff](setup/restricted-access-keys.md) | Anzahl der Schlüssel pro Umgebung | Maximal 100 | Nein |
 | RSA-Schlüsselgröße (eingeschränkte Zugriffsschlüssel) | Minimale und maximale Schlüsselstärke, die für einen eingeschränkten Zugriffsschlüssel akzeptiert wird | Minimum 2048 Bit, Maximum 8192 Bit | Nein |
 | Schlüssel für eingeschränkten Zugriff | Verzögerung der Schlüsselsperrweitergabe | Bis zu 5 Minuten aufgrund des Caching. Von einem entfernten Schlüssel signierte Token werden verweigert, sobald die Verzögerung abgelaufen ist. | Nicht zutreffend |
 

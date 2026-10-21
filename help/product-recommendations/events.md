@@ -47,7 +47,7 @@ Weitere Informationen zu den Verhaltensdaten, die von den [!DNL Product Recommen
 
 >[!NOTE]
 >
->Die Datenerhebung zum Zwecke der [!DNL Product Recommendations] umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. Weitere [&#x200B; (](https://www.adobe.com/privacy/experience-cloud.html).
+>Die Datenerhebung zum Zwecke der [!DNL Product Recommendations] umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. Weitere [&#x200B; (](https://www.adobe.com/de/privacy/experience-cloud.html).
 
 ## Healthcare-Kunden
 

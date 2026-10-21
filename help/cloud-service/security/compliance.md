@@ -63,7 +63,7 @@ Adobe verfügt über umfassende Zertifizierungen und Bescheinigungen für die In
 
 - **DSGVO und CCPA**: Adobe bietet Tools und Dokumentationen, die Kundinnen und Kunden bei der Erfüllung ihrer Verpflichtungen gemäß den Datenschutzbestimmungen unterstützen.
 
-Eine vollständige Liste der Zertifizierungen und der Dokumentation zur Compliance von Adobe finden Sie im [Adobe Trust Center](https://www.adobe.com/trust/compliance/compliance-list.html){target="_blank"}.
+Eine vollständige Liste der Zertifizierungen und der Dokumentation zur Compliance von Adobe finden Sie im [Adobe Trust Center](https://www.adobe.com/de/trust/compliance/compliance-list.html){target="_blank"}.
 
 ## Zertifizierung für Fachleute
 

@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 02108257eed58231854947feafc8c48e0a75a8bb
+source-git-commit: ca71a86bb37c1ddd90118b0babd0a9c530b71be9
 workflow-type: tm+mt
-source-wordcount: '8820'
+source-wordcount: '8909'
 ht-degree: 0%
 ---
 # Versionshinweise
@@ -76,11 +76,11 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 
 ## Oktober 2026 - #2 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produktion]{type=Neutral tooltip="Die aufgelisteten Elemente sind derzeit in Produktionsumgebungen verfügbar."}
 
-Die folgenden Elemente sind am 20. Oktober 2026 in Produktionsumgebungen verfügbar.
+Die folgenden Elemente wurden am 20. Oktober 2026 in Produktionsumgebungen veröffentlicht.
 
 >[!BEGINSHADEBOX]
 
@@ -88,7 +88,7 @@ Die folgenden Elemente sind am 20. Oktober 2026 in Produktionsumgebungen verfüg
 
 ### Benutzerdefinierte Länderregionen verwalten
 
-Mit neuen REST-API-Endpunkten können Integrationen benutzerdefinierte Regionen wie Bundesstaaten oder Provinzen für Länder verwalten, die nicht von den Daten der Standardregion abgedeckt werden.
+Mit den neuen [REST-API](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-regions)Endpunkten können Integrationen benutzerdefinierte Regionen wie Bundesstaaten oder Provinzen für Länder verwalten, die nicht von den Daten der Standardregion abgedeckt werden.
 
 Standardbereiche (System) können nicht geändert oder entfernt werden. Für diese Endpunkte ist die Berechtigung [!UICONTROL Manage Country Regions] erforderlich. <!-- ACCS-1937 -->
 
@@ -108,8 +108,8 @@ Integrationen können jetzt die folgenden Ereignisse über [!DNL Adobe I/O Event
 
 Sie können jetzt eine optionale SHA-256-Prüfsumme bereitstellen, wenn Sie eine vordefinierte Upload-URL anfordern. Senden Sie denselben Wert in der `x-amz-checksum-sha256`-Kopfzeile, wenn Sie die Datei hochladen. <!-- ACCS-1464 -->
 
-* GraphQL - Geben Sie das `checksum_sha256` als Eingabe für die `initiateUpload` an.
-* REST - Verwenden Sie den neuen `POST /V1/media/initiate-upload-with-checksum`-Endpunkt mit dem Feld `checksumSha256` .
+* GraphQL - Geben Sie das `checksum_sha256` als Eingabe für die [`initiateUpload` Mutation an](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload#checksum-validation).
+* REST - Verwenden Sie den neuen [`POST /V1/media/initiate-upload-with-checksum`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads#initiate-the-upload-with-a-checksum)-Endpunkt mit dem Feld `checksumSha256` .
 
 ### Anzeigen der Bestellsummen in einer Kette zur Bearbeitung von Bestellungen
 
@@ -121,13 +121,26 @@ Wenden Sie sich zur Aktivierung dieser Felder an Ihren Adobe Commerce Customer S
 
 ### Verfügbarkeit auf Lagerebene überprüfen
 
-Die neue `stockAvailability(skus: [String!]!)` GraphQL-Abfrage gibt die Verfügbarkeit auf Lagerebene für bis zu 100 SKUs zurück. <!-- ACCS-2079 -->
+Die neue [`stockAvailability(skus: [String!]!)`](https://developer.adobe.com/commerce/webapi/graphql/schema/inventory-sources/queries/stock-availability) GraphQL-Abfrage gibt die Verfügbarkeit auf Lagerebene für bis zu 100 SKUs zurück. <!-- ACCS-2079 -->
+
+>[!IMPORTANT]
+>
+>Diese Version enthält Änderungen an der [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/inventory-sources/queries/source-availability) GraphQL-Abfrage.
+>
+>* Die Felder `is_saleable` und `backorder_message` werden aus `sourceAvailability` entfernt. Fordern Sie sie stattdessen über die `stockAvailability` an.
+
+### Bestand und Menge an Produkt-Feeds
+
+Produkt-Feeds exportieren jetzt Lagerbestand- und Warenkorbmengeneinstellungen über das benutzerdefinierte Produktattribut `ac_inventory` und die Steuerklasse und das Attribut, die über die benutzerdefinierten Produktattribute `ac_tax_class` und `ac_attribute_set` festgelegt wurden. <!-- ACCS-1981, MDEE-1129 -->
+
+<!-- needs link pending COMDOX-1862 -->
+
+Da sich diese externen Endpunkte geändert haben, müssen Sie [den Daten-Feed manuell neu synchronisieren](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#manage-failed-exports).
+
 
 ### Verbesserungen und Fehlerbehebungen
 
 Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen sind in dieser Version enthalten:
-
-* Produkt-Feeds exportieren jetzt Lagerbestand- und Warenkorbmengeneinstellungen über das benutzerdefinierte Produktattribut `ac_inventory` und die Steuerklasse und das Attribut, die über die benutzerdefinierten Produktattribute `ac_tax_class` und `ac_attribute_set` festgelegt wurden. <!-- ACCS-1981, MDEE-1129 -->
 
 * Es wurde ein Problem behoben, bei dem Kategoriebilder nicht in GraphQL zurückgegeben wurden, wenn [!DNL AEM Assets] Visualisierungsbesitzer war. <!-- ACCS-1943 -->
 

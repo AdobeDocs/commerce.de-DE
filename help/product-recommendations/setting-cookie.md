@@ -97,7 +97,7 @@ So testen Sie, wie sich Produktempfehlungen bei Cookie-Einschränkungen verhalte
 
 ## Einhaltung von Datenschutzbestimmungen
 
-Die Datenerfassung für Produktempfehlungen enthält keine personenbezogenen Daten (PII). Alle Benutzerkennungen, wie Cookie-IDs und IP-Adressen, werden anonymisiert. Weitere Informationen finden Sie in der [Adobe-Datenschutzrichtlinie](https://www.adobe.com/privacy/policy.html).
+Die Datenerfassung für Produktempfehlungen enthält keine personenbezogenen Daten (PII). Alle Benutzerkennungen, wie Cookie-IDs und IP-Adressen, werden anonymisiert. Weitere Informationen finden Sie in der [Adobe-Datenschutzrichtlinie](https://www.adobe.com/de/privacy/policy.html).
 
 >[!TIP]
 >
