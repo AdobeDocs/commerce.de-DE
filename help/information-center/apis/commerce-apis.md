@@ -100,7 +100,7 @@ nimmt Katalog- und Preisdaten von einer Drittanbieter-Commerce-Plattform, PIM, E
 
 Verwenden Sie API Mesh, um Adobe Commerce-APIs mit privaten oder Drittanbieter-APIs zu orchestrieren. Verwenden Sie Adobe Developer App Builder, um benutzerdefinierte Programme und Integrationen zu erstellen. Weitere Informationen zur Commerce-Erweiterbarkeit finden Sie unter [API-](https://developer.adobe.com/graphql-mesh-gateway/) und [Adobe Commerce-Erweiterbarkeit](https://developer.adobe.com/commerce/extensibility/).
 
-Speziell für ereignisgesteuerte Integrationen siehe [Adobe I/O Events für Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events).
+Speziell für ereignisgesteuerte Integrationen siehe [Adobe I/O Events für Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events).
 
 
 ### Warenkorb- und Kassenübergabe

@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## Erste Schritte
 
-1. Überprüfen Sie die Verfügbarkeit der Produktversion und des Landes in [Kompatibilität mit Zahlungsdiensten](https://experienceleague.adobe.com/en/docs/commerce/payment-services/compatibility).
+1. Überprüfen Sie die Verfügbarkeit der Produktversion und des Landes in [Kompatibilität mit Zahlungsdiensten](https://experienceleague.adobe.com/de/docs/commerce/payment-services/compatibility).
 
 1. Folgen Sie dem [Fluss Onboarding-Zahlungsdienste](/help/payment-services/onboard.md).
 

@@ -22,7 +22,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die Dokumentation zu Merchandising-Regeln wurde aktualisiert, um den Regeltyp Alle Produktauflistungen in Standardsuchregel in <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview">Übersicht über Merchandising-Regeln</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add">Regeln erstellen und verwalten</a> und <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes">Versionshinweise</a> umzubenennen, wobei die umbenannte Option im Menü „Regeltyp für Admin“ übereinstimmt.</p>
+      <td><p>Die Dokumentation zu Merchandising-Regeln wurde aktualisiert, um den Regeltyp Alle Produktauflistungen in Standardsuchregel in <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/overview">Übersicht über Merchandising-Regeln</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add">Regeln erstellen und verwalten</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/release-notes">Versionshinweise</a> umzubenennen, wobei die umbenannte Option im Menü „Regeltyp für Admin“ übereinstimmt.</p>
 </td>
       <td>
         Feedback
@@ -44,7 +44,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die dokumentierten Standard- und Bereichswerte für [!UICONTROL Intelligent Ranking Boost] in <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">Erstellen und Verwalten von Merchandising-Regeln</a> wurden korrigiert: Der Standardwert ist <code>50</code> (zuvor als <code>5</code> dokumentiert) und der maximale Bereich ist <code>1000</code> (zuvor als <code>100</code> dokumentiert).</p>
+      <td><p>Die dokumentierten Standard- und Bereichswerte für [!UICONTROL Intelligent Ranking Boost] in <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">Erstellen und Verwalten von Merchandising-Regeln</a> wurden korrigiert: Der Standardwert ist <code>50</code> (zuvor als <code>5</code> dokumentiert) und der maximale Bereich ist <code>1000</code> (zuvor als <code>100</code> dokumentiert).</p>
 </td>
       <td>
         Technisch
@@ -66,7 +66,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde Dokumentation für den neuen Filter für nicht vorrätige Ausschlüsse für Empfehlungseinheiten in <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters">Filter</a> hinzugefügt, der nicht vorrätige Produkte von Empfehlungen ausschließt.</p>
+      <td><p>Es wurde Dokumentation für den neuen Filter für nicht vorrätige Ausschlüsse für Empfehlungseinheiten in <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/recommendations/filters">Filter</a> hinzugefügt, der nicht vorrätige Produkte von Empfehlungen ausschließt.</p>
 </td>
       <td>
         Feedback, große Aktualisierung
@@ -74,7 +74,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/abba2327d9c678e374a94c5bc5ed091f401c8aff">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Die Referenz <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">Datenexport-Protokollcodes</a> wurde von der neuesten Version <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a> aktualisiert.</p>
+      <td><p>Die Referenz <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">Datenexport-Protokollcodes</a> wurde von der neuesten Version <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a> aktualisiert.</p>
 </td>
       <td>
         Technisch
@@ -96,7 +96,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Produktions- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
+      <td><p>Produktions- <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -118,7 +118,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde ein neuer Abschnitt hinzugefügt, in dem beschrieben wird, wie Empfehlungen nach <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters#attributes">Produktattributen“ gefiltert </a>.</p>
+      <td><p>Es wurde ein neuer Abschnitt hinzugefügt, in dem beschrieben wird, wie Empfehlungen nach <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/recommendations/filters#attributes">Produktattributen“ gefiltert </a>.</p>
 </td>
       <td>
         Feedback
@@ -140,7 +140,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die Referenz <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">Datenexport-Protokollcodes</a> wurde von der neuesten Version <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a> aktualisiert.</p>
+      <td><p>Die Referenz <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">Datenexport-Protokollcodes</a> wurde von der neuesten Version <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a> aktualisiert.</p>
 </td>
       <td>
         Technisch
@@ -162,7 +162,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce Optimizer-Connector-Handbuch<br />Es wurde Dokumentation für den Adobe Commerce Optimizer-Connector für B2B hinzugefügt:<br />- Aktualisierte <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview">[!DNL Adobe Commerce Optimizer Connector]</a> und <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/get-started/get-started">Einrichten des Connectors für Adobe Commerce</a> zum Querverweisen auf Informationen zur Connector-Einrichtung für B2B-Commerce.<br />- Das Thema <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/b2b-shared-catalog-projection">B2B-Shared-Catalog-Projektion wurde hinzugefügt</a>, in dem erläutert wird, wie freigegebene Adobe B2B-Commerce-Kataloge mit [!DNL Adobe Commerce Optimizer] synchronisiert werden.<br />- Hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/get-started/get-started-b2b-shared-catalogs">Einrichten des Connectors für B2B-Commerce</a>, um die Erweiterungsinstallation und Synchronisierung der Synchronisierung der Erweiterungen zu beschreiben.<br />- Neue Themen hinzugefügt für <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/manage-sync/catalog-view-sync/catalog-view-sync-status">Synchronisierung der Katalogansicht und <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/manage-sync/catalog-view-sync/restricted-access-keys">Verwalten von eingeschränktenZugriffsschlüsselnFür Adobe B2B2B-Commerce.<br />Adobe Commerce Optimizer-Benutzer Handbuch<br />- Aktualisierte <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view">Private Katalogansichten</a> <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/restricted-access-keys"> </a> und </a>Eingeschränkte Zugriffsschlüssel</a> zur Beschreibung der automatischen Bereitstellung von Schlüsseln und Katalogansichten für freigegebene B2B-Kataloge zusammen mit dem vorhandenen manuellen Fluss.</p>
+      <td><p>Adobe Commerce Optimizer-Connector-Handbuch<br />Es wurde Dokumentation für den Adobe Commerce Optimizer-Connector für B2B hinzugefügt:<br />- Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/overview">[!DNL Adobe Commerce Optimizer Connector]</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/get-started/get-started">Einrichten des Connectors für Adobe Commerce</a> zum Querverweisen auf Informationen zur Connector-Einrichtung für B2B-Commerce.<br />- Das Thema <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/b2b-shared-catalog-projection">B2B-Shared-Catalog-Projektion wurde hinzugefügt</a>, in dem erläutert wird, wie freigegebene Adobe B2B-Commerce-Kataloge mit [!DNL Adobe Commerce Optimizer] synchronisiert werden.<br />- Hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/get-started/get-started-b2b-shared-catalogs">Einrichten des Connectors für B2B-Commerce</a>, um die Erweiterungsinstallation und Synchronisierung der Synchronisierung der Erweiterungen zu beschreiben.<br />- Neue Themen hinzugefügt für <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/manage-sync/catalog-view-sync/catalog-view-sync-status">Synchronisierung der Katalogansicht und <a href="https://experienceleague.adobe.com/de/docs/commerce/aco-optimizer-connector/manage-sync/catalog-view-sync/restricted-access-keys">Verwalten von eingeschränktenZugriffsschlüsselnFür Adobe B2B2B-Commerce.<br />Adobe Commerce Optimizer-Benutzer Handbuch<br />- Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/private-catalog-view">Private Katalogansichten</a> <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/restricted-access-keys"> </a> und </a>Eingeschränkte Zugriffsschlüssel</a> zur Beschreibung der automatischen Bereitstellung von Schlüsseln und Katalogansichten für freigegebene B2B-Kataloge zusammen mit dem vorhandenen manuellen Fluss.</p>
 </td>
       <td>
         Größere Aktualisierung, neues Thema
@@ -184,7 +184,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurden Informationen zum Exportieren von <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/custom-product-types">benutzerdefinierten Produkttypen) </a>.</p>
+      <td><p>Es wurden Informationen zum Exportieren von <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/data-synchronization/custom-product-types">benutzerdefinierten Produkttypen) </a>.</p>
 </td>
       <td>
         Neues Thema
@@ -206,7 +206,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
+      <td><p>Sandbox <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -228,7 +228,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde die Möglichkeit hinzugefügt, <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">benutzerdefinierte AEM-Bildrollen</a> während der Synchronisierung beizubehalten. Außerdem wurde die Möglichkeit hinzugefügt, dass Adobe Commerce <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/check-for-updates">asynchron nach Aktualisierungen der AEM Assets-Integrationserweiterung suchen</a>.</p>
+      <td><p>Es wurde die Möglichkeit hinzugefügt, <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/synchronize/custom-match">benutzerdefinierte AEM-Bildrollen</a> während der Synchronisierung beizubehalten. Außerdem wurde die Möglichkeit hinzugefügt, dass Adobe Commerce <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/get-started/check-for-updates">asynchron nach Aktualisierungen der AEM Assets-Integrationserweiterung suchen</a>.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -250,7 +250,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>In der Dokumentation zu Produktempfehlungen für sowohl <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits">PaaS</a> als auch <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create">Commerce Optimizer</a> wurde fälschlicherweise angegeben, dass gebündelte und gruppierte Produkte nicht unterstützt werden.</p>
+      <td><p>In der Dokumentation zu Produktempfehlungen für sowohl <a href="https://experienceleague.adobe.com/de/docs/commerce/product-recommendations/boundaries-limits">PaaS</a> als auch <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/recommendations/create">Commerce Optimizer</a> wurde fälschlicherweise angegeben, dass gebündelte und gruppierte Produkte nicht unterstützt werden.</p>
 </td>
       <td>
         Feedback
@@ -272,7 +272,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview">Migrationsübersicht“ wurde aktualisiert</a> um zu erklären, wie der Commerce Developer Agent beim Migrationsprozess helfen kann.</p>
+      <td><p>Die <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/migration/overview">Migrationsübersicht“ wurde aktualisiert</a> um zu erklären, wie der Commerce Developer Agent beim Migrationsprozess helfen kann.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -294,7 +294,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Produktions- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
+      <td><p>Produktions- <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -316,7 +316,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
+      <td><p>Sandbox <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -338,7 +338,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Produktions- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
+      <td><p>Produktions- <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -382,7 +382,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Aktualisierung der <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">Live Search-</a> auf 4.7.3, um ein Problem zu beheben, bei dem die Funktion „Zum Warenkorb hinzufügen“ auf der Produktlistenseite in bestimmten Einzelfällen nicht mit dem PLP-Widget funktionierte.</p>
+      <td><p>Aktualisierung der <a href="https://experienceleague.adobe.com/de/docs/commerce/live-search/release-notes">Live Search-</a> auf 4.7.3, um ein Problem zu beheben, bei dem die Funktion „Zum Warenkorb hinzufügen“ auf der Produktlistenseite in bestimmten Einzelfällen nicht mit dem PLP-Widget funktionierte.</p>
 </td>
       <td>
         Feedback
@@ -404,7 +404,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die Referenz <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">Datenexport-Protokollcodes</a> wurde von der neuesten Version <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a> aktualisiert.</p>
+      <td><p>Die Referenz <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">Datenexport-Protokollcodes</a> wurde von der neuesten Version <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a> aktualisiert.</p>
 </td>
       <td>
         Technisch
@@ -426,7 +426,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
+      <td><p>Sandbox <a href="https://experienceleague.adobe.com/de/docs/commerce/cloud-service/release-notes">Versionshinweise) </a> Adobe Commerce as a Cloud Service hinzugefügt.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -448,7 +448,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die Referenz <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/log-codes-reference">Datenexport-Protokollcodes</a> wurde von der neuesten Version <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a> aktualisiert.</p>
+      <td><p>Die Referenz <a href="https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/troubleshooting/log-codes-reference">Datenexport-Protokollcodes</a> wurde von der neuesten Version <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a> aktualisiert.</p>
 </td>
       <td>
         Technisch
@@ -456,7 +456,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1291cadbeca63d454eabab31c415b2d037d280ba">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Adobe Commerce Optimizer beschränkt jetzt die Ansicht eines privaten Katalogs auf ein einzelnes Preisbuch. Weitere Informationen finden Sie <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views">Private </a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view">Katalogansichten</a> und <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks">Preisbücher</a>.</p>
+      <td><p>Adobe Commerce Optimizer beschränkt jetzt die Ansicht eines privaten Katalogs auf ein einzelnes Preisbuch. Weitere Informationen finden Sie <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views">Private </a>, <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-view">Katalogansichten</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/pricebooks">Preisbücher</a>.</p>
 </td>
       <td>
         Größere Aktualisierung

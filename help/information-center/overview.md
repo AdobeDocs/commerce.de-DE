@@ -51,7 +51,7 @@ Die aussagekräftige und ausführliche Dokumentation zu jedem Produkt ist nach w
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Lernen und Ressourcen</strong><br/>
-<a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/overview" target="_blank">Tutorials</a> - <a href="https://experienceleague.adobe.com/en/playlists?solution=Commerce" target="_blank">Videowiedergabelisten</a> - <a href="https://helpx.adobe.com/legal/product-descriptions.html" target="_blank">Produktbeschreibungen</a> - <a href="https://certification.adobe.com/certifications#filters=Adobe%20Commerce" target="_blank">Zertifizierungen</a>
+<a href="https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/overview" target="_blank">Tutorials</a> - <a href="https://experienceleague.adobe.com/de/playlists?solution=Commerce" target="_blank">Videowiedergabelisten</a> - <a href="https://helpx.adobe.com/de/legal/product-descriptions.html" target="_blank">Produktbeschreibungen</a> - <a href="https://certification.adobe.com/certifications#filters=Adobe%20Commerce" target="_blank">Zertifizierungen</a>
 
 </td>
 <td><strong>Entwicklerressourcen</strong><br/>
