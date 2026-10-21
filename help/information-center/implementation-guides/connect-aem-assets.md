@@ -61,7 +61,7 @@ Verwenden Sie für Adobe Commerce in der Cloud-Infrastruktur die AEM Assets-Inte
 1. Lesen Sie die Dokumentation zur [AEM Assets-Integration für Commerce](/help/aem-assets-integration/overview.md), um Informationen zu Voraussetzungen und Setup zu erhalten.
 
 
-1. Um die Asset-Verwaltung mit AEM Assets zu aktivieren[ befolgen Sie die Anweisungen unter Nächste Schritte](/help/aem-assets-integration/overview.md#next-steps) für Ihren Bereitstellungstyp im _[Handbuch zur AEM Assets-Integration für Commerce](/help/aem-assets-integration/overview.md)_.
+1. Um die Asset-Verwaltung mit AEM Assets zu aktivieren[&#x200B; befolgen Sie die Anweisungen unter Nächste Schritte](/help/aem-assets-integration/overview.md#next-steps) für Ihren Bereitstellungstyp im _[Handbuch zur AEM Assets-Integration für Commerce](/help/aem-assets-integration/overview.md)_.
 
 ## Ergänzende Leitlinien
 

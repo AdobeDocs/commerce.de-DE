@@ -54,7 +54,7 @@ Die Verwendung des Adobe Commerce-Textbausteins bietet eine funktionierende Stor
 
 ## Erste Schritte
 
-1. Lesen Sie die Dokumentation [Übersicht über ](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/create-content/) Adobe Commerce-Storefront und [Storefront-](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/architecture/)), um sich mit der Architektur und den verfügbaren Dropdown-Komponenten vertraut zu machen.
+1. Lesen Sie die Dokumentation [Übersicht über &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/create-content/) Adobe Commerce-Storefront und [Storefront-](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/architecture/)), um sich mit der Architektur und den verfügbaren Dropdown-Komponenten vertraut zu machen.
 
 1. Gehen Sie zur Einrichtung Ihrer Storefront wie folgt vor:
 

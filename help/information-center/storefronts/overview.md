@@ -42,7 +42,7 @@ Die Storefront ist vom Commerce-Backend und den API-Ebenen getrennt. Je nach aus
 
 ## Commerce Storefront powered by Edge Delivery Services
 
-Die Commerce Storefront powered by [!DNL Edge Delivery Services] ist eine kundenorientierte Storefront-Option, die auf dem Adobe Commerce-Textbaustein basiert und Dropdown-Komponenten und Inhaltsblöcke verwendet. Es ist mit allen Architekturübersichten kompatibel[ die je nach ](../architecture-options/overview.md) eine Verbindung mit Commerce Foundation, Storefront-Services oder [!DNL Adobe Commerce Optimizer] Merchandising-Services herstellen. Siehe [Übersicht über die Adobe Commerce-Storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/).
+Die Commerce Storefront powered by [!DNL Edge Delivery Services] ist eine kundenorientierte Storefront-Option, die auf dem Adobe Commerce-Textbaustein basiert und Dropdown-Komponenten und Inhaltsblöcke verwendet. Es ist mit allen Architekturübersichten kompatibel[&#x200B; die je nach &#x200B;](../architecture-options/overview.md) eine Verbindung mit Commerce Foundation, Storefront-Services oder [!DNL Adobe Commerce Optimizer] Merchandising-Services herstellen. Siehe [Übersicht über die Adobe Commerce-Storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/).
 
 ## Storefront-Services
 

@@ -47,7 +47,7 @@ Wie Sie eine Sandbox bereitstellen, hängt davon ab, welches Adobe Commerce-Prod
 
 ## Erste Schritte
 
-- **[!DNL Adobe Commerce as a Cloud Service]** - Verwenden Sie das Self-Service-Bereitstellungsportal von Commerce Cloud Manager, um Sandbox- und Produktionsinstanzen zu starten. Siehe [ Schritte mit Adobe Commerce as a Cloud Service](/help/cloud-service/getting-started.md).
+- **[!DNL Adobe Commerce as a Cloud Service]** - Verwenden Sie das Self-Service-Bereitstellungsportal von Commerce Cloud Manager, um Sandbox- und Produktionsinstanzen zu starten. Siehe [&#x200B; Schritte mit Adobe Commerce as a Cloud Service](/help/cloud-service/getting-started.md).
 
 - **Adobe Commerce on Cloud (Partner)** - Senden Sie Sandbox-Anfragen über den Adobe-Support. Siehe [Partner Adobe Commerce on Cloud Infrastructure Sandbox Requests](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/partner-magento-commerce-cloud-sandbox-requests).
 

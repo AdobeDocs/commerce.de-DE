@@ -169,7 +169,7 @@ Dieser Befehl aktualisiert die Tools auf die neueste Version.
 >
 >Führen Sie vor der Bereitstellung des Projekts die folgenden Konfigurationsaufgaben aus:
 >
->* Melden Sie sich über die Adobe I/O-CLI ](https://developer.adobe.com/console) [Adobe Developer Console an.
+>* Melden Sie sich über die Adobe I/O-CLI [&#128279;](https://developer.adobe.com/console) Adobe Developer Console an.
 >* Erstellen Sie ein App Builder-Projekt (siehe [Projekt-Setup](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Einrichten von Umgebungsvariablen in einer `.env`.
 >
@@ -387,7 +387,7 @@ Die installierten Fähigkeiten erzwingen automatisch das folgende Vierphasenprot
 
 ### Anfordern von Implementierungsplänen für die komplexe Entwicklung
 
-Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [ hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
+Für komplexe Entwicklungen mit mehreren Laufzeitaktionen, Touchpoints oder Integrationen fordern Sie ausdrücklich an, dass die KI-Tools einen detaillierten Implementierungsplan erstellen. Wenn Sie in Phase 2 einen Plan [&#x200B; hoher Ebene sehen](#protocol) der mehrere Komponenten umfasst, fragen Sie nach einem detaillierten Implementierungsplan, um ihn in überschaubare Aufgaben aufzuteilen:
 
 ```shell-session
 Create a detailed implementation plan for this complex development.
@@ -405,7 +405,7 @@ Komplexe Adobe Commerce-Anwendungen beinhalten oft:
 
 >[!NOTE]
 >
->Stellen Sie vor der Verwendung der MCP-Tools [, dass Sie bei der Adobe I/O CLI angemeldet ](#log-in-to-the-adobe-io-cli).
+>Stellen Sie vor der Verwendung der MCP-Tools [, dass Sie bei der Adobe I/O CLI angemeldet &#x200B;](#log-in-to-the-adobe-io-cli).
 
 Das Tool ist standardmäßig auf MCP-Tools eingestellt, kann jedoch unter bestimmten Umständen stattdessen CLI-Befehle verwenden. Um die Verwendung von MCP-Tools sicherzustellen, fordern Sie diese in Ihrer Eingabeaufforderung explizit an.
 
@@ -635,4 +635,4 @@ Mit diesem Befehl können Sie Text-Feedback geben und Protokolle an Adobe senden
 
 >[!NOTE]
 >
->Wenn der Befehl `/feedback` nicht angezeigt wird, [ Sie auf die neueste Version ](#updating-to-the-latest-version).
+>Wenn der Befehl `/feedback` nicht angezeigt wird, [&#x200B; Sie auf die neueste Version &#x200B;](#updating-to-the-latest-version).
