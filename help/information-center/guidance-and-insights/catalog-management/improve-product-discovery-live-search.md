@@ -47,7 +47,7 @@ Die Adobe Commerce-Live-Suche bietet Einblicke in die Suchleistung, die Ihnen da
 
 ## Suche nach Signalen in der Suchleistung
 
-Überprüfen Sie im Arbeitsbereich Live Search-Performance die Metriken wie eindeutige Suchen, ergebnisfreie Suchen, beliebte Ergebnisse, Clickthrough-Rate, Konversionsrate und durchschnittliche Klickposition. Verwenden Sie sie, um Trends zu identifizieren und zu entscheiden, welche Abfragen oder Produkte beachtet werden müssen. [Leistung](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/performance)
+Überprüfen Sie im Arbeitsbereich Live Search-Performance die Metriken wie eindeutige Suchen, ergebnisfreie Suchen, beliebte Ergebnisse, Clickthrough-Rate, Konversionsrate und durchschnittliche Klickposition. Verwenden Sie sie, um Trends zu identifizieren und zu entscheiden, welche Abfragen oder Produkte beachtet werden müssen. [Leistung](https://experienceleague.adobe.com/de/docs/commerce/live-search/live-search-admin/performance)
 
 ![Arbeitsbereich „Performance der Live-Suche“ mit eindeutigen Suchvorgängen, durchschnittlicher Klickposition, Clickthrough-Rate, Konversionsrate und Nullergebnisrate mit Registerkarten für eindeutige Suchvorgänge, Nullergebnisse und beliebten Ergebnissen](../../assets/guidance-and-insights/live-search-performance-dashboard.png){width="800" zoomable="yes"}
 
@@ -65,7 +65,7 @@ Behandeln Sie diese als Benchmark und Diagnosesignale, nicht als universelles �
 
 Käufer beschreiben Produkte nicht immer unter Verwendung der Terminologie in Ihrem Katalog. Jemand, der beispielsweise nach „bequemen Schuhen für den ganzen Tag stehen“ sucht, könnte an Produkten interessiert sein, die als „gepolsterte Laufschuhe“ beschrieben werden.
 
-Die semantische Suche verwendet Bedeutung und Kontext neben der Keyword-Zuordnung und hilft dabei, Abfragen in natürlicher Sprache mit relevanten Produkten zu verbinden, auch wenn die Abfrage nicht genau mit dem Katalogtext übereinstimmt. Live Search kombiniert Keyword- und semantische Übereinstimmung in einem Sucherlebnis. [Semantische Suche](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/semantic-search)
+Die semantische Suche verwendet Bedeutung und Kontext neben der Keyword-Zuordnung und hilft dabei, Abfragen in natürlicher Sprache mit relevanten Produkten zu verbinden, auch wenn die Abfrage nicht genau mit dem Katalogtext übereinstimmt. Live Search kombiniert Keyword- und semantische Übereinstimmung in einem Sucherlebnis. [Semantische Suche](https://experienceleague.adobe.com/de/docs/commerce/live-search/live-search-admin/semantic-search)
 
 Die semantische Zuordnung kann bei der explorativen Suche hilfreich sein, die Relevanz hängt jedoch weiterhin von den in Ihrem Katalog verfügbaren Produkten und Informationen ab. Überprüfen Sie bei Suchen nach einem exakten Modell, einer Spezifikation oder einer Kompatibilitätsanforderung, ob die Ergebnisse präzise sind.
 
@@ -73,9 +73,9 @@ Die semantische Zuordnung kann bei der explorativen Suche hilfreich sein, die Re
 
 Die Einrichtung hängt vom verwendeten Adobe Commerce-Produkt ab:
 
-- **Adobe Commerce in der Cloud-Infrastruktur oder lokal:** Die semantische Live Search-Suche ist für Adobe Commerce 2.4.4 und höher verfügbar. Gehen Sie im Admin zu Marketing > SEO &amp; Search > Live Search, öffnen Sie Einstellungen, aktivieren Sie die semantische Suche und speichern Sie. Es unterstützt englische Kataloge. [Einstellungen - Semantische Suche](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/settings)
-- **Adobe Commerce as a Cloud Service:** Das System aktiviert standardmäßig die semantische Suche. Es unterstützt englische Kataloge. [Semantische Suche](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/semantic-search)
-- **Adobe Commerce Optimizer:** Das System aktiviert standardmäßig die semantische Suche. Sie können optional Steuerelemente wie semantische Verstärkung und Ähnlichkeitsschwellenwert anpassen. Die Einstellungen umfassen auch die Option für die Fuzzy-Suche. [Semantische Suche](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/semantic-search) ・ [Einstellungen - Optionale Abstimmung](https://experienceleague.adobe.com/en/docs/commerce/optimizer/settings)
+- **Adobe Commerce in der Cloud-Infrastruktur oder lokal:** Die semantische Live Search-Suche ist für Adobe Commerce 2.4.4 und höher verfügbar. Gehen Sie im Admin zu Marketing > SEO &amp; Search > Live Search, öffnen Sie Einstellungen, aktivieren Sie die semantische Suche und speichern Sie. Es unterstützt englische Kataloge. [Einstellungen - Semantische Suche](https://experienceleague.adobe.com/de/docs/commerce/live-search/live-search-admin/settings)
+- **Adobe Commerce as a Cloud Service:** Das System aktiviert standardmäßig die semantische Suche. Es unterstützt englische Kataloge. [Semantische Suche](https://experienceleague.adobe.com/de/docs/commerce/live-search/live-search-admin/semantic-search)
+- **Adobe Commerce Optimizer:** Das System aktiviert standardmäßig die semantische Suche. Sie können optional Steuerelemente wie semantische Verstärkung und Ähnlichkeitsschwellenwert anpassen. Die Einstellungen umfassen auch die Option für die Fuzzy-Suche. [Semantische Suche](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/semantic-search) ・ [Einstellungen - Optionale Abstimmung](https://experienceleague.adobe.com/de/docs/commerce/optimizer/settings)
 
 ## Sucheinblicke in Aktion umwandeln
 
@@ -83,8 +83,8 @@ Verwenden Sie einen kontinuierlichen Überprüfungszyklus, um die Produkterkennu
 
 1. **Suchen von Abfragen zur Untersuchung.** Überprüfen Sie ergebnisfreie Suchen, beliebte Abfragen und Suchen mit geringer Interaktion.
 2. **Überprüfen Sie, was der Käufer verlangt.** Stellen Sie fest, ob die Abfrage auf ein fehlendes Produkt, eine nicht übereinstimmende Formulierung oder unklare Produktdaten verweist.
-3. **Produktinformationen verbessern.** Machen Sie Produktattribute und Beschreibungen genau und nützlich für die Begriffe, die Kundinnen und Kunden verwenden. Für die Live-Suche empfiehlt Adobe, die entsprechenden durchsuchbaren Attribute und Gewichtungen einzurichten und sicherzustellen, dass die Attributdaten relevant sind. [Best Practices für die Live-Suche](https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice)
-4. **Sucherlebnis verfeinern.** Verwenden Sie gegebenenfalls Suchregeln, Synonyme und Facetten, um Käufern zu helfen, relevante Ergebnisse zu finden und einzugrenzen. [Best Practices für die Live-Suche](https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice)
+3. **Produktinformationen verbessern.** Machen Sie Produktattribute und Beschreibungen genau und nützlich für die Begriffe, die Kundinnen und Kunden verwenden. Für die Live-Suche empfiehlt Adobe, die entsprechenden durchsuchbaren Attribute und Gewichtungen einzurichten und sicherzustellen, dass die Attributdaten relevant sind. [Best Practices für die Live-Suche](https://experienceleague.adobe.com/de/docs/commerce/live-search/best-practice)
+4. **Sucherlebnis verfeinern.** Verwenden Sie gegebenenfalls Suchregeln, Synonyme und Facetten, um Käufern zu helfen, relevante Ergebnisse zu finden und einzugrenzen. [Best Practices für die Live-Suche](https://experienceleague.adobe.com/de/docs/commerce/live-search/best-practice)
 5. **Ergebnisse überprüfen und wiederholen.** Überwachen Sie dieselben Abfragen und Leistungssignale, nachdem Sie Änderungen vorgenommen haben, und passen Sie sie dann entsprechend den Aktionen der Kunden an.
 
 ## Zählung aller Suchvorgänge vornehmen

@@ -57,7 +57,7 @@ Erfahren Sie, was Adobe Commerce ist und wie Admin und Storefront zusammenarbeit
 
 - [[!DNL Adobe Commerce Optimizer role-based workflows]](/help/optimizer/get-started.md#role-based-workflows)
 
-- [Erste Schritte mit Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview)
+- [Erste Schritte mit Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/start/guide-overview)
 
 
 ## Für Merchandiser
@@ -90,8 +90,8 @@ Die Einrichtung unterscheidet sich je nach Plattform und abhängig davon, ob Ihr
 
 - Informationen zur Plattformverwaltung für Adobe Commerce on Cloud oder On-Premise finden Sie unter:
 
-- [Handbuch zu Commerce in Cloud-Infrastrukturen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
-- [Adobe Commerce-Betriebshandbücher](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home) für On-Premise.
+- [Handbuch zu Commerce in Cloud-Infrastrukturen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview)
+- [Adobe Commerce-Betriebshandbücher](https://experienceleague.adobe.com/de/docs/commerce-operations/operational-guides/home) für On-Premise.
 
 ## Für Entwickler
 

@@ -136,4 +136,4 @@ E-Commerce ist nicht mehr auf Storefronts und Suchergebnisse beschränkt. LLMs u
 * [Richtlinien](/help/optimizer/setup/policies.md)
 * [Entwickler-Tools für KI-Codierung für Adobe Commerce App Builder](/help/cloud-service/migration/coding-tools.md)
 * [Commerce-APIs](../../apis/commerce-apis.md)
-* [Commerce Developer Agent-Wiedergabeliste](https://experienceleague.adobe.com/en/playlists/commerce-developer-agent) - Sehen Sie sich technische Videos zum Einrichten und Verwenden des Commerce Developer Agent an.
+* [Commerce Developer Agent-Wiedergabeliste](https://experienceleague.adobe.com/de/playlists/commerce-developer-agent) - Sehen Sie sich technische Videos zum Einrichten und Verwenden des Commerce Developer Agent an.
