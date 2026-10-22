@@ -1,6 +1,6 @@
 ---
 title: B2B-Shared-Catalog-Prognose
-description: Erfahren Sie, wie der B2B-Connector freigegebene Adobe Commerce B2B-Kataloge in geschützte Commerce Optimizer-Katalogansichten projiziert und wie Storefronts den Käuferzugriff auflösen und autorisieren.
+description: Erfahren Sie, wie der B2B-Connector freigegebene Adobe Commerce-Kataloge mit geschützten Commerce Optimizer-Katalogansichten synchronisiert und wie Storefronts den Käuferzugriff autorisieren.
 feature: Integration, Configuration
 role: Admin, Developer
 level: Intermediate
@@ -45,9 +45,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: fe5fc895d1f1cab3bcf081ec699f59192cb215a3
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '594'
 ht-degree: 0%
 ---
 # Projektion des freigegebenen B2B-Katalogs
@@ -64,7 +64,7 @@ Die [!DNL Adobe Commerce Optimizer Connector for B2B] projiziert das Sortiment u
 
 Die B2B-Projektion kombiniert synchronisierten Kataloginhalt und Preise mit dem Sortiment des freigegebenen Katalogs und dem Unternehmenszuweisungskontext.
 
-![Diagrammzuordnung [!DNL Adobe Commerce] Store-Ansichten, Preisen, freigegebenen Katalogen und Unternehmenszuweisungen zu projizierten privaten Katalogansichten in [!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-projection-mapping.svg){width="800"}
+![Diagrammzuordnung [!DNL Adobe Commerce] Store-Ansichten, Preisen, freigegebenen Katalogen und Unternehmenszuweisungen zu projizierten privaten Katalogansichten in [!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-projection-mapping-alternate.svg){width="100%" zoomable="yes"}
 
 | [!DNL Adobe Commerce] | [!DNL Adobe Commerce Optimizer] | Zweck |
 | --- | --- | --- |

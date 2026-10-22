@@ -19,7 +19,7 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
+source-git-commit: 014ae9bbe0a9bb48e6a5d574af4fc47158ad33dc
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Die **Datensynchronisation** enthält die folgenden Felder:
 
 Um die Details eines synchronisierten Produkts im JSON-Format anzuzeigen, klicken Sie auf das Code-Symbol ![Code-Link](../assets/data-sync-details.png) in der Zeile des Produkts in der Tabelle der synchronisierten Produkte.
 
-![Produktdetails synchronisieren](../assets/synced-products.png)
+![Synchronisierte Produktdetails](../assets/synced-products.png)
 
 ## Katalogdaten neu synchronisieren
 

@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce Optimizer-Connector
-description: Erfahren Sie mehr über die [!DNL Adobe Commerce Optimizer Connector] für Katalogsynchronisierung, Suche und Storefront-Bereitstellung zwischen [!DNL Adobe Commerce] und [!DNL Adobe Commerce Optimizer].
+description: Erfahren Sie, wie die [!DNL Adobe Commerce Optimizer Connector] Katalogdaten von Commerce nach [!DNL Adobe Commerce Optimizer] für die Suche und den Versand an die Storefront synchronisiert.
 feature: Integration, Storefront, Configuration
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 autotag-review: '2026-06-09T19:00:00.000Z'
@@ -89,9 +89,9 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1206'
 ht-degree: 0%
 ---
 # [!DNL Adobe Commerce Optimizer Connector]
@@ -151,7 +151,7 @@ Nachdem der Connector die Katalogdaten synchronisiert hat, konfigurieren Sie das
 
 ### B2B-Connector-Verhalten {#b2b-shared-catalog-projection-specification}
 
-Die [!DNL Adobe Commerce Optimizer Connector for B2B] erweitert den Basis-Connector mit einer unidirektionalen Projektion des freigegebenen B2B-Katalogs und der Konfiguration der Unternehmenszuweisung in geschützte Katalogerlebnisse. [!DNL Adobe Commerce] bleibt die Quelle der Wahrheit für Katalog- und Preisdaten. Der B2B-Connector baut auf dem Basiskatalog und der Preissynchronisierung auf und verwaltet die von Connectoren generierten Projektionen.
+Die [!DNL Adobe Commerce Optimizer Connector for B2B] erweitert den Basis-Connector mit einer unidirektionalen Projektion des freigegebenen B2B-Katalogs und der Konfiguration der Unternehmenszuweisung in geschützte Katalogerlebnisse. [!DNL Adobe Commerce] bleibt das Aufzeichnungssystem für Katalog- und Preisdaten. Der B2B-Connector basiert auf dem Basiskatalog und der Preissynchronisierung und verwaltet die von Connectoren generierten Projektionen.
 
 Informationen zu Projektionszuordnung, Laufzeitautorisierungsfluss und Schutzgrenze finden Sie unter [B2B-Shared-Catalog-Projektion](b2b-shared-catalog-projection.md). Setup-Anweisungen finden Sie unter [Erste Schritte mit dem B2B-Connector](/help/aco-connector/get-started-b2b-shared-catalogs.md).
 
