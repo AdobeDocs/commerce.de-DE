@@ -76,7 +76,7 @@ Adobe Commerce verfügt über zwei Merchandising-Pfade. Welche Lösung für Sie 
 
 Die Einrichtung unterscheidet sich je nach Plattform und abhängig davon, ob Ihr Projekt [!DNL Adobe Commerce Optimizer] verwendet:
 
-- **[!DNL Adobe Commerce as a Cloud Service]** - Commerce-Services werden automatisch installiert und konfiguriert. Siehe [ Schritte mit Adobe Commerce as a Cloud Service](/help/cloud-service/getting-started.md).
+- **[!DNL Adobe Commerce as a Cloud Service]** - Commerce-Services werden automatisch installiert und konfiguriert. Siehe [&#x200B; Schritte mit Adobe Commerce as a Cloud Service](/help/cloud-service/getting-started.md).
 
 - **[!DNL Adobe Commerce Optimizer]** - Ein SaaS-Produkt (Software as a Service), das Sie unabhängig von Ihrem Commerce-Backend einrichten. Siehe [Erste Schritte mit Adobe Commerce Optimizer](/help/optimizer/get-started.md).
 
