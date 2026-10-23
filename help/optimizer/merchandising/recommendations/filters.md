@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
+source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2407'
 ht-degree: 0%
 ---
 # Produkte filtern
@@ -225,6 +225,14 @@ Ein Attributfilter unterscheidet sich von einem [Produktfilter](#product) insofe
 #### Einrichten eines Attributfilters
 
 Führen Sie die folgenden Schritte aus, um einer Empfehlungseinheit eine Regel zum Einschließen oder Ausschließen von Attributen hinzuzufügen.
+
+>[!TIP]
+>
+>Verwenden Sie für alle Attribute, die gefiltert werden können sollen, die [Metadaten-API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata), um den `filterable` festzulegen:
+>
+>{„filterable“: true}
+>
+>Das Attribut wird im Menü **Attribute** verfügbar, wenn der Katalog das nächste Mal mit [!DNL Adobe Commerce Optimizer] synchronisiert wird.
 
 1. Beim [Erstellen oder Bearbeiten](create.md) einer Empfehlungseinheit zu **[!UICONTROL Filter products]** wechseln.
 1. Wählen Sie die Registerkarte **[!UICONTROL Inclusions]** oder **[!UICONTROL Exclusions]** aus. Das Badge auf jeder Registerkarte zeigt an, wie viele Filter dieses Typs aktiviert sind.
