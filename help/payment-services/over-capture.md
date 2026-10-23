@@ -17,7 +17,7 @@ PayPal bestimmt für jedes Händlerkonto das Limit für die Übererfassung. Durc
 
 >[!NOTE]
 >
->In diesem Thema wird die Übererfassung in der [!DNL Payment Services]-Erweiterung beschrieben. [!DNL Adobe Commerce as a Cloud Service] Informationen zu den separaten Verfügbarkeits- [&#x200B; Aktivierungsanforderungen finden Sie unter „Benutzerdefinierte &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)&quot;.
+>In diesem Thema wird die Übererfassung in der [!DNL Payment Services]-Erweiterung beschrieben. [!DNL Adobe Commerce as a Cloud Service] Informationen zu den separaten Verfügbarkeits- [&#x200B; Aktivierungsanforderungen finden Sie unter „Benutzerdefinierte &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)&quot;.
 
 ## Voraussetzungen
 
@@ -42,7 +42,7 @@ Vor der Aktivierung der Übererfassung:
 
 ## Erfasst eine autorisierte Zahlung
 
-Die Übererfassung erfolgt bei der Rechnungsstellung im Admin. Der angeforderte Erfassungsbetrag muss innerhalb des von PayPal für Ihr Händlerkonto genehmigten Limits liegen. Siehe [Erstellen einer Rechnung](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) für den Standard-Abrechnungs-Workflow.
+Die Übererfassung erfolgt bei der Rechnungsstellung im Admin. Der angeforderte Erfassungsbetrag muss innerhalb des von PayPal für Ihr Händlerkonto genehmigten Limits liegen. Siehe [Erstellen einer Rechnung](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) für den Standard-Abrechnungs-Workflow.
 
 1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
 1. Öffnen Sie eine Bestellung mit einer autorisierten Zahlung, die noch nicht erfasst wurde.
