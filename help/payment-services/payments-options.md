@@ -27,16 +27,16 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2458'
 ht-degree: 0%
 ---
 # Zahlungsoptionen
 
 Mit [!DNL Adobe Commerce] und [!DNL Magento Open Source] [!DNL Payment Services] stehen Ihnen mehrere Zahlungsoptionen zur Verfügung.
 
-Sie können diese Zahlungsoptionen in &quot;[&quot; oder &#x200B;](payments-home.md) [&#x200B; Store-Konfiguration](configure-admin.md) konfigurieren (empfohlen für ältere Zahlungsoptionen oder eine Multi-Store-Einrichtung).
+Sie können diese Zahlungsoptionen in &quot;[&quot; oder ](payments-home.md)[ Store-Konfiguration](configure-admin.md) konfigurieren (empfohlen für ältere Zahlungsoptionen oder eine Multi-Store-Einrichtung).
 
 Es gibt verschiedene Verhaltensweisen für jede Zahlungsmethode, je nachdem, wo Sie sich im Checkout-Prozess befinden:
 
@@ -53,11 +53,11 @@ Es gibt verschiedene Verhaltensweisen für jede Zahlungsmethode, je nachdem, wo 
 
 [!DNL Payment Services] bietet **Erweitert** (vollständig unterstützt) und **Standard** (Express-Checkout) Zahlungsoptionen und Onboarding-Flüsse, je nach dem Land, in dem Sie tätig sind.
 
-* **Erweitert** - Alle verfügbaren [Zahlungsoptionen](../payment-services/payments-options.md) sind für aktuelle ([&#x200B; Länder) &#x200B;](compatibility.md#standard-vs-advanced-payment-services-experience). Um Live-Zahlungen während des Onboardings zu aktivieren, wählen Sie die Option [Erweitertes Onboarding](../payment-services/production.md#advanced-onboarding) aus.
+* **Erweitert** - Alle verfügbaren [Zahlungsoptionen](../payment-services/payments-options.md) sind für aktuelle ([ Länder) ](compatibility.md#standard-vs-advanced-payment-services-experience). Um Live-Zahlungen während des Onboardings zu aktivieren, wählen Sie die Option [Erweitertes Onboarding](../payment-services/production.md#advanced-onboarding) aus.
 
 * **Standard** - Eine Untergruppe von Zahlungsoptionen (Express Checkout) - PayPal-Kredit- und Debitkarten - ist für andere verfügbare unterstützte Länder verfügbar. [Kreditkartenfelder](#credit-card-fields) und [Apple Pay](#apple-pay-button) sind für diese Onboarding-Option nicht verfügbar. Wählen Sie während des Onboardings die Option [Standard-Onboarding](../payment-services/production.md#standard-onboarding) aus, um Live-Zahlungen zu aktivieren.
 
-Informationen [&#x200B; Abschluss des Erweiterten Onboardings und des standardmäßigen Onboarding finden Sie  [!DNL Payment Services]  „Aktivieren für &#x200B;](../payment-services/production.md#complete-merchant-onboarding)&quot;.
+Informationen [ Abschluss des Erweiterten Onboardings und des standardmäßigen Onboarding finden Sie  [!DNL Payment Services]  „Aktivieren für ](../payment-services/production.md#complete-merchant-onboarding)&quot;.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -81,7 +81,7 @@ Wenn [!DNL Fastlane] aktiviert ist, ist die Option [!UICONTROL Credit Card Field
 >
 > In Sandbox-Instanzen zeigen Fastlane-Transaktionen in der Ansicht Transaktionsaktivität nicht die Lieferadresse an.
 
-Weitere Informationen finden [&#x200B; unter „Fastlane &#x200B;](https://www.paypal.com/us/fastlane){target=_blank} PayPal“.
+Weitere Informationen finden [ unter „Fastlane ](https://www.paypal.com/us/fastlane){target=_blank} PayPal“.
 
 ### [!DNL Apple Pay]
 
@@ -100,9 +100,9 @@ Kunden können **einen einzelnen Warenkorb-Preisregel-(Coupon-)Code anwenden ode
 
 >[!NOTE]
 >
-> Das Apple Pay Domain-Verifizierungszertifikat ist bereits im [!DNL Payment Services] enthalten. Vergewissern Sie sich, dass der Pfad `/.well-known/apple-developer-merchantid-domain-association` einen Antwort-Code 200 zurückgibt. Weitere [&#x200B; zum **Apple Pay Domain-Verifizierungszertifikat finden Sie in der &#x200B;](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file)Entwicklerdokumentation zu PayPal für die Integration mit**.
+> Das Apple Pay Domain-Verifizierungszertifikat ist bereits im [!DNL Payment Services] enthalten. Vergewissern Sie sich, dass der Pfad `/.well-known/apple-developer-merchantid-domain-association` einen Antwort-Code 200 zurückgibt. Weitere [ zum **Apple Pay Domain-Verifizierungszertifikat finden Sie in der ](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file)Entwicklerdokumentation zu PayPal für die Integration mit**.
 
-Weitere Informationen finden [&#x200B; unter &#x200B;](configure-admin.md#apple-pay).
+Weitere Informationen finden [ unter ](configure-admin.md#apple-pay).
 
 #### Einschränkungen für [!DNL Apple Pay] Express
 
@@ -122,23 +122,23 @@ Weitere Informationen finden [&#x200B; unter &#x200B;](configure-admin.md#apple-
 
 Durch die Integration von [!DNL Google Pay] in Ihr Checkout-Erlebnis können Händler gespeicherte Zahlungs-, Kontakt- und Versandinformationen über das Google-Konto des Käufers erfassen und so einen bequemen, optimierten Checkout über unterstützte Browser und Apps hinweg bieten.
 
-[!DNL Google Pay] ist nur in bestimmten Ländern oder Regionen und auf bestimmten Geräten verfügbar. Weitere Informationen finden [[!DNL Google Pay]  unter &#x200B;](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration)Dokumentation).
+[!DNL Google Pay] ist nur in bestimmten Ländern oder Regionen und auf bestimmten Geräten verfügbar. Weitere Informationen finden [[!DNL Google Pay]  unter ](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration)Dokumentation).
 
 ![Google-Pay-Schaltfläche an der Kasse](assets/google-pay-button.png){width="500" zoomable="yes"}
 
-Wenn diese Option aktiviert ist, wird die Schaltfläche [!DNL Google Pay] auf der Produktseite, im Mini-Warenkorb, im Warenkorb und in den Checkout-Ansichten angezeigt. Weitere Informationen finden [&#x200B; unter &#x200B;](configure-admin.md).
+Wenn diese Option aktiviert ist, wird die Schaltfläche [!DNL Google Pay] auf der Produktseite, im Mini-Warenkorb, im Warenkorb und in den Checkout-Ansichten angezeigt. Weitere Informationen finden [ unter ](configure-admin.md).
 
 [!DNL Google Pay] **Express**-Checkout kann **Versandmethoden im Google-** anzeigen, einen optionalen **Überprüfungsschritt** (Konfigurieren **[Überprüfung überspringen](configure-admin.md#google-pay)**) unterstützen und während des Checkouts ein **Werbe-Code**-Feld einfügen.
 
 >[!NOTE]
 >
-> Die [!DNL Google Pay]-API kann nur auf Websites in einem sicheren Kontext verwendet werden. Weitere Informationen finden [&#x200B; in &#x200B;](https://developers.google.com/pay/api/web/support/troubleshooting) Dokumentation zur Fehlerbehebung .
+> Die [!DNL Google Pay]-API kann nur auf Websites in einem sicheren Kontext verwendet werden. Weitere Informationen finden [ in ](https://developers.google.com/pay/api/web/support/troubleshooting) Dokumentation zur Fehlerbehebung .
 
 #### Einschränkungen für [!DNL Google Pay] Express
 
 **Versand in der Lohnliste**
 
-* Das **Shipping-in-Sheet**-Verhalten (Client-seitiger Versandrückruf) ist nur verfügbar, wenn **[!UICONTROL Skip Review]** in der [Google Pay-Konfiguration auf `Yes` gesetzt &#x200B;](configure-admin.md#google-pay).
+* Das **Shipping-in-Sheet**-Verhalten (Client-seitiger Versandrückruf) ist nur verfügbar, wenn **[!UICONTROL Skip Review]** in der [Google Pay-Konfiguration auf `Yes` gesetzt ](configure-admin.md#google-pay).
 
 **Werbe-Codes im [!DNL Google Pay] Lohnbogen**
 
@@ -149,7 +149,7 @@ Wenn diese Option aktiviert ist, wird die Schaltfläche [!DNL Google Pay] auf de
 * Im [!DNL Google Pay]-Lohnbogen hinzugefügte Codes können nur aus dem Lohnbogen entfernt werden, nicht aber aus dem Commerce-Warenkorb.
 * Bei Adobe Commerce 2.4.4-2.4.6 kann es sein, dass die Rabattposition in der [!DNL Google Pay] aufgrund einer Plattformbeschränkung keinen Wert aufweist.
 * In Adobe Commerce 2.4.7 wird der Rabattwert möglicherweise aufgrund einer Plattformbegrenzung in der GraphQL-Antwort für einige Produkte (hauptsächlich herunterladbare Produkte) nicht in der [!DNL Google Pay]-Zahlungsliste angezeigt.
-* Wenn eine automatische [Warenkorb-Preisregel](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart) angewendet wird (z. B. „50 $ Rabatt bei Ausgaben über 200 $„), wird sie mit jedem Code kombiniert, den der Käufer in der Zahlungsliste anwendet. Die in der [!DNL Google Pay] ausgewiesenen Summen können daher von der Auftragszusammenfassung abweichen.
+* Wenn eine automatische [Warenkorb-Preisregel](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart) angewendet wird (z. B. „50 $ Rabatt bei Ausgaben über 200 $„), wird sie mit jedem Code kombiniert, den der Käufer in der Zahlungsliste anwendet. Die in der [!DNL Google Pay] ausgewiesenen Summen können daher von der Auftragszusammenfassung abweichen.
 
 ### [!DNL PayPal Payment Buttons]
 
@@ -159,13 +159,24 @@ Wenn diese Option aktiviert ist, wird die Schaltfläche [!DNL Google Pay] auf de
 
 Sie können [!UICONTROL PayPal payment buttons] in der Store-Konfiguration oder auf der [!DNL Payment Services]-Startseite konfigurieren.
 
-Erfahren Sie mehr über die Verfügbarkeit von Zahlungsmethoden nach Land in der [&#x200B; zu Zahlungsmethoden &#x200B;](https://developer.paypal.com/docs/checkout/payment-methods/).
+Erfahren Sie mehr über die Verfügbarkeit von Zahlungsmethoden nach Land in der [ zu Zahlungsmethoden ](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 #### [!DNL PayPal]
 
 Kunden können mit der PayPal-Schaltfläche bequem und sicher auschecken.
 
 Die Schaltfläche &quot;[!DNL PayPal]&quot; ist auf der Produktseite sowie in den Ansichten „Mini-Warenkorb“, „Warenkorb“ und „Checkout“ sichtbar.
+
+#### PayPal Express-Überprüfungsseite
+
+Ab [!DNL Payment Services] 2.17.0 können Händler eine optionale Händlerüberprüfungsseite für den PayPal Express-Checkout konfigurieren. Diese Seite ist vom PayPal-Zahlungsmodal getrennt und ermöglicht es Käufern, die endgültige Bestellsumme und die geltenden Bedingungen vor der Bestellung zu überprüfen.
+
+Verwenden Sie **[!UICONTROL Skip Review]** in [ Konfiguration von PayPal-](configure-admin.md#paypal-payment-buttons), um diesen Schritt zu steuern:
+
+* `No` - Der Käufer kehrt nach Abschluss des PayPal-Zahlungsmodals zur Händler-Überprüfungsseite zurück und bestätigt die Bestellung, bevor sie aufgegeben wird.
+* `Yes` - Die Seite für die Händlerüberprüfung wird übersprungen.
+
+Die Einstellung der Überprüfungsseite ersetzt nicht die Verantwortung des Händlers, die geltenden gesetzlichen Anforderungen zu erfüllen. Die bestehende Einstellung für die Google-Pay-Review-Seite [](configure-admin.md#google-pay) wird separat konfiguriert.
 
 #### [!DNL Venmo]
 
@@ -201,11 +212,11 @@ Erfahren Sie, wie Sie [!DNL Pay Later]-Messaging deaktivieren oder aktivieren, i
 
 Die Zahlungsmethoden PayPal, Pay Later und Venmo verwenden einen [Server-seitigen Versandrückruf](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) mit dem PayPal direkt mit Ihrer Commerce-Instanz kommunizieren kann, um Versandoptionen abzurufen und Gesamtsummen in Echtzeit zu berechnen.
 
-Dieser Server-seitige Ansatz ermöglicht es [!DNL Payment Services], das Popup-Fenster zur Bestellbestätigung zu überspringen und so ein schnelleres, optimiertes Kauferlebnis zu bieten. Da Versandkosten und Steuern dynamisch über Callbacks berechnet werden, sieht der Käufer genaue Summen direkt auf der PayPal- oder Venmo-Prüfungsseite.
+Da Versandkosten und Steuern dynamisch über Callbacks berechnet werden, sieht der Käufer aktualisierte Versandoptionen und -summen direkt im Zahlungsmodal PayPal oder Venmo. Für den PayPal Express-Checkout ist die optionale [Händler-Überprüfungsseite](#paypal-express-review-page) ein separater Schritt nach dem PayPal-Zahlungsmodal, das von **[!UICONTROL Skip Review]** gesteuert wird.
 
 >[!NOTE]
 >
->Der Callback-Endpunkt muss öffentlich verfügbar sein und innerhalb von 5 Sekunden antworten. Wenn die Antwortzeit diese Grenze überschreitet, zeigt PayPal eine Fehlermeldung im Popup an. Informationen [&#x200B; Testen dieser Zahlungsmethoden vor Ort finden &#x200B;](test-validate.md#test-on-local-development-environments) unter „Testen lokaler Entwicklungsumgebungen“.
+>Der Callback-Endpunkt muss öffentlich verfügbar sein und innerhalb von 5 Sekunden antworten. Wenn die Antwortzeit diese Grenze überschreitet, zeigt PayPal eine Fehlermeldung im Popup an. Informationen [ Testen dieser Zahlungsmethoden vor Ort finden ](test-validate.md#test-on-local-development-environments) unter „Testen lokaler Entwicklungsumgebungen“.
 
 ### Nur PayPal-Zahlungs-Buttons verwenden
 
@@ -219,16 +230,16 @@ Auf diese Weise können Sie:
 
 So **Zahlungen mit _nur_ PayPal-Zahlungs-Schaltflächen (_nicht_ PayPal-Kreditkartenzahlungsoption) erfasst**:
 
-1. Stellen Sie sicher, dass sich Ihr Store [im Produktionsmodus) &#x200B;](configure-admin.md#general-configuration).
+1. Stellen Sie sicher, dass sich Ihr Store [im Produktionsmodus) ](configure-admin.md#general-configuration).
 1. [Konfigurieren Sie die gewünschten PayPal-Zahlungs-Schaltflächen](configure-admin.md#paypal-payment-buttons) in den Einstellungen.
 1. Deaktivieren __ die Option **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)** im Abschnitt _[!UICONTROL Payment buttons]_.
 
 So **Sie Zahlungen mit Ihrem vorhandenen Kreditkartenanbieter _und_ PayPal-Zahlungs-Schaltflächen**:
 
-1. Stellen Sie sicher, dass sich Ihr Store [im Produktionsmodus) &#x200B;](configure-admin.md#general-configuration).
+1. Stellen Sie sicher, dass sich Ihr Store [im Produktionsmodus) ](configure-admin.md#general-configuration).
 1. [Konfigurieren Sie die gewünschten PayPal-Zahlungsschaltflächen](configure-admin.md#paypal-payment-buttons).
 1. Deaktivieren __ die Option **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)** im Abschnitt _[!UICONTROL Payment buttons]_.
-1. Deaktivieren __ die Option **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** im Abschnitt _[!UICONTROL Credit card fields]_&#x200B;und verwenden Sie Ihr [vorhandenes Kreditkartenkonto](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/payments/payments#payments).
+1. Deaktivieren __ die Option **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** im Abschnitt _[!UICONTROL Credit card fields]_und verwenden Sie Ihr [vorhandenes Kreditkartenkonto](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments#payments).
 
 ## Lokale Zahlungsmethoden
 
@@ -247,7 +258,7 @@ Zu den verfügbaren LPMs gehören:
 
 LPMs werden Kunden basierend auf ihrer Rechnungsadresse und der Basiswährung ihrer Website angezeigt. Eine Zahlungsmethode wird nur angezeigt, wenn beide Bedingungen den Anforderungen der Zahlungsmethode entsprechen.
 
-Weitere [&#x200B; finden Sie unter &#x200B;](configure-admin.md#local-payment-methods) lokaler Zahlungsmethoden .
+Weitere [ finden Sie unter ](configure-admin.md#local-payment-methods) lokaler Zahlungsmethoden .
 
 ## Express-Checkout-Schaltflächen
 
@@ -265,7 +276,7 @@ Um die Express-Checkout-Schaltflächen zu aktivieren, konfigurieren Sie jede Zah
 
 >[!NOTE]
 >
->Die Verfügbarkeit der Zahlungsmethode hängt vom Standort des Käufers ab. Verwenden Sie für Sandbox-Tests [&#x200B; Konfiguration „Land des Käufers](sandbox.md#buyers-country), um verschiedene Regionen zu simulieren. Zum Beispiel ist Venmo nur in den USA verfügbar. Pay Later ist in den USA und Großbritannien verfügbar.
+>Die Verfügbarkeit der Zahlungsmethode hängt vom Standort des Käufers ab. Verwenden Sie für Sandbox-Tests [ Konfiguration „Land des Käufers](sandbox.md#buyers-country), um verschiedene Regionen zu simulieren. Zum Beispiel ist Venmo nur in den USA verfügbar. Pay Later ist in den USA und Großbritannien verfügbar.
 
 ## Checkout-Optionen
 
@@ -283,10 +294,10 @@ Mit Adobe Commerce und Magento Open Source [!DNL Payment Services] stehen Ihnen 
 
 ### Neuberechnung der Bestellung
 
-Wenn ein Kunde den Checkout-Fluss über den Mini-Warenkorb, den Warenkorb oder die Produktseite aufruft, wird er zu einer Seite zur Bestellüberprüfung weitergeleitet, auf der er die ausgewählte Lieferadresse in einem PayPal-Popup-Fenster sehen kann. Nachdem der Kunde die Versandart ausgewählt hat, wird der Bestellbetrag entsprechend neu berechnet und der Kunde kann die Versandkosten und -steuern sehen.
+Wenn ein Kunde den PayPal-Checkout-Fluss über den Mini-Warenkorb, den Warenkorb oder die Produktseite aufruft, kann er die ausgewählte Lieferadresse im PayPal-Zahlungsmodal überprüfen. Nachdem der Kunde die Versandart ausgewählt hat, wird der Bestellbetrag neu berechnet und der Kunde kann die Versandkosten und -steuern sehen. Für den PayPal Express-Checkout können Kunden auf der optionalen [Händler-Überprüfungsseite](#paypal-express-review-page) die endgültigen Gesamtsummen und geltenden Geschäftsbedingungen überprüfen, bevor sie die Bestellung aufgeben.
 
 Wenn ein Kunde den Checkout-Fluss über die Checkout-Seite betritt, ist das System bereits über die Lieferadresse und den endgültigen berechneten Betrag informiert und die Gesamtsummen werden entsprechend dargestellt.
 
 Steuerferien, Versandkosten und Umsatzsteuer können von Standort zu Standort stark variieren. Nachdem [!DNL Payment Services] die Lieferadresse und den Preis erhalten hat, berechnet es schnell alle anfallenden Kosten neu und zeigt sie in den letzten Phasen des Checkouts angemessen an.
 
-Erfahren Sie mehr über die Verfügbarkeit von Zahlungsmethoden nach Land in [&#x200B; Dokumentation zu Zahlungsmethoden &#x200B;](https://developer.paypal.com/docs/checkout/payment-methods/){target=_blank} PayPal.
+Erfahren Sie mehr über die Verfügbarkeit von Zahlungsmethoden nach Land in [ Dokumentation zu Zahlungsmethoden ](https://developer.paypal.com/docs/checkout/payment-methods/){target=_blank} PayPal.

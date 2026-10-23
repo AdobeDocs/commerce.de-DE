@@ -1,19 +1,17 @@
 ---
 user-guide-title: Handbuch zu [!DNL Payment Services]
 breadcrumb-title: '[!DNL Payment Services]'
-user-guide-description: Dieses Handbuch enthält detaillierte Informationen zum Installieren und Konfigurieren von  [!DNL Payment Services]  für  [!DNL Adobe Commerce] - oder  [!DNL Magento Open Source] .
+user-guide-description: Dieses Handbuch enthält detaillierte Informationen zum Installieren und Konfigurieren von [!DNL Payment Services] für Ihren [!DNL Adobe Commerce]- oder [!DNL Magento Open Source].
 index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
 nudge: true
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '121'
 ht-degree: 2%
-
 ---
-
 
 # [!DNL Payment Services] für Commerce {#payment-services}
 
@@ -39,6 +37,7 @@ ht-degree: 2%
   - [Checkout in [!DNL Payment Services]](checkout.md)
   - Zahlungen verwalten {#manage}
     - [Positionen für [!DNL Payment Services]](line-items.md)
+    - [Übererfassung](over-capture.md)
     - [Erstattungen](refunds.md)
     - [Hohlräume](voids.md)
   - [Erstellen einer Bestellung in der Admin Console](create-order.md)
@@ -52,4 +51,4 @@ ht-degree: 2%
 - Sicherheit und Compliance {#security-compliance}
   - [Sicherheit](security.md)
   - [Deutlicher Schutz vor Betrug](fraud-protection.md)
-- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

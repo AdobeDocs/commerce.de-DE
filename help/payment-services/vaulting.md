@@ -22,9 +22,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 # Kreditkartenabrechnung
@@ -33,13 +33,13 @@ Konvertieren Sie einmalige Kunden mithilfe von Kreditkartenabrechnungen in treue
 
 ## Vaulting aktivieren
 
-Händler können in den [!DNL Payment Services]Einstellungen[&#x200B; Kreditkartenabrechnungen für ihre Geschäfte &#x200B;](configure-admin.md#card-vaulting).
+Händler können in den [!DNL Payment Services]Einstellungen[ Kreditkartenabrechnungen für ihre Geschäfte ](configure-admin.md#card-vaulting).
 
 1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
 1. Klicken Sie auf **[!UICONTROL Settings]**.
 
-1. Schalten Sie die **[!UICONTROL Vault enabled]** ein. Weitere Informationen finden [&#x200B; unter  [!DNL Payment Services]](configure-admin.md#enable-payment-services)Aktivieren“.
+1. Schalten Sie die **[!UICONTROL Vault enabled]** ein. Weitere Informationen finden [ unter  [!DNL Payment Services]](configure-admin.md#enable-payment-services)Aktivieren“.
 
 ## Vaulting ohne Kauf
 
@@ -49,7 +49,7 @@ Angemeldete Kunden können eine Zahlungsmethode im Dashboard „Mein Konto **wie
 
 1. Navigieren Sie im linken Navigationsbereich zu **[!UICONTROL Stored Payment Methods]** , um alle darin gespeicherten Zahlungsmethoden anzuzeigen.
 
-   Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/payments/stored-payment-methods) Zahlungsmethoden.
+   Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) Zahlungsmethoden.
 
 1. Der Kunde klickt auf **[!UICONTROL Add New Card]**, um eine neue Karte zu speichern.
 
@@ -90,13 +90,15 @@ Sie können in Admin nur dann Vault-Karten verwenden, wenn der Kunde sowohl übe
 
 So erstellen Sie in der Admin eine Bestellung für einen Kunden mit seiner Tresor-Kreditkarte:
 
-1. [Bestellung erstellen und Produkte hinzufügen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
-1. Wählen Sie _[!UICONTROL Payment & Shipping Information]_&#x200B;**[!UICONTROL Stored Cards]**&#x200B;als Zahlungsmethode aus.
+1. [Bestellung erstellen und Produkte hinzufügen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
+1. Wählen Sie _[!UICONTROL Payment & Shipping Information]_**[!UICONTROL Stored Cards]**als Zahlungsmethode aus.
 1. Wählen Sie die gewünschte Zahlungsmethode mit Vault-Kreditkarte aus.
-1. Nachdem Sie alle anderen erforderlichen Schritte für die Bestellung ausgeführt haben, [&#x200B; Sie sie &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
+1. Nachdem Sie alle anderen erforderlichen Schritte für die Bestellung ausgeführt haben, [ Sie sie ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
 
    ![Verwenden Sie eine Vault-Kreditkarte in Admin für den Kunden](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## Sicherheit
 
 Minimale Kreditkarteninformationen werden mit dem Käufer geteilt; er sieht nur die letzten vier Ziffern, das Ablaufdatum und die Marke seiner Vault-Kreditkarte. Kreditkartenangaben werden beim Zahlungsdienstleister gespeichert, um die [PCI](security.md#pci-compliance)-Compliance zu erfüllen.
+
+In [!DNL Payment Services] 2.17.0 oder höher können Kundinnen und Kunden, die mit einer gespeicherten Kreditkarte zahlen, aufgefordert werden, eine [3D Secure (3DS)-Authentifizierungsproblematik ](security.md#3ds), die ihr Kartenaussteller verlangt. Das Speichern einer Karte umgeht die vom Aussteller erforderliche Authentifizierung nicht.
