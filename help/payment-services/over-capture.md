@@ -17,14 +17,14 @@ PayPal bestimmt für jedes Händlerkonto das Limit für die Übererfassung. Durc
 
 >[!NOTE]
 >
->In diesem Thema wird die Übererfassung in der [!DNL Payment Services]-Erweiterung beschrieben. [!DNL Adobe Commerce as a Cloud Service] Informationen zu den separaten Verfügbarkeits- [ Aktivierungsanforderungen finden Sie unter „Benutzerdefinierte ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)&quot;.
+>In diesem Thema wird die Übererfassung in der [!DNL Payment Services]-Erweiterung beschrieben. [!DNL Adobe Commerce as a Cloud Service] Informationen zu den separaten Verfügbarkeits- [&#x200B; Aktivierungsanforderungen finden Sie unter „Benutzerdefinierte &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)&quot;.
 
 ## Voraussetzungen
 
 Vor der Aktivierung der Übererfassung:
 
 * Übererfassung ist nur in [!DNL Payment Services] 2.17.0 oder höher verfügbar.
-* Übererfassung steht nur US-Unternehmen zur Verfügung. Die [ (Overcapture Requirements, PSD2)](https://www.paypal.com/us/cshelp/article/overcapture-requirements-psd2-help954) gelten auch für Händler in den USA, die im Europäischen Wirtschaftsraum (EWR) an PayPal-Käufer verkaufen.
+* Übererfassung steht nur US-Unternehmen zur Verfügung. Die [&#x200B; (Overcapture Requirements, PSD2)](https://www.paypal.com/us/cshelp/article/overcapture-requirements-psd2-help954) gelten auch für Händler in den USA, die im Europäischen Wirtschaftsraum (EWR) an PayPal-Käufer verkaufen.
 * Eine Übererfassung ist für alternative Zahlungsmethoden (APMs) nicht verfügbar.
 * Holen Sie sich eine Übernahmevereinbarung mit PayPal und bestätigen Sie das für Ihr Händlerkonto genehmigte Limit mit Ihrem PayPal-Account-Manager.
 * Legen Sie die **[!UICONTROL Payment Action]** der Zahlungsmethode auf `Authorize` fest. Die Übererfassung gilt für autorisierte Bestellungen, die später bei der Fakturierung erfasst werden, nicht für Bestellungen, die automatisch mit `Authorize and Capture` erfasst werden. Siehe [Als  [!DNL Payment Services]  festlegen](production.md#set-payment-services-as-payment-method).
@@ -35,7 +35,7 @@ Vor der Aktivierung der Übererfassung:
 1. Erweitern Sie im linken Bereich **[!UICONTROL Sales]** und wählen Sie **[!UICONTROL Payment Methods]**.
 1. Wählen Sie die zu konfigurierende Website mit der Store-Bereichsauswahl aus.
 1. Erweitern Sie den Abschnitt _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
-1. Erweitern Sie im Abschnitt _[!UICONTROL Payment Services]_den Abschnitt_[!UICONTROL General Configuration]_ .
+1. Erweitern Sie im Abschnitt _[!UICONTROL Payment Services]_&#x200B;den Abschnitt&#x200B;_[!UICONTROL General Configuration]_ .
 1. Legen Sie **[!UICONTROL Over Capture Enabled]** auf `Yes` fest.
 1. Klicken Sie auf **[!UICONTROL Save Config]** , um Ihre Änderungen zu speichern.
 1. Navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Cache Management]** und klicken Sie dann auf **[!UICONTROL Flush Cache]** , um alle ungültigen Caches zu aktualisieren.
