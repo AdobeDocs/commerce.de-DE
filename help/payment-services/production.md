@@ -26,9 +26,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1110'
 ht-degree: 0%
 ---
 # [!DNL Payment Services] für Produktion aktivieren
@@ -61,6 +61,8 @@ Nachdem Sie [Commerce-Services konfiguriert](connect.md#configure-commerce-servi
    >[!IMPORTANT]
    >
    >[!DNL Payment Services] unterstützt partielle Aufnahmen. Ein Händler kann Teile einer Bestellung teilweise erfassen (Rechnung). Sie können beispielsweise jedes Element einzeln erfassen oder jetzt ein Element und den Rest später.
+
+   Berechtigte Händler mit einem PayPal-Überfangvertrag können auch [Übererfassung](over-capture.md) in [!DNL Payment Services] 2.17.0 oder höher aktivieren. Für die Übererfassung muss **[!UICONTROL Payment Action]** auf &quot;`Authorize`&quot; gesetzt werden, wobei die Erfassung später während der Fakturierung durchgeführt wird.
 
 1. Klicken Sie auf **[!UICONTROL Save]**.
 1. Klicken Sie auf **[!UICONTROL Go to Payment Services]** , um zur [!DNL Payment Services]-Startseite zurückzukehren.

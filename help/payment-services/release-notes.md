@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '5479'
+source-wordcount: '5663'
 ht-degree: 0%
 ---
 
@@ -132,9 +132,29 @@ _28. Juni 2021_
 > Es werden häufig Versionen veröffentlicht, um bei Bedarf neue Funktionen und Fehlerbehebungen bereitzustellen. Der Veröffentlichungszeitplan ist nicht festgelegt.
 
 
+## v2.17.0
+
+_22. Oktober 2026_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.6 und neuer
+
+![Neu](../assets/new.svg)<!-- PAY-6722 --> Händler können jetzt eine optionale Überprüfungsseite für den PayPal Express-Checkout konfigurieren, damit Käufer die endgültigen Gesamtmengen und die geltenden Geschäftsbedingungen überprüfen können, bevor sie eine Bestellung aufgeben. Weitere Informationen finden [&#x200B; auf der &#x200B;](payments-options.md#paypal-express-review-page)-Seite.
+
+![Neu](../assets/new.svg)<!-- PAY-6668 --> Berechtigte Händler mit einem PayPal-Übernahmevertrag können jetzt bei der Rechnungsstellung einer Bestellung mehr als den ursprünglich autorisierten Betrag innerhalb des genehmigten Limits von PayPal erfassen. Siehe [Übererfassung](over-capture.md) für Anforderungen und Konfiguration.
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-7062 --> Es wurde ein Problem behoben, bei dem die [!DNL Google Pay]-**[!UICONTROL Button Type]**-Einstellung die Schaltflächenbeschriftung beim Anzeigen der Google-Pay-Schaltfläche auf der Kaufbestätigungsseite nicht änderte.
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-7063 --> Ein Problem wurde behoben, das dazu führte, dass Käufer nach dem Schließen und erneuten Öffnen des Zahlungsfensters den PayPal-, Pay Later- oder Venmo Express-Checkout nicht abschließen konnten.
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-6952 --> Es wurde eine Diskrepanz zwischen Versandsteuerbetrag und -betrag behoben, die dazu führen konnte, dass der PayPal-Express-Checkout nicht abgeschlossen werden konnte, wenn Käufer eine kostenpflichtige Versandoption ausgewählt hatten.
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-6939 --> Es wurde Unterstützung für [3D Secure Authentication Challenges](security.md#3ds) hinzugefügt, wenn Käufer mit einer gespeicherten Kreditkarte bezahlen.
+
 ## v2.16.1
 
 _10. August 2026_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.6 und neuer
 
 ![Problem behoben](../assets/fix.svg)<!-- PAY-6769 --> Es wurde ein zeitweiliges Problem auf EDS-Storefronts behoben, die PayPal-Smart-Buttons verwenden und dazu führten, dass einige Zahlungsmethoden auf der Checkout-Seite nicht verfügbar waren.
 
@@ -142,13 +162,15 @@ _10. August 2026_
 
 _27. Juli 2026_
 
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.6 und neuer
+
 ![Neues Problem](../assets/new.svg)<!-- Issue PAY-6510 --> Händler können jetzt das Onboarding eines anderen PayPal-Kontos auf der Website direkt von der [!DNL Commerce Admin] aus selbst bedienen. [!DNL Payment Services] Die Startseite enthält jetzt eine **[!UICONTROL Connect a different PayPal account for a website]**-Schaltfläche, die für Zahlungsmethoden zur Seite „Admin-Konfiguration“ weiterleitet. Weitere [&#x200B; finden Sie unter „Verbinden eines anderen PayPal](connect-website-account.md)Kontos für eine Website“.
 
 ## v2.15.0
 
 _15. Juni 2026_
 
-[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.6 und neuer
 
 ![Neu](../assets/new.svg)<!-- PAY-6564 --> Jetzt kann [!DNL Google Pay] Express-Checkout Versandmethoden in der Google-Pay-Tabelle mithilfe von Client-seitigen Versandrückrufen anzeigen, sodass Käufer den Versand auswählen, bevor sie die Zahlung bestätigen. Händler können einen separaten Google-Pay-Überprüfungsschritt mithilfe von **[!UICONTROL Skip Review]** in der [Google Pay-Konfiguration ein- oder &#x200B;](configure-admin.md#google-pay). Wenn der Überprüfungsschritt übersprungen wird, bleiben Versandoptionen im Blatt, wenn sich die Adresse der Brieftasche oder die Versandmethode ändert.
 
@@ -744,4 +766,3 @@ _29. November 2021_
 ![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] Berichte [werden möglicherweise nicht sofort synchronisiert](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26837).
 
 ![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2475 --> Ihr [PayPal-Sandbox-](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26836) für [!DNL Payment Services] kann nicht überprüft werden, wenn Sie dieses Konto beim Onboarding erstellen.
-

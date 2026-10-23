@@ -22,9 +22,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 # Kreditkartenabrechnung
@@ -100,3 +100,5 @@ So erstellen Sie in der Admin eine Bestellung für einen Kunden mit seiner Treso
 ## Sicherheit
 
 Minimale Kreditkarteninformationen werden mit dem Käufer geteilt; er sieht nur die letzten vier Ziffern, das Ablaufdatum und die Marke seiner Vault-Kreditkarte. Kreditkartenangaben werden beim Zahlungsdienstleister gespeichert, um die [PCI](security.md#pci-compliance)-Compliance zu erfüllen.
+
+In [!DNL Payment Services] 2.17.0 oder höher können Kundinnen und Kunden, die mit einer gespeicherten Kreditkarte zahlen, aufgefordert werden, eine [3D Secure (3DS)-Authentifizierungsproblematik &#x200B;](security.md#3ds), die ihr Kartenaussteller verlangt. Das Speichern einer Karte umgeht die vom Aussteller erforderliche Authentifizierung nicht.

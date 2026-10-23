@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2458'
 ht-degree: 0%
 ---
 # Zahlungsoptionen
@@ -167,6 +167,17 @@ Kunden können mit der PayPal-Schaltfläche bequem und sicher auschecken.
 
 Die Schaltfläche &quot;[!DNL PayPal]&quot; ist auf der Produktseite sowie in den Ansichten „Mini-Warenkorb“, „Warenkorb“ und „Checkout“ sichtbar.
 
+#### PayPal Express-Überprüfungsseite
+
+Ab [!DNL Payment Services] 2.17.0 können Händler eine optionale Händlerüberprüfungsseite für den PayPal Express-Checkout konfigurieren. Diese Seite ist vom PayPal-Zahlungsmodal getrennt und ermöglicht es Käufern, die endgültige Bestellsumme und die geltenden Bedingungen vor der Bestellung zu überprüfen.
+
+Verwenden Sie **[!UICONTROL Skip Review]** in [&#x200B; Konfiguration von PayPal-](configure-admin.md#paypal-payment-buttons), um diesen Schritt zu steuern:
+
+* `No` - Der Käufer kehrt nach Abschluss des PayPal-Zahlungsmodals zur Händler-Überprüfungsseite zurück und bestätigt die Bestellung, bevor sie aufgegeben wird.
+* `Yes` - Die Seite für die Händlerüberprüfung wird übersprungen.
+
+Die Einstellung der Überprüfungsseite ersetzt nicht die Verantwortung des Händlers, die geltenden gesetzlichen Anforderungen zu erfüllen. Die bestehende Einstellung für die Google-Pay-Review-Seite [&#128279;](configure-admin.md#google-pay) wird separat konfiguriert.
+
 #### [!DNL Venmo]
 
 Kunden können mit der Schaltfläche [Venmo](https://venmo.com/) auschecken.
@@ -201,7 +212,7 @@ Erfahren Sie, wie Sie [!DNL Pay Later]-Messaging deaktivieren oder aktivieren, i
 
 Die Zahlungsmethoden PayPal, Pay Later und Venmo verwenden einen [Server-seitigen Versandrückruf](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) mit dem PayPal direkt mit Ihrer Commerce-Instanz kommunizieren kann, um Versandoptionen abzurufen und Gesamtsummen in Echtzeit zu berechnen.
 
-Dieser Server-seitige Ansatz ermöglicht es [!DNL Payment Services], das Popup-Fenster zur Bestellbestätigung zu überspringen und so ein schnelleres, optimiertes Kauferlebnis zu bieten. Da Versandkosten und Steuern dynamisch über Callbacks berechnet werden, sieht der Käufer genaue Summen direkt auf der PayPal- oder Venmo-Prüfungsseite.
+Da Versandkosten und Steuern dynamisch über Callbacks berechnet werden, sieht der Käufer aktualisierte Versandoptionen und -summen direkt im Zahlungsmodal PayPal oder Venmo. Für den PayPal Express-Checkout ist die optionale [Händler-Überprüfungsseite](#paypal-express-review-page) ein separater Schritt nach dem PayPal-Zahlungsmodal, das von **[!UICONTROL Skip Review]** gesteuert wird.
 
 >[!NOTE]
 >
@@ -283,7 +294,7 @@ Mit Adobe Commerce und Magento Open Source [!DNL Payment Services] stehen Ihnen 
 
 ### Neuberechnung der Bestellung
 
-Wenn ein Kunde den Checkout-Fluss über den Mini-Warenkorb, den Warenkorb oder die Produktseite aufruft, wird er zu einer Seite zur Bestellüberprüfung weitergeleitet, auf der er die ausgewählte Lieferadresse in einem PayPal-Popup-Fenster sehen kann. Nachdem der Kunde die Versandart ausgewählt hat, wird der Bestellbetrag entsprechend neu berechnet und der Kunde kann die Versandkosten und -steuern sehen.
+Wenn ein Kunde den PayPal-Checkout-Fluss über den Mini-Warenkorb, den Warenkorb oder die Produktseite aufruft, kann er die ausgewählte Lieferadresse im PayPal-Zahlungsmodal überprüfen. Nachdem der Kunde die Versandart ausgewählt hat, wird der Bestellbetrag neu berechnet und der Kunde kann die Versandkosten und -steuern sehen. Für den PayPal Express-Checkout können Kunden auf der optionalen [Händler-Überprüfungsseite](#paypal-express-review-page) die endgültigen Gesamtsummen und geltenden Geschäftsbedingungen überprüfen, bevor sie die Bestellung aufgeben.
 
 Wenn ein Kunde den Checkout-Fluss über die Checkout-Seite betritt, ist das System bereits über die Lieferadresse und den endgültigen berechneten Betrag informiert und die Gesamtsummen werden entsprechend dargestellt.
 

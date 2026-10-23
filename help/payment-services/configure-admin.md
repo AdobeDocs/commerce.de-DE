@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '3767'
+source-wordcount: '3911'
 ht-degree: 0%
 ---
 # [!DNL Payment Services]
@@ -59,6 +59,7 @@ Sie können [!DNL Payment Services] für Ihren Store und Ihre _[!UICONTROL Merch
 
 1. Ihre **[!UICONTROL PayPal Merchant ID]**- und **[!UICONTROL PayPal Merchant Status]** werden automatisch von PayPal bereitgestellt, sobald Sie das [!DNL Payment Services]-Dashboard zum ersten Mal aufrufen.
 1. Fügen Sie für **Soft-Deskriptor** (benutzerdefinierte Werte, die auf Bankauszügen von Kundentransaktionen angezeigt werden, um Geschäfte/Marken/Kataloge voneinander abzugrenzen) Ihren benutzerdefinierten Text (bis zu 22 Zeichen) in das Textfeld ein und ersetzen Sie `Soft descriptor` oder den vorhandenen Wert.
+1. Wählen Sie für geeignete Händler, die [!DNL Payment Services] 2.17.0 oder höher verwenden, **[!UICONTROL Over Capture Enabled]** Option `Yes` aus, um [Übererfassung](over-capture.md) zu aktivieren. Eine PayPal-Übererfassungsvereinbarung ist erforderlich und der **[!UICONTROL Payment Action]** der Zahlungsmethode muss auf `Authorize` festgelegt sein.
 1. Klicken Sie auf **[!UICONTROL Save Config]** , um Ihre Änderungen zu speichern.
 1. Navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Cache Management]** und klicken Sie dann auf **[!UICONTROL Flush Cache]** , um alle ungültigen Caches zu aktualisieren.
 
@@ -67,6 +68,7 @@ Sie können [!DNL Payment Services] für Ihren Store und Ihre _[!UICONTROL Merch
 | Feld | Umfang | Beschreibung |
 |---|---|---|
 | [!UICONTROL Enable] | Website | Aktivieren oder Deaktivieren von [!DNL Payment Services] für Ihre Website. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Over Capture Enabled] | Website | Aktivieren oder deaktivieren [Übererfassung](over-capture.md) für geeignete Händler mit einer PayPal-Übererfassung-Vereinbarung. Erfordert [!DNL Payment Services] 2.17.0 oder höher und eine Zahlungsaktion von `Authorize`. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]`. Standard: `[!UICONTROL No]`. |
 | [!UICONTROL Method] | Shop-Ansicht | Legen Sie die Methode oder Umgebung für Ihren Store fest. Optionen: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | Shop-Ansicht | Ihre Sandbox-Händler-ID, die beim Sandbox-Onboarding automatisch generiert wird. |
 | [!UICONTROL Payment Services Production ID] | Shop-Ansicht | Ihre Produktions-Händler-ID, die beim Onboarding in der Produktion (live) automatisch generiert wird. |
@@ -304,12 +306,15 @@ Konfigurieren von [!DNL PayPal payment buttons]
 
 Sie können die Zahlungsoptionen der PayPal-Zahlungs-Buttons im Admin-Bereich aktivieren und konfigurieren:
 
+In [!DNL Payment Services] 2.17.0 oder höher steuert **[!UICONTROL Skip Review]**, ob der PayPal Express-Checkout eine Händler-Bewertungsseite enthält, nachdem der Käufer das PayPal-Zahlungsmodal verlassen hat. Diese Überprüfungsseite ist vom PayPal-Zahlungsmodal getrennt. Weitere Informationen finden [&#x200B; auf der &#x200B;](payments-options.md#paypal-express-review-page)-Seite.
+
 1. Navigieren Sie in _Admin_-Seitenleiste zu **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Erweitern Sie im linken Bereich **[!UICONTROL Sales]** und wählen Sie **[!UICONTROL Payment Methods]**.
 1. Erweitern Sie den Abschnitt _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 1. Erweitern Sie im Abschnitt _[!UICONTROL Payment Services]_&#x200B;den Abschnitt&#x200B;_[!UICONTROL PayPal payment buttons]_ .
 1. Um den Namen der Zahlungsmethode zu ändern, wie er während des Checkouts angezeigt wird, bearbeiten Sie das _[!UICONTROL Title]_.
 1. Um [Zahlungsaktion festzulegen](production.md#set-payment-services-as-payment-method) wählen Sie **[!UICONTROL Authorize]** oder **[!UICONTROL Authorize and Capture]**.
+1. Für den PayPal Express-Checkout setzen Sie **[!UICONTROL Skip Review]** auf `No`, um die Händler-Bewertungsseite anzuzeigen, bevor der Käufer die Bestellung aufgibt, oder `Yes`, sie zu überspringen.
 1. Um eine Zahlungsmethode auf der Checkout-Seite zu priorisieren, geben Sie einen `Numeric Only` Wert in das Feld **[!UICONTROL Sort order]** ein.
 1. Um „Später bezahlen[&#x200B; zu aktivieren/deaktivieren](payments-options.md#pay-later-button) wählen Sie `Yes`/`No` für **[!UICONTROL Display Pay Later Message]** aus.
 
@@ -334,6 +339,7 @@ Sie können die Zahlungsoptionen der PayPal-Zahlungs-Buttons im Admin-Bereich ak
 |---|---|---|
 | [!UICONTROL Title] | Shop-Ansicht | Fügen Sie den Text hinzu, der während des Checkouts als Titel für diese Zahlungsoption in der Ansicht Zahlungsmethode angezeigt werden soll. Optionen: Textfeld |
 | [!UICONTROL Payment Action] | Website | Die [Zahlungsaktion](https://experienceleague.adobe.com/de/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Skip Review] | Shop-Ansicht | Steuern Sie in [!DNL Payment Services] 2.17.0 oder höher die Händler-Bewertungsseite für PayPal Express-Checkout. Legen Sie die Einstellung auf `[!UICONTROL No]` fest, um die Seite nach dem PayPal-Zahlungsmodal anzuzeigen, oder `[!UICONTROL Yes]` Sie sie überspringen. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]`. Standard: `[!UICONTROL Yes]`. |
 | [!UICONTROL Display Pay Later Message] | Website | Aktivieren oder deaktivieren Sie die PayPal-Nachricht Pay Later im Warenkorb, auf der Produktseite, im Mini-Warenkorb und während des Checkout-Flusses. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Configure Messaging] | Shop-Ansicht | Ändern Sie die PayPal-Messaging-Stile Später bezahlen . Optionen: `[!UICONTROL Product page]` / `[!UICONTROL Cart]` |
 | [!UICONTROL Show buttons on checkout page] | Shop-Ansicht | Aktivieren oder Deaktivieren von [!DNL PayPal payment buttons] auf der Kaufbestätigungsseite. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
