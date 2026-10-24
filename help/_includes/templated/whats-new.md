@@ -360,7 +360,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Das Handbuch <a href="https://experienceleague.adobe.com/en/docs/commerce/information-center/insights-and-guidance/overview">Commerce Insights</a> wurde hinzugefügt, eine neue Startseite für strategische Implementierungs- und Sicherheitsanleitungen von Adobe Commerce Product Management and Engineering.</p>
+      <td><p>Das Handbuch <a href="https://experienceleague.adobe.com/de/docs/commerce/information-center/insights-and-guidance/overview">Commerce Insights</a> wurde hinzugefügt, eine neue Startseite für strategische Implementierungs- und Sicherheitsanleitungen von Adobe Commerce Product Management and Engineering.</p>
 </td>
       <td>
         Neues Thema
