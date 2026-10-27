@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0fd11bdeb9e628571df516bf394251265c091da9
+source-git-commit: 12108447a29bb96f0d41d30176d8ef17b559b7a2
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '507'
 ht-degree: 0%
 ---
 # MDEE-Protokollcodes - Referenz
@@ -43,6 +43,8 @@ Log-Codes in Bezug auf Fehler oder Warnungen, die beim Erfassen von Daten aus Qu
 | CDE01-21 | Fehler | `CDE01-21 Unable to resolve url_path for category {id} with path "{path}", url_key "{urk_key}", store "{store}"` |
 | CDE01-22 | Fehler | `CDE01-22 Unable to resolve url_path for category{id} with path "{path}" for store view "{store}"` |
 | CDE01-23 | Fehler | `CDE01-23 Unable to assemble "ac_customizable_options" attribute. Error: {exception_message}` |
+| CDE01-24 | Fehler | `CDE01-24 Unable to add review summary data to feed` |
+| CDE01-26 | Warnung | `CDE01-26 Review summary attributes are not registered. Values are not exported. Check that no attribute with the same code was created by a merchant` |
 
 ## Gruppe 02 - Senden von Daten an SaaS-Phase
 
@@ -102,6 +104,7 @@ Protokollcodes zu Fehlern oder Warnungen, die beim Planen oder Auslösen der Syn
 | CDE03-26 | Fehler | `CDE03-26 InvalidateProductFeedOnCategoryUrlKeyChange: unable to expand staged url_key category reindex scope: {error_message}` |
 | CDE03-27 | Fehler | `CDE03-27 Failed to invalidate indexers after config "{config_section}" change. Error: {error_message}` |
 | CDE03-28 | Warnung | `CDE03-28 StagedCategoryUrlKeyChangeDetector: catalog category staging schema is not present; skipping staged url_key change detection.` |
+| CDE03-29 | Warnung | `CDE03-29 Product sync scheduling error on review summary change` |
 
 ## Gruppe 04: Allgemeine Fehler bei der Indizierung oder Konfiguration
 
