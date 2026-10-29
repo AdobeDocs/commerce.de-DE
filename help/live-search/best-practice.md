@@ -92,7 +92,7 @@ Um ein Produktattribut als Facette einzurichten, müssen die folgenden [Eigensch
 - Bestimmen Sie die relevantesten Attribute für Ihre Produkte und legen Sie sie als [dynamische Facetten](facets-type.md) fest. 
 - Legen Sie Produktattribute fest und sortieren Sie sie, die in Ihrem gesamten Katalog konsistent und für Ihre Produkte äußerst relevant sind, um die Relevanz und Filtermöglichkeiten für Ihre Kunden zu verbessern.
 - Stellen Sie sicher, dass Facettenbeschriftungen leicht verständlich sind und auf der gesamten Site konsistent benannt werden. Verwenden Sie beispielsweise „Preisspanne“ anstelle von „Kosten“.
-- Vermeiden Sie es, Käufer zu überfordern, indem Sie die Anzahl der Facetten auf die wichtigsten beschränken. Zu viele Optionen können zu Entscheidungsermüdung führen. Standardmäßig ist [!DNL Live Search] auf maximal 100 Attribute beschränkt, die als Facetten konfiguriert sind, und auf 30 Buckets, die innerhalb jeder Facette zurückgegeben werden. Geeignete Händler können über den [Adobe-Support&rbrace; eine Erhöhung auf maximal 500 Facetten &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}. Die Genehmigung unterliegt der Eignungs- und Leistungsbewertung. Weitere Informationen zu [Facettenbegrenzungen](boundaries-limits.md#facets).
+- Vermeiden Sie es, Käufer zu überfordern, indem Sie die Anzahl der Facetten auf die wichtigsten beschränken. Zu viele Optionen können zu Entscheidungsermüdung führen. Standardmäßig ist [!DNL Live Search] auf maximal 100 Attribute beschränkt, die als Facetten konfiguriert sind, und auf 30 Buckets, die innerhalb jeder Facette zurückgegeben werden. Geeignete Händler können über den [Adobe-Support&rbrace; eine Erhöhung auf maximal 500 Facetten &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}. Die Genehmigung unterliegt der Eignungs- und Leistungsbewertung. Weitere Informationen zu [Facettenbegrenzungen](boundaries-limits.md#facets).
 - Kunden ermöglichen, mehrere Filterkriterien gleichzeitig auszuwählen, um die Ergebnisse zu verfeinern. Beispielsweise können Käuferinnen und Käufer sowohl die Farben „Rot“ als auch „Blau“ auswählen.
 - Die Anzahl der verfügbaren Produkte neben jeder Facette anzeigen, um Kundinnen und Kunden einen Eindruck von den Suchergebnissen zu vermitteln, die sie erwarten können.
 - Implementieren Sie ausblendbare Facettenabschnitte, um die Schnittstelle sauber und verwaltbar zu halten, insbesondere auf mobilen Geräten.
@@ -230,7 +230,7 @@ Wenn Suchergebnisse zufällig oder irrelevant sind, verwenden Sie diese Checklis
 Weitere Informationen zu Produktattributen für die Suche:
 
 - [Festlegen von Attributen als durchsuchbar](workspace.md#set-attributes-as-searchable)
-- [Attributen Gewichtung zuweisen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Attributen Gewichtung zuweisen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Suchergebnisse überwachen
 
