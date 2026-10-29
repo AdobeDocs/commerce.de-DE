@@ -1,6 +1,6 @@
 ---
 title: Facetten hinzufügen
-description: Erfahren Sie, wie Sie filterbare Produktattribute als  [!DNL Live Search]  hinzufügen.
+description: Erfahren Sie, wie Sie filterbare Produktattribute [!DNL Live Search] Facetten hinzufügen.
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
 TQID: https://experienceleague.adobe.com/6mX3QWuZRFuDb1eDnUlPj1yvXZ2qGIdQ4oScxfHjNWY
 product_v2:
@@ -15,13 +15,11 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: a652b6d5659dd6d5aede27d771736222b72b9c5e
 workflow-type: tm+mt
-source-wordcount: 600
-ht-degree: 0%
-
+source-wordcount: '622'
+ht-degree: 3%
 ---
-
 # Facetten hinzufügen
 
 Jedes filterbare Produktattribut kann als Facette außer Lagerstatus (`quantity_and_stock_status`) verwendet werden. Im Bedienfeld *[!UICONTROL Add facets]* werden die aktuellen Facetten aufgelistet. Damit können Sie problemlos zusätzliche Produktattribute als Facetten zuweisen. Während dieses dreistufigen Prozesses wird ein Attribut ausgewählt, das als Facette verwendet wird, Eigenschaften bei Bedarf bearbeitet werden und die Änderungen in der Storefront veröffentlicht werden.
@@ -42,7 +40,7 @@ Jedes filterbare Produktattribut kann als Facette außer Lagerstatus (`quantity_
    * Um ein bestimmtes Produktattribut zu finden, geben Sie die ersten Zeichen des Attributnamens in das Feld *Suche* ein. Klicken Sie dann auf **Hinzufügen**.
 
      Informationen zum Konfigurieren von Preisvarianten und Gruppierungen finden Sie unter [Einstellungen](settings.md). Weitere Informationen finden Sie unter [Facettenarten](facets-type.md).
-Die Facette wird am unteren Rand der Liste *Dynamische Facetten* hinzugefügt und die Schaltfläche *Änderungen veröffentlichen* wird verfügbar.
+     Die Facette wird der Liste *Dynamische Facetten* in aufsteigender Reihenfolge hinzugefügt und die Schaltfläche *Änderungen veröffentlichen* wird verfügbar.
 
 1. Wenn die Facette, die Sie hinzufügen möchten, nicht gefunden werden kann, navigieren Sie zu **Stores** > Attribute > **Produkt** und stellen Sie sicher, dass das Attribut über die [erforderlichen Eigenschaften](facets.md) verfügt, um als Facette verwendet zu werden. Aktualisieren Sie bei Bedarf die folgenden Storefront-Eigenschaften des -Attributs:
 
@@ -75,14 +73,14 @@ Die Facette wird am unteren Rand der Liste *Dynamische Facetten* hinzugefügt un
 1. Wenn die Facette abgeschlossen ist, klicken Sie auf **Änderungen**.
 1. Warten Sie, bis die Facette im Store angezeigt wird.
 
-   Wenn die Facette nach zwei Stunden nicht verfügbar ist, finden Sie weitere Informationen unter [Überprüfen des &#x200B;](install.md#sync)) in den Installationsanweisungen.
+   Wenn die Facette nach zwei Stunden nicht verfügbar ist, finden Sie weitere Informationen unter [Überprüfen des ](install.md#sync)) in den Installationsanweisungen.
 
 ## Feldbeschreibungen
 
 | Feld | Beschreibung |
 |--- |--- |
 | Label | ([Nur Headless](facets-type.md)) Die [Facettenbeschriftung](facets-type.md) die in der Storefront sichtbar ist, kann aus Gründen der Konsistenz mit Ihrer Marke bearbeitet werden. |
-| Sortierungstyp | Die Methode, die zum [&#x200B; von &#x200B;](facets-type.md) verwendet wird. Alle [!DNL Commerce] Storefronts sortieren Facetten nur alphabetisch. Headless-Implementierungen können auch nach `Count` sortiert werden. options:<br />Alphabetisch - Sortiert Facetten alphabetisch.<br />Anzahl - (Nur Headless) Sortiert Facetten nach der Anzahl der gefundenen Übereinstimmungen. |
+| Sortierungstyp | Die Methode, die zum [ von ](facets-type.md) verwendet wird. Alle [!DNL Commerce] Storefronts sortieren Facetten nur alphabetisch. Headless-Implementierungen können auch nach `Count` sortiert werden. options:<br />Alphabetisch - Sortiert Facetten alphabetisch.<br />Anzahl - (Nur Headless) Sortiert Facetten nach der Anzahl der gefundenen Übereinstimmungen. |
 | Maximaler Wert | Die maximale Anzahl von Werten, die für jede Facette in der Storefront angezeigt werden können. Facetten, die einen Wertebereich darstellen, sind gleichmäßig verteilt. Gültige Einträge: 0 - 100; Standard: 8 |
 
 ### Kontrollen
