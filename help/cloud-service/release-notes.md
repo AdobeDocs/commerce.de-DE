@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: f7a84928b817f21a05ecc9e822ace49e103a8dfd
+source-git-commit: d84e54994e01c702c9d3634fbe42409bc4b0ce51
 workflow-type: tm+mt
-source-wordcount: '9292'
+source-wordcount: '9439'
 ht-degree: 0%
 ---
 # Versionshinweise
@@ -74,13 +74,21 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 >
 >Wenn Sie Adobe Commerce On-Premise oder Adobe Commerce in der Cloud-Infrastruktur verwenden, lesen Sie die [Versionshinweise zu Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview).
 
+## Änderungen an der Admin-Benutzeroberfläche
+
+Der [!DNL Adobe Commerce as a Cloud Service] Admin funktioniert jetzt wie die anderen Adobe-Produkte, die Sie bereits verwenden, und verfügt über dieselbe obere Navigationsleiste sowie denselben Produkt- und Organisationswechsel. Melden Sie sich einmal an, um nahtlos zwischen Produkten und Commerce-Instanzen zu wechseln, ohne dass Sie sich für Commerce Cloud Manager und jede Instanz separat anmelden müssen. Ein Instanzwechsel und eine durchsuchbare Commerce-Navigation helfen Ihnen, schneller an den gewünschten Ort zu gelangen.
+
+Jedes Admin-Erlebnis verfügt über eine eigene URL. Instanzlinks in Commerce Cloud Manager öffnen standardmäßig das neue Commerce Admin-Erlebnis mit **[!UICONTROL Admin URL (Unified Shell UI)]**. Die klassische Benutzeroberfläche wird weiterhin unterstützt, sodass Sie weiterhin vertraute Workflows verwenden können, während Sie sich an die neue Benutzeroberfläche anpassen. Um die klassische Benutzeroberfläche zu verwenden, öffnen Sie das Bedienfeld Instanzdetails und wählen Sie **[!UICONTROL Admin URL (Classic UI)]** aus. Vorhandene Admin-URLs und Lesezeichen öffnen weiterhin die klassische Benutzeroberfläche.
+
+Weitere Informationen finden Sie unter [Commerce Admin in Adobe Unified Experience](https://experienceleague.adobe.com/de/docs/commerce-admin/start/admin/admin-unified-experience).
+
 ## Oktober 2026 - #3 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produktion]{type=Neutral tooltip="Die aufgelisteten Elemente sind derzeit in Produktionsumgebungen verfügbar."}
 
-Die folgenden Elemente sind am 29. Oktober 2026 in Produktionsumgebungen verfügbar.
+Die folgenden Elemente wurden am 28. Oktober 2026 in Produktionsumgebungen veröffentlicht.
 
 >[!BEGINSHADEBOX]
 
@@ -94,9 +102,9 @@ Wenn Produktüberprüfungen aktiviert sind, werden die Anzahl genehmigter Überp
 
 ### Gutschriftsrückerstattung speichern
 
-Der `POST /V1/creditmemo/refund` REST-Endpunkt akzeptiert jetzt ein optionales `extension_attributes.refund_to_store_credit_amount`, das eine Gutschrift ganz oder teilweise an den Speicherkredit des Kunden zurückerstattet.<!-- ACCS-2068 -->
+Der [`POST /V1/creditmemo/refund` REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit)Endpunkt akzeptiert jetzt ein optionales `extension_attributes.refund_to_store_credit_amount`, das eine Gutschrift ganz oder teilweise an den Speicherkredit des Kunden zurückerstattet.<!-- ACCS-2068 -->
 
-Zwei neue Administratorrollenberechtigungen steuern den Zugriff auf das Speichern von Guthaben: <!-- ACCS-1961 -->
+Zwei [neue Administratorrollenberechtigungen](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customer-accounts/store-credit/store-credit-using#store-credit-role-resources) steuern den Zugriff zum Speichern von Guthaben: <!-- ACCS-1961 -->
 
 * [!UICONTROL Customers] > [!UICONTROL All Customers] > [!UICONTROL Manage Store Credit Balances]
 * [!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Orders] > [!UICONTROL Actions] > [!UICONTROL Create] > [!UICONTROL Can Spend Store Credit]

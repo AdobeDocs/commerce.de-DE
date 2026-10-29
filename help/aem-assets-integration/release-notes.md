@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b02fb8e31f4a25cff9e52f64a64812f30d6858b8
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '2009'
 ht-degree: 0%
 ---
 # Versionshinweise zur AEM Assets-Integration
@@ -48,6 +48,20 @@ _11. Februar 2025_
 ![Neues Problem](../assets/new.svg) Jetzt können Händler Bilder für Produkte und Kategorien synchronisieren.
 
 +++
+
+## v1.4.12
+
+_28. Oktober 2026_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce Version 2.4.6 und höher.
+
+![Problem behoben](../assets/fix.svg)<!-- Issue ACAP-1335 --> Es wurde die Handhabung von Kategoriebildern beim Wechsel zwischen der Eigentümerschaft von Visualisierungen zwischen Adobe Commerce und AEM Assets behoben. AEM-Asset-Auswahlen werden jetzt in einem dedizierten `asset_role_image`-Attribut gespeichert, sodass sie bei Eigentümeränderungen erhalten bleiben. Beim Lesen und Exportieren von Kategoriebildern wird der AEM-Wert für die Asset-Rolle verwendet, wenn AEM Assets für die Visualisierung verantwortlich ist, einschließlich für die Store-Ansicht spezifischer Werte beim Export. Vorhandene HTTP/HTTPS-URLs für die Bereitstellung von AEM-Assets in der Kategorie `image` werden in das neue Attribut migriert, ohne vorhandene Werte für die Asset-Rolle zu überschreiben.
+
+![Problem behoben](../assets/fix.svg)<!-- Issue ACAP-2180 --> Das Feld für die Kategorie GraphQL-`asset_role_image` wurde korrigiert, sodass `null` zurückgegeben wurde, wenn Adobe Commerce für die Visualisierung verantwortlich ist, und der Wert für die Kategorie-Asset-Rolle, wenn AEM Assets für die Visualisierung verantwortlich ist.
+
+![Problem behoben](../assets/fix.svg)<!-- Issue ACAP-2180 --> Es wurde ein Problem behoben, bei dem AEM Asset-Rollen im Produkt-Feed nicht korrekt exportiert wurden. Jetzt werden AEM-Asset-Rollen korrekt exportiert.
+
+![Es wurde ein Problem &#x200B;](../assets/fix.svg)<!-- Issue ACAP-1338 -->. Paketabhängigkeiten wurden aktualisiert, einschließlich der Wiederherstellung expliziter Anforderungen für Adobe IMS, Commerce Eventing und Services-ID-Pakete und der Entfernung der expliziten `magento/framework`.
 
 ## v1.4.9
 

@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 9a378b5e553afb5d96ce79738dab1d32404f4f22
+source-git-commit: 4f804d488a8c8690ed965c022d673f52c91b3d15
 workflow-type: tm+mt
-source-wordcount: '3719'
+source-wordcount: '3763'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension] Versionshinweise
@@ -60,6 +60,12 @@ Zu den Aktualisierungen gehören:
 >Die [!DNL SaaS data export]-Erweiterung ist eine Sammlung von Modulen, die automatisch mit [!DNL Live Search], [!DNL Product Recommendations] und [!DNL Catalog Service] installiert werden. Sie können die auf Ihrem System installierte Version mithilfe von [!DNL Composer] überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Versionen 2026 {#release-notes-2026}
+
+### Version 103.6.0
+
+_21. Oktober 2026_
+
+![Neu](../assets/new.svg) **Attribute für die Produktüberprüfungszusammenfassung**-Systemverwaltete Produktattribute für die Anzahl genehmigter Überprüfungen (`ac_review_count`) und die durchschnittliche Bewertung (`ac_rating_summary`) hinzugefügt. Wenn die Synchronisierung der Überprüfungszusammenfassung aktiviert ist, werden diese Werte in den Katalog-Service exportiert, damit Storefronts Überprüfungszählungen und Sternebewertungen anzeigen können. <!--MDEE-1414-->
 
 ### Version 103.5.2
 
