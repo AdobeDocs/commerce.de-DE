@@ -39,17 +39,17 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Um sicherz
 
 ## Allgemein
 
-- Der Suchadapter ist seit [!DNL Live Search] 4[0.0 ](release-notes.md#live-search-400). Das PLP-Widget (Product Listing Page) ist die unterstützte Lösung für alle [!DNL Live Search] Implementierungen, die in Zukunft durchgeführt werden. Der Suchadapter erhält nur sicherheitsbezogene Updates. Informationen zur Migration zum PLP[Widget finden ](migrate-to-plp.md) im Migrationshandbuch .
+- Der Suchadapter ist seit [!DNL Live Search] 4[0.0 &#x200B;](release-notes.md#live-search-400). Das PLP-Widget (Product Listing Page) ist die unterstützte Lösung für alle [!DNL Live Search] Implementierungen, die in Zukunft durchgeführt werden. Der Suchadapter erhält nur sicherheitsbezogene Updates. Informationen zur Migration zum PLP[Widget finden &#x200B;](migrate-to-plp.md) im Migrationshandbuch .
 - Das [Erweiterte Suche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)-Modul ist deaktiviert, wenn [!DNL Live Search] installiert ist, und der Link für die erweiterte Suche in der Storefront-Fußzeile wird entfernt.
 - [Preisstufe](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) wird im [!DNL Live Search] Feld und im Widget „Produktlistenseite“ nicht unterstützt.
 - Die Produktpreise enthalten die Mehrwertsteuer (MwSt.), aber [!DNL Live Search] können die MwSt. nicht als separaten Wert anzeigen.
 - Die Inhaltssuche (CMS-Seiten und -Blöcke) wird nicht unterstützt.
 - Die maximale Anzahl von Ergebnissen, die paginiert werden können, beträgt 10.000. Um sicherzustellen, dass Käufer keine tiefe Paginierung verwenden müssen, wenn eine Kategorie oder ein Suchergebnis eine große Anzahl von Produkten enthält, bieten Sie aussagekräftige Möglichkeiten, Produkte zu filtern.
 - Es gibt eine feste Grenze von 1 MB pro Attribut, einschließlich Beschreibung und benutzerdefinierten Attributen.
-- Der Suchadapter unterstützt keine Produktattribute, die mit einem benutzerdefinierten Quellmodell erstellt und als Facetten verwendet werden. Um diese Funktion zu unterstützen, müssen Sie das Widget [Produktlistenseite“ ](plp-styling.md).
+- Der Suchadapter unterstützt keine Produktattribute, die mit einem benutzerdefinierten Quellmodell erstellt und als Facetten verwendet werden. Um diese Funktion zu unterstützen, müssen Sie das Widget [Produktlistenseite“ &#x200B;](plp-styling.md).
 - Benutzerdefinierte Produkttypen werden nicht unterstützt.
 - Benutzerdefinierte Attribute, die programmgesteuert mit `"is_user_defined": false` erstellt wurden, werden nicht unterstützt.
-- Sie können Ergebnisse mithilfe der Bedingungen „Beginnt mit“ oder „Enthält“ mit einigen Einschränkungen filtern, wie in der [Entwicklerdokumentation“ ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#limitations).
+- Sie können Ergebnisse mithilfe der Bedingungen „Beginnt mit“ oder „Enthält“ mit einigen Einschränkungen filtern, wie in der [Entwicklerdokumentation“ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#limitations).
 - Sie können Leistungsmetriken nur innerhalb des letzten Jahres verfolgen.
 - Wenn eine Suchabfrage mehrere Wörter enthält, werden diese aufgrund des Leerzeichens zwischen den Wörtern als separate Suchbegriffe behandelt. Verwenden Sie [Synonyme](./synonyms.md) wenn Sie mehrwortige Suchabfragen berücksichtigen möchten.
 - [!DNL Live Search] unterstützt [Suchbegriff-Umleitungen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) nicht nativ. Implementieren Sie Weiterleitungen mithilfe von Fastly oder einer anderen benutzerdefinierten Konfiguration.
@@ -66,7 +66,7 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Um sicherz
 
 ## Facetten
 
-- Standardmäßig können Sie bis zu 100 filterbare Attribute als Facetten konfigurieren. Geeignete Händler können über den [Adobe-Support} eine Erhöhung auf maximal 500 Facetten ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}. Die Genehmigung unterliegt der Eignungs- und Leistungsbewertung.
+- Standardmäßig können Sie bis zu 100 filterbare Attribute als Facetten konfigurieren. Geeignete Händler können über den [Adobe-Support&rbrace; eine Erhöhung auf maximal 500 Facetten &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}. Die Genehmigung unterliegt der Eignungs- und Leistungsbewertung.
 - Innerhalb einer Facette können maximal 100 Buckets zurückgegeben werden. Wenn Sie mehr als 100 Behälter zurückgeben müssen, erstellen [ein Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide), damit Adobe die Leistungsauswirkungen analysieren und ermitteln kann, ob es möglich ist, diesen Grenzwert für Ihre Umgebung zu erhöhen.
 - Dynamische Facetten können Leistungsprobleme bei großen Indizes und Indizes mit hoher Ordinalität verursachen. Wenn Sie dynamische Facetten erstellt haben und eine Leistungsbeeinträchtigung oder das Laden einer Seite mit Zeitüberschreitungsfehlern bemerken, versuchen Sie, Ihre Facetten zu ändern und anzuheften, um festzustellen, ob dies Ihr Leistungsproblem behebt.
 - Lagerstatus (`quantity_and_stock_status`) wird nicht als Facette unterstützt. In Admin können Sie [!UICONTROL Display Out of Stock Products] = [!UICONTROL No] festlegen, um nicht vorrätige Produkte zu filtern. Diese Funktion wird nativ im `[PLP Widget](plp-styling.md)`-Modul unterstützt. Weitere Informationen finden Sie [Verwalten von nicht vorrätigen Produkten](manage-out-of-stock-products.md).
@@ -87,7 +87,7 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Um sicherz
 
 ## Merchandising suchen
 
-- Die maximale Anzahl von Merchandising-[ (Regeln](rules.md) pro Store-Ansicht ist 50.
+- Die maximale Anzahl von Merchandising-[&#x200B; (Regeln](rules.md) pro Store-Ansicht ist 50.
 - Die maximale Anzahl von Bedingungen pro Regel ist 10.
 - Die maximale Anzahl von Ereignissen pro Regel ist 25.
 - Regeln und manuell sortierte Produkte werden auf die Suchergebnisse angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sind Regeln und manuelle Rankings nicht mehr wirksam.
@@ -110,9 +110,9 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Um sicherz
 - So beschränken Sie Kundengruppen mithilfe von [Kategorieberechtigungen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions):
   - Produkte müssen der Stammkategorie zugewiesen werden. (**Hinweis:** Sie können diese Einschränkung entfernen, indem Sie die SaaS-Datenexporterweiterung auf Version 103.4.0 oder höher aktualisieren. Siehe [Verwalten der Datenexporterweiterung](../data-export/manage-extension.md).
   - Die Kundengruppe „Nicht angemeldet“ muss über „Erlauben“-Browserberechtigungen verfügen.
-  - Um Produkte auf die Kundengruppe „Nicht angemeldet“ zu beschränken, gehen Sie zu jeder Kategorie und legen Sie die Berechtigungen für jede [Kundengruppe“ ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
+  - Um Produkte auf die Kundengruppe „Nicht angemeldet“ zu beschränken, gehen Sie zu jeder Kategorie und legen Sie die Berechtigungen für jede [Kundengruppe“ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - Vorkonfigurierte Unterstützung für B2B mit dem PLP-Widget auf PWA Studio wird derzeit nicht unterstützt. Sie können jedoch [die API verwenden](install.md#pwa-support) um diese Funktion zu implementieren.
-- Kategoriefacetten in [!DNL Live Search] zeigen möglicherweise Kategorien an, die für eine bestimmte [ (Kundengruppe) nicht ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) werden können.
+- Kategoriefacetten in [!DNL Live Search] zeigen möglicherweise Kategorien an, die für eine bestimmte [&#x200B; (Kundengruppe) nicht &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) werden können.
 - [!DNL Live Search] können bis zu 1.000 Kundengruppen unterstützen.
 
 ## [!DNL Storefront popover]
