@@ -1,6 +1,6 @@
 ---
 title: Grenzen und Beschränkungen
-description: Erfahren Sie mehr über die Grenzen und Einschränkungen von  [!DNL Live Search] , um sicherzustellen, dass es den Anforderungen Ihres Unternehmens entspricht.
+description: Erfahren Sie mehr über die Grenzen und Einschränkungen von [!DNL Live Search], um sicherzustellen, dass sie den Anforderungen Ihres Unternehmens entsprechen.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
 TQID: https://experienceleague.adobe.com/QIKvaTUGLWd6yw6cEAyDkP9tCgEcJHLdiwpZDtx1-p4
@@ -28,13 +28,11 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 82da0a6749a2c3e6496992a6450c9ea0e7070b17
 workflow-type: tm+mt
-source-wordcount: 1409
+source-wordcount: '1448'
 ht-degree: 0%
-
 ---
-
 # Grenzen und Beschränkungen
 
 Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Um sicherzustellen, dass [!DNL Live Search] und [!DNL Catalog Service] den Anforderungen Ihres Unternehmens entsprechen, überprüfen Sie die folgenden Grenzen und Einschränkungen. Wenn Sie erweiterte Suchfunktionen wie Inhaltssuche, BYOA (bring-your-own-algorithm) oder attributbasiertes Merchandising benötigen, sollten Sie eine Suchlösung eines Drittanbieters in Betracht ziehen.
@@ -68,7 +66,7 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Um sicherz
 
 ## Facetten
 
-- Aus dem Satz definierter filterbarer Attribute können Sie bis zu 100 Attribute als Facetten konfigurieren.
+- Standardmäßig können Sie bis zu 100 filterbare Attribute als Facetten konfigurieren. Geeignete Händler können über den [Adobe-Support&rbrace; eine Erhöhung auf maximal 500 Facetten &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}. Die Genehmigung unterliegt der Eignungs- und Leistungsbewertung.
 - Innerhalb einer Facette können maximal 100 Buckets zurückgegeben werden. Wenn Sie mehr als 100 Behälter zurückgeben müssen, erstellen [ein Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide), damit Adobe die Leistungsauswirkungen analysieren und ermitteln kann, ob es möglich ist, diesen Grenzwert für Ihre Umgebung zu erhöhen.
 - Dynamische Facetten können Leistungsprobleme bei großen Indizes und Indizes mit hoher Ordinalität verursachen. Wenn Sie dynamische Facetten erstellt haben und eine Leistungsbeeinträchtigung oder das Laden einer Seite mit Zeitüberschreitungsfehlern bemerken, versuchen Sie, Ihre Facetten zu ändern und anzuheften, um festzustellen, ob dies Ihr Leistungsproblem behebt.
 - Lagerstatus (`quantity_and_stock_status`) wird nicht als Facette unterstützt. In Admin können Sie [!UICONTROL Display Out of Stock Products] = [!UICONTROL No] festlegen, um nicht vorrätige Produkte zu filtern. Diese Funktion wird nativ im `[PLP Widget](plp-styling.md)`-Modul unterstützt. Weitere Informationen finden Sie [Verwalten von nicht vorrätigen Produkten](manage-out-of-stock-products.md).

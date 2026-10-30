@@ -1,6 +1,6 @@
 ---
 title: Best Practices für [!DNL Live Search]
-description: Erfahren Sie mehr über die Best Practices für die Implementierung von  [!DNL Live Search]  in Ihrem Store.
+description: Erfahren Sie mehr über die Best Practices zur Implementierung von [!DNL Live Search] in Ihrem Store.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
 TQID: https://experienceleague.adobe.com/X9zgHooEzDJe-zzmLLXHdVVVFUHVX4be47dOUaJyUXU
@@ -23,13 +23,11 @@ topic_v2:
     internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 82da0a6749a2c3e6496992a6450c9ea0e7070b17
 workflow-type: tm+mt
-source-wordcount: 2965
+source-wordcount: '3008'
 ht-degree: 0%
-
 ---
-
 # Best Practices
 
 Dieser Artikel hilft Merchandisern, ihre Site-Suchfunktion zu verbessern, um ein nahtloses und effizientes Kundenerlebnis zu gewährleisten, das die Konversionsraten maximiert. Wenn Sie die beschriebenen Strategien befolgen, erfahren Sie, wie Sie erweiterte Suchfunktionen implementieren und Ihr Suchwerkzeug kontinuierlich verfeinern, um eine optimale Leistung mit Adobe Commerce [!DNL Live Search] zu erzielen.
@@ -94,7 +92,7 @@ Um ein Produktattribut als Facette einzurichten, müssen die folgenden [Eigensch
 - Bestimmen Sie die relevantesten Attribute für Ihre Produkte und legen Sie sie als [dynamische Facetten](facets-type.md) fest. 
 - Legen Sie Produktattribute fest und sortieren Sie sie, die in Ihrem gesamten Katalog konsistent und für Ihre Produkte äußerst relevant sind, um die Relevanz und Filtermöglichkeiten für Ihre Kunden zu verbessern.
 - Stellen Sie sicher, dass Facettenbeschriftungen leicht verständlich sind und auf der gesamten Site konsistent benannt werden. Verwenden Sie beispielsweise „Preisspanne“ anstelle von „Kosten“.
-- Vermeiden Sie es, Käufer zu überfordern, indem Sie die Anzahl der Facetten auf die wichtigsten beschränken. Zu viele Optionen können zu Entscheidungsermüdung führen. Standardmäßig ist [!DNL Live Search] auf maximal 100 Attribute beschränkt, die als Facetten konfiguriert sind, und auf 30 Buckets, die innerhalb jeder Facette zurückgegeben werden. Weitere Informationen zu [Facettenbegrenzungen](boundaries-limits.md#facets). 
+- Vermeiden Sie es, Käufer zu überfordern, indem Sie die Anzahl der Facetten auf die wichtigsten beschränken. Zu viele Optionen können zu Entscheidungsermüdung führen. Standardmäßig ist [!DNL Live Search] auf maximal 100 Attribute beschränkt, die als Facetten konfiguriert sind, und auf 30 Buckets, die innerhalb jeder Facette zurückgegeben werden. Geeignete Händler können über den [Adobe-Support&rbrace; eine Erhöhung auf maximal 500 Facetten &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}. Die Genehmigung unterliegt der Eignungs- und Leistungsbewertung. Weitere Informationen zu [Facettenbegrenzungen](boundaries-limits.md#facets).
 - Kunden ermöglichen, mehrere Filterkriterien gleichzeitig auszuwählen, um die Ergebnisse zu verfeinern. Beispielsweise können Käuferinnen und Käufer sowohl die Farben „Rot“ als auch „Blau“ auswählen.
 - Die Anzahl der verfügbaren Produkte neben jeder Facette anzeigen, um Kundinnen und Kunden einen Eindruck von den Suchergebnissen zu vermitteln, die sie erwarten können.
 - Implementieren Sie ausblendbare Facettenabschnitte, um die Schnittstelle sauber und verwaltbar zu halten, insbesondere auf mobilen Geräten.

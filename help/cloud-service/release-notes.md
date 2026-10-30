@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: d84e54994e01c702c9d3634fbe42409bc4b0ce51
+source-git-commit: 43c00a414f95900a30103e56820d06077d530e0f
 workflow-type: tm+mt
-source-wordcount: '9439'
+source-wordcount: '9823'
 ht-degree: 0%
 ---
 # Versionshinweise
@@ -82,7 +82,59 @@ Jedes Admin-Erlebnis verfügt über eine eigene URL. Instanzlinks in Commerce Cl
 
 Weitere Informationen finden Sie unter [Commerce Admin in Adobe Unified Experience](https://experienceleague.adobe.com/de/docs/commerce-admin/start/admin/admin-unified-experience).
 
-## Oktober 2026 - #3 {#latest}
+## November 2026 - #1 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+Die folgenden Elemente werden am 10. November 2026 in Produktionsumgebungen veröffentlicht.
+
+>[!BEGINSHADEBOX]
+
+<!-- ACCS-1980 not included: storefront-router-service#410 (router schema sync) is still open -->
+
+### Zurückgegebene Artikelattribute ändern
+
+Der neue `observer.rma_save_before` [Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) ermöglicht es Ihnen, eine Rückgabe und ihre Elemente zu lesen, bevor die Rückgabe gespeichert wird, und dann Attributwerte zu ändern. <!-- ACCS-2062 -->
+
+* Die Payload enthält Rückgabeelemente, wenn durch das Speichern Elemente erstellt oder bearbeitet werden, z. B. wenn in der [!DNL Commerce Admin] eine Rückgabe erstellt wird, durch REST oder durch die `requestReturn` GraphQL-Mutation.
+* Der Webhook wird im Rahmen der Speicherung der Rückgabe ausgeführt. Wenn ein erforderlicher Webhook fehlschlägt, wird die Rückgabe nicht gespeichert.
+
+### Lieferadressen einschließen
+
+Für neue nicht virtuelle Bestellungen, die über die `POST /V1/orders`- und `PUT /V1/orders/create` REST-Endpunkte erstellt wurden, ist jetzt eine Versandadresse erforderlich. Anfragen ohne Versandadresse geben einen HTTP-400-Fehler zurück. Durch diese Änderung wird verhindert, dass Bestellungen ohne Versandinformationen zu E-Mail-Fehlern bei Bestellungen führen. <!-- CCSAAS-5351 -->
+
+So erstellen Sie eine Bestellung ohne Versandadresse:
+
+* Legen Sie `is_virtual` auf `1` fest, wenn die Bestellung nur digitale Produkte enthält.
+* Platzieren Sie die Bestellung aus einem Warenkorb mithilfe des `PUT /V1/carts/:cartId/order`-Endpunkts.
+
+### [!DNL AEM Assets] Kategoriebilder abrufen
+
+Die `CategoryInterface`- und `CategoryTree` GraphQL-Typen enthalten jetzt ein `asset_role_image` Feld, das das Kategoriebild zurückgibt, das von [!DNL AEM Assets] zugewiesen wurde. <!-- ACCS-2180 -->
+
+### Verbesserungen und Fehlerbehebungen
+
+Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen sind in dieser Version enthalten:
+
+* Es wurde ein Problem behoben, bei dem [!DNL AEM Assets] Produktbilder ohne Bildrollen in GraphQL-Produktabfragen zurückgegeben wurden. Um Bildrollen für Produkte wiederherzustellen, die vor dieser Fehlerbehebung exportiert wurden, [synchronisieren Sie den Produktdaten-Feed erneut](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#manage-failed-exports). <!-- ACCS-2180 -->
+
+* Es wurde ein Problem behoben, bei dem konfigurierbare Produktoptionen wie Farbe oder Größe in den `selected_options` in GraphQL-Bestellantworten fehlten, wenn das Bestellelement auch benutzerdefinierte Optionen hatte. <!-- CCSAAS-5722 -->
+
+* Es wurde ein Problem behoben, bei dem Regeln für das Firmenadressbuch auf Firmenbenutzer auf Websites angewendet wurden, auf denen Unternehmen deaktiviert sind. <!-- ACCS-2138 -->
+
+* Es wurde ein Problem behoben, bei dem der `POST /V1/orders/:orderId/edit/start` REST-Endpunkt einen 404-Fehler zurückgab, wenn Sie eine Bestellung mit einer geänderten Versandadresse bearbeitet haben. <!-- ACCS-2220 -->
+
+* Es wurde ein Problem behoben, bei dem die `requestReturn` GraphQL-Mutation fehlschlug, wenn ein optionales benutzerdefiniertes Rückgabeelement mit einem leeren Wert gesendet wurde. <!-- CCSAAS-5628 -->
+
+* Fehlerkorrektur - Die Lagerverarbeitung wird jetzt nicht mehr angehalten, wenn Produkte nach einer [!UICONTROL Update attributes] Massenaktion gelöscht werden. <!-- CCSAAS-5713 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Oktober 2026 - #3
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
