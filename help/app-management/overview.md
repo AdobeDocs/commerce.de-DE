@@ -18,9 +18,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a00b9e1654a572e1773b5b7e321683332882d86f
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '489'
 ht-degree: 0%
 ---
 # Übersicht über [!DNL App Management]
@@ -37,7 +37,7 @@ Gemeinsam schaffen diese Funktionen ein skalierbares Erweiterungsmodell, das es 
 
 ## Was [!DNL App Management] bietet
 
-* **Ein Ort für alle Ihre Apps**. Verknüpfen, Konfigurieren und Verwalten von Apps über **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Apps suchen, filtern und &#x200B;](manage-app.md) aus derselben Ansicht.
+* **Ein Ort für alle Ihre Apps**. Verknüpfen, Installieren, Konfigurieren, Aktualisieren und Verwalten von Apps über **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Apps suchen, filtern und ](manage-app.md) aus derselben Ansicht.
 * **Einstellungen, die Ihrem Unternehmen entsprechen**. Wenden Sie verschiedene Konfigurationen pro Website, Store oder Store-Ansicht für Multi-Region- oder Multi-Marken-Setups an.
 * **Automatische Speichersynchronisierung**. Websites, Stores und Store-Ansichten aus Commerce werden importiert, wenn Sie eine App verknüpfen.
 * **Natives Admin-**. Arbeiten mit Apps aus Adobe Exchange- oder benutzerdefinierten Bereitstellungen, ohne Commerce verlassen zu müssen.
@@ -45,22 +45,24 @@ Gemeinsam schaffen diese Funktionen ein skalierbares Erweiterungsmodell, das es 
 ## Wer verwendet [!DNL App Management]?
 
 | Rolle | Anwendungsfall |
-|------|----------|
-| **App-Manager** | Verknüpfen Sie Apps, konfigurieren Sie Einstellungen und verwalten Sie Apps in Ihrer Commerce-Instanz. |
+| --- | --- |
+| **App-Manager** | Überprüfen Sie die App-Details, verknüpfen und installieren Sie Apps, konfigurieren Sie Einstellungen und verwalten Sie Upgrades in Ihrer Commerce-Instanz. |
 | **Commerce-Administratoren** | Überwachen Sie App-Konfigurationen und -Berechtigungen in der gesamten Organisation. |
 | **Technische Architekten** | Stellen Sie sicher, dass Apps für Bereitstellungen mit mehreren Stores oder mehreren Regionen korrekt konfiguriert sind. |
 
 ## Was Sie tun können
 
 * **App verknüpfen**. Verknüpfen Sie ein App Builder-Programm mit Ihrer Commerce-Instanz, indem Sie das Projekt und den Arbeitsbereich auswählen.
+* **Überprüfen und Installieren einer App**. Überprüfen Sie die geschäftlichen Anwendungsfälle und die Konfiguration der App, befolgen Sie Anweisungen zur Vorinstallation und überwachen Sie den Installationsfortschritt.
 * **Einstellungen konfigurieren**. Passen Sie die App-Einstellungen über das automatisch generierte Formular an und überschreiben Sie bei Bedarf Werte pro Store oder Region.
 * **Bereiche verwalten**. Halten Sie Ihre Store-Hierarchie mit Ihren Apps synchron und wenden Sie Einstellungen auf der richtigen Ebene an.
-* **Verknüpfung einer App aufheben**. Entfernen Sie eine App, wenn Sie eine Integration einstellen oder Testkonfigurationen bereinigen.
+* **Aktualisieren einer App**. Überprüfen und starten Sie Upgrades, wenn Ihr Entwickler eine neue Version bereitstellt. Entwickler können auch experimentelle automatische Upgrades aktivieren.
+* **Verknüpfung einer App aufheben**. Überprüfen Sie die betroffenen Komponenten und Bereinigungsanforderungen, bevor Sie eine App entfernen, wenn Sie eine Integration außer Kraft setzen oder Testkonfigurationen bereinigen.
 
 ## Nächste Schritte
 
 * [Installieren](install.md). Stellen Sie sicher, dass die Voraussetzungen erfüllt sind und [!DNL App Management] zugreifen.
-* [App verwalten](manage-app.md). Verknüpfen, Konfigurieren und Aufheben der Verknüpfung von Apps.
+* [App verwalten](manage-app.md). Apps überprüfen, verknüpfen, installieren, konfigurieren, aktualisieren und die Verknüpfung aufheben.
 
 ## Für Entwickler
 
