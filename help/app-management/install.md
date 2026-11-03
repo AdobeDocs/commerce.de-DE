@@ -18,9 +18,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a00b9e1654a572e1773b5b7e321683332882d86f
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '516'
 ht-degree: 0%
 ---
 # Installieren und Zugreifen auf [!DNL App Management]
@@ -36,7 +36,7 @@ Nachdem Sie die folgenden Anforderungen erfüllt haben, wählen Sie unten die en
 Bevor Sie eine App verknüpfen, stellen Sie Folgendes sicher:
 
 | Anforderung | Beschreibung |
-|-------------|-------------|
+| --- | --- |
 | **Administratorzugriff** | Commerce-Admin mit [!DNL App Management] Berechtigungen |
 | **Bereitgestellte App** | App Builder-Anwendung, die in Ihrem Unternehmen bereitgestellt wird und eine Verbindung herstellen kann |
 | **Organisationszugriff** | Zugriff auf die Adobe-Organisation, in der die App bereitgestellt wird |
@@ -76,19 +76,19 @@ Weitere Informationen finden [&#x200B; unter „Installieren oder Aktualisieren 
 
 1. Navigieren Sie zu **[!UICONTROL Apps]** > **[!UICONTROL App Management]**.
 
-Die [!DNL App Management] wird angezeigt. Hier können Sie App Builder-Programme verknüpfen, konfigurieren und verwalten. Informationen zu Suche, Filtern und der **[!UICONTROL Acquire App]** Aktion auf diesem Bildschirm finden Sie unter [Eine Anwendung im Administrator &#x200B;](manage-app.md#find-an-application-in-the-admin) in [Programm verwalten](manage-app.md).
+Die [!DNL App Management] wird angezeigt. Hier können Sie App Builder-Programme verknüpfen, installieren, konfigurieren, aktualisieren und verwalten. Informationen zu Suche, Filtern und der **[!UICONTROL Acquire App]** Aktion auf diesem Bildschirm finden Sie unter [Eine Anwendung im Administrator &#x200B;](manage-app.md#find-an-application-in-the-admin) in [Programm verwalten](manage-app.md).
 
 ## Installieren von App Builder Apps
 
 Wenn Sie eine App Builder-App von Adobe Exchange installieren müssen (z. B. eine vordefinierte Integration oder eine Marketplace-App), finden Sie unter [Installieren von App Builder-Apps von Adobe Exchange](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"} schrittweise Anweisungen.
 
-Nachdem eine App installiert und bereitgestellt wurde, verwenden Sie [!DNL App Management] , um [sie mit Ihrer Commerce-Instanz zu verknüpfen](manage-app.md#associate-an-app) und ihre Einstellungen zu konfigurieren.
+Durch das Erfassen und Bereitstellen einer App Builder-App wird sie für Ihr Unternehmen verfügbar. Um sie mit einer Commerce-Instanz zu verwenden[&#x200B; (verknüpfen Sie die App](manage-app.md#associate-an-app), [installieren Sie gegebenenfalls &#x200B;](manage-app.md#install-an-app) und [konfigurieren Sie ihre Einstellungen](manage-app.md#configure-settings) in [!DNL App Management].
 
 ## Commerce Webhooks und Apps
 
 Einige App Builder-Programme verwenden [Adobe Commerce-Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/) damit Commerce Ihre App über HTTP aufrufen kann, wenn bestimmte Ereignisse eintreten (z. B. nachdem ein Produkt gespeichert wurde). Webhook-Endpunkte und Abonnementlogik werden vom **App-Entwickler** beim Erstellen und Bereitstellen der Anwendung definiert. Store-Administratoren konfigurieren Webhooks nicht separat in App Management.
 
-Nachdem Sie [&#x200B; App mit &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/app-management/manage-app/manage-app) Commerce-Instanz verknüpft und alle Einrichtungsanweisungen der App ausgeführt haben, folgt das Webhook-Verhalten der Implementierung der App.
+Nachdem Sie [&#x200B; App mit &#x200B;](manage-app.md#associate-an-app) Commerce-Instanz verknüpft, [ihre Komponenten installiert](manage-app.md#install-an-app) und alle Einrichtungsanweisungen aus der App ausgeführt haben, folgt das Webhook-Verhalten der Implementierung der App. Bei der App-Installation und -Upgrades werden die vom Entwickler deklarierten Webhook-Abonnements angewendet. Sie müssen diese Abonnements nicht separat erstellen.
 
 Wenn [!DNL App Management] den Validierungsendpunkt der App nicht mit Triggern versehen können (z. B. wenn die URL nicht erreichbar ist oder die Antwort die Anforderungen nicht erfüllt), wird möglicherweise ein Fehler wie der folgende im [!DNL App Management]-Dashboard angezeigt:
 
