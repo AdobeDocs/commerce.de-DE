@@ -123,7 +123,7 @@ Verknüpfung verknüpft eine App mit Ihrer Commerce-Instanz. Bei Apps, die insta
 
    ![Erfolgreiche Installation mit Häkchen für abgeschlossene Elemente](assets/installation-success.png){width="600" zoomable="yes"}
 
-1. Füllen Sie alle von der App bereitgestellten Anweisungen nach der Installation aus und konfigurieren [ dann bei ](#configure-settings) die Einstellungen.
+1. Füllen Sie alle von der App bereitgestellten Anweisungen nach der Installation aus und konfigurieren [&#x200B; dann bei &#x200B;](#configure-settings) die Einstellungen.
 
 ## Einstellungen konfigurieren
 
@@ -181,7 +181,7 @@ Im manuellen Modus (dem Standardmodus) überprüfen und starten Sie das Upgrade 
 
 1. Starten Sie das Upgrade und überwachen Sie den Fortschritt der aufgelisteten Vorgänge.
 
-1. Überprüfen Sie das Upgrade-Ergebnis und suchen Sie nach fehlgeschlagenen Vorgängen. Wenn das Upgrade fehlschlägt, befolgen Sie [Upgrade schlägt ](troubleshooting.md#upgrade-fails), bevor Sie **[!UICONTROL Retry Upgrade]** verwenden.
+1. Überprüfen Sie das Upgrade-Ergebnis und suchen Sie nach fehlgeschlagenen Vorgängen. Wenn das Upgrade fehlschlägt, befolgen Sie [Upgrade schlägt &#x200B;](troubleshooting.md#upgrade-fails), bevor Sie **[!UICONTROL Retry Upgrade]** verwenden.
 
 Im manuellen Modus werden geplante Änderungen an installierten Commerce-Komponenten erst dann angewendet, wenn Sie das Upgrade starten. Bei der Bereitstellung kann der Laufzeitaktions-Code, den die installierte App bereits verwendet, jedoch vor Ausführung des Upgrades aktualisiert werden.
 
@@ -205,7 +205,7 @@ Heben Sie die Verknüpfung mit einer App auf, wenn sie nicht mehr mit Ihrer Comm
 >
 >Durch Aufheben der Verknüpfung werden alle Konfigurationswerte für diese Instanz entfernt. Dies kann nicht rückgängig gemacht werden. Bei der Deinstallation können Sie auch App-Komponenten und -Ressourcen über benutzerdefinierte Deinstallationsskripte entfernen.
 
-Notieren Sie sich vor dem Fortfahren die installierte Version und Konfiguration, sichern Sie die Anwendungsdaten und fragen Sie Ihren App-Entwickler, welche Ressourcen die Deinstallationsskripte der App entfernen und welche manuell bereinigt werden müssen. Planen Sie etwaige Dienstunterbrechungen und wie Sie die App, ihre Einstellungen und ihre Daten wiederherstellen können. Für routinemäßige Aktualisierungen [ Sie die App aktualisieren](#upgrade-an-app) anstatt die Verknüpfung aufzuheben.
+Notieren Sie sich vor dem Fortfahren die installierte Version und Konfiguration, sichern Sie die Anwendungsdaten und fragen Sie Ihren App-Entwickler, welche Ressourcen die Deinstallationsskripte der App entfernen und welche manuell bereinigt werden müssen. Planen Sie etwaige Dienstunterbrechungen und wie Sie die App, ihre Einstellungen und ihre Daten wiederherstellen können. Für routinemäßige Aktualisierungen [&#x200B; Sie die App aktualisieren](#upgrade-an-app) anstatt die Verknüpfung aufzuheben.
 
 So entfernen Sie eine App aus einer Commerce-Instanz:
 
