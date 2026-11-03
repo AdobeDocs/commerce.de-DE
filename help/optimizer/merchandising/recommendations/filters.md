@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
+source-git-commit: 8e3471bb89e2dd77c390ee1b8199c835a4f1e6bc
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2452'
 ht-degree: 0%
 ---
 # Produkte filtern
@@ -247,6 +247,8 @@ Führen Sie die folgenden Schritte aus, um einer Empfehlungseinheit eine Regel z
 >[!NOTE]
 >
 >Wenn Sie ein Attribut auswählen, dessen Metadaten auf `true` `number`, z. B **Größe**, zeigt das **Wert**-Feld Bereichseingaben anstelle eines einzelnen Textwerts an.
+
+Die Attributliste hängt von der ausgewählten **Katalogansicht** ab. Wenn Sie **Alle Ansichten** auswählen, basiert die Liste auf der Katalogquelle, die mit der ersten Katalogansicht verknüpft ist. Wenn Sie eine bestimmte Katalogansicht auswählen, basiert die Liste auf der Katalogquelle dieser Ansicht.
 
 #### Ein- und Ausschlussbedingungen verwenden
 

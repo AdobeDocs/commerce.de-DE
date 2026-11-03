@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 43c00a414f95900a30103e56820d06077d530e0f
+source-git-commit: 9aba7b8541b7b067aa5eb751bf601542e8b3c43c
 workflow-type: tm+mt
-source-wordcount: '9823'
+source-wordcount: '9775'
 ht-degree: 0%
 ---
 # Versionshinweise
@@ -147,10 +147,6 @@ Die folgenden Elemente wurden am 28. Oktober 2026 in Produktionsumgebungen verö
 ### Hinzufügen benutzerdefinierter Variablen zur Bestellung von Kommentar-E-Mails
 
 Der `observer.email_order_comment_set_template_vars_before` [Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) ist jetzt verfügbar. Verwenden Sie sie, um Vorlagenvariablen in der E-Mail mit dem Kommentar in der Reihenfolge hinzuzufügen oder zu ändern, bevor die E-Mail gerendert wird. <!-- ACCS-2087 -->
-
-### Exportieren von Produktbewertungen
-
-Wenn Produktüberprüfungen aktiviert sind, werden die Anzahl genehmigter Überprüfungen und die durchschnittliche Bewertung jedes Produkts in [!DNL Catalog Service] als Produktattribute des `ac_review_count` und `ac_rating_summary` Systems exportiert. Storefronts können diese Attribute verwenden, um Produktbewertungen anzuzeigen. Der Produkt-Feed wird aktualisiert, wenn sich die Überprüfungszusammenfassungen ändern. Produktbewertungen sind standardmäßig deaktiviert. <!-- ACCS-2196 -->
 
 ### Gutschriftsrückerstattung speichern
 
