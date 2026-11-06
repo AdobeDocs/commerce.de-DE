@@ -1,48 +1,41 @@
----
-source-git-commit: 65c2720f8e21089e45948a2a5fe3828ca28f0dbd
-workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 0%
+%%{ init: { "flowchart": { "curve": "linear" } } }%%
 
----
-%%{ init: { „Flussdiagramm“: { „Kurve“: „linear“ } }%
+graph BT
+    subgraph commerce["Adobe Commerce"]
+        event_mod["Eventing \n Module"]
+        webhook_mod["Webhook \n Module"]
+        admin_sdk["Admin UI \n SDK"]
+    end
 
-Graph BT
-subgraph commerce[&quot;Adobe Commerce&quot;]
-event_mod[„Eventing \n Modul“]
-webhook_mod[„Webhook \n Modul“]
-admin_sdk[„Admin-Benutzeroberfläche \n SDK&quot;]
-Ende
+    subgraph appbuilder["App Builder"]
+        int_sk["Integration \n Starter Kit"]
+        checkout_sk["Checkout \n Starter Kit"]
+        generic_app["Generic \n Application"]
+    end
 
-    subgraph appbuilder[&quot;App Builder&quot;]
-    int_sk[„Integration \n Starter Kit“]
-    checkout_sk[„Checkout \n Starter Kit“]
-    generic_app[„Generic \n Application“]
+    subgraph apimesh["API Mesh"]
+        api_mesh_log["API Mesh \n Logging"]
     end
-    
-    subgraph apimesh[„API Mesh“]
-    api_mesh_log[„API Mesh \n Logging“]
+
+    subgraph storefront["Storefront"]
+        cdn_rum["CDN / Real User \n Monitoring"]
+        op_tel["Operational \n Telemetry"]
     end
-    
-    subgraph storefront[&quot;
-    cdn_rum[„CDN / Real User \n Monitoring“]
-    op_tel[„Operational \n Telemetrie“]
-    end
-    
-    commerce —> obs_mod[„Observability \n Module“]
-    appbuilder —> aio_tel[„AIO lib \n Telemetry“]
-    
-    obs_mod —> OTel[„OpenTelemetry“]
-    aio_tel —> OTel
-    
-    OTel —> Backends[„Third-Party-Observability \n (z. B.: Grafana, New Relic, Splunk)“]
-    api_mesh_log —> Backends
-    cdn_rum —> Backends
-    
-    
-     
-     
-     
-     
-     
-     Stil Commerce-Fill:#cc0000,color:#fff,Stroke:#cc0000Stil AppBuilder-Fill:#cc0000,color:#fff,Stroke:#cc0000Stil Apimesh-Fill:#cc0000,color:#fff,Stroke:#cc0000Stil Storefront-Fill:#cc0000,color:#fff,Stroke:#cc0000Stil Backends-Fill:#f0f0f0,color:#333,Stroke:#999#333style OTel-Fill:#fff,Stroke:#333
+
+    commerce --> obs_mod["Observability \n Module"]
+    appbuilder --> aio_tel["AIO lib \n Telemetry"]
+
+    obs_mod --> OTel["OpenTelemetry"]
+    aio_tel --> OTel
+
+    OTel --> backends["Third-party Observability \n (For example: Grafana, New Relic, Splunk)"]
+    api_mesh_log --> backends
+    cdn_rum --> backends
+    op_tel --> backends
+
+    style commerce fill:#cc0000,color:#fff,stroke:#cc0000
+    style appbuilder fill:#cc0000,color:#fff,stroke:#cc0000
+    style apimesh fill:#cc0000,color:#fff,stroke:#cc0000
+    style storefront fill:#cc0000,color:#fff,stroke:#cc0000
+    style backends fill:#f0f0f0,color:#333,stroke:#999
+    style OTel fill:#fff,color:#333,stroke:#333
