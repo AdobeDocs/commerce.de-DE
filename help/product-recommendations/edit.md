@@ -15,18 +15,17 @@ role_v2:
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
     internal-label: Behavioral data
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 97fda73b4f68154aa6fe66eee61ef2d68be979ca
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # Empfehlung bearbeiten
 
 Die Seite Empfehlung bearbeiten bietet Ihnen die Möglichkeit, die individuellen Einstellungen für die Empfehlung anzupassen. Alle Einstellungen außer dem Seitentyp und dem Empfehlungstyp können bearbeitet werden. Die folgenden Einstellungen können bearbeitet werden:
 
 - [Name der Empfehlung](#name)
+- [Referenzschlüssel](#reference-key)
 - [Storefront-Bezeichnung](#label)
 - [Anzahl der Produkte](#number)
 - [Platzierung und Position](#placement)
@@ -51,6 +50,10 @@ Die Vorschau rechts auf der Seite zeigt, wie die Empfehlung mit den aktuellen Ei
 Wählen Sie einen beschreibenden Namen, der den Zweck der Empfehlung angibt. Der Name dient als interne Referenz und wird nicht in der Storefront angezeigt.
 
 ![Name bearbeiten](assets/edit-name.png)
+
+### Referenzschlüssel {#reference-key}
+
+Der Schlüssel, mit dem die Empfehlungseinheit in der Storefront-Konfiguration identifiziert wird.
 
 ### Storefront-Bezeichnung {#label}
 

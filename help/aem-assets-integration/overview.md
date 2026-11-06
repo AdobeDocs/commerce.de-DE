@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1109'
 ht-degree: 1%
 ---
 # AEM Assets-Integration für Commerce
@@ -161,22 +161,6 @@ Wählen Sie Ihre Bereitstellung aus, um die erforderlichen Schritte in der richt
 1. [Konfigurieren der Integration im Commerce Admin](get-started/setup-synchronization.md).
 
 1. Optional. [Anzeige von Produktbildern aktivieren](get-started/configure-storefront.md#enable-product-images) sodass eine Storefront mit Edge Delivery Services von AEM verwaltete Produktbilder rendert.
-
->[!TAB Adobe Commerce Optimizer]
-
-[!BADGE nur SaaS]{type=Positive tooltip="Gilt nur für Adobe Commerce Optimizer-Projekte."}
-
-[!DNL Adobe Commerce Optimizer] Es hat keine Benutzeroberfläche für die Admin-Konfiguration. Der Adobe-Support konfiguriert die Integration über Ihr Onboarding-Ticket. Bereiten Sie AEM Assets also zuerst vor.
-
-1. Um Commerce-Metadaten zu unterstützen, [&#x200B; Sie das AEM Assets-Projekt &#x200B;](get-started/configure-aem.md). Verwenden Sie ab AEM-Version `2026.5.26309` das [Self-Service-Onboarding](get-started/configure-aem.md#enable-aem-commerce-self-service); installieren Sie das `assets-commerce`-Paket in früheren Versionen manuell.
-
-1. [Senden Sie das Onboarding-Support](get-started/configure-aco.md#onboarding)Ticket mit Ihrer Mandanten-ID, AEM-Programm-ID, AEM-Umgebungs-ID, übereinstimmender Regel, Ebene und Gebietsschema.
-
-1. [Konfigurieren Sie Ihre &#x200B;](get-started/configure-aco.md#onboarding) mit demselben Gebietsschema und derselben Ebene, die Sie im Ticket registriert haben.
-
-1. Optional. [Anzeige von Produktbildern aktivieren](get-started/configure-storefront.md#enable-product-images) sodass eine Storefront mit Edge Delivery Services von AEM verwaltete Produktbilder rendert.
-
-   Das vollständige Verfahren, die Einschränkungen und die Ebenenanleitung finden Sie unter [Konfigurieren von AEM Assets für Commerce Optimizer](get-started/configure-aco.md).
 
 >[!ENDTABS]
 

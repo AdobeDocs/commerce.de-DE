@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '521'
 ht-degree: 0%
 ---
 
@@ -54,42 +54,13 @@ Die Integration verfügt über zwei unabhängige Ereignisflüsse. Beide verwende
 
 Die aktualisierten Bilder sind über Storefront-APIs (Katalog-Service, Live-Suche, Produktempfehlungen) verfügbar.
 
-### Source- und Ebenenkonfiguration
-
-Bilder von AEM Assets werden als Katalogschicht mit der folgenden Quellkonfiguration aufgenommen:
-
-> Beispiel für eine Quellkonfiguration
-
-```json
-{
-  "source": {
-    "locale": "en-US",
-    "layer": "AEM-Assets"
-  }
-}
-```
-
-Durch diese Konfiguration wird sichergestellt, dass AEM Assets-Bilder als Überlagerung auf Ihrem Basisproduktkatalog angewendet werden.
-
-## Voraussetzungen
-
-Stellen Sie vor der Aktivierung von Produktbildern sicher, dass Sie die [Voraussetzungen für Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md#prerequisites) erfüllen.
-
-## Setup
-
-Um die Integration zu aktivieren[&#x200B; erstellen Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) Ihren [!DNL Commerce Optimizer]- und AEM Assets-Details. Der Adobe-Support konfiguriert die Integration und registriert Ihren Mandanten beim Assets Integration Service.
-
-Weitere [&#x200B; finden Sie unter „Konfigurieren von AEM Assets &#x200B;](../../aem-assets-integration/get-started/configure-aco.md) Commerce Optimizer&quot;.
-
 ### Konfigurieren von AEM Assets-Metadaten
 
 Um den automatischen Produktabgleich zu aktivieren, konfigurieren Sie Ihre Assets in AEM Assets mit Commerce-Metadaten.
 
-Unter [Konfigurieren von AEM Assets](../../aem-assets-integration/get-started/configure-aco.md#configure-aem-assets-first) finden Sie die erforderlichen Metadatenfelder und Schritte.
+Unter [Konfigurieren von AEM Assets](../../aem-assets-integration/get-started/configure-aem.md) finden Sie die erforderlichen Metadatenfelder und Schritte.
 
 ## Einschränkungen
-
-Bevor Sie Produktvisualisierungen verwenden, sollten Sie sich mit den [Integrationsbeschränkungen](../../aem-assets-integration/get-started/configure-aco.md#limitations) befassen, d. h. den schichtbezogenen Einschränkungen, die sich darauf auswirken, wie AEM Assets-Daten mit Ihrem Basiskatalog zusammengeführt werden.
 
 Informationen zu Kapazitäts- und Nutzungszuweisungen (Asset-Speicher, Dynamic Media-Vorgänge, Benutzerlizenzen) finden Sie unter [Produktvisuelle &#x200B;](../boundaries-limits.md#product-visuals-limits)) im _Boundaries and Limits_.
 
