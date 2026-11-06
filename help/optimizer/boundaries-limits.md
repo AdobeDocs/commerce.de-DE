@@ -2,7 +2,7 @@
 title: Adobe Commerce Optimizer-Beschränkungen und -Grenzen
 description: Erfahren Sie mehr über Adobe Commerce Optimizer-Lizenzbeschränkungen und Systemgrenzen. Planen Sie die Kapazität, verfolgen Sie die Nutzung und vermeiden Sie Latenz und Drosselung bei Überschreitung der Grenzwerte.
 role: Admin, Developer
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
 product_v2:
@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
+source-git-commit: 0b52c20df4c64d3dd7e43f023e7b0f4517e8fcf7
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1486'
 ht-degree: 0%
 ---
 # Beschränkungen und Grenzen
@@ -31,7 +31,7 @@ Ihre Nutzung muss innerhalb dieser Grenzen bleiben. Sie zu überschreiten kann z
 
 Lizenzbeschränkungen können erhöht werden, indem Sie die Lizenzpakete erwerben, die im Abschnitt [Lizenzbeschränkungen und Systemgrenzen](#license-limits-and-system-boundaries) beschrieben sind, oder indem Sie benutzerdefinierte Lizenzen für eindeutige Anwendungsfälle aushandeln. Wenden Sie sich an Ihren Adobe-Kundenbetreuer, um Ihre Anforderungen zu besprechen.
 
-Wenden Sie sich bei Fragen zu Systemgrenzen an den [Adobe-Support](https://experienceleague.adobe.com/home?lang=de#support).
+Wenden Sie sich bei Fragen zu Systemgrenzen an den [Adobe-Support](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Leistungsprobleme verhindern
 
@@ -81,7 +81,7 @@ In den folgenden Tabellen sind die Lizenzbeschränkungen und Systemgrenzen nach 
 | --- | --- | --- | --- |
 | Produktvisualisierung Power-User | Lizenzierter Anwender mit vollständigen Digital-Asset-Management-Funktionen, einschließlich KI-Tools, [!DNL Adobe Express]-/[!DNL Firefly]-Integrationen und Content Hub-Freigabe, Handhabung von DAM-Kernaufgaben und erweiterten Cloud-nativen Funktionen für optimale Effizienz. | 2 | Ja<p>Upgrade auf [!DNL AEM Assets] Lizenz</p> |
 | Benutzer von Product Visuals Collaborator | Greifen Sie über die AEM Commerce-Integration auf Assets zu und arbeiten Sie mit ihnen, erstellen und bearbeiten Sie Inhalte mithilfe von [!DNL Adobe Express] und [!DNL Firefly] und nutzen Sie - falls aktiviert - genehmigte Assets über das Content Hub-Portal. | 2 | Ja<p>Upgrade auf [!DNL AEM Assets] Lizenz</p> |
-| Speicherung von Produktbildern | Zugewiesener Speicherplatz für Assets | 1 TB Speicher | Nein |
+| Speicherung von Produktbildern | Zugewiesener Speicherplatz für Assets | 1 TB Speicher | Ja<p>Upgrade auf [!DNL AEM Assets] Lizenz</p> |
 | Verwendung von Dynamic Media | Toleranz für Dynamic Media-Verarbeitungsvorgänge, die Folgendes umfassen:<ul><li>Bildbereitstellung</li><li>Intelligente Bildbearbeitung</li><li>Videowiedergabe</li></ul><p>Weitere Informationen finden Sie *Berechnen der Dynamic Media-Nutzung* unten. | Basierend auf GMV (Bruttowarenwert)<p>Mindestzuweisung: 5 Mio. Operationen/Monat</p> | Ja<ul><li>Lizenz für zusätzliche Vorgänge erwerben</li><li>Upgrade auf [!DNL AEM Assets] Lizenz</li></ul> |
 | Videobereitstellung | Toleranz für Videobereitstellung oder Downloads | 300 Videos, 1 Minute pro Video | Ja<p>Upgrade auf [!DNL AEM Assets] Lizenz</p> |
 | Asset-Generierung | Zugriff auf [!DNL Adobe Express] und [!DNL Adobe Firefly] generative KI zum Erstellen von Bildern | Keine | Generative KI-Credits separat erwerben |
@@ -171,7 +171,7 @@ Die folgenden Funktionen sind für Produktempfehlungen verfügbar. Einige in and
 
 | **Funktion** | **Beschreibung** | **Basiszuweisung** | **Erweiterbar?** | **Hinweise** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Kapazität zum Erstellen Cloud-nativer Erweiterungen und Integrationen | Basierend auf GMV-Stufe<p>Mindestzuweisung: 1 Packung/Jahr</p> | Ja<p>Zusätzliche Packs hinzufügen</p> | Für die pro Packung definierten Grenzwerte siehe:<ul><li>[App Builder-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-developer-app-builder.html) für pro Pack definierte Beschränkungen.</li><li>[Systemeinstellungen und Einschränkungen](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in den *App Builder Runtime Guides*.</li><li>[Speicheranforderungen für App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Kapazität zum Erstellen Cloud-nativer Erweiterungen und Integrationen | Basierend auf GMV-Stufe<p>Mindestzuweisung: 1 Packung/Jahr</p> | Ja<p>Zusätzliche Packs hinzufügen</p> | Für die pro Packung definierten Grenzwerte siehe:<ul><li>[App Builder-Produktbeschreibung](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) für pro Pack definierte Beschränkungen.</li><li>[Systemeinstellungen und Einschränkungen](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in den *App Builder Runtime Guides*.</li><li>[Speicheranforderungen für App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
