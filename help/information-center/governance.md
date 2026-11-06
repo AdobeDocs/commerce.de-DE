@@ -1,9 +1,9 @@
 ---
 title: Commerce Information Center Governance
 description: Erfahren Sie mehr über das interne Governance-Modell für das Commerce Information Center. Nicht in Experience League veröffentlicht.
-source-git-commit: a91925091da28cd0745923894a3faab0374f0a0c
+source-git-commit: bd6b2a10f02498b94c8837a27490e943b630c5fc
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 
@@ -13,9 +13,9 @@ Diese interne Referenz für das Dokumentations-Team ist nicht in `TOC.md` aufgef
 
 ## Eigentum
 
-Das Dokumentations-Team von Adobe Commerce ist für das Informationszentrum verantwortlich. Sie wurde in `Adobe-Enterprise-Docs/commerce.en` verfasst, dem Repository, das in `metadata.md` als `git-repo` aufgeführt ist.
+Das Dokumentations-Team von Adobe Commerce verwaltet den Aufnahmeprozess, die redaktionelle Überprüfung und die Veröffentlichung von Inhalten des Informationszentrums, die aus dem `Adobe-Enterprise-Docs/commerce.en` GitHub-Repository bezogen werden.
 
-Kein einzelnes Produkt-Team ist dafür verantwortlich, da es produktübergreifend ist. Eskalieren Sie produktspezifische Korrekturen an den Dokumentkontakt des besitzenden Produkt-Teams, anstatt sie hier zu beheben.
+Kein einzelnes Produkt-Team ist dafür verantwortlich, da es produktübergreifend ist. Produkt- und Engineering-Verantwortliche sollten Inhalte genehmigen, bevor sie den ExL-PR übermitteln. Eskalieren Sie produktspezifische Korrekturen an den Dokumentkontakt des besitzenden Produkt-Teams, anstatt sie hier zu beheben.
 
 ## Was im Informationszentrum gehört
 
@@ -28,6 +28,8 @@ Kein einzelnes Produkt-Team ist dafür verantwortlich, da es produktübergreifen
 - Das Informationszentrum konsolidiert oder migriert keine Produktdokumentation und dokumentiert auch keine einzelnen Produktfunktionen. Verlinken Sie zu vorhandenen autoritativen Inhalten, bevor Sie etwas Neues schreiben.
 
 ## Hinzufügen neuer Inhalte
+
+Reichen Sie Artikelvorschläge ein, indem Sie ein JIRA-Ticket im COMDOX-Projekt erstellen, das dem im Epos [COMDOX-1864](https://jira.corp.adobe.com/browse/COMDOX-1864) beschriebenen Prozess folgt. Verwenden Sie die Ticketbeschreibung mit KI, um ein Ticket zu generieren und es mit dem Epos zu verknüpfen.
 
 ### Artikel in einem vorhandenen Abschnitt
 
