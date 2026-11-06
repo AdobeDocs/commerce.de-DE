@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
+source-git-commit: 1effb98aaefee32d6479ffdc0737367edc8d1a3a
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1665'
 ht-degree: 0%
 ---
 # Neue Empfehlung erstellen
@@ -39,28 +39,30 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
 1. Wechseln Sie in der _Admin_-Seitenleiste zu **Marketing** > _Promotions_ > **Produktempfehlungen**, um den _Produktempfehlungen_ anzuzeigen.
 
-1. Geben Sie [&#x200B; „Store-](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/websites-stores-views)&quot; an, in der die Empfehlungen angezeigt werden sollen.
+1. Geben Sie [ „Store-](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)&quot; an, in der die Empfehlungen angezeigt werden sollen.
 
    >[!NOTE]
    >
-   > Empfehlungseinheiten von Page Builder müssen in der standardmäßigen Store-Ansicht erstellt werden, können dann aber überall verwendet werden. Weitere Informationen zum Erstellen von Produktempfehlungen mit Page Builder finden Sie unter [Inhalt hinzufügen - Produktempfehlungen](https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/add-content/recommendations).
+   > Empfehlungseinheiten von Page Builder müssen in der standardmäßigen Store-Ansicht erstellt werden, können dann aber überall verwendet werden. Weitere Informationen zum Erstellen von Produktempfehlungen mit Page Builder finden Sie unter [Inhalt hinzufügen - Produktempfehlungen](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Klicken Sie **Empfehlung erstellen**.
 
 1. Geben _im Abschnitt &quot;_ benennen“ einen beschreibenden Namen für die interne Referenz ein, z. B. `Home page most popular`.
 
+1. [!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} Geben Sie im Abschnitt **Storefront-Referenz** einen Referenzschlüssel ein, um diese Empfehlungseinheit in Ihrer Storefront-Konfiguration zu identifizieren. Nachdem Sie die Empfehlung erstellt haben, können Sie [deren Wert kopieren](#get-the-storefront-reference-key) aus den **Details der Empfehlungseinheit** und sie als `referenceKey` im Block „Empfehlungen“ verwenden. Der Referenzschlüssel ist für die Storefront-Konfiguration. Die Storefront-Anzeigebeschriftung ist der Text, den Shopper sehen.
+
 1. Wählen _im Abschnitt &quot;_ auswählen“ aus den folgenden Optionen die Seite aus, auf der die Empfehlung angezeigt werden soll:
 
    >[!NOTE]
    >
-   > Produktempfehlungen werden auf der Warenkorbseite nicht unterstützt, wenn Ihr Store so konfiguriert ist, dass [die Warenkorbseite sofort nach dem Hinzufügen eines Produkts zum Warenkorb angezeigt wird](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > Produktempfehlungen werden auf der Warenkorbseite nicht unterstützt, wenn Ihr Store so konfiguriert ist, dass [die Warenkorbseite sofort nach dem Hinzufügen eines Produkts zum Warenkorb angezeigt wird](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Startseite
    * Kategorie
    * Produktdetails
    * Warenkorb
    * Bestätigung
-   * [Page Builder](https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Sie können für jeden Seitentyp bis zu 50 aktive Empfehlungseinheiten erstellen. Der Seitentyp wird ausgegraut, wenn das Limit erreicht ist.
 
@@ -87,7 +89,7 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
    ![Reihenfolge der Empfehlungen](assets/create-recommendation-select-placement.png)
    _Empfehlungsreihenfolge auf Seite_
 
-1. (Optional) Um zu steuern, welche Produkte in der Empfehlungseinheit angezeigt werden, [&#x200B; Sie &#x200B;](filters.md) Abschnitt _Filter_ Filter.
+1. (Optional) Um zu steuern, welche Produkte in der Empfehlungseinheit angezeigt werden, [ Sie ](filters.md) Abschnitt _Filter_ Filter.
 
    ![Empfehlungsfilter](assets/create-recommendation-filter-products.png)
    _Recommendations-Produktfilter_
@@ -101,6 +103,20 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 >[!IMPORTANT]
 >
 >Einige Browser blockieren möglicherweise wichtige Skripte, die verhindern, dass Produktempfehlungen erwartungsgemäß funktionieren.
+
+## Abrufen des Storefront-Referenzschlüssels
+
+[!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} Nach dem Erstellen einer Empfehlung können Sie mit deren Referenzschlüssel die Empfehlungseinheit in Ihrer Storefront konfigurieren.
+
+1. Öffnen Sie die Details für eine Produktempfehlung.
+
+   ![Empfehlungs-ID abrufen](./assets/get-ref-id.png)
+
+1. Kopieren Sie den Wert aus dem Abschnitt **Referenzschlüssel** .
+
+   Ältere Empfehlungen zeigen möglicherweise **[!UICONTROL Unit ID]** anstelle von **[!UICONTROL Reference Key]** an. Sie können die **[!UICONTROL Unit ID]** weiterhin in Ihrer Storefront verwenden, [!DNL Adobe Commerce] empfiehlt jedoch, vorhandene Recommendations zu aktualisieren, um die **[!UICONTROL Reference Key]** zu verwenden.
+
+1. Verwenden Sie im `product-recommendations`-Block der Storefront diesen Referenzschlüssel, um das [Recommendations-Dropdown-](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) in Ihrer Edge Delivery Services-Storefront zu konfigurieren.
 
 ## Bereitschaftsindikatoren
 
@@ -195,7 +211,7 @@ Im Folgenden sind mögliche Gründe und Lösungen für häufige Bewertungen der 
 
 Das Bedienfeld _Empfohlene Produktvorschau_ ist immer mit einer Auswahl von Beispielprodukten verfügbar, die in der Empfehlungseinheit angezeigt werden, wenn sie in der Storefront bereitgestellt werden.
 
-Um eine Empfehlung zu testen, wenn Sie in einer Nicht-Produktionsumgebung arbeiten, können Sie Empfehlungsdaten aus einer ([&#x200B; Quelle) &#x200B;](settings.md). Händler können so mit Regeln experimentieren und eine Vorschau der Recommendations anzeigen, bevor sie sie in der Produktion bereitstellen.
+Um eine Empfehlung zu testen, wenn Sie in einer Nicht-Produktionsumgebung arbeiten, können Sie Empfehlungsdaten aus einer ([ Quelle) ](settings.md). Händler können so mit Regeln experimentieren und eine Vorschau der Recommendations anzeigen, bevor sie sie in der Produktion bereitstellen.
 
 | Feld | Beschreibung |
 |---|---|

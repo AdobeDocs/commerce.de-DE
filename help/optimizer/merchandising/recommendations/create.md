@@ -1,7 +1,7 @@
 ---
 title: Empfehlungen erstellen und verwalten
 description: Erfahren Sie, wie Sie Empfehlungen erstellen und verwalten.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 TQID: https://experienceleague.adobe.com/4w6G-IgBjgmYYnnEpbK0HML9pSi3quLDxJfuCp9tV84
 product_v2:
@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: f316b57d365b8952223d4d250ac14f113cf48601
+source-git-commit: 0be21c4e838dabb8871eecbfc6c36c34af2d3ff0
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1612'
 ht-degree: 0%
 ---
 # Empfehlungen erstellen und verwalten
@@ -38,7 +38,7 @@ _Empfehlungseinheit_
 
 Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Datenerfassung](../../manage-results/recommendation-performance.md) um Impressionen, Ansichten, Klicks usw. zu messen. Die Tabelle Recommendations zeigt die Metriken für jede Empfehlungseinheit an, die Ihnen bei fundierten Geschäftsentscheidungen hilft.
 
-1. Wechseln Sie in der _[!DNL Adobe Commerce Optimizer]_&#x200B;Seitenleiste zu_ Merchandising _>**Recommendations**, um den_ Recommendations _-Arbeitsbereich anzuzeigen.
+1. Wechseln Sie in der _[!DNL Adobe Commerce Optimizer]_Seitenleiste zu_ Merchandising _>**Recommendations**, um den_ Recommendations _-Arbeitsbereich anzuzeigen.
 
 1. Wählen **im Feld** Katalogansicht“ die Katalogansicht aus, in der die Empfehlung verfügbar sein soll. Weitere Informationen über [Verwenden von Katalogansichten für Recommendations](../../manage-results/recommendation-performance.md#select-catalog-view).
 
@@ -47,6 +47,8 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
    Die erstellte Empfehlung ist in der zuvor ausgewählten Katalogansicht verfügbar.
 
 1. Geben _im Abschnitt &quot;_ benennen“ einen beschreibenden Namen für die interne Referenz ein, z. B. `Home page most popular`.
+
+1. Geben Sie **Abschnitt „Storefront-Referenz** einen Referenzschlüssel ein, um diese Empfehlungseinheit in Ihrer Storefront-Konfiguration zu identifizieren. Nachdem Sie die Empfehlung erstellt haben, können Sie [deren Wert kopieren](#get-the-storefront-reference-key) aus den **Details der Empfehlungseinheit** und sie als `referenceKey` im Block „Empfehlungen“ verwenden. Der Referenzschlüssel ist für die Storefront-Konfiguration. Die Storefront-Anzeigebeschriftung ist der Text, den Shopper sehen.
 
 1. Geben Sie im Abschnitt _Empfehlungstyp auswählen_ den [Empfehlungstyp) an](types.md) den Sie basierend auf Ihrer Strategie verwenden möchten.
 
@@ -66,11 +68,11 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
    - **Aktivieren**, um die Empfehlungseinheit in Ihrer Storefront zu aktivieren.
 
-   Ihre Empfehlung wird im Arbeitsbereich Recommendations angezeigt. Um Ihre Empfehlung in Ihrer Storefront zu verwenden, müssen Sie die „Recommendations[ID“ &#x200B;](#get-recommendation-id).
+   Ihre Empfehlung wird im Arbeitsbereich Recommendations angezeigt. Um Ihre Empfehlung in Ihrer Storefront zu verwenden, benötigen Sie die [Empfehlungs-ID oder den Referenzschlüssel](#get-the-recommendation-id-or-reference-key).
 
 >[!NOTE]
 >
->Sie können bis zu 50 aktive Empfehlungseinheiten erstellen. Weitere Informationen finden [&#x200B; unter &#x200B;](../../boundaries-limits.md) und Grenzen .
+>Sie können bis zu 50 aktive Empfehlungseinheiten erstellen. Weitere Informationen finden [ unter ](../../boundaries-limits.md) und Grenzen .
 
 >[!IMPORTANT]
 >
@@ -96,29 +98,25 @@ Experimentieren Sie beim Erstellen Ihrer Empfehlungseinheit mit dem Empfehlungst
 
 [!DNL Adobe Commerce Optimizer] [Filter](filters.md) Empfehlungen, um die Anzeige doppelter Produkte zu vermeiden, wenn mehrere Empfehlungseinheiten auf einer Seite bereitgestellt werden. Daher können sich die Produkte, die im Vorschaubereich angezeigt werden, von denen unterscheiden, die in der Storefront angezeigt werden.
 
-Bei Setups mit mehreren Storefronts, mehreren Sprachen oder mehreren Marken können Sie konfigurieren, ob jede Empfehlung für alle Katalogansichten (global) oder für eine einzelne [Katalogansicht) &#x200B;](../../setup/catalog-view.md). Erfahren Sie mehr darüber, wie [die Katalogansicht festlegen](../../manage-results/recommendation-performance.md#select-catalog-view) wenn Sie mit Recommendations arbeiten.
+Bei Setups mit mehreren Storefronts, mehreren Sprachen oder mehreren Marken können Sie konfigurieren, ob jede Empfehlung für alle Katalogansichten (global) oder für eine einzelne [Katalogansicht) ](../../setup/catalog-view.md). Erfahren Sie mehr darüber, wie [die Katalogansicht festlegen](../../manage-results/recommendation-performance.md#select-catalog-view) wenn Sie mit Recommendations arbeiten.
 
-## Recommendations-ID abrufen
+## Abrufen des Storefront-Referenzschlüssels
 
-Nachdem Sie eine Empfehlung erstellt haben, müssen Sie deren ID abrufen, um die Empfehlungseinheit auf Ihrer Storefront zu implementieren.
+Verwenden Sie nach dem Erstellen einer Empfehlung deren Referenzschlüssel, um die Empfehlungseinheit in Ihrer Storefront zu konfigurieren.
 
-1. Wählen Sie auf **Seite** die Empfehlung aus.
+1. Klicken Sie auf **Seite** Recommendations“ auf das Informationssymbol (![Info-Symbol](../../assets/info-icon.png)) neben dem Namen der Recommendation, um die Seite **Details zu Recommendations-**&quot; zu öffnen.
 
-1. Klicken Sie auf das Informationssymbol (![Infosymbol](../../assets/info-icon.png)) neben dem Namen der Empfehlung.
+   ![Empfehlungs-ID abrufen](../../assets/get-ref-id.png)
 
-   Die **„Details der Empfehlungseinheit** wird angezeigt.
+1. Kopieren Sie den Wert aus dem Abschnitt **Storefront-**).
 
-   ![Empfehlungs-ID abrufen](../../assets/get-rec-id.png)
-
-1. Kopieren Sie **Abschnitt** Recommendations-ID“ die ID.
-
-1. Verwenden Sie diese ID, um das [Empfehlungs-Dropdown-Menü](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) in Ihrer Edge Delivery Services-Storefront zu konfigurieren.
+1. Verwenden Sie im `product-recommendations`-Block der Storefront diesen Referenzschlüssel, um das [Recommendations-Dropdown-](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) in Ihrer Edge Delivery Services-Storefront zu konfigurieren.
 
 ## Verwalten vorhandener Empfehlungen
 
 Sie können eine vorhandene Empfehlung bearbeiten, deaktivieren oder löschen.
 
-1. Navigieren Sie in der _[!DNL Adobe Commerce Optimizer]_&#x200B;Seitenleiste zu_ Merchandising _>**Recommendations**.
+1. Navigieren Sie in der _[!DNL Adobe Commerce Optimizer]_Seitenleiste zu_ Merchandising _>**Recommendations**.
 
 1. Wählen Sie die Empfehlung aus, die Sie ändern möchten.
 
@@ -127,6 +125,7 @@ Sie können eine vorhandene Empfehlung bearbeiten, deaktivieren oder löschen.
 1. Im Menü können Sie **Empfehlung**, **Löschen** oder **Bearbeiten**. Wenn Sie **Bearbeiten** auswählen, können Sie die folgenden Einstellungen nach Bedarf anpassen:
 
    - Name der Empfehlung
+   - Referenzschlüssel
    - Storefront-Bezeichnung
    - Anzahl der Produkte
    - Produkte filtern
@@ -137,7 +136,7 @@ Sie können eine vorhandene Empfehlung bearbeiten, deaktivieren oder löschen.
 
 ## Bereitschaftsindikatoren
 
-Bereitschaftsindikatoren zeigen, welche Empfehlungstypen basierend auf den verfügbaren Katalog- und Verhaltensdaten am besten abschneiden. Sie können Ihnen auch dabei helfen, potenzielle Probleme mit der [Ereigniserfassung“ zu identifizieren &#x200B;](../../setup/events/overview.md) festzustellen, ob ein Empfehlungstyp nicht genügend Traffic erhält, um Ergebnisse zu generieren.
+Bereitschaftsindikatoren zeigen, welche Empfehlungstypen basierend auf den verfügbaren Katalog- und Verhaltensdaten am besten abschneiden. Sie können Ihnen auch dabei helfen, potenzielle Probleme mit der [Ereigniserfassung“ zu identifizieren ](../../setup/events/overview.md) festzustellen, ob ein Empfehlungstyp nicht genügend Traffic erhält, um Ergebnisse zu generieren.
 
 Bereitschaftsindikatoren werden entweder in [statisch-basiert](#static-based) oder [dynamisch-](#dynamic-based) kategorisiert. Verwenden Sie nur statische Katalogdaten, während dynamische Verhaltensdaten von Ihren Kunden verwendet werden. Diese Verhaltensdaten werden verwendet, um [Modelle für maschinelles Lernen](../../setup/events/overview.md) zu trainieren, um personalisierte Empfehlungen zu erstellen und ihren Bereitschaftswert zu berechnen.
 
