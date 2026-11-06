@@ -5,7 +5,7 @@ solution: Commerce
 feature: Integration, Catalog Management
 role: Developer, Admin
 level: Beginner
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
