@@ -39,30 +39,30 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
 1. Wechseln Sie in der _Admin_-Seitenleiste zu **Marketing** > _Promotions_ > **Produktempfehlungen**, um den _Produktempfehlungen_ anzuzeigen.
 
-1. Geben Sie [&#x200B; „Store-](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)&quot; an, in der die Empfehlungen angezeigt werden sollen.
+1. Geben Sie [&#x200B; „Store-](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/websites-stores-views)&quot; an, in der die Empfehlungen angezeigt werden sollen.
 
    >[!NOTE]
    >
-   > Empfehlungseinheiten von Page Builder müssen in der standardmäßigen Store-Ansicht erstellt werden, können dann aber überall verwendet werden. Weitere Informationen zum Erstellen von Produktempfehlungen mit Page Builder finden Sie unter [Inhalt hinzufügen - Produktempfehlungen](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
+   > Empfehlungseinheiten von Page Builder müssen in der standardmäßigen Store-Ansicht erstellt werden, können dann aber überall verwendet werden. Weitere Informationen zum Erstellen von Produktempfehlungen mit Page Builder finden Sie unter [Inhalt hinzufügen - Produktempfehlungen](https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Klicken Sie **Empfehlung erstellen**.
 
 1. Geben _im Abschnitt &quot;_ benennen“ einen beschreibenden Namen für die interne Referenz ein, z. B. `Home page most popular`.
 
-1. [!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} Geben Sie im Abschnitt **Storefront-Referenz** einen Referenzschlüssel ein, um diese Empfehlungseinheit in Ihrer Storefront-Konfiguration zu identifizieren. Nachdem Sie die Empfehlung erstellt haben, können Sie [deren Wert kopieren](#get-the-storefront-reference-key) aus den **Details der Empfehlungseinheit** und sie als `referenceKey` im Block „Empfehlungen“ verwenden. Der Referenzschlüssel ist für die Storefront-Konfiguration. Die Storefront-Anzeigebeschriftung ist der Text, den Shopper sehen.
+1. [!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} Geben Sie im Abschnitt **Storefront-Referenz** einen Referenzschlüssel ein, um diese Empfehlungseinheit in Ihrer Storefront-Konfiguration zu identifizieren. Nachdem Sie die Empfehlung erstellt haben, können Sie [deren Wert kopieren](#get-the-storefront-reference-key) aus den **Details der Empfehlungseinheit** und sie als `referenceKey` im Block „Empfehlungen“ verwenden. Der Referenzschlüssel ist für die Storefront-Konfiguration. Die Storefront-Anzeigebeschriftung ist der Text, den Shopper sehen.
 
 1. Wählen _im Abschnitt &quot;_ auswählen“ aus den folgenden Optionen die Seite aus, auf der die Empfehlung angezeigt werden soll:
 
    >[!NOTE]
    >
-   > Produktempfehlungen werden auf der Warenkorbseite nicht unterstützt, wenn Ihr Store so konfiguriert ist, dass [die Warenkorbseite sofort nach dem Hinzufügen eines Produkts zum Warenkorb angezeigt wird](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > Produktempfehlungen werden auf der Warenkorbseite nicht unterstützt, wenn Ihr Store so konfiguriert ist, dass [die Warenkorbseite sofort nach dem Hinzufügen eines Produkts zum Warenkorb angezeigt wird](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Startseite
    * Kategorie
    * Produktdetails
    * Warenkorb
    * Bestätigung
-   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Sie können für jeden Seitentyp bis zu 50 aktive Empfehlungseinheiten erstellen. Der Seitentyp wird ausgegraut, wenn das Limit erreicht ist.
 
@@ -106,7 +106,7 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
 ## Abrufen des Storefront-Referenzschlüssels
 
-[!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} Nach dem Erstellen einer Empfehlung können Sie mit deren Referenzschlüssel die Empfehlungseinheit in Ihrer Storefront konfigurieren.
+[!BADGE Nur SaaS]{type=Positive url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."} Nach dem Erstellen einer Empfehlung können Sie mit deren Referenzschlüssel die Empfehlungseinheit in Ihrer Storefront konfigurieren.
 
 1. Öffnen Sie die Details für eine Produktempfehlung.
 
