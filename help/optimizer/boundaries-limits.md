@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
+source-git-commit: 0b52c20df4c64d3dd7e43f023e7b0f4517e8fcf7
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1486'
 ht-degree: 0%
 ---
 # Beschränkungen und Grenzen
@@ -81,7 +81,7 @@ In den folgenden Tabellen sind die Lizenzbeschränkungen und Systemgrenzen nach 
 | --- | --- | --- | --- |
 | Produktvisualisierung Power-User | Lizenzierter Anwender mit vollständigen Digital-Asset-Management-Funktionen, einschließlich KI-Tools, [!DNL Adobe Express]-/[!DNL Firefly]-Integrationen und Content Hub-Freigabe, Handhabung von DAM-Kernaufgaben und erweiterten Cloud-nativen Funktionen für optimale Effizienz. | 2 | Ja<p>Upgrade auf [!DNL AEM Assets] Lizenz</p> |
 | Benutzer von Product Visuals Collaborator | Greifen Sie über die AEM Commerce-Integration auf Assets zu und arbeiten Sie mit ihnen, erstellen und bearbeiten Sie Inhalte mithilfe von [!DNL Adobe Express] und [!DNL Firefly] und nutzen Sie - falls aktiviert - genehmigte Assets über das Content Hub-Portal. | 2 | Ja<p>Upgrade auf [!DNL AEM Assets] Lizenz</p> |
-| Speicherung von Produktbildern | Zugewiesener Speicherplatz für Assets | 1 TB Speicher | Nein |
+| Speicherung von Produktbildern | Zugewiesener Speicherplatz für Assets | 1 TB Speicher | Ja<p>Upgrade auf [!DNL AEM Assets] Lizenz</p> |
 | Verwendung von Dynamic Media | Toleranz für Dynamic Media-Verarbeitungsvorgänge, die Folgendes umfassen:<ul><li>Bildbereitstellung</li><li>Intelligente Bildbearbeitung</li><li>Videowiedergabe</li></ul><p>Weitere Informationen finden Sie *Berechnen der Dynamic Media-Nutzung* unten. | Basierend auf GMV (Bruttowarenwert)<p>Mindestzuweisung: 5 Mio. Operationen/Monat</p> | Ja<ul><li>Lizenz für zusätzliche Vorgänge erwerben</li><li>Upgrade auf [!DNL AEM Assets] Lizenz</li></ul> |
 | Videobereitstellung | Toleranz für Videobereitstellung oder Downloads | 300 Videos, 1 Minute pro Video | Ja<p>Upgrade auf [!DNL AEM Assets] Lizenz</p> |
 | Asset-Generierung | Zugriff auf [!DNL Adobe Express] und [!DNL Adobe Firefly] generative KI zum Erstellen von Bildern | Keine | Generative KI-Credits separat erwerben |

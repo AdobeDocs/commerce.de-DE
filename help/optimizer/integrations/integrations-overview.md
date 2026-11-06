@@ -10,6 +10,8 @@ exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+  - id: ef0c45ae-6bee-4821-a65e-e1e118e8a01c
+    internal-label: Commerce Optimizer
 feature_v2:
   - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
     internal-label: Integration
@@ -23,9 +25,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 972d2a1118daca17dc17a29e20ada593656960e1
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '570'
 ht-degree: 0%
 ---
 
@@ -34,13 +36,6 @@ ht-degree: 0%
 [!DNL Adobe Commerce Optimizer] umfasst Integrationen, mit denen Sie Daten aus Adobe Commerce in der Cloud oder lokal synchronisieren, Assets verwalten, Storefront-Erlebnisse verbessern und externe Systeme verbinden können. In den folgenden Abschnitten wird beschrieben, wie jede Integration mit [!DNL Adobe Commerce Optimizer] funktioniert. Folgen Sie den Links für die Einrichtung, Konfiguration und tägliche Verwendung.
 
 {{aco-integration-environment-alignment}}
-
-## Adobe Commerce Optimizer-Connector {#aco-connector}
-
-Der Adobe Commerce Optimizer-Connector ist die Brücke, die Katalog- und Preisdaten zwischen Adobe Commerce (Cloud oder On-Premise) und [!DNL Adobe Commerce Optimizer] synchronisiert. Wenn Sie den Connector aktivieren, bleibt Commerce das Aufzeichnungssystem für Produktdaten, während [!DNL Adobe Commerce Optimizer] die Produkterkennung, Empfehlungen, Merchandising-Regeln, Analysen und Headless-Storefront-Erlebnisse unterstützt. Informationen dazu, wer eine synchronisierte Katalogansicht abfragen kann, finden Sie unter [Private Katalogansichten](../setup/private-catalog-view.md).
-
-- [Übersicht über den Adobe Commerce Optimizer-Connector](../../aco-connector/overview.md){target="_blank"}
-- [Erste Schritte mit dem Connector](../../aco-connector/get-started.md){target="_blank"}
 
 ## Produktvisualisierung mit AEM Assets {#product-visuals}
 
@@ -58,6 +53,20 @@ Adobe Experience Manager Sites Optimizer analysiert Commerce-Websites und verbes
 >Für diese Funktion ist die **Ultima** Adobe Sites Optimizer-Lizenz erforderlich. Sie können eine Lizenz über Ihren technischen Adobe-Kundenberater anfordern. Sobald Ihr Konto bereitgestellt wurde, ist die Funktion „Opportunitys“ in der [!DNL Adobe Commerce Optimizer] verfügbar und Sie können mit KI-gesteuerten Einblicken beginnen, um Ihre Storefront- und Merchandising-Strategien zu optimieren.
 
 - [Möglichkeiten](../manage-results/opportunities.md)
+
+## Adobe Commerce Optimizer-Connector {#aco-connector}
+
+Der Adobe Commerce Optimizer-Connector ist die Brücke, die Katalog- und Preisdaten zwischen Adobe Commerce (Cloud oder On-Premise) und [!DNL Adobe Commerce Optimizer] synchronisiert. Wenn Sie den Connector aktivieren, bleibt Commerce das Aufzeichnungssystem für Produktdaten, während [!DNL Adobe Commerce Optimizer] die Produkterkennung, Empfehlungen, Merchandising-Regeln, Analysen und Headless-Storefront-Erlebnisse unterstützt. Informationen dazu, wer eine synchronisierte Katalogansicht abfragen kann, finden Sie unter [Private Katalogansichten](../setup/private-catalog-view.md).
+
+- [Übersicht über den Adobe Commerce Optimizer-Connector](../../aco-connector/overview.md){target="_blank"}
+- [Erste Schritte mit dem Connector](../../aco-connector/get-started.md){target="_blank"}
+
+## Integration von Warenkorb und Checkout von Drittanbietern
+
+Adobe Commerce Optimizer kann die Produkterkennung und das Merchandising für eine Storefront unterstützen, die eine separate Commerce-Plattform für Transaktionen verwendet. Die Storefront verwendet Commerce Optimizer Merchandising Services-APIs für Produktdaten, Suche, Empfehlungen und Merchandising. Die Host-Commerce-Plattform bleibt für Kundenkonten, Warenkorb, Checkout und Bestellabwicklung verantwortlich. Die Integration mit der Hostplattform ist eine benutzerdefinierte Implementierung, bei der API Mesh, App Builder, direkte APIs oder eine Kombination dieser Tools verwendet werden.
+
+Für Salesforce Commerce Cloud (SFCC) bietet das [Adobe Commerce Optimizer SFCC Checkout Starter Kit](https://github.com/adobe-commerce/aco-sfcc-checkout-starter-kit) Beispiel-Edge Delivery Services-Bausteine und -Skripte zum Verbinden einer Adobe Commerce Optimizer-Storefront mit SFCC-Funktionen für Einkäufer, Warenkorb und Checkout. Verwenden Sie ihn als Referenzimplementierung und passen Sie ihn an Ihre Storefront an. Er ist kein generischer, vorkonfigurierter Connector. Ein [Headless-Storefront-Beispiel für Next.js](https://github.com/adobe-commerce/aco-sfcc-storefront-next){target="_blank"} ist ebenfalls verfügbar.
+
 
 ## Commerce Salesforce Connector {#commerce-salesforce-connector}
 

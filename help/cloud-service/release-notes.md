@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 9aba7b8541b7b067aa5eb751bf601542e8b3c43c
+source-git-commit: ab9c4d33ab0254c0c4ba990cd91ed01226d3abb9
 workflow-type: tm+mt
-source-wordcount: '9775'
+source-wordcount: '9964'
 ht-degree: 0%
 ---
 # Versionshinweise
@@ -92,7 +92,9 @@ Die folgenden Elemente werden am 10. November 2026 in Produktionsumgebungen ver�
 
 >[!BEGINSHADEBOX]
 
-<!-- ACCS-1980 not included: storefront-router-service#410 (router schema sync) is still open -->
+### Anwenden benutzerdefinierter Attribute beim Hinzufügen von Produkten zum Warenkorb
+
+Sie können jetzt benutzerdefinierte Attribute auf Warenkorbelemente mit der [`addProductsToCart` Mutation anwenden](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/add-products) indem Sie im `CartItemInput.custom_attributes` Feld ein Array von Schlüssel/Wert-Paaren angeben. <!-- ACCS-1980 -->
 
 ### Zurückgegebene Artikelattribute ändern
 
@@ -100,6 +102,10 @@ Der neue `observer.rma_save_before` [Webhook](https://developer.adobe.com/commer
 
 * Die Payload enthält Rückgabeelemente, wenn durch das Speichern Elemente erstellt oder bearbeitet werden, z. B. wenn in der [!DNL Commerce Admin] eine Rückgabe erstellt wird, durch REST oder durch die `requestReturn` GraphQL-Mutation.
 * Der Webhook wird im Rahmen der Speicherung der Rückgabe ausgeführt. Wenn ein erforderlicher Webhook fehlschlägt, wird die Rückgabe nicht gespeichert.
+
+### Artikel aus Lieferungen ausschließen
+
+Mit dem neuen `plugin.magento.out_of_process_shipping_methods.api.shipment_item_filter.filter` [Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) können Sie Bestellartikel von neuen Sendungen ausschließen, z. B. von Artikeln, die ein Drittanbieter erfüllt. <!-- ACCS-2088 -->
 
 ### Lieferadressen einschließen
 
@@ -113,6 +119,14 @@ So erstellen Sie eine Bestellung ohne Versandadresse:
 ### [!DNL AEM Assets] Kategoriebilder abrufen
 
 Die `CategoryInterface`- und `CategoryTree` GraphQL-Typen enthalten jetzt ein `asset_role_image` Feld, das das Kategoriebild zurückgibt, das von [!DNL AEM Assets] zugewiesen wurde. <!-- ACCS-2180 -->
+
+### Debitorenspeicher-Habensalden abrufen
+
+Der neue `GET /V1/customers/:customerId/balance` REST-Endpunkt gibt den Speicherguthaben eines Kunden zurück. Dieser Endpunkt erfordert die Berechtigung [!UICONTROL Manage Store Credit Balances] . <!-- CCSAAS-5274 -->
+
+### Abrufen der Zeilensummen der Rechnungselemente
+
+Der `InvoiceItemInterface` GraphQL-Typ enthält jetzt ein `row_total`, das die gespeicherte Zeilenzwischensumme für einen Rechnungsartikel zurückgibt. <!-- USF-4460 -->
 
 ### Verbesserungen und Fehlerbehebungen
 
@@ -129,6 +143,16 @@ Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen s
 * Es wurde ein Problem behoben, bei dem die `requestReturn` GraphQL-Mutation fehlschlug, wenn ein optionales benutzerdefiniertes Rückgabeelement mit einem leeren Wert gesendet wurde. <!-- CCSAAS-5628 -->
 
 * Fehlerkorrektur - Die Lagerverarbeitung wird jetzt nicht mehr angehalten, wenn Produkte nach einer [!UICONTROL Update attributes] Massenaktion gelöscht werden. <!-- CCSAAS-5713 -->
+
+* Fehlerkorrektur - E-Mails zu Warenkorbabbrüchen können jetzt zusätzliche Erinnerungs-E-Mails senden. <!-- CCSAAS-5707 -->
+
+* Es wurde ein Problem behoben, bei dem keine E-Mails zu Preisen und Lagervorräten gesendet wurden. <!-- ACCS-2268 -->
+
+* Es wurde ein Problem behoben, bei dem der `plugin.magento.out_of_process_tax_management.api.oop_tax_collection.collect_taxes` Webhook `custom_attributes` auslassen konnte. <!-- CEXT-6870, CEXT-6959 -->
+
+* Es wurde ein Problem behoben, bei dem die `addProductsToCart` GraphQL-Mutation einen Fehler zurückgeben konnte, wenn der Nicht-Prozess-Gesamtkollektor verwendet wurde. <!-- ACCS-2263, CEXT-6986 -->
+
+* Es wurde ein Problem behoben, bei dem Abfragen und Mutationen des GraphQL-Warenkorbs einen Fehler zurückgeben konnten, nachdem ein konfigurierbares Produkt aus einem Warenkorb gelöscht wurde.<!-- CCSAAS-5721 -->
 
 {{accs-release}}
 
