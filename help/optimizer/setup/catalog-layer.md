@@ -3,7 +3,7 @@ title: Katalogebenen
 description: Erfahren Sie, wie Sie mit Katalogebenen Produktdaten ändern können, ohne die ursprünglichen Quelldaten zu ändern, sodass Sie Änderungen jederzeit sicher anpassen und rückgängig machen können.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 TQID: https://experienceleague.adobe.com/aeuD7Ev8AhkzIspV08x4ZTA9knMjZ3EObSZJpidY8QI
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -27,13 +27,11 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: 1533
+source-wordcount: '1493'
 ht-degree: 0%
-
 ---
-
 # Katalogebenen
 
 Mit Katalogschichten können Sie Produktdaten ändern, ohne die ursprünglichen Quelldaten zu ändern. Ebenen ändern Produktattribute wie Namen, Beschreibung, Bilder, Links und Metadaten, indem über dem Basiskatalog eine Ebene erstellt wird. Ihre ursprünglichen Produktdaten bleiben intakt, sodass Sie Produkte sicher anpassen und Änderungen jederzeit rückgängig machen können.
@@ -67,8 +65,6 @@ Katalogebenen werden häufig für Folgendes verwendet:
 * **Produktvisualisierungen** - Wenden Sie Produktbilder aus AEM Assets als Ebene über Ihrem Basiskatalog an.
 
 ## AEM-Assets-Ebene
-
-Wenn Sie [Produktvisualisierung](product-visuals.md) aktivieren, erstellt und verwaltet die AEM Assets-Integration automatisch eine Katalogebene, die ausschließlich AEM Assets-Inhalten gewidmet ist. Der standardmäßige Ebenenname lautet `AEM-Assets`. Sie können jedoch während des Onboardings in [&#x200B; AEM Assets-Integration einen benutzerdefinierten Namen &#x200B;](../../aem-assets-integration/get-started/configure-aco.md).
 
 Diese Ebene enthält Produktbilder, die aus AEM Assets synchronisiert wurden. Wie andere Katalogebenen wird es über die [Product Layers-API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank} gefüllt. Der Assets Integration Service transformiert AEM-Asset-Metadaten und Bereitstellungs-URLs in das API-Format und sendet die Daten automatisch, wenn Assets in AEM Assets genehmigt wurden.
 
@@ -110,7 +106,7 @@ Sie können Ihren Produkten während der Datenaufnahme Katalogebenen hinzufügen
 
 >[!NOTE]
 >
->Sie importieren Katalogebenen mit der Aufnahme-API, aber [&#x200B; Festlegen der Reihenfolge &#x200B;](#manage-layer-priorities) Ebenen erfolgt über die Benutzeroberfläche.
+>Sie importieren Katalogebenen mit der Aufnahme-API, aber [ Festlegen der Reihenfolge ](#manage-layer-priorities) Ebenen erfolgt über die Benutzeroberfläche.
 
 **Voraussetzungen:**
 
