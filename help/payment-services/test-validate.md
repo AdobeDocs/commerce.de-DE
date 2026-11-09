@@ -22,7 +22,7 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b3ce7cadce74310cef2b7253b965eccb4a17107d
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -35,10 +35,10 @@ Bevor Sie Ihren Käufern [!DNL Payment Services] für [!DNL Adobe Commerce] und 
 
 Das Testen von [!DNL Payment Services] in einer Sandbox-Umgebung ist ein wichtiger Validierungsschritt, auch wenn es sich um eine simulierte Umgebung handelt, die nur mit der PayPal-Sandbox und nicht mit echten Banken und Händlern verbunden ist.
 
-1. Schließen Sie einen erfolgreichen Checkout aus Ihrem Geschäft ab, entweder mit [Kreditkartenfeldern](payments-options.md#credit-card-fields) oder einer der [PayPal-Zahlungsschaltflächen](payments-options.md#paypal-payment-buttons). Weitere Informationen [&#x200B; Verwendung gefälschter Kreditkarten zum Testen finden &#x200B;](#testing-credentials) unter „Testen von Anmeldeinformationen“.
-1. Erfassen Sie (wenn Ihre Zahlungsaktion [auf `Authorize and Capture`](production.md#set-payment-services-as-payment-method) eingestellt), [Rückerstattung](refunds.md) oder [Annullierung](voids.md) die gerade abgeschlossene Bestellung. Sie können auch einfach [Rechnung erstellen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} für eine Bestellung, wenn Ihre Zahlungsaktion auf `Authorize` statt auf `Authorize and Capture` gesetzt ist.
+1. Schließen Sie einen erfolgreichen Checkout aus Ihrem Geschäft ab, entweder mit [Kreditkartenfeldern](payments-options.md#credit-card-fields) oder einer der [PayPal-Zahlungsschaltflächen](payments-options.md#paypal-payment-buttons). Weitere Informationen [ Verwendung gefälschter Kreditkarten zum Testen finden ](#testing-credentials) unter „Testen von Anmeldeinformationen“.
+1. Erfassen Sie (wenn Ihre Zahlungsaktion [auf `Authorize and Capture`](production.md#set-payment-services-as-payment-method) eingestellt), [Rückerstattung](refunds.md) oder [Annullierung](voids.md) die gerade abgeschlossene Bestellung. Sie können auch einfach [Rechnung erstellen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} für eine Bestellung, wenn Ihre Zahlungsaktion auf `Authorize` statt auf `Authorize and Capture` gesetzt ist.
 1. Zeigen Sie die Transaktion und andere Informationen innerhalb von 24-48 Stunden im [Auszahlungsbericht](payouts.md) an.
-1. Weitere Informationen zur Bestellung finden Sie im [Bericht zum Status der &#x200B;](order-payment-status.md).
+1. Weitere Informationen zur Bestellung finden Sie im [Bericht zum Status der ](order-payment-status.md).
 
 ### Testen von lokalen Entwicklungsumgebungen
 
@@ -64,7 +64,7 @@ So stellen Sie Ihre lokale Umgebung bereit:
 
 1. Stellen Sie nach Abschluss des Tests Ihre ursprüngliche Basis-URL-Konfiguration wieder her.
 
-Wenn die Reaktionszeit des Endpunkts unter 5 Sekunden liegt, zeigt PayPal eine Fehlermeldung im Popup an.
+Wenn die Reaktionszeit des Endpunkts mehr als 5 Sekunden beträgt, zeigt PayPal eine Fehlermeldung im Popup an.
 
 #### Apple Pay Lokale Entwicklung
 
@@ -75,13 +75,13 @@ Für die lokale Entwicklung muss Ihre Umgebung die folgenden Anforderungen erfü
 * **Öffentlich zugänglich** muss Apple in der Lage sein, Ihre Domain über das Internet zu erreichen.
 * **HTTPS-Protokoll** funktioniert Apple Pay nur bei sicheren Verbindungen.
 
-Der Einsatz eines Tunneldienstes wie [ngrok](https://ngrok.com/) erfüllt beide Anforderungen. Nachdem Sie nGrok wie oben beschrieben eingerichtet haben[&#x200B; registrieren Sie Ihre Sandbox-Domain &#x200B;](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains) PayPal über die URL **ngrok**.
+Der Einsatz eines Tunneldienstes wie [ngrok](https://ngrok.com/) erfüllt beide Anforderungen. Nachdem Sie nGrok wie oben beschrieben eingerichtet haben[ registrieren Sie Ihre Sandbox-Domain ](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains) PayPal über die URL **ngrok**.
 
 ### Testen von Anmeldeinformationen
 
 Beim Testen und Validieren Ihrer Sandbox müssen Sie gefälschte Kreditkartennummern verwenden, damit Sie keine echten Gebühren für ein vorhandenes Kreditkartenkonto erstellen.
 
-Verwenden Sie den Kreditkartengenerator von PayPal, um [zufällige Kreditkarteninformationen) zum Testen &#x200B;](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) generieren.
+Verwenden Sie den Kreditkartengenerator von PayPal, um [zufällige Kreditkarteninformationen) zum Testen ](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) generieren.
 
 So testen Sie Apple Pay im Sandbox-Modus:
 
