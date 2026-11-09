@@ -48,9 +48,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 19c1c7d4cfaa6192169e8005e6bb323a0940d875
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1348'
 ht-degree: 0%
 ---
 # Erste Schritte
@@ -125,7 +125,7 @@ Als System-Admin sind Sie für die Einrichtung der Organisation und die Verwaltu
 | Grundlegendes zur Plattform | Erfahren Sie mehr über die Architektur und Vorteile von Adobe Commerce as a Cloud Service | [Übersicht](overview.md) |
 | Funktionen vergleichen | Verstehen der Unterschiede zwischen Cloud Service und anderen Adobe Commerce-Angeboten | [Funktionsvergleich](feature-comparison.md) |
 | Instanz erstellen | Bereitstellen von Sandbox- und Produktionsumgebungen | [Instanz erstellen](#create-an-instance) |
-| Einrichten der Benutzerverwaltung | Hinzufügen von Benutzern, Zuweisen von Rollen und Verwalten von Berechtigungen | [Benutzerverwaltung](user-management.md) |
+| Einrichten der Benutzerverwaltung | Fügen Sie Benutzende hinzu und verwalten Sie den Zugriff über Adobe Admin Console sowie Rollen und Berechtigungen in Commerce Admin. | [Benutzerverwaltung](user-management.md) |
 | Einrichten von [!DNL AEM Assets] und [!DNL Product Visuals] (optional) | Hinzufügen von Benutzern, Zuweisen von Rollen und Verwalten von Berechtigungen | [Benutzerverwaltung](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
 
 >[!TAB Händler]

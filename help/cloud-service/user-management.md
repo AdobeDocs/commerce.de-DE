@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 8ed4d2fa87f7a91c3c9c21817391003488c55046
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1961'
 ht-degree: 0%
 ---
 # Benutzer und Identity Management
@@ -54,6 +54,8 @@ Für diesen Prozess ist eine IMS-Organisation mit Zugriff auf [!DNL Adobe Commer
 ## Grundlegendes zu Rollen
 
 Die folgenden Rollen sind für [!DNL Adobe Commerce as a Cloud Service] verfügbar. Um diese Rollen anzuzeigen oder zu bearbeiten, navigieren Sie in der Commerce-Admin zu [!UICONTROL **System**] > [!UICONTROL **Berechtigungen**] > [!UICONTROL **Benutzerrollen**].
+
+Sie können in Commerce Admin benutzerdefinierte Rollen erstellen, um Benutzenden detailliertere Berechtigungen als den standardmäßigen Adobe Admin Console-Rollen zuzuweisen. Benutzerdefinierte Commerce-Rollen und -Zuweisungen bleiben erhalten, wenn sich Benutzerinnen und Benutzer anschließend über Adobe IMS anmelden. Benutzerinnen und Benutzer müssen weiterhin über Adobe Admin Console Zugriff auf die Adobe Commerce as a Cloud Service-Instanz haben. Um benutzerdefinierte Rollen zu erstellen, [definieren Sie Rollen im Commerce Admin](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role).
 
 * **Benutzer**: Benutzer haben Administratorzugriff auf Commerce Admin, können jedoch nicht den Zugriff auf Produktebene in Admin Console verwalten. Benutzer können auch Punktzahlen verwenden, um [&#x200B; Instanzen &#x200B;](./getting-started.md#create-an-instance) der [!DNL Commerce Cloud Manager] zu erstellen.
 
@@ -134,6 +136,8 @@ Detaillierte Informationen zu den Berechtigungen, die den einzelnen Rollen in Ad
 ## Benutzer hinzufügen
 
 Die folgenden Anweisungen enthalten Informationen zum Hinzufügen von Benutzern zur [!DNL Commerce Cloud Manager] und zur Commerce Admin. Über die [!DNL Commerce Cloud Manager] können Sie Ihre Commerce-Instanzen erstellen und verwalten. Dieser Prozess ist für alle Benutzer erforderlich, einschließlich Entwickler und Administratoren.
+
+Um benutzerdefinierte Rollen zu erstellen, können Sie anstelle der in der Adobe Admin Console definierten umfassenderen Rollen „Rollen [&#x200B; Commerce Admin definieren](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role).
 
 >[!NOTE]
 >
