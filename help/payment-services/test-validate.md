@@ -22,7 +22,7 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b3ce7cadce74310cef2b7253b965eccb4a17107d
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -64,7 +64,7 @@ So stellen Sie Ihre lokale Umgebung bereit:
 
 1. Stellen Sie nach Abschluss des Tests Ihre ursprüngliche Basis-URL-Konfiguration wieder her.
 
-Wenn die Reaktionszeit des Endpunkts unter 5 Sekunden liegt, zeigt PayPal eine Fehlermeldung im Popup an.
+Wenn die Reaktionszeit des Endpunkts mehr als 5 Sekunden beträgt, zeigt PayPal eine Fehlermeldung im Popup an.
 
 #### Apple Pay Lokale Entwicklung
 
