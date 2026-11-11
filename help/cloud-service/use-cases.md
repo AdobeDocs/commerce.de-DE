@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 autotag-review: '2026-06-18T16:06:00.993Z'
 TQID: 'https://experienceleague.adobe.com/4L-M8vsEkT6uuafrOISankRaarQ-OVHDWLXwoVLaUZQ'
 product_v2:
@@ -42,9 +42,9 @@ topic_v2:
     internal-label: Experimentation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b2859807f154770698ad4bcc8fd1acbc81c0114f
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1467'
 ht-degree: 0%
 ---
 # Anwendungsszenarien
@@ -60,8 +60,8 @@ Bevor Sie einen dieser Anwendungsfälle ausführen, müssen Sie die folgenden Vo
 1. [Erstellen Sie Ihre Cloud Service](./getting-started.md#create-an-instance)Instanz mithilfe der folgenden Optionen:
    1. Wählen Sie [!UICONTROL **Sandbox**] in der Dropdown [!UICONTROL **Umgebung**] aus.
    1. Wählen Sie [!UICONTROL **Adobe Store**] in der Dropdown-Liste [!UICONTROL **Testdaten**] aus.
-1. [Bei Ihrem Konto  [!DNL Adobe Experience Cloud] &#x200B;](https://experience.adobe.com)
-1. [Richten Sie Ihre Cloud Service-Storefront &#x200B;](./storefront.md), indem Sie die folgenden Optionen verwenden:
+1. [Bei Ihrem Konto  [!DNL Adobe Experience Cloud] ](https://experience.adobe.com)
+1. [Richten Sie Ihre Cloud Service-Storefront ](./storefront.md), indem Sie die folgenden Optionen verwenden:
    1. Wählen Sie [!UICONTROL `adobe-commerce/adobe-demo-store`] für die Vorlage aus.
    1. Wählen Sie [!UICONTROL **Verfügbare Instanz auswählen (Mesh -> SaaS)**] für die Verbindungsmethode aus.
 
@@ -71,9 +71,9 @@ Dieser Workflow zeigt den Checkout-Prozess für einen Kunden, der ein Produkt in
 
 ### Zahlungsdienste aktivieren
 
-1. Navigieren Sie in Commerce Admin zu [!UICONTROL **Stores**] > [!UICONTROL Settings] > [!UICONTROL **Configuration**] > [!UICONTROL **Zahlungsmethoden**].
+1. Navigieren Sie in Commerce Admin zu [!UICONTROL **Stores**] > [!UICONTROL **Zahlungsmethoden**].
 
-1. Geben [!UICONTROL **im Abschnitt „Allgemeine**]&quot; Ihre `Payment Services Sandbox ID` und `Payment Services Sandbox Key` ein. Sie können diese IDs abrufen, indem Sie die unter &quot;[-Onboarding“ beschriebenen Schritte &#x200B;](../payment-services/sandbox.md#sandbox-onboarding){target="_blank"}
+1. Geben [!UICONTROL **im Abschnitt „Allgemeine**]&quot; Ihre `Payment Services Sandbox ID` und `Payment Services Sandbox Key` ein. Sie können diese IDs abrufen, indem Sie die unter &quot;[-Onboarding“ beschriebenen Schritte ](../payment-services/sandbox.md#sandbox-onboarding){target="_blank"}
 
 1. Legen Sie das [!UICONTROL **Aktivieren**]-Dropdown auf [!UICONTROL **Ja**] fest.
 
@@ -192,7 +192,7 @@ Stellen Sie sich ein Szenario vor, in dem Sie den Hintergrund eines Produktbilds
 
 1. Öffnen Sie die [Storefront](./storefront.md) die Sie in den Voraussetzungen erstellt haben, und navigieren Sie zu einem Element, das Sie ändern möchten. Notieren Sie die SKU oder den Produkt-Code des Artikels.
 
-1. Öffnen Sie [!DNL AEM Assets], indem Sie es in der [Adobe Experience Cloud“ &#x200B;](https://experience.adobe.com/#/home).
+1. Öffnen Sie [!DNL AEM Assets], indem Sie es in der [Adobe Experience Cloud“ ](https://experience.adobe.com/#/home).
 
    ![[!DNL AEM Assets]-Selektor, der die [!DNL Adobe Experience Cloud] anzeigt](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 
@@ -234,7 +234,7 @@ Stellen Sie sich ein Szenario vor, in dem Sie den Hintergrund eines Produktbilds
 
 #### Hinzufügen des Bildes zu [!DNL Commerce AEM Assets]
 
-1. Wählen Sie [Navigationsbereich](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) von [!DNL AEM as a Cloud Service] die Option [!UICONTROL **Assets**] > [!UICONTROL **Dateien**] > [!UICONTROL **Commerce**] und klicken Sie auf das Asset, das Sie im vorherigen Abschnitt erstellt haben.
+1. Wählen Sie [Navigationsbereich](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) von [!DNL AEM as a Cloud Service] die Option [!UICONTROL **Assets**] > [!UICONTROL **Dateien**] > [!UICONTROL **Commerce**] und klicken Sie auf das Asset, das Sie im vorherigen Abschnitt erstellt haben.
 
    ![Commerce-Ordner in [!DNL AEM Assets] mit Produktbildern](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -284,7 +284,7 @@ Stellen Sie sich ein Szenario vor, in dem Sie den Hintergrund eines Produktbilds
 
 ### Text generieren
 
-1. Öffnen Sie Ihre Storefront-Site mit dem [universellen Editor](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Öffnen Sie Ihre Storefront-Site mit dem [universellen Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Wählen Sie den Textblock aus, den Sie bearbeiten möchten.
 
@@ -298,7 +298,7 @@ Stellen Sie sich ein Szenario vor, in dem Sie den Hintergrund eines Produktbilds
 
 ### Erstellen von Inhalten und Bildern
 
-1. Öffnen Sie [[!DNL Generate Variations]](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations).
+1. Öffnen Sie [[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations).
 
 1. Wählen Sie die Vorlage [!UICONTROL **Hero Banner**] aus.
 

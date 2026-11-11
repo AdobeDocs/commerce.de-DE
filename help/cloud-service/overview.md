@@ -5,7 +5,7 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 autotag-review: '2026-06-18T16:02:31.185Z'
 TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
 product_v2:
@@ -64,9 +64,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 7b6ed19c7ca30a72bda94c8af60ba27324bcb2ea
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1418'
 ht-degree: 0%
 ---
 # Übersicht über [!DNL Adobe Commerce as a Cloud Service]
@@ -89,7 +89,7 @@ In der folgenden Tabelle sind die Produkte aufgeführt, die [!DNL Adobe Commerce
       <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark" align="center"> <strong>Merchandising-Services</strong>
     </td>
     <td align="left">
-      Backend-Services zur Verwaltung von Produktkatalogen, Preisen und Beständen
+      Backend-Services, die Produktkataloge und Preise verwalten. Standardmäßig verwenden neue Organisationen das Composable Catalog Data Model (CCDM).
     </td>
   </tr>
   <tr>
@@ -114,7 +114,7 @@ In der folgenden Tabelle sind die Produkte aufgeführt, die [!DNL Adobe Commerce
 
 Im folgenden Video finden Sie eine kurze Einführung in die [!DNL Adobe Commerce as a Cloud Service]. Diagramme, die die Architektur veranschaulichen, werden unter dem Video bereitgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443276?captions=ger&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 Dieses Diagramm zeigt den Datenfluss zwischen [!DNL Adobe Commerce as a Cloud Service] und allen Adobe Experience Cloud-Lösungen.
 
@@ -124,25 +124,20 @@ Dieses Diagramm zeigt den Datenfluss zwischen [!DNL Adobe Commerce as a Cloud Se
 
 Um in Minutenschnelle umfassende Erlebnisse mit einfacher dokumentbasierter Bearbeitung oder visueller Bearbeitung mit [!DNL Storefront Builder] zu erstellen, verwenden Sie die [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/en/tools/commerce-storefront/) von Adobe, die von [!DNL Edge Delivery Services] unterstützt wird.
 
-[!DNL Commerce Storefront] ist vollständig Headless mit einer entkoppelten Architektur, die alle Adobe Merchandising-Services und -Daten über eine GraphQL-API-Ebene bereitstellt. Diese Architektur ermöglicht es Teams, ihre Frontends unabhängig von der Commerce Foundation zu entwickeln, und bietet die Agilität, neue Touchpoints mit neuen Technologien zu erstellen und zu testen.
+[!DNL Commerce Storefront] ist vollständig Headless mit einer entkoppelten Architektur, die Merchandising-Services und -Daten über eine GraphQL-API-Ebene bereitstellt. Diese Architektur ermöglicht es Teams, ihre Frontends unabhängig von der Commerce Foundation zu entwickeln, und bietet die Agilität, neue Touchpoints mit neuen Technologien zu erstellen und zu testen.
 
 >[!NOTE]
 >
 >[!DNL Adobe Commerce as a Cloud Service] unterstützt keine Luma-Storefronts. Wenn Sie von [!DNL Adobe Commerce on Cloud] oder On-Premise migrieren, finden Sie unter [Vorhandene Storefronts](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts) Anleitungen für den Übergang.
 
-## Adobe Merchandising-Services und Zahlungsdienste
+## Merchandising und Zahlungsdienste
 
-Adobe bietet eine breite Palette intelligenter, zusammenstellbarer Merchandising-Services, mit denen Sie Ihre wichtigsten Geschäftsziele unterstützen können. Diese Services bieten auch APIs, die für die skalierte Leistungsoptimierung von entscheidender Bedeutung sind.
+Merchandising Services unterstützt in [!DNL Adobe Commerce as a Cloud Service] zwei Katalogdatenmodelle:
 
-- [[!DNL Live Search]](../live-search/overview.md) - Mit diesem KI-gestützten Suchwerkzeug können Sie Kunden intelligentere, schnellere und relevante Ergebnisse liefern. Anweisungen zur Einrichtung finden Sie unter [Einrichten [!DNL Live Search]](../live-search/workspace.md).
-- [[!DNL Product Recommendations]](../product-recommendations/overview.md) - Fügen Sie KI-gestützte Empfehlungen hinzu, die auf dem Kundenverhalten, beliebten Trends, Produktähnlichkeit und mehr basieren. Konfigurationsanweisungen finden Sie unter [[!DNL Product Recommendations] Workspace](../product-recommendations/workspace.md).
-- [Catalog Service](../catalog-service/guide-overview.md): Bieten Sie Ihren Kunden ein optimiertes Produkterlebnis und steigern Sie gleichzeitig die Leistung, die Skalierbarkeit und die Konversionen.
+- **Catalog-services-Modell** - Verwendet [!DNL Catalog Service] mit [!DNL Live Search] und [!DNL Product Recommendations], um Katalogdaten, Suchen und Empfehlungen für Storefronts bereitzustellen.
+- [**Composable Catalog Data Model (CCDM)**(merchandising-services.md)] - Verwendet Katalogansichten, Richtlinien, Katalogquellen und Preisbücher, um die Produkte und Preise zu definieren, die für Storefronts verfügbar sind. CCDM ist auch die Kataloggrundlage für [!DNL Adobe Commerce Optimizer].
 
-  >[!NOTE]
-  >
-  >Der Katalog-Service ist in [!DNL Live Search] und [!DNL Product Recommendations] automatisch enthalten.
-
-- [Payment Services](../payment-services/guide-overview.md) - Steigern Sie die Kundenzufriedenheit, indem Sie verschiedene Zahlungsmethoden, einschließlich zinsfreier Raten, und einen einzigen Überblick über die Verarbeitung, Bestellungen und Rechnungen anbieten. Konfigurationsanweisungen finden Sie unter [Payment Services Home](../payment-services/payments-home.md).
+[Payment Services](../payment-services/guide-overview.md) unterstützt Zahlungsmethoden und bietet eine Ansicht der Zahlungsverarbeitung, Bestellungen und Rechnungen. Konfigurationsanweisungen finden Sie unter [Payment Services Home](../payment-services/payments-home.md).
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -154,7 +149,7 @@ Die Integration stellt sicher, dass digitale Assets, wie Produktbilder oder Mark
 
 Alternativ bieten die nativen Funktionen in [!DNL Adobe Commerce as a Cloud Service] grundlegende Asset-Management-Tools zum Speichern und Verwalten digitaler Assets.
 
-Weitere Informationen zur Integration von [&#128279;](../aem-assets-integration/overview.md) mit [!DNL Adobe Commerce as a Cloud Service] finden Sie im Handbuch zur Integration von [!DNL Product Visuals powered by AEM Assets] mit.
+Weitere Informationen zur Integration von ](../aem-assets-integration/overview.md) mit [!DNL Adobe Commerce as a Cloud Service] finden Sie im Handbuch zur [Integration von [!DNL Product Visuals powered by AEM Assets] mit.
 
 ### [!DNL Product Visuals] oder [!DNL AEM Assets]
 
@@ -238,7 +233,7 @@ Zu den wichtigsten Funktionen gehören:
 
 ### Vereinfachtes Onboarding
 
-Starten Sie Sandbox- und Produktionsinstanzen in Minutenschnelle mit dem [!UICONTROL Commerce Cloud Manager] Self-Service-Bereitstellungsportal. Alles, was Sie benötigen, einschließlich Merchandising-Services, einer Headless-Commerce-Instanz und [!DNL App Builder], wird automatisch konfiguriert und in Ihre Instanzen integriert.
+Starten Sie Sandbox- und Produktionsinstanzen in Minutenschnelle mit dem [!UICONTROL Commerce Cloud Manager] Self-Service-Bereitstellungsportal. Die benötigte Infrastruktur, einschließlich Merchandising-Services, einer Headless-Commerce-Instanz und [!DNL App Builder], wird automatisch konfiguriert und in Ihre Instanzen integriert.
 
 Unter [Erste Schritte](getting-started.md) erfahren Sie, wie Sie Commerce-Instanzen erstellen und verwalten.
 
@@ -250,7 +245,7 @@ Der typische Upgrade-Prozess für Adobe Commerce in Cloud umfasste das Erstellen
 
 >[!NOTE]
 >
->Adobe garantiert Abwärtskompatibilität für alle Updates. Das bedeutet, dass Aktualisierungen, die angewendet werden, vorhandene Funktionen oder Anpassungen, die dem Modell der „API-First[Erweiterbarkeit“ &#x200B;](https://developer.adobe.com/commerce/extensibility/), nicht beeinträchtigen.
+>Adobe garantiert Abwärtskompatibilität für alle Updates. Das bedeutet, dass Aktualisierungen, die angewendet werden, vorhandene Funktionen oder Anpassungen, die dem Modell der „API-First[Erweiterbarkeit“ ](https://developer.adobe.com/commerce/extensibility/), nicht beeinträchtigen.
 
 ### Integrationen von Drittanbietern
 
@@ -259,7 +254,7 @@ Entwickler können umfassende [GraphQL](https://developer.adobe.com/commerce/web
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->
