@@ -64,9 +64,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 7b6ed19c7ca30a72bda94c8af60ba27324bcb2ea
+source-git-commit: 213fcf83118eb60b0e80db224192963592945d8d
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1416'
 ht-degree: 0%
 ---
 # Übersicht über [!DNL Adobe Commerce as a Cloud Service]
@@ -135,7 +135,7 @@ Um in Minutenschnelle umfassende Erlebnisse mit einfacher dokumentbasierter Bear
 Merchandising Services unterstützt in [!DNL Adobe Commerce as a Cloud Service] zwei Katalogdatenmodelle:
 
 - **Catalog-services-Modell** - Verwendet [!DNL Catalog Service] mit [!DNL Live Search] und [!DNL Product Recommendations], um Katalogdaten, Suchen und Empfehlungen für Storefronts bereitzustellen.
-- [**Composable Catalog Data Model (CCDM)**(merchandising-services.md)] - Verwendet Katalogansichten, Richtlinien, Katalogquellen und Preisbücher, um die Produkte und Preise zu definieren, die für Storefronts verfügbar sind. CCDM ist auch die Kataloggrundlage für [!DNL Adobe Commerce Optimizer].
+- [**Composable Catalog Data Model (CCDM)**](merchandising-services.md) - Verwendet Katalogansichten, Richtlinien, Katalogquellen und Preisverzeichnisse, um die für Storefronts verfügbaren Produkte und Preise zu definieren. CCDM ist auch die Kataloggrundlage für [!DNL Adobe Commerce Optimizer].
 
 [Payment Services](../payment-services/guide-overview.md) unterstützt Zahlungsmethoden und bietet eine Ansicht der Zahlungsverarbeitung, Bestellungen und Rechnungen. Konfigurationsanweisungen finden Sie unter [Payment Services Home](../payment-services/payments-home.md).
 
