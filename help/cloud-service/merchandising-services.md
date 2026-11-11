@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: c67e36c5a607fa1112a3a34b71c89de1b0162b10
+source-git-commit: 0bda134570bb3bf2f43da545917dedc95394df5e
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '947'
 ht-degree: 0%
 ---
 
@@ -75,9 +75,9 @@ In diesem Thema wird erläutert, was sich mit CCDM ändert, welche Funktionen we
 
 ## Welche Änderungen führt CCDM ein?
 
-Das ursprüngliche Katalogmodell verwendet den Katalog-Service, um Produktdaten an Storefronts bereitzustellen, wobei Live Search und Product Recommendations Such-, Merchandising- und Empfehlungsfunktionen bieten. In diesem Modell synchronisiert Commerce mithilfe des [SaaS-Datenexports](https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/overview).
+Das ursprüngliche Katalogmodell verwendet den Katalog-Service, um Produktdaten an Storefronts bereitzustellen, wobei Live Search und Product Recommendations Such-, Merchandising- und Empfehlungsfunktionen bieten. In diesem Modell synchronisiert Commerce mithilfe des [SaaS-Datenexports](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview).
 
-Beim CCDM basieren diese Funktionen auf derselben Katalogbasis, die auch Adobe Commerce Optimizer unterstützt. [Katalogansichten](../optimizer/setup/catalog-view.md) und [Richtlinien](../optimizer/setup/policies.md) definieren den Katalogkontext, der für eine Storefront verfügbar ist. Richtlinien bestimmen das Produktsortiment, und Merchandising-Regeln können für alle Katalogansichten gelten oder auf eine bestimmte Ansicht zugeschnitten sein.
+Beim CCDM basieren diese Funktionen auf derselben Katalogbasis, die auch Adobe Commerce Optimizer unterstützt. [Katalogansichten](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) und [Richtlinien](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies) definieren den Katalogkontext, der für eine Storefront verfügbar ist. Richtlinien bestimmen das Produktsortiment, und Merchandising-Regeln können für alle Katalogansichten gelten oder auf eine bestimmte Ansicht zugeschnitten sein.
 
 Dies ändert die Art und Weise, wie der Katalog konfiguriert, aufgerufen und vermarktet wird. CDM baut auf den Such-, Recommendations- und Merchandising-Funktionen des ursprünglichen Commerce-Katalogs auf und führt gleichzeitig Steuerelemente auf Katalogansichtsebene ein. Im Folgenden werden zusätzliche Management- und Reporting-Funktionen beschrieben.
 
@@ -99,9 +99,9 @@ Die folgende Abbildung zeigt die Position von Merchandising Services in der umfa
 
 ## Was gibt es Neues für Händler?
 
-Mit dem neuen Modell können Sie bestehende Merchandising-Regeln auf alle Katalogansichten oder auf eine bestimmte Ansicht beschränken. Auf diese Weise können Sie Merchandising auf jede Storefront-Zielgruppe anwenden. Erfahren Sie, wie [eine Merchandising-Regel auf Katalogansichten &#x200B;](../optimizer/merchandising/rules/add.md#create-a-rule).
+Mit dem neuen Modell können Sie bestehende Merchandising-Regeln auf alle Katalogansichten oder auf eine bestimmte Ansicht beschränken. Auf diese Weise können Sie Merchandising auf jede Storefront-Zielgruppe anwenden. Erfahren Sie, wie [eine Merchandising-Regel auf Katalogansichten ](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add).
 
-Im Admin-Bereich können Sie den Katalogkontext mit [!UICONTROL Catalog Views] und [!UICONTROL Policies] konfigurieren. Sie können [!UICONTROL Success Metrics] auch verwenden, um Umsatz, Konversion, Interaktion, Akquise und Absprungrate zu überprüfen. Siehe [Erfolgsmetriken](../optimizer/manage-results/success-metrics.md) für Details.
+Im Admin-Bereich können Sie den Katalogkontext mit [!UICONTROL Catalog Views] und [!UICONTROL Policies] konfigurieren. Sie können [!UICONTROL Success Metrics] auch verwenden, um Umsatz, Konversion, Interaktion, Akquise und Absprungrate zu überprüfen. Siehe [Erfolgsmetriken](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics) für Details.
 
 ## Überlegungen vor der Einführung
 
@@ -126,7 +126,7 @@ Wie Ihre Storefront Katalogdaten abruft, hängt von Ihrer Implementierung ab:
 
 ### Admin-Erfahrung
 
-Adobe Commerce as a Cloud Service mit CCDM verwendet [[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/de/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell). Adobe hat Unified Shell getrennt von CCDM veröffentlicht. Vorhandene Instanzen im ursprünglichen Katalog-Service-Modell behalten den Zugriff auf Classic und Unified Shell.
+Adobe Commerce as a Cloud Service mit CCDM verwendet [[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell). Adobe hat Unified Shell getrennt von CCDM veröffentlicht. Vorhandene Instanzen im ursprünglichen Katalog-Service-Modell behalten den Zugriff auf Classic und Unified Shell.
 
 ### Beschränkungen
 
@@ -136,6 +136,6 @@ Das CCDM-Modell ändert keine Adobe Commerce as a Cloud Service-Beschränkungen.
 
 Organisationen, die nach dieser Version mit Adobe Commerce as a Cloud Service beginnen, erhalten standardmäßig Merchandising-Services. Wenn Ihr Unternehmen das ursprüngliche Katalogdatenmodell benötigt, wenden Sie sich an Ihr Adobe-Accountteam, um zu besprechen, ob eine Ausnahme verfügbar ist.
 
-Organisationen, die Adobe Commerce as a Cloud Service vor dieser Version verwendet haben, können bei der Bereitstellung [&#x200B; neuen Instanz entweder das Katalogmodell &#x200B;](./getting-started.md#create-an-instance). Standardmäßig ist der [!UICONTROL Enable CCDM] deaktiviert. Sobald CDM aktiviert ist, können Sie es nicht mehr deaktivieren.
+Organisationen, die Adobe Commerce as a Cloud Service vor dieser Version verwendet haben, können bei der Bereitstellung [ neuen Instanz entweder das Katalogmodell ](./getting-started.md#create-an-instance). Standardmäßig ist der [!UICONTROL Enable CCDM] deaktiviert. Sobald CDM aktiviert ist, können Sie es nicht mehr deaktivieren.
 
 Vorhandene Instanzen ändern sich nicht automatisch. Bei allgemeiner Verfügbarkeit (General Availability, GA) können Sie keine vorhandene ursprüngliche Catalog-Services-Instanz zu Merchandising-Services migrieren.
