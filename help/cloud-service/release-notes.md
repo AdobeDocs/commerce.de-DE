@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ab9c4d33ab0254c0c4ba990cd91ed01226d3abb9
+source-git-commit: 2123503aaa8088baab9b9a5e3ce9c3036518061e
 workflow-type: tm+mt
-source-wordcount: '9964'
+source-wordcount: '10011'
 ht-degree: 0%
 ---
 # Versionshinweise
@@ -84,11 +84,11 @@ Weitere Informationen finden Sie unter [Commerce Admin in Adobe Unified Experien
 
 ## November 2026 - #1 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produktion]{type=Neutral tooltip="Die aufgelisteten Elemente sind derzeit in Produktionsumgebungen verfügbar."}
 
-Die folgenden Elemente werden am 10. November 2026 in Produktionsumgebungen veröffentlicht.
+Die folgenden Elemente wurden am 10. November 2026 in Produktionsumgebungen veröffentlicht.
 
 >[!BEGINSHADEBOX]
 
@@ -109,7 +109,7 @@ Mit dem neuen `plugin.magento.out_of_process_shipping_methods.api.shipment_item_
 
 ### Lieferadressen einschließen
 
-Für neue nicht virtuelle Bestellungen, die über die `POST /V1/orders`- und `PUT /V1/orders/create` REST-Endpunkte erstellt wurden, ist jetzt eine Versandadresse erforderlich. Anfragen ohne Versandadresse geben einen HTTP-400-Fehler zurück. Durch diese Änderung wird verhindert, dass Bestellungen ohne Versandinformationen zu E-Mail-Fehlern bei Bestellungen führen. <!-- CCSAAS-5351 -->
+Für neue nicht virtuelle Bestellungen, die über die `POST /V1/orders`- und `PUT /V1/orders/create` REST-Endpunkte erstellt wurden, ist jetzt eine [Versandadresse](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management#shipping-address-requirement-for-new-orders) erforderlich. Anfragen ohne Versandadresse geben einen HTTP-400-Fehler zurück. Durch diese Änderung wird verhindert, dass Bestellungen ohne Versandinformationen zu E-Mail-Fehlern bei Bestellungen führen. <!-- CCSAAS-5351 -->
 
 So erstellen Sie eine Bestellung ohne Versandadresse:
 
@@ -118,15 +118,15 @@ So erstellen Sie eine Bestellung ohne Versandadresse:
 
 ### [!DNL AEM Assets] Kategoriebilder abrufen
 
-Die `CategoryInterface`- und `CategoryTree` GraphQL-Typen enthalten jetzt ein `asset_role_image` Feld, das das Kategoriebild zurückgibt, das von [!DNL AEM Assets] zugewiesen wurde. <!-- ACCS-2180 -->
+Die `CategoryInterface`- und `CategoryTree` GraphQL-Typen enthalten jetzt ein [`asset_role_image`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/interfaces/category#aem-assets-category-images) Feld, das das Kategoriebild zurückgibt, das von [!DNL AEM Assets] zugewiesen wurde. <!-- ACCS-2180 -->
 
 ### Debitorenspeicher-Habensalden abrufen
 
-Der neue `GET /V1/customers/:customerId/balance` REST-Endpunkt gibt den Speicherguthaben eines Kunden zurück. Dieser Endpunkt erfordert die Berechtigung [!UICONTROL Manage Store Credit Balances] . <!-- CCSAAS-5274 -->
+Der neue [`GET /V1/customers/:customerId/balance`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit#retrieve-a-customers-store-credit-balance) REST-Endpunkt gibt den Speicherguthaben eines Kunden zurück. Dieser Endpunkt erfordert die Berechtigung [!UICONTROL Manage Store Credit Balances] . <!-- CCSAAS-5274 -->
 
 ### Abrufen der Zeilensummen der Rechnungselemente
 
-Der `InvoiceItemInterface` GraphQL-Typ enthält jetzt ein `row_total`, das die gespeicherte Zeilenzwischensumme für einen Rechnungsartikel zurückgibt. <!-- USF-4460 -->
+Der [`InvoiceItemInterface`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/interfaces/invoice-item#invoice-item-row-totals) GraphQL-Typ enthält jetzt ein `row_total`, das die gespeicherte Zeilenzwischensumme für einen Rechnungsartikel zurückgibt. <!-- USF-4460 -->
 
 ### Verbesserungen und Fehlerbehebungen
 
@@ -153,6 +153,8 @@ Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen s
 * Es wurde ein Problem behoben, bei dem die `addProductsToCart` GraphQL-Mutation einen Fehler zurückgeben konnte, wenn der Nicht-Prozess-Gesamtkollektor verwendet wurde. <!-- ACCS-2263, CEXT-6986 -->
 
 * Es wurde ein Problem behoben, bei dem Abfragen und Mutationen des GraphQL-Warenkorbs einen Fehler zurückgeben konnten, nachdem ein konfigurierbares Produkt aus einem Warenkorb gelöscht wurde.<!-- CCSAAS-5721 -->
+
+* Es wurde ein Problem behoben, bei dem das Speichern oder Abrufen eines Kunden mit vielen gespeicherten Adressen zu einer Zeitüberschreitung führen konnte. <!-- CCSAAS-5599 -->
 
 {{accs-release}}
 

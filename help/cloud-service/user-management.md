@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 8ed4d2fa87f7a91c3c9c21817391003488c55046
+source-git-commit: 560ae770ae76d28e3358fb4f195aa1f2a03362c8
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1959'
 ht-degree: 0%
 ---
 # Benutzer und Identity Management
@@ -53,7 +53,7 @@ Für diesen Prozess ist eine IMS-Organisation mit Zugriff auf [!DNL Adobe Commer
 
 ## Grundlegendes zu Rollen
 
-Die folgenden Rollen sind für [!DNL Adobe Commerce as a Cloud Service] verfügbar. Um diese Rollen anzuzeigen oder zu bearbeiten, navigieren Sie in der Commerce-Admin zu [!UICONTROL **System**] > [!UICONTROL **Berechtigungen**] > [!UICONTROL **Benutzerrollen**].
+Die folgenden Rollen sind für [!DNL Adobe Commerce as a Cloud Service] verfügbar. Um diese Rollen anzuzeigen oder zu bearbeiten, navigieren Sie in der Commerce-Admin zu [!UICONTROL **System**] > [!UICONTROL **Benutzerrollen**].
 
 Sie können in Commerce Admin benutzerdefinierte Rollen erstellen, um Benutzenden detailliertere Berechtigungen als den standardmäßigen Adobe Admin Console-Rollen zuzuweisen. Benutzerdefinierte Commerce-Rollen und -Zuweisungen bleiben erhalten, wenn sich Benutzerinnen und Benutzer anschließend über Adobe IMS anmelden. Benutzerinnen und Benutzer müssen weiterhin über Adobe Admin Console Zugriff auf die Adobe Commerce as a Cloud Service-Instanz haben. Um benutzerdefinierte Rollen zu erstellen, [definieren Sie Rollen im Commerce Admin](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role).
 
@@ -203,7 +203,7 @@ Um Entwickler und Produktprofil-Administrierende hinzuzufügen, wiederholen Sie 
 
 ## Rollenressourcen
 
-In der folgenden Liste werden die Ressourcen beschrieben, für die Standardrollen über die Berechtigung zum Zugriff innerhalb der [!DNL Adobe Commerce] Admin verfügen. Um die Standardberechtigungen für die einzelnen Rollen zu bearbeiten, navigieren Sie zu [!UICONTROL **System**] > [!UICONTROL **Berechtigungen**] > [!UICONTROL **Benutzerrollen**] in Commerce Admin.
+In der folgenden Liste werden die Ressourcen beschrieben, für die Standardrollen über die Berechtigung zum Zugriff innerhalb der [!DNL Adobe Commerce] Admin verfügen. Um die Standardberechtigungen für die einzelnen Rollen zu bearbeiten, navigieren Sie im Commerce [!UICONTROL **Admin zu**] System > [!UICONTROL **Benutzerrollen**] .
 
 **Benutzer**
 

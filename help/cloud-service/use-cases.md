@@ -42,9 +42,9 @@ topic_v2:
     internal-label: Experimentation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b2859807f154770698ad4bcc8fd1acbc81c0114f
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1467'
 ht-degree: 0%
 ---
 # Anwendungsszenarien
@@ -71,7 +71,7 @@ Dieser Workflow zeigt den Checkout-Prozess für einen Kunden, der ein Produkt in
 
 ### Zahlungsdienste aktivieren
 
-1. Navigieren Sie in Commerce Admin zu [!UICONTROL **Stores**] > [!UICONTROL Settings] > [!UICONTROL **Configuration**] > [!UICONTROL **Zahlungsmethoden**].
+1. Navigieren Sie in Commerce Admin zu [!UICONTROL **Stores**] > [!UICONTROL **Zahlungsmethoden**].
 
 1. Geben [!UICONTROL **im Abschnitt „Allgemeine**]&quot; Ihre `Payment Services Sandbox ID` und `Payment Services Sandbox Key` ein. Sie können diese IDs abrufen, indem Sie die unter &quot;[-Onboarding“ beschriebenen Schritte &#x200B;](../payment-services/sandbox.md#sandbox-onboarding){target="_blank"}
 
