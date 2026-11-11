@@ -99,7 +99,7 @@ Die folgende Abbildung zeigt die Position von Merchandising Services in der umfa
 
 ## Was gibt es Neues für Händler?
 
-Mit dem neuen Modell können Sie bestehende Merchandising-Regeln auf alle Katalogansichten oder auf eine bestimmte Ansicht beschränken. Auf diese Weise können Sie Merchandising auf jede Storefront-Zielgruppe anwenden. Erfahren Sie, wie [eine Merchandising-Regel auf Katalogansichten ](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add).
+Mit dem neuen Modell können Sie bestehende Merchandising-Regeln auf alle Katalogansichten oder auf eine bestimmte Ansicht beschränken. Auf diese Weise können Sie Merchandising auf jede Storefront-Zielgruppe anwenden. Erfahren Sie, wie [eine Merchandising-Regel auf Katalogansichten &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add).
 
 Im Admin-Bereich können Sie den Katalogkontext mit [!UICONTROL Catalog Views] und [!UICONTROL Policies] konfigurieren. Sie können [!UICONTROL Success Metrics] auch verwenden, um Umsatz, Konversion, Interaktion, Akquise und Absprungrate zu überprüfen. Siehe [Erfolgsmetriken](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics) für Details.
 
@@ -136,6 +136,6 @@ Das CCDM-Modell ändert keine Adobe Commerce as a Cloud Service-Beschränkungen.
 
 Organisationen, die nach dieser Version mit Adobe Commerce as a Cloud Service beginnen, erhalten standardmäßig Merchandising-Services. Wenn Ihr Unternehmen das ursprüngliche Katalogdatenmodell benötigt, wenden Sie sich an Ihr Adobe-Accountteam, um zu besprechen, ob eine Ausnahme verfügbar ist.
 
-Organisationen, die Adobe Commerce as a Cloud Service vor dieser Version verwendet haben, können bei der Bereitstellung [ neuen Instanz entweder das Katalogmodell ](./getting-started.md#create-an-instance). Standardmäßig ist der [!UICONTROL Enable CCDM] deaktiviert. Sobald CDM aktiviert ist, können Sie es nicht mehr deaktivieren.
+Organisationen, die Adobe Commerce as a Cloud Service vor dieser Version verwendet haben, können bei der Bereitstellung [&#x200B; neuen Instanz entweder das Katalogmodell &#x200B;](./getting-started.md#create-an-instance). Standardmäßig ist der [!UICONTROL Enable CCDM] deaktiviert. Sobald CDM aktiviert ist, können Sie es nicht mehr deaktivieren.
 
 Vorhandene Instanzen ändern sich nicht automatisch. Bei allgemeiner Verfügbarkeit (General Availability, GA) können Sie keine vorhandene ursprüngliche Catalog-Services-Instanz zu Merchandising-Services migrieren.
