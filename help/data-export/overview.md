@@ -1,6 +1,6 @@
 ---
 title: '[!DNL SaaS Data Export Guide]'
-description: Erfahren Sie mehr über die Verwendung  [!DNL data export]  Erweiterung für Adobe Commerce SaaS-Services, die Daten zwischen Adobe Commerce und verbundenen Commerce-Services synchronisiert.
+description: Erfahren Sie mehr über die Verwendung der [!DNL data export]-Erweiterung für Adobe Commerce SaaS-Services, die Daten zwischen Adobe Commerce und verbundenen Commerce-Services synchronisiert.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
@@ -29,20 +29,18 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
 workflow-type: tm+mt
-source-wordcount: 402
-ht-degree: 0%
-
+source-wordcount: '403'
+ht-degree: 5%
 ---
-
 # Handbuch zu [!DNL SaaS Data Export]
 
 [!DNL SaaS data export] synchronisiert Daten zwischen einer Adobe Commerce-Instanz und verbundenen Commerce Services. Beim Hinzufügen von Live Search, Produktempfehlungen, dem Katalog-Service oder der [!DNL Adobe Commerce Optimizer Connector] zu einer Adobe Commerce-Installation wird die [!DNL Data Export] automatisch installiert.
 
 >[!NOTE]
 >
->Wenn Sie die [!DNL Adobe Commerce Optimizer Connector] installieren, erfasst dieselbe [!DNL Data Export]-Erweiterung Katalog- und Preis-Feeds von [!DNL Adobe Commerce]. Der Connector ordnet diese Feeds dann [!DNL Adobe Commerce Optimizer] zu und übermittelt sie mithilfe des Composable Catalog Data Model (CCDM). In der [[!DNL Adobe Commerce Optimizer Connector] Übersicht](../aco-connector/overview.md) finden Sie Informationen zum Setup und zur Architektur sowie [Connector-Sync](../aco-connector/connector-sync-pipeline.md)Pipeline) für das Synchronisierungsverhalten nach dem Export.
+>Wenn Sie die [!DNL Adobe Commerce Optimizer Connector] installieren, erfasst dieselbe [!DNL Data Export]-Erweiterung Katalog- und Preis-Feeds von [!DNL Adobe Commerce]. Der Connector ordnet diese Feeds dann [!DNL Adobe Commerce Optimizer] zu und übermittelt sie mithilfe des zusammensetzbaren Katalogdatenmodells (CCDM). In der [[!DNL Adobe Commerce Optimizer Connector] Übersicht](../aco-connector/overview.md) finden Sie Informationen zum Setup und zur Architektur sowie [Connector-Sync](../aco-connector/connector-sync-pipeline.md)Pipeline) für das Synchronisierungsverhalten nach dem Export.
 
 SaaS-Datenexport erfasst und exportiert verschiedene Datentypen, so genannte _Feeds_, mit denen bestimmte Arten von Informationen aggregiert werden. Je nachdem, welche Commerce-Services installiert sind, umfassen die SaaS-Datenexport-Feeds Folgendes:
 
