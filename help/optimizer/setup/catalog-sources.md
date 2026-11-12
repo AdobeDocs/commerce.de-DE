@@ -3,7 +3,7 @@ title: Katalogquellen
 description: Erfahren Sie, was Katalogquellen sind und wie sie den autorisierenden Umfang von Produkten, Attributen und Kategorien für das Such-, Filter- und Sortierverhalten definieren.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 autotag-review: '2026-06-09T19:36:23.516Z'
 TQID: 'https://experienceleague.adobe.com/MiLbuYx6Pf95n3jvrgvou05Ery9XHXskx8p6KrN6CYg'
 product_v2:
@@ -34,46 +34,11 @@ topic_v2:
     internal-label: Data modeling
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: dd0ff00127242a63faf1eac1fa614673d73a7f24
 workflow-type: tm+mt
-source-wordcount: 457
+source-wordcount: '53'
 ht-degree: 0%
-
 ---
-
 # Katalogquellen
 
-Katalogquellen stellen autoritative Bereiche von Produkten, Attributen und Kategorien dar. Sie werden normalerweise Sprachgrenzen, Zielgruppen- oder Systemgrenzen zugeordnet und bestimmen das Such-, Filter- und Sortierverhalten.
-
-## Katalogquellen im Vergleich zu verwandten Konzepten
-
-Wenn Sie verstehen, wie Katalogquellen mit anderen [!DNL Adobe Commerce Optimizer] Konzepten zusammenhängen, können Sie Ihre Daten korrekt modellieren:
-
-* **Katalogquelle** - Der zugrunde liegende Datenkontext, der Produktinformationen bereitstellt. Eine Katalogquelle ist normalerweise ein Gebietsschema (z. B. `en-US`, `fr-CA`) oder ein externes System wie ein PIM oder ERP. Produkte, Attribute, Metadaten und Kategorien sind alle pro Katalogquelle enthalten. Stellen Sie sich eine Katalogquelle vor *aus* die Rohkatalogdaten stammen und *wie* sie sich auf die Produkterkennung auswirken (Suchergebnisse, Filterung und Sortierverhalten).
-
-* **[Katalogansicht](catalog-view.md)** - Eine konfigurierte Ansicht Ihres Katalogs für eine bestimmte Geschäftsanforderung. Wenn Sie eine Katalogansicht erstellen, wählen Sie die zu verwendende Katalogquelle (oder das zu verwendende Gebietsschema) aus und fügen dann [Richtlinien](policies.md) hinzu, um zu filtern, welche Produkte sichtbar sind, und verknüpfen [Preislisten](pricebooks.md) um die Preise zu steuern. Eine einzelne Katalogquelle kann für viele Katalogansichten verwendet werden (z. B. eine `en-US` mit separaten Katalogansichten für verschiedene Marken oder Regionen). Stellen Sie sich eine Katalogansicht wie *vor* wie Sie diese Daten einer Storefront, einem Kanal oder einer Zielgruppe bereitstellen.
-
-* **[Katalogebene](catalog-layer.md)** - Eine Ebene, die auf die Basiskatalogdaten angewendet wird, um Produktattribute (Name, Beschreibung, Bilder, Metadaten) zu ändern, ohne die Quelldaten zu ändern. Verwenden Sie Katalogebenen, wenn Unterschiede sich nur auf die Storefront-Anzeige auswirken dürfen - nicht auf die Produkterkennung.
-
-## Regeln und Einschränkungen
-
-* Jede Katalogquelle wird durch Aufnahme eines Produkts über die Datenaufnahme-API erstellt. Weitere Informationen finden [&#x200B; unter &#x200B;](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) - Datenaufnahme .
-* Die Einzigartigkeit des Produkts wird durch die SKU und die Katalogquelle bestimmt.
-* Käufer greifen nicht direkt auf Katalogquellen zu. Katalogdaten werden über (Katalogansichten[&#x200B; der Storefront &#x200B;](catalog-view.md).
-
-## Modellierungsanleitung
-
-Verwenden Sie die folgenden Anleitungen, wenn Sie entscheiden, wie Sie Ihre Katalogquellen strukturieren möchten:
-
-* Erstellen Sie für jede Katalogsprache eine separate Katalogquelle.
-* Verwenden Sie separate Katalogquellen, wenn Produkt- und Attributunterschiede das Such-, Filter- oder Sortierverhalten beeinflussen müssen (z. B. unterschiedliche Durchsuchbarkeit, Filterbarkeit oder Facettenkonfiguration für dasselbe Attribut).
-* Verwenden Sie [Katalogebenen](catalog-layer.md) wenn Produkt- und Attributunterschiede nur die Anzeige in der Storefront betreffen sollen, nicht die Produkterkennung.
-
->[!MORELIKETHIS]
->
-> * [Katalogansichten](catalog-view.md) - Konfigurieren gefilterter, preisgesteuerter Ansichten über einer Katalogquelle
-> * [Katalogebenen](catalog-layer.md) - Ändern der Produktpräsentation ohne Änderung der Quelldaten
-> * [Richtlinien](policies.md) - Erstellen von attributbasierten Filtern für Katalogansichten
-> * [Preisbücher](pricebooks.md) - Verwalten von Preisstrukturen für verschiedene Kundensegmente
-> * [Eingeschränkte Zugriffsschlüssel](restricted-access-keys.md) - Schützen einer Katalogansicht mit Authentifizierung mit signierten Token
-
+{{$include /help/_includes/ccdm-shared/setup/catalog-sources.md}}

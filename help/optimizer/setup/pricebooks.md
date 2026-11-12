@@ -1,9 +1,9 @@
 ---
 title: Preisbücher
-description: Erfahren Sie, wie Sie Preislisten in  [!DNL Adobe Commerce Optimizer] verwalten.
+description: Erfahren Sie, wie Sie Preisbücher in [!DNL Adobe Commerce Optimizer] verwalten.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
 TQID: https://experienceleague.adobe.com/-vL79MMePcUdhE-gPwjFJZStZUtNLKAUxpePm4Fvmfk
 product_v2:
@@ -17,26 +17,46 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
+source-git-commit: cde6d0c92f4c169588164c22c948d1b287873bdd
 workflow-type: tm+mt
-source-wordcount: 405
+source-wordcount: '595'
 ht-degree: 0%
-
 ---
-
 # Preisbücher
 
-Mit Preislisten können Sie Produktpreise für eine Katalogquelle über verschiedene Kundenebenen und Märkte hinweg definieren. Preisbücher unterstützen ein hierarchisches Modell, das bis zu drei Ebenen verschachtelter untergeordneter Preisbücher unter jedem Grundpreisbuch ermöglicht. Jedes Preisbuch kann auf ein übergeordnetes Preisbuch verweisen und so eine Baumstruktur für Preiskatalogquellen bilden.
+Preisbücher definieren Produktpreise für eine Katalogquelle über Kundenebenen und Märkte hinweg. Sie unterstützen ein hierarchisches Modell, das bis zu drei Ebenen verschachtelter untergeordneter Preisbücher unter jedem Grundpreisbuch zulässt. Jedes Preisbuch kann auf ein übergeordnetes Preisbuch verweisen und so eine Baumstruktur für Preiskatalogquellen bilden.
 
 ![Preisbuchhierarchie](../assets/price-book-hier.png)
 
 Der Basispreis definiert die Währung für sich selbst und alle untergeordneten Preisbücher. Untergeordnete Preisbücher übernehmen diese Währung und können sie nicht überschreiben.
 
-## Preislisten zu [!DNL Adobe Commerce Optimizer] hinzufügen
+## Schlüsselkonzepte
+
+| Begriff | Beschreibung |
+| ------ | ------------- |
+| **Preisbuch** | Logische Gruppierung, die Preise für eine Katalogquelle definiert, z. B. eine bestimmte Region oder Kundenebene, und zur Verwaltung von Produktpreisen verwendet wird. |
+| **Fallback-Preisbuch** | Das beste Preisbuch in einer Hierarchie. Es hat kein übergeordnetes Element und ist das *einzige* Preisbuch, das die Währung für sich selbst und alle seine untergeordneten Preisbücher definiert.<br/><br/>Wenn bei der Erstellung des Preisbuchs (über die API) kein übergeordnetes Element definiert wird, wird ein neues Fallback-Preisbuch erstellt. |
+| **Übergeordnetes Preisbuch** | Ein übergeordnetes Preisbuch, aus dem ein untergeordnetes Preisbuch Preise übernehmen kann, wenn diese nicht explizit im Kind festgelegt sind. |
+| **Hierarchietiefe** | Maximal drei Ebenen (Fallback -> Untergeordnet -> Enkelkind), <br/><br/> bei der Aufnahme nicht erzwungen werden. |
+| **Währung** | Wird nur für das Fallback-Preisbuch definiert. Von allen untergeordneten Preisbüchern übernommen.<br/><br/>Wenn die Währung bei der Erstellung des Fallback-Preisbuchs (über die API) nicht angegeben wird, wird die Währung standardmäßig auf USD festgelegt. |
+| **Produktpreis** | Der spezifische Preis, der einem Produkt (SKU) innerhalb eines bestimmten Preisbuchs zugewiesen ist. |
+| **Rabatte** | Rabatte sind im Produktpreis definiert. Nicht vererbt. |
+
+## Preisbuchumsetzung
+
+Die Preisbuchimplementierung variiert je nach Commerce-Bereitstellung.
+
+* In Adobe Commerce Optimizer-Instanzen mit Commerce-Backends von Drittanbietern werden Preislisten mithilfe der Datenaufnahme-REST-API erstellt. Sie können sie über den Arbeitsbereich Katalogansicht in Commerce Optimizer Studio zuweisen und verwalten.
+
+* In Adobe Commerce as a Cloud Service mit dem Composable Catalog Data Model (CCDM) werden Preislisten aus Adobe Commerce-Katalog- und Preisdaten zugeordnet. Sie können die jeder Katalogansicht zugewiesenen Preislisten über den Commerce-Administrator anzeigen.
+
+* In Adobe Commerce auf Cloud-Infrastrukturen oder On-Premise-Bereitstellungen mit dem Adobe Commerce Optimizer-Connector werden die Preislisten auch aus dem Adobe Commerce-Katalog und den Preisdaten zugeordnet. Sie können die jeder Katalogansicht zugewiesenen Preisverzeichnisse über den Arbeitsbereich Katalogansicht in der verbundenen Commerce Optimizer-Instanz anzeigen.
+
+## Preislisten hinzufügen
 
 Preisverzeichnisse werden mit der Preisbuch-API zu [!DNL Adobe Commerce Optimizer] hinzugefügt. In der [Entwicklerdokumentation](https://developer.adobe.com/commerce/services/reference/rest/) erfahren Sie, wie Sie Preisbücher für [!DNL Adobe Commerce Optimizer] erstellen, aktualisieren und löschen.
 
-## Preislisten in [!DNL Adobe Commerce Optimizer] anzeigen
+## Preislisten anzeigen
 
 Nachdem Sie Preisbücher in [!DNL Adobe Commerce Optimizer] aufgenommen haben, können Sie die Liste der Preisbücher und die entsprechenden IDs auf der Seite **Katalogansicht“**.
 
@@ -52,14 +72,12 @@ Nachdem Sie Preisbücher in [!DNL Adobe Commerce Optimizer] aufgenommen haben, k
 
    ![Preisbuch-Namen und -IDs](../assets/price-book-name-ids.png)
 
-## Schlüsselkonzepte
+## Preisbuchverfügbarkeit konfigurieren
 
-| Begriff | Beschreibung |
-|------|-------------|
-| **Preisbuch** | Logische Gruppierung, die Preise für eine Katalogquelle definiert, z. B. eine bestimmte Region oder Kundenebene, und zur Verwaltung von Produktpreisen verwendet wird. |
-| **Fallback-Preisbuch** | Das beste Preisbuch in einer Hierarchie. Es hat kein übergeordnetes Element und ist das *einzige* Preisbuch, das die Währung für sich selbst und alle seine untergeordneten Preisbücher definiert.<br/><br/>Wenn bei der Erstellung des Preisbuchs (über die API) kein übergeordnetes Element definiert wird, wird ein neues Fallback-Preisbuch erstellt. |
-| **Übergeordnetes Preisbuch** | Ein übergeordnetes Preisbuch, aus dem ein untergeordnetes Preisbuch Preise übernehmen kann, wenn diese nicht explizit im Kind festgelegt sind. |
-| **Hierarchietiefe** | Maximal drei Ebenen (Fallback -> Untergeordnet -> Enkelkind), <br/><br/> bei der Aufnahme nicht erzwungen werden. |
-| **Währung** | Wird nur für das Fallback-Preisbuch definiert. Von allen untergeordneten Preisbüchern übernommen.<br/><br/>Wenn die Währung bei der Erstellung des Fallback-Preisbuchs (über die API) nicht angegeben wird, wird die Währung standardmäßig auf USD festgelegt. |
-| **Produktpreis** | Der spezifische Preis, der einem Produkt (SKU) innerhalb eines bestimmten Preisbuchs zugewiesen ist. |
-| **Rabatte** | Rabatte sind im Produktpreis definiert. Nicht vererbt. |
+Geben Sie die für jede Katalogansicht verfügbaren Preisdaten an, indem Sie die Verfügbarkeit des Preisverzeichnisses für jede Ansicht konfigurieren.
+
+1. Wählen Sie im **Katalogansicht** die Katalogansicht aus, die Sie konfigurieren möchten.
+
+1. Wählen Sie im Abschnitt [!UICONTROL Price Books] die Optionen für den Preiskatalog aus, um die Preise zu konfigurieren, die für Geschäfte verfügbar sind, die durch die Katalogansicht gestützt werden.
+
+1. Klicken Sie auf **[!UICONTROL Save]** , um die Änderungen auf die Katalogansicht anzuwenden.

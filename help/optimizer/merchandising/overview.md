@@ -2,7 +2,7 @@
 title: Übersicht über Merchandising
 description: Erfahren Sie mehr über Merchandising-Funktionen in [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
 TQID: https://experienceleague.adobe.com/GJ7017EEKg4wd4Wjom5-FrEcfrPbmvwEAJw0AFgGc64
 product_v2:
@@ -27,28 +27,11 @@ topic_v2:
     internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
+source-git-commit: 1fb7db58ba92437c6fc894178261754d0394b6cd
 workflow-type: tm+mt
-source-wordcount: 237
+source-wordcount: '35'
 ht-degree: 0%
-
 ---
+# Adobe Merchandising
 
-# Verkauf von Waren
-
-In diesem Abschnitt erfahren Sie, wie Sie durch Produkterkenntnisse und Empfehlungen personalisierte Erlebnisse für Ihre Kunden erstellen können.
-
-## Produkterkennung
-
-Product Discovery stattet Merchandiser mit leistungsstarken Tools aus, um das Einkaufserlebnis zu kuratieren und zu optimieren, sodass Kunden die richtigen Produkte schnell und zum richtigen Zeitpunkt finden können. Durch die Anpassung des Suchverhaltens können Sie die Sichtbarkeit, Relevanz und Konversion von Produkten direkt beeinflussen.
-
-Die Produkterkennung ermöglicht Ihnen Folgendes:
-
-* **Verwenden Sie [semantische Suche](../setup/semantic-search.md)** - Standardmäßig aktiviert in [Einstellungen](../settings.md#advanced-search), um die Relevanz für Abfragen in natürlicher Sprache und mit Absichten zu verbessern. Es sind keine Änderungen an der Attributeinrichtung oder der Storefront erforderlich.
-* **Konfigurieren Sie [Facetten](./facets/overview.md), [Merchandising-Such- und Kategorieregeln](./rules/overview.md) und [Synonyme](./synonyms/overview.md)**, um Käufer mit minimaler Reibung zu den relevantesten Produkten zu führen.
-
-## Recommendations
-
-Recommendations nutzen künstliche Intelligenz und maschinelles Lernen, um aggregiertes Besucherverhalten und Produktinteraktionen in Ihrer Storefront zu analysieren. Durch die Kombination dieser Verhaltensdaten mit Ihrem Produktkatalog liefert [!DNL Adobe Commerce Optimizer] hochgradig personalisierte, relevante Produktvorschläge, die die Kundeninteraktion verbessern und die Konversion steigern.
-
-Recommendations werden auf der Storefront als beschriftete Einheiten angezeigt, z. B. „Kunden, die sich dieses Produkt angesehen haben, haben es ebenfalls angesehen“. Diese Geräte können strategisch auf der gesamten Journey platziert werden. Als Merchandiser können Sie diese Empfehlungseinheiten einfach direkt in [!DNL Adobe Commerce Optimizer] erstellen, verwalten und bereitstellen, um Werbeziele, Crosssell-Strategien und personalisierte Erlebnisse zu unterstützen.
+{{$include /help/_includes/ccdm-shared/merchandising/overview.md}}

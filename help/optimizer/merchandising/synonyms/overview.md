@@ -1,7 +1,7 @@
 ---
 title: Übersicht über Synonyme
-description: Erfahren Sie mehr über Synonyme in  [!DNL Adobe Commerce Optimizer]  und wie sie die Suchergebnisse verbessern.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service und  [!DNL Adobe Commerce Optimizer] Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+description: Erfahren Sie mehr über Synonyme in [!DNL Adobe Commerce Optimizer] und wie sie die Suchergebnisse verbessern.
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 9efa7b7b-4559-4e23-8858-d2f5da90455b
 TQID: https://experienceleague.adobe.com/Y92PBdhfA6TxH1qFWtllycIqB5XuXCtCgT-ezYvOKhk
 product_v2:
@@ -17,15 +17,11 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
+source-git-commit: 38a78729200299094cf48e30d7bbeba16d83dccf
 workflow-type: tm+mt
-source-wordcount: 158
+source-wordcount: '39'
 ht-degree: 0%
-
 ---
-
 # Synonyme
 
-Synonyme erweitern die Suchabfrage um Wörter, die Käufer möglicherweise verwenden, die sich von denen in Ihrem Katalog unterscheiden. Sie wollen keinen Verkauf verlieren, weil jemand ein „Sofa“ sucht, während Ihr Produkt als „Couch“ aufgeführt ist. Sie können eine breite Palette von Suchbegriffen erfassen, indem Sie alle möglichen Wörter eingeben, die Kunden verwenden könnten, um Ihre Produkte zu finden.
-
-[Semantische Suche](../../setup/semantic-search.md) ist standardmäßig aktiviert und kann auch ähnlichen Begriffen und natürlicher Sprache entsprechen, indem die Bedeutung anstelle von exaktem Text verstanden wird. Die semantische Suche reduziert möglicherweise den Bedarf an allgemeinen Synonymen (z. B. „Couch“ und „Sofa„); Sie benötigen möglicherweise weiterhin Synonyme für markenspezifische oder hochtechnische Begriffe. Sie können Synonyme und semantische Suche gemeinsam verwenden.
+{{$include /help/_includes/ccdm-shared/merchandising/synonyms/overview.md}}

@@ -24,7 +24,7 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
 workflow-type: tm+mt
 source-wordcount: '3191'
 ht-degree: 0%
@@ -352,7 +352,7 @@ Gilt für:
 
 Hauptversion: [Zusammensetzbares Katalogdatenmodell](https://developer.adobe.com/commerce/services/optimizer/) für Headless-Storefronts, Header-Management und die Handhabung von Produktdaten.
 
-![Neu](../assets/new.svg) **Zusammensetzbares Katalogdatenmodell (CCDM)** - Unterstützt Kunden bei der Verwendung des zusammensetzbaren Katalogs für Headless-Storefronts. Neue Endpunkte akzeptieren Katalogansicht- und Richtlinien-IDs (abwärtskompatibel). Konfigurierbare Produktdetails und Preise mit integrierter Paginierung.<!--DATA-6018, DATA-6288-->
+![Neu](../assets/new.svg) **Zusammensetzbares Katalogdatenmodell (CCDM)** - Unterstützt Kunden, die den zusammensetzbaren Katalog für Headless-Storefronts verwenden. Neue Endpunkte akzeptieren Katalogansicht- und Richtlinien-IDs (abwärtskompatibel). Konfigurierbare Produktdetails und Preise mit integrierter Paginierung.<!--DATA-6018, DATA-6288-->
 
 ![Neu](../assets/new.svg) **Kopfzeilenverwaltung**-`AC-Locale` für zusammenstellbare Katalog-API-Vorgänge in `AC-Scope-Locale` umbenannt. Kopfzeilenzuordnung und Standardwerte wurden angegeben.<!--DATA-6303, DATA-6078-->
 
