@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 2123503aaa8088baab9b9a5e3ce9c3036518061e
+source-git-commit: c77ccb87ac61a4dae8adc3079bb8aac7a4a9bf58
 workflow-type: tm+mt
-source-wordcount: '10011'
+source-wordcount: '10458'
 ht-degree: 0%
 ---
 # Versionshinweise
@@ -82,7 +82,74 @@ Jedes Admin-Erlebnis verfügt über eine eigene URL. Instanzlinks in Commerce Cl
 
 Weitere Informationen finden Sie unter [Commerce Admin in Adobe Unified Experience](https://experienceleague.adobe.com/de/docs/commerce-admin/start/admin/admin-unified-experience).
 
-## November 2026 - #1 {#latest}
+## November 2026 - #2 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+Die folgenden Elemente wurden am 18. November 2026 in Sandbox-Umgebungen veröffentlicht.
+
+>[!BEGINSHADEBOX]
+
+### Produktbewertungen
+
+[Produktbewertungen](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/merchandising/product-reviews/product-reviews) sind jetzt für [!DNL Adobe Commerce as a Cloud Service] verfügbar. <!-- ACCS-2277, ACCS-432 -->
+
+Produktbewertungen sind standardmäßig deaktiviert. Um Reviews zu aktivieren, navigieren Sie zu [!UICONTROL Stores] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Catalog] > [!UICONTROL Product Reviews], deaktivieren Sie das [!UICONTROL Use System Value] Kontrollkästchen und setzen [!UICONTROL Enabled] auf **Ja**.
+
+Verwenden Sie die [`reviews`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/reviews) GraphQL-Abfrage zum Abrufen von Überprüfungen und die [`createProductReview`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/mutations/create-review) Mutation zum Erstellen von Überprüfungen.
+
+### Benutzerdefinierte Attribute
+
+Diese Version führt mehrere neue REST- und GraphQL-Funktionen für die Verarbeitung von benutzerdefinierten Attributen ein:
+
+* **Gutschriften**
+  * Der `GET /V1/creditmemos` REST-Endpunkt kann jetzt Gutschriften nach benutzerdefinierten Attributwerten filtern. Verwenden Sie den `custom_attributes.<code>` Feldnamen in den Suchkriterien, z. B. `searchCriteria[filter_groups][0][filters][0][field]=custom_attributes.is_appeasement`. <!-- ACCS-2158, ACCS-1915, ACCS-2159, ACCS-2221 -->
+
+  >[!IMPORTANT]
+  >
+  >Diese Funktion ist standardmäßig deaktiviert. Wenden Sie sich zur Aktivierung an Ihren Adobe Commerce Customer Success Manager oder erstellen Sie ein Support-Ticket.
+
+* **Bestellungen**
+  * Der neue `POST /V1/orders/:orderId/customAttributes` REST-Endpunkt fügt benutzerdefinierte Attribute für eine vorhandene Bestellung hinzu oder aktualisiert sie. <!-- ACCS-2137 -->
+* **Rückgabe**
+  * Warenrücksendeberechtigungen (Return Merchandise Authorization, RMAs) unterstützen jetzt neben den zurückgegebenen Artikeln auch benutzerdefinierte Attribute für die Rückgabe selbst. <!-- CEXT-6925 -->
+    * Die `/V1/returns` REST-Endpunkte speichern und geben `custom_attributes` bei der Rückgabe zurück.
+    * Der GraphQL-`Return` enthält ein `custom_attributes`.
+  * Wenn eine Rücksendung ein `return_address` benutzerdefiniertes Attribut aufweist, verwendet Commerce diese Adresse anstelle der konfigurierten Rücksendeadresse. Sie können dieses Attribut über die `/V1/returns` REST-Endpunkte oder den `observer.rma_save_before`-Webhook festlegen. <!-- ACCS-2184 -->
+
+### Verbesserungen und Fehlerbehebungen
+
+Die folgenden ausgewählten Verbesserungen, Optimierungen und Fehlerbehebungen sind in dieser Version enthalten:
+
+* Es wurde ein Problem behoben, bei dem beim Speichern [!DNL AEM Assets] Integrationseinstellungen über den `PUT /V1/system/config` REST-Endpunkt keine Produktbilder synchronisiert wurden. <!-- ACCS-2282 -->
+
+* Es wurde ein Problem behoben, bei dem der Geschenk-SKU-Selektor in einer Preisregel für ein freies Geschenk-Warenkorb nicht geöffnet wurde, wenn mehrere Inventarquellen aktiviert waren. <!-- ACCS-2208 -->
+
+* Fehlerkorrektur - B2B-Käufer können jetzt versandte Artikel in der Storefront zurücksenden, wenn die Produkte aus dem freigegebenen Katalog ihres Unternehmens entfernt wurden. <!-- ACCS-2283, AC-19727 -->
+
+* Es wurde ein Problem behoben, bei dem Kundinnen und Kunden eine zusätzliche E-Mail mit der Mitteilung „Sie wurden mit einem Unternehmen verknüpft“ erhielten. <!-- ACCS-2292, ACCS-856 -->
+
+* Verhandlbare Angebote und Angebotsvorlagen enthalten jetzt ein `created_by` GraphQL-Feld, das den Namen des Verkäufers und den Namen des Käufers enthält. <!-- USF-4511 -->
+
+* Es wurde ein Problem behoben, bei dem der `POST /V1/customers` REST-Endpunkt einen 400-Fehler zurückgab. <!-- CCSAAS-5786 -->
+
+* Beim Speichern eines Kunden werden unveränderte Adressen nicht mehr erneut gespeichert. <!-- CCSAAS-5599 -->
+
+* Es wurde ein Problem behoben, bei dem gleichzeitige Bestellungen für dasselbe Produkt mit ausgeschaltetem [!UICONTROL Manage Stock] fehlschlugen. <!-- CCSAAS-5778, ACP2E-5457 -->
+
+* Es wurde ein Problem behoben, bei dem der `POST /V1/invoice/:invoiceId/refund` REST-Endpunkt einen Fehler zurückgab, wenn die verbleibende fakturierte Menge vollständig zurückerstattet wurde. <!-- CCSAAS-5794, AC-16056 -->
+
+* Die Leistung des `GET /V1/products` REST-Endpunkts wurde verbessert. <!-- CCSAAS-4664 -->
+
+* Produkt-CSV-Importe unterstützen jetzt Bild-URLs, die nicht mit einer Dateinamenerweiterung enden. <!-- CCSAAS-5605 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## November 2026 - #1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
