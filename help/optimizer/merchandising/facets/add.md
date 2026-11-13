@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Verwalten von Facetten
 description: Erfahren Sie, wie Sie Facetten in [!DNL Adobe Commerce Optimizer] hinzufügen und verwalten.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: d6b7ff1f-a9b8-4fb8-8bd3-b3596695045c
 TQID: https://experienceleague.adobe.com/DeksO9FzjDX8Mc8iOaRdIBtXOSshhtJwkvqyHhwFX30
 product_v2:
@@ -22,7 +22,8 @@ topic_v2:
     internal-label: Metadata
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 8041acb445e99eae524cc46933d6b322861be81d
+last-update: 2026-11-12
+source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%

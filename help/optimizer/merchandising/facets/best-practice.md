@@ -2,7 +2,7 @@
 title: Best Practices für Facetten
 description: Erfahren Sie mehr über die Best Practices für die Implementierung von Facetten in Ihrem Store.
 role: Admin, Developer
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: b9da6853-c846-4267-8dee-17abc034ead0
 TQID: https://experienceleague.adobe.com/B2Um9FH-XvhgzfMrCltjw83rY9xm5DDOQVrbCVig99U
 product_v2:
@@ -16,7 +16,8 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 8041acb445e99eae524cc46933d6b322861be81d
+last-update: 2026-11-12
+source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%

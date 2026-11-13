@@ -2,7 +2,7 @@
 title: Richtlinien
 description: Erfahren Sie, wie Sie in [!DNL Adobe Commerce Optimizer] Richtlinien erstellen und verwalten.
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
 TQID: https://experienceleague.adobe.com/hUwBKWEcFOlkC2WOwBtDDitnj-nu-kixJ9WuencZIe4
 product_v2:
@@ -18,7 +18,8 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e7b320cc42cb297f896ec5c49a1d4f3a653135a
+last-update: 2026-11-12
+source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 5%

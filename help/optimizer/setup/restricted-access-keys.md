@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Katalogansichten in [!DNL Adobe Commerce Optimize
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -29,7 +29,8 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 nudge: true
-source-git-commit: 374cde1b4908b4b30458875e166def87780c65df
+last-update: 2026-11-12
+source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 0%

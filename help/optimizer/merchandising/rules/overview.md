@@ -1,7 +1,7 @@
 ---
 title: Merchandising-Regeln
 description: '[!DNL Adobe Commerce Optimizer] Merchandising-Regeln kombinieren Logik mit Aktionen, um Suchergebnisse, Standardproduktlisten und Kategorieseiten zu gestalten.'
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 TQID: https://experienceleague.adobe.com/1lpaqHx0SaVYLXcTSOToxvbpKzhPJKmhfxjlCvNQLkU
 product_v2:
@@ -20,7 +20,8 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: bf31ff18371ba3eae99753430b7083ea44bf3394
+last-update: 2026-11-12
+source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%

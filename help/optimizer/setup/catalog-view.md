@@ -4,7 +4,7 @@ description: Erfahren Sie, was Katalogansichten sind und wie Sie sie erstellen, 
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
 product_v2:
@@ -30,7 +30,8 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 nudge: true
-source-git-commit: d081e975b03805a0f46d5194f8c3cd46e3c86839
+last-update: 2026-11-12
+source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -43,7 +44,7 @@ ht-degree: 0%
 
 Verwenden Sie diese Anweisungen, um Katalogansichten zu verwalten:
 
-- [Erstellen einer Katalogansicht](#create-a-catalog-view) - Legen Sie den Namen, die Katalogquelle, die Richtlinien und das Preisbuch fest. Geben [&#x200B; dann die Katalogansicht für Empfehlungen und Produkterkennungsregeln an](#specify-catalog-views-for-recommendations-and-product-discovery-rules) überprüfen Sie [Katalogebenen](#catalog-layers) die Produktattribute überschreiben, oder [machen Sie die Katalogansicht privat](#make-a-catalog-view-private).
+- [Erstellen einer Katalogansicht](#create-a-catalog-view) - Legen Sie den Namen, die Katalogquelle, die Richtlinien und das Preisbuch fest. Geben [ dann die Katalogansicht für Empfehlungen und Produkterkennungsregeln an](#specify-catalog-views-for-recommendations-and-product-discovery-rules) überprüfen Sie [Katalogebenen](#catalog-layers) die Produktattribute überschreiben, oder [machen Sie die Katalogansicht privat](#make-a-catalog-view-private).
 - [Bearbeiten einer Katalogansicht](#edit-a-catalog-view) - Aktualisieren der Quellen, Richtlinien, Preisliste und Schutzeinstellungen.
 - [Löschen einer Katalogansicht](#delete-a-catalog-view) - Entfernen einer nicht mehr benötigten Katalogansicht.
 - [Details der Katalogansicht anzeigen](#view-catalog-view-details) - Überprüfen Sie die Konfiguration einer Katalogansicht in der Tabelle Katalogansichten .
@@ -82,9 +83,9 @@ In diesem Abschnitt erstellen Sie eine Katalogansicht, wählen eine [Richtlinie]
 
    >[!NOTE]
    >
-   >Eine Preisbuch-ID steuert, welche Preisfindung angefordert wird. Der Zugriff auf die Katalogansicht wird dadurch nicht eingeschränkt. Um den Zugriff einzuschränken, aktivieren Sie den Katalogschutz, um eine [private Katalogansicht“ &#x200B;](private-catalog-view.md) erstellen.
+   >Eine Preisbuch-ID steuert, welche Preisfindung angefordert wird. Der Zugriff auf die Katalogansicht wird dadurch nicht eingeschränkt. Um den Zugriff einzuschränken, aktivieren Sie den Katalogschutz, um eine [private Katalogansicht“ ](private-catalog-view.md) erstellen.
 
-1. (Optional) Schalten Sie **[!UICONTROL Catalog Protection]** auf **[!UICONTROL Enabled]** um, um die Daten dieser Katalogansicht auf Clients mit einem gültigen signierten Token zu beschränken. Siehe [Schützen einer &#x200B;](private-catalog-view.md#protect-a-catalog-view)) für Einrichtungsschritte.
+1. (Optional) Schalten Sie **[!UICONTROL Catalog Protection]** auf **[!UICONTROL Enabled]** um, um die Daten dieser Katalogansicht auf Clients mit einem gültigen signierten Token zu beschränken. Siehe [Schützen einer ](private-catalog-view.md#protect-a-catalog-view)) für Einrichtungsschritte.
 
 1. Klicken Sie auf **[!UICONTROL Add]** , um die Katalogansicht mit den verknüpften Preisbüchern und Richtlinien zu erstellen.
 
