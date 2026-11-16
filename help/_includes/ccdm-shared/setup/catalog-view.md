@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/catalog-view.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Übersicht über Katalogansichten für Adobe Merchandising Services
 
 <!--This shared include file contains the conceptual and architecture overview of catalog views for Adobe Merchandising Services-->
@@ -40,7 +50,7 @@ Katalogdaten aus einem Adobe Commerce-Backend oder einem anderen Drittanbieter-B
 
 - **Adobe Commerce-Backend**: Das System exportiert Commerce-Katalog-Feeds, ordnet sie dem von der Datenaufnahme-REST-API erwarteten Format zu und synchronisiert Feed-Daten mit der Adobe Merchandising Services-Datenschicht. In diesem Modell verwaltet Adobe Commerce die Erstsynchronisierung und nachfolgende Aktualisierungen. Zu den Feeds gehören Produkte, Kategorien, Produktattribute, Preise und Preisverzeichnisse.
 
-- **Backend- oder Quellsystem eines Drittanbieters** - Ein Connector oder Integrations-Service ruft Katalogdaten aus der Quelle ab - über APIs, Ereignisse oder Export-Feeds, ordnet sie dann dem Schema des zusammensetzbaren Katalogdatenmodells (CCDM) zu und validiert sie und synchronisiert die Daten mithilfe der Datenaufnahme-REST-API mit der Adobe Merchandising Services-Ebene. Die Integration ist für das anfängliche Laden und das Senden späterer Änderungen verantwortlich. Ein plattformspezifischer Connector, z. B. der [Salesforce Commerce Connector](https://experienceleague.adobe.com/de/docs/commerce/optimizer/developer/salesforce-connector) von Adobe, kann einen Ausgangspunkt bieten.
+- **Backend- oder Quellsystem eines Drittanbieters** - Ein Connector oder Integrations-Service ruft Katalogdaten aus der Quelle ab - über APIs, Ereignisse oder Export-Feeds, ordnet sie dann dem Schema des zusammensetzbaren Katalogdatenmodells (CCDM) zu und validiert sie und synchronisiert die Daten mithilfe der Datenaufnahme-REST-API mit der Adobe Merchandising Services-Ebene. Die Integration ist für das anfängliche Laden und das Senden späterer Änderungen verantwortlich. Ein plattformspezifischer Connector, z. B. der [Salesforce Commerce Connector](https://experienceleague.adobe.com/en/docs/commerce/optimizer/developer/salesforce-connector) von Adobe, kann einen Ausgangspunkt bieten.
 
 **2. Unified Base Catalog**
 Die erfassten Daten erstellen einen einheitlichen Basiskatalog in der Katalog-Service-Datenpipeline. Durch diese zentrale Quelle werden Datenduplikate in allen Geschäftsbereichen vermieden.

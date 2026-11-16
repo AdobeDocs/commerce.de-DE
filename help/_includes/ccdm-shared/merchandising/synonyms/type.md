@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/type.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Typen von Synonymen
 
 Ein- und Zwei-Wege-Synonyme erweitern die Definition von Keywords. Einige sind mit dem Keyword austauschbar, während andere eine Teilmenge des Keywords darstellen.
@@ -24,10 +34,10 @@ Ein Einwegsynonym ist eine Teilmenge eines Keywords, jedoch mit einer spezifisch
 
 ## Synonymverhalten für mehrere Wörter
 
-Bei Synonymen mit mehreren Wörtern betrachtet das System das Synonym als eine Phrase. Wenn Sie beispielsweise ein Zwei-Wege-Synonym **Esszimmertisch** ![Zwei-Wege-Selektor](/help/assets/ccdm-shared/synonyms/two-way.png) **&#x200B;**&#x200B;Küchentisch![Zwei-Wege-Selektor](/help/assets/ccdm-shared/synonyms/two-way.png)**Esstisch** erstellen, durchsucht das System alle Felder, die auf Durchsuchbar eingestellt sind, nach **Esszimmertisch** oder **Küchentisch** oder **Esstisch**.
+Bei Synonymen mit mehreren Wörtern betrachtet das System das Synonym als eine Phrase. Wenn Sie beispielsweise ein Zwei-Wege-Synonym **Esszimmertisch** ![Zwei-Wege-Selektor](/help/assets/ccdm-shared/synonyms/two-way.png) **** Küchentisch![Zwei-Wege-Selektor](/help/assets/ccdm-shared/synonyms/two-way.png)**Esstisch** erstellen, durchsucht das System alle Felder, die auf Durchsuchbar eingestellt sind, nach **Esszimmertisch** oder **Küchentisch** oder **Esstisch**.
 
 Wenn kein Synonym erstellt wird und ein Käufer nach **Küchentabelle** sucht, sucht das System überall in den durchsuchbaren Feldern nach den Begriffen, auch über verschiedene Felder hinweg, z. B. **table** im Namensfeld und **küche** im Meta-Schlüsselwort.
 
 Nachdem Sie ein Synonym erstellt haben, ändert sich das Suchverhalten, sodass Sie nach der exakten Phrase **Küchentabelle)**. Dadurch kann die Anzahl der Ergebnisse reduziert werden, da nur Produkte mit der exakten Phrase angezeigt werden.
 
-Wenn Sie möchten, dass nach den Begriffen separat gesucht wird, können Sie [ein Support-Ticket erstellen](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Wenn Sie möchten, dass nach den Begriffen separat gesucht wird, können Sie [ein Support-Ticket erstellen](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

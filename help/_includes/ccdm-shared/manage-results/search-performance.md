@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/manage-results/search-performance.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Suchleistung
 
 Die *Suchleistung* liefert insight zu den Suchbegriffen, die Käufer verwenden. Die Informationen können verwendet werden, um Trends zu identifizieren, den Clickthrough zu erhöhen und die Konversionsrate zu verbessern. Die Seite Suchleistung bietet eine Momentaufnahme der Suchmetriken für einen bestimmten Datumsbereich und umfasst die folgenden Berichte:
@@ -86,8 +96,8 @@ Um Suchergebnisse zu optimieren, überwachen Sie relevante Key Performance Indic
 
   Um die Nullergebnisrate zu reduzieren, haben Sie folgende Möglichkeiten:
 
-  - Bestätigen Sie[&#x200B; dass &#x200B;](../setup/semantic-search.md)semantische Suche“ auf der Registerkarte **[Erweiterte Suche](../settings.md#advanced-search)** in den Einstellungen aktiviert ist. Die semantische Suche ist standardmäßig aktiviert. Es sind keine Änderungen an der Storefront oder am Entwickler erforderlich. Ergebnisse werden nach Abschluss der Indizierung aktualisiert.
-  - Bieten Sie alternative oder verwandte Suchbegriffe an, z[&#x200B; B. &quot;](../merchandising/synonyms/overview.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
+  - Bestätigen Sie[ dass ](../setup/semantic-search.md)semantische Suche“ auf der Registerkarte **[Erweiterte Suche](../settings.md#advanced-search)** in den Einstellungen aktiviert ist. Die semantische Suche ist standardmäßig aktiviert. Es sind keine Änderungen an der Storefront oder am Entwickler erforderlich. Ergebnisse werden nach Abschluss der Indizierung aktualisiert.
+  - Bieten Sie alternative oder verwandte Suchbegriffe an, z[ B. &quot;](../merchandising/synonyms/overview.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
   - Überprüfen Sie regelmäßig Nullergebnisabfragen, um Muster zu identifizieren und notwendige Anpassungen an Ihrem Produktkatalog und Ihren Sucheinstellungen vorzunehmen.
 
 Sie können diese Metrikdaten verwenden, um Ihre Suchfunktion wie folgt zu optimieren:
@@ -117,7 +127,7 @@ Stellen Sie sicher, dass die untergeordneten Produkte der konfigurierbaren Produ
 
 ### Verwenden von Produktmetadaten
 
-Stellen Sie sicher, dass genaue und [&#x200B; Produktattribute als durchsuchbar eingerichtet sind und eine Gewichtung &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Beachten Sie, dass die Attribute „SKU“, „Name“ und „Kategorie“ standardmäßig durchsuchbar sind und nicht von der Suche ausgeschlossen werden können. Verwenden Sie für optimale Ergebnisse keine Leerzeichen in Ihren SKUs.
+Stellen Sie sicher, dass genaue und [ Produktattribute als durchsuchbar eingerichtet sind und eine Gewichtung ](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Beachten Sie, dass die Attribute „SKU“, „Name“ und „Kategorie“ standardmäßig durchsuchbar sind und nicht von der Suche ausgeschlossen werden können. Verwenden Sie für optimale Ergebnisse keine Leerzeichen in Ihren SKUs.
 
 Um die Suchrelevanz zu erhöhen, weisen Sie jedem durchsuchbaren Attribut eine Gewichtung zu. Attribute mit einer höheren Gewichtung sollten in den Suchergebnissen höher angezeigt werden. Die Sortierung nach Relevanz wird von mehreren Kriterien beeinflusst, z. B. der Suchgewichtung. Dies bedeutet, dass manchmal Attribute mit niedrigerer Suchgewichtung immer noch mehr Relevanz haben können als Attribute mit höherer Suchgewichtung. Andere Kriterien können die Anzahl der Übereinstimmungen in einem bestimmten Attribut, die Position des gefundenen Suchbegriffs und die Gesamttextstruktur vor und nach einem Suchbegriff sein.
 

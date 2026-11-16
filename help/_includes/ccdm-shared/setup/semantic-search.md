@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/semantic-search.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Semantische Suche
 
 Die semantische Suche verwendet KI, um zu verstehen, was Käufer meinen, und nicht nur die genauen Wörter, die sie eingeben. Abfragen wie „Kleid für eine Strandhochzeit“ oder „bequeme Schuhe für den ganzen Tag stehen“ können relevante Produkte zurückgeben, auch wenn Ihr Katalog nicht genau diese Phrasen verwendet.
@@ -12,7 +22,7 @@ Das Produkterkennungssystem kombiniert Keyword-Matching und semantischen Matchin
 
 ## Konfigurieren der semantischen Suche
 
-Die semantische Suche ist **standardmäßig aktiviert** für geeignete englische Kataloge. Sie können diese auf der Registerkarte **[!UICONTROL Advanced search]** des Arbeitsbereichs [Einstellungen](../settings.md#advanced-search) verwalten, wo Sie die Einstellung bestätigen oder ändern und optional die semantische Verstärkung, den Ähnlichkeitsschwellenwert und die Fuzzy-Suche einstellen können. Informationen [&#x200B; Öffnen des &#x200B;](../settings.md#access-the-settings-workspace) finden Sie unter „Einstellungen“.
+Die semantische Suche ist **standardmäßig aktiviert** für geeignete englische Kataloge. Sie können diese auf der Registerkarte **[!UICONTROL Advanced search]** des Arbeitsbereichs [Einstellungen](../settings.md#advanced-search) verwalten, wo Sie die Einstellung bestätigen oder ändern und optional die semantische Verstärkung, den Ähnlichkeitsschwellenwert und die Fuzzy-Suche einstellen können. Informationen [ Öffnen des ](../settings.md#access-the-settings-workspace) finden Sie unter „Einstellungen“.
 
 Sie müssen nach dem Speichern keine separate Konfiguration veröffentlichen oder die Storefront-Einstellungen ändern.
 
@@ -56,7 +66,7 @@ Nachdem die semantische Suche aktiv ist und die Indizierung abgeschlossen ist, e
 
 - Verwenden Sie klare, beschreibende Produktnamen und Beschreibungen (idealerweise 50-100 Wörter), damit sowohl Keyword- als auch semantische Übereinstimmungen mit starkem Katalogtext arbeiten können.
 - Beginnen Sie mit der **[!UICONTROL Enable semantic search]** Standardeinstellung und passen Sie **[!UICONTROL Semantic boost]** oder **[!UICONTROL Similarity threshold]** nur an, wenn die Ergebnisse zu breit oder zu schmal sind.
-- Halten Sie markenspezifische oder hochtechnische [Synonyme) bei, &#x200B;](../merchandising/synonyms/overview.md) die semantische Suche möglicherweise keine Fachbegriffe abdeckt.
+- Halten Sie markenspezifische oder hochtechnische [Synonyme) bei, ](../merchandising/synonyms/overview.md) die semantische Suche möglicherweise keine Fachbegriffe abdeckt.
 
 ## Fehlerbehebung
 

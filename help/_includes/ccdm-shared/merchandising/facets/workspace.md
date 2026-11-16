@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 1%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/facets/workspace.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Facetten Workspace
 
 Der *Facetten*-Arbeitsbereich listet alle derzeit verfügbaren Facetten auf und bietet Zugriff auf die Tools, die Sie zum Einrichten und Verwalten von Facetten benötigen. Angeheftete Facetten werden zuerst in der Liste der vorhandenen Facetten angezeigt, gefolgt von dynamischen Facetten. Sie können die Facettenliste durchsuchen.
@@ -16,7 +26,7 @@ Der *Facetten*-Arbeitsbereich listet alle derzeit verfügbaren Facetten auf und 
 |--- |--- |
 | Erstellen von Facetten | Öffnet den [Facetteneditor](add.md). |
 | Label | Die [Facettenbezeichnung](type.md#facet-labels) die in der Storefront sichtbar ist, kann aus Gründen der Konsistenz mit Ihrer Marke bearbeitet werden. |
-| Sortierungstyp | Die Methode, die zum [&#x200B; von &#x200B;](type.md#sort-type) verwendet wird. Alle Storefronts sortieren Facetten alphabetisch und nach `Count`. options:<br />Alphabetisch - Sortiert Facetten alphabetisch.<br />Anzahl - Sortiert Facetten nach der Anzahl der gefundenen Übereinstimmungen. |
+| Sortierungstyp | Die Methode, die zum [ von ](type.md#sort-type) verwendet wird. Alle Storefronts sortieren Facetten alphabetisch und nach `Count`. options:<br />Alphabetisch - Sortiert Facetten alphabetisch.<br />Anzahl - Sortiert Facetten nach der Anzahl der gefundenen Übereinstimmungen. |
 | Maximaler Wert | Die maximale Anzahl von Werten, die für jede Facette in der Storefront angezeigt werden können. Facetten, die einen Wertebereich darstellen, sind gleichmäßig verteilt. Gültige Einträge: 0 - 100; Standard: 8. |
 
 ## Kontrollen
