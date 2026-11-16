@@ -12,7 +12,7 @@ Merchandising-Services mit dem zusammensetzbaren Katalogdatenmodell (CCDM) stell
 
 >[!NOTE]
 >
->Die Datenerfassung umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. [Weitere Informationen](https://www.adobe.com/privacy/experience-cloud.html).
+>Die Datenerfassung umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. [Weitere Informationen](https://www.adobe.com/de/privacy/experience-cloud.html).
 
 Auf **Seite** Ereignisse“ können Sie die erfassten Storefront-Ereignisdaten beobachten. Mit einem Blick auf die Ereignisdatenerfassung können Händler überprüfen, ob sie Storefront-Ereignisse korrekt implementiert haben und ob Ereignisse erfolgreich erfasst werden. Händler können diese Seite verwenden, um potenzielle Probleme zu identifizieren und Schritte zum Beheben von Ereignisproblemen zu unternehmen.
 
@@ -174,4 +174,4 @@ In dieser Tabelle werden die von den einzelnen Empfehlungstypen verwendeten Erei
 
 ## Support
 
-Wenn Sie Datendiskrepanzen feststellen oder Empfehlungen und Suchergebnisse nicht erwartungsgemäß funktionieren, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Wenn Sie Datendiskrepanzen feststellen oder Empfehlungen und Suchergebnisse nicht erwartungsgemäß funktionieren, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

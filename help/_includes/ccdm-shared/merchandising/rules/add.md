@@ -210,7 +210,7 @@ Informationen zur Verbesserung der Auffindbarkeit von Produkten mithilfe von Reg
 
 Informationen zum Festlegen der Suchgewichtung:
 
-- Informationen zu allen Adobe Commerce-Bereitstellungen [&#x200B; Sie unter &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results) im _Handbuch zur Katalogverwaltung_.
+- Informationen zu allen Adobe Commerce-Bereitstellungen [&#x200B; Sie unter &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results) im _Handbuch zur Katalogverwaltung_.
 - Informationen zu eigenständigen Adobe Commerce Optimizer-Bereitstellungen finden Sie unter [Metadaten-REST-](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)) im _Merchandising Services-Entwicklerhandbuch_.
 
 ### Manuelle Rangfolge {#manual-ranking}
@@ -246,7 +246,7 @@ Oder Ereignisse können manuell festgelegt werden:
 
 >[!AVAILABILITY]
 >
->Diese Funktion befindet sich in der [Beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Diese Funktion befindet sich in der [Beta](https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **Attribut-Ranking** wendet automatisch eine **[!UICONTROL Boost]**-, **[!UICONTROL Bury]**- oder **[!UICONTROL Hide]**-Aktion auf jedes Produkt an, das einer oder mehreren Attributbedingungen entspricht, ohne dass Sie einzelne SKUs auswählen müssen. Attribut-Ranking wird im Regeleditor neben [Intelligente Rangfolge](#intelligent-ranking) und [Manuelle Rangfolge](#manual-ranking) angezeigt und ist für die **Regel Alle Produkte**, **Suchregeln** und **Kategorieregeln**. Verwenden Sie diese Option, um das Merchandising auf große Kataloge zu skalieren, z. B. um jedes Produkt einer bestimmten Marke zu steigern oder jedes Produkt in einer nicht mehr unterstützten Farbe zu vergraben.
 
@@ -297,7 +297,7 @@ Eine einzelne Regel kann bis zu 25 Attributbedingungen haben, dieselbe Grenze wi
 
 ## Regeln bearbeiten, anzeigen und löschen {#edit-view-and-delete-rules}
 
-Gehen Sie wie folgt vor, um die Eigenschaften vorhandener Regeln zu aktualisieren. Sie können die Katalogansicht (den Umfang) einer Regel nicht ändern, nachdem sie erstellt wurde. Der Umfang wird beim Erstellen der Regel festgelegt. Siehe [Auswählen einer Katalogansicht](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
+Gehen Sie wie folgt vor, um die Eigenschaften vorhandener Regeln zu aktualisieren. Sie können die Katalogansicht (den Umfang) einer Regel nicht ändern, nachdem sie erstellt wurde. Der Umfang wird beim Erstellen der Regel festgelegt. Siehe [Auswählen einer Katalogansicht](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
 
 ### Regel bearbeiten
 

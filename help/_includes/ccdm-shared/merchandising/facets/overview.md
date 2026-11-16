@@ -33,7 +33,7 @@ Das System aktiviert standardmäßig die folgenden Produktattribute.
 
 Weitere Informationen zu Produktattributen und ihren Eigenschaften:
 
-- Informationen zu Bereitstellungen, die mit einem Adobe Commerce-Backend verbunden sind, finden Sie unter [Übersicht über Produktattribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)
+- Informationen zu Bereitstellungen, die mit einem Adobe Commerce-Backend verbunden sind, finden Sie unter [Übersicht über Produktattribute](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/product-attributes)
 - Informationen zu Bereitstellungen mit einem Commerce-Backend eines Drittanbieters finden Sie unter [Datenaufnahme-Metadaten-API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata).
 
 ## Mehrschichtige Suche und Erweiterung von Suchtypen

@@ -98,7 +98,7 @@ Wenn [!UICONTROL Catalog Protection] aktiviert ist und alle zugewiesenen Schlüs
 
 >[!NOTE]
 >
->Bei Adobe Commerce B2B-Bereitstellungen mit Merchandising Services mit CCDM verwalten Sie Zugriffsschlüssel über die Commerce Admin-Seite **Eingeschränkte Zugriffsschlüssel** (**System** > **Datenübertragung**). Weitere Informationen finden Sie unter [Schlüsselverwaltung für eingeschränkten Zugriff](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) im *[!DNL Adobe Commerce Optimizer Connector]-Integrationshandbuch*.
+>Bei Adobe Commerce B2B-Bereitstellungen mit Merchandising Services mit CCDM verwalten Sie Zugriffsschlüssel über die Commerce Admin-Seite **Eingeschränkte Zugriffsschlüssel** (**System** > **Datenübertragung**). Weitere Informationen finden Sie unter [Schlüsselverwaltung für eingeschränkten Zugriff](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) im *[!DNL Adobe Commerce Optimizer Connector]-Integrationshandbuch*.
 
 ## Ähnliche Themen
 

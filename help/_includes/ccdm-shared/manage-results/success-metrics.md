@@ -68,7 +68,7 @@ C2PA-Metadaten sind manipulationssichere, maschinenlesbare Metadaten, die auf de
 
 ![Muster überprüfen](/help/assets/ccdm-shared/manage-results/inspect-sample.png)
 
-Weitere Informationen zu [Inhaltstransparenz mit generativer KI](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
+Weitere Informationen zu [Inhaltstransparenz mit generativer KI](https://experienceleague.adobe.com/de/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
 
 ## Gemeinsam Erfolgsmetriken und Sites Optimizer verwenden
 

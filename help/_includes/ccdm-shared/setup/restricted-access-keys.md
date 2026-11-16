@@ -10,7 +10,7 @@ Mithilfe von eingeschränkten Zugriffsschlüsseln können autorisierte Client-An
 
 Es gibt zwei Möglichkeiten, eingeschränkte Zugriffsschlüssel bereitzustellen:
 
-- **Automatisch für freigegebene B2B-Kataloge** - Das System stellt den Anfangsschlüssel für Katalogansichten bereit, die mit einem freigegebenen B2B-Katalog verknüpft sind, und weist ihn zu. Anschließend verwalten Sie die Schlüssel und die Schlüsselzuweisung über den Commerce-Administrator. Siehe [Authentifizierung der Katalogansicht](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage) im *Commerce-Administratorhandbuch*. Die automatische Bereitstellung ist in den folgenden Bereitstellungen verfügbar:
+- **Automatisch für freigegebene B2B-Kataloge** - Das System stellt den Anfangsschlüssel für Katalogansichten bereit, die mit einem freigegebenen B2B-Katalog verknüpft sind, und weist ihn zu. Anschließend verwalten Sie die Schlüssel und die Schlüsselzuweisung über den Commerce-Administrator. Siehe [Authentifizierung der Katalogansicht](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage) im *Commerce-Administratorhandbuch*. Die automatische Bereitstellung ist in den folgenden Bereitstellungen verfügbar:
 
   - **Adobe Commerce as a Cloud Service mit CCDM** für Adobe Commerce B2B.
   - **Adobe Commerce in der Cloud oder lokal** über die [!DNL Adobe Commerce Optimizer Connector for B2B] mit Adobe Commerce Optimizer integriert. Die B2B-Erweiterung für den Connector ist erforderlich.
@@ -50,7 +50,7 @@ Wie Sie den Arbeitsbereich Schlüssel für eingeschränkten Zugriff öffnen, hä
 
 >[!NOTE]
 >
->In diesem und den beiden folgenden Abschnitten wird der manuelle Prozess zur Verwaltung von eingeschränkten Zugriffsschlüsseln beschrieben. Verwalten Sie für freigegebene B2B-Kataloge mit automatischer Schlüsselbereitstellung die Schlüssel vom Commerce Admin. Siehe [Schlüssel für eingeschränkten Zugriff](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
+>In diesem und den beiden folgenden Abschnitten wird der manuelle Prozess zur Verwaltung von eingeschränkten Zugriffsschlüsseln beschrieben. Verwalten Sie für freigegebene B2B-Kataloge mit automatischer Schlüsselbereitstellung die Schlüssel vom Commerce Admin. Siehe [Schlüssel für eingeschränkten Zugriff](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
 
 ### Zugriffsschlüssel hinzufügen
 
@@ -60,7 +60,7 @@ Wählen Sie die Registerkarte für das Tool aus, das Sie zum Verwalten von Schl�
 
 >[!TAB Adobe Commerce-Admin]
 
-Kunden, die Adobe Commerce as a Cloud Service mit CCDM verwenden oder Adobe Commerce Optimizer über den Connector mit Adobe Commerce verbunden sind, können RSA-Schlüsselpaare von Commerce Admin generieren. Siehe [Verwalten eingeschränkter Zugriffsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
+Kunden, die Adobe Commerce as a Cloud Service mit CCDM verwenden oder Adobe Commerce Optimizer über den Connector mit Adobe Commerce verbunden sind, können RSA-Schlüsselpaare von Commerce Admin generieren. Siehe [Verwalten eingeschränkter Zugriffsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
 
 >[!TAB Adobe Commerce Optimizer Studio]
 
@@ -113,7 +113,7 @@ Ein eingeschränkter Zugriffsschlüssel authentifiziert den Zugriff erst, nachde
 
 Für die Verwaltung von eingeschränkten Zugriffsschlüsseln gibt es zwei Möglichkeiten, je nachdem, wie Sie den Katalogschutz verwenden:
 
-- **Automatisch für freigegebene B2B-**: Für Adobe Commerce B2B-Bereitstellungen mit Merchandising Services mit CCDM und für Adobe Commerce Optimizer-Bereitstellungen, die über die [!DNL Adobe Commerce Optimizer Connector for B2B] integriert sind (wofür die B2B-Erweiterung erforderlich ist), generiert der Service automatisch den ersten eingeschränkten Zugriffsschlüssel und weist ihn zu, wenn eine Katalogansicht erstellt wird. Jede Katalogansicht erhält einen eigenen Schlüssel. Danach können Sie jeden Schlüssel über die Seiten Freigegebener Katalog oder Unternehmenskonto verwalten. Sie können Schlüssel auch über die Commerce Admin-Seite **Schlüssel mit eingeschränktem Zugriff** anzeigen und verwalten (**System** > **Datenübertragung**). Siehe [Konfiguration der Katalogansicht verwalten](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage).
+- **Automatisch für freigegebene B2B-**: Für Adobe Commerce B2B-Bereitstellungen mit Merchandising Services mit CCDM und für Adobe Commerce Optimizer-Bereitstellungen, die über die [!DNL Adobe Commerce Optimizer Connector for B2B] integriert sind (wofür die B2B-Erweiterung erforderlich ist), generiert der Service automatisch den ersten eingeschränkten Zugriffsschlüssel und weist ihn zu, wenn eine Katalogansicht erstellt wird. Jede Katalogansicht erhält einen eigenen Schlüssel. Danach können Sie jeden Schlüssel über die Seiten Freigegebener Katalog oder Unternehmenskonto verwalten. Sie können Schlüssel auch über die Commerce Admin-Seite **Schlüssel mit eingeschränktem Zugriff** anzeigen und verwalten (**System** > **Datenübertragung**). Siehe [Konfiguration der Katalogansicht verwalten](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage).
 
   Jede Kombination aus einem freigegebenen Katalog und einer Shop-Ansicht wird als separate Katalogansicht projiziert. Eine Projektion ist die Katalogansicht, die Richtlinie, die Preisbuchreferenz und die Konfigurationsdaten mit eingeschränktem Zugriff, die für diese Kombination in die Merchandising Services-Datenschicht exportiert werden. Ein freigegebener Katalog, der mehreren Shop-Ansichten zugewiesen wurde, erzeugt mehrere Katalog-Ansichten, jede mit einem eigenen Schlüssel. Bearbeiten oder Drehen einer Taste für eine Katalogansicht, ohne die anderen zu beeinflussen.
 
@@ -134,7 +134,7 @@ Wählen Sie die Registerkarte für das Tool aus, das Sie zum Verwalten von Schl�
 
 >[!TAB Adobe Commerce-Admin]
 
-Siehe [Auswahl und Drehung von Tasten](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation). Dies gilt für Adobe Commerce as a Cloud Service mit CCDM und für Adobe Commerce-Projekte, die über den Adobe Commerce Optimizer-Connector in Adobe Commerce Optimizer integriert werden.
+Siehe [Auswahl und Drehung von Tasten](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation). Dies gilt für Adobe Commerce as a Cloud Service mit CCDM und für Adobe Commerce-Projekte, die über den Adobe Commerce Optimizer-Connector in Adobe Commerce Optimizer integriert werden.
 
 >[!TAB Adobe Commerce Optimizer Studio]
 
@@ -149,7 +149,7 @@ Dieses Verfahren ist für Adobe Commerce Optimizer mit einem Backend eines Dritt
 
 ## Beschränkungen
 
-Siehe [Katalogansichten und Richtlinienbeschränkungen](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
+Siehe [Katalogansichten und Richtlinienbeschränkungen](https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits).
 
 ## Ähnliche Themen
 
