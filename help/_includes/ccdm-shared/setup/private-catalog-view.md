@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '853'
 ht-degree: 0%
 ---
+# Private Katalogansichten
+
 Standardmäßig ist eine [Katalogansicht](catalog-view.md) öffentlich. Beschränken Sie den Zugriff auf eine Katalogansicht, damit nur Anfragen mit einem gültigen signierten Token die Daten abrufen können.
 
 Es gibt zwei Möglichkeiten, um eine Katalogansicht privat zu machen:
@@ -49,7 +51,7 @@ Wenn Sie keine freigegebenen B2B-Kataloge verwenden - um beispielsweise eine Kat
 >
 >Überspringen Sie dieses Verfahren für Katalogansichten, die mit freigegebenen B2B-Katalogen verknüpft sind, die vom [!DNL Adobe Commerce Optimizer Connector for B2B] verwaltet werden. Siehe [Automatische private Katalogansichten für freigegebene B2B-Kataloge](#automatic-private-catalog-views-for-b2b-shared-catalogs).
 
-Bevor Sie beginnen, [&#x200B; Sie aus dem öffentlichen Schlüssel, den Ihre Client](restricted-access-keys.md)Anwendung generiert, einen Schlüssel mit eingeschränktem Zugriff.
+Bevor Sie beginnen, [ Sie aus dem öffentlichen Schlüssel, den Ihre Client](restricted-access-keys.md)Anwendung generiert, einen Schlüssel mit eingeschränktem Zugriff.
 
 1. Schalten Sie in der Katalogansicht Formular erstellen oder bearbeiten **[!UICONTROL Catalog Protection]** zu **[!UICONTROL Enabled]** um.
 
@@ -96,7 +98,7 @@ Wenn [!UICONTROL Catalog Protection] aktiviert ist und alle zugewiesenen Schlüs
 
 >[!NOTE]
 >
->Bei Adobe Commerce B2B-Bereitstellungen mit Merchandising Services mit CCDM verwalten Sie Zugriffsschlüssel über die Commerce Admin-Seite **Eingeschränkte Zugriffsschlüssel** (**System** > **Datenübertragung**). Weitere Informationen finden Sie unter [Schlüsselverwaltung für eingeschränkten Zugriff](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) im *[!DNL Adobe Commerce Optimizer Connector]-Integrationshandbuch*.
+>Bei Adobe Commerce B2B-Bereitstellungen mit Merchandising Services mit CCDM verwalten Sie Zugriffsschlüssel über die Commerce Admin-Seite **Eingeschränkte Zugriffsschlüssel** (**System** > **Datenübertragung**). Weitere Informationen finden Sie unter [Schlüsselverwaltung für eingeschränkten Zugriff](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) im *[!DNL Adobe Commerce Optimizer Connector]-Integrationshandbuch*.
 
 ## Ähnliche Themen
 

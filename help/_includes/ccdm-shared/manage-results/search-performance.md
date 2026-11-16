@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1925'
 ht-degree: 0%
 ---
+# Suchleistung
+
 Die *Suchleistung* liefert insight zu den Suchbegriffen, die Käufer verwenden. Die Informationen können verwendet werden, um Trends zu identifizieren, den Clickthrough zu erhöhen und die Konversionsrate zu verbessern. Die Seite Suchleistung bietet eine Momentaufnahme der Suchmetriken für einen bestimmten Datumsbereich und umfasst die folgenden Berichte:
 
 - Eindeutige Suchvorgänge
@@ -66,7 +68,7 @@ Die Relevanz und Effektivität von Suchergebnissen hängt von mehreren Schlüsse
 
 Um Suchergebnisse zu optimieren, überwachen Sie relevante Key Performance Indicators (KPIs) wie eindeutige Abfragen, durchschnittliche Klickposition, Clickthrough-Raten, Konversionsrate und Nullergebnisrate, um Interaktionen bei der Kundensuche zu verstehen. Diese Daten helfen Ihnen, Ihre Suchregeln regelmäßig zu aktualisieren und zu verfeinern.
 
-- **Eindeutige Suchvorgänge** - Die Anzahl der einzelnen Suchabfragen, die auf Ihrer Site durchgeführt werden. Das System zählt jede einzelne Suche nur einmal, auch wenn derselbe Käufer oder verschiedene Käufer sie mehrmals wiederholen. Diese Metrik hilft Ihnen, die Vielfalt der von Kundinnen und Kunden verwendeten Suchbegriffe zu verstehen, und bietet Einblicke in die Produkte oder Informationen, die Kundinnen und Kunden suchen. Das Tracking einzelner Suchvorgänge ermöglicht Folgendes:
+- **Eindeutige Suchen** - Die Anzahl der eindeutigen Suchen, die während des ausgewählten Datumsbereichs auf Ihrer Site durchgeführt wurden. Mehrere Suchvorgänge desselben Kunden nach derselben Abfrage werden als eindeutig betrachtet, wenn sie im Abstand von mehr als einer Stunde eingereicht werden. Verwenden Sie diese Metrik zusammen mit dem Bericht Eindeutige Suchen , um die Suchaktivität zu verstehen und Produkte oder Informationen zu identifizieren, die Käuferinnen und Käufer suchen. Das Tracking einzelner Suchvorgänge ermöglicht Folgendes:
 
   - Identifizieren Sie beliebte Suchtrends und häufig gesuchte Elemente.
   - Erkennung potenzieller Lücken in Ihrem Produktkatalog oder Inhalt.
@@ -84,8 +86,8 @@ Um Suchergebnisse zu optimieren, überwachen Sie relevante Key Performance Indic
 
   Um die Nullergebnisrate zu reduzieren, haben Sie folgende Möglichkeiten:
 
-  - Bestätigen Sie[&#x200B; dass &#x200B;](../setup/semantic-search.md)semantische Suche“ auf der Registerkarte **[Erweiterte Suche](../settings.md#advanced-search)** in den Einstellungen aktiviert ist. Die semantische Suche ist standardmäßig aktiviert. Es sind keine Änderungen an der Storefront oder am Entwickler erforderlich. Ergebnisse werden nach Abschluss der Indizierung aktualisiert.
-  - Bieten Sie alternative oder verwandte Suchbegriffe an, z[&#x200B; B. &quot;](../merchandising/synonyms/overview.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
+  - Bestätigen Sie[ dass ](../setup/semantic-search.md)semantische Suche“ auf der Registerkarte **[Erweiterte Suche](../settings.md#advanced-search)** in den Einstellungen aktiviert ist. Die semantische Suche ist standardmäßig aktiviert. Es sind keine Änderungen an der Storefront oder am Entwickler erforderlich. Ergebnisse werden nach Abschluss der Indizierung aktualisiert.
+  - Bieten Sie alternative oder verwandte Suchbegriffe an, z[ B. &quot;](../merchandising/synonyms/overview.md)&quot;, wenn keine exakten Übereinstimmungen gefunden werden.
   - Überprüfen Sie regelmäßig Nullergebnisabfragen, um Muster zu identifizieren und notwendige Anpassungen an Ihrem Produktkatalog und Ihren Sucheinstellungen vorzunehmen.
 
 Sie können diese Metrikdaten verwenden, um Ihre Suchfunktion wie folgt zu optimieren:
@@ -115,7 +117,7 @@ Stellen Sie sicher, dass die untergeordneten Produkte der konfigurierbaren Produ
 
 ### Verwenden von Produktmetadaten
 
-Stellen Sie sicher, dass genaue und [&#x200B; Produktattribute als durchsuchbar eingerichtet sind und eine Gewichtung &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Beachten Sie, dass die Attribute „SKU“, „Name“ und „Kategorie“ standardmäßig durchsuchbar sind und nicht von der Suche ausgeschlossen werden können. Verwenden Sie für optimale Ergebnisse keine Leerzeichen in Ihren SKUs.
+Stellen Sie sicher, dass genaue und [ Produktattribute als durchsuchbar eingerichtet sind und eine Gewichtung ](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Beachten Sie, dass die Attribute „SKU“, „Name“ und „Kategorie“ standardmäßig durchsuchbar sind und nicht von der Suche ausgeschlossen werden können. Verwenden Sie für optimale Ergebnisse keine Leerzeichen in Ihren SKUs.
 
 Um die Suchrelevanz zu erhöhen, weisen Sie jedem durchsuchbaren Attribut eine Gewichtung zu. Attribute mit einer höheren Gewichtung sollten in den Suchergebnissen höher angezeigt werden. Die Sortierung nach Relevanz wird von mehreren Kriterien beeinflusst, z. B. der Suchgewichtung. Dies bedeutet, dass manchmal Attribute mit niedrigerer Suchgewichtung immer noch mehr Relevanz haben können als Attribute mit höherer Suchgewichtung. Andere Kriterien können die Anzahl der Übereinstimmungen in einem bestimmten Attribut, die Position des gefundenen Suchbegriffs und die Gesamttextstruktur vor und nach einem Suchbegriff sein.
 

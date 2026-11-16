@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '510'
 ht-degree: 0%
 ---
+# Katalogquellen
+
 Katalogquellen stellen autoritative Bereiche von Produkten, Attributen und Kategorien dar. Sie werden normalerweise Sprachgrenzen, Zielgruppen- oder Systemgrenzen zugeordnet und bestimmen das Such-, Filter- und Sortierverhalten.
 
 ## Katalogquellen im Vergleich zu verwandten Konzepten
@@ -28,7 +30,7 @@ Katalogquellen werden über die Katalogdatenaufnahme befüllt. Wie Sie diese Dat
 
 * Eine Katalogquelle wird erstellt, wenn Katalogdaten für ein neues Gebietsschema oder Quellsystem zum ersten Mal von der Merchandising Services-Datenschicht empfangen werden.
 * Die Einzigartigkeit des Produkts wird durch die SKU und die Katalogquelle bestimmt.
-* Käufer greifen nicht direkt auf Katalogquellen zu. Katalogdaten werden über (Katalogansichten[&#x200B; der Storefront &#x200B;](catalog-view.md).
+* Käufer greifen nicht direkt auf Katalogquellen zu. Katalogdaten werden über (Katalogansichten[ der Storefront ](catalog-view.md).
 
 ## Modellierungsanleitung
 

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1452'
+source-wordcount: '1453'
 ht-degree: 0%
 ---
+# Möglichkeiten
+
 Die **Opportunities** hilft Ihnen, Optimierungen zu identifizieren und zu implementieren, um den Site-Traffic, die Benutzerinteraktion und die Konversionsraten durch die Integration mit Adobe Sites Optimizer zu verbessern.
 
 ![Opportunities](/help/assets/ccdm-shared/opportunities/opportunities.png)
@@ -17,7 +19,7 @@ Wie Sie den Arbeitsbereich *Opportunities* öffnen, hängt vom verwendeten Produ
 
 ## Was sind Opportunities?
 
-[Opportunities](https://experienceleague.adobe.com/de/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview){target="_blank"} sind KI-gestützte Empfehlungen, die Merchandisern dabei helfen, Probleme zu identifizieren und zu beheben, die sich auf die Leistung ihrer Commerce-Site auswirken. Diese Empfehlungen basieren auf [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/de/docs/experience-manager-sites-optimizer/content/home){target="_blank"}, einem Cloud-basierten Service, der die Leistung der Website analysiert und verbessert.
+[Opportunities](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview){target="_blank"} sind KI-gestützte Empfehlungen, die Merchandisern dabei helfen, Probleme zu identifizieren und zu beheben, die sich auf die Leistung ihrer Commerce-Site auswirken. Diese Empfehlungen basieren auf [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home){target="_blank"}, einem Cloud-basierten Service, der die Leistung der Website analysiert und verbessert.
 
 ## Wichtigste Funktionen
 
@@ -68,7 +70,7 @@ Sobald die automatische Erkennung Optimierungsmöglichkeiten identifiziert, kön
 
 ## Workflow für automatische Fehlerbehebung
 
-Mit dem Workflow für die automatische Fehlerbehebung können Sie KI-generierte Optimierungen schnell mit einem einzigen Klick bereitstellen. Wenn Sie eine automatische Fehlerbehebung anwenden, erstellt das System eine Katalogoptimierungsschicht, die bestimmte Produktattribute überschreibt, ohne die ursprünglichen Produktdaten zu ändern. Ihre ursprünglichen Produktdaten bleiben intakt, sodass Sie Optimierungen auf sichere Weise anwenden und Änderungen jederzeit rückgängig machen können. Weitere [&#x200B; finden Sie unter „Funktionsweise von Katalogebenen mit &#x200B;](#how-catalog-layers-work-with-auto-fix)&quot;.
+Mit dem Workflow für die automatische Fehlerbehebung können Sie KI-generierte Optimierungen schnell mit einem einzigen Klick bereitstellen. Wenn Sie eine automatische Fehlerbehebung anwenden, erstellt das System eine Katalogoptimierungsschicht, die bestimmte Produktattribute überschreibt, ohne die ursprünglichen Produktdaten zu ändern. Ihre ursprünglichen Produktdaten bleiben intakt, sodass Sie Optimierungen auf sichere Weise anwenden und Änderungen jederzeit rückgängig machen können. Weitere [ finden Sie unter „Funktionsweise von Katalogebenen mit ](#how-catalog-layers-work-with-auto-fix)&quot;.
 
 ### Unterstützte Opportunity-Typen
 
@@ -116,7 +118,7 @@ Gehen Sie wie folgt vor, um eine von KI vorgeschlagene Optimierung zu implementi
 
    >[!NOTE]
    >
-   >Die Schaltfläche **Optimierung bereitstellen** ist nur für [unterstützte &#x200B;](#supported-opportunity-types)&quot; verfügbar. Bei nicht unterstützten Typen ist das Kontrollkästchen deaktiviert und Sie müssen die Fehlerbehebungen in Ihrem Katalog manuell vornehmen.
+   >Die Schaltfläche **Optimierung bereitstellen** ist nur für [unterstützte ](#supported-opportunity-types)&quot; verfügbar. Bei nicht unterstützten Typen ist das Kontrollkästchen deaktiviert und Sie müssen die Fehlerbehebungen in Ihrem Katalog manuell vornehmen.
 
 1. Klicken Sie **Optimierung bereitstellen** und anschließend auf **Bereitstellen**, um den automatischen Fehlerbehebungsprozess Trigger.
 
@@ -174,12 +176,12 @@ Erfolgsmetriken helfen bei der Überwachung wichtiger Leistungsindikatoren wie P
 
 ## Weitere Informationen zu Sites Optimizer
 
-Detaillierte Informationen zu den Funktionen und Leistungsmerkmalen von Sites Optimizer finden Sie in der Dokumentation zu [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/de/docs/experience-manager-sites-optimizer/content/home).
+Detaillierte Informationen zu den Funktionen und Leistungsmerkmalen von Sites Optimizer finden Sie in der Dokumentation zu [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home).
 
 Zusätzliche Ressourcen:
 
-- [Opportunity-Typen](https://experienceleague.adobe.com/de/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) - Erfahren Sie mehr über verfügbare Optimierungsmöglichkeiten.
-- [Sites Optimizer-Funktionen](https://experienceleague.adobe.com/de/docs/experience-manager-sites-optimizer/content/documentation/basics)—Erfahren Sie, was Sites Optimizer tun kann.
+- [Opportunity-Typen](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) - Erfahren Sie mehr über verfügbare Optimierungsmöglichkeiten.
+- [Sites Optimizer-Funktionen](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/basics)—Erfahren Sie, was Sites Optimizer tun kann.
 
 ## Ähnliche Themen
 

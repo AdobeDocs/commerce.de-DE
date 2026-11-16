@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '805'
 ht-degree: 0%
 ---
+# Merchandising-Regeln
+
 Merchandising-Regeln kombinieren Logik mit Aktionen, um die Darstellung von Produkten **Suchergebnissen** in **Standardproduktlisten** durch die **Standardsuchregel** und auf **Kategorieseiten**. Sie können Produkte ankurbeln, vergraben, anheften oder ausblenden und **intelligentes Ranking** anwenden, sodass die Listeneinträge Ihre Geschäftsziele widerspiegeln.
 
 Jede **Suchregel** besteht aus drei Hauptkomponenten:
@@ -12,13 +14,13 @@ Jede **Suchregel** besteht aus drei Hauptkomponenten:
 - **Ereignisse** - Aktionen, die stattfinden, wenn die Bedingungen erfüllt sind (manuelle Rangfolge und zugehörige Ereignisse).
 - **Details** - Der Name der Regel sowie optionaler Zeitrahmen und Beschreibung.
 
-**Kategorieregeln** Verwenden Sie **Kategorieauswahl** anstelle von Suchabfragebedingungen; intelligentes Ranking und manuelles Ranking funktionieren auf die gleiche Weise wie für die Suche, wobei die Unterschiede in „Regeln erstellen [&#x200B; verwalten“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add).
+**Kategorieregeln** Verwenden Sie **Kategorieauswahl** anstelle von Suchabfragebedingungen; intelligentes Ranking und manuelles Ranking funktionieren auf die gleiche Weise wie für die Suche, wobei die Unterschiede in „Regeln erstellen [ verwalten“ ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
 
 Sie können mehrere Bedingungen und Aktionen für Suchregeln kombinieren und jede Regel so planen, dass sie für einen Zeitraum aktiv ist. Sie können auch eine **Standard-Suchregel“ festlegen** die gilt, wenn keine spezifischere Such- oder Kategorieregel gilt.
 
 ## Kategorieregeln {#category-rules}
 
-**Kategorieregeln** Steuern der Produktreihenfolge auf **Kategorieseiten**. Sie wählen eine oder mehrere Kategorien aus und wenden dann intelligentes Ranking (z. B. am häufigsten angezeigt, Trend) und manuelle Aktionen wie Pin, Boost und Bury an. Sie verwenden keine Suchabfragebedingungen. Informationen zu Einrichtungsschritten, Regeltypen und der Art und Weise, wie die Rangfolge für Kategorie und Suche gilt, finden Sie unter [Regeln erstellen und verwalten](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add).
+**Kategorieregeln** Steuern der Produktreihenfolge auf **Kategorieseiten**. Sie wählen eine oder mehrere Kategorien aus und wenden dann intelligentes Ranking (z. B. am häufigsten angezeigt, Trend) und manuelle Aktionen wie Pin, Boost und Bury an. Sie verwenden keine Suchabfragebedingungen. Informationen zu Einrichtungsschritten, Regeltypen und der Art und Weise, wie die Rangfolge für Kategorie und Suche gilt, finden Sie unter [Regeln erstellen und verwalten](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
 
 ## Anforderungen
 
@@ -53,7 +55,7 @@ Sie können eine **Standard-Suchregel** festlegen, die angewendet wird, wenn kei
 
 ## Rangfolge mit mehreren Regeln
 
-Folgendes gilt für **Suchregeln** und ihre Interaktion für eine bestimmte Suche. **Kategorieregeln** gelten pro Kategorie. Siehe [Erstellen und Verwalten von Regeln](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add), wie sie mit Such- und Standardregeln übereinstimmen.
+Folgendes gilt für **Suchregeln** und ihre Interaktion für eine bestimmte Suche. **Kategorieregeln** gelten pro Kategorie. Siehe [Erstellen und Verwalten von Regeln](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add), wie sie mit Such- und Standardregeln übereinstimmen.
 
 Auf einen Suchbegriff wird immer nur eine Suchregel angewendet.
 Wenn mehrere Regeln für einen Suchbegriff gefunden werden, werden alle diese Regeln angewendet. Wenn es zu einer Kollision zwischen zwei Regeln kommt - `rule 1`, die SKU1 erhöht, aber `rule 2` dieselbe SKU ausblendet - hat die zuletzt angewendete Regel (`rule 2`) Vorrang.

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '583'
 ht-degree: 0%
 ---
+# Erstellen von Synonymen
+
 Erhöhen Sie die Kundeninteraktion, indem Sie Ihre eigene kuratierte Liste von Synonymen hinzufügen. Pro Katalogquelle können bis zu 200 Synonyme hinzugefügt werden.
 
 ![Synonym Workspace](/help/assets/ccdm-shared/synonyms/synonym-workspace.png)
@@ -20,7 +22,7 @@ Befolgen Sie die Anweisungen für den [Typ des Synonyms](type.md) den Sie erstel
 ### Zweiweg-Synonym
 
 1. Geben Sie den **Keyword**-Begriff oder die zuzuordnende Phrase ein.
-1. Geben Sie **Begriffe**&#x200B;Erweiterung) ein, die Sie als Synonyme für das Keyword hinzufügen möchten. Trennen Sie mehrere Begriffe durch Kommas.
+1. Geben Sie **Begriffe**Erweiterung) ein, die Sie als Synonyme für das Keyword hinzufügen möchten. Trennen Sie mehrere Begriffe durch Kommas.
 In diesem Beispiel lautet das Keyword, mit dem eine Übereinstimmung erzielt werden soll, „Hose“, und die Menge der Ausdehnungsbegriffe lautet „Hose, Hose“.
 
    ![Zwei-Wege-Synonym](/help/assets/ccdm-shared/synonyms/synonym-add-two-way.png)
@@ -56,13 +58,13 @@ In diesem Beispiel lautet das Keyword, mit dem eine Übereinstimmung erzielt wer
 
 | Feld | Beschreibung |
 |--- |--- |
-| [Typ](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/synonyms/type) | Bestimmt, ob die Synonyme dieselbe Bedeutung wie das Keyword haben oder eine Teilmenge des Keywords sind. options:<br />bidirektional (Standard) - Begriffe, die dieselbe Bedeutung wie das Keyword haben und dieselben Suchergebnisse zurückgeben<br />unidirektional - Begriffe, die eine Teilmenge des Keywords sind. Einwegsynonyme geben eine engere Liste spezifischer Produkte zurück. |
+| [Typ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/type) | Bestimmt, ob die Synonyme dieselbe Bedeutung wie das Keyword haben oder eine Teilmenge des Keywords sind. options:<br />bidirektional (Standard) - Begriffe, die dieselbe Bedeutung wie das Keyword haben und dieselben Suchergebnisse zurückgeben<br />unidirektional - Begriffe, die eine Teilmenge des Keywords sind. Einwegsynonyme geben eine engere Liste spezifischer Produkte zurück. |
 | Schlüsselwort | Ein Wort, das normalerweise mit einer Auswahl von Produkten in Ihrem Katalog verknüpft ist. |
 | Expansion | Zusätzliche Begriffe, die dieselbe oder eine ähnliche Bedeutung wie das Keyword haben. |
 
 ## Verwalten von Synonymen
 
-Befolgen Sie diese Anweisungen, um bestehende [Synonyme](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/synonyms/overview) zu verwalten.
+Befolgen Sie diese Anweisungen, um bestehende [Synonyme](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/overview) zu verwalten.
 
 ## Synonym suchen
 

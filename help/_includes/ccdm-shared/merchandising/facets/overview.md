@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '921'
 ht-degree: 0%
 ---
+# Facetten
+
 Facetten ist eine Methode zur Hochleistungsfilterung, bei der mehrere Dimensionen von Attributwerten als Suchkriterien verwendet werden.
 
 ![Gefilterte Suchergebnisse](/help/assets/ccdm-shared/facets/storefront-search-results-run.png)
@@ -31,7 +33,7 @@ Das System aktiviert standardmäßig die folgenden Produktattribute.
 
 Weitere Informationen zu Produktattributen und ihren Eigenschaften:
 
-- Informationen zu Bereitstellungen, die mit einem Adobe Commerce-Backend verbunden sind, finden Sie unter [Übersicht über Produktattribute](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/product-attributes)
+- Informationen zu Bereitstellungen, die mit einem Adobe Commerce-Backend verbunden sind, finden Sie unter [Übersicht über Produktattribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)
 - Informationen zu Bereitstellungen mit einem Commerce-Backend eines Drittanbieters finden Sie unter [Datenaufnahme-Metadaten-API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata).
 
 ## Mehrschichtige Suche und Erweiterung von Suchtypen
@@ -43,7 +45,7 @@ Mit der mehrschichtigen Suche können Sie:
 - Ermöglichen Sie es Käufern, innerhalb der Suchergebnisse zu suchen.
 - Verfeinern Sie die Ergebnisse weiter, indem Sie die Suchindizierung `startsWith` und `contains` in der zweiten Ebene der mehrschichtigen Suche verwenden.
 
-Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`productSearch`-Abfrage mithilfe &#x200B;](https://developer.adobe.com/commerce/services/reference/graphql/#productsearch) Operatoren implementiert:
+Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`productSearch`-Abfrage mithilfe ](https://developer.adobe.com/commerce/services/reference/graphql/#productsearch) Operatoren implementiert:
 
 - **Mehrschichtige Suche** - Suchen in einem anderen Suchkontext - Mit dieser Funktion können Sie bis zu zwei Suchebenen für Ihre Suchabfragen durchführen. Beispiel:
 
@@ -62,7 +64,7 @@ Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`prod
 
   - Suchen nach einer Abfrage innerhalb einer größeren Zeichenfolge. Beispiel: Ein Käufer sucht in der Zeichenfolge „HAPE-123“ nach der Produktnummer „PE-123“.
 
-    - Hinweis: Dieser Suchtyp unterscheidet sich von dem vorhandenen Suchbegriff[&#x200B; der eine &#x200B;](https://developer.adobe.com/commerce/services/reference/graphql/#productsearch) Suche durchführt. Wenn Ihr Produktattributwert beispielsweise „Outdoor Pants“ ist, gibt eine Suchphrase eine Antwort für „out pan“ zurück, aber keine Antwort für „or ants“. Eine Suche enthält jedoch eine Antwort für „oder Ameisen“.
+    - Hinweis: Dieser Suchtyp unterscheidet sich von dem vorhandenen Suchbegriff[ der eine ](https://developer.adobe.com/commerce/services/reference/graphql/#productsearch) Suche durchführt. Wenn Ihr Produktattributwert beispielsweise „Outdoor Pants“ ist, gibt eine Suchphrase eine Antwort für „out pan“ zurück, aber keine Antwort für „or ants“. Eine Suche enthält jedoch eine Antwort für „oder Ameisen“.
 
 Diese neuen Bedingungen verbessern den Filtermechanismus für Suchanfragen, um Suchergebnisse zu verfeinern. Diese neuen Bedingungen wirken sich nicht auf die Hauptsuchabfrage aus.
 

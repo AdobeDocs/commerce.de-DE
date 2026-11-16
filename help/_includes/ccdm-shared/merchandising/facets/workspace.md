@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '177'
 ht-degree: 1%
 ---
+# Facetten Workspace
+
 Der *Facetten*-Arbeitsbereich listet alle derzeit verfügbaren Facetten auf und bietet Zugriff auf die Tools, die Sie zum Einrichten und Verwalten von Facetten benötigen. Angeheftete Facetten werden zuerst in der Liste der vorhandenen Facetten angezeigt, gefolgt von dynamischen Facetten. Sie können die Facettenliste durchsuchen.
 
 ![Facet Workspace](/help/assets/ccdm-shared/facets/facet-workspace.png)
@@ -14,7 +16,7 @@ Der *Facetten*-Arbeitsbereich listet alle derzeit verfügbaren Facetten auf und 
 |--- |--- |
 | Erstellen von Facetten | Öffnet den [Facetteneditor](add.md). |
 | Label | Die [Facettenbezeichnung](type.md#facet-labels) die in der Storefront sichtbar ist, kann aus Gründen der Konsistenz mit Ihrer Marke bearbeitet werden. |
-| Sortierungstyp | Die Methode, die zum [&#x200B; von &#x200B;](type.md#sort-type) verwendet wird. Alle Storefronts sortieren Facetten alphabetisch und nach `Count`. options:<br />Alphabetisch - Sortiert Facetten alphabetisch.<br />Anzahl - Sortiert Facetten nach der Anzahl der gefundenen Übereinstimmungen. |
+| Sortierungstyp | Die Methode, die zum [ von ](type.md#sort-type) verwendet wird. Alle Storefronts sortieren Facetten alphabetisch und nach `Count`. options:<br />Alphabetisch - Sortiert Facetten alphabetisch.<br />Anzahl - Sortiert Facetten nach der Anzahl der gefundenen Übereinstimmungen. |
 | Maximaler Wert | Die maximale Anzahl von Werten, die für jede Facette in der Storefront angezeigt werden können. Facetten, die einen Wertebereich darstellen, sind gleichmäßig verteilt. Gültige Einträge: 0 - 100; Standard: 8. |
 
 ## Kontrollen

@@ -1,12 +1,14 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '829'
 ht-degree: 0%
 ---
+# Abgleich und Rangfolge suchen
+
 >[!IMPORTANT]
 >
->Die folgende Funktion befindet sich in der [privaten Betaversion](https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta).
+>Die folgende Funktion befindet sich in der [privaten Betaversion](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
 
 Merchandising-Services mit dem zusammensetzbaren Katalogdatenmodell (CCDM) ordnen die Ergebnisse so ein, dass Käufer die relevantesten Produkte zuerst sehen. Der Service steigert Produkte, deren Katalogtext **eng** der Anfrage des Käufers übereinstimmt, bevorzugt dann Übereinstimmungen, bei denen Begriffe gemeinsam vorkommen, und schließlich auch umfassendere Übereinstimmungen.
 
@@ -57,7 +59,7 @@ Die Übereinstimmung der Phrasen allein bestimmt nicht die Relevanz. Mehrere Sig
 - Verstärken durch **exakte/** Phrasenübereinstimmung
 - Verstärken, wenn **alle Abfragebegriffe** im **Feld** werden
 - **Intelligentes Ranking** (wenn aktiviert), das textliche Relevanz mit Verhaltenssignalen verbindet - siehe [Funktionsweise der intelligenten Rangfolgenbewertung](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[Suchgewichtung](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results)** für jedes Attribut und andere textliche Relevanzfaktoren (z. B. wie oft Begriffe im Namen oder in der Beschreibungslänge vorkommen). Konfigurieren Sie *Einstellungen*, welche Attribute an der Keyword-Suche beteiligt sind, und ihre relativen **[Keyword-Suchgewichte](../settings.md)**.
+- **[Suchgewichtung](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** für jedes Attribut und andere textliche Relevanzfaktoren (z. B. wie oft Begriffe im Namen oder in der Beschreibungslänge vorkommen). Konfigurieren Sie *Einstellungen*, welche Attribute an der Keyword-Suche beteiligt sind, und ihre relativen **[Keyword-Suchgewichte](../settings.md)**.
 - **[Merchandising-Regeln](../merchandising/rules/overview.md)** z. B. Pin, Boost und Bury
 
 Da Signale interagieren, rangiert eine breite Übereinstimmung manchmal vor einer engeren Phrasenübereinstimmung, wenn **Suchgewichte** oder die Termfrequenz eine schwächere Phrasenübereinstimmung überwiegen.

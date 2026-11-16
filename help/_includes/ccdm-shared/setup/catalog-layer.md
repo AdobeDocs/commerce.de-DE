@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1470'
 ht-degree: 0%
 ---
+# Katalogebenen
+
 Mit Katalogschichten können Sie Produktdaten ändern, ohne die ursprünglichen Quelldaten zu ändern. Ebenen ändern Produktattribute wie Namen, Beschreibung, Bilder, Links und Metadaten, indem über dem Basiskatalog eine Ebene erstellt wird. Ihre ursprünglichen Produktdaten bleiben intakt, sodass Sie Produkte sicher anpassen und Änderungen jederzeit rückgängig machen können.
 
 ![Katalogebenen](/help/assets/ccdm-shared/setup/catalog-layers.png)
@@ -75,7 +77,7 @@ Nach der Zuweisung geben die Merchandising-Services- und Storefront-GraphQL-APIs
 
 ## Hinzufügen einer Katalogebene über die Datenaufnahme
 
-Sie können Ihren Produkten während der Datenaufnahme Katalogebenen hinzufügen. Diese Methode eignet sich ideal für Massenvorgänge oder automatisierte Workflows. Sie importieren Katalogebenen mit der Aufnahme-API, aber [&#x200B; Festlegen der Reihenfolge &#x200B;](#manage-layer-priorities) Ebenen erfolgt über die Benutzeroberfläche.
+Sie können Ihren Produkten während der Datenaufnahme Katalogebenen hinzufügen. Diese Methode eignet sich ideal für Massenvorgänge oder automatisierte Workflows. Sie importieren Katalogebenen mit der Aufnahme-API, aber [ Festlegen der Reihenfolge ](#manage-layer-priorities) Ebenen erfolgt über die Benutzeroberfläche.
 
 **Voraussetzungen:**
 
@@ -197,6 +199,6 @@ Befolgen Sie beim Arbeiten mit Katalogebenen die folgenden Empfehlungen:
 ## Ähnliche Themen
 
 * [Katalogansichten](catalog-view.md) - Konfigurieren von Katalogansichten für verschiedene Storefronts
-* [Produktvisualisierungen](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/product-visuals) - Verwenden von AEM Assets für Produktbilder
+* [Produktvisualisierungen](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals) - Verwenden von AEM Assets für Produktbilder
 * [Opportunities](../manage-results/opportunities.md) - Erfahren Sie mehr über KI-gestützte Optimierung mithilfe von Katalogschichten
 * [Eingeschränkte Zugriffsschlüssel](restricted-access-keys.md) - Schützen einer Katalogansicht mit Authentifizierung mit signierten Token

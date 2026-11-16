@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '917'
 ht-degree: 0%
 ---
+# Recommendations-Leistung
+
 Auf der Seite Recommendations-Performance wird eine Liste der konfigurierten Recommendations zusammen mit Schlüsselmetriken angezeigt, anhand derer Sie deren Effektivität bewerten können. Sie können die Ansicht so konfigurieren, dass Metriken für den letzten Tag, die letzte Woche oder den letzten Monat angezeigt werden. Diese Einblicke zeigen, wie oft jede Empfehlungseinheit angezeigt oder angeklickt wird, sodass Sie die Leistung bewerten und Optimierungsmöglichkeiten identifizieren können.
 
 >[!INFO]
@@ -45,7 +47,7 @@ Auf der Seite Recommendations-Performance wird eine Liste der konfigurierten Rec
 
 ## Empfehlungen erstellen oder verwalten
 
-Erfahren Sie, wie [&#x200B; eine neue Empfehlung erstellen oder eine vorhandene &#x200B;](../merchandising/recommendations/create.md) verwalten können.
+Erfahren Sie, wie [ eine neue Empfehlung erstellen oder eine vorhandene ](../merchandising/recommendations/create.md) verwalten können.
 
 ## Workspace-Steuerelemente
 
@@ -54,7 +56,7 @@ Erfahren Sie, wie [&#x200B; eine neue Empfehlung erstellen oder eine vorhandene 
 | ![Datumsbereich](/help/assets/ccdm-shared/manage-results/rec-perf-date-range.png) | Bestimmt den Zeitbereich, der für Metrikberechnungen verwendet wird. |
 | ![Spaltenauswahl](/help/assets/ccdm-shared/manage-results/icon-show-hide-columns.png) | Bestimmt die Spalten, die in der Recommendations-Tabelle angezeigt werden. |
 | Empfehlung erstellen | Öffnet die Seite [Neue Empfehlung erstellen](../merchandising/recommendations/create.md). |
-| [Katalogansicht](#select-catalog-view) | Wählen Sie die Katalogansicht aus, um die Tabelle so zu filtern, dass nur die Empfehlungen angezeigt werden, die für die ausgewählte Katalogansicht gelten. Diese Auswahl wird auch als Katalogansicht verwendet, wenn Sie [&#x200B; neue Empfehlung &#x200B;](../merchandising/recommendations/create.md) (erstellen). Die Optionen sind *Alle*) oder eine bestimmte [Katalogansicht](../setup/catalog-view.md). |
+| [Katalogansicht](#select-catalog-view) | Wählen Sie die Katalogansicht aus, um die Tabelle so zu filtern, dass nur die Empfehlungen angezeigt werden, die für die ausgewählte Katalogansicht gelten. Diese Auswahl wird auch als Katalogansicht verwendet, wenn Sie [ neue Empfehlung ](../merchandising/recommendations/create.md) (erstellen). Die Optionen sind *Alle*) oder eine bestimmte [Katalogansicht](../setup/catalog-view.md). |
 
 ## Spaltenbeschreibungen
 
@@ -95,7 +97,7 @@ Durch Festlegen einer Katalogansicht für jede Empfehlung haben Sie folgende Mö
 
 ### Filtern von Produkten in der Katalogansicht
 
-Die Produktverfügbarkeit wird pro Katalogansicht auch für Empfehlungseinheiten unter der Auswahl **Alle Ansichten** erzwungen. Dies funktioniert zusätzlich zu allen (Ein- [&#x200B; Ausschlussfiltern), &#x200B;](../merchandising/recommendations/filters.md) Sie auf der Empfehlungseinheit festgelegt haben.
+Die Produktverfügbarkeit wird pro Katalogansicht auch für Empfehlungseinheiten unter der Auswahl **Alle Ansichten** erzwungen. Dies funktioniert zusätzlich zu allen (Ein- [ Ausschlussfiltern), ](../merchandising/recommendations/filters.md) Sie auf der Empfehlungseinheit festgelegt haben.
 
 **Beispiel: Empfehlung mit Einschlussfiltern unter der Auswahl Alle Ansichten**
 

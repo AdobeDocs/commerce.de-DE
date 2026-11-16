@@ -1,16 +1,18 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1606'
 ht-degree: 10%
 ---
+# Ereignisse
+
 Ereignisse sind ein wichtiges Tool zur Verbesserung des Einkaufserlebnisses und zur Steigerung von Konversionen durch die Nutzung von Echtzeit-Dateneinblicken.
 
 Merchandising-Services mit dem zusammensetzbaren Katalogdatenmodell (CCDM) stellen automatisch Storefront-Ereignisse auf Ihrer Site bereit. Diese Ereignisse erfassen Daten aus den Interaktionen von Käufern auf Ihrer Site. Diese anonymisierten Daten ermöglichen [Empfehlungen](../../manage-results/recommendation-performance.md), [Produkterkennung](../../manage-results/search-performance.md) und [Erfolgsmetriken](../../manage-results/success-metrics.md).
 
 >[!NOTE]
 >
->Die Datenerfassung umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. [Weitere Informationen](https://www.adobe.com/de/privacy/experience-cloud.html).
+>Die Datenerfassung umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. [Weitere Informationen](https://www.adobe.com/privacy/experience-cloud.html).
 
 Auf **Seite** Ereignisse“ können Sie die erfassten Storefront-Ereignisdaten beobachten. Mit einem Blick auf die Ereignisdatenerfassung können Händler überprüfen, ob sie Storefront-Ereignisse korrekt implementiert haben und ob Ereignisse erfolgreich erfasst werden. Händler können diese Seite verwenden, um potenzielle Probleme zu identifizieren und Schritte zum Beheben von Ereignisproblemen zu unternehmen.
 
@@ -62,7 +64,7 @@ In dieser Tabelle werden die von der Produkterkennung verwendeten Ereignisse [Ra
 
 #### Erforderliche Dashboard-Ereignisse
 
-Einige Ereignisse sind erforderlich, um das Dashboard [Suchleistung“ &#x200B;](../../manage-results/search-performance.md)
+Einige Ereignisse sind erforderlich, um das Dashboard [Suchleistung“ ](../../manage-results/search-performance.md)
 
 | Dashboard-Bereich | Ereignisse | Feld verbinden |
 | ------------------- | ------------- | ---------- |
@@ -101,11 +103,11 @@ Andere Variablen, die sich auf die für das Training benötigte Zeit auswirken k
 - Einige Empfehlungstypen trainieren schneller als andere
 - Das System berechnet die Verhaltensdaten alle vier Stunden neu. Empfehlungen werden umso genauer, je länger sie auf Ihrer Site verwendet werden.
 
-Auf der Seite „Empfehlung erstellen[&#x200B; werden Bereitschaftsindikatoren angezeigt, damit Sie den Trainings-Fortschritt &#x200B;](../../merchandising/recommendations/create.md#readiness-indicators) jeden Empfehlungstyp visualisieren können.
+Auf der Seite „Empfehlung erstellen[ werden Bereitschaftsindikatoren angezeigt, damit Sie den Trainings-Fortschritt ](../../merchandising/recommendations/create.md#readiness-indicators) jeden Empfehlungstyp visualisieren können.
 
 Während Daten auf Ihrer Live-Site erfasst werden und die Modelle für maschinelles Lernen trainiert werden, können Sie andere Test- und Konfigurationsaufgaben abschließen, die zum Einrichten von Empfehlungen erforderlich sind. Wenn Sie mit dieser Arbeit fertig sind, verfügen die Modelle über genügend Daten, um nützliche Empfehlungen zu erstellen, sodass Sie sie in Ihrer Storefront bereitstellen können.
 
-Wenn auf Ihrer Site nicht genügend Traffic (Ansichten, Käufe, Trends) für die meisten Produkt-SKUs vorhanden ist, sind möglicherweise nicht genügend Daten vorhanden, um den Lernprozess abzuschließen. Dieses Problem kann dazu führen, dass der Bereitschaftsindikator im Recommendations-Arbeitsbereich hängen bleibt. Die Bereitschaftsindikatoren sollen Händlern einen weiteren Datenpunkt bei der Auswahl des Empfehlungstyps bieten, der für ihren Store besser ist. Die Zahlen sind Richtwerte und erreichen möglicherweise nie 100 %. [Weitere &#x200B;](../../merchandising/recommendations/create.md#readiness-indicators) zu Bereitschaftsindikatoren.
+Wenn auf Ihrer Site nicht genügend Traffic (Ansichten, Käufe, Trends) für die meisten Produkt-SKUs vorhanden ist, sind möglicherweise nicht genügend Daten vorhanden, um den Lernprozess abzuschließen. Dieses Problem kann dazu führen, dass der Bereitschaftsindikator im Recommendations-Arbeitsbereich hängen bleibt. Die Bereitschaftsindikatoren sollen Händlern einen weiteren Datenpunkt bei der Auswahl des Empfehlungstyps bieten, der für ihren Store besser ist. Die Zahlen sind Richtwerte und erreichen möglicherweise nie 100 %. [Weitere ](../../merchandising/recommendations/create.md#readiness-indicators) zu Bereitschaftsindikatoren.
 
 #### Empfehlungen für Backups
 
@@ -134,7 +136,7 @@ In der folgenden Tabelle sind die Ereignisse aufgeführt, die ausgelöst werden,
 
 #### Erforderliche Dashboard-Ereignisse
 
-Die folgenden Ereignisse sind erforderlich, um das [Recommendations-Performance-Dashboard“ &#x200B;](../../manage-results/recommendation-performance.md)
+Die folgenden Ereignisse sind erforderlich, um das [Recommendations-Performance-Dashboard“ ](../../manage-results/recommendation-performance.md)
 
 | Dashboard-Spalte | Ereignisse | Feld verbinden |
 | ---------------- | --------- | ----------- |
@@ -172,4 +174,4 @@ In dieser Tabelle werden die von den einzelnen Empfehlungstypen verwendeten Erei
 
 ## Support
 
-Wenn Sie Datendiskrepanzen feststellen oder Empfehlungen und Suchergebnisse nicht erwartungsgemäß funktionieren, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Wenn Sie Datendiskrepanzen feststellen oder Empfehlungen und Suchergebnisse nicht erwartungsgemäß funktionieren, [ Sie ein Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '487'
 ht-degree: 0%
 ---
+# Katalogsynchronisierung
+
 Auf der Seite **Datensynchronisierung** wird ein Überblick über den Synchronisierungsstatus für Produktdaten angezeigt, die aus Ihrer Datenquelle (Ihrem bestehenden Commerce-Katalog, PIM-System (Product Information Management), ERP-System (Enterprise Resource Planning) usw.) in die Merchandising Services-Datenschicht übertragen wurden.
 
 Die **Datensynchronisation** Seite bietet wertvolle Einblicke in die Verfügbarkeit von Produktdaten für Ihre Storefront, sodass sie Ihren Kundinnen und Kunden sofort angezeigt werden können.
@@ -49,4 +51,4 @@ Wenn bestimmte Produkte nicht auf der Seite **Datensynchronisierung** angezeigt 
 
 ## Überprüfen, ob die Datensynchronisierung funktioniert
 
-Bei Projekten, die Adobe Commerce als Upstream-Datenquelle verwenden, können Sie den Datenexportprozess überwachen und Resynchronisierungsvorgänge über die Seite Daten-Feed-Synchronisierungsstatus initiieren. Weitere Informationen finden Sie unter [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).
+Bei Projekten, die Adobe Commerce als Upstream-Datenquelle verwenden, können Sie den Datenexportprozess überwachen und Resynchronisierungsvorgänge über die Seite Daten-Feed-Synchronisierungsstatus initiieren. Weitere Informationen finden Sie unter [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).
