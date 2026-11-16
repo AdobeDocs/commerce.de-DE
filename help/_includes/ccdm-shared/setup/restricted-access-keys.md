@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.de-DE/blob/main/help/_includes/ccdm-shared/setup/restricted-access-keys.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Schlüssel für eingeschränkten Zugriff
 
 Mithilfe von eingeschränkten Zugriffsschlüsseln können autorisierte Client-Anwendungen auf eine [private Katalogansicht](private-catalog-view.md) zugreifen. Nur Anfragen mit einem gültigen signierten Token aus einem zugewiesenen Schlüssel können Katalogdaten abrufen. Alle anderen Anfragen werden abgelehnt, einschließlich Anfragen von Kunden, die keinen expliziten Zugriff auf diese Katalogansicht haben, und Skripte, die die Adobe Commerce Merchandising Services-API prüfen.

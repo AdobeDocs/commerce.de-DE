@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 1%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.de-DE/blob/main/help/_includes/ccdm-shared/merchandising/rules/workspace.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Merchandising-Regeln - Workspace
 
 Der *Merchandising-Regeln*-Arbeitsbereich listet die aktuelle Auswahl von Regeln und deren Status auf und bietet Zugriff auf Tools, die Sie zum Erstellen und Verwalten von Regeln benötigen. Sie können Regeln auf alle [Katalogansichten](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-view) (global) oder auf eine einzelne Katalogansicht beschränken. Informationen [&#x200B; Filtern nach Katalogansicht und &#x200B;](#select-catalog-view) Erstellen von Regeln pro Katalogansicht finden Sie unter „Auswählen Katalogansicht“. Im Arbeitsbereich haben Sie folgende Möglichkeiten:

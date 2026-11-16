@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 0b52c20df4c64d3dd7e43f023e7b0f4517e8fcf7
+source-git-commit: 57a905703b11ef8fc4ca4527a5fc136dc81615cc
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1491'
 ht-degree: 0%
 ---
 # Beschränkungen und Grenzen
@@ -151,7 +151,7 @@ Die folgenden Einschränkungen gelten für die Storefront-Produktsuche, -Auflist
 | Durchsuchbare Attribute | Die Anzahl der Produktmerkmale, die für die Katalogsuche indiziert werden können | 200 | Nein |
 | Sortierbare Attribute | Die Anzahl der Produktmerkmale, die als Sortieroptionen auf Such- und Kategorieseiten verfügbar sind. | 50 | Nein |
 | Paginierungstiefe suchen | Maximal erreichbare Produkte durch Suchpaginierung (z. B. Seite 100 × 100 Produkte/Seite) | 10 K | Nein |
-| Facetten | Die Anzahl der filterbaren Produktattribute (wie Marke, Farbe, Größe, Preis), die konfiguriert werden können, um Käufern zu helfen, Suchergebnisse zu verfeinern und Kategorien zu durchsuchen | 100<p>Muss filterbare Attribute sein</p> | Nein |
+| Facetten | Die Anzahl der filterbaren Produktattribute (wie Marke, Farbe, Größe, Preis), die konfiguriert werden können, um Käufern zu helfen, Suchergebnisse zu verfeinern und Kategorien zu durchsuchen | 100<p>Muss filterbare Attribute sein</p> | Ja<p>Kann über eine Support-Anfrage erhöht werden</p> |
 | Optionen pro Facette | Die Anzahl der filterbaren Produktattributwerte, die Käufer innerhalb einer Facette auswählen können (z. B. „Rot“, „Blau“ für Farbe; „Klein“, &quot;Medium&quot; für Größe) | 100 | Ja<p>Kann über eine Support-Anfrage erhöht werden</p> |
 
 {style="table-layout:auto"}
