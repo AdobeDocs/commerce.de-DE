@@ -12,7 +12,7 @@ Das Produkterkennungssystem kombiniert Keyword-Matching und semantischen Matchin
 
 ## Konfigurieren der semantischen Suche
 
-Die semantische Suche ist **standardmäßig aktiviert** für geeignete englische Kataloge. Sie können diese auf der Registerkarte **[!UICONTROL Advanced search]** des Arbeitsbereichs [Einstellungen](../settings.md#advanced-search) verwalten, wo Sie die Einstellung bestätigen oder ändern und optional die semantische Verstärkung, den Ähnlichkeitsschwellenwert und die Fuzzy-Suche einstellen können. Informationen [ Öffnen des ](../settings.md#access-the-settings-workspace) finden Sie unter „Einstellungen“.
+Die semantische Suche ist **standardmäßig aktiviert** für geeignete englische Kataloge. Sie können diese auf der Registerkarte **[!UICONTROL Advanced search]** des Arbeitsbereichs [Einstellungen](../settings.md#advanced-search) verwalten, wo Sie die Einstellung bestätigen oder ändern und optional die semantische Verstärkung, den Ähnlichkeitsschwellenwert und die Fuzzy-Suche einstellen können. Informationen [&#x200B; Öffnen des &#x200B;](../settings.md#access-the-settings-workspace) finden Sie unter „Einstellungen“.
 
 Sie müssen nach dem Speichern keine separate Konfiguration veröffentlichen oder die Storefront-Einstellungen ändern.
 
@@ -56,7 +56,7 @@ Nachdem die semantische Suche aktiv ist und die Indizierung abgeschlossen ist, e
 
 - Verwenden Sie klare, beschreibende Produktnamen und Beschreibungen (idealerweise 50-100 Wörter), damit sowohl Keyword- als auch semantische Übereinstimmungen mit starkem Katalogtext arbeiten können.
 - Beginnen Sie mit der **[!UICONTROL Enable semantic search]** Standardeinstellung und passen Sie **[!UICONTROL Semantic boost]** oder **[!UICONTROL Similarity threshold]** nur an, wenn die Ergebnisse zu breit oder zu schmal sind.
-- Halten Sie markenspezifische oder hochtechnische [Synonyme) bei, ](../merchandising/synonyms/overview.md) die semantische Suche möglicherweise keine Fachbegriffe abdeckt.
+- Halten Sie markenspezifische oder hochtechnische [Synonyme) bei, &#x200B;](../merchandising/synonyms/overview.md) die semantische Suche möglicherweise keine Fachbegriffe abdeckt.
 
 ## Fehlerbehebung
 

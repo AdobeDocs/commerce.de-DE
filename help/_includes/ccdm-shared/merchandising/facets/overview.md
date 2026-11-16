@@ -45,7 +45,7 @@ Mit der mehrschichtigen Suche können Sie:
 - Ermöglichen Sie es Käufern, innerhalb der Suchergebnisse zu suchen.
 - Verfeinern Sie die Ergebnisse weiter, indem Sie die Suchindizierung `startsWith` und `contains` in der zweiten Ebene der mehrschichtigen Suche verwenden.
 
-Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`productSearch`-Abfrage mithilfe ](https://developer.adobe.com/commerce/services/reference/graphql/#productsearch) Operatoren implementiert:
+Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`productSearch`-Abfrage mithilfe &#x200B;](https://developer.adobe.com/commerce/services/reference/graphql/#productsearch) Operatoren implementiert:
 
 - **Mehrschichtige Suche** - Suchen in einem anderen Suchkontext - Mit dieser Funktion können Sie bis zu zwei Suchebenen für Ihre Suchabfragen durchführen. Beispiel:
 
@@ -64,7 +64,7 @@ Die erweiterten Suchfunktionen werden über den `filter`-Parameter in der [`prod
 
   - Suchen nach einer Abfrage innerhalb einer größeren Zeichenfolge. Beispiel: Ein Käufer sucht in der Zeichenfolge „HAPE-123“ nach der Produktnummer „PE-123“.
 
-    - Hinweis: Dieser Suchtyp unterscheidet sich von dem vorhandenen Suchbegriff[ der eine ](https://developer.adobe.com/commerce/services/reference/graphql/#productsearch) Suche durchführt. Wenn Ihr Produktattributwert beispielsweise „Outdoor Pants“ ist, gibt eine Suchphrase eine Antwort für „out pan“ zurück, aber keine Antwort für „or ants“. Eine Suche enthält jedoch eine Antwort für „oder Ameisen“.
+    - Hinweis: Dieser Suchtyp unterscheidet sich von dem vorhandenen Suchbegriff[&#x200B; der eine &#x200B;](https://developer.adobe.com/commerce/services/reference/graphql/#productsearch) Suche durchführt. Wenn Ihr Produktattributwert beispielsweise „Outdoor Pants“ ist, gibt eine Suchphrase eine Antwort für „out pan“ zurück, aber keine Antwort für „or ants“. Eine Suche enthält jedoch eine Antwort für „oder Ameisen“.
 
 Diese neuen Bedingungen verbessern den Filtermechanismus für Suchanfragen, um Suchergebnisse zu verfeinern. Diese neuen Bedingungen wirken sich nicht auf die Hauptsuchabfrage aus.
 

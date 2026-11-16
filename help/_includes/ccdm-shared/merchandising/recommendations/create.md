@@ -47,7 +47,7 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit der [Date
 
 >[!NOTE]
 >
->Sie können bis zu 50 aktive Empfehlungseinheiten erstellen. Weitere Informationen finden [ unter ](/help/optimizer/boundaries-limits.md) und Grenzen .
+>Sie können bis zu 50 aktive Empfehlungseinheiten erstellen. Weitere Informationen finden [&#x200B; unter &#x200B;](/help/optimizer/boundaries-limits.md) und Grenzen .
 
 >[!IMPORTANT]
 >
@@ -73,7 +73,7 @@ Um sofortiges Echtzeit-Feedback zu den Produkten zu erhalten, die enthalten sein
 
 [!DNL Product Recommendations] [filter](filters.md) Empfehlungen, um die Anzeige doppelter Produkte zu vermeiden, wenn mehrere Empfehlungseinheiten auf einer Seite bereitgestellt werden. Daher können sich die Produkte, die im Vorschaubereich angezeigt werden, von denen unterscheiden, die in der Storefront angezeigt werden.
 
-Bei Setups mit mehreren Storefronts, mehreren Sprachen oder mehreren Marken können Sie konfigurieren, ob jede Empfehlung für alle Katalogansichten (global) oder für eine einzelne [Katalogansicht) ](/help/optimizer/setup/catalog-view.md). Erfahren Sie mehr darüber, wie [die Katalogansicht festlegen](/help/optimizer/manage-results/recommendation-performance.md#select-catalog-view) wenn Sie mit Recommendations arbeiten.
+Bei Setups mit mehreren Storefronts, mehreren Sprachen oder mehreren Marken können Sie konfigurieren, ob jede Empfehlung für alle Katalogansichten (global) oder für eine einzelne [Katalogansicht) &#x200B;](/help/optimizer/setup/catalog-view.md). Erfahren Sie mehr darüber, wie [die Katalogansicht festlegen](/help/optimizer/manage-results/recommendation-performance.md#select-catalog-view) wenn Sie mit Recommendations arbeiten.
 
 ## Abrufen des Storefront-Referenzschlüssels
 
@@ -111,7 +111,7 @@ Sie können eine vorhandene Empfehlung bearbeiten, deaktivieren oder löschen.
 
 ## Bereitschaftsindikatoren
 
-Bereitschaftsindikatoren zeigen, welche Empfehlungstypen basierend auf den verfügbaren Katalog- und Verhaltensdaten am besten abschneiden. Sie können Ihnen auch dabei helfen, potenzielle Probleme mit der [Ereigniserfassung“ zu identifizieren ](/help/optimizer/setup/events/overview.md) festzustellen, ob ein Empfehlungstyp nicht genügend Traffic erhält, um Ergebnisse zu generieren.
+Bereitschaftsindikatoren zeigen, welche Empfehlungstypen basierend auf den verfügbaren Katalog- und Verhaltensdaten am besten abschneiden. Sie können Ihnen auch dabei helfen, potenzielle Probleme mit der [Ereigniserfassung“ zu identifizieren &#x200B;](/help/optimizer/setup/events/overview.md) festzustellen, ob ein Empfehlungstyp nicht genügend Traffic erhält, um Ergebnisse zu generieren.
 
 Bereitschaftsindikatoren werden entweder in [statisch-basiert](#static-based) oder [dynamisch-](#dynamic-based) kategorisiert. Statische Empfehlungen verwenden nur Katalogdaten, während dynamische Empfehlungen Verhaltensdaten von Kundinnen und Kunden verwenden. Diese Verhaltensdaten werden verwendet, um [Modelle für maschinelles Lernen](/help/optimizer/setup/events/overview.md) zu trainieren, um personalisierte Empfehlungen zu erstellen und ihren Bereitschaftswert zu berechnen.
 

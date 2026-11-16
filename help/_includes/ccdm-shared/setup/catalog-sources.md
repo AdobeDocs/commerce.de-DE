@@ -30,7 +30,7 @@ Katalogquellen werden über die Katalogdatenaufnahme befüllt. Wie Sie diese Dat
 
 * Eine Katalogquelle wird erstellt, wenn Katalogdaten für ein neues Gebietsschema oder Quellsystem zum ersten Mal von der Merchandising Services-Datenschicht empfangen werden.
 * Die Einzigartigkeit des Produkts wird durch die SKU und die Katalogquelle bestimmt.
-* Käufer greifen nicht direkt auf Katalogquellen zu. Katalogdaten werden über (Katalogansichten[ der Storefront ](catalog-view.md).
+* Käufer greifen nicht direkt auf Katalogquellen zu. Katalogdaten werden über (Katalogansichten[&#x200B; der Storefront &#x200B;](catalog-view.md).
 
 ## Modellierungsanleitung
 

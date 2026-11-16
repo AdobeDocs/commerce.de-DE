@@ -14,7 +14,7 @@ Facetten gibt es in verschiedenen Typen, und sie werden nur dann in der Liste *F
 
 ## Facettenbeschriftungen
 
-Facettenbeschriftungen können über den Arbeitsbereich [Facettenbeschriftung“ bearbeitet ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/facets/workspace).
+Facettenbeschriftungen können über den Arbeitsbereich [Facettenbeschriftung“ bearbeitet &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/facets/workspace).
 
 ## Sortiertyp
 
