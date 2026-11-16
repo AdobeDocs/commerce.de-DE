@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1925'
 ht-degree: 0%
 ---
+# Suchleistung
+
 Die *Suchleistung* liefert insight zu den Suchbegriffen, die Käufer verwenden. Die Informationen können verwendet werden, um Trends zu identifizieren, den Clickthrough zu erhöhen und die Konversionsrate zu verbessern. Die Seite Suchleistung bietet eine Momentaufnahme der Suchmetriken für einen bestimmten Datumsbereich und umfasst die folgenden Berichte:
 
 - Eindeutige Suchvorgänge
@@ -66,7 +68,7 @@ Die Relevanz und Effektivität von Suchergebnissen hängt von mehreren Schlüsse
 
 Um Suchergebnisse zu optimieren, überwachen Sie relevante Key Performance Indicators (KPIs) wie eindeutige Abfragen, durchschnittliche Klickposition, Clickthrough-Raten, Konversionsrate und Nullergebnisrate, um Interaktionen bei der Kundensuche zu verstehen. Diese Daten helfen Ihnen, Ihre Suchregeln regelmäßig zu aktualisieren und zu verfeinern.
 
-- **Eindeutige Suchvorgänge** - Die Anzahl der einzelnen Suchabfragen, die auf Ihrer Site durchgeführt werden. Das System zählt jede einzelne Suche nur einmal, auch wenn derselbe Käufer oder verschiedene Käufer sie mehrmals wiederholen. Diese Metrik hilft Ihnen, die Vielfalt der von Kundinnen und Kunden verwendeten Suchbegriffe zu verstehen, und bietet Einblicke in die Produkte oder Informationen, die Kundinnen und Kunden suchen. Das Tracking einzelner Suchvorgänge ermöglicht Folgendes:
+- **Eindeutige Suchen** - Die Anzahl der eindeutigen Suchen, die während des ausgewählten Datumsbereichs auf Ihrer Site durchgeführt wurden. Mehrere Suchvorgänge desselben Kunden nach derselben Abfrage werden als eindeutig betrachtet, wenn sie im Abstand von mehr als einer Stunde eingereicht werden. Verwenden Sie diese Metrik zusammen mit dem Bericht Eindeutige Suchen , um die Suchaktivität zu verstehen und Produkte oder Informationen zu identifizieren, die Käuferinnen und Käufer suchen. Das Tracking einzelner Suchvorgänge ermöglicht Folgendes:
 
   - Identifizieren Sie beliebte Suchtrends und häufig gesuchte Elemente.
   - Erkennung potenzieller Lücken in Ihrem Produktkatalog oder Inhalt.

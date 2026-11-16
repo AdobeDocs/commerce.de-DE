@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '2821'
+source-wordcount: '2823'
 ht-degree: 0%
 ---
+# Erfolgsmetriken
+
 Diese Seite bietet einen Überblick über die wichtigsten Leistungsmetriken für Ihren Store. Ziel ist es, die Ergebnisse der Implementierung von Merchandising Services mit dem zusammenstellbaren Katalogdatenmodell (CCDM) zu verstehen, um Wachstumschancen und Optimierungsbereiche zu identifizieren.
 
 ![Bericht zu Erfolgsmetriken](/help/assets/ccdm-shared/manage-results/success-metrics.png)

@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
+source-git-commit: d112f591ea46e4f3bdc081566a9a036df4ccfe5a
 workflow-type: tm+mt
-source-wordcount: '5663'
+source-wordcount: '5695'
 ht-degree: 0%
 ---
 
@@ -131,6 +131,13 @@ _28. Juni 2021_
 >
 > Es werden häufig Versionen veröffentlicht, um bei Bedarf neue Funktionen und Fehlerbehebungen bereitzustellen. Der Veröffentlichungszeitplan ist nicht festgelegt.
 
+## v2.17.1
+
+_16. November 2026_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.6 und neuer
+
+![Problem behoben](../assets/fix.svg)<!-- PAY-7254 --> Es wurde ein Problem behoben, bei dem das Kontrollkästchen „Allgemeine Geschäftsbedingungen“ nach der PayPal-Zahlungsgenehmigung deaktiviert wurde, sodass Käufer den Checkout nicht abschließen konnten.
 
 ## v2.17.0
 
@@ -543,7 +550,7 @@ _27. September 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"} Adobe Commerce-Versionen 2.4.4 und neuer
 
-![Problem behoben](../assets/fix.svg)<!-- Issue PAY-4870 --> Es wurde ein Problem behoben, durch das das neue Header-Attribut beim Senden der Erweiterungsversion mit der neuesten Version falsch in Storefront ausgefüllt wurde. Mit der `1.3.0` Version des Commerce Services-Connectors konnten Sie die `User-Agent header` nicht aus der [!DNL Payment Services]-Erweiterung erweitern.
+<!-- Issue PAY-4870 --> Es wurde ein Problem behoben, das beim Senden der Erweiterungsversion mit der neuesten Version fälschlicherweise das neue Header-Attribut in Storefront korrekt ausgefüllt hat. Mit der `1.3.0` Version des Commerce Services-Connectors konnten Sie die `User-Agent header` nicht aus der [!DNL Payment Services]-Erweiterung erweitern.
 
 ## v2.2.0
 

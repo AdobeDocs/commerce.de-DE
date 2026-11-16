@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '583'
 ht-degree: 0%
 ---
+# Erstellen von Synonymen
+
 Erhöhen Sie die Kundeninteraktion, indem Sie Ihre eigene kuratierte Liste von Synonymen hinzufügen. Pro Katalogquelle können bis zu 200 Synonyme hinzugefügt werden.
 
 ![Synonym Workspace](/help/assets/ccdm-shared/synonyms/synonym-workspace.png)

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '993'
 ht-degree: 0%
 ---
+# Richtlinien
+
 Richtlinien definieren Filter, die auf Produkte in einer Katalogansicht angewendet werden. Sie helfen bei der Anpassung des Produktsortiments, das an eine Storefront oder einen Kanal zurückgegeben wird. Dadurch wird sichergestellt, dass die richtigen Inhalte am richtigen Ziel bereitgestellt werden. Zum Beispiel Ladengeschäfte, Marktplätze und Werbekanäle wie Google, Facebook und Instagram.
 
 Richtlinien verwenden Produktattribute wie Marke, Modell oder Teilekategorie, um Katalogdaten an Geschäftsanforderungen anzupassen. &#x200B;

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '302'
 ht-degree: 0%
 ---
+# Adobe Merchandising
+
 Erfahren Sie, wie Sie durch Produkterkennung und Empfehlungen personalisierte Erlebnisse für Ihre Kunden erstellen können.
 
 Diese Adobe Merchandising-Services basieren auf dem zusammensetzbaren Katalogdatenmodell (Composable Catalog Data Model, CCDM), das *Produktdaten* vom *Produktkontext* trennt. Zu den Produktdaten gehören SKUs, Attribute, Metadaten, Assets und Preise. Der Produktkontext definiert, wie diese Daten bereitgestellt werden, einschließlich [Katalogansichten](/help/optimizer/setup/catalog-view.md), [Datenzugriffsrichtlinien](/help/optimizer/setup/policies.md) und [Katalogquellen](/help/optimizer/setup/catalog-sources.md) (Gebietsschemata). Da Katalogansichten und Richtlinien Storefront-Daten steuern, können Sie benutzerdefinierte Kataloge für B2B-, B2C- und D2C-Modelle erstellen und Einkaufserlebnisse anpassen, ohne die Basisdaten zu duplizieren.

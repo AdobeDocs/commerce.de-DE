@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '455'
 ht-degree: 0%
 ---
+# Best Practices für Merchandising-Regeln
+
 Um Konversionen und Umsätze zu optimieren, implementieren Sie effektive **Suchregeln**, eine **Standardauflistungsregel** und **[Kategorieregeln](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#rule-types)**. Passen Sie Rankings mithilfe von Verkaufsdaten, Lagern, Promotions und [intelligentem Ranking](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking) an.
 
 Es ist von entscheidender Bedeutung, eine gut durchdachte **Standardregel“**. Ihre [Standardregel](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/overview#default-rule) bestimmt, wie Suchergebnisse zunächst sortiert werden, wenn keine spezifischere Suchregel gilt, was die Erkennung und Kaufwahrscheinlichkeit verbessert. Überprüfen Sie diese regelmäßig, damit sie mit den Anforderungen und Kampagnen der Kunden Schritt hält.

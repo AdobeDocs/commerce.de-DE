@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '385'
 ht-degree: 0%
 ---
+# Best Practices für Synonyme
+
 Im Folgenden finden Sie eine Liste mit Best Practices zum Erstellen von Synonymen.
 
 - Das System verwaltet Rechtschreibfehler standardmäßig. Um Wörter einzuschließen, die Käufer möglicherweise verwenden, richten Sie Synonyme ein. Diese Wörter unterscheiden sich von denen, die im Katalog angegeben sind. Sie wollen keinen Verkauf verlieren, weil jemand nach einem „Sofa“ sucht, während Ihr Produkt als „Couch“ aufgeführt ist. Erfassen Sie eine breite Palette von Suchbegriffen, indem Sie alle möglichen Wörter eingeben, die Kunden verwenden könnten, um Ihre Produkte zu finden. Um die Ergebnisse zu verbessern[&#x200B; setzen Sie Synonyme als unidirektional oder bidirektional](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type).

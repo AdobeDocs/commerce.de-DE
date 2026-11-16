@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '4094'
+source-wordcount: '4098'
 ht-degree: 0%
 ---
+# Regeln erstellen und verwalten
+
 Zum Erstellen einer Regel müssen Sie die Katalogansicht auswählen, für die die Regel gilt, die Regelbeschreibung konfigurieren, den Typ angeben, die Bedingungen und das Ranking definieren, die Ergebnisse testen und die Regel veröffentlichen.
 
 ## Erstellen einer Regel {#create-a-rule}

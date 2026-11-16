@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '463'
 ht-degree: 0%
 ---
+# Erstellen und Verwalten von Facetten
+
 Jedes filterbare Produktattribut kann als Facette verwendet werden. Facetten helfen Kunden, Produkte einfacher zu filtern und zu finden. In diesem Artikel wird beschrieben, wie Sie Facetten in Ihrer Storefront hinzufügen, verwalten und konfigurieren.
 
 ![Facette erstellen](/help/assets/ccdm-shared/facets/create-facet.png)

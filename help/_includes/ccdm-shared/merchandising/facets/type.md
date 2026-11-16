@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '209'
 ht-degree: 0%
 ---
+# Facettenarten
+
 Facetten gibt es in verschiedenen Typen, und sie werden nur dann in der Liste *Filter* angezeigt, wenn sie relevant sind. Die Liste der verfügbaren Facetten ändert sich je nach den zurückgegebenen Produkten. Die folgenden Merkmale beeinflussen ihre Darstellung und ihr Verhalten:
 
 - Facetten angeheftet - Die am häufigsten verwendeten Facetten können oben in der Liste angeheftet werden. Die übrigen Facetten werden in der Reihenfolge *Sortierungstyp* nach den angehefteten Facetten aufgeführt.

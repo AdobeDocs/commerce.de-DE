@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '740'
 ht-degree: 0%
 ---
+# Übersicht über Katalogansichten für Adobe Merchandising Services
+
 <!--This shared include file contains the conceptual and architecture overview of catalog views for Adobe Merchandising Services-->
 
 Eine Katalogansicht definiert die Produkte und Preise, die ein Kunde abrufen kann. Es kombiniert Katalogquellen, Katalogschichten, Richtlinien und Preisbücher, um verschiedene Marken, Regionen, Geschäftseinheiten oder Kanäle zu unterstützen.

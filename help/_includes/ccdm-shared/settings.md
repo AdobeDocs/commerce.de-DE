@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '872'
 ht-degree: 0%
 ---
+# Merchandising-Einstellungen
+
 Verwenden Sie den Arbeitsbereich *Einstellungen*, um die Suche und Produktsuche für Ihre Storefront zu konfigurieren. Die folgenden Registerkarten sind verfügbar:
 
 - **Facetten** - Konfigurieren Sie Preisbereichsgruppen und -intervalle, die als Suchfilter verwendet werden.

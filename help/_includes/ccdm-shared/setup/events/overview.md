@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1606'
 ht-degree: 10%
 ---
+# Ereignisse
+
 Ereignisse sind ein wichtiges Tool zur Verbesserung des Einkaufserlebnisses und zur Steigerung von Konversionen durch die Nutzung von Echtzeit-Dateneinblicken.
 
 Merchandising-Services mit dem zusammensetzbaren Katalogdatenmodell (CCDM) stellen automatisch Storefront-Ereignisse auf Ihrer Site bereit. Diese Ereignisse erfassen Daten aus den Interaktionen von Käufern auf Ihrer Site. Diese anonymisierten Daten ermöglichen [Empfehlungen](../../manage-results/recommendation-performance.md), [Produkterkennung](../../manage-results/search-performance.md) und [Erfolgsmetriken](../../manage-results/success-metrics.md).
