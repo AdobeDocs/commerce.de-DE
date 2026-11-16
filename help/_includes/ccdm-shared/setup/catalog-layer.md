@@ -199,6 +199,6 @@ Befolgen Sie beim Arbeiten mit Katalogebenen die folgenden Empfehlungen:
 ## Ähnliche Themen
 
 * [Katalogansichten](catalog-view.md) - Konfigurieren von Katalogansichten für verschiedene Storefronts
-* [Produktvisualisierungen](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals) - Verwenden von AEM Assets für Produktbilder
+* [Produktvisualisierungen](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/product-visuals) - Verwenden von AEM Assets für Produktbilder
 * [Opportunities](../manage-results/opportunities.md) - Erfahren Sie mehr über KI-gestützte Optimierung mithilfe von Katalogschichten
 * [Eingeschränkte Zugriffsschlüssel](restricted-access-keys.md) - Schützen einer Katalogansicht mit Authentifizierung mit signierten Token
