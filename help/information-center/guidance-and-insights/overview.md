@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
+source-git-commit: 885ac15bc30ac9d9fe9ab416db7fdbfcad0ff026
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '265'
 ht-degree: 0%
 ---
 
@@ -58,6 +58,7 @@ Entwickelnde, Architekten, technische Leiter, Commerce-Strategen und Business-Te
 ## Exploring starten
 
 - [Entwerfen einer Commerce-Plattform für Käufer und KI](agentic-commerce/architectural-foundations-agentic-commerce.md)Agenten - Erfahren Sie, wie Sie Personen und KI-Agenten aus einer einzigen Datenquelle bedienen können. Der Artikel behandelt einen Katalog für maschinelles Denken, das Model Context Protocol (MCP) und Open Agent Commerce-Protokolle sowie die Telemetrie, die zeigt, wie Agenten Ihre Marke repräsentieren.
+- [Agentischer Handel im Jahr 2027: fünf Prioritäten für Commerce-](agentic-commerce/five-priorities-commerce-leaders-2027.md) - Vorbereitung auf KI-gestütztes Einkaufen mit Prioritäten für Produktdaten, Auffindbarkeit, Infrastruktur, Messung und Experimentieren.
 - [Verbessern Sie die Produkterkennung mit der Adobe Commerce Live Search](catalog-management/improve-product-discovery-live-search.md) - Erfahren Sie, wie Sie Suchleistungseinblicke und semantische Suche verwenden können, um Kundinnen und Kunden bei der Suche nach relevanten Produkten zu unterstützen.
 
 Artikel werden diesem Abschnitt bei ihrer Veröffentlichung hinzugefügt. Schauen Sie zurück auf Expertenperspektiven, Implementierungsstrategien und Empfehlungen, die Sie sofort nutzen können.

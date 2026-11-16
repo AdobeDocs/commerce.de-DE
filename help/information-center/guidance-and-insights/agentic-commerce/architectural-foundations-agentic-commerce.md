@@ -49,23 +49,21 @@ topic_v2:
     internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: f54c816fd23786ec519d5c890bc2664c3dcf8c6f
+source-git-commit: 885ac15bc30ac9d9fe9ab416db7fdbfcad0ff026
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1323'
 ht-degree: 0%
 ---
 
 # Entwerfen einer Commerce-Plattform für Käufer und KI-Agenten
+
+![Hero-Illustration einer agentischen Commerce-Plattform, auf der Menschen und KI-Agenten mit einer einzigen Quelle der Wahrheit interagieren](../../assets/guidance-and-insights/agentic-commerce-hero.png "Die architektonischen Grundlagen einer agentischen Commerce-Plattform"){width="800"}
 
 <table style="table-layout:auto">
 <tr style="border: 0;">
    <td valign="middle" style="vertical-align: middle;"><img alt="Porträt von Surya Lamech" src="../../assets/guidance-and-insights/agentic-commerce-author-avatar-slamech.png" width="96"><br><strong>Surya Lamech</strong><br><em>Principal Product Marketing Manager</em></td>
 </tr>
 </table>
-
-![Hero-Illustration einer agentischen Commerce-Plattform, auf der Menschen und KI-Agenten mit einer einzigen Quelle der Wahrheit interagieren](../../assets/guidance-and-insights/agentic-commerce-hero.png "Die architektonischen Grundlagen einer agentischen Commerce-Plattform")
-
-*Entwicklung einer Commerce-Plattform, auf der Menschen und KI-Agenten mit einer einzigen Quelle der Wahrheit interagieren.*
 
 Commerce befindet sich in einem Strukturwandel. Kunden verlassen sich nicht mehr ausschließlich auf Suchmaschinen oder das Durchsuchen von Storefronts, um ihre Optionen zu erkunden. Stattdessen greifen sie auf LLM-gestützte Schnittstellen, chatbasierte Assistenten und agentische Einkaufstools zurück, um Fragen zu stellen, Produkte über Einzelhändler hinweg zu vergleichen und die Entscheidungsfindung in der Frühphase zu beschleunigen.
 
@@ -136,4 +134,4 @@ E-Commerce ist nicht mehr auf Storefronts und Suchergebnisse beschränkt. LLMs u
 * [Richtlinien](/help/optimizer/setup/policies.md)
 * [Entwickler-Tools für KI-Codierung für Adobe Commerce App Builder](/help/cloud-service/migration/coding-tools.md)
 * [Commerce-APIs](../../apis/commerce-apis.md)
-* [Commerce Developer Agent-Wiedergabeliste](https://experienceleague.adobe.com/de/playlists/commerce-developer-agent) - Sehen Sie sich technische Videos zum Einrichten und Verwenden des Commerce Developer Agent an.
+* [Commerce Developer Agent-Wiedergabeliste](https://experienceleague.adobe.com/en/playlists/commerce-developer-agent) - Sehen Sie sich technische Videos zum Einrichten und Verwenden des Commerce Developer Agent an.
