@@ -64,7 +64,7 @@ C2PA-Metadaten sind manipulationssichere, maschinenlesbare Metadaten, die auf de
 
 - Wenn Sie einen Bericht zu Erfolgsmetriken nach PDF exportieren, enthält die exportierte Datei C2PA-Metadaten.
 - C2PA-Metadaten werden zusammen mit dem PDF übermittelt, wenn Sie sie freigeben oder herunterladen. Drittanbieterplattformen, die C2PA-Metadaten unterstützen, können diese Metadaten lesen und Transparenzinformationen für Betrachter anzeigen.
-- Sie können die an eine Datei angehängten C2PA-Metadaten überprüfen, indem Sie sie in &quot;[&quot; ](https://contentauthenticity.adobe.com/inspect).
+- Sie können die an eine Datei angehängten C2PA-Metadaten überprüfen, indem Sie sie in &quot;[&quot; &#x200B;](https://contentauthenticity.adobe.com/inspect).
 
 ![Muster überprüfen](/help/assets/ccdm-shared/manage-results/inspect-sample.png)
 
@@ -316,7 +316,7 @@ Diese Tracking-Methode weist einige bekannte Einschränkungen auf:
 
 - **Nutzen von Suchleistungsdaten**: Verwenden Sie den [Suchleistung](../manage-results/search-performance.md)-Bericht, um Trenderzeugnisse und beliebte Suchbegriffe zu identifizieren. Erstellen Sie Merchandising-Regeln, um diese Elemente hervorzuheben.
 
-- **Optimieren der Empfehlungsleistung**: Überwachen Sie [ Metriken zur Empfehlungsleistung](../manage-results/recommendation-performance.md) um zu ermitteln, welche Empfehlungstypen den meisten Traffic und die meisten Konversionen fördern.
+- **Optimieren der Empfehlungsleistung**: Überwachen Sie [&#x200B; Metriken zur Empfehlungsleistung](../manage-results/recommendation-performance.md) um zu ermitteln, welche Empfehlungstypen den meisten Traffic und die meisten Konversionen fördern.
 
 - **Neue Artikel und Werbeartikel hervorheben**: Verwenden Sie Merchandising-Regeln, um neue Produkte oder Werbeartikel in den Suchergebnissen zu optimieren, um die Aufmerksamkeit neuer Besucher zu erregen.
 
@@ -415,7 +415,7 @@ Bounce Rate = (Number of Bounced Sessions ÷ Total Sessions) × 100
 | Feld | Beschreibung |
 | ---  | --- |
 | Datumsbereich | Zu den Optionen gehören **Letzte 3 Monate**, **Letzte 7 Tage**, **Letzte 30 Tage**, **Letzte 6 Monate**, **Letzte 12 Monate** und **Jahr bis heute**. Verwenden Sie kürzere Bereiche für sofortige Optimierungseinblicke und längere Bereiche für Trendanalysen. |
-| Land | Basierend auf der für Ihre [Katalogansicht“ angegebenen ](../setup/catalog-view.md). Wählen Sie den geeigneten Markt für eine genaue Leistungsanalyse aus. |
+| Land | Basierend auf der für Ihre [Katalogansicht“ angegebenen &#x200B;](../setup/catalog-view.md). Wählen Sie den geeigneten Markt für eine genaue Leistungsanalyse aus. |
 | Währung | Die für Ihre Katalogansicht angegebene Währung. Stellen Sie sicher, dass dies Ihrem Zielmarkt für eine genaue Umsatzberichterstattung entspricht. |
 | Export | Speichert den Bericht als PDF zur Freigabe für Stakeholder oder Offline-Analyse. |
 

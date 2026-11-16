@@ -12,7 +12,7 @@ Zum Erstellen einer Regel müssen Sie die Katalogansicht auswählen, für die di
 
 1. Navigieren Sie im Menü zu _Merchandising_ > **Merchandising-Regeln**.
 1. (Optional) Wählen Sie im Dropdown-Menü **Katalogansicht“ die Katalogansicht aus, für** die Regel gilt.
-Die von Ihnen erstellte Regel wird auf die ausgewählte Ansicht beschränkt (oder auf alle Katalogansichten, wenn **Alle Ansichten** ausgewählt ist). Siehe [Auswählen der ](workspace.md#select-catalog-view)), wie der Umfang der Katalogansicht funktioniert.
+Die von Ihnen erstellte Regel wird auf die ausgewählte Ansicht beschränkt (oder auf alle Katalogansichten, wenn **Alle Ansichten** ausgewählt ist). Siehe [Auswählen der &#x200B;](workspace.md#select-catalog-view)), wie der Umfang der Katalogansicht funktioniert.
 
 1. Klicken Sie auf **[!UICONTROL Create rule]** , um den Regeleditor zu starten.
 
@@ -200,7 +200,7 @@ Ein Händler verwendet die „am häufigsten angesehene“ intelligente Rangfolg
 
 Bei einer Abfrage wie **Holz** können mehrere Produkte eine ähnliche Textrelevanz aufweisen, während die Anzahl der Ansichten unterschiedlich ist. Wenn **Am häufigsten angezeigt** ausgewählt ist, steigt die Wahrscheinlichkeit, dass die historisch am häufigsten angezeigte relevante SKU mit zunehmender **[!UICONTROL Intelligent Ranking Boost]** über leichtere Übereinstimmungen auftaucht. Durch das Verringern der Steigerung können die Ergebnisse näher an der reinen Textreihenfolge liegen.
 
-Informationen zur Verbesserung der Auffindbarkeit von Produkten mithilfe von Regeln [ Sie unter (Suchregeln](best-practice.md#tips-to-optimize-search-rules).
+Informationen zur Verbesserung der Auffindbarkeit von Produkten mithilfe von Regeln [&#x200B; Sie unter (Suchregeln](best-practice.md#tips-to-optimize-search-rules).
 
 #### Einschränkungen
 
@@ -210,7 +210,7 @@ Informationen zur Verbesserung der Auffindbarkeit von Produkten mithilfe von Reg
 
 Informationen zum Festlegen der Suchgewichtung:
 
-- Informationen zu allen Adobe Commerce-Bereitstellungen [ Sie unter ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results) im _Handbuch zur Katalogverwaltung_.
+- Informationen zu allen Adobe Commerce-Bereitstellungen [&#x200B; Sie unter &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results) im _Handbuch zur Katalogverwaltung_.
 - Informationen zu eigenständigen Adobe Commerce Optimizer-Bereitstellungen finden Sie unter [Metadaten-REST-](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)) im _Merchandising Services-Entwicklerhandbuch_.
 
 ### Manuelle Rangfolge {#manual-ranking}
@@ -293,7 +293,7 @@ Eine einzelne Regel kann bis zu 25 Attributbedingungen haben, dieselbe Grenze wi
 
 >[!NOTE]
 >
->Regeln und manuell sortierte Produkte werden auf **Suchergebnisse** angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sodass sie etwa nach Namen sortiert wird, sind Regeln und manuelle Rankings nicht mehr wirksam. Für **category**-Listen wird das Standardsortierverhalten unter „Manuelles [&quot; ](#manual-ranking).
+>Regeln und manuell sortierte Produkte werden auf **Suchergebnisse** angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sodass sie etwa nach Namen sortiert wird, sind Regeln und manuelle Rankings nicht mehr wirksam. Für **category**-Listen wird das Standardsortierverhalten unter „Manuelles [&quot; &#x200B;](#manual-ranking).
 
 ## Regeln bearbeiten, anzeigen und löschen {#edit-view-and-delete-rules}
 

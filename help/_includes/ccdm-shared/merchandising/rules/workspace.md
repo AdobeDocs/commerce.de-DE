@@ -6,7 +6,7 @@ ht-degree: 1%
 ---
 # Merchandising-Regeln - Workspace
 
-Der *Merchandising-Regeln*-Arbeitsbereich listet die aktuelle Auswahl von Regeln und deren Status auf und bietet Zugriff auf Tools, die Sie zum Erstellen und Verwalten von Regeln benötigen. Sie können Regeln auf alle [Katalogansichten](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) (global) oder auf eine einzelne Katalogansicht beschränken. Informationen [ Filtern nach Katalogansicht und ](#select-catalog-view) Erstellen von Regeln pro Katalogansicht finden Sie unter „Auswählen Katalogansicht“. Im Arbeitsbereich haben Sie folgende Möglichkeiten:
+Der *Merchandising-Regeln*-Arbeitsbereich listet die aktuelle Auswahl von Regeln und deren Status auf und bietet Zugriff auf Tools, die Sie zum Erstellen und Verwalten von Regeln benötigen. Sie können Regeln auf alle [Katalogansichten](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) (global) oder auf eine einzelne Katalogansicht beschränken. Informationen [&#x200B; Filtern nach Katalogansicht und &#x200B;](#select-catalog-view) Erstellen von Regeln pro Katalogansicht finden Sie unter „Auswählen Katalogansicht“. Im Arbeitsbereich haben Sie folgende Möglichkeiten:
 
 - Nach Regeln suchen
 - Regeldetails anzeigen
@@ -43,7 +43,7 @@ Der *Merchandising-Regeln*-Arbeitsbereich listet die aktuelle Auswahl von Regeln
 
 Im Detailbereich werden der Regelname, der Status, Bedingungen und Ereignisse, das Start- und Enddatum, die Beschreibung und das Datum der letzten Bearbeitung angezeigt. Regeln können im Detailbereich aktiviert, bearbeitet und gelöscht werden.
 
-1. Suchen Sie im Arbeitsbereich *Merchandising* Regeln“ die Regel in dem Raster, das Sie anzeigen möchten, und klicken Sie auf das Symbol (![Weitere ](/help/assets/ccdm-shared/recommendations/btn-more.png)).
+1. Suchen Sie im Arbeitsbereich *Merchandising* Regeln“ die Regel in dem Raster, das Sie anzeigen möchten, und klicken Sie auf das Symbol (![Weitere &#x200B;](/help/assets/ccdm-shared/recommendations/btn-more.png)).
 
    Im Menü können Sie eine der folgenden Aktionen ausführen:
 
@@ -104,7 +104,7 @@ Erstellen Sie Regeln pro Katalogansicht, wenn verschiedene Storefronts, Regionen
 - **Multi-Region** - Separate Katalogansichten für die EU, die USA oder andere Regionen mit regionsspezifischen Merchandising-Regeln.
 - **Mehrmarken** - Jede Marke verfügt über eine eigene Katalogansicht und Sie möchten markenspezifische Regeln (z. B. unterschiedliche Standard-Rankings oder beworbene Produkte pro Marke).
 
-Verhaltensdaten, die [intelligentes Ranking“ ](add.md#intelligent-ranking) (z. B. am häufigsten angezeigt, am häufigsten gekauft, Trends), werden standardmäßig pro Katalogansicht berechnet. Regeln, die ein intelligentes Ranking verwenden, spiegeln daher das Käuferverhalten dieser Katalogansicht wider. Wenn Ihr Konto über eine große Anzahl von Katalogansichten verfügt, kann das System Verhaltensdaten global aggregieren, um die Leistung aufrechtzuerhalten. In diesem Fall kann das Ranking stärker durch Katalogansichten mit hohem Traffic beeinflusst werden, und die Relevanz für Ansichten mit niedrigerem Traffic kann reduziert werden. Siehe [Beschränkungen und Grenzen](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits) für aktuelle Beschränkungen.
+Verhaltensdaten, die [intelligentes Ranking“ &#x200B;](add.md#intelligent-ranking) (z. B. am häufigsten angezeigt, am häufigsten gekauft, Trends), werden standardmäßig pro Katalogansicht berechnet. Regeln, die ein intelligentes Ranking verwenden, spiegeln daher das Käuferverhalten dieser Katalogansicht wider. Wenn Ihr Konto über eine große Anzahl von Katalogansichten verfügt, kann das System Verhaltensdaten global aggregieren, um die Leistung aufrechtzuerhalten. In diesem Fall kann das Ranking stärker durch Katalogansichten mit hohem Traffic beeinflusst werden, und die Relevanz für Ansichten mit niedrigerem Traffic kann reduziert werden. Siehe [Beschränkungen und Grenzen](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits) für aktuelle Beschränkungen.
 
 ### Einrichten einer Regel pro Katalogansicht
 

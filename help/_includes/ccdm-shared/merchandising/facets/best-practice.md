@@ -10,7 +10,7 @@ Die Filter- und Facettenfunktionalität ist eine wichtige Komponente von Commerc
 
 ## Tipps zum Optimieren von Facetten
 
-- Bestimmen Sie relevante Produktattribute wie Titel, Kategorie, Marke, Preisbereich, Farbe und Größe und legen Sie sie als [dynamische Facetten“ ](type.md). 
+- Bestimmen Sie relevante Produktattribute wie Titel, Kategorie, Marke, Preisbereich, Farbe und Größe und legen Sie sie als [dynamische Facetten“ &#x200B;](type.md). 
 - Legen Sie Produktattribute fest und sortieren Sie sie, die in Ihrem gesamten Katalog konsistent und für Ihre Produkte äußerst relevant sind, um die Relevanz und Filtermöglichkeiten für Ihre Kunden zu verbessern.
 - Stellen Sie sicher, dass Facettenbeschriftungen leicht verständlich sind und auf der gesamten Site konsistent benannt werden. Verwenden Sie beispielsweise `Price Range` anstelle von `Cost`.
 - Vermeiden Sie es, Käufer zu überfordern, indem Sie die Anzahl der Facetten auf die wichtigsten beschränken. Zu viele Optionen können zu Entscheidungsermüdung führen. Die Facettenkonfiguration unterstützt bis zu 100 als Facetten konfigurierte Attribute und bis zu 100 Werte pro Facette. Weitere Informationen zu [Facettenbegrenzungen](/help/optimizer/boundaries-limits.md#product-discovery).
