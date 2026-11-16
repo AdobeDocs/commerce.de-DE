@@ -77,7 +77,7 @@ Nach der Zuweisung geben die Merchandising-Services- und Storefront-GraphQL-APIs
 
 ## Hinzufügen einer Katalogebene über die Datenaufnahme
 
-Sie können Ihren Produkten während der Datenaufnahme Katalogebenen hinzufügen. Diese Methode eignet sich ideal für Massenvorgänge oder automatisierte Workflows. Sie importieren Katalogebenen mit der Aufnahme-API, aber [&#x200B; Festlegen der Reihenfolge &#x200B;](#manage-layer-priorities) Ebenen erfolgt über die Benutzeroberfläche.
+Sie können Ihren Produkten während der Datenaufnahme Katalogebenen hinzufügen. Diese Methode eignet sich ideal für Massenvorgänge oder automatisierte Workflows. Sie importieren Katalogebenen mit der Aufnahme-API, aber [ Festlegen der Reihenfolge ](#manage-layer-priorities) Ebenen erfolgt über die Benutzeroberfläche.
 
 **Voraussetzungen:**
 
@@ -199,6 +199,6 @@ Befolgen Sie beim Arbeiten mit Katalogebenen die folgenden Empfehlungen:
 ## Ähnliche Themen
 
 * [Katalogansichten](catalog-view.md) - Konfigurieren von Katalogansichten für verschiedene Storefronts
-* [Produktvisualisierungen](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/product-visuals) - Verwenden von AEM Assets für Produktbilder
+* [Produktvisualisierungen](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals) - Verwenden von AEM Assets für Produktbilder
 * [Opportunities](../manage-results/opportunities.md) - Erfahren Sie mehr über KI-gestützte Optimierung mithilfe von Katalogschichten
 * [Eingeschränkte Zugriffsschlüssel](restricted-access-keys.md) - Schützen einer Katalogansicht mit Authentifizierung mit signierten Token

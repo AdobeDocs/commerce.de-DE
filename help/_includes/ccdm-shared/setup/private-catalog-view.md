@@ -51,7 +51,7 @@ Wenn Sie keine freigegebenen B2B-Kataloge verwenden - um beispielsweise eine Kat
 >
 >Überspringen Sie dieses Verfahren für Katalogansichten, die mit freigegebenen B2B-Katalogen verknüpft sind, die vom [!DNL Adobe Commerce Optimizer Connector for B2B] verwaltet werden. Siehe [Automatische private Katalogansichten für freigegebene B2B-Kataloge](#automatic-private-catalog-views-for-b2b-shared-catalogs).
 
-Bevor Sie beginnen, [&#x200B; Sie aus dem öffentlichen Schlüssel, den Ihre Client](restricted-access-keys.md)Anwendung generiert, einen Schlüssel mit eingeschränktem Zugriff.
+Bevor Sie beginnen, [ Sie aus dem öffentlichen Schlüssel, den Ihre Client](restricted-access-keys.md)Anwendung generiert, einen Schlüssel mit eingeschränktem Zugriff.
 
 1. Schalten Sie in der Katalogansicht Formular erstellen oder bearbeiten **[!UICONTROL Catalog Protection]** zu **[!UICONTROL Enabled]** um.
 
@@ -98,7 +98,7 @@ Wenn [!UICONTROL Catalog Protection] aktiviert ist und alle zugewiesenen Schlüs
 
 >[!NOTE]
 >
->Bei Adobe Commerce B2B-Bereitstellungen mit Merchandising Services mit CCDM verwalten Sie Zugriffsschlüssel über die Commerce Admin-Seite **Eingeschränkte Zugriffsschlüssel** (**System** > **Datenübertragung**). Weitere Informationen finden Sie unter [Schlüsselverwaltung für eingeschränkten Zugriff](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) im *[!DNL Adobe Commerce Optimizer Connector]-Integrationshandbuch*.
+>Bei Adobe Commerce B2B-Bereitstellungen mit Merchandising Services mit CCDM verwalten Sie Zugriffsschlüssel über die Commerce Admin-Seite **Eingeschränkte Zugriffsschlüssel** (**System** > **Datenübertragung**). Weitere Informationen finden Sie unter [Schlüsselverwaltung für eingeschränkten Zugriff](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) im *[!DNL Adobe Commerce Optimizer Connector]-Integrationshandbuch*.
 
 ## Ähnliche Themen
 
