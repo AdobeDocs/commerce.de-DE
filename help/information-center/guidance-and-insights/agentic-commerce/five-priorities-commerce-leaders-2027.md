@@ -168,7 +168,7 @@ Bei der Zukunft des Handels geht es nicht nur darum, wo die Kunden einkaufen. Es
 
 **Bereit, Ihr Unternehmen für KI-gestützten Handel vorzubereiten?**
 
-[Erkunden Sie Adobe Commerce as a Cloud Service](https://business.adobe.com/products/commerce.html) und entdecken Sie, wie Adobe Ihnen dabei helfen kann, vernetztere, intelligentere Einkaufserlebnisse zu schaffen.
+[Erkunden Sie Adobe Commerce as a Cloud Service](https://business.adobe.com/de/products/commerce.html) und entdecken Sie, wie Adobe Ihnen dabei helfen kann, vernetztere, intelligentere Einkaufserlebnisse zu schaffen.
 
 >[!ENDSHADEBOX]
 
