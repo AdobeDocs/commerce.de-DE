@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1007'
 ht-degree: 0%
 ---
 # Überprüfen von Protokollen und Fehlerbehebung
@@ -42,7 +42,7 @@ Die [!DNL data export]-Erweiterung stellt Protokolle zum Nachverfolgen von Daten
 
 >[!NOTE]
 >
->Sie können auch die Konsistenz und Leistung der Datenexport-Feeds für Produkt- und Kategoriedaten über das Dashboard [Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in Admin verfolgen.
+>Sie können auch die Konsistenz und Leistung der Datenexport-Feeds für Produkt- und Kategoriedaten über das Dashboard [Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in Admin verfolgen.
 
 ## Protokolle
 
@@ -159,7 +159,7 @@ Wenn Daten in Commerce Services fehlen oder falsch sind, überprüfen Sie die Pr
 - Das Datenexportfehlerprotokoll (`commerce-data-export-errors.log`) erfasst Fehler, die während der Erfassungsphase auftreten.
 - Das SaaS-Exportfehlerprotokoll (`saas-export-errors.log`) erfasst Fehler, die während der Übertragungsphase auftreten.
 
-Wenn Sie Fehler sehen, die nicht mit der Konfiguration oder Erweiterungen von Drittanbietern in Zusammenhang stehen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) mit so vielen Informationen wie möglich.
+Wenn Sie Fehler sehen, die nicht mit der Konfiguration oder Erweiterungen von Drittanbietern in Zusammenhang stehen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) mit so vielen Informationen wie möglich.
 
 ### Beheben von Katalogsynchronisierungsproblemen {#resolvesync}
 
@@ -181,7 +181,7 @@ Nach Abschluss des Vorgangs kann die Feed-Payload im SaaS-Exportprotokoll (`var/
 
 ### Payload in Feed-Indextabelle beibehalten
 
-Für die Commerce SaaS-Datenexporterweiterung (`magento/module-data-exporter`) 103.3.0 und höher behalten sofortige Export-Feeds nur die erforderlichen Mindestdaten in der Indextabelle bei. Die Feeds umfassen alle Feeds für den Katalog- und Bestandsstatus.
+Für die Commerce SaaS-Datenexporterweiterung (`magento/module-data-exporter`) 103.3.0 und höher behalten sofortige Export-Feeds nur die erforderlichen Mindestdaten in der Indextabelle bei. Die Feeds umfassen alle Katalog-Feeds.
 
 Die Beibehaltung von Payload-Daten in der Indextabelle wird in Produktionsumgebungen nicht empfohlen, kann aber in einer Entwicklungsumgebung nützlich sein. Schließen Sie die Feed-Payload in den Index ein, indem Sie die `PERSIST_EXPORTED_FEED=1` Umgebungsvariable hinzufügen, wenn Sie den Feed neu synchronisieren.
 

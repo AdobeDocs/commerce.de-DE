@@ -26,14 +26,14 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '754'
 ht-degree: 0%
 ---
 # Synchronisieren von Feeds mit der Commerce-CLI
 
-Mit dem `saas:resync`-Befehl im `magento/saas-export` können Sie die Datensynchronisation für [!DNL Adobe Commerce] SaaS-Services verwalten.
+Mit dem `saas:resync` CLI-Befehl können Sie die Datensynchronisation für [!DNL Adobe Commerce] SaaS-Services verwalten.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Mit dem `saas:resync`-Befehl im `magento/saas-export` können Sie die Datensynch
 Es wird von Adobe nicht empfohlen, den Befehl `saas:resync` regelmäßig zu verwenden. Typische Szenarien für die Verwendung des Befehls sind:
 
 - Erstsynchronisierung
-- Synchronisieren von Daten mit einem neuen Datenraum nach Änderung der [SaaS-Datenraum-ID](https://experienceleague.adobe.com/de/docs/commerce-admin/config/services/saas)
+- Synchronisieren von Daten mit einem neuen Datenraum nach Änderung der [SaaS-Datenraum-ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Fehlerbehebung
 
 Überwachen von Synchronisierungsvorgängen in der `var/log/saas-export.log`.
@@ -116,7 +116,7 @@ bin/magento saas:resync --feed products
 
 ## `--by-ids`
 
-Bestimmte Entitäten anhand ihrer IDs teilweise neu synchronisieren. Unterstützt `products`-, `productAttributes`-, `productOverrides`-, `inventoryStockStatus`-, `prices`-, `variants`- und `categoryPermissions`.
+Bestimmte Entitäten anhand ihrer IDs teilweise neu synchronisieren. Unterstützt `products`-, `productAttributes`-, `productOverrides`-, `prices`-, `variants`- und `categoryPermissions`.
 
 Wenn Sie die Option &quot;`--by-ids`&quot; verwenden, geben Sie Werte standardmäßig mithilfe von Produkt-SKU-Werten an. Um stattdessen Produkt-IDs zu verwenden, fügen Sie die Option `--id-type=productId` hinzu.
 
@@ -134,7 +134,7 @@ bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
 
 ## `--cleanup-feed`
 
-Bereinigen Sie die Feed-Indexertabelle, bevor Sie Daten neu indizieren und an SaaS senden. Wird nur für `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` und `categoryPermissions` unterstützt.
+Bereinigen Sie die Feed-Indexertabelle, bevor Sie Daten neu indizieren und an SaaS senden. Wird nur für `products`, `productAttributes`, `productOverrides`, `prices`, `variants` und `categoryPermissions` unterstützt.
 
 Bei Verwendung mit der Option `--dry-run` führt der Vorgang einen Probelauf-Resynchronisierungsvorgang für alle Elemente durch.
 

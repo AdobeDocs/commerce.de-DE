@@ -1,6 +1,6 @@
 ---
 title: Schätzen des Datenvolumens und der Übertragungszeit
-description: Erfahren Sie, wie Sie das Datenvolumen und die Übertragungszeit schätzen, die für das  [!DNL data export] -Tool zum Synchronisieren von Feed-Daten zwischen Adobe Commerce und Connected Services erforderlich sind.
+description: Erfahren Sie, wie Sie das Datenvolumen und die Übertragungszeit schätzen, die für das [!DNL data export]-Tool zur Synchronisierung von Feed-Daten zwischen Adobe Commerce und Connected Services erforderlich sind.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 787d05d6-fc2f-4f23-8ea7-ef54330e1f37
@@ -27,13 +27,11 @@ role_v2:
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: 585
+source-wordcount: '548'
 ht-degree: 0%
-
 ---
-
 # Schätzen des Datenvolumens und der Übertragungszeit für die Datensynchronisation
 
 Adobe empfiehlt, das Datenvolumen und die Synchronisierungszeit zu schätzen, bevor Sie eine Daten-Feed-Synchronisierung starten, um eine reibungslose Planung sicherzustellen und Unterbrechungen im Site-Betrieb zu vermeiden. Diese Schätzung ist wichtig bei der Planung von anfänglichen Synchronisationen oder umfangreichen Katalogaktualisierungen, z. B. Massenpreisänderungen.
@@ -72,7 +70,6 @@ Verwenden Sie die Werte und Formeln in der folgenden Tabelle, um das Datenvolume
 | Produktüberschreibungen | Produkte mit Berechtigungen oder im freigegebenen Katalog (P): 10000, Betroffene Kundengruppen (CG): 5, Zugewiesene Websites WS: 2 | P \* WS * CG = 100000 | 100000 / Batch-Größe (100) = 1000 Anfragen | (1000 Anfragen * 0,5 Sekunden pro Anfrage) / 60 = 8,3 Minuten |
 | Produktvarianten | Varianten (untergeordnete Produkte), die konfigurierbaren Produkten (PV) zugewiesen sind: 100000 | PV = 100000 | 100000 / Batch-Größe (100) = 1000 Anfragen | (1000 Anfragen * 0,5 Sekunden pro Anfrage) / 60 = 8,3 Minuten |
 | Kategorieberechtigungen | Anzahl aller Kategorieberechtigungen + 4 Fallback-Datensätze (CP): 10000 | CP = 10000 | 10000/Batch-Größe (100) = 100 Anfragen | (100 Anfragen * 0,5 Sekunden pro Anfrage) / 60 = 0,8 Minuten (50 Sekunden) |
-| Lagerbestand | Produkte (P): 10000, Lager Produkte zugeordnet zu (S): 5 (vorausgesetzt, jedes Produkt ist jedem Lager zugeordnet) | P * S = 50000 | 50000/Batch-Größe (100) = 500 Anfragen | (500 Anfragen * 0,5 Sekunden pro Anfrage) / 60 = 4,2 Minuten |
 | Kundenaufträge | Alle Auftragsdatensätze (einschließlich Rechnungen, Lieferungen usw.): 10000 | SO = 10000 | 10000/Batch-Größe (100) = 100 Anfragen | (100 Anfragen * 0,5 Sekunden pro Anfrage) / 60 = 0,8 Minuten (50 Sekunden) |
 
 >[!MORELIKETHIS]
