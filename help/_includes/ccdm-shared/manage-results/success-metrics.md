@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/manage-results/success-metrics.md
+https://github.com/Adobe-Enterprise-Docs/commerce.de-DE/blob/main/help/_includes/ccdm-shared/manage-results/success-metrics.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -78,7 +78,7 @@ C2PA-Metadaten sind manipulationssichere, maschinenlesbare Metadaten, die auf de
 
 ![Muster überprüfen](/help/assets/ccdm-shared/manage-results/inspect-sample.png)
 
-Weitere Informationen zu [Inhaltstransparenz mit generativer KI](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
+Weitere Informationen zu [Inhaltstransparenz mit generativer KI](https://experienceleague.adobe.com/de/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
 
 ## Gemeinsam Erfolgsmetriken und Sites Optimizer verwenden
 

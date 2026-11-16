@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/catalog-layer.md
+https://github.com/Adobe-Enterprise-Docs/commerce.de-DE/blob/main/help/_includes/ccdm-shared/setup/catalog-layer.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -209,6 +209,6 @@ Befolgen Sie beim Arbeiten mit Katalogebenen die folgenden Empfehlungen:
 ## Ähnliche Themen
 
 * [Katalogansichten](catalog-view.md) - Konfigurieren von Katalogansichten für verschiedene Storefronts
-* [Produktvisualisierungen](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals) - Verwenden von AEM Assets für Produktbilder
+* [Produktvisualisierungen](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/product-visuals) - Verwenden von AEM Assets für Produktbilder
 * [Opportunities](../manage-results/opportunities.md) - Erfahren Sie mehr über KI-gestützte Optimierung mithilfe von Katalogschichten
 * [Eingeschränkte Zugriffsschlüssel](restricted-access-keys.md) - Schützen einer Katalogansicht mit Authentifizierung mit signierten Token

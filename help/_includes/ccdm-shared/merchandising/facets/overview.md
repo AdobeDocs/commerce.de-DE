@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/facets/overview.md
+https://github.com/Adobe-Enterprise-Docs/commerce.de-DE/blob/main/help/_includes/ccdm-shared/merchandising/facets/overview.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -43,7 +43,7 @@ Das System aktiviert standardmäßig die folgenden Produktattribute.
 
 Weitere Informationen zu Produktattributen und ihren Eigenschaften:
 
-- Informationen zu Bereitstellungen, die mit einem Adobe Commerce-Backend verbunden sind, finden Sie unter [Übersicht über Produktattribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)
+- Informationen zu Bereitstellungen, die mit einem Adobe Commerce-Backend verbunden sind, finden Sie unter [Übersicht über Produktattribute](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/product-attributes)
 - Informationen zu Bereitstellungen mit einem Commerce-Backend eines Drittanbieters finden Sie unter [Datenaufnahme-Metadaten-API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata).
 
 ## Mehrschichtige Suche und Erweiterung von Suchtypen

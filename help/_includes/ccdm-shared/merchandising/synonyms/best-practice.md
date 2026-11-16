@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/best-practice.md
+https://github.com/Adobe-Enterprise-Docs/commerce.de-DE/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/best-practice.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -18,7 +18,7 @@ This includes related images in help/assets/ccdm-shared/.
 
 Im Folgenden finden Sie eine Liste mit Best Practices zum Erstellen von Synonymen.
 
-- Das System verwaltet Rechtschreibfehler standardmäßig. Um Wörter einzuschließen, die Käufer möglicherweise verwenden, richten Sie Synonyme ein. Diese Wörter unterscheiden sich von denen, die im Katalog angegeben sind. Sie wollen keinen Verkauf verlieren, weil jemand nach einem „Sofa“ sucht, während Ihr Produkt als „Couch“ aufgeführt ist. Erfassen Sie eine breite Palette von Suchbegriffen, indem Sie alle möglichen Wörter eingeben, die Kunden verwenden könnten, um Ihre Produkte zu finden. Um die Ergebnisse zu verbessern[&#x200B; setzen Sie Synonyme als unidirektional oder bidirektional](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type).
+- Das System verwaltet Rechtschreibfehler standardmäßig. Um Wörter einzuschließen, die Käufer möglicherweise verwenden, richten Sie Synonyme ein. Diese Wörter unterscheiden sich von denen, die im Katalog angegeben sind. Sie wollen keinen Verkauf verlieren, weil jemand nach einem „Sofa“ sucht, während Ihr Produkt als „Couch“ aufgeführt ist. Erfassen Sie eine breite Palette von Suchbegriffen, indem Sie alle möglichen Wörter eingeben, die Kunden verwenden könnten, um Ihre Produkte zu finden. Um die Ergebnisse zu verbessern[&#x200B; setzen Sie Synonyme als unidirektional oder bidirektional](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type).
 
 - Ordnen Sie nun alle Markenbezeichnungen und Abkürzungen ihren vollständigen Namen zu, z. B. „HP“ für „Hewlett-Packard“ und die gebräuchlichen Produktspitznamen, z. B. &quot;iPhone&quot; für &quot;Apple iPhone&quot;.
 

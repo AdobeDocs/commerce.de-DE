@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/data-sync.md
+https://github.com/Adobe-Enterprise-Docs/commerce.de-DE/blob/main/help/_includes/ccdm-shared/setup/data-sync.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -61,4 +61,4 @@ Wenn bestimmte Produkte nicht auf der Seite **Datensynchronisierung** angezeigt 
 
 ## Überprüfen, ob die Datensynchronisierung funktioniert
 
-Bei Projekten, die Adobe Commerce als Upstream-Datenquelle verwenden, können Sie den Datenexportprozess überwachen und Resynchronisierungsvorgänge über die Seite Daten-Feed-Synchronisierungsstatus initiieren. Weitere Informationen finden Sie unter [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).
+Bei Projekten, die Adobe Commerce als Upstream-Datenquelle verwenden, können Sie den Datenexportprozess überwachen und Resynchronisierungsvorgänge über die Seite Daten-Feed-Synchronisierungsstatus initiieren. Weitere Informationen finden Sie unter [Überwachung des Synchronisierungsstatus von Daten-Feeds](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).
