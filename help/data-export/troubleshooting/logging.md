@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1007'
 ht-degree: 0%
 ---
 # Überprüfen von Protokollen und Fehlerbehebung
@@ -181,7 +181,7 @@ Nach Abschluss des Vorgangs kann die Feed-Payload im SaaS-Exportprotokoll (`var/
 
 ### Payload in Feed-Indextabelle beibehalten
 
-Für die Commerce SaaS-Datenexporterweiterung (`magento/module-data-exporter`) 103.3.0 und höher behalten sofortige Export-Feeds nur die erforderlichen Mindestdaten in der Indextabelle bei. Die Feeds umfassen alle Feeds für den Katalog- und Bestandsstatus.
+Für die Commerce SaaS-Datenexporterweiterung (`magento/module-data-exporter`) 103.3.0 und höher behalten sofortige Export-Feeds nur die erforderlichen Mindestdaten in der Indextabelle bei. Die Feeds umfassen alle Katalog-Feeds.
 
 Die Beibehaltung von Payload-Daten in der Indextabelle wird in Produktionsumgebungen nicht empfohlen, kann aber in einer Entwicklungsumgebung nützlich sein. Schließen Sie die Feed-Payload in den Index ein, indem Sie die `PERSIST_EXPORTED_FEED=1` Umgebungsvariable hinzufügen, wenn Sie den Feed neu synchronisieren.
 

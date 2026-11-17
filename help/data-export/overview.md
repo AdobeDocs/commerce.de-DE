@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '391'
 ht-degree: 5%
 ---
 # Handbuch zu [!DNL SaaS Data Export]
@@ -47,7 +47,6 @@ SaaS-Datenexport erfasst und exportiert verschiedene Datentypen, so genannte _Fe
 - **Katalogentitäts-Feeds** aggregieren Produktdaten. Zu den Daten gehören Produkte, Produktattribute, Produktpreise, Produktvarianten, Kategorien, Kategorieberechtigungen und Produktberechtigungen.
 - Der **Bereiche-Feed** aggregiert Daten für Kundengruppen, Websites, Stores und Store-Ansichten.
 - Der **Kundenauftrags-Feed** aggregiert Auftragsdaten einschließlich der zugehörigen Entitäten wie Rechnungen, Lieferungen, Gutschriften usw.
-- Der **Inventar-Feed für mehrere Source** aggregiert Daten zu Lagerbestandsstatus-Elementen.
 
 SaaS-Datenexport wird als PHP-Erweiterung bereitgestellt, die sowohl automatische als auch manuelle Synchronisierung unterstützt:
 
