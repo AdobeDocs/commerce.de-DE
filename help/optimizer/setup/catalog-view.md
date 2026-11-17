@@ -44,7 +44,7 @@ ht-degree: 0%
 
 Verwenden Sie diese Anweisungen, um Katalogansichten zu verwalten:
 
-- [Erstellen einer Katalogansicht](#create-a-catalog-view) - Legen Sie den Namen, die Katalogquelle, die Richtlinien und das Preisbuch fest. Geben [ dann die Katalogansicht für Empfehlungen und Produkterkennungsregeln an](#specify-catalog-views-for-recommendations-and-product-discovery-rules) überprüfen Sie [Katalogebenen](#catalog-layers) die Produktattribute überschreiben, oder [machen Sie die Katalogansicht privat](#make-a-catalog-view-private).
+- [Erstellen einer Katalogansicht](#create-a-catalog-view) - Legen Sie den Namen, die Katalogquelle, die Richtlinien und das Preisbuch fest. Geben [&#x200B; dann die Katalogansicht für Empfehlungen und Produkterkennungsregeln an](#specify-catalog-views-for-recommendations-and-product-discovery-rules) überprüfen Sie [Katalogebenen](#catalog-layers) die Produktattribute überschreiben, oder [machen Sie die Katalogansicht privat](#make-a-catalog-view-private).
 - [Bearbeiten einer Katalogansicht](#edit-a-catalog-view) - Aktualisieren der Quellen, Richtlinien, Preisliste und Schutzeinstellungen.
 - [Löschen einer Katalogansicht](#delete-a-catalog-view) - Entfernen einer nicht mehr benötigten Katalogansicht.
 - [Details der Katalogansicht anzeigen](#view-catalog-view-details) - Überprüfen Sie die Konfiguration einer Katalogansicht in der Tabelle Katalogansichten .
@@ -83,9 +83,9 @@ In diesem Abschnitt erstellen Sie eine Katalogansicht, wählen eine [Richtlinie]
 
    >[!NOTE]
    >
-   >Eine Preisbuch-ID steuert, welche Preisfindung angefordert wird. Der Zugriff auf die Katalogansicht wird dadurch nicht eingeschränkt. Um den Zugriff einzuschränken, aktivieren Sie den Katalogschutz, um eine [private Katalogansicht“ ](private-catalog-view.md) erstellen.
+   >Eine Preisbuch-ID steuert, welche Preisfindung angefordert wird. Der Zugriff auf die Katalogansicht wird dadurch nicht eingeschränkt. Um den Zugriff einzuschränken, aktivieren Sie den Katalogschutz, um eine [private Katalogansicht“ &#x200B;](private-catalog-view.md) erstellen.
 
-1. (Optional) Schalten Sie **[!UICONTROL Catalog Protection]** auf **[!UICONTROL Enabled]** um, um die Daten dieser Katalogansicht auf Clients mit einem gültigen signierten Token zu beschränken. Siehe [Schützen einer ](private-catalog-view.md#protect-a-catalog-view)) für Einrichtungsschritte.
+1. (Optional) Schalten Sie **[!UICONTROL Catalog Protection]** auf **[!UICONTROL Enabled]** um, um die Daten dieser Katalogansicht auf Clients mit einem gültigen signierten Token zu beschränken. Siehe [Schützen einer &#x200B;](private-catalog-view.md#protect-a-catalog-view)) für Einrichtungsschritte.
 
 1. Klicken Sie auf **[!UICONTROL Add]** , um die Katalogansicht mit den verknüpften Preisbüchern und Richtlinien zu erstellen.
 
