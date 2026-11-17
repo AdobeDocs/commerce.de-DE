@@ -3,7 +3,7 @@ title: Abgleich und Rangfolge suchen
 description: Erfahren Sie, wie [!DNL Adobe Commerce Optimizer] exakte und Beinahe-Übereinstimmungen, Übereinstimmungen mit gleichen Feldern und feldübergreifende Übereinstimmungen priorisiert und wie das Ranking mit Suchgewichten, intelligenten Rangfolgen und Merchandising-Regeln interagiert.
 role: Admin, Leader, User
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 hide: true
 autotag-review: '2026-06-12T19:49:25.241Z'
 TQID: 'https://experienceleague.adobe.com/GBfssL1pTVx4FKjsi45mDsTx2XyCr0aViexH3OpPjVo'
