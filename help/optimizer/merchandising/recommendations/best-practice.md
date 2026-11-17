@@ -1,7 +1,7 @@
 ---
 title: Best Practices für Recommendations
 description: Erfahren Sie, wo Sie Empfehlungen auf verschiedenen Seiten Ihrer Site platzieren und Vorschläge für häufig verwendete Beschriftungen für jeden Empfehlungstyp machen können.
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 08d7aeff-8b86-4fa3-93e6-4b72dc1ab117
 TQID: https://experienceleague.adobe.com/J4vSJ4EMfSTeL7rVEv9bTr998wvU5DR4S-hXQ3HCSGg
 product_v2:
@@ -22,8 +22,8 @@ topic_v2:
     internal-label: Experimentation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-last-update: 2026-11-12
-source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
+last-update: 2026-11-16
+source-git-commit: e0c7b4c2eba10c12f0ce728decad6f9be8bae14f
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 0%
