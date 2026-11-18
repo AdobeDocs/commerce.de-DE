@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 560ae770ae76d28e3358fb4f195aa1f2a03362c8
+source-git-commit: 80794cd843b054e043bae4129e1092e31b6e5730
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '2042'
 ht-degree: 0%
 ---
 # Benutzer und Identity Management
@@ -200,6 +200,14 @@ Um Entwickler und Produktprofil-Administrierende hinzuzufügen, wiederholen Sie 
 >Weisen Sie Entwicklern die Benutzerrolle zu, bevor Sie sie als Entwickler hinzufügen. Die Benutzerrolle ist für grundlegende Commerce-Berechtigungen erforderlich.
 
 ![Optionen auf der Registerkarte „Entwickler und Administratoren“ in Admin Console](./assets/tab-select.png){width="600" zoomable="yes"}
+
+### Fehlerbehebung bei Rollen
+
+Wenn Sie sich bei Adobe Commerce Admin anmelden und nur den Abschnitt [!UICONTROL **Katalog**] sehen, wird Ihnen wahrscheinlich die Rolle **Benutzer** zugewiesen. Wenn Sie Zugriff auf andere Bereiche des Administrators benötigen, müssen Sie [sich selbst als Entwickler **in**](#add-developers-and-product-profile-admins) Admin Console hinzufügen.
+
+Wenn Sie keinen Zugriff auf die Admin Console haben, wenden Sie sich an den Produktprofil-Admin oder den Systemadministrator Ihres Unternehmens und bitten Sie darum, dass diese Ihnen die entsprechenden Berechtigungen erteilen.
+
+Unter [Rollenressourcen](#role-resources) finden Sie Informationen zu den Berechtigungen, die den einzelnen Rollen gewährt werden.
 
 ## Rollenressourcen
 
