@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: e3be9274ca8db80d3559b24a5c8be36f5d61b2ba
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 1%
+source-wordcount: '1154'
+ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
@@ -23,6 +23,8 @@ Der *Merchandising-Regeln*-Arbeitsbereich listet die aktuelle Auswahl von Regeln
 - Regeln aktivieren/deaktivieren
 - Regeln löschen
 - Zugriff auf den Regeleditor
+
+Der Arbeitsbereich enthält auch **[Unterdrückungsregeln für Suchen](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules)**. Verwenden Sie dieselben Regelverwaltungssteuerelemente zum Bearbeiten, Planen, Aktivieren oder Deaktivieren dieser Regeln. Informationen zum Konfigurieren von Abfragebedingungen und Veröffentlichungsänderungen finden Sie unter [Erstellen und Verwalten von Unterdrückungsregeln für Suchen](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). Für Unterdrückungsregeln für Suchen wird keine Vorschau angezeigt.
 
 ![Merchandising-Regeln - Workspace](/help/assets/ccdm-shared/rules/rules-workspace.png)
 
@@ -60,6 +62,14 @@ Im Detailbereich werden der Regelname, der Status, Bedingungen und Ereignisse, d
    - Regel bearbeiten
    - Regel löschen
    - Regel aktivieren/deaktivieren
+
+## Aktivieren oder Deaktivieren einer Regel {#enable-disable-rule}
+
+1. Suchen Sie die Regel im Arbeitsbereich *Merchandising-*).
+1. Öffnen Sie **Mehr** (…) und wählen Sie **Regel aktivieren** oder **Regel deaktivieren**. Sie können auch das Steuerelement **Aktiviert** im Detailbereich verwenden.
+1. Bestätigen Sie den aktualisierten Status. Eine aktivierte Regel mit einem zukünftigen Startdatum bleibt bis zu diesem Datum geplant.
+
+Bei einer **Suchunterdrückungsregel** verhindert das Deaktivieren der Regel, dass diese Regel übereinstimmende Abfragen blockiert, ohne ihre Bedingungen zu löschen. Andere aktive Unterdrückungsregeln können diese Abfragen weiterhin blockieren. Um die Bedingungen oder Daten der Regel zu ändern, wählen Sie **Bearbeiten**, überprüfen Sie die Änderungen und klicken Sie auf **Speichern und veröffentlichen**.
 
 ## Spaltenbeschreibungen
 
@@ -124,6 +134,6 @@ Verhaltensdaten, die [intelligentes Ranking“ &#x200B;](add.md#intelligent-rank
    Die von Ihnen erstellte Regel wird auf die ausgewählte Katalogansicht angewendet.
 1. Erstellen Sie Ihre Regel im [Regeleditor](add.md).
 
-   Definieren Sie im Editor Bedingungen, Ereignisse und Details. Die Regel gilt nur für Suchergebnisse in dieser Katalogansicht.
+   Definieren Sie im Editor die Bedingungen, Ereignisse und Details, die für den Regeltyp gelten. Suchunterdrückungsregeln verwenden Abfragebedingungen, um Ergebnisse nur in der ausgewählten Katalogansicht zu blockieren. Sie ändern die Sichtbarkeit von Produkten nicht durch Kategoriennavigation, Merchandising-Seiten, Empfehlungen oder direkte Produkt-URLs.
 
 Sie können die Katalogansicht (den Umfang) einer Regel nicht ändern, nachdem sie erstellt wurde. Um eine ähnliche Logik auf eine andere Katalogansicht anzuwenden, erstellen Sie eine neue Regel und wählen Sie diese Katalogansicht aus, bevor Sie sie erstellen.
