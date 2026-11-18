@@ -1,12 +1,12 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: e3be9274ca8db80d3559b24a5c8be36f5d61b2ba
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 1%
+source-wordcount: '1154'
+ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.de-DE/blob/main/help/_includes/ccdm-shared/merchandising/rules/workspace.md
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/rules/workspace.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -16,13 +16,15 @@ This includes related images in help/assets/ccdm-shared/.
 
 # Merchandising-Regeln - Workspace
 
-Der *Merchandising-Regeln*-Arbeitsbereich listet die aktuelle Auswahl von Regeln und deren Status auf und bietet Zugriff auf Tools, die Sie zum Erstellen und Verwalten von Regeln benötigen. Sie können Regeln auf alle [Katalogansichten](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-view) (global) oder auf eine einzelne Katalogansicht beschränken. Informationen [&#x200B; Filtern nach Katalogansicht und &#x200B;](#select-catalog-view) Erstellen von Regeln pro Katalogansicht finden Sie unter „Auswählen Katalogansicht“. Im Arbeitsbereich haben Sie folgende Möglichkeiten:
+Der *Merchandising-Regeln*-Arbeitsbereich listet die aktuelle Auswahl von Regeln und deren Status auf und bietet Zugriff auf Tools, die Sie zum Erstellen und Verwalten von Regeln benötigen. Sie können Regeln auf alle [Katalogansichten](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) (global) oder auf eine einzelne Katalogansicht beschränken. Informationen [ Filtern nach Katalogansicht und ](#select-catalog-view) Erstellen von Regeln pro Katalogansicht finden Sie unter „Auswählen Katalogansicht“. Im Arbeitsbereich haben Sie folgende Möglichkeiten:
 
 - Nach Regeln suchen
 - Regeldetails anzeigen
 - Regeln aktivieren/deaktivieren
 - Regeln löschen
 - Zugriff auf den Regeleditor
+
+Der Arbeitsbereich enthält auch **[Unterdrückungsregeln für Suchen](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules)**. Verwenden Sie dieselben Regelverwaltungssteuerelemente zum Bearbeiten, Planen, Aktivieren oder Deaktivieren dieser Regeln. Informationen zum Konfigurieren von Abfragebedingungen und Veröffentlichungsänderungen finden Sie unter [Erstellen und Verwalten von Unterdrückungsregeln für Suchen](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). Für Unterdrückungsregeln für Suchen wird keine Vorschau angezeigt.
 
 ![Merchandising-Regeln - Workspace](/help/assets/ccdm-shared/rules/rules-workspace.png)
 
@@ -53,13 +55,21 @@ Der *Merchandising-Regeln*-Arbeitsbereich listet die aktuelle Auswahl von Regeln
 
 Im Detailbereich werden der Regelname, der Status, Bedingungen und Ereignisse, das Start- und Enddatum, die Beschreibung und das Datum der letzten Bearbeitung angezeigt. Regeln können im Detailbereich aktiviert, bearbeitet und gelöscht werden.
 
-1. Suchen Sie im Arbeitsbereich *Merchandising* Regeln“ die Regel in dem Raster, das Sie anzeigen möchten, und klicken Sie auf das Symbol (![Weitere &#x200B;](/help/assets/ccdm-shared/recommendations/btn-more.png)).
+1. Suchen Sie im Arbeitsbereich *Merchandising* Regeln“ die Regel in dem Raster, das Sie anzeigen möchten, und klicken Sie auf das Symbol (![Weitere ](/help/assets/ccdm-shared/recommendations/btn-more.png)).
 
    Im Menü können Sie eine der folgenden Aktionen ausführen:
 
    - Regel bearbeiten
    - Regel löschen
    - Regel aktivieren/deaktivieren
+
+## Aktivieren oder Deaktivieren einer Regel {#enable-disable-rule}
+
+1. Suchen Sie die Regel im Arbeitsbereich *Merchandising-*).
+1. Öffnen Sie **Mehr** (…) und wählen Sie **Regel aktivieren** oder **Regel deaktivieren**. Sie können auch das Steuerelement **Aktiviert** im Detailbereich verwenden.
+1. Bestätigen Sie den aktualisierten Status. Eine aktivierte Regel mit einem zukünftigen Startdatum bleibt bis zu diesem Datum geplant.
+
+Bei einer **Suchunterdrückungsregel** verhindert das Deaktivieren der Regel, dass diese Regel übereinstimmende Abfragen blockiert, ohne ihre Bedingungen zu löschen. Andere aktive Unterdrückungsregeln können diese Abfragen weiterhin blockieren. Um die Bedingungen oder Daten der Regel zu ändern, wählen Sie **Bearbeiten**, überprüfen Sie die Änderungen und klicken Sie auf **Speichern und veröffentlichen**.
 
 ## Spaltenbeschreibungen
 
@@ -76,7 +86,7 @@ Im Detailbereich werden der Regelname, der Status, Bedingungen und Ereignisse, d
 | Kontrolle | Beschreibung |
 |--- |--- |
 | Regel hinzufügen | Öffnet den [Regeleditor](add.md). |
-| Katalogansicht | Filtert die Tabelle nach Regeln, die für die ausgewählte Katalogansicht gelten. Legt den Umfang auch fest, wenn Sie [eine Regel erstellen](add.md). Optionen: *Alle Ansichten* oder eine bestimmte [Katalogansicht](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-view). Siehe [Auswählen einer Katalogansicht](#select-catalog-view). |
+| Katalogansicht | Filtert die Tabelle nach Regeln, die für die ausgewählte Katalogansicht gelten. Legt den Umfang auch fest, wenn Sie [eine Regel erstellen](add.md). Optionen: *Alle Ansichten* oder eine bestimmte [Katalogansicht](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). Siehe [Auswählen einer Katalogansicht](#select-catalog-view). |
 | Status | Filtert die Liste der Regeln nach Status. Optionen: Alle, aktiv, inaktiv, geplant |
 | ![Spaltenauswahl](/help/assets/ccdm-shared/rules/btn-show-hide-columns.png) | Gibt die im Raster sichtbaren Spalten an. Optionen: Zuletzt aktualisiert, Startdatum, Enddatum, Status |
 | Suche | Sucht nach einer Regel anhand des vollständigen Namens oder einer teilweisen Übereinstimmung. |
@@ -99,7 +109,7 @@ Im Detailbereich werden der Regelname, der Status, Bedingungen und Ereignisse, d
 Der **[!UICONTROL Catalog view]**-Selektor auf der Seite „Merchandising-Regeln“ hat zwei Aufgaben:
 
 1. **Filtert die Tabelle** - Zeigt nur Regeln (und deren Details) an, die für die ausgewählte Katalogansicht gelten.
-1. **Legt den Umfang für neue Regeln fest** - Wenn Sie [Regel erstellen](add.md) wird die ausgewählte Katalogansicht als Umfang der Regel verwendet. Die Optionen sind *Alle*) oder eine bestimmte [Katalogansicht](https://experienceleague.adobe.com/de/docs/commerce/optimizer/setup/catalog-view).
+1. **Legt den Umfang für neue Regeln fest** - Wenn Sie [Regel erstellen](add.md) wird die ausgewählte Katalogansicht als Umfang der Regel verwendet. Die Optionen sind *Alle*) oder eine bestimmte [Katalogansicht](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view).
 
    - **Alle Ansichten** - Die Regel gilt für alle Katalogansichten. Das Such- und Ranking-Verhalten ist in jeder Storefront, die den Katalog verwendet, identisch.
    - **Katalogansicht** - Die Regel gilt nur für die ausgewählte Katalogansicht (z. B. eine Storefront, Region, Händler oder Marke). Verwenden Sie dies, wenn verschiedene Katalogansichten eine andere Merchandising-Logik benötigen.
@@ -114,7 +124,7 @@ Erstellen Sie Regeln pro Katalogansicht, wenn verschiedene Storefronts, Regionen
 - **Multi-Region** - Separate Katalogansichten für die EU, die USA oder andere Regionen mit regionsspezifischen Merchandising-Regeln.
 - **Mehrmarken** - Jede Marke verfügt über eine eigene Katalogansicht und Sie möchten markenspezifische Regeln (z. B. unterschiedliche Standard-Rankings oder beworbene Produkte pro Marke).
 
-Verhaltensdaten, die [intelligentes Ranking“ &#x200B;](add.md#intelligent-ranking) (z. B. am häufigsten angezeigt, am häufigsten gekauft, Trends), werden standardmäßig pro Katalogansicht berechnet. Regeln, die ein intelligentes Ranking verwenden, spiegeln daher das Käuferverhalten dieser Katalogansicht wider. Wenn Ihr Konto über eine große Anzahl von Katalogansichten verfügt, kann das System Verhaltensdaten global aggregieren, um die Leistung aufrechtzuerhalten. In diesem Fall kann das Ranking stärker durch Katalogansichten mit hohem Traffic beeinflusst werden, und die Relevanz für Ansichten mit niedrigerem Traffic kann reduziert werden. Siehe [Beschränkungen und Grenzen](https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits) für aktuelle Beschränkungen.
+Verhaltensdaten, die [intelligentes Ranking“ ](add.md#intelligent-ranking) (z. B. am häufigsten angezeigt, am häufigsten gekauft, Trends), werden standardmäßig pro Katalogansicht berechnet. Regeln, die ein intelligentes Ranking verwenden, spiegeln daher das Käuferverhalten dieser Katalogansicht wider. Wenn Ihr Konto über eine große Anzahl von Katalogansichten verfügt, kann das System Verhaltensdaten global aggregieren, um die Leistung aufrechtzuerhalten. In diesem Fall kann das Ranking stärker durch Katalogansichten mit hohem Traffic beeinflusst werden, und die Relevanz für Ansichten mit niedrigerem Traffic kann reduziert werden. Siehe [Beschränkungen und Grenzen](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits) für aktuelle Beschränkungen.
 
 ### Einrichten einer Regel pro Katalogansicht
 
@@ -124,6 +134,6 @@ Verhaltensdaten, die [intelligentes Ranking“ &#x200B;](add.md#intelligent-rank
    Die von Ihnen erstellte Regel wird auf die ausgewählte Katalogansicht angewendet.
 1. Erstellen Sie Ihre Regel im [Regeleditor](add.md).
 
-   Definieren Sie im Editor Bedingungen, Ereignisse und Details. Die Regel gilt nur für Suchergebnisse in dieser Katalogansicht.
+   Definieren Sie im Editor die Bedingungen, Ereignisse und Details, die für den Regeltyp gelten. Suchunterdrückungsregeln verwenden Abfragebedingungen, um Ergebnisse nur in der ausgewählten Katalogansicht zu blockieren. Sie ändern die Sichtbarkeit von Produkten nicht durch Kategoriennavigation, Merchandising-Seiten, Empfehlungen oder direkte Produkt-URLs.
 
 Sie können die Katalogansicht (den Umfang) einer Regel nicht ändern, nachdem sie erstellt wurde. Um eine ähnliche Logik auf eine andere Katalogansicht anzuwenden, erstellen Sie eine neue Regel und wählen Sie diese Katalogansicht aus, bevor Sie sie erstellen.

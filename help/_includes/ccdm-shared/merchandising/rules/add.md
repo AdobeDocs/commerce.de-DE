@@ -1,28 +1,16 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: 3478e3f0162b553d03c4ac4f5b3000b8aabd8c66
 workflow-type: tm+mt
-source-wordcount: '4098'
+source-wordcount: '4826'
 ht-degree: 0%
 ---
-<!--
-SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.de-DE/blob/main/help/_includes/ccdm-shared/merchandising/rules/add.md
-
-This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
-Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
-are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
-This includes related images in help/assets/ccdm-shared/.
--->
-
-# Regeln erstellen und verwalten
-
-Zum Erstellen einer Regel müssen Sie die Katalogansicht auswählen, für die die Regel gilt, die Regelbeschreibung konfigurieren, den Typ angeben, die Bedingungen und das Ranking definieren, die Ergebnisse testen und die Regel veröffentlichen.
+Zum Erstellen einer Regel müssen Sie die Katalogansicht auswählen, für die die Regel gilt, die Regelbeschreibung und den Regeltyp (Suche, Suchunterdrückung, Standardsuche oder Kategorie) konfigurieren, ihre Bedingungen und das Ranking definieren, falls zutreffend, die Ergebnisse testen, falls eine Vorschau verfügbar ist, und die Regel veröffentlichen. Suchunterdrückungsregeln zeigen keine Vorschau an.
 
 ## Erstellen einer Regel {#create-a-rule}
 
 1. Navigieren Sie im Menü zu _Merchandising_ > **Merchandising-Regeln**.
 1. (Optional) Wählen Sie im Dropdown-Menü **Katalogansicht“ die Katalogansicht aus, für** die Regel gilt.
-Die von Ihnen erstellte Regel wird auf die ausgewählte Ansicht beschränkt (oder auf alle Katalogansichten, wenn **Alle Ansichten** ausgewählt ist). Siehe [Auswählen der &#x200B;](workspace.md#select-catalog-view)), wie der Umfang der Katalogansicht funktioniert.
+Die von Ihnen erstellte Regel wird auf die ausgewählte Ansicht beschränkt (oder auf alle Katalogansichten, wenn **Alle Ansichten** ausgewählt ist). Siehe [Auswählen der ](workspace.md#select-catalog-view)), wie der Umfang der Katalogansicht funktioniert.
 
 1. Klicken Sie auf **[!UICONTROL Create rule]** , um den Regeleditor zu starten.
 
@@ -37,8 +25,9 @@ Jeder Regeltyp verfügt im Editor über ein Informationssymbol mit einer kurzen 
 | **Standardsuchregel** | Standard-Ranking und Merchandising in allen Produktlisten, wenn keine spezifischere Such- oder Kategorieregel gilt. Sie können nur eine solche Regel erstellen; sie kann keine Bedingungen enthalten. |
 | **Kategorieregel** | Wendet Merchandising und Ranking auf eine einzelne Kategorie an und steuert die Produktbestellung auf dieser Kategorieseite. |
 | **Suchregel** | Wendet Merchandising und Ranking an, wenn Käufer eine Suche ausführen, die den Abfragebedingungen der Regel entspricht. |
+| **Unterdrückungsregel für Suchen** | Verhindert, dass übereinstimmende Suchanfragen Produkte zurückgeben, sodass die Storefront eine Suchergebnisseite mit null Produkten anzeigt. Die Produktansicht durch Kategoriennavigation, Merchandising-Seiten, Empfehlungen und direkte Produkt-URLs ist nicht betroffen. |
 
-Im Abschnitt **Regel erstellen** definieren Sie den Regelnamen, den Zeitplan, unabhängig davon, ob die Regel für alle Listen oder für bestimmte Suchbedingungen gilt, sowie Ranking-Typen.
+Im Abschnitt **Regel erstellen** definieren Sie den Regelnamen, den Zeitplan, den Regeltyp sowie alle anwendbaren Bedingungen und das Ranking. Suchunterdrückungsregeln blockieren übereinstimmende Abfragen, anstatt Produkte zu reihen.
 
 1. Geben Sie im Feld **[!UICONTROL Name]** einen Namen für die Regel ein. Alle Regelnamen müssen eindeutig sein.
 1. Geben Sie im Feld **[!UICONTROL Description]** eine Beschreibung für die Regel ein.
@@ -90,6 +79,28 @@ Eine Regel kann bis zu zehn Bedingungen enthalten. Der logische Operator, der zw
 1. Um eine weitere Bedingung hinzuzufügen, klicken Sie auf **Bedingung hinzufügen** und wiederholen Sie den Vorgang.
 1. Wählen Sie optional [Intelligente Rangfolge](#intelligent-ranking), [Manuelle Rangfolge](#manual-ranking) oder [Attributrangfolge](#attribute-ranking) aus, wie in den folgenden Abschnitten beschrieben. Die gleichen Steuerelemente gelten für Kategorieseiten, wobei alle Unterschiede hervorgehoben werden.
 
+>[!TAB Unterdrückungsregel für Suchen]
+
+Eine Unterdrückungsregel für die Suche blockiert die Ergebnisse für Abfragen, die ihren Bedingungen entsprechen. Es sind keine Rangfolgen auf Produktebene erforderlich. Übereinstimmende Abfragen geben keine Produkte zurück, und die Storefront zeigt eine Suchergebnisseite mit null Produkten an.
+
+>[!NOTE]
+>
+>Für Unterdrückungsregeln für Suchen wird keine Vorschau angezeigt. Überprüfen Sie die Abfragebedingungen vor der Veröffentlichung und überprüfen Sie dann übereinstimmende und nicht übereinstimmende Suchvorgänge in der Storefront, nachdem die Regel aktiv wird.
+
+1. Wählen Sie **[!UICONTROL Rule applies to]** die Option **Unterdrückungsregel suchen** aus.
+1. Wählen Sie eine Abfragebedingung aus und geben Sie den zuzuordnenden Text ein:
+
+   | Bedingung | Wenn die Abfrage blockiert wird | Beispiel |
+   | --- | --- | --- |
+   | **Abfrage ist** | Die gesamte Abfrage entspricht dem angegebenen Text. | `restricted item` blockiert diese exakte Abfrage. |
+   | **Abfrage enthält** | Die Abfrage enthält den angegebenen Text. | `restricted brand` blockiert `buy restricted brand shoes`. |
+   | **Abfrage beginnt mit** | Die Abfrage beginnt mit dem angegebenen Text. | `restricted brand` blockiert `restricted brand accessories`. |
+   | **Abfrage endet mit** | Die Abfrage endet mit dem angegebenen Text. | `restricted item` blockiert `discount restricted item`. |
+
+1. Führen Sie die [Planungs- und Veröffentlichungsschritte](#schedule-publish-search-suppression) aus.
+
+Informationen zu Umfang und Interaktionen mit anderen Regeln finden Sie unter [Unterdrückungsregeln suchen](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules).
+
 >[!TAB Kategorieregel]
 
 Kategorieregeln steuern, wie Produkte auf (Kategorieseiten **bestellt**. Kombinieren Sie **Kategorieregeln** mit **intelligentem Ranking** und **manuellen**, um Discovery zu kuratieren, Promotions auszuführen und Kategorieseiten an Ihrer Strategie auszurichten.
@@ -122,6 +133,44 @@ Wenn mehrere Kategorien ähnliche Namen haben, verwenden Sie den mit jedem Ergeb
    ![Menü Kategorieaktion](/help/assets/ccdm-shared/rules/category-action-menu.png){zoomable="yes"}
 
 >[!ENDTABS]
+
+### Erstellen und Verwalten von Unterdrückungsregeln für Suchen {#search-suppression-rules}
+
+Verwenden Sie diesen Workflow, um Suchbegriffe zu blockieren, ohne die Sichtbarkeit des Produkts an anderer Stelle in der Storefront zu ändern.
+
+1. Öffnen Sie **Merchandising** > **Merchandising-Regeln**.
+1. Wählen Sie **Alle Ansichten** oder die spezifische **Katalogansicht** aus, für die die Einschränkung erforderlich ist.
+1. Klicken Sie auf **[!UICONTROL Create rule]**.
+1. Geben Sie einen eindeutigen **Namen** und eine **Beschreibung** ein, die die Einschränkung erklärt.
+1. Wählen Sie unter **[!UICONTROL Rule applies to]** **Unterdrückungsregel suchen** aus.
+1. Konfigurieren Sie **Abfrage ist**, **Abfrage enthält**, **Abfrage beginnt mit** oder **Abfrage endet mit**, wie auf der Registerkarte **Suchunterdrückungsregel** oben beschrieben.
+1. Führen Sie die [Planungs- und Veröffentlichungsschritte](#schedule-publish-search-suppression) aus.
+
+#### Planen und Veröffentlichen einer Suchunterdrückungsregel {#schedule-publish-search-suppression}
+
+1. Legen Sie **[!UICONTROL Date range]** das Startdatum und ggf. das Enddatum für die Einschränkung fest. Verwenden Sie ein künftiges Startdatum, um die Regel zu planen.
+1. Überprüfen Sie die Abfragebedingungen.
+1. Klicken Sie **Speichern und veröffentlichen**.
+1. Suchen Sie die Regel im Arbeitsbereich *Merchandising-Regeln* und bestätigen Sie ihren Status und ihre Daten. Eine geplante Regel wird während ihres konfigurierten Datumsbereichs wirksam, wenn sie aktiviert ist.
+1. Nachdem die Regel aktiviert wurde, bestätigen Sie, dass eine übereinstimmende Storefront-Suche eine Suchergebnisseite mit null Produkten anzeigt. Die Aktualisierung zwischengespeicherter Abfrageergebnisse kann bis zu 15 Minuten dauern.
+
+#### Bearbeiten einer Suchunterdrückungsregel
+
+1. Suchen Sie im Arbeitsbereich *Merchandising* Regeln“ die Regel und öffnen Sie **Mehr** (…) > **Bearbeiten**.
+1. Aktualisieren Sie je nach Bedarf die Abfragebedingungen, den Namen, die Beschreibung oder den Datumsbereich.
+1. Überprüfen Sie die aktualisierten Abfragebedingungen.
+1. Klicken Sie **Speichern und**), um die Änderungen zu veröffentlichen.
+1. Nachdem die aktualisierte Regel aktiviert wurde, überprüfen Sie übereinstimmende und nicht übereinstimmende Suchen in der Storefront. Die Aktualisierung zwischengespeicherter Abfrageergebnisse kann bis zu 15 Minuten dauern.
+
+Der Umfang der Katalogansicht kann nach der Erstellung nicht mehr geändert werden. Um die Einschränkung auf einen anderen Bereich anzuwenden, erstellen Sie eine Regel in dieser Katalogansicht.
+
+#### Aktivieren oder Deaktivieren einer Suchunterdrückungsregel
+
+1. Suchen Sie im Arbeitsbereich *Merchandising* Regeln“ die Regel und öffnen Sie **Mehr** (…) Menü.
+1. Wählen Sie **Regel deaktivieren**, um die Sucheinschränkung nicht mehr anzuwenden, oder **Regel aktivieren**, um sie entsprechend den konfigurierten Daten anzuwenden.
+1. Bestätigen Sie den Status der Regel im Arbeitsbereich.
+
+Durch Deaktivieren einer Regel wird ihre Konfiguration beibehalten. Um die Bedingungen oder den Zeitplan zu ändern, bearbeiten und veröffentlichen Sie die Regel. Weitere [ finden Sie unter ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace) für Merchandising-Regeln.
 
 ### Intelligente Rangfolge {#intelligent-ranking}
 
@@ -210,7 +259,7 @@ Ein Händler verwendet die „am häufigsten angesehene“ intelligente Rangfolg
 
 Bei einer Abfrage wie **Holz** können mehrere Produkte eine ähnliche Textrelevanz aufweisen, während die Anzahl der Ansichten unterschiedlich ist. Wenn **Am häufigsten angezeigt** ausgewählt ist, steigt die Wahrscheinlichkeit, dass die historisch am häufigsten angezeigte relevante SKU mit zunehmender **[!UICONTROL Intelligent Ranking Boost]** über leichtere Übereinstimmungen auftaucht. Durch das Verringern der Steigerung können die Ergebnisse näher an der reinen Textreihenfolge liegen.
 
-Informationen zur Verbesserung der Auffindbarkeit von Produkten mithilfe von Regeln [&#x200B; Sie unter (Suchregeln](best-practice.md#tips-to-optimize-search-rules).
+Informationen zur Verbesserung der Auffindbarkeit von Produkten mithilfe von Regeln [ Sie unter (Suchregeln](best-practice.md#tips-to-optimize-search-rules).
 
 #### Einschränkungen
 
@@ -220,7 +269,7 @@ Informationen zur Verbesserung der Auffindbarkeit von Produkten mithilfe von Reg
 
 Informationen zum Festlegen der Suchgewichtung:
 
-- Informationen zu allen Adobe Commerce-Bereitstellungen [&#x200B; Sie unter &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/search/search-results) im _Handbuch zur Katalogverwaltung_.
+- Informationen zu allen Adobe Commerce-Bereitstellungen [ Sie unter ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results) im _Handbuch zur Katalogverwaltung_.
 - Informationen zu eigenständigen Adobe Commerce Optimizer-Bereitstellungen finden Sie unter [Metadaten-REST-](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)) im _Merchandising Services-Entwicklerhandbuch_.
 
 ### Manuelle Rangfolge {#manual-ranking}
@@ -252,11 +301,13 @@ Oder Ereignisse können manuell festgelegt werden:
 
 1. Wählen Sie für mehrere Ereignisse alle anderen Ereignisse aus, die Sie bei Erfüllung der Bedingungen als Trigger festlegen möchten.
 
+Wenn **[!UICONTROL Hide a product]** in der **Standard-Suchregel“ konfiguriert ist** werden ausgeschlossene Produkte auch aus den **Suchvorschlägen und der automatischen Vervollständigung)**. Um eine gesamte Abfrage anstelle von ausgewählten Produkten zu blockieren, verwenden Sie eine [Unterdrückungsregel suchen](#search-suppression-rules).
+
 ### Attribut-Ranking {#attribute-ranking}
 
 >[!AVAILABILITY]
 >
->Diese Funktion befindet sich in der [Beta](https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Diese Funktion befindet sich in der [Beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **Attribut-Ranking** wendet automatisch eine **[!UICONTROL Boost]**-, **[!UICONTROL Bury]**- oder **[!UICONTROL Hide]**-Aktion auf jedes Produkt an, das einer oder mehreren Attributbedingungen entspricht, ohne dass Sie einzelne SKUs auswählen müssen. Attribut-Ranking wird im Regeleditor neben [Intelligente Rangfolge](#intelligent-ranking) und [Manuelle Rangfolge](#manual-ranking) angezeigt und ist für die **Regel Alle Produkte**, **Suchregeln** und **Kategorieregeln**. Verwenden Sie diese Option, um das Merchandising auf große Kataloge zu skalieren, z. B. um jedes Produkt einer bestimmten Marke zu steigern oder jedes Produkt in einer nicht mehr unterstützten Farbe zu vergraben.
 
@@ -277,6 +328,8 @@ Oder Ereignisse können manuell festgelegt werden:
 
 Das Anheften ist in der Attributreihenfolge nicht verfügbar, da beim Anheften ein Produkt an eine exakte Position zugewiesen wird, während eine Attributbedingung vielen Produkten gleichzeitig entsprechen kann. Um ein bestimmtes Produkt anzuheften, verwenden Sie [Manuelle Rangfolge](#manual-ranking) direkt für diese SKU.
 
+Bedingungen für die Attribut-Rangfolge werden auch als **Attribut-basierte Merchandising-Ereignisse“**. Produkte, die durch eine **[!UICONTROL Hide]** Aktion in der **Standard-Suchregel** ausgeschlossen werden, sind auch von **Suchvorschlägen und**) ausgeschlossen, genau wie manuelle Ausschlüsse in dieser Regel. Diese Ausschlüsse auf Produktebene unterscheiden sich von [Suchunterdrückung](#search-suppression-rules), die alle Ergebnisse für eine übereinstimmende Abfrage blockiert.
+
 #### Interaktion zwischen Attribut und Ranking mit intelligentem Ranking
 
 Wenn eine Regel eine intelligente Rangfolgestrategie mit einer oder mehreren Attributbedingungen kombiniert, hat die Attributaktion Priorität für jedes Produkt, mit dem sie übereinstimmt. Das intelligente Ranking bestellt weiterhin die restlichen, unübertroffenen Produkte.
@@ -293,6 +346,8 @@ Eine einzelne Regel kann bis zu 25 Attributbedingungen haben, dieselbe Grenze wi
 
 ### Regel abschließen {#finalizing-the-rule}
 
+Befolgen Sie für Suchunterdrückungsregeln [Planen und Veröffentlichen einer Suchunterdrückungsregel](#schedule-publish-search-suppression). Diese Regeln zeigen keine Vorschau an.
+
 1. Untersuchen Sie die Ergebnisse der Regel im Testbereich.
 1. Wenn die Regel mehrere Abfragen umfasst, testen Sie jede, die von der Regel betroffen sein könnte.
 1. Klicken Sie abschließend auf **Speichern und**.
@@ -303,19 +358,19 @@ Eine einzelne Regel kann bis zu 25 Attributbedingungen haben, dieselbe Grenze wi
 
 >[!NOTE]
 >
->Regeln und manuell sortierte Produkte werden auf **Suchergebnisse** angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sodass sie etwa nach Namen sortiert wird, sind Regeln und manuelle Rankings nicht mehr wirksam. Für **category**-Listen wird das Standardsortierverhalten unter „Manuelles [&quot; &#x200B;](#manual-ranking).
+>Ranking-Regeln und manuell sortierte Produkte werden auf **Suchergebnisse** angewendet, wenn die standardmäßige Sortierreihenfolge „Sortieren nach: Am relevantesten“ ausgewählt ist. Wenn ein Käufer die Sortierreihenfolge ändert, sodass sie in etwa nach Namen sortiert wird, sind die Rangfolgeregeln und die manuellen Rankings nicht mehr wirksam. Dieses Ranking-Verhalten ermöglicht es einer blockierten Abfrage nicht, die Suchunterdrückung zu umgehen. Für **category**-Listen wird das Standardsortierverhalten unter „Manuelles [&quot; ](#manual-ranking).
 
 ## Regeln bearbeiten, anzeigen und löschen {#edit-view-and-delete-rules}
 
-Gehen Sie wie folgt vor, um die Eigenschaften vorhandener Regeln zu aktualisieren. Sie können die Katalogansicht (den Umfang) einer Regel nicht ändern, nachdem sie erstellt wurde. Der Umfang wird beim Erstellen der Regel festgelegt. Siehe [Auswählen einer Katalogansicht](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
+Gehen Sie wie folgt vor, um die Eigenschaften vorhandener Regeln zu aktualisieren. Sie können die Katalogansicht (den Umfang) einer Regel nicht ändern, nachdem sie erstellt wurde. Der Umfang wird beim Erstellen der Regel festgelegt. Siehe [Auswählen einer Katalogansicht](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
 
 ### Regel bearbeiten
 
 1. Suchen Sie im Arbeitsbereich *Merchandising* Regeln“ die Regel in dem Raster, das Sie bearbeiten möchten, und klicken Sie auf **Mehr** (…) Optionen.
 1. Klicken Sie **Bearbeiten**, um auf den Regeleditor zuzugreifen.
-1. Aktualisieren Sie die Bedingungen, Operatoren und Ereignisse nach Bedarf.
+1. Aktualisieren Sie die Bedingungen, Operatoren und Ereignisse entsprechend dem Regeltyp. Suchunterdrückungsregeln verwenden Abfragebedingungen anstelle von Ranking-Ereignissen.
 1. Aktualisieren Sie die Felder Name, Start- und Enddatum sowie Beschreibung nach Bedarf. Alle Regelnamen müssen eindeutig sein.
-1. Testen Sie die Regel.
+1. Testen Sie die Regel, wenn eine Vorschau verfügbar ist. Überprüfen Sie für Unterdrückungsregeln für Suchen stattdessen die Abfragebedingungen und überprüfen Sie die Storefront-Suche, nachdem die aktualisierte Regel aktiv wird.
 1. Veröffentlichen Sie die Änderungen.
 Die Regel wird der Liste im Arbeitsbereich *Regeln* hinzugefügt. Obwohl aktive Regeln sofort in Kraft treten, kann es bis zu 15 Minuten dauern, bis zwischengespeicherte Abfrageergebnisse in der Storefront aktualisiert werden.
 
@@ -386,7 +441,7 @@ Diese Option bietet eine schnelle Möglichkeit, alle Regelparameter anzuzeigen, 
 | Feld | Beschreibung |
 | --- | --- |
 | Name | Der Name der Regel. Regelnamen müssen eindeutig sein. |
-| Regeltyp | **Standardsuchregel**, **Abfrage** (spezifische Suchbedingungen) oder **Kategorie** (Kategorieseiten), je nachdem, für **Regel gilt**. |
+| Regeltyp | **Standardsuchregel**, **Abfrage** (spezifische Suchbedingungen), **Suchunterdrückungsregel** (Blöcke, die mit Abfragen übereinstimmen) oder **Kategorie** (Kategorieseiten), je nachdem, **Regel gilt für**. |
 | Startdatum | Das Startdatum der Regel, falls geplant. |
 | Enddatum | Das Enddatum der Regel, falls geplant. |
 | Beschreibung | Eine kurze Beschreibung der Regel. |

@@ -4,7 +4,7 @@ description: Monatliche Versionsinformationen für [!DNL Adobe Commerce Optimize
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: 'https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo'
 product_v2:
@@ -25,9 +25,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
+source-git-commit: 3968a572a628342334fe760526e81ab089b86904
 workflow-type: tm+mt
-source-wordcount: '1627'
+source-wordcount: '1960'
 ht-degree: 0%
 ---
 # Versionshinweise
@@ -39,6 +39,64 @@ Die folgenden Versionshinweise enthalten Aktualisierungen zu [!DNL Adobe Commerc
 
   {{aco-api-updates-and-dropins}}
 
+## November 2026
+
+>[!BEGINSHADEBOX]
+
+_2. November 2026_
+
+![Korrigieren](../assets/fix.svg) **Empfehlungsfilter-Gebietsschema** - Es wurde klargestellt, dass die Attributliste die Katalogquelle verwendet, die mit der ersten Katalogansicht verknüpft ist, wenn Sie **[!UICONTROL All Views]** auswählen. Siehe [Empfehlungsfilter](./merchandising/recommendations/filters.md).
+
+_6. November 2026_
+
+![Neu](../assets/new.svg) **Integration von Warenkorb- und Checkout-Produkten von Drittanbietern** - Es wurde eine Anleitung zur Integration der Warenkorb- und Checkout-Services von Drittanbietern in [!DNL Adobe Commerce Optimizer] hinzugefügt. Siehe [Integrationen](./integrations/integrations-overview.md#third-party-cart-and-checkout-integration).
+
+![Fix](../assets/fix.svg) **Product Visuals Storage** - Klargestellt, dass Sie die Speicherkapazität für [!DNL Product Visuals] durch ein Upgrade Ihrer [!DNL AEM Assets]-Lizenz erweitern können. Siehe [Grenzen und ](./boundaries-limits.md#product-visuals-limits).
+
+![Fehlerbehebung](../assets/fix.svg) **AEM Assets-Einrichtungsanleitung** - Der eigenständige [!DNL Adobe Commerce Optimizer]-Einrichtungsfluss für [!DNL AEM Assets] wurde entfernt und die Einrichtungsanleitung wurde an die allgemeine [!DNL AEM Assets]-Konfigurationsdokumentation weitergeleitet. Siehe [Integrationen](./integrations/integrations-overview.md#product-visuals), [Katalogebenen](./setup/catalog-layer.md) und [Produktvisualisierungen](./setup/product-visuals.md).
+
+![Neu](../assets/new.svg) **Empfehlungs-Referenzschlüssel** - Wird **[!UICONTROL Reference Key]** als Alternative zur Recommendations-ID beim Konfigurieren eines Storefront-Empfehlungsblocks dokumentiert. Siehe [Empfehlungen erstellen und verwalten](./merchandising/recommendations/create.md#get-the-storefront-reference-key).
+
+_16. November 2026_
+
+![Neu](../assets/new.svg) **Facettenkapazität** - Dokumentiert, dass Sie die Facettenbegrenzung über eine Kundensupportanfrage erhöhen können. Siehe [Grenzen und ](./boundaries-limits.md#catalog-views-and-policies).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
+## Oktober 2026
+
+>[!BEGINSHADEBOX]
+
+_1. Oktober 2026_
+
+![Neu](../assets/new.svg) **B2B-freigegebene Katalogansichten** - Dokumentiert, wie freigegebene B2B-Kataloge automatisch als private Katalogansichten bereitgestellt werden können, zusammen mit der manuellen Einrichtungsoption für andere Anwendungsfälle. Es wurde auch klargestellt, dass die Rotation von eingeschränkten Zugriffsschlüsseln nicht automatisiert ist. Siehe [Private ](./setup/private-catalog-view.md), [Schlüssel mit eingeschränktem Zugriff](./setup/restricted-access-keys.md), [Datensynchronisierung](./setup/data-sync.md) und die [Launch-Checkliste](./launch/launch-checklist.md).
+
+_12. Oktober 2026_
+
+![Neu](../assets/new.svg) **Filter für nicht vorrätige Empfehlungen** - Es wurde der Filter für den Ausschluss von nicht vorrätigen Produkten hinzugefügt, mit dem Sie verhindern können, dass nicht vorrätige Produkte in Empfehlungseinheiten angezeigt werden. Siehe [Empfehlungsfilter](./merchandising/recommendations/filters.md#out-of-stock).
+
+_14. Oktober 2026_
+
+![Korrigieren](../assets/fix.svg) **Intelligente Rangverstärkungswerte** - Der dokumentierte Standardwert wurde auf `50` und der maximale Wert auf `1000` korrigiert. Siehe [Erstellen und Verwalten von Merchandising](./merchandising/rules/add.md#intelligent-ranking-boost).
+
+_16. Oktober 2026_
+
+![Korrigieren](../assets/fix.svg) **Standardname der Suchregel** - Der Name der Merchandising-Regel wurde von [!UICONTROL All product listings] auf [!UICONTROL Default search rule] geändert, sodass er zur Admin-Oberfläche passt. Siehe [Übersicht über Merchandising](./merchandising/rules/overview.md) und [Erstellen und Verwalten von Merchandising-Regeln](./merchandising/rules/add.md).
+
+_21. Oktober 2026_
+
+![Beheben](../assets/fix.svg) **Einschränkungen bei Zugriffsschlüsseln** - Die Anzahl der eingeschränkten Zugriffsschlüssel für die einzelnen Umgebungen wurde aus den dokumentierten Beschränkungen entfernt. Siehe [Grenzen und ](./boundaries-limits.md#catalog-views-and-policies).
+
+_22. Oktober 2026_
+
+![Neu](../assets/new.svg) **Empfehlungsattributfilter** - Es wurde eine Anleitung zur Aktivierung von Attributfiltern über die Metadaten-API hinzugefügt. Siehe [Empfehlungsfilter](./merchandising/recommendations/filters.md#attributes).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## September 2026
 
 >[!BEGINSHADEBOX]
@@ -49,6 +107,11 @@ _3. September 2026_
 
 [!DNL Adobe Commerce Optimizer] Merchandising-Regeln unterstützen jetzt [**Attribut**](./merchandising/rules/add.md#attribute-ranking) für die **Standardsuchregel**, **Kategorienregel** und **Suchregel**. Wenden Sie automatisch eine **[!UICONTROL Boost]**-, **[!UICONTROL Bury]**- oder **[!UICONTROL Hide]**-Aktion auf jedes Produkt an, das einer oder mehreren Attributbedingungen wie Marke oder Kategorie entspricht, ohne einzelne SKUs auszuwählen. Das Attribut-Ranking befindet sich in der Beta-Phase. [Weitere Informationen](./merchandising/rules/add.md#attribute-ranking).
 
+_9. September 2026_
+
+![Neu](../assets/new.svg) **HTTP-Header-Trigger-Richtlinien mit mehreren Werten** - Trigger-Richtlinien, die den `HTTP_HEADER`-Transporttyp verwenden, können jetzt mehrere kommagetrennte Werte in einer einzelnen Kopfzeile empfangen (z. B. `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). Richtlinienfilter verwenden `IN` werten die Werte mit `OR` Semantik aus. Filter, die `EQUALS`, `GREATER_THAN_EQUAL` oder `LESS_THAN_EQUAL` verwenden, lehnen die Anfrage mit einem Validierungsfehler ab, wenn die Kopfzeile mehrere Werte enthält. Dieses Verhalten gilt nur für Trigger-Richtlinien, die den `HTTP_HEADER` verwenden. [Weitere Informationen](./setup/policies.md#multi-value-http-header-triggers).
+<!--COMOPT-2439-->
+
 {{aco-release}}
 
 >[!ENDSHADEBOX]
@@ -56,11 +119,6 @@ _3. September 2026_
 ## August 2026
 
 >[!BEGINSHADEBOX]
-
-_9. September 2026_
-
-![Neu](../assets/new.svg) **HTTP-Header-Trigger-Richtlinien mit mehreren Werten** - Trigger-Richtlinien, die den `HTTP_HEADER`-Transporttyp verwenden, können jetzt mehrere kommagetrennte Werte in einer einzelnen Kopfzeile empfangen (z. B. `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). Richtlinienfilter verwenden `IN` werten die Werte mit `OR` Semantik aus. Filter, die `EQUALS`, `GREATER_THAN_EQUAL` oder `LESS_THAN_EQUAL` verwenden, lehnen die Anfrage mit einem Validierungsfehler ab, wenn die Kopfzeile mehrere Werte enthält. Dieses Verhalten gilt nur für Trigger-Richtlinien, die den `HTTP_HEADER` verwenden. [Weitere Informationen](./setup/policies.md#multi-value-http-header-triggers).
-<!--COMOPT-2439-->
 
 _7. August 2026_
 
@@ -165,7 +223,7 @@ _29. April 2026_
 
 <!--v1.52 release-->
 
-**Anfrage-Batching erforderlich** - Die GraphQL-API erzwingt jetzt maximal 100 SKUs pro Anfrage, wenn Sie Katalogdaten abrufen. Siehe [dokumentierte Beschränkungen und &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Anfrage-Batching erforderlich** - Die GraphQL-API erzwingt jetzt maximal 100 SKUs pro Anfrage, wenn Sie Katalogdaten abrufen. Siehe [dokumentierte Beschränkungen und ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
@@ -359,7 +417,7 @@ _23. September 2025_
 
 ### EU-Region jetzt verfügbar
 
-Für IMS-Organisationen steht die EU **Produktionsregion** eu1) zur Verfügung. Wenn Sie [eine [!DNL Commerce Optimizer] Instanz“ &#x200B;](./get-started.md#step-1-create-an-instance) Cloud Manager hinzufügen, wählen Sie **[!UICONTROL European Union]** als **[!UICONTROL Region]** aus (nur Produktion).
+Für IMS-Organisationen steht die EU **Produktionsregion** eu1) zur Verfügung. Wenn Sie [eine [!DNL Commerce Optimizer] Instanz“ ](./get-started.md#step-1-create-an-instance) Cloud Manager hinzufügen, wählen Sie **[!UICONTROL European Union]** als **[!UICONTROL Region]** aus (nur Produktion).
 
 Die Basis-Produktions-URLs für die Region der Europäischen Union lauten:
 
@@ -371,4 +429,3 @@ Die Basis-Produktions-URLs für die Region der Europäischen Union lauten:
 {{aco-release}}
 
 >[!ENDSHADEBOX]
-
