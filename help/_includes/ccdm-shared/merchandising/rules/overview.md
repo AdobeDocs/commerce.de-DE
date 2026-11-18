@@ -12,7 +12,7 @@ Jede **Suchregel** besteht aus drei Hauptkomponenten:
 - **Ereignisse** - Aktionen, die stattfinden, wenn die Bedingungen erfüllt sind (manuelle Rangfolge und zugehörige Ereignisse).
 - **Details** - Der Name der Regel sowie optionaler Zeitrahmen und Beschreibung.
 
-**Kategorieregeln** Verwenden Sie **Kategorieauswahl** anstelle von Suchabfragebedingungen; intelligentes Ranking und manuelles Ranking funktionieren auf die gleiche Weise wie für die Suche, wobei die Unterschiede in „Regeln erstellen [&#x200B; verwalten“ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
+**Kategorieregeln** Verwenden Sie **Kategorieauswahl** anstelle von Suchabfragebedingungen; intelligentes Ranking und manuelles Ranking funktionieren auf die gleiche Weise wie für die Suche, wobei die Unterschiede in „Regeln erstellen [&#x200B; verwalten“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add).
 
 Sie können mehrere Bedingungen und Aktionen für Suchregeln kombinieren und Regeln planen, damit sie für einen Zeitraum aktiv sind. Suchunterdrückungsregeln verwenden Abfragebedingungen, um Ergebnisse zu blockieren, anstatt Produkte zu reihen. Sie können auch eine **Standard-Suchregel“ festlegen** die gilt, wenn keine spezifischere Such- oder Kategorieregel gilt.
 
@@ -20,7 +20,7 @@ Sie können mehrere Bedingungen und Aktionen für Suchregeln kombinieren und Reg
 
 Suchunterdrückungsregeln sind ein Merchandising-Regeltyp, der Ergebnisse für übereinstimmende Kundenabfragen blockiert. Bei diesen Suchen werden keine Produkte in der Storefront zurückgegeben. Nachdem die Regel aktiviert wurde, überprüfen Sie die tatsächliche ergebnislose Darstellung der Storefront.
 
-Verwenden Sie die Suchunterdrückung für regulatorische Sucheinschränkungen, Branding-Einschränkungen oder bestimmte Begriffe, die keine Ergebnisse zurückgeben sollten. Bedingungen unterstützen **Abfrage**, **Abfrage enthält**, **Abfrage beginnt mit** und **Abfrage endet mit**. Informationen zu Konfigurations- und Verwaltungsschritten finden Sie unter [Erstellen und Verwalten von Unterdrückungsregeln für Suchen](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). Beispiele finden Sie unter [Best Practices](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/best-practice#search-suppression-best-practices).
+Verwenden Sie die Suchunterdrückung für regulatorische Sucheinschränkungen, Branding-Einschränkungen oder bestimmte Begriffe, die keine Ergebnisse zurückgeben sollten. Bedingungen unterstützen **Abfrage**, **Abfrage enthält**, **Abfrage beginnt mit** und **Abfrage endet mit**. Informationen zu Konfigurations- und Verwaltungsschritten finden Sie unter [Erstellen und Verwalten von Unterdrückungsregeln für Suchen](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). Beispiele finden Sie unter [Best Practices](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/best-practice#search-suppression-best-practices).
 
 Die Suchunterdrückung wirkt sich nur auf das Sucherlebnis aus. Die Sichtbarkeit des Produkts wird durch Kategoriennavigation, Merchandising-Seiten, Empfehlungen oder direkte Produkt-URLs nicht geändert. Dies ist kein Ersatz für die katalogweite Produktsichtbarkeit oder Zugriffskontrolle.
 
@@ -31,13 +31,13 @@ Die Suchunterdrückung wirkt sich nur auf das Sucherlebnis aus. Die Sichtbarkeit
 | Suchregeln | Bei einer Abfrage, die von einer aktiven Suchunterdrückungsregel abgeglichen wird, zeigt die Storefront eine Suchergebnisseite mit null Produkten an. Rangfolgeaktionen in einer Suchregel überschreiben die Unterdrückung nicht. Nicht blockierte Abfragen verwenden weiterhin die geltenden Merchandising-Regeln. |
 | Kategorieregeln | Die Kategoriennavigation und das Kategorie-Merchandising sind von der Suchunterdrückung nicht betroffen. Ein Produkt kann auch dann in einer Kategorie sichtbar bleiben, wenn eine Suchanfrage dafür blockiert wird. |
 | Standard-Suchregel | Die Suchunterdrückung blockiert übereinstimmende Abfragen, während die standardmäßige Suchregel standardmäßige Ranking- und Produktausschlüsse definiert. Das Standard-Ranking stellt die Ergebnisse für eine blockierte Abfrage nicht wieder her. |
-| Attributbasierte Merchandising-Ereignisse | Diese Ereignisse wenden Aktionen auf Produkte an, die den Attributbedingungen entsprechen, wie unter [Attribut-Ranking](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking) beschrieben. Die Suchunterdrückung blockiert stattdessen die Ergebnisse für eine übereinstimmende Abfrage, unabhängig davon, welche Produkte ansonsten übereinstimmen würden. |
+| Attributbasierte Merchandising-Ereignisse | Diese Ereignisse wenden Aktionen auf Produkte an, die den Attributbedingungen entsprechen, wie unter [Attribut-Ranking](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking) beschrieben. Die Suchunterdrückung blockiert stattdessen die Ergebnisse für eine übereinstimmende Abfrage, unabhängig davon, welche Produkte ansonsten übereinstimmen würden. |
 
 Produkte, die durch die **Standard-Suchregel** entweder durch manuelle Ausschlüsse oder **Attribut-basierte Merchandising-Ereignisse** mit einer **Ausblenden**-Aktion ausgeschlossen sind, werden ebenfalls von **Suchvorschlägen und der automatischen Vervollständigung**. Dadurch werden Produktausschlüsse über das gesamte Sucherlebnis hinweg konsistent gehalten, und es wird getrennt von der Blockierung einer Abfrage mit einer Suchunterdrückungsregel.
 
 ## Kategorieregeln {#category-rules}
 
-**Kategorieregeln** Steuern der Produktreihenfolge auf **Kategorieseiten**. Sie wählen eine oder mehrere Kategorien aus und wenden dann intelligentes Ranking (z. B. am häufigsten angezeigt, Trend) und manuelle Aktionen wie Pin, Boost und Bury an. Sie verwenden keine Suchabfragebedingungen. Informationen zu Einrichtungsschritten, Regeltypen und der Art und Weise, wie die Rangfolge für Kategorie und Suche gilt, finden Sie unter [Regeln erstellen und verwalten](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
+**Kategorieregeln** Steuern der Produktreihenfolge auf **Kategorieseiten**. Sie wählen eine oder mehrere Kategorien aus und wenden dann intelligentes Ranking (z. B. am häufigsten angezeigt, Trend) und manuelle Aktionen wie Pin, Boost und Bury an. Sie verwenden keine Suchabfragebedingungen. Informationen zu Einrichtungsschritten, Regeltypen und der Art und Weise, wie die Rangfolge für Kategorie und Suche gilt, finden Sie unter [Regeln erstellen und verwalten](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add).
 
 ## Anforderungen
 
@@ -72,7 +72,7 @@ Sie können eine **Standard-Suchregel** festlegen, die angewendet wird, wenn kei
 
 ## Rangfolge mit mehreren Regeln
 
-In diesem Abschnitt wird erläutert, wie die Regeln für die Ranking-Suche auf die Abfrage eines Käufers angewendet werden und miteinander interagieren. Das Suchregel-Ranking überschreibt die Suchunterdrückung nicht: Wenn eine aktive Unterdrückungsregel mit einer Abfrage übereinstimmt, gibt die Storefront keine Produkte für diese Suche zurück. Kategorieregeln gelten für ausgewählte Kategorien. Siehe [Regeln erstellen und verwalten](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add) für Details zu Such-, Kategorie- und Standardsuchregeln.
+In diesem Abschnitt wird erläutert, wie die Regeln für die Ranking-Suche auf die Abfrage eines Käufers angewendet werden und miteinander interagieren. Das Suchregel-Ranking überschreibt die Suchunterdrückung nicht: Wenn eine aktive Unterdrückungsregel mit einer Abfrage übereinstimmt, gibt die Storefront keine Produkte für diese Suche zurück. Kategorieregeln gelten für ausgewählte Kategorien. Siehe [Regeln erstellen und verwalten](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add) für Details zu Such-, Kategorie- und Standardsuchregeln.
 
 Auf einen Suchbegriff wird immer nur eine Suchregel angewendet.
 Wenn mehrere Regeln für einen Suchbegriff gefunden werden, werden alle diese Regeln angewendet. Wenn es zu einer Kollision zwischen zwei Regeln kommt - `rule 1`, die SKU1 erhöht, aber `rule 2` dieselbe SKU ausblendet - hat die zuletzt angewendete Regel (`rule 2`) Vorrang.

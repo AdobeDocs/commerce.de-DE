@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/rules/best-practice.md
+https://github.com/Adobe-Enterprise-Docs/commerce.de-DE/blob/main/help/_includes/ccdm-shared/merchandising/rules/best-practice.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -16,11 +16,11 @@ This includes related images in help/assets/ccdm-shared/.
 
 # Best Practices für Merchandising-Regeln
 
-Um Konversionen und Umsätze zu optimieren, implementieren Sie effektive **Suchregeln**, eine **Standardauflistungsregel** und **[Kategorieregeln](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#rule-types)**. Passen Sie Rankings mithilfe von Verkaufsdaten, Lagern, Promotions und [intelligentem Ranking](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking) an.
+Um Konversionen und Umsätze zu optimieren, implementieren Sie effektive **Suchregeln**, eine **Standardauflistungsregel** und **[Kategorieregeln](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#rule-types)**. Passen Sie Rankings mithilfe von Verkaufsdaten, Lagern, Promotions und [intelligentem Ranking](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking) an.
 
-Verwenden Sie [Unterdrückungsregeln für Suchen](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules) nur, wenn übereinstimmende Kundenabfragen null Produkte zurückgeben müssen - nicht, wenn Produkte ein anderes Ranking benötigen.
+Verwenden Sie [Unterdrückungsregeln für Suchen](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules) nur, wenn übereinstimmende Kundenabfragen null Produkte zurückgeben müssen - nicht, wenn Produkte ein anderes Ranking benötigen.
 
-Es ist von entscheidender Bedeutung, eine gut durchdachte **Standardregel“**. Ihre [Standardregel](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#default-rule) bestimmt, wie Suchergebnisse zunächst sortiert werden, wenn keine spezifischere Suchregel gilt, was die Erkennung und Kaufwahrscheinlichkeit verbessert. Überprüfen Sie diese regelmäßig, damit sie mit den Anforderungen und Kampagnen der Kunden Schritt hält.
+Es ist von entscheidender Bedeutung, eine gut durchdachte **Standardregel“**. Ihre [Standardregel](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/overview#default-rule) bestimmt, wie Suchergebnisse zunächst sortiert werden, wenn keine spezifischere Suchregel gilt, was die Erkennung und Kaufwahrscheinlichkeit verbessert. Überprüfen Sie diese regelmäßig, damit sie mit den Anforderungen und Kampagnen der Kunden Schritt hält.
 
 ## Tipps zum Optimieren von Suchregeln
 
@@ -30,20 +30,20 @@ Es ist von entscheidender Bedeutung, eine gut durchdachte **Standardregel“**. 
 - Produkte mit höheren Gewinnspannen leicht priorisieren, ohne die Relevanz zu beeinträchtigen.
 - Heben Sie Produkte hervor, die zum Verkauf stehen oder Teil von Sonderaktionen sind.
 - Legen Sie Suchregeln während der Promotion oder des Verkaufszeitraums automatisch fest, indem Sie den Datumsbereich während des Promotion-Zeitraums verwenden.
-- Passen Sie Suchergebnisse mithilfe von „Intelligent Ranking[&#x200B; wie &quot;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking) für Sie empfohlen“, „Am häufigsten angezeigt“ usw. an das individuelle Kundenverhalten an.
-- Wenn eine andere intelligente Strategie als **Keine** ausgewählt ist, stimmen Sie **[Intelligente Rangverstärkung](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost)** pro Regel ab und validieren Sie **Testen Sie Ihre Regel** vor der Veröffentlichung.
+- Passen Sie Suchergebnisse mithilfe von „Intelligent Ranking[&#x200B; wie &quot;](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking) für Sie empfohlen“, „Am häufigsten angezeigt“ usw. an das individuelle Kundenverhalten an.
+- Wenn eine andere intelligente Strategie als **Keine** ausgewählt ist, stimmen Sie **[Intelligente Rangverstärkung](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost)** pro Regel ab und validieren Sie **Testen Sie Ihre Regel** vor der Veröffentlichung.
 - Verwenden Sie immer das Bedienfeld „Regel testen“, um eine Vorschau anzuzeigen, wie sich Ihre intelligente Rangfolgestrategie auf die tatsächlichen Suchergebnisse für verschiedene Abfragen auswirkt.
 
 ## Tipps für Kategorieregeln
 
-- Verwenden Sie [Kategorieregeln](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#rule-types) auf Seiten mit hohem Traffic oder mit hoher Marge **Kategorieseiten** auf denen die kuratierte Reihenfolge ebenso wichtig ist wie die Suche - z. B. saisonale Sammlungen oder vorgestellte Abteilungen.
-- Ordnen Sie **intelligentes Ranking** (z. B. Trend, am häufigsten angezeigt) dem zu, wie Käufer diese Kategorie durchsuchen. Kategorieseiten verwenden nicht den Suchabfragetext, wie Suchregeln das tun. Siehe [Intelligente Rangfolge](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking). Verwenden Sie für andere intelligente **als &quot;**&quot; **[Intelligente Rangverstärkung](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost)** und die Kategorievorschau, um die Verhaltensstärke für diese Kategorieregel anzupassen.
-- Wenden Sie **PIN**, **BOOST** und **BURY** konsistent mit Ihrem Kampagnenplan an. Denken Sie daran, dass manuelle Positionen in der Regel nur dann gelten, wenn der Käufer die **Standardsortierung** für den Eintrag verwendet. Siehe [Manuelle Rangfolge](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#manual-ranking).
+- Verwenden Sie [Kategorieregeln](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#rule-types) auf Seiten mit hohem Traffic oder mit hoher Marge **Kategorieseiten** auf denen die kuratierte Reihenfolge ebenso wichtig ist wie die Suche - z. B. saisonale Sammlungen oder vorgestellte Abteilungen.
+- Ordnen Sie **intelligentes Ranking** (z. B. Trend, am häufigsten angezeigt) dem zu, wie Käufer diese Kategorie durchsuchen. Kategorieseiten verwenden nicht den Suchabfragetext, wie Suchregeln das tun. Siehe [Intelligente Rangfolge](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking). Verwenden Sie für andere intelligente **als &quot;**&quot; **[Intelligente Rangverstärkung](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost)** und die Kategorievorschau, um die Verhaltensstärke für diese Kategorieregel anzupassen.
+- Wenden Sie **PIN**, **BOOST** und **BURY** konsistent mit Ihrem Kampagnenplan an. Denken Sie daran, dass manuelle Positionen in der Regel nur dann gelten, wenn der Käufer die **Standardsortierung** für den Eintrag verwendet. Siehe [Manuelle Rangfolge](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#manual-ranking).
 - Vorschau im **Kategorie**-Regelfluss im Editor und Validierung in der Storefront nach der Veröffentlichung, dieselbe Disziplin, die Sie für das Bedienfeld „Regel testen“ bei der Suche verwenden.
 
 ## Best Practices und Anwendungsfälle für die Suchunterdrückung {#search-suppression-best-practices}
 
-Eine Suchunterdrückungsregel blockiert Ergebnisse für Abfragen, die ihren Bedingungen entsprechen, sodass die Storefront eine Suchergebnisseite mit null Produkten anzeigt. Der Regeleditor stellt keine Vorschau für Unterdrückungsregeln bereit. Verwenden Sie die engste Bedingung, die die Einschränkung erfüllt, und befolgen Sie dann [Regeln für die Suchunterdrückung erstellen und verwalten](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). Nachdem die Regel aktiviert wurde, überprüfen Sie übereinstimmende und nicht übereinstimmende Suchen in der Storefront. Überprüfen Sie die tatsächliche ergebnislose Präsentation der Storefront.
+Eine Suchunterdrückungsregel blockiert Ergebnisse für Abfragen, die ihren Bedingungen entsprechen, sodass die Storefront eine Suchergebnisseite mit null Produkten anzeigt. Der Regeleditor stellt keine Vorschau für Unterdrückungsregeln bereit. Verwenden Sie die engste Bedingung, die die Einschränkung erfüllt, und befolgen Sie dann [Regeln für die Suchunterdrückung erstellen und verwalten](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). Nachdem die Regel aktiviert wurde, überprüfen Sie übereinstimmende und nicht übereinstimmende Suchen in der Storefront. Überprüfen Sie die tatsächliche ergebnislose Präsentation der Storefront.
 
 | Anwendungsfall | Empfohlene Konfiguration | Was zu überprüfen ist |
 | --- | --- | --- |
