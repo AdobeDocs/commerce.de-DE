@@ -9,9 +9,9 @@ product_v2:
     internal-label: Commerce
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
     internal-label: Commerce as a Cloud Service
-source-git-commit: 896b53de478dbb3acc4a4ab8b26c8ae9e10ec8d2
+source-git-commit: af9c81b93d4ad1ff75a0380ec3fd4e3e5f374e3a
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '231'
 ht-degree: 3%
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 3%
 - [Merchandising-Services](merchandising-services.md)
 - [Funktionsvergleich](feature-comparison.md)
 - [Erste Schritte](getting-started.md)
+- [Beschränkungen und Grenzen](boundaries-limits.md)
 - [Benutzer- und Identitätsverwaltung](user-management.md)
 - [Schaufenster](storefront.md)
 - [Anwendungsszenarien](use-cases.md)
@@ -40,11 +41,11 @@ ht-degree: 3%
       - [Checkliste für die Kundenbereitschaft](migration/bulk-data/readiness-checklist.md)
       - [Überprüfen des Zugriffs auf den Migrationsdienst](migration/bulk-data/cdms-access.md)
       - [Ausführen einer Massendatenmigration](migration/bulk-data/migration-guide.md)
-      - [Videoanleitung](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
+      - [Videoanleitung](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
     - [Migrationsbewertungswerkzeug](migration/assessment.md)
     - [Kodierwerkzeuge](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"}
   - {hide-from-toc}[Dokumentations-RAG-Service](migration/doc-rag.md)
-- [Als Kunde anmelden](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [Als Kunde anmelden](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Geschenkkartenkonto-REST-Endpunkte](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [E-Mail-Auslösung durch REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - Tutorials {#tutorials}
@@ -58,6 +59,6 @@ ht-degree: 3%
   - [GraphQL-Schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
   - [REST-API-Schema](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [Commerce-Entwickleragent](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [Videoschulungen](https://experienceleague.adobe.com/de/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Videoschulungen](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Versionshinweise](release-notes.md)
-- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
+- [Zurück zur Startseite von Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
