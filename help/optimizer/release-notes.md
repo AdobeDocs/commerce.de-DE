@@ -51,7 +51,7 @@ _6. November 2026_
 
 ![Neu](../assets/new.svg) **Integration von Warenkorb- und Checkout-Produkten von Drittanbietern** - Es wurde eine Anleitung zur Integration der Warenkorb- und Checkout-Services von Drittanbietern in [!DNL Adobe Commerce Optimizer] hinzugefügt. Siehe [Integrationen](./integrations/integrations-overview.md#third-party-cart-and-checkout-integration).
 
-![Fix](../assets/fix.svg) **Product Visuals Storage** - Klargestellt, dass Sie die Speicherkapazität für [!DNL Product Visuals] durch ein Upgrade Ihrer [!DNL AEM Assets]-Lizenz erweitern können. Siehe [Grenzen und ](./boundaries-limits.md#product-visuals-limits).
+![Fix](../assets/fix.svg) **Product Visuals Storage** - Klargestellt, dass Sie die Speicherkapazität für [!DNL Product Visuals] durch ein Upgrade Ihrer [!DNL AEM Assets]-Lizenz erweitern können. Siehe [Grenzen und &#x200B;](./boundaries-limits.md#product-visuals-limits).
 
 ![Fehlerbehebung](../assets/fix.svg) **AEM Assets-Einrichtungsanleitung** - Der eigenständige [!DNL Adobe Commerce Optimizer]-Einrichtungsfluss für [!DNL AEM Assets] wurde entfernt und die Einrichtungsanleitung wurde an die allgemeine [!DNL AEM Assets]-Konfigurationsdokumentation weitergeleitet. Siehe [Integrationen](./integrations/integrations-overview.md#product-visuals), [Katalogebenen](./setup/catalog-layer.md) und [Produktvisualisierungen](./setup/product-visuals.md).
 
@@ -59,7 +59,7 @@ _6. November 2026_
 
 _16. November 2026_
 
-![Neu](../assets/new.svg) **Facettenkapazität** - Dokumentiert, dass Sie die Facettenbegrenzung über eine Kundensupportanfrage erhöhen können. Siehe [Grenzen und ](./boundaries-limits.md#catalog-views-and-policies).
+![Neu](../assets/new.svg) **Facettenkapazität** - Dokumentiert, dass Sie die Facettenbegrenzung über eine Kundensupportanfrage erhöhen können. Siehe [Grenzen und &#x200B;](./boundaries-limits.md#catalog-views-and-policies).
 
 {{aco-release}}
 
@@ -71,7 +71,7 @@ _16. November 2026_
 
 _1. Oktober 2026_
 
-![Neu](../assets/new.svg) **B2B-freigegebene Katalogansichten** - Dokumentiert, wie freigegebene B2B-Kataloge automatisch als private Katalogansichten bereitgestellt werden können, zusammen mit der manuellen Einrichtungsoption für andere Anwendungsfälle. Es wurde auch klargestellt, dass die Rotation von eingeschränkten Zugriffsschlüsseln nicht automatisiert ist. Siehe [Private ](./setup/private-catalog-view.md), [Schlüssel mit eingeschränktem Zugriff](./setup/restricted-access-keys.md), [Datensynchronisierung](./setup/data-sync.md) und die [Launch-Checkliste](./launch/launch-checklist.md).
+![Neu](../assets/new.svg) **B2B-freigegebene Katalogansichten** - Dokumentiert, wie freigegebene B2B-Kataloge automatisch als private Katalogansichten bereitgestellt werden können, zusammen mit der manuellen Einrichtungsoption für andere Anwendungsfälle. Es wurde auch klargestellt, dass die Rotation von eingeschränkten Zugriffsschlüsseln nicht automatisiert ist. Siehe [Private &#x200B;](./setup/private-catalog-view.md), [Schlüssel mit eingeschränktem Zugriff](./setup/restricted-access-keys.md), [Datensynchronisierung](./setup/data-sync.md) und die [Launch-Checkliste](./launch/launch-checklist.md).
 
 _12. Oktober 2026_
 
@@ -87,7 +87,7 @@ _16. Oktober 2026_
 
 _21. Oktober 2026_
 
-![Beheben](../assets/fix.svg) **Einschränkungen bei Zugriffsschlüsseln** - Die Anzahl der eingeschränkten Zugriffsschlüssel für die einzelnen Umgebungen wurde aus den dokumentierten Beschränkungen entfernt. Siehe [Grenzen und ](./boundaries-limits.md#catalog-views-and-policies).
+![Beheben](../assets/fix.svg) **Einschränkungen bei Zugriffsschlüsseln** - Die Anzahl der eingeschränkten Zugriffsschlüssel für die einzelnen Umgebungen wurde aus den dokumentierten Beschränkungen entfernt. Siehe [Grenzen und &#x200B;](./boundaries-limits.md#catalog-views-and-policies).
 
 _22. Oktober 2026_
 
@@ -223,7 +223,7 @@ _29. April 2026_
 
 <!--v1.52 release-->
 
-**Anfrage-Batching erforderlich** - Die GraphQL-API erzwingt jetzt maximal 100 SKUs pro Anfrage, wenn Sie Katalogdaten abrufen. Siehe [dokumentierte Beschränkungen und ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Anfrage-Batching erforderlich** - Die GraphQL-API erzwingt jetzt maximal 100 SKUs pro Anfrage, wenn Sie Katalogdaten abrufen. Siehe [dokumentierte Beschränkungen und &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
@@ -417,7 +417,7 @@ _23. September 2025_
 
 ### EU-Region jetzt verfügbar
 
-Für IMS-Organisationen steht die EU **Produktionsregion** eu1) zur Verfügung. Wenn Sie [eine [!DNL Commerce Optimizer] Instanz“ ](./get-started.md#step-1-create-an-instance) Cloud Manager hinzufügen, wählen Sie **[!UICONTROL European Union]** als **[!UICONTROL Region]** aus (nur Produktion).
+Für IMS-Organisationen steht die EU **Produktionsregion** eu1) zur Verfügung. Wenn Sie [eine [!DNL Commerce Optimizer] Instanz“ &#x200B;](./get-started.md#step-1-create-an-instance) Cloud Manager hinzufügen, wählen Sie **[!UICONTROL European Union]** als **[!UICONTROL Region]** aus (nur Produktion).
 
 Die Basis-Produktions-URLs für die Region der Europäischen Union lauten:
 
