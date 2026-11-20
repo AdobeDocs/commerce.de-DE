@@ -59,16 +59,16 @@ Wenn die Regel zum Abgleichen von **[!UICONTROL Match by product SKU]** in der C
 
 1. Konfigurieren Sie die Metadaten ([!UICONTROL SKU], [!UICONTROL position] und [!UICONTROL role]), die das Asset mit der zugehörigen Produkt-SKU verknüpfen.
 
-   Die vier Standardrollen sind `image`, `small_image`, `thumbnail` und `swatch_image`. Bei der AEM Assets-Integrationserweiterung Version 1.4.6 und höher können Sie auch eine benutzerdefinierte Bildrolle eingeben, z. B. `hero` oder `custom_role_1`. Weitere Informationen [ Sie unter ](custom-match.md)Benutzerdefinierter automatischer Abgleich“.
+   Die vier Standardrollen sind `image`, `small_image`, `thumbnail` und `swatch_image`. Bei der AEM Assets-Integrationserweiterung Version 1.4.6 und höher können Sie auch eine benutzerdefinierte Bildrolle eingeben, z. B. `hero` oder `custom_role_1`. Weitere Informationen [&#x200B; Sie unter &#x200B;](custom-match.md)Benutzerdefinierter automatischer Abgleich“.
 
    >[!NOTE]
    >
    > Wenn ein Asset für mehrere Produkte verwendet wird, konfigurieren Sie die Metadaten für jede zugehörige SKU.
 
-1. Legen Sie auf der Registerkarte `Basic` den Standardwert für das Feld _[!UICONTROL Review Status]_auf `approved` fest.
+1. Legen Sie auf der Registerkarte `Basic` den Standardwert für das Feld _[!UICONTROL Review Status]_&#x200B;auf `approved` fest.
 
    ![Beispiel-Metadaten](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
-Nachdem Sie das Asset genehmigt haben[ (überprüfen Sie die Produktverknüpfung, das Synchronisierungsergebnis und die Storefront-Anzeige](../get-started/setup-synchronization.md#verify-the-integration). Wenn das Asset nicht angezeigt wird, überprüfen Sie [Synchronisierungsstatus](../get-started/sync-status.md). Verwenden Sie für Adobe Commerce Optimizer stattdessen den [Optimizer-Verifizierungs](../get-started/configure-aco.md#match-by-sku-workflow-example)Workflow. Der Synchronisierungsstatus ist nicht verfügbar.
+Nachdem Sie das Asset genehmigt haben[&#x200B; (überprüfen Sie die Produktverknüpfung, das Synchronisierungsergebnis und die Storefront-Anzeige](../get-started/setup-synchronization.md#verify-the-integration). Wenn das Asset nicht angezeigt wird, überprüfen Sie [Synchronisierungsstatus](../get-started/sync-status.md). Verwenden Sie für Adobe Commerce Optimizer stattdessen den [Optimizer-Verifizierungs](../get-started/configure-aco.md#match-by-sku-workflow-example)Workflow. Der Synchronisierungsstatus ist nicht verfügbar.
 
 [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} Weitere Informationen zur Fehlerbehebung bei der Synchronisierung finden Sie unter [Integrationsprotokolle](../get-started/logs.md).

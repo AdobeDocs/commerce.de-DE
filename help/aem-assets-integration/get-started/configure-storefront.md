@@ -53,7 +53,7 @@ Die Commerce-Dropdown-Menüs erkennen automatisch die `commerce-assets-enabled`-
 
 Weitere Informationen zur Verwendung von AEM Assets mit der Commerce-Storefront mit Edge Delivery Services finden Sie unter [AEM Assets-Integration](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) in der Dokumentation zu *Adobe Commerce Storefront*.
 
-Nachdem Sie die Storefront-Konfiguration gespeichert haben[ „Überprüfen Sie die Integration](setup-synchronization.md#verify-the-integration) mit einem genehmigten Asset, das mit einem Produkt verknüpft ist. Bestätigen Sie, dass das erwartete Bild in der Storefront angezeigt wird. Ist dies nicht der Fall, überprüfen Sie die Produktverknüpfung, die Verantwortliche für die Visualisierung und das Synchronisierungsergebnis, bevor Sie eine Fehlerbehebung bei der Bereitstellung von Storefront-Bildern vornehmen. Befolgen Sie für Adobe Commerce Optimizer den [Optimizer-Verifizierungs-Workflow](configure-aco.md#match-by-sku-workflow-example).
+Nachdem Sie die Storefront-Konfiguration gespeichert haben[&#x200B; „Überprüfen Sie die Integration](setup-synchronization.md#verify-the-integration) mit einem genehmigten Asset, das mit einem Produkt verknüpft ist. Bestätigen Sie, dass das erwartete Bild in der Storefront angezeigt wird. Ist dies nicht der Fall, überprüfen Sie die Produktverknüpfung, die Verantwortliche für die Visualisierung und das Synchronisierungsergebnis, bevor Sie eine Fehlerbehebung bei der Bereitstellung von Storefront-Bildern vornehmen. Befolgen Sie für Adobe Commerce Optimizer den [Optimizer-Verifizierungs-Workflow](configure-aco.md#match-by-sku-workflow-example).
 
 >[!TIP]
 >

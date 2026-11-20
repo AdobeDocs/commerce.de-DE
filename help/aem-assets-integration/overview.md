@@ -142,7 +142,7 @@ Wählen Sie Ihre Bereitstellung aus, um die erforderlichen Schritte in der richt
 
 [!BADGE nur SaaS]{type=Positive tooltip="Gilt nur für Adobe Commerce as a Cloud Service-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."}
 
-1. Um Commerce-Metadaten zu unterstützen, [ Sie das AEM Assets-Projekt ](get-started/configure-aem.md). Verwenden Sie ab AEM-Version `2026.5.26309` das [Self-Service-Onboarding](get-started/configure-aem.md#enable-aem-commerce-self-service); installieren Sie das `assets-commerce`-Paket in früheren Versionen manuell.
+1. Um Commerce-Metadaten zu unterstützen, [&#x200B; Sie das AEM Assets-Projekt &#x200B;](get-started/configure-aem.md). Verwenden Sie ab AEM-Version `2026.5.26309` das [Self-Service-Onboarding](get-started/configure-aem.md#enable-aem-commerce-self-service); installieren Sie das `assets-commerce`-Paket in früheren Versionen manuell.
 
 1. [Konfigurieren von IMS](get-started/permissions.md)Benutzerberechtigungen für den Asset-Wähler und die AEM-Umgebung sowie die Domain-Auswahl.
 
@@ -154,7 +154,7 @@ Wählen Sie Ihre Bereitstellung aus, um die erforderlichen Schritte in der richt
 
 [!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."}
 
-1. Um Commerce-Metadaten zu unterstützen, [ Sie das AEM Assets-Projekt ](get-started/configure-aem.md). Verwenden Sie ab AEM-Version `2026.5.26309` das [Self-Service-Onboarding](get-started/configure-aem.md#enable-aem-commerce-self-service); installieren Sie das `assets-commerce`-Paket in früheren Versionen manuell.
+1. Um Commerce-Metadaten zu unterstützen, [&#x200B; Sie das AEM Assets-Projekt &#x200B;](get-started/configure-aem.md). Verwenden Sie ab AEM-Version `2026.5.26309` das [Self-Service-Onboarding](get-started/configure-aem.md#enable-aem-commerce-self-service); installieren Sie das `assets-commerce`-Paket in früheren Versionen manuell.
 
 1. [Installieren Sie Adobe Commerce-](get-started/configure-commerce.md), um die Erweiterung hinzuzufügen und die erforderlichen Anmeldeinformationen und Verbindungen zu generieren.
 
@@ -166,7 +166,7 @@ Wählen Sie Ihre Bereitstellung aus, um die erforderlichen Schritte in der richt
 
 >[!ENDTABS]
 
-Nach Abschluss des Setups [ Sie die Integration ](get-started/setup-synchronization.md#verify-the-integration) einem geeigneten, genehmigten Asset durch Produktverknüpfung und Synchronisierung mit der Storefront-Anzeige. Folgen Sie bei Adobe Commerce Optimizer dem [Optimizer-Verifizierungs-Workflow](get-started/configure-aco.md#match-by-sku-workflow-example); der Synchronisierungsstatus ist nicht verfügbar.
+Nach Abschluss des Setups [&#x200B; Sie die Integration &#x200B;](get-started/setup-synchronization.md#verify-the-integration) einem geeigneten, genehmigten Asset durch Produktverknüpfung und Synchronisierung mit der Storefront-Anzeige. Folgen Sie bei Adobe Commerce Optimizer dem [Optimizer-Verifizierungs-Workflow](get-started/configure-aco.md#match-by-sku-workflow-example); der Synchronisierungsstatus ist nicht verfügbar.
 
 Informationen zur Zuweisung und Verifizierung von Kategoriebildern finden Sie unter [Verwalten von Kategoriebildern](manage-assets.md#category-images).
 

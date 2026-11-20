@@ -38,7 +38,7 @@ Ohne die richtigen Berechtigungen ist der Asset-Wähler nicht verfügbar und die
 
 >[!IMPORTANT]
 >
-> Adobe Admin Console-Produktprofile steuern den Benutzerzugriff auf Integrationsfunktionen. Sie ändern nicht die Lizenzberechtigungen. Durch das Zuweisen eines Produktprofils für Autoren wird der AEM Assets Author-API-Zugriff auf Kunden von Product Visuals nicht gewährt. Berechtigungsanforderungen finden [ unter &quot;](../../optimizer/boundaries-limits.md#product-visuals-limits)&quot;.
+> Adobe Admin Console-Produktprofile steuern den Benutzerzugriff auf Integrationsfunktionen. Sie ändern nicht die Lizenzberechtigungen. Durch das Zuweisen eines Produktprofils für Autoren wird der AEM Assets Author-API-Zugriff auf Kunden von Product Visuals nicht gewährt. Berechtigungsanforderungen finden [&#x200B; unter &quot;](../../optimizer/boundaries-limits.md#product-visuals-limits)&quot;.
 
 >[!BEGINSHADEBOX]
 

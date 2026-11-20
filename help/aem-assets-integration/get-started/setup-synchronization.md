@@ -135,7 +135,7 @@ Die Einstellung **Visualisierungseigentümer** bestimmt, welches System Produktb
 
 Der Administrator zeigt die verfügbaren Bilder für diesen Eigentümer an, während der Rest der Bilder ausgegraut ist und mit einer **Beschriftung angezeigt**.
 
-Weitere Informationen [ Verhalten bei der Anzeige von Bildern finden ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} unter „Festlegen von“.
+Weitere Informationen [&#x200B; Verhalten bei der Anzeige von Bildern finden &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} unter „Festlegen von“.
 
 >[!TIP]
 >
@@ -149,7 +149,7 @@ Weitere Informationen [ Verhalten bei der Anzeige von Bildern finden ](https://e
 
 1. Klicken Sie auf **[!UICONTROL Save Config]** , um Aktualisierungen anzuwenden.
 
-   Bevor Sie zu **AEM Assets** wechseln[ überprüfen Sie, ob die Assets mit den erwarteten Produkten verknüpft sind](#verify-the-integration). Konfigurieren [ dann Ihre Storefront, ](configure-storefront.md) AEM Assets-Produktbilder anzuzeigen.
+   Bevor Sie zu **AEM Assets** wechseln[&#x200B; überprüfen Sie, ob die Assets mit den erwarteten Produkten verknüpft sind](#verify-the-integration). Konfigurieren [&#x200B; dann Ihre Storefront, &#x200B;](configure-storefront.md) AEM Assets-Produktbilder anzuzeigen.
 
 ## Optional. Konfigurieren der benutzerdefinierten Domain-URL
 
@@ -181,7 +181,7 @@ Rufen Sie die konfigurierte URL der benutzerdefinierten Domain für die Asset-Be
 
 1. Markieren Sie in AEM Assets ein Test-Asset als **[!UICONTROL Eligible for Commerce]**, verknüpfen Sie es mit dieser Produkt-SKU und legen Sie dessen Rolle und Position fest. Genehmigen Sie das Asset. Siehe [Standardmäßiger automatischer Abgleich](../synchronize/default-match.md) oder verwenden Sie Ihre konfigurierte [benutzerdefinierte Abgleichregel](../synchronize/custom-match.md).
 
-1. Öffnen Sie nach Abschluss der Synchronisierung das Produkt in Commerce Admin und überprüfen Sie den **[!UICONTROL Images And Videos]** Abschnitt des Produkts auf die zugehörigen Assets, Rollen und Positionen. Siehe [Verwalten von ](../manage-assets.md).
+1. Öffnen Sie nach Abschluss der Synchronisierung das Produkt in Commerce Admin und überprüfen Sie den **[!UICONTROL Images And Videos]** Abschnitt des Produkts auf die zugehörigen Assets, Rollen und Positionen. Siehe [Verwalten von &#x200B;](../manage-assets.md).
 
 1. Überprüfen Sie [Synchronisierungsstatus](sync-status.md) auf das Synchronisierungsergebnis des Assets. Wenn die Synchronisierung fehlschlägt, überprüfen Sie die Spalte **[!UICONTROL Error]** .
 
