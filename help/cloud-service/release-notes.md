@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: c77ccb87ac61a4dae8adc3079bb8aac7a4a9bf58
+source-git-commit: eebf534ca77d223db63f2062dd889d8f3ceb1866
 workflow-type: tm+mt
-source-wordcount: '10458'
+source-wordcount: '10433'
 ht-degree: 0%
 ---
 # Versionshinweise
@@ -84,11 +84,11 @@ Weitere Informationen finden Sie unter [Commerce Admin in Adobe Unified Experien
 
 ## November 2026 - #2 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="Die aufgelisteten Elemente sind derzeit nur in Sandbox-Umgebungen verfügbar. Adobe stellt neue Versionen zunächst in Sandbox-Umgebungen zur Verfügung, um Zeit zum Testen bevorstehender Änderungen zu haben, bevor die Version in Produktionsumgebungen verfügbar ist."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produktion]{type=Neutral tooltip="Die aufgelisteten Elemente sind derzeit in Produktionsumgebungen verfügbar."}
 
-Die folgenden Elemente wurden am 18. November 2026 in Sandbox-Umgebungen veröffentlicht.
+Die folgenden Elemente wurden am 18. November 2026 in Produktionsumgebungen veröffentlicht.
 
 >[!BEGINSHADEBOX]
 
