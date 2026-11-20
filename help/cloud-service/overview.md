@@ -5,7 +5,7 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 autotag-review: '2026-06-18T16:02:31.185Z'
 TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
 product_v2:
@@ -64,9 +64,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 213fcf83118eb60b0e80db224192963592945d8d
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1641'
 ht-degree: 0%
 ---
 # Übersicht über [!DNL Adobe Commerce as a Cloud Service]
@@ -114,7 +114,7 @@ In der folgenden Tabelle sind die Produkte aufgeführt, die [!DNL Adobe Commerce
 
 Im folgenden Video finden Sie eine kurze Einführung in die [!DNL Adobe Commerce as a Cloud Service]. Diagramme, die die Architektur veranschaulichen, werden unter dem Video bereitgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443276?captions=ger&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 Dieses Diagramm zeigt den Datenfluss zwischen [!DNL Adobe Commerce as a Cloud Service] und allen Adobe Experience Cloud-Lösungen.
 
@@ -141,31 +141,36 @@ Merchandising Services unterstützt in [!DNL Adobe Commerce as a Cloud Service] 
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
-Product Visuals vereinfacht das Asset-Management mithilfe eines Digital-Asset-Management-Systems (DAM), das zum Verwalten von Rich-Media-Inhalten mit Adobe Experience Manager integriert werden kann.
+Product Visuals unterstützt Commerce-fokussiertes Digital Asset Management (DAM), einschließlich der Verwaltung von Produkt-Assets, Commerce-Metadaten und der Bereitstellung von Assets auf Basis von Adobe Experience Manager Assets.
 
 Die Integration stellt sicher, dass digitale Assets, wie Produktbilder oder Marketing-Inhalte, basierend auf der SKU oder anderen Schlüsselattributen dynamisch mit den entsprechenden Merchandising-Entitäten verknüpft werden, einschließlich Produkten und Kategorien in Adobe Commerce.
 
-[!DNL Product Visuals] ist nativ mit [!DNL Adobe Commerce as a Cloud Service] verfügbar und bietet einige der Funktionen von [!DNL AEM Assets].
+[!DNL Product Visuals] ist in [!DNL Adobe Commerce as a Cloud Service] enthalten. Es umfasst [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime), ein schlankes DAM, mit Dynamic Media-Funktionen mit OpenAPI-Funktionen für die Asset-Bereitstellung.
 
 Alternativ bieten die nativen Funktionen in [!DNL Adobe Commerce as a Cloud Service] grundlegende Asset-Management-Tools zum Speichern und Verwalten digitaler Assets.
 
-Weitere Informationen zur Integration von [&#128279;](../aem-assets-integration/overview.md) mit [!DNL Adobe Commerce as a Cloud Service] finden Sie im Handbuch zur Integration von [!DNL Product Visuals powered by AEM Assets] mit.
+Weitere Informationen zur Integration von ](../aem-assets-integration/overview.md) mit [!DNL Adobe Commerce as a Cloud Service] finden Sie im Handbuch zur [Integration von [!DNL Product Visuals powered by AEM Assets] mit.
 
-### [!DNL Product Visuals] oder [!DNL AEM Assets]
+### [!DNL Product Visuals] oder [!DNL AEM Assets Ultimate]
 
-Der folgende Vergleich hilft Ihnen bei der Auswahl der besten Option für Ihre Inhalte, die supply chain benötigt:
+Der folgende Vergleich hilft Ihnen bei der Auswahl der besten Option für Ihre Inhalte, die supply chain benötigt. Product Visuals unterstützt Commerce-fokussiertes Asset-Management. [AEM Assets Ultimate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview) unterstützt umfassendere Unternehmens-DAM- und komplexe Inhaltslieferketten, einschließlich Benutzeroberflächenerweiterbarkeit, API-gesteuerter Automatisierung und Bereitstellung von benutzerdefiniertem Code.
+
+>[!IMPORTANT]
+>
+>AEM Assets Ultimate ist nicht in Product Visuals enthalten. Um Ultimate zu verwenden, kaufen Sie eine AEM Assets Ultimate Add-on-SKU. Wenden Sie sich an Ihren Adobe-Kundenbetreuer, um Lizenzierung und Bereitstellung zu besprechen.
 
 <table>
   <tr>
     <td align="left">
       <strong>[!DNL Product Visuals powered by AEM Assets]</strong>
       <ul>
+        <li>In Adobe Commerce as a Cloud Service enthalten</li>
         <li>Integrierter, automatisierter Digital Asset Manager (DAM) für Produktbilder und Videos</li>
         <li>Ändern der Größe, Zuschneiden und Konvertieren von Bildern</li>
         <li>Schnelle Bild- und Videobereitstellung</li>
         <li>Optimierung von Bildformaten, -größen und -qualität auf der Grundlage der Client-Browser-Funktionen</li>
         <li>Zugriff auf Adobe Express und Adobe Firefly</li>
-        <li>Nutzungsbeschränkungen für die Kapazität der Bild-/Videobereitstellung und den Benutzerzugriff</li>
+        <li>Nutzungsbeschränkungen für Asset-Speicher, Kapazität der Bild-/Videobereitstellung und Benutzerzugriff</li>
         <li>Integrierter Asset-Wähler</li>
       </ul>
     </td>
@@ -174,13 +179,18 @@ Der folgende Vergleich hilft Ihnen bei der Auswahl der besten Option für Ihre I
       <img src="../assets/icon-double-chevron-right.svg" alt="Chevron" width="100">
     </td>
     <td align="left">
-      <strong>AEM Assets</strong>
+      <strong>[!DNL AEM Assets Ultimate]</strong>
       <ul>
+        <li>Erfordert eine AEM Assets Ultimate Add-on-SKU</li>
         <li>Alle Funktionen von Product Visuals</li>
         <li>Full Marketing Digital Asset Manager (DAM)</li>
-        <li>Unbegrenzte Anzahl von Benutzern (Zahlung pro Benutzer)</li>
-        <li>Unbegrenzte Bild- und Videobereitstellung</li>
-        <li>Erweiterte Asset-Management-Funktionen:</li>
+        <li>Benutzerzugriff basierend auf erworbenen Lizenzen</li>
+        <li>Bild- und Videobereitstellung basierend auf lizenzierter Dynamic Media-Kapazität</li>
+        <li>Zugriff auf die AEM Assets-Autoren-API und Integrationen, die AEM Assets-APIs verwenden, um Assets oder Metadaten programmgesteuert zu verwalten</li>
+        <li>API-basierte Metadatenintegrationen, einschließlich Metadaten-Eingang und -Ausgang</li>
+        <li>Erweiterbarkeit der Benutzeroberfläche, API-gesteuerte Automatisierung und Bereitstellung von benutzerdefiniertem Code</li>
+        <li>Staging- und Entwicklungsumgebungen in AEM Assets</li>
+        <li>Erweiterte Asset-Management-Funktionen mit Dynamic Media-Funktionen, die der jeweiligen Add-on-Lizenz unterliegen:</li>
         <ul>
           <li>360-Grad-Rotationssets und interaktive Viewer</li>
           <li>3D-Modellunterstützung und immersive Inhalte</li>
@@ -199,6 +209,10 @@ Der folgende Vergleich hilft Ihnen bei der Auswahl der besten Option für Ihre I
     </td>
   </tr>
 </table>
+
+>[!NOTE]
+>
+>Der unterstützte Massen-Upload und die Massenverarbeitung von Metadaten erfordern für sich genommen keine AEM Assets Ultimate. Die Verwendung von App Builder allein erfordert keine Ultimate. Diese Anforderung hängt von den von der Anwendung verwendeten AEM Assets-APIs ab. Product Visuals enthält Dynamic Media mit OpenAPI-Funktionen für die Asset-Bereitstellung. Informationen zu Funktionsberechtigungen, Kapazität und Nutzungszuweisungen finden Sie unter [Produktvisualisierungsbeschränkungen](../optimizer/boundaries-limits.md#product-visuals-limits).
 
 ## Entwicklerplattform
 
@@ -245,7 +259,7 @@ Der typische Upgrade-Prozess für Adobe Commerce in Cloud umfasste das Erstellen
 
 >[!NOTE]
 >
->Adobe garantiert Abwärtskompatibilität für alle Updates. Das bedeutet, dass Aktualisierungen, die angewendet werden, vorhandene Funktionen oder Anpassungen, die dem Modell der „API-First[Erweiterbarkeit“ &#x200B;](https://developer.adobe.com/commerce/extensibility/), nicht beeinträchtigen.
+>Adobe garantiert Abwärtskompatibilität für alle Updates. Das bedeutet, dass Aktualisierungen, die angewendet werden, vorhandene Funktionen oder Anpassungen, die dem Modell der „API-First[Erweiterbarkeit“ ](https://developer.adobe.com/commerce/extensibility/), nicht beeinträchtigen.
 
 ### Integrationen von Drittanbietern
 
@@ -254,7 +268,7 @@ Entwickler können umfassende [GraphQL](https://developer.adobe.com/commerce/web
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->

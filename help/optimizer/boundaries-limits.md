@@ -2,7 +2,7 @@
 title: Adobe Commerce Optimizer-Beschränkungen und -Grenzen
 description: Erfahren Sie mehr über Adobe Commerce Optimizer-Lizenzbeschränkungen und Systemgrenzen. Planen Sie die Kapazität, verfolgen Sie die Nutzung und vermeiden Sie Latenz und Drosselung bei Überschreitung der Grenzwerte.
 role: Admin, Developer
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
 product_v2:
@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 57a905703b11ef8fc4ca4527a5fc136dc81615cc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1708'
 ht-degree: 0%
 ---
 # Beschränkungen und Grenzen
@@ -31,7 +31,7 @@ Ihre Nutzung muss innerhalb dieser Grenzen bleiben. Sie zu überschreiten kann z
 
 Lizenzbeschränkungen können erhöht werden, indem Sie die Lizenzpakete erwerben, die im Abschnitt [Lizenzbeschränkungen und Systemgrenzen](#license-limits-and-system-boundaries) beschrieben sind, oder indem Sie benutzerdefinierte Lizenzen für eindeutige Anwendungsfälle aushandeln. Wenden Sie sich an Ihren Adobe-Kundenbetreuer, um Ihre Anforderungen zu besprechen.
 
-Wenden Sie sich bei Fragen zu Systemgrenzen an den [Adobe-Support](https://experienceleague.adobe.com/home?lang=de#support).
+Wenden Sie sich bei Fragen zu Systemgrenzen an den [Adobe-Support](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Leistungsprobleme verhindern
 
@@ -77,9 +77,11 @@ In den folgenden Tabellen sind die Lizenzbeschränkungen und Systemgrenzen nach 
 
 ### [!DNL Product Visuals]
 
+Product Visuals unterstützt Commerce-orientierte Anwendungsfälle für das Asset-Management, einschließlich der Verwaltung von Produkt-Assets, Commerce-Metadaten und der Bereitstellung von Assets. Der unterstützte Massen-Upload und die Massenverarbeitung von Metadaten erfordern für sich genommen keine AEM Assets Ultimate. Für die programmgesteuerte Asset- und Metadatenverwaltung, für die AEM Assets-APIs erforderlich sind, gelten separate Berechtigungsanforderungen.
+
 | **Funktion** | **Beschreibung** | **Basiszuweisung** | **Erweiterbar?** |
 | --- | --- | --- | --- |
-| Produktvisualisierung Power-User | Lizenzierter Anwender mit vollständigen Digital-Asset-Management-Funktionen, einschließlich KI-Tools, [!DNL Adobe Express]-/[!DNL Firefly]-Integrationen und Content Hub-Freigabe, Handhabung von DAM-Kernaufgaben und erweiterten Cloud-nativen Funktionen für optimale Effizienz. | 2 | Ja<p>Upgrade auf [!DNL AEM Assets] Lizenz</p> |
+| Produktvisualisierung Power-User | Lizenzierter Benutzer mit den Asset-Management-Funktionen, die in Produktvisualisierungen enthalten sind, einschließlich KI-Tools, [!DNL Adobe Express]/[!DNL Firefly]-Integrationen und Content Hub-Freigabe. | 2 | Ja<p>Upgrade auf [!DNL AEM Assets] Lizenz</p> |
 | Benutzer von Product Visuals Collaborator | Greifen Sie über die AEM Commerce-Integration auf Assets zu und arbeiten Sie mit ihnen, erstellen und bearbeiten Sie Inhalte mithilfe von [!DNL Adobe Express] und [!DNL Firefly] und nutzen Sie - falls aktiviert - genehmigte Assets über das Content Hub-Portal. | 2 | Ja<p>Upgrade auf [!DNL AEM Assets] Lizenz</p> |
 | Speicherung von Produktbildern | Zugewiesener Speicherplatz für Assets | 1 TB Speicher | Ja<p>Upgrade auf [!DNL AEM Assets] Lizenz</p> |
 | Verwendung von Dynamic Media | Toleranz für Dynamic Media-Verarbeitungsvorgänge, die Folgendes umfassen:<ul><li>Bildbereitstellung</li><li>Intelligente Bildbearbeitung</li><li>Videowiedergabe</li></ul><p>Weitere Informationen finden Sie *Berechnen der Dynamic Media-Nutzung* unten. | Basierend auf GMV (Bruttowarenwert)<p>Mindestzuweisung: 5 Mio. Operationen/Monat</p> | Ja<ul><li>Lizenz für zusätzliche Vorgänge erwerben</li><li>Upgrade auf [!DNL AEM Assets] Lizenz</li></ul> |
@@ -108,7 +110,25 @@ Die Verwendung von Dynamic Media verfolgt API-Anfragen, die innerhalb von [!DNL 
 
 >[!NOTE]
 >
->Die oben genannten Beschränkungen betreffen die Zuweisung von Kapazität und Nutzung. Eine Übersicht über die Produktvisualisierungsfunktionen und funktionale Einschränkungen finden Sie unter [Produktvisualisierung mit AEM Assets](setup/product-visuals.md).
+>In diesem Abschnitt werden Kapazität, Nutzungszuweisungen und Berechtigungsgrenzen behandelt. Eine Übersicht über die Funktion „Produktvisualisierung“ finden Sie unter [Produktvisualisierung mit AEM Assets](setup/product-visuals.md).
+
+#### Wann ist AEM Assets Ultimate erforderlich?
+
+>[!IMPORTANT]
+>
+>Product Visuals bietet keinen Zugriff auf die AEM Assets Author-APIs. Wenn für eine Integration oder ein benutzerdefiniertes Programm der Autoren-API-Zugriff erforderlich ist, um Assets oder Metadaten programmgesteuert zu verwalten, kaufen Sie eine AEM Assets Ultimate Add-on-SKU. Ultimate ist nicht in Product Visuals enthalten. Wenden Sie sich an Ihren Adobe-Kundenbetreuer, um eine Lizenz für oder Bereitstellung zu erhalten.
+
+AEM Assets Ultimate ist erforderlich für:
+
+- Zugriff auf die AEM Assets Author-API.
+- API-basierte Metadatenintegrationen, einschließlich Metadaten-Eingang und -Ausgang.
+- Benutzerdefinierte Integrationen und Automatisierung, für die AEM Assets-APIs Assets oder Metadaten programmgesteuert verwalten müssen.
+- Adobe Developer App Builder-Integrationen, die von diesen AEM Assets-APIs abhängen.
+- Staging- und Entwicklungsumgebungen in AEM Assets.
+
+Diese Anforderungen schließen Dynamic Media mit OpenAPI-Funktionen, die in Produktvisualisierungen für die Asset-Bereitstellung enthalten sind, nicht aus. Die Verwendung von App Builder allein erfordert keine AEM Assets Ultimate. Diese Anforderung hängt von den AEM Assets-APIs ab, die die Anwendung verwendet.
+
+Weitere Informationen zu umfassenderen Anforderungen an Unternehmens-DAM, API, Erweiterbarkeit und die Bereitstellung von Inhalten über Produktvisualisierungen hinaus finden Sie unter [AEM Assets Ultimate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview).
 
 ### Katalogansichten und Richtlinien
 
@@ -171,7 +191,7 @@ Die folgenden Funktionen sind für Produktempfehlungen verfügbar. Einige in and
 
 | **Funktion** | **Beschreibung** | **Basiszuweisung** | **Erweiterbar?** | **Hinweise** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Kapazität zum Erstellen Cloud-nativer Erweiterungen und Integrationen | Basierend auf GMV-Stufe<p>Mindestzuweisung: 1 Packung/Jahr</p> | Ja<p>Zusätzliche Packs hinzufügen</p> | Für die pro Packung definierten Grenzwerte siehe:<ul><li>[App Builder-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-developer-app-builder.html) für pro Pack definierte Beschränkungen.</li><li>[Systemeinstellungen und Einschränkungen](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in den *App Builder Runtime Guides*.</li><li>[Speicheranforderungen für App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Kapazität zum Erstellen Cloud-nativer Erweiterungen und Integrationen | Basierend auf GMV-Stufe<p>Mindestzuweisung: 1 Packung/Jahr</p> | Ja<p>Zusätzliche Packs hinzufügen</p> | Für die pro Packung definierten Grenzwerte siehe:<ul><li>[App Builder-Produktbeschreibung](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) für pro Pack definierte Beschränkungen.</li><li>[Systemeinstellungen und Einschränkungen](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in den *App Builder Runtime Guides*.</li><li>[Speicheranforderungen für App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
