@@ -5,7 +5,7 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
 autotag-review: '2026-06-18T16:02:31.185Z'
 TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
 product_v2:
@@ -145,7 +145,7 @@ Product Visuals unterstützt Commerce-fokussiertes Digital Asset Management (DAM
 
 Die Integration stellt sicher, dass digitale Assets, wie Produktbilder oder Marketing-Inhalte, basierend auf der SKU oder anderen Schlüsselattributen dynamisch mit den entsprechenden Merchandising-Entitäten verknüpft werden, einschließlich Produkten und Kategorien in Adobe Commerce.
 
-[!DNL Product Visuals] ist in [!DNL Adobe Commerce as a Cloud Service] enthalten. Es umfasst [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime), ein schlankes DAM, mit Dynamic Media-Funktionen mit OpenAPI-Funktionen für die Asset-Bereitstellung.
+[!DNL Product Visuals] ist in [!DNL Adobe Commerce as a Cloud Service] enthalten. Es umfasst [AEM Assets Prime](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-prime), ein schlankes DAM, mit Dynamic Media-Funktionen mit OpenAPI-Funktionen für die Asset-Bereitstellung.
 
 Alternativ bieten die nativen Funktionen in [!DNL Adobe Commerce as a Cloud Service] grundlegende Asset-Management-Tools zum Speichern und Verwalten digitaler Assets.
 
@@ -153,7 +153,7 @@ Weitere Informationen zur Integration von [&#128279;](../aem-assets-integration/
 
 ### [!DNL Product Visuals] oder [!DNL AEM Assets Ultimate]
 
-Der folgende Vergleich hilft Ihnen bei der Auswahl der besten Option für Ihre Inhalte, die supply chain benötigt. Product Visuals unterstützt Commerce-fokussiertes Asset-Management. [AEM Assets Ultimate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview) unterstützt umfassendere Unternehmens-DAM- und komplexe Inhaltslieferketten, einschließlich Benutzeroberflächenerweiterbarkeit, API-gesteuerter Automatisierung und Bereitstellung von benutzerdefiniertem Code.
+Der folgende Vergleich hilft Ihnen bei der Auswahl der besten Option für Ihre Inhalte, die supply chain benötigt. Product Visuals unterstützt Commerce-fokussiertes Asset-Management. [AEM Assets Ultimate](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview) unterstützt umfassendere Unternehmens-DAM- und komplexe Inhaltslieferketten, einschließlich Benutzeroberflächenerweiterbarkeit, API-gesteuerter Automatisierung und Bereitstellung von benutzerdefiniertem Code.
 
 >[!IMPORTANT]
 >
@@ -268,7 +268,7 @@ Entwickler können umfassende [GraphQL](https://developer.adobe.com/commerce/web
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->
