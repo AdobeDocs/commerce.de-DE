@@ -64,9 +64,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 213fcf83118eb60b0e80db224192963592945d8d
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1641'
 ht-degree: 0%
 ---
 # Übersicht über [!DNL Adobe Commerce as a Cloud Service]
@@ -141,31 +141,36 @@ Merchandising Services unterstützt in [!DNL Adobe Commerce as a Cloud Service] 
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
-Product Visuals vereinfacht das Asset-Management mithilfe eines Digital-Asset-Management-Systems (DAM), das zum Verwalten von Rich-Media-Inhalten mit Adobe Experience Manager integriert werden kann.
+Product Visuals unterstützt Commerce-fokussiertes Digital Asset Management (DAM), einschließlich der Verwaltung von Produkt-Assets, Commerce-Metadaten und der Bereitstellung von Assets auf Basis von Adobe Experience Manager Assets.
 
 Die Integration stellt sicher, dass digitale Assets, wie Produktbilder oder Marketing-Inhalte, basierend auf der SKU oder anderen Schlüsselattributen dynamisch mit den entsprechenden Merchandising-Entitäten verknüpft werden, einschließlich Produkten und Kategorien in Adobe Commerce.
 
-[!DNL Product Visuals] ist nativ mit [!DNL Adobe Commerce as a Cloud Service] verfügbar und bietet einige der Funktionen von [!DNL AEM Assets].
+[!DNL Product Visuals] ist in [!DNL Adobe Commerce as a Cloud Service] enthalten. Es umfasst [AEM Assets Prime](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-prime), ein schlankes DAM, mit Dynamic Media-Funktionen mit OpenAPI-Funktionen für die Asset-Bereitstellung.
 
 Alternativ bieten die nativen Funktionen in [!DNL Adobe Commerce as a Cloud Service] grundlegende Asset-Management-Tools zum Speichern und Verwalten digitaler Assets.
 
 Weitere Informationen zur Integration von [&#128279;](../aem-assets-integration/overview.md) mit [!DNL Adobe Commerce as a Cloud Service] finden Sie im Handbuch zur Integration von [!DNL Product Visuals powered by AEM Assets] mit.
 
-### [!DNL Product Visuals] oder [!DNL AEM Assets]
+### [!DNL Product Visuals] oder [!DNL AEM Assets Ultimate]
 
-Der folgende Vergleich hilft Ihnen bei der Auswahl der besten Option für Ihre Inhalte, die supply chain benötigt:
+Der folgende Vergleich hilft Ihnen bei der Auswahl der besten Option für Ihre Inhalte, die supply chain benötigt. Product Visuals unterstützt Commerce-fokussiertes Asset-Management. [AEM Assets Ultimate](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview) unterstützt umfassendere Unternehmens-DAM- und komplexe Inhaltslieferketten, einschließlich Benutzeroberflächenerweiterbarkeit, API-gesteuerter Automatisierung und Bereitstellung von benutzerdefiniertem Code.
+
+>[!IMPORTANT]
+>
+>AEM Assets Ultimate ist nicht in Product Visuals enthalten. Um Ultimate zu verwenden, kaufen Sie eine AEM Assets Ultimate Add-on-SKU. Wenden Sie sich an Ihren Adobe-Kundenbetreuer, um Lizenzierung und Bereitstellung zu besprechen.
 
 <table>
   <tr>
     <td align="left">
       <strong>[!DNL Product Visuals powered by AEM Assets]</strong>
       <ul>
+        <li>In Adobe Commerce as a Cloud Service enthalten</li>
         <li>Integrierter, automatisierter Digital Asset Manager (DAM) für Produktbilder und Videos</li>
         <li>Ändern der Größe, Zuschneiden und Konvertieren von Bildern</li>
         <li>Schnelle Bild- und Videobereitstellung</li>
         <li>Optimierung von Bildformaten, -größen und -qualität auf der Grundlage der Client-Browser-Funktionen</li>
         <li>Zugriff auf Adobe Express und Adobe Firefly</li>
-        <li>Nutzungsbeschränkungen für die Kapazität der Bild-/Videobereitstellung und den Benutzerzugriff</li>
+        <li>Nutzungsbeschränkungen für Asset-Speicher, Kapazität der Bild-/Videobereitstellung und Benutzerzugriff</li>
         <li>Integrierter Asset-Wähler</li>
       </ul>
     </td>
@@ -174,13 +179,18 @@ Der folgende Vergleich hilft Ihnen bei der Auswahl der besten Option für Ihre I
       <img src="../assets/icon-double-chevron-right.svg" alt="Chevron" width="100">
     </td>
     <td align="left">
-      <strong>AEM Assets</strong>
+      <strong>[!DNL AEM Assets Ultimate]</strong>
       <ul>
+        <li>Erfordert eine AEM Assets Ultimate Add-on-SKU</li>
         <li>Alle Funktionen von Product Visuals</li>
         <li>Full Marketing Digital Asset Manager (DAM)</li>
-        <li>Unbegrenzte Anzahl von Benutzern (Zahlung pro Benutzer)</li>
-        <li>Unbegrenzte Bild- und Videobereitstellung</li>
-        <li>Erweiterte Asset-Management-Funktionen:</li>
+        <li>Benutzerzugriff basierend auf erworbenen Lizenzen</li>
+        <li>Bild- und Videobereitstellung basierend auf lizenzierter Dynamic Media-Kapazität</li>
+        <li>Zugriff auf die AEM Assets-Autoren-API und Integrationen, die AEM Assets-APIs verwenden, um Assets oder Metadaten programmgesteuert zu verwalten</li>
+        <li>API-basierte Metadatenintegrationen, einschließlich Metadaten-Eingang und -Ausgang</li>
+        <li>Erweiterbarkeit der Benutzeroberfläche, API-gesteuerte Automatisierung und Bereitstellung von benutzerdefiniertem Code</li>
+        <li>Staging- und Entwicklungsumgebungen in AEM Assets</li>
+        <li>Erweiterte Asset-Management-Funktionen mit Dynamic Media-Funktionen, die der jeweiligen Add-on-Lizenz unterliegen:</li>
         <ul>
           <li>360-Grad-Rotationssets und interaktive Viewer</li>
           <li>3D-Modellunterstützung und immersive Inhalte</li>
@@ -199,6 +209,10 @@ Der folgende Vergleich hilft Ihnen bei der Auswahl der besten Option für Ihre I
     </td>
   </tr>
 </table>
+
+>[!NOTE]
+>
+>Der unterstützte Massen-Upload und die Massenverarbeitung von Metadaten erfordern für sich genommen keine AEM Assets Ultimate. Die Verwendung von App Builder allein erfordert keine Ultimate. Diese Anforderung hängt von den von der Anwendung verwendeten AEM Assets-APIs ab. Product Visuals enthält Dynamic Media mit OpenAPI-Funktionen für die Asset-Bereitstellung. Informationen zu Funktionsberechtigungen, Kapazität und Nutzungszuweisungen finden Sie unter [Produktvisualisierungsbeschränkungen](../optimizer/boundaries-limits.md#product-visuals-limits).
 
 ## Entwicklerplattform
 

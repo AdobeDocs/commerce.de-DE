@@ -15,9 +15,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '966'
 ht-degree: 0%
 ---
 # Benutzerberechtigungen und IMS
@@ -27,14 +27,18 @@ ht-degree: 0%
 * Für Adobe Commerce as a Cloud Service aktiviert der Administrator standardmäßig die IMS-Authentifizierung.
 * Bei Adobe Commerce in der Cloud oder On-Premise ist IMS optional.
 
-  [Aktivieren von IMS für Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} bietet eine erweiterte Konfigurationsoberfläche (Asset-Selektor, automatisch ausgefüllte Dropdown-Listen). Sie können die Integration jedoch auch ohne IMS konfigurieren, indem Sie **Programm-ID** und **Umgebungs-ID** manuell eingeben.
+  [Aktivieren von IMS für Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} bietet eine erweiterte Konfigurationsoberfläche mit Asset-Selektor sowie Dropdown-Listen für Umgebung und Domain . Wenn Ihre Konfiguration separate Felder **Programm-ID** und **Umgebungs-ID** aufweist, können Sie diese Kennungen manuell ohne IMS eingeben.
 
 Bei Verwendung von IMS erfordert die AEM Assets-Integration auch bestimmte **Adobe Admin Console-Produktprofile**. Benutzende, die die Integration in Commerce Admin konfigurieren, benötigen das Produktprofil **AEM Assets DM OpenAPI Users - delivery** oder das Produktprofil **author** als Fallback. Dieser Zugriff wird über Admin Console-Produktprofile in der IMS-Organisation des Benutzers gesteuert und ermöglicht:
 
 * **Asset-Selektor** ermöglicht die Auswahl von Bildern aus AEM Assets beim Verwalten von Kategoriebildern oder Page Builder-Inhalten.
-* **Automatisch ausgefüllte Konfigurationsfelder** wie **Programm-ID**, **Umgebungs-ID** und **Domain-Zuordnung** Dropdown-Listen, die Werte aus der IMS-Sitzung des Benutzers abrufen.
+* **Automatisch ausgefüllte Konfigurationsfelder** einschließlich der Dropdown-Listen **AEM-** und **AEM-Domain-**, die Werte aus der IMS-Sitzung des Benutzers abrufen. Siehe [Integration konfigurieren](setup-synchronization.md) für die Umgebungsauswahl und die manuelle ID-Eingabe.
 
 Ohne die richtigen Berechtigungen ist der Asset-Wähler nicht verfügbar und diese Felder erscheinen leer oder müssen manuell eingegeben werden.
+
+>[!IMPORTANT]
+>
+> Adobe Admin Console-Produktprofile steuern den Benutzerzugriff auf Integrationsfunktionen. Sie ändern nicht die Lizenzberechtigungen. Durch das Zuweisen eines Produktprofils für Autoren wird der AEM Assets Author-API-Zugriff auf Kunden von Product Visuals nicht gewährt. Berechtigungsanforderungen finden [&#x200B; unter &quot;](../../optimizer/boundaries-limits.md#product-visuals-limits)&quot;.
 
 >[!BEGINSHADEBOX]
 
@@ -52,12 +56,12 @@ Die Integration kann nur Domains laden, die einem Profil zugeordnet sind. Daher 
 
 * **Produktprofil erstellen**. Erforderlich für den Zugriff auf die AEM Assets-Benutzeroberfläche. Dient auch als Fallback für die Asset-Wähler- und Konfigurations-Benutzeroberfläche, wenn der Benutzer nicht über das Produktprofil &quot;AEM-Bereitstellung“ in seiner Admin Console verfügt.
 
-Domains (einschließlich Programm-ID, Umgebungs-ID und Domain-Zuordnung) werden dem AEM-Versand-Produktprofil zugewiesen. Die Integration lädt Domains aus dem Produktprofil **Versand von AEM** falls verfügbar, oder kehrt zurück zum Produktprofil **Autor**, wenn das Produktprofil AEM-Versand nicht in der Admin Console des Benutzers enthalten ist. Benutzende benötigen eines dieser Profile, um:
+Die Integration lädt Umgebungen und Domain-Zuordnungen aus dem Produktprofil **AEM-Versand**, falls verfügbar, oder kehrt zurück zum Produktprofil **Autor**, wenn das Produktprofil AEM-Versand nicht in der Admin Console des Benutzers enthalten ist. Benutzende benötigen eines dieser Profile, um:
 
-* Füllen Sie die **Programm**, **Umgebungs-ID** und **Domain-Zuordnung** in der Commerce Admin-Konfiguration aus.
+* Füllen Sie die Dropdown-Listen **AEM** Umgebung und **AEM-Domain** Zuordnung in der Commerce Admin-Konfiguration.
 * Verwenden Sie den Asset-Wähler, um Assets in AEM Assets zu durchsuchen und auszuwählen.
 
-Wenn keines der Profile konfiguriert ist, können Benutzer **Programm-ID** und **Umgebungs-ID** manuell eingeben, aber der Asset-Wähler ist nicht verfügbar.
+Wenn keines der Profile konfiguriert ist, ist der Asset-Wähler nicht verfügbar. Wenn Ihre Konfiguration separate Felder **Programm-ID** und **Umgebungs-ID** anzeigt, können Sie die Kennungen manuell eingeben.
 
 ## Berechtigungen nach Bereitstellungstyp erteilen
 
@@ -83,7 +87,7 @@ Fügen Sie den Benutzer dem Produktprofil **AEM Assets DM OpenAPI Users -**, im 
 
 Die **IMS-Client-**) ist für PaaS erforderlich, um den Asset-Wähler zu aktivieren. Unter [Konfigurieren des AEM Assets-Projekts](configure-aem.md#prerequisites) finden Sie Voraussetzungen, einschließlich der Vorgehensweise beim Abrufen der IMS-Client-ID beim Aktivieren von Dynamic Media mit OpenAPI.
 
-So verwenden Sie den Asset-Selektor und automatisch ausgefüllte Konfigurationsfelder (Programm-ID, Umgebungs-ID, Domain-Zuordnung):
+So verwenden Sie den Asset-Wähler und die Dropdown-Listen für die **-Umgebung und die** AEM **Domain-Zuordnung:**
 
 1. [Adobe IMS für Commerce aktivieren](https://experienceleague.adobe.com/de/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} sodass der Commerce-Administrator die IMS-Authentifizierung verwendet und die Admin Console-Produktprofile der Benutzenden lesen kann.
 
@@ -91,7 +95,7 @@ So verwenden Sie den Asset-Selektor und automatisch ausgefüllte Konfigurationsf
 
 1. Fügen Sie in der [Adobe Admin Console](https://adminconsole.adobe.com/) den Benutzer dem Produktprofil **AEM Assets DM OpenAPI Users -**, oder dem Produktprofil **author** als Fallback hinzu.
 
-Ohne IMS können Sie die Integration weiterhin konfigurieren, indem Sie die Programm-ID und die Umgebungs-ID im Commerce Admin manuell eingeben.
+Für Konfigurationen, die separate Programm-ID- und Umgebungs-ID-Felder anzeigen, ist die manuelle Eingabe ohne IMS verfügbar. Siehe [Konfigurieren der Integration](setup-synchronization.md).
 
 >[!ENDTABS]
 

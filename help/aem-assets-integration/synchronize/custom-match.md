@@ -22,18 +22,22 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '1015'
 ht-degree: 0%
 ---
 # Benutzerdefinierter automatischer Abgleich
 
 Wenn die standardmäßige automatische Abgleichstrategie (**OOTB Automatic Matching**) nicht an Ihren spezifischen Geschäftsanforderungen ausgerichtet ist, wählen Sie die Option Benutzerdefinierte Abgleichung aus. Diese Option unterstützt die Verwendung von [Adobe Developer App Builder](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) zum Entwickeln einer benutzerdefinierten Matcher-Anwendung, die komplexe Matching-Logik verarbeitet, oder von Assets, die von einem Drittanbietersystem stammen, das keine Metadaten in AEM Assets einfügen kann.
 
+>[!NOTE]
+>
+>Wenn Ihre benutzerdefinierte Matcher- oder Adobe Developer App Builder-Integration AEM Assets-APIs erfordert, um Assets oder Metadaten programmgesteuert zu verwalten, ist eine AEM Assets Ultimate-Berechtigung erforderlich. Diese Anforderung hängt von den APIs ab, die die Anwendung verwendet, und nicht nur von der App Builder-Nutzung. Siehe [Beschränkungen für Produktdarstellungen](../../optimizer/boundaries-limits.md#product-visuals-limits).
+
 ## Konfigurieren von benutzerdefiniertem automatischem Abgleich
 
-1. Navigieren Sie vom Commerce-Administrator aus zu **[!UICONTROL Store]** > Konfiguration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+1. Navigieren Sie vom Commerce-Administrator aus zu **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
 1. Wählen Sie **[!UICONTROL Custom Matcher]** als Übereinstimmungsregel aus.
 
@@ -128,6 +132,10 @@ Sie können die `workspace.json` Datei von der [Adobe Developer Console herunter
 1. Wählen Sie für jeden Fluss die entsprechenden Laufzeitaktionen aus den Dropdown-Menüs aus.
 
 1. Klicken Sie auf **[!UICONTROL Save Config]**.
+
+Nachdem die Konfiguration angewendet wurde, [überprüfen Sie die Integration](../get-started/setup-synchronization.md#verify-the-integration) mit einem genehmigten Asset und einem Produkt, das Ihr benutzerdefinierter Matcher damit verknüpft.
+
+[!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} Wenn die Synchronisierung fehlschlägt, überprüfen Sie die [Integrationsprotokolle](../get-started/logs.md).
 
 ## Asynchrone Konfiguration speichern
 

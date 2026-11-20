@@ -22,9 +22,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '372'
 ht-degree: 0%
 ---
 # Standardmäßige automatische Zuordnung
@@ -33,13 +33,13 @@ Die AEM Assets-Integration für Commerce bietet einen standardmäßigen automati
 
 ## Konfigurieren des automatischen Abgleichmechanismus
 
-1. Navigieren Sie vom Commerce-Administrator aus zu **[!UICONTROL Store]** > Konfiguration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+1. Navigieren Sie vom Commerce-Administrator aus zu **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-1. Geben Sie **[!UICONTROL Match by SKU]** als Übereinstimmungsregel an.
+1. Geben Sie **[!UICONTROL Match by product SKU]** als Übereinstimmungsregel an.
 
-   ![Standardregel für automatisierten Abgleich](../assets/ootb-matching-rule.png){width="600" zoomable="yes"}
+   ![Übereinstimmung nach Produkt-SKU-Regel und Metadaten-Eigenschaftsname](../assets/ootb-matching-rule.png){width="700" zoomable="yes"}
 
-1. Geben Sie den Metadatenfeldnamen ein, der zur Asset-Identifizierung in der AEM Assets verwendet wird.
+1. Geben Sie in **[!UICONTROL Match by product SKU attribute name]** den [Metadateneigenschaftsnamen“ ein](../metadata.md) in dem Produkt-SKUs in AEM Assets gespeichert werden, keinen tatsächlichen SKU-Wert.
 
    >[!NOTE]
    >
@@ -69,4 +69,6 @@ Wenn die Regel zum Abgleichen von **[!UICONTROL Match by product SKU]** in der C
 
    ![Beispiel-Metadaten](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
-Dadurch wird sichergestellt, dass digitale Assets ordnungsgemäß verknüpft und in Adobe Commerce angezeigt werden. Außerdem können Merchandiser und Marketing-Experten Rollen und die Asset-Positionierung direkt in AEM Assets verwalten, wodurch ein konsistenter und zentralisierter Mechanismus für die Bildauswahl und -reihenfolge über alle Interaktionskanäle hinweg bereitgestellt wird.
+Nachdem Sie das Asset genehmigt haben[&#x200B; (überprüfen Sie die Produktverknüpfung, das Synchronisierungsergebnis und die Storefront-Anzeige](../get-started/setup-synchronization.md#verify-the-integration). Wenn das Asset nicht angezeigt wird, überprüfen Sie [Synchronisierungsstatus](../get-started/sync-status.md). Verwenden Sie für Adobe Commerce Optimizer stattdessen den [Optimizer-Verifizierungs](../get-started/configure-aco.md#match-by-sku-workflow-example)Workflow. Der Synchronisierungsstatus ist nicht verfügbar.
+
+[!BADGE Nur PaaS]{type=Informative tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur)."} Weitere Informationen zur Fehlerbehebung bei der Synchronisierung finden Sie unter [Integrationsprotokolle](../get-started/logs.md).

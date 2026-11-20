@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1055'
 ht-degree: 0%
 ---
 # Migrieren von Mediendateien in das AEM Assets-DAM
@@ -42,6 +42,10 @@ Sowohl Adobe Commerce als auch Adobe Experience Manager (AEM) bieten integrierte
 | **Cloud-Speicherkonto** | <ul><li>AWS S3- oder Azure Blob Storage-Konto</li><li>Konfiguration von privaten Containern/Buckets</li><li>Authentifizierungsdaten</li></ul> |
 | **Source-Inhalte** | <ul><li>Organisierte Mediendateien bereit für die Migration</li><li>Bild- und Videodateien in <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">von AEM Assets unterstützten Formaten</a>.</li><li>Bereinigen von duplizierten Assets</li></li> |
 | **Metadatenvorbereitung** | <ul><li><a href="configure-aem.md">AEM Assets-Metadatenprofil für Commerce-Assets konfiguriert</a></li><li>Zugeordnete Metadatenwerte für jedes Asset</li><li>CSV-Datei-Editor (z. B. Microsoft Excel)</li></ul> |
+
+>[!IMPORTANT]
+>
+>Der unterstützte Massen-Upload und die Massenverarbeitung von Metadaten erfordern für sich genommen keine AEM Assets Ultimate. Programmgesteuerte Migrations- oder Metadaten-Workflows, für die AEM Assets-APIs erforderlich sind, einschließlich API-basierter Ein- und Ausgänge von Metadaten, erfordern AEM Assets Ultimate. Bevor Sie eine Migrationsmethode auswählen, lesen Sie [Produktvisualisierungsbeschränkungen](../../optimizer/boundaries-limits.md#product-visuals-limits).
 
 ## Best Practices für die Migration
 
@@ -159,4 +163,4 @@ Im Folgenden finden Sie einen allgemeinen Überblick über die Verwendung des To
 >
 > [Videodemo zum Tool für den Massenimport](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
 > [Tipps, Best Practices und Einschränkungen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> [Hochladen oder Aufnehmen von Assets mithilfe von APIs](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> [Hochladen oder Aufnehmen von Assets mit APIs](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload) - Überprüfen Sie [Beschränkungen für die Produktvisualisierung](../../optimizer/boundaries-limits.md#product-visuals-limits) bevor Sie eine API-gesteuerte Migration implementieren.

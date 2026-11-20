@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Digital asset management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1900'
 ht-degree: 1%
 ---
 # Konfigurieren des AEM Assets-Projekts
@@ -65,6 +65,10 @@ In unterstützten AEM-Versionen aktivieren Sie die Commerce-Integration von Clou
 
   Sowohl Ihre Commerce-Instanz als auch die Authoring-Umgebung von AEM Assets müssen sich in derselben IMS-Organisation befinden.
 
+>[!NOTE]
+>
+>Für Staging- und Entwicklungsumgebungen von AEM Assets ist AEM Assets Ultimate erforderlich. Überprüfen Sie [Beschränkungen für die Produktdarstellung](../../optimizer/boundaries-limits.md#product-visuals-limits) bevor Sie diese Umgebungen planen. Diese Anforderung gilt für AEM Assets-Umgebungen, nicht für Commerce-Sandbox-Umgebungen.
+
 ### Schritt 1: Erstellen des Programms und der Umgebungen
 
 Das Erstellen eines Programms in Cloud Manager ist ein mehrstufiger Prozess - das Programm und seine Umgebungen werden über mehrere Schritte konfiguriert und zusammen gespeichert.
@@ -77,7 +81,7 @@ Das Erstellen eines Programms in Cloud Manager ist ein mehrstufiger Prozess - da
 
    ![Schritt &quot;Cloud Manager-Lösungen und -Add-ons“ mit ausgewähltem Dynamic Media](../assets/aem-cloud-manager-program-addons.png){width="600" zoomable="yes"}
 
-1. Geben Sie im **[!UICONTROL Add Environment]** Schritt Namen für die Umgebungen **Produktion** und **Staging** ein und wählen Sie dann eine Region aus.
+1. Geben Sie im Schritt **[!UICONTROL Add Environment]** den Namen der **-/**-Umgebung ein und wählen Sie dann eine Region aus. Wenn Ihre Berechtigung eine Staging-Umgebung enthält, geben Sie auch den Namen **Staging**-Umgebung ein.
 
    >[!IMPORTANT]
    >
