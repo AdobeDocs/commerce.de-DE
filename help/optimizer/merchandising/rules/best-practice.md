@@ -2,7 +2,7 @@
 title: Best Practices für Merchandising-Regeln
 description: Erfahren Sie mehr über die Best Practices zur Implementierung von Merchandising-Regeln für Such-, Unterdrückungs-, Standard- und Kategorieseiten.
 role: Admin, Developer
-badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
+badgeSaas: label="Nur SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und [!DNL Adobe Commerce Optimizer] (von Adobe verwaltete SaaS-Infrastruktur)."
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
 TQID: https://experienceleague.adobe.com/DrdrBBXeMyqQr16h1LrlSoet3F6ihn57LBmPFBUXmTs
 product_v2:
@@ -16,8 +16,8 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-last-update: 2026-11-16
-source-git-commit: 0633a6bf0c347ca0448a76fb45391643ac582d5d
+last-update: 2026-11-18
+source-git-commit: c56c73864a05604cbbca8126ba1eaed231875647
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 0%
