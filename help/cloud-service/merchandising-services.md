@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 71700f3fc10957ec2b1cccb7df12acd9840c35a1
+source-git-commit: ca2330c059ede860c464134878a83babd12eb148
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1115'
 ht-degree: 0%
 ---
 
@@ -118,11 +118,18 @@ Wie Ihre Storefront Katalogdaten abruft, hängt von Ihrer Implementierung ab:
 - **[!DNL Adobe Commerce Storefront]**-Dropins - Die Dropins handhaben die Transition. Code-Änderungen sind nicht erforderlich. Siehe die [Storefront-Setup-Dokumentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/).
 - **Benutzerdefinierte oder andere Storefronts** - Aktualisieren Sie die Kopfzeilen Ihrer Kataloganfragen, wie in der [Kopfzeilen-Konfigurationsreferenz](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers) beschrieben.
 
-Überprüfen Sie Ihre Katalogabfragen und Anfragekopfzeilen für das CDM-basierte Modell. Gehen Sie nicht davon aus, dass vorhandene Abfragen oder Kopfzeilen unverändert bleiben. Die Merchandising-GraphQL-Abfragen unterscheiden sich von den Abfragen, die im ursprünglichen Katalog-Service-Modell verwendet wurden. Zusätzliche Abfragen unterstützen CDM. Verwenden Sie die [Merchandising-GraphQL-API](https://developer.adobe.com/commerce/services/reference/graphql/)Referenz und überprüfen Sie den erforderlichen Katalogkontext mit der [Storefront-Kopfzeilenreferenz](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
-
 ### Programme und Erweiterungen von Drittanbietern
 
 Überprüfen Sie Apps und Erweiterungen von Drittanbietern, die Katalogdaten lesen oder Katalogereignisse mit ihrem Anbieter nutzen. Die Kompatibilität hängt davon ab, wie jede App oder Erweiterung diese Schnittstellen verwendet.
+
+### Merchandising-APIs
+
+Merchandising Services bietet APIs für die Backend-Katalogdatenverwaltung und den Storefront-Katalogabruf. Verwenden Sie die REST-API zum Verwalten von Katalogdaten und die GraphQL-API zum Abrufen von Daten für Storefront-Erlebnisse.
+
+- **REST API:** Folgen Sie [Erste Schritte mit der Datenaufnahme-](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api), um Produkt- und Katalogdaten aus Backend-Anwendungen zu erstellen und zu verwalten.
+- **GraphQL-API:** Folgen Sie [Erste Schritte mit der Merchandising-API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api) um Katalogdaten für Storefront-Erlebnisse abzurufen. Konfigurieren Sie Anfragen mit den für Ihre Storefront erforderlichen Kopfzeilen, wie im Abschnitt [Storefront-Kopfzeilenreferenz](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers) beschrieben.
+
+Überprüfen Sie Ihre Katalogabfragen und Anfragekopfzeilen für das CDM-basierte Modell. Gehen Sie nicht davon aus, dass vorhandene Abfragen oder Kopfzeilen unverändert bleiben. Die Merchandising-GraphQL-Abfragen unterscheiden sich von den Abfragen, die im ursprünglichen Katalog-Service-Modell verwendet wurden. Zusätzliche Abfragen unterstützen CDM. Verwenden Sie die [Merchandising-GraphQL-API](https://developer.adobe.com/commerce/services/reference/graphql/)Referenz und überprüfen Sie den erforderlichen Katalogkontext anhand der [Integrationskopfzeilenreferenz](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api#headers).
 
 ### Admin-Erfahrung
 
